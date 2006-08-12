@@ -25,7 +25,10 @@ $html = <<<EOHTML
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>What is RAP?</h2>
-		<p> The RAP project aims to enable developers to build rich, AJAX-enabled Web applications by using the Eclipse development model, plug-ins and a Java-only API.</p>
+		<p> The RAP project aims to enable developers to build rich, AJAX-enabled Web applications 
+        by using the Eclipse development model, plug-ins and a Java-only API. The project is in 
+        the <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php">validation phase</a>.
+    </p>
 			<h2>Scope </h2>
 			<p>The objectives of the RAP project are:</p>
 			
@@ -68,6 +71,9 @@ $html = <<<EOHTML
 		<hr class="clearer" />
 	</div>
 	<div id="rightcolumn">
+		<div class="sideitem">
+		  <img src="http://www.eclipse.org/images/gazoo-incubation.jpg" alt="Project is in incubation">
+		</div>
 		<div class="sideitem">
 			<h6>Project links</h6>
 			<ul>
