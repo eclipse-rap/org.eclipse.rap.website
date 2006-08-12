@@ -34,7 +34,7 @@ $html = <<<EOHTML
 			    the Eclipse Plugin architecture.</b> The Eclipse OSGi framework (Equinox)
 			    can run inside of a Web application. This has been demonstrated by several
 			    parties, and a subproject of the Equinox project has already been
-			    established (see <a href="http://www.eclipse.org/equinox/incubator/server/">http://www.eclipse.org/equinox/incubator/server/</a>)…</li>
+			    established (see <a href="http://www.eclipse.org/equinox/incubator/server/">http://www.eclipse.org/equinox/incubator/server/</a>)</li>
 			  <li><b>Enable AJAX UI development based on a Java component library. </b>For
 			    enabling UI development based on a Java component library the project has
 			    received a contribution from Innoopract (W4Toolkit), which provides a rich
