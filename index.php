@@ -1,22 +1,14 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
-	#
-	# template.php
-	#
-	# Author: 		Denis Roy
-	# Date:			2005-06-16
-	#
-	# Description: Type your page comments here - these are not sent to the browser
-	#
-	#
+	# Initial revision: Jochen Krause
 	#****************************************************************************
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "RAP Project";
-	$pageKeywords	= "Type, page, keywords, here";
-	$pageAuthor		= "Type your name here";
+	$pageTitle 		= "Rich Ajax Platform (RAP) Project";
+	$pageKeywords	= "AJAX, rap, w4t, eclipse rap";
+	$pageAuthor		= "Jochen Krause";
 	
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -32,62 +24,62 @@
 
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
-		<h2>Open Source Community</h2>
-		<p> Eclipse is an open source community whose projects are focused on providing an extensible development platform and application frameworks for building software. Eclipse provides extensible tools and frameworks that span the software development lifecycle, including support for modeling, language development environments for Java, C/C++ and others, testing and performance, business intelligence, rich client applications and embedded development. A large, vibrant ecosystem of major technology vendors, innovative start-ups, universities and research institutions and individuals extend, complement and support the Eclipse Platform.<br /> <a href="#">more about eclipse &raquo;</a> </p>
+		<h2>What is RAP?</h2>
+		<p> The RAP project aims to enable developers to build rich, AJAX-enabled Web applications by using the Eclipse development model, plug-ins and a Java-only API.</p>
+	<h2>Scope </h2>
+	<p>The objectives of the RAP project are:</p>
+	
+	<ul>
+	  <li><b>Enable the development of Rich Internet Applications that are based on
+	    the Eclipse Plugin architecture.</b> The Eclipse OSGi framework (Equinox)
+	    can run inside of a Web application. This has been demonstrated by several
+	    parties, and a subproject of the Equinox project has already been
+	    established (see <a href="http://www.eclipse.org/equinox/incubator/server/">http://www.eclipse.org/equinox/incubator/server/</a>)…</li>
+	  <li><b>Enable AJAX UI development based on a Java component library. </b>For
+	    enabling UI development based on a Java component library the project has
+	    received a contribution from Innoopract (W4Toolkit), which provides a rich
+	    set of UI components, event-driven program control, a generic mechanism for
+	    updating arbitrary UI elements of a web UI based on AJAX, and a lifecycle
+	    handling comparable to the one used in Java Server Faces. Furthermore the
+	    component library offers a mechanism for browser detection and can adapt to
+	    the capabilities of browsers by using rendering kits (NoScript, Script,
+	    AJAX).</li>
+	  <li><b>Provide a Web Workbench similar to the Eclipse platform workbench: </b>
+	    <ul>
+	      <li>provides selection service (with session scope),</li>
+	      <li>provides extension points for action sets, workbench parts,
+	        perspectives, preference pages, etc.,</li>
+	      <li>enables plug-ins to contribute to workbench parts provided by other
+	        plug-ins (e.g. action contributions)</li>
+	    </ul>
+	  </li>
+	  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
+	</ul>
+
 		<div class="homeitem">
-			<h3>Community News</h3>
+			<h3>RAP News</h3>
 			<ul>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-			</ul>
-		</div>
-		<div class="homeitem">
-			<h3>Community News</h3>
-			<ul>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-			</ul>
-		</div>
-		<div class="homeitem">
-			<h3>Community News</h3>
-			<ul>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
+				<li><a href="http://eclipseworld.net/thursday_am.htm">RAP tuturial at the EclipseWorld Conference, Boston, Sept 6-8</a></li>
+				<li><a href="http://www.ajaxworldconference.com">RAP presentation at AJAXWORLD Conference, Santa Clara, Oct 2-4</a></li>
 			</ul>
 		</div>
 		<hr class="clearer" />
 	</div>
 	<div id="rightcolumn">
 		<div class="sideitem">
-			<h6>New to Eclipse?</h6>
+			<h6>Project links</h6>
 			<ul>
-				<li><a href="#">Community Resources</a></li>
-				<li><a href="#">News Corner</a></li>
-				<li><a href="#">Newsgroup</a></li>
-				<li><a href="#">Registration</a></li>
-				<li><a href="#">Downloads</a></li>
-				<li><a href="#">Legal</a></li>
-				<li><a href="#">Eclipse Roadmap</a></li>
-				<li><a href="#">Document</a></li>
+				<li><a href="http://dev.eclipse.org/mhonarc/lists/rap-dev/maillist.html">Mailing list</a></li>
+				<li><a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">Newsgroup</a></li>
+				<li><a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">Subscribe to mailing list</a></li>
+				<li><a href="http://wiki.eclipse.org/index.php/RAP">Project planning</a></li>
 			</ul>
 		</div>
 		<div class="sideitem">
-			<h6>Project Links</h6>
+			<h6>RAP in the news</h6>
 			<ul>
-				<li><a href="#">Business Intelligence and Reporting</a></li>
-				<li><a href="#">Platform</a></li>
-				<li><a href="#">Technology Project</a></li>
-				<li><a href="#">Test &amp; Performance Tools Platform</a></li>
-				<li><a href="#">Web Tools</a></li>
-				<li><a href="#">Project Proposals</a></li>
-				<li><img src="images/jdj.jpg" width="40" height="42" class="inset" /><a href="#">Cast your vote for Eclipse</a></li>
-				<li><a href="#">Eclipse wins Jolt Award</a><br /><img src="images/jolt.jpg" width="100" height="68" /></li>
+				<li><a href="http://jax-award.de/jax_award/gewinner_en.php">RAP wins european innovation award</a></li>
+				<li><a href="http://www.eweek.com/article2/0,1895,1939964,00.asp">eweek - new ajax project for eclipse</a></li>
 			</ul>
 		</div>
 	</div>
