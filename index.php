@@ -55,14 +55,14 @@ $html = <<<EOHTML
 			  </li>
 			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
 			</ul>
-		</div>
+
 
 		<div class="homeitem">
-			<h3>Meet RAP</h3>
+			<h3>Meet the RAP team</h3>
 			<ul>
-				<li><a href="http://eclipseworld.net/thursday_am.htm">RAP tutorial at the EclipseWorld Conference, Boston, Sept 6-8</a></li>
-				<li><a href="http://www.ajaxworldconference.com">RAP presentation at AJAXWORLD Conference, Santa Clara, Oct 2-4</a></li>
-				<li><a href="http://www.eclipsecon.org/summiteurope2006/">RAP - Rich Ajax Platform - Overview and future directions at Eclipse Summit Europe, Esslingen, Germany, Oct 11-12</a></li>
+				<li><a href="http://eclipseworld.net/thursday_am.htm">EclipseWorld Conference, Boston, Sept 6-8/a><span>RAP tutorial</span></li>
+				<li><a href="http://www.ajaxworldconference.com">AJAXWORLD Conference, Santa Clara, Oct 2-4</a><span>, RAP presentation</span></li>
+				<li><a href="http://www.eclipsecon.org/summiteurope2006/">Eclipse Summit Europe, Esslingen, Germany, Oct 11-12</a><span>RAP - Rich Ajax Platform - Overview and future directions</span></li>
 			</ul>
 		</div>
 		<hr class="clearer" />
