@@ -60,7 +60,7 @@ $html = <<<EOHTML
 		<div class="homeitem">
 			<h3>Meet the RAP team</h3>
 			<ul>
-				<li><a href="http://eclipseworld.net/thursday_am.htm">EclipseWorld Conference, Boston, Sept 6-8/a><span><br>Tutorial: Web 2.0 the Eclipse Way With The Rich AJAX Platform</span></li>
+				<li><a href="http://eclipseworld.net/thursday_am.htm">EclipseWorld Conference, Boston, Sept 6-8</a><span><br>Tutorial: Web 2.0 the Eclipse Way With The Rich AJAX Platform</span></li>
 				<li><a href="http://www.ajaxworldconference.com">AJAXWORLD Conference, Santa Clara, Oct 2-4</a><span><br>Rich Ajax Platform (RAP) - Web 2.0 the Eclipse Way </span></li>
 				<li><a href="http://www.eclipsecon.org/summiteurope2006/">Eclipse Summit Europe, Esslingen, Germany, Oct 11-12</a><span><br>RAP - Rich Ajax Platform - Overview and future directions</span></li>
 			</ul>
