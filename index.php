@@ -3,13 +3,13 @@
 	#*****************************************************************************
 	# Initial revision: Jochen Krause
 	#****************************************************************************
-	
+
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Rich Ajax Platform (RAP) Project";
-	$pageKeywords	= "AJAX, rap, w4t, eclipse rap";
-	$pageAuthor		= "Jochen Krause";
-	
+$pageTitle 		= "Rich Ajax Platform (RAP) Project";
+$pageKeywords	= "AJAX, rap, w4t, eclipse rap";
+$pageAuthor		= "Jochen Krause";
+
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	# $Nav->addNavSeparator("My Page Links", 	"downloads.php");
@@ -18,49 +18,51 @@
 
 	# End: page-specific settings
 	#
-		
+
 	# Paste your HTML content between the EOHTML markers!	
-	$html = <<<EOHTML
+$html = <<<EOHTML
 
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>What is RAP?</h2>
 		<p> The RAP project aims to enable developers to build rich, AJAX-enabled Web applications by using the Eclipse development model, plug-ins and a Java-only API.</p>
-	<h2>Scope </h2>
-	<p>The objectives of the RAP project are:</p>
-	
-	<ul>
-	  <li><b>Enable the development of Rich Internet Applications that are based on
-	    the Eclipse Plugin architecture.</b> The Eclipse OSGi framework (Equinox)
-	    can run inside of a Web application. This has been demonstrated by several
-	    parties, and a subproject of the Equinox project has already been
-	    established (see <a href="http://www.eclipse.org/equinox/incubator/server/">http://www.eclipse.org/equinox/incubator/server/</a>)…</li>
-	  <li><b>Enable AJAX UI development based on a Java component library. </b>For
-	    enabling UI development based on a Java component library the project has
-	    received a contribution from Innoopract (W4Toolkit), which provides a rich
-	    set of UI components, event-driven program control, a generic mechanism for
-	    updating arbitrary UI elements of a web UI based on AJAX, and a lifecycle
-	    handling comparable to the one used in Java Server Faces. Furthermore the
-	    component library offers a mechanism for browser detection and can adapt to
-	    the capabilities of browsers by using rendering kits (NoScript, Script,
-	    AJAX).</li>
-	  <li><b>Provide a Web Workbench similar to the Eclipse platform workbench: </b>
-	    <ul>
-	      <li>provides selection service (with session scope),</li>
-	      <li>provides extension points for action sets, workbench parts,
-	        perspectives, preference pages, etc.,</li>
-	      <li>enables plug-ins to contribute to workbench parts provided by other
-	        plug-ins (e.g. action contributions)</li>
-	    </ul>
-	  </li>
-	  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
-	</ul>
+			<h2>Scope </h2>
+			<p>The objectives of the RAP project are:</p>
+			
+			<ul>
+			  <li><b>Enable the development of Rich Internet Applications that are based on
+			    the Eclipse Plugin architecture.</b> The Eclipse OSGi framework (Equinox)
+			    can run inside of a Web application. This has been demonstrated by several
+			    parties, and a subproject of the Equinox project has already been
+			    established (see <a href="http://www.eclipse.org/equinox/incubator/server/">http://www.eclipse.org/equinox/incubator/server/</a>)…</li>
+			  <li><b>Enable AJAX UI development based on a Java component library. </b>For
+			    enabling UI development based on a Java component library the project has
+			    received a contribution from Innoopract (W4Toolkit), which provides a rich
+			    set of UI components, event-driven program control, a generic mechanism for
+			    updating arbitrary UI elements of a web UI based on AJAX, and a lifecycle
+			    handling comparable to the one used in Java Server Faces. Furthermore the
+			    component library offers a mechanism for browser detection and can adapt to
+			    the capabilities of browsers by using rendering kits (NoScript, Script,
+			    AJAX).</li>
+			  <li><b>Provide a Web Workbench similar to the Eclipse platform workbench: </b>
+			    <ul>
+			      <li>provides selection service (with session scope),</li>
+			      <li>provides extension points for action sets, workbench parts,
+			        perspectives, preference pages, etc.,</li>
+			      <li>enables plug-ins to contribute to workbench parts provided by other
+			        plug-ins (e.g. action contributions)</li>
+			    </ul>
+			  </li>
+			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
+			</ul>
+		</div>
 
 		<div class="homeitem">
-			<h3>RAP News</h3>
+			<h3>Meet RAP</h3>
 			<ul>
-				<li><a href="http://eclipseworld.net/thursday_am.htm">RAP tuturial at the EclipseWorld Conference, Boston, Sept 6-8</a></li>
+				<li><a href="http://eclipseworld.net/thursday_am.htm">RAP tutorial at the EclipseWorld Conference, Boston, Sept 6-8</a></li>
 				<li><a href="http://www.ajaxworldconference.com">RAP presentation at AJAXWORLD Conference, Santa Clara, Oct 2-4</a></li>
+				<li><a href="http://www.eclipsecon.org/summiteurope2006/">RAP - Rich Ajax Platform - Overview and future directions at Eclipse Summit Europe, Esslingen, Germany, Oct 11-12</a></li>
 			</ul>
 		</div>
 		<hr class="clearer" />
@@ -88,5 +90,5 @@ EOHTML;
 
 
 	# Generate the web page
-	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
