@@ -34,7 +34,7 @@ host: dev.eclipse.org<br>
 repository: /cvsroot/technology<br>
 method: pserver<br>
 username: anonymous<br>
-password: blank<br>
+password: <em>leave blank</em><br>
 </p>
 <p>Check out the subcomponent <code>org.eclipse.rap.w4t</code>.</p>
 </li>
@@ -48,7 +48,7 @@ host: dev.eclipse.org<br>
 repository: /cvsroot/eclipse<br>
 method: pserver<br>
 username: anonymous<br>
-password: blank<br>
+password: <em>leave blank</em><br>
 </p>
 </li>
 
