@@ -80,7 +80,7 @@ $html = <<<EOHTML
 				<li><a href="http://dev.eclipse.org/mhonarc/lists/rap-dev/maillist.html">Mailing list</a></li>
 				<li><a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">Newsgroup</a></li>
 				<li><a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">Subscribe to mailing list</a></li>
-				<li><a href="http://wiki.eclipse.org/index.php/RAP">Project planning</a></li>
+				<li><a href="http://wiki.eclipse.org/index.php/RAP">Wiki</a></li>
 			</ul>
 		</div>
 		<div class="sideitem">
