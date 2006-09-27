@@ -28,7 +28,7 @@ $html = <<<EOHTML
 <p>The project has not yet released builds. As soon as all of the Innoopract code contribution has been approved we will provide builds.
 In the mean time you can check out the sources from CVS and add the not yet approved files from the download at innoopract.com.
 More information about how to do the source check out is available <a href="cvs.php">here</a>.</p>
-<p>Even with the absence of a build you can start to explore RAP based on an end to end example with some documentation available on our wiki. Get to the download <a href="http://wiki.eclipse.org/index.php/RapExamples">here</a>.</p>
+<p>Even with the absence of a build you can start to explore RAP based on an end to end example with some documentation available on our wiki. <a href="http://wiki.eclipse.org/index.php/RapExamples">Get to the download here</a>.</p>
 
 </div>
 
