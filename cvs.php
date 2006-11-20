@@ -63,8 +63,8 @@ uses port 80 or change the port settings with the VM-argument
 Open a Browser and type <em>http://localhost/rap</em> (or
 <em>http://localhost:&lt;port&gt;/rap</em> in case you changed the port)
 to access the RAP demo application.</p>
+<p />
 </div>
-<br><br>
 EOHTML;
 
 
