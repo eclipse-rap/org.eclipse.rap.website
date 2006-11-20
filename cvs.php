@@ -23,45 +23,46 @@ $pageAuthor		= "Frank Appel";
 $html = <<<EOHTML
 
 
-	<div id="midcolumn">
-		<h1>$pageTitle</h1>
-<p>Please follow the subsequent steps to get your copy of the current RAP development state:</p>
-<ul><li>
-<h4>Step 1:</h4>
-<p>To check out the sources connect to the following repository:</p>
-<p>
-host: dev.eclipse.org<br>
-repository: /cvsroot/technology<br>
-method: pserver<br>
-username: anonymous<br>
-password: <em>leave blank</em><br>
-</p>
-<p>Check out the subcomponent <code>org.eclipse.rap.w4t</code>.</p>
-</li>
+<div id="midcolumn">
+<h1>$pageTitle</h1>
+<p class=bar>CVS checkout:</p>
 
-<li>
-<h4>Step 2:</h4>
-<p>You also need to check out the component
-<code>org.eclipse.equinox.servlet.api</code> available at the following repository:</p>
-<p>
-host: dev.eclipse.org<br>
-repository: /cvsroot/eclipse<br>
-method: pserver<br>
-username: anonymous<br>
-password: <em>leave blank</em><br>
-</p>
-</li>
+<p>Assuming you're using <em>Eclipse</em>, the easiest way to get everything you 
+need is to "import" a team project set. The project set file can be downloaded
+<a href="resources/rap.psf">here</a>. After you've downloaded the file, choose 
+<em>File</em> -> <em>Import</em> from the menu of your <em>Eclipse IDE</em>, 
+which opens a dialog. Select <em>Team</em> -> <em>Team Project Set</em> and
+click <em>next</em>. Enter the path to the file you've just downloaded,
+click <em>finish</em> and the checkout of the necessary projects will start.</p>
 
-<li>
-<h4>Step 3:</h4>
-<p>There are still a few files of the Innoopract code contribution in approval state.
-Therefore the <code>org.eclipse.rap.w4t</code> project will not compile. Those missing
-files can be downloaded
-<a href="http://www.w4teclipse.com/w4teclipse/patch/org.eclipse.w4t.rap-patch.zip">here</a>.
-Extract the archive into the project's root folder. After a refresh the error markers 
-should vanish.</p>
-</li>
-</ul>
+<p><strong>Note:</strong> The project <em>org.eclipse.rap.rwt</em>
+will not compile due to a missing library. This library contains a build
+version of the javascript GUI framework <em>Qooxdoo</em>
+(<a href="http://qooxdoo.org">qooxdoo.org</a>). It is not yet integrated
+into <em>CVS</em>, since the current qooxdoo license is not compatible with 
+<em>EPL</em>. But the license changes are under way and till then you can 
+get a copy of the library from
+<a href="http://w4teclipse.com:8080/w4content/qooxdoo.jar">here</a>.</p>
+
+
+<p class=bar>Demo Launch:</p>
+
+<p>The team project set includes bundles that put together an 
+<em>Http Service</em> environment which is the simplest way 
+to set up an development runtime. For more information see
+<a href="http://www.eclipse.org/equinox/server/http_in_equinox.php">Embedding an HTTP server in Equinox</a>.
+</p>
+
+<p>To launch the <em>RAP-Demo</em> open the <em>Run</em> wizard by selecting
+<em>Run</em>/<em>Run</em> from the IDE's menu. In the wizard choose 
+<em>Equinox OSGi Framework</em> -> <em>RAP-Demo</em> and
+after that click <em>run</em>. Some messages in the console view should indicate that
+the http service was started at port 80 (ensure that no other service 
+uses port 80 or change the port settings with the VM-argument 
+<em>-Dorg.osgi.service.http.port=&lt;port&gt;</em>).
+Open a Browser and use the address <em>http://localhost/rap</em> (or
+<em>http://localhost:&lt;port&gt;/rap</em> in case you changed the port) to access
+the RAP demo application.</p>
 </div>
 
 EOHTML;
