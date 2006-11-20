@@ -60,7 +60,7 @@ after that click <em>run</em>. Some messages in the console view should indicate
 the http service was started at port 80 (ensure that no other service 
 uses port 80 or change the port settings with the VM-argument 
 <em>-Dorg.osgi.service.http.port=&lt;port&gt;</em>).
-Open a Browser and type type <em>http://localhost/rap</em> (or
+Open a Browser and type <em>http://localhost/rap</em> (or
 <em>http://localhost:&lt;port&gt;/rap</em> in case you changed the port)
 to access the RAP demo application.</p>
 </div>
