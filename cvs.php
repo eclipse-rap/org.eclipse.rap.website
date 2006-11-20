@@ -64,7 +64,7 @@ Open a Browser and type <em>http://localhost/rap</em> (or
 <em>http://localhost:&lt;port&gt;/rap</em> in case you changed the port)
 to access the RAP demo application.</p>
 </div>
-
+<br><br>
 EOHTML;
 
 
