@@ -1,4 +1,4 @@
-<?php require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");																													require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	# Initial revision: Frank Appel
@@ -25,10 +25,10 @@ $html = <<<EOHTML
 
 <div id="midcolumn">
 <h1>$pageTitle</h1>
-<p class=bar>CVS checkout:</p>
+<p class="bar">CVS checkout:</p>
 
 <p>Assuming you're using <em>Eclipse</em>, the easiest way to get everything you 
-need is to "import" a team project set. The project set file can be downloaded
+need is to "import" a team project set. The project set file is available
 <a href="resources/rap.psf">here</a>. After you've downloaded the file, choose 
 <em>File</em> -> <em>Import</em> from the menu of your <em>Eclipse IDE</em>, 
 which opens a dialog. Select <em>Team</em> -> <em>Team Project Set</em> and
@@ -45,7 +45,7 @@ get a copy of the library from
 <a href="http://w4teclipse.com:8080/w4content/qooxdoo.jar">here</a>.</p>
 
 
-<p class=bar>Demo Launch:</p>
+<p class="bar">Demo Launch:</p>
 
 <p>The team project set includes bundles that put together an 
 <em>Http Service</em> environment which is the simplest way 
