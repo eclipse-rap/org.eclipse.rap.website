@@ -15,20 +15,21 @@
   
   <description url="/rap/index.php"
      paragraph-url="/rap/project-info/project-page-paragraph.html"/>
-
+<!-- 
   <summary paragraph-url="/rap/project-info/executive-summary.html"/>
 
   <getting-started url="/rap/users.php"/>
-
+-->
   <mailing-lists>
     <list name="rap-dev"/>
   </mailing-lists>
   
   <newsgroups>
-	<newsgroup name="eclipse.technology.rap"/>
+	  <newsgroup name="eclipse.technology.rap"/>
   </newsgroups>
-  
+<!-- 
   <project-plan url="/rap/plan.php"/>
+-->
   <releases>
   </releases>
 </project>
