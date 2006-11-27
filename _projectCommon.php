@@ -10,7 +10,7 @@
 		 $Nav->addCustomNav("FAQ", "/rap/faq.php", "", 2);
 	}   
 	
-	function add2users() {
+	function add2contributors() {
 	   global $Nav;
 	}
 	
