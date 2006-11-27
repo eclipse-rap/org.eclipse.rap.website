@@ -5,7 +5,6 @@
 
 	function add2users() {
 	   global $Nav;
-	   $Nav->addCustomNav("FAQ", "/dash/user-faq.php", "", 2);
 		 $Nav->addCustomNav("CVS", "/rap/cvs.php", "", 2);
 		 $Nav->addCustomNav("FAQ", "/rap/faq.php", "", 2);
 	}   
