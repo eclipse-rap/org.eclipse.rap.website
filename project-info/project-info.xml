@@ -1,0 +1,34 @@
+<project>
+  <name>Rich Ajax Platform</name>
+  <short-name>RAP</short-name>
+  <bugzilla>
+    <product name="RAP"/>
+  </bugzilla>
+<!-- 
+  <committers url="/rap/dev.php"/>
+  <contributors url="/rap/dev.php"/>
+  <leaders url="/rap/team.php"/>
+-->
+ <cvs repository="/cvsroot/technology/">
+    <module path="org.eclipse.rap" /> 
+  </cvs>
+  
+  <description url="/rap/index.php"
+     paragraph-url="/rap/project-info/project-page-paragraph.html"/>
+
+  <summary paragraph-url="/rap/project-info/executive-summary.html"/>
+
+  <getting-started url="/rap/users.php"/>
+
+  <mailing-lists>
+    <list name="rap-dev"/>
+  </mailing-lists>
+  
+  <newsgroups>
+	<newsgroup name="eclipse.technology.rap"/>
+  </newsgroups>
+  
+  <project-plan url="/rap/plan.php"/>
+  <releases>
+  </releases>
+</project>
