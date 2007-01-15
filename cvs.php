@@ -49,7 +49,7 @@ get a copy of the library from
 
 <p>The team project set includes bundles that put together an 
 <em>Http Service</em> environment which is the simplest way 
-to set up an development runtime. For more information see
+to set up a development runtime. For more information see
 <a href="http://www.eclipse.org/equinox/server/http_in_equinox.php">Embedding an HTTP server in Equinox</a>.
 </p>
 
