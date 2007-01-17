@@ -38,15 +38,15 @@ $html = <<<EOHTML
 			    can run inside of a Web application. This has been demonstrated by several
 			    parties, and a subproject of the Equinox project has already been
 			    established (see <a href="http://www.eclipse.org/equinox/incubator/server/">http://www.eclipse.org/equinox/incubator/server/</a>)</li>
-			  <li><b>Enable AJAX UI development based on a Java component library. </b>For
+			  <li><b>Enable AJAX UI development based on a Java component library with SWT api. </b>For
 			    enabling UI development based on a Java component library the project has
-			    received a contribution from Innoopract (W4Toolkit), which provides a rich
-			    set of UI components, event-driven program control, a generic mechanism for
-			    updating arbitrary UI elements of a web UI based on AJAX, and a lifecycle
-			    handling comparable to the one used in Java Server Faces. Furthermore the
-			    component library offers a mechanism for browser detection and can adapt to
-			    the capabilities of browsers by using rendering kits (NoScript, Script,
-			    AJAX).</li>
+			    received an initial code contribution from Innoopract (W4Toolkit). <b>NEW:</b> Based on the
+			    infrastructure provided by this code contributions we have implemented a first
+			    version of a new widget toolkit with SWT api, called RWT. More info on RWT can be
+			    found here: <a href="http://wiki.eclipse.org/index.php/RWTOverview">
+			    http://wiki.eclipse.org/index.php/RWTOverview</a>. RWT is using a sophisiticated JavaScript
+			    framework for client side rendering: <a href="http://qooxdoo.org">qooxdoo</a>.
+			    </li>
 			  <li><b>Provide a Web Workbench similar to the Eclipse platform workbench: </b>
 			    <ul>
 			      <li>provides selection service (with session scope),</li>
@@ -55,18 +55,18 @@ $html = <<<EOHTML
 			      <li>enables plug-ins to contribute to workbench parts provided by other
 			        plug-ins (e.g. action contributions)</li>
 			    </ul>
+			    <b>NEW:</b>A first implementation of a web workbench is in CVS and the demo will be updated shortly!
 			  </li>
 			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
+			  <li><b>Check out the RAP demo:</b> <a href="http://rap.eclipse.org/rwt/">RWT / Workbench demo>
 			</ul>
 
 
 		<div class="homeitem">
 			<h3>Meet the RAP team</h3>
 			<ul>
-				<li><a href="http://eclipseworld.net/thursday_am.htm">EclipseWorld Conference, Boston, Sept 6-8</a><span><br>Tutorial: Web 2.0 the Eclipse Way With The Rich AJAX Platform</span></li>
-				<li><a href="http://www.eclipse.org/community/webinars2006.php">Eclipse Webinar on the RAP project, Sept 27</a><span><br>Eclipse on the server side with the Rich AJAX Platform (<a href="http://www.eclipse.org/rap/resources/rap_webinar.pdf">slides</a>)</span></li>
-				<li><a href="http://www.ajaxworldconference.com">AJAXWORLD Conference, Santa Clara, Oct 2-4</a><span><br>Rich Ajax Platform (RAP) - Web 2.0 the Eclipse Way </span></li>
-				<li><a href="http://www.eclipsecon.org/summiteurope2006/">Eclipse Summit Europe, Esslingen, Germany, Oct 11-12</a><span><br>RAP - Rich Ajax Platform - Overview and future directions</span></li>
+				<li><a href="http://http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
+				<li><a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1">Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a><span><br>Building Ajax applications with the Eclipse Rich Ajax Platform</span></li>
 			</ul>
 		</div>
 		<hr class="clearer" />
