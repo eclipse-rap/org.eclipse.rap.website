@@ -54,8 +54,8 @@ $html = <<<EOHTML
 			        perspectives, preference pages, etc.,</li>
 			      <li>enables plug-ins to contribute to workbench parts provided by other
 			        plug-ins (e.g. action contributions)</li>
+			      <li><b>NEW:</b> A first implementation of a web workbench is in CVS</li>
 			    </ul>
-			    <b>NEW:</b>A first implementation of a web workbench is in CVS and the demo will be updated shortly!
 			  </li>
 			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
 			</ul>
