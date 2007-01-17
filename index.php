@@ -58,7 +58,6 @@ $html = <<<EOHTML
 			    <b>NEW:</b>A first implementation of a web workbench is in CVS and the demo will be updated shortly!
 			  </li>
 			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
-			  <!--li><b>Check out the RAP demo:</b> <a href="http://rap.eclipse.org/rwt/" target="_blank">RWT / Workbench demo-->
 			</ul>
 
 
