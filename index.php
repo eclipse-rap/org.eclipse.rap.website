@@ -54,7 +54,8 @@ $html = <<<EOHTML
 			        perspectives, preference pages, etc.,</li>
 			      <li>enables plug-ins to contribute to workbench parts provided by other
 			        plug-ins (e.g. action contributions)</li>
-			      <li><b>NEW:</b> A first implementation of a web workbench is in CVS</li>
+			      <li>NEW: A first implementation of a web workbench is in CVS</li>
+			      <li><b>Check out the RAP demo:</b> <a href="http://rap.eclipse.org/rwt/" target="_blank">RWT / Workbench demo></li>
 			    </ul>
 			  </li>
 			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
@@ -64,7 +65,7 @@ $html = <<<EOHTML
 		<div class="homeitem">
 			<h3>Meet the RAP team</h3>
 			<ul>
-				<li><a href="http://http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
+				<li><a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
 				<li><a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a><span><br>Building Ajax applications with the Eclipse Rich Ajax Platform</span></li>
 			</ul>
 		</div>
