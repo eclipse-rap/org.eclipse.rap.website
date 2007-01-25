@@ -55,7 +55,8 @@ $html = <<<EOHTML
 			      <li>enables plug-ins to contribute to workbench parts provided by other
 			        plug-ins (e.g. action contributions)</li>
 			      <li>NEW: A first implementation of a web workbench is in CVS</li>
-			      <li><b>Check out the RAP demo:</b> <a href="http://rap.eclipse.org/rwt/" target="_blank">RWT / Workbench demo></li>
+			      <li><b>Check out the RAP demo:</b> <a href="http://rap.eclipse.org/rap" target="_blank">RWT / Workbench demo</a></li>
+			      <li>RWT demo:</b> <a href="http://rap.eclipse.org/rap?w4t_startup=controls" target="_blank">RWT widget demo</a></li>
 			    </ul>
 			  </li>
 			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
