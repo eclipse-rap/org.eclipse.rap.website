@@ -42,7 +42,7 @@ version of the javascript GUI framework <em>Qooxdoo</em>
 into <em>CVS</em>, since the current qooxdoo license is not compatible with 
 <em>EPL</em>. But the license changes are under way and till then you can 
 get a copy of the library from
-<a href="http://w4teclipse.com:8080/w4content/qooxdoo.jar">here</a>.</p>
+<a href="http://w4teclipse.com:8080/w4content/qooxdoo-0.6.5.jar">here</a>.</p>
 
 
 <p class="bar">Demo Launch:</p>
