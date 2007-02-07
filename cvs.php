@@ -35,16 +35,6 @@ which opens a dialog. Select <em>Team</em> -> <em>Team Project Set</em> and
 click <em>next</em>. Enter the path to the file you've just downloaded,
 click <em>finish</em> and the checkout of the necessary projects will start.</p>
 
-<p><strong>Note:</strong> The project <em>org.eclipse.rap.rwt</em>
-will not compile due to a missing library. This library contains a build
-version of the javascript GUI framework <em>Qooxdoo</em>
-(<a href="http://qooxdoo.org">qooxdoo.org</a>). It is not yet integrated
-into <em>CVS</em>, since the current qooxdoo license is not compatible with 
-<em>EPL</em>. But the license changes are under way and till then you can 
-get a copy of the library from
-<a href="http://w4teclipse.com:8080/w4content/qooxdoo-0.6.5.jar">here</a>.</p>
-
-
 <p class="bar">Demo Launch:</p>
 
 <p>The team project set includes bundles that put together an 
