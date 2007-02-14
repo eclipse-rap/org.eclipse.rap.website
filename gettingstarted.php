@@ -21,14 +21,16 @@
         <div class="homeitem3col">
 
 <h3>How do I write a Hello World Workbench with RAP?</h3>
-<p><strong>1. Create a new project</strong></p>
+<p><strong>1. Install the latest RAP build from the downloads page</strong></p>
+
+<p><strong>2. Create a new project</strong></p>
 </a>
 <p>Create a new Project by right-clicking in the package explorer and select 
   <strong>New &gt; Project</strong>. In the upcoming "New Project"-wizard, 
   select <strong>Plug-in Project</strong> from the section 
   <strong>Plug-in Development</strong>.</p>
  
-<p><strong>2. Create four Classes</strong></p>
+<p><strong>3. Create four Classes</strong></p>
 <p> First you should create a package <code>org.eclipse.rap.helloworld</code> 
   (or another package name to your liking) to contain your source files. Using 
   the default package is generally not recommended.</p>

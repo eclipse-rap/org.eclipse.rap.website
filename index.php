@@ -30,6 +30,13 @@ $html = <<<EOHTML
         the <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php" target="_blank">validation phase</a>.
     </p>
     <p><img src="resources/webworkbench.png" alt="A demo webworkbench">
+    <br>
+    <ul>
+			      <li><b>See the demo in action:</b> <a href="http://rap.eclipse.org/rap" target="_blank">RWT / Workbench demo</a></li>
+			      <li>Get a demo of the RWT widget toolkit:</b> <a href="http://rap.eclipse.org/rap?w4t_startup=controls" target="_blank">RWT widget demo</a></li>
+			      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
+    </ul>
+    </p>
     </p>
 			<h2>Project Scope</h2>
 			<p>The objectives of the RAP project are:</p>
@@ -56,22 +63,12 @@ $html = <<<EOHTML
 			        perspectives, preference pages, etc.,</li>
 			      <li>enables plug-ins to contribute to workbench parts provided by other
 			        plug-ins (e.g. action contributions)</li>
-			      <li>NEW: A first implementation of a web workbench is in CVS</li>
-			      <li><b>Check out the RAP demo:</b> <a href="http://rap.eclipse.org/rap" target="_blank">RWT / Workbench demo</a></li>
-			      <li>RWT demo:</b> <a href="http://rap.eclipse.org/rap?w4t_startup=controls" target="_blank">RWT widget demo</a></li>
 			    </ul>
 			  </li>
 			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
 			</ul>
 
 
-		<div class="sideitem">
-			<h3>Meet the RAP team</h3>
-			<ul>
-				<li><a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
-				<li><a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a><span><br>Building Ajax applications with the Eclipse Rich Ajax Platform</span></li>
-			</ul>
-		</div>
 		<hr class="clearer" />
 	</div>
 	<div id="rightcolumn">
@@ -85,6 +82,14 @@ $html = <<<EOHTML
 				<li><a href="http://www.eweek.com/article2/0,1895,1939964,00.asp" target="_blank">eweek - new ajax project for eclipse</a></li>
 			</ul>
 		</div>
+		<div class="sideitem">
+			<h3>Meet the RAP team</h3>
+			<ul>
+				<li><a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
+				<li><a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a><span><br>Building Ajax applications with the Eclipse Rich Ajax Platform</span></li>
+			</ul>
+		</div>
+
 	</div>
 
 EOHTML;
