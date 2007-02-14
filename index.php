@@ -29,7 +29,9 @@ $html = <<<EOHTML
         by using the Eclipse development model, plug-ins and a Java-only API. The project is in 
         the <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php" target="_blank">validation phase</a>.
     </p>
-			<h2>Scope </h2>
+    <p><img src="resources/webworkbench.png" alt="A demo webworkbench">
+    </p>
+			<h2>Project Scope</h2>
 			<p>The objectives of the RAP project are:</p>
 			
 			<ul>
@@ -63,7 +65,7 @@ $html = <<<EOHTML
 			</ul>
 
 
-		<div class="homeitem">
+		<div class="sideitem">
 			<h3>Meet the RAP team</h3>
 			<ul>
 				<li><a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
@@ -75,16 +77,6 @@ $html = <<<EOHTML
 	<div id="rightcolumn">
 		<div class="sideitem">
 		  <img src="http://www.eclipse.org/images/gazoo-incubation.jpg" alt="Project is in incubation">
-		</div>
-		<div class="sideitem">
-			<h6>Project links</h6>
-			<ul>
-				<li><a href="http://dev.eclipse.org/mhonarc/lists/rap-dev/maillist.html">Mailing list</a></li>
-				<li><a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">Newsgroup</a></li>
-				<li><a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">Subscribe to mailing list</a></li>
-				<li><a href="http://wiki.eclipse.org/index.php/RAP">RAP wiki</a></li>
-				<li><a href="http://wiki.eclipse.org/index.php/RapPlan">Project planning</a></li>
-			</ul>
 		</div>
 		<div class="sideitem">
 			<h6>RAP in the news</h6>

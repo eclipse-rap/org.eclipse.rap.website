@@ -7,7 +7,7 @@
 	   global $Nav;
 		 $Nav->addCustomNav("CVS", "/rap/cvs.php", "", 2);
 		 $Nav->addCustomNav("FAQ", "/rap/faq.php", "", 2);
-		 
+		 $Nav->addCustomNav("RAP wiki", "http://wiki.eclipse.org/index.php/RAP", "", 2);
 	}   
 	
 	function add2contributors() {
