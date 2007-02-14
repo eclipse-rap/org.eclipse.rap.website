@@ -27,9 +27,9 @@
   <newsgroups>
 	  <newsgroup name="eclipse.technology.rap"/>
   </newsgroups>
-<!-- 
-  <project-plan url="/rap/plan.php"/>
--->
+
+  <project-plan url="http://wiki.eclipse.org/index.php/RapPlan"/>
+
   <releases>
   </releases>
 </project>
