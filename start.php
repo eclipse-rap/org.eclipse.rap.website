@@ -20,7 +20,7 @@
 		         
         <div class="homeitem3col">
 
-<h3>How do I write a Hello World with RAP?</h3>
+<h3>How do I write a Hello World Workbench with RAP?</h3>
 <p><strong>1. Create a new project</strong></p>
 </a>
 <p>Create a new Project by right-clicking in the package explorer and select 
