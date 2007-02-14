@@ -24,12 +24,6 @@ $html = <<<EOHTML
 
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
-<h3>Why does RAP not compile when I check out the sources?</h3>
-<p>This is because some files of the Innoopract code contribution are still missing. 
- The code contribution has been staged in two phases, and phase two is not yet finalized. 
- In the first phase the code where the IP completely belongs to Innoopract has been submitted, approved and is available in CVS.
- In the second phase code that contains as well IP from other open source projects has been submitted, approval of this code is pending. 
- Until the approval has been given, you can download the missing files from the Innoopract website.</p>
 
 <h3>What is the goal of RAP?</h3>
 <p>It is about enabling programmers to develop powerful, AJAX Web applications
@@ -59,7 +53,7 @@ independently of RCP.</p>
       <td>Widget Toolkit</td>
       <td>SWT</td>
 
-      <td>WWW Widget Toolkit (W4T)</td>
+      <td>RAP Widget Toolkit (RWT)</td>
     </tr>
     <tr>
       <td>Model View Controller</td>
