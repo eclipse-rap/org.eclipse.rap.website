@@ -7,7 +7,6 @@
 	   global $Nav;
 		 $Nav->addCustomNav("CVS", "/rap/cvs.php", "", 2);
 		 $Nav->addCustomNav("FAQ", "/rap/faq.php", "", 2);
-		 $Nav->addCustomNav("Getting Started", "/rap/start.php", 	"", 2);
 		 
 	}   
 	
