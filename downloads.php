@@ -29,7 +29,7 @@ $html = <<<EOHTML
 			<h3>RAP Update Site</h3>
 			<ul>
 				<li>RAP 1.0M1 for Eclipse 3.2 / 3.3: <b>http://download.eclipse.org/technology/rap/update-site/</b>
-	        		<a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-site-1.0.0.M1.zip">&nbsp;[zipped update site]</a>
+	        		<a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M1.zip">&nbsp;[zipped update site]</a>
 	        	</li>
 			</ul>
 		</div>
