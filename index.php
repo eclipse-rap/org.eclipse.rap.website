@@ -32,7 +32,7 @@ $html = <<<EOHTML
     <p><img src="resources/webworkbench.png" alt="A demo webworkbench">
     <br>
     <ul>
-			      <li><b>See the demo in action:</b> <a href="http://rap.eclipse.org/rap" target="_blank">RWT / Workbench demo</a></li>
+			      <li><b>See the demo in action:</b> <a href="http://rap.eclipse.org/rap" target="_blank">Workbench demo</a></li>
 			      <li>Get a demo of the RWT widget toolkit:</b> <a href="http://rap.eclipse.org/rap?w4t_startup=controls" target="_blank">RWT widget demo</a></li>
 			      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
     </ul>
@@ -83,7 +83,7 @@ $html = <<<EOHTML
 			</ul>
 		</div>
 		<div class="sideitem">
-			<h3>Meet the RAP team</h3>
+			<h6>Meet the RAP team</h6>
 			<ul>
 				<li><a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
 				<li><a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a><span><br>Building Ajax applications with the Eclipse Rich Ajax Platform</span></li>
