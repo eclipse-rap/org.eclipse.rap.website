@@ -17,9 +17,9 @@
      paragraph-url="/rap/project-info/project-page-paragraph.html"/>
 <!-- 
   <summary paragraph-url="/rap/project-info/executive-summary.html"/>
-
-  <getting-started url="/rap/users.php"/>
 -->
+  <getting-started url="/rap/gettingstarted.php"/>
+
   <mailing-lists>
     <list name="rap-dev"/>
   </mailing-lists>
