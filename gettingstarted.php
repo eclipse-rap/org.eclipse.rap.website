@@ -59,7 +59,7 @@
   or in an environment where you are not allowed to access privileged ports 
   (e.g. as a non-admin user on some OS).</p>
   
-<img src="../../images/hello-world-params.png"/>
+<img src="resouces/hello-world-params.png"/>
   
 <p>To actually start your demo, click the <strong>Run</strong> button. The 
   correct startup should display in the Eclipse Console through a message 
