@@ -37,6 +37,16 @@ $html = <<<EOHTML
 			      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
     </ul>
     </p>
+    <h3>Build ajax apps with the Eclipse development model and workbench functionality</h3>
+    <p><img src="resources/workbench_pde.png" alt="Webworkbench plugin.xml">
+    <br>
+    <p><img src="resources/viewpart.png" alt="A ViewPart implementation">    
+    <ul>
+			      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
+    </ul>
+
+
+    </p>
     </p>
 			<h2>Project Scope</h2>
 			<p>The objectives of the RAP project are:</p>
