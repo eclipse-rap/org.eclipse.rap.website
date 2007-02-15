@@ -21,7 +21,7 @@
         <div class="homeitem3col">
 
 <h3>How do I get my first web workbench with RAP?</h3>
-<p><strong>Install the latest RAP build from the downloads page</strong></p>
+<p><strong>Install the latest RAP build from the downloads page.</strong></p>
 
 <h3>Demo Application</h3>
 
@@ -38,6 +38,12 @@
   </strong>.
   This demo will then appear with all source files into your workspace / Package 
   Explorer. The demo also provides a ready-to use Launch configuration.</p>
+
+<p>This is the plugin.xml of the demo project, showing how the workbench is 
+   build by views and perspectives.</p>
+   
+   <img src="resources/workbench_pde.png"/>
+   
 
 <p>To run the demo, select <strong>Run</strong>. In the upcoming Launch 
   configuration wizard, select <strong>Rich AJAX Platform Demo</strong> from 
