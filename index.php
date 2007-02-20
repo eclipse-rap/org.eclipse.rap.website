@@ -7,7 +7,7 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 $pageTitle 		= "Rich Ajax Platform (RAP) Project";
-$pageKeywords	= "AJAX, rap, w4t, eclipse rap";
+$pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
 	# Add page-specific Nav bars here
@@ -25,7 +25,7 @@ $html = <<<EOHTML
 	<div id="midcolumn">
 		<h1>$pageTitle</h1>
 		<h2>What is RAP?</h2>
-		<p> The RAP project aims to enable developers to build rich, AJAX-enabled Web applications 
+		<p> The RAP project aims to enable developers to build rich, Ajax-enabled Web applications 
         by using the Eclipse development model, plug-ins and a Java-only API. The project is in 
         the <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php" target="_blank">validation phase</a>.
     </p>
@@ -37,7 +37,7 @@ $html = <<<EOHTML
 			      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
     </ul>
     </p>
-    <h3>Build ajax apps with the Eclipse development model and workbench functionality</h3>
+    <h3>Build Ajax apps with the Eclipse development model and workbench functionality</h3>
     <p><img src="resources/workbench_pde.png" alt="Webworkbench plugin.xml">
     <br>
     <p><img src="resources/viewpart.png" alt="A ViewPart implementation">    
@@ -51,22 +51,20 @@ $html = <<<EOHTML
 			<h2>Project Scope</h2>
 			<p>The objectives of the RAP project are:</p>
 			
-			<ul>
-			  <li><b>Enable the development of Rich Internet Applications that are based on
+			  <p><b>Enable the development of Rich Internet Applications that are based on
 			    the Eclipse Plugin architecture.</b> The Eclipse OSGi framework (Equinox)
 			    can run inside of a Web application. This has been demonstrated by several
 			    parties, and a subproject of the Equinox project has already been
-			    established (see <a href="http://www.eclipse.org/equinox/incubator/server/" target="_blank">http://www.eclipse.org/equinox/incubator/server/</a>)</li>
-			  <li><b>Enable AJAX UI development based on a Java component library with SWT api. </b>For
+			    established (see <a href="http://www.eclipse.org/equinox/incubator/server/" target="_blank">http://www.eclipse.org/equinox/incubator/server/</a>)</p>
+			  <p><b>Enable Ajax UI development based on a Java component library with SWT api. </b>For
 			    enabling UI development based on a Java component library the project has
 			    received an initial code contribution from Innoopract (W4Toolkit). <b>NEW:</b> Based on the
 			    infrastructure provided by this code contributions we have implemented a first
 			    version of a new widget toolkit with SWT api, called RWT. More info on RWT can be
 			    found here: <a href="http://wiki.eclipse.org/index.php/RWTOverview" target="_blank">
 			    http://wiki.eclipse.org/index.php/RWTOverview</a>. RWT is using a sophisiticated JavaScript
-			    framework for client side rendering: <a href="http://qooxdoo.org" target="_blank">qooxdoo</a>.
-			    </li>
-			  <li><b>Provide a Web Workbench similar to the Eclipse platform workbench: </b>
+			    framework for client side rendering: <a href="http://qooxdoo.org" target="_blank">qooxdoo</a>.</p>
+			  <p><b>Provide a Web Workbench similar to the Eclipse platform workbench: </b>
 			    <ul>
 			      <li>provides selection service (with session scope),</li>
 			      <li>provides extension points for action sets, workbench parts,
@@ -74,9 +72,8 @@ $html = <<<EOHTML
 			      <li>enables plug-ins to contribute to workbench parts provided by other
 			        plug-ins (e.g. action contributions)</li>
 			    </ul>
-			  </li>
-			  <li>The RAP API will be aligned with the Eclipse platform API as much as possible</li>
-			</ul>
+			  </p>
+			  <p>The RAP API will be aligned with the Eclipse platform API as much as possible</p>
 
 
 		<hr class="clearer" />
@@ -89,7 +86,7 @@ $html = <<<EOHTML
 			<h6>RAP in the news</h6>
 			<ul>
 				<li><a href="http://jax-award.de/jax_award/gewinner_en.php" target="_blank">RAP wins european innovation award</a></li>
-				<li><a href="http://www.eweek.com/article2/0,1895,1939964,00.asp" target="_blank">eweek - new ajax project for eclipse</a></li>
+				<li><a href="http://www.eweek.com/article2/0,1895,1939964,00.asp" target="_blank">eweek - new Ajax project for eclipse</a></li>
 			</ul>
 		</div>
 		<div class="sideitem">
