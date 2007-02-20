@@ -16,8 +16,6 @@
 
 <div id="maincontent">
 	<div id="midcolumn">
-		<!--	<div align="center"><h1>$pageTitle</h1></div> -->
-		         
         <div class="homeitem3col">
 
 <h3>How do I get my first web workbench with RAP?</h3>
@@ -69,13 +67,13 @@
   
 <p>To actually start your demo, click the <strong>Run</strong> button. The 
   correct startup should display in the Eclipse Console through a message 
-  saying <code style="color:red">INFO: Started SocketListener on 0.0.0.0:&ltport&gt;.</code> 
+  saying <code style="color:red">INFO: Started SocketListener on 0.0.0.0:&lt;port&gt;.</code> 
   If an error shows up, please make sure all other instances are stopped and 
   then retry with another port.</p>
 
-<p> Now that the rap demo application is running, you can access it using any 
-  browser. Please enter the URL <b><i>http://localhost:&lt;port&gt;/rap</b></i>.
-  <p>
+<p>Now that the rap demo application is running, you can access it using any 
+  browser. Please enter the URL <b><i>http://localhost:&lt;port&gt;/rap</i></b>.
+</p>
 
 <p>The rap demo application defines two entry points. The default is the 
   workbench demo. You can now select the controls-demo by explicitly passing a
@@ -89,8 +87,9 @@
   and please let us know how you like it. If you have any questions, comments 
   or remarks, please also don't hesitate contacting the RAP Team through 
   the RAP newsgroup. We will appreciate any feedback.</p>
-
-
+</div>
+</div>
+</div>
 EOHTML;
 
 
