@@ -32,8 +32,8 @@ $html = <<<EOHTML
     <p><img src="resources/webworkbench.png" alt="A demo webworkbench">
     <br>
     <ul>
-			      <li><b>See the webworkbench in action:</b> <a href="http://rap.eclipse.org/rap" target="_blank">Workbench demo</a></li>
-			      <li>Get a demo of the RWT widget toolkit:</b> <a href="http://rap.eclipse.org/rap?w4t_startup=controls" target="_blank">RWT widget demo</a></li>
+			      <li><b>See the webworkbench in action:</b> <a href="http://rap.innoopract.com/rap" target="_blank">Workbench demo</a></li>
+			      <li>Get a demo of the RWT widget toolkit:</b> <a href="http://rap.innoopract.com/rap?w4t_startup=controls" target="_blank">RWT widget demo</a></li>
 			      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
     </ul>
     </p>
