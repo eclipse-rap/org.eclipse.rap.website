@@ -23,14 +23,17 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 
 
-	<div id="midcolumn">
+<div id="midcolumn">
 		<h1>$pageTitle</h1>
-        <div class="homeitem3col">
+    <div class="homeitem3col">
 			<h3>RAP Update Site</h3>
 			<ul>
+				<li>RAP 1.0M2 for Eclipse 3.2 / 3.3: <b>http://download.eclipse.org/technology/rap/update-site/</b>
+	        		<a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M2.zip">&nbsp;[zipped update site]</a>
+	      </li>
 				<li>RAP 1.0M1 for Eclipse 3.2 / 3.3: <b>http://download.eclipse.org/technology/rap/update-site/</b>
 	        		<a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M1.zip">&nbsp;[zipped update site]</a>
-	        	</li>
+	      </li>
 			</ul>
 		</div>
 
