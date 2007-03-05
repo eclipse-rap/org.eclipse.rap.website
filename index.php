@@ -26,18 +26,21 @@ $html = <<<EOHTML
 		<h1>$pageTitle</h1>
 		<h2>What is RAP?</h2>
 		<p> The RAP project aims to enable developers to build rich, Ajax-enabled Web applications 
-        by using the Eclipse development model, plug-ins and a Java-only API. The project is in 
+        by using the Eclipse development model, plug-ins with the well known Eclipse workbench
+        extenstion points and a widget toolkit with SWT API (plus JFace). The project is in 
         the <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php" target="_blank">validation phase</a>.
     </p>
-    <p><img src="resources/webworkbench.png" alt="A demo webworkbench">
-    <br>
-    <ul>
-			      <li><b>See the webworkbench in action:</b> <a href="http://rap.innoopract.com/rap" target="_blank">Workbench demo</a></li>
-			      <li>Get a demo of the RWT widget toolkit:</b> <a href="http://rap.innoopract.com/rap?w4t_startup=controls" target="_blank">RWT widget demo</a></li>
-			      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
-    </ul>
+		<h2>M2 has been released</h2>
+		<p> Just in time for EclipseCon we have released our second milestone build of RAP (<a href="http://eclipse.org/rap/downloads.php">download</a>,
+		<a href="http://wiki.eclipse.org/index.php/Rap10M2_News" target="_blank">New and Noteworthy</a>). There is also a new demo application offering some
+		useful functionality for EclipseCon: the EclpseCon program in a RAP Ajax app, plus functionality to find and connect to other people. 
+		<a href="http://rap.innoopract.com/rap" target="_blank">Give it a try and explore RAP online</a>.
     </p>
-    <h3>Build Ajax apps with the Eclipse development model and workbench functionality</h3>
+    <p>
+    A core component of RAP is the RAP Widget Toolkit, which offers SWT API to the largest extend possible (for the web). See a demo <a href="http://rap.innoopract.com/rap?w4t_startup=controls" target="_blank">RWT widget demo</a>.
+    </p>
+    <p><img src="resources/webworkbench.png" alt="A demo webworkbench">
+    </p>
     <p><img src="resources/workbench_pde.png" alt="Webworkbench plugin.xml">
     <br>
     <p><img src="resources/viewpart.png" alt="A ViewPart implementation">    
