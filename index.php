@@ -34,12 +34,15 @@ $html = <<<EOHTML
 		<p> Just in time for EclipseCon we have released our second milestone build of RAP (<a href="http://eclipse.org/rap/downloads.php">download</a>,
 		<a href="http://wiki.eclipse.org/index.php/Rap10M2_News" target="_blank">New and Noteworthy</a>). There is also a new demo application offering some
 		useful functionality for EclipseCon: the EclpseCon program in a RAP Ajax app, plus functionality to find and connect to other people. 
-		<a href="http://rap.innoopract.com/rap" target="_blank">Give it a try and explore RAP online</a>.
+		</p>
+    <p>
+    <a href="http://rap.innoopract.com/rap" target="_blank">See the EclipseCon demo online</a>.
     </p>
     <p>
     A core component of RAP is the RAP Widget Toolkit, which offers SWT API to the largest extend possible (for the web). See a demo <a href="http://rap.innoopract.com/rap?w4t_startup=controls" target="_blank">RWT widget demo</a>.
     </p>
-    <p><img src="resources/webworkbench.png" alt="A demo webworkbench">
+    <p><a href="http://rap.innoopract.com/rap" target="_blank">
+      <img src="resources/webworkbench.png" alt="A demo webworkbench"></a>
     </p>
     <p><img src="resources/workbench_pde.png" alt="Webworkbench plugin.xml">
     <br>
