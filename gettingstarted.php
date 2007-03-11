@@ -19,7 +19,8 @@
         <div class="homeitem3col">
 
 <h3>How do I get my first web workbench with RAP?</h3>
-<p><strong>Install the latest RAP build from the <a href="downloads.php">downloads page</a>.</strong></p>
+<p><strong>Install the latest RAP build from the 
+  <a href="downloads.php">downloads page</a>.</strong></p>
 
 <h3>Demo Application</h3>
 
