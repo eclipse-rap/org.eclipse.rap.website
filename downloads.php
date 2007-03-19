@@ -23,16 +23,18 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 
 
-<div id="midcolumn">
-		<h1>$pageTitle</h1>
-
 	<div id="rightcolumn">
 		<div class="sideitem">
 		  <img src="http://www.eclipse.org/images/gazoo-incubation.jpg" alt="Project is in incubation">
 		</div>
   </div>
+
+
+<div id="midcolumn">
+		<h1>$pageTitle</h1>
+
   
-    <div class="midcolumn">
+    <div class="homeitem3col">
 			<h3>RAP Update Site</h3>
 			<ul>
 				<li>RAP 1.0M2 for Eclipse 3.2 / 3.3: <b>http://download.eclipse.org/technology/rap/update-site/</b>
