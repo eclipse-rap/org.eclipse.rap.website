@@ -38,7 +38,11 @@ $html = <<<EOHTML
 	      </li>
 			</ul>
 		</div>
-
+	<div id="rightcolumn">
+		<div class="sideitem">
+		  <img src="http://www.eclipse.org/images/gazoo-incubation.jpg" alt="Project is in incubation">
+		</div>
+  </div>
 </div>
 
 EOHTML;
