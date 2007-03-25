@@ -30,7 +30,7 @@ $html = <<<EOHTML
       <p><u>The best place for support is in the newsgroups, <b><i>NOT</i></b> 
         in the mailing lists.</u></p>
     <p>If you post to the mailing list, you will most likely be told "Please 
-      post this to the newsgroup."</p>
+      post this to the newsgroup.".</p>
     </li>
   
     <li>
@@ -38,7 +38,7 @@ $html = <<<EOHTML
       and will save you time in not having to ask it again, and us in not having 
       to answer it again. Before posting a question to the newsgroup, please 
       browse or search the newsgroup archives online. To post a question, you 
-      will <a href="http://www.eclipse.org/newsgroups/index.html">require a 
+      will <a href="http://www.eclipse.org/newsgroups/register.php">require a 
       password</a> first.</p>
     <p>Frequently asked questions in the newsgroup will ultimately end up in 
       the FAQ (one FAQ per component). Feel free to contribute!</p>
@@ -51,7 +51,7 @@ $html = <<<EOHTML
       <a href="http://www.mozilla.org/products/mozilla1.x/" target="_out">
       Mozilla</a> or even MS Outlook. Once installed, you'll also need a 
       password to access the newsgroups. Signup is easy: just 
-      <a href="http://www.eclipse.org/newsgroups/index.html">request a 
+      <a href="http://www.eclipse.org/newsgroups/register.php">request a 
       password</a>.</p>
     <p>After that, just point your newsreader at the eclipse news server, 
       <b>news.eclipse.org</b> and subscribe to the appropriate newsgroup(s).</p>
@@ -61,7 +61,7 @@ $html = <<<EOHTML
     <p>In addition, should you want to search the newsgroups for old posts, you 
       can use Eclipse.org's
       <a href="http://www.eclipse.org/search/search.cgi?cmd=Search%21&form=extended&wf=574a74&ps=10&m=all&t=5&ul=%2Fnewslists%2Fnews.eclipse.technology.rap&wm=wrd&t=News&t=Mail">
-      search capabilities</a></p>
+      search capabilities</a>.</p>
     </li>
     </ul>
 	</div>
@@ -80,7 +80,7 @@ $html = <<<EOHTML
 		<h3>Newsgroup Browse</h3>
 		<ul>
     <li>
-    <a href=http://dev.eclipse.org/newslists/news.eclipse.technology.rap/maillist.html">
+    <a href="http://dev.eclipse.org/newslists/news.eclipse.technology.rap/maillist.html">
     eclipse.technology.rap</a>  
     </li>
 		</ul>
