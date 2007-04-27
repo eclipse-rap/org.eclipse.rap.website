@@ -30,11 +30,10 @@ $html = <<<EOHTML
         extenstion points and a widget toolkit with SWT API (plus JFace). The project is in 
         the <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php" target="_blank">validation phase</a>.
     </p>
-		<h2>M2 has been released</h2>
-		<p> Just in time for EclipseCon we have released our second milestone build of RAP 
+		<h2>M3 has been released</h2>
+		<p>We have released our third milestone build of RAP 
 		    (<a href="http://eclipse.org/rap/downloads.php">Download</a>,
-		<a href="http://wiki.eclipse.org/index.php/Rap10M2_News" target="_blank">New and Noteworthy</a>). There is also a new demo application offering some
-		useful functionality for EclipseCon: the EclpseCon program in a RAP Ajax app, plus functionality to find and connect to other people. 
+		<a href="http://wiki.eclipse.org/index.php/Rap10M3_News" target="_blank">New and Noteworthy</a>). 
 		</p>
     <p>
     <a href="http://rap.innoopract.com/rap" target="_blank">See the EclipseCon demo online</a>.
