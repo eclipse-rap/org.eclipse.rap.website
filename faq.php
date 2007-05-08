@@ -85,8 +85,8 @@ applications needs to be rewritten (which means that core plug-ins can be
 reused, as long as they are multi-user capable). It shall be possible to reuse
 Content and Labelproviders.</p>
 <h3>How are RAP and ATF related?</h3>
-<p>RAP is a project focusing on an Ajax web runtime, Ajax Toolkit Framework (
-<a href="http://eclipse.org/atf">ATF</a>) focuses on tools to write applications 
+<p>RAP is a project focusing on an Ajax web runtime, Ajax Toolkit Framework 
+(<a href="http://eclipse.org/atf">ATF</a>) focuses on tools to write applications 
 for Ajax runtimes. ATF can be used to  build components (widgets) for RAP, as 
 RAP is encapsulating HTML, CSS and JavaScript into java components.</p>
 
