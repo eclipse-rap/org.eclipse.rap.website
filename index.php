@@ -37,7 +37,7 @@ $html = <<<EOHTML
 		We also offer a <a href="http://wiki.eclipse.org/index.php/Rap10M4_News" target="_blank">Sneak Preview </a>of the New and Noteworthy for the upcoming M4 release). 
 		</p>
     <p>
-    <a href="http://rap.innoopract.com/rapdemo/rap" target="_blank">See the EclipseCon demo online</a>.
+    <a href="http://rap.innoopract.com/rapdemo/rap" target="_blank">See a workbench demo online</a>.
     </p>
     <p>
     A core component of RAP is the RAP Widget Toolkit, which offers SWT API to the largest extend possible (for the web). See a demo <a href="http://rap.innoopract.com/rapdemo/rap?w4t_startup=controls" target="_blank">RWT widget demo</a>.
