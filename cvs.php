@@ -35,6 +35,9 @@ which opens a dialog. Select <em>Team</em> -> <em>Team Project Set</em> and
 click <em>next</em>. Enter the path to the file you've just downloaded,
 click <em>finish</em> and the checkout of the necessary projects will start.</p>
 
+<p>We are maintaining a <a href="http://wiki.eclipse.org/index.php/Rap10M4_News" target="_blank">New and Noteworthy</a>
+ in sync with the development progress in CVS to ease adoption of new features for you.</p>
+
 <p class="bar">Demo Launch:</p>
 
 <p>The team project set includes bundles that put together an 
