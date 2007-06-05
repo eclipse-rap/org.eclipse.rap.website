@@ -33,8 +33,8 @@ $html = <<<EOHTML
 		<h2>M3 has been released</h2>
 		<p>We have released our third milestone build of RAP 
 		    (<a href="http://eclipse.org/rap/downloads.php">Download</a>,
-		<a href="http://wiki.eclipse.org/index.php/Rap10M3_News" target="_blank">New and Noteworthy</a>). 
-		<a href="http://wiki.eclipse.org/index.php/Rap10M4_News" target="_blank">Sneak Preview </a>of the New and Noteworthy for the upcoming M4 release). 
+		<a href="http://wiki.eclipse.org/index.php/Rap10M3_News" target="_blank">New and Noteworthy</a>).<br/> 
+		We also offer a <a href="http://wiki.eclipse.org/index.php/Rap10M4_News" target="_blank">Sneak Preview </a>of the New and Noteworthy for the upcoming M4 release). 
 		</p>
     <p>
     <a href="http://rap.innoopract.com/rapdemo/rap" target="_blank">See the EclipseCon demo online</a>.
