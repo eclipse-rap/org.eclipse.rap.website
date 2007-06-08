@@ -67,6 +67,9 @@ $html = <<<EOHTML
           <a href="http://wiki.eclipse.org/index.php/Rap10M4_News">
             New and Noteworthy
           </a>
+          <br />
+          See <a href="gettingstarted.php">here</a> for a guide on how to get 
+          started.
         </li>
       </ul>
     </div>
