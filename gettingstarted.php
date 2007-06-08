@@ -71,9 +71,7 @@ platform from the <a href="downloads.php">downloads page</a>.</strong></p>
 
 <p>Have fun with your RAP demo and enjoy experimenting with your own projects, 
   and please let us know how you like it. If you have any questions, comments 
-  or remarks, please also don't hesitate contacting the RAP Team through 
-  <a href="http://eclipse.org/rap">the project web site</a>. We will appreciate 
-  any feedback.</p>
+  or remarks, please also don't hesitate contacting the RAP Team.</p>
     
 </div>
 </div>
