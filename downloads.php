@@ -34,8 +34,45 @@ $html = <<<EOHTML
 		<h1>$pageTitle</h1>
 
   
+    <p> 
+    Since RCP and RAP bundles within the same instance do not work, we are only 
+    able to provide target platforms for download.
+    This is because RAP now uses the same namespace as RCP.
+    </p>
+    <p>After downloading, extract the file in a convenient location, say <code>
+    c:\target</code> and start Eclipse (if not yet running). Open <b>Window &gt; 
+    Preferences</b>, go to 
+    the <b>Plug-in Development &gt; Target Platform</b> preference page, set the
+    <b>Location</b> to the eclipse sub-directory of the extracted archive (e.g.
+    <code>c:\target\eclipse</code>). Finally click <b>Reload</b>. You should see
+    the just downloaded plug-ins appear in the plug-ins list.
+    </p>
+    <p>Note when doing this with a worksapce that already contains projects that
+    depend on the target, you may get compile errors. Restartiung Eclipse and/or
+    doing a clean build will help.
+    </p>
     <div class="homeitem3col">
-			<h3>RAP Update Site</h3>
+      <h3>RAP Target Platform Download</h3>
+      <ul>
+        <li>RAP 1.0M4 for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-M4-incubation-target-3.2-200706081830.zip">
+            rap-1.0-M4-incubation-target-3.2-200706081830.zip
+          </a>
+          <br />
+          RAP 1.0M4 for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-M4-incubation-target-3.3-200706081830.zip">
+            rap-1.0-M4-incubation-target-3.3-200706081830.zip
+          </a>
+          <br />
+          <a href="http://wiki.eclipse.org/index.php/Rap10M4_News">
+            New and Noteworthy
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="homeitem3col">
+			<h3>RAP Update Site (only available for M1 - M3</h3>
 			<ul>
 				<li>RAP 1.0M3 for Eclipse 3.2 / 3.3: <b>http://download.eclipse.org/technology/rap/update-site/</b>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M3.zip">&nbsp;[zipped update site]</a>
