@@ -18,7 +18,7 @@
 	<div id="midcolumn">
 
 
-<h3>Demo Application</h3>
+<h3>Getting Started</h3>
 
 <p><strong>This document assumes that you have installed the latest RAP target
 platform from the <a href="downloads.php">downloads page</a>.</strong></p>
