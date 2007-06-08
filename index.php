@@ -37,7 +37,7 @@ $html = <<<EOHTML
 		and Noteworthy</a>).<br/> 
 		We also offer a <a href="http://wiki.eclipse.org/index.php/Rap10M5_News" 
 		target="_blank">Sneak Preview</a> of the New and Noteworthy for the upcoming 
-		M5 release). 
+		M5 release. 
 		</p>
     <p>
     <a href="http://rap.innoopract.com/rapdemo/rap" target="_blank">See a workbench demo online</a>.
@@ -52,7 +52,7 @@ $html = <<<EOHTML
     <br>
     <p><img src="resources/viewpart.png" alt="A ViewPart implementation">    
     <ul>
-			      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
+      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
     </ul>
 
 
