@@ -37,19 +37,6 @@ platform from the <a href="downloads.php">downloads page</a>.</strong></p>
   This plug-in will then appear with all source files in your workspace. The 
   demo also provides a ready-to-use launch configuration.</p>
 
-<p>In order to successfully launch the demo, there are two things to note</p>
-  <ul><li>Even though importing the demo project as source succeeds, the 
-    plug-in can only be run if You installed the <strong>SDK release</strong>.
-    When using the Update-Manager to get RAP, please make sure that the 
-    <strong>Rich Ajax Platform SDK</strong> component is also checked as shown 
-    below.<br />
-    <img src="resources/demo-app-sdk.png"/></li>
-  <li><strong>If you are using Eclipse 3.3</strong> already, you need to start 
-    the <code>org.eclipse.equinox.app</code> plug-in with your rap demo. To do 
-    so, switch to the <strong>Plug-ins</strong> tab of your Launch Configuration 
-    and select to include the <strong>org.eclipse.equinox.app</strong> plug-in.
-  </li></ul>
-  
 <p>To run the demo, select <strong>Run &gt; Run...</strong> from the main menu.
   In the upcoming Launch Configuration Dialog, select <strong>Rich Ajax Platform 
   Demo</strong> from the section <strong>Equinox OSGi Framework</strong>.</p>
