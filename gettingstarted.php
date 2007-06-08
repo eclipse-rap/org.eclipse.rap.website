@@ -16,10 +16,9 @@
 
 <div id="maincontent">
 	<div id="midcolumn">
-        <div class="homeitem3col">
 
 
-<h1>Demo Application</h1>
+<h3>Demo Application</h3>
 
 <p>The RAP project comes with two example applications demonstrating the 
   features and capabilities of RAP.</p>
@@ -163,7 +162,6 @@
 
 -->
 
-</div>
 </div>
 </div>
 EOHTML;
