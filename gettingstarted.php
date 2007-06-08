@@ -20,6 +20,9 @@
 
 <h3>Demo Application</h3>
 
+<p><strong>This document assumes that you have installed the latest RAP target
+platform from the <a href="downloads.php">downloads page</a>.</strong></p>
+
 <p>The RAP project comes with two example applications demonstrating the 
   features and capabilities of RAP.</p>
 <p>The first application provides a workbench very closely aligned to the RCP 
@@ -84,7 +87,7 @@
   or remarks, please also don't hesitate contacting the RAP Team through 
   <a href="http://eclipse.org/rap">the project web site</a>. We will appreciate 
   any feedback.</p>
-
+    
 </div>
 </div>
 EOHTML;
