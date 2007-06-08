@@ -40,14 +40,14 @@ $html = <<<EOHTML
     This is because RAP now uses the same namespace as RCP.
     </p>
     <p>After downloading, extract the file in a convenient location, say <code>
-    c:\target</code> and start Eclipse (if not yet running). Open <b>Window &gt; 
+    c:\\target</code> and start Eclipse (if not yet running). Open <b>Window &gt; 
     Preferences</b>, go to 
     the <b>Plug-in Development &gt; Target Platform</b> preference page, set the
     <b>Location</b> to the eclipse sub-directory of the extracted archive (e.g.
-    <code>c:\target\eclipse</code>). Finally click <b>Reload</b>. You should see
+    <code>c:\\target\\eclipse</code>). Finally click <b>Reload</b>. You should see
     the just downloaded plug-ins appear in the plug-ins list.
     </p>
-    <p>Note when doing this with a worksapce that already contains projects that
+    <p>Note: if doing this with a workspace that already contains projects that
     depend on the target, you may get compile errors. Restartiung Eclipse and/or
     doing a clean build will help.
     </p>
@@ -72,7 +72,7 @@ $html = <<<EOHTML
     </div>
     
     <div class="homeitem3col">
-			<h3>RAP Update Site (only available for M1 - M3</h3>
+			<h3>RAP Update Site (only available for M1 - M3)</h3>
 			<ul>
 				<li>RAP 1.0M3 for Eclipse 3.2 / 3.3: <b>http://download.eclipse.org/technology/rap/update-site/</b>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M3.zip">&nbsp;[zipped update site]</a>
