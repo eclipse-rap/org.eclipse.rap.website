@@ -25,7 +25,7 @@ $html = <<<EOHTML
 
 <div id="midcolumn">
 <h1>$pageTitle</h1>
-<p class="bar">CVS checkout:</p>
+<h3>CVS checkout</h3>
 
 <p>Assuming you're using <em>Eclipse</em>, the easiest way to get everything you 
 need is to "import" a team project set. The project set file is available
@@ -35,10 +35,10 @@ which opens a dialog. Select <em>Team</em> -> <em>Team Project Set</em> and
 click <em>next</em>. Enter the path to the file you've just downloaded,
 click <em>finish</em> and the checkout of the necessary projects will start.</p>
 
-<p>We are maintaining a <a href="http://wiki.eclipse.org/index.php/Rap10M4_News" target="_blank">New and Noteworthy</a>
+<p>We are maintaining a <a href="http://wiki.eclipse.org/index.php/Rap10M5_News" target="_blank">New and Noteworthy</a>
  in sync with the development progress in CVS to ease adoption of new features for you.</p>
 
-<p class="bar">Demo Launch:</p>
+<h3>Demo Launch</h3>
 
 <p>The team project set includes bundles that put together an 
 <em>Http Service</em> environment which is the simplest way 
