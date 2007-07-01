@@ -50,10 +50,10 @@ to set up a development runtime. For more information see
 <em>Run</em>/<em>Run</em> from the IDE's menu. In the wizard choose 
 <em>Equinox OSGi Framework</em> -> <em>RAP-Demo</em> and
 after that click <em>run</em>. Some messages in the console view should indicate that
-the http service was started at port 80 (ensure that no other service 
-uses port 80 or change the port settings with the VM-argument 
+the http service was started at port 9090 (ensure that no other service 
+uses port 9090 or change the port settings with the VM-argument 
 <em>-Dorg.osgi.service.http.port=&lt;port&gt;</em>).
-Open a Browser and type <em>http://localhost/rap</em> (or
+Open a Browser and type <em>http://localhost:9090/rap</em> (or
 <em>http://localhost:&lt;port&gt;/rap</em> in case you changed the port)
 to access the RAP demo application.</p>
 <p />
