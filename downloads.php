@@ -84,6 +84,7 @@ $html = <<<EOHTML
           <br />
           See <a href="gettingstarted.php">here</a> for a guide on how to get 
           started.
+          <br />
         </li>
         <li>RAP 1.0M4 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-M4-incubation-target-3.2-200706081830.zip">
