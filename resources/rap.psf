@@ -14,6 +14,5 @@
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.ui.workbench,org.eclipse.rap.ui.workbench"/>
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.w4t,org.eclipse.rap.w4t"/>
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.w4t.test,org.eclipse.rap.w4t.test"/>
-		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.help,org.eclipse.rap.help"/>
 	</provider>
 </psf>
