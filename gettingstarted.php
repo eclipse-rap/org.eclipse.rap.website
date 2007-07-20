@@ -41,6 +41,9 @@ platform from the <a href="downloads.php">downloads page</a>.</strong></p>
   In the upcoming Launch Configuration Dialog, select <strong>Rich Ajax Platform 
   Demo</strong> from the section <strong>Equinox OSGi Framework</strong>.</p>
 
+<p>For Max OS X systems, please add <strong>-Djava.awt.headless=true</strong> to 
+your VM arguments.</p>
+
 <p>You may want to configure the TCP-port your demo application will listen to. 
   This is done opening the <strong>Arguments</strong> page and passing 
   <strong>-Dorg.osgi.service.http.port=10080</strong> as an argument to the 
