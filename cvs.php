@@ -37,7 +37,7 @@ click <em>finish</em> and the checkout of the necessary projects will start.</p>
 
 <p>In addition to the baisc RAP components that are included in the above 
 mentioned project set, there are also <strong>RAP Forms</strong> and 
-<stong>RAP Databinding</strong> available.
+<strong>RAP Databinding</strong> available.
 These components can also be obtained directly from CVS. The <strong>Forms</strong>
 component only consist of the <strong>org.eclipse.rap/org.eclipse.rap.ui.foms
 </strong> project. To use <strong>RAP Databinding</strong>, the following three 
@@ -50,7 +50,7 @@ projects are necessary:
 </ul>
 If you are new to Eclipse, this 
 <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">document</a> 
-may help with accessing the Eclipse CVS. The RAP <strong>org.eclipse.rap</strong>
+may help with accessing the Eclipse CVS. The <strong>org.eclipse.rap</strong>
 module is located in the <strong>/cvsroot/technology</strong> repository.
 </p>
 
