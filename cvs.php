@@ -35,6 +35,26 @@ which opens a dialog. Select <em>Team</em> -> <em>Team Project Set</em> and
 click <em>next</em>. Enter the path to the file you've just downloaded,
 click <em>finish</em> and the checkout of the necessary projects will start.</p>
 
+<p>In addition to the baisc RAP components that are included in the above 
+mentioned project set, there are also <strong>RAP Forms</strong> and 
+<stong>RAP Databinding</strong> available.
+These components can also be obtained directly from CVS. The <strong>Forms</strong>
+component only consist of the <strong>org.eclipse.rap/org.eclipse.rap.ui.foms
+</strong> project. To use <strong>RAP Databinding</strong>, the following three 
+projects are necessary:
+<ul>
+  <li><strong>org.eclipse.rap/org.eclipse.rap.core.databinding</strong></li>
+  <li><strong>org.eclipse.rap/org.eclipse.rap.core.databinding.jface</strong></li>
+  <li><strong>org.eclipse.rap/org.eclipse.rap.jface.databinding</strong></li>
+  <li><strong>org.eclipse.rap/org.eclipse.rap.demo.databinding</strong> (optional)</li>
+</ul>
+If you are new to Eclipse, this 
+<a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">document</a> 
+may help with accessing the Eclipse CVS. The RAP <strong>org.eclipse.rap</strong>
+module is located in the <strong>/cvsroot/technology</strong> repository.
+</p>
+
+
 <p>We are maintaining a <a href="http://wiki.eclipse.org/index.php/Rap10M5_News" target="_blank">New and Noteworthy</a>
  in sync with the development progress in CVS to ease adoption of new features for you.</p>
 
