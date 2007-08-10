@@ -65,7 +65,7 @@ $html = <<<EOHTML
     doing a clean build will help.
     </p>
     <div class="homeitem3col">
-      <h3>RAP Milestone Target Platforms</h3>
+      <h3>Milestone Target Platforms</h3>
       <ul>
         <li>RAP 1.0M5 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-M5-incubation-target-3.2-20070713-1906.zip">
@@ -106,8 +106,18 @@ $html = <<<EOHTML
     </div>
     
     <div class="homeitem3col">
-      <h3>RAP Integration Build Target Platforms</h3>
+      <h3>Integration Build Target Platforms</h3>
       <ul>
+        <li>RAP 1.0 I-20070810 for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070810-1109.zip">
+            rap-1.0-I-incubation-target-3.2-20070810-1109.zip
+          </a>
+          <br />
+          RAP 1.0 I-20070810 for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070810-1109.zip">
+            rap-1.0-I-incubation-target-3.3-20070810-1109.zip
+          </a>
+        </li>
         <li>RAP 1.0 I-20070803 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070803-1640.zip">
             rap-1.0-I-incubation-target-3.2-20070803-1640.zip
@@ -142,7 +152,7 @@ $html = <<<EOHTML
     </div>
 
     <div class="homeitem3col">
-			<h3>RAP Milestone Update Sites (only available for M1 - M3)</h3>
+			<h3>Milestone Update Sites (only available for M1 - M3)</h3>
 			<ul>
 				<li>RAP 1.0M3 for Eclipse 3.2 / 3.3: <b>http://download.eclipse.org/technology/rap/update-site/</b>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M3.zip">&nbsp;[zipped update site]</a>
