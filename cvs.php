@@ -45,7 +45,7 @@ module is located in the <strong>/cvsroot/technology</strong> repository.
 </p>
 
 <p>We are maintaining a 
-  <a href="http://wiki.eclipse.org/index.php/Rap10M6_News">New and Noteworthy</a>
+  <a href="http://wiki.eclipse.org/index.php/Rap10RC1_News">New and Noteworthy</a>
   in sync with the development progress in CVS to ease adoption of new features
   for you.</p>
 
