@@ -37,7 +37,7 @@ $html = <<<EOHTML
 		and Noteworthy</a>).<br/> 
 		We also offer a <a href="http://wiki.eclipse.org/index.php/Rap10RC1_News" 
 		target="_blank">Sneak Preview</a> of the New and Noteworthy for the upcoming 
-		M6 release. 
+		RC1 release. 
 		</p>
     <p>
     <a href="http://rap.innoopract.com/rapdemo/rap" target="_blank">See a workbench demo online</a>.
