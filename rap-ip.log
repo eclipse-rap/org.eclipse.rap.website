@@ -16,7 +16,7 @@ IP Issues:
 # usage (e.g. modified/unmodified, source, object, derivative work, entire package or which subset)
 
 Third Party Packages:
- - qooxdoo 0.7 (rev 9276), #1192, org.eclipse.rap.tools, EPL/LGPL, package excerpt
+ - qooxdoo 0.7 (rev 9276), #1192, org.eclipse.rap.tools, EPL/LGPL, package subset
 
 
 Contribution Questionnaires Reviews for Source Contributions Distributed under EPL
