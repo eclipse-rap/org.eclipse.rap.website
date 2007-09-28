@@ -24,11 +24,6 @@ $html = <<<EOHTML
 
 
 	<div id="rightcolumn">
-    <!--
-    <div class="sideitem">
-      <img src="http://www.eclipse.org/images/gazoo-incubation.jpg" alt="Project is in incubation">
-    </div>
-    -->
     <div class="sideitem">
       <h6>Incubation</h6><p>
       <div align="center">
@@ -67,6 +62,24 @@ $html = <<<EOHTML
     <div class="homeitem3col">
       <h3>Milestone Target Platforms</h3>
       <ul>
+        <li>RAP 1.0 RC1 for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-RC1-incubation-target-3.2-20070928-1625.zip">
+            rap-1.0-RC1-incubation-target-3.2-20070928-1625.zip
+          </a>
+          <br />
+          RAP 1.0 RC1 for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-RC1-incubation-target-3.3-20070928-1625.zip">
+            rap-1.0-RC1-incubation-target-3.3-20070928-1625.zip
+          </a>
+          <br />
+          <a href="http://wiki.eclipse.org/index.php/Rap10RC1_News">
+            New and Noteworthy
+          </a>
+          <br />
+          See <a href="gettingstarted.php">here</a> for a guide on how to get 
+          started.
+          <br />
+        </li>
         <li>RAP 1.0M6 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-M6-incubation-target-3.2-20070817-1525.zip">
             rap-1.0-M6-incubation-target-3.2-20070817-1525.zip
