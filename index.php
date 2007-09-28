@@ -33,7 +33,7 @@ $html = <<<EOHTML
 		<h2>RC1 has been released</h2>
 		<p>We have released the Release Candidate 1 build of RAP 
 		    (<a href="http://eclipse.org/rap/downloads.php">Download</a>,
-		<a href="http://wiki.eclipse.org/index.php/RapRC1_News" target="_blank">New 
+		<a href="http://wiki.eclipse.org/index.php/Rap10RC1_News" target="_blank">New 
 		and Noteworthy</a>). 
 		</p>
     <p>
