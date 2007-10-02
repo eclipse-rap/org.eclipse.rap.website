@@ -106,7 +106,7 @@ $html = <<<EOHTML
 		<div class="sideitem">
 			<h6>RAP in the news</h6>
 			<ul>
-				<li><a href="http://jax-award.de/jax_award/gewinner_en.php" target="_blank">RAP wins european innovation award</a></li>
+				<li><a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">RAP wins european innovation award</a></li>
 				<li><a href="http://www.eweek.com/article2/0,1895,1939964,00.asp" target="_blank">eweek - new Ajax project for eclipse</a></li>
 			</ul>
 		</div>
