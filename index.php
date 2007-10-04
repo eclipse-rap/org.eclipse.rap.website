@@ -37,10 +37,10 @@ $html = <<<EOHTML
 		and Noteworthy</a>). 
 		</p>
     <p>
-    <a href="http://rap.eclipse.org/rapdemo/maildemo" target="_blank">See the RAP (RCP) maildemo online</a>.
+    <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">See the RAP (RCP) maildemo online</a>.
     </p>
     <p>
-    A core component of RAP is the RAP Widget Toolkit, which offers SWT API to the largest extend possible (for the web). See a demo <a href="http://rap.eclipse.org/rapdemo/controls" target="_blank">RWT widget demo</a>.
+    A core component of RAP is the RAP Widget Toolkit, which offers SWT API to the largest extend possible (for the web). See a demo <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">RWT widget demo</a>.
     </p>
     <p><a href="http://rap.eclipse.org/rapdemo/workbench" target="_blank">
       <img src="resources/webworkbench.png" alt="A demo webworkbench"></a>
