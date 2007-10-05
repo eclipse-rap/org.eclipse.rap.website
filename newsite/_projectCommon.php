@@ -23,15 +23,11 @@ EOBRANDING;
 	$Nav->addNavSeparator("Developers", "/rap/start", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Getting Started", "/rap/newsite/start",	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Downloads", "/rap/newsite/downloads", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;New & Noteworthy", "/rap/newsite/new", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Newsgroup", "/rap/newsite/newsgroup", "_self", 1);
+	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;New & Noteworthy", "http://wiki.eclipse.org/index.php/Rap10RC1_News", "_self", 1);
+	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Newsgroup", "http://dev.eclipse.org/newslists/news.eclipse.technology.rap/maillist.html", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Bugs", "/rap/newsite/bugs",	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;FAQ", "/rap/newsite/faq", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;User Guide", "/rap/newsite/userguide", "_self", 1);
-
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;FAQ (wiki)", "/rap/newsite/faq.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;User Guide (wiki)", "http://wiki.eclipse.org/index.php/Mylyn_User_Guide", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Extensions (wiki)", "http://wiki.eclipse.org/index.php/Mylyn_Extensions", "_self", 1);
 
 	$Nav->addNavSeparator("Contributors", "/rap/newsite/contributors", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Plan", "http://wiki.eclipse.org/index.php/RapPlan", "_self", 1);	
