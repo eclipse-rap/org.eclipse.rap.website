@@ -38,6 +38,7 @@ $html = <<<EOHTML
               </table></td>
           </tr>
         </table>
+        <p>&nbsp;</p>
         <div class="homeitem3col">
           <h3>News</h3>
           <ul>
@@ -67,15 +68,6 @@ $html = <<<EOHTML
         </div></td>
     </tr>
   </table>
-</div>
-<div class="homeitem3col">
-  <h3>News</h3>
-  <ul>
-    <li> September:</li>
-    <li> August: </li>
-    <li> July: </li>
-    <li> June: </li>
-  </ul>
 </div>
 
 EOHTML;
