@@ -7,7 +7,6 @@ $pageAuthor		= "Jochen Krause";
 
 $html = <<<EOHTML
 
-	<div id="container">
 <div id="midcolumn" style="width:93%">
   <table border="0" cellpadding="5">
     <tr>
@@ -51,24 +50,23 @@ $html = <<<EOHTML
     </tr>
   </table>
 </div>	
-	<div id="rightcolumn">	
-		<div class="sideitem">
-			<h6>RAP in the news</h6>
-			<ul>
-				<li><a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">RAP wins european innovation award</a></li>
-				<li><a href="http://www.eweek.com/article2/0,1895,1939964,00.asp" target="_blank">eweek - new Ajax project for eclipse</a></li>
-			</ul>
-		</div>
-		<div class="sideitem">
-			<h6>Meet the RAP team</h6>
-			<ul>
-        <li><a href="http://www.eclipsecon.org/summiteurope2007/index.php?page=detail/&id=29" target="_blank">Eclipse Summit Europe, Ludwigsburg, October 10-11</a><span><br>RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span></li>				
-        <li><a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
-				<li><a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a><span><br>Building Ajax applications with the Eclipse Rich Ajax Platform</span></li>
-			</ul>
-		</div>
-
+<div id="rightcolumn">	
+	<div class="sideitem">
+		<h6>RAP in the news</h6>
+		<ul>
+			<li><a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">RAP wins european innovation award</a></li>
+			<li><a href="http://www.eweek.com/article2/0,1895,1939964,00.asp" target="_blank">eweek - new Ajax project for eclipse</a></li>
+		</ul>
 	</div>
+	<div class="sideitem">
+		<h6>Meet the RAP team</h6>
+		<ul>
+       <li><a href="http://www.eclipsecon.org/summiteurope2007/index.php?page=detail/&id=29" target="_blank">Eclipse Summit Europe, Ludwigsburg, October 10-11</a><span><br>RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span></li>				
+       <li><a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>RAP - Eclipse style development for the web</span></li>
+			<li><a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a><span><br>Building Ajax applications with the Eclipse Rich Ajax Platform</span></li>
+		</ul>
+	</div>
+</div>
 			
 
 EOHTML;
