@@ -60,8 +60,15 @@ $html = <<<EOHTML
     </tr>
   </table>
 </div>
-
-
+<div class="homeitem3col">
+  <h3>News</h3>
+  <ul>
+    <li> September:</li>
+    <li> August: </li>
+    <li> July: </li>
+    <li> June: </li>
+  </ul>
+</div>
 EOHTML;
 
 # Generate the web page
