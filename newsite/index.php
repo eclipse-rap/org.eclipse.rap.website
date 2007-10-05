@@ -12,7 +12,7 @@ $html = <<<EOHTML
 	<table border="0" cellpadding="5">
      	<tr> 
       		<td valign="top">
-			<img src="platzhalter.png" alt="Platzhalter" width="172" height="420" border=0></a>      		</td>
+			<img src="../images/platzhalter.png" alt="Platzhalter" width="172" height="420" border=0></a>      		</td>
       		<td>
         	<td valign="top">
         		<br>
@@ -23,7 +23,7 @@ $html = <<<EOHTML
 	          		<tr>
 						<td width=20></td>
 
-						<td><a href="/rap/newsite/community"><img border=0 src="images/community.jpg"></a></td>
+						<td><a href="/rap/newsite/community"><img border=0 src="../images/community.jpg"></a></td>
 						<td>
 							<table border="0" cellpadding="0">
 								<tr>
@@ -38,7 +38,7 @@ $html = <<<EOHTML
 	          		</tr>
 	          		<tr>
 						<td width=20></td>
-						<td><a href="/rap/newsite/downloads"><img border=0 src="images/downloads.gif"></a></td>
+						<td><a href="/rap/newsite/downloads"><img border=0 src="../images/downloads.gif"></a></td>
 						<td>
 							<table border="0" cellpadding="0">
 
@@ -60,24 +60,7 @@ $html = <<<EOHTML
      	</tr>
     </table>
 </div>	
-	<div id="rightcolumn">
-    <!--
-    <div class="sideitem">
-      <img src="http://www.eclipse.org/images/gazoo-incubation.jpg" alt="Project is in incubation">
-    </div>
-	  -->
-    <div class="sideitem">
-      <h6>Incubation</h6><p>
-      <div align="center">
-        <a href="/projects/what-is-incubation.php">
-          <img align="center" src="/images/egg-incubation.png" border="0"/>
-        </a>
-      </div>
-      <div align="center">  
-        This project is in the 
-        <a href="/projects/dev_process/validation-phase.php">Incubation Phase</a>
-      </div>
-    </div>		
+	<div id="rightcolumn">	
 		<div class="sideitem">
 			<h6>RAP in the news</h6>
 			<ul>
