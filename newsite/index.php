@@ -12,8 +12,7 @@ $html = <<<EOHTML
 	<table border="0" cellpadding="5">
      	<tr> 
       		<td valign="top">
-
-	          	<a href="images/mylyn-2.0.png"><img alt="Mylyn 2.0 Screenshot" border=0 src="file:///C|/Dokumente und Einstellungen/Innoopract/Desktop/Uli/rap-summit2007/platzhalter.png"></a>      		</td>
+			<img src="platzhalter.png" alt="Platzhalter" width="172" height="420" border=0></a>      		</td>
       		<td>
         	<td valign="top">
         		<br>
