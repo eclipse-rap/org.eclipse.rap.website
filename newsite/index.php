@@ -7,69 +7,60 @@ $pageAuthor		= "Jochen Krause";
 	
 $html = <<<EOHTML
 
-	<div id="midcolumn">
-		<h1>$pageTitle</h1>
-		<h2>What is RAP?</h2>
-		<p> The RAP project aims to enable developers to build rich, Ajax-enabled Web applications 
-        by using the Eclipse development model, plug-ins with the well known Eclipse workbench
-        extenstion points and a widget toolkit with SWT API (plus JFace). The project is in 
-        the <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php" target="_blank">validation phase</a>.
-    </p>
-		<h2>RC1 has been released</h2>
-		<p>We have released the Release Candidate 1 build of RAP 
-		    (<a href="http://eclipse.org/rap/downloads.php">Download</a>,
-		<a href="http://wiki.eclipse.org/index.php/Rap10RC1_News" target="_blank">New 
-		and Noteworthy</a>). 
-		</p>
-    <p>
-    <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">See the RAP (RCP) maildemo online</a>.
-    </p>
-    <p>
-    A core component of RAP is the RAP Widget Toolkit, which offers SWT API to the largest extend possible (for the web). See a demo <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">RWT widget demo</a>.
-    </p>
-    <p><a href="http://rap.eclipse.org/rapdemo/workbench" target="_blank">
-      <img src="resources/webworkbench.png" alt="A demo webworkbench"></a>
-    </p>
-    <p><img src="resources/workbench_pde.png" alt="Webworkbench plugin.xml">
-    <br>
-    <p><img src="resources/viewpart.png" alt="A ViewPart implementation">    
-    <ul>
-      <li><a href="http://eclipse.org/rap/downloads.php">Download the latest milestone build</a></li>
-    </ul>
+	<div id="container">
+<div id="midcolumn" style="width:93%">
+	<table border="0" cellpadding="5">
+     	<tr> 
+      		<td valign="top">
 
+	          	<a href="images/mylyn-2.0.png"><img alt="Mylyn 2.0 Screenshot" border=0 src="file:///C|/Dokumente und Einstellungen/Innoopract/Desktop/Uli/rap-summit2007/platzhalter.png"></a>      		</td>
+      		<td>
+        	<td valign="top">
+        		<br>
+				The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.
 
-    </p>
-    </p>
-			<h2>Project Scope</h2>
-			<p>The objectives of the RAP project are:</p>
-			
-			  <p><b>Enable the development of Rich Internet Applications that are based on
-			    the Eclipse Plugin architecture.</b> The Eclipse OSGi framework (Equinox)
-			    can run inside of a Web application. This has been demonstrated by several
-			    parties, and a subproject of the Equinox project has already been
-			    established (see <a href="http://www.eclipse.org/equinox/incubator/server/" target="_blank">http://www.eclipse.org/equinox/incubator/server/</a>)</p>
-			  <p><b>Enable Ajax UI development based on a Java component library with SWT api. </b>For
-			    enabling UI development based on a Java component library the project has
-			    received an initial code contribution from Innoopract (W4Toolkit). <b>NEW:</b> Based on the
-			    infrastructure provided by this code contributions we have implemented a first
-			    version of a new widget toolkit with SWT api, called RWT. More info on RWT can be
-			    found here: <a href="http://wiki.eclipse.org/index.php/RWTOverview" target="_blank">
-			    http://wiki.eclipse.org/index.php/RWTOverview</a>. RWT is using a sophisiticated JavaScript
-			    framework for client side rendering: <a href="http://qooxdoo.org" target="_blank">qooxdoo</a>.</p>
-			  <p><b>Provide a Web Workbench similar to the Eclipse platform workbench: </b>
-			    <ul>
-			      <li>provides selection service (with session scope),</li>
-			      <li>provides extension points for action sets, workbench parts,
-			        perspectives, preference pages, etc.,</li>
-			      <li>enables plug-ins to contribute to workbench parts provided by other
-			        plug-ins (e.g. action contributions)</li>
-			    </ul>
-			  </p>
-			  <p>The RAP API will be aligned with the Eclipse platform API as much as possible</p>
+				<table border="0" cellpadding="5">
+					<tr height=9>	 
+	          		<tr>
+						<td width=20></td>
 
+						<td><a href="/rap/newsite/community"><img border=0 src="images/community.jpg"></a></td>
+						<td>
+							<table border="0" cellpadding="0">
+								<tr>
+				          			<td><font size=+1><a href="/rap/newsite/demos">Demos</a></font></td>
+								</tr>
+								<tr>
+					          		<td>See some demos here</td>
 
-		<hr class="clearer" />
-	</div>
+					          	</tr>
+							</table>
+						</td>
+	          		</tr>
+	          		<tr>
+						<td width=20></td>
+						<td><a href="/rap/newsite/downloads"><img border=0 src="images/downloads.gif"></a></td>
+						<td>
+							<table border="0" cellpadding="0">
+
+								<tr>
+				          			<td><font size=+1><a href="/rap/newsite/downloads">Downloads</a></font></td>
+								</tr>
+								<tr>
+					          		<td>Get the latest RAP release</td>
+					          	</tr>
+							</table>
+						</td>
+
+	          		</tr> 
+	          		<tr height=11>
+	          		</tr>
+	         	</table>
+	         	
+				&nbsp;&nbsp;</font> </td>
+     	</tr>
+    </table>
+</div>	
 	<div id="rightcolumn">
     <!--
     <div class="sideitem">
