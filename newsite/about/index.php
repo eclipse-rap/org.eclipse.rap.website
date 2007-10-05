@@ -10,6 +10,9 @@
 	$html = <<<EOHTML
 
 <div id="maincontent">
+<table>
+<img><src="../images/rap_logo.png"></img>
+</table>
 	<div id="midcolumn">
 		<div class="homeitem3col">
 			<h3>What is RAP?</h3>
