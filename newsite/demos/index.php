@@ -56,7 +56,7 @@ $html = <<<EOHTML
           <p>Access the entire eclipse.org portfolio plus a large selection of the most important open-source plugins, tested for compatibility and consistency.</p></td>
       </tr>
       </table>
-    </div
+    </div>
     <hr class="clearer" />
   </div>
 </div>
