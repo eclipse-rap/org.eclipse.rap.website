@@ -40,7 +40,17 @@
 	</div>
 </div>
 	
+
+
+Release Review Slides
+
+
 http://eclipsenuggets.blogspot.com/2007/09/see-how-you-can-make-rcp-application.html
+
+http://mea-bloga.blogspot.com/2007/09/web-development-revisited.html
+
+http://eclipse-magazin.de/itr/ausgaben/psecom,id,366,nodeid,228.html
+
 
 
 </div>
