@@ -25,7 +25,7 @@ $html = <<<EOHTML
 	            </li>
 				<li>
 		            <a href="http://jax-award.de/jax_award06/gewinner_en.php">
-		           	RAP wins european innovation award</a> JAX, 2006</br>
+		           	RAP wins european innovation award</a> JAX, 2006
 		           	<img src="../../images/jax.png" align="right"/> 
 	            </li>
 	            <li>
