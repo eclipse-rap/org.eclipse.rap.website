@@ -31,11 +31,18 @@
 		            <a href="http://eclipsezilla.eclipsecon.org/php/attachment.php?bugid=3833">
 		           	eclipse rich ajax platform (RAP)</a> slides EclipseCon 2007
 	            </li>
+	            <li>
+		            <a href="http://eclipsenuggets.blogspot.com/2007/09/see-how-you-can-make-rcp-application.html">
+		           	See how you can make an RCP Application run in your browser</a> blog, Elias Volanakis 
+	            </li>
             </ul> 
 		</div>
 	</div>
 </div>
 	
+http://eclipsenuggets.blogspot.com/2007/09/see-how-you-can-make-rcp-application.html
+
+
 </div>
 
 EOHTML;
