@@ -8,6 +8,7 @@ $html = <<<EOHTML
 
 <div id="maincontent">
 	<div id="midcolumn">
+	<h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Sandbox</h2>
 		<p> There is a component called "sandbox" in RAP, that we created to "make
 		interesting /promising developments visible and accessible for the
 		complete community". We would like to make you a committer for the

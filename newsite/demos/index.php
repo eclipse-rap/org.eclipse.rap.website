@@ -56,7 +56,7 @@ $html = <<<EOHTML
 	            <li>Get all in a single file download</li>
 	            <li>Get Eclipse 3.3 Europa</li>
             </ul>
-          <p>Access the entire eclipse.org portfolio plus a large selection of the most important open-source plugins, tested for compatibility and consistency.</p></td>
+          <p>Access the entire eclipse.org portfolio plus a large selection of the most important open-source plugins, tested for compatibility and consistency.</p>
           <p><a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank">See discovery online!</a></p></td>
       </tr>
       </table>
