@@ -5,7 +5,7 @@ $pageAuthor		= "Jochen Krause";
 
 # Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
-
+<div id="midcolumn">
 <h1>RAP 1.0 - New and Noteworthy</h1>
 <p>Here are some of the more noteworthy things available in the first release build (October 10, 2007) which is now available for <a href="http://www.eclipse.org/rap/downloads.php" title="http://www.eclipse.org/rap/downloads.php">download</a>. </p>
 <ul>
@@ -462,7 +462,7 @@ drillDownAdapter.addNavigationActions(manager);
       All necessary data gets loaded from the server automatically.
       <p>Another way is - like you know it from the Eclipse Workbench - to use the "Show View" menu. To implement
         it in your RAP application, use <code>ContributionItemFactory.VIEWS_SHORTLIST.create(IWorkbenchWindow);</code> to get a list of all view shortcuts of the current perspective which can be used in a <code>MenuManager</code>.
-       But don&apos;t forget to add the commonly used views as shortcuts to your perspective
+       But don't forget to add the commonly used views as shortcuts to your perspective
         (see <code>IPageLayout#addShowViewShortcut("your.view.id")</code>). </p>
       <p>For all the views without a shortcut, there is a "Other..." item appended to the end of the list to
         display the so loved "Show View" dialog where you can browse all available views. HINT: Now you can also
@@ -508,7 +508,7 @@ public class Perspective implements IPerspectiveFactory {
   </tr>
   <tr valign="top" align="left">
     <td width="20%"><b>Minor usability improvement</b> </td>
-    <td width="80%">It&apos;s now possible to maximize/restore view parts by double-clicking on their corresponding TabItem.</td>
+    <td width="80%">It's now possible to maximize/restore view parts by double-clicking on their corresponding TabItem.</td>
   </tr>
   <tr valign="top" align="left">
     <td width="20%"><b>Multiple Views</b> </td>
@@ -528,7 +528,7 @@ public class Perspective implements IPerspectiveFactory {
   }
 
 </pre>
-      <p><img src="RAPMultipleViews.png" alt="RAPMultipleViews.png" width="297" height="60" longdesc="RAPMultipleViews.png" /> â </p></td>
+      <p><img src="RAPMultipleViews.png" alt="RAPMultipleViews.png" width="297" height="60" longdesc="RAPMultipleViews.png" /></p></td>
   </tr>
   <tr valign="top" align="left">
     <td width="20%"><b>IWorkbenchBrowserSupport</b> </td>
@@ -639,7 +639,7 @@ StatusManager.getManager().handle(s, StatusManager.SHOW | StatusManager.LOG );
   </tr>
   <tr valign="top" align="left">
     <td width="20%"><b>Part Listener</b> </td>
-    <td width="80%">You&apos;ve now the possibility to attach an <code>IPartListener</code> or <code>IPartListener2</code> to a workbench page to stay informed about all part-related activities like when they&apos;re opened, closed, (de)activated or when they become hidden/visible.
+    <td width="80%">You've now the possibility to attach an <code>IPartListener</code> or <code>IPartListener2</code> to a workbench page to stay informed about all part-related activities like when they're opened, closed, (de)activated or when they become hidden/visible.
       <p>Just use <code>IPartService#addPartListener(IPartListener)</code> as the following examples shows it: </p>
       <pre>
 IWorkbenchWindow window = PlatformUI.getWorkbench().getActiveWorkbenchWindow();
@@ -659,7 +659,7 @@ window.getActivePage().addPartListener(new IPartListener2() {
 <table>
   <tr valign="top" align="left">
     <td width="20%"><b>DrillDownAdapter</b> </td>
-    <td width="80%">Drilldown Adapters are a feature available for TreeViewers to help navigate through the data, instead of having to deal with ever expanding trees. In this way you can essentially zoom in to view just one part of the tree, i.e., drill down. Only two lines of code were added throughout the initialization of the viewer to invoke this feature in the context menu. Only one line was needed to add them to the view&apos;s toolbar. They are shown below:
+    <td width="80%">Drilldown Adapters are a feature available for TreeViewers to help navigate through the data, instead of having to deal with ever expanding trees. In this way you can essentially zoom in to view just one part of the tree, i.e., drill down. Only two lines of code were added throughout the initialization of the viewer to invoke this feature in the context menu. Only one line was needed to add them to the view's toolbar. They are shown below:
       <pre>
 // Create the Drill Down Adapter
 drillDownAdapter = new DrillDownAdapter(viewer);
@@ -676,7 +676,7 @@ drillDownAdapter.addNavigationActions(manager);
     <td width="20%"><b>Editor framework</b> </td>
     <td width="80%">The workbench implementation of RAP now really has support for the full editor infrastructure. Maybe there is one or the other little feature missing but it should work for the most situations where you need editor support. Note that we also support multi-page editors as you can see on the following screenshot:
       <p><img src="RAPEditors.png" alt="RAPEditors.png" width="432" height="144" longdesc="RAPEditors.png" /> </p>
-      <p>Thanks to the donation of a Fortune 500 corporation we were able to acquire additional resources to have editor support implemented for M5. </p></td>
+    </td>
   </tr>
 </table>
 <a name="RAP_Forms"></a>
@@ -699,6 +699,7 @@ drillDownAdapter.addNavigationActions(manager);
       <p><img src="RAPFormsDemo.jpeg" alt="RAPFormsDemo.jpeg" width="326" height="287" longdesc="RAPFormsDemo.jpeg" /> </p>
   </tr>
 </table>
+</div>
 
 EOHTML;
 
