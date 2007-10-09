@@ -5,7 +5,7 @@ $pageAuthor		= "Jochen Krause";
 
 # Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
-<div id="midcolumn">
+<div id="midcolumn" style="margin: 10px; padding: 5px;">
 <h1>RAP 1.0 - New and Noteworthy</h1>
 <p>Here are some of the more noteworthy things available in the first release build (October 10, 2007) which is now available for <a href="http://www.eclipse.org/rap/downloads.php" title="http://www.eclipse.org/rap/downloads.php">download</a>. </p>
 <ul>
