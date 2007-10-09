@@ -5,7 +5,8 @@ $pageAuthor		= "Jochen Krause";
 
 # Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
-<div id="midcolumn" style="margin: 10px; padding: 5px;">
+<div id="maincontent">
+	<div id="midcolumn">
 <h1>RAP 1.0 - New and Noteworthy</h1>
 <p>Here are some of the more noteworthy things available in the first release build (October 10, 2007) which is now available for <a href="http://www.eclipse.org/rap/downloads.php" title="http://www.eclipse.org/rap/downloads.php">download</a>. </p>
 <ul>
@@ -699,6 +700,7 @@ drillDownAdapter.addNavigationActions(manager);
       <p><img src="RAPFormsDemo.jpeg" alt="RAPFormsDemo.jpeg" width="326" height="287" longdesc="RAPFormsDemo.jpeg" /> </p>
   </tr>
 </table>
+</div>
 </div>
 
 EOHTML;
