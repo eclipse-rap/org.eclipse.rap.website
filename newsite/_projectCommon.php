@@ -17,6 +17,7 @@ EOBRANDING;
 	
 	$Nav->addNavSeparator("RAP", "/rap/newsite/index.php");
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;About", "/rap/newsite/about", "_self", 1);
+	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Demos", "/rap/newsite/demos", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Team", "/rap/newsite/team", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Buzz", "/rap/newsite/buzz", "_self", 1);
 
