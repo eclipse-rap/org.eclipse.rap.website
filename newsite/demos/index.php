@@ -13,7 +13,9 @@ $html = <<<EOHTML
         <tr>
           <td width="250"><a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank"><img src="../../images/controls1.png" alt="controls" style="border: 1px solid #666;"/></a></td>
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RWT Controls Demo</h2>
-        </tr>
+              <p> <a href="http://rap.eclipse.org/controlsdemo/controls">See a RWT controls demo online</a>. </p>
+              <p>This demo shows what widgets there are in RWT and that they behave very similar to the SWT widgets.</p>
+          </tr>
       </table>
     </div>
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
@@ -44,13 +46,13 @@ $html = <<<EOHTML
     </div
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
-          <tr>
-        <td colspan="2"><h2>Eclipse Discovery</h2></td>
-      </tr>
       <tr>
         <td width="250" valign="top"><img src="../../images/discovery1.png" alt="discovery" style="border: 1px solid #666;"/></td>
         <td width="500" valign="top"><ul>
-            <li>Choose from the entire Eclipse.org portfolio</li>
+	      <tr>
+	        <td colspan="2"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Eclipse Discovery</h2></td>
+	      </tr>
+        <li>Choose from the entire Eclipse.org portfolio</li>
             <li>Add your favorite 3rd party plugins</li>
             <li>Get all in a single file download</li>
             <li>Get Eclipse 3.3 Europa</li>
