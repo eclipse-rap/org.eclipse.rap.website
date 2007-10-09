@@ -9,31 +9,37 @@
 <div id="maincontent">
 	<div id="midcolumn">
 		<div class="homeitem3col">
-			<h3>Current articles</h3>
+			<h3>Current articles, blogs, slides and presentations</h3>
+		    <ul>
+				<li>
+		            <a href="http://www.eweek.com/article2/0,1759,2100984,00.asp">
+		           	Innoopract: The Company Behind RAP</a> October 01, 2007
+	            </li>
+	            <li>
+		            <a href="http://www.innoopract.com/fileadmin/user_upload/Dokumente/Web-enabled_RCP_Applications_with_the_Rich_Ajax_Platform_pdf.pdf">
+		           	RCP goes Web 2.0</a> September 28, 2007
+	            </li>
+				<li>
+		            <a href="http://www.podtech.net/home/4204/innoopract-on-eclipse-eclipse-rap-osgi-and-component-coding-sponsored-development-in-open-source">
+		           	Podcast: Innoopract CEO on Eclipse Distributions, Ajax, OSGi and more</a> September 24, 2007
+	            </li>
+				<li>
+		            <a href="http://jax-award.de/jax_award06/gewinner_en.php">
+		           	RAP wins european innovation award</a> JAX, 2006
+	            </li>
+	            <li>
+		            <a href="http://eclipsezilla.eclipsecon.org/php/attachment.php?bugid=3833">
+		           	eclipse rich ajax platform (RAP)</a> slides EclipseCon 2007
+	            </li>
+            </ul> 
 		</div>
-		
-		<div class="homeitem3col">
-			<h3>Current blogs</h3>
-		</div>
-		
-		<div class="homeitem3col">
-			<h3>Current slides</h3>
-		</div>
-			
-		<div class="homeitem3col">
-			<h3>Selected presentations</h3>
-		</div>
-		
-		<div class="homeitem3col">
-			<h3>Other</h3>
-		</div>
-		</div>
+	</div>
 </div>
 	
 </div>
 
 EOHTML;
-
+*/*/
 
 	# Generate the web page
 	$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
