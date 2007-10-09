@@ -39,7 +39,7 @@ $html = <<<EOHTML
           </tr>
         </table>
         <p>&nbsp;</p>
-        <div class="homeitem3col">
+        <!--<div class="homeitem3col">
           <h3>News</h3>
           <ul>
             <li> September:</li>
@@ -47,12 +47,13 @@ $html = <<<EOHTML
             <li> July: </li>
             <li> June: </li>
           </ul>
-        </div></td>
+        </div></td> -->
       <td valign="top"><div class="sideitem">
-          <h6>RAP in the news</h6>
+          <h6>Active Contributors</h6>
           <ul>
-            <li><a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">RAP wx	ins european innovation award</a></li>
-            <li><a href="http://www.eweek.com/article2/0,1895,1939964,00.asp" target="_blank">eweek - new Ajax project for eclipse</a></li>
+            <li><a href="http://innoopract.com" target="_blank">Innoopract</a></li>
+            <li><a href="http://oneandone.com">1&1</a></li>
+            <li><a href="http://www.cas.de/English/Home.asp">CAS</a></li>
           </ul>
         </div>
         <div class="sideitem">
