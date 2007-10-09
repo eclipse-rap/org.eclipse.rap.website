@@ -13,7 +13,6 @@ $html = <<<EOHTML
         <tr>
           <td width="250"><a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank"><img src="../../images/controls1.png" alt="controls" style="border: 1px solid #666;"/></a></td>
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RWT Controls Demo</h2>
-            <p>RAP offers an UI concept (workbench) analogical to RCP that combines repeating complex programming tasks into predefined components.</p></td>
         </tr>
       </table>
     </div>
@@ -23,7 +22,8 @@ $html = <<<EOHTML
           <td width="250"><a href="http://rap.eclipse.org/rapdemo/workbench" target="_blank"><img src="../../images/webworkbench1.png" alt="workbench" style="border: 1px solid #666;"/></a></td>
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RAP Workbench Demo</h2>
               <p> <a href="http://rap.innoopract.com/rapdemo/rap">See a workbench demo online</a>. </p></td>
-        </tr>
+            <p>RAP offers a UI concept (workbench) analogous to RCP that combines repeating complex programming tasks into predefined components.</p></td>
+              </tr>
       </table>
     </div>
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
@@ -37,7 +37,9 @@ $html = <<<EOHTML
     </div>
     <p>&nbsp;</p>
     </p>
+    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
     <h2>Third Party demos based on RAP</h2>
+    </div
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
           <tr>
