@@ -24,9 +24,9 @@ $html = <<<EOHTML
 		           	Podcast: Innoopract CEO on Eclipse Distributions, Ajax, OSGi and more</a> September 24, 2007
 	            </li>
 				<li>
+		            <img src="../../images/jax.png"/>
 		            <a href="http://jax-award.de/jax_award06/gewinner_en.php">
 		           	RAP wins european innovation award</a> JAX, 2006
-		           	<img src="../../images/jax.png" align="right"/> 
 	            </li>
 	            <li>
 		            <a href="http://eclipsezilla.eclipsecon.org/php/attachment.php?bugid=3833">
