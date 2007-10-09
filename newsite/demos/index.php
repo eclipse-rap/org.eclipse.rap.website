@@ -5,8 +5,6 @@ $pageAuthor		= "Jochen Krause";
 
 # Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
-
-<div id="container">
   <div id="midcolumn">
     <h1 class="style3">Rich Ajax Platform (RAP) Project</h1>
     <p>&nbsp;</p>
@@ -45,7 +43,7 @@ $html = <<<EOHTML
         <td colspan="2"><h2>Eclipse Discovery</h2></td>
       </tr>
       <tr>
-        <td width="464" valign="top"><img src="../../discovery.png" alt="discovery" style="border: 1px solid #666;"/></td>
+        <td width="464" valign="top"><img src="../../images/discovery.png" alt="discovery" style="border: 1px solid #666;"/></td>
         <td width="301" valign="top"><ul>
             <li>Choose from the entire Eclipse.org portfolio</li>
             <li>Add your favorite 3rd party plugins</li>
