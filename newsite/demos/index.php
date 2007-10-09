@@ -37,8 +37,8 @@ $html = <<<EOHTML
     </div>
     <p>&nbsp;</p>
     </p>
-    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-    <h2>Third Party demos based on RAP</h2>
+    <div style="margin: 10px; width: 750px;">
+    <h1>Third Party demos based on RAP</h1>
     </div
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
@@ -61,9 +61,7 @@ $html = <<<EOHTML
   </div>
 </div>
 
-	
 EOHTML;
-
 
 # Generate the web page
 $App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
