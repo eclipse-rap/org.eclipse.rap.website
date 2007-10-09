@@ -9,7 +9,7 @@ $html = <<<EOHTML
     <h1 class="style3">Rich Ajax Platform (RAP) Project</h1>
     <p>&nbsp;</p>
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-      <table width="750" border="0" cellspacing="5" cellpadding="5">
+      <table width="750" border="0" cellspacing="5">
         <tr>
           <td width="250"><a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank"><img src="../../images/controls1.png" alt="controls" style="border: 1px solid #666;"/></a></td>
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RWT Controls Demo</h2>
