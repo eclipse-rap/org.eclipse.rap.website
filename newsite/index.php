@@ -11,19 +11,22 @@ $html = <<<EOHTML
     <tr>
       <td width="180"><img src="../images/main1.png" alt="RAP applications" width="172" height="420" border="0" /></td>
       <td valign="top"><p>The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</p>
-        <table border="0" cellpadding="5">
+    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
+      <table border="0" cellpadding="5">
           <tr height=9>
           <tr>
             <td width=20></td>
             <td><a href="/rap/newsite/community"><img border=0 src="../images/demos.png"></a></td>
-            <td><table border="0" cellpadding="0">
+            <td>
+              <table border="0" cellpadding="0">
                 <tr>
                   <td><font size=+1><a href="/rap/newsite/demos">Demos</a></font></td>
                 </tr>
                 <tr>
                   <td>See some demos here</td>
                 </tr>
-              </table></td>
+              </table>
+          </td>
           </tr>
           <tr>
             <td width=20></td>
@@ -38,6 +41,7 @@ $html = <<<EOHTML
               </table></td>
           </tr>
         </table>
+        </div>
         <p>&nbsp;</p>
         <!--<div class="homeitem3col">
           <h3>News</h3>
