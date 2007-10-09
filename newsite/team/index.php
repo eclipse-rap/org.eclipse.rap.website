@@ -31,7 +31,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 					Benjamin Muskalla (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
 				</li>
 				<li>
-					Istvan Ballok <a href="http://www.cas.de/">(CAS Software)</a>
+					Istvan Ballok (<a href="http://www.cas.de/">CAS Software</a>)
 				</li>
 			</ul> 
 		</div>
