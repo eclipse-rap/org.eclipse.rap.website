@@ -15,7 +15,7 @@ $html = <<<EOHTML
           <tr height=9>
           <tr>
             <td width=20></td>
-            <td><a href="/rap/newsite/community"><img border=0 src="../images/community.jpg"></a></td>
+            <td><a href="/rap/newsite/community"><img border=0 src="../images/demos.png"></a></td>
             <td><table border="0" cellpadding="0">
                 <tr>
                   <td><font size=+1><a href="/rap/newsite/demos">Demos</a></font></td>
@@ -27,7 +27,7 @@ $html = <<<EOHTML
           </tr>
           <tr>
             <td width=20></td>
-            <td><a href="/rap/newsite/downloads"><img border=0 src="../images/downloads.gif"></a></td>
+            <td><a href="/rap/newsite/downloads"><img border=0 src="../images/downloads.png"></a></td>
             <td><table border="0" cellpadding="0">
                 <tr>
                   <td><font size=+1><a href="/rap/newsite/downloads">Downloads</a></font></td>
