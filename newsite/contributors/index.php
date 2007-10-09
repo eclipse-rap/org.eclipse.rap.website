@@ -8,9 +8,6 @@
 
 <div id="maincontent">
 </div>
-	
-</div>
-
 EOHTML;
 
 
