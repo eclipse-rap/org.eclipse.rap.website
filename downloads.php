@@ -77,7 +77,9 @@ $html = <<<EOHTML
           <br />
         </li>
       </ul>
+    </div>  
       
+    <div class="homeitem3col">
       <h3>Milestone Target Platforms</h3>
       <ul>
         <li>RAP 1.0 RC1 for Eclipse 3.2
