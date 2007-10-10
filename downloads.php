@@ -60,6 +60,24 @@ $html = <<<EOHTML
     doing a clean build will help.
     </p>
     <div class="homeitem3col">
+      <h3>1.0 Release Target Platform</h3>
+      <ul>
+        <li>RAP 1.0 for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.2-20071008-1834.zip">
+            rap-1.0-R-target-3.2-20071008-1834.zip
+          </a>
+          <br />
+          RAP 1.0 for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.3-20071008-1834.zip">
+            rap-1.0-R-target-3.3-20071008-1834.zip
+          </a>
+          <br />
+          See <a href="gettingstarted.php">here</a> for a guide on how to get 
+          started.
+          <br />
+        </li>
+      </ul>
+      
       <h3>Milestone Target Platforms</h3>
       <ul>
         <li>RAP 1.0 RC1 for Eclipse 3.2
