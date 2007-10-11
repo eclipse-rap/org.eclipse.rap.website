@@ -11,7 +11,7 @@
 
 <div id="maincontent">
 <table>
-<img src="../images/rap_start.png"></img>
+<img src="../images/rap_logo.png"></img>
 </table>
 	<div id="midcolumn">
 		<div class="homeitem3col">
