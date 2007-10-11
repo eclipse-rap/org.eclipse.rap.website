@@ -13,7 +13,7 @@ $html = <<<EOHTML
         <tr>
           <td width="250"><a href="http://rap.eclipse.org/rapdemo/workbench" target="_blank"><img src="../../images/webworkbench1.png" alt="workbench" style="border: 1px solid #666;"/></a></td>
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RAP Workbench Demo</h2>
-              <p> <a href="http://rap.eclipse.org/rapdemo/workbench" target="_blank">See a workbench demo online</a>. </p>
+              <p> <a href="http://rap.eclipse.org/rapdemo/workbench" target="_blank">See a workbench demo online</a></p>
               <p>RAP offers a UI concept (workbench) analogous to RCP that combines repeating complex programming tasks into predefined components.</p>
               </td>
             </td>
@@ -25,7 +25,8 @@ $html = <<<EOHTML
         <tr>
           <td width="250"><a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank"><img src="../../images/maildemo1.png" alt="maildemo" style="border: 1px solid #666;"/></a></td>
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RAP (RCP) maildemo</h2>
-          <p><a href="http://rap.eclipse.org/rapdemo/maildemo" target="_blank">See the RAP (RCP) maildemo online</a></p></td>
+          <p><a href="http://rap.eclipse.org/rapdemo/maildemo" target="_blank">See the RAP (RCP) Mail Demo online</a></p></td>
+          <p>With very few changes the well-known RCP Mail Template can be converted to RAP.</p>
         </tr>
       </table>
     </div>
@@ -34,7 +35,7 @@ $html = <<<EOHTML
         <tr>
           <td width="250"><a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank"><img src="../../images/controls1.png" alt="controls" style="border: 1px solid #666;"/></a></td>
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RWT Controls Demo</h2>
-              <p> <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">See a RWT controls demo online</a>. </p>
+              <p> <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">See a RWT controls demo online</a></p>
               <p>This demo shows what widgets there are in RWT and that they behave very similar to the SWT widgets.</p>
           </tr>
       </table>
@@ -50,6 +51,7 @@ $html = <<<EOHTML
         <td width="250" valign="top"><a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank"><img src="../../images/discovery1.png" alt="discovery" style="border: 1px solid #666;"/></a></td>
         <td width="500" valign="top">
 	        <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Eclipse Discovery</h2>        	
+          <p><a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank">See discovery online</a></p></td>
 	        <ul>
 	        	<li>Choose from the entire Eclipse.org portfolio</li>
 	            <li>Add your favorite 3rd party plugins</li>
@@ -57,7 +59,6 @@ $html = <<<EOHTML
 	            <li>Get Eclipse 3.3 Europa</li>
             </ul>
           <p>Access the entire eclipse.org portfolio plus a large selection of the most important open-source plugins, tested for compatibility and consistency.</p>
-          <p><a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank">See discovery online!</a></p></td>
       </tr>
       </table>
     </div>
