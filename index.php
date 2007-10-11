@@ -27,14 +27,13 @@ $html = <<<EOHTML
 		<h2>What is RAP?</h2>
 		<p> The RAP project aims to enable developers to build rich, Ajax-enabled Web applications 
         by using the Eclipse development model, plug-ins with the well known Eclipse workbench
-        extenstion points and a widget toolkit with SWT API (plus JFace). The project is in 
-        the <a href="http://www.eclipse.org/projects/dev_process/validation-phase.php" target="_blank">validation phase</a>.
-    </p>
-		<h2>RC1 has been released</h2>
-		<p>We have released the Release Candidate 1 build of RAP 
-		    (<a href="http://eclipse.org/rap/downloads.php">Download</a>,
+        extenstion points and a widget toolkit with SWT API (plus JFace).
+        </p>
+		<h2>RAP 1.0 has been released</h2>
+		<p>We have just have released version 1.0 of RAP
+		    (<a href="http://eclipse.org/rap/downloads.php">Download</a><!--,
 		<a href="http://wiki.eclipse.org/index.php/Rap10RC1_News" target="_blank">New 
-		and Noteworthy</a>). 
+		and Noteworthy</a>-->).
 		</p>
     <p>
     <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">See the RAP (RCP) maildemo online</a>.
@@ -86,23 +85,24 @@ $html = <<<EOHTML
 		<hr class="clearer" />
 	</div>
 	<div id="rightcolumn">
-    <!--
-    <div class="sideitem">
-      <img src="http://www.eclipse.org/images/gazoo-incubation.jpg" alt="Project is in incubation">
-    </div>
+    
+      <!--
+      <div class="sideitem">
+        <img src="http://www.eclipse.org/images/gazoo-incubation.jpg" alt="Project is in incubation">
+      </div>
+      <div class="sideitem">
+        <h6>Incubation</h6><p>
+        <div align="center">
+          <a href="/projects/what-is-incubation.php">
+            <img align="center" src="/images/egg-incubation.png" border="0"/>
+          </a>
+        </div>
+        <div align="center">  
+          This project is in the 
+          <a href="/projects/dev_process/validation-phase.php">Incubation Phase</a>
+        </div>
+      </div>		
 	  -->
-    <div class="sideitem">
-      <h6>Incubation</h6><p>
-      <div align="center">
-        <a href="/projects/what-is-incubation.php">
-          <img align="center" src="/images/egg-incubation.png" border="0"/>
-        </a>
-      </div>
-      <div align="center">  
-        This project is in the 
-        <a href="/projects/dev_process/validation-phase.php">Incubation Phase</a>
-      </div>
-    </div>		
 		<div class="sideitem">
 			<h6>RAP in the news</h6>
 			<ul>
