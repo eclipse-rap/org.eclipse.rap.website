@@ -9,11 +9,8 @@ $html = <<<EOHTML
 <div id="midcolumn" style="width:93%">
   <table width="100%" border="0" cellpadding="5">
       <tr>
-<!-- erste Spalte-->
     <td colspan="2"><div align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border=0></div></td>
-    <!-- dritte Spalte-->
-
-      <td rowspan="2" valign="top"><div class="sideitem">
+      <td width="20%" rowspan="2" valign="top"><div class="sideitem">
           <h6>Active Contributors</h6>
           <ul>
             <li><a href="http://innoopract.com" target="_blank">Innoopract</a></li>
@@ -34,11 +31,11 @@ $html = <<<EOHTML
         </div></td>
     </tr>
       <tr>
-        <td valign="top"><table border="0" cellpadding="5">
+        <td width="40%" valign="top"><table border="0">
           <tr>
             <td width=20></td>
             <td><a href="/rap/newsite/community"><img border=0 src="images/community.jpg"></a></td>
-            <td><table border="0" cellpadding="0">
+            <td><table border="0">
                 <tr>
                   <td><font size=+1><a href="/rap/newsite/demos">Demos</a></font></td>
                 </tr>
@@ -50,7 +47,7 @@ $html = <<<EOHTML
           <tr>
             <td width=20></td>
             <td><a href="/rap/newsite/downloads"><img border=0 src="images/downloads.gif"></a></td>
-            <td><table border="0" cellpadding="0">
+            <td><table border="0">
                 <tr>
                   <td><font size=+1><a href="/rap/newsite/downloads">Downloads</a></font></td>
                 </tr>
@@ -60,11 +57,10 @@ $html = <<<EOHTML
               </table></td>
           </tr>
         </table></td>
-        <td valign="top">The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</td>
+        <td width="60%" valign="top">The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</td>
       </tr>
   </table>
 </div>
-
 EOHTML;
 
 # Generate the web page
