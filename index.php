@@ -29,9 +29,8 @@ $html = <<<EOHTML
         by using the Eclipse development model, plug-ins with the well known Eclipse workbench
         extenstion points and a widget toolkit with SWT API (plus JFace).
         </p>
-	    Get a <a href="http://eclipse.org/rap/downloads.php">download</a> check our
-		<a href="http://eclipse.org/rap/noteworthy/index.php">New 
-		and Noteworthy for 1.0</a>).
+	    Check our <a href="http://eclipse.org/rap/noteworthy/index.php">New 
+		and Noteworthy for 1.0</a> and get a <a href="http://eclipse.org/rap/downloads.php">download</a> 
 		</p>
     <p>
     <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">See the RAP (RCP) maildemo online</a>.
