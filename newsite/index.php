@@ -6,7 +6,7 @@ $pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
 $html = <<<EOHTML
-<div id="midcolumn" style="width:80%">
+<div id="midcolumn" style="width:90%">
   <table width="100%" border="0">
       <tr>
     <td colspan="2"><div align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border=0></div></td>
