@@ -6,8 +6,8 @@ $pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
 $html = <<<EOHTML
-<div id="midcolumn" style="width:93%">
-  <table width="100%" border="0" cellpadding="5">
+<div id="midcolumn" style="width:90%">
+  <table width="100%" border="0">
       <tr>
     <td colspan="2"><div align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border=0></div></td>
       <td width="20%" rowspan="2" valign="top"><div class="sideitem">
@@ -31,7 +31,7 @@ $html = <<<EOHTML
         </div></td>
     </tr>
       <tr>
-        <td width="40%" valign="top"><table border="0">
+        <td width="30%" valign="top"><table border="0">
           <tr>
             <td width=20></td>
             <td><a href="/rap/newsite/community"><img border=0 src="images/community.jpg"></a></td>
@@ -57,7 +57,7 @@ $html = <<<EOHTML
               </table></td>
           </tr>
         </table></td>
-        <td width="60%" valign="top">The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</td>
+        <td width="50%" valign="top">The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</td>
       </tr>
   </table>
 </div>
