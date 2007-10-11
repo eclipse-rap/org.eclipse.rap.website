@@ -9,16 +9,6 @@ $html = <<<EOHTML
     <h1 class="style3">Rich Ajax Platform (RAP) Project</h1>
     <p>&nbsp;</p>
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-      <table width="750" border="0" cellspacing="5">
-        <tr>
-          <td width="250"><a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank"><img src="../../images/controls1.png" alt="controls" style="border: 1px solid #666;"/></a></td>
-          <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RWT Controls Demo</h2>
-              <p> <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">See a RWT controls demo online</a>. </p>
-              <p>This demo shows what widgets there are in RWT and that they behave very similar to the SWT widgets.</p>
-          </tr>
-      </table>
-    </div>
-    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
           <td width="250"><a href="http://rap.eclipse.org/rapdemo/workbench" target="_blank"><img src="../../images/webworkbench1.png" alt="workbench" style="border: 1px solid #666;"/></a></td>
@@ -37,6 +27,16 @@ $html = <<<EOHTML
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RAP (RCP) maildemo</h2>
           <p><a href="http://rap.eclipse.org/rapdemo/maildemo" target="_blank">See the RAP (RCP) maildemo online</a></p></td>
         </tr>
+      </table>
+    </div>
+    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
+      <table width="750" border="0" cellspacing="5">
+        <tr>
+          <td width="250"><a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank"><img src="../../images/controls1.png" alt="controls" style="border: 1px solid #666;"/></a></td>
+          <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RWT Controls Demo</h2>
+              <p> <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">See a RWT controls demo online</a>. </p>
+              <p>This demo shows what widgets there are in RWT and that they behave very similar to the SWT widgets.</p>
+          </tr>
       </table>
     </div>
     <p>&nbsp;</p>
