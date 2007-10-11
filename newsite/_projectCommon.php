@@ -30,7 +30,7 @@ EOBRANDING;
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;FAQ", "/rap/newsite/faq", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;User Guide", "/rap/newsite/userguide", "_self", 1);
 
-	$Nav->addNavSeparator("Contributorsn (wiki)", "http://wiki.eclipse.org/index.php/RapPlan", "_self", 1);
+	$Nav->addNavSeparator("Contributors (wiki)", "http://wiki.eclipse.org/index.php/RapPlan", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Plan (wiki)", "http://wiki.eclipse.org/index.php/RapPlan", "_self", 1);	
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Mailing List (ext)", "https://dev.eclipse.org/mailman/listinfo/rap-dev", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Sandbox", "/rap/newsite/sandbox", "_self", 1);
