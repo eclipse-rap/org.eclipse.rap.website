@@ -52,7 +52,7 @@ $html = <<<EOHTML
         <td width="250" valign="top"><a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank"><img src="../../images/discovery1.png" alt="discovery" style="border: 1px solid #666;"/></a></td>
         <td width="500" valign="top">
 	        <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Eclipse Discovery</h2>        	
-          <p><a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank">See discovery online</a></p></td>
+          <p><a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank">See discovery online</a></p>
 	        <ul>
 	        	<li>Choose from the entire Eclipse.org portfolio</li>
 	            <li>Add your favorite 3rd party plugins</li>
@@ -60,6 +60,7 @@ $html = <<<EOHTML
 	            <li>Get Eclipse 3.3 Europa</li>
             </ul>
           <p>Access the entire eclipse.org portfolio plus a large selection of the most important open-source plugins, tested for compatibility and consistency.</p>
+        </td>
       </tr>
       </table>
     </div>
