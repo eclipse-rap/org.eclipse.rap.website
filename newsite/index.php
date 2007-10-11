@@ -6,14 +6,35 @@ $pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
 $html = <<<EOHTML
-<div id="container">
-<div id="midcolumn" style="width:80%">
+<div id="midcolumn" style="width:93%">
   <table width="100%" border="0" cellpadding="5">
-    <tr>
-      <td colspan="2"><div align="center"><img src="../images/rap_start.png" alt="Platzhalter" width="420" height="161" border=0></div></td>
+      <tr>
+<!-- erste Spalte-->
+    <td colspan="2"><div align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border=0></div></td>
+    <!-- dritte Spalte-->
+
+      <td rowspan="2" valign="top"><div class="sideitem">
+          <h6>Active Contributors</h6>
+          <ul>
+            <li><a href="http://innoopract.com" target="_blank">Innoopract</a></li>
+            <li><a href="http://oneandone.com">1&1</a></li>
+            <li><a href="http://www.cas.de/English/Home.asp">CAS</a></li>
+          </ul>
+        </div>
+        <div class="sideitem">
+          <h6>Meet the RAP team</h6>
+          <ul>
+            <li><a href="http://www.eclipsecon.org/summiteurope2007/index.php?page=detail/&id=29" target="_blank">Eclipse Summit Europe, Ludwigsburg, October 10-11</a><span><br>
+              RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span></li>
+            <li><a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">EclipseCon 2007, Santa Clara, March 5-8</a><span><br>
+              RAP - Eclipse style development for the web</span></li>
+            <li><a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a><span><br>
+              Building Ajax applications with the Eclipse Rich Ajax Platform</span></li>
+          </ul>
+        </div></td>
     </tr>
-    <tr>
-      <td><table border="0" cellpadding="5">
+      <tr>
+        <td valign="top"><table border="0" cellpadding="5">
           <tr>
             <td width=20></td>
             <td><a href="/rap/newsite/community"><img border=0 src="images/community.jpg"></a></td>
@@ -39,8 +60,8 @@ $html = <<<EOHTML
               </table></td>
           </tr>
         </table></td>
-      <td valign="top">The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</td>
-    </tr>
+        <td valign="top">The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</td>
+      </tr>
   </table>
 </div>
 
