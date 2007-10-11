@@ -24,7 +24,7 @@ $html = <<<EOHTML
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
           <td width="250"><a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank"><img src="../../images/maildemo1.png" alt="maildemo" style="border: 1px solid #666;"/></a></td>
-          <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RAP (RCP) maildemo</h2>
+          <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RAP (RCP) Mail Demo</h2>
           <p><a href="http://rap.eclipse.org/rapdemo/maildemo" target="_blank">See the RAP (RCP) Mail Demo online</a></p><
           <p>With very few changes the well-known RCP Mail Template can be converted to RAP.</p>
           /td>
