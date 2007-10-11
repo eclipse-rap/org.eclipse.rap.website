@@ -33,12 +33,16 @@ $html = <<<EOHTML
 		and Noteworthy for 1.0</a> and get a <a href="http://eclipse.org/rap/downloads.php">download</a> 
 		</p>
     <p>
-    <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">See the RAP (RCP) maildemo online</a>.
+    Try RAP online: <a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">a sample enterprise application</a>.
     </p>
     <p>
-    A core component of RAP is the RAP Widget Toolkit, which offers SWT API to the largest extend possible (for the web). See a demo <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">RWT widget demo</a>.
+    A core component of RAP is the RAP Widget Toolkit, which offers SWT API to the largest extend possible (for the web). See a <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">RWT widget demo</a>.
+    Finally this is a demo of the famous RCP mail template <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">running as a RAP application</a>.
     </p>
-    <p><a href="http://rap.eclipse.org/rapdemo/workbench" target="_blank">
+
+    <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">See the RAP (RCP) maildemo online</a>.
+
+    <p><a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">
       <img src="resources/webworkbench.png" alt="A demo webworkbench"></a>
     </p>
     <p><img src="resources/workbench_pde.png" alt="Webworkbench plugin.xml">
