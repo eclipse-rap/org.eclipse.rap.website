@@ -12,10 +12,15 @@ $html = <<<EOHTML
     <td colspan="2"><div align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border=0></div></td>
       <td width="15%" rowspan="2" valign="top"><div class="sideitem">
           <h6>Active Contributors</h6>
-          <ul>
-            <li><a href="http://innoopract.com" target="_blank">Innoopract</a></li>
-            <li><a href="http://oneandone.com">1&1</a></li>
-            <li><a href="http://www.cas.de/English/Home.asp">CAS</a></li>
+            <p style="margin:10px">
+              <a href="http://innoopract.com" target="_blank">Innoopract</a>
+            </p>
+            <p style="margin:10px">
+              <a href="http://oneandone.com">1&1</a>
+            </p>
+            <p style="margin:10px">
+              <a href="http://www.cas.de/English/Home.asp">CAS</a>
+            </p>
           </ul>
         </div>
         <div class="sideitem">
