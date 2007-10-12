@@ -74,7 +74,7 @@ $html = <<<EOHTML
        <tr>
          <td>
            <a href="archive.php">
-             <img border=0 src="/mylyn/images/archives.gif">
+             <img border=0 src="/mylyn/images/archive.gif">
            </a>
          </td>
          <td>
