@@ -23,14 +23,14 @@ $html = <<<EOHTML
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-200710091107.zip">
             <img src="download.gif" title="Update Site Zip" alt="Update Site Zip"/>
           </a>
-          <b>http://download.eclipse.org/technology/rap/update-site/</b>
+          <b>http://download.eclipse.org/technology/rap/update-site</b>
         </li>
       </ul>
     </div>  
       
     <div class="homeitem3col">
       <h3>1.0 Release - Target Platform</h3>
-      <p>
+      <p style="margin: 10px">
       Since RCP and RAP bundles within the same instance do not work, we provide 
       target platforms for download. This is because RAP uses the same namespace 
       as RCP.
@@ -84,7 +84,7 @@ $html = <<<EOHTML
                </td>
              </tr>
              <tr>
-               <td>RAP 1.0 RC1 older versions, Sandbox</td>
+               <td>RAP 1.0 RC1 and older versions</td>
              </tr> 
            </table>
          </td>
