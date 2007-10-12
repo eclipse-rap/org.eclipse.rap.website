@@ -26,21 +26,20 @@ $html = <<<EOHTML
               <span><br>
               RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
             </p>
-          <ul>
-            <li>
+            <p style="margin:10px">
               <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">
               EclipseCon 2007, Santa Clara, March 5-8</a>
               <span><br>
               RAP - Eclipse style development for the web</span>
-            </li>
-            <li>
+            </p>
+            <p style="margin:10px">
               <a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">
               Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a>
               <span><br />
               Building Ajax applications with the Eclipse Rich Ajax Platform</span>
-            </li>
-          </ul>
-        </div></td>
+            </p>
+        </div>
+      </td>
     </tr>
       <tr>
         <td width="30%" valign="top"><table border="0">
