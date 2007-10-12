@@ -14,7 +14,7 @@ $html = <<<EOHTML
 
     <div class="homeitem3col">
       <h3>1.0 Release - Tooling Update Site</h3>
-      <p>
+      <p style="margin: 10px">
       bla, bla
       </p>
       <ul>
@@ -35,7 +35,8 @@ $html = <<<EOHTML
       target platforms for download. This is because RAP uses the same namespace 
       as RCP.
       </p>
-      <p>After downloading, extract the file in a convenient location, say <code>
+      <p style="margin: 10px">
+      After downloading, extract the file in a convenient location, say <code>
       c:\\target</code> and start Eclipse (if not yet running). Open <b>Window &gt; 
       Preferences</b>, go to 
       the <b>Plug-in Development &gt; Target Platform</b> preference page, set the
@@ -43,7 +44,8 @@ $html = <<<EOHTML
       <code>c:\\target\\eclipse</code>). Finally click <b>Reload</b>. You should see
       the just downloaded plug-ins appear in the plug-ins list.
       </p>
-      <p>Note: if doing this with a workspace that already contains projects that
+      <p style="margin: 10px">
+      Note: if doing this with a workspace that already contains projects that
       depend on the target, you may get compile errors. Restartiung Eclipse and/or
       doing a clean build will help.
       </p>
