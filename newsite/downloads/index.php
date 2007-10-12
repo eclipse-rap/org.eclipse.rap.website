@@ -48,17 +48,18 @@ $html = <<<EOHTML
       doing a clean build will help.
       </p>
       <ul>
-        <li>RAP 1.0 for Eclipse 3.2
+        <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.2-20071008-1834.zip">
             <img src="download.gif" />
             rap-1.0-R-target-3.2-20071008-1834.zip
           </a>
+          for Eclipse 3.2
           <br />
-          RAP 1.0 for Eclipse 3.3
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.3-20071008-1834.zip">
             <img src="download.gif" />
             rap-1.0-R-target-3.3-20071008-1834.zip
           </a>
+          for Eclipse 3.3
           <br />
           See <a href="gettingstarted.php">here</a> for a guide on how to get 
           started.
@@ -76,7 +77,10 @@ $html = <<<EOHTML
            <table>
              <tr>
                <td>
-                 <h3><a href="/mylyn/builds">Archives and other builds</a></h3>
+                 <a style="font:16px Verdana, Arial, Helvetica, sans-serif; font-weight:bold" 
+                   href="/mylyn/builds">
+                   Archives and other builds
+                 </a>
                </td>
                <td>RAP 1.0 RC1 older versions, Sandbox</td> 
              </tr>
