@@ -13,20 +13,17 @@ $html = <<<EOHTML
 		<h1>$pageTitle</h1>
 
     <div class="homeitem3col">
+      <h3>1.0 Release - Tooling Update Site</h3>
       <p>
       bla, bla
       </p>
-      <h3>1.0 Release - Tooling Update Site</h3>
       <ul>
         <li>Eclipse 3.3
-          <br />
-          <b>http://download.eclipse.org/technology/rap/update-site/</b>
           <br />
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-200710091107.zip">
             <img src="download.gif" title="Update Site Zip" alt="Update Site Zip"/>
           </a>
-          rap-sdk-1.0-R-site-3.3-200710091107.zip
-          <br />
+          <b>http://download.eclipse.org/technology/rap/update-site/</b>
         </li>
       </ul>
     </div>  
@@ -34,9 +31,9 @@ $html = <<<EOHTML
     <div class="homeitem3col">
       <h3>1.0 Release - Target Platform</h3>
       <p>
-      Since RCP and RAP bundles within the same instance do not work, we are only 
-      able to provide target platforms for download.
-      This is because RAP now uses the same namespace as RCP.
+      Since RCP and RAP bundles within the same instance do not work, we provide 
+      target platforms for download. This is because RAP uses the same namespace 
+      as RCP.
       </p>
       <p>After downloading, extract the file in a convenient location, say <code>
       c:\\target</code> and start Eclipse (if not yet running). Open <b>Window &gt; 
