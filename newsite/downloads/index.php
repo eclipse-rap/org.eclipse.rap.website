@@ -18,12 +18,12 @@ $html = <<<EOHTML
       bla, bla
       </p>
       <ul>
-        <li>Eclipse 3.3
-          <br />
+        <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-200710091107.zip">
             <img src="download.gif" title="Update Site Zip" alt="Update Site Zip"/>
           </a>
-          <b>http://download.eclipse.org/technology/rap/update-site</b>
+          <b>http://download.eclipse.org/technology/rap/update-site</b> 
+          for Eclipse 3.3
         </li>
       </ul>
     </div>  
@@ -74,7 +74,7 @@ $html = <<<EOHTML
        <tr>
          <td>
            <a href="archive.php">
-             <img border=0 src="/mylyn/images/archive.gif">
+             <img src="archive.gif">
            </a>
          </td>
          <td>
