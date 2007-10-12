@@ -80,7 +80,7 @@ $html = <<<EOHTML
              <tr>
                <td>
                  <a style="font:16px Verdana, Arial, Helvetica, sans-serif; font-weight:bold" 
-                   href="archive.html">
+                   href="archive.php">
                    Archives and other builds
                  </a>
                </td>
