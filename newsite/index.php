@@ -20,13 +20,13 @@ $html = <<<EOHTML
         </div>
         <div class="sideitem">
           <h6>Meet the RAP team</h6>
-          <ul>
             <p style="margin:10px">
               <a href="http://www.eclipsecon.org/summiteurope2007/index.php?page=detail/&id=29" target="_blank">
               Eclipse Summit Europe, Ludwigsburg, October 10-11</a>
               <span><br>
               RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
             </p>
+          <ul>
             <li>
               <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">
               EclipseCon 2007, Santa Clara, March 5-8</a>
