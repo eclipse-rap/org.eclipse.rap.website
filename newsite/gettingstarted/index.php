@@ -20,62 +20,47 @@
 
 <h3>Getting Started</h3>
 
-<p><strong>This document assumes that you have installed the latest RAP target
-platform from the <a href="downloads.php">downloads page</a>.</strong></p>
+<p>
+The easiest was to get involved with RAP is to install it from the update-site 
+using the Eclipse Update Manager. This requires the following steps:
+<ul>
+  <li>With Eclipse up and running, select the Help->Software Updates->Find and
+      Install menu option.</li>
+  <li>Click on the Search for new features to install radio button and then 
+      click Next.</li>
+  <li>Click on the New Remote Site button, the New Update Site dialog will
+      appear.</li>
+  <li>Enter a name for the udpate site, such as "RAP Update Site" and then enter
+      the URL http://download.eclipse.org/technology/rap/update-site, click OK
+      to create the new update site entry.</li>
+  <li>The entry you just created now appears in the update site list and is
+      selected. Ensure it is the only site selected and click Finish.</li>
+  <li>The update manager will now connect to the site and display the feature
+      available on the site. Check the update site and click Next to continue
+      the selection process.</li>
+  <li>Accept the terms in the license agreement and click the Next button.</li>
+  <li>A list with the feature to install will be displayed. Click Finish to 
+      start the installation process.</li>
+  <li>The feature and plug-ins will now be downloaded from the site and
+      installed locally. Note that you may be prompted to confirm if it is ok
+      to install unsigned jar files.</li>
+  <li>Confirm the following prompt to restart Eclipse.</li>
+</ul>
+<p>
 
-<p>The RAP project comes with two example applications demonstrating the 
-  features and capabilities of RAP.</p>
-<p>The first application provides a workbench very closely aligned to the RCP 
-  workbench. The second demo shows what widgets there are and that 
-  they behave very similar to the SWT widgets.</p>
+</p>
+After Eclipse restarts, a welcome page is displayed. Select the RAP section
+and choose the target installation action on the following page. In the
+upcomming dialog confirm the default values, which starts the target
+installation process.
+</p>
 
-<p>To access and run these demo applications, please open the Plug-ins view 
-  (e.g. through the Plug-in Development perspective). Select the plug-in named 
-  <strong>org.eclipse.rap.demo</strong> which contains both demo applications, 
-  right-click on this plug-in and select <strong>Import as &gt; Source Project
-  </strong>.
-  This plug-in will then appear with all source files in your workspace. The 
-  demo also provides a ready-to-use launch configuration.</p>
-
-<p>To run the demo, select <strong>Run &gt; Run...</strong> from the main menu.
-  In the upcoming Launch Configuration Dialog, select <strong>Rich Ajax Platform 
-  Demo</strong> from the section <strong>Equinox OSGi Framework</strong>.</p>
-
-<p>For Max OS X systems, please add <strong>-Djava.awt.headless=true</strong> to 
-your VM arguments.</p>
-
-<p>You may want to configure the TCP-port your demo application will listen to. 
-  This is done opening the <strong>Arguments</strong> page and passing 
-  <strong>-Dorg.osgi.service.http.port=10080</strong> as an argument to the 
-  Java Virtual Machine (VM), where 10080 is the (arbitrarily chosen) port your 
-  application will listen to. This is particularly important if the default 
-  port 80 is already taken by some other application (e.g. your web server) 
-  or in an environment where you are not allowed to access privileged ports 
-  (e.g. as a non-admin user on some operating systems).</p>
-  
-<img src="resources/demo-app-params.png"/>
-  
-<p>To actually start your demo, click the <strong>Run</strong> button. The 
-  correct startup should display in the Eclipse Console through a message 
-  saying <code style="color:red">INFO: Started SocketListener on 
-  0.0.0.0:&lt;port&gt;.</code> If an error shows up, please make sure all other 
-  instances are stopped and then retry with another port.</p>
-
-<p>Now that the RAP demo application is running, you can access it using any 
-  browser. Please enter the URL <strong>http://localhost:&lt;port&gt;/rap</strong>.
-  <p>
-
-<p>The rap demo application defines two entry points. The default is the 
-  workbench demo. You can now select the controls-demo by explicitly passing a
-  parameter in the url like this: 
-  <strong>http://localhost:&lt;port&gt;/rap?startup=controls</strong>.
-  The controls demo will show you all the widgets that come with RWT and 
-  how they work just like SWT in a browser.</p>
-
-<p>Have fun with your RAP demo and enjoy experimenting with your own projects, 
-  and please let us know how you like it. If you have any questions, comments 
-  or remarks, please also don't hesitate contacting the RAP Team.</p>
-    
+<p>After the installation finished you are prepared to work with RAP.
+For your first steps you may read the
+<a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.rap.help/help/html/getting-started/examples.html">RAP Examples</a>
+topic and/or the other chapters of the getting started section.
+</p>
+ 
 </div>
 </div>
 EOHTML;
