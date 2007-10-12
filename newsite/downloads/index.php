@@ -82,8 +82,10 @@ $html = <<<EOHTML
                    Archives and other builds
                  </a>
                </td>
-               <td>RAP 1.0 RC1 older versions, Sandbox</td> 
              </tr>
+             <tr>
+               <td>RAP 1.0 RC1 older versions, Sandbox</td>
+             </tr> 
            </table>
          </td>
        </tr>
