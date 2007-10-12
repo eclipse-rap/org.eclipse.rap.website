@@ -16,10 +16,10 @@ $html = <<<EOHTML
               <a href="http://innoopract.com" target="_blank">Innoopract</a>
             </p>
             <p style="margin:10px">
-              <a href="http://oneandone.com">1&1</a>
+              <a href="http://oneandone.com" target="_blank">1&1</a>
             </p>
             <p style="margin:10px">
-              <a href="http://www.cas.de/English/Home.asp">CAS</a>
+              <a href="http://www.cas.de/English/Home.asp" target="_blank">CAS</a>
             </p>
           </ul>
         </div>
