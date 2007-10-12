@@ -73,7 +73,9 @@ $html = <<<EOHTML
      <table>
        <tr>
          <td>
-           <img border=0 src="/mylyn/images/archives.gif"></a>
+           <a href="archive.php">
+             <img border=0 src="/mylyn/images/archives.gif">
+           </a>
          </td>
          <td>
            <table>
