@@ -50,7 +50,7 @@ $html = <<<EOHTML
   </p>
   
   <p>We are maintaining a 
-    <a href="http://wiki.eclipse.org/index.php/Rap10RC1_News">
+    <a href="../noteworthy/index.php">
     New and Noteworthy</a> in sync with the development progress in CVS to 
     ease adoption of new features for you.
   </p>
