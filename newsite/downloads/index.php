@@ -13,9 +13,17 @@ $html = <<<EOHTML
 		<h1>$pageTitle</h1>
 
     <div class="homeitem3col">
+      <a name="update_site"/>
       <h3>1.0 Release - Tooling Update Site</h3>
       <p style="margin: 10px">
-      bla, bla
+        The most conventient way to get RAP is by using the update site denoted
+        below. It contains the target platform taht is alos available as a 
+        <a href="#target_platform">separated download</a>, bundled with useful 
+        tools.
+      </p>
+      <p style="margin: 10px">
+        See he <a href="../gettingstarted/index.php">getting started</a> guide 
+        for a detailed description on how to install RAP using the update site. 
       </p>
       <ul>
         <li>
@@ -29,6 +37,7 @@ $html = <<<EOHTML
     </div>  
       
     <div class="homeitem3col">
+      <a name="target_platform"/>
       <h3>1.0 Release - Target Platform</h3>
       <p style="margin: 10px">
       Since RCP and RAP bundles within the same instance do not work, we provide 
