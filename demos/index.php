@@ -63,9 +63,9 @@ $html = <<<EOHTML
         </td>
       </tr>
       </table>
-      If you would like to get your application listed on this page please send an email to rap-dev@eclipse.org or to one of the committers.
     </div>
     <hr class="clearer" />
+      If you would like to get your application listed on this page please send an email to rap-dev@eclipse.org or to one of the committers.
   </div>
 </div>
 
