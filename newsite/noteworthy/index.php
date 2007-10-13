@@ -8,7 +8,10 @@ $html = <<<EOHTML
 <div id="maincontent">
 	<div id="midcolumn">
 <h1>RAP 1.0 - New and Noteworthy</h1>
-<p>Here are some of the more noteworthy things available in the first release build (October 10, 2007) which is now available for <a href="http://www.eclipse.org/rap/downloads.php" title="http://www.eclipse.org/rap/downloads.php">download</a>. </p>
+<p>Here are some of the more noteworthy things available in the first release 
+  build (October 10, 2007) which is now available for 
+  <a href="../downloads/index.php">download</a>. 
+</p>
 <ul>
     <li><a href="#RAP_Common">RAP Common</a></li>
     <li><a href="#RWT">RWT</a></li>
@@ -67,10 +70,20 @@ $html = <<<EOHTML
 <table>
   <tr valign="top" align="left">
     <td width="20%"><b>New Table features</b> </td>
-    <td width="80%">The <code>Table</code> widget now notifies about double-click events by sending a <code>SelectionListener#widgetDefaultSelected</code>.
+    <td width="80%">
+      <p>The <code>Table</code> widget now notifies about double-click events 
+        by sending a <code>SelectionListener#widgetDefaultSelected</code>.
       </p>
-      <p>The column order can be queried and changed programmatically using <code>getColumnOrder()</code> and <code>setColumnOrder()</code>. Marking a column with <code>setMoveable</code> permits the user to change its order by drag and drop.
-      <p>If a table is created with the <code>SWT.VIRTUAL</code> flag, <code>TableItem</code>s are only realized client-side when they become visible. Even though, in most situations, using the <code>TableViewer</code> will be more convenient, the code below shows how the <code>SetData</code> event can be used to "manually" populate a <code>VIRTUAL</code> table. </p>
+      <p>The column order can be queried and changed programmatically using 
+        <code>getColumnOrder()</code> and <code>setColumnOrder()</code>. Marking 
+        a column with <code>setMoveable</code> permits the user to change its 
+        order by drag and drop.</p>
+      <p>If a table is created with the <code>SWT.VIRTUAL</code> flag, 
+        <code>TableItem</code>s are only realized client-side when they become 
+        visible. Even though, in most situations, using the 
+        <code>TableViewer</code> will be more convenient, the code below shows 
+        how the <code>SetData</code> event can be used to "manually" populate 
+        a <code>VIRTUAL</code> table.</p>
       <pre>
 
 Table table = new Table( shell, SWT.VIRTUAL );
@@ -672,8 +685,12 @@ drillDownAdapter.addNavigationActions(manager);
 <table>
   <tr valign="top" align="left">
     <td width="20%"><b>Editor framework</b> </td>
-    <td width="80%">The workbench implementation of RAP now really has support for the full editor infrastructure. Maybe there is one or the other little feature missing but it should work for the most situations where you need editor support. Note that we also support multi-page editors as you can see on the following screenshot:
-      <p><img src="RAPEditors.png" alt="RAPEditors.png" width="432" height="144" longdesc="RAPEditors.png" /> </p>
+    <td width="80%">The workbench implementation of RAP now really has support 
+      for the full editor infrastructure. Maybe there is one or the other 
+      little feature missing but it should work for the most situations where 
+      you need editor support. Note that we also support multi-page editors as 
+      you can see on the following screenshot:
+      <p><img src="RAPEditors.png" width="432" height="144" /> </p>
     </td>
   </tr>
 </table>
@@ -682,19 +699,22 @@ drillDownAdapter.addNavigationActions(manager);
 <table>
   <tr valign="top" align="left">
     <td width="20%"><b>Forms Suppport</b> </td>
-    <td width="80%">There is initial support for the Forms Toolkit, Forms Editors and the like. The focus was put on API compatibility and functionality rather than mimicking the exact look of RCP Forms.
+    <td width="80%">There is initial support for the Forms Toolkit, Forms 
+      Editors and the like. The focus was put on API compatibility and 
+      functionality rather than mimicking the exact look of RCP Forms.
       The following is a list of the things that are already available:
       </p>
       <ul>
         <li> ColumnLayout and TableWrapLayout </li>
         <li> ExpandableComposite and Section </li>
-        <li> Hyperlink, ImageHyperlink (yet without actually showing the image) and HyperlinkGroup </li>
+        <li> Hyperlink, ImageHyperlink (yet without actually showing the image) 
+          and HyperlinkGroup </li>
         <li> TreeNode, Twistie and their common ancestor ToggleHyperlink </li>
         <li> ScrolledPageBook </li>
         <li> Form and ScrolledForm, FormToolkit </li>
         <li> Form editors (FormEditor, FormPage, SharedHeaderFormEditor) </li>
       </ul>
-      <p><img src="RAPFormsDemo.jpeg" alt="RAPFormsDemo.jpeg" width="326" height="287" longdesc="RAPFormsDemo.jpeg" /> </p>
+      <p><img src="RAPFormsDemo.jpeg" width="326" height="287" /></p>
   </tr>
 </table>
 </div>
