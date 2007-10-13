@@ -13,7 +13,7 @@ $html = <<<EOHTML
 		<h1>$pageTitle</h1>
 
     <div class="homeitem3col">
-      <a name="update_site" />
+      <a name="update_site"></a>
       <h3>1.0 Release - Tooling Update Site</h3>
       <p style="margin: 10px">
         The most conventient way to get RAP is by using the update site denoted
@@ -37,7 +37,7 @@ $html = <<<EOHTML
     </div>  
       
     <div class="homeitem3col">
-      <a name="target_platform" />
+      <a name="target_platform"></a>
       <h3>1.0 Release - Target Platform</h3>
       <p style="margin: 10px">
       Since RCP and RAP bundles within the same instance do not work, we provide 
