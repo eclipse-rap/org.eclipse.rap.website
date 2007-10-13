@@ -13,12 +13,12 @@ $html = <<<EOHTML
 		<h1>$pageTitle</h1>
 
     <div class="homeitem3col">
-      <a name="update_site"></a>
+      <a name="update_site_10"></a>
       <h3>1.0 Release - Tooling Update Site</h3>
       <p style="margin: 10px">
         The most convenient way to get RAP is by using the update site denoted
         below. It contains the target platform that is also available as a 
-        <a href="#target_platform">separated download</a>, bundled with useful 
+        <a href="#target_platform_10">separated download</a>, bundled with useful 
         tools, documentation and examples.
       </p>
       <p style="margin: 10px">
@@ -37,7 +37,7 @@ $html = <<<EOHTML
     </div>  
       
     <div class="homeitem3col">
-      <a name="target_platform"></a>
+      <a name="target_platform_10"></a>
       <h3>1.0 Release - Target Platform</h3>
       <p style="margin: 10px">
       Since RCP and RAP bundles within the same instance do not work, we provide 

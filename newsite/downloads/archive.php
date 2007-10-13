@@ -46,9 +46,6 @@ $html = <<<EOHTML
             New and Noteworthy
           </a>
           <br />
-          See <a href="gettingstarted.php">here</a> for a guide on how to get 
-          started.
-          <br />
         </li>
         <li>RAP 1.0M6 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-M6-incubation-target-3.2-20070817-1525.zip">
@@ -63,9 +60,6 @@ $html = <<<EOHTML
           <a href="http://wiki.eclipse.org/index.php/Rap10M6_News">
             New and Noteworthy
           </a>
-          <br />
-          See <a href="gettingstarted.php">here</a> for a guide on how to get 
-          started.
           <br />
         </li>
         <li>RAP 1.0M5 for Eclipse 3.2
@@ -198,26 +192,6 @@ $html = <<<EOHTML
         </li>
       </ul>
     </div>
-
-    <div class="homeitem3col">
-			<h3>Milestone Update Sites (only available for M1 - M3)</h3>
-			<ul>
-				<li>RAP 1.0M3 for Eclipse 3.2 / 3.3: <b>http://download.eclipse.org/technology/rap/update-site/</b>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M3.zip">&nbsp;[zipped update site]</a>
-          <br />
-          <a href="http://wiki.eclipse.org/index.php/Rap10M3_News">New and Noteworthy</a>
-	      </li>
-				<li>RAP 1.0M2 for Eclipse 3.2 / 3.3:
-       		<a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M2.zip">&nbsp;[zipped update site]</a>
-          <br />
-          <a href="http://wiki.eclipse.org/index.php/Rap10M2_News">New and Noteworthy</a>
-	      </li>
-				<li>RAP 1.0M1 for Eclipse 3.2 / 3.3:
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap_site_1.0.0.M1.zip">&nbsp;[zipped update site]</a>
-	      </li>
-			</ul>
-		</div>
-
 </div>
 
 EOHTML;
