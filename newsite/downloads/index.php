@@ -16,13 +16,13 @@ $html = <<<EOHTML
       <a name="update_site"></a>
       <h3>1.0 Release - Tooling Update Site</h3>
       <p style="margin: 10px">
-        The most conventient way to get RAP is by using the update site denoted
+        The most convenient way to get RAP is by using the update site denoted
         below. It contains the target platform that is also available as a 
         <a href="#target_platform">separated download</a>, bundled with useful 
-        tools.
+        tools, documentation and examples.
       </p>
       <p style="margin: 10px">
-        See he <a href="../gettingstarted/index.php">getting started</a> guide 
+        See the <a href="../gettingstarted/index.php">getting started</a> guide 
         for a detailed description on how to install RAP using the update site. 
       </p>
       <ul>
