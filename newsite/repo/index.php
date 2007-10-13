@@ -31,7 +31,7 @@ $html = <<<EOHTML
   <p>
     <ul>
       <li>
-        <a href="resources/rap.psf">
+        <a href="../resources/rap.psf">
           <img src="download.gif" />&nbsp;RAP Team Project Set
         </a>
       </li>
