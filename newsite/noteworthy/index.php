@@ -64,16 +64,16 @@ $html = <<<EOHTML
     <td width="20%"><b>Tree with columns</b> </td>
     <td width="80%">The <code>Tree</code> widget is now able to manage and display several columns per <code>TreeItem</code>. Also setting images for different cells and having nice headers are new features of the tree. As you can see on the screenshot, the default images are not needed anymore. Columns can be resized or packed to have an optimal user expierence.
       </p>
-      <p><img src="RAPTreeColumns.png" alt="RAPTreeColumns.png" width="363" height="164" longdesc="RAPTreeColumns.png" /> </p></td>
+      <p><img src="RAPTreeColumns.png" width="363" height="164" /> </p>
+    </td>
   </tr>
 </table>
 <table>
   <tr valign="top" align="left">
     <td width="20%"><b>New Table features</b> </td>
     <td width="80%">
-      <p>The <code>Table</code> widget now notifies about double-click events 
-        by sending a <code>SelectionListener#widgetDefaultSelected</code>.
-      </p>
+      The <code>Table</code> widget now notifies about double-click events 
+      by sending a <code>SelectionListener#widgetDefaultSelected</code>.
       <p>The column order can be queried and changed programmatically using 
         <code>getColumnOrder()</code> and <code>setColumnOrder()</code>. Marking 
         a column with <code>setMoveable</code> permits the user to change its 
