@@ -7,7 +7,9 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
   <div id="midcolumn">
     <h1 class="style3">Rich Ajax Platform (RAP) Project</h1>
-    <p>&nbsp;</p>
+    <p>Enjoy the demos below. Please be aware that they are run on a vserver at eclipse.org that is managed
+       by the project team, and not a high performance server supervised by sysadmins. Please make a post on
+       the newsgroup (linked from the menu on the left) if there are problems with the demo apps.</p>
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
