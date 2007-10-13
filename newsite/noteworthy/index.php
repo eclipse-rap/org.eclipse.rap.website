@@ -297,7 +297,7 @@ table.setItemCount( 300 );
 <h2>RAP JFace</h2>
 <table>
   <tr valign="top" align="left">
-    <td width="20%"><b>Blocking Window</b> </td>
+    <td width="20%"><b>Blocking Window</b></td>
     <td width="80%">Due to API compatibility to RCP we implemented a solution for blocking windows and removed the <code>IWindowCallBack</code> mechanism. Note that there is still some work behind the scence to do, since the current implementation may be a little heavy weighted. See the example snippet that shows how to use the blocking mechanism with the <code>InputDialog</code>.
       <pre>
     String title = &quot;Input Dialog&quot;;
@@ -314,13 +314,6 @@ table.setItemCount( 300 );
 
 </pre>
     </td>
-  </tr>
-</table>
-<table>
-  <tr valign="top" align="left">
-    <td width="20%"><b>TableViewer</b> </td>
-    <td width="80%">As the underlying RWT <code>Table</code> now understands the <code>VIRTUAL</code> flag, the relevant <code>TableViewer</code> code was activated as well. Below you can see how it looks in action.
-      <p><img src="Rap_VirtualTable_Loading.jpeg" alt="Rap_VirtualTable_Loading.jpeg" width="263" height="137" longdesc="Rap_VirtualTable_Loading.jpeg" /> <b>&gt;&gt;&gt;</b> <img src="Rap_VirtualTable_Done.jpeg" alt="Rap_VirtualTable_Done.jpeg" width="263" height="137" longdesc="Rap_VirtualTable_Done.jpeg" /> </p></td>
   </tr>
 </table>
 <table>
@@ -450,9 +443,13 @@ drillDownAdapter.addNavigationActions(manager);
 <table>
   <tr valign="top" align="left">
     <td width="20%"><b>Editor framework</b> </td>
-    <td width="80%">The workbench implementation of RAP now really has support for the full editor infrastructure. Maybe there is one or the other little feature missing but it should work for the most situations where you need editor support. Note that we also support multi-page editors as you can see on the following screenshot:
-      <p><img src="RAPEditors.png" alt="RAPEditors.png" width="432" height="144" longdesc="RAPEditors.png" /> </p>
-      <p>Thanks to the donation of a Fortune 500 corporation we were able to acquire additional resources to have editor support implemented for M5. </p></td>
+    <td width="80%">The workbench implementation of RAP now really has support 
+      for the full editor infrastructure. Maybe there is one or the other little 
+      feature missing but it should work for the most situations where you need 
+      editor support. Note that we also support multi-page editors as you can 
+      see on the following screenshot:
+      <p><img src="RAPEditors.png" width="432" height="144" /></p>
+    </td>  
   </tr>
 </table>
 <table>

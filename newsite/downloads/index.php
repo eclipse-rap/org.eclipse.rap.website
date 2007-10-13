@@ -22,7 +22,7 @@ $html = <<<EOHTML
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-200710091107.zip">
             <img src="download.gif" title="Update Site Zip" alt="Update Site Zip"/>
           </a>
-          <b>http://download.eclipse.org/technology/rap/update-site</b> 
+          &nbsp;<b>http://download.eclipse.org/technology/rap/update-site</b> 
           for Eclipse 3.3
         </li>
       </ul>
@@ -53,18 +53,15 @@ $html = <<<EOHTML
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.2-20071008-1834.zip">
             <img src="download.gif" />
-            rap-1.0-R-target-3.2-20071008-1834.zip
+            &nbsp;rap-1.0-R-target-3.2-20071008-1834.zip
           </a>
           for Eclipse 3.2
           <br />
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.3-20071008-1834.zip">
             <img src="download.gif" />
-            rap-1.0-R-target-3.3-20071008-1834.zip
+            &nbsp;rap-1.0-R-target-3.3-20071008-1834.zip
           </a>
           for Eclipse 3.3
-          <br />
-          See <a href="gettingstarted.php">here</a> for a guide on how to get 
-          started.
         </li>
       </ul>
     </div>
