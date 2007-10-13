@@ -41,25 +41,27 @@ $html = <<<EOHTML
       <p>To deal with bad connections or temporarily unavailable servers, now a message box appears, that gives the user a chance to retry sending the request. </p>
       <p><img src="RAPConnectionErrorRetry.png" width="306" height="119" /> </p></td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Error Handling</b> </td>
     <td width="80%">In the case of a server-side programming error that leads to an exception which is not handled by the Workbench or other error handling facilities, it is now passed to the servlet engine. The client-side reacts accordingly and displays the error page as it was sent by the servlet engine.
       </p>
       <p>In case of a JavaScript error, that occurs while the server response is being processed, an error page displays the error message along with the code that caused it. </p></td>
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Text Size Determination API</b> </td>
     <td width="80%">The API that serves as replacement for the SWT-GC functionalities for text size determination has been created. The methods <code>textExtent(Font,String,int)</code>, <code>stringExtent(Font,String)</code>, <code>getCharHeight(Font)</code> and <code>getAvgCharWidth(Font)</code> are available at the class <code>org.eclipse.rwt.graphics.Graphics</code>.
       </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>Table appearance</b> </td>
     <td width="80%">The <code>TableItem</code> now supports all appearance settings known from SWT. For each cell the background color, foreground color, font and image can now be defined separately.
       </p>
       <p><img src="RAPTableAppearance.png" alt="RAPTableAppearance.png" width="257" height="106" longdesc="RAPTableAppearance.png" /> </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>Tree with columns</b> </td>
     <td width="80%">The <code>Tree</code> widget is now able to manage and display several columns per <code>TreeItem</code>. Also setting images for different cells and having nice headers are new features of the tree. As you can see on the screenshot, the default images are not needed anymore. Columns can be resized or packed to have an optimal user expierence.
@@ -67,8 +69,7 @@ $html = <<<EOHTML
       <p><img src="RAPTreeColumns.png" width="363" height="164" /> </p>
     </td>
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>New Table features</b> </td>
     <td width="80%">
@@ -145,6 +146,7 @@ text.BORDER.border: 1 solid #1695d4
 </pre>
       <p>For more information, see <a href="http://wiki.eclipse.org/RAP_Themeing" title="RAP Theming">RAP Theming</a>. </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>Client-side widget pooling</b> </td>
     <td width="80%">RWT introduces a mechanism that helps to soften the massive memory consumption on the client.
@@ -162,18 +164,19 @@ text.BORDER.border: 1 solid #1695d4
       <p>With FireFox you can see the mechanism in action: Use <code>Ctrl +/-</code> to change font sizes. After refreshing the session (<code>F5</code>) RWT adapts to the new sizes. </p>
       <p><img src="Textsizedetermination.png" alt="Textsizedetermination.png" width="600" height="436" longdesc="Textsizedetermination.png" /> </p></td>
   </tr>
-</table>
-<table>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>API Documentation</b> </td>
     <td width="80%">The RWT-API classes now provide Java-Doc comments. These comments are adapted from the SWT library since RWT implements a subset of SWT. The revision of the comments is not completed yet and there may be also some anticipations of implementation details that ment to be available in the 1.0 release. If you find inconsistencies in the docs, please report them to us so that we can resolve them.
       </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>Untyped Events</b> </td>
     <td width="80%">RWT now supports untyped events. Note that this implementation exists for reuse of JFace and Workbench code only. If you write application code we recommend to use the typed events furthermore. Note also that there is still some work to do and that not all of the untyped event fields already provide meaningful values. In particular the <i>doit</i> flag does not work.
       </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>FontData, Resource, Device</b> </td>
     <td width="80%">There are new API-classes in RWT available. Those where needed to ease the takeover of the JFace resource package. The classes are <code>org.eclipse.swt.graphics.FontData</code>, <code>org.eclipse.swt.graphics.Resource</code> and <code>org.eclipse.swt.graphics.Device</code>. Note that the API of <code>org.eclipse.swt.graphics.Font</code> has changed, the field accessors have moved to <code>FontData</code>:
@@ -199,6 +202,7 @@ text.BORDER.border: 1 solid #1695d4
   }
 </pre>    </td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>ProgressBar</b> </td>
     <td width="80%">RWT provides a <code>ProgressBar</code> control. It can be used to show the progress of background tasks. You may have a look at the <code>org.eclipse.rap.demo.controls.ProgressBarTab</code> class in the demo plug-in to see how to use it.
@@ -223,8 +227,7 @@ text.BORDER.border: 1 solid #1695d4
       </p>
       <p><img src="RAPThemeing.png" alt="RAPThemeing.png" width="600" height="515" longdesc="RAPThemeing.png" /></p></td>
   </tr>
-</table>
-<table>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>New Table features</b> </td>
     <td width="80%">The <code>Table</code> widget now notifies about double-click events by sending a <code>SelectionListener#widgetDefaultSelected</code>.
@@ -245,8 +248,7 @@ table.setItemCount( 300 );
 </pre>
     </td>
   </tr>
-</table>
-<table>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>ModifyEvent</b> </td>
     <td width="80%">RWT now supports the <code>ModifyEvent</code>. The two widgets that benefit from this are <code>Text</code> and <code>Spinner</code>.
@@ -262,30 +264,36 @@ table.setItemCount( 300 );
 </pre>
     </td>
   </tr>
+
   <tr valign="top" align="left">
     <td><b>Spinner</b> </td>
     <td>Now there exists a <code>Spinner</code> widget that works much the same as in SWT.
       <p><img src="RapSpinner.png" alt="RapSpinner.png" width="250" height="97" longdesc="RapSpinner.png" /> </p></td>
   </tr>
+
   <tr valign="top" align="left">
     <td><b>Default Button</b> </td>
     <td>The default button was implemented, that You can now tell the Shell which of its buttons should behave as the default button. Just to have something to write for the next milestone news, the default button is not yet highlighted;) </td>
   </tr>
+
   <tr valign="top" align="left">
     <td><b>Shell enhancements</b> </td>
     <td>For dependent shells (aka dialog shells, those created with the <code>Shell( Shell )</code> or <code>Shell( Shell, int )</code> constructor), the <b>escape</b> key closes the shell. </td>
   </tr>
+
   <tr valign="top" align="left">
     <td><b>Double click</b> </td>
     <td>For <code>List</code>, <code>Tree</code>, and <code>CTabFolder</code> RWT now recognizes a double-click that is reported via the <code>widgetDefaultSelected</code> method of the <code>SelectionEvent</code>.
       <p>The screenshot below is taken from the RWT online demo, feel free to try it out yourself. <img src="RapDoubleClick.png" alt="RapDoubleClick.png" width="538" height="229" longdesc="RapDoubleClick.png" /> </p></td>
   </tr>
+
   <tr valign="top" align="left">
     <td><b>Focus control and FocusEvent</b> </td>
     <td>In this development cycle we also put our focus on the focus. The methods <code>setFocus</code>, <code>forceFocus</code>, and <code>isFocusControl</code> of the <code>Control</code> class allow You to focus a control and query whether the control has the input focus. The <code>getFocusControl</code> on class <code>Display</code> tells You which control currently has the input focus.
       <p>When adding a <code>FocusListener</code> to a control, it will be notified about <code>focusLost</code> and <code>focusGained</code> events. </p>
       <p>As of now, not all controls do visually indicate that they currently are focused. </p></td>
   </tr>
+
   <tr valign="top" align="left">
     <td><b>Text enhancements</b> </td>
     <td>The text widget has two new mini-features:
@@ -328,8 +336,7 @@ table.setItemCount( 300 );
 </pre>
     </td>
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Move to JFace 3.3</b> </td>
     <td width="80%">You're reading it right - JFace 3.3 is here! This time, we used the complete
@@ -387,13 +394,13 @@ table.setItemCount( 300 );
         are commented out to avoid confusion using "Organize Imports" or "Open Type". </p>
       <p><img src="RAPJFaceWizard.png" alt="RAPJFaceWizard.png" width="438" height="365" longdesc="RAPJFaceWizard.png" /> </p></td>
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>TableViewer</b> </td>
     <td width="80%">As the underlying RWT <code>Table</code> now understands the <code>VIRTUAL</code> flag, the relevant <code>TableViewer</code> code was activated as well. Below you can see how it looks in action.
       <p><img src="Rap_VirtualTable_Loading.jpeg" alt="Rap_VirtualTable_Loading.jpeg" width="263" height="137" longdesc="Rap_VirtualTable_Loading.jpeg" /> <b>&gt;&gt;&gt;</b> <img src="Rap_VirtualTable_Done.jpeg" alt="Rap_VirtualTable_Done.jpeg" width="263" height="137" longdesc="Rap_VirtualTable_Done.jpeg" /> </p></td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Databinding</b> </td>
     <td width="80%">Main functionalty of org.eclipse.jface.databinding has been ported to RAP.
@@ -401,8 +408,7 @@ table.setItemCount( 300 );
       <p>Here is a screenshot: </p>
       <p><img src="Databinding_snippet_view.jpg" alt="databinding_snippet_view.jpg" width="793" height="491" longdesc="Databinding_snippet_view.jpg" /> </p></td>
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Dialogs</b> </td>
     <td width="80%">RAP JFace now includes the base classes to implement dialogs like Window, WindowManager, Dialog, and IconAndMessageDialog and provides the most often used dialogs.
@@ -437,8 +443,7 @@ table.setItemCount( 300 );
     <td width="20%"><b>Branding</b> </td>
     <td width="80%">If you ever wanted to customize the startup page, the page title or even the servlet name you can now use the <code>org.eclipse.rap.ui.branding</code> extension point. You can specify your own branding, specify settings like page title, favicon, servletname, etc. There is also an <code>additionalHeaders</code> element available to define own tags for the head of your page like meta informations. Each branding can also be associated with specific entrypoints to apply the branding only on those ones mentioned in your <code>plugin.xml</code> file. <img src="RAPBranding.png" alt="RAPBranding.png" width="353" height="149" align="left" longdesc="RAPBranding.png" /></td>
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>DrillDownAdapter</b> </td>
     <td width="80%">Drilldown Adapters are a feature available for TreeViewers to help navigate through the data, instead of having to deal with ever expanding trees. In this way you can essentially zoom in to view just one part of the tree, i.e., drill down. Only two lines of code were added throughout the initialization of the viewer to invoke this feature in the context menu. Only one line was needed to add them to the view's toolbar. They are shown below:
@@ -452,8 +457,7 @@ drillDownAdapter.addNavigationActions(manager);
       <p>After adding them to the IToolbarManager of your view, they are looking like this: </p>
       <p><img src="RAPDrillDownAdapter.png" alt="RAPDrillDownAdapter.png" width="196" height="42" longdesc="RAPDrillDownAdapter.png" /> </p></td>
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Editor framework</b> </td>
     <td width="80%">The workbench implementation of RAP now really has support 
@@ -464,8 +468,7 @@ drillDownAdapter.addNavigationActions(manager);
       <p><img src="RAPEditors.png" width="432" height="144" /></p>
     </td>  
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Support for opening/closing workbench parts</b> </td>
     <td width="80%">You have now several possibilities to open a new view without initially defining it in your perspective.
@@ -480,19 +483,23 @@ drillDownAdapter.addNavigationActions(manager);
         categorize your views - just define the <code>category</code> attribute in your view extension. </p>
       <p><img src="RapShowViewDlg.png" alt="RapShowViewDlg.png" width="276" height="246" longdesc="RapShowViewDlg.png" /> </p></td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Move extension points to <i>org.eclipse.ui</i> namespace</b> </td>
     <td width="80%">To provide as much as possible reuse of RCP knowledge (and code) RAP provides now its workbench extension-points under the same namespace as the RCP workbench does. This is the second step of moving RAP to a subset of RCP regarding RCP-like functionality. Note that you must adjust your existing plugin.xml files like the example below:
       <p><img src="RapExtensionPoint.png" alt="RapExtensionPoint.png" width="420" height="130" longdesc="RapExtensionPoint.png" /> </p></td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Move package <i>org.eclipse.ui.entrypoint</i> to <i>org.eclipse.ui.application</i></b> </td>
     <td width="80%">Due to the efforts of making RAP-APIs a subset to RCP-APIs the package <i>org.eclipse.ui.entrypoint</i> has been renamed to <i>org.eclipse.ui.application</i> despite the fact that there is no need for implementing <i>IPlatformRunnable</i> as application definition. Please use the organize import functionality of the Eclipse IDE to adjust your existing source code.</td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Reexport of UI plug-ins</b> </td>
     <td width="80%">The plug-in <i>org.eclipse.rap.ui.workbench</i> now reexports the basic UI plug-ins that are needed for RAP UI development. This is similar to RCP. The plug-in dependencies are <i>org.eclipse.rap.w4t</i>, <i>org.eclipse.rap.rwt</i> and <i>org.eclipse.rap.jface</i>.</td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Standalone Views</b> </td>
     <td width="80%">The implementation of <code>org.eclipse.ui.IPageLayout</code> has been pursued. It is possible to add standalone views as shown in the code snippet below. The resulting perspective layout with the standalone view on the left hand side can be seen in the screenshot.
@@ -513,14 +520,17 @@ public class Perspective implements IPerspectiveFactory {
 </pre>
       <p><img src="StandaloneView.png" alt="StandaloneView.png" width="603" height="402" longdesc="StandaloneView.png" /> </p></td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Dynamic part informations</b> </td>
     <td width="80%">You can now set specific part informations dynamically at runtime. This includes <code>setPartName</code>, <code>setTitle</code> and <code>setTitleToolTip</code>. Please use <code>setPartName</code> for setting the title of your view because <code>setTitle</code> is deprecated and only implemented for compatibility reasons. <code>setContentDescription</code> and <code>setTitleImage</code> are not yet available.</td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Minor usability improvement</b> </td>
     <td width="80%">It's now possible to maximize/restore view parts by double-clicking on their corresponding TabItem.</td>
   </tr>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Multiple Views</b> </td>
     <td width="80%">We added a new method to open views multiple times. Requirement is that the view has the flag <code>allowMultiple</code> set to <code>true</code>.
@@ -612,6 +622,7 @@ StatusManager.getManager().handle(s, StatusManager.SHOW | StatusManager.LOG );
       <p><br />
       </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>Perspective Switcher</b> </td>
     <td width="80%">Setting <code>setShowPerspectiveBar( true );</code> of your <code>IWorkbenchWindowConfigurer</code> will result in something like this:
@@ -619,12 +630,14 @@ StatusManager.getManager().handle(s, StatusManager.SHOW | StatusManager.LOG );
       <p><br />
       </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>ActionSets</b> </td>
     <td width="80%">The RAP workbench has now two new extension points: <code>actionSets</code> and <code>actionSetPartAssociations</code>.
       <p>While the first one should be very familiar to RCP developers, the second one provides an infrastructure to bind your action sets to specfic workbench parts. This means you can active / deactive specfic action sets only for specfic parts. See also the extension point description for <a href="http://help.eclipse.org/help32/topic/org.eclipse.platform.doc.isv/reference/extension-points/org_eclipse_ui_actionSets.html" class="external text" title="http://help.eclipse.org/help32/topic/org.eclipse.platform.doc.isv/reference/extension-points/org_eclipse_ui_actionSets.html" rel="nofollow">action sets</a> and the <a href="http://help.eclipse.org/help32/topic/org.eclipse.platform.doc.isv/reference/extension-points/org_eclipse_ui_actionSetPartAssociations.html" class="external text" title="http://help.eclipse.org/help32/topic/org.eclipse.platform.doc.isv/reference/extension-points/org_eclipse_ui_actionSetPartAssociations.html" rel="nofollow">actionSetPartAssociations</a>. </p>
       <p>Additionally you can contribute new action sets to existing perspectives with the help of <code>perspectiveExtensions</code>. </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>Progress Support</b> </td>
     <td width="80%">The workbench now provides the progress API. Usage examples can be found in the demo plug-in at <code>org.eclipse.rap.demo.actions.JobAction</code> and <code>org.eclipse.rap.demo.actions.JobActionWithDialog</code>. You can find those actions in the RAP demo workbench in the <i>Planning</i> perspective.
@@ -648,6 +661,7 @@ StatusManager.getManager().handle(s, StatusManager.SHOW | StatusManager.LOG );
       <p><br />
       </p></td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%"><b>Part Listener</b> </td>
     <td width="80%">You've now the possibility to attach an <code>IPartListener</code> or <code>IPartListener2</code> to a workbench page to stay informed about all part-related activities like when they're opened, closed, (de)activated or when they become hidden/visible.
@@ -681,8 +695,7 @@ drillDownAdapter.addNavigationActions(manager);
       <p>After adding them to the IToolbarManager of your view, they are looking like this: </p>
       <p><img src="RAPDrillDownAdapter.png" alt="RAPDrillDownAdapter.png" width="196" height="42" longdesc="RAPDrillDownAdapter.png" /> </p></td>
   </tr>
-</table>
-<table>
+
   <tr valign="top" align="left">
     <td width="20%"><b>Editor framework</b> </td>
     <td width="80%">The workbench implementation of RAP now really has support 
