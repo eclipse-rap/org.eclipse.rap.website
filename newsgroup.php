@@ -27,10 +27,8 @@ $html = <<<EOHTML
     <h3>Newsgroups</h3>
     <ul>
     <li>
-      <p><u>The best place for support is in the newsgroups, <b><i>NOT</i></b> 
-        in the mailing lists.</u></p>
-    <p>If you post to the mailing list, you will most likely be told "Please 
-      post this to the newsgroup.".</p>
+      <p><u>The RAP newsgroup is for questions, support and information exchange
+      between users and developers of RAP.</p>
     </li>
   
     <li>
@@ -44,15 +42,19 @@ $html = <<<EOHTML
       <a href="http://www.eclipse.org/newsgroups/register.php">require a 
       password</a> first.</p>
     <p>Frequently asked questions in the newsgroup will ultimately end up in 
-      the FAQ (one FAQ per component). Feel free to contribute!</p>
+      the FAQ. Feel free to contribute!</p>
     </li>
   
     <li>
-    <p>If you're not familiar with news://, you'll need a newreader first, such 
+    <p>Eclipse.org offers a 
+      <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
+      web user interface for news</a> (you need the above mentioned password to
+      access this service).
+      Alternatively you can use a newreader, such 
       as <a href="http://www.mozilla.org/products/thunderbird/" target="_out">
       Thunderbird</a>, 
       <a href="http://www.mozilla.org/products/mozilla1.x/" target="_out">
-      Mozilla</a> or even MS Outlook. Once installed, you'll also need a 
+      Mozilla</a> or MS Outlook. Once installed, you'll also need a 
       password to access the newsgroups. Signup is easy: just 
       <a href="http://www.eclipse.org/newsgroups/register.php">request a 
       password</a>.</p>
@@ -60,12 +62,6 @@ $html = <<<EOHTML
       <b>news.eclipse.org</b> and subscribe to the appropriate newsgroup(s).</p>
     </li>
     
-    <li>
-    <p>In addition, should you want to search the newsgroups for old posts, you 
-      can use Eclipse.org's
-      <a href="http://www.eclipse.org/search/search.cgi?cmd=Search%21&form=extended&wf=574a74&ps=10&m=all&t=5&ul=%2Fnewslists%2Fnews.eclipse.technology.rap&wm=wrd&t=News&t=Mail">
-      search capabilities</a>.</p>
-    </li>
     </ul>
 	</div>
 
