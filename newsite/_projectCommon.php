@@ -13,19 +13,19 @@
 </STYLE>
 <div id="branding">
 <center>
-  <h1>Rich Ajax Platform (RAP)</h1>
+  <h1 style="font-size:+2">Rich Ajax Platform (RAP)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
 </center>
 </div>
 EOBRANDING;
 	$Menu->setProjectBranding($branding);
 	
 	$Nav->addNavSeparator("RAP", "/rap/newsite/index.php");
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;About", "/rap/about", "_self", 1);
+	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;About", "/rap/about.php", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Demos", "/rap/demos.php", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Team", "/rap/team.php", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Buzz", "/rap/buzz.php", "_self", 1);
 
-	$Nav->addNavSeparator("Users", "/rap/gettingstarted", "_self", 1);
+	$Nav->addNavSeparator("Users", "/rap/gettingstarted.php", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Getting Started", "/rap/gettingstarted.php",	"_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Downloads", "/rap/downloads/", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;New & Noteworthy", "/rap/noteworthy", "_blank", 1);
