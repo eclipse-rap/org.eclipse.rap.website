@@ -49,7 +49,7 @@ $html = <<<EOHTML
   </div>
 
  <div id="rightcolumn">
-  <div class="sideitem">
+  <div class="sideitem" style="width: 150px">
   <h6>Active Contributors</h6>
    <ul>
     <li>
