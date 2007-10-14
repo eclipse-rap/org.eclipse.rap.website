@@ -13,7 +13,7 @@
 </STYLE>
 <div id="branding">
 <center>
-<a href="http://eclipse.org/rap/newsite/"><img border=0 src="../images/rap_logo.png"></a>
+<a href="http://eclipse.org/rap/newsite/"><img border=0 src="../images/rap_logo1.png"></a>
 </center>
 </div>
 EOBRANDING;
