@@ -6,7 +6,8 @@ $pageKeywords	= "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
 $pageAuthor		= "Jochen Krause";
 
 $html = <<<EOHTML
-<div id="midcolumn">
+<div id="maincontent">
+  <div id="midcolumn">
   <h1>$pageTitle</h1>
 
   <table width="100%" border="0">
@@ -45,11 +46,11 @@ $html = <<<EOHTML
         <td width="55%" valign="top">The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</td>
       </tr>
   </table>
-</div>
+  </div>
 
-<div class="sideitem">
+  <div class="sideitem">
   <h6>Active Contributors</h6>
-  <ul>
+   <ul>
     <li>
       <a href="http://innoopract.com" target="_blank">Innoopract</a>
     </li>
@@ -59,12 +60,12 @@ $html = <<<EOHTML
     <li>
       <a href="http://www.cas.de/English/Home.asp" target="_blank">CAS</a>
     </li>
-  </ul>
-</div>
+   </ul>
+  </div>
 
-<div class="sideitem">
-  <h6>Meet the RAP team</h6>
-  <ul>
+  <div class="sideitem">
+   <h6>Meet the RAP team</h6>
+   <ul>
     <li>
       <a href="http://jax.de/konferenzen/wjax07/sessions.php?language=de&tid=637" target="_blank">
       W-JAX, Munich, November 5-9 (German)</a>
@@ -89,8 +90,8 @@ $html = <<<EOHTML
       <span><br />
       Building Ajax applications with the Eclipse Rich Ajax Platform</span>
     </li>
+  </div>
 </div>
-
 
 EOHTML;
 
