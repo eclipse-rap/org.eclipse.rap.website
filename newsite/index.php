@@ -49,11 +49,11 @@ $html = <<<EOHTML
   </div>
 
  <div id="rightcolumn">
-  <div class="sideitem" style="width: 160px">
+  <div class="sideitem">
   <h6>Active Contributors</h6>
    <ul>
     <li>
-      <a href="http://innoopract.com" target="_blank"><img src="/rap/logos/innoopract-logo.png" alt="Innoopract" width="132"/></a>
+      <a href="http://innoopract.com" target="_blank">Innoopract</a>
     </li>
     <li>
       <a href="http://oneandone.com" target="_blank">1&1</a>
@@ -64,7 +64,7 @@ $html = <<<EOHTML
    </ul>
   </div>
 
-  <div class="sideitem" style="width: 160px">
+  <div class="sideitem">
    <h6>Meet the RAP team</h6>
    <ul>
     <li>
