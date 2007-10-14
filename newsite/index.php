@@ -53,7 +53,7 @@ $html = <<<EOHTML
   <h6>Active Contributors</h6>
    <ul>
     <li>
-      <a href="http://innoopract.com" target="_blank"><img src="/rap/logos/innoopract-logo.png" alt="Innoopract" width="132"</a>
+      <a href="http://innoopract.com" target="_blank"><img src="/rap/logos/innoopract-logo.png" alt="Innoopract" width="132"/></a>
     </li>
     <li>
       <a href="http://oneandone.com" target="_blank">1&1</a>
