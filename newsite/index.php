@@ -1,49 +1,18 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 # Begin: page-specific settings.  Change these.
-$pageTitle 		= "Rich Ajax Platform (RAP) Project";
-$pageKeywords	= "Ajax, rap, w4t, eclipse rap";
+$pageTitle 		= "Rich Ajax Platform (RAP)";
+$pageKeywords	= "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
 $pageAuthor		= "Jochen Krause";
 
 $html = <<<EOHTML
-<div id="midcolumn" style="width:90%">
+<div id="midcolumn">
+  <h1>$pageTitle</h1>
+
   <table width="100%" border="0">
       <tr>
     <td colspan="2"><div align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border=0></div></td>
-      <td width="15%" rowspan="2" valign="top"><div class="sideitem">
-          <h6>Active Contributors</h6>
-            <p style="margin:10px">
-              <a href="http://innoopract.com" target="_blank">Innoopract</a>
-            </p>
-            <p style="margin:10px">
-              <a href="http://oneandone.com" target="_blank">1&1</a>
-            </p>
-            <p style="margin:10px">
-              <a href="http://www.cas.de/English/Home.asp" target="_blank">CAS</a>
-            </p>
-          </ul>
-        </div>
-        <div class="sideitem">
-          <h6>Meet the RAP team</h6>
-            <p style="margin:10px">
-              <a href="http://www.eclipsecon.org/summiteurope2007/index.php?page=detail/&id=29" target="_blank">
-              Eclipse Summit Europe, Ludwigsburg, October 10-11</a>
-              <span><br>
-              RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
-            </p>
-            <p style="margin:10px">
-              <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">
-              EclipseCon 2007, Santa Clara, March 5-8</a>
-              <span><br>
-              RAP - Eclipse style development for the web</span>
-            </p>
-            <p style="margin:10px">
-              <a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">
-              Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a>
-              <span><br />
-              Building Ajax applications with the Eclipse Rich Ajax Platform</span>
-            </p>
-        </div>
+      <td width="15%" rowspan="2" valign="top">
       </td>
     </tr>
       <tr>
@@ -77,6 +46,50 @@ $html = <<<EOHTML
       </tr>
   </table>
 </div>
+
+<div class="sideitem">
+  <h6>Active Contributors</h6>
+    <p style="margin:10px">
+      <a href="http://innoopract.com" target="_blank">Innoopract</a>
+    </p>
+    <p style="margin:10px">
+      <a href="http://oneandone.com" target="_blank">1&1</a>
+    </p>
+    <p style="margin:10px">
+      <a href="http://www.cas.de/English/Home.asp" target="_blank">CAS</a>
+    </p>
+  </ul>
+</div>
+
+<div class="sideitem">
+  <h6>Meet the RAP team</h6>
+    <p style="margin:10px">
+      <a href="http://jax.de/konferenzen/wjax07/sessions.php?language=de&tid=637" target="_blank">
+      W-JAX, Munich, November 5-9 (German)</a>
+      <span><br>
+      RCP goes Web 2.0</span>
+    </p>
+    <p style="margin:10px">
+      <a href="http://www.eclipsecon.org/summiteurope2007/index.php?page=detail/&id=29" target="_blank">
+      Eclipse Summit Europe, Ludwigsburg, October 10-11</a>
+      <span><br>
+      RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
+    </p>
+    <p style="margin:10px">
+      <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">
+      EclipseCon 2007, Santa Clara, March 5-8</a>
+      <span><br>
+      RAP - Eclipse style development for the web</span>
+    </p>
+    <p style="margin:10px">
+      <a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">
+      Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a>
+      <span><br />
+      Building Ajax applications with the Eclipse Rich Ajax Platform</span>
+    </p>
+</div>
+
+
 EOHTML;
 
 # Generate the web page
