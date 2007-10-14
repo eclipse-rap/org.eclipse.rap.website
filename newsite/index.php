@@ -48,8 +48,8 @@ $html = <<<EOHTML
   </table>
   </div>
 
- <div id="rightcolumn" style="width: 160px">
-  <div class="sideitem">
+ <div id="rightcolumn">
+  <div class="sideitem" style="width: 160px">
   <h6>Active Contributors</h6>
    <ul>
     <li>
@@ -64,7 +64,7 @@ $html = <<<EOHTML
    </ul>
   </div>
 
-  <div class="sideitem">
+  <div class="sideitem" style="width: 160px">
    <h6>Meet the RAP team</h6>
    <ul>
     <li>
