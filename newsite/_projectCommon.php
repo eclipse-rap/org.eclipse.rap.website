@@ -11,7 +11,11 @@
   body { font-size: small; }
   #midcolumn { margin-top: 5px; }
 </STYLE>
-
+<div id="branding">
+<center>
+<a href="http://eclipse.org/rap/newsite/"><img border=0 src="../images/rap_logo.png"></a>
+</center>
+</div>
 EOBRANDING;
 	$Menu->setProjectBranding($branding);
 	
