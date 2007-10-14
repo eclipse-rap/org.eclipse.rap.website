@@ -6,7 +6,7 @@ $pageAuthor		= "Jochen Krause";
 # Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
   <div id="midcolumn">
-    <h1 class="style3">Rich Ajax Platform (RAP) Project</h1>
+    <h1 class="style3">RAP Demos</h1>
     <p>Enjoy the demos below. Please be aware that they are run on a vserver at eclipse.org that is managed
        by the project team, and not a high performance server supervised by sysadmins. Please make a post on
        the newsgroup (linked from the menu on the left) if there are problems with the demo apps that are not 

@@ -15,6 +15,9 @@ $html = <<<EOHTML
       <td width="15%" rowspan="2" valign="top">
       </td>
     </tr>
+    <tr>
+      <td colspan="3"/>&nbsp;</td>
+    </tr>
       <tr>
         <td width="30%" valign="top"><table border="0">
           <tr>
@@ -42,7 +45,7 @@ $html = <<<EOHTML
               </table></td>
           </tr>
         </table></td>
-        <td width="55%" valign="top">The RAP project aims to enable developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project is in the validation phase.</td>
+        <td width="55%" valign="top">The RAP project enables developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project has graduated from incubation and released its 1.0 release.</td>
       </tr>
   </table>
   </div>
