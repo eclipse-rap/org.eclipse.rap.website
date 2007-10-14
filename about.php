@@ -31,6 +31,7 @@
 		
 		<div class="homeitem3col">
 			<h3>RAP architecture</h3>
+			<img src="images/about/architecture.png" alt="architecture" />
 			<ul>
 				<li>License:</li>
 			</ul>
