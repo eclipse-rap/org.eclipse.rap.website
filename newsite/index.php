@@ -12,7 +12,7 @@ $html = <<<EOHTML
 
   <table width="100%" border="0">
       <tr>
-    <td colspan="2" align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border="0"/></td>
+    <td colspan="2" align="center"><img src="../images/screens.png" alt="RAP" width="583" height="272" border="0"/></td>
       <td width="15%" rowspan="2" valign="top">
       </td>
     </tr>
