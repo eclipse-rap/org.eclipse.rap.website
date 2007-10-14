@@ -48,6 +48,7 @@ $html = <<<EOHTML
   </table>
   </div>
 
+ <div id="rightcolumn">
   <div class="sideitem">
   <h6>Active Contributors</h6>
    <ul>
@@ -91,6 +92,7 @@ $html = <<<EOHTML
       Building Ajax applications with the Eclipse Rich Ajax Platform</span>
     </li>
   </div>
+ </div>
 </div>
 
 EOHTML;
