@@ -53,7 +53,7 @@ $html = <<<EOHTML
   <h6>Active Contributors</h6>
    <ul>
     <li>
-      <a href="http://innoopract.com" target="_blank">Innoopract</a>
+      <a href="http://innoopract.com" target="_blank"><img src="/rap/logos/innoopract-logo.png" alt="Innoopract"</a>
     </li>
     <li>
       <a href="http://oneandone.com" target="_blank">1&1</a>
@@ -79,13 +79,13 @@ $html = <<<EOHTML
       <span><br>
       RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
     </li>
-    <li style="margin:10px">
+    <li>
       <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">
       EclipseCon 2007, Santa Clara, March 5-8</a>
       <span><br>
       RAP - Eclipse style development for the web</span>
     </li>
-    <li style="margin:10px">
+    <li>
       <a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">
       Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a>
       <span><br />
