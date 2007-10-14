@@ -48,8 +48,8 @@ $html = <<<EOHTML
   </table>
   </div>
 
- <div id="rightcolumn">
-  <div class="sideitem" style="width: 150px">
+ <div id="rightcolumn" style="width: 160px">
+  <div class="sideitem">
   <h6>Active Contributors</h6>
    <ul>
     <li>
