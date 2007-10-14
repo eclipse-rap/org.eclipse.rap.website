@@ -14,7 +14,7 @@ $html = <<<EOHTML
 	    with extra components or in the main stream. 
 	    Please send a message to the rap-dev@eclipse.org mailing list if you would like to contribute in one of the latter categories. 
 	    </p>
-	<h2>Sandbox</h2>
+	<h2 style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Sandbox</h2>
 		<p> The sandbox is a place at RAP where we make
 		interesting /promising developments visible and accessible for the
 		complete community.  
@@ -28,7 +28,7 @@ $html = <<<EOHTML
         is mature and meets the necessary quality standards we will move 
         it out of the sandbox into the main development stream.
 </p>	
-      <h3>Available components</h3>
+      <h3 style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Available components</h3>
 
    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
