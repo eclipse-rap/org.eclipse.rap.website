@@ -11,18 +11,18 @@ $html = <<<EOHTML
 
   <table width="100%" border="0">
       <tr>
-    <td colspan="2"><div align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border=0></div></td>
+    <td colspan="2" align="center"><img src="../images/rap_start.png" alt="RAP" width="420" height="161" border="0"/></td>
       <td width="15%" rowspan="2" valign="top">
       </td>
     </tr>
       <tr>
         <td width="30%" valign="top"><table border="0">
           <tr>
-            <td width=20></td>
-            <td><a href="/rap/newsite/community"><img border=0 src="images/community.jpg"></a></td>
+            <td width="20"></td>
+            <td><a href="/rap/newsite/community"><img border="0" src="images/community.jpg"/></a></td>
             <td><table border="0">
                 <tr>
-                  <td><font size=+1><a href="/rap/newsite/demos">Demos</a></font></td>
+                  <td><font size="+1"><a href="/rap/newsite/demos">Demos</a></font></td>
                 </tr>
                 <tr>
                   <td>See some demos here</td>
@@ -30,11 +30,11 @@ $html = <<<EOHTML
               </table></td>
           </tr>
           <tr>
-            <td width=20></td>
-            <td><a href="/rap/newsite/downloads"><img border=0 src="images/downloads.gif"></a></td>
+            <td width="20"></td>
+            <td><a href="/rap/newsite/downloads"><img border="0" src="images/downloads.gif"/></a></td>
             <td><table border="0">
                 <tr>
-                  <td><font size=+1><a href="/rap/newsite/downloads">Downloads</a></font></td>
+                  <td><font size="+1"><a href="/rap/newsite/downloads">Downloads</a></font></td>
                 </tr>
                 <tr>
                   <td>Get the latest RAP release</td>
