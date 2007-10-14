@@ -28,7 +28,7 @@ $html = <<<EOHTML
     <ul>
     <li>
       <p><u>The RAP newsgroup is for questions, support and information exchange
-      between users and developers of RAP.</p>
+      between users and developers of RAP.</u></p>
     </li>
   
     <li>
@@ -74,6 +74,17 @@ $html = <<<EOHTML
     </li>
 		</ul>
 	</div>
+
+	<div class="homeitem">
+		<h3>Newsgroup web user interface (forum like)</h3>
+		<ul>
+    <li>
+    <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
+    eclipse.technology.rap</a>  
+    </li>
+		</ul>
+	</div>
+
   
 	<div class="homeitem">
 		<h3>Newsgroup Browse</h3>
