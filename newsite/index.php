@@ -8,7 +8,6 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 <div id="maincontent">
   <div id="midcolumn">
-  <h1>$pageTitle</h1>
 
   <table width="100%" border="0">
       <tr>
