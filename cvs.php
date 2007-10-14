@@ -16,7 +16,7 @@ $html = <<<EOHTML
 
 <div id="midcolumn">
   <h1>$pageTitle</h1>
-  <h3>CVS checkout</h3>
+  <h3>CVS Checkout</h3>
   
   <p>Assuming you are using <em>Eclipse</em>, the easiest way to get everything 
     you need is to "import" the team project set denoted below. After you have
