@@ -42,9 +42,10 @@
 
 		<div class="homeitem3col">
 			<h3>Tooling for RAP</h3>
-			<br>
-			<img src="images/tooling.png" alt="tooling" />
-			<p>RAP takes advantage of the award winning Java Development tools and the Plug-in Development
+			<p align="center">
+  			<img src="images/tooling.png" alt="tooling" />
+			</p>
+			<p style="margin:10px">RAP takes advantage of the award winning Java Development tools and the Plug-in Development
 			tools provided by Eclipse.org. As applications are developed as bundles (plug-ins) and 
 			entirely in Java everything from development to launching, debugging and exporting to 
 			standard .war files works right out of the Eclipse IDE. 
