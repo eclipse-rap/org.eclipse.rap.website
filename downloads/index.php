@@ -22,7 +22,7 @@ $html = <<<EOHTML
         tools, documentation and examples.
       </p>
       <p style="margin: 10px">
-        See the <a href="../gettingstarted/index.php">getting started</a> guide 
+        See the <a href="../gettingstarted.php">getting started</a> guide 
         for a detailed description on how to install RAP using the update site. 
       </p>
       <ul>
