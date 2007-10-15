@@ -29,6 +29,8 @@ $html = <<<EOHTML
           <a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">
             See a workbench demo online
           </a>
+        </p>
+        <p>
           <a href="http://rap.innoopract.com/rapdemo/rms" target="_blank">
             (Alternative Server)
           </a>
