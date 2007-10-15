@@ -10,7 +10,7 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 
 <div id="midcolumn">
-		<h1>$pageTitle</h1>
+    <h1>Downloads</h1>
 
     <div class="homeitem3col">
       <a name="update_site_10"></a>

@@ -10,6 +10,7 @@ $pageAuthor		= "Rüdiger Herrmann";
 $html = <<<EOHTML
 
 <div id="midcolumn">
+  <h1>Newsgroup</h1>
   <div class="homeitem3col">
     <h3>Newsgroups</h3>
     <ul>

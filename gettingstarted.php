@@ -6,7 +6,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Getting Started";
+	$pageTitle 		= "RAP Project - Getting Started";
 	$pageKeywords	= "RAP, Eclipse";
 	$pageAuthor		= "Jochen Krause";
 		

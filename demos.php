@@ -1,12 +1,12 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
-$pageTitle 		= "Rich Ajax Platform (RAP) Project";
+$pageTitle 		= "RAP Project - Demos";
 $pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
 # Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
 <div id="midcolumn">
-<h1>RAP Demos</h1>
+<h1>Demos</h1>
 <p>Enjoy the demos below. <strong>Please be aware that the demos are run on a vserver 
   at eclipse.org that is managed by the project team only</strong>, and not a high 
   performance server supervised by sysadmins. Please make a post on the newsgroup 

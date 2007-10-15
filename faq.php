@@ -23,7 +23,7 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 
 	<div id="midcolumn">
-		<h1>$pageTitle</h1>
+		<h1>Frequently Asked Questions</h1>
 
 <h3>What is the goal of RAP?</h3>
 <p>It is about enabling programmers to develop powerful, Ajax Web applications
