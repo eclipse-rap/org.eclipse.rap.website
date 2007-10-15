@@ -4,10 +4,7 @@
 	$pageAuthor		= "Jochen Krause";
 	
 	# Paste your HTML content between the EOHTML markers!	
-	include("_sideMylarIs.php");
-	include("_sideFeedback.php");
-	include("_sidePhase.php");
-	$html = <<<EOHTML
+  $html = <<<EOHTML
 
 <div id="maincontent">
 	<div id="midcolumn">
