@@ -45,7 +45,11 @@ $html = <<<EOHTML
               </table></td>
           </tr>
         </table></td>
-        <td width="55%" valign="top">The RAP project enables developers to build rich, Ajax-enabled Web applications by using the Eclipse development model, plug-ins with the well known Eclipse workbench extenstion points and a widget toolkit with SWT API (plus JFace). The project has graduated from incubation and released its 1.0 release.</td>
+        <td width="55%" valign="top">The RAP project enables developers to build rich, 
+        Ajax-enabled Web applications by using the Eclipse development model, plug-ins 
+        with the well known Eclipse workbench extenstion points and a widget toolkit 
+        with SWT API (plus JFace). The project has graduated from incubation and released 
+        its 1.0 release.<br /><br /><a href="about.php">Learn more ...</a></td>
       </tr>
   </table>
   </div>
