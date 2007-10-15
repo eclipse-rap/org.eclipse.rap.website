@@ -12,6 +12,7 @@ $html = <<<EOHTML
   server supervised by sysadmins. Please make a post on the newsgroup (linked 
   from the menu on the left) if there are problems with the demo apps that 
   are not from third parties.</p>
+  
 <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
@@ -36,6 +37,7 @@ $html = <<<EOHTML
     </tr>
   </table>
 </div>
+
 <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
@@ -59,8 +61,9 @@ $html = <<<EOHTML
     </tr>
   </table>
 </div>
+
 <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-  <table width="750" border="0" cellspacing="5">
+  <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
         <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">
