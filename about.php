@@ -30,10 +30,11 @@
 		</div>
 		
 		<div class="homeitem3col">
-			<h3>RAP architecture</h3>
-			<br>
-			<img src="images/about/architecture.png" alt="architecture" />
-			<p>RAP is very similar to Eclipse RCP, but instead of being executed on a desktop computer
+			<h3>RAP Architecture</h3>
+			<p align="center">
+			  <img src="images/about/architecture.png" alt="architecture" />
+			</p>
+			<p style="margin:10px">RAP is very similar to Eclipse RCP, but instead of being executed on a desktop computer
 			RAP is run on a server and clients can access the application with standard browsers.
 			This is mainly achieved by providing a special implementation of SWT (a subset of SWT API).
 			</p>
