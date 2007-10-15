@@ -19,7 +19,7 @@
 EOBRANDING;
 	$Menu->setProjectBranding($branding);
 	
-	$Nav->addNavSeparator("RAP", "/rap/newsite/index.php");
+	$Nav->addNavSeparator("RAP", "/rap/index.php");
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;About", "/rap/about.php", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Demos", "/rap/demos.php", "_self", 1);
 	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Team", "/rap/team.php", "_self", 1);

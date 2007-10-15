@@ -22,7 +22,7 @@ $html = <<<EOHTML
         <td width="30%" valign="top"><table border="0">
           <tr>
             <td width="20"></td>
-            <td><a href="demos.php"><img border="0" src="images/community.jpg"/></a></td>
+            <td><a href="demos.php"><img border="0" src="images/demo_thumb.png"/></a></td>
             <td><table border="0">
                 <tr>
                   <td><font size="+1"><a href="demos.php">Demos</a></font></td>
@@ -34,7 +34,7 @@ $html = <<<EOHTML
           </tr>
           <tr>
             <td width="20"></td>
-            <td><a href="downloads/"><img border="0" src="images/downloads.gif"/></a></td>
+            <td><a href="downloads/"><img border="0" src="images/icon_save.png"/></a></td>
             <td><table border="0">
                 <tr>
                   <td><font size="+1"><a href="downloads/">Downloads</a></font></td>
