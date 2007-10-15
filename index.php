@@ -52,7 +52,7 @@ $html = <<<EOHTML
   </div>
 
  <div id="rightcolumn">
-  <div style="margin:10px">
+  <div style="margin-right:10px">
   
     <div class="sideitem">
     <h6>Active Contributors</h6>
@@ -70,7 +70,7 @@ $html = <<<EOHTML
     </div>
   
     <div class="sideitem">
-     <h6>Meet the RAP team</h6>
+     <h6>Meet the RAP Team</h6>
      <ul>
       <li>
         <a href="http://jax.de/konferenzen/wjax07/sessions.php?language=de&tid=637" target="_blank">
