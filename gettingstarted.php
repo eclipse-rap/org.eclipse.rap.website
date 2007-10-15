@@ -18,7 +18,7 @@
 	<div id="midcolumn">
 
 
-<h3>Getting Started</h3>
+<h1>Getting Started</h1>
 
 <p>
 The easiest was to get involved with RAP is to install it from the update-site 
