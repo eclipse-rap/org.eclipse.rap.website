@@ -35,6 +35,9 @@ $html = <<<EOHTML
             (Alternative Server)
           </a>
         </p>
+        <p>
+          Please note, the example data will be reset regularly.
+        </p>
         <p>This application shows a simple project management system, that 
         is build on top of RAP. Though it is not meant to be production 
         ready it shows a good bunch of the framework's possibilities.</p>
