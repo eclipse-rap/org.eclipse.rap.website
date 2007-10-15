@@ -27,7 +27,7 @@ $html = <<<EOHTML
       </p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-20071015-1319.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-20071015-1305.zip">
             <img src="../images/icon_save.gif" title="Update Site Zip" alt="Update Site Zip"/>
           </a>
           &nbsp;<b>http://download.eclipse.org/technology/rap/update-site</b> 
