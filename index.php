@@ -51,7 +51,8 @@ $html = <<<EOHTML
   </table>
   </div>
 
- <div id="rightcolumn">
+ <div id="rightcolumn" style="margin=10px">
+ 
   <div class="sideitem">
   <h6>Active Contributors</h6>
    <ul>
