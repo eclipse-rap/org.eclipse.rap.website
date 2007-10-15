@@ -7,10 +7,10 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 <div id="midcolumn">
 <h1>RAP Demos</h1>
-<p>Enjoy the demos below. Please be aware that they are run on a vserver at 
-  eclipse.org that is managed by the project team, and not a high performance 
-  server supervised by sysadmins. Please make a post on the newsgroup (linked 
-  from the menu on the left) if there are problems with the demo apps that 
+<p>Enjoy the demos below. <strong>Please be aware that the demos are run on a vserver 
+  at eclipse.org that is managed by the project team only</strong>, and not a high 
+  performance server supervised by sysadmins. Please make a post on the newsgroup 
+  (linked from the menu on the left) if there are problems with the demo apps that 
   are not from third parties.</p>
   
 <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
@@ -28,6 +28,9 @@ $html = <<<EOHTML
         <p>
           <a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">
             See a workbench demo online
+          </a>
+          <a href="http://rap.innoopract.com/rapdemo/rms" target="_blank">
+            (Alternative Server)
           </a>
         </p>
         <p>This application shows a simple project management system, that 
