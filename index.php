@@ -30,23 +30,38 @@ $html = <<<EOHTML
           </tr>
           <tr>
             <td width="20"></td>
-            <td><a href="downloads/"><img border="0" src="images/icon_archive.gif"/></a></td>
-            <td><table border="0">
+            <td>
+              <a href="downloads/">
+                <img border="0" src="images/icon_archive.gif"/>
+              </a>
+            </td>
+            <td>
+              <table border="0">
                 <tr>
-                  <td><font size="+1"><a href="downloads/">Downloads</a></font></td>
+                  <td>
+                    <font size="+1"><a href="downloads/">Downloads</a></font>
+                  </td>
                 </tr>
                 <tr>
                   <td>Get the latest RAP release</td>
                 </tr>
-              </table></td>
+              </table>
+            </td>
           </tr>
-          </table></td>
+          </table>
+        </td>
         
-        <td colspan="2" width="55%" valign="top">The RAP project enables developers to build rich, 
-        Ajax-enabled Web applications by using the Eclipse development model, plug-ins 
-        with the well known Eclipse workbench extenstion points and a widget toolkit 
-        with SWT API (plus JFace). The project has graduated from incubation and released 
-        its 1.0 release.<br /><br /><a href="about.php">Learn more ...</a></td>
+        <td colspan="2" width="55%" valign="top">
+          The RAP project enables developers to build rich, Ajax-enabled 
+          Web applications by using the Eclipse development model, plug-ins 
+          with the well known Eclipse workbench extenstion points, JFace, and a 
+          widget toolkit with SWT API (using <a href="http://qooxdoo.org">
+          qooxdoo</a> for the client-side presentation). The project has 
+          graduated from incubation and released its 1.0 release.
+        <br />
+        <br />
+        <a href="about.php">Learn more ...</a>
+        </td>
       </tr>
   </table>
   </div>
