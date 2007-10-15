@@ -1,5 +1,5 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
-$pageTitle 		= "Rich Ajax Platform (RAP) Project";
+$pageTitle 		= "RAP Project - Sandbox";
 $pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
@@ -63,7 +63,8 @@ $html = <<<EOHTML
             <p>The Google Maps component provides a simple integration of a GMap 
               in a custom widget. This component is used as an example for the 
               "Custom widget tutorial".</p>
-            <p>Available in CVS at sandbox/org.eclipse.rap.demo.gmaps</p>
+            <p>Available in <a href="cvs.php">CVS</a> at 
+              sandbox/org.eclipse.rap.demo.gmaps</p>
           </td>
         </tr>
       </table>
