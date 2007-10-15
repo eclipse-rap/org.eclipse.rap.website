@@ -54,22 +54,34 @@ $html = <<<EOHTML
 
   <div class="homeitem3col">
     <h3>Useful links</h3>
+    
+    <p style="margin:10px">
     <strong>Newsgroup Search</strong>
     <a href="http://www.eclipse.org/search/search.cgi?cmd=Search%21&form=extended&wf=574a74&ps=10&m=all&t=5&ul=%2Fnewslists%2Fnews.eclipse.technology.rap&wm=wrd&t=News&t=Mail">
       eclipse.technology.rap
     </a>
+    </p>
+    
+    <p style="margin:10px">
     <strong>Newsgroup web user interface (forum like)</strong>
     <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
       eclipse.technology.rap
     </a>  
+    </p>
+
+    <p style="margin:10px">
     <strong>Newsgroup Browse</strong>
     <a href="http://dev.eclipse.org/newslists/news.eclipse.technology.rap/maillist.html">
       eclipse.technology.rap
     </a>  
+    </p>
+    
+    <p style="margin:10px">
     <strong>NNTP (news://)</strong>
     <a href="news://news.eclipse.org/eclipse.technology.rap">
       eclipse.technology.rap
     </a>
+    </p>
   </div>
 
 </div>
