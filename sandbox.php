@@ -33,9 +33,17 @@ $html = <<<EOHTML
    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
-          <td width="250"><img src="images/sandbox/pde_runtime.png" alt="PDE Runtime" style="border: 1px solid #666;"/></a></td>
-          <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">PDE Runtime</h2>
-              PDE Runtime is an adoption of the platform PDE Runtime code that offers the Plugin Registry and the Error log.
+          <td width="250">
+            <img src="images/sandbox/pde_runtime.png" alt="PDE Runtime" style="border: 1px solid #666;"/>
+          </td>
+          <td width="500" valign="top">
+            <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
+              PDE Runtime
+            </h2>
+            <p>PDE Runtime is an adoption of the platform PDE Runtime code that 
+            offers the Plugin Registry and the Error log.</p>
+            <p>Available in <a href="cvs.php>CVS</a> at 
+              sandbox/org.eclipse.rap.pde.runtine</p>
           </td></td>
         </tr>
       </table>
@@ -43,11 +51,19 @@ $html = <<<EOHTML
    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
-          <td width="250"><img src="images/sandbox/gmap.png" alt="GMap component" style="border: 1px solid #666;"/></a></td>
-          <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">GMap</h2>
-              The Google Maps component provides a simple integration of a GMap in a custom widget. This component is used as an example
-              for the "Custom widget tutorial".
-          </td></td>
+          <td width="250">
+            <img src="images/sandbox/gmap.png" alt="GMap component" style="border: 1px solid #666;"/>
+          </td>
+          <td width="500" valign="top">
+            <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
+              GMap
+            </h2>
+            <p>The Google Maps component provides a simple integration of a GMap 
+            in a custom widget. This component is used as an example for the 
+            "Custom widget tutorial".</p>
+            <p>Available in <a href="cvs.php>CVS</a> at 
+              sandbox/org.eclipse.rap.demo.gmaps</p>
+          </td>
         </tr>
       </table>
     </div>
