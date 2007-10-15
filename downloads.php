@@ -1,3 +1,3 @@
 <?php
-  header("Location: downloads/index.html");
+  header("Location: downloads/index.php");
 ?>
