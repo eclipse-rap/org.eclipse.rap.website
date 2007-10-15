@@ -24,23 +24,26 @@
 The easiest was to get involved with RAP is to install it from the update-site 
 using the Eclipse Update Manager. This requires the following steps:
 <ul>
-  <li>With Eclipse up and running, select the Help->Software Updates->Find and
-      Install menu option.</li>
-  <li>Click on the Search for new features to install radio button and then 
-      click Next.</li>
-  <li>Click on the New Remote Site button, the New Update Site dialog will
-      appear.</li>
+  <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 
+      <strong>Software Updates</strong> &gt; <strong>Find and Install</strong> 
+      menu option.</li>
+  <li>Click on the <strong>Search for new features to install</strong> radio 
+      button and then click <strong>Next</strong>.</li>
+  <li>Click on the <strong>New Remote Site</strong> button, the New Update Site 
+      dialog will appear.</li>
   <li>Enter a name for the udpate site, such as "RAP Update Site" and then enter
-      the URL http://download.eclipse.org/technology/rap/update-site, click OK
-      to create the new update site entry.</li>
+      the URL <strong>http://download.eclipse.org/technology/rap/update-site</strong>, 
+      click <strong>OK</strong> to create the new update site entry.</li>
   <li>The entry you just created now appears in the update site list and is
-      selected. Ensure it is the only site selected and click Finish.</li>
+      selected. Ensure it is the only site selected and click 
+      <strong>Finish</strong>.</li>
   <li>The update manager will now connect to the site and display the feature
-      available on the site. Check the update site and click Next to continue
-      the selection process.</li>
-  <li>Accept the terms in the license agreement and click the Next button.</li>
-  <li>A list with the feature to install will be displayed. Click Finish to 
-      start the installation process.</li>
+      available on the site. Check the update site and click 
+      <strong>Next</strong> to continue the selection process.</li>
+  <li>Accept the terms in the license agreement and click the 
+      <strong>Next</strong> button.</li>
+  <li>A list with the feature to install will be displayed. Click 
+      <strong>Finish</strong> to start the installation process.</li>
   <li>The feature and plug-ins will now be downloaded from the site and
       installed locally. Note that you may be prompted to confirm if it is ok
       to install unsigned jar files.</li>
@@ -49,10 +52,10 @@ using the Eclipse Update Manager. This requires the following steps:
 <p>
 
 </p>
-After Eclipse restarts, a welcome page is displayed. Select the RAP section
-and choose the target installation action on the following page. In the
-upcomming dialog confirm the default values, which starts the target
-installation process.
+After Eclipse restarts, a welcome page is displayed. Select the <strong>Rich 
+Ajax Platform (RAP)</strong> section and choose <strong>Install Target 
+Platform</strong> on the following page. In the upcoming dialog confirm the 
+default values, which starts the target installation process.
 </p>
 
 <p>After the installation finished you are prepared to work with RAP.

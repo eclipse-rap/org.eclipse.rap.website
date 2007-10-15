@@ -27,7 +27,7 @@ $html = <<<EOHTML
 	  <strong>Import</strong> from the main menu, which opens a dialog. Select 
 	  <strong>Team</strong> &gt; <strong>Team Project Set</strong> and click 
 	  <strong>next</strong>. Enter the path to the file you have just downloaded, 
-	  click <strong>finish</strong> and the checkout of the necessary projects 
+	  click <strong>Finish</strong> and the checkout of the necessary projects 
       will start.
     </p>
     
