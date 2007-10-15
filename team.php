@@ -9,6 +9,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 
 <div id="maincontent">
 	<div id="midcolumn">
+	  <h1>Team</h1>
 		<div class="homeitem3col">
 		    <h3>Committers</h3>
 			<ul>
