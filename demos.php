@@ -47,18 +47,25 @@ $html = <<<EOHTML
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
+          <!--
           <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">
+          -->
             <img src="images/maildemo1.png" style="border: 1px solid #666;"/>
+          <!--
           </a>
+          -->
       </td>
       <td width="500" valign="top">
         <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
           RAP (RCP) Mail Demo
         </h2>
         <p>
+          <!--
           <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">
             See the RAP (RCP) Mail Demo online
           </a>
+          -->
+          Temporarily not available
         </p>
         <p>With very few changes the well-known RCP Mail Template can be 
         converted to RAP.</p>
@@ -71,18 +78,25 @@ $html = <<<EOHTML
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
+        <!--
         <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">
+        -->
           <img src="images/controls1.png" style="border: 1px solid #666;"/>
+        <!--
         </a>
+        -->
       </td>
       <td width="500" valign="top">
         <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
           RWT Controls Demo
         </h2>
         <p> 
+          <!--
           <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">
             See a RWT controls demo online
           </a>
+          -->
+          Temporarily not available
         </p>
         <p>This demo shows what widgets there are in RWT and that they 
         behave very similar to the SWT widgets.</p>
