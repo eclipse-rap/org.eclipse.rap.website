@@ -19,7 +19,7 @@ $html = <<<EOHTML
     <tr>
       <td width="250">
         <a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">
-          <img src="images/demo/webworkbench1.png" style="border: 1px solid #666;"/>
+          <img src="images/demos/webworkbench1.png" style="border: 1px solid #666;"/>
         </a>
       </td>
       <td width="500" valign="top">
