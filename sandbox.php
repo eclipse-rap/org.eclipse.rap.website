@@ -28,7 +28,9 @@ $html = <<<EOHTML
         is mature and meets the necessary quality standards we will move 
         it out of the sandbox into the main development stream.
 </p>	
-      <h3 style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Available components</h3>
+      <h3 style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
+        Available components
+      </h3>
 
    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
@@ -41,13 +43,13 @@ $html = <<<EOHTML
               PDE Runtime
             </h2>
             <p>PDE Runtime is an adoption of the platform PDE Runtime code that 
-            offers the Plugin Registry and the Error log.</p>
-            <p>Available in <a href="cvs.php>CVS</a> at 
+              offers the Plugin Registry and the Error log.</p>
+            <p>Available in CVS at 
               sandbox/org.eclipse.rap.pde.runtine</p>
           </td>
         </tr>
       </table>
-    </div>
+   </div>
    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
@@ -59,18 +61,17 @@ $html = <<<EOHTML
               GMap
             </h2>
             <p>The Google Maps component provides a simple integration of a GMap 
-            in a custom widget. This component is used as an example for the 
-            "Custom widget tutorial".</p>
-            <p>Available in <a href="cvs.php>CVS</a> at 
+              in a custom widget. This component is used as an example for the 
+              "Custom widget tutorial".</p>
+            <p>Available in CVS at 
               sandbox/org.eclipse.rap.demo.gmaps</p>
           </td>
         </tr>
       </table>
     </div>
 	
-	</div>
-	
-	
+  </div>
+  
 </div>
 EOHTML;
 
