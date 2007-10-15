@@ -63,6 +63,7 @@ $html = <<<EOHTML
 	</ul>
   </div>
 
+  <!--
   <div class="homeitem">
     <h3>Newsgroup web user interface (forum like)</h3>
     <ul>
@@ -86,15 +87,17 @@ $html = <<<EOHTML
   </div>
 
   <div class="homeitem">
-		<h3>NNTP (news://)</h3>
-		<ul>
-    <li>
-      <a href="news://news.eclipse.org/eclipse.technology.rap">
-      eclipse.technology.rap</a>
-    </li>
-		</ul>
+    <h3>NNTP (news://)</h3>
+    <ul>
+      <li>
+        <a href="news://news.eclipse.org/eclipse.technology.rap">
+          eclipse.technology.rap</a>
+      </li>
+    </ul>
   </div>
- </div>
+-->
+  
+</div>
   
 EOHTML;
 
