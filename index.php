@@ -9,18 +9,10 @@ $html = <<<EOHTML
 <div id="maincontent">
   <div id="midcolumn">
 
-  <table width="100%" border="1">
-    <tr>
-      <td colspan="2" align="center"><img src="images/screens.png" alt="RAP" width="600" height="295" border="0"/></td>
-      
-      <td width="15%" rowspan="2" valign="top">
-      </td>
-    </tr>
-    
-    <tr>
-      <td colspan="3"/>&nbsp;</td>
-    </tr>
-    
+  <p align="center">
+    <img src="images/screens.png" alt="RAP" width="600" height="295" border="0"/>
+  </p>
+  <table width="100%" border="1">    
     <tr>
         <td width="30%" valign="top">
           <table border="0">
