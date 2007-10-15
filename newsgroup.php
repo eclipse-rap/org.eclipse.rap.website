@@ -8,7 +8,8 @@ $pageAuthor		= "Rüdiger Herrmann";
 
 	# Paste your HTML content between the EOHTML markers!	
 $html = <<<EOHTML
-  
+
+<div id="container">  
 <div id="midcolumn">
   <div class="homeitem3col">
     <h3>Newsgroups</h3>
@@ -96,7 +97,11 @@ $html = <<<EOHTML
   </div>
 
 </div>
-  
+
+</div>
+
+<div id="rightcolumn"></div>
+
 EOHTML;
 
 
