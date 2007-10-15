@@ -11,7 +11,7 @@ $html = <<<EOHTML
 
   <table width="100%" border="0">
       <tr>
-    <td colspan="2" align="center"><img src="../images/screens.png" alt="RAP" width="600" height="295" border="0"/></td>
+    <td colspan="2" align="center"><img src="images/screens.png" alt="RAP" width="600" height="295" border="0"/></td>
       <td width="15%" rowspan="2" valign="top">
       </td>
     </tr>
@@ -22,10 +22,10 @@ $html = <<<EOHTML
         <td width="30%" valign="top"><table border="0">
           <tr>
             <td width="20"></td>
-            <td><a href="/rap/newsite/community"><img border="0" src="images/community.jpg"/></a></td>
+            <td><a href="demos.php"><img border="0" src="images/community.jpg"/></a></td>
             <td><table border="0">
                 <tr>
-                  <td><font size="+1"><a href="/rap/newsite/demos">Demos</a></font></td>
+                  <td><font size="+1"><a href="demos.php">Demos</a></font></td>
                 </tr>
                 <tr>
                   <td>See some demos here</td>
@@ -34,10 +34,10 @@ $html = <<<EOHTML
           </tr>
           <tr>
             <td width="20"></td>
-            <td><a href="/rap/newsite/downloads"><img border="0" src="images/downloads.gif"/></a></td>
+            <td><a href="downloads/"><img border="0" src="images/downloads.gif"/></a></td>
             <td><table border="0">
                 <tr>
-                  <td><font size="+1"><a href="/rap/newsite/downloads">Downloads</a></font></td>
+                  <td><font size="+1"><a href="downloads/">Downloads</a></font></td>
                 </tr>
                 <tr>
                   <td>Get the latest RAP release</td>
