@@ -17,7 +17,7 @@ $html = <<<EOHTML
           <td width="250"><a href="http://rap.eclipse.org/rapdemo/rms" target="_blank"><img src="images/webworkbench1.png" alt="workbench" style="border: 1px solid #666;"/></a></td>
           <td width="500" valign="top"><h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">RAP Workbench Demo</h2>
               <p> <a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">See a workbench demo online</a></p>
-              <p>RAP offers a UI concept (workbench) analogous to RCP that combines repeating complex programming tasks into predefined components.</p>
+              <p>This application shows a simple project management system, that is build on top of RAP. Though it is not meant to be production ready it shows a good bunch of the framework's possibilities.</p>
               </td>
             </td>
               </tr>
