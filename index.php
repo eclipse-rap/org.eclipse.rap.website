@@ -10,7 +10,7 @@ $html = <<<EOHTML
   <div id="midcolumn">
 
   <p align="center">
-    <img src="images/screens.png" alt="RAP" width="600" height="295" border="0"/>
+    <img src="images/screens.png" width="600" height="295" border="0"/>
   </p>
   <table width="100%" border="0">    
     <tr>
