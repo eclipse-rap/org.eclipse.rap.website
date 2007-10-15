@@ -34,7 +34,7 @@ $html = <<<EOHTML
           </tr>
           <tr>
             <td width="20"></td>
-            <td><a href="downloads/"><img border="0" src="images/icon_save.png"/></a></td>
+            <td><a href="downloads/"><img border="0" src="images/icon_archive.gif"/></a></td>
             <td><table border="0">
                 <tr>
                   <td><font size="+1"><a href="downloads/">Downloads</a></font></td>
