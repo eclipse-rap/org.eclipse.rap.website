@@ -15,44 +15,47 @@ $html = <<<EOHTML
 
 
 <div id="midcolumn">
-  <h1>$pageTitle</h1>
-  <h3>CVS Checkout</h3>
+  <h1>CVS</h1>
+
+  <div class="homeitem3col">
+    <h3>CVS Checkout</h3>
   
-  <p>Assuming you are using <em>Eclipse</em>, the easiest way to get everything 
-    you need is to "import" the team project set denoted below. After you have
-    downloaded the file, choose <strong>File</strong> &gt; 
-    <strong>Import</strong> from the main menu, which opens a dialog. Select 
-    <strong>Team</strong> &gt; <strong>Team Project Set</strong> and click 
-    <strong>next</strong>. Enter the path to the file you have just downloaded, 
-    click <strong>finish</strong> and the checkout of the necessary projects 
-    will start.
-  </p>
+    <p>Assuming you are using <em>Eclipse</em>, the easiest way to get everything 
+	  you need is to "import" the team project set denoted below. After you have
+	  downloaded the file, choose <strong>File</strong> &gt; 
+	  <strong>Import</strong> from the main menu, which opens a dialog. Select 
+	  <strong>Team</strong> &gt; <strong>Team Project Set</strong> and click 
+	  <strong>next</strong>. Enter the path to the file you have just downloaded, 
+	  click <strong>finish</strong> and the checkout of the necessary projects 
+      will start.
+    </p>
     
-  <p>
-    <ul>
-      <li>
-        <a href="resources/rap.psf">
-          <img src="images/icon_save.gif" />&nbsp;RAP Team Project Set
-        </a>
-      </li>
-    </ul>
-  </p>    
+	<p>
+	  <ul>
+	    <li>
+	      <a href="resources/rap.psf">
+	        <img src="images/icon_save.gif" />&nbsp;RAP Team Project Set
+	      </a>
+	    </li>
+	  </ul>
+    </p>    
   
-  <p>The above mentioned project set contains all the projects provided by 
-    RAP. Individual components can also be obtained directly from CVS.
-  </p>
-    
-  <p>If you are new to Eclipse, this 
-    <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">
-    document</a> may help with accessing the Eclipse CVS. The 
-    <strong>org.eclipse.rap</strong> module is located in the 
-    <strong>/cvsroot/technology</strong> repository.
-  </p>
+    <p>The above mentioned project set contains all the projects provided by 
+      RAP. Individual components can also be obtained directly from CVS.
+    </p>
   
-  <p>We are maintaining a <a href="../noteworthy/index.php">
-    New and Noteworthy</a> in sync with the development progress in CVS to 
-    ease adoption of new features for you.
-  </p>
+    <p>If you are new to Eclipse, this 
+      <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">
+      document</a> may help with accessing the Eclipse CVS. The 
+      <strong>org.eclipse.rap</strong> module is located in the 
+      <strong>/cvsroot/technology</strong> repository.
+    </p>
+  
+    <p>We are maintaining a <a href="../noteworthy/index.php">
+      New and Noteworthy</a> in sync with the development progress in CVS to 
+      ease adoption of new features for you.
+    </p>
+  </div>
 </div>
 EOHTML;
 
