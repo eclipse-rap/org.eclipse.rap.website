@@ -20,7 +20,8 @@ $html = <<<EOHTML
   <div class="homeitem3col">
     <h3>CVS Checkout</h3>
   
-    <p>Assuming you are using <em>Eclipse</em>, the easiest way to get everything 
+    <p style="margin:10px">
+      Assuming you are using <em>Eclipse</em>, the easiest way to get everything 
 	  you need is to "import" the team project set denoted below. After you have
 	  downloaded the file, choose <strong>File</strong> &gt; 
 	  <strong>Import</strong> from the main menu, which opens a dialog. Select 
@@ -40,18 +41,21 @@ $html = <<<EOHTML
 	  </ul>
     </p>    
   
-    <p>The above mentioned project set contains all the projects provided by 
+    <p style="margin:10px">
+      The above mentioned project set contains all the projects provided by 
       RAP. Individual components can also be obtained directly from CVS.
     </p>
   
-    <p>If you are new to Eclipse, this 
+    <p style="margin:10px">
+      If you are new to Eclipse, this 
       <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">
       document</a> may help with accessing the Eclipse CVS. The 
       <strong>org.eclipse.rap</strong> module is located in the 
       <strong>/cvsroot/technology</strong> repository.
     </p>
   
-    <p>We are maintaining a <a href="../noteworthy/index.php">
+    <p style="margin:10px">
+      We are maintaining a <a href="../noteworthy/index.php">
       New and Noteworthy</a> in sync with the development progress in CVS to 
       ease adoption of new features for you.
     </p>
