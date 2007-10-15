@@ -29,7 +29,7 @@
 		<div class="homeitem3col">
 			<h3>RAP Architecture</h3>
 			<p align="center">
-			  <img src="images/about/architecture.png" alt="architecture" />
+			  <img src="images/about/architecture.png" alt="Architecture" />
 			</p>
 			<p style="margin:10px">RAP is very similar to Eclipse RCP, but instead of being executed on a desktop computer
 			RAP is run on a server and clients can access the application with standard browsers.
@@ -40,7 +40,7 @@
 		<div class="homeitem3col">
 			<h3>Tooling for RAP</h3>
 			<p align="center">
-  			<img src="images/tooling.png" alt="tooling" />
+  			<img src="images/about/tooling.png" alt="Tooling" />
 			</p>
 			<p style="margin:10px">RAP takes advantage of the award winning Java Development tools and the Plug-in Development
 			tools provided by Eclipse.org. As applications are developed as bundles (plug-ins) and 

@@ -7,18 +7,19 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 <div id="midcolumn">
 <h1>Demos</h1>
-<p>Enjoy the demos below. <strong>Please be aware that the demos are run on a vserver 
-  at eclipse.org that is managed by the project team only</strong>, and not a high 
-  performance server supervised by sysadmins. Please make a post on the newsgroup 
-  (linked from the menu on the left) if there are problems with the demo apps that 
-  are not from third parties.</p>
+<p>Enjoy the demos below. <strong>Please be aware that the demos are run on 
+  a vserver at eclipse.org that is managed by the project team only</strong>, 
+  and not a high performance server supervised by sysadmins. Please make a 
+  post on the <a href="newsgroup.php">newsgroup</a> if there are problems 
+  with the demo apps that are not from third parties.
+</p>
   
 <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
         <a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">
-          <img src="images/webworkbench1.png" style="border: 1px solid #666;"/>
+          <img src="images/demo/webworkbench1.png" style="border: 1px solid #666;"/>
         </a>
       </td>
       <td width="500" valign="top">
@@ -53,7 +54,7 @@ $html = <<<EOHTML
           <!--
           <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">
           -->
-            <img src="images/maildemo1.png" style="border: 1px solid #666;"/>
+            <img src="images/demos/maildemo1.png" style="border: 1px solid #666;"/>
           <!--
           </a>
           -->
@@ -84,7 +85,7 @@ $html = <<<EOHTML
         <!--
         <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">
         -->
-          <img src="images/controls1.png" style="border: 1px solid #666;"/>
+          <img src="images/demos/controls1.png" style="border: 1px solid #666;"/>
         <!--
         </a>
         -->
@@ -115,7 +116,7 @@ $html = <<<EOHTML
   <tr>
     <td width="250" valign="top">
       <a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank">
-        <img src="images/discovery1.png" style="border: 1px solid #666;"/>
+        <img src="images/demos/discovery1.png" style="border: 1px solid #666;"/>
       </a>
     </td>
     <td width="500" valign="top">

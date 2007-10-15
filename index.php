@@ -18,15 +18,21 @@ $html = <<<EOHTML
           <table border="0">
           <tr>
             <td width="20"></td>
-            <td><a href="demos.php"><img border="0" src="images/demo_thumb.png"/></a></td>
-            <td><table border="0">
+            <td>
+              <a href="demos.php">
+                <img border="0" src="images/icon_demo.png"/>
+              </a>
+            </td>
+            <td>
+              <table border="0">
                 <tr>
                   <td><font size="+1"><a href="demos.php">Demos</a></font></td>
                 </tr>
                 <tr>
                   <td>See some demos here</td>
                 </tr>
-              </table></td>
+              </table>
+            </td>
           </tr>
           <tr>
             <td width="20"></td>
