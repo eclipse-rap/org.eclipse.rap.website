@@ -59,7 +59,7 @@ $html = <<<EOHTML
       doing a clean build will help.
       </p>
       <ul>
-        </li>
+        <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.3-20071010-2241.zip">
             <img src="../images/icon_save.gif" />
             rap-1.0-R-target-3.3-20071010-2241.zip
@@ -72,7 +72,7 @@ $html = <<<EOHTML
             rap-1.0-R-target-3.2-20071010-2241.zip
           </a>
           for Eclipse 3.2
-        <li>
+        </li>
       </ul>
     </div>
     
