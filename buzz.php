@@ -44,7 +44,7 @@ $html = <<<EOHTML
 		           	Slides: eclipse rich ajax platform (RAP)</a> EclipseCon, March 2007, 
 	            </li>
 	            <li>
-		            <img src="images/jax.png"/>
+		            <img src="images/jax.png" align="middle" />
 		            <a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">
 		           	Community: RAP wins european innovation award</a> JAX, 2006
 	            </li>
