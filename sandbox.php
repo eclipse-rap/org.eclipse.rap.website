@@ -44,12 +44,12 @@ $html = <<<EOHTML
             </h2>
             <p>PDE Runtime is an adoption of the platform PDE Runtime code that 
               offers the Plugin Registry and the Error log.</p>
-            <p>Available in CVS at 
-              sandbox/org.eclipse.rap.pde.runtine</p>
+            <p>Available in CVS at sandbox/org.eclipse.rap.pde.runtine</p>
           </td>
         </tr>
       </table>
    </div>
+   
    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
@@ -63,12 +63,11 @@ $html = <<<EOHTML
             <p>The Google Maps component provides a simple integration of a GMap 
               in a custom widget. This component is used as an example for the 
               "Custom widget tutorial".</p>
-            <p>Available in CVS at 
-              sandbox/org.eclipse.rap.demo.gmaps</p>
+            <p>Available in CVS at sandbox/org.eclipse.rap.demo.gmaps</p>
           </td>
         </tr>
       </table>
-    </div>
+   </div>
 	
   </div>
   
