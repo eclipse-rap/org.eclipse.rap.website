@@ -9,7 +9,6 @@ $pageAuthor		= "Rüdiger Herrmann";
 	# Paste your HTML content between the EOHTML markers!	
 $html = <<<EOHTML
 
-<div id="container">  
 <div id="midcolumn">
   <div class="homeitem3col">
     <h3>Newsgroups</h3>
@@ -53,54 +52,27 @@ $html = <<<EOHTML
     </ul>
   </div>
 
-  <div class="homeitem">
-    <h3>Newsgroup Search</h3>
-	<ul>
-      <li>
+  <div class="homeitem3col">
+    <h3>Useful links</h3>
+    <h4>Newsgroup Search</h3>
       <a href="http://www.eclipse.org/search/search.cgi?cmd=Search%21&form=extended&wf=574a74&ps=10&m=all&t=5&ul=%2Fnewslists%2Fnews.eclipse.technology.rap&wm=wrd&t=News&t=Mail">
         eclipse.technology.rap
       </a>
-    </li>
-	</ul>
-  </div>
-
-  <div class="homeitem">
-    <h3>Newsgroup web user interface (forum like)</h3>
-    <ul>
-      <li>
-        <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
-          eclipse.technology.rap
-        </a>  
-      </li>
-    </ul>
-  </div>
-
-  <div class="homeitem">
-    <h3>Newsgroup Browse</h3>
-      <ul>
-        <li>
-          <a href="http://dev.eclipse.org/newslists/news.eclipse.technology.rap/maillist.html">
-            eclipse.technology.rap
-          </a>  
-        </li>
-    </ul>
-  </div>
-
-  <div class="homeitem">
-    <h3>NNTP (news://)</h3>
-    <ul>
-      <li>
-        <a href="news://news.eclipse.org/eclipse.technology.rap">
-          eclipse.technology.rap</a>
-      </li>
-    </ul>
+    <h4>Newsgroup web user interface (forum like)</h4>
+      <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
+        eclipse.technology.rap
+      </a>  
+    <h4>Newsgroup Browse</h4>
+      <a href="http://dev.eclipse.org/newslists/news.eclipse.technology.rap/maillist.html">
+        eclipse.technology.rap
+      </a>  
+    <h4>NNTP (news://)</h4>
+      <a href="news://news.eclipse.org/eclipse.technology.rap">
+        eclipse.technology.rap
+      </a>
   </div>
 
 </div>
-
-</div>
-
-<div id="rightcolumn"></div>
 
 EOHTML;
 
