@@ -9,8 +9,8 @@ $pageAuthor		= "Rüdiger Herrmann";
 	# Paste your HTML content between the EOHTML markers!	
 $html = <<<EOHTML
   
-  <div id="midcolumn">
-    <div class="homeitem3col">
+<div id="midcolumn">
+  <div class="homeitem3col">
     <h3>Newsgroups</h3>
     <ul>
     <li>
@@ -50,40 +50,42 @@ $html = <<<EOHTML
     </li>
     
     </ul>
-	</div>
+  </div>
 
   <div class="homeitem">
     <h3>Newsgroup Search</h3>
-		<ul>
-    <li>
+	<ul>
+      <li>
       <a href="http://www.eclipse.org/search/search.cgi?cmd=Search%21&form=extended&wf=574a74&ps=10&m=all&t=5&ul=%2Fnewslists%2Fnews.eclipse.technology.rap&wm=wrd&t=News&t=Mail">
-      eclipse.technology.rap</a>
+        eclipse.technology.rap
+      </a>
     </li>
-		</ul>
-	</div>
+	</ul>
+  </div>
 
-	<div class="homeitem">
-		<h3>Newsgroup web user interface (forum like)</h3>
-		<ul>
-    <li>
-    <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
-    eclipse.technology.rap</a>  
-    </li>
-		</ul>
-	</div>
+  <div class="homeitem">
+    <h3>Newsgroup web user interface (forum like)</h3>
+    <ul>
+      <li>
+        <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
+          eclipse.technology.rap
+        </a>  
+      </li>
+    </ul>
+  </div>
 
-	<div class="homeitem">
-      <h3>Newsgroup Browse</h3>
+  <div class="homeitem">
+    <h3>Newsgroup Browse</h3>
       <ul>
         <li>
           <a href="http://dev.eclipse.org/newslists/news.eclipse.technology.rap/maillist.html">
-          eclipse.technology.rap
+            eclipse.technology.rap
           </a>  
         </li>
-      </ul>
-	</div>
+    </ul>
+  </div>
 
-	<div class="homeitem">
+  <div class="homeitem">
 		<h3>NNTP (news://)</h3>
 		<ul>
     <li>
@@ -91,7 +93,8 @@ $html = <<<EOHTML
       eclipse.technology.rap</a>
     </li>
 		</ul>
-	</div>
+  </div>
+ </div>
   
 EOHTML;
 
