@@ -9,17 +9,21 @@ $html = <<<EOHTML
 <div id="maincontent">
   <div id="midcolumn">
 
-  <table width="100%" border="0">
-      <tr>
-    <td colspan="2" align="center"><img src="images/screens.png" alt="RAP" width="600" height="295" border="0"/></td>
+  <table width="100%" border="1">
+    <tr>
+      <td colspan="2" align="center"><img src="images/screens.png" alt="RAP" width="600" height="295" border="0"/></td>
+      
       <td width="15%" rowspan="2" valign="top">
       </td>
     </tr>
+    
     <tr>
       <td colspan="3"/>&nbsp;</td>
     </tr>
-      <tr>
-        <td width="30%" valign="top"><table border="0">
+    
+    <tr>
+        <td width="30%" valign="top">
+          <table border="0">
           <tr>
             <td width="20"></td>
             <td><a href="demos.php"><img border="0" src="images/demo_thumb.png"/></a></td>
@@ -44,7 +48,8 @@ $html = <<<EOHTML
                 </tr>
               </table></td>
           </tr>
-        </table></td>
+          </table></td>
+        
         <td width="55%" valign="top">The RAP project enables developers to build rich, 
         Ajax-enabled Web applications by using the Eclipse development model, plug-ins 
         with the well known Eclipse workbench extenstion points and a widget toolkit 
