@@ -13,55 +13,55 @@ $html = <<<EOHTML
 	    <ul>
 		  <li>
 	        <a href="http://ajaxian.com/archives/ajax-meet-osgi-expanding-universes-collide-with-eclipse-rap-10" target="_blank">
-	       	Ajax meet OSGi: Expanding Universes Collide with Eclipse RAP 1.0</a> ajaxian.com (Dion Almaer)"
+	       	Ajax meet OSGi: Expanding Universes Collide with Eclipse RAP 1.0</a> ajaxian.com (Dion Almaer)
           </li>
 		  <li>
 	        <a href="http://ianskerrett.wordpress.com/2007/10/15/announcing-rap-10-the-other-press-release/" target="_blank">
-	       	Announcing RAP 1.0 - the other press release</a> wordpress (Ian Skerrett)"
+	       	Announcing RAP 1.0 - the other press release</a> wordpress (Ian Skerrett)
           </li>
           <li>
 	        <a href="http://www.heise.de/newsticker/meldung/97390" target="_blank">
-	       	Ajax-Web-Anwendungen auf Eclipse-Basis</a> (heise.de)"
+	       	Ajax-Web-Anwendungen auf Eclipse-Basis</a> (heise.de)
           </li>
           <li>
 	        <a href="http://www.golem.de/0710/55379.html" target="_blank">
-	       	Eclipse Rich Ajax Platform 1.0 verfügbar</a> (golem.de)"
+	       	Eclipse Rich Ajax Platform 1.0 verfügbar</a> (golem.de)
           </li>
           <li>
 	        <a href="http://www.infoworld.com/article/07/10/14/eclipse-rap_1.html" target="_blank">
-	       	InfoWorld: Eclipse offers AJAX server</a> InfoWorld (Paul Krill)"
+	       	InfoWorld: Eclipse offers AJAX server</a> InfoWorld (Paul Krill)
           </li>
           <li>
 	        <a href="http://www.internetnews.com/dev-news/article.php/3705031" target="_blank">
-	       	Internet News:  Eclipse Dives Into Ajax App Deployment</a> Internet News (Sean Michael Kerner)"
+	       	Internet News:  Eclipse Dives Into Ajax App Deployment</a> Internet News (Sean Michael Kerner)
           </li>
           <li>
 	        <a href="http://eclipse.sys-con.com/read/440611.htm" target="_blank">
-	       	Eclipse Rich AJAX Platform (RAP) 1.0 is Now Available - Eclipse News Desk</a> eclipse developer's journal"
+	       	Eclipse Rich AJAX Platform (RAP) 1.0 is Now Available - Eclipse News Desk</a> eclipse developer's journal
           </li>
           <li>
 	        <a href="http://www.eweek.com/article2/0,1895,2197117,00.asp" target="_blank">
-	       	eWeek: Eclipse Unwraps RAP</a> eWeek (Darryl K. Taft)"
+	       	eWeek: Eclipse Unwraps RAP</a> eWeek (Darryl K. Taft)
           </li>
           <li>
 	        <a href="http://blogs.zdnet.com/Burnette/?p=412" target="_blank">
-	       	Yet Another Ajax Toolkit: Eclipse RAP 1.0</a>zdNet (Ed Burnette)"
+	       	Yet Another Ajax Toolkit: Eclipse RAP 1.0</a>zdNet (Ed Burnette)
           </li>
           <li>
 	        <a href="http://blogs.zdnet.com/Stewart/?p=581" target="_blank">
-	       	RAP Brings Eclipse Into the Ajax Framework</a> zdNet (Ryan Stewart)"
+	       	RAP Brings Eclipse Into the Ajax Framework</a> zdNet (Ryan Stewart)
           </li>
           <li>
 	        <a href="http://www.sdtimes.com/article/latestnews-20071015-02.html" target="_blank">
-	       	Eclipse Wraps RAP 1.0</a> SD Times (Alex Handy)"
+	       	Eclipse Wraps RAP 1.0</a> SD Times (Alex Handy)
           </li>
           <li>
 	        <a href="http://www.regdeveloper.co.uk/2007/10/15/eclipse-rap_sheet/" target="_blank">
-	       	Eclipse Releases RAP 1.0 Ajax Toolkit</a> REG Developer (Phil Manchester)"
+	       	Eclipse Releases RAP 1.0 Ajax Toolkit</a> REG Developer (Phil Manchester)
           </li>
           <li>
 	        <a href="http://www.crn.com/software/202402928" target="_blank">
-	       	Open-Source Eclipse Launches Ajax Platform</a> crn (Stacy Cowley)"
+	       	Open-Source Eclipse Launches Ajax Platform</a> crn (Stacy Cowley)
           </li>
         </ul> 
       </div>
