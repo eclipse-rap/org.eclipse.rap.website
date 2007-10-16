@@ -72,6 +72,26 @@ $html = <<<EOHTML
 	        <a href="http://t3n.yeebase.com/aktuell/news/newspost/eclipse-gibt-rich-ajax-platform-frei/963/" target="_blank">
 	       	Eclipse bringt eigenen AJAX-Server</a> T3N.de (Jan Christe)
           </li>
+          <li>
+	        <a href="http://www.tectonic.co.za/view.php?id=1810" target="_blank">
+	       	Build rich web applications on Eclipse</a> tectonic (James Archibald)
+          </li>
+          <li>
+	        <a href="http://blogs.techrepublic.com.com/tech-news/?p=1385" target="_blank">
+	       	Eclipse foundation unveils Rich AJAX Platform 1.0</a> techrepublic.com (Arun Radhakrishnan)
+          </li>
+          <li>
+	        <a href="http://stuff.techwhack.com/archives/2007/10/15/eclipse-rap/" target="_blank">
+	       	Eclipse RAP (Rich Ajax Platform) 1.0 launched</a> techwhack.com
+          </li>
+          <li>
+	        <a href="http://www.prnewswire.com/cgi-bin/stories.pl?ACCT=104&STORY=/www/story/10-15-2007/0004681521&EDATE=" target="_blank">
+	       	Eclipse Releases First Ajax Platform Based on OSGi</a> prnewswire.com (Steve Eisenstadt)
+          </li>
+          <li>
+	        <a href="http://web2.sys-con.com/read/440611.htm" target="_blank">
+	       	First AJAX Platform Using the Eclipse Component Model</a> Eclipse News Desk
+          </li>
         </ul> 
       </div>
 	<div class="homeitem3col">
