@@ -21,11 +21,11 @@ $html = <<<EOHTML
           </li>
           <li>
 	        <a href="http://www.heise.de/newsticker/meldung/97390" target="_blank">
-	       	Ajax-Web-Anwendungen auf Eclipse-Basis (heise.de)</a>"
+	       	Ajax-Web-Anwendungen auf Eclipse-Basis</a> (heise.de)"
           </li>
           <li>
 	        <a href="http://www.golem.de/0710/55379.html" target="_blank">
-	       	Eclipse Rich Ajax Platform 1.0 verfügbar (golem.de)</a>"
+	       	Eclipse Rich Ajax Platform 1.0 verfügbar</a> (golem.de)"
           </li>
           <li>
 	        <a href="http://www.infoworld.com/article/07/10/14/eclipse-rap_1.html" target="_blank">
