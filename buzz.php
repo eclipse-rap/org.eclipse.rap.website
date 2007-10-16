@@ -20,6 +20,11 @@ $html = <<<EOHTML
 	       	Announcing RAP 1.0 - the other press release</a> wordpress (Ian Skerrett)
           </li>
           <li>
+	        <a href="http://www.eweek.com/article2/0,1895,2197117,00.asp" target="_blank">
+	       	eWeek: Eclipse Unwraps RAP</a> eWeek (Darryl K. Taft)
+          </li>
+          
+          <li>
 	        <a href="http://www.heise.de/newsticker/meldung/97390" target="_blank">
 	       	Ajax-Web-Anwendungen auf Eclipse-Basis</a> (heise.de)
           </li>
@@ -40,10 +45,6 @@ $html = <<<EOHTML
 	       	Eclipse Rich AJAX Platform (RAP) 1.0 is Now Available - Eclipse News Desk</a> eclipse developer's journal
           </li>
           <li>
-	        <a href="http://www.eweek.com/article2/0,1895,2197117,00.asp" target="_blank">
-	       	eWeek: Eclipse Unwraps RAP</a> eWeek (Darryl K. Taft)
-          </li>
-          <li>
 	        <a href="http://blogs.zdnet.com/Burnette/?p=412" target="_blank">
 	       	Yet Another Ajax Toolkit: Eclipse RAP 1.0</a>zdNet (Ed Burnette)
           </li>
@@ -62,6 +63,14 @@ $html = <<<EOHTML
           <li>
 	        <a href="http://www.crn.com/software/202402928" target="_blank">
 	       	Open-Source Eclipse Launches Ajax Platform</a> crn (Stacy Cowley)
+          </li>
+          <li>
+	        <a href="http://www.silicon.de/enid/business_software/30293" target="_blank">
+	       	Eclipse bringt eigenen AJAX-Server</a> silicon.de (Stefan Beiersmann)
+          </li>
+          <li>
+	        <a href="http://t3n.yeebase.com/aktuell/news/newspost/eclipse-gibt-rich-ajax-platform-frei/963/" target="_blank">
+	       	Eclipse bringt eigenen AJAX-Server</a> T3N.de (Jan Christe)
           </li>
         </ul> 
       </div>
