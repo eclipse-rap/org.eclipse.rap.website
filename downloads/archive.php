@@ -10,7 +10,7 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 
 <div id="midcolumn">
-		<h1>$pageTitle</h1>
+		<h1>Archived Downloads</h1>
 
     <p> 
     Since RCP and RAP bundles within the same instance do not work, we are only 
