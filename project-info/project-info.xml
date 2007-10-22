@@ -4,9 +4,10 @@
   <bugzilla>
     <product name="RAP"/>
   </bugzilla>
+
+  <committers url="/rap/team.php"/>
 <!-- 
-  <committers url="/rap/dev.php"/>
-  <contributors url="/rap/dev.php"/>
+  <contributors url="/rap/team/"/>
   <leaders url="/rap/team.php"/>
 -->
  <cvs repository="/cvsroot/technology/">
@@ -31,5 +32,6 @@
   <project-plan url="http://wiki.eclipse.org/index.php/RapPlan"/>
 
   <releases>
+    <release status="completed" name="1.0" date="10/15/2007" download="/rap/downloads/"/>
   </releases>
 </project>
