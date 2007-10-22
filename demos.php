@@ -51,28 +51,21 @@ $html = <<<EOHTML
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
-          <!--
           <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">
-          -->
             <img src="images/demos/maildemo1.png" style="border: 1px solid #666;"/>
-          <!--
           </a>
-          -->
       </td>
       <td width="500" valign="top">
         <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
           RAP (RCP) Mail Demo
         </h2>
         <p>
-          <!--
           <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">
             See the RAP (RCP) Mail Demo online
           </a>
-          -->
-          Temporarily not available
         </p>
-        <p>With very few changes the well-known RCP Mail Template can be 
-        converted to RAP.</p>
+        <p>This example shows the well known RCP Mail template application converted to RAP. This application
+           is available as a RAP template as part of the download from the tooling update site (see downloads).</p>
       </td>
     </tr>
   </table>
