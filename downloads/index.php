@@ -95,7 +95,7 @@ $html = <<<EOHTML
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-target-3.2-20071102-1619.zip">
             <img src="../images/icon_save.gif"/>
-            rap-1.0.1-R-target-3.2-20071102-1619.zip
+            rap-1.0.1-I-target-3.2-20071102-1619.zip
           </a>
           for Eclipse 3.2
         </li>
