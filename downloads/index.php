@@ -86,14 +86,14 @@ $html = <<<EOHTML
     </p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-target-3.3-20071102-1619.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071102-1619.zip">
             <img src="../images/icon_save.gif"/>
             rap-1.0.1-I-target-3.3-20071102-1619.zip
           </a>
           for Eclipse 3.3
         </li>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-target-3.2-20071102-1619.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071102-1619.zip">
             <img src="../images/icon_save.gif"/>
             rap-1.0.1-I-target-3.2-20071102-1619.zip
           </a>
