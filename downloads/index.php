@@ -79,23 +79,23 @@ $html = <<<EOHTML
    
     <div class="homeitem3col">
       <a name="target_platform_101"></a>
-      <h3>1.0.1 Service Release - Target Platform</h3>
+      <h3>Integration Builds - Target Platform</h3>
       <p style="margin: 10px;">
-      You can find here the Integration builds for the upcoming RAP 1.0.1 service
-      release. Service releases will only contain bug fixes.
+      You can find here the integration builds for the upcoming RAP 1.0.1 service
+      release.
     </p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071102-1619.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071109-1244.zip">
             <img src="../images/icon_save.gif"/>
-            rap-1.0.1-I-target-3.3-20071102-1619.zip
+            rap-1.0.1-I-target-3.3-20071109-1244.zip
           </a>
           for Eclipse 3.3
         </li>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071102-1619.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071109-1244.zip">
             <img src="../images/icon_save.gif"/>
-            rap-1.0.1-I-target-3.2-20071102-1619.zip
+            rap-1.0.1-I-target-3.2-20071109-1244.zip
           </a>
           for Eclipse 3.2
         </li>
