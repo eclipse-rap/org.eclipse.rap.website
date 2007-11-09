@@ -54,6 +54,26 @@ $html = <<<EOHTML
               </table>
             </td>
           </tr>
+          <tr>
+            <td width="20"></td>
+            <td>
+              <a href="gettingstarted.php">
+                <img border="0" src="images/gettingstarted.png"/>
+              </a>
+            </td>
+            <td>
+              <table border="0">
+                <tr>
+                  <td>
+                    <font size="+1"><a href="gettingstarted.php">Getting Started</a></font>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Learn how to get started</td>
+                </tr>
+              </table>
+            </td>
+          </tr>          
           </table>
         </td>
         
