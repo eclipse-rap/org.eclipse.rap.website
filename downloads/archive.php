@@ -99,6 +99,17 @@ $html = <<<EOHTML
       <h3>Integration Build Target Platforms</h3>
       <ul>
       
+        <li>RAP 1.0.1 I-20071109 for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071109-1244.zip">
+            rap-1.0.1-I-target-3.2-20071109-1244.zip
+          </a>
+          <br />
+          RAP 1.0.1 I-20071109 for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071109-1244.zip">
+            rap-1.0.1-I-target-3.3-20071109-1244.zip
+          </a>
+        </li>
+        
         <li>RAP 1.0 I-20070921 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070921-1419.zip">
             rap-1.0-I-incubation-target-3.2-20070921-1419.zip
@@ -109,7 +120,16 @@ $html = <<<EOHTML
             rap-1.0-I-incubation-target-3.3-20070921-1419.zip
           </a>
         </li>
-
+        <li>RAP 1.0 I-20070921 for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071109-1244.zip">
+            rap-1.0.1-I-target-3.2-20071109-1244.zip
+          </a>
+          <br />
+          RAP 1.0 I-20070921 for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070921-1419.zip">
+            rap-1.0-I-incubation-target-3.3-20070921-1419.zip
+          </a>
+        </li>
         <li>RAP 1.0 I-20070914 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070914-1831.zip">
             rap-1.0-I-incubation-target-3.2-20070914-1831.zip
