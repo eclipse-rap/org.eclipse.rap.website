@@ -20,6 +20,7 @@
 
 <h1>Getting Started</h1>
 
+<h2>Getting started screencasts</h2>
 <p>Check out those execellent screencasts (external) to get started with RAP
  - both for installation and creating your first project:
  <a href="http://www.thescreencast.com/2007/10/first-look-at-eclipse-rich-ajax.html"
@@ -31,6 +32,7 @@
  <a href="http://www.thescreencast.com/2007/10/first-look-at-eclipse-rich-ajax.html"
     target="_blank"><img src="images/gettingstarted/create_application_screencast.png"/></a>
 </p>
+<h2>Getting started instructions</h2>
 <p>
 The easiest was to get involved with RAP is to install it from the update-site 
 using the Eclipse Update Manager. This requires the following steps:
