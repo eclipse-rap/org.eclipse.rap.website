@@ -65,7 +65,7 @@ $html = <<<EOHTML
               <table border="0">
                 <tr>
                   <td>
-                    <font size="+1"><a href="gettingstarted.php">Getting Started</a></font>
+                    <font size="+1"><a href="gettingstarted.php">Get started</a></font>
                   </td>
                 </tr>
                 <tr>
@@ -114,6 +114,12 @@ $html = <<<EOHTML
      <h6>Meet the RAP Team</h6>
      <ul>
       <li>
+        <a http://wiki.eclipse.org/Karlsruhe_DemoCamp" target="_blank">
+        Eclipse DemoCamp, Karlsruhe, Dec 6</a>
+        <span><br>
+        RAP Demos</span>
+      </li>
+      <li>
         <a href="http://jax.de/konferenzen/wjax07/sessions.php?language=de&tid=637" target="_blank">
         W-JAX, Munich, November 5-9 (German)</a>
         <span><br>
@@ -124,18 +130,6 @@ $html = <<<EOHTML
         Eclipse Summit Europe, Ludwigsburg, October 10-11</a>
         <span><br>
         RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
-      </li>
-      <li>
-        <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&area=directors-choice" target="_blank">
-        EclipseCon 2007, Santa Clara, March 5-8</a>
-        <span><br>
-        RAP - Eclipse style development for the web</span>
-      </li>
-      <li>
-        <a href="http://eclipseforumeurope.com/konferenzen/efe07/overview_sessions_eng.php?track=3#session-ewd1" target="_blank">
-        Eclipse Forum Europe, Wiesbaden, Germany, April 23-27</a>
-        <span><br />
-        Building Ajax applications with the Eclipse Rich Ajax Platform</span>
       </li>
     </div>
     
