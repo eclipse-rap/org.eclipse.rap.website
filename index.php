@@ -114,22 +114,19 @@ $html = <<<EOHTML
      <h6>Meet the RAP Team</h6>
      <ul>
       <li>
-        <a http://wiki.eclipse.org/Karlsruhe_DemoCamp" target="_blank">
+        <a href="http://wiki.eclipse.org/Karlsruhe_DemoCamp" target="_blank">
         Eclipse DemoCamp, Karlsruhe, Dec 6</a>
-        <span><br>
-        RAP Demos</span>
+        <span><br />RAP Demos</span>
       </li>
       <li>
         <a href="http://jax.de/konferenzen/wjax07/sessions.php?language=de&tid=637" target="_blank">
         W-JAX, Munich, November 5-9 (German)</a>
-        <span><br>
-        RCP goes Web 2.0</span>
+        <span><br />RCP goes Web 2.0</span>
       </li>
       <li>
         <a href="http://www.eclipsecon.org/summiteurope2007/index.php?page=detail/&id=29" target="_blank">
         Eclipse Summit Europe, Ludwigsburg, October 10-11</a>
-        <span><br>
-        RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
+        <span><br />RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
       </li>
     </div>
     
