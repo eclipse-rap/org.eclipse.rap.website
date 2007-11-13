@@ -77,7 +77,7 @@ $html = <<<EOHTML
           </table>
         </td>
         
-        <td colspan="2" width="55%" valign="top">
+        <td colspan="2" width="55%" valign="bottom">
           The RAP project enables developers to build rich, Ajax-enabled 
           Web applications by using the Eclipse development model, plug-ins 
           with the well known Eclipse workbench extenstion points, JFace, and a 

@@ -29,11 +29,11 @@
  <p>
  <table border="0" width="100%">
  <tr>
- <td>
+ <td align="center">
  <a href="http://www.thescreencast.com/2007/10/first-look-at-eclipse-rich-ajax.html"
     target="_blank"><img src="images/gettingstarted/install_screencast.png"/></a>
  </td>
- <td>
+ <td align="center">
  <a href="http://www.thescreencast.com/2007/10/first-look-at-eclipse-rich-ajax.html"
     target="_blank"><img src="images/gettingstarted/create_application_screencast.png"/></a>
  </td>
