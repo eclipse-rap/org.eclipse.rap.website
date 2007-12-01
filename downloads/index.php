@@ -99,20 +99,6 @@ $html = <<<EOHTML
           </a>
           for Eclipse 3.2
         </li>
-        <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071109-1244.zip">
-            <img src="../images/icon_save.gif"/>
-            rap-1.0.1-I-target-3.3-20071109-1244.zip
-          </a>
-          for Eclipse 3.3
-        </li>
-        <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071109-1244.zip">
-            <img src="../images/icon_save.gif"/>
-            rap-1.0.1-I-target-3.2-20071109-1244.zip
-          </a>
-          for Eclipse 3.2
-        </li>
       </ul>
    </div>
     
