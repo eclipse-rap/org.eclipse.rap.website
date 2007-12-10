@@ -20,6 +20,7 @@ $html = <<<EOHTML
         below. It contains the target platform that is also available as a 
         separate download, bundled with useful 
         tools, documentation and examples.
+        <br />
         To be up to date with the current development, please upgrade the target
         platform to the <a href="#target_platform_10">1.0.1 service release</a>.
       </p>
