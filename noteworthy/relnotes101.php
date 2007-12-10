@@ -18,7 +18,7 @@ $html = <<<EOHTML
   <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
   </p>
 	  
-  <table>
+  <table cellspacing="10px">
     <tr valign="top" align="left">
 	  <td width="20%">
 	    <b>Bugs fixed</b>
@@ -41,7 +41,6 @@ $html = <<<EOHTML
 	    </ul>
       </td>
     </tr>
-    <p style="margin: 10px">&nbsp;</p>
 	<tr valign="top" align="left">
 	  <td width="20%">
 	    <b>Performance improvements</b>
@@ -51,7 +50,6 @@ $html = <<<EOHTML
 	    better response times for the user of RAP applications.</p>
 	  </td>
 	</tr>
-    <p style="margin: 10px">&nbsp;</p>
 	<tr valign="top" align="left">
 	  <td width="20%">
 	    <b>National Language Suport (NLS)</b>
@@ -70,7 +68,6 @@ $html = <<<EOHTML
 	    </p>
 	  </td>
 	</tr>
-    <p style="margin: 10px">&nbsp;</p>
 	<tr valign="top" align="left">
 	  <td width="20%">
 	    <b>RWT/JFace Standalone</b>
@@ -84,7 +81,6 @@ $html = <<<EOHTML
 	    </p>
 	  </td>
 	</tr>
-    <p style="margin: 10px">&nbsp;</p>
 	<tr valign="top" align="left">
 	  <td width="20%">
 	    <b>Patch Fragments</b>
