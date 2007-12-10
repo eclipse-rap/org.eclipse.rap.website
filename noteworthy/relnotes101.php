@@ -24,8 +24,9 @@ $html = <<<EOHTML
 	    <b>Bugs fixed</b>
 	  </td>
 	  <td width="80%">
-        <p>See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Technology&amp;product=RAP&amp;target_milestone=1.0.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
-	      Bug List</a> which contains all bugs fixed for this service release 
+        <p style="margin: 0px">See the 
+          <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Technology&amp;product=RAP&amp;target_milestone=1.0.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">Bug List</a>
+          which contains all bugs fixed for this service release 
 	      besides those fixes items not tracked by Bugzilla:</p>
 	    <ul>  
 	    <li>The tree widget has experienced some major rework regarding it's 
@@ -56,7 +57,7 @@ $html = <<<EOHTML
 	    <b>National Language Suport (NLS)</b>
 	  </td>
 	  <td width="80%">
-	    <p>The growing need for multi-language applications led us to provide 
+	    <p style="margin: 0px">The growing need for multi-language applications led us to provide 
 	      NLS support in RAP. With this your application will be translated based 
 	      on the locale of the user. You only need to activate it and provide the 
 	      translations for your application.
@@ -75,7 +76,7 @@ $html = <<<EOHTML
 	    <b>RWT/JFace Standalone</b>
 	  </td>
 	  <td width="80%">
-	    <p>To have the same abilities like the original implementation of SWT 
+	    <p style="margin: 0px">To have the same abilities like the original implementation of SWT 
 	      and JFace you're now able to deploy RAP applications without the 
 	      dependency to an OSGi implementation (e.g. Equinox). This means you can 
 	      use RWT and JFace standalone without the whole bunch of bundles sitting 
@@ -89,7 +90,7 @@ $html = <<<EOHTML
 	    <b>Patch Fragments</b>
 	  </td>
 	  <td width="80%">
-        <p>Many users complain about missing API which is not yet implemented 
+        <p style="margin: 0px">Many users complain about missing API which is not yet implemented 
 	      in RAP. As the RAP team decided to not implement 
 	      <a href="http://en.wikipedia.org/wiki/NOP">NOP</a>s we still see the 
 	      need of the community in order to "single-source" applications. With 
