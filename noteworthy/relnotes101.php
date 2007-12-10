@@ -26,16 +26,18 @@ $html = <<<EOHTML
 	  <td width="80%">
         <p>See the <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Technology&amp;product=RAP&amp;target_milestone=1.0.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
 	      Bug List</a> which contains all bugs fixed for this service release 
-	      besides fixed items not tracked by Bugzilla.</p>
-	    <p>The tree widget has experienced some major rework regarding it's 
+	      besides those fixes items not tracked by Bugzilla:</p>
+	    <ul>  
+	    <li>The tree widget has experienced some major rework regarding it's 
 	    behavior with the <code>SWT.VIRTUAL</code> flag. Additionally selection 
 	    bugs, empty labels and <code>pack()</code> of <code>TreeColumn</code>s #
 	    are fixed.
-        </p>
-	    <p><code>IProgressService#busyCursorWhile</code> is now blocking.</p>
-        <p><code>StringFieldEditor</code> of JFace now throws 
+        </li>
+	    <li><code>IProgressService#busyCursorWhile</code> is now blocking.</li>
+        <li><code>StringFieldEditor</code> of JFace now throws 
           <code>PropertyChangeEvents</code> in case of modifications.
-	    </p>
+	    </li>
+	    </ul>
       </td>
     </tr>
 	<tr valign="top" align="left">
@@ -55,11 +57,12 @@ $html = <<<EOHTML
 	    <p>The growing need for multi-language applications led us to provide 
 	      NLS support in RAP. With this your application will be translated based 
 	      on the locale of the user. You only need to activate it and provide the 
-	      translations for your application.</p>
-	    <p>With this effort on we had to turn the 
+	      translations for your application.
+	    <br />
+	      With this effort on we had to turn the 
 	      <code>org.eclipse.jface.dialogs.IDialogConstants</code> interface 
 	      into a class. This may break code that uses this type.</p>
-	    <p>
+	    <br />
 	      <img src="rap-nls.png" />
 	    </p>
 	  </td>
