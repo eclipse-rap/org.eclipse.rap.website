@@ -42,7 +42,7 @@ $html = <<<EOHTML
       </td>
     </tr>
     <p />
-	<tr valign="top" align="left">
+	<tr valign="top" align="left" style="margin-top: 10px">
 	  <td width="20%">
 	    <b>Performance improvements</b>
 	  </td>
