@@ -30,7 +30,7 @@ $html = <<<EOHTML
     doing a clean build will help.
     </p>
     <div class="homeitem3col">
-      <h3>Milestone Target Platforms</h3>
+      <h3>Milestone and Release Target Platforms</h3>
       <ul>
         <li>RAP 1.0 Final for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.2-20071010-2241.zip">
