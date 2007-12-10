@@ -18,8 +18,10 @@ $html = <<<EOHTML
       <p style="margin: 10px">
         The most convenient way to get RAP is by using the update site denoted
         below. It contains the target platform that is also available as a 
-        <a href="#target_platform_10">separate download</a>, bundled with useful 
+        separate download, bundled with useful 
         tools, documentation and examples.
+        To be up to date with the current development, please upgrade the target
+        platform to the <a href="#target_platform_10">1.0.1 service release</a>.
       </p>
       <p style="margin: 10px">
         See the <a href="../gettingstarted.php">getting started</a> guide 
@@ -38,7 +40,7 @@ $html = <<<EOHTML
       
     <div class="homeitem3col">
       <a name="target_platform_10"></a>
-      <h3>1.0 Release - Target Platform</h3>
+      <h3>1.0.1 Release - Target Platform</h3>
       <p style="margin: 10px">
       Since RCP and RAP bundles within the same instance do not work, we provide 
       target platforms for download. This is because RAP uses the same namespace 
@@ -60,16 +62,17 @@ $html = <<<EOHTML
       </p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.3-20071010-2241.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.3-20071207-1851.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.0-R-target-3.3-20071010-2241.zip
+            rap-1.0.1-R-target-3.3-20071207-1851.zip  
+            (<a href="../relnotes101.php">release notes</a>)
           </a>
           for Eclipse 3.3
         </li>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.2-20071010-2241.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.2-20071207-1851.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.0-R-target-3.2-20071010-2241.zip
+            rap-1.0.1-R-target-3.2-20071207-1851.zip
           </a>
           for Eclipse 3.2
         </li>
