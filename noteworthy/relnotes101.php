@@ -40,6 +40,7 @@ $html = <<<EOHTML
 	    </ul>
       </td>
     </tr>
+    <p />
 	<tr valign="top" align="left">
 	  <td width="20%">
 	    <b>Performance improvements</b>
@@ -49,6 +50,7 @@ $html = <<<EOHTML
 	    better response times for the user of RAP applications.</p>
 	  </td>
 	</tr>
+    <p />
 	<tr valign="top" align="left">
 	  <td width="20%">
 	    <b>National Language Suport (NLS)</b>
@@ -67,6 +69,7 @@ $html = <<<EOHTML
 	    </p>
 	  </td>
 	</tr>
+    <p />
 	<tr valign="top" align="left">
 	  <td width="20%">
 	    <b>RWT/JFace Standalone</b>
@@ -80,6 +83,7 @@ $html = <<<EOHTML
 	    </p>
 	  </td>
 	</tr>
+    <p />
 	<tr valign="top" align="left">
 	  <td width="20%">
 	    <b>Patch Fragments</b>
