@@ -80,7 +80,7 @@ $html = <<<EOHTML
       </ul>
     </div>
    
-   
+<!--   
     <div class="homeitem3col">
       <a name="target_platform_101"></a>
       <h3>Integration Builds - Target Platform</h3>
@@ -105,6 +105,7 @@ $html = <<<EOHTML
         </li>
       </ul>
    </div>
+-->
     
    <div class="homeitem3col" style="width:95%; border:none; margin-left:0px">
      <table>
