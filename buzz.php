@@ -97,6 +97,14 @@ $html = <<<EOHTML
 	<div class="homeitem3col">
 		<h3>Current articles, blogs, slides and more</h3>
 	    <ul>
+            <li>
+              <a target="_blank" href="http://www.devx.com/webdev/Article/36101/0/page/1">
+              Article: The Rich get Richer: RAP builds on RCP</a> DevX, Nov 27, 2007, Riccardo Govoni (Google)
+            </li>
+            <li>
+              <a target="_blank" href="http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax1/?ca=dgr-eclipse-1">
+              Article: Web 2.0, the Eclipse way</a> IBM developerWorks, Oct 23, 2007, Chris Aniszczyk & Benjamin Muskalla
+            </li>
 			<li>
 	            <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204737" target="_blank">
 	           	Community: RAP Creation Review Votes</a> eclipse.org, Oct 10, 2007 - "+2 Simply a awesome project!"
