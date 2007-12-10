@@ -46,7 +46,7 @@ $html = <<<EOHTML
 	    <b>Performance improvements</b>
 	  </td>
 	  <td width="80%">
-	    <p style="margin: 0px>We addressed some critical performance issues in order to have 
+	    <p style="margin: 0px">We addressed some critical performance issues in order to have 
 	    better response times for the user of RAP applications.</p>
 	  </td>
 	</tr>
