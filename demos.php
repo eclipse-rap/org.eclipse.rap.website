@@ -31,11 +31,6 @@ $html = <<<EOHTML
             See a workbench demo online
           </a>
         </p>
-        <p>
-          <a href="http://rap.innoopract.com/rapdemo/rms" target="_blank">
-            (Alternative Server)
-          </a>
-        </p>
         <p>This application shows a simple project management system, that 
         is build on top of RAP. Though it is not meant to be production 
         ready it shows a good bunch of the framework's possibilities.</p>
