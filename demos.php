@@ -38,17 +38,15 @@ $html = <<<EOHTML
         </p>
         <p>This application shows a simple project management system, that 
         is build on top of RAP. Though it is not meant to be production 
-        ready it shows a good bunch of the framework's possibilities.
-        <br />
+        ready it shows a good bunch of the framework's possibilities.</p>
+        <p>
         Translations for 
         <a href="http://rap.innoopract.com/rapdemo/rms?locale=en" target="_blank">English</a>, 
         <a href="http://rap.innoopract.com/rapdemo/rms?locale=de" target="_blank">German</a> and 
         <a href="http://rap.innoopract.com/rapdemo/rms?locale=zh" target="_blank">Chinese</a> 
-        are available. The latter requires your operation system and browser 
-        to support East Asian languages. 
-        <br />
-        Please note, the example data will be reset regularly.
-        </p>
+        are available. The latter requires your browser to support East 
+        Asian languages.</p> 
+        <p>Please note, the example data will be reset regularly.</p>
       </td>
     </tr>
   </table>
