@@ -35,7 +35,7 @@ $html = <<<EOHTML
         is build on top of RAP. Though it is not meant to be production 
         ready it shows a good bunch of the framework's possibilities.</p>
         <p>
-        Translations for 
+        To demonstrate the NLS support, translations for 
         <a href="http://rap.innoopract.com/rapdemo/rms?locale=en" target="_blank">English</a>, 
         <a href="http://rap.innoopract.com/rapdemo/rms?locale=de" target="_blank">German</a> and 
         <a href="http://rap.innoopract.com/rapdemo/rms?locale=zh" target="_blank">Chinese</a> 
