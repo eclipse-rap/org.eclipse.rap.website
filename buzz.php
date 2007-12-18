@@ -98,6 +98,10 @@ $html = <<<EOHTML
 		<h3>Current articles, blogs, slides and more</h3>
 	    <ul>
             <li>
+              <a target="_blank" href="http://www.redmonk.com/cote/2007/12/12/eclipse-rap-overview-and-demo-screencast">
+              Eclipse RAP Overview and Demo Screencast</a> RedMonk, Dec 12, 2007, Jochen Krause
+            </li>
+            <li>
               <a target="_blank" href="http://www.ibm.com/developerworks/library/os-eclipse-richajax2/index.html">
               Article: Web 2.0, the Eclipse way, Part II</a> IBM developerWorks, Dec 11, 2007, Chris Aniszczyk & Benjamin Muskalla
             </li>
