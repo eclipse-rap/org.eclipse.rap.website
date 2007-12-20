@@ -19,6 +19,7 @@ $html = <<<EOHTML
         <br />
         All features documented here can be obtained from 
         <a href="../cvs.php">CVS HEAD</a>.             
+        <br />
       </li>
       <li><a href="index_10.php">RAP Release 1.0</a>
         <br />
