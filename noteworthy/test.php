@@ -12,14 +12,14 @@ $html = <<<EOHTML
       builds.</p>
     <ul>
       <li><a href="index_11M1.php">RAP 1.1 M1</a>
-        <br />
+        <p>
         Lists some of the more noteworthy things that will be available in 
         milestone build M1 (Januar 7, 2008) and meanwhile serves to document
         the development progress.    
         <br />
         All features documented here can be obtained from 
         <a href="../cvs.php">CVS HEAD</a>.             
-        <br />
+        </p>
       </li>
       <li><a href="index_10.php">RAP Release 1.0</a>
         <br />
