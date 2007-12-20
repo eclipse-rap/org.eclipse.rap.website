@@ -12,7 +12,7 @@ $html = <<<EOHTML
       builds.</p>
     <ul>
       <li><a href="index_11M1.php">RAP 1.1 M1</a>
-        <p>
+        <p style="margin-top: 5px">
         Lists some of the more noteworthy things that will be available in 
         milestone build M1 (Januar 7, 2008) and meanwhile serves to document
         the development progress.    
