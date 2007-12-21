@@ -80,32 +80,29 @@ $html = <<<EOHTML
       </ul>
     </div>
    
-<!--   
     <div class="homeitem3col">
       <a name="target_platform_101"></a>
       <h3>Integration Builds - Target Platform</h3>
       <p style="margin: 10px;">
-      You can find here the integration builds for the upcoming RAP 1.0.1 service
-      release.
+      You can find here the integration builds for the upcoming RAP 1.1 release.
     </p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071130-1407.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071221-1545.zip">
             <img src="../images/icon_save.gif"/>
-            rap-1.0.1-I-target-3.3-20071130-1407.zip
+            rap-1.0.1-I-target-3.3-20071221-1545.zip
           </a>
           for Eclipse 3.3
         </li>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071130-1407.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071221-1545.zip">
             <img src="../images/icon_save.gif"/>
-            rap-1.0.1-I-target-3.2-20071130-1407.zip
+            rap-1.0.1-I-target-3.2-20071221-1545.zip
           </a>
           for Eclipse 3.2
         </li>
       </ul>
    </div>
--->
     
    <div class="homeitem3col" style="width:95%; border:none; margin-left:0px">
      <table>
