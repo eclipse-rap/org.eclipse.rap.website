@@ -42,7 +42,7 @@ $html = <<<EOHTML
             rap-1.0-R-target-3.3-20071010-2241.zip
           </a>
           <br />
-          <a href="http://www.eclipse.org/rap/noteworthy">
+          <a href="http://www.eclipse.org/rap/noteworthy/news_10.php">
             New and Noteworthy
           </a>
           <br />
