@@ -24,20 +24,21 @@ $html = <<<EOHTML
 	    <b>Bugs fixed</b>
 	  </td>
 	  <td width="80%">
-        <p style="margin: 0px">See the 
-          <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Technology&amp;product=RAP&amp;target_milestone=1.0.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">Bug List</a>
-          which contains all bugs fixed for this service release 
+      <p style="margin: 0px">See the 
+        <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Technology&amp;product=RAP&amp;target_milestone=1.0.1&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">Bug List</a>
+        which contains all bugs fixed for this service release 
 	      besides those fixes items not tracked by Bugzilla:</p>
 	    <ul>  
-	    <li>The tree widget has experienced some major rework regarding it's 
-	    behavior with the <code>SWT.VIRTUAL</code> flag. Additionally selection 
-	    bugs, empty labels and <code>pack()</code> of <code>TreeColumn</code>s #
-	    are fixed.
-        </li>
-	    <li><code>IProgressService#busyCursorWhile</code> is now blocking.</li>
-        <li><code>StringFieldEditor</code> of JFace now throws 
-          <code>PropertyChangeEvents</code> in case of modifications.
-	    </li>
+  	    <li>The tree widget has experienced some major rework regarding it's 
+  	    behavior with the <code>SWT.VIRTUAL</code> flag. Additionally selection 
+  	    bugs, empty labels and <code>pack()</code> of <code>TreeColumn</code>s
+  	    are fixed.
+          </li>
+  	    <li>
+  	      <code>IProgressService#busyCursorWhile</code> is now blocking.</li>
+        <li>
+          <code>StringFieldEditor</code> of JFace now throws 
+          <code>PropertyChangeEvents</code> in case of modifications.</li>
 	    </ul>
       </td>
     </tr>
