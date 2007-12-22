@@ -39,7 +39,7 @@ $html = <<<EOHTML
       <br />
       In order to use automated UI tests, now the generated id can be 
       overridden programmatically. With code like this:
-      </pre>
+      <pre>
         Button button = new ...
         button.setData( WidgetUtil.CUSTOM_WIDGET_ID, "org.sample.LoginDialog#okButton" );
       </pre>
@@ -52,7 +52,7 @@ $html = <<<EOHTML
       <code>WidgetUtil#ENABLE_UI_TESTS</code> for further information.
     <td/>
   </tr>
-  <tr valign="top" align="left">
+  <tr style="margin-top:10px" valign="top" align="left">
     <td width="20%">
       <b>Browser#execute()</b></td>
     <td width="80%">
