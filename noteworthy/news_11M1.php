@@ -31,12 +31,35 @@ $html = <<<EOHTML
 <table>
   <tr valign="top" align="left">
     <td width="20%">
+      <b>Provisional Support for Custom Widget Id's</b></td>
+    <td width="80%">
+      In RWT, each widget has an automatically generated, unique <em>widget 
+      id</em> that associates the server-side object with its client-side 
+      representation.
+      <br />
+      In order to use automated UI tests, now the generated id can be 
+      overridden programmatically. With code like this:
+      </pre>
+        Button button = new ...
+        button.setData( WidgetUtil.CUSTOM_WIDGET_ID, "org.sample.LoginDialog#okButton" );
+      </pre>
+      and the system property <code>org.eclipse.rwt.enableUITests</code> turned
+      on, the button can always be identified by its custom id. The test 
+      scenario can remain unchanged even if the UI changes.  
+      <br />
+      See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204859">this
+      bug</a> and the JavaDoc for <code>WidgetUtil#CUSTOM_WIDGET_ID</code> and
+      <code>WidgetUtil#ENABLE_UI_TESTS</code> for further information.
+    <td/>
+  </tr>
+  <tr valign="top" align="left">
+    <td width="20%">
       <b>Browser#execute()</b></td>
     <td width="80%">
       The <code>Browser#execute(String)</code> method was implemented. This 
       method allows to execute a script containing JavaScript commands.
       <br />
-      <img src="browser-exec.jpeg" />
+      <img style="margin:5px" src="browser-exec.jpeg" />
       <br />
       Please read the JavaDoc for further details.
     <td/>
