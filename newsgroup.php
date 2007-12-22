@@ -30,7 +30,8 @@ $html = <<<EOHTML
       <a href="http://www.eclipse.org/newsgroups/register.php">require a 
       password</a> first.</p>
     <p>Frequently asked questions in the newsgroup will ultimately end up in 
-      the FAQ. Feel free to contribute!</p>
+      the <a href="http://wiki.eclipse.org/RapFaq">FAQ</a>. 
+      Feel free to contribute!</p>
     </li>
   
     <li>
