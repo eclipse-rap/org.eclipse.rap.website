@@ -63,8 +63,9 @@ $html = <<<EOHTML
     <td width="20%">
       <b>Browser#execute()</b></td>
     <td width="80%">
-      The <code>Browser#execute(String)</code> method was implemented. This 
-      method allows to execute a script containing JavaScript commands.
+      The <code>org.eclipse.swt.browser.Browser#execute(String)</code> method 
+      was implemented. This method allows to execute a script containing 
+      JavaScript commands.
       <br />
       <img style="margin:5px" src="browser-exec.jpeg" />
       <br />
