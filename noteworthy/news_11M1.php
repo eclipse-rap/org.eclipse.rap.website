@@ -47,14 +47,18 @@ $html = <<<EOHTML
       on, the button can always be identified by its custom id. The test 
       scenario can remain unchanged even if the UI changes.  
       <br />
+      <br />
       See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204859">this
       bug</a> and the JavaDoc for <code>WidgetUtil#CUSTOM_WIDGET_ID</code> and
       <code>WidgetUtil#ENABLE_UI_TESTS</code> for further information.
     <td/>
   </tr>
+  
+  <!-- horizontal space between entries -->
   <tr>
     <td>&nbsp</td><td>&nbsp</td>
   </tr>
+  
   <tr valign="top" align="left">
     <td width="20%">
       <b>Browser#execute()</b></td>
