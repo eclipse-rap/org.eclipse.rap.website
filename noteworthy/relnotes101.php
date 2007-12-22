@@ -60,7 +60,7 @@ $html = <<<EOHTML
 	      on the locale of the user. You only need to activate it and provide the 
 	      translations for your application.
 	    <br />
-	      With this effort on we had to turn the 
+	      With this effort we had to turn the 
 	      <code>org.eclipse.jface.dialogs.IDialogConstants</code> interface 
 	      into a class. This may break code that uses this type.</p>
 	    <br />
