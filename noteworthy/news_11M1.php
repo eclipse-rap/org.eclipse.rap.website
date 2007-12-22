@@ -19,9 +19,7 @@ $html = <<<EOHTML
     <ul>
     <!--
       <li><a href="#RAP_Common">RAP Common</a></li>
-    -->
       <li><a href="#RWT">RWT</a></li>
-    <!--
       <li><a href="#RAP_JFace">JFace</a></li>
       <li><a href="#Workbench">Workbench</a></li>
     -->
@@ -35,8 +33,10 @@ $html = <<<EOHTML
     <td width="20%">
       <b>Browser#execute()</b></td>
     <td width="80%">
-      The <code>Browser#execute()</code> method was implemented. This method
-      allows to execute a script containing JavaScript commands.
+      The <code>Browser#execute(String)</code> method was implemented. This 
+      method allows to execute a script containing JavaScript commands.
+      <br />
+      <img src="browser-exec.jpeg" />
       <br />
       Please read the JavaDoc for further details.
     <td/>
