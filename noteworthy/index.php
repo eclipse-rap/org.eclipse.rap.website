@@ -21,7 +21,14 @@ $html = <<<EOHTML
           <a href="../cvs.php">CVS HEAD</a>.             
         </p>
       </li>
-      <li><a href="news_10.php">RAP Release 1.0</a>
+      <li><a href="relnotes101.php">RAP 1.0.1 Service Release</a>
+        <p style="margin-top: 5px">
+          A summary of the improvements in the 1.0.1 service release (December 
+          7, 2007) which is available for 
+          <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+        </p>        
+      </li>
+      <li><a href="news_10.php">RAP 1.0 Release</a>
         <p style="margin-top: 5px">
           Listed are some of the more noteworthy things available in the first 
           release build (October 10, 2007) which is available for 
