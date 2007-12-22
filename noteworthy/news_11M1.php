@@ -40,8 +40,8 @@ $html = <<<EOHTML
       In order to use automated UI tests, now the generated id can be 
       overridden programmatically. With code like this:
       <pre>
-        Button button = new ...
-        button.setData( WidgetUtil.CUSTOM_WIDGET_ID, "org.sample.LoginDialog#okButton" );
+  Button button = new ...
+  button.setData( WidgetUtil.CUSTOM_WIDGET_ID, "org.sample.LoginDialog#okButton" );
       </pre>
       and the system property <code>org.eclipse.rwt.enableUITests</code> turned
       on, the button can always be identified by its custom id. The test 
@@ -52,7 +52,7 @@ $html = <<<EOHTML
       <code>WidgetUtil#ENABLE_UI_TESTS</code> for further information.
     <td/>
   </tr>
-  <tr style="margin-top:10px" valign="top" align="left">
+  <tr style="margin-top:30px" valign="top" align="left">
     <td width="20%">
       <b>Browser#execute()</b></td>
     <td width="80%">
