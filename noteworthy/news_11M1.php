@@ -52,7 +52,10 @@ $html = <<<EOHTML
       <code>WidgetUtil#ENABLE_UI_TESTS</code> for further information.
     <td/>
   </tr>
-  <tr style="margin-top:30px" valign="top" align="left">
+  <tr>
+    <td>&nbsp</td><td>&nbsp</td>
+  </tr>
+  <tr valign="top" align="left">
     <td width="20%">
       <b>Browser#execute()</b></td>
     <td width="80%">
