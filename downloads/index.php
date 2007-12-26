@@ -123,7 +123,7 @@ $html = <<<EOHTML
                </td>
              </tr>
              <tr>
-               <td>RAP 1.0 RC1 and older versions</td>
+               <td>RAP 1.0 and older versions</td>
              </tr> 
            </table>
          </td>
