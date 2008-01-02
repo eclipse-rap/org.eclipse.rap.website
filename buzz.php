@@ -8,8 +8,16 @@ $html = <<<EOHTML
 
 <div id="maincontent">
 	<div id="midcolumn">
+      <ul>
+        <li>
+          <a href="#news">News</a>
+          &nbsp;&nbsp;&nbsp;
+          <a href="#articles">Articles, Blogs, Slides and more</a>
+        </li>
+	  </ul>	
 	  <div class="homeitem3col">
-		<h3>RAP 1.0 release in the news</h3>
+        <a name="news"></a> 
+		<h3>RAP 1.0 Release in the News</h3>
 	    <ul>
 		  <li>
 	        <a href="http://ajaxian.com/archives/ajax-meet-osgi-expanding-universes-collide-with-eclipse-rap-10" target="_blank">
@@ -94,9 +102,11 @@ $html = <<<EOHTML
           </li>
         </ul> 
       </div>
-	<div class="homeitem3col">
-		<h3>Current articles, blogs, slides and more</h3>
-	    <ul>
+      
+	  <div class="homeitem3col">
+        <a name="articles"></a> 
+        <h3>Current Articles, Blogs, Slides and more</h3>
+	      <ul>
             <li>
               <a target="_blank" href="http://www.redmonk.com/cote/2007/12/12/eclipse-rap-overview-and-demo-screencast">
               Eclipse RAP Overview and Demo Screencast</a> RedMonk, Dec 12, 2007, Jochen Krause
@@ -114,8 +124,8 @@ $html = <<<EOHTML
               Article: Web 2.0, the Eclipse way, Part I</a> IBM developerWorks, Oct 23, 2007, Chris Aniszczyk & Benjamin Muskalla
             </li>
 			<li>
-	            <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204737" target="_blank">
-	           	Community: RAP Creation Review Votes</a> eclipse.org, Oct 10, 2007 - "+2 Simply a awesome project!"
+	          <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204737" target="_blank">
+              Community: RAP Creation Review Votes</a> eclipse.org, Oct 10, 2007 - "+2 Simply a awesome project!"
             </li>
 			<li>
 	            <a href="http://www.eclipse.org/projects/slides/rap_creation_review.pdf" target="_blank">
