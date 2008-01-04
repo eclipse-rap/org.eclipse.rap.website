@@ -54,7 +54,7 @@ $html = <<<EOHTML
           </li>
           <li>
 	        <a href="http://blogs.zdnet.com/Burnette/?p=412" target="_blank">
-	       	Yet Another Ajax Toolkit: Eclipse RAP 1.0</a>zdNet (Ed Burnette)
+	       	Yet Another Ajax Toolkit: Eclipse RAP 1.0</a> zdNet (Ed Burnette)
           </li>
           <li>
 	        <a href="http://blogs.zdnet.com/Stewart/?p=581" target="_blank">
