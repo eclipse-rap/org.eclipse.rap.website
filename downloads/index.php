@@ -24,13 +24,20 @@ $html = <<<EOHTML
         See the <a href="../gettingstarted.php">getting started</a> guide 
         for a detailed description on how to install RAP using the update site. 
       </p>
+      <p style="margin: 10px">
+        The RAP update site is
+        <b>http://download.eclipse.org/technology/rap/update-site</b>
+      </p>
+      <p style="margin: 10px">
+        We also provide zipped versions for download
+      </p>
       <p style="margin: 10px"><b>1.0 Release</b></p>
       <ul>
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-20071015-1305.zip">
-            <img src="../images/icon_save.gif" title="Update Site Zip" alt="Update Site Zip"/>
+            <img src="../images/icon_save.gif" alt="Update Site Zip"/>
+            rap-sdk-1.0-R-site-3.3-20071015-1305.zip
           </a>
-          &nbsp;<b>http://download.eclipse.org/technology/rap/update-site</b> 
           for Eclipse 3.3
         </li>
       </ul>
@@ -38,9 +45,9 @@ $html = <<<EOHTML
       <ul>
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M1-site-20080107-1627.zip">
-            <img src="../images/icon_save.gif" title="Update Site Zip" alt="Update Site Zip"/>
+            <img src="../images/icon_save.gif" alt="Update Site Zip"/>
+            rap-sdk-1.1-M1-site-20080107-1627.zip
           </a>
-          &nbsp;<b>http://download.eclipse.org/technology/rap/update-site</b> 
           for Eclipse 3.3 and 3.4 M4
         </li>
       </ul>
