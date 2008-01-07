@@ -76,7 +76,7 @@ $html = <<<EOHTML
             rap-1.1.0-M1-target-3.3-20080107-1025.zip  
           </a>
           for Eclipse 3.3
-          (<a href="../noteworthy/relnotes101.php">release notes</a>)
+          (<a href="../noteworthy/news_11M1.php">New & Noteworthy</a>)
         </li>
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M1-target-3.4-20080107-1025.zip">
