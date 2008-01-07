@@ -14,20 +14,17 @@ $html = <<<EOHTML
 
     <div class="homeitem3col">
       <a name="update_site_10"></a>
-      <h3>1.0 Release - Tooling Update Site</h3>
+      <h3>Tooling Update Site</h3>
       <p style="margin: 10px">
-        The most convenient way to get RAP is by using the update site denoted
-        below. It contains the target platform that is also available as a 
-        separate download, bundled with useful 
-        tools, documentation and examples.
-        <br />
-        To be up to date with the current development, please upgrade the target
-        platform to the <a href="#target_platform_10">1.0.1 service release</a>.
+        This is the most convenient way to get RAP. The update site contains 
+        the target platform that is also available as a separate download, 
+        bundled with useful tools, documentation and examples.
       </p>
       <p style="margin: 10px">
         See the <a href="../gettingstarted.php">getting started</a> guide 
         for a detailed description on how to install RAP using the update site. 
       </p>
+      <p style="margin: 10px"><b>1.0 Release</b></p>
       <ul>
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-20071015-1305.zip">
@@ -37,11 +34,21 @@ $html = <<<EOHTML
           for Eclipse 3.3
         </li>
       </ul>
+      <p><b>1.1 M1 Release</b></p>
+      <ul>
+        <li>
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M1-site-20080107-1627.zip">
+            <img src="../images/icon_save.gif" title="Update Site Zip" alt="Update Site Zip"/>
+          </a>
+          &nbsp;<b>http://download.eclipse.org/technology/rap/update-site</b> 
+          for Eclipse 3.3 and 3.4 M4
+        </li>
+      </ul>
     </div>  
       
     <div class="homeitem3col">
       <a name="target_platform_10"></a>
-      <h3>1.0.1 Release - Target Platform</h3>
+      <h3>Target Platform</h3>
       <p style="margin: 10px">
       Since RCP and RAP bundles within the same instance do not work, we provide 
       target platforms for download. This is because RAP uses the same namespace 
@@ -61,6 +68,25 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restartiung Eclipse and/or
       doing a clean build will help.
       </p>
+      <p style="margin: 10px"><b>1.1 M1 Release</b></p>
+      <ul>
+        <li>
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M1-target-3.3-20080107-1025.zip">
+            <img src="../images/icon_save.gif" />
+            rap-1.1.0-M1-target-3.3-20080107-1025.zip  
+          </a>
+          for Eclipse 3.3
+          (<a href="../noteworthy/relnotes101.php">release notes</a>)
+        </li>
+        <li>
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M1-target-3.4-20080107-1025.zip">
+            <img src="../images/icon_save.gif" />
+            rap-1.1.0-M1-target-3.4-20080107-1025.zip
+          </a>
+          for Eclipse 3.4
+        </li>
+      </ul>
+      <p style="margin: 10px"><b>1.0.1 Release</b></p>
       <ul>
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.3-20071207-1851.zip">
