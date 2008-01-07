@@ -26,12 +26,26 @@ $html = <<<EOHTML
     </ul>
     
 
+<a name="Common"></a>
+<h2>Common</h2>
+<table>
+  <tr valign="top" align="left">
+    <td width="20%">
+      <b>Eclipse 3.4</b></td>
+    <td width="80%">
+      The target download is now available for Eclipse 3.3 and 3.4. 
+    <td/>
+  </tr>
+</table>
+
+<hr />
+
 <a name="RWT"></a>
 <h2>RWT</h2>
 <table>
   <tr valign="top" align="left">
     <td width="20%">
-      <b>Provisional Support for Custom Widget Id's</b></td>
+      <b>Support for Custom Widget Id's</b></td>
     <td width="80%">
       In RWT, each widget has an automatically generated, unique <em>widget 
       id</em> that associates the server-side object with its client-side 
