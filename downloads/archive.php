@@ -114,6 +114,17 @@ $html = <<<EOHTML
       <h3>Integration Build Target Platforms</h3>
       <ul>
       
+        <li>RAP 1.0.1 I-20071221 for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071221-1545.zip">
+            rap-1.0.1-I-target-3.2-20071221-1545.zip
+          </a>
+          <br />
+          RAP 1.0.1 I-20071221 for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071221-1545.zip">
+            rap-1.0.1-I-target-3.3-20071221-1545.zip
+          </a>
+        </li>
+
         <li>RAP 1.0.1 I-20071109 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071130-1407.zip">
             rap-1.0.1-I-target-3.2-20071130-1407.zip
@@ -124,7 +135,6 @@ $html = <<<EOHTML
             rap-1.0.1-I-target-3.3-20071130-1407.zip
           </a>
         </li>
-
         <li>RAP 1.0.1 I-20071109 for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071109-1244.zip">
             rap-1.0.1-I-target-3.2-20071109-1244.zip
