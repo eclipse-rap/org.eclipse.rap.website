@@ -19,8 +19,6 @@ $html = <<<EOHTML
         This is the most convenient way to get RAP. The update site contains 
         the target platform that is also available as a separate download, 
         bundled with useful tools, documentation and examples.
-      </p>
-      <p style="margin: 10px">
         See the <a href="../gettingstarted.php">getting started</a> guide 
         for a detailed description on how to install RAP using the update site. 
       </p>
