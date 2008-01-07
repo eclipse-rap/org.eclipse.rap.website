@@ -32,9 +32,9 @@ $html = <<<EOHTML
       <p style="margin: 10px"><b>1.1 M1 Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M1-site-20080107-1627.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M1-site-20080107-1838.zip">
             <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-            rap-sdk-1.1-M1-site-20080107-1627.zip
+            rap-sdk-1.1-M1-site-20080107-1838.zip
           </a>
           for Eclipse 3.3 and 3.4 M4
         </li>
