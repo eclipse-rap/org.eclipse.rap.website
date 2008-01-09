@@ -108,17 +108,17 @@ $html = <<<EOHTML
   <table width="750" border="0" cellspacing="5" cellpadding="5">
   <tr>
     <td width="250" valign="top">
-      <a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank">
-        <img src="images/demos/discovery1.png" style="border: 1px solid #666;"/>
+      <a href="http://ondemand.yoxos.com/geteclipse/start" target="_blank">
+        <img src="images/demos/ondemand1.png" style="border: 1px solid #666;"/>
       </a>
     </td>
     <td width="500" valign="top">
       <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
-        Eclipse Discovery
+        Yoxos On Demand
       </h2>        	
       <p>
-        <a href="http://eclipsediscovery.yoxos.com/discovery/rap" target="_blank">
-          See discovery online
+        <a href="http://ondemand.yoxos.com/geteclipse/start" target="_blank">
+          Free Eclipse downloads and updates
         </a>
       </p>
       <ul>
