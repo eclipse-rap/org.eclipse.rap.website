@@ -109,24 +109,35 @@ $html = <<<EOHTML
       </li>
      </ul>
     </div>
+
+    <div class="sideitem">
+     <h6>RAP webinar</h6>
+     <ul>
+      <li>
+        <a href="http://live.eclipse.org/node/450" target="_blank">
+        RAP webinar, Feb 13</a>
+        <span><br />50 minutes of slides and demos</span>
+      </li>
+    </div>
+
   
     <div class="sideitem">
      <h6>Meet the RAP Team</h6>
      <ul>
       <li>
-        <a href="http://wiki.eclipse.org/Karlsruhe_DemoCamp" target="_blank">
-        Eclipse DemoCamp, Karlsruhe, Dec 6</a>
-        <span><br />RAP Demos</span>
+        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=318" target="_blank">
+        EclipseCon, Santa Clara, March 17</a>
+        <span><br />Getting started with RAP development</span>
       </li>
       <li>
-        <a href="http://jax.de/konferenzen/wjax07/sessions.php?language=de&tid=637" target="_blank">
-        W-JAX, Munich, November 5-9 (German)</a>
-        <span><br />RCP goes Web 2.0</span>
+        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=233" target="_blank">
+        EclipseCon, Santa Clara, March 17</a>
+        <span><br />From RCP to RCP/RAP</span>
       </li>
       <li>
-        <a href="http://www.eclipsecon.org/summiteurope2007/index.php?page=detail/&id=29" target="_blank">
-        Eclipse Summit Europe, Ludwigsburg, October 10-11</a>
-        <span><br />RCP goes Web 2.0 - The Rich Ajax Platform (RAP)</span>
+        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=199" target="_blank">
+        EclipseCon, Santa Clara, March 19</a>
+        <span><br />RAP the web</span>
       </li>
     </div>
     
