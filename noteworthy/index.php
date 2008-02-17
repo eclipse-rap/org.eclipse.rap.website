@@ -41,7 +41,7 @@ $html = <<<EOHTML
         <p style="margin-top: 5px">
           Listed are some of the more noteworthy things available in the first 
           release build (October 10, 2007) which is available for 
-          <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+          <a href="http://www.eclipse.org/rap/archive.php">download</a>.
         </p>        
       </li>
     </ul>
