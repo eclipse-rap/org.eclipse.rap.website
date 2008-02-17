@@ -26,7 +26,7 @@ $html = <<<EOHTML
 	<table>
 	  <tr valign="top" align="left">
 	    <td width="20%">
-	      <b>Table</b></td>
+	      <b>Table keyboard navigation</b></td>
 	    <td width="80%">
 	      The table widget now supports keyboard navigation. Using the
 	      <code>Up</code>, <code>Down</code>, <code>Home</code>,
