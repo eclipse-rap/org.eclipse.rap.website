@@ -108,6 +108,10 @@ $html = <<<EOHTML
         <h3>Current Articles, Blogs, Slides and more</h3>
 	      <ul>
             <li>
+              <a target="_blank" href="http://live.eclipse.org/node/450">
+              Webinar: Rich AJAX Platform (RAP) Project</a> Feb 13, 2007, Jochen Krause
+            </li>
+            <li>
               <a target="_blank" href="http://www.redmonk.com/cote/2007/12/12/eclipse-rap-overview-and-demo-screencast">
               Eclipse RAP Overview and Demo Screencast</a> RedMonk, Dec 12, 2007, Jochen Krause
             </li>
@@ -128,37 +132,37 @@ $html = <<<EOHTML
               Community: RAP Creation Review Votes</a> eclipse.org, Oct 10, 2007 - "+2 Simply a awesome project!"
             </li>
 			<li>
-	            <a href="http://www.eclipse.org/projects/slides/rap_creation_review.pdf" target="_blank">
-	           	Slides: Creation Review Slides</a> eclipse.org, Oct 3, 2007
+	          <a href="http://www.eclipse.org/projects/slides/rap_creation_review.pdf" target="_blank">
+              Slides: Creation Review Slides</a> eclipse.org, Oct 3, 2007
             </li>
             <li>
-	            <a href="http://www.innoopract.com/fileadmin/user_upload/Dokumente/Web-enabled_RCP_Applications_with_the_Rich_Ajax_Platform_pdf.pdf" target="_blank">
-	           	Article: RCP goes Web 2.0</a> September 28, 2007
+	          <a href="http://www.innoopract.com/fileadmin/user_upload/Dokumente/Web-enabled_RCP_Applications_with_the_Rich_Ajax_Platform_pdf.pdf" target="_blank">
+	          Article: RCP goes Web 2.0</a> September 28, 2007
             </li>
 			<li>
-	            <a href="http://www.podtech.net/home/4204/innoopract-on-eclipse-eclipse-rap-osgi-and-component-coding-sponsored-development-in-open-source" target="_blank">
-	           	Podcast: Innoopract CEO on RAP, Eclipse Distributions, OSGi and more</a> September 24, 2007
+	          <a href="http://www.podtech.net/home/4204/innoopract-on-eclipse-eclipse-rap-osgi-and-component-coding-sponsored-development-in-open-source" target="_blank">
+	          Podcast: Innoopract CEO on RAP, Eclipse Distributions, OSGi and more</a> September 24, 2007
             </li>
             <li>
-	            <a href="http://eclipsenuggets.blogspot.com/2007/09/see-how-you-can-make-rcp-application.html" target="_blank">
-	           	Blog / Video: See how you can make an RCP Application run in your browser</a> Sept 11, 2007, Elias Volanakis 
+	          <a href="http://eclipsenuggets.blogspot.com/2007/09/see-how-you-can-make-rcp-application.html" target="_blank">
+              Blog / Video: See how you can make an RCP Application run in your browser</a> Sept 11, 2007, Elias Volanakis 
             </li>
             <li>
-	            <a href="http://mea-bloga.blogspot.com/2007/09/web-development-revisited.html" target="_blank">
-	           	Blog: Web development revisited</a> Sept 6, 2007, Chris Aniszczyk 
+	          <a href="http://mea-bloga.blogspot.com/2007/09/web-development-revisited.html" target="_blank">
+              Blog: Web development revisited</a> Sept 6, 2007, Chris Aniszczyk 
             </li>	            
 			<li>
-	            <a href="http://www.eweek.com/article2/0,1759,2100984,00.asp" target="_blank">
-	           	Article: Innoopract - The Company Behind RAP</a> eweek, March 6, 2007
+	          <a href="http://www.eweek.com/article2/0,1759,2100984,00.asp" target="_blank">
+              Article: Innoopract - The Company Behind RAP</a> eweek, March 6, 2007
             </li>
             <li>
-	            <a href="http://eclipsezilla.eclipsecon.org/php/attachment.php?bugid=3833" target="_blank">
-	           	Slides: eclipse rich ajax platform (RAP)</a> EclipseCon, March 2007, 
+              <a href="http://eclipsezilla.eclipsecon.org/php/attachment.php?bugid=3833" target="_blank">
+              Slides: eclipse rich ajax platform (RAP)</a> EclipseCon, March 2007, 
             </li>
             <li>
-	            <img src="images/jax.png" align="middle" />
-	            <a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">
-	           	Community: RAP wins european innovation award</a> JAX, 2006
+              <img src="images/jax.png" align="middle" />
+              <a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">
+              Community: RAP wins european innovation award</a> JAX, 2006
             </li>
             
           </ul> 
