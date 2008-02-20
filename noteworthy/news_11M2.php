@@ -34,10 +34,10 @@ $html = <<<EOHTML
 	      To more closely align with SWT and solve the problems with the
 	      existing mechanism for blocking UI operations, RWT new provides
 	      <code>Display#readAndDispatch()</code> and <code>Display#sleep()</code>.
-	      <br />
+	      <p />
 	      Please be aware that this comes at the cost of a small API break.
-	      The IEntryPoint#createUI method changed its signature from 
-	      <code>Display create()</code> to <code>int createUI</code>.
+	      The <code>IEntryPoint#createUI</code> method changed its signature 
+	      from <code>Display create()</code> to <code>int createUI</code>.
 	      A typical entry point that creates a workbench would now look like 
 	      this:
 	      <pre><code>
