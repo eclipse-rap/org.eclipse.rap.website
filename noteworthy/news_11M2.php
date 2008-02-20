@@ -28,22 +28,21 @@ $html = <<<EOHTML
 	    <td width="20%">
 	      <b>Display#readAndDispatch()</b></td>
 	    <td width="80%">
-	      To more closely align with SWT and solve the problems with the
+	      <p>To more closely align with SWT and solve the problems with the
 	      existing mechanism for blocking UI operations, RWT new provides
 	      <code>Display#readAndDispatch()</code> and <code>Display#sleep()</code>.
-          <p />
-	      The new implementation now strictly follows the apartment threading 
-	      model. This means that the life cycle is handled by a single thread, 
-	      spanning the lifetime of a session. As a result, all phase listeners 
-	      and application code are executed on this thread.
-	      Note, that the readAndDispatch() loop runs in the process action phase,
-	      however this is generally transparent to the application developer.   
-	      <p />
-	      Please be aware that this comes at the cost of a small API break.
-	      The <code>IEntryPoint#createUI</code> method changed its signature 
-	      from <code>Display create()</code> to <code>int createUI</code>.
-	      A typical entry point that creates a workbench would now look like 
-	      this:
+          </p>
+	      <p>The new implementation now strictly follows the apartment threading 
+            model. This means that the life cycle is handled by a single thread, 
+	        spanning the lifetime of a session. As a result, all phase listeners 
+	        and application code are executed on this thread.
+	        Note, that the readAndDispatch() loop runs in the process action phase,
+	        however this is generally transparent to the application developer.</p>   
+	      <p>Please be aware that this comes at the cost of a small API break.
+	        The <code>IEntryPoint#createUI</code> method changed its signature 
+	        from <code>Display create()</code> to <code>int createUI</code>.
+	        A typical entry point that creates a workbench would now look like 
+	        this:
 	      <pre><code>
   public class MyApplication implements IEntryPoint {
     public int createUI() {
@@ -53,7 +52,8 @@ $html = <<<EOHTML
     }
   }
 	      </pre></code>
-	      If you are using RWT directly, you also need to code the typical
+	      </p>
+	      <p>If you are using RWT directly, you also need to code the typical
 	      event loop in your entry point:
           <pre><code>
   public class MyEntryPoint implements IEntryPoint {
@@ -73,6 +73,7 @@ $html = <<<EOHTML
     }
   }
           </pre></code>
+          </p>
 	    <td/>
 	  </tr>
 	  <tr valign="top" align="left">
@@ -97,21 +98,17 @@ $html = <<<EOHTML
 	      <b>Image Decorator Support</b></td>
 	    <td width="80%">
 	      <img src="image-decorator.gif"/>
-	      <p>
-          JFace now contains class <code>org.eclipse.jface.viewers.DecorationOverlayIcon</code>
-          that supports the creation of image overlays for decoration
-          (<code>org.eclipse.jface.resource.CompositeImageDescriptor</code> 
-          is now fully functional).
-          </p>
-          <p>
-          The workbench now provides the extension point 
-          <code>org.eclipse.ui.decorators</code> which allows to add 
-          decorations declaratively based on enablements.
-          <br />
-          Example:
-          <br />
-          <img src="decorator-extension.gif" />
-          </p>  
+	      <p>JFace now contains class <code>org.eclipse.jface.viewers.DecorationOverlayIcon</code>
+            that supports the creation of image overlays for decoration
+            (<code>org.eclipse.jface.resource.CompositeImageDescriptor</code> 
+            is now fully functional).</p>
+          <p>The workbench now provides the extension point 
+            <code>org.eclipse.ui.decorators</code> which allows to add 
+            decorations declaratively based on enablements.
+            <br />
+            Example:
+            <br />
+            <img src="decorator-extension.gif" /></p>  
   	    <td/>
 	  </tr>
 	</table>
@@ -123,6 +120,8 @@ $html = <<<EOHTML
     <ul>
       <li><a href="news_11M1.php">New for RAP 1.1 M1 (January 7, 2008)</a></li>
     </ul>
+    
+    <p>&nbsp;</p>
 	
 </div>
 </div>
