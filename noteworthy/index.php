@@ -23,7 +23,7 @@ $html = <<<EOHTML
         </p>
       </li>
       -->
-      <li><a href="news_11M2.php">RAP 1.1 M1</a>
+      <li><a href="news_11M2.php">RAP 1.1 M2</a>
         <p style="margin-top: 5px">
           Lists some of the more noteworthy things that will be available in 
           milestone build M2 (February 20, 2008) which is available for 
