@@ -28,7 +28,7 @@ $html = <<<EOHTML
       <p style="margin: 10px">
         We also provide zipped versions for download
       </p>
-      <p style="margin: 10px"><b>1.1 M1 Release</b></p>
+      <p style="margin: 10px"><b>1.1 M2 Release</b></p>
       <ul>
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1M2-site-20080220-1748.zip">
