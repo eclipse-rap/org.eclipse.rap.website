@@ -13,7 +13,6 @@ $html = <<<EOHTML
     <h1>Downloads</h1>
 
     <div class="homeitem3col">
-      <a name="update_site_10"></a>
       <h3>Tooling Update Site</h3>
       <p style="margin: 10px">
         This is the most convenient way to get RAP. The update site contains 
@@ -32,11 +31,11 @@ $html = <<<EOHTML
       <p style="margin: 10px"><b>1.1 M1 Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M1-site-20080107-1838.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1M2-site-20080220-1748.zip">
             <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-            rap-sdk-1.1-M1-site-20080107-1838.zip
+            rap-sdk-1.1M2-site-20080220-1748.zip
           </a>
-          for Eclipse 3.3 and 3.4 M4
+          for Eclipse 3.3 and 3.4 M5
         </li>
       </ul>
       <p style="margin: 10px"><b>1.0 Release</b></p>
@@ -52,7 +51,6 @@ $html = <<<EOHTML
     </div>  
       
     <div class="homeitem3col">
-      <a name="target_platform_10"></a>
       <h3>Target Platform</h3>
       <p style="margin: 10px">
       Since RCP and RAP bundles within the same instance do not work, we provide 
@@ -73,22 +71,22 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restartiung Eclipse and/or
       doing a clean build will help.
       </p>
-      <p style="margin: 10px"><b>1.1 M1 Release</b></p>
+      <p style="margin: 10px"><b>1.1 M2 Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M1-target-3.3-20080107-1025.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M2-target-3.3-20080220-1610.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.0-M1-target-3.3-20080107-1025.zip  
+            rap-1.1.0-M2-target-3.3-20080220-1610.zip  
           </a>
           for Eclipse 3.3
-          (<a href="../noteworthy/news_11M1.php">New & Noteworthy</a>)
+          (<a href="../noteworthy/news_11M2.php">New & Noteworthy</a>)
         </li>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M1-target-3.4-20080107-1025.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M2-target-3.4-20080220-1610.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.0-M1-target-3.4-20080107-1025.zip
+            rap-1.1.0-M2-target-3.4-20080220-1610.zip
           </a>
-          for Eclipse 3.4
+          for Eclipse 3.4 M5
         </li>
       </ul>
       <p style="margin: 10px"><b>1.0.1 Release</b></p>
