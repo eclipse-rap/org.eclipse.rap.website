@@ -99,10 +99,10 @@ $html = <<<EOHTML
 	    <td width="20%">
 	      <b>Image Decorator Support</b></td>
 	    <td width="80%">
-	      <img src="image-decorator.jpg"/>
+	      <img src="image-decorator.gif"/>
 	      <p>
           JFace now contains class <code>org.eclipse.jface.viewers.DecorationOverlayIcon</code>
-          that support the creation of image overlays for decoration
+          that supports the creation of image overlays for decoration
           (<code>org.eclipse.jface.resource.CompositeImageDescriptor</code> 
           is now fully functional).
           </p>
@@ -113,7 +113,7 @@ $html = <<<EOHTML
           <br />
           Example:
           <br />
-          <img src="decorator-extension.jpg" />
+          <img src="decorator-extension.gif" />
           </p>  
   	    <td/>
 	  </tr>
