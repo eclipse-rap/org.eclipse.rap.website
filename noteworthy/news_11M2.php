@@ -18,10 +18,7 @@ $html = <<<EOHTML
     </p>
     <ul>
       <li><a href="#RWT">RWT</a></li>
-      <li><a href="#RAP_JFace">JFace</a></li>
-      <!--
-      <li><a href="#RAP_Workbench">Workbench</a></li>
-      -->
+      <li><a href="#RAP_JFace">JFace and Workbench</a></li>
     </ul>
 	
 	<a name="RWT"></a>
@@ -93,7 +90,7 @@ $html = <<<EOHTML
 	<hr />
 	
 	<a name="RAP_JFace"></a>
-	<h2>JFace</h2>
+	<h2>JFace and Workbench</h2>
 	<table>
 	  <tr valign="top" align="left">
 	    <td width="20%">
