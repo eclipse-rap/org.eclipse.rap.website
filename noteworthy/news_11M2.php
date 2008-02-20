@@ -36,7 +36,7 @@ $html = <<<EOHTML
 	      <code>Display#readAndDispatch()</code> and <code>Display#sleep()</code>.
           <p />
 	      The new implementation now strictly follows the apartment threading 
-	      model. This means that the life cycle is handled by a single thread 
+	      model. This means that the life cycle is handled by a single thread, 
 	      spanning the lifetime of a session. As a result, all phase listeners 
 	      and application code are executed on this thread.
 	      Note, that the readAndDispatch() loop runs in the process action phase,
@@ -52,7 +52,7 @@ $html = <<<EOHTML
     public int createUI() {
       Display display = PlatformUI.createDisplay();
       WorbenchAdvisor advisor = new MyWorbenchAdvisor();
-      return PlatformUI.createAndRunWorkbench( display, avisor )
+      return PlatformUI.createAndRunWorkbench( display, advisor )
     }
   }
 	      </pre></code>
@@ -97,10 +97,25 @@ $html = <<<EOHTML
 	<table>
 	  <tr valign="top" align="left">
 	    <td width="20%">
-	      <b>Image decorators</b></td>
+	      <b>Image Decorator Support</b></td>
 	    <td width="80%">
-	    ... placeholder text ... 
-	    <td/>
+	      <img src="image-decorator.jpg"/>
+	      <p>
+          JFace now contains class <code>org.eclipse.jface.viewers.DecorationOverlayIcon</code>
+          that support the creation of image overlays for decoration
+          (<code>org.eclipse.jface.resource.CompositeImageDescriptor</code> 
+          is now fully functional).
+          </p>
+          <p>
+          The workbench now provides the extension point 
+          <code>org.eclipse.ui.decorators</code> which allows to add 
+          decorations declaratively based on enablements.
+          <br />
+          Example:
+          <br />
+          <img src="decorator-extension.jpg" />
+          </p>  
+  	    <td/>
 	  </tr>
 	</table>
 	
