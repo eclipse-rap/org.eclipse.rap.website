@@ -34,6 +34,13 @@ $html = <<<EOHTML
 	      To more closely align with SWT and solve the problems with the
 	      existing mechanism for blocking UI operations, RWT new provides
 	      <code>Display#readAndDispatch()</code> and <code>Display#sleep()</code>.
+          <p />
+	      The new implementation now strictly follows the apartment threading 
+	      model. This means that the life cycle is handled by a single thread 
+	      spanning the lifetime of a session. As a result, all phase listeners 
+	      and application code are executed on this thread.
+	      Note, that the readAndDispatch() loop runs in the process action phase,
+	      however this is generally transparent to the application developer.   
 	      <p />
 	      Please be aware that this comes at the cost of a small API break.
 	      The <code>IEntryPoint#createUI</code> method changed its signature 
@@ -45,8 +52,7 @@ $html = <<<EOHTML
     public int createUI() {
       Display display = PlatformUI.createDisplay();
       WorbenchAdvisor advisor = new MyWorbenchAdvisor();
-      int result = PlatformUI.createAndRunWorkbench( display, avisor )
-      return result;
+      return PlatformUI.createAndRunWorkbench( display, avisor )
     }
   }
 	      </pre></code>
