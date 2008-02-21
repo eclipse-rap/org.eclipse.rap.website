@@ -20,6 +20,7 @@ $html = <<<EOHTML
     -->
 	</p>
 	
+	<!--
 	<a name="RWT"></a>
 	<h2>RWT</h2>
 	<table>
@@ -36,6 +37,7 @@ $html = <<<EOHTML
 	    <td/>
 	  </tr>
 	</table>
+	-->
 	
 	<hr />
 	
