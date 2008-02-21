@@ -12,13 +12,11 @@ $html = <<<EOHTML
       milestone build M3 (April 5, 2008). All features documented here can be 
       obtained from <a href="../cvs.php">CVS HEAD</a>.</p>
     <!--
-    <p>
-    <ul>
+    <p><ul>
       <li><a href="#RWT">RWT</a></li>
       <li><a href="#RAP_JFace">JFace and Workbench</a></li>
-    </ul>
+    </ul></p>
     -->
-	</p>
 	
 	<!--
 	<a name="RWT"></a>
