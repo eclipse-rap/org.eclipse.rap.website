@@ -11,7 +11,6 @@ $html = <<<EOHTML
     <p>Here are some of the more noteworthy things available in the respective 
       builds.</p>
     <ul>
-      <!--
       <li><a href="news_11M3.php">RAP 1.1 M2</a>
         <p style="margin-top: 5px">
           Lists some of the more noteworthy things that will be available in 
@@ -22,7 +21,6 @@ $html = <<<EOHTML
           <a href="../cvs.php">CVS HEAD</a>.             
         </p>
       </li>
-      -->
       <li><a href="news_11M2.php">RAP 1.1 M2</a>
         <p style="margin-top: 5px">
           Lists some of the more noteworthy things that will be available in 
