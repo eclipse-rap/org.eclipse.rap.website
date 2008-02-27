@@ -47,7 +47,7 @@ $html = <<<EOHTML
   public class MyApplication implements IEntryPoint {
     public int createUI() {
       Display display = PlatformUI.createDisplay();
-      WorbenchAdvisor advisor = new MyWorbenchAdvisor();
+      WorkbenchAdvisor advisor = new MyWorkbenchAdvisor();
       return PlatformUI.createAndRunWorkbench( display, advisor )
     }
   }
