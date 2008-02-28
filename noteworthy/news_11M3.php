@@ -48,12 +48,12 @@ $html = <<<EOHTML
         <td width="20%">
           <b>Support for activities</b></td>
         <td width="80%">
-          <p>The RAP Workbench now supports the <code>org.eclipse.ui.activities</code> 
+          The RAP Workbench now supports the <code>org.eclipse.ui.activities</code> 
           and <code>org.eclipse.ui.activitySupport</code> extension points. You 
           can control the visibility of views, editors, perspectives, menu and 
           toolbar items using activities and trigger points. See the extension 
-          point documentation for details.</p>
-          <img src="../images/noteworthy/11M3/activities.png" />        
+          point documentation for details.
+          <p> <img src="images/noteworthy/11M3/activities.png" /> </p>        
         <td/>
       </tr>
     </table>
