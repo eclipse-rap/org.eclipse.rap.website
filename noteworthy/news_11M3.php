@@ -53,7 +53,7 @@ $html = <<<EOHTML
           can control the visibility of views, editors, perspectives, menu and 
           toolbar items using activities and trigger points. See the extension 
           point documentation for details.
-          <p><img src="../images/noteworthy/11M3/activities.png" /></p>        
+          <p><img src="../images/noteworthy/news_11M3/activities.png" /></p>        
         <td/>
       </tr>
     </table>
