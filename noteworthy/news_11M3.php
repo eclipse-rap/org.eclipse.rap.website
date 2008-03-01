@@ -21,6 +21,16 @@ $html = <<<EOHTML
       <li><a href="#RAP_JFace">JFace and Workbench</a></li>
     </ul></p>
     -->
+
+    <!--
+    
+      Consider a section with a list of minor enhancements/fixes.
+      Currently there are:
+      - CENTER / RIGHT alignment for Text
+      - Label returns correct preferred size for empty texts
+      - Support for progress bar in wizards
+        
+    -->
 	
 	<!--
 	<a name="RWT"></a>
