@@ -3,6 +3,9 @@ $pageTitle 		= "RAP Project - Demos";
 $pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
+# NOTE: When changing this files' name, also update rap.eclipse.org/rap which
+#       redirects to this page.
+
 # Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
 <div id="midcolumn">
