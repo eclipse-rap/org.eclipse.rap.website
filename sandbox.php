@@ -81,8 +81,8 @@ $html = <<<EOHTML
             <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
               Search
             </h2>
-            <p>Search is an adoption of the org.eclipse.search code that 
-              offers a search dialog and the search result view. Clients can
+            <p>Search is an adoption of the <em>org.eclipse.search</em> code
+              that offers a search dialog and a search result view. Clients can
               contribute search dialog pages
               (extension point 'org.eclipse.search.searchPages') and search
               result view pages
