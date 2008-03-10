@@ -66,6 +66,18 @@ $html = <<<EOHTML
           <p><img src="activities.png" /></p>        
         <td/>
       </tr>
+      
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>RAP HttpContext</b></td>
+        <td width="80%">
+          The RAP servlet now uses its own HttpContext implementation. This
+          enables other servlets to map to that context too. This enables the
+          possibility to share the same session instances between those
+          servlets and the RAP servlet for data exchange. 
+          <p><img src="httpcontext.png" /></p>        
+        <td/>
+      </tr>
     </table>
 
 	<hr />
