@@ -65,6 +65,7 @@ $html = <<<EOHTML
             </p>
 	    <td/>
 	  </tr>
+	  
 	  <tr valign="top" align="left">
 	    <td width="20%">
 	      <b>Theming Variants</b></td>
@@ -81,6 +82,33 @@ $html = <<<EOHTML
             <br />
             <img src="ButtonVariant.png" />
           </p>	    
+	    <td/>
+	  </tr>
+	  
+	  <tr valign="top" align="left">
+	    <td width="20%">
+	      <b>ISettingStore</b></td>
+	    <td width="80%">
+	        There is a new subsystem in RWT that allows to persist user-specific
+	        settings:
+	        <p><code>RWT.getSettingStore().setAttribute( "myAttribute", "myValue" );</code></p>.
+	        The setting store allows to restore settings made in a previous
+	        session:
+	        <p><code>RWT.getSettingStore().getAttribute( "myAttribute" );</code></p>
+	        The setting store uses browser cookies to identify the settings of 
+	        previous sessions.
+	        <br>
+	        It is also possible to load specific settings 
+	        independently from cookies:
+	        <p><code>RWT.getSettingStore().loadById( "myId" )</code></p>
+	        This is for example useful in case that certain settings should only
+	        be available after the user has gone through an authentication
+	        process.
+	        <br>
+	        Note that the setting store subsystem is the base used by the new
+	        <code>ScopedPreferenceStore</code> implementation of the workbench.
+	        <br>
+	        See API documentation for more information.
 	    <td/>
 	  </tr>
 	</table>
@@ -112,6 +140,24 @@ $html = <<<EOHTML
           possibility to share the same session instances between those
           servlets and the RAP servlet for data exchange. 
           <p><img src="httpcontext.png" /></p>        
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>ScopedPreferenceStore</b></td>
+        <td width="80%">
+          The RAP workbench provides a 
+          <code>org.eclipse.ui.preferences.ScopedPreferenceStore</code> that
+          allows to read and set user-specific preferences using the 
+          preference mechanism provided by <code>org.eclipse.core.runtime</code>.
+          The base of the storage mechanism is a subsystem of RWT represented
+          by <code>org.eclipse.rwt.service.ISettingStore</code>.
+          The session aware
+          <code>org.eclipse.jface.preference.IPreferenceStore</code> can be
+          retrieved using the method
+          <code>org.eclipse.ui.plugin.AbstractUIPlugin.getPreferenceStore</code>
+          which is the same used in RCP code.    
         <td/>
       </tr>
     </table>
