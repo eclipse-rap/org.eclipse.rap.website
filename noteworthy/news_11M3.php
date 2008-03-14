@@ -105,10 +105,9 @@ $html = <<<EOHTML
 	        be available after the user has gone through an authentication
 	        process.
 	        <br>
-	        Note that the setting store subsystem is the base used by the new
+	        Note that the setting store subsystem is used by the new
 	        <code>ScopedPreferenceStore</code> implementation of the workbench.
-	        <br><br>
-	        See API documentation for more information.
+	        <p>See API documentation for more information.</p>
 	    <td/>
 	  </tr>
 	</table>
@@ -157,8 +156,7 @@ $html = <<<EOHTML
           <code>org.eclipse.jface.preference.IPreferenceStore</code> can be
           retrieved using the method
           <code>org.eclipse.ui.plugin.AbstractUIPlugin.getPreferenceStore</code>.
-          <br><br>
-          See API documentation for more information.
+          <p>See API documentation for more information.</p>
         <td/>
       </tr>
     </table>
