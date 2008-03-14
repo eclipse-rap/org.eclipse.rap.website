@@ -15,12 +15,10 @@ $html = <<<EOHTML
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Technology&product=RAP&target_milestone=1.1+M3&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
-    <!--
     <p><ul>
       <li><a href="#RWT">RWT</a></li>
       <li><a href="#RAP_JFace">JFace and Workbench</a></li>
     </ul></p>
-    -->
 
     <!--
     
@@ -32,24 +30,44 @@ $html = <<<EOHTML
         
     -->
 	
-	<!--
 	<a name="RWT"></a>
 	<h2>RWT</h2>
 	<table>
 	  <tr valign="top" align="left">
 	    <td width="20%">
-	      <b>xxx</b></td>
+	      <b>UI Styling API</b></td>
 	    <td width="80%">
+          <p><b>Support for background images</b></p>
+          <p>The methods Control#get/setBackgroundImage() allow to set 
+          background images on almost all controls.</p>
+          <p><b>Support for transparency</b></p>
+          <p>The methods Composite#get/setBackgroundMode() are now available.
+          Setting the background mode of a control to <code>SWT.DEFAULT</code> 
+          lets all labels, links, checkboxes etc. on this composite inherit its 
+          background color and image.</p>
+          <p><b>Semi-transparent Shells</b></p>
+          <p>Thanks to the SWT 3.4 method get/setAlpha(), Shells can now be 
+          semi-transparent. This feature is also useful to place a shading 
+          layer below a modal dialog window as seen on some Web 2.0 sites.</p>
 	    <td/>
 	  </tr>
 	  <tr valign="top" align="left">
 	    <td width="20%">
-	      <b>yyy</b></td>
+	      <b>Theming Widget Variants</b></td>
 	    <td width="80%">
+          <p>It is now possible to define variants of widget types that can be 
+          styled separately. As an example, an application that uses <code>PUSH</code> 
+          buttons in a special side bar can define a variant "side-button" and 
+          apply a different styling to these buttons. This styling only 
+          applies to the buttons belonging to the variant and does not 
+          affect any other PUSH buttons in the application.
+          </p>
+          <p>The variant is set using the widget user data 
+          (<code>Widget#setData()</code>), so the code remains 100% SWT 
+          compatible.</p>	    
 	    <td/>
 	  </tr>
 	</table>
-	-->
 	
     <a name="Workbench"></a>
     <h2>Workbench</h2>
