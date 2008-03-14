@@ -91,16 +91,16 @@ $html = <<<EOHTML
 	    <td width="80%">
 	        There is a new subsystem in RWT that allows to persist user-specific
 	        settings:
-	        <p><code>RWT.getSettingStore().setAttribute( "myAttribute", "myValue" );</code></p>.
+	        <p><code>RWT.getSettingStore().setAttribute( "myAttribute", "myValue" );</code>.</p>
 	        The setting store allows to restore settings made in a previous
 	        session:
-	        <p><code>RWT.getSettingStore().getAttribute( "myAttribute" );</code></p>
+	        <p><code>RWT.getSettingStore().getAttribute( "myAttribute" );</code>.</p>
 	        The setting store uses browser cookies to identify the settings of 
 	        previous sessions.
 	        <br>
 	        It is also possible to load specific settings 
 	        independently from cookies:
-	        <p><code>RWT.getSettingStore().loadById( "myId" )</code></p>
+	        <p><code>RWT.getSettingStore().loadById( "myId" )</code>.</p>
 	        This is for example useful in case that certain settings should only
 	        be available after the user has gone through an authentication
 	        process.
