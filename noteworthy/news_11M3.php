@@ -146,7 +146,7 @@ $html = <<<EOHTML
         <td width="20%">
           <b>ScopedPreferenceStore</b></td>
         <td width="80%">
-          The RAP workbench provides a 
+          The RAP workbench provides now 
           <code>org.eclipse.ui.preferences.ScopedPreferenceStore</code> that
           allows to read and set user-specific preferences using the 
           preference mechanism provided by <code>org.eclipse.core.runtime</code>.
