@@ -46,7 +46,10 @@ $html = <<<EOHTML
             The methods Composite#get/setBackgroundMode() are now available.
             Setting the background mode of a control to <code>SWT.DEFAULT</code> 
             lets all labels, links, checkboxes etc. on this composite inherit its 
-            background color and image.</p>
+            background color and image.
+            <br />
+            <img src="BackgroundMode.png" />
+            </p>
           <p><b>Semi-transparent Shells</b>
             <br />
             <p>Thanks to the SWT 3.4 method get/setAlpha(), Shells can now be 
@@ -56,15 +59,14 @@ $html = <<<EOHTML
 	  </tr>
 	  <tr valign="top" align="left">
 	    <td width="20%">
-	      <b>Theming Widget Variants</b></td>
+	      <b>Theming Variants</b></td>
 	    <td width="80%">
-          <p>It is now possible to define variants of widget types that can be 
-            styled separately. As an example, an application that uses <code>PUSH</code> 
-            buttons in a special side bar can define a variant "side-button" and 
-            apply a different styling to these buttons. This styling only 
-            applies to the buttons belonging to the variant and does not 
-            affect any other PUSH buttons in the application.
-          </p>
+          It is now possible to define variants of widget types that can be 
+          styled separately. As an example, an application that uses <code>PUSH</code> 
+          buttons in a special side bar can define a variant "side-button" and 
+          apply a different styling to these buttons. This styling only 
+          applies to the buttons belonging to the variant and does not 
+          affect any other PUSH buttons in the application.
           <p>The variant is set using the widget user data 
             (<code>Widget#setData()</code>), so the code remains 100% SWT 
             compatible.</p>	    
