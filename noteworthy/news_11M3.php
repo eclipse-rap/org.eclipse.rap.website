@@ -41,24 +41,25 @@ $html = <<<EOHTML
 	    <td width="80%">
           <b>Support for background images</b>
             <br />
-            The methods Control#get/setBackgroundImage() allow to set 
-            background images on almost all controls.
+            The methods <code>Control#get/setBackgroundImage()</code> allow to 
+            set background images on almost all controls.
             <br />
             <img src="ShellBgImage.png" />
           <p><b>Support for transparency</b>
             <br />
-            The methods Composite#get/setBackgroundMode() are now available.
-            Setting the background mode of a control to <code>SWT.DEFAULT</code> 
-            lets all labels, links, checkboxes etc. on this composite inherit its 
-            background color and image.
+            The methods <code>Composite#get/setBackgroundMode()</code> are now 
+            available. Setting the background mode of a control to 
+            <code>SWT.DEFAULT</code> lets all labels, links, checkboxes etc. on 
+            this composite inherit its background color and image.
             <br />
             <img src="BackgroundMode.png" />
             </p>
           <p><b>Semi-transparent Shells</b>
             <br />
-            Thanks to the SWT 3.4 method get/setAlpha(), Shells can now be 
-            semi-transparent. This feature is also useful to place a shading 
-            layer below a modal dialog window as seen on some Web 2.0 sites.
+            Thanks to the SWT 3.4 method <code>get/setAlpha()</code>, Shells 
+            can now be semi-transparent. This feature is also useful to place 
+            a shading layer below a modal dialog window as seen on some Web 
+            2.0 sites.
             <br />
             <img src="AlphaShell.png" />
             </p>
