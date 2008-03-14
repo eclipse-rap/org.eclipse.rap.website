@@ -52,9 +52,10 @@ $html = <<<EOHTML
             </p>
           <p><b>Semi-transparent Shells</b>
             <br />
-            <p>Thanks to the SWT 3.4 method get/setAlpha(), Shells can now be 
+            Thanks to the SWT 3.4 method get/setAlpha(), Shells can now be 
             semi-transparent. This feature is also useful to place a shading 
             layer below a modal dialog window as seen on some Web 2.0 sites.</p>
+            <img src="AlphaShell.png" />
 	    <td/>
 	  </tr>
 	  <tr valign="top" align="left">
