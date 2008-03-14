@@ -41,6 +41,7 @@ $html = <<<EOHTML
             <br />
             The methods Control#get/setBackgroundImage() allow to set 
             background images on almost all controls.
+            <img src="ShellBgImage.png" />
           <p><b>Support for transparency</b>
             <br />
             The methods Composite#get/setBackgroundMode() are now available.
