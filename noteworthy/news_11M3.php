@@ -107,7 +107,7 @@ $html = <<<EOHTML
 	        <br>
 	        Note that the setting store subsystem is the base used by the new
 	        <code>ScopedPreferenceStore</code> implementation of the workbench.
-	        <br>
+	        <br><br>
 	        See API documentation for more information.
 	    <td/>
 	  </tr>
@@ -156,8 +156,9 @@ $html = <<<EOHTML
           The session aware
           <code>org.eclipse.jface.preference.IPreferenceStore</code> can be
           retrieved using the method
-          <code>org.eclipse.ui.plugin.AbstractUIPlugin.getPreferenceStore</code>
-          which is the same used in RCP code.    
+          <code>org.eclipse.ui.plugin.AbstractUIPlugin.getPreferenceStore</code>.
+          <br><br>
+          See API documentation for more information.
         <td/>
       </tr>
     </table>
