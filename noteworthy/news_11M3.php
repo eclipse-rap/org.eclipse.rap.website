@@ -20,6 +20,8 @@ $html = <<<EOHTML
       <li><a href="#RAP_JFace">JFace and Workbench</a></li>
     </ul></p>
 
+    <hr />
+
     <!--
     
       Consider a section with a list of minor enhancements/fixes.
