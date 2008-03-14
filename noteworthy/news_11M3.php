@@ -37,18 +37,21 @@ $html = <<<EOHTML
 	    <td width="20%">
 	      <b>UI Styling API</b></td>
 	    <td width="80%">
-          <p><b>Support for background images</b></p>
-          <p>The methods Control#get/setBackgroundImage() allow to set 
-          background images on almost all controls.</p>
-          <p><b>Support for transparency</b></p>
-          <p>The methods Composite#get/setBackgroundMode() are now available.
-          Setting the background mode of a control to <code>SWT.DEFAULT</code> 
-          lets all labels, links, checkboxes etc. on this composite inherit its 
-          background color and image.</p>
-          <p><b>Semi-transparent Shells</b></p>
-          <p>Thanks to the SWT 3.4 method get/setAlpha(), Shells can now be 
-          semi-transparent. This feature is also useful to place a shading 
-          layer below a modal dialog window as seen on some Web 2.0 sites.</p>
+          <b>Support for background images</b>
+            <br />
+            The methods Control#get/setBackgroundImage() allow to set 
+            background images on almost all controls.
+          <p><b>Support for transparency</b>
+            <br />
+            The methods Composite#get/setBackgroundMode() are now available.
+            Setting the background mode of a control to <code>SWT.DEFAULT</code> 
+            lets all labels, links, checkboxes etc. on this composite inherit its 
+            background color and image.</p>
+          <p><b>Semi-transparent Shells</b>
+            <br />
+            <p>Thanks to the SWT 3.4 method get/setAlpha(), Shells can now be 
+            semi-transparent. This feature is also useful to place a shading 
+            layer below a modal dialog window as seen on some Web 2.0 sites.</p>
 	    <td/>
 	  </tr>
 	  <tr valign="top" align="left">
@@ -56,15 +59,15 @@ $html = <<<EOHTML
 	      <b>Theming Widget Variants</b></td>
 	    <td width="80%">
           <p>It is now possible to define variants of widget types that can be 
-          styled separately. As an example, an application that uses <code>PUSH</code> 
-          buttons in a special side bar can define a variant "side-button" and 
-          apply a different styling to these buttons. This styling only 
-          applies to the buttons belonging to the variant and does not 
-          affect any other PUSH buttons in the application.
+            styled separately. As an example, an application that uses <code>PUSH</code> 
+            buttons in a special side bar can define a variant "side-button" and 
+            apply a different styling to these buttons. This styling only 
+            applies to the buttons belonging to the variant and does not 
+            affect any other PUSH buttons in the application.
           </p>
           <p>The variant is set using the widget user data 
-          (<code>Widget#setData()</code>), so the code remains 100% SWT 
-          compatible.</p>	    
+            (<code>Widget#setData()</code>), so the code remains 100% SWT 
+            compatible.</p>	    
 	    <td/>
 	  </tr>
 	</table>
