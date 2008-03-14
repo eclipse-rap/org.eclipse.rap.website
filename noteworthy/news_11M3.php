@@ -77,7 +77,10 @@ $html = <<<EOHTML
           affect any other PUSH buttons in the application.
           <p>The variant is set using the widget user data 
             (<code>Widget#setData()</code>), so the code remains 100% SWT 
-            compatible.</p>	    
+            compatible.
+            <br />
+            <img src="ButtonVariant.png" />
+          </p>	    
 	    <td/>
 	  </tr>
 	</table>
