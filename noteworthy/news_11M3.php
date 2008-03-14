@@ -41,6 +41,7 @@ $html = <<<EOHTML
             <br />
             The methods Control#get/setBackgroundImage() allow to set 
             background images on almost all controls.
+            <br />
             <img src="ShellBgImage.png" />
           <p><b>Support for transparency</b>
             <br />
@@ -55,8 +56,10 @@ $html = <<<EOHTML
             <br />
             Thanks to the SWT 3.4 method get/setAlpha(), Shells can now be 
             semi-transparent. This feature is also useful to place a shading 
-            layer below a modal dialog window as seen on some Web 2.0 sites.</p>
+            layer below a modal dialog window as seen on some Web 2.0 sites.
+            <br />
             <img src="AlphaShell.png" />
+            </p>
 	    <td/>
 	  </tr>
 	  <tr valign="top" align="left">
@@ -76,6 +79,8 @@ $html = <<<EOHTML
 	  </tr>
 	</table>
 	
+    <hr />
+
     <a name="Workbench"></a>
     <h2>Workbench</h2>
     <table>
