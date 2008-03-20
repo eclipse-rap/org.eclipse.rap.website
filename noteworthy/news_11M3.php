@@ -49,8 +49,8 @@ $html = <<<EOHTML
             <br />
             The methods <code>Composite#get/setBackgroundMode()</code> are now 
             available. Setting the background mode of a control to 
-            <code>SWT.DEFAULT</code> lets all labels, links, checkboxes etc. on 
-            this composite inherit its background color and image.
+            <code>SWT.INHERIT_DEFAULT</code> lets all labels, links, checkboxes
+            etc. on this composite inherit its background color and image.
             <br />
             <img src="BackgroundMode.png" />
             </p>
