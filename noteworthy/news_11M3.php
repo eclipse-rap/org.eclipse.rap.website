@@ -114,7 +114,7 @@ $html = <<<EOHTML
 	
     <hr />
 
-    <a name="Workbench"></a>
+    <a name="#RAP_JFace"></a>
     <h2>Workbench</h2>
     <table>
       <tr valign="top" align="left">
