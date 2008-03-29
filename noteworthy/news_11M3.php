@@ -166,8 +166,8 @@ $html = <<<EOHTML
         <td width="80%">
           RAP supports now Import- and Exportwizards by providing
           the extension points <code>importWizards</code> and
-          <code>exportWizards</code>. See also <code>ActionFactory#IMPORT</code>
-          and <code>ActionFactory#EXPORT</code> for opening the import-/export
+          <code>exportWizards</code>. See also <code>ActionFactory.IMPORT</code>
+          and <code>ActionFactory.EXPORT</code> for opening the import-/export
           wizard. 
           <p><img src="import_wizard.png" /></p>        
         <td/>
