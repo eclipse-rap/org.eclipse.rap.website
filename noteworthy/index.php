@@ -14,7 +14,7 @@ $html = <<<EOHTML
       <li><a href="news_11M3.php">RAP 1.1 M3</a>
         <p style="margin-top: 5px">
           Lists some of the more noteworthy things that will be available in 
-          milestone build M3 (April 5, 2008) and meanwhile serves to document
+          milestone build M3 (April 7, 2008) and meanwhile serves to document
           the development progress.    
           <br />
           All features documented here can be obtained from 
