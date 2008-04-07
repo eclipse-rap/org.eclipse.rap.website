@@ -110,6 +110,20 @@ $html = <<<EOHTML
 	        <p>See API documentation for more information.</p>
 	    <td/>
 	  </tr>
+
+	  <tr valign="top" align="left">
+	    <td width="20%">
+	      <b>MouseEvents</b></td>
+	    <td width="80%">
+	      RWT now has support for <code>MouseEvent</code>s. Calling 
+	      <code>addMouseListener</code> on a Control will notify you about
+	      <code>mouseUp</code>, <code>mouseDown</code> and
+	      <code>mouseDoubleClick</code> events.
+	      <p>Please be aware that, apart from the API, there are still some 
+	      limitations that will be addressed during the next development
+	      cycle.</p>
+	    <td/>
+	  </tr>
 	</table>
 	
     <hr />
