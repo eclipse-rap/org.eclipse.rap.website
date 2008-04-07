@@ -113,7 +113,7 @@ $html = <<<EOHTML
 
 	  <tr valign="top" align="left">
 	    <td width="20%">
-	      <b>MouseEvents</b></td>
+	      <b>Mouse Events</b></td>
 	    <td width="80%">
 	      RWT now has support for <code>MouseEvent</code>s. Calling 
 	      <code>addMouseListener</code> on a Control will notify you about
