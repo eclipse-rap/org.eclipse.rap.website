@@ -28,14 +28,14 @@ $html = <<<EOHTML
       <p style="margin: 10px">
         We also provide zipped versions for download
       </p>
-      <p style="margin: 10px"><b>1.1 M2 Release</b></p>
+      <p style="margin: 10px"><b>1.1 M3 Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M2-site-20080220-1748.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M3-site-20080407-1550.zip">
             <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-            rap-sdk-1.1-M2-site-20080220-1748.zip
+            rap-sdk-1.1-M3-site-20080407-1550.zip
           </a>
-          for Eclipse 3.3 and 3.4 M5
+          for Eclipse 3.3 and 3.4 M6
         </li>
       </ul>
       <p style="margin: 10px"><b>1.0 Release</b></p>
@@ -68,25 +68,25 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px">
       Note: if doing this with a workspace that already contains projects that
-      depend on the target, you may get compile errors. Restartiung Eclipse and/or
+      depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
       </p>
-      <p style="margin: 10px"><b>1.1 M2 Release</b></p>
+      <p style="margin: 10px"><b>1.1 M3 Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M2-target-3.3-20080220-1610.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M3-target-3.3-20080407-1124.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.0-M2-target-3.3-20080220-1610.zip  
+            rap-1.1.0-M3-target-3.3-20080407-1124.zip
           </a>
           for Eclipse 3.3
-          (<a href="../noteworthy/news_11M2.php">New & Noteworthy</a>)
+          (<a href="../noteworthy/news_11M3.php">New & Noteworthy</a>)
         </li>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M2-target-3.4-20080220-1610.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M3-target-3.4-20080407-1124.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.0-M2-target-3.4-20080220-1610.zip
+            rap-1.1.0-M3-target-3.4-20080407-1124.zip
           </a>
-          for Eclipse 3.4 M5
+          for Eclipse 3.4 M6
         </li>
       </ul>
       <p style="margin: 10px"><b>1.0.1 Release</b></p>

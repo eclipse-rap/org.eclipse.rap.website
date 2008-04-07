@@ -32,6 +32,21 @@ $html = <<<EOHTML
     <div class="homeitem3col">
       <h3>Milestone and Release Target Platforms</h3>
       <ul>
+        <li>RAP 1.1 M2 for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M2-target-3.3-20080220-1610.zip">
+            rap-1.1.0-M2-target-3.3-20080220-1610.zip
+          </a>
+          <br />
+          RAP 1.1 M2 for Eclipse 3.4
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M2-target-3.4-20080220-1610.zip">
+            rap-1.1.0-M2-target-3.4-20080220-1610.zip
+          </a>
+          <br />
+          <a href="http://www.eclipse.org/rap/noteworthy/news_11M2.php">
+            New and Noteworthy
+          </a>
+          <br />
+        </li>
         <li>RAP 1.1 M1 for Eclipse 3.3
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M1-target-3.3-20080107-1025.zip">
             rap-1.1.0-M1-target-3.3-20080107-1025.zip

@@ -11,14 +11,21 @@ $html = <<<EOHTML
     <p>Here are some of the more noteworthy things available in the respective 
       builds.</p>
     <ul>
-      <li><a href="news_11M3.php">RAP 1.1 M3</a>
+      <li><a href="news_11M4.php">RAP 1.1 M4</a>
         <p style="margin-top: 5px">
           Lists some of the more noteworthy things that will be available in 
-          milestone build M3 (April 7, 2008) and meanwhile serves to document
+          milestone build M4 (May 6, 2008) and meanwhile serves to document
           the development progress.    
           <br />
           All features documented here can be obtained from 
           <a href="../cvs.php">CVS HEAD</a>.             
+        </p>
+      </li>
+      <li><a href="news_11M3.php">RAP 1.1 M3</a>
+        <p style="margin-top: 5px">
+          Lists some of the more noteworthy things that will be available in 
+          milestone build M3 (April 7, 2008) which is available for 
+          <a href="http://www.eclipse.org/rap/downloads.php">download</a>.             
         </p>
       </li>
       <li><a href="news_11M2.php">RAP 1.1 M2</a>
