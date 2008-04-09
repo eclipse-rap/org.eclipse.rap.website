@@ -34,9 +34,10 @@ $html = <<<EOHTML
   <p>
     <ul>
       <li>
-        <a href="resources/rap.psf">
+        <p>Due to some restructuring work currently not available.</p>
+        <!-- a href="resources/rap.psf">
           <img src="images/icon_save.gif" />&nbsp;RAP Team Project Set
-        </a>
+        </a -->
       </li>
     </ul>
     </p>    
