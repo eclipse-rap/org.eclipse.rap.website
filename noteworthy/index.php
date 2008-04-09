@@ -32,14 +32,14 @@ $html = <<<EOHTML
         <p style="margin-top: 5px">
           Lists some of the more noteworthy things that will be available in 
           milestone build M2 (February 20, 2008) which is available for 
-          <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+          <a href="http://www.eclipse.org/rap/archive.php">download</a>.
         </p>
       </li>
       <li><a href="news_11M1.php">RAP 1.1 M1</a>
         <p style="margin-top: 5px">
           Lists some of the more noteworthy things that will be available in 
           milestone build M1 (Januar 7, 2008) which is available for 
-          <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+          <a href="http://www.eclipse.org/rap/archive.php">download</a>.
         </p>
       </li>
       <li><a href="relnotes101.php">RAP 1.0.1 Service Release</a>
