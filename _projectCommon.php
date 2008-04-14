@@ -17,25 +17,27 @@
 </center>
 </div>
 EOBRANDING;
-	$Menu->setProjectBranding($branding);
-	
-	$Nav->addNavSeparator("RAP", "/rap/index.php");
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;About", "/rap/about.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Demos", "/rap/demos.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Team", "/rap/team.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Buzz", "/rap/buzz.php", "_self", 1);
+  $Menu->setProjectBranding($branding);
 
-	$Nav->addNavSeparator("Users", "/rap/gettingstarted.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Getting Started", "/rap/gettingstarted.php",	"_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Downloads", "/rap/downloads/", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;New & Noteworthy", "/rap/noteworthy", "_blank", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Newsgroup", "/rap/newsgroup.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Bugs", "/rap/bugs.php",	"_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Infocenter (ext)", "http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html", "_self", 1);
+  $Nav->addCustomNav("About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=technology.rap", "_self", 0);
+  
+  $Nav->addNavSeparator("RAP", "/rap/index.php");
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;About", "/rap/about.php", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Demos", "/rap/demos.php", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Team", "/rap/team.php", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Buzz", "/rap/buzz.php", "_self", 1);
 
-	$Nav->addNavSeparator("Contributors", "/rap/sandbox.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Sandbox", "/rap/sandbox.php", "_self", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Plan (wiki)", "http://wiki.eclipse.org/RapPlan", "_self", 1);	
+  $Nav->addNavSeparator("Users", "/rap/gettingstarted.php", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Getting Started", "/rap/gettingstarted.php",	"_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Downloads", "/rap/downloads/", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;New & Noteworthy", "/rap/noteworthy", "_blank", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Newsgroup", "/rap/newsgroup.php", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Bugs", "/rap/bugs.php",	"_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Infocenter (ext)", "http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html", "_self", 1);
+
+  $Nav->addNavSeparator("Contributors", "/rap/sandbox.php", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Sandbox", "/rap/sandbox.php", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Plan (wiki)", "http://wiki.eclipse.org/RapPlan", "_self", 1);	
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;CVS", "/rap/cvs.php", "", 1);
-	$Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Mailing List (ext)", "https://dev.eclipse.org/mailman/listinfo/rap-dev", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Mailing List (ext)", "https://dev.eclipse.org/mailman/listinfo/rap-dev", "_self", 1);
 ?>
