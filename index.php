@@ -125,17 +125,26 @@ $html = <<<EOHTML
      <h6>Meet the RAP Team</h6>
      <ul>
       <li>
-        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=318" target="_blank">
+        <a href="http://it-republik.de/jaxenter/jax/sessions.php?language=de&tid=762#session-18" 
+          target="_blank">
+        JAX, Wiesbaden, April 24</a>
+        <span><br />RAP 1.1 and single sourcing for RCP/RAP</span>
+      </li>
+      <li>
+        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=318"
+          target="_blank">
         EclipseCon, Santa Clara, March 17</a>
         <span><br />Getting started with RAP development</span>
       </li>
       <li>
-        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=233" target="_blank">
+        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=233"
+          target="_blank">
         EclipseCon, Santa Clara, March 17</a>
         <span><br />From RCP to RCP/RAP</span>
       </li>
       <li>
-        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=199" target="_blank">
+        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=199"
+          target="_blank">
         EclipseCon, Santa Clara, March 19</a>
         <span><br />RAP the web</span>
       </li>
