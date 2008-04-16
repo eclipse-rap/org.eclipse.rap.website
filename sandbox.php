@@ -116,6 +116,30 @@ $html = <<<EOHTML
         </tr>
       </table>
    </div>	
+
+   <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
+      <table width="750" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td width="250">
+            <img src="images/sandbox/forms_examples.png"
+              alt="Forms Examples" style="border: 1px solid #666;" />
+          </td>
+          <td width="500" valign="top">
+            <h2
+              align="left" 
+              style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
+              Forms Examples
+            </h2>
+            <p>Forms Examples is an adoption of the
+              <em>org.eclipse.rap.ui.forms.examples</em> plug-in that demonstrates 
+              the major features of the Elipse Forms API.
+              </p>
+            <p>Available in <a href="cvs.php">CVS</a> at
+              sandbox/org.eclipse.rap.ui.forms.examples</p>
+          </td>
+        </tr>
+      </table>
+   </div>	
 	
   </div>
   
