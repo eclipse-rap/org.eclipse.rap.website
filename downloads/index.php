@@ -53,9 +53,8 @@ $html = <<<EOHTML
     <div class="homeitem3col">
       <h3>Target Platform</h3>
       <p style="margin: 10px">
-      Since RCP and RAP bundles within the same instance do not work, we provide 
-      target platforms for download. This is because RAP uses the same namespace 
-      as RCP.
+        Since RCP and RAP bundles within the same instance do not work, we
+        provide target platforms for download.
       </p>
       <p style="margin: 10px">
       After downloading, extract the file in a convenient location, say <code>
