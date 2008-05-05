@@ -108,8 +108,12 @@ $html = <<<EOHTML
         <h3>Current Articles, Blogs, Slides and more</h3>
 	      <ul>
             <li>
+              <a target="_blank" href="http://www.oio.de/public/opensource/eclipse-rap/tutorial-eclipse-rich-application-plattform-portierung.htm">
+              Article (only in German): Einsatzm&ouml;glichkeiten der Eclipse RAP</a> April 2008, Steffen Sch&auml;fer
+            </li>
+            <li>
               <a target="_blank" href="http://live.eclipse.org/node/450">
-              Webinar: Rich AJAX Platform (RAP) Project</a> Feb 13, 2007, Jochen Krause
+              Webinar: Rich AJAX Platform (RAP) Project</a> Feb 13, 2008, Jochen Krause
             </li>
             <li>
               <a target="_blank" href="http://www.redmonk.com/cote/2007/12/12/eclipse-rap-overview-and-demo-screencast">
