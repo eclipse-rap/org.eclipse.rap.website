@@ -28,7 +28,7 @@ $html = <<<EOHTML
       <p style="margin: 10px">
         We also provide zipped versions for download
       </p>
-      <p style="margin: 10px"><b>1.1 M3 Release</b></p>
+      <p style="margin: 10px"><b>1.1 M3 Build</b></p>
       <ul>
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M3-site-20080407-1550.zip">
@@ -71,7 +71,7 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
       </p>
-      <p style="margin: 10px"><b>1.1 M3 Release</b></p>
+      <p style="margin: 10px"><b>1.1 M3 Build</b></p>
       <ul>
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M3-target-3.3-20080407-1124.zip">
