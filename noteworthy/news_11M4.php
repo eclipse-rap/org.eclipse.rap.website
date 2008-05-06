@@ -154,6 +154,7 @@ $html = <<<EOHTML
               to switch between the available presentations. After that, you need
               to reload the browser page in order to see the changes.</p>
               <img src="presentation.png" />
+              <p />
             </li>
             <li><strong>Preference Pages</strong>
               <p>Support for preference pages is now available.
@@ -163,6 +164,7 @@ $html = <<<EOHTML
               <code>AbstractUIPlugin#getPreferenceStore()</code> returns
               such an implementation.</p>
               <img src="prefPage.png" />
+              <p />
             </li>
             <li><strong>IMemento for workbench state persistence</strong>
               <p>The save and restore mechanism must be activated like shown
