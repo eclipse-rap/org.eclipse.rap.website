@@ -143,8 +143,8 @@ $html = <<<EOHTML
           <p>During this effort, we tried to achieve feature completeness as
           far as possible to get a clear picture of what is needed to enable
           single sourcing of the RAP and RCP Workbench in the future.</p>
-
-          Here are some of the more noteworthy things that are now available:
+          <p>Here are some of the more noteworthy things that are now available:
+          </p>
           <ul>
             <li><strong>Presentation</strong>
               <p>The workbench demo comes with a presentation sketch that makes use
