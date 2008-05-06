@@ -1,27 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
   <provider id="org.eclipse.team.cvs.core.cvsnature">
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/javax.servlet,javax.servlet,v2_4"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.apache.commons.logging,org.apache.commons.logging,v1_0_4"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/eclipse,org.eclipse.equinox.http.jetty,org.eclipse.equinox.http.jetty"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/eclipse,org.eclipse.equinox.http.registry,org.eclipse.equinox.http.registry"/>		
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.mortbay.jetty,org.mortbay.jetty,v5_1_11"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/eclipse,org.eclipse.equinox.http.servlet,org.eclipse.equinox.http.servlet"/>
     <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.demo,org.eclipse.rap.demo"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.jface,org.eclipse.rap.jface"/>
+    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/runtime/org.eclipse.rap.jface,org.eclipse.rap.jface"/>
     <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.rwt,org.eclipse.rap.rwt"/>
     <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.rwt.q07,org.eclipse.rap.rwt.q07"/>
     <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.rwt.q07.test,org.eclipse.rap.rwt.q07.test"/>
     <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.rwt.test,org.eclipse.rap.rwt.test"/>
     <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.rwt.test.mockup,org.eclipse.rap.rwt.test.mockup"/>
     <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.rwt.testfixture,org.eclipse.rap.rwt.testfixture"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.ui,org.eclipse.rap.ui"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.ui.workbench,org.eclipse.rap.ui.workbench"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.core.databinding,org.eclipse.rap.core.databinding"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.core.databinding.beans,org.eclipse.rap.core.databinding.beans"/>
+    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/runtime/org.eclipse.rap.ui,org.eclipse.rap.ui"/>
+    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/runtime/org.eclipse.rap.ui.workbench,org.eclipse.rap.ui.workbench"/>
     <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.demo.databinding,org.eclipse.rap.demo.databinding"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.jface.databinding,org.eclipse.rap.jface.databinding"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.ui.forms,org.eclipse.rap.ui.forms"/>
-    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/org.eclipse.rap.ui.views,org.eclipse.rap.ui.views"/>
+    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/runtime/org.eclipse.rap.jface.databinding,org.eclipse.rap.jface.databinding"/>
+    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/runtime/org.eclipse.rap.ui.forms,org.eclipse.rap.ui.forms"/>
+    <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.rap/runtime/org.eclipse.rap.ui.views,org.eclipse.rap.ui.views"/>
   </provider>
 </psf>
