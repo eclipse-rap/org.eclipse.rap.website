@@ -22,8 +22,8 @@ $html = <<<EOHTML
   
     <p style="margin:10px">
       We provide a 
-      <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Set</a>
-      that contains pointers to the relevant RAP projects from the CVS repository.
+      <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Sets</a>
+      that contain pointers to the relevant RAP projects from the CVS repository.
     <p/>
     <p style="margin:10px">
       The project set was created under the assumption that your target 
@@ -46,10 +46,11 @@ $html = <<<EOHTML
     </p>
     
   <p>
+    Available Team Project Set(s)
     <ul>
       <li>
         <a href="resources/rap.psf">
-          <img src="images/icon_save.gif" />&nbsp;&nbsp;RAP Team Project Set
+          <img src="images/icon_save.gif" />&nbsp;&nbsp;RAP User Team Project Set
         </a>
         <br />
         Contains all the projects necessary to develop with RAP. Individual 
