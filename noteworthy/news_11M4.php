@@ -30,24 +30,9 @@ $html = <<<EOHTML
 
       <tr valign="top" align="left">
         <td width="20%">
-          <b>RAP Sources</b>
+          <b>CVS Reorganization</b>
         </td>
         <td width="80%">
-          <b>RWT Split-up</b>
-          <p>
-            RWT has been split into a host bundle and qooxdoo 0.7 fragment.
-            This was done to enable us to start working on the upcoming
-            qooxdoo 0.8 version.
-            This split-up will also allow interested parties to develop other
-            client-side implementations for RAP in the future.
-          <p>
-          </p>
-            Developers who work against CVS have to check out the fragment
-            <code>org.eclipse.rap.rwt.q07</code> and include it in their launch
-            configurations.
-          </p>
-          <p></p>
-          <b>CVS Reorganization</b>
           <p>
             Since the number of RAP projects has increased in the past,
             we decided to reorganize the structure of our source code repository
@@ -82,6 +67,25 @@ $html = <<<EOHTML
     <a name="RWT"></a>
     <h2>RWT</h2>
     <table>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>RWT Split-up</b>
+        </td>
+        <td width="80%">
+            RWT has been split into a host bundle and qooxdoo 0.7 fragment.
+            This was done to enable us to start working on the upcoming
+            qooxdoo 0.8 version.
+            This split-up will also allow interested parties to develop other
+            client-side implementations for RAP in the future.
+          </p>
+            Developers who work against CVS have to check out the fragment
+            <code>org.eclipse.rap.rwt.q07</code> and include it in their launch
+            configurations.
+          </p>
+        <td/>
+      </tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>Theming</b></td>
@@ -142,26 +146,26 @@ $html = <<<EOHTML
 
           Here are some of the more noteworthy things that are now available:
           <ul>
-            <li>Presentation
-              The workbench demo comes with a presentation sketch that makes use
+            <li><strong>Presentation</strong>
+              <p>The workbench demo comes with a presentation sketch that makes use
               of the newly adopted presentation support.
               Launch the demo and use <strong>Window</strong> >
               <strong>Preferences</strong> > <strong>Demo Prefernce Page</strong>
               to switch between the available presentations. After that, you need
-              to reload the browser page in order to see the changes.
+              to reload the browser page in order to see the changes.</p>
               <img src="presentation.png" />
             </li>
-            <li>Preference Pages
-              Support for preference pages is now available.
+            <li><strong>Preference Pages</strong>
+              <p>Support for preference pages is now available.
               Note that in order to keep preference settings session scoped,
-              you need to initialize the preferenceStore of the page with
-              a suitable prefernceStore.
+              you need to initialize the PreferenceStore of the page with
+              a suitable PreferenceStore.
               <code>AbstractUIPlugin#getPreferenceStore()</code> returns
-              such an implementation.
+              such an implementation.</p>
             </li>
-            <li>IMemento for workbench state persistence
-            The save and restore mechanism must be activated like shown
-            in the snippet below.
+            <li><strong>IMemento for workbench state persistence</strong>
+              <p>The save and restore mechanism must be activated like shown
+              in the snippet below.
             <pre>
 public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
 
@@ -175,16 +179,16 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
             </li>
             <li>Startup Extension Point
             This extension point is used to register callbacks that want to be
-            activated on workbench startup.
+            activated on workbench startup.</p>
             </li>
           </ul>
           </p>
           <p><strong>Please note</strong> due to the complexity of this transition
             there may still exist some problems, in particular with the newly
             introduced functionality. Within the upcoming
-            <a href="http://wiki.eclipse.org/RAP/Ramp_down_Ganymede">RC deveopment cycles</a>
+            <a href="http://wiki.eclipse.org/RAP/Ramp_down_Ganymede">RC development cycles</a>
             we will focus on bug fixes.
-            Please feel encuraged to try out the current milestone and provide
+            Please feel encouraged to try out the current milestone and provide
             us with feedback.
           </p>
         <td/>
