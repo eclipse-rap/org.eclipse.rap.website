@@ -59,9 +59,10 @@ $html = <<<EOHTML
           </p>
         <td/>
       </tr>
-
     </table>
 
+    <hr />
+    
     <a name="RWT"></a>
     <h2>RWT</h2>
     <table>
