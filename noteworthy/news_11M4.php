@@ -45,6 +45,7 @@ $html = <<<EOHTML
             <code>org.eclipse.rap.rwt.q07</code> and include it in their launch
             configurations.
           </p>
+          <p></p>
           <b>CVS Reorganization</b>
           <p>
             Since the number of RAP projects has increased in the past,
