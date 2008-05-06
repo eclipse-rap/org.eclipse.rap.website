@@ -26,7 +26,7 @@ $html = <<<EOHTML
       that contain pointers to the relevant RAP projects from the CVS repository.
     <p/>
     <p style="margin:10px">
-      The project set was created under the assumption that your target 
+      The project sets are created under the assumption that your target 
       platform points to the most recent RAP target build that can be obtained 
       from the <a href="downloads/index.php">downloads page</a>. Other setups
       may also work but are not supported. 
