@@ -46,7 +46,7 @@ $html = <<<EOHTML
     </p>
     
   <p style="margin:10px">
-    Available Team Project Set(s)
+    <h3>Available Team Project Set(s)</h3>
     <ul>
       <li>
         <a href="resources/rap.psf">
@@ -55,18 +55,11 @@ $html = <<<EOHTML
         <br />
         Contains all the projects necessary to develop with RAP. Individual 
         components (e.g. from the <a href="sandbox.php">Sandbox</a>) can 
-        also be obtained directly from CVS.
+        also be obtained 
+        <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">directly from CVS.</a>
       </li>
     </ul>
     </p>    
-  
-    <p style="margin:10px">
-      If you are new to Eclipse, this 
-      <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">
-      document</a> may help with accessing the Eclipse CVS. The 
-      <strong>org.eclipse.rap</strong> module is located in the 
-      <strong>/cvsroot/technology</strong> repository.
-    </p>
   
     <p style="margin:10px">
       We are maintaining a <a href="noteworthy/index.php">
