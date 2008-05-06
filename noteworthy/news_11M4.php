@@ -162,6 +162,7 @@ $html = <<<EOHTML
               a suitable PreferenceStore.
               <code>AbstractUIPlugin#getPreferenceStore()</code> returns
               such an implementation.</p>
+              <img src="prefPage.png" />
             </li>
             <li><strong>IMemento for workbench state persistence</strong>
               <p>The save and restore mechanism must be activated like shown
@@ -176,10 +177,6 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
 
 [...]
             </pre>
-            </li>
-            <li><strong>Startup Extension Point</strong>
-            This extension point is used to register callbacks that want to be
-            activated on workbench startup.</p>
             </li>
           </ul>
           </p>
