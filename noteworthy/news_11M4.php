@@ -22,108 +22,50 @@ $html = <<<EOHTML
 
     <hr />
 
-    <!--
-    
-      Consider a section with a list of minor enhancements/fixes.
-      Currently there are:
-      - CENTER / RIGHT alignment for Text
-      - Label returns correct preferred size for empty texts
-      - Support for progress bar in wizards
-        
-    -->
-	<!--	
 	<a name="RWT"></a>
 	<h2>RWT</h2>
 	<table>
 	  <tr valign="top" align="left">
 	    <td width="20%">
-	      <b>UI Styling API</b></td>
+	      <b>Theming</b></td>
 	    <td width="80%">
-          <b>Support for background images</b>
-            <br />
-            The methods <code>Control#get/setBackgroundImage()</code> allow to 
-            set background images on almost all controls.
-            <br />
-            <img src="ShellBgImage.png" />
-          <p><b>Support for transparency</b>
-            <br />
-            The methods <code>Composite#get/setBackgroundMode()</code> are now 
-            available. Setting the background mode of a control to 
-            <code>SWT.INHERIT_DEFAULT</code> lets all labels, links, checkboxes
-            etc. on this composite inherit its background color and image.
-            <br />
-            <img src="BackgroundMode.png" />
-            </p>
-          <p><b>Semi-transparent Shells</b>
-            <br />
-            Thanks to the SWT 3.4 method <code>get/setAlpha()</code>, Shells 
-            can now be semi-transparent. This feature is also useful to place 
-            a shading layer below a modal dialog window as seen on some Web 
-            2.0 sites.
-            <br />
-            <img src="AlphaShell.png" />
-            </p>
-	    <td/>
+          <b>Support for theme files in CSS format</b>
+          <br />
+          RAP supports theme files in CSS syntax now. CSS theme files for 
+          RAP must be valid
+          <a href="http://www.w3.org/TR/CSS21/">CSS 2.1</a> files, except for
+          a couple of RAP specific properties and pseudo classes.
+          <p>The following is an example for a simple CSS theme file:
+          <pre>
+  * {
+    <span style="color:blue;">backgound-color</span>: <span style="color:#568c28;">white</span>;
+  }
+  
+  Button<span style="color:#96154f;">[PUSH]</span>, Button<span style="color:#96154f;">[TOGGLE]</span> {
+    <span style="color:blue;">border</span>: <span style="color:#568c28;">2px solid blue</span>;
+    <span style="color:blue;">color</span>: <span style="color:#568c28;">rgb( 17, 23, 103 )</span>;
+    <span style="color:blue;">background-color</span>: <span style="color:#568c28;">#f9f9f9</span>;
+  }
+  
+  Button<span style="color:#96154f;">[PUSH]:hover</span>, Button<span style="color:#96154f;">[TOGGLE]:hover</span> {
+    <span style="color:blue;">background-color</span>: <span style="color:#568c28;">white</span>;
+  }
+          </pre>
+          </p>
+          <p>The support for the new syntax is just the first step towards a more
+            flexible theming.
+            Internally, the theming engine is still based on the old properties.
+            As an effect, only a subset of the flexibility provided by CSS is
+            already supported.
+            For more information on the topic, have a look at the RAP Help.
+          </p>
+          <p>Developers are encouraged to write CSS theme files now.
+            The old property-based theme files are still supported but considered
+            deprecated.
+          </p>
+        <td/>
 	  </tr>
 	  
-	  <tr valign="top" align="left">
-	    <td width="20%">
-	      <b>Theming Variants</b></td>
-	    <td width="80%">
-          It is now possible to define variants of widget types that can be 
-          styled separately. As an example, an application that uses <code>PUSH</code> 
-          buttons in a special side bar can define a variant "side-button" and 
-          apply a different styling to these buttons. This styling only 
-          applies to the buttons belonging to the variant and does not 
-          affect any other PUSH buttons in the application.
-          <p>The variant is set using the widget user data 
-            (<code>Widget#setData()</code>), so the code remains 100% SWT 
-            compatible.
-            <br />
-            <img src="ButtonVariant.png" />
-          </p>	    
-	    <td/>
-	  </tr>
-	  
-	  <tr valign="top" align="left">
-	    <td width="20%">
-	      <b>ISettingStore</b></td>
-	    <td width="80%">
-	        There is a new subsystem in RWT that allows to persist user-specific
-	        settings:
-	        <p><code>RWT.getSettingStore().setAttribute( "myAttribute", "myValue" );</code>.</p>
-	        The setting store allows to restore settings made in a previous
-	        session:
-	        <p><code>RWT.getSettingStore().getAttribute( "myAttribute" );</code>.</p>
-	        The setting store uses browser cookies to identify the settings of 
-	        previous sessions.
-	        <br>
-	        It is also possible to load specific settings 
-	        independently from cookies:
-	        <p><code>RWT.getSettingStore().loadById( "myId" )</code>.</p>
-	        This is for example useful in case that certain settings should only
-	        be available after the user has gone through an authentication
-	        process.
-	        <br>
-	        Note that the setting store subsystem is used by the new
-	        <code>ScopedPreferenceStore</code> implementation of the workbench.
-	        <p>See API documentation for more information.</p>
-	    <td/>
-	  </tr>
-
-	  <tr valign="top" align="left">
-	    <td width="20%">
-	      <b>Mouse Events</b></td>
-	    <td width="80%">
-	      RWT now has support for <code>MouseEvent</code>s. Calling 
-	      <code>addMouseListener</code> on a Control will notify you about
-	      <code>mouseUp</code>, <code>mouseDown</code> and
-	      <code>mouseDoubleClick</code> events.
-	      <p>Please be aware that, apart from the API, there are still some 
-	      limitations that will be addressed during the next development
-	      cycle.</p>
-	    <td/>
-	  </tr>
 	</table>
 	
     <hr />
@@ -133,65 +75,14 @@ $html = <<<EOHTML
     <table>
       <tr valign="top" align="left">
         <td width="20%">
-          <b>Support for activities</b></td>
+          <b></b></td>
         <td width="80%">
-          The RAP Workbench now supports the <code>org.eclipse.ui.activities</code> 
-          and <code>org.eclipse.ui.activitySupport</code> extension points. You 
-          can control the visibility of views, editors, perspectives, menu and 
-          toolbar items using activities and trigger points. See the extension 
-          point documentation for details.
-          <p><img src="activities.png" /></p>        
-        <td/>
-      </tr>
-      
-      <tr valign="top" align="left">
-        <td width="20%">
-          <b>RAP HttpContext</b></td>
-        <td width="80%">
-          The RAP servlet now uses its own HttpContext implementation. This
-          allows other servlets to map to that context too. This enables the
-          possibility to share the same session instances between those
-          servlets and the RAP servlet for data exchange. 
-          <p><img src="httpcontext.png" /></p>        
-        <td/>
-      </tr>
-
-      <tr valign="top" align="left">
-        <td width="20%">
-          <b>ScopedPreferenceStore</b></td>
-        <td width="80%">
-          The RAP workbench provides now 
-          <code>org.eclipse.ui.preferences.ScopedPreferenceStore</code> that
-          allows to read and set user-specific preferences using the 
-          preference mechanism provided by <code>org.eclipse.core.runtime</code>.
-          The base of the storage mechanism is a subsystem of RWT represented
-          by <code>org.eclipse.rwt.service.ISettingStore</code>.
-          The session aware
-          <code>org.eclipse.jface.preference.IPreferenceStore</code> can be
-          retrieved using the method
-          <code>org.eclipse.ui.plugin.AbstractUIPlugin.getPreferenceStore</code>.
-          <p>See API documentation for more information.</p>
-        <td/>
-      </tr>
-
-      <tr valign="top" align="left">
-        <td width="20%">
-          <b>Import-/Exportwizards</b></td>
-        <td width="80%">
-          RAP supports now Import- and Exportwizards by providing
-          the extension points <code>importWizards</code> and
-          <code>exportWizards</code>. See also <code>ActionFactory.IMPORT</code>
-          and <code>ActionFactory.EXPORT</code> for opening the import-/export
-          wizard. 
-          <p><img src="import_wizard.png" /></p>        
         <td/>
       </tr>
     </table>
 
 	<hr />
 
-	-->
-		
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
