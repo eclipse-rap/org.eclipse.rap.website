@@ -16,9 +16,10 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
     <p><ul>
-      <li><a href="#RWT">General</a></li>
+      <li><a href="#General">General</a></li>
       <li><a href="#RWT">RWT</a></li>
       <li><a href="#Workbench">Workbench</a></li>
+      <li><a href="#Tooling">Tooling</a></li>
     </ul></p>
 
     <hr />
@@ -131,8 +132,107 @@ $html = <<<EOHTML
     <table>
       <tr valign="top" align="left">
         <td width="20%">
-          <b></b></td>
+          <b>Eclipse 3.4 Adoption</b></td>
         <td width="80%">
+          The RAP counterparts of JFace, Workbench, Forms and Databinding
+          have been migrated to the 3.4 code base.
+          <p>During this effort, we tried to achieve feature completeness as
+          far as possible to get a clear picture of what is needed to enable
+          single sourcing of the RAP and RCP Workbench in the future.</p>
+
+          Here are some of the more noteworthy things that are now available:
+          <ul>
+            <li>Presentation
+              The workbench demo comes with a presentation sketch that makes use
+              of the newly adopted presentation support.
+              Launch the demo and use <strong>Window</strong> >
+              <strong>Preferences</strong> > <strong>Demo Prefernce Page</strong>
+              to switch between the available presentations. After that, you need
+              to reload the browser page in order to see the changes.
+              <img src="presentation.png" />
+            </li>
+            <li>Preference Pages
+              Support for preference pages is now available.
+              Note that in order to keep preference settings session scoped,
+              you need to initialize the preferenceStore of the page with
+              a suitable prefernceStore.
+              <code>AbstractUIPlugin#getPreferenceStore()</code> returns
+              such an implementation.
+            </li>
+            <li>IMemento for workbench state persistence
+            The save and restore mechanism must be activated like shown
+            in the snippet below.
+            <pre>
+public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
+
+  public void initialize( IWorkbenchConfigurer configurer ) {
+    getWorkbenchConfigurer().setSaveAndRestore( true );
+    super.initialize( configurer );
+  }
+
+[...]
+            </pre>
+            </li>
+            <li>Startup Extension Point
+            This extension point is used to register callbacks that want to be
+            activated on workbench startup.
+            </li>
+          </ul>
+          </p>
+          <p><strong>Please note</strong> due to the complexity of this transition
+            there may still exist some problems, in particular with the newly
+            introduced functionality. Within the upcoming
+            <a href="http://wiki.eclipse.org/RAP/Ramp_down_Ganymede">RC deveopment cycles</a>
+            we will focus on bug fixes.
+            Please feel encuraged to try out the current milestone and provide
+            us with feedback.
+          </p>
+        <td/>
+      </tr>
+    </table>
+
+    <hr />
+
+    <h2>Tooling</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>RAP JUnit</b></td>
+        <td width="80%">
+          RAP provides an equivalent to the "PDE JUnit Tests" to allow to run
+          tests that require an OSGi environment up and running.
+          <p>The snippet below shows how a RAP JUnit test case looks like.
+          To compile such a test, the containing plug-in needs a dependency on
+          <code>org.eclipse.rap.junit</code>. This allows to use the RAPTestCase
+          that provides UI-Updates during the tests. If you don't want to
+          see UI-updates during the test runs, you can directly use org.junit.TestCase
+          instead.
+          In order to run a test, choose <strong>Run As</strong> > <strong>RAP JUnit Test</strong>
+          from the editors' context menu.
+          <pre>
+          <p>RAP JUnit supports only the 3.x Test Runner at the moment.</p>
+public class RapJUnitTest extends RAPTestCase {
+  public void testOpenView() {
+    try {
+      IWorkbenchPage page = getPage();
+      page.showView( "org.eclipse.rap.demo.DemoTreeViewPartI" );
+    } catch( PartInitException e ) {
+      e.printStackTrace();
+    }
+    assertEquals( 1, getPage().getViewReferences().length );
+
+    getPage().hideView( getPage().getViewReferences()[ 0 ] );
+    assertEquals( 0, getPage().getViewReferences().length );
+  }
+
+  private IWorkbenchPage getPage() {
+    IWorkbench workbench = PlatformUI.getWorkbench();
+    IWorkbenchWindow window = workbench.getActiveWorkbenchWindow();
+    return window.getActivePage();
+  }
+}
+          </pre>
+          </p>
         <td/>
       </tr>
     </table>
