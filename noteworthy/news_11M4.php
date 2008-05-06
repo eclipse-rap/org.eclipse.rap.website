@@ -1,7 +1,7 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
-$pageTitle 		= "RAP Project - New and Noteworthy";
-$pageKeywords	= "Ajax, rap, w4t, eclipse rap";
-$pageAuthor		= "Ruediger Herrmann";
+<?php                                                                                                                          require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");    require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");     require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");     $App     = new App();    $Nav    = new Nav();    $Menu     = new Menu();        include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+$pageTitle         = "RAP Project - New and Noteworthy";
+$pageKeywords    = "Ajax, rap, w4t, eclipse rap";
+$pageAuthor        = "Ruediger Herrmann";
 
 # Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
@@ -16,19 +16,74 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
     <p><ul>
+      <li><a href="#RWT">General</a></li>
       <li><a href="#RWT">RWT</a></li>
       <li><a href="#Workbench">Workbench</a></li>
     </ul></p>
 
     <hr />
 
-	<a name="RWT"></a>
-	<h2>RWT</h2>
-	<table>
-	  <tr valign="top" align="left">
-	    <td width="20%">
-	      <b>Theming</b></td>
-	    <td width="80%">
+    <a name="General"></a>
+    <h2>General</h2>
+    <table>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>RAP Sources</b>
+        </td>
+        <td width="80%">
+          <b>RWT Split-up</b>
+          <p>
+            RWT has been split into a host bundle and qooxdoo 0.7 fragment.
+            This was done to enable us to start working on the upcoming
+            qooxdoo 0.8 version.
+            This split-up will also allow interested parties to develop other
+            client-side implementations for RAP in the future.
+          <p>
+          </p>
+            Developers who work against CVS have to check out the fragment
+            <code>org.eclipse.rap.rwt.q07</code> and include it in their launch
+            configurations.
+          </p>
+          <b>CVS Reorganization</b>
+          <p>
+            Since the number of RAP projects has increased in the past,
+            we decided to reorganize the structure of our source code repository
+            to make it more concise.
+            Thus we started to introduce different subfolders.
+            Besides the <code>sandbox</code> there's now a new folder called
+            <code>runtime</code> which contains the projects
+            <code>jface</code>,
+            <code>jface.databinding</code>,
+            <code>ui</code>,
+            <code>forms</code>,
+            <code>views</code>, and
+            <code>workbench</code>
+            which has been adopted to the Eclipse 3.4 code page.
+            If you work against CVS, you have to replace the old versions of
+            these projects with those from the runtime folder.
+          </p>
+          <p>
+            The CVS reorganization is an ongoing effort and is scheduled to be
+            finished with the RAP 1.1 release.
+            If you want to stay tuned, you can set yourself CC to
+            <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=201257">bug #201257</a>.
+            The updated team project set provided
+            <a href="http://www.eclipse.org/rap/cvs.php">here</a> contains all
+            projects you need for RAP development.
+          </p>
+        <td/>
+      </tr>
+
+    </table>
+
+    <a name="RWT"></a>
+    <h2>RWT</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Theming</b></td>
+        <td width="80%">
           <b>Support for theme files in CSS format</b>
           <br />
           RAP supports theme files in CSS syntax now. CSS theme files for 
@@ -64,10 +119,10 @@ $html = <<<EOHTML
             deprecated.
           </p>
         <td/>
-	  </tr>
-	  
-	</table>
-	
+      </tr>
+      
+    </table>
+    
     <hr />
 
     <a name="Workbench"></a>
@@ -81,7 +136,7 @@ $html = <<<EOHTML
       </tr>
     </table>
 
-	<hr />
+    <hr />
 
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
@@ -92,7 +147,7 @@ $html = <<<EOHTML
     </ul>
     
     <p>&nbsp;</p>
-	
+
 </div>
 </div>
 
