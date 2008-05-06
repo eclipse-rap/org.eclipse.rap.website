@@ -28,14 +28,14 @@ $html = <<<EOHTML
       <p style="margin: 10px">
         We also provide zipped versions for download
       </p>
-      <p style="margin: 10px"><b>1.1 M3 Build</b></p>
+      <p style="margin: 10px"><b>1.1 M4 Build</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M3-site-20080407-1550.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M4-site-20080506-1810.zip">
             <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-            rap-sdk-1.1-M3-site-20080407-1550.zip
+            rap-sdk-1.1-M4-site-20080506-1810.zip
           </a>
-          for Eclipse 3.3 and 3.4 M6
+          for Eclipse 3.3 and 3.4 M7
         </li>
       </ul>
       <p style="margin: 10px"><b>1.0 Release</b></p>
@@ -70,22 +70,14 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
       </p>
-      <p style="margin: 10px"><b>1.1 M3 Build</b></p>
+      <p style="margin: 10px"><b>1.1 M4 Build</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M3-target-3.3-20080407-1124.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M4-target-3.4-20080506-1758.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.0-M3-target-3.3-20080407-1124.zip
+            rap-1.1.0-M4-target-3.4-20080506-1758.zip
           </a>
-          for Eclipse 3.3
-          (<a href="../noteworthy/news_11M3.php">New & Noteworthy</a>)
-        </li>
-        <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M3-target-3.4-20080407-1124.zip">
-            <img src="../images/icon_save.gif" />
-            rap-1.1.0-M3-target-3.4-20080407-1124.zip
-          </a>
-          for Eclipse 3.4 M6
+          &nbsp;&nbsp;<a href="../noteworthy/news_11M4.php">New & Noteworthy</a>
         </li>
       </ul>
       <p style="margin: 10px"><b>1.0.1 Release</b></p>
