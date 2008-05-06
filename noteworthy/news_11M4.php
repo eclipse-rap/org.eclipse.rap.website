@@ -211,7 +211,6 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
           In order to run a test, choose <strong>Run As</strong> > <strong>RAP JUnit Test</strong>
           from the editors' context menu.
           <pre>
-          <p>RAP JUnit supports only the 3.x Test Runner at the moment.</p>
 public class RapJUnitTest extends RAPTestCase {
   public void testOpenView() {
     try {
@@ -234,6 +233,7 @@ public class RapJUnitTest extends RAPTestCase {
 }
           </pre>
           </p>
+          <p>RAP JUnit supports only the 3.x Test Runner at the moment.</p>
         <td/>
       </tr>
     </table>
