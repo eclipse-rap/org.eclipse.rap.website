@@ -25,13 +25,13 @@ $html = <<<EOHTML
       <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Set</a>
       that contains pointers to the relevant RAP projects from the CVS repository.
     <p/>
-    <p>
+    <p style="margin:10px">
       The project set was created under the assumption that your target 
       platform points to the most recent RAP target build that can be obtained 
       from the <a href="downloads/index.php">downloads page</a>. Other setups
       may also work but are not supported. 
      </p>
-     <p>
+     <p style="margin:10px">
       After you have downloaded the file, 
       <ol>
         <li>From the <strong>File</strong> menu, choose <strong>Import</strong>.
@@ -43,32 +43,21 @@ $html = <<<EOHTML
         <li>The projects contained in the project set will be fetched from the 
         repository.</li>
       </ol>
-      <!--
-      Assuming you are using <em>Eclipse</em>, the easiest way to get everything 
-      you need is to "import" the team project set denoted below. After you have
-      downloaded the file, choose <strong>File</strong> &gt; 
-      <strong>Import</strong> from the main menu, which opens a dialog. Select 
-      <strong>Team</strong> &gt; <strong>Team Project Set</strong> and click 
-      <strong>>Next</strong>. Enter the path to the file you have just downloaded, 
-      click <strong>Finish</strong> and the checkout of the necessary projects 
-      will start.
-      -->
     </p>
     
   <p>
     <ul>
       <li>
         <a href="resources/rap.psf">
-          <img src="images/icon_save.gif" />&nbsp;RAP Team Project Set
+          <img src="images/icon_save.gif" />&nbsp;&nbsp;RAP Team Project Set
         </a>
+        <br />
+        Contains all the projects necessary to develop with RAP. Individual 
+        components (e.g. from the <a href="sandbox.php">Sandbox</a>) can 
+        also be obtained directly from CVS.
       </li>
     </ul>
     </p>    
-  
-    <p style="margin:10px">
-      The above mentioned project set contains all the projects provided by 
-      RAP. Individual components can also be obtained directly from CVS.
-    </p>
   
     <p style="margin:10px">
       If you are new to Eclipse, this 
