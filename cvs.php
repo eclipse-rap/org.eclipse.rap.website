@@ -21,7 +21,7 @@ $html = <<<EOHTML
     <h3>CVS Checkout</h3>
   
     <p style="margin:10px">
-      We provide a 
+      We provide 
       <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Sets</a>
       that contain pointers to the relevant RAP projects from the CVS repository.
     <p/>
@@ -45,7 +45,7 @@ $html = <<<EOHTML
       </ol>
     </p>
     
-  <p>
+  <p style="margin:10px">
     Available Team Project Set(s)
     <ul>
       <li>
