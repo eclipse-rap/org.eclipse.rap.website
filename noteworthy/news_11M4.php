@@ -194,6 +194,7 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
 
     <hr />
 
+    <a name="Tooling"></a>
     <h2>Tooling</h2>
     <table>
       <tr valign="top" align="left">
