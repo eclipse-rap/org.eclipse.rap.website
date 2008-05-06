@@ -46,7 +46,7 @@ $html = <<<EOHTML
     </p>
     
   <p style="margin:10px">
-    <h3>Available Team Project Set(s)</h3>
+    <h4>Available Team Project Set(s)</h4>
     <ul>
       <li>
         <a href="resources/rap.psf">
