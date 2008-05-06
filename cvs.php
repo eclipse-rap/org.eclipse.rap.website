@@ -24,12 +24,14 @@ $html = <<<EOHTML
       We provide a 
       <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Set</a>
       that contains pointers to the relevant RAP projects from the CVS repository.
-      <br />
+    <p/>
+    <p>
       The project set was created under the assumption that your target 
       platform points to the most recent RAP target build that can be obtained 
       from the <a href="downloads/index.php">downloads page</a>. Other setups
       may also work but are not supported. 
-      <br />
+     </p>
+     <p>
       After you have downloaded the file, 
       <ol>
         <li>From the <strong>File</strong> menu, choose <strong>Import</strong>.
