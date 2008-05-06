@@ -33,7 +33,6 @@ $html = <<<EOHTML
           <b>CVS Reorganization</b>
         </td>
         <td width="80%">
-          <p>
             Since the number of RAP projects has increased in the past,
             we decided to reorganize the structure of our source code repository
             to make it more concise.
@@ -49,7 +48,6 @@ $html = <<<EOHTML
             which has been adopted to the Eclipse 3.4 code page.
             If you work against CVS, you have to replace the old versions of
             these projects with those from the runtime folder.
-          </p>
           <p>
             The CVS reorganization is an ongoing effort and is scheduled to be
             finished with the RAP 1.1 release.
@@ -83,6 +81,7 @@ $html = <<<EOHTML
             <code>org.eclipse.rap.rwt.q07</code> and include it in their launch
             configurations.
           </p>
+          <p />
         <td/>
       </tr>
 
@@ -177,7 +176,7 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
 [...]
             </pre>
             </li>
-            <li>Startup Extension Point
+            <li><strong>Startup Extension Point</strong>
             This extension point is used to register callbacks that want to be
             activated on workbench startup.</p>
             </li>
