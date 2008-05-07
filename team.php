@@ -34,6 +34,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 				<li>
 					Istvan Ballok (<a href="http://www.cas.de/">CAS Software</a>)
 				</li>
+				<li>
+					Elias Volanakis (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+				</li>
 			</ul> 
 		</div>
 	</div> 
