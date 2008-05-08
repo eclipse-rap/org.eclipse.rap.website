@@ -82,6 +82,11 @@ $html = <<<EOHTML
             <code>org.eclipse.rap.rwt.q07</code> and include it in their launch
             configurations.
           </p>
+          <p><strong>Note</strong>: Customize your build process so that
+            the <code>org.eclipse.rap.rwt.q07</code> fragment is included.
+            Ensure also that it's listed under the <code>osgi.bundles</code>
+            property in your config.ini but doesn't get started.
+          </p>
           <p />
         <td/>
       </tr>
