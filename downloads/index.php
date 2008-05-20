@@ -70,12 +70,12 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
       </p>
-      <p style="margin: 10px"><b>1.1 M4 Build</b></p>
+      <p style="margin: 10px"><b>1.1 RC1 Build</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M4-target-3.4-20080506-1758.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-RC1-target-3.4-20080520-1049.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.0-M4-target-3.4-20080506-1758.zip
+            rap-1.1.0-RC1-target-3.4-20080520-1049.zip
           </a>
           &nbsp;&nbsp;<a href="../noteworthy/news_11M4.php">New & Noteworthy</a>
         </li>
