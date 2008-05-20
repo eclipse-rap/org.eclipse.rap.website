@@ -36,7 +36,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://www.eclipse.org/rap/noteworthy/news_11M4.php">
-            New & Noteworthy
+            New &amp; Noteworthy
           </a>
         </li>
 
@@ -51,7 +51,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://www.eclipse.org/rap/noteworthy/news_11M3.php">
-            New & Noteworthy
+            New  Noteworthy
           </a>
         </li>
         <li>RAP 1.1 M2 for Eclipse 3.3
@@ -65,7 +65,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://www.eclipse.org/rap/noteworthy/news_11M2.php">
-            New and Noteworthy
+            New &amp; Noteworthy
           </a>
           <br />
         </li>
@@ -80,7 +80,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://www.eclipse.org/rap/noteworthy/news_11M1.php">
-            New & Noteworthy
+            New &amp; Noteworthy
           </a>
           <br />
         </li>
@@ -95,7 +95,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://www.eclipse.org/rap/noteworthy/news_10.php">
-            New & Noteworthy
+            New &amp; Noteworthy
           </a>
           <br />
         </li>
@@ -110,7 +110,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://wiki.eclipse.org/index.php/Rap10RC1_News">
-            New and Noteworthy
+            New &amp; Noteworthy
           </a>
           <br />
         </li>
@@ -125,7 +125,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://wiki.eclipse.org/index.php/Rap10M6_News">
-            New and Noteworthy
+            New &amp; Noteworthy
           </a>
           <br />
         </li>
@@ -140,7 +140,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://wiki.eclipse.org/index.php/Rap10M5_News">
-            New and Noteworthy
+            New &amp; Noteworthy
           </a>
           <br />
         </li>
@@ -155,7 +155,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://wiki.eclipse.org/index.php/Rap10M4_News">
-            New and Noteworthy
+            New &amp; Noteworthy
           </a>
           <br />
         </li>

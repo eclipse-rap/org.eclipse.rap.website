@@ -77,7 +77,7 @@ $html = <<<EOHTML
             <img src="../images/icon_save.gif" />
             rap-1.1.0-RC1-target-3.4-20080520-1049.zip
           </a>
-          &nbsp;&nbsp;<a href="../noteworthy/news_11M4.php">New & Noteworthy</a>
+          &nbsp;&nbsp;<a href="../noteworthy/news_11M4.php">New &amp; Noteworthy</a>
         </li>
       </ul>
       <p style="margin: 10px"><b>1.0.1 Release</b></p>
