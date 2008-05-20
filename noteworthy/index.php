@@ -13,9 +13,7 @@ $html = <<<EOHTML
     <ul>
       <li><a href="news_11RC.php">RAP 1.1 RC1 - RC4</a>
         <p style="margin-top: 5px">
-          Lists some of the more noteworthy things that will be available in 
-          the RC1 build (May 20, 2008) and meanwhile serves to document
-          the development progress.    
+          Lists all isues that were resolved in the RC builds.    
           <br />
           All changes documented here can be obtained from 
           <a href="../cvs.php">CVS HEAD</a>.             
