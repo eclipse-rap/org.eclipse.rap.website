@@ -7,48 +7,30 @@ $pageAuthor		= "Ruediger Herrmann";
 $html = <<<EOHTML
 <div id="maincontent">
 <div id="midcolumn">
-  <h1>RAP 1.1 RC1 - New and Noteworthy</h1>
-    <p>Here are some of the more noteworthy things that will be available in the 
-      RC1 build (May 20, 2008). All features documented here can be 
-      obtained from <a href="../cvs.php">CVS HEAD</a>.</p>
+  <h1>RAP 1.1 Release Candidates - New and Noteworthy</h1>
+
+    <h2>RC1</h2>
     <p>
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Technology&product=RAP&target_milestone=1.1+RC1&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
-      This list</a> shows all bugs that were fixed during this milestone. 
+      This list</a> shows all bugs that were fixed in the RC1 build 
+      (May 20, 2008) which is now available for 
+      <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
     </p>
-    <p><ul>
-      <li><a href="#RWT">RWT</a></li>
-      <li><a href="#Workbench">Workbench</a></li>
-    </ul></p>
-
-    <hr />
-
-	<a name="RWT"></a>
-	<h2>RWT</h2>
-	<table>
-	  <tr valign="top" align="left">
-	    <td width="20%">
-	      <b></b></td>
-	    <td width="80%">
-	    <td/>
-	  </tr>
-	</table>
-	
-    <hr />
-
-    <a name="Workbench"></a>
-    <h2>Workbench</h2>
-    <table>
-      <tr valign="top" align="left">
-        <td width="20%">
-          <b></b></td>
-        <td width="80%">
-        <td/>
-      </tr>
-    </table>
 
 	<hr />
+<!--
+    <h2>RC2</h2>
+    <p>
+      <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Technology&product=RAP&target_milestone=1.1+RC2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+      This list</a> shows all bugs that were fixed in the RC2 build 
+      (May 27, 2008) which can be obtained from 
+      <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>.
+    </p>
 
-    <p>The above features are just the ones that are new since the last 
+	<hr />
+-->
+
+    <p>The above notes are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
       <li><a href="news_11M4.php">New for RAP 1.1 M4 (May 6, 2008)</a></li>
