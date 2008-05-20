@@ -28,14 +28,14 @@ $html = <<<EOHTML
       <p style="margin: 10px">
         We also provide zipped versions for download
       </p>
-      <p style="margin: 10px"><b>1.1 M4 Build</b></p>
+      <p style="margin: 10px"><b>1.1 RC1 Build</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1-M4-site-20080506-1810.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.0-RC1-site-20080520-1122.zip">
             <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-            rap-sdk-1.1-M4-site-20080506-1810.zip
+            rap-sdk-1.1.0-RC1-site-20080520-1122.zip
           </a>
-          for Eclipse 3.3 and 3.4 M7
+          for Eclipse 3.3 and 3.4
         </li>
       </ul>
       <p style="margin: 10px"><b>1.0 Release</b></p>

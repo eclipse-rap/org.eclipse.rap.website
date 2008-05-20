@@ -30,23 +30,30 @@ $html = <<<EOHTML
     <div class="homeitem3col">
       <h3>Milestone Builds and Release Target Platforms</h3>
       <ul>
+        <li>RAP 1.1 M4 for Eclipse 3.4
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M4-target-3.4-20080506-1758.zip">
+            rap-1.1.0-M4-target-3.4-20080506-1758.zip
+          </a>
+          <br />
+          <a href="http://www.eclipse.org/rap/noteworthy/news_11M4.php">
+            New & Noteworthy
+          </a>
+        </li>
+
         <li>RAP 1.1 M3 for Eclipse 3.3
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M3-target-3.3-20080407-1124.zip">
-            <img src="../images/icon_save.gif" />
             rap-1.1.0-M3-target-3.3-20080407-1124.zip
           </a>
           <br />
           RAP 1.1 M3 for Eclipse 3.4
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M3-target-3.4-20080407-1124.zip">
-            <img src="../images/icon_save.gif" />
             rap-1.1.0-M3-target-3.4-20080407-1124.zip
           </a>
           <br />
-          <a href="http://www.eclipse.org/rap/noteworthy/news_11M2.php">
+          <a href="http://www.eclipse.org/rap/noteworthy/news_11M3.php">
             New & Noteworthy
           </a>
         </li>
-
         <li>RAP 1.1 M2 for Eclipse 3.3
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-M2-target-3.3-20080220-1610.zip">
             rap-1.1.0-M2-target-3.3-20080220-1610.zip
@@ -73,7 +80,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://www.eclipse.org/rap/noteworthy/news_11M1.php">
-            New and Noteworthy
+            New & Noteworthy
           </a>
           <br />
         </li>
@@ -88,7 +95,7 @@ $html = <<<EOHTML
           </a>
           <br />
           <a href="http://www.eclipse.org/rap/noteworthy/news_10.php">
-            New and Noteworthy
+            New & Noteworthy
           </a>
           <br />
         </li>
