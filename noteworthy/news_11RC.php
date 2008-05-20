@@ -18,7 +18,7 @@ $html = <<<EOHTML
     </p>
 
 	<hr />
-<!--
+
     <h2>RC2</h2>
     <p>
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Technology&product=RAP&target_milestone=1.1+RC2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
@@ -28,10 +28,9 @@ $html = <<<EOHTML
     </p>
 
 	<hr />
--->
 
     <p>The above notes are just the ones that are new since the last 
-    milestone build. Summaries for earlier builds:</p>
+    build. Summaries for earlier builds:</p>
     <ul>
       <li><a href="news_11M4.php">New for RAP 1.1 M4 (May 6, 2008)</a></li>
       <li><a href="news_11M3.php">New for RAP 1.1 M3 (April 7, 2008)</a></li>
