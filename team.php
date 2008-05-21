@@ -14,28 +14,31 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 		    <h3>Committers</h3>
 			<ul>
 				<li>
-                    Frank Appel (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)</a>
+                  Frank Appel (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)</a>
                 </li>
 				<li>
-                	Rüdiger Herrmann (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  R&uuml;diger Herrmann (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
                 </li>
 				<li>
-					Jochen Krause (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Jochen Krause (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
 				</li>
 				<li>
-					Ralf Sternberg (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Ralf Sternberg (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
 				</li>
 				<li>
-					Jordi Böhme López (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Jordi Böhme López (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
 				</li>
 				<li>
-					Benjamin Muskalla (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Benjamin Muskalla (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+				</li>
+                <li>
+                  Elias Volanakis (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                </li>
+				<li>
+                  Istvan Ballok (<a href="http://www.cas.de/">CAS Software</a>)
 				</li>
 				<li>
-					Istvan Ballok (<a href="http://www.cas.de/">CAS Software</a>)
-				</li>
-				<li>
-					Elias Volanakis (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+				  Stefan R&ouml;ck (<a href="http://www.cas.de/">CAS Software</a>)
 				</li>
 			</ul> 
 		</div>
