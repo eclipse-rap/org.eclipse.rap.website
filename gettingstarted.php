@@ -40,11 +40,15 @@
  </tr>
  </table>
 </p>
+
+
 <h2>Getting started instructions</h2>
-<p>
-The easiest was to get involved with RAP is to install it from the update-site 
-using the Eclipse Update Manager. This requires the following steps:
-<ul>
+<p>The easiest was to get involved with RAP is to install it from the update-site 
+  using the Eclipse Update Manager. This requires the following steps:
+</p>
+
+<p><strong>When using Eclipse 3.3 or earlier...</strong>
+<ul style="margin-left:10px">
   <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 
       <strong>Software Updates</strong> &gt; <strong>Find and Install</strong> 
       menu option.</li>
@@ -70,7 +74,31 @@ using the Eclipse Update Manager. This requires the following steps:
       to install unsigned jar files.</li>
   <li>Confirm the following prompt to restart Eclipse.</li>
 </ul>
-<p>
+</p>
+
+<p><strong>When using Eclipse 3.4 or later...</strong>
+<ul>
+  <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 
+      <strong>Software Updates...</strong> menu entry.</li>
+  <li>Select the <strong>Available Software</strong> tab and click the 
+    <strong>Add Site...</strong> button.</li>
+  <li>In the upcoming <strong>Add Site</strong> dialog, enter enter the RAP 
+    Update Site URL 
+    <strong>http://download.eclipse.org/technology/rap/update-site</strong>. 
+    Click <strong>OK</strong> to create the new update site entry.</li>
+  <li>The entry you just created now appears in the update site list. Select 
+    its check box and click <strong>Install...</strong>.</li>
+  <li>The <strong>Install</strong> wizard will let you review the selected
+    items to install, confirm with <strong>Nexct</strong> to continue the
+    installation.
+  <li>Accept the terms in the license agreement and click the 
+      <strong>Finish</strong> button.</li>
+  <li>The feature and plug-ins will now be downloaded from the site and
+      installed locally. Note that you may be prompted to confirm if it is ok
+      to install unsigned jar files.</li>
+  <li>Confirm the following prompt to restart Eclipse.</li>
+</ul>
+</p>
 
 </p>
 After Eclipse restarts, a welcome page is displayed. Select the <strong>Rich 
