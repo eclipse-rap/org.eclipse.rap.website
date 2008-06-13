@@ -100,8 +100,7 @@
 </ul>
 </p>
 
-</p>
-After Eclipse restarts, a welcome page is displayed. Select the <strong>Rich 
+<p>After Eclipse restarts, a welcome page is displayed. Select the <strong>Rich 
 Ajax Platform (RAP)</strong> section and choose <strong>Install Target 
 Platform</strong> on the following page. In the upcoming dialog confirm the 
 default values, which starts the target installation process.
