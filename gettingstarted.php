@@ -89,7 +89,7 @@
   <li>The entry you just created now appears in the update site list. Select 
     its check box and click <strong>Install...</strong>.</li>
   <li>The <strong>Install</strong> wizard will let you review the selected
-    items to install, confirm with <strong>Nexct</strong> to continue the
+    items to install, confirm with <strong>Next</strong> to continue the
     installation.
   <li>Accept the terms in the license agreement and click the 
       <strong>Finish</strong> button.</li>
