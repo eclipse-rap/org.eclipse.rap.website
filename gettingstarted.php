@@ -47,7 +47,7 @@
   using the Eclipse Update Manager. This requires the following steps:
 </p>
 
-<p><strong>When using Eclipse 3.3 or earlier...</strong>
+<p><strong>For Eclipse 3.3 or earlier...</strong>
 <ul style="margin-left:10px">
   <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 
       <strong>Software Updates</strong> &gt; <strong>Find and Install</strong> 
@@ -76,8 +76,8 @@
 </ul>
 </p>
 
-<p><strong>When using Eclipse 3.4 or later...</strong>
-<ul>
+<p><strong>For Eclipse 3.4 or later...</strong>
+<ul style="margin-left:10px">
   <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 
       <strong>Software Updates...</strong> menu entry.</li>
   <li>Select the <strong>Available Software</strong> tab and click the 
