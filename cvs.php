@@ -49,23 +49,27 @@ $html = <<<EOHTML
       </ol>
     </p>
     
-  <p style="margin:10px">
-    <strong>Available Team Project Set(s)</strong>
-    <ul>
-      <li>
-        <a href="resources/rap.psf">
-          <img src="images/icon_save.gif" />&nbsp;&nbsp;RAP User Team Project Set
-        </a>
-        <br />
-        Contains all the projects necessary to develop with RAP. Individual 
-        components (e.g. from the <a href="sandbox.php">Sandbox</a>) can 
-        also be obtained 
-        <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">directly from CVS.</a>
-      </li>
-    </ul>
-    Note: these project sets specify anonymous pserver access. If that does not 
-    work for you see the <strong>CVS and firewalls</strong> section in the
-    <a href="http://wiki.eclipse.org/CVS_Howto#CVS_and_firewalls">CVS Howto</a>.
+    <p style="margin:10px">
+      <strong>Available Team Project Set(s)</strong>
+      <ul>
+        <li>
+          <a href="resources/rap.psf">
+            <img src="images/icon_save.gif" />&nbsp;&nbsp;RAP User Team Project Set
+          </a>
+          <br />
+          Contains all the projects necessary to develop with RAP. Individual 
+          components (e.g. from the <a href="sandbox.php">Sandbox</a>) can 
+          also be obtained 
+          <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">directly from CVS.</a>
+        </li>
+      </ul>
+    </p>
+    
+    <p style="margin:10px">
+      <strong>Note:</strong> these project sets specify anonymous pserver access. 
+      If that does not work for you see the <strong>CVS and firewalls</strong> 
+      section in the
+      <a href="http://wiki.eclipse.org/CVS_Howto#CVS_and_firewalls">CVS Howto</a>.
     </p>    
   
     <p style="margin:10px">
