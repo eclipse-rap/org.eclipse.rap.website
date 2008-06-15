@@ -21,7 +21,11 @@ $html = <<<EOHTML
     <h3>CVS Checkout</h3>
   
     <p style="margin:10px">
-      We provide 
+      All projects can be found in the <code>org.eclipse.rap</code> module of 
+      the <code>:pserver:dev.eclipse.org:/cvsroot/technology</code> repository.
+    <p/>
+    <p style="margin:10px">
+      For easier consumption, we provide 
       <a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Sets</a>
       that contain pointers to the relevant RAP projects from the CVS repository.
     <p/>
@@ -59,6 +63,9 @@ $html = <<<EOHTML
         <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">directly from CVS.</a>
       </li>
     </ul>
+    Note: these project sets specify anonymous pserver access. If that does not 
+    work for you see the <strong>CVS and firewalls</strong> section in the
+    <a href="http://wiki.eclipse.org/CVS_Howto#CVS_and_firewalls">CVS Howto</a>.
     </p>    
   
     <p style="margin:10px">
