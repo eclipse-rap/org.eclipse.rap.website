@@ -17,8 +17,12 @@ $html = <<<EOHTML
 	  </ul>	
 	  <div class="homeitem3col">
         <a name="news"></a> 
-		<h3>RAP 1.0 Release in the News</h3>
+		<h3>RAP in the News</h3>
 	    <ul>
+		  <li>
+	        <a href="http://www.infoq.com/news/2008/06/eclipse-ganymede-rap" target="_blank">
+	       	Eclipse Ganymede: An in-depth look at RAP (Rich Ajax Platform)</a> InfoQ (Ryan Slobojan)
+          </li>
 		  <li>
 	        <a href="http://ajaxian.com/archives/ajax-meet-osgi-expanding-universes-collide-with-eclipse-rap-10" target="_blank">
 	       	Ajax meet OSGi: Expanding Universes Collide with Eclipse RAP 1.0</a> ajaxian.com (Dion Almaer)
