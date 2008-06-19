@@ -82,7 +82,7 @@ $html = <<<EOHTML
           </li>
           <li>
 	        <a href="http://t3n.yeebase.com/aktuell/news/newspost/eclipse-gibt-rich-ajax-platform-frei/963/" target="_blank">
-	       	Eclipse bringt eigenen AJAX-Server</a> T3N.de (Jan Christe)
+	       	Eclipse gibt Rich Ajax Platform frei</a> T3N.de (Jan Christe)
           </li>
           <li>
 	        <a href="http://www.tectonic.co.za/view.php?id=1810" target="_blank">
