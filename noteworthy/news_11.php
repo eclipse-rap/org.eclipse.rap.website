@@ -92,6 +92,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
 
+	  <!-- horizontal space between entries -->
+	  <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
          <b>Browser#execute()</b></td>
@@ -106,6 +109,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
 	
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>Display#readAndDispatch()</b></td>
@@ -158,6 +164,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
 
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>Table keyboard navigation</b></td>
@@ -168,6 +177,9 @@ $html = <<<EOHTML
           keys works as expected.
         <td/>
       </tr>
+
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
 
       <tr valign="top" align="left">
         <td width="20%">
@@ -200,6 +212,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
       
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>Theming Variants</b></td>
@@ -219,6 +234,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
       
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>ISettingStore</b></td>
@@ -245,6 +263,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
 
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>Mouse Events</b></td>
@@ -258,6 +279,9 @@ $html = <<<EOHTML
           cycle.</p>
         <td/>
       </tr>
+
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
 
       <tr valign="top" align="left">
         <td width="20%">
@@ -282,6 +306,9 @@ $html = <<<EOHTML
           <p />
         <td/>
       </tr>
+
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
 
       <tr valign="top" align="left">
         <td width="20%">
@@ -351,6 +378,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
 
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>Support for activities</b></td>
@@ -364,6 +394,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
       
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>RAP HttpContext</b></td>
@@ -375,6 +408,9 @@ $html = <<<EOHTML
           <p><img src="httpcontext.png" /></p>        
         <td/>
       </tr>
+
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
 
       <tr valign="top" align="left">
         <td width="20%">
@@ -394,6 +430,9 @@ $html = <<<EOHTML
         <td/>
       </tr>
 
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>Import-/Exportwizards</b></td>
@@ -406,6 +445,9 @@ $html = <<<EOHTML
           <p><img src="import_wizard.png" /></p>        
         <td/>
       </tr>
+
+      <!-- horizontal space between entries -->
+      <tr><td>&nbsp</td><td>&nbsp</td></tr>
 
       <tr valign="top" align="left">
         <td width="20%">
@@ -465,6 +507,7 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
           </p>
         <td/>
       </tr>
+
     </table>
 
     <hr />
