@@ -126,12 +126,12 @@ $html = <<<EOHTML
           </a>
           <br />
         </li>
-        <li>RAP 1.0 Final, based on Eclipse 3.2
+        <li>RAP 1.0 Final, based on Eclipse 3.2&nbsp;&nbsp;
           <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.0.0-R-target-3.2-20071010-2241.zip">
             rap-1.0.0-R-target-3.2-20071010-2241.zip
           </a>
           <br />
-          RAP 1.0 Final, based on Eclipse 3.3
+          RAP 1.0 Final, based on Eclipse 3.3&nbsp;&nbsp;
           <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.0.0-R-target-3.3-20071010-2241.zip">
             rap-1.0.0-R-target-3.3-20071010-2241.zip
           </a>
