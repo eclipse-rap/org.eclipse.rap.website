@@ -10,7 +10,7 @@ $html = <<<EOHTML
   <h1>RAP 1.1 New and Noteworthy</h1>
     <p>Here are some of the more noteworthy things available in 
       RAP 1.1 (June 26, 2008) which is now available for 
-      <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+      <a href="http://www.eclipse.org/rap/downloads">download</a>.
     </p>
     <p>
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_file_loc=;bug_file_loc_type=allwordssubstr;bug_id=;bug_status=RESOLVED;bug_status=VERIFIED;bug_status=CLOSED;bugidtype=include;chfieldfrom=;chfieldto=Now;chfieldvalue=;classification=Technology;email1=;email2=;emailtype1=substring;emailtype2=substring;field-1-0-0=classification;field-1-1-0=product;field-1-2-0=target_milestone;field-1-3-0=bug_status;field0-0-0=noop;keywords=;keywords_type=allwords;long_desc=;long_desc_type=allwordssubstr;product=RAP;query_format=advanced;remaction=;short_desc=;short_desc_type=allwordssubstr;status_whiteboard=;status_whiteboard_type=allwordssubstr;target_milestone=1.1%20M1;target_milestone=1.1%20M2;target_milestone=1.1%20M3;target_milestone=1.1%20M4;target_milestone=1.1%20RC1;target_milestone=1.1%20RC2;target_milestone=1.1%20RC3;target_milestone=1.1%20RC4;target_milestone=1.1;type-1-0-0=anyexact;type-1-1-0=anyexact;type-1-2-0=anyexact;type-1-3-0=anyexact;type0-0-0=noop;value-1-0-0=Technology;value-1-1-0=RAP;value-1-2-0=1.1%20M1%2C1.1%20M2%2C1.1%20M3%2C1.1%20M4%2C1.1%20RC1%2C1.1%20RC2%2C1.1%20RC3%2C1.1%20RC4%2C1.1;value-1-3-0=RESOLVED%2CVERIFIED%2CCLOSED;value0-0-0=;votes=;query_based_on=">

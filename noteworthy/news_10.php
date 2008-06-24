@@ -8,7 +8,7 @@ $html = <<<EOHTML
 <div id="maincontent">
 	<div id="midcolumn">
 <h1>RAP 1.0 - New and Noteworthy</h1>
-<p>Here are some of the more noteworthy things available in the first release build (October 10, 2007) which is now available for <a href="http://www.eclipse.org/rap/downloads.php" title="http://www.eclipse.org/rap/downloads.php">download</a>. </p>
+<p>Here are some of the more noteworthy things available in the first release build (October 10, 2007) which is now available for <a href="http://www.eclipse.org/rap/downloads.php" title="http://www.eclipse.org/rap/downloads">download</a>. </p>
 <ul>
     <li><a href="#RAP_Common">RAP Common</a></li>
     <li><a href="#RWT">RWT</a></li>
