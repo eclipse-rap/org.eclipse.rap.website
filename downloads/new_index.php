@@ -1,12 +1,12 @@
-<?php                                                                                                                       require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");   require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");   require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");  $App    = new App();    $Nav    = new Nav();    $Menu   = new Menu();       include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
-    #
-    # Begin: page-specific settings.  Change these. 
-$pageTitle      = "RAP Project - Downloads";
-$pageKeywords   = "AJAX, rap, w4t, eclipse rap";
-$pageAuthor     = "Jochen Krause";
+	#
+	# Begin: page-specific settings.  Change these. 
+$pageTitle 		= "RAP Project - Downloads";
+$pageKeywords	= "AJAX, rap, w4t, eclipse rap";
+$pageAuthor		= "Jochen Krause";
 
-    # Paste your HTML content between the EOHTML markers!   
+	# Paste your HTML content between the EOHTML markers!	
 $html = <<<EOHTML
 
 <div id="midcolumn">
@@ -28,24 +28,14 @@ $html = <<<EOHTML
       <p style="margin: 10px">
         We also provide zipped versions for download
       </p>
-      <p style="margin: 10px"><b>1.1 RC4 Build</b></p>
+      <p style="margin: 10px"><b>1.1 Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.0-RC4-site-20080613-1119.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.0-R-site-20080613-1119.zip">
             <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-            rap-sdk-1.1.0-RC4-site-20080613-1119.zip
+            rap-sdk-1.1.0-R-site-20080613-1119.zip
           </a>
           for Eclipse 3.3 and 3.4
-        </li>
-      </ul>
-      <p style="margin: 10px"><b>1.0 Release</b></p>
-      <ul>
-        <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.0-R-site-3.3-20071015-1305.zip">
-            <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-            rap-sdk-1.0-R-site-3.3-20071015-1305.zip
-          </a>
-          for Eclipse 3.3
         </li>
       </ul>
     </div>  
@@ -70,32 +60,14 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
       </p>
-      <p style="margin: 10px"><b>1.1 RC4 Build</b></p>
+      <p style="margin: 10px"><b>1.1 Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-RC4-target-3.4-20080613-1055.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-R-target-3.4-20080613-1055.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.0-RC4-target-3.4-20080613-1055.zip
+            rap-1.1.0-R-target-3.4-20080613-1055.zip
           </a>
-          based on Eclipse 3.4 RC4 &nbsp;&nbsp;<a href="../noteworthy/news_11RC.php">New &amp; Noteworthy</a>
-        </li>
-      </ul>
-      <p style="margin: 10px"><b>1.0.1 Release</b></p>
-      <ul>
-        <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.3-20071207-1851.zip">
-            <img src="../images/icon_save.gif" />
-            rap-1.0.1-R-target-3.3-20071207-1851.zip  
-          </a>
-          for Eclipse 3.3
-          (<a href="../noteworthy/relnotes101.php">Release Notes</a>)
-        </li>
-        <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.2-20071207-1851.zip">
-            <img src="../images/icon_save.gif" />
-            rap-1.0.1-R-target-3.2-20071207-1851.zip
-          </a>
-          for Eclipse 3.2
+          based on Eclipse 3.4 &nbsp;&nbsp;<a href="../noteworthy/news_11RC.php">New &amp; Noteworthy</a>
         </li>
       </ul>
     </div>
@@ -119,7 +91,7 @@ $html = <<<EOHTML
                </td>
              </tr>
              <tr>
-               <td>RAP 1.0 and older versions</td>
+               <td>RAP 1.0.1 and older versions</td>
              </tr> 
            </table>
          </td>
@@ -132,6 +104,6 @@ $html = <<<EOHTML
 EOHTML;
 
 
-    # Generate the web page
+	# Generate the web page
 $App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>

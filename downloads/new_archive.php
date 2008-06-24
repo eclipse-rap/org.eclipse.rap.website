@@ -1,16 +1,16 @@
-<?php                                                                                                                       require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");   require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");   require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");  $App    = new App();    $Nav    = new Nav();    $Menu   = new Menu();       include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
-    #
-    # Begin: page-specific settings.  Change these. 
-$pageTitle      = "RAP Project - Archived Downloads";
-$pageKeywords   = "AJAX, rap, w4t, eclipse rap";
-$pageAuthor     = "Jochen Krause";
+	#
+	# Begin: page-specific settings.  Change these. 
+$pageTitle 		= "RAP Project - Archived Downloads";
+$pageKeywords	= "AJAX, rap, w4t, eclipse rap";
+$pageAuthor		= "Jochen Krause";
 
-    # Paste your HTML content between the EOHTML markers!   
+	# Paste your HTML content between the EOHTML markers!	
 $html = <<<EOHTML
 
 <div id="midcolumn">
-        <h1>Archived Downloads</h1>
+		<h1>Archived Downloads</h1>
 
     <p>Since RCP and RAP bundles within the same instance do not work, we provide 
       target platforms for download.
@@ -111,6 +111,21 @@ $html = <<<EOHTML
           </a>
           <br />
         </li>
+        <li>RAP 1.0.1 Service Release for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.2-20071207-1851.zip">
+            rap-1.0.1-R-target-3.2-20071207-1851.zip
+          </a>
+          <br />
+          RAP 1.0.1 Service Release for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.3-20071207-1851.zip">
+            rap-1.0.1-R-target-3.3-20071207-1851.zip
+          </a>
+          <br />
+          <a href="http://www.eclipse.org/rap/noteworthy/news_10.php">
+            New &amp; Noteworthy
+          </a>
+          <br />
+        </li>
         <li>RAP 1.0 Final for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.2-20071010-2241.zip">
             rap-1.0-R-target-3.2-20071010-2241.zip
@@ -192,138 +207,6 @@ $html = <<<EOHTML
     <div class="homeitem3col">
       <h3>Integration Build Target Platforms</h3>
       <ul>
-      
-        <li>RAP 1.0.1 I-20071221 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071221-1545.zip">
-            rap-1.0.1-I-target-3.2-20071221-1545.zip
-          </a>
-          <br />
-          RAP 1.0.1 I-20071221 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071221-1545.zip">
-            rap-1.0.1-I-target-3.3-20071221-1545.zip
-          </a>
-        </li>
-
-        <li>RAP 1.0.1 I-20071109 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071130-1407.zip">
-            rap-1.0.1-I-target-3.2-20071130-1407.zip
-          </a>
-          <br />
-          RAP 1.0.1 I-20071109 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071130-1407.zip">
-            rap-1.0.1-I-target-3.3-20071130-1407.zip
-          </a>
-        </li>
-        <li>RAP 1.0.1 I-20071109 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071109-1244.zip">
-            rap-1.0.1-I-target-3.2-20071109-1244.zip
-          </a>
-          <br />
-          RAP 1.0.1 I-20071109 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.3-20071109-1244.zip">
-            rap-1.0.1-I-target-3.3-20071109-1244.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070921 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070921-1419.zip">
-            rap-1.0-I-incubation-target-3.2-20070921-1419.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070921 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070921-1419.zip">
-            rap-1.0-I-incubation-target-3.3-20070921-1419.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070921 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-I-target-3.2-20071109-1244.zip">
-            rap-1.0.1-I-target-3.2-20071109-1244.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070921 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070921-1419.zip">
-            rap-1.0-I-incubation-target-3.3-20070921-1419.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070914 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070914-1831.zip">
-            rap-1.0-I-incubation-target-3.2-20070914-1831.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070914 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070914-1831.zip">
-            rap-1.0-I-incubation-target-3.3-20070914-1831.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070907 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070907-1456.zip">
-            rap-1.0-I-incubation-target-3.2-20070907-1456.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070907 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070907-1456.zip">
-            rap-1.0-I-incubation-target-3.3-20070907-1456.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070831 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070831-1725.zip">
-            rap-1.0-I-incubation-target-3.2-20070831-1725.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070831 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070831-1725.zip">
-            rap-1.0-I-incubation-target-3.3-20070831-1725.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070824 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070824-1323.zip">
-            rap-1.0-I-incubation-target-3.2-20070824-1323.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070824 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070824-1323.zip">
-            rap-1.0-I-incubation-target-3.3-20070824-1323.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070810 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070810-1109.zip">
-            rap-1.0-I-incubation-target-3.2-20070810-1109.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070810 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070810-1109.zip">
-            rap-1.0-I-incubation-target-3.3-20070810-1109.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070803 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070803-1640.zip">
-            rap-1.0-I-incubation-target-3.2-20070803-1640.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070803 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070803-1640.zip">
-            rap-1.0-I-incubation-target-3.3-20070803-1640.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070727 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070727-1457.zip">
-            rap-1.0-I-incubation-target-3.2-20070727-1457.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070727 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070727-1457.zip">
-            rap-1.0-I-incubation-target-3.3-20070727-1457.zip
-          </a>
-        </li>
-        <li>RAP 1.0 I-20070720 for Eclipse 3.2
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.2-20070720-1623.zip">
-            rap-1.0-I-incubation-target-3.2-20070720-1623.zip
-          </a>
-          <br />
-          RAP 1.0 I-20070720 for Eclipse 3.3
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-I-incubation-target-3.3-20070720-1623.zip">
-            rap-1.0-I-incubation-target-3.3-20070720-1623.zip
-          </a>
-        </li>
       </ul>
     </div>
 </div>
@@ -331,6 +214,6 @@ $html = <<<EOHTML
 EOHTML;
 
 
-    # Generate the web page
+	# Generate the web page
 $App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
