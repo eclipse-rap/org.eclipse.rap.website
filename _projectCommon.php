@@ -33,7 +33,7 @@ EOBRANDING;
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;New & Noteworthy", "/rap/noteworthy", "_blank", 1);
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Newsgroup", "/rap/newsgroup.php", "_self", 1);
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Bugs", "/rap/bugs.php",	"_self", 1);
-  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Infocenter (ext)", "http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html", "_self", 1);
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;Infocenter (ext)", "http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html", "_self", 1);
 
   $Nav->addNavSeparator("Contributors", "/rap/sandbox.php", "_self", 1);
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Sandbox", "/rap/sandbox.php", "_self", 1);
