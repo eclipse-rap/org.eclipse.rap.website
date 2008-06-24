@@ -19,7 +19,7 @@ $html = <<<EOHTML
     <p><ul>
       <li><a href="#General">General</a></li>
       <li><a href="#RWT">RWT</a></li>
-      <li><a href="#Workbench">Workbench</a></li>
+      <li><a href="#Workbench">JFace and Workbench</a></li>
       <li><a href="#Tooling">Tooling</a></li>
     </ul></p>
 
@@ -28,7 +28,6 @@ $html = <<<EOHTML
     <a name="General"></a>
     <h2>General</h2>
     <table>
-
       <tr valign="top" align="left">
         <td width="20%">
           <b>CVS Reorganization</b>
@@ -67,6 +66,199 @@ $html = <<<EOHTML
     <a name="RWT"></a>
     <h2>RWT</h2>
     <table>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Support for Custom Widget Id's</b></td>
+        <td width="80%">
+          In RWT, each widget has an automatically generated, unique <em>widget 
+          id</em> that associates the server-side object with its client-side 
+          representation.
+          <br />
+          In order to use automated UI tests, now the generated id can be 
+          overridden programmatically. With code like this:
+          <pre>
+  Button button = new ...
+  button.setData( WidgetUtil.CUSTOM_WIDGET_ID, "org.sample.LoginDialog#okButton" );
+          </pre>
+          and the system property <code>org.eclipse.rwt.enableUITests</code> turned
+          on, the button can always be identified by its custom id. The test 
+          scenario can remain unchanged even if the UI changes.  
+          <br />
+          <br />
+          See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204859">this
+          bug</a> and the JavaDoc for <code>WidgetUtil#CUSTOM_WIDGET_ID</code> and
+          <code>WidgetUtil#ENABLE_UI_TESTS</code> for further information.
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+         <b>Browser#execute()</b></td>
+         <td width="80%">
+          The <code>org.eclipse.swt.browser.Browser#execute(String)</code> method 
+          was implemented. This method allows to execute a script containing 
+          JavaScript commands.
+          <br />
+          <img style="margin:5px" src="browser-exec.jpeg" />
+          <br />
+          Please read the JavaDoc for further details.
+        <td/>
+      </tr>
+	
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Display#readAndDispatch()</b></td>
+        <td width="80%">
+          <p>To more closely align with SWT and solve the problems with the
+          existing mechanism for blocking UI operations, RWT new provides
+          <code>Display#readAndDispatch()</code> and <code>Display#sleep()</code>.
+          </p>
+          <p>The new implementation now strictly follows the apartment threading 
+            model. This means that the life cycle is handled by a single thread, 
+            spanning the lifetime of a session. As a result, all phase listeners 
+            and application code are executed on this thread.
+            Note, that the readAndDispatch() loop runs in the process action phase,
+            however this is generally transparent to the application developer.</p>   
+          <p>Please be aware that this comes at the cost of a small API break.
+            The <code>IEntryPoint#createUI</code> method changed its signature 
+            from <code>Display create()</code> to <code>int createUI</code>.
+            A typical entry point that creates a workbench would now look like 
+            this:
+          <pre><code>
+  public class MyApplication implements IEntryPoint {
+    public int createUI() {
+      Display display = PlatformUI.createDisplay();
+      WorkbenchAdvisor advisor = new MyWorkbenchAdvisor();
+      return PlatformUI.createAndRunWorkbench( display, advisor )
+    }
+  }
+          </pre></code>
+          </p>
+          <p>If you are using RWT directly, you also need to code the typical
+          event loop in your entry point:
+          <pre><code>
+  public class MyEntryPoint implements IEntryPoint {
+    public int createUI() {
+      Display display = new Display();
+      Shell shell = new Shell( display );
+      shell.setSize( 560, 420 );
+      // ... populate shell here ...
+      shell.layout();
+      shell.open();
+      while( !shell.isDisposed() ) {
+        if( !display.readAndDispatch() ) {
+          display.sleep();
+        }
+      }
+      return 0;
+    }
+  }
+          </pre></code>
+          </p>
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Table keyboard navigation</b></td>
+        <td width="80%">
+          The table widget now supports keyboard navigation. Using the
+          <code>Up</code>, <code>Down</code>, <code>Home</code>,
+          <code>End</code>, <code>PageUp</code> and <code>PageDown</code> 
+          keys works as expected.
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>UI Styling API</b></td>
+        <td width="80%">
+          <b>Support for background images</b>
+            <br />
+            The methods <code>Control#get/setBackgroundImage()</code> allow to 
+            set background images on almost all controls.
+            <br />
+            <img src="ShellBgImage.png" />
+          <p><b>Support for transparency</b>
+            <br />
+            The methods <code>Composite#get/setBackgroundMode()</code> are now 
+            available. Setting the background mode of a control to 
+            <code>SWT.INHERIT_DEFAULT</code> lets all labels, links, checkboxes
+            etc. on this composite inherit its background color and image.
+            <br />
+            <img src="BackgroundMode.png" />
+            </p>
+          <p><b>Semi-transparent Shells</b>
+            <br />
+            Thanks to the SWT 3.4 method <code>get/setAlpha()</code>, Shells 
+            can now be semi-transparent. This feature is also useful to place 
+            a shading layer below a modal dialog window as seen on some Web 
+            2.0 sites.
+            <br />
+            <img src="AlphaShell.png" />
+            </p>
+        <td/>
+      </tr>
+      
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Theming Variants</b></td>
+        <td width="80%">
+          It is now possible to define variants of widget types that can be 
+          styled separately. As an example, an application that uses <code>PUSH</code> 
+          buttons in a special side bar can define a variant "side-button" and 
+          apply a different styling to these buttons. This styling only 
+          applies to the buttons belonging to the variant and does not 
+          affect any other PUSH buttons in the application.
+          <p>The variant is set using the widget user data 
+            (<code>Widget#setData()</code>), so the code remains 100% SWT 
+            compatible.
+            <br />
+            <img src="ButtonVariant.png" />
+          </p>      
+        <td/>
+      </tr>
+      
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>ISettingStore</b></td>
+        <td width="80%">
+            There is a new subsystem in RWT that allows to persist user-specific
+            settings:
+            <p><code>RWT.getSettingStore().setAttribute( "myAttribute", "myValue" );</code>.</p>
+            The setting store allows to restore settings made in a previous
+            session:
+            <p><code>RWT.getSettingStore().getAttribute( "myAttribute" );</code>.</p>
+            The setting store uses browser cookies to identify the settings of 
+            previous sessions.
+            <br>
+            It is also possible to load specific settings 
+            independently from cookies:
+            <p><code>RWT.getSettingStore().loadById( "myId" )</code>.</p>
+            This is for example useful in case that certain settings should only
+            be available after the user has gone through an authentication
+            process.
+            <br>
+            Note that the setting store subsystem is used by the new
+            <code>ScopedPreferenceStore</code> implementation of the workbench.
+            <p>See API documentation for more information.</p>
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Mouse Events</b></td>
+        <td width="80%">
+          RWT now has support for <code>MouseEvent</code>s. Calling 
+          <code>addMouseListener</code> on a Control will notify you about
+          <code>mouseUp</code>, <code>mouseDown</code> and
+          <code>mouseDoubleClick</code> events.
+          <p>Please be aware that, apart from the API, there are still some 
+          limitations that will be addressed during the next development
+          cycle.</p>
+        <td/>
+      </tr>
 
       <tr valign="top" align="left">
         <td width="20%">
@@ -138,8 +330,84 @@ $html = <<<EOHTML
     <hr />
 
     <a name="Workbench"></a>
-    <h2>Workbench</h2>
+    <h2>JFace and Workbench</h2>
     <table>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Image Decorator Support</b></td>
+        <td width="80%">
+          <img src="image-decorator.gif"/>
+          <p>JFace now contains class <code>org.eclipse.jface.viewers.DecorationOverlayIcon</code>
+            that supports the creation of image overlays for decoration
+            (<code>org.eclipse.jface.resource.CompositeImageDescriptor</code> 
+            is now fully functional).</p>
+          <p>The workbench now provides the extension point 
+            <code>org.eclipse.ui.decorators</code> which allows to add 
+            decorations declaratively based on enablements.
+            <br />
+            Example:
+            <br />
+            <img src="decorator-extension.gif" /></p>  
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Support for activities</b></td>
+        <td width="80%">
+          The RAP Workbench now supports the <code>org.eclipse.ui.activities</code> 
+          and <code>org.eclipse.ui.activitySupport</code> extension points. You 
+          can control the visibility of views, editors, perspectives, menu and 
+          toolbar items using activities and trigger points. See the extension 
+          point documentation for details.
+          <p><img src="activities.png" /></p>        
+        <td/>
+      </tr>
+      
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>RAP HttpContext</b></td>
+        <td width="80%">
+          The RAP servlet now uses its own HttpContext implementation. This
+          allows other servlets to map to that context too. This enables the
+          possibility to share the same session instances between those
+          servlets and the RAP servlet for data exchange. 
+          <p><img src="httpcontext.png" /></p>        
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>ScopedPreferenceStore</b></td>
+        <td width="80%">
+          The RAP workbench provides now 
+          <code>org.eclipse.ui.preferences.ScopedPreferenceStore</code> that
+          allows to read and set user-specific preferences using the 
+          preference mechanism provided by <code>org.eclipse.core.runtime</code>.
+          The base of the storage mechanism is a subsystem of RWT represented
+          by <code>org.eclipse.rwt.service.ISettingStore</code>.
+          The session aware
+          <code>org.eclipse.jface.preference.IPreferenceStore</code> can be
+          retrieved using the method
+          <code>org.eclipse.ui.plugin.AbstractUIPlugin.getPreferenceStore</code>.
+          <p>See API documentation for more information.</p>
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Import-/Exportwizards</b></td>
+        <td width="80%">
+          RAP supports now Import- and Exportwizards by providing
+          the extension points <code>importWizards</code> and
+          <code>exportWizards</code>. See also <code>ActionFactory.IMPORT</code>
+          and <code>ActionFactory.EXPORT</code> for opening the import-/export
+          wizard. 
+          <p><img src="import_wizard.png" /></p>        
+        <td/>
+      </tr>
+
       <tr valign="top" align="left">
         <td width="20%">
           <b>Eclipse 3.4 Adoption</b></td>
