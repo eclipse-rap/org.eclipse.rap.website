@@ -275,9 +275,8 @@ $html = <<<EOHTML
           <code>addMouseListener</code> on a Control will notify you about
           <code>mouseUp</code>, <code>mouseDown</code> and
           <code>mouseDoubleClick</code> events.
-          <p>Please be aware that, apart from the API, there are still some 
-          limitations that will be addressed during the next development
-          cycle.</p>
+          <p>Please be aware that, despite the complete API, there are still some 
+          limitations that will be addressed in the future.</p>
         <td/>
       </tr>
 
@@ -497,14 +496,6 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
             </pre>
             </li>
           </ul>
-          </p>
-          <p><strong>Please note</strong> due to the complexity of this transition
-            there may still exist some problems, in particular with the newly
-            introduced functionality. Within the upcoming
-            <a href="http://wiki.eclipse.org/RAP/Ramp_down_Ganymede">RC development cycles</a>
-            we will focus on bug fixes.
-            Please feel encouraged to try out the current milestone and provide
-            us with feedback.
           </p>
         <td/>
       </tr>
