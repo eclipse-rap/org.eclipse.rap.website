@@ -24,7 +24,7 @@ $html = <<<EOHTML
       the just downloaded plug-ins appear in the plug-ins list.
     </p>
     <p>Note: if doing this with a workspace that already contains projects that
-      depend on the target, you may get compile errors. Restartiung Eclipse and/or
+      depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
     </p>
     <div class="homeitem3col">
@@ -144,11 +144,13 @@ $html = <<<EOHTML
       </ul>
     </div>
     
+    <!--
     <div class="homeitem3col">
       <h3>Integration Build Target Platforms</h3>
       <ul>
       </ul>
     </div>
+    -->
 </div>
 
 EOHTML;

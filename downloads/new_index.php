@@ -23,6 +23,8 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px">
         The RAP update site is
+        <br />
+        &nbsp;&nbsp;&nbsp;
         <b>http://download.eclipse.org/technology/rap/update-site</b>
       </p>
       <p style="margin: 10px">
