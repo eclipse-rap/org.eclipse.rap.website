@@ -444,7 +444,7 @@ $html = <<<EOHTML
 
       <tr valign="top" align="left">
         <td width="20%">
-          <b>Import-/Exportwizards</b></td>
+          <b>Import-/Export Wizards</b></td>
         <td width="80%">
           RAP supports now Import- and Exportwizards by providing
           the extension points <code>importWizards</code> and
