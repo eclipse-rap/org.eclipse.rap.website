@@ -60,6 +60,8 @@ $html = <<<EOHTML
             finished shortly after the RAP 1.1 release.
             If you want to stay tuned, you can set yourself CC to
             <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=201257">bug #201257</a>.
+          </p>
+          <p>
             The team project sets provided 
             <a href="http://www.eclipse.org/rap/cvs.php">here</a> are in sync
             with the current CVS structure.

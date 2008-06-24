@@ -69,7 +69,8 @@ $html = <<<EOHTML
             <img src="../images/icon_save.gif" />
             rap-1.1.0-R-target-3.4-20080613-1055.zip
           </a>
-          based on Eclipse 3.4 &nbsp;&nbsp;<a href="../noteworthy/news_11RC.php">New &amp; Noteworthy</a>
+          based on Eclipse 3.4 &nbsp;&nbsp;
+          <a href="../noteworthy/news_11.php">New &amp; Noteworthy</a>
         </li>
       </ul>
     </div>
