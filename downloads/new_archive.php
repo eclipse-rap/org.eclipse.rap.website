@@ -31,7 +31,7 @@ $html = <<<EOHTML
       <h3>Milestone Builds and Release Target Platforms</h3>
       <ul>
         <li>RAP 1.1 RC3, based on Eclipse 3.4
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-RC3-target-3.4-20080603-1107.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-RC3-target-3.4-20080603-1107.zip">
             rap-1.1.0-RC3-target-3.4-20080603-1107.zip
           </a>
           <br />
@@ -41,7 +41,7 @@ $html = <<<EOHTML
         </li>
 
         <li>RAP 1.1 RC2, based on Eclipse 3.4
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-RC2-target-3.4-20080527-1108.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-RC2-target-3.4-20080527-1108.zip">
             rap-1.1.0-RC2-target-3.4-20080527-1108.zip
           </a>
           <br />
@@ -50,7 +50,7 @@ $html = <<<EOHTML
           </a>
         </li>
         <li>RAP 1.1 RC1, based on Eclipse 3.4
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-RC1-target-3.4-20080520-1049.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-RC1-target-3.4-20080520-1049.zip">
             rap-1.1.0-RC1-target-3.4-20080520-1049.zip
           </a>
           <br />
@@ -59,7 +59,7 @@ $html = <<<EOHTML
           </a>
         </li>
         <li>RAP 1.1 M4, based on Eclipse 3.4
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-M4-target-3.4-20080506-1758.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-M4-target-3.4-20080506-1758.zip">
             rap-1.1.0-M4-target-3.4-20080506-1758.zip
           </a>
           <br />
@@ -68,12 +68,12 @@ $html = <<<EOHTML
           </a>
         </li>
         <li>RAP 1.1 M3, based on Eclipse 3.3
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-M3-target-3.3-20080407-1124.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-M3-target-3.3-20080407-1124.zip">
             rap-1.1.0-M3-target-3.3-20080407-1124.zip
           </a>
           <br />
           RAP 1.1 M3, based on Eclipse 3.4
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-M3-target-3.4-20080407-1124.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-M3-target-3.4-20080407-1124.zip">
             rap-1.1.0-M3-target-3.4-20080407-1124.zip
           </a>
           <br />
@@ -82,12 +82,12 @@ $html = <<<EOHTML
           </a>
         </li>
         <li>RAP 1.1 M2, based on Eclipse 3.3
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-M2-target-3.3-20080220-1610.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-M2-target-3.3-20080220-1610.zip">
             rap-1.1.0-M2-target-3.3-20080220-1610.zip
           </a>
           <br />
           RAP 1.1 M2, based on Eclipse 3.4
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-M2-target-3.4-20080220-1610.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-M2-target-3.4-20080220-1610.zip">
             rap-1.1.0-M2-target-3.4-20080220-1610.zip
           </a>
           <br />
@@ -97,12 +97,12 @@ $html = <<<EOHTML
           <br />
         </li>
         <li>RAP 1.1 M1, based on Eclipse 3.3
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-M1-target-3.3-20080107-1025.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-M1-target-3.3-20080107-1025.zip">
             rap-1.1.0-M1-target-3.3-20080107-1025.zip
           </a>
           <br />
           RAP 1.1 M1, based on Eclipse 3.4
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.1.0-M1-target-3.4-20080107-1025.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-M1-target-3.4-20080107-1025.zip">
             rap-1.1.0-M1-target-3.4-20080107-1025.zip
           </a>
           <br />
@@ -112,12 +112,12 @@ $html = <<<EOHTML
           <br />
         </li>
         <li>RAP 1.0.1 Service Release, based on Eclipse 3.2
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.0.1-R-target-3.2-20071207-1851.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.0.1-R-target-3.2-20071207-1851.zip">
             rap-1.0.1-R-target-3.2-20071207-1851.zip
           </a>
           <br />
           RAP 1.0.1 Service Release, based on Eclipse 3.3
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.0.1-R-target-3.3-20071207-1851.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.0.1-R-target-3.3-20071207-1851.zip">
             rap-1.0.1-R-target-3.3-20071207-1851.zip
           </a>
           <br />
@@ -127,12 +127,12 @@ $html = <<<EOHTML
           <br />
         </li>
         <li>RAP 1.0 Final, based on Eclipse 3.2
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.0.0-R-target-3.2-20071010-2241.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.0.0-R-target-3.2-20071010-2241.zip">
             rap-1.0.0-R-target-3.2-20071010-2241.zip
           </a>
           <br />
           RAP 1.0 Final, based on Eclipse 3.3
-          <a href="http://archive.eclipse.org/downloads/technology/rap/rap-1.0.0-R-target-3.3-20071010-2241.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.0.0-R-target-3.3-20071010-2241.zip">
             rap-1.0.0-R-target-3.3-20071010-2241.zip
           </a>
           <br />
