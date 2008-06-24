@@ -23,6 +23,9 @@ $html = <<<EOHTML
       <li><a href="#Tooling">Tooling</a></li>
     </ul></p>
 
+    <!-- horizontal space between entries -->
+    <tr><td>&nbsp</td><td>&nbsp</td></tr>
+
     <hr />
 
     <a name="General"></a>
@@ -40,12 +43,14 @@ $html = <<<EOHTML
           <p>
             Besides the <code>sandbox</code> there's now a new folder called
             <code>runtime</code> which contains the projects
-            <code>jface</code>,
-            <code>jface.databinding</code>,
-            <code>ui</code>,
-            <code>forms</code>,
-            <code>views</code>, and
-            <code>workbench</code>
+            <ul>
+              <li><code>jface</code>,</li>
+              <li><code>jface.databinding</code>,</li>
+              <li><code>ui</code>,</li>
+              <li><code>forms</code>,</li>
+              <li><code>views</code>, and</li>
+              <li><code>workbench</code></li>
+            </ul>
             which have been adopted to the Eclipse 3.4 code base.
             If you work against CVS, you have to replace the old versions of
             these projects with those from the runtime folder.
