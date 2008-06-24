@@ -15,7 +15,7 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed in the RC1 build 
       (May 20, 2008)
       which is now available for 
-      <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+      <a href="http://www.eclipse.org/rap/downloads">download</a>.
     </p>
 
 	<hr />
@@ -26,7 +26,7 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed in the RC2 build 
       (May 27, 2008)
       which is now available for 
-      <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+      <a href="http://www.eclipse.org/rap/downloads">download</a>.
     </p>
 
 	<hr />
@@ -37,7 +37,7 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed in the RC3 build 
       (June 3, 2008) 
       which is now available for 
-      <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+      <a href="http://www.eclipse.org/rap/downloads">download</a>.
     </p>
 
 	<hr />
