@@ -8,7 +8,7 @@ $html = <<<EOHTML
 <div id="maincontent">
 <div id="midcolumn">
   <h1>RAP 1.1 New and Noteworthy</h1>
-    <p>Here are some of the more noteworthy things that will be available in 
+    <p>Here are some of the more noteworthy things available in 
       RAP 1.1 (June 26, 2008) which is now available for 
       <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
     </p>
@@ -110,10 +110,9 @@ $html = <<<EOHTML
         <td width="20%">
           <b>Display#readAndDispatch()</b></td>
         <td width="80%">
-          <p>To more closely align with SWT and solve the problems with the
+          To more closely align with SWT and solve the problems with the
           existing mechanism for blocking UI operations, RWT new provides
           <code>Display#readAndDispatch()</code> and <code>Display#sleep()</code>.
-          </p>
           <p>The new implementation now strictly follows the apartment threading 
             model. This means that the life cycle is handled by a single thread, 
             spanning the lifetime of a session. As a result, all phase listeners 
