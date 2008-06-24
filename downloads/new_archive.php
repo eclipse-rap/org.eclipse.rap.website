@@ -121,8 +121,8 @@ $html = <<<EOHTML
             rap-1.0.1-R-target-3.3-20071207-1851.zip
           </a>
           <br />
-          <a href="http://www.eclipse.org/rap/noteworthy/news_10.php">
-            New &amp; Noteworthy
+          <a href="http://www.eclipse.org/rap/noteworthy/relnotes101.php">
+            Release Notes
           </a>
           <br />
         </li>
