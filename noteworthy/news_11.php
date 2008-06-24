@@ -44,12 +44,12 @@ $html = <<<EOHTML
             Besides the <code>sandbox</code> there's now a new folder called
             <code>runtime</code> which contains the projects
             <ul>
-              <li><code>jface</code>,</li>
-              <li><code>jface.databinding</code>,</li>
-              <li><code>ui</code>,</li>
-              <li><code>forms</code>,</li>
-              <li><code>views</code>, and</li>
-              <li><code>workbench</code></li>
+              <li><code>org.eclipse.rap.jface</code>,</li>
+              <li><code>org.eclipse.rap.jface.databinding</code>,</li>
+              <li><code>org.eclipse.rap.ui</code>,</li>
+              <li><code>org.eclipse.rap.ui.forms</code>,</li>
+              <li><code>org.eclipse.rap.ui.views</code>, and</li>
+              <li><code>org.eclipse.rap.ui.workbench</code></li>
             </ul>
             which have been adopted to the Eclipse 3.4 code base.
             If you work against CVS, you have to replace the old versions of
