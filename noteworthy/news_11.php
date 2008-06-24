@@ -37,6 +37,7 @@ $html = <<<EOHTML
             we decided to reorganize the structure of our source code repository
             to make it more concise.
             Thus we started to introduce different subfolders.
+          <p>
             Besides the <code>sandbox</code> there's now a new folder called
             <code>runtime</code> which contains the projects
             <code>jface</code>,
@@ -45,17 +46,18 @@ $html = <<<EOHTML
             <code>forms</code>,
             <code>views</code>, and
             <code>workbench</code>
-            which has been adopted to the Eclipse 3.4 code base.
+            which have been adopted to the Eclipse 3.4 code base.
             If you work against CVS, you have to replace the old versions of
             these projects with those from the runtime folder.
+          </p>
           <p>
             The CVS reorganization is an ongoing effort and is scheduled to be
             finished shortly after the RAP 1.1 release.
             If you want to stay tuned, you can set yourself CC to
             <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=201257">bug #201257</a>.
-            The updated team project set provided
-            <a href="http://www.eclipse.org/rap/cvs.php">here</a> contains all
-            projects you need for RAP development.
+            The team project sets provided 
+            <a href="http://www.eclipse.org/rap/cvs.php">here</a> are in sync
+            with the current CVS structure.
           </p>
         <td/>
       </tr>
