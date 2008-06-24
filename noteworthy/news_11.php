@@ -105,7 +105,8 @@ $html = <<<EOHTML
           <br />
           <img style="margin:5px" src="browser-exec.jpeg" />
           <br />
-          Please read the JavaDoc for further details.
+          Please read the <a href="http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.rap.help/help/html/reference/api/org/eclipse/swt/browser/Browser.html#execute(java.lang.String)">JavaDoc</a>
+          for further details.
         <td/>
       </tr>
 	
