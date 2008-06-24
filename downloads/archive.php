@@ -111,6 +111,21 @@ $html = <<<EOHTML
           </a>
           <br />
         </li>
+        <li>RAP 1.0.1 Service Release for Eclipse 3.2
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.2-20071207-1851.zip">
+            rap-1.0.1-R-target-3.2-20071207-1851.zip
+          </a>
+          <br />
+          RAP 1.0.1 Service Release for Eclipse 3.3
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0.1-R-target-3.3-20071207-1851.zip">
+            rap-1.0.1-R-target-3.3-20071207-1851.zip
+          </a>
+          <br />
+          <a href="http://www.eclipse.org/rap/noteworthy/news_10.php">
+            New &amp; Noteworthy
+          </a>
+          <br />
+        </li>
         <li>RAP 1.0 Final for Eclipse 3.2
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.0-R-target-3.2-20071010-2241.zip">
             rap-1.0-R-target-3.2-20071010-2241.zip
