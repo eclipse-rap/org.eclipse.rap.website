@@ -82,8 +82,8 @@ $html = <<<EOHTML
           Web applications by using the Eclipse development model, plug-ins 
           with the well known Eclipse workbench extenstion points, JFace, and a 
           widget toolkit with SWT API (using <a href="http://qooxdoo.org">
-          qooxdoo</a> for the client-side presentation). The project has 
-          graduated from incubation and released its 1.0 release.
+          qooxdoo</a> for the client-side presentation). The project is part
+          of the Ganymede release train and released its 1.1 release.
         <br />
         <br />
         <a href="about.php">Learn more ...</a>
