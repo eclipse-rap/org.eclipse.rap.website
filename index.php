@@ -128,7 +128,7 @@ $html = <<<EOHTML
         <a href="http://www.java-forum-stuttgart.de/abstracts.html#B7" 
           target="_blank">
         Java Forum Stuttgart 2008, July 3rd</a>
-        <span><br />Erfahrungsbericht über die Anwendungs- entwicklung mit Eclipse RAP</span>
+        <span><br />Erfahrungs<wbr>bericht über die Anwendungs<wbr>entwicklung mit Eclipse RAP</span>
       </li>
       <li>
         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_2008_-_Ganymede_Edition/Karlsruhe" 
