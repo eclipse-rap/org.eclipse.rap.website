@@ -524,10 +524,10 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
           tests that require an OSGi environment up and running.
           <p>The snippet below shows how a RAP JUnit test case looks like.
           To compile such a test, the containing plug-in needs a dependency on
-          <code>org.eclipse.rap.junit</code>. This allows to use the RAPTestCase
-          that provides UI-Updates during the tests. If you don't want to
-          see UI-updates during the test runs, you can directly use 
-          <code>org.junit.TestCase</code> instead.</p>
+          <code>org.eclipse.rap.junit</code>. This allows to use the 
+          <code>RAPTestCase</code> that provides UI-Updates during the tests. 
+          If you don't want to see UI-updates during the test runs, you can 
+          directly use <code>org.junit.TestCase</code> instead.</p>
           <p>In order to run a test, choose <strong>Run As</strong> &gt; 
           <strong>RAP JUnit Test</strong> from the editors' context menu.
           <pre>
