@@ -148,18 +148,6 @@ $html = <<<EOHTML
         Entwicklertag, Karlsruhe, May 7</a>
         <span><br />RAP 1.1 and single sourcing for RCP/RAP</span>
       </li>
-      <li>
-        <a href="http://www.eclipsist.org/eclipsist/2008/speech.do?page=frank_appel_s01" 
-          target="_blank">
-        EclipseIST, Istanbul, April 29</a>
-        <span><br />RAP - Eclipse style development for the web</span>
-      </li>
-      <li>
-        <a href="http://it-republik.de/jaxenter/jax/sessions.php?language=de&tid=762#session-18" 
-          target="_blank">
-        JAX, Wiesbaden, April 24</a>
-        <span><br />RAP 1.1 and single sourcing for RCP/RAP</span>
-      </li>
     </div>
     
   </div>  
