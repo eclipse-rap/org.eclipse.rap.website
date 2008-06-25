@@ -11,52 +11,23 @@ $html = <<<EOHTML
     <p>Here are some of the more noteworthy things available in the respective 
       builds.</p>
     <ul>
-      <li><a href="news_11RC.php">RAP 1.1 RC1 - RC4</a>
+      <li><a href="news_11.php">RAP 1.1 Release</a>
         <p style="margin-top: 5px">
-          Lists all isues that were resolved in the RC builds.    
-          <br />
-          All changes documented here can be obtained from 
-          <a href="../cvs.php">CVS HEAD</a>.             
-        </p>
-      </li>
-      <li><a href="news_11M4.php">RAP 1.1 M4</a>
-        <p style="margin-top: 5px">
-          Lists some of the more noteworthy things that will be available in 
-          milestone build M4 (May 6, 2008) which is available for 
-          <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
-        </p>
-      </li>
-      <li><a href="news_11M3.php">RAP 1.1 M3</a>
-        <p style="margin-top: 5px">
-          Lists some of the more noteworthy things that will be available in 
-          milestone build M3 (April 7, 2008) which is available for 
-          <a href="http://www.eclipse.org/rap/downloads.php">download</a>.             
-        </p>
-      </li>
-      <li><a href="news_11M2.php">RAP 1.1 M2</a>
-        <p style="margin-top: 5px">
-          Lists some of the more noteworthy things that will be available in 
-          milestone build M2 (February 20, 2008) which is available for 
-          <a href="http://www.eclipse.org/rap/archive.php">download</a>.
-        </p>
-      </li>
-      <li><a href="news_11M1.php">RAP 1.1 M1</a>
-        <p style="margin-top: 5px">
-          Lists some of the more noteworthy things that will be available in 
-          milestone build M1 (Januar 7, 2008) which is available for 
-          <a href="http://www.eclipse.org/rap/archive.php">download</a>.
-        </p>
+          Listed are the more noteworthy things available in the second 
+          release build (June 25, 2008) which is available for 
+          <a href="http://www.eclipse.org/rap/downloads/index.php">download</a>.
+        </p>        
       </li>
       <li><a href="relnotes101.php">RAP 1.0.1 Service Release</a>
         <p style="margin-top: 5px">
           A summary of the improvements in the 1.0.1 service release (December 
           7, 2007) which is available for 
-          <a href="http://www.eclipse.org/rap/downloads.php">download</a>.
+          <a href="http://www.eclipse.org/rap/downloads/archive.php">download</a>.
         </p>        
       </li>
       <li><a href="news_10.php">RAP 1.0 Release</a>
         <p style="margin-top: 5px">
-          Listed are some of the more noteworthy things available in the first 
+          Listed are the more noteworthy things available in the first 
           release build (October 10, 2007) which is available for 
           <a href="http://www.eclipse.org/rap/downloads/archive.php">download</a>.
         </p>        
