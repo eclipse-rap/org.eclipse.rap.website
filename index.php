@@ -125,6 +125,24 @@ $html = <<<EOHTML
      <h6>Meet the RAP Team</h6>
      <ul>
       <li>
+        <a href="http://www.java-forum-stuttgart.de/abstracts.html#B7" 
+          target="_blank">
+        Java Forum Stuttgart 2008, July 3rd
+        <span><br />Erfahrungsbericht über die Anwendungsentwicklung mit Eclipse RAP</span>
+      </li>
+      <li>
+        <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_2008_-_Ganymede_Edition/Karlsruhe" 
+          target="_blank">
+        DemoCamp Ganymede Edition, Karlsruhe, June 26th</a>
+        <span><br />Neuerungen in Eclipse Ganymede: die Rich Ajax Platform</span>
+      </li>
+      <li>
+        <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_2008_-_Ganymede_Edition/Portland" 
+          target="_blank">
+        DemoCamp Ganymede Edition, Portland, June 24th</a>
+        <span><br />Java-based web-apps with Eclipse RAP</span>
+      </li>
+      <li>
         <a href="http://www.andrena.de/Entwicklertag/2008/Programm/" 
           target="_blank">
         Entwicklertag, Karlsruhe, May 7</a>
@@ -141,24 +159,6 @@ $html = <<<EOHTML
           target="_blank">
         JAX, Wiesbaden, April 24</a>
         <span><br />RAP 1.1 and single sourcing for RCP/RAP</span>
-      </li>
-      <li>
-        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=318"
-          target="_blank">
-        EclipseCon, Santa Clara, March 17</a>
-        <span><br />Getting started with RAP development</span>
-      </li>
-      <li>
-        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=233"
-          target="_blank">
-        EclipseCon, Santa Clara, March 17</a>
-        <span><br />From RCP to RCP/RAP</span>
-      </li>
-      <li>
-        <a href="http://www.eclipsecon.org/2008/index.php?page=sub/&id=199"
-          target="_blank">
-        EclipseCon, Santa Clara, March 19</a>
-        <span><br />RAP the web</span>
       </li>
     </div>
     
