@@ -9,7 +9,7 @@ $html = <<<EOHTML
 <div id="midcolumn">
   <h1>RAP 1.1 New and Noteworthy</h1>
     <p>Here are some of the more noteworthy things available in 
-      RAP 1.1 (June 26, 2008) which is now available for 
+      RAP 1.1 (June 25, 2008) which is now available for 
       <a href="http://www.eclipse.org/rap/downloads">download</a>.
     </p>
     <p>
