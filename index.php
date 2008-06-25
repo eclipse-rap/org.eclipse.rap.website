@@ -142,12 +142,6 @@ $html = <<<EOHTML
         Ganymede DemoCamp, Portland, June 24th</a>
         <span><br />Java-based web-apps with Eclipse RAP</span>
       </li>
-      <li>
-        <a href="http://www.andrena.de/Entwicklertag/2008/Programm/" 
-          target="_blank">
-        Entwicklertag, Karlsruhe, May 7</a>
-        <span><br />RAP 1.1 and single sourcing for RCP/RAP</span>
-      </li>
     </div>
     
   </div>  
