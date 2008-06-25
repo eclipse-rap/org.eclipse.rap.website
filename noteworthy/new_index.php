@@ -14,7 +14,7 @@ $html = <<<EOHTML
       <li><a href="news_11.php">RAP 1.1 Release</a>
         <p style="margin-top: 5px">
           Listed are the more noteworthy things available in the second 
-          release build (June 26, 2008) which is available for 
+          release build (June 25, 2008) which is available for 
           <a href="http://www.eclipse.org/rap/downloads/index.php">download</a>.
         </p>        
       </li>

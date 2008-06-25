@@ -526,10 +526,10 @@ public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
           To compile such a test, the containing plug-in needs a dependency on
           <code>org.eclipse.rap.junit</code>. This allows to use the RAPTestCase
           that provides UI-Updates during the tests. If you don't want to
-          see UI-updates during the test runs, you can directly use org.junit.TestCase
-          instead.
-          In order to run a test, choose <strong>Run As</strong> > <strong>RAP JUnit Test</strong>
-          from the editors' context menu.
+          see UI-updates during the test runs, you can directly use 
+          <code>org.junit.TestCase</code> instead.</p>
+          <p>In order to run a test, choose <strong>Run As</strong> &gt; 
+          <strong>RAP JUnit Test</strong> from the editors' context menu.
           <pre>
 public class RapJUnitTest extends RAPTestCase {
   public void testOpenView() {
