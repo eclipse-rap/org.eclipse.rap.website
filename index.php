@@ -133,13 +133,13 @@ $html = <<<EOHTML
       <li>
         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_2008_-_Ganymede_Edition/Karlsruhe" 
           target="_blank">
-        DemoCamp Ganymede Edition, Karlsruhe, June 26th</a>
+        Ganymede DemoCamp, Karlsruhe, June 26th</a>
         <span><br />Neuerungen in Eclipse Ganymede: die Rich Ajax Platform</span>
       </li>
       <li>
         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_2008_-_Ganymede_Edition/Portland" 
           target="_blank">
-        DemoCamp Ganymede Edition, Portland, June 24th</a>
+        Ganymede DemoCamp, Portland, June 24th</a>
         <span><br />Java-based web-apps with Eclipse RAP</span>
       </li>
       <li>
