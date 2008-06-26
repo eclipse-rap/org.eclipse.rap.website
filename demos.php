@@ -128,7 +128,7 @@ $html = <<<EOHTML
     	<li>Choose from the entire Eclipse.org portfolio</li>
         <li>Add your favorite 3rd party plugins</li>
         <li>Get all in a single file download</li>
-        <li>Get Eclipse 3.3 Europa</li>
+        <li>Get Eclipse 3.4 Ganymede</li>
       </ul>
       <p>Access the entire eclipse.org portfolio plus a large selection of 
       the most important open-source plugins, tested for compatibility and 
