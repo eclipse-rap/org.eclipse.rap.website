@@ -108,7 +108,7 @@ default values, which starts the target installation process.
 
 <p>After the installation finished you are prepared to work with RAP.
 For your first steps you may read the
-<a href="http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.rap.help/help/html/getting-started/examples.html">RAP Examples</a>
+<a href="http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.rap.help/help/html/getting-started/examples.html">RAP Examples</a>
 topic and/or the other chapters of the getting started section.
 </p>
 
