@@ -25,7 +25,7 @@ $html = <<<EOHTML
       to answer it again. Before posting a question to the newsgroup, please 
       <a href="http://dev.eclipse.org/newslists/news.eclipse.technology.rap/maillist.html">
       browse</a> or 
-      <a href="http://www.eclipse.org/search/search.cgi?cmd=Search%21&form=extended&wf=574a74&ps=10&m=all&t=5&ul=%2Fnewslists%2Fnews.eclipse.technology.rap&wm=wrd&t=News&t=Mail">  
+      <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">  
       search</a> the newsgroup archives online. To post a question, you will 
       <a href="http://www.eclipse.org/newsgroups/register.php">require a 
       password</a> first.</p>
@@ -58,13 +58,7 @@ $html = <<<EOHTML
     <h3>Useful links</h3>
     <ul>
       <li>
-        Newsgroup Search:
-        <a href="http://www.eclipse.org/search/search.cgi?cmd=Search%21&form=extended&wf=574a74&ps=10&m=all&t=5&ul=%2Fnewslists%2Fnews.eclipse.technology.rap&wm=wrd&t=News&t=Mail">
-          eclipse.technology.rap
-        </a>
-      </li>
-      <li>
-        Newsgroup web user interface (forum like):
+        Newsgroup web user interface (forum like, including search):
         <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
           eclipse.technology.rap
         </a>  
