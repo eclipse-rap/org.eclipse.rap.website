@@ -33,6 +33,9 @@
           <br />
           Please search for duplicates first. For defects provide details on 
           how to reproduce. For enhancements please outline a use case.
+          <br />
+          Further information on how to write bug reports can be found in the
+          <a href="http://wiki.eclipse.org/RAP_Bug_Reporting_Howto">RAP Bug Reporting Howto</a>
         </li>          
       </ul>
     </div>
