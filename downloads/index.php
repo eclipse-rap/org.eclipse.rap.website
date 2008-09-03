@@ -73,12 +73,12 @@ $html = <<<EOHTML
           <a href="../noteworthy/news_11.php">New &amp; Noteworthy</a>
         </li>
       </ul>
-      <p style="margin: 10px"><b>1.1.1 I-Build</b></p>
+      <p style="margin: 10px"><b>1.1.1 RC-Build</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.1-I-target-3.4-20080714-1028.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.1-RC1-target-3.4-20080903-2003.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.1-I-target-3.4-20080714-1028.zip
+            rap-1.1.1-RC1-target-3.4-20080903-2003.zip
           </a>
           based on Eclipse 3.4 &nbsp;&nbsp;
         </li>
