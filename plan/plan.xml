@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+
+<!--  Use this to test local rendering in firefox -->
+<!-- <?xml-stylesheet type="text/xsl" href="project-plan-render.xsl"?>  -->
+<plan 
+  plan-format="1.0" 
+  xmlns="http://www.eclipse.org/project/plan"
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	name="Rich Ajax Platform (RAP)">
+	<release projectid="technology.rap" version="1.2" />
+	<introduction>
+		<html:div>
+      <html:div style="align:center;"><html:big><html:b>Preliminary</html:b></html:big></html:div>
+      The RAP 1.2 project plan is still in preliminary state and not yet agreed upon by all parties.
+      <html:hr/>
+      The RAP project enables developers to build rich, Ajax-enabled Web 
+      applications by using the Eclipse development model, plug-ins with 
+      the well known Eclipse workbench extenstion points, JFace, and a 
+      widget toolkit with SWT API.
+    </html:div>
+	</introduction>
+	<release_deliverables>
+		<html:div>
+		  <html:ul>
+		    <html:li>
+		      <html:strong>Tooling</html:strong> (includes tool for debugging and 
+		      testing, runtime, documentation) available as Update Site
+		    </html:li>
+		    <html:li>
+		      <html:strong>Runtime</html:strong> (target platform, includes source) 
+		      available as downloadable archive
+		    </html:li>
+		  </html:ul>
+    </html:div>
+	</release_deliverables>
+	<release_milestones>
+		<preamble>
+			<html:div>
+        Release milestones will be occurring at roughly 6 week intervals,
+        and will be aligned with the
+        <html:a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">
+        Galileo Simultaneous Release</html:a> train.
+        Milestone names start with M2 in order to clarify this
+        relationship.
+			</html:div>
+		</preamble>
+    <milestone date="10/1/2008" milestone="M2"><html:div>1.2 M2</html:div></milestone>
+    <milestone date="11/12/2008" milestone="M3"><html:div>1.2 M3</html:div></milestone>
+    <milestone date="12/29/2008" milestone="M4"><html:div>1.2 M4</html:div></milestone>
+    <milestone date="2/6/2009" milestone="M5"><html:div>1.2 M5</html:div></milestone>
+    <milestone date="3/18/2009" milestone="M6"><html:div>1.2 M6 (API Freeze)</html:div></milestone>
+    <milestone date="5/5/2009" milestone="M7"><html:div>1.2 M7 (Feature Freeze)</html:div></milestone>
+    <milestone date="5/19/2009" milestone="RC1"><html:div>1.2 RC1</html:div></milestone>
+    <milestone date="5/26/2009" milestone="RC2"><html:div>1.2 RC2</html:div></milestone>
+    <milestone date="6/2/2009" milestone="RC3"><html:div>1.2 RC3</html:div></milestone>
+    <milestone date="6/9/2009" milestone="RC4"><html:div>1.2 RC4</html:div></milestone>
+		<postamble>
+			<html:div>
+        <!-- 
+        A detailed <a href="http://wiki.eclipse.org/DSDP/TM/3.1_Ramp_down_Plan">
+        TM 3.1 Ramp down Plan</a> towards the release is available especially for the Eclipse 
+        <a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">
+        Galileo Simultaneous Release</a> integration.
+        -->
+        <p>The target date for availability of RAP 1.2 is
+        Wednesday June 24, 2009 (with Galileo)</p>
+			</html:div>
+		</postamble>
+	</release_milestones>
+	<target_environments>
+		<html:div>
+      <html:p>
+      The server-side part of the Rich Ajax Platform 1.2 depends upon on 
+      Equinox 3.5.
+      For this release, the RAP sources will be written and compiled
+      against version 1.4.2 of the Java Platform APIs (i.e., Java 2 Platform,
+      Release 1.4.2 SE), and designed to run on version 1.4.2 of the Java
+      Runtime Environment, Standard Edition.
+      </html:p>
+      <html:p>
+      The client-side reference implementation depends upon 
+      <html:a href="http://qooxdoo.org">qooxdoo</html:a>.
+      For this release the following web browsers/rendering engines will be
+      supported
+      <html:ul>
+	      <html:li>Internet Explorer >= 7.0</html:li>
+	      <html:li>Gecko (i.e. Firefox, Netscape)</html:li>
+	      <html:li>Webkit (i.e. Safari, Google Chrome)</html:li>
+      </html:ul>
+      </html:p>
+		</html:div>
+		<internationalization>
+			<html:div>
+        The Rich Ajax Platform is designed as the basis for internationalized
+        products. The user interface elements provided by the RAP
+        components, including dialogs and error messages, are externalized. The
+        English strings are provided as the default resource bundles.
+      </html:div>
+		</internationalization>
+	</target_environments>
+	<compatibility_with_previous_releases>
+		<html:div>
+		RAP 1.2 will be backward compatible with RAP 1.1.
+		</html:div>
+	</compatibility_with_previous_releases>
+	<themes_and_priorities>
+		<preamble>
+			<html:div></html:div>
+		</preamble>
+		<theme name="Reduce the gap between RWT and SWT">
+		  <!-- bugzilla status whiteboard: extend-rwt -->
+			<description>
+			  <html:div>
+				<html:p>As RWT implements a subset of the SWT API, we aim to implement 
+				functionality yet missing from RWT.
+				</html:p>
+				<html:p>The includes to make use of the newly implemented API in higher 
+				layers (e.g. Workbench, JFace).
+				</html:p>
+        </html:div>
+			</description>
+			<committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=Technology&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=extend-rwt&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+			  <html:div>
+				<html:ul>
+				  <html:li>DateTime widget</html:li>
+				  <html:li>ExpandBar widget</html:li>
+				  <html:li>Scale widget</html:li>
+				  <html:li>MessageBox</html:li>
+				  <html:li>Cursor resource</html:li>
+				  <html:li>Key and Traversal events</html:li>
+				  <html:li>JFace Cell Editors</html:li>
+				</html:ul>
+			  </html:div>
+			</committed>
+			<proposed>
+			  <html:div>
+        <html:ul>
+          <html:li>Drag &amp; Drop</html:li>
+        </html:ul>
+			  </html:div>
+			</proposed>
+			<deferred>
+			</deferred>
+		</theme>
+		<theme name="Design for Extensibility">
+			<description>
+			  <html:div>
+			    This theme is about the extensibility of the RAP platform to achieve 
+			    independance from a certain client technology.
+			  </html:div>
+			</description>
+			<committed>
+        <html:div>
+        <html:ul>
+          <html:li>Specify and implement an exchangable client/server 
+            synchronization mechanism.</html:li>
+        </html:ul>
+        </html:div>
+			</committed>
+			<proposed>
+			</proposed>
+			<deferred>
+			</deferred>
+		</theme>
+		<theme name="New Web Centric Features">
+			<description>
+			  <html:div>
+			  </html:div>
+			</description>
+			<committed>
+        <html:div>
+        <html:ul>
+          <html:li>Web Look &amp; Feel for the Workbench (Exemplary implmentation and 
+          API to plug in other implementations)</html:li>
+          <html:li>Extend themeability of existing widgets</html:li>
+        </html:ul>
+        </html:div>
+			</committed>
+			<proposed>
+        <html:div>
+        <html:ul>
+          <html:li>More flexible widget decorations (e.g. rounded corners)</html:li>
+          <html:li>Enable RAP applications to run on multiple browser-tabs, in 
+            portlet environments</html:li>
+        </html:ul>
+        </html:div>
+			</proposed>
+			<deferred>
+			</deferred>
+		</theme>
+	</themes_and_priorities>
+</plan>
