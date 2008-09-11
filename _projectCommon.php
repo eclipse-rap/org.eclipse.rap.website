@@ -37,7 +37,7 @@ EOBRANDING;
 
   $Nav->addNavSeparator("Contributors", "/rap/sandbox.php", "_self", 1);
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Sandbox", "/rap/sandbox.php", "_self", 1);
-  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Plan (wiki)", "http://wiki.eclipse.org/RapPlan", "_self", 1);	
+  $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Plan", "http://www.eclipse.org/projects/project-plan.php?projectid=technology.rap", "_self", 1);	
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;CVS", "/rap/cvs.php", "", 1);
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;Mailing List (ext)", "https://dev.eclipse.org/mailman/listinfo/rap-dev", "_self", 1);
 ?>
