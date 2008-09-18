@@ -113,7 +113,7 @@ $html = <<<EOHTML
 	      <ul>
           <li>
             <a href="http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-ganymede-pt2.html" target="_blank">
-            Using Eclipse Ganymede to develop for the desktop, Web and mobile devices, 
+            Article: Using Eclipse Ganymede to develop for the desktop, Web and mobile devices, 
             Part 2: Developing for the Rich Client Platform, the Ganymede way</a>
             IBM developerWorks, Sep 9, 2008, Suresh Krishna & Trebor Fenstermaker
           </li>
