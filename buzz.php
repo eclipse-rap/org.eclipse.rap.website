@@ -20,13 +20,13 @@ $html = <<<EOHTML
 		<h3>RAP in the News</h3>
 	    <ul>
 		  <li>
-	        <a href="http://www.infoq.com/news/2008/06/eclipse-ganymede-rap" target="_blank">
-	       	Eclipse Ganymede: An in-depth look at RAP (Rich Ajax Platform)</a> InfoQ (Ryan Slobojan)
-          </li>
+	      <a href="http://www.infoq.com/news/2008/06/eclipse-ganymede-rap" target="_blank">
+	      Eclipse Ganymede: An in-depth look at RAP (Rich Ajax Platform)</a> InfoQ (Ryan Slobojan)
+      </li>
 		  <li>
 	        <a href="http://ajaxian.com/archives/ajax-meet-osgi-expanding-universes-collide-with-eclipse-rap-10" target="_blank">
 	       	Ajax meet OSGi: Expanding Universes Collide with Eclipse RAP 1.0</a> ajaxian.com (Dion Almaer)
-          </li>
+      </li>
 		  <li>
 	        <a href="http://ianskerrett.wordpress.com/2007/10/15/announcing-rap-10-the-other-press-release/" target="_blank">
 	       	Announcing RAP 1.0 - the other press release</a> wordpress (Ian Skerrett)
@@ -111,69 +111,74 @@ $html = <<<EOHTML
         <a name="articles"></a> 
         <h3>Current Articles, Blogs, Slides and more</h3>
 	      <ul>
-            <li>
-              <a target="_blank" href="http://www.oio.de/public/opensource/eclipse-rap/tutorial-eclipse-rich-application-plattform-portierung.htm">
-              Article (only in German): Einsatzm&ouml;glichkeiten der Eclipse RAP</a> April 2008, Steffen Sch&auml;fer
-            </li>
-            <li>
-              <a target="_blank" href="http://live.eclipse.org/node/450">
-              Webinar: Rich AJAX Platform (RAP) Project</a> Feb 13, 2008, Jochen Krause
-            </li>
-            <li>
-              <a target="_blank" href="http://www.redmonk.com/cote/2007/12/12/eclipse-rap-overview-and-demo-screencast">
-              Eclipse RAP Overview and Demo Screencast</a> RedMonk, Dec 12, 2007, Jochen Krause
-            </li>
-            <li>
-              <a target="_blank" href="http://www.ibm.com/developerworks/library/os-eclipse-richajax2/index.html">
-              Article: Web 2.0, the Eclipse way, Part II</a> IBM developerWorks, Dec 11, 2007, Chris Aniszczyk & Benjamin Muskalla
-            </li>
-            <li>
-              <a target="_blank" href="http://www.devx.com/webdev/Article/36101/0/page/1">
-              Article: The Rich get Richer: RAP builds on RCP</a> DevX, Nov 27, 2007, Riccardo Govoni (Google)
-            </li>
-            <li>
-              <a target="_blank" href="http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax1/?ca=dgr-eclipse-1">
-              Article: Web 2.0, the Eclipse way, Part I</a> IBM developerWorks, Oct 23, 2007, Chris Aniszczyk & Benjamin Muskalla
-            </li>
-			<li>
+          <li>
+            <a href="http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-ganymede-pt2.html" target="_blank">
+            Using Eclipse Ganymede to develop for the desktop, Web and mobile devices, 
+            Part 2: Developing for the Rich Client Platform, the Ganymede way</a>
+            IBM developerWorks, Sep 9, 2008, Suresh Krishna & Trebor Fenstermaker
+          </li>
+          <li>
+            <a target="_blank" href="http://www.oio.de/public/opensource/eclipse-rap/tutorial-eclipse-rich-application-plattform-portierung.htm">
+            Article (only in German): Einsatzm&ouml;glichkeiten der Eclipse RAP</a> April 2008, Steffen Sch&auml;fer
+          </li>
+          <li>
+            <a target="_blank" href="http://live.eclipse.org/node/450">
+            Webinar: Rich AJAX Platform (RAP) Project</a> Feb 13, 2008, Jochen Krause
+          </li>
+          <li>
+            <a target="_blank" href="http://www.redmonk.com/cote/2007/12/12/eclipse-rap-overview-and-demo-screencast">
+            Eclipse RAP Overview and Demo Screencast</a> RedMonk, Dec 12, 2007, Jochen Krause
+          </li>
+          <li>
+            <a target="_blank" href="http://www.ibm.com/developerworks/library/os-eclipse-richajax2/index.html">
+            Article: Web 2.0, the Eclipse way, Part II</a> IBM developerWorks, Dec 11, 2007, Chris Aniszczyk & Benjamin Muskalla
+          </li>
+          <li>
+            <a target="_blank" href="http://www.devx.com/webdev/Article/36101/0/page/1">
+            Article: The Rich get Richer: RAP builds on RCP</a> DevX, Nov 27, 2007, Riccardo Govoni (Google)
+          </li>
+          <li>
+            <a target="_blank" href="http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax1/?ca=dgr-eclipse-1">
+            Article: Web 2.0, the Eclipse way, Part I</a> IBM developerWorks, Oct 23, 2007, Chris Aniszczyk & Benjamin Muskalla
+          </li>
+    			<li>
 	          <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204737" target="_blank">
               Community: RAP Creation Review Votes</a> eclipse.org, Oct 10, 2007 - "+2 Simply a awesome project!"
-            </li>
-			<li>
+          </li>
+		    	<li>
 	          <a href="http://www.eclipse.org/projects/slides/rap_creation_review.pdf" target="_blank">
               Slides: Creation Review Slides</a> eclipse.org, Oct 3, 2007
-            </li>
-            <li>
+          </li>
+          <li>
 	          <a href="http://www.innoopract.com/fileadmin/user_upload/Dokumente/Web-enabled_RCP_Applications_with_the_Rich_Ajax_Platform_pdf.pdf" target="_blank">
 	          Article: RCP goes Web 2.0</a> September 28, 2007
-            </li>
-			<li>
+          </li>
+			    <li>
 	          <a href="http://www.podtech.net/home/4204/innoopract-on-eclipse-eclipse-rap-osgi-and-component-coding-sponsored-development-in-open-source" target="_blank">
 	          Podcast: Innoopract CEO on RAP, Eclipse Distributions, OSGi and more</a> September 24, 2007
-            </li>
-            <li>
+          </li>
+          <li>
 	          <a href="http://eclipsenuggets.blogspot.com/2007/09/see-how-you-can-make-rcp-application.html" target="_blank">
               Blog / Video: See how you can make an RCP Application run in your browser</a> Sept 11, 2007, Elias Volanakis 
-            </li>
-            <li>
+          </li>
+          <li>
 	          <a href="http://mea-bloga.blogspot.com/2007/09/web-development-revisited.html" target="_blank">
               Blog: Web development revisited</a> Sept 6, 2007, Chris Aniszczyk 
-            </li>	            
-			<li>
+          </li>	            
+    			<li>
 	          <a href="http://www.eweek.com/article2/0,1759,2100984,00.asp" target="_blank">
               Article: Innoopract - The Company Behind RAP</a> eweek, March 6, 2007
-            </li>
-            <li>
-              <a href="http://eclipsezilla.eclipsecon.org/php/attachment.php?bugid=3833" target="_blank">
+          </li>
+          <li>
+            <a href="http://eclipsezilla.eclipsecon.org/php/attachment.php?bugid=3833" target="_blank">
               Slides: eclipse rich ajax platform (RAP)</a> EclipseCon, March 2007, 
-            </li>
-            <li>
-              <img src="images/jax.png" align="middle" />
-              <a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">
+          </li>
+          <li>
+            <img src="images/jax.png" align="middle" />
+            <a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">
               Community: RAP wins european innovation award</a> JAX, 2006
-            </li>
-            
-          </ul> 
+          </li>
+        </ul> 
 	</div>
   </div>
 </div>
