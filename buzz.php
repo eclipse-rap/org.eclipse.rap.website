@@ -119,7 +119,8 @@ $html = <<<EOHTML
           </li>
           <li>
             <a target="_blank" href="http://www.java-forum-stuttgart.de/abstracts.html#B7">
-            Slides (only in German): Erfahrungsbericht über die Anwendungsentwicklung mit Eclipse RAP</a> July 2008, Stefan R&ouml;ck & Frank Appel
+            Slides (only in German): Erfahrungsbericht über die Anwendungsentwicklung mit Eclipse RAP</a>
+            Java Forum Stuttgart, July 2008, Stefan R&ouml;ck & Frank Appel
           </li>
           <li>
             <a target="_blank" href="http://www.oio.de/public/opensource/eclipse-rap/tutorial-eclipse-rich-application-plattform-portierung.htm">
