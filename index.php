@@ -141,7 +141,7 @@ $html = <<<EOHTML
       <li>
         <a href="http://www.java-forum-stuttgart.de/abstracts.html#B7" 
           target="_blank">
-          Java Forum Stuttgart 2008, July 3rd</a>
+          Java Forum Stuttgart 2008, July 3<sup>rd</sup></a>
         <span>
           <br />
           Erfahrungs<wbr>bericht über die Anwendungs<wbr>entwicklung mit 
