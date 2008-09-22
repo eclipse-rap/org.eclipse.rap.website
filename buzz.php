@@ -118,6 +118,10 @@ $html = <<<EOHTML
             IBM developerWorks, Sep 9, 2008, Suresh Krishna & Trebor Fenstermaker
           </li>
           <li>
+            <a target="_blank" href="http://www.java-forum-stuttgart.de/abstracts.html#B7">
+            Slides (only in German): Erfahrungsbericht über die Anwendungsentwicklung mit Eclipse RAP</a> July 2008, Stefan R&ouml;ck & Frank Appel
+          </li>
+          <li>
             <a target="_blank" href="http://www.oio.de/public/opensource/eclipse-rap/tutorial-eclipse-rich-application-plattform-portierung.htm">
             Article (only in German): Einsatzm&ouml;glichkeiten der Eclipse RAP</a> April 2008, Steffen Sch&auml;fer
           </li>
