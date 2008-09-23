@@ -11,7 +11,7 @@ $html = <<<EOHTML
     <p>Here are some of the more noteworthy things available in the respective 
       builds.</p>
     <ul>
-      <li><a href="relnotes111.php">RAP 1.0.1 Service Release</a>
+      <li><a href="relnotes111.php">RAP 1.1.1 Service Release</a>
         <p style="margin-top: 5px">
           A summary of the improvements in the 1.1.1 service release (September 
           23, 2007) which is available for 
