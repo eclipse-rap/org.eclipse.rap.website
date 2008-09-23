@@ -23,7 +23,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
                   Jordi Böhme López (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
 				</li>
                 <li>
-                  Ivan Furnadjiev(<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Ivan Furnadjiev (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
                 </li>
 				<li>
                   R&uuml;diger Herrmann (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
