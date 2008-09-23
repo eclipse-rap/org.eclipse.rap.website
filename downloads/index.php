@@ -35,6 +35,7 @@ $html = <<<EOHTML
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.1-SR1-site-20080917-1637.zip">
             <img src="../images/icon_save.gif" alt="Update Site Zip"/>
+            &nbsp;&nbsp;
             rap-sdk-1.1.1-SR1-site-20080917-1637.zip
           </a>
           for Eclipse 3.3 and 3.4
@@ -68,6 +69,7 @@ $html = <<<EOHTML
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.0-R-target-3.4-20080613-1055.zip">
             <img src="../images/icon_save.gif" />
+            &nbsp;&nbsp;
             rap-1.1.0-R-target-3.4-20080613-1055.zip
           </a>
           based on Eclipse 3.4 &nbsp;&nbsp;
@@ -80,6 +82,7 @@ $html = <<<EOHTML
         <li>
           <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.1-SR1-target-3.4-20080917-1625.zip">
             <img src="../images/icon_save.gif" />
+            &nbsp;&nbsp;
             rap-1.1.1-SR1-target-3.4-20080917-1625.zip
           </a>
           based on Eclipse 3.4 &nbsp;&nbsp;
