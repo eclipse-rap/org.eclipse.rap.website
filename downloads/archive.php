@@ -31,7 +31,7 @@ $html = <<<EOHTML
 	  <h3>Target Platform Builds</h3>
 	  <ul>
         <li>RAP 1.1 Release, based on Eclipse 3.4&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/technology/rap/downloads/rap-1.1.0-R-target-3.4-20080613-1055.zip">
+          <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-R-target-3.4-20080613-1055.zip">
             rap-1.1.0-R-target-3.4-20080613-1055.zip
           </a>
 	      <br />
