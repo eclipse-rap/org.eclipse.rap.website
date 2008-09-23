@@ -22,6 +22,10 @@ $html = <<<EOHTML
     available for 
     <a href="http://www.eclipse.org/rap/downloads">download</a>.
   </p>
+  <p>
+    For a list of features that were added during the 1.1 development cycle,
+    please see the <a href="news11.php">New & Noetworthy</a> page.
+  </p>
 </div>
 
 EOHTML;
