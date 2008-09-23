@@ -32,10 +32,12 @@ $html = <<<EOHTML
 	  <ul>
         <li>RAP 1.1 Release, based on Eclipse 3.4&nbsp;&nbsp;
           <a href="http://www.eclipse.org/downloads/technology/rap/rap-1.1.0-R-target-3.4-20080613-1055.zip">
-            <img src="../images/icon_save.gif" />
             rap-1.1.0-R-target-3.4-20080613-1055.zip
           </a>
-          <a href="../noteworthy/news_11.php">New &amp; Noteworthy</a>
+	      <br />
+          <a href="http://www.eclipse.org/rap/noteworthy/news_11.php">
+            New &amp; Noteworthy
+          </a>
         </li>
 	    <li>RAP 1.1 RC3, based on Eclipse 3.4&nbsp;&nbsp;
 	      <a href="http://archive.eclipse.org/technology/rap/downloads/rap-1.1.0-RC3-target-3.4-20080603-1107.zip">
