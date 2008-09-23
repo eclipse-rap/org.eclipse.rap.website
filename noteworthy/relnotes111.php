@@ -24,7 +24,7 @@ $html = <<<EOHTML
   </p>
   <p>
     For a list of features that were added during the 1.1 development cycle,
-    please see the <a href="news11.php">New & Noetworthy</a> page.
+    please see the <a href="news_11.php">New & Noetworthy</a> page.
   </p>
 </div>
 
