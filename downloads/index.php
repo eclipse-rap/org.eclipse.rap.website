@@ -30,12 +30,12 @@ $html = <<<EOHTML
       <p style="margin: 10px">
         We also provide zipped versions for download
       </p>
-      <p style="margin: 10px"><b>1.1 Release</b></p>
+      <p style="margin: 10px"><b>1.1.1 Service Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.0-R-site-20080613-1119.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.1-SR1-site-20080917-1637.zip">
             <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-            rap-sdk-1.1.0-R-site-20080613-1119.zip
+            rap-sdk-1.1.1-SR1-site-20080917-1637.zip
           </a>
           for Eclipse 3.3 and 3.4
         </li>
@@ -62,6 +62,7 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
       </p>
+      <!--
       <p style="margin: 10px"><b>1.1 Release</b></p>
       <ul>
         <li>
@@ -73,14 +74,16 @@ $html = <<<EOHTML
           <a href="../noteworthy/news_11.php">New &amp; Noteworthy</a>
         </li>
       </ul>
-      <p style="margin: 10px"><b>1.1.1 RC-Build</b></p>
+      -->
+      <p style="margin: 10px"><b>1.1.1 Service Release</b></p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.1-RC1-target-3.4-20080903-2003.zip">
+          <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.1-SR1-target-3.4-20080917-1625.zip">
             <img src="../images/icon_save.gif" />
-            rap-1.1.1-RC1-target-3.4-20080903-2003.zip
+            rap-1.1.1-SR1-target-3.4-20080917-1625.zip
           </a>
           based on Eclipse 3.4 &nbsp;&nbsp;
+          <a href="../noteworthy/relnotes111.php">Release Notes</a>
         </li>
       </ul>
     </div>
@@ -104,7 +107,7 @@ $html = <<<EOHTML
                </td>
              </tr>
              <tr>
-               <td>RAP 1.0.1 and older versions</td>
+               <td>RAP 1.1 and older versions</td>
              </tr> 
            </table>
          </td>
