@@ -40,7 +40,7 @@ $html = <<<EOHTML
       <ol>
         <li>From the <strong>File</strong> menu, choose <strong>Import</strong>.
         This will open the <strong>Import dialog</strong>.</li>
-        <li>In the Import dialog, choose <strong>Team &gt; Team Project Set</strong>
+        <li>In the this dialog, choose <strong>Team &gt; Team Project Set</strong>
         and click <strong>Next</strong>.</li>
         <li>Browse for or type in the name of the file containing the project set 
         and click Finish.</li>
