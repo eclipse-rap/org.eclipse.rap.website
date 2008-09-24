@@ -62,8 +62,8 @@ $html = <<<EOHTML
         <td width="20%">
           <b>Cursor Support</b></td>
         <td width="80%">
-            The <code>Control</code> cursor support is now available. It is fully 
-            implemented in the following widgets:
+          The <code>Control</code> cursor support is now available. It is fully 
+          implemented in the following widgets:
 	      <ul>
 	        <li><code>Button</code></li>
 	        <li><code>Label</code></li>
@@ -77,17 +77,82 @@ $html = <<<EOHTML
 	        <li><code>Scale</code></li>
 	      </ul>
 	      <br />  
-            To obtain an instance of <code>org.eclipse.swt.graphics.Cursor</code>, 
-            you should use a code like this:
-            <br/><br/>
-            <code>Cursor cursor = Graphics.getCursor( SWT.HAND );<br/>
-              control.setCursor( cursor );</code>
+          To obtain an instance of <code>org.eclipse.swt.graphics.Cursor</code>, 
+          you should use a code like this:
+          <br/><br/>
+          <code>Cursor cursor = Graphics.getCursor( SWT.CURSOR_CROSS );
+            <br/>
+            control.setCursor( cursor );</code>
+	      <br />  
+          <img src="RAPCustomCursor.png" />
+	      <br />  
+          As with all resources in RWT, the <code>Cursor</code> instances are 
+          shared among sessions. That's why, there is no <code>Cursor#dispose()</code>
+          method available.
+          <p />
+        <td/>
+      </tr>
+      
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Scale Widget</b></td>
+        <td width="80%">
+          Now there exists a <code>Scale</code> widget that works much the 
+          same as in SWT.
           <p>
-            <img src="RAPCustomCursor.png" />
+            <img src="RAPScale.png" /></p>
+          <p />
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>DateTime Widget</b></td>
+        <td width="80%">
+          The long awaited <code>DateTime</code> widget is now avaiable. Using
+          the style flags <code>SWT.DATE</code>, <code>SWT.TIME</code>, 
+          <code>SWT.CALENDAR</code> and <code>SWT.SHORT</code>, <code>SWT.MEDIUM</code>, 
+          <code>SWT.LONG</code> you can switch the widget mode. Additionaly 
+          the <code>DateTime</code> widget uses the browsers locale to display 
+          the day and month names in your preferred language.
+          <p>
+            <img src="RAPDateTime.png" />
           </p>
-            As with all resources in RWT, the <code>Cursor</code> instances are 
-            shared among sessions. That's why, there is no <code>Cursor#dispose()</code>
-            method available.
+          <p />
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>ExpandBar Widget</b></td>
+        <td width="80%">
+          RWT provides an <code>ExpandBar</code> control. It can be used to 
+          represent a category or group of elements.
+          You may have a look at the <code>org.eclipse.rap.demo.controls.ExpandBarTab</code>
+          class in the demo plug-in to see how to use it. 
+          <p>
+            <img src="RAPExpandBar.png" /></p>
+          <p />
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>MessageBox</b></td>
+        <td width="80%">
+	      With a standard SWT <code>MessageBox</code> you can display a message
+	      dialog without using JFace.
+	      <p>
+	        <img src="RAPMessageBox.png" /></p>
+	      The same style flag combinations like in SWT are avaiable:
+	      <ul>
+	        <li><code>SWT.OK</code></li>
+	        <li><code>SWT.OK | SWT.CANCEL</code></li>
+	        <li><code>SWT.YES | SWT.NO</code></li>
+	        <li><code>SWT.YES | SWT.NO | SWT.CANCEL</code></li>
+	        <li><code>SWT.RETRY | SWT.CANCEL</code></li>
+	        <li><code>SWT.ABORT | SWT.RETRY | SWT.IGNORE</code></li>
+          </ul>  
           <p />
         <td/>
       </tr>
@@ -96,125 +161,13 @@ $html = <<<EOHTML
     
     <hr />
 
-    <a name="Workbench"></a>
-    <h2>Workbench</h2>
-    <table>
-      <tr valign="top" align="left">
-        <td width="20%">
-          <b>Eclipse 3.4 Adoption</b></td>
-        <td width="80%">
-          The RAP counterparts of JFace, Workbench, Forms and Databinding
-          have been migrated to the 3.4 code base.
-          <p>During this effort, we tried to achieve feature completeness as
-          far as possible to get a clear picture of what is needed to enable
-          single sourcing of the RAP and RCP Workbench in the future.</p>
-          <p>Here are some of the more noteworthy things that are now available:
-          </p>
-          <ul>
-            <li><strong>Presentation</strong>
-              <p>The workbench demo comes with a presentation sketch that makes use
-              of the newly adopted presentation support.
-              Launch the demo and use <strong>Window</strong> >
-              <strong>Preferences</strong> > <strong>Demo Prefernce Page</strong>
-              to switch between the available presentations. After that, you need
-              to reload the browser page in order to see the changes.</p>
-              <img src="presentation.png" />
-              <p />
-            </li>
-            <li><strong>Preference Pages</strong>
-              <p>Support for preference pages is now available.
-              Note that in order to keep preference settings session scoped,
-              you need to initialize the PreferenceStore of the page with
-              a suitable PreferenceStore.
-              <code>AbstractUIPlugin#getPreferenceStore()</code> returns
-              such an implementation.</p>
-              <img src="prefPage.png" />
-              <p />
-            </li>
-            <li><strong>IMemento for workbench state persistence</strong>
-              <p>The save and restore mechanism must be activated like shown
-              in the snippet below.
-            <pre>
-public class DemoWorkbenchAdvisor extends WorkbenchAdvisor {
-
-  public void initialize( IWorkbenchConfigurer configurer ) {
-    getWorkbenchConfigurer().setSaveAndRestore( true );
-    super.initialize( configurer );
-  }
-
-[...]
-            </pre>
-            </li>
-          </ul>
-          </p>
-          <p><strong>Please note</strong> due to the complexity of this transition
-            there may still exist some problems, in particular with the newly
-            introduced functionality. Within the upcoming
-            <a href="http://wiki.eclipse.org/RAP/Ramp_down_Ganymede">RC development cycles</a>
-            we will focus on bug fixes.
-            Please feel encouraged to try out the current milestone and provide
-            us with feedback.
-          </p>
-        <td/>
-      </tr>
-    </table>
-
-    <hr />
-
-    <a name="Tooling"></a>
-    <h2>Tooling</h2>
-    <table>
-      <tr valign="top" align="left">
-        <td width="20%">
-          <b>RAP JUnit</b></td>
-        <td width="80%">
-          RAP provides an equivalent to the "PDE JUnit Tests" to allow to run
-          tests that require an OSGi environment up and running.
-          <p>The snippet below shows how a RAP JUnit test case looks like.
-          To compile such a test, the containing plug-in needs a dependency on
-          <code>org.eclipse.rap.junit</code>. This allows to use the RAPTestCase
-          that provides UI-Updates during the tests. If you don't want to
-          see UI-updates during the test runs, you can directly use org.junit.TestCase
-          instead.
-          In order to run a test, choose <strong>Run As</strong> > <strong>RAP JUnit Test</strong>
-          from the editors' context menu.
-          <pre>
-public class RapJUnitTest extends RAPTestCase {
-  public void testOpenView() {
-    try {
-      IWorkbenchPage page = getPage();
-      page.showView( "org.eclipse.rap.demo.DemoTreeViewPartI" );
-    } catch( PartInitException e ) {
-      e.printStackTrace();
-    }
-    assertEquals( 1, getPage().getViewReferences().length );
-
-    getPage().hideView( getPage().getViewReferences()[ 0 ] );
-    assertEquals( 0, getPage().getViewReferences().length );
-  }
-
-  private IWorkbenchPage getPage() {
-    IWorkbench workbench = PlatformUI.getWorkbench();
-    IWorkbenchWindow window = workbench.getActiveWorkbenchWindow();
-    return window.getActivePage();
-  }
-}
-          </pre>
-          </p>
-          <p>RAP JUnit supports only the 3.x Test Runner at the moment.</p>
-        <td/>
-      </tr>
-    </table>
-
-    <hr />
-
+<!--
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
-      <li><a href="news_11M3.php">New for RAP 1.1 M3 (April 7, 2008)</a></li>
-      <li><a href="news_11M2.php">New for RAP 1.1 M2 (February 20, 2008)</a></li>
-      <li><a href="news_11M1.php">New for RAP 1.1 M1 (January 7, 2008)</a></li>
+      <li><a href="news_12M2.php">New for RAP 1.2 M2 (October 8, 2008)</a></li>
     </ul>
+-->
     
     <p>&nbsp;</p>
 
