@@ -35,17 +35,27 @@ $html = <<<EOHTML
 
       <tr valign="top" align="left">
         <td width="20%">
-          <b>JavaScript Compressor</b>
+          <b>JavaScript Compression</b>
         </td>
         <td width="80%">
-          The new implementation of JavaScript compressor is now avaiable. It 
+          The new implementation of Javascript compression is now avaiable. It 
           is enabled by default, when you use the "Standard" client-side 
           library variant.
           <p>
             <img src="RuntimeConfig.png" />
           </p>
+          To disable Javascript compression switch to the "Debug" library variant,
+          which sets the system property <code>org.eclipse.rwt.clientLibraryVariant</code> 
+          to <code>DEBUG</code> for the VM that is being launched.
+          <p>
           The total size of the index.html was reduced from 1.069 MB to 862 kB, 
-          which is more than 200 kB reduction or 20%.          
+          which is more than 200 kB reduction or 20%.
+          </p>
+          <p>
+          For more information please also read the comments on
+          <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=247791">
+          this bug</a>.
+          </p>
           <p />
         <td/>
       </tr>
