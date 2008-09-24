@@ -18,9 +18,11 @@ $html = <<<EOHTML
           <ul>
             <li><a href="news_12M2.php">M2 (October 8, 2008)</a></li>
           </ul>
+          <p />        
           All features listed there can also be obtained from
           <a href="http://www.eclipse.org/rap/downloads/cvs.php">CVS HEAD</a>.
-        </p>        
+        </p>
+        <p />        
       </li>
       <li><a href="relnotes111.php">RAP 1.1.1 Service Release</a>
         <p style="margin-top: 5px">
