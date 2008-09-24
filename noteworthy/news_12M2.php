@@ -113,8 +113,9 @@ $html = <<<EOHTML
           the style flags <code>SWT.DATE</code>, <code>SWT.TIME</code>, 
           <code>SWT.CALENDAR</code> and <code>SWT.SHORT</code>, <code>SWT.MEDIUM</code>, 
           <code>SWT.LONG</code> you can switch the widget mode. Additionaly 
-          the <code>DateTime</code> widget uses the browsers locale to display 
-          the day and month names in your preferred language.
+          the <code>DateTime</code> widget goes by the locale from 
+          <code>RWT#getLocale()</code> to display the day and month names in 
+          your preferred language.
           <p>
             <img src="RAPDateTime.png" />
           </p>
