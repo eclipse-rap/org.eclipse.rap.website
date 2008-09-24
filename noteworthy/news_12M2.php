@@ -10,7 +10,7 @@ $html = <<<EOHTML
   <h1>RAP 1.2 M2 - New and Noteworthy</h1>
     <p>Here are some of the more noteworthy things that will be available in the 
       milestone build M2 (October 8, 2008).
-      Meanwhile from all features listed here can be obtained from
+      Meanwhile, all features listed here can be obtained from
       <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
       <!--
        which is now available for 
