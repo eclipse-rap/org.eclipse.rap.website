@@ -38,66 +38,57 @@ $html = <<<EOHTML
           <b>JavaScript Compression</b>
         </td>
         <td width="80%">
-          The new implementation of Javascript compression is now avaiable. It 
-          is enabled by default, when you use the "Standard" client-side 
-          library variant.
+            The new implementation of Javascript compression is now avaiable. It 
+            is enabled by default, when you use the "Standard" client-side 
+            library variant.
           <p>
             <img src="RuntimeConfig.png" />
           </p>
-          To disable Javascript compression switch to the "Debug" library variant,
-          which sets the system property <code>org.eclipse.rwt.clientLibraryVariant</code> 
-          to <code>DEBUG</code> for the VM that is being launched.
+            To disable Javascript compression switch to the "Debug" library variant,
+            which sets the system property <code>org.eclipse.rwt.clientLibraryVariant</code> 
+            to <code>DEBUG</code> for the VM that is being launched.
           <p>
-          The total size of the index.html was reduced from 1.069 MB to 862 kB, 
-          which is more than 200 kB reduction or 20%.
-          </p>
+            The total size of the index.html was reduced from 1.069 MB to 862 kB, 
+            which is more than 200 kB reduction or 20%.</p>
           <p>
-          For more information please also read the comments on
-          <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=247791">
-          this bug</a>.
-          </p>
+            For more information please also read the comments on
+            <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=247791">
+            this bug</a>.</p>
           <p />
         <td/>
       </tr>
 
       <tr valign="top" align="left">
         <td width="20%">
-          <b>Theming</b></td>
+          <b>Cursor Support</b></td>
         <td width="80%">
-          <b>Support for theme files in CSS format</b>
-          <br />
-          RAP supports theme files in CSS syntax now. CSS theme files for 
-          RAP must be valid
-          <a href="http://www.w3.org/TR/CSS21/">CSS 2.1</a> files, except for
-          a couple of RAP specific properties and pseudo classes.
-          <p>The following is an example for a simple CSS theme file:
-          <pre>
-  * {
-    <span style="color:blue;">backgound-color</span>: <span style="color:#568c28;">white</span>;
-  }
-  
-  Button<span style="color:#96154f;">[PUSH]</span>, Button<span style="color:#96154f;">[TOGGLE]</span> {
-    <span style="color:blue;">border</span>: <span style="color:#568c28;">2px solid blue</span>;
-    <span style="color:blue;">color</span>: <span style="color:#568c28;">rgb( 17, 23, 103 )</span>;
-    <span style="color:blue;">background-color</span>: <span style="color:#568c28;">#f9f9f9</span>;
-  }
-  
-  Button<span style="color:#96154f;">[PUSH]:hover</span>, Button<span style="color:#96154f;">[TOGGLE]:hover</span> {
-    <span style="color:blue;">background-color</span>: <span style="color:#568c28;">white</span>;
-  }
-          </pre>
+            The <code>Control</code> cursor support is now available. It is fully 
+            implemented in the following widgets:
+	      <ul>
+	        <li><code>Button</code></li>
+	        <li><code>Label</code></li>
+	        <li><code>CLabel</code></li>
+	        <li><code>List</code></li>
+	        <li><code>Composite</code></li>
+	        <li><code>Canvas</code></li>
+	        <li><code>Combo</code></li>
+	        <li><code>Text</code></li>
+	        <li><code>Spinner</code></li>
+	        <li><code>Scale</code></li>
+	      </ul>
+	      <br />  
+            To obtain an instance of <code>org.eclipse.swt.graphics.Cursor</code>, 
+            you should use a code like this:
+            <br/><br/>
+            <code>Cursor cursor = Graphics.getCursor( SWT.HAND );<br/>
+              control.setCursor( cursor );</code>
+          <p>
+            <img src="RAPCustomCursor.png" />
           </p>
-          <p>The support for the new syntax is just the first step towards a more
-            flexible theming.
-            Internally, the theming engine is still based on the old properties.
-            As an effect, only a subset of the flexibility provided by CSS is
-            already supported.
-            For more information on the topic, have a look at the RAP Help.
-          </p>
-          <p>Developers are encouraged to write CSS theme files now.
-            The old property-based theme files are still supported but considered
-            deprecated.
-          </p>
+            As with all resources in RWT, the <code>Cursor</code> instances are 
+            shared among sessions. That's why, there is no <code>Cursor#dispose()</code>
+            method available.
+          <p />
         <td/>
       </tr>
       
