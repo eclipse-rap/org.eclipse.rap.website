@@ -78,7 +78,7 @@ $html = <<<EOHTML
 	      </ul>
 	      <br />  
           To obtain an instance of <code>org.eclipse.swt.graphics.Cursor</code>, 
-          you should use a code like this:
+          you should use code like this:
           <br/><br/>
           <code>Cursor cursor = Graphics.getCursor( SWT.CURSOR_CROSS );
             <br/>
