@@ -38,7 +38,7 @@ $html = <<<EOHTML
           <b>JavaScript Compression</b>
         </td>
         <td width="80%">
-            The new implementation of Javascript compression is now avaiable. It 
+            The new implementation of Javascript compression is now available. It 
             is enabled by default, when you use the "Standard" client-side 
             library variant.
           <p>
@@ -48,8 +48,7 @@ $html = <<<EOHTML
             which sets the system property <code>org.eclipse.rwt.clientLibraryVariant</code> 
             to <code>DEBUG</code> for the VM that is being launched.
           <p>
-            The total size of the index.html was reduced from 1.069 MB to 862 kB, 
-            which is more than 200 kB reduction or 20%.</p>
+            The total size of the index page was reduced by more than 20%.</p>
           <p>
             For more information please also read the comments on
             <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=247791">
@@ -109,10 +108,10 @@ $html = <<<EOHTML
         <td width="20%">
           <b>DateTime Widget</b></td>
         <td width="80%">
-          The long awaited <code>DateTime</code> widget is now avaiable. Using
+          The long awaited <code>DateTime</code> widget is now available. Using
           the style flags <code>SWT.DATE</code>, <code>SWT.TIME</code>, 
           <code>SWT.CALENDAR</code> and <code>SWT.SHORT</code>, <code>SWT.MEDIUM</code>, 
-          <code>SWT.LONG</code> you can switch the widget mode. Additionaly 
+          <code>SWT.LONG</code> you can switch the widget mode. Additionally 
           the <code>DateTime</code> widget goes by the locale from 
           <code>RWT#getLocale()</code> to display the day and month names in 
           your preferred language.
@@ -145,7 +144,7 @@ $html = <<<EOHTML
 	      dialog without using JFace.
 	      <p>
 	        <img src="RAPMessageBox.png" /></p>
-	      The same style flag combinations like in SWT are avaiable:
+	      The same style flag combinations like in SWT are available:
 	      <ul>
 	        <li><code>SWT.OK</code></li>
 	        <li><code>SWT.OK | SWT.CANCEL</code></li>
