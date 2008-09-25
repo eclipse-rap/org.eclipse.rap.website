@@ -117,13 +117,13 @@ $html = <<<EOHTML
         <a href="http://www.innoopract.com/de/produkte/rap/rap-webinar.html" 
           target="_blank">
           Single-Sourcing Techniken für RAP und RCP</a>
-        <span><br />, October 16<sup>th</sup> 2008</span>
+        <span><br />October 16<sup>th</sup> 2008</span>
       </li>
       <li>
         <a href="http://www.innoopract.com/en/products/rap/rap-webinar.html" 
           target="_blank">
           Single-Sourcing Techniques for RAP and RCP</a>
-        <span><br />, October 23<sup>rd</sup> 2008</span>
+        <span><br />October 23<sup>rd</sup> 2008</span>
       </li>
     </div>
 
