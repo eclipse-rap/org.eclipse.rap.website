@@ -114,9 +114,16 @@ $html = <<<EOHTML
      <h6>RAP webinar</h6>
      <ul>
       <li>
-        <a href="http://live.eclipse.org/node/450" target="_blank">
-        RAP webinar, Feb 13</a>
-        <span><br />50 minutes of slides and demos</span>
+        <a href="http://www.innoopract.com/de/produkte/rap/rap-webinar.html" 
+          target="_blank">
+          Single-Sourcing Techniken für RAP und RCP</a>
+        <span><br />, October 16<sup>th</sup> 2008</span>
+      </li>
+      <li>
+        <a href="http://www.innoopract.com/en/products/rap/rap-webinar.html" 
+          target="_blank">
+          Single-Sourcing Techniques for RAP and RCP</a>
+        <span><br />, October 23<sup>rd</sup> 2008</span>
       </li>
     </div>
 
@@ -127,7 +134,8 @@ $html = <<<EOHTML
       <li>
         <a href="http://www.eclipsecon.org/summiteurope2008/" 
           target="_blank">
-          Eclipse Summit Europe 2008, November 19<sup>th</sup> - 20<sup>th</sup></a>
+          Eclipse Summit Europe 2008, November 19<sup>th</sup> - 20<sup>th</sup>
+        </a>
         <span>
           <br />
           Single Sourcing: Extend your RCP Application to the Web with RAP
@@ -136,16 +144,6 @@ $html = <<<EOHTML
             target="_blank">
             (talk proposal)
           </a>
-        </span>
-      </li>
-      <li>
-        <a href="http://www.java-forum-stuttgart.de/abstracts.html#B7" 
-          target="_blank">
-          Java Forum Stuttgart 2008, July 3<sup>rd</sup></a>
-        <span>
-          <br />
-          Erfahrungs<wbr>bericht über die Anwendungs<wbr>entwicklung mit 
-          Eclipse RAP
         </span>
       </li>
     </div>
