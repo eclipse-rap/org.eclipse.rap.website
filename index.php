@@ -132,18 +132,13 @@ $html = <<<EOHTML
      <h6>Meet the RAP Team</h6>
      <ul>
       <li>
-        <a href="http://www.eclipsecon.org/summiteurope2008/" 
+        <a href="https://www.eclipsecon.org/submissions/ese2008/view_talk.php?id=87" 
           target="_blank">
           Eclipse Summit Europe 2008, November 19<sup>th</sup> - 20<sup>th</sup>
         </a>
         <span>
           <br />
           Single Sourcing: Extend your RCP Application to the Web with RAP
-          <br />
-          <a href="https://www.eclipsecon.org/submissions/ese2008/view_talk.php?id=87"
-            target="_blank">
-            (talk proposal)
-          </a>
         </span>
       </li>
     </div>
