@@ -20,7 +20,7 @@ $html = <<<EOHTML
           </ul>
           <p />        
           All features listed there can also be obtained from
-          <a href="http://www.eclipse.org/rap/downloads/cvs.php">CVS HEAD</a>.
+          <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>.
         </p>
         <p />        
       </li>
