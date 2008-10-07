@@ -57,9 +57,9 @@ $html = <<<EOHTML
             <img src="images/icon_save.gif" />&nbsp;&nbsp;RAP User Team Project Set
           </a>
           <br />
-          Contains all the projects necessary to develop with RAP. Individual 
-          components (e.g. from the <a href="sandbox.php">Sandbox</a>) can 
-          also be obtained 
+          Contains all the projects necessary to develop applications based on 
+          RAP. Individual components (e.g. from the <a href="sandbox.php">Sandbox</a>)
+          can also be obtained 
           <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">directly from CVS.</a>
         </li>
       </ul>
