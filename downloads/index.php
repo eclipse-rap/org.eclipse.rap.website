@@ -26,6 +26,7 @@ $html = <<<EOHTML
         The RAP update site is
         <br />
         <b>http://download.eclipse.org/technology/rap/update-site</b>
+        <br />
         We also provide zipped versions for download
         <br />
         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.1-SR1-site-20080917-1637.zip">
