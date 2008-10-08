@@ -11,6 +11,8 @@ $html = <<<EOHTML
 
 <div id="midcolumn">
     <h1>Archived Downloads</h1>
+    
+    <p>Back to the <a href="index.php">RAP Downloads Page</a>.</p>  
 
 	<p>Since RCP and RAP bundles within the same instance do not work, we provide 
 	  target platforms for download.

@@ -3,7 +3,7 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 $pageTitle 		= "RAP Project - Downloads";
-$pageKeywords	= "AJAX, rap, w4t, eclipse rap";
+$pageKeywords	= "AJAX, rap, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
 	# Paste your HTML content between the EOHTML markers!	
@@ -32,7 +32,7 @@ $html = <<<EOHTML
         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.1-SR1-site-20080917-1637.zip">
           <img src="../images/icon_save.gif" alt="Update Site Zip"/>
           &nbsp;&nbsp;
-          rap-sdk-1.1.1-SR1-site-20080917-1637.zip
+          rap-sdk-1.2.0-M2-site-20081002-1630.zip
         </a>
         for Eclipse 3.3 and 3.4
       </p>
@@ -75,10 +75,10 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px"><b>1.2 M2 Milestone Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
-        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/1.2/target/rap-1.2-M2-target-3.5-20081002-1417.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/1.2/target/rap-1.2.0-M2-target-3.5-20081002-1417.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-          rap-1.2-M2-target-3.5-20081002-1417.zip
+          rap-1.2.0-M2-target-3.5-20081002-1417.zip
         </a>
         based on Eclipse 3.5 &nbsp;&nbsp;
         <a href="../noteworthy/news_12M2.php">New &amp; Noteworthy</a>
