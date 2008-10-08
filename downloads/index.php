@@ -30,7 +30,7 @@ $html = <<<EOHTML
         <br />
         We also provide zipped versions for download
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.1-SR1-site-20080917-1637.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.2.0-M2-site-20081002-1630.zip">
           <img src="../images/icon_save.gif" alt="Update Site Zip"/>
           &nbsp;&nbsp;
           rap-sdk-1.2.0-M2-site-20081002-1630.zip
