@@ -67,7 +67,7 @@ $html = <<<EOHTML
       go to the <b>Plug-in Development &gt; Target Platform</b> preference page, 
       set the <b>Location</b> to the eclipse sub-directory of the extracted archive
       (e.g. <code>c:\\target\\eclipse</code>). Finally click <b>Reload</b>. You 
-      should see the just downloaded plug-ins appear in the plug-ins list.
+      should see the just downloaded plug-ins appear in the <b>Plug-ins</b> list.
       </p>
       <p style="margin: 10px">
       Note: if doing this with a workspace that already contains projects that
