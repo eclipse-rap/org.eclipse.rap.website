@@ -35,7 +35,7 @@ $html = <<<EOHTML
           &nbsp;&nbsp;
           rap-sdk-1.2.0-M2-site-20081002-1630.zip
         </a>
-        for Eclipse 3.3 and 3.4
+        for use with Eclipse 3.4 and 3.5
       </p>
       <p style="margin: 10px"><b>1.1.1 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
@@ -51,7 +51,7 @@ $html = <<<EOHTML
           &nbsp;&nbsp;
           rap-sdk-1.1.1-SR1-site-20080917-1637.zip
         </a>
-        for Eclipse 3.3 and 3.4
+        for use with Eclipse 3.3 and 3.4
       </p>
     </div>  
       
