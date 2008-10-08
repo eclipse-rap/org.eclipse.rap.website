@@ -27,6 +27,7 @@ $html = <<<EOHTML
         <br />
         <b>http://download.eclipse.org/technology/rap/1.2/update</b>
         <br />
+        <br />
         We also provide zipped versions for download
         <br />
         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.1-SR1-site-20080917-1637.zip">
@@ -37,10 +38,11 @@ $html = <<<EOHTML
         for Eclipse 3.3 and 3.4
       </p>
       <p style="margin: 10px"><b>1.1.1 Service Release</b></p>
-      <p style="margin: 20px">
+      <p style="margin: 10px 10px 10px 20px">
         The RAP update site is
         <br />
         <b>http://download.eclipse.org/technology/rap/update-site</b>
+        <br />
         <br />
         We also provide zipped versions for download
         <br />
