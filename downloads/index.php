@@ -35,7 +35,7 @@ $html = <<<EOHTML
           &nbsp;&nbsp;
           rap-sdk-1.2.0-M2-site-20081002-1630.zip
         </a>
-        for use with Eclipse 3.4 and 3.5
+        for use with Eclipse 3.3, 3.4 and 3.5
       </p>
       <p style="margin: 10px"><b>1.1.1 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
@@ -63,12 +63,11 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px">
       After downloading, extract the file in a convenient location, say <code>
-      c:\\target</code> and start Eclipse (if not yet running). Open <b>Window &gt; 
-      Preferences</b>, go to 
-      the <b>Plug-in Development &gt; Target Platform</b> preference page, set the
-      <b>Location</b> to the eclipse sub-directory of the extracted archive (e.g.
-      <code>c:\\target\\eclipse</code>). Finally click <b>Reload</b>. You should see
-      the just downloaded plug-ins appear in the plug-ins list.
+      c:\\target</code> and start Eclipse. Open <b>Window &gt; Preferences</b>, 
+      go to the <b>Plug-in Development &gt; Target Platform</b> preference page, 
+      set the <b>Location</b> to the eclipse sub-directory of the extracted archive
+      (e.g. <code>c:\\target\\eclipse</code>). Finally click <b>Reload</b>. You 
+      should see the just downloaded plug-ins appear in the plug-ins list.
       </p>
       <p style="margin: 10px">
       Note: if doing this with a workspace that already contains projects that
