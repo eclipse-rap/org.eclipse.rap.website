@@ -25,12 +25,12 @@ $html = <<<EOHTML
       <p style="margin: 10px 10px 10px 20px">
         The RAP update site is
         <br />
-        <b>http://download.eclipse.org/technology/rap/1.2/update</b>
+        <b>http://download.eclipse.org/rt/rap/1.2/update</b>
         <br />
         <br />
         We also provide zipped versions for download
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/1.2/rap-sdk-1.2.0-M2-site-20081002-1630.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-sdk-1.2.0-M2-site-20081002-1630.zip">
           <img src="../images/icon_save.gif" alt="Update Site Zip"/>
           &nbsp;&nbsp;
           rap-sdk-1.2.0-M2-site-20081002-1630.zip
@@ -41,12 +41,12 @@ $html = <<<EOHTML
       <p style="margin: 10px 10px 10px 20px">
         The RAP update site is
         <br />
-        <b>http://download.eclipse.org/technology/rap/update-site</b>
+        <b>http://download.eclipse.org/rt/rap/update-site</b>
         <br />
         <br />
         We also provide zipped versions for download
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-sdk-1.1.1-SR1-site-20080917-1637.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/rap-sdk-1.1.1-SR1-site-20080917-1637.zip">
           <img src="../images/icon_save.gif" alt="Update Site Zip"/>
           &nbsp;&nbsp;
           rap-sdk-1.1.1-SR1-site-20080917-1637.zip
@@ -76,7 +76,7 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px"><b>1.2 M2 Milestone Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
-        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/1.2/target/rap-1.2.0-M2-target-3.5-20081002-1417.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-1.2.0-M2-target-3.5-20081002-1417.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
           rap-1.2.0-M2-target-3.5-20081002-1417.zip
@@ -86,7 +86,7 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px"><b>1.1.1 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
-        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/rap/rap-1.1.1-SR1-target-3.4-20080917-1625.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/rap-1.1.1-SR1-target-3.4-20080917-1625.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
           rap-1.1.1-SR1-target-3.4-20080917-1625.zip
