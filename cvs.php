@@ -22,7 +22,7 @@ $html = <<<EOHTML
   
     <p style="margin:10px">
       All projects can be found in the <code>org.eclipse.rap</code> module of 
-      the <code>:pserver:dev.eclipse.org:/cvsroot/technology</code> repository.
+      the <code>:pserver:dev.eclipse.org:/cvsroot/rt</code> repository.
     <p/>
     <p style="margin:10px">
       For easier consumption, we provide 
