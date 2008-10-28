@@ -19,7 +19,7 @@
 EOBRANDING;
   $Menu->setProjectBranding($branding);
 
-  $Nav->addCustomNav("About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=technology.rap", "_self", 0);
+  $Nav->addCustomNav("About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=rt.rap", "_self", 0);
   
   $Nav->addNavSeparator("RAP", "/rap/index.php");
   $Nav->addCustomNav("&nbsp;&nbsp;&nbsp;&nbsp;About", "/rap/about.php", "_self", 1);
