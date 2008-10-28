@@ -17,8 +17,6 @@
 					known Eclipse workbench extension points and a widget toolkit with SWT API (plus JFace).
 				</li>
 				<li>
-					Version 1.0 has been released
-					The RAP project has graduated from incubation and released version 1.0 of RAP. 
 					You can download the RAP tools / runtime from the download section on the left.
 					A user guide is part of the RAP tools and can also be accessed online from the 
 					infocenter link.
