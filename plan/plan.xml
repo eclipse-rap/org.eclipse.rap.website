@@ -79,7 +79,9 @@
           Version 3.5</html:li>
         <html:li>Version 1.4.2 of the Java Platform APIs (i.e., Java 2 Platform,
           Release 1.4.2 SE)</html:li>
-        <html:li>Java Servlet API Version 2.3 - 2.5</html:li>
+        <html:li>
+          <html:a href="http://java.sun.com/products/servlet/reference/api/index.html">
+          Java Servlet API</html:a> Version 2.3 - 2.5</html:li>
       </html:ul>
       </html:p>
       <html:p>
