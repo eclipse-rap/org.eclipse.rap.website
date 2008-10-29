@@ -8,7 +8,7 @@
   xmlns="http://www.eclipse.org/project/plan"
 	xmlns:html="http://www.w3.org/1999/xhtml" 
 	name="Rich Ajax Platform (RAP)">
-	<release projectid="technology.rap" version="1.2" />
+	<release projectid="rt.rap" version="1.2" />
 	<introduction>
 		<html:div>
       <html:div style="align:center;"><html:big><html:b>Preliminary</html:b></html:big></html:div>
