@@ -80,7 +80,7 @@ $html = <<<EOHTML
         <td colspan="2" width="55%" valign="bottom">
           The RAP project enables developers to build rich, Ajax-enabled 
           Web applications by using the Eclipse development model, plug-ins 
-          with the well known Eclipse workbench extenstion points, JFace, and a 
+          with the well known Eclipse workbench extension points, JFace, and a 
           widget toolkit with SWT API (using <a href="http://qooxdoo.org">
           qooxdoo</a> for the client-side presentation). The project is part
           of the Ganymede release train and released its 1.1 release.
@@ -116,7 +116,7 @@ $html = <<<EOHTML
       <li>
         <a href="http://www.innoopract.com/de/produkte/rap/rap-webinar.html" 
           target="_blank">
-          Single-Sourcing Techniken für RAP und RCP</a>
+          Single-Sourcing Techniken fï¿½r RAP und RCP</a>
         <span><br />Oct 16<sup>th</sup> 2008</span>
       </li>
       <li>
