@@ -27,7 +27,7 @@
           <img src="images/bugs/query.gif" />
           &nbsp;&nbsp;Show open enhancement requests</a> 
         </li>          
-        <li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP">
+        <li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&rep_platform=All&op_sys=all">
           <img src="images/bugs/new-bug.gif" />
           &nbsp;&nbsp;Report a new bug or enhancement</a>
           <br />
