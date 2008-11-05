@@ -112,6 +112,20 @@ $html = <<<EOHTML
         <h3>Current Articles, Blogs, Slides and more</h3>
 	      <ul>
           <li>
+            Webinar: Single-Sourcing Techniques for RAP and RCP, Oct 23, 2008, Frank Appel
+            <br />
+            English: 
+            <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.pdf">
+              Slides
+            </a>
+            <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.mp4">
+              mp4 recording
+            </a>
+            <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.wmv">
+              wmv recording
+            </a>
+          </li>
+          <li>
             <a href="http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-ganymede-pt2.html" target="_blank">
             Article: Using Eclipse Ganymede to develop for the desktop, Web and mobile devices, 
             Part 2: Developing for the Rich Client Platform, the Ganymede way</a>
