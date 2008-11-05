@@ -114,15 +114,16 @@ $html = <<<EOHTML
           <li>
             Webinar: Single-Sourcing Techniques for RAP and RCP, Oct 23, 2008, Frank Appel
             <br />
-            English: 
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.pdf">
               Slides
             </a>
+            &nbsp;&nbsp;
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.mp4">
-              mp4 recording
+              MP4 Recording
             </a>
+            &nbsp;&nbsp;
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.wmv">
-              wmv recording
+              WMV Recording
             </a>
           </li>
           <li>
