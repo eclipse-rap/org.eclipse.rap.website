@@ -11,7 +11,7 @@ $html = <<<EOHTML
     <p>Here are some of the more noteworthy things available in the respective 
       builds.</p>
     <ul>
-      <li><strong>RAP 1.2 M2 Milestone Builds</strong>
+      <li><strong>RAP 1.2 Milestone Builds</strong>
         <p style="margin-top: 5px">
           Listed are the more noteworthy things that will be available in the 
           respective milestone builds towards version 1.2.
