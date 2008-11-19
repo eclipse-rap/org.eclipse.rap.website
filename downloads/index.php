@@ -21,14 +21,25 @@ $html = <<<EOHTML
         See the <a href="../gettingstarted.php">getting started</a> guide 
         for a detailed description on how to install RAP using the update site. 
       </p>
-      <p style="margin: 10px"><b>1.2 M2 Milestone Build</b></p>
+      <p style="margin: 10px"><b>1.2 M3 Milestone Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The RAP update site is
         <br />
         <b>http://download.eclipse.org/rt/rap/1.2/update</b>
         <br />
         <br />
-        We also provide zipped versions for download
+        We also provide a zipped version for download:
+        <br />
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-sdk-1.2.0-M3-site-2008118-1822.zip">
+          <img src="../images/icon_save.gif" alt="Update Site Zip"/>
+          &nbsp;&nbsp;
+          rap-sdk-1.2.0-M3-site-20081118-1822.zip
+        </a>
+        for use with Eclipse 3.3, 3.4 and 3.5
+      </p>
+      <p style="margin: 10px"><b>1.2 M2 Milestone Build</b></p>
+      <p style="margin: 10px 10px 10px 20px">
+        Zipped version for download:
         <br />
         <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-sdk-1.2.0-M2-site-20081002-1630.zip">
           <img src="../images/icon_save.gif" alt="Update Site Zip"/>
@@ -73,6 +84,16 @@ $html = <<<EOHTML
       Note: if doing this with a workspace that already contains projects that
       depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
+      </p>
+      <p style="margin: 10px"><b>1.2 M3 Milestone Build</b></p>
+      <p style="margin: 10px 10px 10px 20px">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-1.2.0-M3-target-3.5-20081118-1809.zip">
+          <img src="../images/icon_save.gif" />
+          &nbsp;&nbsp;
+          rap-1.2.0-M3-target-3.5-20081118-1809.zip
+        </a>
+        based on Eclipse 3.5 &nbsp;&nbsp;
+        <a href="../noteworthy/news_12M3.php">New &amp; Noteworthy</a>
       </p>
       <p style="margin: 10px"><b>1.2 M2 Milestone Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
