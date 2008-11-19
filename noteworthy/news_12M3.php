@@ -43,20 +43,18 @@ $html = <<<EOHTML
           As an example, for widgets that support the <code>:hover</code> state,
           it is now possible to change <em>any</em> property on mouseover,
           which has not been possible before:
-          <pre>
-          Button[PUSH]:hover {
-            font: bold 12px Helvetica;
-            color: white;
-            background-color: #1695d4;
-            border: 2px solid #9dd0ea;
-          }
-          </pre>
-          <p>
+          <pre><code>
+  Button[PUSH]:hover {
+    font: bold 12px Helvetica;
+    color: white;
+    background-color: #1695d4;
+    border: 2px solid #9dd0ea;
+  }
+          </code</pre>
           This change is an important foundation for the further improvement
           of the themeability of RWT widgets.
           Theming based on property files is still supported in this milestone,
           but it will be discontinued in M4.
-          </p>
         <td/>
       </tr>
 
