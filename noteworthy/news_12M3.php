@@ -43,7 +43,7 @@ $html = <<<EOHTML
           As an example, for widgets that support the <code>:hover</code> state,
           it is now possible to change <em>any</em> property on mouseover,
           which has not been possible before:
-          <pre><code>
+          <pre><code style="color: #0000ff">
   Button[PUSH]:hover {
     font: bold 12px Helvetica;
     color: white;
@@ -71,6 +71,43 @@ $html = <<<EOHTML
             once and buffered. This reduces CPU usage significantly. The library
             is stored in the browser's cache and need not to be reloaded on
             subsequent application visits.
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Improvement of Session Startup Performance</b>
+        </td>
+        <td width="80%">
+            The current version provides improvements regarding the session
+            startup performance. First the creating of the startup page is less
+            CPU intensive. Second the javascript library content is not embbeded
+            in the startup page anymore. It is delivered separately. As the
+            library content doesn't change after server start it can be zipped
+            once and buffered. This reduces CPU usage significantly. The library
+            is stored in the browser's cache and need not to be reloaded on
+            subsequent application visits.
+        <td/>
+      </tr>
+    </table>
+
+    <a name="JFace"></a>
+    <h2>JFace</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Cell Editors</b>
+        </td>
+        <td width="80%">
+          With the implementation of JFace cell editors, including all the
+          necessary event handling, RAP can now offer editing support for JFace
+          viewers.
+          There's still one tough issue remaining, that relates to the way the
+          Firefox browser handles key events.
+          However, the API is available and cell editors are basically working.
+          <p>
+            <img src="RAPTableCellEditors.png" />
+          </p>
         <td/>
       </tr>
     </table>
