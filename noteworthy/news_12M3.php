@@ -73,22 +73,6 @@ $html = <<<EOHTML
             subsequent application visits.
         <td/>
       </tr>
-
-      <tr valign="top" align="left">
-        <td width="20%">
-          <b>Improvement of Session Startup Performance</b>
-        </td>
-        <td width="80%">
-            The current version provides improvements regarding the session
-            startup performance. First the creating of the startup page is less
-            CPU intensive. Second the javascript library content is not embbeded
-            in the startup page anymore. It is delivered separately. As the
-            library content doesn't change after server start it can be zipped
-            once and buffered. This reduces CPU usage significantly. The library
-            is stored in the browser's cache and need not to be reloaded on
-            subsequent application visits.
-        <td/>
-      </tr>
     </table>
 
     <a name="JFace"></a>
