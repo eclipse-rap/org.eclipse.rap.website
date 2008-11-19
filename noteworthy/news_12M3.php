@@ -106,7 +106,7 @@ $html = <<<EOHTML
           Firefox browser handles key events.
           However, the API is available and cell editors are basically working.
           <p>
-            <img src="RAPTableCellEditors.png" />
+            <img src="RAPTableCellEditor.png" />
           </p>
         <td/>
       </tr>
