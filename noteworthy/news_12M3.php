@@ -21,12 +21,16 @@ $html = <<<EOHTML
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=RAP&target_milestone=1.2+M3&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
-    <!--
+
+    <hr />
+
     <p><ul>
       <li><a href="#RWT">RWT</a></li>
       <li><a href="#JFace">JFace</a></li>
+      <li><a href="#Tooling">Tooling</a></li>
     </ul></p>
-    -->
+
+    <hr />
 
     <a name="RWT"></a>
     <h2>RWT</h2>
@@ -75,6 +79,8 @@ $html = <<<EOHTML
       </tr>
     </table>
 
+    <hr />
+
     <a name="JFace"></a>
     <h2>JFace</h2>
     <table>
@@ -95,6 +101,8 @@ $html = <<<EOHTML
         <td/>
       </tr>
     </table>
+
+    <hr />
 
     <a name="Tooling"></a>
     <h2>Tooling</h2>
