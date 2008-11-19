@@ -60,7 +60,7 @@ $html = <<<EOHTML
 
       <tr valign="top" align="left">
         <td width="20%">
-          <b>Improvement of Sesssion Startup Performance</b>
+          <b>Improvement of Session Startup Performance</b>
         </td>
         <td width="80%">
             The current version provides improvements regarding the session
@@ -74,7 +74,24 @@ $html = <<<EOHTML
         <td/>
       </tr>
     </table>
-    
+
+    <a name="Tooling"></a>
+    <h2>Tooling</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Launch without opening browser</b>
+        </td>
+        <td width="80%">
+          The RAP launcher now allows to disable the startup of a browser on
+          every launch. This comes in handy when working with fixed ports and
+          an external browser.
+          <p>
+            <img src="RuntimeConfig.png" />
+          </p>
+        <td/>
+      </tr>
+    </table>
     
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
