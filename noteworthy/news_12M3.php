@@ -87,7 +87,7 @@ $html = <<<EOHTML
           every launch. This comes in handy when working with fixed ports and
           an external browser.
           <p>
-            <img src="RuntimeConfig.png" />
+            <img src="RAPLauncherOpenBrowser.png" />
           </p>
         <td/>
       </tr>
