@@ -8,7 +8,7 @@ $html = <<<EOHTML
 <div id="maincontent">
 <div id="midcolumn">
   <h1>RAP 1.2 M2 - New and Noteworthy</h1>
-    <p>Here are some of the more noteworthy things that will be available in the 
+    <p>Here are some of the more noteworthy things that are available in the 
       milestone build M2 (October 8, 2008)
       <!-- Meanwhile, all features listed here can be obtained from
       <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
