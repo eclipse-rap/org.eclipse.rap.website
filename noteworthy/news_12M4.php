@@ -51,6 +51,7 @@ $html = <<<EOHTML
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
+      <li><a href="news_12M3.php">New for RAP 1.2 M3 (November 19, 2008)</a></li>
       <li><a href="news_12M2.php">New for RAP 1.2 M2 (October 8, 2008)</a></li>
     </ul>
     
