@@ -112,6 +112,11 @@ $html = <<<EOHTML
         <h3>Current Articles, Blogs, Slides and more</h3>
 	      <ul>
           <li>
+            Book: <a href="http://www.rap-book.com" target="_blank">
+            Eclipse Rich Ajax Platform - Bringing Rich Clients to the Web</a>
+            Fabian Lange, Nov 2008
+          </li>
+          <li>
             Webinar: Single-Sourcing Techniques for RAP and RCP, Oct 23, 2008, Frank Appel
             <br />
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.pdf">
