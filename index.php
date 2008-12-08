@@ -119,16 +119,6 @@ $html = <<<EOHTML
           Single-Sourcing Techniques for RAP and RCP</a>
         <span><br />Jan 29<sup>th</sup> 2009</span>
       </li>
-      <li>
-        <a href="https://www.eclipsecon.org/submissions/ese2008/view_talk.php?id=87" 
-          target="_blank">
-          Eclipse Summit Europe 2008, November 19<sup>th</sup> - 20<sup>th</sup>
-        </a>
-        <span>
-          <br />
-          Single Sourcing: Extend your RCP Application to the Web with RAP
-        </span>
-      </li>
      </ul>
     </div>
   </div>  
