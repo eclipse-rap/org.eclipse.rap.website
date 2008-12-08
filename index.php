@@ -111,26 +111,14 @@ $html = <<<EOHTML
     </div>
 
     <div class="sideitem">
-     <h6>RAP webinar</h6>
+     <h6>Upcoming events</h6>
      <ul>
       <li>
-        <a href="http://www.innoopract.com/de/produkte/rap/rap-webinar.html" 
-          target="_blank">
-          Single-Sourcing Techniken f�r RAP und RCP</a>
-        <span><br />Oct 16<sup>th</sup> 2008</span>
-      </li>
-      <li>
-        <a href="http://www.innoopract.com/en/products/rap/rap-webinar.html" 
+        <a href="https://www1.gotomeeting.com/register/733916337" 
           target="_blank">
           Single-Sourcing Techniques for RAP and RCP</a>
-        <span><br />Oct 23<sup>rd</sup> 2008</span>
+        <span><br />Jan 29<sup>th</sup> 2009</span>
       </li>
-    </div>
-
-  
-    <div class="sideitem">
-     <h6>Meet the RAP Team</h6>
-     <ul>
       <li>
         <a href="https://www.eclipsecon.org/submissions/ese2008/view_talk.php?id=87" 
           target="_blank">
@@ -141,8 +129,8 @@ $html = <<<EOHTML
           Single Sourcing: Extend your RCP Application to the Web with RAP
         </span>
       </li>
+     </ul>
     </div>
-    
   </div>  
  </div>
 </div>
