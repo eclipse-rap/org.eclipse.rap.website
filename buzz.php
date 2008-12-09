@@ -120,7 +120,7 @@ $html = <<<EOHTML
             Webinar: Single-Sourcing Techniques for RAP and RCP, Oct 23, 2008, Frank Appel
             <br />
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.pdf">
-              PRF Slides
+              PDF Slides
             </a>
             &nbsp;&nbsp;
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.mp4">
@@ -130,6 +130,7 @@ $html = <<<EOHTML
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.wmv">
               WMV Recording
             </a>
+            &nbsp;&nbsp;(~ 60 Minutes)
           </li>
           <li>
             Article: 
