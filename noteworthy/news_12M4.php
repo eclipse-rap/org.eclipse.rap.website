@@ -32,19 +32,83 @@ $html = <<<EOHTML
     <hr />
 -->
 
-<!--
     <a name="RWT"></a>
     <h2>RWT</h2>
     <table>
       <tr valign="top" align="left">
         <td width="20%">
-          <b>[ Placeholder ]</b></td>
+          <b>Slider widget</b></td>
         <td width="80%">
-          [ Placeholder ]
+          Now there exists a Scale widget that works much the same as in SWT.
+          A Slider represents a range of selectable continues values. The range 
+          can be specified by the Slider#setMinimum() and Slider#setMaximum() 
+          methods of the Slider class. You can get the selection value by using 
+          the Slider#getSelection() method.
+          <p>
+            <img src="RAPSlider.png" />
+          </p>
+        <td/>
+      </tr>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Theming</b></td>
+        <td width="80%">
+          Since the new theming infrastructure is now in place, we worked on
+          making more aspects of widgets themeable.
+          The list below details out which aspects can now be altered.
+          <ul>
+            <li>The background image of <code>Button</code>s can be altered</li>
+            <li>This CSS code defines a <em>handle</em> for the <code>Sash</code>
+              whidget.
+              <br />
+<pre>
+Sash-Handle:horizontal {
+  <span style="color:blue;">background-image</span>: url( <span style="color:#568c28;">"/theme1/icons/sash/h_handle.gif"</span> );
+}
+Sash-Handle:vertical {  
+  <span style="color:blue;">background-image</span>: url( <span style="color:#568c28;">"/theme1/icons/sash/v_handle.gif"</span> );
+}</pre>         
+            </li>
+            <li>
+              The border style as well as the appearance of the drop-down button of a 
+              Combo widget can be changed like shown below.
+              <br />
+<pre>
+Combo {
+  <span style="color:blue;">border</span>: <span style="color:#568c28;">1px solid #1695d4</span>;
+}
+
+Combo-Button { 
+  <span style="color:blue;">background-image</span>: url( <span style="color:#568c28;">"/theme1/icons/combo/down.gif"</span> );
+  <span style="color:blue;">background-color</span>: <span style="color:#568c28;">#9dd0ea</span>;
+}</pre>             
+            </li>
+            <li>
+              The handle image of <code>Coolbar</code>s
+            </li>
+            <li>
+              The previous and next buttons of the <code>DateTime</code> widget.
+            </li>
+            <li>
+              The expand and colapse buttons of the <code>ExpandBar</code> widget.
+            </li>
+            <li>
+              The border color of the <code>CTabFolder</code>.
+            </li>
+            <li>
+              The up and down buttons of the <code>Spinner</code> widget.
+            </li>
+            <li>
+              The radio, check box and cascade images of <code>Menu</code>s
+            </li>
+            <li>
+              The check box images of the <code>Tree</code> and <code>Table</code> 
+              widget.
+            </li>
+          </ul>
         <td/>
       </tr>
     </table>
--->
 
     <hr />
         
