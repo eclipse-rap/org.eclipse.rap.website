@@ -59,7 +59,7 @@ $html = <<<EOHTML
           <ul>
             <li>The background image of <code>Button</code>s can be altered</li>
             <li>This CSS code defines a <em>handle</em> for the <code>Sash</code>
-              whidget.
+              widget.
               <br />
 <pre>
 Sash-Handle:horizontal {
