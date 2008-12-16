@@ -87,16 +87,11 @@ Combo-Button {
               The handle image of <code>Coolbar</code>s
             </li>
             <li>
-              The previous and next buttons of the <code>DateTime</code> widget.
-            </li>
-            <li>
-              The expand and colapse buttons of the <code>ExpandBar</code> widget.
+              The various buttons of the <code>DateTime</code>, <code>ExpandBar</code>
+              and <code>Spinner</code> widget.
             </li>
             <li>
               The border color of the <code>CTabFolder</code>.
-            </li>
-            <li>
-              The up and down buttons of the <code>Spinner</code> widget.
             </li>
             <li>
               The radio, check box and cascade images of <code>Menu</code>s
