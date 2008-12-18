@@ -41,9 +41,10 @@ $html = <<<EOHTML
         <td width="80%">
           Now there exists a Scale widget that works much the same as in SWT.
           A Slider represents a range of selectable continues values. The range 
-          can be specified by the Slider#setMinimum() and Slider#setMaximum() 
-          methods of the Slider class. You can get the selection value by using 
-          the Slider#getSelection() method.
+          can be specified by the <code>Slider#setMinimum()</code> and 
+          <code>Slider#setMaximum()</code> methods of the Slider class. You can 
+          get the selection value by using the <code>Slider#getSelection()</code>
+          method.
           <p>
             <img src="RAPSlider.png" />
           </p>
