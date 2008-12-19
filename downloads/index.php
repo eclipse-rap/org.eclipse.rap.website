@@ -23,7 +23,7 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px"><b>1.2 M3 Milestone Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
-        The RAP update site is
+        The update site is
         <br />
         <b>http://download.eclipse.org/rt/rap/1.2/update</b>
         <br />
@@ -39,7 +39,7 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px"><b>1.1.1 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
-        The RAP update site is
+        The update site is
         <br />
         <b>http://download.eclipse.org/rt/rap/update-site</b>
         <br />
