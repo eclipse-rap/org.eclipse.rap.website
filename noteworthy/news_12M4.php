@@ -37,14 +37,31 @@ $html = <<<EOHTML
     <table>
       <tr valign="top" align="left">
         <td width="20%">
+          <b>qooxdoo 0.7.4</b></td>
+        <td width="80%">
+          This milestone build includes a new version of the Javascript library
+          qooxdoo.
+          Thanks to the great support by the RAP community,
+          most notably from Stefan Hansel,
+          who tracked down a number of significant memory leaks in qooxdoo and
+          provided patches to the qooxdoo developers,
+          this version now brings a dramatically improved memory consumption,
+          especially in IE 6.
+          <p>
+          Thanks to everyone who helped making this possible!
+          </p>
+        <td/>
+      </tr>
+      <tr valign="top" align="left">
+        <td width="20%">
           <b>Slider widget</b></td>
         <td width="80%">
-          Now there exists a Scale widget that works much the same as in SWT.
-          A Slider represents a range of selectable continues values. The range 
-          can be specified by the <code>Slider#setMinimum()</code> and 
-          <code>Slider#setMaximum()</code> methods of the Slider class. You can 
-          get the selection value by using the <code>Slider#getSelection()</code>
-          method.
+          Now there exists a Slider widget that works much the same as in SWT.
+          A Slider is a control that looks like a scrollbar and represents a
+          continuous range of numeric values.
+          The range can be specified by the methods <code>#setMinimum()</code>
+          and <code>#setMaximum()</code>.
+          The current value can be obtained using <code>#getSelection()</code>.
           <p>
             <img src="RAPSlider.png" />
           </p>
