@@ -42,11 +42,13 @@ $html = <<<EOHTML
           This milestone build includes a new version of the Javascript library
           qooxdoo.
           Thanks to the great support by the RAP community,
-          most notably from Stefan Hansel,
+          most notably from Stefan Hansel
           who tracked down a number of significant memory leaks in qooxdoo and
           provided patches to the qooxdoo developers,
-          this version now brings a dramatically improved memory consumption,
-          especially in IE 6.
+          this version now brings a major improvement in client memory
+          consumption.
+          With this qooxdoo version, the long-standing memory leakage problems
+          of RAP escpecially in Internet Explorer are resolved.
           <p>
           Thanks to everyone who helped making this possible!
           </p>
