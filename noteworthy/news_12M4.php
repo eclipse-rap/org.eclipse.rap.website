@@ -40,7 +40,7 @@ $html = <<<EOHTML
           <b>qooxdoo 0.7.4</b></td>
         <td width="80%">
           This milestone build includes a new version of the Javascript library
-          qooxdoo.
+          <a href="http://qooxdoo.org">qooxdoo</a>.
           Thanks to the great support by the RAP community,
           most notably from Stefan Hansel
           who tracked down a number of significant memory leaks in qooxdoo and
