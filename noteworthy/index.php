@@ -16,9 +16,9 @@ $html = <<<EOHTML
           Listed are the more noteworthy things that will be available in the 
           respective milestone builds towards version 1.2.
           <ul>
-            <li><a href="news_12M2.php">M2 (October 8, 2008)</a></li>
-            <li><a href="news_12M3.php">M3 (November 19, 2008)</a></li>
             <li><a href="news_12M4.php">M4 (January 12, 2009)</a></li>
+            <li><a href="news_12M3.php">M3 (November 19, 2008)</a></li>
+            <li><a href="news_12M2.php">M2 (October 8, 2008)</a></li>
           </ul>
           <p />        
           All features listed there can also be obtained from
