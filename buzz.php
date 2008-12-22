@@ -117,6 +117,10 @@ $html = <<<EOHTML
             Fabian Lange, Nov 2008
           </li>
           <li>
+            <a href="http://eclipse.dzone.com/articles/chat-rap">
+            Chat on the RAP</a>, Nov 24th, 2008, Glenn Galang 
+          </li>
+          <li>
             Webinar: Single-Sourcing Techniques for RAP and RCP, Oct 23, 2008, Frank Appel
             <br />
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.pdf">
