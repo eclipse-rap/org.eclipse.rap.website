@@ -27,6 +27,7 @@ $html = <<<EOHTML
       <li><a href="#RWT">RWT</a></li>
     </ul></p>
 
+    <p>&nbsp;</p>
     <hr />
 
     <a name="Common"></a>
@@ -49,7 +50,6 @@ $html = <<<EOHTML
     
     <p>&nbsp;</p>
     <hr />
-    <p>&nbsp;</p>
 
     <a name="RWT"></a>
     <h2>RWT</h2>
@@ -144,6 +144,7 @@ Combo-Button {
       </tr>
     </table>
 
+    <p>&nbsp;</p>
     <hr />
         
     <p>The above features are just the ones that are new since the last 
