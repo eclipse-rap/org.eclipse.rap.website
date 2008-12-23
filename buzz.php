@@ -127,6 +127,10 @@ $html = <<<EOHTML
               PDF Slides
             </a>
             &nbsp;&nbsp;
+            <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_examples.zip">
+              Code examples
+            </a>
+            &nbsp;&nbsp;
             <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.mp4">
               MP4 Recording
             </a>
