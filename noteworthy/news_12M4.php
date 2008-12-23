@@ -22,15 +22,34 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
 
-<!--    
     <p><ul>
+      <li><a href="#Common">Common</a></li>
       <li><a href="#RWT">RWT</a></li>
-      <li><a href="#JFace">JFace</a></li>
-      <li><a href="#Tooling">Tooling</a></li>
     </ul></p>
 
     <hr />
--->
+
+    <a name="Common"></a>
+    <h2>Common</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Jetty 6.1 and Servlet API 2.5</b></td>
+        <td width="80%">
+          The version of Jetty that comes packaged with RAP was updated from 
+          5.1 to 6.1. With this change, the Servlet API (<code>javax.servlet.*</code>) 
+          was updated to version 2.5.
+          Please adjust your launch configurations accordingly and verify 
+          version ranges for Import-Package and Require-Bundle directives.
+          <p>For more information please see 
+            <a href="https://bugs.eclipse.org/258628">bug #258628</a>.</p>
+        <td/>
+      </tr>
+    </table>
+    
+    <p>&nbsp;</p>
+    <hr />
+    <p>&nbsp;</p>
 
     <a name="RWT"></a>
     <h2>RWT</h2>
