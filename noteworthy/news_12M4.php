@@ -37,9 +37,10 @@ $html = <<<EOHTML
         <td width="20%">
           <b>Jetty 6.1 and Servlet API 2.5</b></td>
         <td width="80%">
-          The version of Jetty that comes packaged with RAP was updated from 
-          5.1 to 6.1. With this change, the Servlet API (<code>javax.servlet.*</code>) 
-          was updated to version 2.5.
+          The version of <a href="http://mortbay.org/jetty/">Jetty</a> that comes 
+          packaged with RAP was updated from 5.1 to 6.1. With this change, the 
+          <a href="http://java.sun.com/products/servlet/index.jsp">Servlet API</a>
+          (<code>javax.servlet.*</code>) was updated to version 2.5.
           Please adjust your launch configurations accordingly and verify 
           version ranges for Import-Package and Require-Bundle directives.
           <p>For more information please see 
