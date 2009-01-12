@@ -14,7 +14,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 		    <h3>Committers</h3>
 			<ul>
 				<li>
-                  Frank Appel (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)</a>
+                  Frank Appel</a>
                 </li>
 				<li>
                   Istvan Ballok (<a href="http://www.cas.de/">CAS Software</a>)
