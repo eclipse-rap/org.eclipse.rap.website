@@ -83,7 +83,8 @@ $html = <<<EOHTML
           with the well known Eclipse workbench extension points, JFace, and a 
           widget toolkit with SWT API (using <a href="http://qooxdoo.org">
           qooxdoo</a> for the client-side presentation). The project is part
-          of the Ganymede release train and released its 1.1 release.
+          of the <a href="http://eclipse.org/ganymede/">Ganymede</a> release 
+          train and released its 1.1 release.
         <br />
         <br />
         <a href="about.php">Learn more ...</a>
