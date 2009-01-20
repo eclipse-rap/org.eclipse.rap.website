@@ -35,6 +35,28 @@ $html = <<<EOHTML
     <p>&nbsp;</p>
     <hr />
 
+    <a name="RWT"></a>
+    <h2>RWT</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>ColorDialog</b></td>
+        <td width="80%">
+          SWT's ColorDialog has been implemented for RWT.
+          <p>
+<pre><code>
+ColorDialog dialog = new ColorDialog( shell );
+RGB result = dialog.open();
+</code></pre>
+          </p>
+          <img src="color-dialog.png"/>
+        <td/>
+      </tr>
+    </table>
+    
+    <p>&nbsp;</p>
+    <hr />
+
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
