@@ -43,12 +43,11 @@ $html = <<<EOHTML
           <b>ColorDialog</b></td>
         <td width="80%">
           SWT's ColorDialog has been implemented for RWT.
-          <p>
+          <br />
 <pre><code>
 ColorDialog dialog = new ColorDialog( shell );
 RGB result = dialog.open();
 </code></pre>
-          </p>
           <img src="color-dialog.png"/>
         <td/>
       </tr>
