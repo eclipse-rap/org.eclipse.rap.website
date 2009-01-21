@@ -25,12 +25,40 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
 
-    <!--
     <p><ul>
       <li><a href="#Common">Common</a></li>
       <li><a href="#RWT">RWT</a></li>
     </ul></p>
-    -->
+    
+    <p>&nbsp;</p>
+    <hr />
+
+    <a name="Common"></a>
+    <h2>Common</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>com.ibm.icu.base</b></td>
+        <td width="80%">
+          <a href="http://icu-project.org/">ICU4J</a> is a set of Java libraries 
+          that provides comprehensive support for Unicode, software globalization,
+          and internationalization. These libraries are packaged in the plug-in 
+          com.ibm.icu (about 3MB in size)
+          <p>Several plug-ins like Workbench, Forms, and JFace Databinding make
+            use of these libraries and so do the respective RAP apdoptions.</p>
+          <p>As of this milestone, RAP uses the
+            <a href="http://wiki.eclipse.org/index.php/ICU4J#Replacement_Plug-in">
+              Replacement Plug-in com.ibm.icu.base</a> 
+            (about 100KB in size) in order to reduce the overall size of the 
+            target platform by almost 3MB.</p>
+          <p>
+            Since all dependencies on ICU4J are expressed by <code>Import-Package</code>
+            declarations, the replacement plug-in can be easily "re-replaced" 
+            if necessary.
+            </p>  
+        <td/>
+      </tr>
+    </table>
     
     <p>&nbsp;</p>
     <hr />
