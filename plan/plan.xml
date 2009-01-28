@@ -19,6 +19,10 @@
       the well known Eclipse workbench extenstion points, JFace, and a 
       widget toolkit with SWT API.
     </html:div>
+     <html:div>
+       Plans for previous releases can be found on these 
+       <html:a href="http://wiki.eclipse.org/RapPlan">wiki pages</html:a>.
+     </html:div>
 	</introduction>
 	<release_deliverables>
 		<html:div>
@@ -126,18 +130,8 @@
 				</html:p>
         </html:div>
 			</description>
-			<committed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=RT&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=extend-rwt&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
-			  <html:div>
-				<html:ul>
-				  <html:li>DateTime widget</html:li>
-				  <html:li>ExpandBar widget</html:li>
-				  <html:li>Scale widget</html:li>
-				  <html:li>MessageBox</html:li>
-				  <html:li>Cursor resource</html:li>
-				  <html:li>Key and Traversal events</html:li>
-				  <html:li>JFace Cell Editors</html:li>
-				</html:ul>
-			  </html:div>
+			<committed
+			  bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=RT&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=extend-rwt&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
 			</committed>
 			<proposed>
 			  <html:div>
@@ -157,16 +151,16 @@
 			  </html:div>
 			</description>
 			<committed>
+			</committed>
+			<proposed>
+			</proposed>
+			<deferred>
         <html:div>
         <html:ul>
           <html:li>Specify and implement an exchangable client/server 
             synchronization mechanism.</html:li>
         </html:ul>
         </html:div>
-			</committed>
-			<proposed>
-			</proposed>
-			<deferred>
 			</deferred>
 		</theme>
 		<theme name="New Web Centric Features">
@@ -174,14 +168,8 @@
 			  <html:div>
 			  </html:div>
 			</description>
-			<committed>
-        <html:div>
-        <html:ul>
-          <html:li>Web Look &amp; Feel for the Workbench (Exemplary implmentation and 
-          API to plug in other implementations)</html:li>
-          <html:li>Extend themeability of existing widgets</html:li>
-        </html:ul>
-        </html:div>
+			<committed
+			  bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=RT&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-theme%3Dweb-features+plan-status=committed&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
 			</committed>
 			<proposed>
         <html:div>
