@@ -174,8 +174,8 @@
         <html:div>
         <html:ul>
           <html:li>Automated performance tests</html:li>
-          <html:li>Ease single sourcing with platform (Jobs infrastructure, 
-            singletons, shutdown house keeping, I18N)</html:li>
+          <html:li>Ease single sourcing with platform (bundle init, jobs 
+            infrastructure, singletons, shutdown house keeping, I18N)</html:li>
         </html:ul>
         </html:div>
       </proposed>
