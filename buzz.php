@@ -112,8 +112,9 @@ $html = <<<EOHTML
         <h3>Current Articles, Blogs, Slides and more</h3>
 	      <ul>
           <li>
+            Case study:
             <a href="http://www.infoq.com/articles/eclipse-rap-casestudy" target="_blank">
-              Case study: Eclipse Rich Ajax Platform Use at CAS Software AG</a>,
+              Eclipse Rich Ajax Platform Use at CAS Software AG</a>,
             InfoQ, Feb 1<sup>st</sup>, 2009, Craig Wickesser 
           </li>
           <li>
