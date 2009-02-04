@@ -106,7 +106,7 @@ $html = <<<EOHTML
 </div>
 <p>&nbsp;</p>
 
-<h1>Third Party demos based on RAP</h1>
+<h1>Third Party applications based on RAP</h1>
 <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
   <table width="750" border="0" cellspacing="5" cellpadding="5">
   <tr>
