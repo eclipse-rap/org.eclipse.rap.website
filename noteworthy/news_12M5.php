@@ -79,6 +79,43 @@ RGB result = dialog.open();
           <img src="color-dialog.png"/>
         <td/>
       </tr>
+      
+      <tr>
+        <td>
+          <b>Button widget</b></td>
+        <td>
+          The <code>Button</code> widget has been reworked. Now there are 
+          custom implementations for check boxes and radio buttons The new 
+          features are:
+          <li>The method <code>Button#setGrayed()</code> is implemented for a 
+            check box behavior that works much the same as in SWT.
+            <br />
+            <img src="RAPCheckGrayed.png" />
+          </li>
+          <li>Hover state is implemented for both radio and check buttons.
+          </li>
+          <li>Images are used for check and radio icons and can be defined via 
+            theming for the default, selected, hover and grayed (only check box) 
+            state. 
+            These are examples for setting the state images for the default 
+            state of a radio button and for the combined selected and grayed 
+            state of a check button:
+<pre>
+Button-RadioIcon {
+  <span style="color:blue;">background-image</span>: url( <span style="color:#568c28;">resource/widget/rap/button/radio-unselected.png</span> );
+}
+
+Button-CheckIcon:selected:grayed {
+  <span style="color:blue;">background-image</span>: url( <span style="color:#568c28;">resource/widget/rap/button/check-grayed.png</span> );
+}
+</pre>
+          </li>
+          <li>The <code>Button#setImage()</code> method now works as in SWT.
+            <br />
+            <img src="RAPCheckImage.png" />
+          </li>
+        </td>
+      </tr>
     </table>
     
     <p>&nbsp;</p>
