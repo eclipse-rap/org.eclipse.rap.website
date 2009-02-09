@@ -80,10 +80,10 @@ RGB result = dialog.open();
         <td/>
       </tr>
       
-      <tr>
-        <td>
+      <tr valign="top" align="left">
+        <td width="20%">
           <b>Button widget</b></td>
-        <td>
+        <td width="80%">
           The <code>Button</code> widget has been reworked. Now there are 
           custom implementations for check boxes and radio buttons The new 
           features are:
