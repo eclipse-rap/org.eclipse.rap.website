@@ -77,6 +77,7 @@ ColorDialog dialog = new ColorDialog( shell );
 RGB result = dialog.open();
 </code></pre>
           <img src="color-dialog.png"/>
+          <p>&nbsp;</p>
         <td/>
       </tr>
       
