@@ -42,9 +42,10 @@ $html = <<<EOHTML
      </ul>
     </div>
 
+    <!--
     <div class="sideitem">
-     <h6>Upcoming events</h6>
-     <ul>
+      <h6>Upcoming events</h6>
+      <ul>
       <li>
         <a href="https://www1.gotomeeting.com/register/733916337" 
           target="_blank">
@@ -53,6 +54,7 @@ $html = <<<EOHTML
       </li>
      </ul>
     </div>
+    -->
     
     <div class="sideitem">
      <h6>Quicklinks</h6>
