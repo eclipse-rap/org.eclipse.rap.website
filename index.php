@@ -8,12 +8,56 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 <div id="maincontent">
   <div id="midcolumn">
-
+  <h1>Eclipse Rich Ajax Platform Home</h1>
   <p align="center">
-    <img src="images/screens.png" width="600" height="295" border="0"/>
-  </p>
-  <table width="100%" border="0">    
-    <tr>
+    <img src="images/screens.png" width="500" height="248" border="0"/>
+  </p>  
+          The RAP project enables developers to build rich, Ajax-enabled 
+          Web applications by using the Eclipse development model, plug-ins 
+          with the well known Eclipse workbench extension points, JFace, and a 
+          widget toolkit with SWT API (using <a href="http://qooxdoo.org">
+          qooxdoo</a> for the client-side presentation). The project is part
+          of the <a href="http://wiki.eclipse.org/Galileo">Galileo</a> release 
+          train and will be release its 1.2 release.
+        <br />
+        <br />
+        <a href="about.php">Learn more ...</a>
+  </div>
+
+ <div id="rightcolumn">
+  <div style="margin-right:10px">
+  
+    <div class="sideitem">
+    <h6>Active Contributors</h6>
+     <ul>
+      <li>
+        <a href="http://eclipsesource.com" target="_blank">EclipseSource</a>
+      </li>
+      <li>
+        <a href="http://oneandone.com" target="_blank">1&1</a>
+      </li>
+      <li>
+        <a href="http://www.cas.de/English/Home.asp" target="_blank">CAS</a>
+      </li>
+     </ul>
+    </div>
+
+    <div class="sideitem">
+     <h6>Upcoming events</h6>
+     <ul>
+      <li>
+        <a href="https://www1.gotomeeting.com/register/733916337" 
+          target="_blank">
+          Single-Sourcing Techniques for RAP and RCP</a>
+        <span><br />Jan 29<sup>th</sup> 2009</span>
+      </li>
+     </ul>
+    </div>
+    
+    <div class="sideitem">
+     <h6>Quicklinks</h6>
+     <table width="100%" border="0">    
+       <tr>
         <td width="30%" valign="top">
           <table border="0">
           <tr>
@@ -75,52 +119,8 @@ $html = <<<EOHTML
             </td>
           </tr>          
           </table>
-        </td>
-        
-        <td colspan="2" width="55%" valign="bottom">
-          The RAP project enables developers to build rich, Ajax-enabled 
-          Web applications by using the Eclipse development model, plug-ins 
-          with the well known Eclipse workbench extension points, JFace, and a 
-          widget toolkit with SWT API (using <a href="http://qooxdoo.org">
-          qooxdoo</a> for the client-side presentation). The project is part
-          of the <a href="http://eclipse.org/ganymede/">Ganymede</a> release 
-          train and released its 1.1 release.
-        <br />
-        <br />
-        <a href="about.php">Learn more ...</a>
-        </td>
-      </tr>
-  </table>
-  </div>
-
- <div id="rightcolumn">
-  <div style="margin-right:10px">
-  
-    <div class="sideitem">
-    <h6>Active Contributors</h6>
-     <ul>
-      <li>
-        <a href="http://innoopract.com" target="_blank">Innoopract</a>
-      </li>
-      <li>
-        <a href="http://oneandone.com" target="_blank">1&1</a>
-      </li>
-      <li>
-        <a href="http://www.cas.de/English/Home.asp" target="_blank">CAS</a>
-      </li>
-     </ul>
-    </div>
-
-    <div class="sideitem">
-     <h6>Upcoming events</h6>
-     <ul>
-      <li>
-        <a href="https://www1.gotomeeting.com/register/733916337" 
-          target="_blank">
-          Single-Sourcing Techniques for RAP and RCP</a>
-        <span><br />Jan 29<sup>th</sup> 2009</span>
-      </li>
-     </ul>
+         </tr>
+       </table>
     </div>
   </div>  
  </div>

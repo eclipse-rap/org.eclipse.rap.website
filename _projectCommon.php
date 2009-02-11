@@ -2,7 +2,7 @@
 	# Set the theme for your project's web pages.
 	# See the Committer Tools "How Do I" for list of themes
 	# https://dev.eclipse.org/committers/ 
-	$theme = "Lazarus";
+	$theme = "Nova";
 
 	$Nav->setLinkList(array());
 	$branding = <<<EOBRANDING

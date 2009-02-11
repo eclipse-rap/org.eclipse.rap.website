@@ -20,28 +20,28 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
                   Istvan Ballok (<a href="http://www.cas.de/">CAS Software</a>)
 				</li>
 				<li>
-                  Jordi Böhme López (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Jordi B&ouml;hme L&oacute;pez (<a href="http://eclipsesource.com">EclipseSource</a>)
 				</li>
                 <li>
-                  Ivan Furnadjiev (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Ivan Furnadjiev (<a href="http://eclipsesource.com">EclipseSource</a>)
                 </li>
 				<li>
-                  R&uuml;diger Herrmann (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  R&uuml;diger Herrmann (<a href="http://eclipsesource.com">EclipseSource</a>)
                 </li>
 				<li>
-                  Jochen Krause (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Jochen Krause (<a href="http://eclipsesource.com">EclipseSource</a>)
 				</li>
 				<li>
-                  Benjamin Muskalla (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Benjamin Muskalla (<a href="http://eclipsesource.com">EclipseSource</a>)
 				</li>
 				<li>
 				  Stefan R&ouml;ck (<a href="http://www.cas.de/">CAS Software</a>)
 				</li>
 				<li>
-                  Ralf Sternberg (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Ralf Sternberg (<a href="http://eclipsesource.com">EclipseSource</a>)
 				</li>
                 <li>
-                  Elias Volanakis (<a href="http://innoopract.com">Innoopract Informationssysteme GmbH</a>)
+                  Elias Volanakis (<a href="http://eclipsesource.com">EclipseSource</a>)
                 </li>
 			</ul> 
 		</div>

@@ -15,7 +15,7 @@ $html = <<<EOHTML
           <a href="#articles">Articles, Blogs, Slides and more</a>
         </li>
 	  </ul>	
-	  <div class="homeitem3col">
+	  <div>
         <a name="news"></a> 
 		<h3>RAP in the News</h3>
 	    <ul>
@@ -107,7 +107,7 @@ $html = <<<EOHTML
         </ul> 
       </div>
       
-	  <div class="homeitem3col">
+	  <div>
         <a name="articles"></a> 
         <h3>Current Articles, Blogs, Slides and more</h3>
 	      <ul>
@@ -232,7 +232,7 @@ $html = <<<EOHTML
 	</div>
   </div>
 </div>
-</div>
+
 
 EOHTML;
 
