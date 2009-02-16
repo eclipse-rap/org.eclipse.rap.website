@@ -25,16 +25,49 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
 
-    <!--
     <p><ul>
-      <li><a href="#Common">Common</a></li>
+      <!-- <li><a href="#Common">Common</a></li> -->
       <li><a href="#RWT">RWT</a></li>
     </ul></p>
-    -->
         
     <p>&nbsp;</p>
     <hr />
 
+    <a name="RWT"></a>
+    <h2>RWT</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>New API added</b></td>
+        <td width="80%">
+          During this milestone we concentrated on supporting new APIs. This will
+          make it easier for the community to reuse existing code or to utilize
+          new features.
+          Here is a list of APIs added during this milestone:
+          <br />
+          <ul>
+            <li>CTabFolder#getItem( Point )</li>
+            <li>DateTime#setDate( int, int, int )</li>
+            <li>DateTimesetDate( int, int, int )</li>
+            <li>Display#getData()</li>
+            <li>Display#getData( String )</li>
+            <li>Display#setData( Object )</li>
+            <li>Display#setData( String, Object )</li>
+            <li>RowLayout.center</li>
+            <li>SashForm#getSashWidth()</li>
+            <li>SashForm#setMaximizedControl( Control )</li>
+            <li>SashForm#setSashWidth( int )</li>
+            <li>Spinner#addSelectionListener( SelectionListener )</li>
+            <li>Spinner#removeSelectionListener( SelectionListener )</li>
+            <li>TabItem#setToolTipText( String )</li>
+            <li>ToolItem#setDisabledImage( Image )</li>
+            <li>TypedEvent.display</li>
+          </ul>
+          <p>&nbsp;</p>
+        <td/>
+      </tr>
+    </table>
+      
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
