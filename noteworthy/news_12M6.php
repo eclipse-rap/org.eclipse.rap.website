@@ -40,10 +40,11 @@ $html = <<<EOHTML
         <td width="20%">
           <b>New API added</b></td>
         <td width="80%">
-          During this milestone we concentrated on supporting new APIs. This will
-          make it easier for the community to reuse existing code or to utilize
-          new features.
-          Here is a list of APIs added during this milestone:
+          For this milestone, we concentrated on implementing SWT API that was
+          still missing in RAP.
+          This will make it easier for the community to reuse existing code or
+          to utilize new features.
+          Here is a list of API methods added in this milestone:
           <br />
           <ul>
             <li><code>CTabFolder#getItem( Point )</code></li>
@@ -55,6 +56,7 @@ $html = <<<EOHTML
               <code>SashForm</code></li>
             <li>Selection listener on <code>Spinner</code></li>
             <li><code>TabItem#setToolTipText( String )</code></li>
+            <li><code>Text#setLineHeight()</code></li>
             <li><code>setDisabledImage()</code> and <code>setHotImage()</code> 
               on <code>ToolItem</code></li>
             <li><code>TypedEvent#display</code></li>
