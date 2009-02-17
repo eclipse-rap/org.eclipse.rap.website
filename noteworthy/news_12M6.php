@@ -50,14 +50,14 @@ $html = <<<EOHTML
             <li><code>DateTime#setDate( int, int, int )</code></li>
             <li>User data on <code>Display</code> (<code>setData( Object )</code>, 
               <code>setData( String, Object )</code>, etc.)</li>
-            <li>RowLayout#center</li>
+            <li><code>RowLayout#center</code></li>
             <li>sashWidth and <code>setMaximizedControl()</code> on 
               <code>SashForm</code></li>
             <li>Selection listener on <code>Spinner</code></li>
-            <li>TabItem#setToolTipText( String )</li>
+            <li><code>TabItem#setToolTipText( String )</code></li>
             <li><code>setDisabledImage()</code> and <code>setHotImage()</code> 
               on <code>ToolItem</code></li>
-            <li>TypedEvent#display</li>
+            <li><code>TypedEvent#display</code></li>
           </ul>
           <p>&nbsp;</p>
         <td/>
