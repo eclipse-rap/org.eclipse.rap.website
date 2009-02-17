@@ -46,22 +46,18 @@ $html = <<<EOHTML
           Here is a list of APIs added during this milestone:
           <br />
           <ul>
-            <li>CTabFolder#getItem( Point )</li>
-            <li>DateTime#setDate( int, int, int )</li>
-            <li>DateTimesetDate( int, int, int )</li>
-            <li>Display#getData()</li>
-            <li>Display#getData( String )</li>
-            <li>Display#setData( Object )</li>
-            <li>Display#setData( String, Object )</li>
-            <li>RowLayout.center</li>
-            <li>SashForm#getSashWidth()</li>
-            <li>SashForm#setMaximizedControl( Control )</li>
-            <li>SashForm#setSashWidth( int )</li>
-            <li>Spinner#addSelectionListener( SelectionListener )</li>
-            <li>Spinner#removeSelectionListener( SelectionListener )</li>
+            <li><code>CTabFolder#getItem( Point )</code></li>
+            <li><code>DateTime#setDate( int, int, int )</code></li>
+            <li>User data on <code>Display</code> (<code>setData( Object )</code>, 
+              <code>setData( String, Object )</code>, etc.)</li>
+            <li>RowLayout#center</li>
+            <li>sashWidth and <code>setMaximizedControl()</code> on 
+              <code>SashForm</code></li>
+            <li>Selection listener on <code>Spinner</code></li>
             <li>TabItem#setToolTipText( String )</li>
-            <li>ToolItem#setDisabledImage( Image )</li>
-            <li>TypedEvent.display</li>
+            <li><code>setDisabledImage()</code> and <code>setHotImage()</code> 
+              on <code>ToolItem</code></li>
+            <li>TypedEvent#display</li>
           </ul>
           <p>&nbsp;</p>
         <td/>
