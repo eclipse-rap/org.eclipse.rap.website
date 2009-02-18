@@ -182,6 +182,16 @@ $html = <<<EOHTML
 	      </a>
 	      <br />
 	    </li>
+	    <li>RAP 1.1.1 Service Release, based on Eclipse 3.4&nbsp;&nbsp;
+	      <a href="http://archive.eclipse.org/rt/rap/downloads/rap-1.1.1-SR1-target-3.4-20080917-1625.zip">
+	        rap-1.1.1-SR1-target-3.4-20080917-1625.zip
+	      </a>
+	      <br />
+	      <a href="http://www.eclipse.org/rap/noteworthy/news_11.php">
+	        New &amp; Noteworthy
+	      </a>
+	      <br />
+	    </li>
 	  </ul>
 	</div>
 </div>
