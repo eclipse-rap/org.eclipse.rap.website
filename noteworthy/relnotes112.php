@@ -12,18 +12,24 @@ $html = <<<EOHTML
 <div id="midcolumn">
   <h1>1.1.2 Release Notes</h1>
   <p>
-    As with every service release the main aspect is to provide bug fixes which
-    didn't get into the 1.1 release.
-  </p>
-  <!--p>
-    This <a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_file_loc=;bug_file_loc_type=allwordssubstr;bug_id=;bug_status=RESOLVED;bug_status=VERIFIED;bug_status=CLOSED;bugidtype=include;chfieldfrom=;chfieldto=Now;chfieldvalue=;classification=Technology;email1=;email2=;emailtype1=substring;emailtype2=substring;field-1-0-0=classification;field-1-1-0=product;field-1-2-0=target_milestone;field-1-3-0=bug_status;field0-0-0=noop;keywords=;keywords_type=allwords;long_desc=;long_desc_type=allwordssubstr;product=RAP;query_format=advanced;remaction=;short_desc=;short_desc_type=allwordssubstr;status_whiteboard=;status_whiteboard_type=allwordssubstr;target_milestone=1.1.1;type-1-0-0=anyexact;type-1-1-0=anyexact;type-1-2-0=anyexact;type-1-3-0=anyexact;type0-0-0=noop;value-1-0-0=Technology;value-1-1-0=RAP;value-1-2-0=1.1.2;value-1-3-0=RESOLVED%2CVERIFIED%2CCLOSED;value0-0-0=;votes=;query_based_on=">
-      Bugzilla query</a> 
-    lists all issues that were fixed in this service release which is now 
-    available for 
+    The 1.1.2 service release is now available for
     <a href="http://www.eclipse.org/rap/downloads">download</a>.
-  </p-->
+  </p>
+
   <p>
-    This is a list of the issues that have been fixed in this release:
+    This release includes a new version of the Javascript library
+    <a href="http://qooxdoo.org">qooxdoo</a>.
+    We decided to include this version because it brings a major improvement in
+    client memory consumption and resolves long-standing problems with memory
+    leakage, especially in Internet Explorer.
+    It is important to point out that this improvement would not have been
+    possible without the great support by the RAP community, most notably from
+    Stefan Hansel who tracked down a number of significant memory leaks
+    in qooxdoo and provided patches to the qooxdoo developers.
+  </p>
+
+  <p>
+    This release also provides a couple of bug fixes:
     <ul>
       <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244976">
         244976: Reduce Browser Memory Consumption</a></li>
@@ -33,8 +39,13 @@ $html = <<<EOHTML
         239104: Incorrect value on combo after selection</a></li>
       <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=258427">
         258427: DoubleClick event missing in IE with qooxdoo 0.7.4</a></li>
+      <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=252354">
+        252354: HTTP 500 while double clicking Link control (Firefox, Chrome)</a></li>
+      <li><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=196014">
+        196014: [Group] Group layout broken in IE and Opera</a></li>
     </ul>
   </p>
+
   <p>
     For a list of features that were added during the 1.1 development cycle,
     please see the <a href="news_11.php">New & Noetworthy</a> page.
