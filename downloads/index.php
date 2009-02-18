@@ -92,7 +92,7 @@ $html = <<<EOHTML
           rap-1.1.2-SR2-target-3.4-20090218-1212.zip
         </a>
         based on Eclipse 3.4 &nbsp;&nbsp;
-        <a href="../noteworthy/relnotes111.php">Release Notes</a>
+        <a href="../noteworthy/relnotes112.php">Release Notes</a>
       </p>
     </div>
    
