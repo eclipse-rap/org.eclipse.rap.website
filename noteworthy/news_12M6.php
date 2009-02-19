@@ -74,7 +74,6 @@ $html = <<<EOHTML
         <td width="20%">
           <b>Intro support</b></td>
         <td width="80%">
-          <br />
           The <code>org.eclipse.ui.intro</code> extension point
           provides a generic mechanism that can be used to create your own
           intro support for your application. The main purpose of this extension
@@ -86,18 +85,18 @@ $html = <<<EOHTML
           For example, the following contribution defines a hypothetical intro
           part to be shown by the workbench on startup:
           <pre><code>
-<extension  
-    point="org.eclipse.ui.intro">
-  <intro
+&lt;extension  
+    point="org.eclipse.ui.intro"&gt;
+  &lt;intro
     class="com.example.SampleIntroPart"
     id="someId"
-    icon="someIcon.png">
-  </intro>
-  <introBrandingBinding
+    icon="someIcon.png"&gt;
+  &lt;/intro&gt;
+  &lt;introBrandingBinding
     introId="someId"
-    brandingId="com.example.someBrandingId">
-  </introProductBinding>
-</extension>
+    brandingId="com.example.someBrandingId"&gt;
+  &lt;/introProductBinding&gt;
+&lt;/extension&gt;
           </pre></code>
 
           When starting the application for the first time the intro will appear
