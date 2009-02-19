@@ -56,6 +56,7 @@ $html = <<<EOHTML
             <li><code>RowLayout#center</code></li>
             <li>sashWidth and <code>setMaximizedControl()</code> on 
               <code>SashForm</code></li>
+            <li><code>Shell#forceActive()</code></li>
             <li>Selection listener on <code>Spinner</code></li>
             <li><code>TabItem#setToolTipText( String )</code></li>
             <li><code>Text#setLineHeight()</code></li>
