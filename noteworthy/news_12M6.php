@@ -52,6 +52,7 @@ $html = <<<EOHTML
             <li><code>DateTime#setDate( int, int, int )</code></li>
             <li>User data on <code>Display</code> (<code>setData( Object )</code>, 
               <code>setData( String, Object )</code>, etc.)</li>
+            <li>Device#getClientArea()</li>
             <li><code>RowLayout#center</code></li>
             <li>sashWidth and <code>setMaximizedControl()</code> on 
               <code>SashForm</code></li>
