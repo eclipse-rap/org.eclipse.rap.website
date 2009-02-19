@@ -28,6 +28,7 @@ $html = <<<EOHTML
     <p><ul>
       <!-- <li><a href="#Common">Common</a></li> -->
       <li><a href="#RWT">RWT</a></li>
+      <li><a href="#Workbench">Workbench</a></li>
     </ul></p>
         
     <p>&nbsp;</p>
@@ -61,6 +62,57 @@ $html = <<<EOHTML
               on <code>ToolItem</code></li>
             <li><code>TypedEvent#display</code></li>
           </ul>
+          <p>&nbsp;</p>
+        <td/>
+      </tr>
+    </table>
+    
+    <a name="Workbench"></a>
+    <h2>Workbench</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Intro support</b></td>
+        <td width="80%">
+          <br />
+          The <code>org.eclipse.ui.intro</code> extension point
+          provides a generic mechanism that can be used to create your own
+          intro support for your application. The main purpose of this extension
+          is to define the class that implements <code>IIntroPart</code> and to
+          specify the binding between a <b>branding</b> and an intro part.
+          As RAP does not support products as known from RCP you can use the
+          <code>org.eclipse.rap.ui.branding</code> extension point to bind your
+          intro to a specific branding.
+          For example, the following contribution defines a hypothetical intro
+          part to be shown by the workbench on startup:
+          <pre><code>
+<extension  
+    point="org.eclipse.ui.intro">
+  <intro
+    class="com.example.SampleIntroPart"
+    id="someId"
+    icon="someIcon.png">
+  </intro>
+  <introBrandingBinding
+    introId="someId"
+    brandingId="com.example.someBrandingId">
+  </introProductBinding>
+</extension>
+          </pre></code>
+
+          When starting the application for the first time the intro will appear
+          in fullscreen covering the rest of the workbench window:
+          <p><img src="intro_full.png"/></p>
+          
+          In standby mode the workbench shows the regular perspective with the
+          intro on the right side:
+          <p><img src="intro_standby.png"/></p>
+          
+          For more informations about how to use the intro extension, see
+          <a href="http://help.eclipse.org/ganymede/topic/org.eclipse.platform.doc.isv/guide/ua_intro_hello_world.htm">
+          Contributing a HelloWorld intro Part
+          </a>
+
           <p>&nbsp;</p>
         <td/>
       </tr>
