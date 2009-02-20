@@ -97,7 +97,7 @@ $html = <<<EOHTML
   &lt;introBrandingBinding
     introId="someId"
     brandingId="com.example.someBrandingId"&gt;
-  &lt;/introProductBinding&gt;
+  &lt;/introBrandingBinding&gt;
 &lt;/extension&gt;
           </pre></code>
 
