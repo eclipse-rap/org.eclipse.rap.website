@@ -139,7 +139,8 @@ $html = <<<EOHTML
 </div>
 <hr class="clearer" />
 <p>If you would like to get your application listed on this page please send an email 
-to rap-dev@eclipse.org or to one of the committers.
+to <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev@eclipse.org</a>
+ or to one of the committers.
 </p>
 
 </div>
