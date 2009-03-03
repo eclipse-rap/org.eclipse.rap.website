@@ -63,6 +63,7 @@ $html = <<<EOHTML
             <li><code>setDisabledImage()</code> and <code>setHotImage()</code> 
               on <code>ToolItem</code></li>
             <li><code>TypedEvent#display</code></li>
+            <li><code>Display#timerExec()</code></li>
           </ul>
           <p>&nbsp;</p>
         <td/>
