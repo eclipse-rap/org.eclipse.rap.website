@@ -94,7 +94,7 @@
       For this release the following web browsers/rendering engines will be
       supported
       <html:ul>
-	      <html:li>Internet Explorer >= 7.0</html:li>
+	      <html:li>Internet Explorer >= 6.0, version 7 and later is recommended</html:li>
 	      <html:li>Gecko (i.e. Firefox, Netscape)</html:li>
 	      <html:li>Webkit (i.e. Safari, Google Chrome)</html:li>
       </html:ul>
