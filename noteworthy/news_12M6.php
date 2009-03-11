@@ -48,12 +48,15 @@ $html = <<<EOHTML
           Here is a list of API methods added in this milestone:
           <br />
           <ul>
-            <li><code>CTabFolder#getItem( Point )</code></li>
-            <li><code>DateTime#setDate( int, int, int )</code></li>
+            <li><code>TypedEvent#display</code></li>
             <li>User data on <code>Display</code> (<code>setData( Object )</code>, 
               <code>setData( String, Object )</code>, etc.)</li>
+            <li><code>Display#timerExec()</code></li>
             <li>Device#getClientArea()</li>
             <li><code>RowLayout#center</code></li>
+            <li><code>Widget#notifyListeners()</code></li>
+            <li><code>CTabFolder#getItem( Point )</code></li>
+            <li><code>DateTime#setDate( int, int, int )</code></li>
             <li>sashWidth and <code>setMaximizedControl()</code> on 
               <code>SashForm</code></li>
             <li><code>Shell#forceActive()</code></li>
@@ -62,8 +65,6 @@ $html = <<<EOHTML
             <li><code>Text#setLineHeight()</code></li>
             <li><code>setDisabledImage()</code> and <code>setHotImage()</code> 
               on <code>ToolItem</code></li>
-            <li><code>TypedEvent#display</code></li>
-            <li><code>Display#timerExec()</code></li>
           </ul>
           <p>&nbsp;</p>
         <td/>
