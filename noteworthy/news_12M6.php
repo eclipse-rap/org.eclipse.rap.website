@@ -52,7 +52,7 @@ $html = <<<EOHTML
             <li>User data on <code>Display</code> (<code>setData( Object )</code>, 
               <code>setData( String, Object )</code>, etc.)</li>
             <li><code>Display#timerExec()</code></li>
-            <li>Device#getClientArea()</li>
+            <li><code>Device#getClientArea()</code></li>
             <li><code>RowLayout#center</code></li>
             <li><code>Widget#notifyListeners()</code></li>
             <li><code>CTabFolder#getItem( Point )</code></li>
