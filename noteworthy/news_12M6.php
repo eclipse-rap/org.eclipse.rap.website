@@ -52,6 +52,9 @@ $html = <<<EOHTML
             <li>User data on <code>Display</code> (<code>setData( Object )</code>, 
               <code>setData( String, Object )</code>, etc.)</li>
             <li><code>Display#timerExec()</code></li>
+            <li><code>Monitor</code> and its accessors like
+            <code>getPrimaryMonitor</code> on <code>Display</code>
+            </li>
             <li><code>Device#getClientArea()</code></li>
             <li><code>RowLayout#center</code></li>
             <li><code>Widget#notifyListeners()</code></li>
