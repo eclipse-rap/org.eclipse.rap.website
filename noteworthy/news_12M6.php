@@ -32,9 +32,6 @@ $html = <<<EOHTML
       <li><a href="#Workbench">Workbench</a></li>
     </ul></p>
         
-    <p>&nbsp;</p>
-    <hr />
-
     <a name="RWT"></a>
     <h2>RWT</h2>
     <table>
@@ -54,7 +51,8 @@ $html = <<<EOHTML
               <code>setData( String, Object )</code>, etc.)</li>
             <li><code>Display#timerExec()</code></li>
             <li><code>Monitor</code> and its accessors like
-              <code>getPrimaryMonitor</code> on <code>Display</code></li>
+              <code>getPrimaryMonitor()</code> on <code>Display</code> and
+              <code>getMonitor()</code> on <code>Control</code></li>
             <li><code>Device#getClientArea()</code></li>
             <li><code>RowLayout#center</code></li>
             <li><code>Widget#notifyListeners()</code></li>
@@ -69,13 +67,11 @@ $html = <<<EOHTML
             <li><code>setDisabledImage()</code> and <code>setHotImage()</code> 
               on <code>ToolItem</code></li>
           </ul>
-          <p>&nbsp;</p>
         <td/>
       </tr>
     </table>
     
     <p>&nbsp;</p>
-    <hr />
 
     <a name="Forms"></a>
     <h2>Forms</h2>
@@ -96,13 +92,13 @@ $html = <<<EOHTML
   FormText formText = toolkit.createFormText( form.getBody(), true );
 </pre>
           <p><img src="RAPFormText.png" ></p>
-          <p>&nbsp;</p>
+          <p>For further details please also see 
+            <a href="https://bugs.eclipse.org/242213">this bug</a></p>
         <td/>
       </tr>
     </table>
     
     <p>&nbsp;</p>
-    <hr />
 
     <a name="Workbench"></a>
     <h2>Workbench</h2>
@@ -148,8 +144,6 @@ $html = <<<EOHTML
           <a href="http://help.eclipse.org/ganymede/topic/org.eclipse.platform.doc.isv/guide/ua_intro_hello_world.htm">
           Contributing a HelloWorld intro Part
           </a>
-
-          <p>&nbsp;</p>
         <td/>
       </tr>
     </table>
