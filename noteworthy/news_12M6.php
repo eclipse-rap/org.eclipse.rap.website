@@ -28,6 +28,7 @@ $html = <<<EOHTML
     <p><ul>
       <!-- <li><a href="#Common">Common</a></li> -->
       <li><a href="#RWT">RWT</a></li>
+      <li><a href="#Workbench">Forms</a></li>
       <li><a href="#Workbench">Workbench</a></li>
     </ul></p>
         
@@ -53,8 +54,7 @@ $html = <<<EOHTML
               <code>setData( String, Object )</code>, etc.)</li>
             <li><code>Display#timerExec()</code></li>
             <li><code>Monitor</code> and its accessors like
-            <code>getPrimaryMonitor</code> on <code>Display</code>
-            </li>
+              <code>getPrimaryMonitor</code> on <code>Display</code></li>
             <li><code>Device#getClientArea()</code></li>
             <li><code>RowLayout#center</code></li>
             <li><code>Widget#notifyListeners()</code></li>
@@ -74,6 +74,36 @@ $html = <<<EOHTML
       </tr>
     </table>
     
+    <p>&nbsp;</p>
+    <hr />
+
+    <a name="Forms"></a>
+    <h2>Forms</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>FormText</b></td>
+        <td width="80%">
+          The <code>org.eclipse.ui.forms.widgets.FormText</code> has been 
+          implemented in RAP. FormText is a read-only text control that is 
+          capable of rendering wrapped text. Text can be rendered as-is or 
+          by parsing the formatting XML tags like <code>&lt;p&gt;</code>, 
+          <code>&lt;li&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>, 
+          <code>&lt;control&gt;</code> and <code>&lt;span&gt;</code>. 
+          You can use the <code>FormToolkit</code> to create an instance:
+          <br/>
+<pre>   
+  FormText formText = toolkit.createFormText( form.getBody(), true );
+</pre>
+          <p><img src="RAPFormText.png" ></p>
+          <p>&nbsp;</p>
+        <td/>
+      </tr>
+    </table>
+    
+    <p>&nbsp;</p>
+    <hr />
+
     <a name="Workbench"></a>
     <h2>Workbench</h2>
     <table>
