@@ -67,6 +67,15 @@ $html = <<<EOHTML
             <li><code>setDisabledImage()</code> and <code>setHotImage()</code> 
               on <code>ToolItem</code></li>
           </ul>
+          <p>&nbsp;</p>
+        <td/>
+      </tr>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>CCombo widget</b></td>
+        <td width="80%">
+          Now there is a CCombo widget that works much the same as in SWT.
+          <p><img src="RAPCCombo.png" /></p>
         <td/>
       </tr>
     </table>
