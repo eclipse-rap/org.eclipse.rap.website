@@ -20,7 +20,7 @@
 
 <h1>Single Sourcing</h1>
 
-<h2>Getting started screencasts</h2>
+<h2>What is single sourcing?</h2>
 <p>
   Application vendors are increasingly required to provide both desktop and web
   clients for their customers. But desktop and web applications are  based on
