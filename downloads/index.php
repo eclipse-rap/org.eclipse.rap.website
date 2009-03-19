@@ -21,7 +21,7 @@ $html = <<<EOHTML
         See the <a href="../gettingstarted.php">getting started</a> guide 
         for a detailed description on how to install RAP using the update site. 
       </p>
-      <p style="margin: 10px"><b>1.2 M5 Milestone Build</b></p>
+      <p style="margin: 10px"><b>1.2 M6 Milestone Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The update site is
         <br />
@@ -30,10 +30,10 @@ $html = <<<EOHTML
         <br />
         We also provide a zipped version for download:
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/tooling/rap-tooling-1.2.0-M5-20090210-1255.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/tooling/rap-tooling-1.2.0-M6-20090319-1224.zip">
           <img src="../images/icon_save.gif" alt="Update Site Zip"/>
           &nbsp;&nbsp;
-          rap-tooling-1.2.0-M5-20090210-1255.zip
+          rap-tooling-1.2.0-M6-20090319-1224.zip
         </a>
         for use with Eclipse 3.3, 3.4 and 3.5
       </p>
@@ -76,13 +76,13 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px"><b>1.2 M5 Milestone Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M5-20090210-1243.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M6-20090319-1159.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-          rap-runtime-1.2.0-M5-20090210-1243.zip
+          rap-runtime-1.2.0-M6-20090319-1159.zip
         </a>
         based on Eclipse 3.5 &nbsp;&nbsp;
-        <a href="../noteworthy/news_12M5.php">New &amp; Noteworthy</a>
+        <a href="../noteworthy/news_12M6.php">New &amp; Noteworthy</a>
       </p>
       <p style="margin: 10px"><b>1.1.2 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
