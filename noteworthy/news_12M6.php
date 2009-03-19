@@ -154,6 +154,19 @@ $html = <<<EOHTML
           </a>
         <td/>
       </tr>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Databinding</b></td>
+        <td width="80%">
+          During the M6 milestone, the databinding core plug-ins were restructured.
+          Like its RCP counterpart, the RAP workbench adoption has a dependency
+          to core databinding and thus is affected from these changes.
+          <p>Effectively, two more bundles, <code>org.eclipse.databinding.observable</code>
+            and <code>org.eclipse.databinding.property</code> a now required to
+            run the workbench. Please update your build scripts and launch 
+            configurations accordingly.</p> 
+        <td/>
+      </tr>
     </table>
       
     <p>The above features are just the ones that are new since the last 
