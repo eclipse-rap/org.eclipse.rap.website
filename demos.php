@@ -137,6 +137,40 @@ $html = <<<EOHTML
   </tr>
   </table>
 </div>
+
+<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
+  <table width="750" border="0" cellspacing="5" cellpadding="5">
+  <tr>
+    <td width="250" valign="top">
+      <a href="http://www.cas-pia.de/de/testen.html" target="_blank">
+        <img src="images/demos/pia.png" style="border: 1px solid #666;"/>
+      </a>
+    </td>
+    <td width="500" valign="top">
+      <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
+        CAS PIA
+      </h2>         
+      <p>
+        <a href="http://www.cas-pia.de/de/testen.html" target="_blank">
+          See CAS PIA guest account
+        </a>
+      </p>
+      <p>A really powerful relationship management system based on RAP with a
+      great look&feel. It provides</p>
+      <ul>
+        <li>Contact management</li>
+        <li>Calendar</li>
+        <li>Document management</li>
+        <li>and many more feature...</li>
+      </ul>
+      <p>
+      Click <i>Gastzugang</i> to launch the application.
+      </p>
+    </td>
+  </tr>
+  </table>
+</div>
+
 <hr class="clearer" />
 <p>If you would like to get your application listed on this page please send an email 
 to <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev@eclipse.org</a>
