@@ -57,7 +57,7 @@
   <li>Click on the <strong>New Remote Site</strong> button, the New Update Site 
       dialog will appear.</li>
   <li>Enter a name for the udpate site, such as "RAP Update Site" and then enter
-      the URL <strong>http://download.eclipse.org/technology/rap/update-site</strong>, 
+      the URL <strong>http://download.eclipse.org/rt/rap/update-site</strong>, 
       click <strong>OK</strong> to create the new update site entry.</li>
   <li>The entry you just created now appears in the update site list and is
       selected. Ensure it is the only site selected and click 
@@ -84,7 +84,7 @@
     <strong>Add Site...</strong> button.</li>
   <li>In the upcoming <strong>Add Site</strong> dialog, enter enter the RAP 
     Update Site URL 
-    <strong>http://download.eclipse.org/technology/rap/update-site</strong>. 
+    <strong>http://download.eclipse.org/rt/rap/update-site</strong>. 
     Click <strong>OK</strong> to create the new update site entry.</li>
   <li>The entry you just created now appears in the update site list. Select 
     its check box and click <strong>Install...</strong>.</li>
