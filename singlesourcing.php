@@ -63,6 +63,7 @@
   &nbsp;&nbsp;(~ 60 Minutes)
 </p>
 
+<!--
 <h2>Single Sourcing guide</h2>
 <p>
   In order to develop fully single-sourced bundles for Eclipse RCP and RAP it is
@@ -71,12 +72,10 @@
   platforms. All of these patterns have been discovered during single sourcing
   various applications in the Eclipse.org runtime space and tooling space.
   <br />
-  <!--
   Paper: <a href="">Patterns for Single-Sourcing RCP and RAP applications</a>,
   Apr 03, 2009, Benjamin Muskalla
-  -->
-  Coming soon...
 </p>
+-->
 
 </div>
 </div>
