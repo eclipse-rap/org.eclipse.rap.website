@@ -38,6 +38,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.p
 				  Stefan R&ouml;ck (<a href="http://www.cas.de/">CAS Software</a>)
 				</li>
 				<li>
+                  Holger Staudacher (<a href="http://eclipsesource.com">EclipseSource</a>)
+				</li>
+				<li>
                   Ralf Sternberg (<a href="http://eclipsesource.com">EclipseSource</a>)
 				</li>
                 <li>
