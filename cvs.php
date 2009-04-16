@@ -21,7 +21,7 @@ $html = <<<EOHTML
     <h3>Browse CVS</h3>
     <p style="margin:10px">
       You can browse the sources online with 
-      <a href=""http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.rap/?root=RT_Project>
+      <a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.rap/?root=RT_Project">
       this web interface</a>.
     </p>
   
