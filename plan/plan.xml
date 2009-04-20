@@ -61,12 +61,11 @@
     <milestone date="6/15/2009" milestone="RC4"><html:div>1.2 RC4</html:div></milestone>
 		<postamble>
 			<html:div>
-        <!-- 
-        A detailed <a href="http://wiki.eclipse.org/DSDP/TM/3.1_Ramp_down_Plan">
-        TM 3.1 Ramp down Plan</a> towards the release is available especially for the Eclipse 
-        <a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">
-        Galileo Simultaneous Release</a> integration.
-        -->
+        A detailed <html:a href="http://wiki.eclipse.org/RAP/Ramp_down_Galileo">
+        RAP Ramp down Plan</html:a> towards the release is available especially for 
+        the Eclipse 
+        <html:a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">
+        Galileo Simultaneous Release</html:a> integration.
         <html:p>The target date for availability of RAP 1.2 is
           June 26, 2009 (with Galileo).</html:p>
         <html:p>Two service releases are planned for RAP 1.2 that will include
