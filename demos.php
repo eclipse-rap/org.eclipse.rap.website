@@ -151,7 +151,7 @@ $html = <<<EOHTML
         CAS PIA
       </h2>         
       <p>
-        <a href="http://www.cas-pia.de/de/testen.html" target="_blank">
+        <a href="http://www.cas-pia.de/en/try.html" target="_blank">
           See CAS PIA guest account
         </a>
       </p>
@@ -164,7 +164,7 @@ $html = <<<EOHTML
         <li>and many more feature...</li>
       </ul>
       <p>
-      Click <i>Gastzugang</i> to launch the application.
+      Click <i>Guest access</i> to launch the application.
       </p>
     </td>
   </tr>
