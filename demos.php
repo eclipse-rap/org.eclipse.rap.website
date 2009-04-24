@@ -142,7 +142,7 @@ $html = <<<EOHTML
   <table width="750" border="0" cellspacing="5" cellpadding="5">
   <tr>
     <td width="250" valign="top">
-      <a href="http://www.cas-pia.de/de/testen.html" target="_blank">
+      <a href="http://www.cas-pia.de/en/try.html" target="_blank">
         <img src="images/demos/pia.png" style="border: 1px solid #666;"/>
       </a>
     </td>
