@@ -25,27 +25,36 @@ $html = <<<EOHTML
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
 
-<!--
     <p><ul>
       <li><a href="#RWT">RWT</a></li>
+<!--
       <li><a href="#Forms">Forms</a></li>
       <li><a href="#Workbench">Workbench</a></li>
-    </ul></p>
 -->
+    </ul></p>
 
-<!--
     <a name="RWT"></a>
     <h2>RWT</h2>
     <table>
       <tr valign="top" align="left">
         <td width="20%">
-          <b>[ title dummy ]</b></td>
+          <b>Table improvements</b></td>
         <td width="80%">
-          [ content dummy ]
+          The Table widget has received a lot of bugfixes and improvements
+          during this milestone.
+          Fonts, backgrounds and foreground colors are now supported properly
+          for the entire table, for table items and also for single cells.
+          Unnessesary scroll bars are not drawn anymore.
+          Together with alternating row colors and cell padding, which had
+          already been added in M6, the table fits much better into modern
+          web applications.
+          Moreover, we added some significant performance improvements.
+          <p><img src="TableImprovements.png" /></p>
         <td/>
       </tr>
     </table>
-    
+
+<!--
     <p>&nbsp;</p>
 
     <a name="Workbench"></a>
