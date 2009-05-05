@@ -84,7 +84,6 @@ $html = <<<EOHTML
           With the help of a user interface design company, we developed a new
           look and feel that provides a professional, serious look for RAP
           applications.
-
           This impementation uses the new interaction design API, which brings
           more flexibity to modifying the workbench presentation and allows to
           completely separate the styling from the application code
@@ -94,14 +93,22 @@ $html = <<<EOHTML
           <p>
           The new design is meant to demonstrate the styling capabilities of
           RAP and serve as an example and a template for your application.
-          It will still be improved until the release.
-
-          The new look and feel is included in the plug-in
+          It is included in the plug-in
           <code>org.eclipse.rap.design.business</code>
           and can be applied to an existing application by simply adding this
           bundle and using <code>business</code> as the servlet name.
           </p>
 
+          <p>
+          The development is not quite complete, some improvements will still
+          be made before the release.
+          </p>
+        <td/>
+      </tr>
+    <table>
+    </table>
+      <tr valign="top" align="left">
+        <td>
           <p><img src="BusinessDesign50.png" /></p>
         <td/>
       </tr>
