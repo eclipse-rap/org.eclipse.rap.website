@@ -37,6 +37,7 @@ $html = <<<EOHTML
         <td width="20%">
           <b>Table improvements</b></td>
         <td width="80%">
+          <p>
           The Table widget has received a lot of bugfixes and improvements
           during this milestone.
           Fonts, backgrounds and foreground colors are now supported properly
@@ -46,6 +47,7 @@ $html = <<<EOHTML
           already been added in M6, the table fits much better into modern
           web applications.
           Moreover, we added some significant performance improvements.
+          </p>
           <p><img src="TableImprovements.png" /></p>
         <td/>
       </tr>
@@ -53,10 +55,12 @@ $html = <<<EOHTML
         <td width="20%">
           <b>Label theming</b></td>
         <td width="80%">
+          <p>
           The CSS property <code>text-decoration</code> has been added for the
           Label widget.
           Permissible values are <code>underline</code>, <code>overline</code>,
           <code>line-through</code>, and <code>none</code>.
+          </p>
           <p><img src="LabelUnderline.png" /></p>
         <td/>
       </tr>
@@ -64,8 +68,10 @@ $html = <<<EOHTML
         <td width="20%">
           <b>Group theming</b></td>
         <td width="80%">
+          <p>
           The foreground and background colors of the Group widget's label are
           now separately themeable to allow a more flexibile styling.
+          </p>
           <p><img src="GroupLabelTheming.png" /></p>
         <td/>
       </tr>
@@ -103,16 +109,10 @@ $html = <<<EOHTML
           The development is not quite complete, some improvements will still
           be made before the release.
           </p>
-        <td/>
-      </tr>
-    <table>
-    </table>
-      <tr valign="top" align="left">
-        <td>
           <p><img src="BusinessDesign50.png" /></p>
         <td/>
       </tr>
-    </table>
+    <table>
       
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
