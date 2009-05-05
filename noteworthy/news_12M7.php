@@ -63,9 +63,17 @@ $html = <<<EOHTML
           <p><img src="LabelUnderline.png" /></p>
         <td/>
       </tr>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Group theming</b></td>
+        <td width="80%">
+          The foreground and background colors of the Group widget's label are
+          now separately themeable to allow a more flexibile styling.
+          <p><img src="GroupLabelTheming.png" /></p>
+        <td/>
+      </tr>
     </table>
 
-<!--
     <p>&nbsp;</p>
 
     <a name="Workbench"></a>
@@ -73,12 +81,35 @@ $html = <<<EOHTML
     <table>
       <tr valign="top" align="left">
         <td width="20%">
-          <b>[ title dummy ]</b></td>
+          <b>New look and feel</b></td>
         <td width="80%">
-          [ content dummy ]
+          <p>
+          With the help of a user interface design company, we developed a new
+          look and feel that provides a professional, serious look for RAP
+          applications.
+
+          This impementation uses the new interaction design API, which brings
+          more flexibity to modifying the workbench presentation and allows to
+          completely separate the styling from the application code
+          (see the RAP help for details).
+          </p>
+
+          <p>
+          The new design is meant to demonstrate the styling capabilities of
+          RAP and serve as an example and a template for your application.
+          It will still be improved until the release.
+
+          The new look and feel is included in the plug-in
+          <code>org.eclipse.rap.design.business</code>
+          and can be applied to an existing application by simply adding this
+          bundle and using <code>business</code> as the servlet name.
+          </p>
+
+          <p><img src="BusinessDesign50.png" /></p>
         <td/>
       </tr>
     </table>
+<!--
 -->
       
     <p>The above features are just the ones that are new since the last 
