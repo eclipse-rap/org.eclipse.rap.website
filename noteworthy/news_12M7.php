@@ -49,7 +49,7 @@ $html = <<<EOHTML
           Moreover, we added some significant performance improvements.
           </p>
           <p><img src="TableImprovements.png" /></p>
-        <td/>
+        </td>
       </tr>
       <tr valign="top" align="left">
         <td width="20%">
@@ -73,7 +73,7 @@ $html = <<<EOHTML
           now separately themeable to allow a more flexibile styling.
           </p>
           <p><img src="GroupLabelTheming.png" /></p>
-        <td/>
+        </td>
       </tr>
     </table>
 
@@ -110,10 +110,10 @@ $html = <<<EOHTML
           be made before the release.
           </p>
           <p><img src="BusinessDesign50.png" /></p>
-        <td/>
+        </td>
       </tr>
-    <table>
-      
+    </table>
+
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
@@ -123,7 +123,7 @@ $html = <<<EOHTML
       <li><a href="news_12M3.php">New for RAP 1.2 M3 (November 19, 2008)</a></li>
       <li><a href="news_12M2.php">New for RAP 1.2 M2 (October 8, 2008)</a></li>
     </ul>
-    
+
     <p>&nbsp;</p>
 
 </div>
