@@ -90,7 +90,7 @@ $html = <<<EOHTML
           With the help of a user interface design company, we developed a new
           look and feel that provides a professional, serious look for RAP
           applications.
-          This impementation uses the new interaction design API, which brings
+          This implementation uses the new interaction design API, which brings
           more flexibity to modifying the workbench presentation and allows to
           completely separate the styling from the application code
           (see the RAP help for details).
