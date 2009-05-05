@@ -27,10 +27,7 @@ $html = <<<EOHTML
 
     <p><ul>
       <li><a href="#RWT">RWT</a></li>
-<!--
-      <li><a href="#Forms">Forms</a></li>
       <li><a href="#Workbench">Workbench</a></li>
--->
     </ul></p>
 
     <a name="RWT"></a>
@@ -81,7 +78,7 @@ $html = <<<EOHTML
     <table>
       <tr valign="top" align="left">
         <td width="20%">
-          <b>New look and feel</b></td>
+          <b>New look&nbsp;and&nbsp;feel</b></td>
         <td width="80%">
           <p>
           With the help of a user interface design company, we developed a new
@@ -109,8 +106,6 @@ $html = <<<EOHTML
         <td/>
       </tr>
     </table>
-<!--
--->
       
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
