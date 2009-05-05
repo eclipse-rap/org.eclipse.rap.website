@@ -52,6 +52,17 @@ $html = <<<EOHTML
           <p><img src="TableImprovements.png" /></p>
         <td/>
       </tr>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Label theming</b></td>
+        <td width="80%">
+          The CSS property <code>text-decoration</code> has been added for the
+          Label widget.
+          Permissible values are <code>underline</code>, <code>overline</code>,
+          <code>line-through</code>, and <code>none</code>.
+          <p><img src="LabelUnderline.png" /></p>
+        <td/>
+      </tr>
     </table>
 
 <!--
