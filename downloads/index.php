@@ -74,7 +74,7 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
       </p>
-      <p style="margin: 10px"><b>1.2 M7 Milestone Build</b></p>
+      <p style="margin: 10px"><b>1.2 RC1 Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
         <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC1-20090519-1552.zip">
           <img src="../images/icon_save.gif" />
