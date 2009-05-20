@@ -35,7 +35,7 @@ $html = <<<EOHTML
           &nbsp;&nbsp;
           rap-tooling-1.2.0-RC1-20090519-1603.zip
         </a>
-        for use with Eclipse 3.3, 3.4 and 3.5 M7
+        for use with Eclipse 3.3, 3.4 and 3.5
       </p>
       <p style="margin: 10px"><b>1.1.2 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
@@ -82,7 +82,7 @@ $html = <<<EOHTML
           rap-runtime-1.2.0-RC1-20090519-1552.zip
         </a>
         based on Eclipse 3.5 &nbsp;&nbsp;
-        <a href="../noteworthy/news_12M7.php">New &amp; Noteworthy</a>
+        <a href="../noteworthy/news_12RC.php">New &amp; Noteworthy</a>
       </p>
       <p style="margin: 10px"><b>1.1.2 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
