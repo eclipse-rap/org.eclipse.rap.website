@@ -16,5 +16,6 @@
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.ui.test/org.eclipse.rap.ui.forms.test,org.eclipse.rap.ui.forms.test"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.ui/org.eclipse.rap.ui.views,org.eclipse.rap.ui.views"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.ui/org.eclipse.rap.ui.workbench,org.eclipse.rap.ui.workbench"/>
+<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.ui/org.eclipse.rap.design.example,org.eclipse.rap.design.example"/>
 </provider>
 </psf>

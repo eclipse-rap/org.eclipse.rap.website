@@ -100,7 +100,7 @@ $html = <<<EOHTML
           The new design is meant to demonstrate the styling capabilities of
           RAP and serve as an example and a template for your application.
           It is included in the plug-in
-          <code>org.eclipse.rap.design.business</code>
+          <code>org.eclipse.rap.design.example</code>
           and can be applied to an existing application by simply adding this
           bundle and using <code>business</code> as the servlet name.
           </p>
