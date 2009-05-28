@@ -33,7 +33,7 @@ $html = <<<EOHTML
         <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/tooling/rap-tooling-1.2.0-RC2-20090526-1320.zip">
           <img src="../images/icon_save.gif" alt="Update Site Zip"/>
           &nbsp;&nbsp;
-          rap-tooling-1.2.0-RC1-20090526-1320.zip
+          rap-tooling-1.2.0-RC2-20090526-1320.zip
         </a>
         for use with Eclipse 3.3, 3.4 and 3.5
       </p>
