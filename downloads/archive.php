@@ -1,25 +1,25 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#
-	# Begin: page-specific settings.  Change these. 
+	# Begin: page-specific settings.  Change these.
 $pageTitle 		= "RAP Project - Archived Downloads";
 $pageKeywords	= "AJAX, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
-	# Paste your HTML content between the EOHTML markers!	
+	# Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
 
 <div id="midcolumn">
     <h1>Archived Downloads</h1>
-    
-    <p>Back to the <a href="index.php">RAP Downloads Page</a>.</p>  
 
-	<p>Since RCP and RAP bundles within the same instance do not work, we provide 
+    <p>Back to the <a href="index.php">RAP Downloads Page</a>.</p>
+
+	<p>Since RCP and RAP bundles within the same instance do not work, we provide
 	  target platforms for download.
 	</p>
 	<p>After downloading, extract the file in a convenient location, say <code>
-	  c:\\target</code> and start Eclipse (if not yet running). Open <b>Window &gt; 
-	  Preferences</b>, go to 
+	  c:\\target</code> and start Eclipse (if not yet running). Open <b>Window &gt;
+	  Preferences</b>, go to
 	  the <b>Plug-in Development &gt; Target Platform</b> preference page, set the
 	  <b>Location</b> to the eclipse sub-directory of the extracted archive (e.g.
 	  <code>c:\\target\\eclipse</code>). Finally click <b>Reload</b>. You should see
@@ -32,7 +32,17 @@ $html = <<<EOHTML
 	<div class="homeitem3col">
 	  <h3>Target Platform Builds</h3>
 	  <ul>
-	  
+
+	    <li>RAP 1.2 RC2 build, based on Eclipse 3.5&nbsp;&nbsp;
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC2-20090526-1306.zip">
+          rap-runtime-1.2.0-RC2-20090526-1306.zip
+        </a>
+        <br />
+        <a href="http://www.eclipse.org/rap/noteworthy/news_12RC.php">
+          New &amp; Noteworthy
+        </a>
+      </li>
+
 	    <li>RAP 1.2 RC1 build, based on Eclipse 3.5&nbsp;&nbsp;
         <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC1-20090519-1552.zip">
           rap-runtime-1.2.0-RC1-20090519-1552.zip
@@ -62,7 +72,7 @@ $html = <<<EOHTML
             New &amp; Noteworthy
           </a>
         </li>
-        
+
 	    <li>RAP 1.2 M5 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
           <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M5-20090210-1243.zip">
             rap-runtime-1.2.0-M5-20090210-1243.zip
@@ -72,7 +82,7 @@ $html = <<<EOHTML
             New &amp; Noteworthy
           </a>
         </li>
-        
+
 	    <li>RAP 1.2 M4 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
           <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-1.2.0-M4-target-3.5-20081223-1131.zip">
             rap-1.2.0-M4-target-3.5-20081223-1131.zip
@@ -82,7 +92,7 @@ $html = <<<EOHTML
             New &amp; Noteworthy
           </a>
         </li>
-        
+
         <li>RAP 1.2 M3 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
           <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-1.2.0-M3-target-3.5-20081118-1809.zip">
             rap-1.2.0-M3-target-3.5-20081118-1809.zip
@@ -92,7 +102,7 @@ $html = <<<EOHTML
             New &amp; Noteworthy
           </a>
         </li>
-      
+
         <li>RAP 1.2 M2 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
           <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-1.2.0-M2-target-3.5-20081002-1417.zip">
             rap-1.2.0-M2-target-3.5-20081002-1417.zip
@@ -102,7 +112,7 @@ $html = <<<EOHTML
             New &amp; Noteworthy
           </a>
         </li>
-      
+
         <li>RAP 1.1 Release, based on Eclipse 3.4&nbsp;&nbsp;
           <a href="http://archive.eclipse.org/rt/rap/downloads/rap-1.1.0-R-target-3.4-20080613-1055.zip">
             rap-1.1.0-R-target-3.4-20080613-1055.zip

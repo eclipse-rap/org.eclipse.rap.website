@@ -1,12 +1,12 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#
-	# Begin: page-specific settings.  Change these. 
+	# Begin: page-specific settings.  Change these.
 $pageTitle 		= "RAP Project - Downloads";
 $pageKeywords	= "AJAX, rap, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
-	# Paste your HTML content between the EOHTML markers!	
+	# Paste your HTML content between the EOHTML markers!
 $html = <<<EOHTML
 
 <div id="midcolumn">
@@ -15,13 +15,13 @@ $html = <<<EOHTML
     <div class="homeitem3col">
       <h3>Tooling Update Site</h3>
       <p style="margin: 10px">
-        This is the most convenient way to get RAP. The update site contains 
+        This is the most convenient way to get RAP. The update site contains
         the target platform that is also available as a separate download, 
         bundled with useful tools, documentation and examples.
-        See the <a href="../gettingstarted.php">getting started</a> guide 
-        for a detailed description on how to install RAP using the update site. 
+        See the <a href="../gettingstarted.php">getting started</a> guide
+        for a detailed description on how to install RAP using the update site.
       </p>
-      <p style="margin: 10px"><b>1.2 RC2 Build</b></p>
+      <p style="margin: 10px"><b>1.2 RC3 Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The update site is
         <br />
@@ -30,10 +30,10 @@ $html = <<<EOHTML
         <br />
         We also provide a zipped version for download:
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/tooling/rap-tooling-1.2.0-RC2-20090526-1320.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/tooling/rap-tooling-1.2.0-RC3-20090602-1203.zip">
           <img src="../images/icon_save.gif" alt="Update Site Zip"/>
           &nbsp;&nbsp;
-          rap-tooling-1.2.0-RC2-20090526-1320.zip
+          rap-tooling-1.2.0-RC3-20090602-1203.zip
         </a>
         for use with Eclipse 3.3, 3.4 and 3.5
       </p>
@@ -54,7 +54,7 @@ $html = <<<EOHTML
         for use with Eclipse 3.3 and 3.4
       </p>
     </div>
-      
+
     <div class="homeitem3col">
       <h3>Target Platform</h3>
       <p style="margin: 10px">
@@ -63,10 +63,10 @@ $html = <<<EOHTML
       </p>
       <p style="margin: 10px">
       After downloading, extract the file in a convenient location, say <code>
-      c:\\target</code> and start Eclipse. Open <b>Window &gt; Preferences</b>, 
-      go to the <b>Plug-in Development &gt; Target Platform</b> preference page, 
+      c:\\target</code> and start Eclipse. Open <b>Window &gt; Preferences</b>,
+      go to the <b>Plug-in Development &gt; Target Platform</b> preference page,
       set the <b>Location</b> to the eclipse sub-directory of the extracted archive
-      (e.g. <code>c:\\target\\eclipse</code>). Finally click <b>Reload</b>. You 
+      (e.g. <code>c:\\target\\eclipse</code>). Finally click <b>Reload</b>. You
       should see the just downloaded plug-ins appear in the <b>Plug-ins</b> list.
       </p>
       <p style="margin: 10px">
@@ -74,12 +74,12 @@ $html = <<<EOHTML
       depend on the target, you may get compile errors. Restarting Eclipse and/or
       doing a clean build will help.
       </p>
-      <p style="margin: 10px"><b>1.2 RC2 Build</b></p>
+      <p style="margin: 10px"><b>1.2 RC3 Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC2-20090526-1306.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC3-20090602-1139.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-          rap-runtime-1.2.0-RC2-20090526-1306.zip
+          rap-runtime-1.2.0-RC3-20090602-1139.zip
         </a>
         based on Eclipse 3.5 &nbsp;&nbsp;
         <a href="../noteworthy/news_12RC.php">New &amp; Noteworthy</a>
@@ -95,7 +95,7 @@ $html = <<<EOHTML
         <a href="../noteworthy/relnotes112.php">Release Notes</a>
       </p>
     </div>
-   
+
    <div class="homeitem3col" style="width:95%; border:none; margin-left:0px">
      <table>
        <tr>
@@ -108,7 +108,7 @@ $html = <<<EOHTML
            <table>
              <tr>
                <td>
-                 <a style="font:16px Verdana, Arial, Helvetica, sans-serif; font-weight:bold" 
+                 <a style="font:16px Verdana, Arial, Helvetica, sans-serif; font-weight:bold"
                    href="archive.php">
                    Archives and other builds
                  </a>
@@ -116,13 +116,13 @@ $html = <<<EOHTML
              </tr>
              <tr>
                <td>RAP 1.1 and older versions</td>
-             </tr> 
+             </tr>
            </table>
          </td>
        </tr>
      </table>
   </div>
-      
+
 </div>
 
 EOHTML;
