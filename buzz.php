@@ -112,6 +112,11 @@ $html = <<<EOHTML
         <h3>Current Articles, Blogs, Slides and more</h3>
 	      <ul>
           <li>
+            Tutorial: <a href="http://www.vogella.de/articles/EclipseRAP/article.html">
+            Eclipse Rich Ajax Platform (RAP) - Tutorial with Eclipse 3.5 (Galileo)</a>, 
+            June 2008, Lars Vogel
+          </li>
+          <li>
             Book: <a href="http://www.rap-book.com" target="_blank">
             Eclipse Rich Ajax Platform - Bringing Rich Clients to the Web</a>
             Fabian Lange, Nov 2008
