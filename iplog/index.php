@@ -8,11 +8,13 @@
 
   <div id="midcolumn">
     <h1>RAP Project IP Logs</h1>
+    
     <p>Eclipse projects are required to maintain intellectual property (IP) logs 
       for each release. This page contains all such logs for the EclipseRT
       <a href="http://eclipse.org/rap">RAP</a> project. For more details on IP 
       logs, see the <a href="http://eclipse.org/projects/dev_process/project-log.php">
       Eclipse Development Process</a> documentation.</p>
+    
     <div class="homeitem3col">
       <h3>Current IP Log</h3>
       <p>To see a draft IP log for the RAP project release currently under 
@@ -22,6 +24,7 @@
       Note the auto-generated log has not been reviewed for accuracy or approved 
       by the Eclipse Foundation legal team.
     </div>
+    
     <div class="homeitem3col">
       <h3>IP Logs For Past Releases</h3>
       <p>The following are approved IP logs for past RAP project releases.</p>
@@ -34,10 +37,8 @@
       </ul>
     </div>
   </div>
-</div>
 
 
-</div>
 EOHTML;
 
 
