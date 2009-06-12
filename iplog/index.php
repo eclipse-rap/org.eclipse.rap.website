@@ -6,7 +6,6 @@
 	# Paste your HTML content between the EOHTML markers!	
   $html = <<<EOHTML
 
-<div id="maincontent">
   <div id="midcolumn">
     <h1>RAP Project IP Logs</h1>
     <p>Eclipse projects are required to maintain intellectual property (IP) logs 
