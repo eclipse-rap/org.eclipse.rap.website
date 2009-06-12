@@ -39,9 +39,9 @@ $html = <<<EOHTML
         ready it shows a good bunch of the framework's possibilities.</p>
         <p>
         To demonstrate the NLS support, translations for 
-        <a href="http://rap.innoopract.com/rapdemo/rms?locale=en" target="_blank">English</a>, 
-        <a href="http://rap.innoopract.com/rapdemo/rms?locale=de" target="_blank">German</a> and 
-        <a href="http://rap.innoopract.com/rapdemo/rms?locale=zh" target="_blank">Chinese</a> 
+        <a href="http://rap.eclipse.org/rapdemo/rms?locale=en" target="_blank">English</a>, 
+        <a href="http://rap.eclipse.org/rapdemo/rms?locale=de" target="_blank">German</a> and 
+        <a href="http://rap.eclipse.org/rapdemo/rms?locale=zh" target="_blank">Chinese</a> 
         are available. The latter requires your browser to support East 
         Asian languages.</p> 
         <p>Please note, the example data will be reset regularly.</p>
