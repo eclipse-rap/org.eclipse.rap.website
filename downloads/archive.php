@@ -34,7 +34,7 @@ $html = <<<EOHTML
 	  <ul>
 
 	    <li>RAP 1.2 RC4 build, based on Eclipse 3.5&nbsp;&nbsp;
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC4-20090609-1255.zip">
+        <a href="http://archive.eclipse.org/rt/rap/downloads/rap-runtime-1.2.0-RC4-20090609-1255.zip">
           rap-runtime-1.2.0-RC3-20090602-1139.zip
         </a>
         <br />
@@ -44,7 +44,7 @@ $html = <<<EOHTML
       </li>
 
 	    <li>RAP 1.2 RC3 build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC3-20090602-1139.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-runtime-1.2.0-RC3-20090602-1139.zip">
             rap-runtime-1.2.0-RC3-20090602-1139.zip
          </a>
         <br />
@@ -54,7 +54,7 @@ $html = <<<EOHTML
         </li>
 
 	    <li>RAP 1.2 RC2 build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC2-20090526-1306.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-runtime-1.2.0-RC2-20090526-1306.zip">
             rap-runtime-1.2.0-RC2-20090526-1306.zip
           </a>
         <br />
@@ -64,7 +64,7 @@ $html = <<<EOHTML
         </li>
 
 	    <li>RAP 1.2 RC1 build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC1-20090519-1552.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-runtime-1.2.0-RC1-20090519-1552.zip">
            rap-runtime-1.2.0-RC1-20090519-1552.zip
           </a>
         <br />
@@ -74,7 +74,7 @@ $html = <<<EOHTML
         </li>
 
 	    <li>RAP 1.2 M7 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M7-20090505-1445.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-runtime-1.2.0-M7-20090505-1445.zip">
             rap-runtime-1.2.0-M6-20090505-1445.zip
           </a>
         <br />
@@ -84,7 +84,7 @@ $html = <<<EOHTML
         </li>
 
 	    <li>RAP 1.2 M6 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M6-20090319-1159.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/target/rap-runtime-1.2.0-M6-20090319-1159.zip">
             rap-runtime-1.2.0-M6-20090319-1159.zip
           </a>
         <br />
@@ -94,7 +94,7 @@ $html = <<<EOHTML
         </li>
 
 	    <li>RAP 1.2 M5 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M5-20090210-1243.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-runtime-1.2.0-M5-20090210-1243.zip">
             rap-runtime-1.2.0-M5-20090210-1243.zip
           </a>
         <br />
@@ -104,7 +104,7 @@ $html = <<<EOHTML
         </li>
 
 	    <li>RAP 1.2 M4 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-1.2.0-M4-target-3.5-20081223-1131.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-1.2.0-M4-target-3.5-20081223-1131.zip">
             rap-1.2.0-M4-target-3.5-20081223-1131.zip
           </a>
         <br />
@@ -114,7 +114,7 @@ $html = <<<EOHTML
         </li>
 
         <li>RAP 1.2 M3 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-1.2.0-M3-target-3.5-20081118-1809.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-1.2.0-M3-target-3.5-20081118-1809.zip">
             rap-1.2.0-M3-target-3.5-20081118-1809.zip
           </a>
 	      <br />
@@ -124,7 +124,7 @@ $html = <<<EOHTML
         </li>
 
         <li>RAP 1.2 M2 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-1.2.0-M2-target-3.5-20081002-1417.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/target/rap-1.2.0-M2-target-3.5-20081002-1417.zip">
             rap-1.2.0-M2-target-3.5-20081002-1417.zip
           </a>
 	      <br />
