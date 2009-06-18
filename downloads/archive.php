@@ -44,44 +44,44 @@ $html = <<<EOHTML
       </li>
 
 	    <li>RAP 1.2 RC3 build, based on Eclipse 3.5&nbsp;&nbsp;
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC3-20090602-1139.zip">
-          rap-runtime-1.2.0-RC3-20090602-1139.zip
-        </a>
+          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC3-20090602-1139.zip">
+            rap-runtime-1.2.0-RC3-20090602-1139.zip
+         </a>
         <br />
-        <a href="http://www.eclipse.org/rap/noteworthy/news_12RC.php">
-          New &amp; Noteworthy
-        </a>
-      </li>
+          <a href="http://www.eclipse.org/rap/noteworthy/news_12RC.php">
+            New &amp; Noteworthy
+          </a>
+        </li>
 
 	    <li>RAP 1.2 RC2 build, based on Eclipse 3.5&nbsp;&nbsp;
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC2-20090526-1306.zip">
-          rap-runtime-1.2.0-RC2-20090526-1306.zip
-        </a>
+          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC2-20090526-1306.zip">
+            rap-runtime-1.2.0-RC2-20090526-1306.zip
+          </a>
         <br />
-        <a href="http://www.eclipse.org/rap/noteworthy/news_12RC.php">
-          New &amp; Noteworthy
-        </a>
-      </li>
+          <a href="http://www.eclipse.org/rap/noteworthy/news_12RC.php">
+            New &amp; Noteworthy
+          </a>
+        </li>
 
 	    <li>RAP 1.2 RC1 build, based on Eclipse 3.5&nbsp;&nbsp;
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC1-20090519-1552.zip">
-          rap-runtime-1.2.0-RC1-20090519-1552.zip
-        </a>
+          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-RC1-20090519-1552.zip">
+           rap-runtime-1.2.0-RC1-20090519-1552.zip
+          </a>
         <br />
-        <a href="http://www.eclipse.org/rap/noteworthy/news_12RC.php">
-          New &amp; Noteworthy
-        </a>
-      </li>
+          <a href="http://www.eclipse.org/rap/noteworthy/news_12RC.php">
+            New &amp; Noteworthy
+          </a>
+        </li>
 
 	    <li>RAP 1.2 M7 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M7-20090505-1445.zip">
-          rap-runtime-1.2.0-M6-20090505-1445.zip
-        </a>
+          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M7-20090505-1445.zip">
+            rap-runtime-1.2.0-M6-20090505-1445.zip
+          </a>
         <br />
-        <a href="http://www.eclipse.org/rap/noteworthy/news_12M7.php">
-          New &amp; Noteworthy
-        </a>
-      </li>
+          <a href="http://www.eclipse.org/rap/noteworthy/news_12M7.php">
+            New &amp; Noteworthy
+          </a>
+        </li>
 
 	    <li>RAP 1.2 M6 milestone build, based on Eclipse 3.5&nbsp;&nbsp;
           <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-M6-20090319-1159.zip">
@@ -133,6 +133,24 @@ $html = <<<EOHTML
           </a>
         </li>
 
+        <li>RAP 1.1.2 Service Release, based on Eclipse 3.4&nbsp;&nbsp;
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-1.1.2-SR2-target-3.4-20090218-1212.zip">
+            rap-1.1.2-SR2-target-3.4-20090218-1212.zip
+          </a>
+	      <br />
+          <a href="http://www.eclipse.org/rap/noteworthy/relnotes112.php">
+            Release Notes
+          </a>
+        </li>
+        <li>RAP 1.1.1 Service Release, based on Eclipse 3.4&nbsp;&nbsp;
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-1.1.1-SR1-target-3.4-20080917-1625.zip">
+            rap-1.1.1-SR1-target-3.4-20080917-1625.zip
+          </a>
+	      <br />
+          <a href="http://www.eclipse.org/rap/noteworthy/relnotes111.php">
+            Release Notes
+          </a>
+        </li>
         <li>RAP 1.1 Release, based on Eclipse 3.4&nbsp;&nbsp;
           <a href="http://archive.eclipse.org/rt/rap/downloads/rap-1.1.0-R-target-3.4-20080613-1055.zip">
             rap-1.1.0-R-target-3.4-20080613-1055.zip

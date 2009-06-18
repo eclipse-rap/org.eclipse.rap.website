@@ -16,7 +16,7 @@ $html = <<<EOHTML
       <h3>Tooling Update Site</h3>
       <p style="margin: 10px">
         This is the most convenient way to get RAP. The update site contains
-        the target platform that is also available as a separate download, 
+        the runtime target platform that is also available as a separate download, 
         bundled with useful tools, documentation and examples.
         See the <a href="../gettingstarted.php">getting started</a> guide
         for a detailed description on how to install RAP using the update site.
@@ -35,8 +35,10 @@ $html = <<<EOHTML
           &nbsp;&nbsp;
           rap-tooling-1.2.0-R-20090616-1439.zip
         </a>
-        for use with Eclipse 3.3, 3.4 and 3.5
+        for use with Eclipse 3.4 and 3.5
       </p>
+      
+      <!--
       <p style="margin: 10px"><b>1.1.2 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The update site is
@@ -53,10 +55,12 @@ $html = <<<EOHTML
         </a>
         for use with Eclipse 3.3 and 3.4
       </p>
+      -->
+      
     </div>
 
     <div class="homeitem3col">
-      <h3>Target Platform</h3>
+      <h3>Runtime Target Platform</h3>
       <p style="margin: 10px">
         Since RCP and RAP bundles within the same instance do not work, we
         provide target platforms for download.
@@ -84,6 +88,8 @@ $html = <<<EOHTML
         based on Eclipse 3.5 &nbsp;&nbsp;
         <a href="../noteworthy/news_12RC.php">New &amp; Noteworthy</a>
       </p>
+      
+      <!-- 
       <p style="margin: 10px"><b>1.1.2 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
         <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/rap-1.1.2-SR2-target-3.4-20090218-1212.zip">
@@ -94,6 +100,8 @@ $html = <<<EOHTML
         based on Eclipse 3.4 &nbsp;&nbsp;
         <a href="../noteworthy/relnotes112.php">Release Notes</a>
       </p>
+      -->
+      
     </div>
 
    <div class="homeitem3col" style="width:95%; border:none; margin-left:0px">
