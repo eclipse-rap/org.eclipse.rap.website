@@ -13,7 +13,7 @@ $html = <<<EOHTML
 <p>Enjoy the demos below. <strong>Please be aware that the demos are run on 
   a vserver at eclipse.org that is managed by the project team only</strong>, 
   and not a high performance server supervised by sysadmins. Please make a 
-  post on the <a href="newsgroup.php">newsgroup</a> if there are problems 
+  post on the <a href="support.php">newsgroup</a> if there are problems 
   with the demo apps that are not from third parties.
 </p>
   
