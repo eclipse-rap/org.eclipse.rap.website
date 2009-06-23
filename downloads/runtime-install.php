@@ -13,7 +13,6 @@ $html = <<<EOHTML
     <h1>Runtime SDK Installation</h1>
 
     <div class="homeitem3col">
-      <h3>Tooling</h3>
       <p style="margin: 10px">
         RAP applications need to be compiled against the RAP Runtime SDK. To
         do so, the SDK needs to be set as the target platform in Eclipse.
