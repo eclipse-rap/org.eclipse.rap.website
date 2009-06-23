@@ -16,23 +16,20 @@ $html = <<<EOHTML
         RAP usage and troubleshooting. Developers contributing to RAP should
         refer to the <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">
         mailing list</a>.
-        <br />
-        Chances are your question has already been answered in the newsgroup, 
-        and will save you time in not having to ask it again, and us in not 
+      </p>
+      <p>
+        Check the
+        <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
+        newsgroup archive</a> - chances are your question has already been answered. 
+        It will save you time in not having to ask it again, and us in not 
         having to answer it again.
       </p> 
-      <ul>
-        <li>
-          <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
-          Browse newsgroup posts</a> using the web interface.
-        </li>
-        <li>
-          <a href="news://news.eclipse.org/eclipse.technology.rap">Subscribe</a> 
-          to the newsgroup with your news reader.
-          <a href="http://wiki.eclipse.org/index.php/Webmaster_FAQ#How_do_I_access_the_Eclipse_newsgroups.3F">
-          See the FAQ</a> for instructions on subscribing.
-        </li>
-      </ul>                  
+      <p>
+        <a href="news://news.eclipse.org/eclipse.technology.rap">Subscribe</a> 
+        to the newsgroup with your news reader.
+        <a href="http://wiki.eclipse.org/index.php/Webmaster_FAQ#How_do_I_access_the_Eclipse_newsgroups.3F">
+        See the FAQ</a> for instructions on subscribing.
+      </p>                  
     </div> <!-- homeitem3col -->
 
     <div class="homeitem3col">
