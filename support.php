@@ -10,7 +10,6 @@ $html = <<<EOHTML
 <div id="maincontent">
   <div id="midcolumn">
     <h1>Support</h1>
-    <div class="homeitem3col">
       <h3>Community Newsgroup</h3>
       <p>The RAP Newsgroup is intended for the user community discussions on 
         RAP usage and troubleshooting. Developers contributing to RAP should
@@ -30,9 +29,7 @@ $html = <<<EOHTML
         <a href="http://wiki.eclipse.org/index.php/Webmaster_FAQ#How_do_I_access_the_Eclipse_newsgroups.3F">
         See the FAQ</a> for instructions on subscribing.
       </p>                  
-    </div> <!-- homeitem3col -->
 
-    <div class="homeitem3col">
       <h3>Open Source Support for RAP</h3>
       <p>Submit bugs using <a href="http://eclipse.org/mylyn">Mylyn</a> or the 
       <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&rep_platform=All&op_sys=all">
@@ -53,7 +50,6 @@ $html = <<<EOHTML
           Show open enhancement requests</a> 
         </li>          
       </ul>
-    </div> <!-- homeitem3col -->
   </div> <!-- midcolumn -->
 </div> <!-- maincontent -->
 
