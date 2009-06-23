@@ -30,7 +30,7 @@ $html = <<<EOHTML
 	  doing a clean build will help.
 	</p>
 	<div class="homeitem3col">
-	  <h3>Target Platform Builds</h3>
+	  <h3>RAP Runtime SDK Builds</h3>
 	  <ul>
 
 	    <li>RAP 1.2 RC4 build, based on Eclipse 3.5&nbsp;&nbsp;
