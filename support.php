@@ -15,7 +15,7 @@ $html = <<<EOHTML
       <p>The RAP Newsgroup is intended for the user community discussions on 
         RAP usage and troubleshooting. Developers contributing to RAP should
         refer to the <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">
-        mailing list<a>.
+        mailing list</a>.
         <br />
         Chances are your question has already been answered in the newsgroup, 
         and will save you time in not having to ask it again, and us in not 
