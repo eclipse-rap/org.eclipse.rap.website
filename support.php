@@ -1,6 +1,6 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 	$pageTitle 		= "RAP Project - Support";
-	$pageKeywords	= "Ajax, rap, eclipse rap";
+    $pageKeywords   = "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
 	$pageAuthor		= "Ruediger Herrmann";
 		
 # Paste your HTML content between the EOHTML markers!	

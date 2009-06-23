@@ -3,7 +3,7 @@
 	#
 	# Begin: page-specific settings.  Change these.
 $pageTitle 		= "RAP Project - Runtime SDK Installation";
-$pageKeywords	= "AJAX, rap, eclipse rap";
+$pageKeywords   = "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
 $pageAuthor		= "Jochen Krause";
 
 	# Paste your HTML content between the EOHTML markers!
