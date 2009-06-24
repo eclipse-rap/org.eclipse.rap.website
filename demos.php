@@ -20,15 +20,15 @@ $html = <<<EOHTML
   problems with the demo apps that are not from third parties.
 </p>
 
-<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-  <table width="750" border="0" cellspacing="5" cellpadding="5">
+<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
+  <table width="720" border="0" cellspacing="10" cellpadding="5">
     <tr>
       <td width="250">
         <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
           <img src="images/demos/examples.png" style="border: 1px solid #666;"/>
         </a>
       </td>
-      <td width="500" valign="top">
+      <td width="465" valign="top">
         <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
           RAP Examples
         </h2>
@@ -46,15 +46,15 @@ $html = <<<EOHTML
   </table>
 </div>
 
-<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-  <table width="750" border="0" cellspacing="5" cellpadding="5">
+<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
+  <table width="720" border="0" cellspacing="10" cellpadding="5">
     <tr>
       <td width="250">
         <a href="http://rap.eclipsesource.com/rapdemo/rms" target="_blank">
           <img src="images/demos/webworkbench1.png" style="border: 1px solid #666;"/>
         </a>
       </td>
-      <td width="500" valign="top">
+      <td width="465" valign="top">
         <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
           RAP Workbench Demo
         </h2>
@@ -79,64 +79,18 @@ $html = <<<EOHTML
   </table>
 </div>
 
-<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-  <table width="750" border="0" cellspacing="5" cellpadding="5">
-    <tr>
-      <td width="250">
-          <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">
-            <img src="images/demos/maildemo1.png" style="border: 1px solid #666;"/>
-          </a>
-      </td>
-      <td width="500" valign="top">
-        <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
-          RAP (RCP) Mail Demo
-        </h2>
-        <p>
-          <a href="http://rap.eclipse.org/maildemo/rap?startup=maildemo" target="_blank">
-            See the RAP (RCP) Mail Demo online
-          </a>
-        </p>
-        <p>This example shows the well known RCP Mail template application converted to RAP. This application
-           is available as a RAP template as part of the download from the tooling update site (see downloads).</p>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<!--
-<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-  <table width="750" border="0" cellspacing="5" cellpadding="5">
-    <tr>
-      <td width="250">
-          <img src="images/demos/controls1.png" style="border: 1px solid #666;"/>
-      </td>
-      <td width="500" valign="top">
-        <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
-          RWT Controls Demo
-        </h2>
-        <p> 
-          Temporarily not available
-        </p>
-        <p>This demo shows what widgets there are in RWT and that they 
-        behave very similar to the SWT widgets.</p>
-      </td>
-    </tr>
-  </table>
-</div>
--->
-
 <p>&nbsp;</p>
 
 <h1>Third Party applications based on RAP</h1>
-<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-  <table width="750" border="0" cellspacing="5" cellpadding="5">
+<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
+  <table width="720" border="0" cellspacing="10" cellpadding="5">
   <tr>
     <td width="250" valign="top">
       <a href="http://ondemand.yoxos.com/geteclipse/start" target="_blank">
         <img src="images/demos/ondemand1.png" style="border: 1px solid #666;"/>
       </a>
     </td>
-    <td width="500" valign="top">
+    <td width="465" valign="top">
       <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
         Yoxos On Demand
       </h2>        	
@@ -159,15 +113,15 @@ $html = <<<EOHTML
   </table>
 </div>
 
-<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-  <table width="750" border="0" cellspacing="5" cellpadding="5">
+<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
+  <table width="720" border="0" cellspacing="10" cellpadding="5">
   <tr>
     <td width="250" valign="top">
       <a href="http://www.cas-pia.de/en/try.html" target="_blank">
         <img src="images/demos/pia.png" style="border: 1px solid #666;"/>
       </a>
     </td>
-    <td width="500" valign="top">
+    <td width="465" valign="top">
       <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
         CAS PIA
       </h2>         
