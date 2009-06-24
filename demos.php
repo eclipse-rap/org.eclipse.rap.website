@@ -20,27 +20,7 @@ $html = <<<EOHTML
   problems with the demo apps that are not from third parties.
 </p>
 
-<div style="margin: 10px 0px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 495px;">
-  <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
-    <img src="images/demos/examples.png" style="border: 1px solid #666;" align="left" vspace="10" hspace="10" width="1250px" height="190px"/>
-  </a>
-  <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
-    RAP Examples
-  </h2>
-  <p>
-    <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
-      See the examples online
-    </a>
-  </p>
-  <p>
-    This application shows samples of the widgets available in RAP.
-    Please note that it does not yet represent the complete widget set,
-    but only a small selection.
-  </p>
-  <br clear="all">
-</div>
-
-<!--div style="margin: 10px 0px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
+<div style="margin: 10px 0px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
   <table width="720" border="0" cellspacing="10" cellpadding="5">
     <tr>
       <td width="250">
@@ -64,7 +44,7 @@ $html = <<<EOHTML
       </td>
     </tr>
   </table>
-</div-->
+</div>
 
 <div style="margin: 10px 0px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
   <table width="720" border="0" cellspacing="10" cellpadding="5">
