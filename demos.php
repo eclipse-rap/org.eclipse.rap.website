@@ -24,7 +24,7 @@ $html = <<<EOHTML
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
-        <a href="http://rap.eclipsesource.org/rapdemo/examples" target="_blank">
+        <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
           <img src="images/demos/examples.png" style="border: 1px solid #666;"/>
         </a>
       </td>
@@ -33,7 +33,7 @@ $html = <<<EOHTML
           RAP Examples
         </h2>
         <p>
-          <a href="http://rap.eclipsesource.org/rapdemo/examples" target="_blank">
+          <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
             See the examples online
           </a>
         </p>
@@ -50,7 +50,7 @@ $html = <<<EOHTML
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
-        <a href="http://rap.eclipsesource.org/rapdemo/rms" target="_blank">
+        <a href="http://rap.eclipsesource.com/rapdemo/rms" target="_blank">
           <img src="images/demos/webworkbench1.png" style="border: 1px solid #666;"/>
         </a>
       </td>
@@ -59,7 +59,7 @@ $html = <<<EOHTML
           RAP Workbench Demo
         </h2>
         <p>
-          <a href="http://rap.eclipsesource.org/rapdemo/rms" target="_blank">
+          <a href="http://rap.eclipsesource.com/rapdemo/rms" target="_blank">
             See a workbench demo online
           </a>
         </p>
@@ -68,9 +68,9 @@ $html = <<<EOHTML
         ready it shows a good bunch of the framework's possibilities.</p>
         <p>
         To demonstrate the NLS support, translations for 
-        <a href="http://rap.eclipsesource.org/rapdemo/rms?locale=en" target="_blank">English</a>, 
-        <a href="http://rap.eclipsesource.org/rapdemo/rms?locale=de" target="_blank">German</a> and 
-        <a href="http://rap.eclipsesource.org/rapdemo/rms?locale=zh" target="_blank">Chinese</a> 
+        <a href="http://rap.eclipsesource.com/rapdemo/rms?locale=en" target="_blank">English</a>, 
+        <a href="http://rap.eclipsesource.com/rapdemo/rms?locale=de" target="_blank">German</a> and 
+        <a href="http://rap.eclipsesource.com/rapdemo/rms?locale=zh" target="_blank">Chinese</a> 
         are available. The latter requires your browser to support East 
         Asian languages.</p> 
         <p>Please note, the example data will be reset regularly.</p>
