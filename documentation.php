@@ -17,7 +17,9 @@ $html = <<<EOHTML
     <ul>
       <li><a href="#devguide">Developer Guide (Help Center)</a></li>
       <li><a href="#faq">FAQ</a></li>
-      <li><a href="#faq">Wiki</a></li>
+      <li><a href="#wiki">Wiki</a></li>
+      <li><a href="#webinars">Webinars</a></li>
+      <li><a href="#articles">Articles</a></li>
     </ul>
   </p>
 
@@ -51,26 +53,10 @@ $html = <<<EOHTML
     </p>
   </div>
 
-  <div id="articles" class="homeitem3col" style="clear: both">
-    <h3>Articles</h3>
+  <div id="webinars" class="homeitem3col" style="clear: both">
+    <h3>Webinars</h3>
     <p>
-    Some information ...
-    </p>
     <ul>
-      <li>
-        Tutorial: <a href="http://www.vogella.de/articles/EclipseRAP/article.html">
-        Eclipse Rich Ajax Platform (RAP) - Tutorial with Eclipse 3.5 (Galileo)</a>,
-        June 2008, Lars Vogel
-      </li>
-      <li>
-        Book: <a href="http://www.rap-book.com" target="_blank">
-        Eclipse Rich Ajax Platform - Bringing Rich Clients to the Web</a>
-        Fabian Lange, Nov 2008
-      </li>
-      <li>
-        <a href="http://eclipse.dzone.com/articles/chat-rap">
-        Chat on the RAP</a>, Nov 24th, 2008, Glenn Galang
-      </li>
       <li>
         Webinar: Single-Sourcing Techniques for RAP and RCP, Oct 23, 2008, Frank Appel
         <br />
@@ -92,6 +78,35 @@ $html = <<<EOHTML
         &nbsp;&nbsp;(~ 60 Minutes)
       </li>
       <li>
+        Webinar:
+        <a target="_blank" href="http://live.eclipse.org/node/450">
+        Rich AJAX Platform (RAP) Project</a> Feb 13, 2008, Jochen Krause
+      </li>
+    </ul>
+    </p>
+  </div>
+
+  <div id="articles" class="homeitem3col" style="clear: both">
+    <h3>Articles</h3>
+    <p>
+      A lot of third articles and tutorials have been published about RAP:
+    </p>
+    <ul>
+      <li>
+        Tutorial: <a href="http://www.vogella.de/articles/EclipseRAP/article.html">
+        Eclipse Rich Ajax Platform (RAP) - Tutorial with Eclipse 3.5 (Galileo)</a>,
+        June 2008, Lars Vogel
+      </li>
+      <li>
+        Book: <a href="http://www.rap-book.com" target="_blank">
+        Eclipse Rich Ajax Platform - Bringing Rich Clients to the Web</a>
+        Fabian Lange, Nov 2008
+      </li>
+      <li>
+        <a href="http://eclipse.dzone.com/articles/chat-rap">
+        Chat on the RAP</a>, Nov 24th, 2008, Glenn Galang
+      </li>
+      <li>
         Article:
         <a href="http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-ganymede-pt2.html" target="_blank">
         Using Eclipse Ganymede to develop for the desktop, Web and mobile devices,
@@ -108,11 +123,6 @@ $html = <<<EOHTML
         Article (<img src="http://www.eclipse.org/rap/images/de.gif" alt="German"/>):
         <a target="_blank" href="http://www.oio.de/public/opensource/eclipse-rap/tutorial-eclipse-rich-application-plattform-portierung.htm">
         Einsatzm&ouml;glichkeiten der Eclipse RAP</a> April 2008, Steffen Sch&auml;fer
-      </li>
-      <li>
-        Webinar:
-        <a target="_blank" href="http://live.eclipse.org/node/450">
-        Rich AJAX Platform (RAP) Project</a> Feb 13, 2008, Jochen Krause
       </li>
       <li>
         <a target="_blank" href="http://www.redmonk.com/cote/2007/12/12/eclipse-rap-overview-and-demo-screencast">
@@ -134,16 +144,6 @@ $html = <<<EOHTML
         Web 2.0, the Eclipse way, Part I</a> IBM developerWorks, Oct 23, 2007, Chris Aniszczyk & Benjamin Muskalla
       </li>
       <li>
-      Community:
-      <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204737" target="_blank">
-        RAP Creation Review Votes</a> eclipse.org, Oct 10, 2007 - "+2 Simply a awesome project!"
-      </li>
-      <li>
-        Slides:
-        <a href="http://www.eclipse.org/projects/slides/rap_creation_review.pdf" target="_blank">
-          Creation Review Slides</a> eclipse.org, Oct 3, 2007
-      </li>
-      <li>
       Article:
       <a href="http://www.innoopract.com/fileadmin/user_upload/Dokumente/Web-enabled_RCP_Applications_with_the_Rich_Ajax_Platform_pdf.pdf" target="_blank">
       RCP goes Web 2.0</a> September 28, 2007
@@ -157,27 +157,6 @@ $html = <<<EOHTML
       Blog / Video:
       <a href="http://eclipsenuggets.blogspot.com/2007/09/see-how-you-can-make-rcp-application.html" target="_blank">
         See how you can make an RCP Application run in your browser</a> Sept 11, 2007, Elias Volanakis
-      </li>
-      <li>
-      Blog:
-      <a href="http://mea-bloga.blogspot.com/2007/09/web-development-revisited.html" target="_blank">
-        Web development revisited</a> Sept 6, 2007, Chris Aniszczyk
-      </li>
-      <li>
-        Article:
-        <a href="http://www.eweek.com/article2/0,1759,2100984,00.asp" target="_blank">
-          Innoopract - The Company Behind RAP</a> eweek, March 6, 2007
-      </li>
-      <li>
-        Slides:
-        <a href="http://eclipsezilla.eclipsecon.org/php/attachment.php?bugid=3833" target="_blank">
-          eclipse rich ajax platform (RAP)</a> EclipseCon, March 2007,
-      </li>
-      <li>
-        <img src="images/jax.png" align="middle" />
-        Community:
-        <a href="http://jax-award.de/jax_award06/gewinner_en.php" target="_blank">
-          RAP wins european innovation award</a> JAX, 2006
       </li>
     </ul>
   </div>
