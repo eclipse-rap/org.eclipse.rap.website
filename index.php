@@ -18,7 +18,7 @@ $html = <<<EOHTML
       widget toolkit with SWT API (using <a href="http://qooxdoo.org">
       qooxdoo</a> for the client-side presentation). The project is part
       of the <a href="http://wiki.eclipse.org/Galileo">Galileo</a> release 
-      train and will release its 1.2 release.
+      train and has released its version 1.2.
     <br />
     <br />
     <a href="about.php">Learn more ...</a>
