@@ -10,18 +10,47 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 <div id="midcolumn">
 <h1>Demos</h1>
-<p>Enjoy the demos below. <strong>Please be aware that the demos are run on 
+<p>Enjoy the demos below.
+  <!--
+  <strong>Please be aware that the demos are run on 
   a vserver at eclipse.org that is managed by the project team only</strong>, 
-  and not a high performance server supervised by sysadmins. Please make a 
-  post on the <a href="support.php">newsgroup</a> if there are problems 
-  with the demo apps that are not from third parties.
+  and not a high performance server supervised by sysadmins.
+  -->
+  Please post a message on the <a href="support.php">newsgroup</a> if you notice
+  problems with the demo apps that are not from third parties.
 </p>
-  
+
 <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
-        <a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">
+        <a href="http://rap.eclipsesource.org/rapdemo/examples" target="_blank">
+          <img src="images/demos/examples.png" style="border: 1px solid #666;"/>
+        </a>
+      </td>
+      <td width="500" valign="top">
+        <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
+          RAP Examples
+        </h2>
+        <p>
+          <a href="http://rap.eclipsesource.org/rapdemo/examples" target="_blank">
+            See the examples online
+          </a>
+        </p>
+        <p>This application shows samples of the widgets available in RAP.
+        Please note that it does not yet represent the complete widget set,
+        but only a small selection.
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
+  <table width="750" border="0" cellspacing="5" cellpadding="5">
+    <tr>
+      <td width="250">
+        <a href="http://rap.eclipsesource.org/rapdemo/rms" target="_blank">
           <img src="images/demos/webworkbench1.png" style="border: 1px solid #666;"/>
         </a>
       </td>
@@ -30,7 +59,7 @@ $html = <<<EOHTML
           RAP Workbench Demo
         </h2>
         <p>
-          <a href="http://rap.eclipse.org/rapdemo/rms" target="_blank">
+          <a href="http://rap.eclipsesource.org/rapdemo/rms" target="_blank">
             See a workbench demo online
           </a>
         </p>
@@ -39,9 +68,9 @@ $html = <<<EOHTML
         ready it shows a good bunch of the framework's possibilities.</p>
         <p>
         To demonstrate the NLS support, translations for 
-        <a href="http://rap.eclipse.org/rapdemo/rms?locale=en" target="_blank">English</a>, 
-        <a href="http://rap.eclipse.org/rapdemo/rms?locale=de" target="_blank">German</a> and 
-        <a href="http://rap.eclipse.org/rapdemo/rms?locale=zh" target="_blank">Chinese</a> 
+        <a href="http://rap.eclipsesource.org/rapdemo/rms?locale=en" target="_blank">English</a>, 
+        <a href="http://rap.eclipsesource.org/rapdemo/rms?locale=de" target="_blank">German</a> and 
+        <a href="http://rap.eclipsesource.org/rapdemo/rms?locale=zh" target="_blank">Chinese</a> 
         are available. The latter requires your browser to support East 
         Asian languages.</p> 
         <p>Please note, the example data will be reset regularly.</p>
@@ -74,28 +103,18 @@ $html = <<<EOHTML
   </table>
 </div>
 
+<!--
 <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
   <table width="750" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="250">
-        <!--
-        <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">
-        -->
           <img src="images/demos/controls1.png" style="border: 1px solid #666;"/>
-        <!--
-        </a>
-        -->
       </td>
       <td width="500" valign="top">
         <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
           RWT Controls Demo
         </h2>
         <p> 
-          <!--
-          <a href="http://rap.eclipse.org/controlsdemo/controls" target="_blank">
-            See a RWT controls demo online
-          </a>
-          -->
           Temporarily not available
         </p>
         <p>This demo shows what widgets there are in RWT and that they 
@@ -104,6 +123,8 @@ $html = <<<EOHTML
     </tr>
   </table>
 </div>
+-->
+
 <p>&nbsp;</p>
 
 <h1>Third Party applications based on RAP</h1>
