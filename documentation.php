@@ -130,8 +130,11 @@ $html = <<<EOHTML
       </li>
       <li>
         Article:
+        <a target="_blank" href="http://www.ibm.com/developerworks/library/os-eclipse-richajax1/index.html">
+        Web 2.0, the Eclipse way, Part I</a>,
         <a target="_blank" href="http://www.ibm.com/developerworks/library/os-eclipse-richajax2/index.html">
-        Web 2.0, the Eclipse way, Part II</a> IBM developerWorks, Dec 11, 2007, Chris Aniszczyk & Benjamin Muskalla
+        Part II</a>: An article at IBM developerWorks, Dec 11, 2007,
+        byChris Aniszczyk & Benjamin Muskalla
       </li>
       <li>
         Article:
@@ -140,18 +143,8 @@ $html = <<<EOHTML
       </li>
       <li>
         Article:
-        <a target="_blank" href="http://www.ibm.com/developerworks/opensource/library/os-eclipse-richajax1/?ca=dgr-eclipse-1">
-        Web 2.0, the Eclipse way, Part I</a> IBM developerWorks, Oct 23, 2007, Chris Aniszczyk & Benjamin Muskalla
-      </li>
-      <li>
-      Article:
-      <a href="http://www.innoopract.com/fileadmin/user_upload/Dokumente/Web-enabled_RCP_Applications_with_the_Rich_Ajax_Platform_pdf.pdf" target="_blank">
-      RCP goes Web 2.0</a> September 28, 2007
-      </li>
-        <li>
-        Podcast:
-        <a href="http://www.podtech.net/home/4204/innoopract-on-eclipse-eclipse-rap-osgi-and-component-coding-sponsored-development-in-open-source" target="_blank">
-        Innoopract CEO on RAP, Eclipse Distributions, OSGi and more</a> September 24, 2007
+        <a href="http://www.innoopract.com/fileadmin/user_upload/Dokumente/Web-enabled_RCP_Applications_with_the_Rich_Ajax_Platform_pdf.pdf" target="_blank">
+        RCP goes Web 2.0</a> September 28, 2007
       </li>
       <li>
       Blog / Video:
