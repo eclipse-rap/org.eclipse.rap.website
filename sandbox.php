@@ -9,10 +9,13 @@ $html = <<<EOHTML
 <div id="maincontent">
 	<div id="midcolumn">
 	<h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Contributing to RAP development</h2>
-	    <p> We welcome contributions to the RAP project. Contributions can be newsgroup posts,
-	    entering qualified bugreports, providing patches, or even contributing to the development 
-	    with extra components or in the main stream. 
-	    Please send a message to the rap-dev@eclipse.org mailing list if you would like to contribute in one of the latter categories. 
+	  <p>We welcome contributions to the RAP project. Contributions can be 
+	    newsgroup posts, entering qualified bugreports, providing patches, or 
+	    even contributing to the development with extra components or in the 
+	    main stream. 
+	    Please send a message to the 
+	    <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">mailing list</a> 
+	    if you would like to contribute in one of the latter categories. 
 	    </p>
 	<h2 style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">Sandbox</h2>
 		<p> The sandbox is a place at RAP where we make

@@ -22,7 +22,7 @@ $html = <<<EOHTML
         for a description on how to install RAP and build your first RAP 
         application.
       </p>
-      <p style="margin: 10px"><b>1.2 final RC Build</b></p>
+      <p style="margin: 10px"><b>1.2 Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest stable version, for use with Eclipse 3.4 and 3.5.
         <br />
@@ -78,7 +78,7 @@ $html = <<<EOHTML
         The RAP Runtime SDK is a target platform, do not try to install it into 
         the Eclipse IDE.        
       </p>
-      <p style="margin: 10px"><b>1.2 final RC Build</b></p>
+      <p style="margin: 10px"><b>1.2 Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest stable version, based on Eclipse 3.5.
         <br />

@@ -29,7 +29,7 @@ EOBRANDING;
   $Nav->addCustomNav("Wiki", "http://wiki.eclipse.org/RAP", "_self", 1);
 
   $Nav->addNavSeparator("Users", "/rap/gettingstarted.php", "_self", 1);
-  $Nav->addCustomNav("Getting Started", "/rap/gettingstarted.php",	"_self", 1);
+  $Nav->addCustomNav("Get Started", "/rap/gettingstarted.php",	"_self", 1);
   $Nav->addCustomNav("Downloads", "/rap/downloads/", "_self", 1);
   $Nav->addCustomNav("New & Noteworthy", "/rap/noteworthy", "_blank", 1);
   $Nav->addCustomNav("Support", "/rap/support.php", "_self", 1);

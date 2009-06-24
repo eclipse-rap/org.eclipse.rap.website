@@ -11,33 +11,12 @@ $html = <<<EOHTML
     <p>Here are some of the more noteworthy things available in the respective 
       builds.</p>
     <ul>
-      <!--
       <li><a href="news_12.php">RAP 1.2 Release</a>
         <p style="margin-top: 5px">
           Listed are the more noteworthy things available in the RAP 1.2
           release build (June 24<sup>th</sup>, 2009) which is available for 
           <a href="http://www.eclipse.org/rap/downloads/index.php">download</a>.
         </p>        
-      </li>
-      -->
-      <li><strong>RAP 1.2 Milestone Builds</strong>
-        <p style="margin-top: 5px">
-          Listed are the more noteworthy things that will be available in the 
-          respective milestone builds towards version 1.2.
-          <ul>
-            <li><a href="news_12RC.php">Release Candidates (May 25, 2009 - June 15, 2009)</a></li>
-            <li><a href="news_12M7.php">M7 (May 11, 2009)</a></li>
-            <li><a href="news_12M6.php">M6 (March 23, 2009)</a></li>
-            <li><a href="news_12M5.php">M5 (February 16, 2009)</a></li>
-            <li><a href="news_12M4.php">M4 (January 12, 2009)</a></li>
-            <li><a href="news_12M3.php">M3 (November 19, 2008)</a></li>
-            <li><a href="news_12M2.php">M2 (October 8, 2008)</a></li>
-          </ul>
-          <p />        
-          All features listed there can also be obtained from
-          <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>.
-        </p>
-        <p />        
       </li>
       <li><a href="relnotes112.php">RAP 1.1.2 Service Release</a>
         <p style="margin-top: 5px">
