@@ -22,7 +22,7 @@ $html = <<<EOHTML
         <p style="margin-top: 5px">
           A summary of the improvements in the 1.1.2 service release (February
           25, 2009) which is available for 
-          <a href="http://www.eclipse.org/rap/downloads/index.php">download</a>.
+          <a href="http://www.eclipse.org/rap/downloads/archive.php">download</a>.
         </p>        
       </li>
       <li><a href="relnotes111.php">RAP 1.1.1 Service Release</a>
@@ -36,7 +36,7 @@ $html = <<<EOHTML
         <p style="margin-top: 5px">
           Listed are the more noteworthy things available in the second 
           release build (June 25, 2008) which is available for 
-          <a href="http://www.eclipse.org/rap/downloads/index.php">download</a>.
+          <a href="http://www.eclipse.org/rap/downloads/archive.php">download</a>.
         </p>        
       </li>
       <li><a href="relnotes101.php">RAP 1.0.1 Service Release</a>
