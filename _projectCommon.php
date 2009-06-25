@@ -24,7 +24,6 @@ EOBRANDING;
   $Nav->addNavSeparator("RAP", "/rap/index.php");
   $Nav->addCustomNav("About", "/rap/about.php", "_self", 1);
   $Nav->addCustomNav("Demos", "/rap/demos.php", "_self", 1);
-  $Nav->addCustomNav("Team", "/rap/team.php", "_self", 1);
   $Nav->addCustomNav("Buzz", "/rap/buzz.php", "_self", 1);
 
   $Nav->addNavSeparator("Users", "/rap/gettingstarted.php", "_self", 1);
