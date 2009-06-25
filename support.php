@@ -36,12 +36,16 @@ $html = <<<EOHTML
         container environment.
         Consequently, you should have a working understanding of the underlying
         technologies to develop RAP applications.
-        Those technologies include SWT, RCP, OSGi, and Servlet technology.
+        Those technologies include
+        <a href="http://www.eclipse.org/swt">SWT</a>,
+        <a href="http://wiki.eclipse.org/index.php/Rich_Client_Platform">RCP</a>,
+        <a href="http://www.eclipse.org/equinox/">Equinox OSGi</a>, and
+        <a href="http://java.sun.com/products/servlet/">Servlet technology</a>.
       </p>
       <p>
         Many questions and problems that occur while developing RAP applications
         are not particularly related to RAP, but to the technologies below.
-        As an example, layout problems are usually SWT-related, dependencies
+        As an example, layout issues are usually SWT-related, dependencies
         to third-party libraries are handled on the OSGi level,
         and questions regarding session handling are related to the servlet
         container.
@@ -74,7 +78,7 @@ $html = <<<EOHTML
       <h3>Check the Newsgroup Archive</h3>
       <p>
         Chances are that your question has already been answered on our
-        community newsgroup but has not yet made it into the FAQ.
+        community newsgroup but hasn't made it into the FAQ.
         You can browse the
         <a href="http://www.eclipse.org/newsportal/thread.php?group=eclipse.technology.rap">
         newsgroup archive online</a>
@@ -108,7 +112,7 @@ $html = <<<EOHTML
         information in a comment.
         But please refrain from posting comments like
         "When will this bug be fixed?" or "Any progress on this?"
-        &emdash;
+        &mdash;
         those comments don't help anyone, they only slow down the development.
       </p>
     </div>
@@ -123,7 +127,7 @@ $html = <<<EOHTML
         this FAQ</a>.
       </p>
       <p>
-        The RAP Newsgroup is intended for the user community discussions on 
+        The RAP Newsgroup is intended for user community discussions on 
         RAP usage and troubleshooting. Developers contributing to RAP should
         use the <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">
         mailing list</a>.
