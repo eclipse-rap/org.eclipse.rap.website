@@ -15,7 +15,7 @@
       <h3>What is RAP?</h3>
       <p>
         I a nutshell: “<em>RAP brings RCP applications into the browser</em>”.
-        <div align="center">
+        <div align="center" margin="10px 0px">
           <img src="images/about/maildemo.png" />
         </div>
       </p>
@@ -31,9 +31,9 @@
     <div class="homeitem3col">
       <h3>How does it work?</h3>
 
-      <p align="center">
+      <div align="center" margin="10px 0px">
         <img src="images/about/architecture.png" alt="Architecture" />
-      </p>
+      </div>
 
       <p style="margin:10px">
         RAP is very similar to
