@@ -698,7 +698,13 @@ Display {
           The development is not quite complete, some improvements will still
           be made before the release.
           </p>
-          <p><img src="BusinessDesign50.png" /></p>
+          <p>
+            <a href="http://www.eclipse.org/rap/demos.php">
+            <img src="BusinessDesign50.png" />
+            </a>
+          </p>
+          <p>Check out the <a href="http://www.eclipse.org/rap/demos.php">RAP 
+          Examples Application</a>, to see the new look and feel in action.</p>
         </td>
       </tr>
 
