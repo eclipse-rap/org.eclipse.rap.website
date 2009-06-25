@@ -13,8 +13,8 @@ $html = <<<EOHTML
   <h1>1.2.1 Service Release Notes</h1>
   <p>
   As with every service release the main aspect is to provide bug fixes which 
-  didn't get into the 1.2 release. The list below shows all bugs that were
-  fixed in this service release. 
+  didn't get into the <a href="news_12.php">1.2 release</a>. The list below shows 
+  all bugs that were fixed in this service release.
   </p>
   <p>
   The service release will be availble on September 25<sup>th</sup>, 2009. 
