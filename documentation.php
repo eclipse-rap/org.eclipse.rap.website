@@ -18,6 +18,7 @@ $html = <<<EOHTML
       <li><a href="#devguide">Developer Guide (Help Center)</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#wiki">Wiki</a></li>
+      <li><a href="#resources">Resources Related to Underlying Technologies</a></li>
       <li><a href="#articles">Articles and Tutorials</a></li>
     </ul>
   </p>
@@ -25,8 +26,8 @@ $html = <<<EOHTML
   <div id="devguide" class="homeitem3col" style="clear: both">
     <h3>Developer Guide (Help Center)</h3>
     <p>
-      This is the official help for RAP. It is included in the Eclipse help if
-      you installed the RAP Tooling, and can also be accessed
+      This is the official help for RAP. It is included in your Eclipse help if
+      you installed the RAP Tooling, but it can also be accessed
       <a href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html">online</a>.
     </p>
     <p>
@@ -50,6 +51,59 @@ $html = <<<EOHTML
       Some information is also available in our
       <a href="http://wiki.eclipse.org/RAP">wiki pages</a>.
     </p>
+  </div>
+
+  <div id="resources" class="homeitem3col" style="clear: both">
+    <h3>Resources Related to Underlying Technologies</h3>
+    <p>
+      RAP is build on development requires knowledge of a couple of underlying
+      technologies.
+      We've collected a couple of resources that we recommend to read:
+    </p>
+    <h4>Equinox</h4>
+    <ul>
+      <li>
+        <a href="http://www.eclipse.org/equinox/documents/quickstart.php">
+        Equinox QuickStart Guide</a>
+      </li>
+      <li>
+        <a href="http://www.eclipse.org/equinox/server/http_quickstart.php">
+        Equinox Server-side Quickstart</a>
+      </li>
+    </ul>
+    <h4>SWT</h4>
+    <ul>
+      <li>
+        <a href="http://www.eclipse.org/swt/snippets/">
+        SWT Snippets</a>
+      </li>
+      <li>
+        <a href="http://www.eclipse.org/articles/article.php?file=Article-Understanding-Layouts/index.html">
+        Understanding Layouts in SWT</a>
+      </li>
+    </ul>
+    <h4>JFace</h4>
+    <ul>
+      <li>
+        <a href="http://www.eclipse.org/articles/Article-TreeViewer/TreeViewerArticle.htm">
+        How to use the JFace Tree Viewer</a>
+      </li>
+      <li>
+        <a href="http://www.eclipse.org/articles/article.php?file=Article-JFaceWizards/index.html">
+        Creating JFace Wizards</a>
+      </li>
+    </ul>
+    <h4>Workbench</h4>
+    <ul>
+      <li>
+        <a href="http://www.eclipse.org/articles/Article-WorkbenchSelections/article.html">
+        Eclipse Workbench: Using the Selection Service</a>
+      </li>
+      <li>
+        <a href="http://www.eclipse.org/articles/Article-Concurrency/jobs-api.html">
+        On the Job: The Eclipse Jobs API</a>
+      </li>
+    </ul>
   </div>
 
   <div id="articles" class="homeitem3col" style="clear: both">

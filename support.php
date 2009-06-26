@@ -49,9 +49,10 @@ $html = <<<EOHTML
         to third-party libraries are handled on the OSGi level,
         and questions regarding session handling are related to the servlet
         container.
-        If your question relates to one of those technologies, try to find
-        answers at the related channels.
-        <!-- TODO: Collect resources on a separate page -->
+        If your question relates to one of those technologies, please read the
+        available documentation (we collected some useful links on our
+        <a href="documentation.php#resources">documentation page</a>)
+        and try to find answers at the related channels.
       </p>
     </div>
 
