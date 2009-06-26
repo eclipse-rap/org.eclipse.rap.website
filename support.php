@@ -137,17 +137,17 @@ $html = <<<EOHTML
     <div id="new-bugs" class="homeitem3col" style="clear: both">
       <h3>File a Bug Report</h3>
       <p>
-        If, and only if, you followed all the steps above and believe that there
-        is a defect or a missing feature that you'd like to report,
-        you should submit a new bug.
-        Submit bugs using <a href="http://eclipse.org/mylyn">Mylyn</a> or the
+        If you followed the steps above and believe that there is a defect or a
+        missing feature that you'd like to report, you should submit a new bug.
+        You can either submit bugs using
+        <a href="http://eclipse.org/mylyn">Mylyn</a> or the
         <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&rep_platform=All&op_sys=all">
         Bugzilla web interface</a>.
         For defects provide steps on how to reproduce.
         For enhancements outline a use case.
-        Further information on how to write bug reports can be found in the
+        Please read the
         <a href="http://wiki.eclipse.org/RAP_Bug_Reporting_Howto">RAP Bug
-        Reporting Howto</a>.
+        Reporting Howto</a> before you submit your bug.
       </p>
     </div>
 
