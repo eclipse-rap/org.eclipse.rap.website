@@ -10,14 +10,12 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 <div id="midcolumn">
 <h1>Demos</h1>
-<p>Enjoy the demos below.
-  <!--
-  <strong>Please be aware that the demos are run on 
-  a vserver at eclipse.org that is managed by the project team only</strong>, 
-  and not a high performance server supervised by sysadmins.
-  -->
-  Please post a message on the <a href="support.php">newsgroup</a> if you notice
-  problems with the demo apps that are not from third parties.
+<p>
+  Enjoy the demos below.
+  <strong>Please be aware that the demos are maintained by the RAP team</strong>,
+  they are not running on a professionally supervised high-performance server.
+  Please post a message on the <a href="support.php#newsgroup">newsgroup</a>
+  if you notice problems with the demo apps that are not from third parties.
 </p>
 
 <div style="margin: 10px 0px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
