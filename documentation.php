@@ -56,8 +56,7 @@ $html = <<<EOHTML
   <div id="resources" class="homeitem3col" style="clear: both">
     <h3>Resources Related to Underlying Technologies</h3>
     <p>
-      RAP is build on development requires knowledge of a couple of underlying
-      technologies.
+      RAP development requires knowledge of a couple of underlying technologies.
       We've collected a couple of resources that we recommend to read:
     </p>
     <h4>Equinox</h4>
