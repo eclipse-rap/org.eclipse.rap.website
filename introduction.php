@@ -79,8 +79,10 @@
         development.
         Applications are developed as OSGi-bundles entirely in Java and use the
         same API and extension points than their RCP counterparts.
-        Thus, RAP developers take advantage of the award winning Java
-        Development Tools (JDT) and the Plug-in Development Environment (PDE)
+        Thus, RAP developers take advantage of the award winning
+        <a href="http://www.eclipse.org/jdt/">Java Development Tools (JDT)</a>
+        and the
+        <a href="http://www.eclipse.org/pde/">Plug-in Development Environment (PDE)</a>
         provided by Eclipse.
         Everything from development to launching, debugging and exporting
         to standard .war files works right out of the Eclipse IDE.
@@ -95,7 +97,7 @@
         of RAP applications from Eclipse.
         You can download the RAP Tooling from the download section on the
         left to get right started.
-        A user guide is part of the RAP tools and can also be accessed
+        A user guide is part of the Tooling and can also be accessed
         <a href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html">online</a>.
       </p>
     </div>
