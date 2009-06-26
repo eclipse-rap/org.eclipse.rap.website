@@ -22,7 +22,7 @@ EOBRANDING;
   $Nav->addCustomNav("About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=rt.rap", "_self", 0);
   
   $Nav->addNavSeparator("RAP", "/rap/index.php");
-  $Nav->addCustomNav("Introduction", "/rap/about.php", "_self", 1);
+  $Nav->addCustomNav("Introduction", "/rap/introduction.php", "_self", 1);
   $Nav->addCustomNav("Demos", "/rap/demos.php", "_self", 1);
   $Nav->addCustomNav("Buzz", "/rap/buzz.php", "_self", 1);
 
