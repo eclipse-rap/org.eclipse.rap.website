@@ -26,7 +26,7 @@ $html = <<<EOHTML
       <p style="margin: 10px 10px 10px 20px">
         The latest stable version, for use with Eclipse 3.4 and 3.5.
         <br />
-        <a href="../noteworthy/news_12RC.php">New &amp; Noteworthy</a>
+        <a href="../noteworthy/news_12.php">New &amp; Noteworthy</a>
         <br />
         <br />
         The update site is
@@ -82,7 +82,7 @@ $html = <<<EOHTML
       <p style="margin: 10px 10px 10px 20px">
         The latest stable version, based on Eclipse 3.5.
         <br />
-        <a href="../noteworthy/news_12RC.php">New &amp; Noteworthy</a>
+        <a href="../noteworthy/news_12.php">New &amp; Noteworthy</a>
         <br />
         <br />
         The update site is
