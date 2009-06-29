@@ -95,6 +95,10 @@ $html = <<<EOHTML
     <h4>Workbench</h4>
     <ul>
       <li>
+        <a href="http://www.eclipse.org/articles/using-perspectives/PerspectiveArticle.html">
+        Using Perspectives in the Eclipse UI
+      </li>
+      <li>
         <a href="http://www.eclipse.org/articles/Article-WorkbenchSelections/article.html">
         Eclipse Workbench: Using the Selection Service</a>
       </li>
