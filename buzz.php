@@ -42,7 +42,7 @@ $html = <<<EOHTML
           </li>
           <li>
 	        <a href="http://www.golem.de/0710/55379.html" target="_blank">
-	       	Eclipse Rich Ajax Platform 1.0 verfügbar</a> (golem.de)
+	       	Eclipse Rich Ajax Platform 1.0 verfÃ¼gbar</a> (golem.de)
           </li>
           <li>
 	        <a href="http://www.infoworld.com/article/07/10/14/eclipse-rap_1.html" target="_blank">
@@ -154,8 +154,8 @@ $html = <<<EOHTML
           </li>
           <li>
             Slides (<img src="http://www.eclipse.org/rap/images/de.gif" alt="German"/>):
-            <a target="_blank" href="http://www.java-forum-stuttgart.de/abstracts.html#B7">
-            Erfahrungsbericht über die Anwendungsentwicklung mit Eclipse RAP</a>
+            <a target="_blank" href="http://www.java-forum-stuttgart.de/jfs/2008/abstracts.html#B7">
+            Erfahrungsbericht Ã¼ber die Anwendungsentwicklung mit Eclipse RAP</a>
             Java Forum Stuttgart, July 2008, Stefan R&ouml;ck & Frank Appel
           </li>
           <li>
