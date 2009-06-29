@@ -13,8 +13,11 @@ $html = <<<EOHTML
   <h1>1.2.1 Service Release Notes</h1>
   <p>
   As with every service release the main aspect is to provide bug fixes which 
-  didn't get into the <a href="news_12.php">1.2 release</a>. The list below shows 
-  all bugs that were fixed in this service release.
+  didn't get into the <a href="news_12.php">1.2 release</a>. 
+  </p>
+  <p>
+  <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=RAP&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=sr121&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
+  This list</a> shows all bugs that were fixed in this service release.
   </p>
   <p>
   The service release will be availble on September 25<sup>th</sup>, 2009. 
@@ -26,18 +29,6 @@ $html = <<<EOHTML
   <a href="http://www.eclipse.org/rap/downloads">download</a>.
   -->
   </p>
-	  
-  <table cellspacing="10px">
-    <tr valign="top" align="left">
-	  <td width="20%">
-	    <a href="">[ bug id ]</a>
-	  </td>
-	  <td width="80%">
-	    [ bug summary ]
-      </td>
-    </tr>
-  </table>
-  
 </div>
 
 EOHTML;
