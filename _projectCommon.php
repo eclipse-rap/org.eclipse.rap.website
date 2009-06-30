@@ -38,4 +38,6 @@ EOBRANDING;
   $Nav->addCustomNav("Plan", "http://www.eclipse.org/projects/project-plan.php?projectid=technology.rap", "_self", 1);	
   $Nav->addCustomNav("CVS", "/rap/cvs.php", "", 1);
   $Nav->addCustomNav("Mailing List (ext)", "https://dev.eclipse.org/mailman/listinfo/rap-dev", "_self", 1);
+
+  $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
 ?>
