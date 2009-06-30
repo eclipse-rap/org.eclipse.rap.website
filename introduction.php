@@ -17,7 +17,7 @@
         I a nutshell: “<em>RAP brings RCP applications into the browser</em>”.
       </p>
       <div style="margin: 10px 0px; text-align: center;">
-        <img src="images/about/maildemo.png" />
+        <img src="images/about/Maildemo-Design.png" />
       </div>
       <p>
         Our mission:<br/>
