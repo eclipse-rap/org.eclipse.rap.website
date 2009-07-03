@@ -28,10 +28,10 @@ EOBRANDING;
 
   $Nav->addNavSeparator("Get RAP", "/rap/downloads/", "_self", 1);
   $Nav->addCustomNav("Downloads", "/rap/downloads/", "_self", 1);
-  $Nav->addCustomNav("Source Code", "/rap/cvs.php", "", 1);
+  $Nav->addCustomNav("Source Code", "/rap/cvs.php", "_self", 1);
 
-  $Nav->addNavSeparator("Resources", /rap/noteworthy", "_self", 1);
-  $Nav->addCustomNav("New & Noteworthy", "/rap/noteworthy", "_blank", 1);
+  $Nav->addNavSeparator("Resources", "/rap/noteworthy/", "_self", 1);
+  $Nav->addCustomNav("New & Noteworthy", "/rap/noteworthy/", "_blank", 1);
   $Nav->addCustomNav("Documentation", "/rap/documentation.php", "_self", 1);
   $Nav->addCustomNav("Get Help", "/rap/support.php", "_self", 1);
   $Nav->addCustomNav("Project Plan", "http://www.eclipse.org/projects/project-plan.php?projectid=technology.rap", "_self", 1);	
