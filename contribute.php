@@ -13,7 +13,7 @@ $html = <<<EOHTML
     <p>
       Everyone is invited to contribute to the RAP project.
       Contributing may include
-      <du>
+      <ul>
         <!-- share findings in the newsgroup -->
         <li>
           Writing a valuable bug report, i.e. report a defect that is not
@@ -40,12 +40,12 @@ $html = <<<EOHTML
           Please contact us on the developer mailing list if you'd like to
           share your code.
         </li>
-      </du>
+      </ul>
     </p>
 
     <h2>Developer resources</h2>    
     <p>
-      <du>
+      <ul>
         <li>
           Contributors should, of course, work against the CVS.
           See <a href="cvs.php">CVS page</a> for instructions.
@@ -59,7 +59,7 @@ $html = <<<EOHTML
           We have a mailing list for development-related discussions around RAP:
           <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev</a>.
         </li>
-      </du>
+      </ul>
     </p>
   </div>
 </div>

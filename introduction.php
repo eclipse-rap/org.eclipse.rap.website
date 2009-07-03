@@ -111,7 +111,7 @@
           <a href="http://eclipsesource.com" target="_blank">EclipseSource</a>
         </li>
         <li>
-          <a href="http://oneandone.com" target="_blank">1&1</a>
+          <a href="http://oneandone.com" target="_blank">1&amp;1</a>
         </li>
         <li>
           <a href="http://www.cas.de/English/Home.asp" target="_blank">CAS</a>
@@ -119,6 +119,8 @@
       </ul>
     </div>
   </div>
+
+</div>
 
 EOHTML;
 
