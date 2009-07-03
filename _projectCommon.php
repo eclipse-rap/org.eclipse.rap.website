@@ -20,24 +20,26 @@ EOBRANDING;
   $Menu->setProjectBranding($branding);
 
   $Nav->addCustomNav("About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=rt.rap", "_self", 0);
-  
+
   $Nav->addNavSeparator("RAP", "/rap/index.php");
   $Nav->addCustomNav("Introduction", "/rap/introduction.php", "_self", 1);
   $Nav->addCustomNav("Demos", "/rap/demos.php", "_self", 1);
-  $Nav->addCustomNav("Buzz", "/rap/buzz.php", "_self", 1);
-
-  $Nav->addNavSeparator("Users", "/rap/gettingstarted.php", "_self", 1);
   $Nav->addCustomNav("Get Started", "/rap/gettingstarted.php",	"_self", 1);
+
+  $Nav->addNavSeparator("Get RAP", "/rap/downloads/", "_self", 1);
   $Nav->addCustomNav("Downloads", "/rap/downloads/", "_self", 1);
+  $Nav->addCustomNav("Source Code", "/rap/cvs.php", "", 1);
+
+  $Nav->addNavSeparator("Resources", /rap/noteworthy", "_self", 1);
   $Nav->addCustomNav("New & Noteworthy", "/rap/noteworthy", "_blank", 1);
   $Nav->addCustomNav("Documentation", "/rap/documentation.php", "_self", 1);
   $Nav->addCustomNav("Get Help", "/rap/support.php", "_self", 1);
+  $Nav->addCustomNav("Project Plan", "http://www.eclipse.org/projects/project-plan.php?projectid=technology.rap", "_self", 1);	
 
-  $Nav->addNavSeparator("Contributors", "/rap/sandbox.php", "_self", 1);
-  $Nav->addCustomNav("Sandbox", "/rap/sandbox.php", "_self", 1);
-  $Nav->addCustomNav("Plan", "http://www.eclipse.org/projects/project-plan.php?projectid=technology.rap", "_self", 1);	
-  $Nav->addCustomNav("CVS", "/rap/cvs.php", "", 1);
-  $Nav->addCustomNav("Mailing List (ext)", "https://dev.eclipse.org/mailman/listinfo/rap-dev", "_self", 1);
+  $Nav->addNavSeparator("Development", "/rap/bugs.php", "_self", 1);
+  $Nav->addCustomNav("Bugs", "/rap/bugs.php", "_self", 1);
+  $Nav->addCustomNav("Incubator", "/rap/incubator.php", "_self", 1);
+  $Nav->addCustomNav("Contribute", "/rap/contribute.php", "_self", 1);
 
   $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
 ?>
