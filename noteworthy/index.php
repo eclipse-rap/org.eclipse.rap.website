@@ -16,13 +16,23 @@ $html = <<<EOHTML
           Listed are the more noteworthy things that will be available in the 
           respective milestone builds towards version 1.3.
           <ul>
-            <li><a href="news_13M1.php">M1 (August 07<sup>th</sup> 2009)</a></li>
+            <li><a href="news_13M1.php">M1 (August 07, 2009)</a></li>
           </ul>
           <p />        
           All features listed there can also be obtained from
           <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>.
         </p>
         <p />        
+      </li>
+      <li><a href="relnotes121.php">RAP 1.2.1 Service Release</a>
+        <p style="margin-top: 5px">
+          A summary of the improvements in the 1.1.2 service release which 
+          will be available on September 25, 2009.
+          <br />
+          In the meanwhile the changes can be obtained from 
+          <a href="http://www.eclipse.org/rap/cvs.php">CVS</a> in branch 
+          <code>v12_Maintenance</code>.
+        </p>        
       </li>
       <li><a href="news_12.php">RAP 1.2 Release</a>
         <p style="margin-top: 5px">
