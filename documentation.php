@@ -96,7 +96,7 @@ $html = <<<EOHTML
     <ul>
       <li>
         <a href="http://www.eclipse.org/articles/using-perspectives/PerspectiveArticle.html">
-        Using Perspectives in the Eclipse UI
+        Using Perspectives in the Eclipse UI</a>
       </li>
       <li>
         <a href="http://www.eclipse.org/articles/Article-WorkbenchSelections/article.html">
