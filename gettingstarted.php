@@ -21,7 +21,7 @@
 <h1>Getting Started</h1>
 
 <h2>Getting started screencasts</h2>
-<p>Check out those execellent screencasts (external) to get started with RAP
+<p>Check out those excellent screencasts (external) to get started with RAP
  - both for installation and creating your first project:
  <a href="http://www.thescreencast.com/2007/10/first-look-at-eclipse-rich-ajax.html"
     target="_blank">Eclipse RAP getting started screencasts</a>
@@ -56,7 +56,7 @@
       button and then click <strong>Next</strong>.</li>
   <li>Click on the <strong>New Remote Site</strong> button, the New Update Site 
       dialog will appear.</li>
-  <li>Enter a name for the udpate site, such as "RAP Update Site" and then enter
+  <li>Enter a name for the update site, such as "RAP Update Site" and then enter
       the URL <strong>http://download.eclipse.org/rt/rap/1.2/update</strong>, 
       click <strong>OK</strong> to create the new update site entry.</li>
   <li>The entry you just created now appears in the update site list and is

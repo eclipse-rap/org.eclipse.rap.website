@@ -154,7 +154,7 @@ $html = <<<EOHTML
         <a href="http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-ganymede-pt2.html" target="_blank">
         Using Eclipse Ganymede to develop for the desktop, Web and mobile devices,
         Part 2: Developing for the Rich Client Platform, the Ganymede way</a>
-        IBM developerWorks, Sep 9, 2008, Suresh Krishna & Trebor Fenstermaker
+        IBM developerWorks, Sep 9, 2008, Suresh Krishna &amp; Trebor Fenstermaker
       </li>
       <li>
         Article (<img src="http://www.eclipse.org/rap/images/de.gif" alt="German"/>):
@@ -172,7 +172,7 @@ $html = <<<EOHTML
         Web 2.0, the Eclipse way, Part I</a>,
         <a target="_blank" href="http://www.ibm.com/developerworks/library/os-eclipse-richajax2/index.html">
         Part II</a>: An article at IBM developerWorks, Dec 11, 2007,
-        byChris Aniszczyk & Benjamin Muskalla
+        by Chris Aniszczyk &amp; Benjamin Muskalla
       </li>
       <li>
         Article:
