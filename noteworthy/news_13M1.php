@@ -38,17 +38,60 @@ $html = <<<EOHTML
 
       <tr valign="top" align="left">
         <td width="20%">
+          <b>CSS Gradients and Rounded Borders</b>
+        </td>
+        <td width="80%">
+          <p>
+            The RAP theming now supports gradients and rounded borders for many
+            widgets.
+            Both features are implemented using vector graphics (SVG/VML) on the
+            client-side.
+            Of course, this works with all browsers supported by RAP.
+          </p>
+          <img src="GradientsAndRoundedBorders.png" />
+          <p>
+            For gradients we followed the CSS syntax implemented by
+            <a href="http://webkit.org/blog/175/introducing-css-gradients/">Safari</a>,
+            as there is no official CSS syntax around.
+            Beside a start color and an end color, you can also define any
+            number of intermediate steps.
+            Currently, only vertical linear gradients are supported.
+          </p>
+          <pre>
+  background-image: gradient(
+    linear, left top, left bottom,
+    from( #ffffff ),
+    color-stop( 48%, #f0f0f0 ),
+    color-stop( 52%, #e0e0e0 ),
+    to( #cccccc )
+  );
+          </pre>
+          <p>
+            For rounded borders, we followed the approach outlined in the
+            <a href="http://www.w3.org/TR/css3-background/#the-border-radius">CSS 3 Draft</a>.
+            You can set rounded borders using the <code>border-radius</code>
+            property, even a different radius for every corner is possible.
+          </p>
+          <pre>
+  border: 2px solid #005092;
+  border-radius: 6px;
+          </pre>
+        <td/>
+      </tr>
+
+      <tr valign="top" align="left">
+        <td width="20%">
           <b>Help Events</b>
         </td>
         <td width="80%">
-            It is now possible to attach help listeners to controls and menus. 
-            These events are generated when help is requested for a control or
-            menu, typically when the user presses F1.
+          It is now possible to attach help listeners to controls and menus. 
+          These events are generated when help is requested for a control or
+          menu, typically when the user presses F1.
         <td/>
       </tr>
 
     </table>
-    
+
     <hr />
 
 <!--
