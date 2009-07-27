@@ -47,11 +47,12 @@ $html = <<<EOHTML
             Both features are implemented using vector graphics (SVG/VML) on the
             client-side.
             Of course, this works with all browsers supported by RAP.
+            <br/>
+            <img style="margin: 10px 10px 0px;" src="GradientsAndRoundedBorders.png" />
           </p>
-          <img style="margin: 10px;" src="GradientsAndRoundedBorders.png" />
           <p>
-            For gradients we followed the CSS syntax implemented by
-            <a href="http://webkit.org/blog/175/introducing-css-gradients/">Safari</a>,
+            For gradients we followed the CSS syntax
+            <a href="http://webkit.org/blog/175/introducing-css-gradients/">implemented by Safari</a>,
             as there is no official CSS syntax around.
             Beside a start color and an end color, you can also define any
             number of intermediate steps.
@@ -68,7 +69,7 @@ $html = <<<EOHTML
           </pre>
           <p>
             For rounded borders, we followed the approach outlined in the
-            <a href="http://www.w3.org/TR/css3-background/#the-border-radius">CSS 3 Draft</a>.
+            <a href="http://www.w3.org/TR/css3-background/#the-border-radius">CSS Backgrounds and Borders Module</a>.
             You can set rounded borders using the <code>border-radius</code>
             property, even a different radius for every corner is possible.
           </p>
