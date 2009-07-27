@@ -48,7 +48,7 @@ $html = <<<EOHTML
             client-side.
             Of course, this works with all browsers supported by RAP.
           </p>
-          <img src="GradientsAndRoundedBorders.png" />
+          <img style="margin: 10px;" src="GradientsAndRoundedBorders.png" />
           <p>
             For gradients we followed the CSS syntax implemented by
             <a href="http://webkit.org/blog/175/introducing-css-gradients/">Safari</a>,
