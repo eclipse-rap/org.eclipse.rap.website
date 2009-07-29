@@ -77,6 +77,34 @@ $html = <<<EOHTML
   </table>
 </div>
 
+<div style="margin: 10px 0px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
+  <table width="720" border="0" cellspacing="10" cellpadding="5">
+    <tr>
+      <td width="250">
+        <a href="http://rap.eclipsesource.com/e4-contacts" target="_blank">
+          <img src="images/demos/e4_contacts.png" style="border: 1px solid #666;"/>
+        </a>
+      </td>
+      <td width="465" valign="top">
+        <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
+          e4 contacts demo
+        </h2>
+        <p>
+          <a href="http://rap.eclipsesource.com/e4-contacts" target="_blank">
+            See a e4 contacts demo online
+          </a>
+        </p>
+        <p>This is one of the
+        <a href="http://download.eclipse.org/e4/downloads/drops/S-0.9M5-200907101930/e4-news-M5.html#Examples">example</a>
+        applications for <a href="http://eclipse.org/e4/">e4</a>, the next generation of Eclipse, running on RAP.
+        This is just a <b>technical preview</b> but it already reveals
+        the strength of combining e4 and RAP.
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+
 <p>&nbsp;</p>
 
 <h1>Third Party applications based on RAP</h1>
