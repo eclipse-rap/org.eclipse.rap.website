@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+
+<!--  Use this to test local rendering in firefox -->
+<?xml-stylesheet type="text/xsl" href="project-plan-render.xsl"?>
+<plan 
+  plan-format="1.0" 
+  xmlns="http://www.eclipse.org/project/plan"
+  xmlns:html="http://www.w3.org/1999/xhtml" 
+  name="Rich Ajax Platform (RAP)">
+  <release projectid="rt.rap" version="1.3" />
+  <introduction>
+    <html:div>
+      <html:div style="align:center;">
+        <html:big><html:b>Preliminary</html:b></html:big>
+      </html:div>
+      The RAP 1.3 project plan is still in preliminary state and not yet agreed
+      upon by all parties.
+      <html:hr/>
+      The RAP project enables developers to build rich, Ajax-enabled Web 
+      applications by using the Eclipse development model, plug-ins with 
+      the well known Eclipse workbench extension points, JFace, and a 
+      widget toolkit with SWT API.
+    </html:div>
+    <html:div>
+      Plans for previous releases can be found on these 
+      <html:a href="http://wiki.eclipse.org/RapPlan">wiki pages</html:a>.
+    </html:div>
+  </introduction>
+  <release_deliverables>
+    <html:div>
+      <html:ul>
+        <html:li>
+          <html:strong>Tooling</html:strong>:
+          contains useful tools, templates and documentation for RAP development.
+          Available as p2 repository.
+        </html:li>
+        <html:li>
+          <html:strong>Runtime SDK</html:strong>:
+          contains the RAP runtime to be used as target platform,
+          including sources and a simple demo application.
+          Available as p2 repository.
+        </html:li>
+      </html:ul>
+    </html:div>
+  </release_deliverables>
+  <release_milestones>
+    <preamble>
+      <html:div>
+        Release milestones will be occurring at roughly 6 week intervals,
+        and will be aligned with the
+        <html:a href="http://wiki.eclipse.org/Helios_Simultaneous_Release">
+        Helios Simultaneous Release</html:a> train.
+      </html:div>
+    </preamble>
+    <!-- milestone date="10/8/2008" milestone="M2"><html:div>1.2 M2</html:div></milestone>
+    <milestone date="11/19/2008" milestone="M3"><html:div>1.2 M3</html:div></milestone>
+    <milestone date="1/12/2009" milestone="M4"><html:div>1.2 M4</html:div></milestone>
+    <milestone date="2/16/2009" milestone="M5"><html:div>1.2 M5</html:div></milestone>
+    <milestone date="3/23/2009" milestone="M6"><html:div>1.2 M6 (API Freeze)</html:div></milestone>
+    <milestone date="5/11/2009" milestone="M7"><html:div>1.2 M7 (Feature Freeze)</html:div></milestone>
+    <milestone date="5/25/2009" milestone="RC1"><html:div>1.2 RC1</html:div></milestone>
+    <milestone date="6/1/2009" milestone="RC2"><html:div>1.2 RC2</html:div></milestone>
+    <milestone date="6/8/2009" milestone="RC3"><html:div>1.2 RC3</html:div></milestone>
+    <milestone date="6/15/2009" milestone="RC4"><html:div>1.2 RC4</html:div></milestone-->
+    <postamble>
+      <html:div>
+        A detailed <html:a href="http://wiki.eclipse.org/RAP/Ramp_down_plan">
+        RAP Ramp down plan</html:a> towards the release is available especially
+        for the Eclipse
+        <html:a href="http://wiki.eclipse.org/Helios_Simultaneous_Release">
+        Helios Simultaneous Release</html:a> integration.
+        <html:p>The target date for availability of RAP 1.3 is
+          Summer 2010 (with Helios).</html:p>
+        <!-- html:p>Two service releases are planned for RAP 1.3 that will include
+          critical bug fixes. SR 1 in Autumn 2010 and SR 2 in the beginning of 2011.</html:p -->
+      </html:div>
+    </postamble>
+  </release_milestones>
+  <target_environments>
+    <html:div>
+      <html:p>
+      The server-side part of the Rich Ajax Platform 1.3 will be written and 
+      compiled against
+      <html:ul>
+        <html:li>
+          <html:a href="http://www.eclipse.org/equinox/server/">Equinox</html:a> 
+          Version 3.6</html:li>
+        <html:li>Version 1.4.2 of the Java Platform APIs (i.e., Java 2 Platform,
+          Release 1.4.2 SE)</html:li>
+        <html:li>
+          <html:a href="http://java.sun.com/products/servlet/reference/api/index.html">
+          Java Servlet API</html:a> Version 2.3 - 2.5</html:li>
+      </html:ul>
+      </html:p>
+      <html:p>
+      The client-side reference implementation depends upon 
+      <html:a href="http://qooxdoo.org">qooxdoo</html:a>.
+      For this release the following web browsers/rendering engines will be
+      supported
+      <html:ul>
+        <html:li>Internet Explorer >= 6.0, version 7 and later is recommended</html:li>
+        <html:li>Gecko (i.e. Firefox, Netscape)</html:li>
+        <html:li>Webkit (i.e. Safari, Google Chrome)</html:li>
+      </html:ul>
+      </html:p>
+    </html:div>
+    <internationalization>
+      <html:div>
+        The Rich Ajax Platform is designed as the basis for internationalized
+        products. The user interface elements provided by the RAP
+        components, including dialogs and error messages, are externalized. The
+        English strings are provided as the default resource bundles.
+      </html:div>
+    </internationalization>
+  </target_environments>
+  <compatibility_with_previous_releases>
+    <html:div>
+    RAP 1.3 will be backward compatible with RAP 1.2.
+    </html:div>
+  </compatibility_with_previous_releases>
+  <themes_and_priorities>
+    <preamble>
+      <html:div></html:div>
+    </preamble>
+
+    <theme name="Improved Single Sourcing">
+      <description>
+        <html:div>
+        <html:p>
+          RWT implements a subset of the SWT API.
+          We aim to implement SWT functionality that is yet missing from RWT.
+          This includes enabling this newly implemented API in higher layers
+          (e.g. Workbench, JFace).
+        </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=RT&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version%3D1.3+plan-status%3Dcommitted+plan-theme%3Dsingle-sourcing&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+      </committed>
+      <proposed>
+        <html:div>
+        <html:ul>
+          <html:li>Drag &amp; Drop</html:li>
+          <html:li>Partial GraphicsContext and/or Draw2D implementation</html:li>
+          <html:li>IApplication support</html:li>
+        </html:ul>
+        </html:div>
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Look and Feel">
+      <description>
+        <html:div>
+        <html:p>
+          We plan to further improve the styling capabilites of RAP.
+        </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=RT&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version%3D1.3+plan-status%3Dcommitted+plan-theme%3Dlook-and-feel&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+      </committed>
+      <proposed>
+        <html:div>
+        <html:ul>
+          <html:li>More flexible widget decorations (e.g. rounded corners)</html:li>
+          <html:li>Support for background gradients</html:li>
+          <html:li>A new fancy look and feel implementation</html:li>
+        </html:ul>
+        </html:div>
+      </proposed>
+    </theme>
+
+    <theme name="Improvements and Consolidation">
+      <description>
+        <html:div>
+          We will further optimize the client side with regard to performance and stability.
+          Moreover, we aim to provide some additional web-centric features.
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=RT&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version%3D1.3+plan-status%3Dcommitted+plan-theme%3Dimprovements-and-consolidation&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+      </committed>
+      <proposed>
+        <html:div>
+        <html:ul>
+          <html:li>Enable RAP applications to run on multiple browser-tabs, in 
+            portlet environments</html:li>
+          <html:li>Browser history support</html:li>
+          <html:li>Automated performance tests</html:li>
+          <html:li>Client-side tests</html:li>
+        </html:ul>
+        </html:div>
+      </proposed>
+    </theme>
+
+    <theme name="RAP and e4">
+      <description>
+        <html:div>
+        <html:p>
+          We participate in the development of e4 and ensure that e4 runs on RAP.
+        </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=RT&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version%3D1.3+plan-status%3Dcommitted+plan-theme%3Drap-e4&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+      </committed>
+      <proposed>
+        <html:div>
+        <html:ul>
+          <html:li>Ease single sourcing with platform (bundle init, jobs 
+            infrastructure, singletons, shutdown house keeping, I18N)</html:li>
+        </html:ul>
+        </html:div>
+      </proposed>
+    </theme>
+
+    <theme name="Support other Eclipse projects">
+      <description>
+        <html:div>
+          We actively help other Eclipse projects to enable Single Sourcing with RAP.
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;classification=RT&amp;product=RAP&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version%3D1.3+plan-status%3Dcommitted+plan-theme%3Dother-projects&amp;keywords_type=allwords&amp;keywords=&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">
+      </committed>
+      <proposed>
+        <html:div>
+        <html:ul>
+          <html:li>Become a target platform for 
+            <html:a href="http://www.eclipse.org/riena/">Riena</html:a>
+          </html:li>
+          <html:li>Create a single-sourced version of the 
+            <html:a href="http://www.eclipse.org/mat/">Eclipse Memory Analyzer</html:a>
+          </html:li>
+        </html:ul>
+        </html:div>
+      </proposed>
+    </theme>
+
+  </themes_and_priorities>
+</plan>
