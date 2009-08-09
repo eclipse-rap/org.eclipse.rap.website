@@ -82,6 +82,32 @@ $html = <<<EOHTML
 
       <tr valign="top" align="left">
         <td width="20%">
+          <b>New API added</b></td>
+        <td width="80%">
+          This will make it easier for the community to reuse existing code or
+          to utilize new features.
+          Here is a list of API methods added in this milestone:
+          <br />
+          <ul>
+            <li><code>ActionFactory#RESET_PERSPECTIVE</code></li>
+            <li><code>Combo#getSelection()</code></li>
+            <li><code>Composite#setLayoutDeferred( boolean )</code></li>
+            <li><code>CTabFolder#setUnselectedImageVisible( boolean )</code></li>
+            <li><code>Display#getSystemCursor( int )</code></li>
+            <li><code>List#getTopIndex</code> and List#setTopIndex</code></li>
+            <li><code>List#showSelection()</code></li>
+            <li><code>ProgressBar#setState()</code></li>
+            <li><code>Spinner#getText()</code>,
+              <code>Spinner#getTextLimit()</code> and
+              <code>Spinner#setTextLimit( int )</code></li>
+            <li><code>SWT.TOOL</code> style flag for <code>Shell</code></li>
+            <li><code>ToolBar#getItem( Point )</code></li>
+          </ul>
+        <td/>
+      </tr>
+      
+      <tr valign="top" align="left">
+        <td width="20%">
           <b>Help Events</b>
         </td>
         <td width="80%">
