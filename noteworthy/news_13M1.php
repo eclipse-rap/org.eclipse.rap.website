@@ -97,6 +97,7 @@ $html = <<<EOHTML
             <li><code>List#getTopIndex</code> and List#setTopIndex</code></li>
             <li><code>List#showSelection()</code></li>
             <li><code>ProgressBar#setState()</code></li>
+            <li><code>Shell#setModified( boolean )</code></li>
             <li><code>Spinner#getText()</code>,
               <code>Spinner#getTextLimit()</code> and
               <code>Spinner#setTextLimit( int )</code></li>
