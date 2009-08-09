@@ -103,6 +103,7 @@ $html = <<<EOHTML
               <code>Spinner#setTextLimit( int )</code></li>
             <li><code>SWT.TOOL</code> style flag for <code>Shell</code></li>
             <li><code>ToolBar#getItem( Point )</code></li>
+            <li><code>Widget#getListeners( int )</code></li>
           </ul>
         <td/>
       </tr>
