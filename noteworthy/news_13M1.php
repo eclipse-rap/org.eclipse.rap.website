@@ -94,7 +94,7 @@ $html = <<<EOHTML
             <li><code>Composite#setLayoutDeferred( boolean )</code></li>
             <li><code>CTabFolder#setUnselectedImageVisible( boolean )</code></li>
             <li><code>Display#getSystemCursor( int )</code></li>
-            <li><code>List#getTopIndex</code> and List#setTopIndex</code></li>
+            <li><code>List#getTopIndex</code> and <code>List#setTopIndex</code></li>
             <li><code>List#showSelection()</code></li>
             <li><code>ProgressBar#setState()</code></li>
             <li><code>Shell#setModified( boolean )</code></li>
