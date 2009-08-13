@@ -9,7 +9,7 @@ $html = <<<EOHTML
 <div id="midcolumn">
   <h1>RAP 1.3 M1 - New and Noteworthy</h1>
     <p>Here are some of the more noteworthy things that will be available in the
-      milestone build M1 (August 07<sup>th</sup> 2009).
+      milestone build M1 (August 18<sup>th</sup> 2009).
       Meanwhile, all features listed here can be obtained from
       <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
     </p>
