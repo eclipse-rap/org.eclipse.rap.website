@@ -24,11 +24,10 @@ $html = <<<EOHTML
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=RAP&target_milestone=1.3+M1&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
       This list</a> shows all bugs that were fixed during this milestone. 
     </p>
-    <!--
     <p><ul>
       <li><a href="#RWT">RWT</a></li>
+      <li><a href="#Workbench">Workbench</a></li>
     </ul></p>
-    -->
     
     <hr />
 
@@ -90,11 +89,15 @@ $html = <<<EOHTML
           <br />
           <ul>
             <li><code>ActionFactory#RESET_PERSPECTIVE</code></li>
-            <li><code>Combo#getSelection()</code></li>
+            <li><code>Combo#getSelection()</code> and
+              <code>Combo#setTextLimit()</code></li>
             <li><code>Composite#setLayoutDeferred( boolean )</code></li>
-            <li><code>CTabFolder#setUnselectedImageVisible( boolean )</code></li>
+            <li><code>CTabFolder#setUnselectedImageVisible( boolean )</code> and
+              <code>CTabFolder#setSelectionBackground( Color[],int[] )</code>
+            </li>
             <li><code>Display#getSystemCursor( int )</code></li>
-            <li><code>List#getTopIndex</code> and <code>List#setTopIndex</code></li>
+            <li><code>List#getTopIndex</code> and
+              <code>List#setTopIndex</code></li>
             <li><code>List#showSelection()</code></li>
             <li><code>ProgressBar#setState()</code></li>
             <li><code>Shell#setModified( boolean )</code></li>
@@ -103,7 +106,8 @@ $html = <<<EOHTML
               <code>Spinner#setTextLimit( int )</code></li>
             <li><code>SWT.TOOL</code> style flag for <code>Shell</code></li>
             <li><code>ToolBar#getItem( Point )</code></li>
-            <li><code>Widget#getListeners( int )</code> and <code>Widget#isListening( int )</code></li>
+            <li><code>Widget#getListeners( int )</code> and
+              <code>Widget#isListening( int )</code></li>
           </ul>
         <td/>
       </tr>
@@ -121,7 +125,30 @@ $html = <<<EOHTML
 
     </table>
 
-    <hr />
+    <p>&nbsp;</p>
+
+    <a name="Workbench"></a>
+    <h2>Workbench</h2>
+    <table>
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Cheatsheet support</b></td>
+        <td width="80%">
+          <p>
+          With the support of the FormText widget we now provide an
+          implementation of the cheatsheets plugin known from RCP. With this
+          it's possible to provide step-by-step cheatsheets with direct
+          integration of the application itself.
+          </p>
+          <p><img src="cheatsheets.png" /></p>
+          <p>
+          See the
+          <a href="http://help.eclipse.org/galileo/topic/org.eclipse.platform.doc.isv/guide/ua_cheatsheet.htm">Eclipse help</a>
+          for more informations about cheatsheets and how to use them. 
+          </p>
+        </td>
+      </tr>
+    </table>
 
 <!--
     <p>The above features are just the ones that are new since the last 
