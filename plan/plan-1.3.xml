@@ -215,9 +215,6 @@
           <html:li>Become a target platform for 
             <html:a href="http://www.eclipse.org/riena/">Riena</html:a>
           </html:li>
-          <html:li>Create a single-sourced version of the 
-            <html:a href="http://www.eclipse.org/mat/">Eclipse Memory Analyzer</html:a>
-          </html:li>
         </html:ul>
         </html:div>
       </proposed>
