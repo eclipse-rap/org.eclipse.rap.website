@@ -116,6 +116,11 @@ $html = <<<EOHTML
     </p>
     <ul>
       <li>
+        Whitepaper: <a href="resources/readAndDispatch.pdf">
+        Apartment threading in RAP</a>,
+        August 2009, Benjamin Muskalla
+      </li>
+      <li>
         Tutorial: <a href="http://www.vogella.de/articles/EclipseRAP/article.html">
         Eclipse Rich Ajax Platform (RAP) - Tutorial with Eclipse 3.5 (Galileo)</a>,
         June 2009, Lars Vogel
