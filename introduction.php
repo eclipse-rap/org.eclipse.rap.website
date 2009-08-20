@@ -14,7 +14,7 @@
     <div class="homeitem3col">
       <h3>What is RAP?</h3>
       <p>
-        I a nutshell: “<em>RAP brings RCP applications into the browser</em>”.
+        In a nutshell: “<em>RAP brings RCP applications into the browser</em>”.
       </p>
       <div style="margin: 10px 0px; text-align: center;">
         <img src="images/about/Maildemo-Design.png" />
