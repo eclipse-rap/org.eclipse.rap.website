@@ -72,25 +72,6 @@ $html = <<<EOHTML
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
           <td width="250">
-            <img src="images/sandbox/maildemo_ext.png" alt="webstyle maildemo component" style="border: 1px solid #666;"/>
-          </td>
-          <td width="500" valign="top">
-            <h3>Webstyle Maildemo</h3>
-            <p>The Extended Maildemo adds a web style banner to the standard maildemo example.
-               Styling of buttons for perspective switching and actions is implemented with
-               theming.
-              </p>
-            <p>Available in <a href="cvs.php">CVS</a> at
-              sandbox/org.eclipse.rap.maildemo.ext</p>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
-      <table width="750" border="0" cellspacing="5" cellpadding="5">
-        <tr>
-          <td width="250">
             <img src="images/sandbox/search.png" alt="search component" style="border: 1px solid #666;"/>
           </td>
           <td width="500" valign="top">
