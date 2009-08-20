@@ -44,13 +44,19 @@ $html = <<<EOHTML
 
     <div class="sideitem">
       <h6>Upcoming events</h6>
-      <ul>
+     <ul>
+       <li>
+         <a href="http://www.eclipse.org/community/e4webinar/abstracts.php" 
+            target="_blank">
+            E4 Webinars</a>
+         <span><br />August 26<sup>th</sup> 2009</span>
+       </li>
       <li>
-        <a href="http://live.eclipse.org/node/718" 
-          target="_blank">
-          Single Sourcing: Extend your RCP Application to the Web with RAP</a>
-        <span><br />July 9<sup>th</sup> 2009</span>
-      </li>
+        <a href="http://www.eclipsecon.org/summiteurope2009/" 
+           target="_blank">
+           Eclipse Summit Europe 2009</a>
+         <span><br />October 27<sup>th</sup>-29<sup>th</sup> 2009</span>
+       </li>
      </ul>
     </div>
     
