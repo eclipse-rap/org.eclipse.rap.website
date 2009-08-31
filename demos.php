@@ -172,6 +172,39 @@ $html = <<<EOHTML
   </table>
 </div>
 
+<div style="margin: 10px 0px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 720px;">
+  <table width="720" border="0" cellspacing="10" cellpadding="5">
+  <tr>
+    <td width="250" valign="top">
+      <a href="http://migrate.numiton.com" target="_blank">
+        <img src="images/demos/numiton.png" style="border: 1px solid #666;"/>
+      </a>
+    </td>
+    <td width="465" valign="top">
+      <h2 align="left" style="color:#2592c9; font-family:Arial, Helvetica, sans-serif">
+        Numiton Migration Tools
+      </h2>         
+      <p>
+        <a href="http://migrate.numiton.com/" target="_blank">
+          Browse migration snippets and create your own
+        </a>
+      </p>
+      <p>
+      This online application showcases the features of the
+      <a href="http://www.numiton.com/products/ntile-ptoj/ptoj-overview.html">nTile migration system</a>
+      developed by Numiton.
+      </p>
+      <p>
+      It allows the automated migration of software from one language to the
+      other, at the source code level. At this point the application allows you
+      to freely migrate PHP code of limited size to Java with servlets or the
+      Spring framework. The snippets can also be shared with others.
+      </p>
+    </td>
+  </tr>
+  </table>
+</div>
+
 <hr class="clearer" />
 <p>If you would like to get your application listed on this page please send an email 
 to <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev@eclipse.org</a>
