@@ -56,7 +56,8 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
 </code></pre>
           <p>If any assert fails, the TestRunner will inform the developer via 
             its very simple UI and freeze Qooxdoo to ease debugging.</p>
-          <p>The project is located in the <a href="../cvs.php">RAP CVS</a>
+            <br />
+            The project is located in the <a href="../cvs.php">RAP CVS</a>
             under <code>runtime.rwt.test/org.eclipse.rap.rwt.q07.jstest</code>. 
           </p>   
         <td/>
@@ -66,7 +67,8 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
     </table>
     
     <hr />
-
+    <p>&nbsp;</p>
+    
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
