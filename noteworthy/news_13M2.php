@@ -66,6 +66,46 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
       
     </table>
     
+        <!--
+    <p><ul>
+      <li><a href="#Workbench">Workbench</a></li>
+    </ul></p>
+    -->
+    
+    <hr />
+
+    <a name="Workbench"></a>
+    <h2>Workbench</h2>
+    <table>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Layout overridding mechanism</b>
+        </td>
+        <td width="80%">
+          To customize an existing RAP design was not possible without touching 
+          the providing bundle. Therefore we introduce a new mechanism to make it 
+          much easier for adding or replacing own contributions to a design.<br/>          
+          The mechanism makes it possible to replace existing LayoutSets. 
+          Therefore LayoutSet elements from the 
+          <code>org.eclipse.rap.ui.layouts</code> extension point got a new 
+          optional attribute called overridesId. To override a single LayoutSet 
+          a developer has to create a new extension of 
+          <code>org.eclipse.rap.ui.layouts</code> and give it the same id as the 
+          Layout which contains the LayoutSet to override. After this he just 
+          has to declare a new LayoutSet element and set the overridesId to the 
+          original one. <br/>
+          <img src="LayoutSetOverridding.png" alt="Overriding LayoutSets"
+          	title="Screenshot taken from org.eclipse.rap.examples"/>
+          <br/>
+          It's important to use the same identifiers for images, fonts, colors 
+          and positions within the <code>ILayoutSetInitializer</code>.                 
+        <td/>
+      </tr>
+
+      
+    </table>
+    
     <hr />
     <p>&nbsp;</p>
     
