@@ -107,6 +107,31 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
     </table>
     
     <hr />
+    <a name="Design"></a>
+    <h2>Design</h2>
+    <table>
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>new configuration dialog</b>
+        </td>
+        <td width="80%">
+          To provide a more consistent design we replaced the configuration 
+          dialog of the Business design with a more lightweight implementation.
+          Additionally we added an effect called 
+          <a href="http://en.wikipedia.org/wiki/Lightbox_(JavaScript)">Lightbox</a>
+          which occurs when the dialog is open. To improve the usability of
+          the design we also have disabled the configuration button if a view
+          has no actions or viewmenu.          
+          <img src="ConfigurationDialog.png" alt="ConfigurationDialog" 
+          title="New RAP Business design configuration dialog"/>      
+        <td/>
+      </tr>
+
+      
+    </table>
+    
+    <hr />
     <p>&nbsp;</p>
     
     <p>The above features are just the ones that are new since the last 
