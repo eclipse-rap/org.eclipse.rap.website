@@ -39,6 +39,9 @@ $html = <<<EOHTML
       <li>
         <a href="http://www.cas.de/English/Home.asp" target="_blank">CAS</a>
       </li>
+      <li>
+        <a href="http://www.uid.com" target="_blank">UID</a>
+      </li>
      </ul>
     </div>
 
