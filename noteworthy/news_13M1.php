@@ -28,7 +28,7 @@ $html = <<<EOHTML
       <li><a href="#Workbench">Workbench</a></li>
     </ul></p>
     
-    <hr />
+    <p>&nbsp;</p>
 
     <a name="RWT"></a>
     <h2>RWT</h2>
