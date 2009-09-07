@@ -63,9 +63,10 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
           </p>   
         <td/>
       </tr>
+      
       <tr valign="top" align="left">
         <td width="20%">
-          <b>DateTime</b>
+          <b>DateTime DROP_DOWN</b>
         </td>
         <td width="80%">
           The DateTime widget now supports SWT.DROP_DOWN style.
@@ -73,7 +74,8 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
 DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
 </code></pre>
           <p><img src="RAPDateTimeDropDown.png" /></p>
-          <p>The appearance of the drop-down button can be changed with CSS in the same way like in Combo.</p>
+          <p>The appearance of the drop-down button can be changed with CSS in 
+            the same way like in Combo.</p>
         <td/>
       </tr> 
       
@@ -121,7 +123,7 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
 
       <tr valign="top" align="left">
         <td width="20%">
-          <b>new configuration dialog</b>
+          <b>New Configuration Dialog</b>
         </td>
         <td width="80%">
           To provide a more consistent design we replaced the configuration 
