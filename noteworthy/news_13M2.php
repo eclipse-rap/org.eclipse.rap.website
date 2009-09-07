@@ -86,9 +86,13 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
         <td width="80%">
           Until now, responses sent by RAP were compressed using gzip. When 
           running on Tomcat, this could lead to character garbage being delivered 
-          to the browser (see bug 259977).
+          to the browser (see 
+          <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259977">bug 
+          259977</a>).
           <br />
-          Therefore we decided to turn off compression in RAP by default.
+          Therefore we decided to turn off compression in RAP by default 
+          (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=285669">bug 
+          285669</a>).
           Beside the issue in Tomcat, compression is a task that should rather 
           be done by the servlet container to give admins better control over 
           the setup.
