@@ -89,7 +89,7 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
 
       <tr valign="top" align="left">
         <td width="20%">
-          <b>Layout overridding mechanism</b>
+          <b>Layout Override Mechanism</b>
         </td>
         <td width="80%">
           To customize an existing RAP design was not possible without touching 
