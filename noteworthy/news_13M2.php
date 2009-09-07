@@ -69,7 +69,7 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
           <b>DateTime DROP_DOWN</b>
         </td>
         <td width="80%">
-          The DateTime widget now supports SWT.DROP_DOWN style.
+          The DateTime widget now supports the <code>SWT.DROP_DOWN</code> style.
 <pre><code>
 DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
 </code></pre>
