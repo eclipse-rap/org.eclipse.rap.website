@@ -94,8 +94,8 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=285669">bug 
           285669</a>).
           Beside the issue in Tomcat, compression is a task that should rather 
-          be done by the servlet container to give admins better control over 
-          the setup.
+          be done by the servlet container to give administrators better control 
+          over the setup.
           <br />
           Compression can be turned on by specifying the VM argument 
           <code>org.eclipse.rwt.compression=true</code>. This is the default
