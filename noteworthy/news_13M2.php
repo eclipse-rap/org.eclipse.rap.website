@@ -79,6 +79,26 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
         <td/>
       </tr> 
       
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Compression Turned Off by Default</b>
+        </td>
+        <td width="80%">
+          Until now, responses sent by RAP were compressed using gzip. When 
+          running on Tomcat, this could lead to character garbage being delivered 
+          to the browser (see bug 259977).
+          <br />
+          Therefore we decided to turn off compression in RAP by default.
+          Beside the issue in Tomcat, compression is a task that should rather 
+          be done by the servlet container to give admins better control over 
+          the setup.
+          <br />
+          Compression can be turned on by specifying the VM argument 
+          <code>org.eclipse.rwt.compression=true</code>. This is the default
+          setting for newly created launch configurations.
+        <td/>
+      </tr> 
+      
     </table>
     
     <p>&nbsp;</p>
