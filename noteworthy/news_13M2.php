@@ -132,7 +132,8 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           	title="Screenshot taken from org.eclipse.rap.examples"/>
           <br/>
           It's important to use the same identifiers for images, fonts, colors 
-          and positions within the <code>ILayoutSetInitializer</code>.                 
+          and positions within the <code>ILayoutSetInitializer</code>.                
+          <p>&nbsp;</p> 
         <td/>
       </tr>
       
