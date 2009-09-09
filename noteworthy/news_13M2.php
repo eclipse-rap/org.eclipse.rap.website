@@ -24,7 +24,7 @@ $html = <<<EOHTML
 
     <p><ul>
       <li><a href="#RWT">RWT</a></li>
-      <li><a href="#Workbench">Workbench</a></li>
+      <li><a href="#Workbench">JFace / Workbench</a></li>
       <li><a href="#Design">Look &amp; Feel</a></li>
     </ul></p>
     
@@ -108,7 +108,7 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
     <p>&nbsp;</p>
 
     <a name="Workbench"></a>
-    <h2>Workbench</h2>
+    <h2>JFace / Workbench</h2>
     <table>
 
       <tr valign="top" align="left">
@@ -135,7 +135,23 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           and positions within the <code>ILayoutSetInitializer</code>.                 
         <td/>
       </tr>
-
+      
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Tooltips for TableViewer</b>
+        </td>
+        <td width="80%">
+          The <code>TableViewer</code> can now display tooltips for its content.
+          It can be activated by calling 
+          <code>ColumnViewerToolTipSupport#enableFor()</code>. 
+          Afterwards you need to override 
+          <code>CellLabelProvider#getToolTipText(Object)</code> and have it 
+          return the respective tooltip text. Other tooltip-related methods
+          (<code>getToolTipBackgroundColor</code>, etc.) are not supported.   
+          <br />
+          <img src="TableViewerToolTip.jpeg" />
+        <td/>
+      </tr>
       
     </table>
     
