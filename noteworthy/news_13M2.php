@@ -73,7 +73,11 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
 <pre><code>
 DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
 </code></pre>
-          <p><img src="RAPDateTimeDropDown.png" style="margin-top:10px" /></p>
+          <p>
+            <img src="RAPDateTimeDropDown.png" 
+              title="DateTime widget with DROP_DOWN style"
+              style="margin-top:10px" />
+          </p>
           <p>The appearance of the drop-down button can be changed with CSS in 
             the same way like in Combo.</p>
         <td/>
@@ -129,7 +133,8 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           has to declare a new LayoutSet element and set the overridesId to the 
           original one. <br/>
           <img src="LayoutSetOverridding.png" alt="Overriding LayoutSets"
-          	title="Screenshot taken from org.eclipse.rap.examples"/>
+          	title="Screenshot taken from org.eclipse.rap.examples"
+          	style="margin-top:10px" />
           <br/>
           It's important to use the same identifiers for images, fonts, colors 
           and positions within the <code>ILayoutSetInitializer</code>.                
@@ -150,7 +155,10 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           return the respective tooltip text. Other tooltip-related methods
           (<code>getToolTipBackgroundColor</code>, etc.) are not supported.   
           <br />
-          <img src="TableViewerToolTip.jpeg" />
+          <img 
+            src="TableViewerToolTip.jpeg" 
+            title="TableViewer showing a tooltip"
+            style="margin-top:10px" />
         <td/>
       </tr>
       
@@ -175,7 +183,8 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           the design we also have disabled the configuration button if a view
           has no actions or viewmenu.          
           <img src="ConfigurationDialog.png" alt="ConfigurationDialog" 
-          title="New RAP Business design configuration dialog"/>      
+            title="New RAP Business design configuration dialog" 
+            style="margin-top:10px" />      
         <td/>
       </tr>
 
