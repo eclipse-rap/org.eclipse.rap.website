@@ -159,6 +159,7 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
             src="TableViewerToolTip.jpeg" 
             title="TableViewer showing a tooltip"
             style="margin-top:10px" />
+          <p>&nbsp;</p>
         <td/>
       </tr>
     
@@ -172,7 +173,8 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           <br />
           <img 
             src="helpsystem.png" 
-            title="HelpSystem in Action" />
+            title="HelpSystem in Action"
+            style="margin-top:10px; margin-bottom:10px"  />
           <br />
           Currently RAP only provides the infrastructure to plug in a help
           system implementation. Depending on your needs you can go ahead and
