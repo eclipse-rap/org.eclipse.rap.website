@@ -161,6 +161,25 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
             style="margin-top:10px" />
         <td/>
       </tr>
+    
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>HelpSystem support</b>
+        </td>
+        <td width="80%">
+          With the support for the Eclipse Help infrastructure, you're now able
+          to integrate the well-known help system into your RAP applications.
+          <br />
+          <img 
+            src="helpsystem.png" 
+            title="HelpSystem in Action" />
+          <br />
+          Currently RAP only provides the infrastructure to plug in a help
+          system implementation. Depending on your needs you can go ahead and
+          use a simple implementation as shown in our
+          <a href="http://wiki.eclipse.org/RAP/FAQ#How_to_integrate_the_Eclipse_Help_System_in_a_RAP_application.3F">FAQ</a>.
+        <td/>
+      </tr>
       
     </table>
     
