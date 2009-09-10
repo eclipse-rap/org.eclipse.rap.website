@@ -73,7 +73,7 @@ qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
 <pre><code>
 DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
 </code></pre>
-          <p><img src="RAPDateTimeDropDown.png" /></p>
+          <p><img src="RAPDateTimeDropDown.png" style="margin-top:10px" /></p>
           <p>The appearance of the drop-down button can be changed with CSS in 
             the same way like in Combo.</p>
         <td/>
