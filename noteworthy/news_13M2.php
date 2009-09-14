@@ -180,6 +180,10 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           system implementation. Depending on your needs you can go ahead and
           use a simple implementation as shown in our
           <a href="http://wiki.eclipse.org/RAP/FAQ#How_to_integrate_the_Eclipse_Help_System_in_a_RAP_application.3F">FAQ</a>.
+          In case you are already using the cheatsheets plugin with links to the
+          help system, please be sure to include a help system implementation.
+          Otherwise your users will not be able to open the associated help
+          topics.
         <td/>
       </tr>
       
