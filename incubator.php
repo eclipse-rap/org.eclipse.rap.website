@@ -39,7 +39,7 @@ $html = <<<EOHTML
               offers the Plugin Registry and the Error log.
             </p>
             <p>Available in <a href="cvs.php">CVS</a> at
-              sandbox/org.eclipse.rap.pde.runtine
+              sandbox/org.eclipse.rap.pde.runtime
             </p>
           </td>
         </tr>
