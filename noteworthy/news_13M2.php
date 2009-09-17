@@ -105,6 +105,31 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           <code>org.eclipse.rwt.compression=true</code>. This is the default
           setting for newly created launch configurations.
         <td/>
+      </tr>
+      
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>New API added</b></td>
+        <td width="80%">
+          Here is a list of API methods added in this milestone:
+          <br />
+          <ul>            
+            <li><code>Text#getCaretPosition()</code></li>
+            <li><code>CTabFolder#setSelectionBackground( Image )</code></li>
+            <li><code>CTabItem#setShowClose( boolean )</code></li>
+            <li><code>Display#getCursorLocation()</code></li>            
+            <li><code>SWT.SHEET</code> style flag for <code>Shell</code></li>
+            <li><code>Tree#select( TreeItem )</code> and 
+                <code>Tree#deselect( TreeItem )</code></li>
+            <li><code>Shell#setMinimumSize( int, int )</code>, 
+                <code>Shell#setMinimumSize( Point )</code> and 
+                <code>Shell#getMinimumSize()</code></li>
+            <li><code>List#deselect( int )</code>, 
+                <code>List#deselect( int, int )</code> and
+                <code>List#deselect( int[] )
+            </li> 
+          </ul>
+        <td/>
       </tr> 
       
     </table>
