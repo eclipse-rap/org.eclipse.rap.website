@@ -39,6 +39,11 @@ $html = <<<EOHTML
         Please note that it does not yet represent the complete widget set,
         but only a small selection.
         </p>
+        <p>
+        For easier consumption, we provide
+        <a href="cvs.php">Team Project Sets</a> that contain pointers to the
+        relevant RAP projects from the CVS repository.
+        </p>
       </td>
     </tr>
   </table>

@@ -69,6 +69,14 @@ $html = <<<EOHTML
           can also be obtained 
           <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">directly from CVS.</a>
         </li>
+        <li>
+          <a href="resources/rap-demos.psf">
+            <img src="images/icon_save.gif" />&nbsp;&nbsp;RAP Examples Team Project Set
+          </a>
+          <br />
+          Contains several example projects shown on the
+          <a href="demos.php">Demos</a> page.
+        </li>
       </ul>
     </p>
     
