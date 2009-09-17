@@ -47,35 +47,6 @@
   using the Eclipse Update Manager. This requires the following steps:
 </p>
 
-<p><strong>For Eclipse 3.3 or earlier...</strong>
-<ul style="margin-left:10px">
-  <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 
-      <strong>Software Updates</strong> &gt; <strong>Find and Install</strong> 
-      menu option.</li>
-  <li>Click on the <strong>Search for new features to install</strong> radio 
-      button and then click <strong>Next</strong>.</li>
-  <li>Click on the <strong>New Remote Site</strong> button, the New Update Site 
-      dialog will appear.</li>
-  <li>Enter a name for the update site, such as "RAP Update Site" and then enter
-      the URL <strong>http://download.eclipse.org/rt/rap/1.2/update</strong>, 
-      click <strong>OK</strong> to create the new update site entry.</li>
-  <li>The entry you just created now appears in the update site list and is
-      selected. Ensure it is the only site selected and click 
-      <strong>Finish</strong>.</li>
-  <li>The update manager will now connect to the site and display the feature
-      available on the site. Check the update site and click 
-      <strong>Next</strong> to continue the selection process.</li>
-  <li>Accept the terms in the license agreement and click the 
-      <strong>Next</strong> button.</li>
-  <li>A list with the feature to install will be displayed. Click 
-      <strong>Finish</strong> to start the installation process.</li>
-  <li>The feature and plug-ins will now be downloaded from the site and
-      installed locally. Note that you may be prompted to confirm if it is ok
-      to install unsigned jar files.</li>
-  <li>Confirm the following prompt to restart Eclipse.</li>
-</ul>
-</p>
-
 <p><strong>For Eclipse 3.4 or later...</strong>
 <ul style="margin-left:10px">
   <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 

@@ -25,7 +25,7 @@ $html = <<<EOHTML
           for details.
         </li>
         <li>
-          Providing a patch to an existing bug report.
+          Providing a patch to an <a href="http://eclipse.org/rap/bugs.php">existing bug report</a>.
           A patch must not break existing functionality, particularly it should
           not break any tests.
           If necessary, it should contain changes or additions to our tests.
@@ -53,7 +53,7 @@ $html = <<<EOHTML
         <!-- Tests -->
         <li>
           Contributors should adhere to our
-          <a href="">Coding Conventions</a>.
+          <a href="http://wiki.eclipse.org/RAP/CodingConventions">Coding Conventions</a>.
         </li>
         <li>
           We have a mailing list for development-related discussions around RAP:

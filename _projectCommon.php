@@ -10,6 +10,10 @@
   .sideitem { border-width: 1px 1px; }
   body { font-size: small; }
   #midcolumn { margin-top: 5px; }
+  #midcolumn li { margin: 8px; list-style-position:outside;
+    list-style-image: url('/eclipse.org-common/themes/Nova/images/separator.png');
+    padding: 5px 10px 5px 5px; }
+}
 </STYLE>
 <div id="branding">
 <center>
