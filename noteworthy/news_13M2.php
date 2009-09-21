@@ -120,14 +120,15 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
             <li><code>Display#getCursorLocation()</code></li>            
             <li><code>SWT.SHEET</code> style flag for <code>Shell</code></li>
             <li><code>Tree#select( TreeItem )</code> and 
-                <code>Tree#deselect( TreeItem )</code></li>
+              <code>Tree#deselect( TreeItem )</code></li>
             <li><code>Shell#setMinimumSize( int, int )</code>, 
-                <code>Shell#setMinimumSize( Point )</code> and 
-                <code>Shell#getMinimumSize()</code></li>
+              <code>Shell#setMinimumSize( Point )</code> and 
+              <code>Shell#getMinimumSize()</code></li>
             <li><code>List#deselect( int )</code>, 
-                <code>List#deselect( int, int )</code> and
-                <code>List#deselect( int[] )
-            </li> 
+              <code>List#deselect( int, int )</code> and
+              <code>List#deselect( int[] )</code></li>
+            <li><code>Control#update()</code> and 
+              <code>Display#update()</code></li> 
           </ul>
         <td/>
       </tr> 
