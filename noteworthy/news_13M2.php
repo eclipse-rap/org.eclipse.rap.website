@@ -121,6 +121,8 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
             <li><code>SWT.SHEET</code> style flag for <code>Shell</code></li>
             <li><code>Tree#select( TreeItem )</code> and 
               <code>Tree#deselect( TreeItem )</code></li>
+            <li><code>Shell#setImages( Image[] )</code> and 
+              <code>Shell#getImages()</code>
             <li><code>Shell#setMinimumSize( int, int )</code>, 
               <code>Shell#setMinimumSize( Point )</code> and 
               <code>Shell#getMinimumSize()</code></li>
