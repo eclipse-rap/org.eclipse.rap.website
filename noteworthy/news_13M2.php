@@ -131,6 +131,9 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
               <code>List#deselect( int[] )</code></li>
             <li><code>Control#update()</code> and 
               <code>Display#update()</code></li> 
+            <li><code>ScrolledComposite#showControl( Control )</code>, 
+              <code>ScrolledComposite#setShowFocusedControl( boolean )</code> and
+              <code>ScrolledComposite#getShowFocusedControl()</code></li>
           </ul>
         <td/>
       </tr> 
