@@ -118,6 +118,8 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
             <li><code>CTabFolder#setSelectionBackground( Image )</code></li>
             <li><code>CTabItem#setShowClose( boolean )</code></li>
             <li><code>Display#getCursorLocation()</code></li>            
+            <li><code>Control#isReparentable()</code> and 
+              <code>Control#setParent()</code></li>            
             <li><code>SWT.SHEET</code> style flag for <code>Shell</code></li>
             <li><code>Tree#select( TreeItem )</code> and 
               <code>Tree#deselect( TreeItem )</code></li>
