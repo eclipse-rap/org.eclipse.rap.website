@@ -136,6 +136,7 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
             <li><code>ScrolledComposite#showControl( Control )</code>, 
               <code>ScrolledComposite#setShowFocusedControl( boolean )</code> and
               <code>ScrolledComposite#getShowFocusedControl()</code></li>
+            <li><code>Table#showColumn( TableColumn )</code></li>
           </ul>
         <td/>
       </tr> 
