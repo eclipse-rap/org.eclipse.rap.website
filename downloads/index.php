@@ -35,25 +35,18 @@ $html = <<<EOHTML
         <b>http://download.eclipse.org/rt/rap/1.3/tooling</b>
       </p>
 
-      <p style="margin: 10px"><b>1.2 Release</b></p>
+      <p style="margin: 10px"><b>1.2.1 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest stable version, for use with Eclipse 3.4 and 3.5.
         <br />
-        <a href="../noteworthy/news_12.php">New &amp; Noteworthy</a>
+        <a href="../noteworthy/news_12.php">New &amp; Noteworthy</a>,
+        <a href="../noteworthy/relnotes121.php">Service Release Notes</a>
         <br />
         <br />
         The update site is
         <br />
         <b>http://download.eclipse.org/rt/rap/1.2/update</b>
         <br />
-        <br />
-        We also provide a zipped version for download:
-        <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/tooling/rap-tooling-1.2.0-R-20090616-1439.zip">
-          <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-          &nbsp;&nbsp;
-          rap-tooling-1.2.0-R-20090616-1439.zip
-        </a>
       </p>
       
       <!--
@@ -113,11 +106,12 @@ $html = <<<EOHTML
         </a>
       </p>
 
-      <p style="margin: 10px"><b>1.2 Release</b></p>
+      <p style="margin: 10px"><b>1.2.1 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest stable version, based on Eclipse 3.5.
         <br />
-        <a href="../noteworthy/news_12.php">New &amp; Noteworthy</a>
+        <a href="../noteworthy/news_12.php">New &amp; Noteworthy</a>,
+        <a href="../noteworthy/relnotes121.php">Service Release Notes</a>
         <br />
         <br />
         The update site is
@@ -127,10 +121,10 @@ $html = <<<EOHTML
         <br />
         We also provide a zipped version for download:
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-R-20090616-1425.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.1-R-20090813-1453.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-          rap-runtime-1.2.0-R-20090616-1425.zip
+          rap-runtime-1.2.1-R-20090813-1453.zip
         </a>
       </p>
       
