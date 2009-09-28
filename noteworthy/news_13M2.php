@@ -219,7 +219,7 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           Otherwise your users will not be able to open the associated help
           topics.
         <td/>
-      </tr>
+      </tr>           
       
     </table>
     
@@ -246,8 +246,33 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
             style="margin-top:10px" />      
         <td/>
       </tr>
-
       
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Fancy design</b>
+        </td>
+        <td width="80%">
+          With <a href="news_12.php">RAP 1.2</a> we released a new look and
+          feel called business design. With this design we wanted to show
+          how RAP can look like in a serious sector. Now we introduce another
+          example called fancy design. This design shows that RAP is a
+          really modern technology and can look like one too.<br/>
+          To use this design a developer should follow the 
+          <a href"http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
+          steps from the business design</a> and replace the servlet name with 
+          "fancy". <br/>
+          <img src="fancyDesign.png" alt="RAP fancy design"
+          	title="Screenshot taken from the RAP fancy design"
+          	style="margin-top:10px" />
+          <br/>
+          Please note that we changed a few IDs of some of the <code>
+          LayoutSets</code>. So, if you have replaced some LayoutSets please 
+          update the <code>overridesId</code> attributes by removing the 
+          word "business".              
+          <p>&nbsp;</p> 
+        <td/>
+      </tr>
+     
     </table>
     
     <p>&nbsp;</p>
