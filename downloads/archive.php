@@ -34,7 +34,7 @@ $html = <<<EOHTML
 	  <ul>
 
         <li>RAP 1.2 release, based on Eclipse 3.5&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-R-20090616-1425.zip">
+          <a href="http://archive.eclipse.org/rt/rap/downloads/rap-runtime-1.2.0-R-20090616-1425.zip">
             rap-runtime-1.2.0-R-20090616-1425.zip
           </a>
           <br />
