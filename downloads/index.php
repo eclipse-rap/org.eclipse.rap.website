@@ -23,11 +23,11 @@ $html = <<<EOHTML
         application.
       </p>
 
-      <p style="margin: 10px"><b>1.3 M1 Build</b></p>
+      <p style="margin: 10px"><b>1.3 M2 Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest 1.3 milestone build, for use with Eclipse 3.5 and 3.6.
         <br />
-        <a href="../noteworthy/news_13M1.php">New &amp; Noteworthy</a>
+        <a href="../noteworthy/news_13M2.php">New &amp; Noteworthy</a>
         <br />
         <br />
         The update site is
@@ -85,11 +85,11 @@ $html = <<<EOHTML
         the Eclipse IDE.        
       </p>
 
-      <p style="margin: 10px"><b>1.3 M1 Build</b></p>
+      <p style="margin: 10px"><b>1.3 M2 Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest milestone build, based on Eclipse 3.6.
         <br />
-        <a href="../noteworthy/news_13M1.php">New &amp; Noteworthy</a>
+        <a href="../noteworthy/news_13M2.php">New &amp; Noteworthy</a>
         <br />
         <br />
         The update site is
@@ -99,10 +99,10 @@ $html = <<<EOHTML
         <br />
         We also provide a zipped version for download:
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M1-20090817-1725.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M2-20090929-1121.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-          rap-runtime-1.3.0-M1-20090817-1725.zip 
+           rap-runtime-1.3.0-M2-20090929-1121.zip 
         </a>
       </p>
 

@@ -9,13 +9,13 @@ $html = <<<EOHTML
 <div id="midcolumn">
   <h1>RAP 1.3 M2 - New and Noteworthy</h1>
     <p>Here are some of the more noteworthy things that are available in the 
-      milestone build M2 (October 8, 2009)
+      milestone build M2 (October 2<sup>nd</sup>, 2009)
+      <!--
       Meanwhile, all features listed here can be obtained from the
       <a href="http://www.eclipse.org/rap/cvs.php">source code repository</a>
-      <!--
+      -->
       which is now available for 
       <a href="http://www.eclipse.org/rap/downloads">download</a>.
-      -->
     </p>
     <p>
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=RAP&target_milestone=1.3+M2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
