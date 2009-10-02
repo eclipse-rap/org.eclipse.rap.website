@@ -33,6 +33,15 @@ $html = <<<EOHTML
         The update site is
         <br />
         <b>http://download.eclipse.org/rt/rap/1.3/tooling</b>
+        <br />
+        <br />
+        We also provide a zipped version for download:
+        <br />
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-tooling-1.3.0-M2-20090929-1142.zip">
+          <img src="../images/icon_save.gif" />
+          &nbsp;&nbsp;
+          rap-runtime-1.2.1-R-20090813-1453.zip
+        </a>
       </p>
 
       <p style="margin: 10px"><b>1.2.1 Service Release</b></p>
