@@ -280,7 +280,7 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
     <ul>
-      <li><a href="news_13M2.php">New for RAP 1.3 M1 (August 21<sup>st</sup> 2009)</a></li>
+      <li><a href="news_13M1.php">New for RAP 1.3 M1 (August 21<sup>st</sup> 2009)</a></li>
     </ul>
     
     <p>&nbsp;</p>
