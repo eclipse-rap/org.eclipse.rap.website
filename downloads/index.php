@@ -40,7 +40,7 @@ $html = <<<EOHTML
         <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-tooling-1.3.0-M2-20090929-1142.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-          rap-runtime-1.2.1-R-20090813-1453.zip
+          rap-tooling-1.3.0-M2-20090929-1142.zip
         </a>
       </p>
 
