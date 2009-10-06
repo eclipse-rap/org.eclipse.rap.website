@@ -48,6 +48,7 @@ $html = <<<EOHTML
               <code>SWT.Close</code> and <code>SWT.Dispose</code> events.
               </li>
             <li><code>Display#disposeExec()</code></li>
+            <li><code>Display#close()</code></li>
           </ul>
         <td/>
       </tr> 
