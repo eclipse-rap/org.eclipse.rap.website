@@ -32,24 +32,29 @@ $html = <<<EOHTML
     <p>&nbsp;</p>
 -->
 
-<!--
     <a name="RWT"></a>
     <h2>RWT</h2>
     <table>
 
       <tr valign="top" align="left">
         <td width="20%">
-          <b> *** Summary *** </b>
-        </td>
+          <b>New API added</b></td>
         <td width="80%">
-          *** Description ***
+          Here is a list of API methods added in this milestone:
+          <br />
+          <ul>            
+            <li><code>Display#addListener()</code> and 
+              <code>Display#removeListener()</code> which allow to register for 
+              <code>SWT.Close</code> and <code>SWT.Dispose</code> events.
+              </li>
+            <li><code>Display#disposeExec()</code></li>
+          </ul>
         <td/>
-      </tr>
+      </tr> 
       
     </table>
     
     <p>&nbsp;</p>
--->
     
     <p>The above features are just the ones that are new since the last 
     milestone build. Summaries for earlier builds:</p>
