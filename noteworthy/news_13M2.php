@@ -258,7 +258,7 @@ DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
           example called fancy design. This design shows that RAP is a
           really modern technology and can look like one too.<br/>
           To use this design a developer should follow the 
-          <a href"http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
+          <a href="http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
           steps from the business design</a> and replace the servlet name with 
           "fancy". <br/>
           <img src="fancyDesign.png" alt="RAP fancy design"
