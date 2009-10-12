@@ -59,14 +59,19 @@ $html = <<<EOHTML
         <td width="80%">
           Constructors for the following resources were implemented
           <ul>
-          <li>Cursor</li>
-          <li>Color</li>
-          <li>Font</li>
+          <li><code>Cursor</code></li>
+          <li><code>Color</code></li>
+          <li><code>Font</code></li>
           </ul>
           The factory methods (<code>Graphics#get*</code>) are still the 
           recommended way for dealing with resources in RWT. 
-          If, however, single-sourcing is desired, and the extra memory
-          is justifible, using resource-constructors might be considered.
+          If, single-sourcing is desired, and the extra memory is justifible, 
+          using resource-constructors might be considered.
+          <br />
+          With this change, also <code>dispose()</code> and 
+          <code>isDisposed()</code> were introduced. Please be aware that 
+          it is considered an error to disposed of factory-created resources.
+          and an <code>IllegalStateException</code> is thrown in this case.  
         <td/>
       </tr> 
       
