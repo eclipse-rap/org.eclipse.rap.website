@@ -52,6 +52,23 @@ $html = <<<EOHTML
           </ul>
         <td/>
       </tr> 
+
+      <tr valign="top" align="left">
+        <td width="20%">
+          <b>Non-shared SWT Resources</b></td>
+        <td width="80%">
+          Constructors for the following resources were implemented
+          <ul>
+          <li>Cursor</li>
+          <li>Color</li>
+          <li>Font</li>
+          </ul>
+          The factory methods (<code>Graphics#get*</code>) are still the 
+          recommended way for dealing with resources in RWT. 
+          If, however, single-sourcing is desired, and the extra memory
+          is justifible, using resource-constructors might be considered.
+        <td/>
+      </tr> 
       
     </table>
     
