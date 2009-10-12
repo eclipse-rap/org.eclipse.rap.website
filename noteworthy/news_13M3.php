@@ -69,9 +69,11 @@ $html = <<<EOHTML
           using resource-constructors might be considered.
           <br />
           With this change, also <code>dispose()</code> and 
-          <code>isDisposed()</code> were introduced. Please be aware that 
-          it is considered an error to disposed of factory-created resources.
-          and an <code>IllegalStateException</code> is thrown in this case.  
+          <code>isDisposed()</code> were introduced. 
+          Even though this method exists for all resources (shared and non-shared)
+          it is considered an error to disposed of factory-created (shared) 
+          resources and an <code>IllegalStateException</code> is thrown in this 
+          case.
         <td/>
       </tr> 
       
