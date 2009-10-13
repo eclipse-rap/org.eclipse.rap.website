@@ -17,7 +17,7 @@ class Noteworthy {
   private $footer;
   private $categories = array();
   
-  function RapNoteworthy( $url, $milestone, $header, $footer ) {
+  function Noteworthy( $url, $milestone, $header, $footer ) {
   	$this->noteworthy = simplexml_load_file( $url );
   	$this->version = $this->noteworthy[ 'version' ];
   	$this->milestone = $milestone;
