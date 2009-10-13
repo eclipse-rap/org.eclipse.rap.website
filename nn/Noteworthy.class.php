@@ -108,7 +108,7 @@ EOHTML;
   	  	         || $this->release ) ) 
   	  	{
           $page_content .= <<<EOHTML
-  	  	  <tr valign="top" align="left">
+<tr valign="top" align="left" style="margin-bottom=5px">
 <td width="20%">
 <b>
 EOHTML;
