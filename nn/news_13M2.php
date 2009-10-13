@@ -28,7 +28,7 @@ $footer = <<<EOHTML
    </ul>
 EOHTML;
 
-error_reporting(E_ALL ^ E_NOTICE);
+error_reporting( -1 );
 # If this is a release, leave the second argument empty ('')
 $noteworthy = new RapNoteworthy( 'news_13.xml', 'M2', $header, $footer );
 $html = $noteworthy->getHtml();
