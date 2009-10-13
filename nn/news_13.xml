@@ -163,17 +163,17 @@
      </title>
      <description>
        <![CDATA[
-		The DateTime widget now supports the <code>SWT.DROP_DOWN</code> style.
+		    The DateTime widget now supports the <code>SWT.DROP_DOWN</code> style.
         <pre><code>
         DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
         </code></pre>
-        <p>
-          <img src="RAPDateTimeDropDown.png" 
-               title="DateTime widget with DROP_DOWN style"
-               style="margin-top:10px" />
-        </p>
-        <p>The appearance of the drop-down button can be changed with CSS in 
-        the same way like in Combo.</p> 
+        <br />
+        <img src="RAPDateTimeDropDown.png" 
+             title="DateTime widget with DROP_DOWN style"
+             style="margin-top:10px; margin-bottom:10px" />
+        <br />
+        The appearance of the drop-down button can be changed with CSS in 
+        the same way like in Combo. 
 		]]>
      </description>
    </entry>
@@ -275,7 +275,7 @@
      </title>
      <description>
        <![CDATA[
-		The <code>TableViewer</code> can now display tooltips for its content.
+		    The <code>TableViewer</code> can now display tooltips for its content.
         It can be activated by calling 
         <code>ColumnViewerToolTipSupport#enableFor()</code>. 
         Afterwards you need to override 
@@ -321,7 +321,7 @@
      </title>
      <description>
        <![CDATA[
-		To provide a more consistent design we replaced the configuration 
+		    To provide a more consistent design we replaced the configuration 
         dialog of the Business design with a more lightweight implementation.
         Additionally we added an effect called 
         <a href="http://en.wikipedia.org/wiki/Lightbox_(JavaScript)">Lightbox</a>
@@ -341,7 +341,7 @@
      </title>
      <description>
        <![CDATA[
-		With <a href="news_12.php">RAP 1.2</a> we released a new look and
+		    With <a href="news_12.php">RAP 1.2</a> we released a new look and
         feel called business design. With this design we wanted to show
         how RAP can look like in a serious sector. Now we introduce another
         example called fancy design. This design shows that RAP is a
@@ -358,7 +358,7 @@
         LayoutSets</code>. So, if you have replaced some LayoutSets please 
         update the <code>overridesId</code> attributes by removing the 
         word "business".              
-		]]>
+		  ]]>
      </description>
    </entry>
 
