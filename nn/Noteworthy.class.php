@@ -124,7 +124,6 @@ EOHTML;
           $page_content .= <<<EOHTML
 <td/>
 </tr>
-<p>&nbsp;</p>
 EOHTML;
   	  	}
   	  }
