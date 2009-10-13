@@ -53,6 +53,7 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="RWT" milestone="M1">
      <title>
        New API added
@@ -88,6 +89,7 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="RWT" milestone="M1">
      <title>
        Help Events
@@ -121,6 +123,7 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="RWT" milestone="M2">
      <title>
        Infrastructure for client-side unit tests
@@ -153,6 +156,7 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="RWT" milestone="M2">
      <title>
        DateTime DROP_DOWN
@@ -198,6 +202,7 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="RWT" milestone="M2">
      <title>
        New API added
@@ -234,6 +239,7 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="JFace / Workbench" milestone="M2">
      <title>
        Layout Override Mechanism
@@ -262,6 +268,7 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="JFace / Workbench" milestone="M2">
      <title>
        Tooltips for TableViewer
@@ -283,6 +290,7 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="JFace / Workbench" milestone="M2">
      <title>
        HelpSystem support
@@ -326,13 +334,14 @@
 		]]>
      </description>
    </entry>
+   
    <entry category="Look &amp; Feel" milestone="M2">
      <title>
        Fancy design
      </title>
      <description>
        <![CDATA[
-		With <a href="news_12.php">RAP 1.2</a> we released a new look and
+        With <a href="news_12.php">RAP 1.2</a> we released a new look and
         feel called business design. With this design we wanted to show
         how RAP can look like in a serious sector. Now we introduce another
         example called fancy design. This design shows that RAP is a
@@ -349,8 +358,54 @@
         LayoutSets</code>. So, if you have replaced some LayoutSets please 
         update the <code>overridesId</code> attributes by removing the 
         word "business".              
-        <p>&nbsp;</p>  
-		]]>
+		   ]]>
+     </description>
+   </entry>
+
+   <entry category="Look &amp; Feel" milestone="M2">
+     <title>
+       New API added
+     </title>
+     <description>
+       <![CDATA[
+        Here is a list of API methods added in this milestone:
+        <br />
+        <ul>            
+          <li><code>Display#addListener()</code> and 
+            <code>Display#removeListener()</code> which allow to register for 
+            <code>SWT.Close</code> and <code>SWT.Dispose</code> events.
+            </li>
+          <li><code>Display#disposeExec()</code></li>
+          <li><code>Display#close()</code></li>
+        </ul>
+       ]]>
+     </description>
+   </entry>
+
+   <entry category="Look &amp; Feel" milestone="M2">
+     <title>
+       Non-shared SWT Resources
+     </title>
+     <description>
+       <![CDATA[
+        Constructors for the following resources were implemented
+        <ul>
+        <li><code>Cursor</code></li>
+        <li><code>Color</code></li>
+        <li><code>Font</code></li>
+        </ul>
+        The factory methods (<code>Graphics#get*</code>) are still the 
+        recommended way for dealing with resources in RWT. 
+        If, single-sourcing is desired, and the extra memory is justifible, 
+        using resource-constructors might be considered.
+        <br />
+        With this change, also <code>dispose()</code> and 
+        <code>isDisposed()</code> were introduced. 
+        Even though this method exists for all resources (shared and non-shared)
+        it is considered an error to disposed of factory-created (shared) 
+        resources and an <code>IllegalStateException</code> is thrown in this 
+        case.
+       ]]>
      </description>
    </entry>
 </noteworthy>
