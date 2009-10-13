@@ -29,8 +29,8 @@ $footer = <<<EOHTML
 EOHTML;
 
 # If this is a release, leave the second argument empty ('')
-$noteworthy = new RapNoteworthy( 'news_13.xml', 'M2', $header, $footer );
-$html = $noteworthy->getHtml();
+$news = new Noteworthy( 'news_13.xml', 'M2', $header, $footer );
+$html = $news->getHtml();
 
 # Generate the web page
 $App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
