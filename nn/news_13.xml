@@ -362,7 +362,7 @@
      </description>
    </entry>
 
-   <entry category="Look &amp; Feel" milestone="M2">
+   <entry category="RWT" milestone="M3">
      <title>
        New API added
      </title>
@@ -382,7 +382,7 @@
      </description>
    </entry>
 
-   <entry category="Look &amp; Feel" milestone="M2">
+   <entry category="RWT" milestone="M3">
      <title>
        Non-shared SWT Resources
      </title>
