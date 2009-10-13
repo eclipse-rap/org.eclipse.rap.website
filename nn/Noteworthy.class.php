@@ -60,6 +60,7 @@ EOHTML;
     $page_header .= $this->header;
     // Hyperlinks to all categories in the milestone / release
     $page_header .= <<<EOHTML
+<p>Heyho</p>
 <p><ul>
 EOHTML;
     foreach( $this->categories as $item ) {

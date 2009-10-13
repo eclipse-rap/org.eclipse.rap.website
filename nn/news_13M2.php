@@ -1,6 +1,6 @@
 <?php                                                                                                                          require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");    require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");     require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");     $App     = new App();    $Nav    = new Nav();    $Menu     = new Menu();        include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
-require_once( "rapNoteworthy.class.php" );
+require_once( "Noteworthy.class.php" );
 
 $pageTitle         = "RAP Project - New and Noteworthy";
 $pageKeywords    = "Ajax, rap, eclipse rap";
@@ -29,8 +29,8 @@ $footer = <<<EOHTML
 EOHTML;
 
 # If this is a release, leave the second argument empty ('')
-$noteworthy = new RapNoteworthy( 'news_13.xml', 'M2', $header, $footer );
-$html = $noteworthy->getHtml();
+$news = new Noteworthy( 'news_13.xml', 'M2', $header, $footer );
+$html = $news->getHtml();
 
 # Generate the web page
 $App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
