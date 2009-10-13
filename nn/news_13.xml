@@ -265,7 +265,6 @@
         <br/>
         It's important to use the same identifiers for images, fonts, colors 
         and positions within the <code>ILayoutSetInitializer</code>.                
-        <p>&nbsp;</p>  
 		]]>
      </description>
    </entry>
@@ -287,7 +286,6 @@
         <img src="TableViewerToolTip.jpeg" 
              title="TableViewer showing a tooltip"
              style="margin-top:10px" />
-        <p>&nbsp;</p> 
 		]]>
      </description>
    </entry>
@@ -360,7 +358,6 @@
         LayoutSets</code>. So, if you have replaced some LayoutSets please 
         update the <code>overridesId</code> attributes by removing the 
         word "business".              
-        <p>&nbsp;</p>  
 		]]>
      </description>
    </entry>
