@@ -55,7 +55,7 @@
      </title>
      <description>
        <![CDATA[
-		This will make it easier for the community to reuse existing code or
+		    This will make it easier for the community to reuse existing code or
         to utilize new features.
         Here is a list of API methods added in this milestone:
         <br />
@@ -103,18 +103,16 @@
      </title>
      <description>
        <![CDATA[
-		<p>
         With the support of the FormText widget we now provide an
         implementation of the cheatsheets plugin known from RCP. With this
         it's possible to provide step-by-step cheatsheets with direct
         integration of the application itself.
-        </p>
-        <p><img src="cheatsheets.png" /></p>
-        <p>
+        <br />
+        <img style="margin: 10px 10px 0px;" src="cheatsheets.png" />
+        <br />
         See the
         <a href="http://help.eclipse.org/galileo/topic/org.eclipse.platform.doc.isv/guide/ua_cheatsheet.htm">Eclipse help</a>
         for more informations about cheatsheets and how to use them. 
-        </p>  
 		]]>
      </description>
    </entry>
