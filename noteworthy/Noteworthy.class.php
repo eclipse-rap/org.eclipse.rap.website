@@ -77,7 +77,6 @@ EOHTML;
     }
     $page_header .= <<<EOHTML
 </ul></p>
-<p>&nbsp;</p>
 EOHTML;
   	return $page_header;
   }
