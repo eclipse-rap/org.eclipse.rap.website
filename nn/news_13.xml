@@ -157,7 +157,7 @@
        <![CDATA[
 		    The DateTime widget now supports the <code>SWT.DROP_DOWN</code> style.
         <pre>
-DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
+  DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
         </pre>
         <br />
         <img src="RAPDateTimeDropDown.png" 
