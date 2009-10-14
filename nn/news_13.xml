@@ -127,25 +127,25 @@
 		tests for their custom-widgets using a JUnit-like syntax. The 
 		TestRunner also includes tools to simulate client-server communication 
 		and user-interactions. A simple test-case might look like this:
-		<pre><code>
-		qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
-		  extend : qx.core.Object,
-		  members : {
-		    testText : function() {
-		      var widget = new com.example.widgets.CustomWidget();
-		      widget.setText( "Hello World!" );
-		      assertEquals( "Hello World!", widget.getText() );
-		    }
-		  }
-		} );
-		</code></pre>
+		<pre>
+  qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
+	  extend : qx.core.Object,
+	  members : {
+	    testText : function() {
+	      var widget = new com.example.widgets.CustomWidget();
+	      widget.setText( "Hello World!" );
+	      assertEquals( "Hello World!", widget.getText() );
+	    }
+	  }
+	} );
+		</pre>
 		<br />
 		If any assert fails, the TestRunner will inform the developer via 
 		its very simple UI and freeze Qooxdoo to ease debugging.
 		<br />
 		The project is located in the <a href="../cvs.php">RAP CVS</a>
 		under <code>runtime.rwt.test/org.eclipse.rap.rwt.q07.jstest</code>. 
-		]]>
+ 		]]>
      </description>
    </entry>
    
@@ -156,9 +156,9 @@
      <description>
        <![CDATA[
 		    The DateTime widget now supports the <code>SWT.DROP_DOWN</code> style.
-        <pre><code>
-        DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
-        </code></pre>
+        <pre>
+DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
+        </pre>
         <br />
         <img src="RAPDateTimeDropDown.png" 
              title="DateTime widget with DROP_DOWN style"
@@ -166,7 +166,7 @@
         <br />
         The appearance of the drop-down button can be changed with CSS in 
         the same way like in Combo. 
-		]]>
+		  ]]>
      </description>
    </entry>
    
