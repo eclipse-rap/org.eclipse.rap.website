@@ -400,4 +400,25 @@
        ]]>
      </description>
    </entry>
+
+   <entry category="RWT" milestone="M3">
+     <title>
+       Browser History
+     </title>
+     <description>
+       <![CDATA[
+       New API has been added to interact with the browser's history stack.
+       The <code>IBrowserHistory</code> implementation can be obtained via 
+       <code>RWT.getBrowserHistory()</code>.
+       To create a new history entry, you can use its <code>createEntry()</code>
+       method. In order to receive notification of user-directed changes to the 
+       current history entry, use <code>addBrowserHistoryListener()</code>. 
+       <br/>
+       <img style="margin: 10px 10px 0px;" src="BrowserHistory.png" />
+       <br />
+       To see the browser history support in action, see the 
+       <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>
+       ]]>
+     </description>
+   </entry>
 </noteworthy>
