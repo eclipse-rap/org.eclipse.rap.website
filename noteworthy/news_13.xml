@@ -423,4 +423,21 @@
        ]]>
      </description>
    </entry>
+
+   <entry category="Tooling" milestone="M3">
+     <title>
+       Session Timeout Option
+     </title>
+     <description>
+       <![CDATA[
+       The RAP Application Launcher now has an option to specify the session
+       timeout in Seconds. This can come in handy if you whish to test session
+       shutdown scenarios and saves you from remembering the lengthy 
+       <code>org.eclipse.equinox.http.jetty.context.sessioninactiveinterval</code> 
+       VM argument.
+       <br/>
+       <img style="margin: 10px 10px 0px;" src="SessionTimeout.png" />
+       ]]>
+     </description>
+   </entry>
 </noteworthy>
