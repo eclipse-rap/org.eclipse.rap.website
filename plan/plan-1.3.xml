@@ -11,12 +11,6 @@
   <release projectid="rt.rap" version="1.3" />
   <introduction>
     <html:div>
-      <html:div style="align:center;">
-        <html:big><html:b>Preliminary</html:b></html:big>
-      </html:div>
-      The RAP 1.3 project plan is still in preliminary state and not yet agreed
-      upon by all parties.
-      <html:hr/>
       The RAP project enables developers to build rich, Ajax-enabled Web 
       applications by using the Eclipse development model, plug-ins with 
       the well known Eclipse workbench extension points, JFace, and a 
