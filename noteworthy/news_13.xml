@@ -385,6 +385,7 @@
         <li><code>Cursor</code></li>
         <li><code>Color</code></li>
         <li><code>Font</code></li>
+        <li><code>Image</code></li>
         </ul>
         The factory methods (<code>Graphics#get*</code>) are still the 
         recommended way for dealing with resources in RWT. 
