@@ -417,10 +417,8 @@
        <br/>
        <img style="margin: 10px 10px 0px;" src="BrowserHistory.png" />
        <br />
-       <!--
        To see the browser history support in action, see the 
        <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>
-       -->
        ]]>
      </description>
    </entry>
