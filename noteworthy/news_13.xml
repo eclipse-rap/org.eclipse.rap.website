@@ -369,6 +369,7 @@
             </li>
           <li><code>Display#disposeExec()</code></li>
           <li><code>Display#close()</code></li>
+          <li><code>Shell()</code> default constructor</li>
         </ul>
        ]]>
      </description>
