@@ -107,7 +107,7 @@ $html = <<<EOHTML
             <p>
               Forms Examples is an adoption of the
               <em>org.eclipse.rap.ui.forms.examples</em> plug-in that demonstrates
-              the major features of the Elipse Forms API.
+              the major features of the Eclipse Forms API.
             </p>
             <p>
               Available in <a href="cvs.php">CVS</a> at
