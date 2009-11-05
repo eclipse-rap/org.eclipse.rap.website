@@ -370,6 +370,9 @@
           <li><code>Display#disposeExec()</code></li>
           <li><code>Display#close()</code></li>
           <li><code>Shell()</code> default constructor</li>
+          <li><code>SelectionEvent#stateMask</code>, that  represents the state
+            of the keyboard modifier keys at the time the event was generated
+          </li>
         </ul>
        ]]>
      </description>
