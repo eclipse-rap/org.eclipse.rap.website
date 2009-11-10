@@ -373,6 +373,11 @@
           <li><code>SelectionEvent#stateMask</code>, that  represents the state
             of the keyboard modifier keys at the time the event was generated
           </li>
+          <li>Improved <code>Display#getDefault()</code> - now creates a 
+          display if executed from the user-interface thread. (see 
+          <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=293809">bug
+          293809</a> for details)
+          </li>
         </ul>
        ]]>
      </description>
