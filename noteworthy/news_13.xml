@@ -45,7 +45,7 @@
   border: 2px solid #005092;
   border-radius: 6px;
         </pre>  
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -55,7 +55,7 @@
      </title>
      <description>
        <![CDATA[
-		    This will make it easier for the community to reuse existing code or
+            This will make it easier for the community to reuse existing code or
         to utilize new features.
         Here is a list of API methods added in this milestone:
         <br />
@@ -81,7 +81,7 @@
           <li><code>Widget#getListeners( int )</code> and
               <code>Widget#isListening( int )</code></li>
         </ul>  
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -91,10 +91,10 @@
      </title>
      <description>
        <![CDATA[
-		It is now possible to attach help listeners to controls and menus. 
+        It is now possible to attach help listeners to controls and menus. 
         These events are generated when help is requested for a control or
         menu, typically when the user presses F1.  
-		]]>
+        ]]>
      </description>
    </entry>
    <entry category="JFace / Workbench" milestone="M1">
@@ -113,7 +113,7 @@
         See the
         <a href="http://help.eclipse.org/galileo/topic/org.eclipse.platform.doc.isv/guide/ua_cheatsheet.htm">Eclipse help</a>
         for more informations about cheatsheets and how to use them. 
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -123,29 +123,29 @@
      </title>
      <description>
        <![CDATA[
-		The new Javascript-Testrunner enables developers to write client-side 
-		tests for their custom-widgets using a JUnit-like syntax. The 
-		TestRunner also includes tools to simulate client-server communication 
-		and user-interactions. A simple test-case might look like this:
-		<pre>
+        The new Javascript-Testrunner enables developers to write client-side 
+        tests for their custom-widgets using a JUnit-like syntax. The 
+        TestRunner also includes tools to simulate client-server communication 
+        and user-interactions. A simple test-case might look like this:
+        <pre>
   qx.Class.define( "com.example.widgets.tests.CustomWidgetTest", {
-	  extend : qx.core.Object,
-	  members : {
-	    testText : function() {
-	      var widget = new com.example.widgets.CustomWidget();
-	      widget.setText( "Hello World!" );
-	      assertEquals( "Hello World!", widget.getText() );
-	    }
-	  }
-	} );
-		</pre>
-		<br />
-		If any assert fails, the TestRunner will inform the developer via 
-		its very simple UI and freeze Qooxdoo to ease debugging.
-		<br />
-		The project is located in the <a href="../cvs.php">RAP CVS</a>
-		under <code>runtime.rwt.test/org.eclipse.rap.rwt.q07.jstest</code>. 
- 		]]>
+      extend : qx.core.Object,
+      members : {
+        testText : function() {
+          var widget = new com.example.widgets.CustomWidget();
+          widget.setText( "Hello World!" );
+          assertEquals( "Hello World!", widget.getText() );
+        }
+      }
+    } );
+        </pre>
+        <br />
+        If any assert fails, the TestRunner will inform the developer via 
+        its very simple UI and freeze Qooxdoo to ease debugging.
+        <br />
+        The project is located in the <a href="../cvs.php">RAP CVS</a>
+        under <code>runtime.rwt.test/org.eclipse.rap.rwt.q07.jstest</code>. 
+         ]]>
      </description>
    </entry>
    
@@ -155,7 +155,7 @@
      </title>
      <description>
        <![CDATA[
-		    The DateTime widget now supports the <code>SWT.DROP_DOWN</code> style.
+            The DateTime widget now supports the <code>SWT.DROP_DOWN</code> style.
         <pre>
   DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
         </pre>
@@ -166,7 +166,7 @@
         <br />
         The appearance of the drop-down button can be changed with CSS in 
         the same way like in Combo. 
-		  ]]>
+          ]]>
      </description>
    </entry>
    
@@ -176,7 +176,7 @@
      </title>
      <description>
        <![CDATA[
-		    Until now, responses sent by RAP were compressed using gzip. When 
+            Until now, responses sent by RAP were compressed using gzip. When 
         running on Tomcat, this could lead to character garbage being delivered 
         to the browser (see 
         <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259977">bug 
@@ -192,7 +192,7 @@
         Compression can be turned on by specifying the VM argument 
         <code>org.eclipse.rwt.compression=true</code>. This is the default
         setting for newly created launch configurations. 
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -202,7 +202,7 @@
      </title>
      <description>
        <![CDATA[
-		    Here is a list of API methods added in this milestone:
+            Here is a list of API methods added in this milestone:
         <br />
         <ul>            
           <li><code>Text#getCaretPosition()</code></li>
@@ -229,7 +229,7 @@
               <code>ScrolledComposite#getShowFocusedControl()</code></li>
           <li><code>Table#showColumn( TableColumn )</code></li>
         </ul> 
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -253,11 +253,11 @@
         original one. <br/>
         <img src="LayoutSetOverridding.png" alt="Overriding LayoutSets"
              title="Screenshot taken from org.eclipse.rap.examples"
-          	 style="margin-top:10px" />
+               style="margin-top:10px" />
         <br/>
         It's important to use the same identifiers for images, fonts, colors 
         and positions within the <code>ILayoutSetInitializer</code>.                
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -267,7 +267,7 @@
      </title>
      <description>
        <![CDATA[
-		    The <code>TableViewer</code> can now display tooltips for its content.
+            The <code>TableViewer</code> can now display tooltips for its content.
         It can be activated by calling 
         <code>ColumnViewerToolTipSupport#enableFor()</code>. 
         Afterwards you need to override 
@@ -278,7 +278,7 @@
         <img src="TableViewerToolTip.jpeg" 
              title="TableViewer showing a tooltip"
              style="margin-top:10px" />
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -288,7 +288,7 @@
      </title>
      <description>
        <![CDATA[
-		With the support for the Eclipse Help infrastructure, you're now able
+        With the support for the Eclipse Help infrastructure, you're now able
         to integrate the well-known help system into your RAP applications.
         <br />
         <img src="helpsystem.png" 
@@ -303,7 +303,7 @@
         help system, please be sure to include a help system implementation.
         Otherwise your users will not be able to open the associated help
         topics. 
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -313,7 +313,7 @@
      </title>
      <description>
        <![CDATA[
-		    To provide a more consistent design we replaced the configuration 
+            To provide a more consistent design we replaced the configuration 
         dialog of the Business design with a more lightweight implementation.
         Additionally we added an effect called 
         <a href="http://en.wikipedia.org/wiki/Lightbox_(JavaScript)">Lightbox</a>
@@ -323,7 +323,7 @@
         <img src="ConfigurationDialog.png" alt="ConfigurationDialog" 
              title="New RAP Business design configuration dialog" 
              style="margin-top:10px" />  
-		]]>
+        ]]>
      </description>
    </entry>
    
@@ -333,24 +333,24 @@
      </title>
      <description>
        <![CDATA[
-		    With <a href="news_12.php">RAP 1.2</a> we released a new look and
+        With <a href="news_12.php">RAP 1.2</a> we released a new look and
         feel called business design. With this design we wanted to show
         how RAP can look like in a serious sector. Now we introduce another
         example called fancy design. This design shows that RAP is a
         really modern technology and can look like one too.<br/>
         To use this design a developer should follow the 
-        <a href"http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
+        <a href="http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
         steps from the business design</a> and replace the servlet name with 
         "fancy". <br/>
         <img src="fancyDesign.png" alt="RAP fancy design"
-          	 title="Screenshot taken from the RAP fancy design"
-          	 style="margin-top:10px" />
+               title="Screenshot taken from the RAP fancy design"
+               style="margin-top:10px" />
         <br/>
         Please note that we changed a few IDs of some of the <code>
         LayoutSets</code>. So, if you have replaced some LayoutSets please 
         update the <code>overridesId</code> attributes by removing the 
         word "business".              
-		  ]]>
+        ]]>
      </description>
    </entry>
 
@@ -432,6 +432,19 @@
      </description>
    </entry>
 
+   <entry category="RWT" milestone="M3">
+     <title>
+       Customizable focus indicator
+     </title>
+     <description>
+       <![CDATA[
+       <img style="margin: 0px 10px 10px;" src="Button-focus.png" />
+       We implemented a themeable focus indicator for buttons.
+       This allows to show the focus rectangle <i>inside<i/> the buttons.
+       ]]>
+     </description>
+   </entry>
+
    <entry category="Tooling" milestone="M3">
      <title>
        Session Timeout Option
@@ -445,6 +458,21 @@
        VM argument.
        <br/>
        <img style="margin: 10px 10px 0px;" src="SessionTimeout.png" />
+       ]]>
+     </description>
+   </entry>
+
+   <entry category="Look &amp; Feel" milestone="M3">
+     <title>
+       Theming and new designs
+     </title>
+     <description>
+       <![CDATA[
+       We extended the theming for a couple of widgets (such as CTabFolder,
+       CLabel, Combo, Spinner and DateTime) and improved the new "fancy"
+       design.
+       A great deal of the bugs and enhancement requests fixed in this
+       milestone are related to design and theming.
        ]]>
      </description>
    </entry>
