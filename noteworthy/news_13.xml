@@ -470,7 +470,9 @@
        <![CDATA[
        We extended the theming for a couple of widgets (such as CTabFolder,
        CLabel, Combo, Spinner and DateTime) and improved the new "fancy"
-       design.
+       design e.g. the support for standalone views was added.<br/>
+       <img style="margin: 10px 10px 0px;" src="fancyStandaloneView.png" />
+       <br/>
        A great deal of the bugs and enhancement requests fixed in this
        milestone are related to design and theming.
        ]]>
