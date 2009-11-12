@@ -24,6 +24,9 @@
         <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=RAP&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
           Show open enhancement requests</a>
         </li>
+        <li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?field0-0-0=votes;columnlist=votes%2Cbug_severity%2Cpriority%2Cshort_desc;classification=RT;query_format=advanced;bug_status=UNCONFIRMED;bug_status=NEW;bug_status=ASSIGNED;bug_status=REOPENED;type0-0-0=greaterthan;value0-0-0=0;product=RAP">
+          Show most voted bugs</a>
+        </li>
         <li><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&rep_platform=All&op_sys=all">
           Report a new bug or enhancement</a>
           <br />
