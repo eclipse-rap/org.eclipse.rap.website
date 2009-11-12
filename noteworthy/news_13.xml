@@ -424,7 +424,7 @@
        method. In order to receive notification of user-directed changes to the 
        current history entry, use <code>addBrowserHistoryListener()</code>. 
        <br/>
-       <img style="margin: margin-top:10px; margin-bottom:10px" src="BrowserHistory.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="BrowserHistory.png" />
        <br />
        To see the browser history support in action, see the 
        <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>
@@ -439,9 +439,9 @@
      <description>
        <![CDATA[
        We implemented a themeable focus indicator for buttons.
-       This allows to show the focus rectangle <i>inside<i/> the buttons.
+       This allows to show the focus rectangle <i>inside</i> the buttons.
        <br />
-       <img style="margin: margin-top:10px" src="Button-focus.png" />
+       <img style="margin-top:10px" src="Button-focus.png" />
        ]]>
      </description>
    </entry>
