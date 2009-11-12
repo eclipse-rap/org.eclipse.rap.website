@@ -42,6 +42,9 @@ $html = <<<EOHTML
       <li>
         <a href="http://www.uid.com" target="_blank">UID</a>
       </li>
+      <li>
+        <a href="http://www.ars.de" target="_blank">ARS</a>
+      </li>
      </ul>
     </div>
 
