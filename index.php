@@ -52,16 +52,34 @@ $html = <<<EOHTML
       <h6>Upcoming events</h6>
      <ul>
        <li>
-         <a href="http://www.eclipse.org/community/e4webinar/abstracts.php" 
+         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Braunschweig/Hanover#Agenda" 
             target="_blank">
-            E4 Webinars</a>
-         <span><br />August 26<sup>th</sup> 2009</span>
+            DemoCamp Braunschweig/Hanover</a>
+         <span><br />November 25<sup>th</sup> 2009</span>
        </li>
-      <li>
-        <a href="http://www.eclipsecon.org/summiteurope2009/" 
-           target="_blank">
-           Eclipse Summit Europe 2009</a>
-         <span><br />October 27<sup>th</sup>-29<sup>th</sup> 2009</span>
+       <li>
+         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Frankfurt#Presenters" 
+            target="_blank">
+            DemoCamp Frankfurt</a>
+         <span><br />November 26<sup>th</sup> 2009</span>
+       </li>
+       <li>
+         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Kaiserslautern#Presenters" 
+            target="_blank">
+            DemoCamp Kaiserslautern</a>
+         <span><br />November 26<sup>th</sup> 2009</span>
+       </li>
+       <li>
+         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Karlsruhe#Presenters" 
+            target="_blank">
+            DemoCamp Karlsruhe</a>
+         <span><br />December 3<sup>rd</sup> 2009</span>
+       </li>
+       <li>
+         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Hamburg#Presenters" 
+            target="_blank">
+            DemoCamp Hamburg</a>
+         <span><br />December 4<sup>th</sup> 2009</span>
        </li>
      </ul>
     </div>
