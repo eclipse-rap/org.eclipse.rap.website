@@ -15,7 +15,7 @@ $html = <<<EOHTML
 
 
 <div id="midcolumn">
-  <h1>CVS</h1>
+  <h1>Source Code</h1>
 
   <div class="homeitem3col">
     <h3>Browse CVS</h3>
