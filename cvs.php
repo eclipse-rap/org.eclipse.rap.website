@@ -35,6 +35,10 @@ $html = <<<EOHTML
       For easier consumption, we provide 
       <a href="http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Sets</a>
       that contain pointers to the relevant RAP projects from the CVS repository.
+      Individual components (e.g. from the <a href="incubator.php">Incubator</a>)
+      can also be obtained 
+      <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">directly
+      from CVS.</a>
     <p/>
     <p style="margin:10px">
       The project sets are created under the assumption that your target 
@@ -57,7 +61,7 @@ $html = <<<EOHTML
     </p>
     
     <p style="margin:10px">
-      <strong>Available Team Project Set(s)</strong>
+      <strong>Available Team Project Sets</strong>
       <ul>
         <li>
           <a href="resources/rap.psf">
@@ -65,9 +69,7 @@ $html = <<<EOHTML
           </a>
           <br />
           Contains all the projects necessary to develop applications based on 
-          RAP. Individual components (e.g. from the <a href="sandbox.php">Sandbox</a>)
-          can also be obtained 
-          <a href="http://wiki.eclipse.org/index.php/CVS_Howto#Anonymous_CVS">directly from CVS.</a>
+          RAP.
         </li>
         <li>
           <a href="resources/rap-demos.psf">
@@ -75,7 +77,8 @@ $html = <<<EOHTML
           </a>
           <br />
           Contains several example projects shown on the
-          <a href="demos.php">Demos</a> page.
+          <a href="demos.php">Demos</a> page. The bundles from the <i>RAP User 
+          Team Project Set</i> are required.  
         </li>
       </ul>
     </p>
