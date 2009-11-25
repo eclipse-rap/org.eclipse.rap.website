@@ -37,8 +37,9 @@ $html = <<<EOHTML
           If you wrote a custom component for RAP that might be useful to
           others, it could be hosted in the
           <a href="incubator.php">Incubator</a>.
-          Please contact us on the developer mailing list if you'd like to
-          share your code.
+          Please contact us on the
+          <a href="http://dev.eclipse.org/mhonarc/lists/rap-dev">developer mailing list</a> 
+          if you'd like to share your code.
         </li>
       </ul>
     </p>
