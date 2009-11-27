@@ -491,7 +491,7 @@
        data. The API is SWT-compatible, using <code>DragSource</code>, 
        <code>DropTarget</code> and <code>Transfer</code>.
        <br />
-       This first Version still has some limitations, in particular: feedback-
+       This first version still has some limitations, in particular: feedback-
        effects (e.g. for trees and tables) are missing, the escape key can not 
        be used to cancel a drag, and the operationChanged-event is not yet 
        thrown. We expect to deliver those features soon.
