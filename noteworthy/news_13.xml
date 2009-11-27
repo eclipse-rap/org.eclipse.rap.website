@@ -490,6 +490,7 @@
        the way he is used to in his desktop applications to move, copy or link 
        data. The API is SWT-compatible, using <code>DragSource</code>, 
        <code>DropTarget</code> and <code>Transfer</code>.
+       <br />
        This first Version still has some limitations, in particular: feedback-
        effects (e.g. for trees and tables) are missing, the escape key can not 
        be used to cancel a drag, and the operationChanged-event is not yet 
