@@ -494,4 +494,27 @@
        ]]>
      </description>
    </entry>
+
+   <entry category="RWT" milestone="M4">
+     <title>
+       Drag and Drop
+     </title>
+     <description>
+       <![CDATA[
+       RAP now supports Drag and Drop. The user can use the mouse and keyboard 
+       the way he is used to in his desktop applications to move, copy or link 
+       data. The API is SWT-compatible, using <code>DragSource</code>, 
+       <code>DropTarget</code> and <code>Transfer</code>.
+       This first Version still has some limitations, in particular: feedback-
+       effects (e.g. for trees and tables) are missing, the escape key can not 
+       be used to cancel a drag, and the operationChanged-event is not yet 
+       thrown. We expect to deliver those features soon.
+       <img style="margin: 10px 10px 0px;" src="dnd.png" />
+       To try out drag and drop online, see the 
+       <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>
+       (go to the <i>List</i> page).
+       ]]>
+     </description>
+   </entry>
+   
 </noteworthy>
