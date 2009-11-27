@@ -480,21 +480,6 @@
      </description>
    </entry>
    
-   <entry category="JFace / Workbench" milestone="M4">
-     <title>
-       ControlDecoration
-     </title>
-     <description>
-       <![CDATA[
-       JFace ControlDecoration support has been added. Clients can now
-       decorate any kind of control with an image and description text shown
-       when the user hovers over the image.
-       <img style="margin-top:10px; margin-bottom:10px" src="ControlDecoration.png" />
-       <br/>
-       ]]>
-     </description>
-   </entry>
-
    <entry category="RWT" milestone="M4">
      <title>
        Drag and Drop
@@ -517,4 +502,19 @@
      </description>
    </entry>
    
+   <entry category="JFace / Workbench" milestone="M4">
+     <title>
+       ControlDecoration
+     </title>
+     <description>
+       <![CDATA[
+       JFace ControlDecoration support has been added. Clients can now
+       decorate any kind of control with an image and description text shown
+       when the user hovers over the image.
+       <img style="margin-top:10px; margin-bottom:10px" src="ControlDecoration.png" />
+       <br/>
+       ]]>
+     </description>
+   </entry>
+
 </noteworthy>
