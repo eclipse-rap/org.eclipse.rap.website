@@ -495,7 +495,9 @@
        effects (e.g. for trees and tables) are missing, the escape key can not 
        be used to cancel a drag, and the operationChanged-event is not yet 
        thrown. We expect to deliver those features soon.
+       <br />
        <img style="margin: 10px 10px 0px;" src="dnd.png" />
+       <br />
        To try out drag and drop online, see the 
        <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>
        (go to the <i>List</i> page).
