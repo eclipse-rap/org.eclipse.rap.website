@@ -100,7 +100,7 @@ $html = <<<EOHTML
           </a>
         </p>
         <p>This is one of the
-        <a href="http://download.eclipse.org/e4/downloads/drops/S-0.9M5-200907101930/e4-news-M5.html#Examples">example</a>
+        <a href="http://download.eclipse.org/e4/downloads/drops/R-0.9-200907291930/e4-news-all.html#contactsdemo">example</a>
         applications for <a href="http://eclipse.org/e4/">e4</a>, the next generation of Eclipse, running on RAP.
         This is just a <b>technical preview</b> but it already reveals
         the strength of combining e4 and RAP.
