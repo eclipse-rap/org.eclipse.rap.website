@@ -57,7 +57,8 @@ $html = <<<EOHTML
             <p>
               The Google Maps component provides a simple integration of a GMap
               in a custom widget. This component is used as an example for the
-              "Custom widget tutorial".
+              <a href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.rap.help/help/html/advanced/custom-widget.html">
+              "Custom widget tutorial"</a>.
             </p>
             <p>
               Available in <a href="cvs.php">CVS</a> at
@@ -112,6 +113,28 @@ $html = <<<EOHTML
             <p>
               Available in <a href="cvs.php">CVS</a> at
               sandbox/org.eclipse.rap.ui.forms.examples
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
+      <table width="750" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td width="250">
+            <img src="images/sandbox/spread-sheet.png"
+              alt="Spread Sheet" style="border: 1px solid #666;" />
+          </td>
+          <td width="500" valign="top">
+            <h3>Spread Sheet</h3>
+            <p>
+              This component hosts a prototypical spread sheet implementation 
+              that is composed entirely out of existing widgets.
+            </p>
+            <p>
+              Available in <a href="cvs.php">CVS</a> at
+              incubator/spreadsheet
             </p>
           </td>
         </tr>
