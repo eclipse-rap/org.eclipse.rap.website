@@ -505,6 +505,21 @@
      </description>
    </entry>
    
+   <entry category="RWT" milestone="M4">
+     <title>
+       New API added
+     </title>
+     <description>
+       <![CDATA[
+        Here is a list of new API that was added in this milestone:
+        <br />
+        <ul>
+          <li><code>Text#getText(int,int)</code></li>
+        </ul>  
+        ]]>
+     </description>
+   </entry>
+   
    <entry category="JFace / Workbench" milestone="M4">
      <title>
        ControlDecoration
