@@ -535,9 +535,7 @@
        Instead their return value indicates whether they completed successfully.
        Due to the multi-threaded environment, it is not possible to reliably
        determine the outcome before calling one of these methods (isBound() 
-       could have changed meanwhile).
-       <br />
-       Please see the JavaDoc for more details. 
+       could have changed meanwhile). Please see the JavaDoc for more details.
        <br />
        We don't expect to break existing clients, the changes are documented here 
        for completeness. However, if you are having trouble file a 
