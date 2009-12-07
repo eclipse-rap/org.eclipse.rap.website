@@ -531,10 +531,12 @@
        <code>removeSessionStoreListener</code>
        and <code>getAttributeNames</code> are affected in that they don't throw
        an exception anymore when being invoked on an invalidated session.
+       <br />
        Instead their return value indicates whether they completed successfully.
-       Due to the multi-threaded environment, it was not possible to reliably
-       determine the outcome before calling one of these methods (isBound() could
-       have changed meanwhile).
+       Due to the multi-threaded environment, it is not possible to reliably
+       determine the outcome before calling one of these methods (isBound() 
+       could have changed meanwhile).
+       <br />
        Please see the JavaDoc for more details. 
        <br />
        We don't expect to break existing clients, the changes are documented here 
