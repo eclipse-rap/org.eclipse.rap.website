@@ -520,6 +520,31 @@
      </description>
    </entry>
    
+   <entry category="RWT" milestone="M4">
+     <title>
+       Changes to ISessionStore
+     </title>
+     <description>
+       <![CDATA[
+       The <code>ISessionStore</code> has undergone slight API changes.
+       The methods <code>addSessionStoreListener</code>, 
+       <code>removeSessionStoreListener</code>
+       and <code>getAttributeNames</code> are affected in that they don't throw
+       an exception anymore when being invoked on an invalidated session.
+       Instead their return value indicates whether they completed successfully.
+       Due to the multi-threaded environment, it was not possible to reliably
+       determine the outcome before calling one of these methods (isBound() could
+       have changed meanwhile).
+       Please see the JavaDoc for more details. 
+       <br />
+       We don't expect to break existing clients, the changes are documented here 
+       for completeness. However, if you are having trouble file a 
+       <a href="http://eclipse.org/rap/bugs.php">new bug</a> or re-open
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=278258">bug 278258</a>
+       ]]>
+     </description>
+   </entry>
+   
    <entry category="JFace / Workbench" milestone="M4">
      <title>
        ControlDecoration
