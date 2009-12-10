@@ -110,6 +110,10 @@ $html = <<<EOHTML
         <a href="http://www.eclipse.org/articles/Article-Concurrency/jobs-api.html">
         On the Job: The Eclipse Jobs API</a>
       </li>
+      <li>
+        <a href="http://www.eclipse.org/articles/Article-Workbench-DND/drag_drop.html">
+        Drag and Drop in the Eclipse UI</a>
+      </li>
     </ul>
   </div>
 
