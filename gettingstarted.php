@@ -43,25 +43,21 @@
 
 
 <h2>Getting started instructions</h2>
-<p>The easiest was to get involved with RAP is to install it from the update-site 
-  using the Eclipse Update Manager. This requires the following steps:
+<p>The easiest was to get involved with RAP is to install it from a software 
+  repository. This requires the following steps:
 </p>
 
-<p><strong>For Eclipse 3.4 or later...</strong>
+<p><strong>For Eclipse 3.5 or later...</strong>
 <ul style="margin-left:10px">
   <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 
-      <strong>Software Updates...</strong> menu entry.</li>
-  <li>Select the <strong>Available Software</strong> tab and click the 
-    <strong>Add Site...</strong> button.</li>
-  <li>In the upcoming <strong>Add Site</strong> dialog, enter enter the RAP 
-    Update Site URL 
-    <strong>http://download.eclipse.org/rt/rap/1.2/update</strong>. 
-    Click <strong>OK</strong> to create the new update site entry.</li>
-  <li>The entry you just created now appears in the update site list. Select 
-    its check box and click <strong>Install...</strong>.</li>
-  <li>The <strong>Install</strong> wizard will let you review the selected
-    items to install, confirm with <strong>Next</strong> to continue the
-    installation.
+      <strong>Install New Software ...</strong> menu entry.</li>
+  <li>Enter enter the RAP 
+    Update Site URL <strong>http://download.eclipse.org/rt/rap/1.2/update</strong>.
+    into the <strong>Work with</strong> field and press Enter.
+  <li>After a short while, an entry labelled <em>Rich Ajax Platform</em> appears 
+    in the list below. Select its check box and click <strong>Next</strong>.
+    </li>
+  <li>The the next page you may review the installation details.</li>
   <li>Accept the terms in the license agreement and click the 
       <strong>Finish</strong> button.</li>
   <li>The feature and plug-ins will now be downloaded from the site and
