@@ -57,10 +57,10 @@
   <li>After a short while, an entry labelled <em>Rich Ajax Platform</em> appears 
     in the list below. Select its check box and click <strong>Next</strong>.
     </li>
-  <li>The the next page you may review the installation details.</li>
+  <li>On the the next page you may review the installation details.</li>
   <li>Accept the terms in the license agreement and click the 
       <strong>Finish</strong> button.</li>
-  <li>The feature and plug-ins will now be downloaded from the site and
+  <li>The feature and plug-ins will now be downloaded from the repository and
       installed locally. Note that you may be prompted to confirm if it is ok
       to install unsigned jar files.</li>
   <li>Confirm the following prompt to restart Eclipse.</li>
