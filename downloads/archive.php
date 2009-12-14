@@ -33,6 +33,16 @@ $html = <<<EOHTML
 	  <h3>RAP Runtime SDK Builds</h3>
 	  <ul>
 
+	    <li>RAP 1.3 M3 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
+          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M3-20091110-1732.zip">
+            rap-runtime-1.3.0-M3-20091110-1732.zip 
+          </a>
+          <br />
+          <a href="http://www.eclipse.org/rap/noteworthy/news_13M3.php">
+            New &amp; Noteworthy
+          </a>
+        </li>
+
 	    <li>RAP 1.3 M2 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
           <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M2-20090929-1121.zip">
             rap-runtime-1.3.0-M2-20090929-1121.zip
