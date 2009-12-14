@@ -51,8 +51,8 @@
 <ul style="margin-left:10px">
   <li>With Eclipse up and running, select the <strong>Help</strong> &gt; 
       <strong>Install New Software ...</strong> menu entry.</li>
-  <li>Enter enter the RAP 
-    Update Site URL <strong>http://download.eclipse.org/rt/rap/1.2/update</strong>.
+  <li>Enter enter the RAP Update Site URL 
+    <strong>http://download.eclipse.org/rt/rap/1.2/update</strong>.
     into the <strong>Work with</strong> field and press Enter.
   <li>After a short while, an entry labelled <em>Rich Ajax Platform</em> appears 
     in the list below. Select its check box and click <strong>Next</strong>.
