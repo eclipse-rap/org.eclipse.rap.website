@@ -559,5 +559,28 @@
        ]]>
      </description>
    </entry>
+   
+   <entry category="Look &amp; Feel" milestone="M4">
+     <title>
+       Widget Theming
+     </title>
+     <description>
+       <![CDATA[
+       Almost all RWT widgets got a new theming. The theming is coupled with the 
+       <a href="http://www.eclipse.org/rap/noteworthy/news_13M2.php#Look%20&%20Feel">
+       design examples</a>. So, we have created two themes. One for the 
+       <a href="http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
+       business design</a> which uses a blue color scheme and one for the 
+       <a href="http://eclipsesource.com/blogs/2009/09/02/new-fancy-rich-ajax-platform-rap-theme/">
+       fancy design</a> which uses a green color scheme. To active one of these 
+       themes just add the bundle <code>org.eclipse.rap.design.example</code> 
+       to your launch configuration and set the theming id in your branding to 
+       <code>org.eclipse.rap.design.example.business.theme</code> or <code>
+       org.eclipse.rap.design.example.fancy.theme</code>.
+       <img style="margin-top:10px; margin-bottom:10px" src="RAPNewTheming.png" />
+       <br/>
+       ]]>
+     </description>
+   </entry>
 
 </noteworthy>
