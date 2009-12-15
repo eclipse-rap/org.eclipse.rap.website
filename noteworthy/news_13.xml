@@ -572,7 +572,7 @@
        <a href="http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
        business design</a> which uses a blue color scheme and one for the 
        <a href="http://eclipsesource.com/blogs/2009/09/02/new-fancy-rich-ajax-platform-rap-theme/">
-       fancy design</a> which uses a green color scheme. To active one of these 
+       fancy design</a> which uses a green color scheme. To activate one of these 
        themes just add the bundle <code>org.eclipse.rap.design.example</code> 
        to your launch configuration and set the theming id in your branding to 
        <code>org.eclipse.rap.design.example.business.theme</code> or <code>
