@@ -594,6 +594,8 @@
        In addition it allows you to pass any parameters from JavaScript to the
        Java function.
        <br />
+       Thanks to the donation of henzler informatik gmbh we were able to acquire
+       additional resources to have the BrowserFunction implemented for M5.
        ]]>
      </description>
    </entry>
