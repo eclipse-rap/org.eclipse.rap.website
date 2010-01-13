@@ -583,4 +583,18 @@
      </description>
    </entry>
 
+   <entry category="RWT" milestone="M5">
+     <title>
+       BrowserFunction
+     </title>
+     <description>
+       <![CDATA[
+       With the support for SWT BrowserFunctions it is now possible to register
+       custom Java functions for a Browser widget and call them from JavaScript.
+       In addition it allows you to pass any parameters from JavaScript to the
+       Java function.
+       <br />
+       ]]>
+     </description>
+   </entry>
 </noteworthy>
