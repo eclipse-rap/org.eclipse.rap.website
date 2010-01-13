@@ -618,6 +618,7 @@
        <br />
        Please note that you have to add a new system property in order to
        activate the multi-language support for Equinox:
+       <br />
        <code>-Declipse.registry.MultiLanguage=true</code>
        <br />
        <br />
