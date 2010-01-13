@@ -599,4 +599,24 @@
        ]]>
      </description>
    </entry>
+   
+   <entry category="JFace / Workbench" milestone="M5">
+     <title>
+       Native internationalization for extension registry
+     </title>
+     <description>
+       <![CDATA[
+       Equinox will from now on support the ability to handle different locales
+       for the extension registry. RAP provides an implementation to use the
+       correct locale for the extension registry based on the RWT locale.
+       Please note that you have to add a new system property in order to
+       activate the multi-language support for Equinox:
+       
+       <code>-Declipse.registry.MultiLanguage=true</code>
+       
+       From now on, there is no need for the "org.eclipse.rap.equinox.registry"
+       fragment anymore.
+       ]]>
+     </description>
+   </entry>
 </noteworthy>
