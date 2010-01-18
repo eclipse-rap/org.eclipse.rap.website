@@ -623,8 +623,10 @@
      </title>
      <description>
        <![CDATA[
-       Since M4, the Equinox extension registry is able to handle multiple
-       locales (see bug
+       Since M4, the Equinox 
+       <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M4-200912101301/eclipse-news-M4.html#Equinox">
+       extension registry is able to handle multiple locales</a>
+       (see bug 
        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244468">244468</a>
        for details). A socalled LocaleProvider service is used to determine the
        current locale. 
