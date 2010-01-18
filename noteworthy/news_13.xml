@@ -607,7 +607,7 @@
      <description>
        <![CDATA[
        <code>ImageData</code> and related classes (<code>ImageLoader</code>, 
-       <code>ImageLoaderEvent</code>) are now public API. As a result, the
+       <code>ImageLoaderEvent</code>, etc.) are now public API. As a result, the
        <code>Image(Device,ImageData)</code> constructor is also available.
        <br />
        The factory methods (Graphics#getImage) are still the recommended way 
