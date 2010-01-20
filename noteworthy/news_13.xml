@@ -20,7 +20,8 @@
         client-side.
         Of course, this works with all browsers supported by RAP.
         <br/>
-        <img style="margin: 10px 10px 0px;" src="GradientsAndRoundedBorders.png" />
+        <img src="GradientsAndRoundedBorders.png" 
+          style="margin-top: 10px; margin-bottom: 10px" />
         <br />
         For gradients we followed the CSS syntax
         <a href="http://webkit.org/blog/175/introducing-css-gradients/">implemented by Safari</a>,
@@ -108,7 +109,8 @@
         it's possible to provide step-by-step cheatsheets with direct
         integration of the application itself.
         <br />
-        <img style="margin: 10px 10px 0px;" src="cheatsheets.png" />
+        <img src="cheatsheets.png" 
+          style="margin-top: 10px; margin-bottom: 10px"/>
         <br />
         See the
         <a href="http://help.eclipse.org/galileo/topic/org.eclipse.platform.doc.isv/guide/ua_cheatsheet.htm">Eclipse help</a>
@@ -253,7 +255,7 @@
         original one. <br/>
         <img src="LayoutSetOverridding.png" alt="Overriding LayoutSets"
              title="Screenshot taken from org.eclipse.rap.examples"
-               style="margin-top:10px" />
+             style="margin-top:10px" />
         <br/>
         It's important to use the same identifiers for images, fonts, colors 
         and positions within the <code>ILayoutSetInitializer</code>.                
