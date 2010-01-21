@@ -648,4 +648,33 @@
        ]]>
      </description>
    </entry>
+   
+   <entry category="JFace / Workbench" milestone="M5">
+     <title>
+       IApplication support
+     </title>
+     <description>
+       <![CDATA[
+       With support for <code>IApplication</code>s, you're now able to start
+       a RAP application the same way as it is possible in RCP. This means
+       that you don't need to provide an <code>IEntrypoint</code>
+       implementation.
+       <pre>
+&lt;extension
+  id=&quot;myapp&quot;
+  point=&quot;org.eclipse.core.runtime.applications&quot;&gt;
+    &lt;application visible=&quot;true&quot;&gt;
+      &lt;run class=&quot;org.eclipse.rap.demo.DemoWorkbench&quot;&gt;&lt;/run&gt;
+    &lt;/application&gt;
+&lt;/extension&gt;
+       </pre>
+       As stated in this example, the entrypoint parameter to access the
+       application is equal to the id of the extension. This means the
+       application is available at <i>host:port/rap?startup=myid</i>.
+       In case you want to refer to your application in the branding extension
+       point (eg. as default entrypoint), you have to use the full-qualified
+       name of the extension (eg. org.eclipse.rap.demobundle.myapp).        
+       ]]>
+     </description>
+   </entry>
 </noteworthy>
