@@ -672,8 +672,8 @@
        application is equal to the id of the extension. This means the
        application is available at <i>host:port/rap?startup=myapp</i>.
        In case you want to refer to your application in the branding extension
-       point (eg. as default entrypoint), you have to use the fully-qualified
-       name of the extension (eg. org.eclipse.rap.demobundle.myapp).        
+       point (e.g. as default entrypoint), you have to use the fully-qualified
+       name of the extension (e.g. org.eclipse.rap.demobundle.myapp).        
        ]]>
      </description>
    </entry>
