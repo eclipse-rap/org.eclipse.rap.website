@@ -657,7 +657,7 @@
        <![CDATA[
        With support for <code>IApplication</code>s, you're now able to start
        a RAP application the same way as it is possible in RCP. This means
-       that you don't need to provide an <code>IEntrypoint</code>
+       that you don't need to provide an <code>IEntryPoint</code>
        implementation.
        <pre>
 &lt;extension
@@ -672,7 +672,7 @@
        application is equal to the id of the extension. This means the
        application is available at <i>host:port/rap?startup=myid</i>.
        In case you want to refer to your application in the branding extension
-       point (eg. as default entrypoint), you have to use the full-qualified
+       point (eg. as default entrypoint), you have to use the fully-qualified
        name of the extension (eg. org.eclipse.rap.demobundle.myapp).        
        ]]>
      </description>
