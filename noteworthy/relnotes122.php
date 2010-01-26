@@ -2,7 +2,7 @@
 
 	#
 	# Begin: page-specific settings.  Change these. 
-$pageTitle 		= "RAP Project - 1.2.1 Release Notes";
+$pageTitle 		= "RAP Project - 1.2.2 Release Notes";
 $pageKeywords   = "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
 $pageAuthor		= "R�diger Herrmann";
 
