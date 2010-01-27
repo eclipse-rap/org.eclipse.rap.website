@@ -688,7 +688,7 @@
         <br />
         <ul>          
           <li><code>SWT.ALL</code>, <code>SWT.CHANGED</code> and 
-          <code>SWT.DEFER</code></li> style flags used by Composite layout
+          <code>SWT.DEFER</code> style flags used by Composite layout</li>
           <li><code>Composite#layout( Control[], int )</code></li>          
         </ul>  
         ]]>
