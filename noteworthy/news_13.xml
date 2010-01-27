@@ -684,12 +684,11 @@
      </title>
      <description>
        <![CDATA[            
-        Here is a list of API methods added in this milestone:
+        Here is a list of API added in this milestone:
         <br />
         <ul>          
-          <li><code>SWT.ALL</code>, <code>SWT.CHANGED</code> and 
-          <code>SWT.DEFER</code> style flags used by Composite layout</li>
           <li><code>Composite#layout( Control[], int )</code></li>          
+          <li>MouseEvent#stateMask</li>          
         </ul>  
         ]]>
      </description>
