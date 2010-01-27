@@ -677,4 +677,22 @@
        ]]>
      </description>
    </entry>
+   
+   <entry category="RWT" milestone="M5">
+     <title>
+       New API added
+     </title>
+     <description>
+       <![CDATA[            
+        Here is a list of API methods added in this milestone:
+        <br />
+        <ul>          
+          <li><code>SWT.ALL</code>, <code>SWT.CHANGED</code> and 
+          <code>SWT.DEFER</code></li> style flags used by Composite layout
+          <li><code>Composite#layout( Control[], int )</code></li>          
+        </ul>  
+        ]]>
+     </description>
+   </entry>
+   
 </noteworthy>
