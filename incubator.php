@@ -11,14 +11,13 @@ $html = <<<EOHTML
 
     <h1>RAP Incubator</h1>
     <p>
-      The incubator is a place at RAP where we make
-      interesting / promising developments visible and accessible for the
-      community.
-
+      The incubator is a place at RAP where we make interesting / promising 
+      developments visible and accessible for the community.
+      <br />
       The community can evaluate and use the code by checking it out from CVS.
       Only the developers that contributed the code will take care of
       newsgroup / mailing list questions and bugzilla bugs.
-
+      <br />
       The incubator content is not released with any of the RAP builds!
       If functionality from the incubator is broadly used by the community,
       is mature and meets the necessary quality standards we will move
@@ -141,6 +140,15 @@ $html = <<<EOHTML
       </table>
     </div>
 
+  </div>
+
+  <div id="rightcolumn">
+    <div class="sideitem">
+       <h6>Incubation</h6>
+       <div align="center"><a href="/projects/what-is-incubation.php"><img 
+            align="center" src="/images/egg-incubation.png" 
+            border="0" alt="Incubation" /></a></div>
+     </div>
   </div>
 
 </div>
