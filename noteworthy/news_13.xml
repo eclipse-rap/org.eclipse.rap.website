@@ -687,8 +687,10 @@
         Here is a list of API added in this milestone:
         <br />
         <ul>          
-          <li><code>Composite#layout( Control[], int )</code></li>          
-          <li>MouseEvent#stateMask</li>          
+          <li><code>Composite#layout( Control[], int )</code></li>
+          <li><code>MouseEvent#stateMask</code></li>
+          <li><code>Widget#reskin( int )</code> and 
+              <code>SWT.Skin</code> event</li>
         </ul>  
         ]]>
      </description>
