@@ -48,6 +48,7 @@ $html = <<<EOHTML
      </ul>
     </div>
 
+    <!--
     <div class="sideitem">
       <h6>Upcoming events</h6>
      <ul>
@@ -83,6 +84,7 @@ $html = <<<EOHTML
        </li>
      </ul>
     </div>
+    -->
     
     <div class="sideitem">
      <h6>Quicklinks</h6>
