@@ -143,7 +143,7 @@ $html = <<<EOHTML
     <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
-          <td width="250">
+          <td width="250" valign="top">
             <img src="images/sandbox/google-visualization.png"
               alt="Google Visualization" style="border: 1px solid #666;" />
           </td>
