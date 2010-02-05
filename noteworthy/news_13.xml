@@ -655,7 +655,7 @@
      </title>
      <description>
        <![CDATA[
-       Since M5, there is support for servlet filters in Equinox. See the 
+       Since M5, there is support for Servlet Filters in Equinox. See the 
        <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M5-201001291300/eclipse-news-M5.html#Equinox">
        3.6M5 New &amp; Noteworthy</a> for details.
        ]]>
