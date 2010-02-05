@@ -140,6 +140,42 @@ $html = <<<EOHTML
       </table>
     </div>
 
+    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
+      <table width="750" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td width="250">
+            <img src="images/sandbox/google-visualization.png"
+              alt="Google Visualization" style="border: 1px solid #666;" />
+          </td>
+          <td width="500" valign="top">
+            <h3>Google Visualization</h3>
+            <p>
+              The Google Visualization component provides a simple integration 
+              of all of the Google Visualization widgets as RAP custom widgets:
+              <ul>
+                <li>Motion Chart</li>
+                <li>Annotated Timeline</li>
+                <li>Area Chart</li>
+                <li>Bar Chart</li>
+                <li>Column Chart</li>
+                <li>Gauge</li>
+                <li>Geomap</li>
+                <li>Intensity Map</li>
+                <li>Line Chart</li>
+                <li>Pie Chart</li>
+                <li>Scatter Chart</li>
+                <li>Table</li>
+              </ul>
+            </p>
+            <p>
+              Available in <a href="cvs.php">CVS</a> at
+              incubator/visualization
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
   </div>
 
   <div id="rightcolumn">
