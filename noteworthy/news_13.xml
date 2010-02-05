@@ -742,4 +742,20 @@
      </description>
    </entry>
    
+   <entry category="RWT" milestone="M6">
+     <title>
+       New API added
+     </title>
+     <description>
+       <![CDATA[            
+        Here is a list of API added in this milestone:
+        <br />
+        <ul>          
+          <li><code>Shell#setFullScreen( boolean )</code> and
+              <code>Shell#getFullScreen()</code></li>          
+        </ul>  
+        ]]>
+     </description>
+   </entry>
+   
 </noteworthy>
