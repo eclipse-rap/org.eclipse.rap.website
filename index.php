@@ -48,43 +48,43 @@ $html = <<<EOHTML
      </ul>
     </div>
 
-    <!--
     <div class="sideitem">
       <h6>Upcoming events</h6>
      <ul>
        <li>
-         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Braunschweig/Hanover#Agenda" 
+         <a href="http://www.eclipsecon.org/2010/" 
             target="_blank">
-            DemoCamp Braunschweig/Hanover</a>
-         <span><br />November 25<sup>th</sup> 2009</span>
+            EclipseCon 2010<br />March 22<sup>nd</sup> to 25<sup>th</sup> 2010</a>
+         <span>
+           <ul>
+             <li>What's new in RAP 1.3?</li>
+             <li>Single Sourcing RCP and RAP applications</li>
+           </ul>
+         </span>
+        
        </li>
        <li>
-         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Frankfurt#Presenters" 
+         <a href="http://it-republik.de/jaxenter/jax2010/" 
             target="_blank">
-            DemoCamp Frankfurt</a>
-         <span><br />November 26<sup>th</sup> 2009</span>
+            JAX 2010<br />May 3<sup>rd</sup> to 7<sup>th</sup> 2010</a>
+         <span>
+           <ul>
+             <li>Scale your RAP application!</li>
+           </ul>
+         </span>
        </li>
        <li>
-         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Kaiserslautern#Presenters" 
+         <a href="http://www.andrena.de/ObjektForum/Veranstaltungen/136.html" 
             target="_blank">
-            DemoCamp Kaiserslautern</a>
-         <span><br />November 26<sup>th</sup> 2009</span>
-       </li>
-       <li>
-         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Karlsruhe#Presenters" 
-            target="_blank">
-            DemoCamp Karlsruhe</a>
-         <span><br />December 3<sup>rd</sup> 2009</span>
-       </li>
-       <li>
-         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2009/Hamburg#Presenters" 
-            target="_blank">
-            DemoCamp Hamburg</a>
-         <span><br />December 4<sup>th</sup> 2009</span>
+            objektforum frankfurt a.m.<br />September 7<sup>th</sup> 2010</a>
+         <span>
+           <ul>
+             <li>Single Sourcing in practice</li>
+           </ul>
+         </span>
        </li>
      </ul>
     </div>
-    -->
     
     <div class="sideitem">
      <h6>Quicklinks</h6>
