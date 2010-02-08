@@ -49,7 +49,7 @@ $html = <<<EOHTML
     </div>
 
     <div class="sideitem">
-      <h6>Upcoming events</h6>
+      <h6>Upcoming Events</h6>
      <ul>
        <li>
          <a href="http://www.eclipsecon.org/2010/" 
@@ -57,8 +57,12 @@ $html = <<<EOHTML
             EclipseCon 2010<br />March 22<sup>nd</sup> to 25<sup>th</sup> 2010</a>
          <span>
            <ul>
-             <li>What's new in RAP 1.3?</li>
-             <li>Single Sourcing RCP and RAP applications</li>
+             <li><a href="http://www.eclipsecon.org/2010/sessions/sessions?id=1470">
+               What's new in RAP 1.3?</a></li>
+             <li><a href="http://www.eclipsecon.org/2010/sessions/sessions?id=1464">
+               Single Sourcing RCP and RAP applications</a></li>
+             <li><a href="http://www.eclipsecon.org/2010/sessions/sessions?id=1134">
+               Eclipse to the Rescue</a></li>
            </ul>
          </span>
         
