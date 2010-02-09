@@ -24,10 +24,15 @@ $html = <<<EOHTML
           </li>
           <li>Add a new target definition and initialize it with "nothing".</li>
           <li>On the next page, click <b>Add</b>, choose <b>Software Site</b> </li>
-          <li>On the following page, enter the RAP repository 
-            (http://download.eclipse.org/rt/rap/1.2/runtime-update) in the 
-            <b>Work with</b> field and press enter.</li>
-          <li>Select target to install from the list below.</li> 
+          <li>On the following page, enter the URL to the RAP software repository 
+            in the <b>Work with</b> field and press enter. These repositories are
+            currently available:
+            <li>
+            <b>1.2</b>: http://download.eclipse.org/rt/rap/1.2/runtime-update
+            <b>1.3</b>: http://download.eclipse.org/rt/rap/1.3/runtime
+            </li>   
+            </li>   
+          <li>Select the target to install from the list below.</li> 
           <li>Make sure the checkbox <b>Include required software</b> is <b>not 
             checked</b>.</li>
           <li>Click <b>Finish</b>. After the download is completed, click <b>Finish</b> 
