@@ -765,7 +765,9 @@
         <br />
         <ul>          
           <li><code>Shell#setFullScreen( boolean )</code> and
-              <code>Shell#getFullScreen()</code></li>          
+              <code>Shell#getFullScreen()</code></li>
+          <li><code>Text#setMessage( String )</code> and
+              <code>Text#getMessage()</code></li>
         </ul>  
         ]]>
      </description>
