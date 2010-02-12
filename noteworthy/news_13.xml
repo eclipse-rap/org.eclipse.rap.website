@@ -768,6 +768,8 @@
               <code>Shell#getFullScreen()</code></li>
           <li><code>Text#setMessage( String )</code> and
               <code>Text#getMessage()</code></li>
+          <li><code>TabFolder#getItem( Point )</code></li>
+          <li><code>TabItem#getBounds()</code></li>
           <li><code>Text#setEchoChar( char )</code> and
               <code>Text#getEchoChar()</code></li>
         </ul>  
