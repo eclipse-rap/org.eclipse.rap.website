@@ -144,6 +144,28 @@ $html = <<<EOHTML
       <table width="750" border="0" cellspacing="5" cellpadding="5">
         <tr>
           <td width="250" valign="top">
+            <img src="images/sandbox/upload-widget.png"
+              alt="File Upload Widget" style="border: 1px solid #666;" />
+          </td>
+          <td width="500" valign="top">
+            <h3>Upload Widget</h3>
+            <p>
+            The upload widget allows files to be uploaded to the application 
+            server from the RAP client.
+            </p>
+            <p>
+              Available in <a href="cvs.php">CVS</a> at
+              sandbox/org.eclipse.rwt.widgets.upload
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+    <div style="margin: 10px; padding: 5px; border:2px; border-color:#eee; border-style:solid; width: 750px;">
+      <table width="750" border="0" cellspacing="5" cellpadding="5">
+        <tr>
+          <td width="250" valign="top">
             <img src="images/sandbox/google-visualization.png"
               alt="Google Visualization" style="border: 1px solid #666;" />
           </td>
