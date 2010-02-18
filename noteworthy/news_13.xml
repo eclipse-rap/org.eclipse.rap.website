@@ -774,7 +774,10 @@
               <code>Text#getEchoChar()</code></li>
           <li>To aid singles-ourcing the <code>SWT#SYSTEM_MODAL</code> and 
             <code>SWT#PRIMARY_MODAL</code> styles were introduced. They behave
-            the same as the <code>SWT#APPLICATION_MODAL</code> flag.
+            the same as the <code>SWT#APPLICATION_MODAL</code> flag.</li>
+          <li><code>Control#addMenuDetectListener( MenuDetectListener )</code>, 
+              <code>Control#removeMenuDetectListener( MenuDetectListener )</code>
+              and SWT.MenuDetect event</li>  
         </ul>  
         ]]>
      </description>
