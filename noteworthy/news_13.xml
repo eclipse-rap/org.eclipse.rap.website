@@ -772,12 +772,10 @@
           <li><code>TabItem#getBounds()</code></li>
           <li><code>Text#setEchoChar( char )</code> and
               <code>Text#getEchoChar()</code></li>
-          <li>To aid singles-ourcing the <code>SWT#SYSTEM_MODAL</code> and 
+          <li>To aid single-sourcing the <code>SWT#SYSTEM_MODAL</code> and 
             <code>SWT#PRIMARY_MODAL</code> styles were introduced. They behave
             the same as the <code>SWT#APPLICATION_MODAL</code> flag.</li>
-          <li><code>Control#addMenuDetectListener( MenuDetectListener )</code>, 
-              <code>Control#removeMenuDetectListener( MenuDetectListener )</code>
-              and SWT.MenuDetect event</li>  
+          <li><code>SWT.MenuDetect</code> event and its typed counterpart</li>
         </ul>  
         ]]>
      </description>
