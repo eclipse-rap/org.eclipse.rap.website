@@ -776,6 +776,7 @@
             <code>SWT#PRIMARY_MODAL</code> styles were introduced. They behave
             the same as the <code>SWT#APPLICATION_MODAL</code> flag.</li>
           <li><code>SWT.MenuDetect</code> event and its typed counterpart</li>
+          <li><code>SWT.Arm</code> event and its typed counterpart</li>
         </ul>  
         ]]>
      </description>
