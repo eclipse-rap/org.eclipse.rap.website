@@ -781,5 +781,22 @@
         ]]>
      </description>
    </entry>
+
+   <entry category="RWT" milestone="M6">
+     <title>
+       FontMetrics
+     </title>
+     <description>
+       <![CDATA[
+       In order to increase code-resuse for text measurement from SWT, we
+       introduced the classes <code>GC</code> and <code>FontMetrics</code>.
+       <br />
+       <code>getAverageCharWidth</code>, <code>getHeight</code> from 
+       <code>FontMetrics</code> and <code>getCharWidth</code>, 
+       <code>stringExtent</code>, <code>textExtent</code> from <code>GC</code> 
+       delegate to the respective methods from class <code>Graphics</code>.            
+       ]]>
+     </description>
+   </entry>
    
 </noteworthy>
