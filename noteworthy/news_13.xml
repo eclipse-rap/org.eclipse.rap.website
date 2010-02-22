@@ -777,6 +777,8 @@
             the same as the <code>SWT#APPLICATION_MODAL</code> flag.</li>
           <li><code>SWT.MenuDetect</code> event and its typed counterpart</li>
           <li><code>SWT.Arm</code> event and its typed counterpart</li>
+          <li><code>Tree#getItemHeight()</code></li>
+          <li><code>TreeItem#getTextBounds( int )</code></li>          
         </ul>  
         ]]>
      </description>
