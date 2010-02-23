@@ -816,7 +816,8 @@
          <li><code>MessageDialog#CONFIRM</code> and <code>MessageDialog#open()
            </code></li>
          <li><code>RowLayoutFactory</code> and <code>RowDataFactory</code></li>
-         <li>Enhancements in TableColumnLayout and TreeColumnLayout</li>
+         <li>Enhancements in <code>TableColumnLayout</code> and 
+           <code>TreeColumnLayout</code></li>
          <li><code>ConfigureColumns</code>, a column configuration dialog for 
            trees and tables</li>
          <li><code>ArrayContentProvider#getInstance</code></li>
