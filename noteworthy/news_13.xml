@@ -800,5 +800,31 @@
        ]]>
      </description>
    </entry>
+
+   <entry category="RWT" milestone="M6">
+     <title>
+       JFace 3.6
+     </title>
+     <description>
+       <![CDATA[
+       We adopted the JFace 3.6 code base to make new JFace features available and
+       increase code-reuse between RAP and RCP. Some of the more noteworthy changes 
+       are listed below:
+       <ul>
+         <li><code>PixelConverter</code> and <code>Dialog#convert...</code> 
+           methods to convert between pixels and DLUs and vice versa</code></li>
+         <li><code>MessageDialog#CONFIRM</code> and <code>MessageDialog#open()
+           </code></li>
+         <li><code>RowLayoutFactory</code> and <code>RowDataFactory</code></li>
+         <li>Enhancements in TableColumnLayout and TreeColumnLayout</li>
+         <li><code>ConfigureColumns</code>, a column configuration dialog for 
+           trees and tables</li>
+         <li><code>ArrayContentProvider#getInstance</code></li>
+         <li><code>ICheckStateProvider</code> for tree- and table-viewer with 
+           checkboxes</li>
+       </ul> 
+       ]]>
+     </description>
+   </entry>
    
 </noteworthy>
