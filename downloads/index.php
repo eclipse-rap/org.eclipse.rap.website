@@ -58,25 +58,6 @@ $html = <<<EOHTML
         <br />
       </p>
       
-      <!--
-      <p style="margin: 10px"><b>1.1.2 Service Release</b></p>
-      <p style="margin: 10px 10px 10px 20px">
-        The update site is
-        <br />
-        <b>http://download.eclipse.org/rt/rap/update-site</b>
-        <br />
-        <br />
-        We also provide zipped versions for download
-        <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/rap-sdk-1.1.2-SR2-site-20090218-1359.zip">
-          <img src="../images/icon_save.gif" alt="Update Site Zip"/>
-          &nbsp;&nbsp;
-          rap-sdk-1.1.2-SR2-site-20090218-1359.zip
-        </a>
-        for use with Eclipse 3.3 and 3.4
-      </p>
-      -->
-      
     </div>
 
     <div class="homeitem3col">
@@ -136,19 +117,6 @@ $html = <<<EOHTML
           rap-runtime-1.2.1-R-20090813-1453.zip
         </a>
       </p>
-      
-      <!-- 
-      <p style="margin: 10px"><b>1.1.2 Service Release</b></p>
-      <p style="margin: 10px 10px 10px 20px">
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/rap-1.1.2-SR2-target-3.4-20090218-1212.zip">
-          <img src="../images/icon_save.gif" />
-          &nbsp;&nbsp;
-          rap-1.1.2-SR2-target-3.4-20090218-1212.zip
-        </a>
-        based on Eclipse 3.4 &nbsp;&nbsp;
-        <a href="../noteworthy/relnotes112.php">Release Notes</a>
-      </p>
-      -->
       
     </div>
 
