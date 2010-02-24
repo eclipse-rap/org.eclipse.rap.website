@@ -33,15 +33,27 @@ $html = <<<EOHTML
 	  <h3>RAP Runtime SDK Builds</h3>
 	  <ul>
 
-        <li>RAP 1.3 M4 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M4-20091214-1156.zip">
-            rap-runtime-1.3.0-M4-20091214-1156.zip
-          </a>
-          <br />
-          <a href="http://www.eclipse.org/rap/noteworthy/news_13M4.php">
-            New &amp; Noteworthy
-          </a>
-        </li>
+      <!--
+      <li>RAP 1.3 M5 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-tooling-1.3.0-M5-20100201-1240.zip">
+          rap-tooling-1.3.0-M5-20100201-1240.zip
+        </a>
+        <br />
+        <a href="http://www.eclipse.org/rap/noteworthy/news_13M5.php">
+          New &amp; Noteworthy
+        </a>
+      </li>
+      -->
+
+      <li>RAP 1.3 M4 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M4-20091214-1156.zip">
+          rap-runtime-1.3.0-M4-20091214-1156.zip
+        </a>
+        <br />
+        <a href="http://www.eclipse.org/rap/noteworthy/news_13M4.php">
+          New &amp; Noteworthy
+        </a>
+      </li>
 
 	    <li>RAP 1.3 M3 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
           <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M3-20091110-1732.zip">
@@ -71,6 +83,14 @@ $html = <<<EOHTML
           <a href="http://www.eclipse.org/rap/noteworthy/news_13M1.php">
             New &amp; Noteworthy
           </a>
+        </li>
+
+        <li>RAP 1.2.1 service release, based on Eclipse 3.5&nbsp;&nbsp;
+          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.1-R-20090813-1453.zip">
+            rap-runtime-1.2.1-R-20090813-1453.zip
+          </a>
+          <br />
+          <a href="../noteworthy/relnotes121.php">New &amp; Noteworthy</a>
         </li>
 
         <li>RAP 1.2 release, based on Eclipse 3.5&nbsp;&nbsp;
