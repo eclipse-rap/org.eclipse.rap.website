@@ -59,7 +59,7 @@ $html = <<<EOHTML
 		<br />
         We also provide a zipped version for download:
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-tooling-1.2.2-R-20100126-1129.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-tooling-1.2.2-R-20100126-1129.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
           rap-tooling-1.2.2-R-20100126-1129.zip
