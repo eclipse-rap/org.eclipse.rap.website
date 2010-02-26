@@ -44,12 +44,12 @@ $html = <<<EOHTML
         </a>
       </p>
 
-      <p style="margin: 10px"><b>1.2.1 Service Release</b></p>
+      <p style="margin: 10px"><b>1.2.2 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest stable version, for use with Eclipse 3.4 and 3.5.
         <br />
         <a href="../noteworthy/news_12.php">New &amp; Noteworthy</a>,
-        <a href="../noteworthy/relnotes121.php">Service Release Notes</a>
+        <a href="../noteworthy/relnotes122.php">Service Release Notes</a>
         <br />
         <br />
         The update site is
@@ -96,12 +96,12 @@ $html = <<<EOHTML
         </a>
       </p>
 
-      <p style="margin: 10px"><b>1.2.1 Service Release</b></p>
+      <p style="margin: 10px"><b>1.2.2 Service Release</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest stable version, based on Eclipse 3.5.
         <br />
         <a href="../noteworthy/news_12.php">New &amp; Noteworthy</a>,
-        <a href="../noteworthy/relnotes121.php">Service Release Notes</a>
+        <a href="../noteworthy/relnotes122.php">Service Release Notes</a>
         <br />
         <br />
         The update site is
@@ -111,10 +111,10 @@ $html = <<<EOHTML
         <br />
         We also provide a zipped version for download:
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.1-R-20090813-1453.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.2-R-20100126-1119.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-          rap-runtime-1.2.1-R-20090813-1453.zip
+          rap-runtime-1.2.2-R-20100126-1119.zip
         </a>
       </p>
       
