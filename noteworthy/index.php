@@ -30,18 +30,10 @@ $html = <<<EOHTML
         <p />        
       </li>
       <li><a href="relnotes122.php">RAP 1.2.2 Service Release</a>
-        <p style="margin-top: 5px">
-          A summary of the improvements in the 1.2.2 service release which 
-          will be available on February 26<sup>th</sup>, 2010.
-          <br />
-          In the meanwhile the changes can be obtained from 
-          <a href="http://www.eclipse.org/rap/cvs.php">CVS</a> in branch 
-          <code>v12_Maintenance</code>.
-          <!--
+        <p style="margin-top: 5px">          
           A summary of the improvements in the 1.2.2 service release 
           (February 26<sup>th</sup>, 2010) which is availble for
           <a href="http://www.eclipse.org/rap/downloads/archive.php">download</a>.
-          -->
         </p>        
       </li>
       <li><a href="relnotes121.php">RAP 1.2.1 Service Release</a>

@@ -20,14 +20,14 @@ $html = <<<EOHTML
   This list</a> shows all bugs that were fixed in this service release.
   </p>
   <p>
+  <!--
   The service release will be availble on February 26<sup>th</sup>, 2010. 
   In the meanwhile the changes can be obtained from 
   <a href="http://www.eclipse.org/rap/cvs.php">CVS</a> in branch 
   <code>v12_Maintenance</code>.
-  <!--
-  The service release is now available for
-  <a href="http://www.eclipse.org/rap/downloads">download</a>.
   -->
+  The service release is now available for
+  <a href="http://www.eclipse.org/rap/downloads">download</a>.  
   </p>
 </div>
 
