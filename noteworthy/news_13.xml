@@ -828,4 +828,18 @@
      </description>
    </entry>
    
+   <entry category="JFace / Workbench" milestone="M6">
+     <title>
+       Forms 3.6
+     </title>
+     <description>
+       <![CDATA[
+       We adopted the Forms 3.6 code base too. New API added:
+       <ul>         
+         <li><code>MasterDetailsBlock#createContent( IManagedForm, Composite )</code></li>
+       </ul> 
+       ]]>
+     </description>
+   </entry>
+   
 </noteworthy>
