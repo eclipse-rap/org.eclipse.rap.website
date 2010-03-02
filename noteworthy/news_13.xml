@@ -779,14 +779,14 @@
           <li><code>SWT.Arm</code> event and its typed counterpart</li>
           <li><code>Tree#getItemHeight()</code></li>
           <li><code>TreeItem#getTextBounds( int )</code></li>
-          <li><code>CLabel#setMargins( int, int, int, int )</code>,
-              <code>CLabel#setMarginLeft( int )</code>,
-              <code>CLabel#getMarginLeft()</code>,
-              <code>CLabel#setMarginTop( int )</code>,
-              <code>CLabel#getMarginTop()</code>,
-              <code>CLabel#setMarginRight( int )</code>,
-              <code>CLabel#getMarginRight()</code>,
-              <code>CLabel#setMarginBottom( int )</code>,
+          <li><code>CLabel#setMargins( int, int, int, int )</code>,<br/>
+              <code>CLabel#setMarginLeft( int )</code>,<br/>
+              <code>CLabel#getMarginLeft()</code>,<br/>
+              <code>CLabel#setMarginTop( int )</code>,<br/>
+              <code>CLabel#getMarginTop()</code>,<br/>
+              <code>CLabel#setMarginRight( int )</code>,<br/>
+              <code>CLabel#getMarginRight()</code>,<br/>
+              <code>CLabel#setMarginBottom( int )</code>,<br/>
               <code>CLabel#getMarginBottom()</code></li>
         </ul>  
         ]]>
