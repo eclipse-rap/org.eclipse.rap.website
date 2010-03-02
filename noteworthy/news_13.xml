@@ -778,7 +778,16 @@
           <li><code>SWT.MenuDetect</code> event and its typed counterpart</li>
           <li><code>SWT.Arm</code> event and its typed counterpart</li>
           <li><code>Tree#getItemHeight()</code></li>
-          <li><code>TreeItem#getTextBounds( int )</code></li>          
+          <li><code>TreeItem#getTextBounds( int )</code></li>
+          <li><code>CLabel#setMargins( int, int, int, int )</code>,
+              <code>CLabel#setMarginLeft( int )</code>,
+              <code>CLabel#getMarginLeft()</code>,
+              <code>CLabel#setMarginTop( int )</code>,
+              <code>CLabel#getMarginTop()</code>,
+              <code>CLabel#setMarginRight( int )</code>,
+              <code>CLabel#getMarginRight()</code>,
+              <code>CLabel#setMarginBottom( int )</code>,
+              <code>CLabel#getMarginBottom()</code></li>
         </ul>  
         ]]>
      </description>
