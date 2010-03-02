@@ -788,6 +788,7 @@
               <code>CLabel#getMarginRight()</code>,<br/>
               <code>CLabel#setMarginBottom( int )</code>,<br/>
               <code>CLabel#getMarginBottom()</code></li>
+           <li><code>Device#getFontList( String, boolean )</code></li>
         </ul>  
         ]]>
      </description>
