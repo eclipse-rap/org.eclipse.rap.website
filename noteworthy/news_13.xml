@@ -789,6 +789,7 @@
               <code>CLabel#setMarginBottom( int )</code>,<br/>
               <code>CLabel#getMarginBottom()</code></li>
            <li><code>Device#getFontList( String, boolean )</code></li>
+           <li><code>Spinner#setDigits( int )</code></li>
         </ul>  
         ]]>
      </description>
