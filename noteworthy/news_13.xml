@@ -790,6 +790,10 @@
               <code>CLabel#getMarginBottom()</code></li>
            <li><code>Device#getFontList( String, boolean )</code></li>
            <li><code>Spinner#setDigits( int )</code></li>
+           <li><code>Display#setAppName( String )</code> and
+               <code>Display#getAppName()</code></li>
+           <li><code>Display#setAppVersion( String )</code> and
+               <code>Display#getAppVersion()</code></li>
         </ul>  
         ]]>
      </description>
