@@ -857,4 +857,27 @@
      </description>
    </entry>
    
+      <entry category="Look &amp; Feel" milestone="M6">
+     <title>
+       View contribution item visibility
+     </title>
+     <description>
+       <![CDATA[
+       We have extended the branding to make all view contribution items visible 
+       by default while using one of the 
+       <a href="http://eclipsesource.com/blogs/2009/09/02/new-fancy-rich-ajax-platform-rap-theme/">
+       new designs</a>. The <code>presentationFactory</code> subelement of the 
+       <code>org.eclipse.rap.ui.branding</code> extension point got a new 
+       attribute called <code>viewActionsVisible</code>. The value of this
+       attribute is <code>false</code> by default. So, all view contribution
+       items are invisble to provide a cleaner UI. When changing this value to
+       <code>true</code>, all items will be visible and the 
+       <a href="http://www.eclipse.org/rap/noteworthy/news_13M2.php#Look%20&%20Feel">
+       configuration menu</a> will be disabled.
+       <br/>
+       <img style="margin-top:10px; margin-bottom:10px" src="viewActionVisibility.png" />
+       ]]>
+     </description>
+   </entry>
+   
 </noteworthy>
