@@ -857,7 +857,7 @@
      </description>
    </entry>
    
-      <entry category="Look &amp; Feel" milestone="M6">
+   <entry category="Look &amp; Feel" milestone="M6">
      <title>
        View contribution item visibility
      </title>
@@ -876,6 +876,28 @@
        configuration menu</a> will be disabled.
        <br/>
        <img style="margin-top:10px; margin-bottom:10px" src="viewActionVisibility.png" />
+       ]]>
+     </description>
+   </entry>
+   
+   <entry category="Tooling" milestone="M6">
+     <title>
+       Styled RAP Templates
+     </title>
+     <description>
+       <![CDATA[
+       We have added the new designs and themes to the RAP templates. The old 
+       templates made usage of the default theme. We changed this for two of
+       the three existing RAP templates. The following changes were made:
+       <ul>
+         <li><b>RAP Application with a view</b> uses the 
+         <a href="http://eclipsesource.com/blogs/2009/11/20/advanced-rap-theming/">
+         fancy theme</a> now.</li>
+         <li><b>RAP Maildemo</b> uses the 
+         <a href="http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
+         business design</a> now.</li>
+       </ul>  
+       The <b>Hello World</b> template still uses the default theme.
        ]]>
      </description>
    </entry>
