@@ -895,4 +895,18 @@
      </description>
    </entry>
    
+   <entry category="EMF" milestone="M6">
+     <title>
+       EMF support for RAP
+     </title>
+     <description>
+       <![CDATA[
+       We are proud to announce that <a href="http://www.eclipse.org/emf">EMF</a>
+       now provides RAP support out of the box. To see how it works, please refer
+       to this <a href="http://wiki.eclipse.org/RAP/EMF_Integration">wiki page</a>.
+       <br/>
+       <img style="margin-top:10px; margin-bottom:10px" src="emf_rap.png" />
+       ]]>
+     </description>
+   </entry>
 </noteworthy>
