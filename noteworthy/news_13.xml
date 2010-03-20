@@ -895,9 +895,9 @@
      </description>
    </entry>
    
-   <entry category="EMF" milestone="M6">
+   <entry category="Other Projects" milestone="M6">
      <title>
-       EMF support for RAP
+       EMF on RAP
      </title>
      <description>
        <![CDATA[
@@ -906,6 +906,21 @@
        to this <a href="http://wiki.eclipse.org/RAP/EMF_Integration">wiki page</a>.
        <br/>
        <img style="margin-top:10px; margin-bottom:10px" src="emf_rap.png" />
+       ]]>
+     </description>
+   </entry>
+
+   <entry category="Other Projects" milestone="M6">
+     <title>
+       Riena on RAP
+     </title>
+     <description>
+       <![CDATA[
+       We are happy to announce, that initial support to run Riena on RAP 
+       has been provided by the Riena team. Please see 
+       <a href="http://eclipsesource.com/blogs/2010/02/20/riena-meets-eclipse-rap-goes-to-browser/">this blog</a>
+       and the <a href="http://wiki.eclipse.org/Riena_on_RAP">Riena on RAP</a>
+       wiki page for further details.
        ]]>
      </description>
    </entry>
