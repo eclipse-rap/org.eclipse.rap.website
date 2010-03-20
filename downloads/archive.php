@@ -34,8 +34,8 @@ $html = <<<EOHTML
 	  <ul>
 
       <li>RAP 1.3 M5 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-tooling-1.3.0-M5-20100201-1240.zip">
-          rap-tooling-1.3.0-M5-20100201-1240.zip
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M5-20100201-1223.zip">
+          rap-runtime-1.3.0-M5-20100201-1223.zip
         </a>
         <br />
         <a href="http://www.eclipse.org/rap/noteworthy/news_13M5.php">
