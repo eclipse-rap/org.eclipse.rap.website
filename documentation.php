@@ -81,7 +81,7 @@ $html = <<<EOHTML
         Understanding Layouts in SWT</a>
       </li>
     </ul>
-    <h4>JFace</h4>
+    <h4>JFace and Databinding</h4>
     <ul>
       <li>
         <a href="http://www.eclipse.org/articles/Article-TreeViewer/TreeViewerArticle.htm">
@@ -90,6 +90,19 @@ $html = <<<EOHTML
       <li>
         <a href="http://www.eclipse.org/articles/article.php?file=Article-JFaceWizards/index.html">
         Creating JFace Wizards</a>
+      </li>
+      <li>
+        Databinding
+        <a href="http://wiki.eclipse.org/index.php/JFace_Data_Binding">
+          Overview Page
+        </a>,
+        <a href="http://wiki.eclipse.org/JFace_Data_Binding_FAQ">
+          FAQ
+        </a>
+        and
+        <a href="http://wiki.eclipse.org/JFace_Data_Binding/Snippets">
+          Code Snippets
+        </a>
       </li>
     </ul>
     <h4>Workbench</h4>
