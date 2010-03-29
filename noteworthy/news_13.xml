@@ -942,4 +942,19 @@
      </description>
    </entry>
 
+   <entry category="RWT" milestone="M7">
+     <title>
+       Theme Contributions
+     </title>
+     <description>
+       <![CDATA[
+       Is is now possible to contribute CSS code to existing themes using the
+       extension point <code>org.eclipse.rap.ui.themes</code>.
+       This way, plug-in developers can easily add CSS rules for their controls
+       without the need to copy and extend an existing theme.
+       <br/>
+       <img style="margin-top:10px; margin-bottom:10px" src="ThemeContributions.png" />
+       ]]>
+     </description>
+   </entry>
 </noteworthy>
