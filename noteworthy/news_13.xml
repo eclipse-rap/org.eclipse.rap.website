@@ -926,4 +926,20 @@
        ]]>
      </description>
    </entry>
+
+   <entry category="RWT" milestone="M7">
+     <title>
+       SWT API implemented
+     </title>
+     <description>
+       <![CDATA[            
+        Here is a list of SWT API that was implemented in this milestone:
+        <br />
+        <ul>          
+          <li><code>Device#getDPI()</code></li>
+        </ul>  
+        ]]>
+     </description>
+   </entry>
+
 </noteworthy>
