@@ -69,6 +69,10 @@ $html = <<<EOHTML
         <a href="http://www.eclipse.org/equinox/server/http_quickstart.php">
         Equinox Server-side Quickstart</a>
       </li>
+      <li>
+        <a href="http://www.eclipse.org/equinox-portal/tutorials/server-side/">
+        Building a Server-based Application with Equinox</a>
+      </li>
     </ul>
     <h4>SWT</h4>
     <ul>
