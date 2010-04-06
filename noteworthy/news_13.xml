@@ -937,6 +937,8 @@
         <br />
         <ul>          
           <li><code>Device#getDPI()</code></li>
+          <li><code>SWT#CURSOR_NO</code> and <code>SWT#CURSOR_APPSTARTING</code>
+            </li>
         </ul>  
         ]]>
      </description>
