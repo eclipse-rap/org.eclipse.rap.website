@@ -935,10 +935,10 @@
        <![CDATA[            
         Here is a list of SWT API that was implemented in this milestone:
         <br />
-        <ul>          
+        <ul>
           <li><code>Device#getDPI()</code></li>
-          <li><code>SWT#CURSOR_NO</code> and <code>SWT#CURSOR_APPSTARTING</code>
-            </li>
+          <li><code>Display#beep()</code></li>
+          <li><code>SWT#CURSOR_NO</code> and <code>SWT#CURSOR_APPSTARTING</code></li>
         </ul>  
         ]]>
      </description>
