@@ -960,4 +960,58 @@
        ]]>
      </description>
    </entry>
+
+   <entry category="RWT" milestone="M7">
+     <title>
+       Theme Extensions
+     </title>
+     <description>
+       <![CDATA[
+       The theming was extended in serveral places
+       <ul>
+       <li>
+       The Shell has a new themeable element called <code>Shell-DisplayOverlay</code>. 
+       When a modal shell with is opened, there is a usually invisible 
+       element that is blocking all user-interactions with what is behind the 
+       shell. This "overlay" can now be themed to visualize this behaviour, using 
+       a semi-transparent background-color or image.
+       <br />
+       For example:
+       <pre> 
+       Shell-DisplayOverlay {
+         background-image: none;
+         background-color: #000000;
+         opacity: 0.5;
+       }
+       </pre>
+       <br />
+       <img src="modal.png" style="margin-top: 10px; margin-bottom: 10px" />
+       </li>
+       <li>
+       We introduced the "opacity"-property on the following widgets:
+       <br />
+       <code>Label</code>, <code>CLabel</code>, <code>Composite</code>, 
+       <code>Menu</code>, <code>Menuitem</code>, <code>ToolBar, 
+       <code>ToolItem</code>, <code>ToolTip</code> and
+       <code>ProgressBar-Indicator</code>
+       <br />
+       <img src="opacity.png" style="margin-top: 10px; margin-bottom: 10px" />
+       <br />
+       this is an easy way to achieve semi-transparency. Be aware that there are 
+       currently two unresolved issues regarding its use in Internet Explorer:
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=302713">Bug 302713</a>
+       and 
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=303603">Bug 303603</a>
+       <br />
+       In some cases those can trigger minor graphical glitches.
+       </li>
+       <li>
+       The Combo and CCombo widgets now have a styleable FocusIndicator like Button.
+       </li>
+       <li>
+       - The Text widget now supports backgroundGradient.       
+       </li>
+       ]]>
+     </description>
+   </entry>
 </noteworthy>
