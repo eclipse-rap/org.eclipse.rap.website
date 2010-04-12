@@ -978,11 +978,11 @@
        <br />
        For example:
        <pre> 
-       Shell-DisplayOverlay {
-         background-image: none;
-         background-color: #000000;
-         opacity: 0.5;
-       }
+  Shell-DisplayOverlay {
+    background-image: none;
+    background-color: #000000;
+    opacity: 0.5;
+  }
        </pre>
        <br />
        <img src="modal.png" style="margin-top: 10px; margin-bottom: 10px" />
