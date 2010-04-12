@@ -997,7 +997,7 @@
        <br />
        <img src="opacity.png" style="margin-top: 10px; margin-bottom: 10px" />
        <br />
-       this is an easy way to achieve semi-transparency. Be aware that there are 
+       This is an easy way to achieve semi-transparency. Be aware that there are 
        currently two unresolved issues regarding its use in Internet Explorer:
        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=302713">Bug 302713</a>
        and 
