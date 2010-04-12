@@ -991,7 +991,7 @@
        We introduced the "opacity"-property on the following widgets:
        <br />
        <code>Label</code>, <code>CLabel</code>, <code>Composite</code>, 
-       <code>Menu</code>, <code>Menuitem</code>, <code>ToolBar, 
+       <code>Menu</code>, <code>Menuitem</code>, <code>ToolBar</code>, 
        <code>ToolItem</code>, <code>ToolTip</code> and
        <code>ProgressBar-Indicator</code>
        <br />
