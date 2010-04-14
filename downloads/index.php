@@ -47,7 +47,7 @@ $html = <<<EOHTML
         Since 1.3 M6, the Eclipse Packaging Project also offers
         the <strong>Eclipse for RCP/RAP Developers</strong> package from its 
         <a href="http://eclipse.org/downloads/packages/release/helios/m6">
-        download page<a>
+        download page</a>
         <br />
         It is a complete set of tools for developers who want to create Eclipse 
         plug-ins, Rich Client or Rich Ajax Applications (RCP+RAP).
