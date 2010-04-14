@@ -42,6 +42,15 @@ $html = <<<EOHTML
           &nbsp;&nbsp;
           rap-tooling-1.3.0-M6-20100316-1924.zip
         </a>
+        <br />
+        <br />
+        Since 1.3 M6, the Eclipse Packaging Project also offers
+        the <strong>Eclipse for RCP/RAP Developers</strong> package from its 
+        <a href="http://eclipse.org/downloads/packages/release/helios/m6">
+        download page<a>
+        <br />
+        It is a complete set of tools for developers who want to create Eclipse 
+        plug-ins, Rich Client or Rich Ajax Applications (RCP+RAP).
       </p>
 
       <p style="margin: 10px"><b>1.2.2 Service Release</b></p>
