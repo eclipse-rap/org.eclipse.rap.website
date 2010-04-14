@@ -1025,7 +1025,7 @@
        The Combo and CCombo widgets now have a styleable FocusIndicator like Button.
        </li>
        <li>
-       - The Text widget now supports backgroundGradient.       
+       The Text widget now supports backgroundGradient.       
        </li>
        ]]>
      </description>
