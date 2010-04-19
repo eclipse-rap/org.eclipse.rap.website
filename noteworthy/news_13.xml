@@ -968,12 +968,28 @@
      </title>
      <description>
        <![CDATA[
-       Is is now possible to contribute CSS code to existing themes using the
+       It is now possible to contribute CSS code to existing themes using the
        extension point <code>org.eclipse.rap.ui.themes</code>.
        This way, plug-in developers can easily add CSS rules for their controls
        without the need to copy and extend an existing theme.
        <br/>
        <img style="margin-top:10px; margin-bottom:10px" src="ThemeContributions.png" />
+       ]]>
+     </description>
+   </entry>
+   
+   <entry category="RWT" milestone="M7">
+     <title>
+       ServiceHandlers
+     </title>
+     <description>
+       <![CDATA[
+       It is now possible to contribute ServiceHandles via extensions using the
+       extension point <code>org.eclipse.rap.ui.serviceHandler</code>.
+       This way, plug-in developers can easily declare ServiceHandlers 
+       instead of register them programmtically.
+       <br/>
+       <img style="margin-top:10px; margin-bottom:10px" src="ServiceHandlerExt.png" />
        ]]>
      </description>
    </entry>
