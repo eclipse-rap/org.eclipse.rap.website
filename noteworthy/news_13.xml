@@ -1023,7 +1023,7 @@
        <img src="modal.png" style="margin-top: 10px; margin-bottom: 10px" />
        </li>
        <li>
-       We introduced the "opacity"-property on the following widgets:
+       We introduced the <code>opacity</code>-property on the following widgets:
        <br />
        <code>Label</code>, <code>CLabel</code>, <code>Composite</code>, 
        <code>Menu</code>, <code>Menuitem</code>, <code>ToolBar</code>, 
