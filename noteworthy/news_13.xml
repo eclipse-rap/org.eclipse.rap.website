@@ -985,10 +985,11 @@
      </title>
      <description>
        <![CDATA[
-       It is now possible to contribute ServiceHandles via extensions using the
-       extension point <code>org.eclipse.rap.ui.serviceHandler</code>.
+       It is now possible to contribute <code>ServiceHandler</code>s via 
+       extensions using the extension point
+       <code>org.eclipse.rap.ui.serviceHandler</code>.
        This way, plug-in developers can easily declare ServiceHandlers 
-       instead of register them programmtically.
+       instead of registering them programmtically.
        <br/>
        <img style="margin-top:10px; margin-bottom:10px" src="ServiceHandlerExt.png" />
        ]]>
