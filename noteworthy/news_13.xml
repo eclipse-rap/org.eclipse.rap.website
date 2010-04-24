@@ -955,6 +955,7 @@
           <li><code>Device#getDPI()</code></li>
           <li><code>Device#getDepth()</code></li>
           <li><code>Display#beep()</code></li>
+          <li><code>Image#getBackground()</code></li>
           <li><code>Image#setBackground()</code></li>
           <li><code>SWT#CURSOR_NO</code> and <code>SWT#CURSOR_APPSTARTING</code></li>
           <li><code>SWT#getVersion()</code></li>
