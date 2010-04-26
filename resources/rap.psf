@@ -8,7 +8,9 @@
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt/org.eclipse.rap.rwt,org.eclipse.rap.rwt"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt/org.eclipse.rap.rwt.q07,org.eclipse.rap.rwt.q07"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt.test/org.eclipse.rap.rwt.q07.test,org.eclipse.rap.rwt.q07.test"/>
+<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt.test/org.eclipse.rap.rwt.q07.jstest,org.eclipse.rap.rwt.q07.jstest"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt.test/org.eclipse.rap.rwt.test,org.eclipse.rap.rwt.test"/>
+<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt.test/org.eclipse.rap.rwt.themes.test,org.eclipse.rap.rwt.themes.test"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt.test/org.eclipse.rap.rwt.test.mockup,org.eclipse.rap.rwt.test.mockup"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt.test/org.eclipse.rap.rwt.testfixture,org.eclipse.rap.rwt.testfixture"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.rap/runtime.rwt.test/org.eclipse.rwt.test.all,org.eclipse.rwt.test.all"/>
