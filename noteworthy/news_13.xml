@@ -959,6 +959,7 @@
           <li><code>Image#setBackground()</code></li>
           <li><code>SWT#CURSOR_NO</code> and <code>SWT#CURSOR_APPSTARTING</code></li>
           <li><code>SWT#getVersion()</code></li>
+          <li><code>Display#findDisplay()</code></li>
         </ul>  
         ]]>
      </description>
