@@ -1048,6 +1048,42 @@
        <li>
        The Text widget now supports backgroundGradient.       
        </li>
+       <li>
+       Tables with alternating row colors, combined with vertical-only grid 
+       lines are a common design that was so far not supported by RAP. With 
+       the introduction of the <code>vertical</code> and <code>horizontal</code>
+       states for the <code>Table-GridLine</code>-element, this is now possible:
+       <pre>
+  Table-GridLine {
+    color: #d0d0d0;
+  }
+
+  Table-GridLine:horizontal {
+    color: transparent;
+  }
+       </pre>
+       <br />
+       <img src="table-vertical-lines.png" style="margin-top: 10px; margin-bottom: 10px" />
+       </li>
+       <li>
+       We now support animations as part of the theming. They allow for simple 
+       transition-effects to create a more organic user-experience. Currently 
+       only a few widgets (<code>Button</code>, <code>ToolItem</code>, 
+       <code>ToolTip</code>, <code>Shell-DisplayOverlay</code>,
+       <code>Menu</code>) and effects are available, but you can likely expect 
+       more in the future. The API is a subset of the 
+       <a href="http://www.w3.org/TR/css3-animations">CSS3 Working Draft for 
+       animations</a>. To define one animation you need three values, and you 
+       can define several per widget. 
+       <br />
+       For example, to create an animated hover-effect for buttons, the syntax 
+       could look like this:
+       <pre>
+  Button : {
+    animation: hoverIn 200ms linear, hoverOut 500ms ease-out;
+  }
+       </pre>
+       </li>
        ]]>
      </description>
    </entry>
