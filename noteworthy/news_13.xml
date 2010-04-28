@@ -961,6 +961,7 @@
           <li><code>SWT#getVersion()</code></li>
           <li><code>Display#findDisplay()</code></li>
           <li><code>Display#getSyncThread()</code></li>
+          <li><code>Display#getCursorControl()</code></li>
         </ul>  
         ]]>
      </description>
