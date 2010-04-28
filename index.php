@@ -52,25 +52,15 @@ $html = <<<EOHTML
       <h6>Upcoming Events</h6>
      <ul>
        <li>
-         <a href="http://www.eclipsecon.org/2010/" 
-            target="_blank">
-            EclipseCon 2010<br />March 22<sup>nd</sup> to 25<sup>th</sup> 2010</a>
-         <span>
-           <ul>
-             <li>What's new in RAP 1.3?</a></li>
-             <li>Single Sourcing RCP and RAP applications</li>
-             <li>Eclipse to the Rescue</li>
-           </ul>
-         </span>
-        
-       </li>
-       <li>
          <a href="http://it-republik.de/jaxenter/jax2010/" 
             target="_blank">
             JAX 2010<br />May 3<sup>rd</sup> to 7<sup>th</sup> 2010</a>
          <span>
            <ul>
-             <li>Scale your RAP application!</li>
+             <li><a href="http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=jax2010&id=13825">
+               Single Sourcing Applications with Eclipse RCP and RAP</a></li>
+             <li><a href="http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=jax2010&id=13722">
+               Scale your RAP application!</a></li>
            </ul>
          </span>
        </li>
