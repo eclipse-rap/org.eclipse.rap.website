@@ -1072,13 +1072,14 @@
        transition-effects to create a more organic user-experience. Currently 
        only a few widgets (<code>Button</code>, <code>ToolItem</code>, 
        <code>ToolTip</code>, <code>Shell-DisplayOverlay</code>,
-       <code>Menu</code>) and effects are available, but you can likely expect 
-       more in the future. The API is a subset of the 
+       <code>Menu</code>) and effects are available, but you can expect
+       more in the future. The API is a subset of the
        <a href="http://www.w3.org/TR/css3-animations">CSS3 Working Draft for 
-       animations</a>. To define one animation you need three values, and you 
-       can define several per widget. 
+       animations</a>. To define an animation you need to set three values
+       (effect, duration, and timing function) and you can define several per
+       widget.
        <br />
-       For example, to create an animated hover-effect for buttons, the syntax 
+       For example, to create an animated hover-effect for buttons, the syntax
        could look like this:
        <pre>
   Button : {
@@ -1096,9 +1097,9 @@
      </title>
      <description>
        <![CDATA[
-       A subset of the graphics context (GC) that is known from SWT is now
-       available in RAP. It can be used in conjunction with the <code>Canvas</code>
-       widget for basic drawing:
+       A subset of the graphics context (GC) from SWT is now available in RAP.
+       It can be used for basic drawing on the the <code>Canvas</code> widget:
+       <br/>
        <pre>
   Canvas canvas = new Canvas( parent, SWT.NONE );
   canvas.addPaintListener( new PaintListener() {
@@ -1108,11 +1109,15 @@
     }
   } );
        </pre>
-       <br/>
        <img style="margin-top:10px; margin-bottom:10px" src="gc.png" />
        <br/>
-       To see the graphics context in action, go to the 
-       <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>
+       The graphics are rendered on HTML5 Canvas on the client, for Internet
+       Explorer, a VML-based (vector-graphics) emulation is used.
+       The performance on IE may degrade drastically when the number of shapes
+       drawn exceeds a limit of about 500.
+       <br/>
+       To see the graphics context in action, try out the Canvas page in the
+       <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>.
        ]]>
      </description>
    </entry>
