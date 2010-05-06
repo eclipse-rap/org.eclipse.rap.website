@@ -33,8 +33,18 @@ $html = <<<EOHTML
 	  <h3>RAP Runtime SDK Builds</h3>
 	  <ul>
 
+      <li>RAP 1.3 M6 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
+        <a href="http://archive.eclipse.org/rt/rap/1.3/rap-runtime-1.3.0-M6-20100316-1859.zip">
+          rap-runtime-1.3.0-M6-20100316-1859.zip
+        </a>
+        <br />
+        <a href="http://www.eclipse.org/rap/noteworthy/news_13M6.php">
+          New &amp; Noteworthy
+        </a>
+      </li>
+
       <li>RAP 1.3 M5 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M5-20100201-1223.zip">
+        <a href="http://archive.eclipse.org/rt/rap/1.3/rap-runtime-1.3.0-M5-20100201-1223.zip">
           rap-runtime-1.3.0-M5-20100201-1223.zip
         </a>
         <br />
@@ -44,7 +54,7 @@ $html = <<<EOHTML
       </li>
 
       <li>RAP 1.3 M4 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M4-20091214-1156.zip">
+        <a href="http://archive.eclipse.org/rt/rap/1.3/rap-runtime-1.3.0-M4-20091214-1156.zip">
           rap-runtime-1.3.0-M4-20091214-1156.zip
         </a>
         <br />
@@ -54,7 +64,7 @@ $html = <<<EOHTML
       </li>
 
 	    <li>RAP 1.3 M3 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M3-20091110-1732.zip">
+          <a href="http://archive.eclipse.org/rt/rap/1.3/rap-runtime-1.3.0-M3-20091110-1732.zip">
             rap-runtime-1.3.0-M3-20091110-1732.zip 
           </a>
           <br />
@@ -64,7 +74,7 @@ $html = <<<EOHTML
         </li>
 
 	    <li>RAP 1.3 M2 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M2-20090929-1121.zip">
+          <a href="http://archive.eclipse.org/rt/rap/1.3/rap-runtime-1.3.0-M2-20090929-1121.zip">
             rap-runtime-1.3.0-M2-20090929-1121.zip
           </a>
           <br />
@@ -74,7 +84,7 @@ $html = <<<EOHTML
         </li>
 
 	    <li>RAP 1.3 M1 milestone build, based on Eclipse 3.6&nbsp;&nbsp;
-          <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-M1-20090817-1725.zip">
+          <a href="http://archive.eclipse.org/rt/rap/1.3/rap-runtime-1.3.0-M1-20090817-1725.zip">
             rap-runtime-1.3.0-M1-20090817-1725.zip
           </a>
           <br />
