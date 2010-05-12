@@ -14,7 +14,8 @@ $html = <<<EOHTML
       <li><strong>RAP 1.3 Milestone Builds</strong>
         <p style="margin-top: 5px">
           Listed are the more noteworthy things that will be available in the 
-          respective milestone builds towards version 1.3.
+          respective milestone builds towards version 1.3 (June 23<sup>rd</sup> 
+          2010).
           <ul>
             <li><a href="news_13RC.php">Release Candidates</a></li>
             <li><a href="news_13M7.php">M7 (May 4<sup>th</sup>, 2010)</a></li>
