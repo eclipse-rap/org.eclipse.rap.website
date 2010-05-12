@@ -14,7 +14,8 @@ $html = <<<EOHTML
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=RAP&target_milestone=1.3+RC1&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
       This list</a> shows all bugs that were fixed in the RC1 build
       which will be available on May 21<sup>st</sup> 2010.
-      Meanwhile, all features listed here can be obtained from
+      <br />
+      In the meanwhile, all features listed here can be obtained from
       <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
       <!--
       which is now available for
@@ -27,7 +28,8 @@ $html = <<<EOHTML
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=RAP&target_milestone=1.3+RC2&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
       This list</a> shows all bugs that were fixed in the RC2 build
       which will be available on May 28<sup>th</sup> 2010.
-      Meanwhile, all features listed here can be obtained from
+      <br />
+      In the meanwhile, all features listed here can be obtained from
       <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
       <!--
       which is now available for
@@ -40,7 +42,8 @@ $html = <<<EOHTML
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=RAP&target_milestone=1.3+RC3&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
       This list</a> shows all bugs that were fixed in the RC3 build
       which will be available on June 4<sup>th</sup> 2010.
-      Meanwhile, all features listed here can be obtained from
+      <br />
+      In the meanwhile, all features listed here can be obtained from
       <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
       <!--
       which is now available for
@@ -53,7 +56,8 @@ $html = <<<EOHTML
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=RAP&target_milestone=1.3+RC4&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
       This list</a> shows all bugs that were fixed in the RC4 build
       which will be available on June 11<sup>th</sup> 2010.
-      Meanwhile, all features listed here can be obtained from
+      <br />
+      In the meanwhile, all features listed here can be obtained from
       <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
       <!--
       which is now available for
