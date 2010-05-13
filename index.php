@@ -62,17 +62,16 @@ $html = <<<EOHTML
          </span>
        </li>
        <li>
-         <a href="http://jazoon.com" 
-            target="_blank">
-            Jazoon, Z&uuml;rich<br />June 1<sup>st</sup> 2010</a>
+         <a href="http://jazoon.com" target="_blank">
+            Jazoon, Z&uuml;rich<br />June 1<sup>st</sup> - 3<sup>rd</sup> 2010</a>
          <span>
            <ul>
-             <li><a href="http://jazoon.com/Conference/Wednesday/Muskalla">
+             <li><a href="http://jazoon.com/Conference/Wednesday/Muskalla" target="_blank">
                Analyze Heapdumps in a Web Browser - Single Sourcing in Practice
                </a></li>
            </ul>
            <ul>
-             <li><a href="http://jazoon.com/Conference/Thursday/Muskalla">
+             <li><a href="http://jazoon.com/Conference/Thursday/Muskalla" target="_blank">
                "Single Sourcing RCP and RAP" - Desktop and web clients from a 
                single code base
                </a></li>
