@@ -54,7 +54,7 @@ $html = <<<EOHTML
        <li>
          <a href="http://www.andrena.de/veranstaltungen/single-sourcing-in-practice-desktop-and-web-clients-from-a-single-code-base" 
             target="_blank">
-            objektforum frankfurt a.m.<br />September 7<sup>th</sup> 2010</a>
+            ObjektForum Frankfurt a.M.<br />September 7<sup>th</sup> 2010</a>
          <span>
            <ul>
              <li>Single Sourcing in practice</li>
