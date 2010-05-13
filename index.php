@@ -52,7 +52,7 @@ $html = <<<EOHTML
       <h6>Upcoming Events</h6>
      <ul>
        <li>
-         <a href="http://www.andrena.de/ObjektForum/Veranstaltungen/136.html" 
+         <a href="http://www.andrena.de/veranstaltungen/single-sourcing-in-practice-desktop-and-web-clients-from-a-single-code-base" 
             target="_blank">
             objektforum frankfurt a.m.<br />September 7<sup>th</sup> 2010</a>
          <span>
