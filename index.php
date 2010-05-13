@@ -52,25 +52,30 @@ $html = <<<EOHTML
       <h6>Upcoming Events</h6>
      <ul>
        <li>
-         <a href="http://it-republik.de/jaxenter/jax2010/" 
-            target="_blank">
-            JAX 2010<br />May 3<sup>rd</sup> to 7<sup>th</sup> 2010</a>
-         <span>
-           <ul>
-             <li><a href="http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=jax2010&id=13825">
-               Single Sourcing Applications with Eclipse RCP and RAP</a></li>
-             <li><a href="http://entwickler.com/konferenzen/ext_scripts/v2/php/sessions-popup.php?module=jax2010&id=13722">
-               Scale your RAP application!</a></li>
-           </ul>
-         </span>
-       </li>
-       <li>
          <a href="http://www.andrena.de/ObjektForum/Veranstaltungen/136.html" 
             target="_blank">
             objektforum frankfurt a.m.<br />September 7<sup>th</sup> 2010</a>
          <span>
            <ul>
              <li>Single Sourcing in practice</li>
+           </ul>
+         </span>
+       </li>
+       <li>
+         <a href="http://jazoon.com" 
+            target="_blank">
+            Jazoon, Z&uuml;rich<br />June 1<sup>st</sup> 2010</a>
+         <span>
+           <ul>
+             <li><a href="http://jazoon.com/Conference/Wednesday/Muskalla">
+               Analyze Heapdumps in a Web Browser - Single Sourcing in Practice
+               </a></li>
+           </ul>
+           <ul>
+             <li><a href="http://jazoon.com/Conference/Thursday/Muskalla">
+               "Single Sourcing RCP and RAP" - Desktop and web clients from a 
+               single code base
+               </a></li>
            </ul>
          </span>
        </li>
