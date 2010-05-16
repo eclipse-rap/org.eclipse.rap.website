@@ -6,7 +6,7 @@
 
   #
   # Begin: page-specific settings.  Change these. 
-$pageTitle    = "RAP Project - CVS";
+$pageTitle    = "RAP Project - Souce Code";
 $pageKeywords = "AJAX, rap, w4t, eclipse rap";
 $pageAuthor   = "Frank Appel";
 
