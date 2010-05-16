@@ -27,8 +27,10 @@ $html = <<<EOHTML
     <h3>Developer Guide (Help Center)</h3>
     <p>
       This is the official help for RAP. It is included in your Eclipse help if
-      you installed the RAP Tooling, but it can also be accessed
-      <a href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html">online</a>.
+      you installed the RAP Tooling.  
+      Help for the latest release can also be accessed 
+      <a href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html">
+      online</a>.
     </p>
     <p>
       The developer guide shows how to develop RAP applications and also covers
