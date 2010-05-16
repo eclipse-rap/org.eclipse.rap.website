@@ -16,8 +16,7 @@ $html = <<<EOHTML
       <h3>RAP Tooling</h3>
       <p style="margin: 10px">
         The most convenient way to get RAP is the <strong>Eclipse for 
-        RCP/Plug-in Developers</strong> package from the Eclipse Packaging 
-        Project.
+        RCP/Plug-in Developers</strong> package.
         The
         <a href="http://eclipse.org/downloads/packages/release/helios/m7">
         1.3 M7 download page</a>
