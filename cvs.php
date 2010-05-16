@@ -20,9 +20,9 @@ $html = <<<EOHTML
   <div class="homeitem3col">
     <h3>Browse CVS</h3>
     <p style="margin:10px">
-      You can browse the sources online with 
+      You can browse the sources 
       <a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.rap/?root=RT_Project">
-      this web interface</a>.
+      on the web</a>.
     </p>
   
     <h3>CVS Checkout</h3>
