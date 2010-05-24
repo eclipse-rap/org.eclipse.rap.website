@@ -23,7 +23,7 @@ $html = <<<EOHTML
         application.
       </p>
 
-      <p style="margin: 10px"><b>1.3 RC1 Build</b></p>
+      <p style="margin: 10px"><b>1.3 RC2 Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest 1.3 release candidate build, for use with Eclipse 3.5 and 3.6.
         <br />
@@ -37,10 +37,10 @@ $html = <<<EOHTML
         <br />
         We also provide a zipped version for download:
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-tooling-1.3.0-RC1-20100518-1248.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-tooling-1.3.0-RC2-20100523-2330.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-          rap-tooling-1.3.0-RC1-20100518-1248.zip
+          rap-tooling-1.3.0-RC2-20100523-2330.zip
         </a>
         <br />
         <br />
@@ -81,7 +81,7 @@ $html = <<<EOHTML
         the Eclipse IDE.        
       </p>
 
-      <p style="margin: 10px"><b>1.3 RC1 Build</b></p>
+      <p style="margin: 10px"><b>1.3 RC2 Build</b></p>
       <p style="margin: 10px 10px 10px 20px">
         The latest release candidate build, based on Eclipse 3.6.
         <br />
@@ -95,10 +95,10 @@ $html = <<<EOHTML
         <br />
         We also provide a zipped version for download:
         <br />
-        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-RC1-20100518-1222.zip">
+        <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/rap-runtime-1.3.0-RC2-20100523-2301.zip">
           <img src="../images/icon_save.gif" />
           &nbsp;&nbsp;
-           rap-runtime-1.3.0-RC1-20100518-1222.zip
+           rap-runtime-1.3.0-RC2-20100523-2301.zip
         </a>
       </p>
 
