@@ -87,9 +87,9 @@ $html = <<<EOHTML
       target platform. See the <a href="runtime-install.php">Target
       Installation</a> page for a description on how to work with the target
       platform.
-      <br />
-      The RAP Runtime is a target platform, do not try to install it into
-      the Eclipse IDE.
+    </p>
+    <p style="border: 2px solid red; margin: 5px; padding: 5px;">
+      This a target platform, do not try to install it into the Eclipse IDE!
     </p>
 
     <p style="margin: 10px"><b>1.3 RC2 Build</b></p>
