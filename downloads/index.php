@@ -16,30 +16,33 @@ $html = <<<EOHTML
   <div class="homeitem3col">
     <p>
       The most convenient way to get RAP is the <strong>Eclipse for
-      RCP/Plug-in Developers</strong> package from the
+      RCP and RAP Developers</strong> package from the
       <a href="http://eclipse.org/downloads/?tab=developer">Helios Development 
         Builds download page</a>.
       This IDE already includes everything you need to develop RCP and RAP
       applications.
     </p>
     <p>
-      <img src="../images/rcp-epp.png"/>
+      <a href="http://eclipse.org/downloads/?tab=developer">
+        <img src="../images/rcp-epp.png"/>
+      </a>
     </p>
   </div>
 
   <div class="homeitem3col">
     <h3>RAP Tooling</h3>
     <p style="margin: 10px">
-      The RAP Tooling contains useful tools, templates and documentation.
-      It also installs the RAP Runtime SDK which is included.
+      The RAP Tooling contains useful tools, templates and documentation for RAP
+      developers.
+      It also installs the RAP target platform which is included.
       See the <a href="../gettingstarted.php">Getting Started Guide</a>
       for a description on how to install RAP and build your first RAP
       application.
     </p>
 
-      <p style="margin: 10px"><b>1.3 RC2 Build</b></p>
+    <p style="margin: 10px"><b>1.3 RC2 Build</b></p>
     <p style="margin: 10px 10px 10px 20px">
-        The latest 1.3 release candidate build, for use with Eclipse 3.5 and 3.6.
+      The latest 1.3 release candidate build, for use with Eclipse 3.5 and 3.6.
       <br />
         <a href="../noteworthy/news_13RC.php">New &amp; Noteworthy</a>
       <br />
@@ -80,8 +83,8 @@ $html = <<<EOHTML
       This contains the RAP runtime, including sources and a simple demo
       application. Note that this is already included in the RAP Tooling.
       <br />
-      To develop RAP applications you need to set the RAP Runtime SDK as your
-      target platform. See the <a href="runtime-install.php">Runtime SDK
+      To develop RAP applications you need to set the RAP runtime as your
+      target platform. See the <a href="runtime-install.php">Target
       Installation</a> page for a description on how to work with the target
       platform.
       <br />
@@ -89,9 +92,9 @@ $html = <<<EOHTML
       the Eclipse IDE.
     </p>
 
-      <p style="margin: 10px"><b>1.3 RC2 Build</b></p>
+    <p style="margin: 10px"><b>1.3 RC2 Build</b></p>
     <p style="margin: 10px 10px 10px 20px">
-        The latest release candidate build, based on Eclipse 3.6.
+      The latest release candidate build, based on Eclipse 3.6.
       <br />
         <a href="../noteworthy/news_13RC.php">New &amp; Noteworthy</a>
       <br />
@@ -152,7 +155,7 @@ $html = <<<EOHTML
                </td>
              </tr>
              <tr>
-               <td>RAP 1.1 and older versions</td>
+               <td>Older RAP versions and archived builds</td>
              </tr>
            </table>
          </td>

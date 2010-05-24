@@ -93,8 +93,8 @@
       <p>
         In addition, we provide the RAP Tooling which contains useful tools,
         templates and documentation.
-        It simplifies the installation of the RAP Runtime SDK and the launching
-        of RAP applications from Eclipse.
+        It simplifies the installation of the RAP target platform and the
+        launching of RAP applications from Eclipse.
         You can download the RAP Tooling from the download section on the
         left to get right started.
         A user guide is part of the Tooling and can also be accessed

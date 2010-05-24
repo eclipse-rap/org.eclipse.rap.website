@@ -8,7 +8,7 @@ $pageAuthor		= "Jochen Krause";
 $html = <<<EOHTML
 <div id="maincontent">
   <div id="midcolumn">
-  <h1>Eclipse Rich Ajax Platform Home</h1>
+  <h1>Eclipse Rich Ajax Platform</h1>
     <p align="center">
       <img src="images/screens.png" width="500" height="248" border="0"/>
     </p>  
