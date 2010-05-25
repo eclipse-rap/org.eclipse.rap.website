@@ -89,7 +89,7 @@ $html = <<<EOHTML
       platform.
     </p>
     <p style="border: 2px solid red; margin: 5px; padding: 5px;">
-      This a target platform, do not try to install it into the Eclipse IDE!
+      This is a target platform, do not try to install it into the Eclipse IDE!
     </p>
 
     <p style="margin: 10px"><b>1.3 RC2 Build</b></p>
