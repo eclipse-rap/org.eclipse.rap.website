@@ -58,7 +58,7 @@
        <![CDATA[
             This will make it easier for the community to reuse existing code or
         to utilize new features.
-        Here is a list of API methods added in this milestone:
+        Here is a list of API methods added in M1:
         <br />
         <ul>
           <li><code>ActionFactory#RESET_PERSPECTIVE</code></li>
@@ -204,7 +204,7 @@
      </title>
      <description>
        <![CDATA[
-            Here is a list of API methods added in this milestone:
+            Here is a list of API methods added in M2:
         <br />
         <ul>            
           <li><code>Text#getCaretPosition()</code></li>
@@ -362,7 +362,7 @@
      </title>
      <description>
        <![CDATA[
-        Here is a list of API methods added in this milestone:
+        Here is a list of API methods added in M3 :
         <br />
         <ul>            
           <li><code>Display#addListener()</code> and 
@@ -459,8 +459,8 @@
        design e.g. the support for standalone views was added.<br/>
        <img style="margin-top:10px; margin-bottom:10px" src="fancyStandaloneView.png" />
        <br/>
-       A great deal of the bugs and enhancement requests fixed in this
-       milestone are related to design and theming.
+       A great deal of the bugs and enhancement requests fixed in 
+       M3 are related to design and theming.
        ]]>
      </description>
    </entry>
@@ -513,7 +513,7 @@
      </title>
      <description>
        <![CDATA[
-        Here is a list of new API that was added in this milestone:
+        Here is a list of new API that was added in M4:
         <br />
         <ul>
           <li><code>Text#getText( int, int )</code></li>
@@ -697,7 +697,7 @@
      </title>
      <description>
        <![CDATA[            
-        Here is a list of API added in this milestone:
+        Here is a list of API added in M5:
         <br />
         <ul>          
           <li><code>Composite#layout( Control[], int )</code></li>
@@ -761,7 +761,7 @@
      </title>
      <description>
        <![CDATA[            
-        Here is a list of API added in this milestone:
+        Here is a list of API added in M6:
         <br />
         <ul>          
           <li><code>Shell#setFullScreen( boolean )</code> and
@@ -949,7 +949,7 @@
      </title>
      <description>
        <![CDATA[            
-        Here is a list of SWT API that was implemented in this milestone:
+        Here is a list of SWT API that was implemented in M7:
         <br />
         <ul>
           <li><code>Device#getDPI()</code></li>
