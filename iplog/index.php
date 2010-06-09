@@ -29,6 +29,7 @@
       <h3>IP Logs For Past Releases</h3>
       <p>The following are approved IP logs for past RAP project releases.</p>
       <ul>
+        <li><a href="rap-1.3.pdf">Helios (1.3) (pdf)</a></li>
         <li><a href="rap-1.2.html">Galileo (1.2)</a></li>
         <!--
           <li><a href="../rap-ip.log">Ganymede (1.1)</a></li>
