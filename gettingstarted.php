@@ -8,9 +8,7 @@
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "RAP Project - Getting Started";
 	$pageKeywords	= "RAP, Eclipse";
-	$pageAuthor		= "Jochen Krause";
-		
-	include("_sideCommon.php");
+	$pageAuthor		= "Jochen Krause";	
 		
 	$html = <<<EOHTML
 

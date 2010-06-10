@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+img.browser {
+  padding-right: 20px;
+}
+
+#midcolumn {
+	width: 640px;
+	padding: 0 10px 10px 10px;
+}
+
+#rightcolumn {
+	width: 260px;
+}
+
+
+h3 {
+	clear: both;
+}
+
+h7 {
+	font-weight: bold;
+	padding: 5px;
+}
+
+a strong {
+	text-decoration: underline;
+}
+
+
+#novaContent {
+	background: url("images/backgroundMain.png") no-repeat white;
+	padding-top: 170px;
+}
+
+	
+#bigbuttons {
+	position: relative;
+	left: 420px;
+	top: -170px;
+	width: 300px;
+}
+#bigbuttons h3{
+	visibility: hidden;
+}
+
+#bigbuttons a {
+}
+
+#bigbuttons ul li {
+   display:block;
+   list-style-type:none;
+   background-color: red;
+   padding: 0;
+   margin: 0;
+}
+
+#bigbuttons a:hover {
+	text-decoration: none;
+}
+
+#bigbuttons a {
+   display: block;
+   height:77px; width:250px;
+   padding: 0;
+   margin: 20px;
+   text-indent: -9000px;
+   position: absolute;
+}
+
+#buttonDownload {
+   background:transparent url("images/buttonDownload.png") no-repeat 0 0;
+   top: 0px;
+   left: 0px;
+}
+
+   
+#buttonDocumentation {
+   background:transparent url("images/buttonDocumentation.png") no-repeat 0 0;
+   top: 87px;
+   left: 0px;
+}
+
+#buttonSupport {
+   background:transparent url("images/buttonSupport.png") no-repeat 0 0;
+   top: 0px;
+   left: 280px;
+}
+
+#buttonInvolved {
+   background:transparent url("images/buttonInvolved.png") no-repeat 0 0;
+   top: 87px;
+   left: 280px;
+}
+
+#bigbuttons a * {
+	visibility: hidden;
+}

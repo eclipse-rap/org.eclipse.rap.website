@@ -26,7 +26,6 @@ EOBRANDING;
   $Nav->addCustomNav("About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=rt.rap", "_self", 0);
 
   $Nav->addNavSeparator("RAP", "/rap/index.php");
-  $Nav->addCustomNav("Introduction", "/rap/introduction.php", "_self", 1);
   $Nav->addCustomNav("Demos", "/rap/demos.php", "_self", 1);
   $Nav->addCustomNav("Get Started", "/rap/gettingstarted.php",	"_self", 1);
 
@@ -34,16 +33,23 @@ EOBRANDING;
   $Nav->addCustomNav("Downloads", "/rap/downloads/", "_self", 1);
   $Nav->addCustomNav("Source Code", "/rap/cvs.php", "_self", 1);
 
-  $Nav->addNavSeparator("Resources", "/rap/noteworthy/", "_self", 1);
-  $Nav->addCustomNav("New &amp; Noteworthy", "/rap/noteworthy/", "_self", 1);
+  $Nav->addNavSeparator("Resources", "/rap/documentation.php", "_self", 1);
   $Nav->addCustomNav("Documentation", "/rap/documentation.php", "_self", 1);
+  $Nav->addCustomNav("New &amp; Noteworthy", "/rap/noteworthy/", "_self", 1);
   $Nav->addCustomNav("Get Help", "/rap/support.php", "_self", 1);
   $Nav->addCustomNav("Project Plan", "http://www.eclipse.org/projects/project-plan.php?projectid=rt.rap", "_self", 1);	
 
-  $Nav->addNavSeparator("Development", "/rap/bugs.php", "_self", 1);
+  $Nav->addNavSeparator("Development", "/rap/contribute.php", "_self", 1);
+  $Nav->addCustomNav("Contribute", "/rap/contribute.php", "_self", 1);
   $Nav->addCustomNav("Bugs", "/rap/bugs.php", "_self", 1);
   $Nav->addCustomNav("Incubator", "/rap/incubator.php", "_self", 1);
-  $Nav->addCustomNav("Contribute", "/rap/contribute.php", "_self", 1);
+  
+  $Menu->setMenuItemList(array());
+  $Menu->addMenuItem("Home", "/rap", "_self");
+  $Menu->addMenuItem("Demos", "/rap/demos.php", "_self");
+  $Menu->addMenuItem("Documentation", "/rap/documentation.php", "_self");
+  $Menu->addMenuItem("Support", "/rap/support.php", "_self");
+  $Menu->addMenuItem("Wiki", "http://wiki.eclipse.org/RAP", "_self");
 
   $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
 ?>
