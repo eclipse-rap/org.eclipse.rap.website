@@ -35,5 +35,5 @@
   $Menu->addMenuItem( "Support", "/rap/support.php", "_self" );
   $Menu->addMenuItem( "Wiki", "http://wiki.eclipse.org/RAP", "_self" );
 
-  $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
+//  $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
 ?>
