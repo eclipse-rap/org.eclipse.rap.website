@@ -1,0 +1,151 @@
+@CHARSET "UTF-8";
+
+#novaContent {
+  position: relative;
+}
+
+#big-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 978px;
+  height: 193px;
+  background: url( "images/backgroundMain.jpg" ) no-repeat white;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+#rap-logo {
+  position: absolute;
+  left: 58px;
+  top: 35px;
+  width: 313px;
+  height: 136px;
+  background: url( "images/RAP-Logo.png" ) no-repeat;
+}
+
+#rap-big-buttons {
+  position: absolute;
+  left: 420px;
+  top: 0px;
+  width: 520px;
+  height: 150px;
+}
+
+#rap-big-buttons h3 {
+  visibility: hidden;
+}
+
+#rap-big-buttons ul li {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rap-big-buttons a {
+  position: absolute;
+  width: 250px;
+  height: 77px;
+  display: block;
+  padding: 0;
+  margin: 20px;
+}
+
+#rap-big-buttons a h4 {
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: bold;
+  color: #333; 
+  padding: 0;
+  margin: 12px 10px 4px 70px;
+}
+
+#rap-big-buttons a p {
+  font-size: 13px;
+  line-height: 14px;
+  font-weight: normal;
+  color: #444;
+  padding: 0;
+  margin: 4px 10px 5px 70px;
+}
+
+#rap-big-buttons a:hover {
+  text-decoration: none;
+}
+
+#rap-big-buttons a:hover h4 {
+  text-decoration: underline;
+}
+
+#rap-big-buttons div.rap-button-icon {
+  position: absolute;
+  left: 12px;
+  top: 13px;
+  width: 50px;
+  height: 50px;
+}
+
+#rap-button-download {
+  left: 0px;
+  top: 0px;
+  background: transparent url( "images/buttons.png" ) no-repeat 0 0;
+}
+
+#rap-button-download:hover {
+  background: transparent url( "images/buttons.png" ) no-repeat -250px 0;
+}
+
+#rap-button-download div.rap-button-icon {
+  background: transparent url( "images/button-icons.png" ) no-repeat 0 0;
+}
+ 
+#rap-button-documentation {
+  left: 0px;
+  top: 87px;
+  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
+}
+
+#rap-button-documentation:hover {
+  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
+}
+
+#rap-button-documentation div.rap-button-icon {
+  background: transparent url( "images/button-icons.png" ) no-repeat -50px 0;
+}
+
+#rap-button-support {
+  left: 280px;
+  top: 0px;
+  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
+}
+
+#rap-button-support:hover {
+  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
+}
+
+#rap-button-support div.rap-button-icon {
+  background: transparent url( "images/button-icons.png" ) no-repeat -100px 0;
+}
+
+#rap-button-involved {
+  left: 280px;
+  top: 87px;
+  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
+}
+
+#rap-button-involved:hover {
+  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
+}
+
+#rap-button-involved div.rap-button-icon {
+  background: transparent url( "images/button-icons.png" ) no-repeat -150px 0;
+}
+
+#midcolumn {
+  width: 640px;
+  padding: 20px;
+}
+
+#rightcolumn {
+  padding-top: 20px;
+}
