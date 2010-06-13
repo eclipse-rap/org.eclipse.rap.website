@@ -3,8 +3,6 @@
 # See the Committer Tools "How Do I" for list of themes
 # https://dev.eclipse.org/committers/ 
 
-  $theme = "Nova";
-
   $Nav->setLinkList( array() );
 
   $Nav->addCustomNav( "About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=rt.rap", "_self", 0 );
@@ -35,5 +33,24 @@
   $Menu->addMenuItem( "Support", "/rap/support.php", "_self" );
   $Menu->addMenuItem( "Wiki", "http://wiki.eclipse.org/RAP", "_self" );
 
+  $App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes.css"/>' );
+
 //  $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
+
+  function createRapNavigation( $Nav ) {
+    $html = <<<EOHTML
+<div id="rap-small-header">
+  <a href="/rap/"><div id="rap-small-logo"></div></a>
+</div>
+EOHTML;
+    return $html;
+  }
+
+  function generateRapPage( $App, $Menu, $Nav, $author, $keywords, $title, $html )
+  {
+    $theme = "Nova";
+    $pageHtml = createRapNavigation( $Nav ) . $html;
+    $App->generatePage( $theme, $Menu, $Nav, $author, $keywords, $title, $pageHtml );
+  }
+
 ?>

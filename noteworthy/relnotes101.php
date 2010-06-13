@@ -4,11 +4,10 @@
 	# Begin: page-specific settings.  Change these. 
 $pageTitle 		= "RAP Project - 1.0.1 Release Notes";
 $pageKeywords	= "AJAX, rap, w4t, eclipse rap";
-$pageAuthor		= "Rüdiger Herrmann";
+$pageAuthor		= "Rï¿½diger Herrmann";
 
 	# Paste your HTML content between the EOHTML markers!	
 $html = <<<EOHTML
-
 <div id="midcolumn">
   <h1>1.0.1 Release Notes</h1>
   <p>
@@ -109,5 +108,5 @@ EOHTML;
 
 
 	# Generate the web page
-$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>

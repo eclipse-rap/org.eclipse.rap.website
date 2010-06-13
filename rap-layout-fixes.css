@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+#novaContent {
+  position: relative;
+}
+
+/* Fix horizontal position of the top-left Eclipse logo */
+div#logo {
+  position: relative;
+  top: 10px;
+}
+
+/* Increase font size */
+div, span, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{
+  font-size: 13px;
+  line-height: 16px;
+}
+
+/* RAP logo in side navigation */
+
+#rap-small-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 184px;
+  height: 80px;
+}
+
+#rap-small-logo {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 152px;
+  height: 67px;
+  background: url( "/rap/images/RAP-Logo-small.png" ) no-repeat 0 0;
+}
+
+#leftnav {
+  margin-top: 55px;
+  padding-left: 8px;
+}

@@ -9,8 +9,6 @@ $Menu = new Menu();
 
 include( $App->getProjectCommon() );
 
-# Begin: page-specific settings.  Change these.
-
 $pageTitle = "Rich Ajax Platform (RAP)";
 $pageKeywords = "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
 $pageAuthor = "Jochen Krause";
@@ -21,6 +19,6 @@ $Nav = null; // delete right side navigation
 
 $App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-big-header.css"/>' );
 
-$App->generatePage( $theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
+generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
 
 ?>

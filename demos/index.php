@@ -1,17 +1,16 @@
 <?php
 
 require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php" );
-require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php" );
 require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php" );
+require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php" );
 
 $App = new App();
-$Nav = new Nav();
 $Menu = new Menu();
+$Nav = new Nav();
 include( $App->getProjectCommon() );
 
-# Begin: page-specific settings.  Change these.
-$pageTitle = "RAP Project - Downloads";
-$pageKeywords = "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
+$pageTitle = "RAP Project - Demos";
+$pageKeywords = "Ajax, rap, w4t, eclipse rap";
 $pageAuthor = "Jochen Krause";
 
 $html = file_get_contents( '_index.html' );

@@ -33,5 +33,5 @@ $news = new Noteworthy( 'news_13.xml', 'M2', $header, $footer );
 $html = $news->getHtml();
 
 # Generate the web page
-$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
