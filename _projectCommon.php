@@ -7,8 +7,7 @@
 
   $Nav->addCustomNav( "About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=rt.rap", "_self", 0 );
 
-  $Nav->addNavSeparator( "RAP", "/rap/index.php" );
-  $Nav->addCustomNav( "Demos", "/rap/demos.php", "_self", 1 );
+  $Nav->addCustomNav( "Demos", "/rap/demos/", "_self", 1 );
   $Nav->addCustomNav( "Get Started", "/rap/gettingstarted.php",	"_self", 1 );
 
   $Nav->addNavSeparator( "Get RAP", "/rap/downloads/", "_self", 1 );
@@ -27,8 +26,8 @@
   $Nav->addCustomNav( "Incubator", "/rap/incubator.php", "_self", 1 );
 
   $Menu->setMenuItemList( array() );
-  $Menu->addMenuItem( "Home", "/rap", "_self" );
-  $Menu->addMenuItem( "Demos", "/rap/demos.php", "_self" );
+  $Menu->addMenuItem( "Home", "/rap/", "_self" );
+  $Menu->addMenuItem( "Demos", "/rap/demos/", "_self" );
   $Menu->addMenuItem( "Documentation", "/rap/documentation.php", "_self" );
   $Menu->addMenuItem( "Support", "/rap/support.php", "_self" );
   $Menu->addMenuItem( "Wiki", "http://wiki.eclipse.org/RAP", "_self" );
