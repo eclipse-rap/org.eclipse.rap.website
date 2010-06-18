@@ -20,7 +20,7 @@ $html = <<<EOHTML
       Bugzilla query</a> 
     lists all issues that were fixed in this service release which is now 
     available for 
-    <a href="http://www.eclipse.org/rap/downloads">download</a>.
+    <a href="http://www.eclipse.org/rap/downloads/">download</a>.
   </p>
   <p>
     For a list of features that were added during the 1.1 development cycle,

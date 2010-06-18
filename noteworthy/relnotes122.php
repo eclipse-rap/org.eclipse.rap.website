@@ -27,7 +27,7 @@ $html = <<<EOHTML
   <code>v12_Maintenance</code>.
   -->
   The service release is now available for
-  <a href="http://www.eclipse.org/rap/downloads">download</a>.  
+  <a href="http://www.eclipse.org/rap/downloads/">download</a>.  
   </p>
 </div>
 

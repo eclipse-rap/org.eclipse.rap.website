@@ -13,7 +13,7 @@ $html = <<<EOHTML
   <h1>1.1.2 Release Notes</h1>
   <p>
     The 1.1.2 service release is now available for
-    <a href="http://www.eclipse.org/rap/downloads">download</a>.
+    <a href="http://www.eclipse.org/rap/downloads/">download</a>.
   </p>
 
   <p>

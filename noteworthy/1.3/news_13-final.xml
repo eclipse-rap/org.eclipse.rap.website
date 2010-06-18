@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1" ?>
 <!--
- Copyright (c) 2009 EclipseSource and others.
+ Copyright (c) 2009, 2010 EclipseSource and others.
  All rights reserved. This program and the accompanying materials
  are made available under the terms of the Eclipse Public License v1.0
  which accompanies this distribution, and is available at
@@ -20,7 +20,7 @@
         client-side.
         Of course, this works with all browsers supported by RAP.
         <br/>
-        <img src="GradientsAndRoundedBorders.png" 
+        <img src="images/GradientsAndRoundedBorders.png" 
           style="margin-top: 10px; margin-bottom: 10px" />
         <br />
         For gradients we followed the CSS syntax
@@ -50,38 +50,195 @@
      </description>
    </entry>
    
-   <entry category="RWT" milestone="M1">
+   <entry category="RWT">
      <title>
        New API added
      </title>
      <description>
        <![CDATA[
-            This will make it easier for the community to reuse existing code or
-        to utilize new features.
-        Here is a list of API methods added in M1:
-        <br />
+        A large set of missing SWT API has been added.
+        This will make it easier to reuse existing code or to utilize new
+        features.
+        This list is just a selection:
         <ul>
-          <li><code>ActionFactory#RESET_PERSPECTIVE</code></li>
-          <li><code>Combo#getSelection()</code> and
-              <code>Combo#setTextLimit()</code></li>
-          <li><code>Composite#setLayoutDeferred( boolean )</code></li>
-          <li><code>CTabFolder#setUnselectedImageVisible( boolean )</code> and
-              <code>CTabFolder#setSelectionBackground( Color[],int[] )</code>
+          <li>
+            <code>
+              <b>Widget:</b>
+              getListeners(int),
+              isListening(int),
+              reskin(int)</code> (and <code>SWT.Skin</code> event)
           </li>
-          <li><code>Display#getSystemCursor( int )</code></li>
-          <li><code>List#getTopIndex</code> and
-              <code>List#setTopIndex</code></li>
-          <li><code>List#showSelection()</code></li>
-          <li><code>ProgressBar#setState()</code></li>
-          <li><code>Shell#setModified( boolean )</code></li>
-          <li><code>Spinner#getText()</code>,
-              <code>Spinner#getTextLimit()</code> and
-              <code>Spinner#setTextLimit( int )</code></li>
-          <li><code>SWT.TOOL</code> style flag for <code>Shell</code></li>
-          <li><code>ToolBar#getItem( Point )</code></li>
-          <li><code>Widget#getListeners( int )</code> and
-              <code>Widget#isListening( int )</code></li>
-        </ul>  
+          <li>
+            <code>
+              <b>Control:</b>
+              update(),
+              isReparentable(),
+              setParent()
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>Composite:</b>
+              layout(Control[], int),
+              setLayoutDeferred(boolean)
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>Device:</b>
+              getDPI(),
+              getFontList(String, boolean),
+              getDepth()
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>Display:</b>
+              beep(),
+              close(),
+              disposeExec(),
+              getSystemCursor(int),
+              getCursorLocation(),
+              update(),
+              addListener(),
+              removeListener()
+              getAppName(),
+              setAppName(String),
+              getAppVersion(),
+              setAppVersion(String),
+              findDisplay(),
+              getSyncThread(),
+              getCursorControl()
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>SWT:</b>
+              getVersion(),</code>
+              style flags <code>TOOL, SHEET, CURSOR_NO, CURSOR_APPSTARTING,
+              SYSTEM_MODAL,</code> and <code>PRIMARY_MODAL,</code>
+              events <code>MenuDetect, Arm</code> and its typed counterparts
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>Shell:</b>
+              </code> default constructor,<code>
+              setImages(Image[]),
+              getImages(),
+              getMinimumSize(),
+              setMinimumSize(int, int),
+              setMinimumSize(Point),
+              setFullScreen(boolean),
+              getFullScreen(),
+              setModified(boolean)
+            </code>
+          </li>
+          <li> 
+            <code>
+              <b>Tree:</b>
+              select(TreeItem),
+              deselect(TreeItem),
+              getItemHeight(),
+              TreeItem#getTextBounds(int)
+            </code>
+          </li>    
+          <li>
+            <code>
+              <b>Table:</b>
+              showColumn(TableColumn),
+              SWT.Close</code> and <code>SWT.Dispose</code> events
+          </li>
+          <li>
+            <code>
+              <b>List:</b>
+              getTopIndex(),
+              setTopIndex(),
+              showSelection(),
+              deselect(int),
+              deselect(int, int),
+              deselect(int[])
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>Text:</b>
+              getCaretPosition(),
+              getText(int, int),
+              setMessage(String),
+              getMessage(),
+              setEchoChar(char),
+              getEchoChar()
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>Combo:</b>
+              getSelection(),
+              setTextLimit()
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>Spinner:</b>
+              getText(),
+              getTextLimit(),
+              setTextLimit(int),
+              setDigits(int)
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>ProgressBar:</b>
+              setState()
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>ToolBar</b>
+              getItem(Point)
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>TabFolder:</b>
+              getItem(Point),
+              TabItem#getBounds()
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>CTabFolder:</b>
+              setSelectionBackground(Image),
+              setShowClose(boolean),
+              setUnselectedImageVisible(boolean),
+              setSelectionBackground(Color[],int[])
+            </code>
+          </li>
+          <!--li>
+            <code>
+              <b>ScrolledComposite:</b>
+              showControl(Control), 
+              setShowFocusedControl(boolean) and
+              getShowFocusedControl()
+            </code>
+          </li>
+          <li>
+            <code>
+              <b>CLabel:</b>
+              setMargins(int, int, int, int)</code> and related methods
+          </li>
+          <li>
+            <code>
+              <b>Image:</b>
+              getBackground(),
+              setBackground()
+            </code>
+          </li-->
+          <li>
+            and many more ...
+          </li>
+        </ul>
         ]]>
      </description>
    </entry>
@@ -92,7 +249,7 @@
      </title>
      <description>
        <![CDATA[
-        It is now possible to attach help listeners to controls and menus. 
+        It is now possible to attach help listeners to controls and menus.
         These events are generated when help is requested for a control or
         menu, typically when the user presses F1.  
         ]]>
@@ -109,7 +266,7 @@
         it's possible to provide step-by-step cheatsheets with direct
         integration of the application itself.
         <br />
-        <img src="cheatsheets.png" 
+        <img src="images/cheatsheets.png" 
           style="margin-top: 10px; margin-bottom: 10px"/>
         <br />
         See the
@@ -145,7 +302,7 @@
         If any assert fails, the TestRunner will inform the developer via 
         its very simple UI and freeze Qooxdoo to ease debugging.
         <br />
-        The project is located in the <a href="../cvs.php">RAP CVS</a>
+        The project is located in the <a href="/rap/cvs.php">RAP CVS</a>
         under <code>runtime.rwt.test/org.eclipse.rap.rwt.q07.jstest</code>. 
          ]]>
      </description>
@@ -162,7 +319,7 @@
   DateTime dateTime = new DateTime( parent, SWT.DATE | SWT.DROP_DOWN );
         </pre>
         <br />
-        <img src="RAPDateTimeDropDown.png" 
+        <img src="images/RAPDateTimeDropDown.png" 
              title="DateTime widget with DROP_DOWN style"
              style="margin-top:10px; margin-bottom:10px" />
         <br />
@@ -197,44 +354,7 @@
         ]]>
      </description>
    </entry>
-   
-   <entry category="RWT" milestone="M2">
-     <title>
-       New API added
-     </title>
-     <description>
-       <![CDATA[
-            Here is a list of API methods added in M2:
-        <br />
-        <ul>            
-          <li><code>Text#getCaretPosition()</code></li>
-          <li><code>CTabFolder#setSelectionBackground( Image )</code></li>
-          <li><code>CTabItem#setShowClose( boolean )</code></li>
-          <li><code>Display#getCursorLocation()</code></li>            
-          <li><code>Control#isReparentable()</code> and 
-              <code>Control#setParent()</code></li>            
-          <li><code>SWT.SHEET</code> style flag for <code>Shell</code></li>
-          <li><code>Tree#select( TreeItem )</code> and 
-              <code>Tree#deselect( TreeItem )</code></li>
-          <li><code>Shell#setImages( Image[] )</code> and 
-              <code>Shell#getImages()</code>
-          <li><code>Shell#setMinimumSize( int, int )</code>, 
-              <code>Shell#setMinimumSize( Point )</code> and 
-              <code>Shell#getMinimumSize()</code></li>
-          <li><code>List#deselect( int )</code>, 
-              <code>List#deselect( int, int )</code> and
-              <code>List#deselect( int[] )</code></li>
-          <li><code>Control#update()</code> and 
-              <code>Display#update()</code></li> 
-          <li><code>ScrolledComposite#showControl( Control )</code>, 
-              <code>ScrolledComposite#setShowFocusedControl( boolean )</code> and
-              <code>ScrolledComposite#getShowFocusedControl()</code></li>
-          <li><code>Table#showColumn( TableColumn )</code></li>
-        </ul> 
-        ]]>
-     </description>
-   </entry>
-   
+      
    <entry category="JFace / Workbench" milestone="M2">
      <title>
        Layout Override Mechanism
@@ -253,7 +373,7 @@
         Layout which contains the LayoutSet to override. After this he just 
         has to declare a new LayoutSet element and set the overridesId to the 
         original one. <br/>
-        <img src="LayoutSetOverridding.png" alt="Overriding LayoutSets"
+        <img src="images/LayoutSetOverridding.png" alt="Overriding LayoutSets"
              title="Screenshot taken from org.eclipse.rap.examples"
              style="margin-top:10px" />
         <br/>
@@ -277,7 +397,7 @@
         return the respective tooltip text. Other tooltip-related methods
         (<code>getToolTipBackgroundColor</code>, etc.) are not supported.   
         <br />
-        <img src="TableViewerToolTip.jpeg" 
+        <img src="images/TableViewerToolTip.jpeg" 
              title="TableViewer showing a tooltip"
              style="margin-top:10px" />
         ]]>
@@ -293,7 +413,7 @@
         With the support for the Eclipse Help infrastructure, you're now able
         to integrate the well-known help system into your RAP applications.
         <br />
-        <img src="helpsystem.png" 
+        <img src="images/helpsystem.png" 
              title="HelpSystem in Action"
              style="margin-top:10px; margin-bottom:10px"  />
         <br />
@@ -322,7 +442,7 @@
         which occurs when the dialog is open. To improve the usability of
         the design we also have disabled the configuration button if a view
         has no actions or viewmenu.          
-        <img src="ConfigurationDialog.png" alt="ConfigurationDialog" 
+        <img src="images/ConfigurationDialog.png" alt="ConfigurationDialog" 
              title="New RAP Business design configuration dialog" 
              style="margin-top:10px" />  
         ]]>
@@ -335,7 +455,7 @@
      </title>
      <description>
        <![CDATA[
-        With <a href="news_12.php">RAP 1.2</a> we released a new look and
+        With <a href="../1.2/">RAP 1.2</a> we released a new look and
         feel called business design. With this design we wanted to show
         how RAP can look like in a serious sector. Now we introduce another
         example called fancy design. This design shows that RAP is a
@@ -344,7 +464,7 @@
         <a href="http://eclipsesource.com/blogs/2009/06/02/yes-its-a-rap-application/">
         steps from the business design</a> and replace the servlet name with 
         "fancy". <br/>
-        <img src="fancyDesign.png" alt="RAP fancy design"
+        <img src="images/fancyDesign.png" alt="RAP fancy design"
                title="Screenshot taken from the RAP fancy design"
                style="margin-top:10px" />
         <br/>
@@ -353,35 +473,6 @@
         update the <code>overridesId</code> attributes by removing the 
         word "business".              
         ]]>
-     </description>
-   </entry>
-
-   <entry category="RWT" milestone="M3">
-     <title>
-       New API added
-     </title>
-     <description>
-       <![CDATA[
-        Here is a list of API methods added in M3 :
-        <br />
-        <ul>            
-          <li><code>Display#addListener()</code> and 
-            <code>Display#removeListener()</code> which allow to register for 
-            <code>SWT.Close</code> and <code>SWT.Dispose</code> events.
-            </li>
-          <li><code>Display#disposeExec()</code></li>
-          <li><code>Display#close()</code></li>
-          <li><code>Shell()</code> default constructor</li>
-          <li><code>SelectionEvent#stateMask</code>, that  represents the state
-            of the keyboard modifier keys at the time the event was generated
-          </li>
-          <li>Improved <code>Display#getDefault()</code> - now creates a 
-          display if executed from the user-interface thread. (see 
-          <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=293809">bug
-          293809</a> for details)
-          </li>
-        </ul>
-       ]]>
      </description>
    </entry>
 
@@ -426,7 +517,7 @@
        method. In order to receive notification of user-directed changes to the 
        current history entry, use <code>addBrowserHistoryListener()</code>. 
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="BrowserHistory.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/BrowserHistory.png" />
        <br />
        To see the browser history support in action, see the 
        <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>
@@ -443,7 +534,7 @@
        We implemented a themeable focus indicator for buttons.
        This allows to show the focus rectangle <i>inside</i> the buttons.
        <br />
-       <img style="margin-top:10px" src="Button-focus.png" />
+       <img style="margin-top:10px" src="images/Button-focus.png" />
        ]]>
      </description>
    </entry>
@@ -457,10 +548,7 @@
        We extended the theming for a couple of widgets (such as CTabFolder,
        CLabel, Combo, Spinner and DateTime) and improved the new "fancy"
        design e.g. the support for standalone views was added.<br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="fancyStandaloneView.png" />
-       <br/>
-       A great deal of the bugs and enhancement requests fixed in 
-       M3 are related to design and theming.
+       <img style="margin-top:10px; margin-bottom:10px" src="images/fancyStandaloneView.png" />
        ]]>
      </description>
    </entry>
@@ -477,7 +565,7 @@
        <code>org.eclipse.equinox.http.jetty.context.sessioninactiveinterval</code> 
        VM argument.
        <br/>
-       <img style="margin: 10px 10px 0px;" src="SessionTimeout.png" />
+       <img style="margin: 10px 10px 0px;" src="images/SessionTimeout.png" />
        ]]>
      </description>
    </entry>
@@ -498,7 +586,7 @@
        be used to cancel a drag, and the operationChanged-event is not yet 
        thrown. We expect to deliver those features soon.
        <br />
-       <img style="margin: 10px 10px 0px;" src="dnd.png" />
+       <img style="margin: 10px 10px 0px;" src="images/dnd.png" />
        <br />
        To try out drag and drop online, see the 
        <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples</a>
@@ -506,22 +594,7 @@
        ]]>
      </description>
    </entry>
-   
-   <entry category="RWT" milestone="M4">
-     <title>
-       New API added
-     </title>
-     <description>
-       <![CDATA[
-        Here is a list of new API that was added in M4:
-        <br />
-        <ul>
-          <li><code>Text#getText( int, int )</code></li>
-        </ul>  
-        ]]>
-     </description>
-   </entry>
-   
+      
    <entry category="RWT" milestone="M4">
      <title>
        Changes to ISessionStore
@@ -556,7 +629,7 @@
        JFace ControlDecoration support has been added. Clients can now
        decorate any kind of control with an image and description text shown
        when the user hovers over the image.
-       <img style="margin-top:10px; margin-bottom:10px" src="ControlDecoration.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/ControlDecoration.png" />
        <br/>
        ]]>
      </description>
@@ -579,7 +652,7 @@
        to your launch configuration and set the theming id in your branding to 
        <code>org.eclipse.rap.design.example.business.theme</code> or <code>
        org.eclipse.rap.design.example.fancy.theme</code>.
-       <img style="margin-top:10px; margin-bottom:10px" src="RAPNewTheming.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/RAPNewTheming.png" />
        <br/>
        ]]>
      </description>
@@ -626,7 +699,7 @@
      <description>
        <![CDATA[
        Since M4, the Equinox 
-       <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M4-200912101301/eclipse-news-M4.html#Equinox">
+       <a href="http://archive.eclipse.org/eclipse/downloads/drops/S-3.6M4-200912101301/eclipse-news-M4.html#Equinox">
        extension registry is able to handle multiple locales</a>
        (see bug 
        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=244468">244468</a>
@@ -656,7 +729,7 @@
      <description>
        <![CDATA[
        Since M5, there is support for Servlet Filters in Equinox. See the 
-       <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.6M5-201001291300/eclipse-news-M5.html#Equinox">
+       <a href="http://archive.eclipse.org/eclipse/downloads/drops/S-3.6M5-201001291300/eclipse-news-M5.html#Equinox">
        3.6M5 New &amp; Noteworthy</a> for details.
        ]]>
      </description>
@@ -691,24 +764,6 @@
      </description>
    </entry>
    
-   <entry category="RWT" milestone="M5">
-     <title>
-       New API added
-     </title>
-     <description>
-       <![CDATA[            
-        Here is a list of API added in M5:
-        <br />
-        <ul>          
-          <li><code>Composite#layout( Control[], int )</code></li>
-          <li><code>MouseEvent#stateMask</code></li>
-          <li><code>Widget#reskin( int )</code> and 
-              <code>SWT.Skin</code> event</li>
-        </ul>  
-        ]]>
-     </description>
-   </entry>
-   
    <entry category="Look &amp; Feel" milestone="M5">
      <title>
        Coolbar
@@ -729,9 +784,9 @@
        <code>ToolBar</code> in a way that fits more with your 
        <a href="http://www.eclipse.org/rap/noteworthy/news_13M2.php#Look%20&%20Feel">
        RAP design</a>. <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="newToolbarBusiness.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/newToolbarBusiness.png" />
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="newToolbarFancy.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/newToolbarFancy.png" />
        ]]>
      </description>
    </entry>
@@ -748,47 +803,10 @@
        <code>MenubarManager</code> implementation to provide a much more flexible
        menu. Therefore, we use a <code>ToolBar</code> to provide you a high themable
        menubar. <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="newMenuBusiness.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/newMenuBusiness.png" />
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="newMenuFancy.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/newMenuFancy.png" />
        ]]>
-     </description>
-   </entry>
-   
-   <entry category="RWT" milestone="M6">
-     <title>
-       New API added
-     </title>
-     <description>
-       <![CDATA[            
-        Here is a list of API added in M6:
-        <br />
-        <ul>          
-          <li><code>Shell#setFullScreen( boolean )</code> and
-              <code>Shell#getFullScreen()</code></li>
-          <li><code>Text#setMessage( String )</code> and
-              <code>Text#getMessage()</code></li>
-          <li><code>TabFolder#getItem( Point )</code></li>
-          <li><code>TabItem#getBounds()</code></li>
-          <li><code>Text#setEchoChar( char )</code> and
-              <code>Text#getEchoChar()</code></li>
-          <li>To aid single-sourcing the <code>SWT#SYSTEM_MODAL</code> and 
-            <code>SWT#PRIMARY_MODAL</code> styles were introduced. They behave
-            the same as the <code>SWT#APPLICATION_MODAL</code> flag.</li>
-          <li><code>SWT.MenuDetect</code> event and its typed counterpart</li>
-          <li><code>SWT.Arm</code> event and its typed counterpart</li>
-          <li><code>Tree#getItemHeight()</code></li>
-          <li><code>TreeItem#getTextBounds( int )</code></li>
-          <li><code>CLabel#setMargins( int, int, int, int )</code> and related 
-            methods</li>
-          <li><code>Device#getFontList( String, boolean )</code></li>
-          <li><code>Spinner#setDigits( int )</code></li>
-          <li><code>Display#setAppName( String )</code> /
-            <code>#getAppName()</code> and 
-            <code>Display#setAppVersion( String )</code> /
-            <code>getAppVersion()</code></li>
-        </ul>  
-        ]]>
      </description>
    </entry>
 
@@ -868,7 +886,7 @@
        <a href="http://www.eclipse.org/rap/noteworthy/news_13M2.php#Look%20&%20Feel">
        configuration menu</a> will be disabled.
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="viewActionVisibility.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/viewActionVisibility.png" />
        ]]>
      </description>
    </entry>
@@ -905,7 +923,7 @@
        now provides RAP support out of the box. To see how it works, please refer
        to this <a href="http://wiki.eclipse.org/RAP/EMF_Integration">wiki page</a>.
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="emf_rap.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/emf_rap.png" />
        ]]>
      </description>
    </entry>
@@ -916,13 +934,13 @@
      </title>
      <description>
        <![CDATA[
-       We are happy to announce, that initial support to run Riena on RAP 
+       Initial support to run Riena Ridgets on RAP 
        has been provided by the Riena team. Please see 
        <a href="http://eclipsesource.com/blogs/2010/02/20/riena-meets-eclipse-rap-goes-to-browser/">this blog</a>
        and the <a href="http://wiki.eclipse.org/Riena_on_RAP">Riena on RAP</a>
        wiki page for further details.
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="riena-on-rap.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/riena-on-rap.png" />
        ]]>
      </description>
    </entry>
@@ -945,30 +963,6 @@
 
    <entry category="RWT" milestone="M7">
      <title>
-       SWT API implemented
-     </title>
-     <description>
-       <![CDATA[            
-        Here is a list of SWT API that was implemented in M7:
-        <br />
-        <ul>
-          <li><code>Device#getDPI()</code></li>
-          <li><code>Device#getDepth()</code></li>
-          <li><code>Display#beep()</code></li>
-          <li><code>Image#getBackground()</code></li>
-          <li><code>Image#setBackground()</code></li>
-          <li><code>SWT#CURSOR_NO</code> and <code>SWT#CURSOR_APPSTARTING</code></li>
-          <li><code>SWT#getVersion()</code></li>
-          <li><code>Display#findDisplay()</code></li>
-          <li><code>Display#getSyncThread()</code></li>
-          <li><code>Display#getCursorControl()</code></li>
-        </ul>  
-        ]]>
-     </description>
-   </entry>
-
-   <entry category="RWT" milestone="M7">
-     <title>
        Theme Contributions
      </title>
      <description>
@@ -978,7 +972,7 @@
        This way, plug-in developers can easily add CSS rules for their controls
        without the need to copy and extend an existing theme.
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="ThemeContributions.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/ThemeContributions.png" />
        ]]>
      </description>
    </entry>
@@ -995,7 +989,7 @@
        This way, plug-in developers can easily declare ServiceHandlers 
        instead of registering them programmtically.
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="ServiceHandlerExt.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/ServiceHandlerExt.png" />
        ]]>
      </description>
    </entry>
@@ -1024,7 +1018,7 @@
   }
        </pre>
        <br />
-       <img src="modal.png" style="margin-top: 10px; margin-bottom: 10px" />
+       <img src="images/modal.png" style="margin-top: 10px; margin-bottom: 10px" />
        </li>
        <li>
        We introduced the <code>opacity</code>-property on the following widgets:
@@ -1034,7 +1028,7 @@
        <code>ToolItem</code>, <code>ToolTip</code> and
        <code>ProgressBar-Indicator</code>
        <br />
-       <img src="opacity.png" style="margin-top: 10px; margin-bottom: 10px" />
+       <img src="images/opacity.png" style="margin-top: 10px; margin-bottom: 10px" />
        <br />
        This is an easy way to achieve semi-transparency. Be aware that there are 
        currently two unresolved issues regarding its use in Internet Explorer:
@@ -1065,7 +1059,7 @@
   }
        </pre>
        <br />
-       <img src="table-vertical-lines.png" style="margin-top: 10px; margin-bottom: 10px" />
+       <img src="images/table-vertical-lines.png" style="margin-top: 10px; margin-bottom: 10px" />
        </li>
        <li>
        We now support animations as part of the theming. They allow for simple 
@@ -1109,7 +1103,7 @@
     }
   } );
        </pre>
-       <img style="margin-top:10px; margin-bottom:10px" src="gc.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/gc.png" />
        <br/>
        The graphics are rendered on HTML5 Canvas on the client, for Internet
        Explorer, a VML-based (vector-graphics) emulation is used.
@@ -1130,7 +1124,7 @@
        <![CDATA[
        RAP now contains an implementation of the SWT FontDialog.
        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="FontDialog.png" />
+       <img style="margin-top:10px; margin-bottom:10px" src="images/FontDialog.png" />
        ]]>
      </description>
    </entry>

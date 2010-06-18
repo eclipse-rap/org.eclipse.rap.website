@@ -17,14 +17,14 @@ $html = <<<EOHTML
           respective milestone builds towards version 1.3 (June 23<sup>rd</sup> 
           2010).
           <ul>
-            <li><a href="news_13RC.php">Release Candidates</a></li>
-            <li><a href="news_13M7.php">M7 (May 4<sup>th</sup>, 2010)</a></li>
-            <li><a href="news_13M6.php">M6 (March 19<sup>th</sup>, 2010)</a></li>
-            <li><a href="news_13M5.php">M5 (February 5<sup>th</sup>, 2010)</a></li>
-            <li><a href="news_13M4.php">M4 (December 18<sup>th</sup>, 2009)</a></li>
-            <li><a href="news_13M3.php">M3 (November 13<sup>th</sup>, 2009)</a></li>
-            <li><a href="news_13M2.php">M2 (October 2<sup>nd</sup>, 2009)</a></li>
-            <li><a href="news_13M1.php">M1 (August 21<sup>st</sup>, 2009)</a></li>
+            <li><a href="1.3/news_RC.php">Release Candidates</a></li>
+            <li><a href="1.3/news_M7.php">M7 (May 4<sup>th</sup>, 2010)</a></li>
+            <li><a href="1.3/news_M6.php">M6 (March 19<sup>th</sup>, 2010)</a></li>
+            <li><a href="1.3/news_M5.php">M5 (February 5<sup>th</sup>, 2010)</a></li>
+            <li><a href="1.3/news_M4.php">M4 (December 18<sup>th</sup>, 2009)</a></li>
+            <li><a href="1.3/news_M3.php">M3 (November 13<sup>th</sup>, 2009)</a></li>
+            <li><a href="1.3/news_M2.php">M2 (October 2<sup>nd</sup>, 2009)</a></li>
+            <li><a href="1.3/news_M1.php">M1 (August 21<sup>st</sup>, 2009)</a></li>
           </ul>
           <p />        
           All features listed there can also be obtained from
@@ -46,7 +46,7 @@ $html = <<<EOHTML
           <a href="http://www.eclipse.org/rap/downloads/archive.php">download</a>.
         </p>        
       </li>
-      <li><a href="news_12.php">RAP 1.2 Release</a>
+      <li><a href="1.2/">RAP 1.2 Release</a>
         <p style="margin-top: 5px">
           Listed are the more noteworthy things available in the RAP 1.2
           release build (June 24<sup>th</sup>, 2009) which is available for 
@@ -67,7 +67,7 @@ $html = <<<EOHTML
           <a href="http://www.eclipse.org/rap/downloads/archive.php">download</a>.
         </p>        
       </li>
-      <li><a href="news_11.php">RAP 1.1 Release</a>
+      <li><a href="1.1/">RAP 1.1 Release</a>
         <p style="margin-top: 5px">
           Listed are the more noteworthy things available in the second 
           release build (June 25, 2008) which is available for 
@@ -81,7 +81,7 @@ $html = <<<EOHTML
           <a href="http://www.eclipse.org/rap/downloads/archive.php">download</a>.
         </p>        
       </li>
-      <li><a href="news_10.php">RAP 1.0 Release</a>
+      <li><a href="1.0/">RAP 1.0 Release</a>
         <p style="margin-top: 5px">
           Listed are the more noteworthy things available in the first 
           release build (October 10, 2007) which is available for 
