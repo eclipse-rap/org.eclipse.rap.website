@@ -13,12 +13,14 @@
       applications.
     </p>
     <p>
-      <a href="http://www.eclipse.org/downloads/index-helios.php">
-        <div style="margin: 0pt 5px;">
-          <span class="download-icon" style="position: relative; top: -30px;"></span>
-          <img src="../images/epp-download.png" alt="Eclipse for RCP and RAP Developers"/>
-        </div>
-      </a>
+      <div class="download-button">
+        <a href="http://www.eclipse.org/downloads/index-helios.php">
+          <div style="margin: 0pt 5px;">
+            <span class="download-icon" style="position: relative; top: -30px;"></span>
+            <img src="../images/epp-download.png" alt="Eclipse for RCP and RAP Developers"/>
+          </div>
+        </a>
+      </div>
     </p>
 
     <h3>RAP Tooling</h3>
@@ -32,11 +34,11 @@
     </p>
 
     <div class="expand-head">
-      <div class="expand-link">
+      <div class="expand-link download-button">
         <span class="download-icon"></span>
         <span>latest stable build</span>
       </div>
-      <div class="expand-link">
+      <div class="expand-link download-button">
         <span><span class="download-icon"></span>
         <span>latest release</span></span>
       </div>
@@ -109,11 +111,11 @@
     </p>
 
     <div class="expand-head">
-      <div class="expand-link">
+      <div class="expand-link download-button">
         <span class="download-icon"></span>
         <span>latest stable build</span>
       </div>
-      <div class="expand-link">
+      <div class="expand-link download-button">
         <span><span class="download-icon"></span>
         <span>latest release</span></span>
       </div>
@@ -292,7 +294,7 @@
 
     $( '.expand-body' ).hide();
 
-    $( '.expand-link' ).hover( function() {
+    $( '.download-button' ).hover( function() {
       $( this ).addClass( 'hover' );
     }, function() {
       $( this ).removeClass( 'hover' );

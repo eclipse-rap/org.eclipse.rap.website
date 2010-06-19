@@ -98,28 +98,35 @@ div.expand-head {
   margin: 0;
 }
 
-div.expand-link {
+div.expand-link,
+div.download-button {
   display: inline-block;
   cursor: pointer;
-  padding: 1px 10px 8px 5px;
+  background-color: #f5f4e9;
   -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  font-size: 14px;
+  -webkit-border-radius: 5px;  
+  padding: 5px;
 }
 
-div.expand-link.hover {
-  background-color: #f0f0f0;
+div.expand-link {
+  padding: 1px 10px 8px 5px;
+  margin-right: 10px;
+}
+
+div.download-button.hover {
+  background-color: #e8e7dd;
 }
 
 div.expand-link.selected {
-  background-color: #e0e0ee;
+  background-color: #e8e7dd;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
+  padding-bottom: 11px;
 }
 
 div.expand-body {
   display: none;
-  border: 2px solid #e0e0ee;
+  border: 2px solid #e8e7dd;
   padding: 5px;
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
