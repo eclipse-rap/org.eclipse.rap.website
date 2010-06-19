@@ -31,6 +31,7 @@
   $Menu->addMenuItem( "Wiki", "http://wiki.eclipse.org/RAP", "_self" );
 
   $App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes.css"/>' );
+  $App->AddExtraHtmlHeader( '<!--[if IE]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->' );
   $App->AddExtraHtmlHeader( '<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>' );
 
 //  $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo

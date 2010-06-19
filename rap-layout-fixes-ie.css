@@ -1,0 +1,26 @@
+
+span.download-icon {
+  display: inline;
+  zoom: 1;
+}
+
+div.expand-link {
+  display: inline;
+  zoom: 1;
+}
+
+span.terminal-field {
+  display: inline;
+  zoom: 1;
+}
+
+span.terminal-text {
+  display: inline;
+  zoom: 1;
+}
+
+span.terminal-overlay {
+  display: inline;
+  zoom: 1;
+  filter: alpha(opacity = 50);
+}
