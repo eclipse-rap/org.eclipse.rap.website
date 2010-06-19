@@ -4,6 +4,11 @@
   position: relative;
 }
 
+/* Align headline with RAP logo */
+#novaContent.faux {
+  padding-top: 5px;
+}
+
 /* Fix horizontal position of the top-left Eclipse logo */
 div#logo {
   position: relative;
@@ -16,6 +21,26 @@ div, span, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li, field
   font-size: 13px;
   line-height: 16px;
 }
+
+/* More space above sub-headers */
+
+h3 {
+  margin-top: 12px;
+}
+
+/* Customize margin for paragraphs */
+
+p, table {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+/* Enable Quotes */
+
+q:before { content: '\201C'; }
+q:after { content: '\201D'; }
+q q:before { content: '\2018'; }
+q q:after { content: '\2019'; }
 
 /* RAP logo in side navigation */
 
@@ -30,19 +55,20 @@ div, span, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li, field
 #rap-small-logo {
   position: absolute;
   left: 12px;
-  top: 12px;
+  top: 15px;
   width: 152px;
   height: 67px;
   background: url( "/rap/images/RAP-Logo-small.png" ) no-repeat 0 0;
 }
 
 #leftnav {
-  margin-top: 55px;
+  margin-top: 70px;
   padding-left: 8px;
 }
 
-.sideitem h6
-{
+/* ??? */
+
+.sideitem h6 {
   background-color: #e8e7dd;
   border-bottom: 2px solid #FFF;
   font-size: 14px;
@@ -53,4 +79,48 @@ div, span, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li, field
   -webkit-border-top-left-radius:3px;
   -webkit-border-top-right-radius:3px;
   padding: 8px 5px;
+}
+
+/* Small navigation icons */
+
+span.download-icon {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  background: url( /rap/images/button-icons-small.png ) 0 0;
+}
+
+/* Expand areas on download page */
+
+div.expand-head {
+  margin: 0;
+}
+
+div.expand-link {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1px 10px 8px 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  font-size: 14px;
+}
+
+div.expand-link.hover {
+  background-color: #f0f0f0;
+}
+
+div.expand-link.selected {
+  background-color: #e0e0ee;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+}
+
+div.expand-body {
+  display: none;
+  border: 2px solid #e0e0ee;
+  padding: 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 5px;
 }
