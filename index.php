@@ -18,6 +18,7 @@ $html = file_get_contents( '_index.html' );
 $Nav = null; // delete right side navigation
 
 $App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-big-header.css"/>' );
+$App->AddExtraHtmlHeader( '<script type="text/javascript">swfobject.embedSWF("http://vimeo.com/moogaloop.swf?clip_id=12665551&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1", "screencast", "600", "375", "9.0.0");</script>' );
 
 generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
 
