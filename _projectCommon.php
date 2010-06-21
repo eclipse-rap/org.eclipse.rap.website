@@ -16,8 +16,8 @@
   $Nav->addCustomNav( "New &amp; Noteworthy", "/rap/noteworthy/", "_self", 1 );
   $Nav->addCustomNav( "Project Plan", "http://www.eclipse.org/projects/project-plan.php?projectid=rt.rap", "_self", 1 );	
 
-  $Nav->addNavSeparator( "Support", "/rap/support.php", "_self", 1 );
-  $Nav->addCustomNav( "Get Started", "/rap/gettingstarted.php",	"_self", 1 );
+  $Nav->addNavSeparator( "Support", "/rap/support", "_self", 1 );
+  $Nav->addCustomNav( "Get Started", "/rap/support/gettingstarted",	"_self", 1 );
 
   $Nav->addNavSeparator( "Contribute", "/rap/contribute.php", "_self", 1 );
   $Nav->addCustomNav( "Bugs", "/rap/bugs.php", "_self", 1 );
@@ -27,7 +27,7 @@
   $Menu->addMenuItem( "Home", "/rap/", "_self" );
   $Menu->addMenuItem( "Demos", "/rap/demos/", "_self" );
   $Menu->addMenuItem( "Documentation", "/rap/documentation.php", "_self" );
-  $Menu->addMenuItem( "Support", "/rap/support.php", "_self" );
+  $Menu->addMenuItem( "Support", "/rap/support", "_self" );
   $Menu->addMenuItem( "Wiki", "http://wiki.eclipse.org/RAP", "_self" );
 
   $App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes.css"/>' );

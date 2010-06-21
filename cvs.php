@@ -33,7 +33,7 @@ $html = <<<EOHTML
     <p/>
     <p style="margin:10px">
       For easier consumption, we provide 
-      <a href="http://help.eclipse.org/ganymede/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Sets</a>
+      <a href="http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-cvs-project-set.htm">Team Project Sets</a>
       that contain pointers to the relevant RAP projects from the CVS repository.
       Individual components (e.g. from the <a href="incubator.php">Incubator</a>)
       can also be obtained 

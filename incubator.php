@@ -56,7 +56,7 @@ $html = <<<EOHTML
             <p>
               The Google Maps component provides a simple integration of a GMap
               in a custom widget. This component is used as an example for the
-              <a href="http://help.eclipse.org/galileo/index.jsp?topic=/org.eclipse.rap.help/help/html/advanced/custom-widget.html">
+              <a href="http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.rap.help/help/html/advanced/custom-widget.html">
               "Custom widget tutorial"</a>.
             </p>
             <p>
