@@ -138,6 +138,8 @@ div.terminal {
   padding: 5px;
   color: white;
   background-color: gray;
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
 }
 
 div.terminal-row {
