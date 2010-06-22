@@ -12,6 +12,7 @@
 /* Fix horizontal position of the top-left Eclipse logo */
 div#logo {
   position: relative;
+  height: 91px;
   top: 10px;
 }
 
