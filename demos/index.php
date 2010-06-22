@@ -9,7 +9,7 @@ $Menu = new Menu();
 $Nav = new Nav();
 include( $App->getProjectCommon() );
 
-$pageTitle = "RAP Project - Demos";
+$pageTitle = "RAP - Demos";
 $pageKeywords = "Ajax, rap, w4t, eclipse rap";
 $pageAuthor = "Jochen Krause";
 

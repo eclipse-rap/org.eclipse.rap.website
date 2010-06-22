@@ -55,7 +55,7 @@ $html = <<<EOHTML
             If you want to stay tuned, you can set yourself CC to
             <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=201257">bug #201257</a>.
             The updated team project set provided
-            <a href="http://www.eclipse.org/rap/cvs.php">here</a> contains all
+            <a href="/rap/source/">here</a> contains all
             projects you need for RAP development.
           </p>
         <td/>

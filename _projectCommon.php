@@ -8,24 +8,24 @@
   $Nav->addCustomNav( "About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=rt.rap", "_self", 0 );
 
   $Nav->addNavSeparator( "Downloads", "/rap/downloads/", "_self", 1 );
-  $Nav->addCustomNav( "Source Code", "/rap/cvs.php", "_self", 1 );
+  $Nav->addCustomNav( "Source Code", "/rap/source/", "_self", 1 );
 
-  $Nav->addNavSeparator( "Documentation", "/rap/documentation.php", "_self", 1 );
+  $Nav->addNavSeparator( "Documentation", "/rap/documentation/", "_self", 1 );
   $Nav->addCustomNav( "Demos", "/rap/demos/", "_self", 1 );
   $Nav->addCustomNav( "New &amp; Noteworthy", "/rap/noteworthy/", "_self", 1 );
   $Nav->addCustomNav( "Project Plan", "http://www.eclipse.org/projects/project-plan.php?projectid=rt.rap", "_self", 1 );	
 
   $Nav->addNavSeparator( "Support", "/rap/support/", "_self", 1 );
-  $Nav->addCustomNav( "Get Started", "/rap/support/gettingstarted/",	"_self", 1 );
+  $Nav->addCustomNav( "Get Started", "/rap/gettingstarted/",	"_self", 1 );
 
-  $Nav->addNavSeparator( "Contribute", "/rap/contribute.php", "_self", 1 );
-  $Nav->addCustomNav( "Bugs", "/rap/bugs.php", "_self", 1 );
-  $Nav->addCustomNav( "Incubator", "/rap/incubator.php", "_self", 1 );
+  $Nav->addNavSeparator( "Getting Involved", "/rap/getting-involved/", "_self", 1 );
+  $Nav->addCustomNav( "Bugs", "/rap/bugs/", "_self", 1 );
+  $Nav->addCustomNav( "Incubator", "/rap/incubator/", "_self", 1 );
 
   $Menu->setMenuItemList( array() );
   $Menu->addMenuItem( "Home", "/rap/", "_self" );
   $Menu->addMenuItem( "Demos", "/rap/demos/", "_self" );
-  $Menu->addMenuItem( "Documentation", "/rap/documentation.php", "_self" );
+  $Menu->addMenuItem( "Documentation", "/rap/documentation/", "_self" );
   $Menu->addMenuItem( "Support", "/rap/support/", "_self" );
   $Menu->addMenuItem( "Wiki", "http://wiki.eclipse.org/RAP", "_self" );
 

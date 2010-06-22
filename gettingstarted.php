@@ -1,3 +1,3 @@
 <?php
-  header("Location: support/gettingstarted/");
+  header("Location: gettingstarted/");
 ?>

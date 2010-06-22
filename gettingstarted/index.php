@@ -10,7 +10,7 @@ $Menu = new Menu();
 include( $App->getProjectCommon() );
 
 # Begin: page-specific settings.  Change these.
-$pageTitle = "RAP Project - Downloads";
+$pageTitle = "RAP - Getting Started";
 $pageKeywords = "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
 $pageAuthor = "Jochen Krause";
 

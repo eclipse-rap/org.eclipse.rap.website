@@ -63,7 +63,7 @@ $html = <<<EOHTML
           </p>
           <p>
             The team project sets provided 
-            <a href="http://www.eclipse.org/rap/cvs.php">here</a> are in sync
+            <a href="/rap/source/">here</a> are in sync
             with the current CVS structure.
           </p>
         <td/>

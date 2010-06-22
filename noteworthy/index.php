@@ -1,5 +1,5 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
-$pageTitle 		= "RAP Project - New and Noteworthy";
+$pageTitle 		= "RAP - New and Noteworthy";
 $pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Jochen Krause";
 
@@ -28,7 +28,7 @@ $html = <<<EOHTML
           </ul>
           <p />        
           All features listed there can also be obtained from
-          <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>.
+          <a href="/rap/source/">CVS HEAD</a>.
         </p>
         <p />        
       </li>

@@ -172,6 +172,10 @@ span.terminal-arrived {
   color: #88ff88;
 }
 
+span.terminal-landing {
+  color: #f2fa73;
+}
+
 span.terminal-overlay {
   position: absolute;
   display: inline-block;

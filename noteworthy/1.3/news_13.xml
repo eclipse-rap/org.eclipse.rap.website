@@ -145,7 +145,7 @@
         If any assert fails, the TestRunner will inform the developer via 
         its very simple UI and freeze Qooxdoo to ease debugging.
         <br />
-        The project is located in the <a href="/rap/cvs.php">RAP CVS</a>
+        The project is located in the <a href="/rap/source/">RAP CVS</a>
         under <code>runtime.rwt.test/org.eclipse.rap.rwt.q07.jstest</code>. 
          ]]>
      </description>
@@ -541,7 +541,7 @@
        <br />
        We don't expect to break existing clients, the changes are documented here 
        for completeness. However, if you are having trouble file a 
-       <a href="http://eclipse.org/rap/bugs.php">new bug</a> or re-open
+       <a href="/rap/bugs/">new bug</a> or re-open
        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=278258">bug 278258</a>
        ]]>
      </description>

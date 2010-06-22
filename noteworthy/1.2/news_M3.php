@@ -12,7 +12,7 @@ $html = <<<EOHTML
       milestone build M3 (November 19, 2008),
       <!--
       Meanwhile, all features listed here can be obtained from
-      <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
+      <a href="/rap/source/">CVS HEAD</a>
       -->
       which is now available for 
       <a href="http://www.eclipse.org/rap/downloads/">download</a>.

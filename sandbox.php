@@ -1,3 +1,3 @@
 <?php
-  header("Location: incubator.php");
+  header("Location: incubator/");
 ?>

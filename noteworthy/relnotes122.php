@@ -23,7 +23,7 @@ $html = <<<EOHTML
   <!--
   The service release will be availble on February 26<sup>th</sup>, 2010. 
   In the meanwhile the changes can be obtained from 
-  <a href="http://www.eclipse.org/rap/cvs.php">CVS</a> in branch 
+  <a href="/rap/source/">CVS</a> in branch 
   <code>v12_Maintenance</code>.
   -->
   The service release is now available for

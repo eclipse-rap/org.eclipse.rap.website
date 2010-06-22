@@ -11,7 +11,7 @@ $html = <<<EOHTML
     <p>Here are some of the more noteworthy things that are available in the 
       milestone build M2 (October 8, 2008)
       <!-- Meanwhile, all features listed here can be obtained from
-      <a href="http://www.eclipse.org/rap/cvs.php">CVS HEAD</a>
+      <a href="/rap/source/">CVS HEAD</a>
       -->
       which is now available for 
       <a href="http://www.eclipse.org/rap/downloads/">download</a>.
