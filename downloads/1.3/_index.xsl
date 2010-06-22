@@ -20,7 +20,7 @@
 
       <p>
         Software Site:
-        <img src="http://localhost:81/rap/images/site.gif"/>
+        <img src="/rap/images/site.gif"/>
         http://download.eclipse.org/rt/rap/1.3/tooling
       </p>
 
@@ -32,7 +32,7 @@
 
       <p>
         Software Site:
-        <img src="http://localhost:81/rap/images/site.gif"/>
+        <img src="/rap/images/site.gif"/>
         http://download.eclipse.org/rt/rap/1.3/runtime
       </p>
 
@@ -78,7 +78,7 @@
           <xsl:attribute name="href">
             <xsl:value-of select="concat( 'http://www.eclipse.org/downloads/download.php?file=/rt/rap/', @toolingZip )"/>
           </xsl:attribute>
-          <img src="http://localhost:81/rap/images/zip.gif"/>
+          <img src="/rap/images/zip.gif"/>
           Tooling
         </a>
         </xsl:if>
@@ -89,7 +89,7 @@
           <xsl:attribute name="href">
             <xsl:value-of select="concat( 'http://www.eclipse.org/downloads/download.php?file=/rt/rap/', @runtimeZip )"/>
           </xsl:attribute>
-          <img src="http://localhost:81/rap/images/zip.gif"/>
+          <img src="/rap/images/zip.gif"/>
           Runtime
         </a>
         </xsl:if>
