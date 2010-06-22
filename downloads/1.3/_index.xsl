@@ -38,6 +38,14 @@
 
       <h3>Completed Builds</h3>
 
+      <!--
+      <h4>Releases</h4>
+
+      <table class="builds">
+        <xsl:apply-templates select="/version/build[@type = 'R']"/>
+      </table>
+      -->
+
       <h4>Release Candiate Builds</h4>
 
       <table class="builds">
