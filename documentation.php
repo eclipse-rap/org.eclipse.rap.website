@@ -15,6 +15,7 @@ $html = <<<EOHTML
   <p>
     There are several sources of information for RAP application developers:
     <ul>
+      <li><a href="#gettingstarted">Getting Started</a></li>
       <li><a href="#devguide">Developer Guide (Help Center)</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#wiki">Wiki</a></li>
@@ -22,6 +23,15 @@ $html = <<<EOHTML
       <li><a href="#articles">Articles and Tutorials</a></li>
     </ul>
   </p>
+
+  <div id="gettingstarted" class="homeitem3col" style="clear: both">
+    <h3>Getting Started</h3>
+    <p>
+      This
+      <a href="/rap/support/gettingstarted/">simple guide</a>.
+      shows how to get started developing RAP applications.
+    </p>
+  </div>
 
   <div id="devguide" class="homeitem3col" style="clear: both">
     <h3>Developer Guide (Help Center)</h3>
