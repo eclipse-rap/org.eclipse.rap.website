@@ -16,7 +16,7 @@ $html = <<<EOHTML
     <p style="margin: 10px">
       RAP applications need to be compiled against the RAP runtime.
       To do so, the runtime needs to be set as the target platform in Eclipse.
-      This can either be done by the <a href="/rap/gettingstarted/">RAP
+      This can either be done by the <a href="/rap/getting-started/">RAP
       Tooling</a> or manually.
       <ol>
         <li>Open <b>Window &gt; Preferences</b> and go to the <b>Plug-in
