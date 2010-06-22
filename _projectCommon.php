@@ -8,7 +8,6 @@
   $Nav->addCustomNav( "About This Project", "http://www.eclipse.org/projects/project_summary.php?projectid=rt.rap", "_self", 0 );
 
   $Nav->addNavSeparator( "Downloads", "/rap/downloads/", "_self", 1 );
-  $Nav->addCustomNav( "Archive", "/rap/downloads/archive.php", "_self", 1 );
   $Nav->addCustomNav( "Source Code", "/rap/cvs.php", "_self", 1 );
 
   $Nav->addNavSeparator( "Documentation", "/rap/documentation.php", "_self", 1 );
