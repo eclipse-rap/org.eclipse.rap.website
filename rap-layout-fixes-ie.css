@@ -1,26 +1,29 @@
 
-span.download-icon {
+/* Fixes for unsupported "inline-block" */
+
+span.download-icon,
+div.expand-link,
+span.terminal-field,
+span.terminal-text,
+span.terminal-overlay
+{
   display: inline;
   zoom: 1;
 }
 
-div.expand-link {
-  display: inline;
-  zoom: 1;
-}
-
-span.terminal-field {
-  display: inline;
-  zoom: 1;
-}
-
-span.terminal-text {
-  display: inline;
-  zoom: 1;
-}
+/* Fixes for unsupported "opacity" */
 
 span.terminal-overlay {
-  display: inline;
-  zoom: 1;
   filter: alpha(opacity = 50);
+}
+
+/* Fixes for unsupported "float" */
+
+#leftcol,
+#midcolumn,
+#rightcolumn,
+.moreButton,
+.rss
+{
+  position: relative;
 }
