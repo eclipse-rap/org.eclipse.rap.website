@@ -45,7 +45,8 @@
   <a href="/rap/"><div id="rap-small-logo"></div></a>
 </div>
 <script type="text/javascript">
-  var logo = $( "#logo:first-child" );
+  // logo
+  var logo = $( '#logo:first-child' );
   var newLogo = '<div id="logo"><a href="http://www.eclipse.org">' 
                 + logo.html() + '</a></div>';
   logo.replaceWith( newLogo );

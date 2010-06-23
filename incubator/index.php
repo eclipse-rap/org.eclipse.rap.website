@@ -5,8 +5,8 @@ require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class
 require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php" );
 
 $App = new App();
-$Menu = new Menu();
 $Nav = new Nav();
+$Menu = new Menu();
 include( $App->getProjectCommon() );
 
 $pageTitle = "RAP - Incubator";
