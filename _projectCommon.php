@@ -38,6 +38,7 @@
   
 
 //  $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
+  $App->SetGoogleAnalyticsTrackingCode("UA-17128428-1");
 
   function createRapNavigation( $Nav ) {
     $html = <<<EOHTML
