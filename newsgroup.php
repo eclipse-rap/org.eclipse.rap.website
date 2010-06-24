@@ -1,3 +1,3 @@
 <?php
-  header("Location: support/#newsgroup");
+  header( "Location: /rap/support/#newsgroup" );
 ?>

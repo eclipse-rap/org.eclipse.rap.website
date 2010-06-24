@@ -1,3 +1,3 @@
 <?php
-  header("Location: support/");
+  header( "Location: /rap/support/" );
 ?>

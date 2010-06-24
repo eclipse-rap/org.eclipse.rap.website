@@ -1,3 +1,3 @@
 <?php
-  header("Location: introduction.php");
+  header( "Location: /rap/" );
 ?>
