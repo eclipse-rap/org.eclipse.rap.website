@@ -188,3 +188,24 @@ span.terminal-overlay {
   left: 4px;
   top: 10px;
 }
+
+/* Lists in side boxes */
+
+#novaContent .sideitem > ul {
+  margin: 0;
+  padding: 0;
+}
+
+#novaContent .sideitem > ul > li {
+  margin: 0 0 2px;
+  padding: 5px 15px;
+  list-style-type: none;
+  list-style-image: none;
+  border-bottom: 1px solid #e8e7dd;
+}
+
+#novaContent .sideitem > ul > li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
