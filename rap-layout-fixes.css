@@ -67,6 +67,12 @@ q q:after { content: '\2019'; }
   padding-left: 8px;
 }
 
+/* Make first-level navigation items appear as links */
+
+#leftnav li.separator a {
+  color: #7036BE;
+}
+
 /* ??? */
 
 .sideitem h6 {
