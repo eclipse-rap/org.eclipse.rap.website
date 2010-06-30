@@ -108,7 +108,8 @@
               setAppVersion(String),
               findDisplay(),
               getSyncThread(),
-              getCursorControl()
+              getCursorControl(),
+              SWT.Close</code> and <code>SWT.Dispose</code> events
             </code>
           </li>
           <li>
@@ -146,8 +147,7 @@
           <li>
             <code>
               <b>Table:</b>
-              showColumn(TableColumn),
-              SWT.Close</code> and <code>SWT.Dispose</code> events
+              showColumn(TableColumn)
           </li>
           <li>
             <code>
@@ -302,7 +302,8 @@
         If any assert fails, the TestRunner will inform the developer via 
         its very simple UI and freeze Qooxdoo to ease debugging.
         <br />
-        The project is located in the <a href="/rap/source/">RAP CVS</a>
+        The project is located in the <a href="/rap/source/">RAP Source Code 
+        Repositry</a>
         under <code>runtime.rwt.test/org.eclipse.rap.rwt.q07.jstest</code>. 
          ]]>
      </description>
