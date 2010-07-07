@@ -34,7 +34,7 @@ $html = <<<EOHTML
       RAP 1.2.2 service release
       <a href="/rap/noteworthy/relnotes122.php">Release Notes</a>
       <br />
-      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/tooling/rap-tooling-1.2.2-R-20100126-1129.zip">
+      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-tooling-1.2.2-R-20100126-1129.zip">
         rap-tooling-1.2.2-R-20100126-1129.zip
       </a>
     </li>
@@ -43,7 +43,7 @@ $html = <<<EOHTML
       RAP 1.2 release
       <a href="/rap/noteworthy/1.2/">New &amp; Noteworthy</a>
       <br />
-      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/tooling/rap-tooling-1.2.0-R-20090616-1439.zip">
+      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-tooling-1.2.0-R-20090616-1439.zip">
         rap-tooling-1.2.0-R-20090616-1439.zip
       </a>
     </li>
@@ -60,7 +60,7 @@ $html = <<<EOHTML
       RAP 1.2.2 service release
       <a href="/rap/noteworthy/relnotes122.php">Release Notes</a>
       <br />
-      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.2-R-20100126-1119.zip">
+      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-runtime-1.2.2-R-20100126-1119.zip">
         rap-runtime-1.2.2-R-20100126-1119.zip
       </a>
     </li>
@@ -69,7 +69,7 @@ $html = <<<EOHTML
       RAP 1.2.1 service release
       <a href="/rap/noteworthy/relnotes121.php">Release Notes</a>
       <br />
-      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.1-R-20090813-1453.zip">
+      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-runtime-1.2.1-R-20090813-1453.zip">
         rap-runtime-1.2.1-R-20090813-1453.zip
       </a>
     </li>
@@ -78,7 +78,7 @@ $html = <<<EOHTML
       RAP 1.2 release
       <a href="/rap/noteworthy/1.2/">New &amp; Noteworthy</a>
       <br />
-      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/target/rap-runtime-1.2.0-R-20090616-1425.zip">
+      <a href="http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.2/rap-runtime-1.2.0-R-20090616-1425.zip">
         rap-runtime-1.2.0-R-20090616-1425.zip
       </a>
     </li>
