@@ -66,4 +66,14 @@ EOHTML;
     $App->generatePage( $theme, $Menu, $Nav, $author, $keywords, $title, $pageHtml );
   }
 
+  function xslt( $xmlFile, $xslFile ) {
+    $xslDoc = new DOMDocument();
+    $xslDoc->load( $xslFile );
+    $xmlDoc = new DOMDocument();
+    $xmlDoc->load( $xmlFile );
+    $proc = new XSLTProcessor();
+    $proc->importStylesheet( $xslDoc );
+    return $proc->transformToXML( $xmlDoc );
+  }
+
 ?>

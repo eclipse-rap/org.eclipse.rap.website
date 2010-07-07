@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    version="1.0">
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
   <xsl:template match="/">
     <div id="midcolumn">
@@ -36,31 +35,53 @@
         http://download.eclipse.org/rt/rap/1.3/runtime
       </p>
 
-      <h3>Completed Builds</h3>
+      <xsl:if test="/builds/completed">
+        <h3>Completed Builds</h3>
+        <xsl:apply-templates select="/builds/completed"/>
+      </xsl:if>
 
-      <h4>Releases</h4>
-
-      <table class="builds">
-        <xsl:apply-templates select="/version/build[@type = 'R']"/>
-      </table>
-
-      <h4>Release Candiate Builds</h4>
-
-      <table class="builds">
-        <xsl:apply-templates select="/version/build[@type = 'RC']"/>
-      </table>
-
-      <h4>Milestone Builds</h4>
-
-      <table class="builds">
-        <xsl:apply-templates select="/version/build[@type = 'M']"/>
-      </table>
+      <xsl:if test="/builds/planned">
+        <h3>Planned Builds</h3>
+        <xsl:apply-templates select="/builds/planned"/>
+      </xsl:if>
 
     </div>
   </xsl:template>
 
-  <!-- Template for one build -->
-  <xsl:template match="version/build">
+  <!-- Template for a category of builds (planned/completed) -->
+  <xsl:template match="builds/*">
+  
+    <xsl:if test="build[@type = 'SR']">
+      <h4>Service Releases</h4>
+      <table class="builds">
+        <xsl:apply-templates select="build[@type = 'SR']"/>
+      </table>
+    </xsl:if>
+
+    <xsl:if test="build[@type = 'R']">
+      <h4>Release</h4>
+      <table class="builds">
+        <xsl:apply-templates select="build[@type = 'R']"/>
+      </table>
+    </xsl:if>
+
+    <xsl:if test="build[@type = 'RC']">
+      <h4>Release Candiate Builds</h4>
+      <table class="builds">
+        <xsl:apply-templates select="build[@type = 'RC']"/>
+      </table>
+    </xsl:if>
+
+    <xsl:if test="build[@type = 'M']">
+      <h4>Milestone Builds</h4>
+      <table class="builds">
+        <xsl:apply-templates select="build[@type = 'M']"/>
+      </table>
+    </xsl:if>
+  </xsl:template>
+  
+  <!-- Template for one single build -->
+  <xsl:template match="builds//build">
     <tr>
       <td class="build-header">
         <xsl:value-of select="@name"/>

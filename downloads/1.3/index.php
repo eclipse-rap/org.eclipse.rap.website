@@ -13,15 +13,10 @@ $pageTitle = "RAP - 1.3 Downloads";
 $pageKeywords = "ajax, rap, eclipse rap, 1.3, downloads";
 $pageAuthor = "Ralf Sternberg";
 
-$xslDoc = new DOMDocument();
-$xslDoc->load( "_index.xsl" );
-
-$xmlDoc = new DOMDocument();
-$xmlDoc->load( "builds.xml" );
-
-$proc = new XSLTProcessor();
-$proc->importStylesheet( $xslDoc );
-$html = $proc->transformToXML( $xmlDoc );
+$t0 = microtime( true );
+$html = xslt( 'builds.xml', '_index.xsl' );
+$t1 = microtime( true );
+$html .= "<!-- xslt real time: " . ( $t1 - $t0 ) . "-->";
 
 generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
 
