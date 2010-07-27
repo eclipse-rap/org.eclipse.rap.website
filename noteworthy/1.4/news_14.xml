@@ -39,16 +39,15 @@
     </title>
     <description>
       <![CDATA[
-        We have a new implementation of the SWT Tree widget that provides
-        a lot of features that were impossible with the old one.
-        New Features:
+        We have a new implementation of the SWT Tree widget which is faster,
+        more flexible, and provides many new features:
         <ul>
-          <li>Full SWT.VIRTUAL support makes big trees load much faster</li>
-          <li>Item height does adapt to font / image size now</li>
           <li>Item and cell colors/fonts</li>
+          <li>Item height does adapt to font / image size now</li>
           <li>SWT.FULL_SELECTION support</li>
           <li>Gridlines</li>
           <li>Themeable indentation symbols (treelines, expand/collapse icons)<li>
+          <li>Improved SWT.VIRTUAL support makes big trees load much faster</li>
         </ul>
       ]]>
     </description>
