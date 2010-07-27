@@ -32,7 +32,6 @@
     </description>
   </entry>
 
-  <!--
   <entry category="RWT" milestone="M1">
     <title>
       New Tree implementation
@@ -46,12 +45,17 @@
           <li>Item height does adapt to font / image size now</li>
           <li>SWT.FULL_SELECTION support</li>
           <li>Gridlines</li>
-          <li>Themeable indentation symbols (treelines, expand/collapse icons)<li>
+          <li>Themeable indentation symbols (treelines, expand/collapse icons)</li>
           <li>Improved SWT.VIRTUAL support makes big trees load much faster</li>
         </ul>
+        <img src="images/tree-modern.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+        <img src="images/tree-columns.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+        <img src="images/tree-gay.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
       ]]>
     </description>
   </entry>
-  -->
 
 </noteworthy>
