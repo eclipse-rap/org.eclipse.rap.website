@@ -58,4 +58,21 @@
     </description>
   </entry>
 
+  <entry category="Common" milestone="M1">
+    <title>
+      Servlet 3.0 Support
+    </title>
+    <description>
+      <![CDATA[
+        In order to support new application servers that already ship
+        with <a href="http://java.sun.com/products/servlet/index.jsp">Servlet API</a>
+        (<code>javax.servlet.*</code>) 3.0, RAP is now able to leverage the new
+        Servlet specification. Deploying RAP on application servers like
+        <a href="http://tomcat.apache.org/">Tomcat 7</a> or
+        <a href="https://glassfish.dev.java.net/">Glassfish 3</a>.
+        is now possible.
+      ]]>
+    </description>
+  </entry>
+
 </noteworthy>
