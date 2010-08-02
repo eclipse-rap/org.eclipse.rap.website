@@ -18,7 +18,7 @@ $html = <<<EOHTML
 
   <div id="midcolumn">
 
-    <h1>RAP New and Noteworthy</h1>
+    <h1>New and Noteworthy</h1>
 
     <p>
       Here are some of the more noteworthy things available in the respective 
@@ -86,7 +86,7 @@ $html = <<<EOHTML
         </li>
       </ul>
     </div>
-    </div>
+  </div>
 
 </div>
 EOHTML;
