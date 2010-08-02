@@ -1,0 +1,17 @@
+<builds version="1.4">
+
+  <planned>
+
+    <build name="1.4 M1" type="M"
+        buildDate="2010-08-?"
+        news="1.4/news_M1.php" />
+      <!--
+        toolingZip="1.4/rap-tooling-1.4.0-M1-20101224-1000.zip"
+        runtimeZip="1.4/rap-runtime-1.4.0-M1-20101224-1000.zip" /-->
+
+  </planned>
+  <completed>
+
+  </completed>
+
+</builds>
