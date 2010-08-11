@@ -86,5 +86,19 @@
       ]]>
     </description>
   </entry>
+  
+  <entry category="Tooling" milestone="M1">
+    <title>
+      IApplication support
+    </title>
+    <description>
+      <![CDATA[
+        With this milestone the RAP launcher supports choosing and launching 
+        IApplications.  
+        <img src="images/applicationTooling.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+      ]]>
+    </description>
+  </entry>
 
 </noteworthy>
