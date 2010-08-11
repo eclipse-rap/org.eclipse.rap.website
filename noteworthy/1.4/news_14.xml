@@ -74,5 +74,17 @@
       ]]>
     </description>
   </entry>
+  
+  <entry category="JFace / Workbench" milestone="M1">
+    <title>
+      IApplication support
+    </title>
+    <description>
+      <![CDATA[
+        IApplication support has been change to use fully qualified application
+        ids.
+      ]]>
+    </description>
+  </entry>
 
 </noteworthy>
