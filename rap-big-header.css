@@ -87,21 +87,21 @@
 
 #rap-button-download {
   left: 0px;
-  top: 0px;
-  background: transparent url( "images/buttons.png" ) no-repeat 0 0;
+  top: 87px;
+  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
 }
 
 #rap-button-download:hover {
-  background: transparent url( "images/buttons.png" ) no-repeat -250px 0;
+  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
 }
 
 #rap-button-download div.rap-button-icon {
-  background: transparent url( "images/button-icons.png" ) no-repeat 0 0;
+  background: transparent url( "http://download.eclipsesource.com/~hstaudacher/rap/button-icons.png" ) no-repeat 0 0;
 }
  
 #rap-button-documentation {
-  left: 0px;
-  top: 87px;
+  left: 280px;
+  top: 0px;
   background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
 }
 
@@ -110,12 +110,12 @@
 }
 
 #rap-button-documentation div.rap-button-icon {
-  background: transparent url( "images/button-icons.png" ) no-repeat -50px 0;
+  background: transparent url( "http://download.eclipsesource.com/~hstaudacher/rap/button-icons.png" ) no-repeat -50px 0;
 }
 
 #rap-button-support {
   left: 280px;
-  top: 0px;
+  top: 87px;
   background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
 }
 
@@ -124,21 +124,21 @@
 }
 
 #rap-button-support div.rap-button-icon {
-  background: transparent url( "images/button-icons.png" ) no-repeat -100px 0;
+  background: transparent url( "http://download.eclipsesource.com/~hstaudacher/rap/button-icons.png" ) no-repeat -100px 0;
 }
 
-#rap-button-involved {
-  left: 280px;
-  top: 87px;
-  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
+#rap-button-demos {
+  left: 0px;
+  top: 0px;
+  background: transparent url( "images/buttons.png" ) no-repeat 0 0;
 }
 
-#rap-button-involved:hover {
-  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
+#rap-button-demos:hover {
+  background: transparent url( "images/buttons.png" ) no-repeat -250px 0;
 }
 
-#rap-button-involved div.rap-button-icon {
-  background: transparent url( "images/button-icons.png" ) no-repeat -150px 0;
+#rap-button-demos div.rap-button-icon {
+  background: transparent url( "http://download.eclipsesource.com/~hstaudacher/rap/button-icons.png" ) no-repeat -150px 0;
 }
 
 #midcolumn {
