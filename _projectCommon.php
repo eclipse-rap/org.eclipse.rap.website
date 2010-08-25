@@ -35,7 +35,6 @@
   $App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes.css"/>' );
   $App->AddExtraHtmlHeader( '<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->' );
   $App->AddExtraHtmlHeader( '<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>' );
-  $App->AddExtraHtmlHeader( '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>' );
 
 //  $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
   $App->SetGoogleAnalyticsTrackingCode("UA-17128428-1");
