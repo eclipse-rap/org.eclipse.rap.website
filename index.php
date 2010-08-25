@@ -18,6 +18,7 @@ $html = file_get_contents( '_index.html' );
 $Nav = null; // delete right side navigation
 
 $App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-big-header.css"/>' );
+$App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-posts.css"/>' );
 
 # What is RAP Screencast
 $App->AddExtraHtmlHeader( '<script type="text/javascript" src="http://w3.eclipsesource.com/www/js/rap/jquery.zrssfeed.min.js"></script>' );
