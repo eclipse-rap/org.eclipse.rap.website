@@ -88,11 +88,11 @@
 #rap-button-download {
   left: 0px;
   top: 87px;
-  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
+  background: transparent url( "images/buttons.png" ) no-repeat 0 0;
 }
 
 #rap-button-download:hover {
-  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
+  background: transparent url( "images/buttons.png" ) no-repeat -250px 0;
 }
 
 #rap-button-download div.rap-button-icon {
@@ -130,11 +130,11 @@
 #rap-button-demos {
   left: 0px;
   top: 0px;
-  background: transparent url( "images/buttons.png" ) no-repeat 0 0;
+  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
 }
 
 #rap-button-demos:hover {
-  background: transparent url( "images/buttons.png" ) no-repeat -250px 0;
+  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
 }
 
 #rap-button-demos div.rap-button-icon {
