@@ -113,8 +113,8 @@
         <br />
         <ul>         
           <li><code>Display#getSystemTray()</code></li>
-          <li><code>Tree#getTopItem()</code> and 
-              <code>Tree#setTopItem( TreeItem )</code></li>
+          <li><code>Tree#getTopItem()</code></li>
+          <li><code>Tree#setTopItem( TreeItem )</code></li>
         </ul>
       ]]>
     </description>
