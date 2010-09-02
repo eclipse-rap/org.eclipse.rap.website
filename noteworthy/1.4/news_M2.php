@@ -29,6 +29,13 @@ $header = <<<EOHTML
 EOHTML;
 
 $footer = <<<EOHTML
+<p>
+  The above features are just the ones that are new since the last 
+  milestone build. Summaries for earlier builds:
+</p>
+<ul>
+  <li><a href="news_M1.php">New for RAP 1.4 M1</a></li>
+</ul>
 EOHTML;
 
 $news = new Noteworthy( 'news_14.xml', 'M2', $header, $footer );
