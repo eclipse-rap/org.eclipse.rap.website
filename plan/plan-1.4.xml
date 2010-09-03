@@ -6,7 +6,9 @@
     xmlns="http://www.eclipse.org/project/plan"
     xmlns:html="http://www.w3.org/1999/xhtml" 
     name="Rich Ajax Platform (RAP)">
+
   <release projectid="rt.rap" version="1.4" />
+
   <introduction>
     <html:div>
       The RAP project enables developers to build rich, Ajax-enabled Web 
@@ -19,6 +21,7 @@
       <html:a href="http://wiki.eclipse.org/RapPlan">wiki pages</html:a>.
     </html:div>
   </introduction>
+
   <release_deliverables>
     <html:div>
       <html:ul>
@@ -36,6 +39,7 @@
       </html:ul>
     </html:div>
   </release_deliverables>
+
   <release_milestones>
     <preamble>
       <html:div>
@@ -45,17 +49,15 @@
         Indigo Simultaneous Release</html:a> train.
       </html:div>
     </preamble>
-    <milestone date="8/20/2010" milestone="M1"><html:div>1.4 M2</html:div></milestone>
-    <milestone date="10/1/2010" milestone="M2"><html:div>1.4 M2</html:div></milestone>
-    <milestone date="11/12/2010" milestone="M3"><html:div>1.4 M3</html:div></milestone>
-    <milestone date="12/17/2010" milestone="M4"><html:div>1.4 M4</html:div></milestone>
-    <milestone date="2/4/2011" milestone="M5"><html:div>1.4 M5</html:div></milestone>
-    <milestone date="3/18/2011" milestone="M6"><html:div>1.4 M6 (API Freeze)</html:div></milestone>
-    <milestone date="5/6/2011" milestone="M7"><html:div>1.4 M7 (Feature Freeze)</html:div></milestone>
-    <milestone date="5/20/2010" milestone="RC1"><html:div>1.4 RC1</html:div></milestone>
-    <milestone date="6/3/2010" milestone="RC2"><html:div>1.4 RC2</html:div></milestone>
-    <milestone date="6/10/2010" milestone="RC3"><html:div>1.4 RC3</html:div></milestone>
-    <milestone date="6/11/2009" milestone="RC4"><html:div>1.4 RC4</html:div></milestone>
+
+    <milestone date="August 20, 2010" milestone="M1"></milestone>
+    <milestone date="October 1, 2010" milestone="M2"></milestone>
+    <milestone date="November 12, 2010" milestone="M3"></milestone>
+    <milestone date="December 17, 2010" milestone="M4"></milestone>
+    <milestone date="February 4, 2011" milestone="M5"></milestone>
+    <milestone date="March 18, 2011" milestone="M6"><html:div>(API Freeze)</html:div></milestone>
+    <milestone date="May 6, 2011" milestone="M7"><html:div>(Feature Freeze)</html:div></milestone>
+
     <postamble>
       <html:div>
         A detailed <html:a href="http://wiki.eclipse.org/RAP/Ramp_down_plan">
@@ -71,6 +73,7 @@
       </html:div>
     </postamble>
   </release_milestones>
+
   <target_environments>
     <html:div>
       <html:p>
@@ -110,11 +113,13 @@
       </html:div>
     </internationalization>
   </target_environments>
+
   <compatibility_with_previous_releases>
     <html:div>
       RAP 1.4 will be backward compatible with RAP 1.3.
     </html:div>
   </compatibility_with_previous_releases>
+
   <themes_and_priorities>
     <preamble>
       <html:div></html:div>
