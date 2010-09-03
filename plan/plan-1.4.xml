@@ -138,10 +138,10 @@
         </html:div>
       </description>
       <committed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=widgets">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dcommitted+plan-theme=widgets">
       </committed>
       <proposed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=widgets">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dproposed+plan-theme=widgets">
       </proposed>
       <!--deferred>
       </deferred-->
@@ -160,10 +160,10 @@
         </html:div>
       </description>
       <committed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=theming-design">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dcommitted+plan-theme=theming-design">
       </committed>
       <proposed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=theming-design">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dproposed+plan-theme=theming-design">
       </proposed>
       <!--deferred>
       </deferred-->
@@ -180,10 +180,10 @@
         </html:div>
       </description>
       <committed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=single-sourcing">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dcommitted+plan-theme=single-sourcing">
       </committed>
       <proposed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=single-sourcing">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dproposed+plan-theme=single-sourcing">
       </proposed>
       <!--deferred>
       </deferred-->
@@ -204,10 +204,10 @@
         </html:div>
       </description>
       <committed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=other-clients">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dcommitted+plan-theme=other-clients">
       </committed>
       <proposed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=other-clients">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dproposed+plan-theme=other-clients">
       </proposed>
       <!--deferred>
       </deferred-->
@@ -225,10 +225,10 @@
         </html:div>
       </description>
       <committed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=performance-reliability">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dcommitted+plan-theme=performance-reliability">
       </committed>
       <proposed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=performance-reliability">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dproposed+plan-theme=performance-reliability">
       </proposed>
       <!--deferred>
       </deferred-->
@@ -246,10 +246,10 @@
         </html:div>
       </description>
       <committed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=other-projects">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dcommitted+plan-theme=other-projects">
       </committed>
       <proposed
-        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=other-projects">
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dproposed+plan-theme=other-projects">
       </proposed>
       <!--deferred>
       </deferred-->
