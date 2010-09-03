@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+
+<plan
+    plan-format="1.0" 
+    xmlns="http://www.eclipse.org/project/plan"
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+    name="Rich Ajax Platform (RAP)">
+  <release projectid="rt.rap" version="1.4" />
+  <introduction>
+    <html:div>
+      The RAP project enables developers to build rich, Ajax-enabled Web 
+      applications by using the Eclipse development model, plug-ins with 
+      the well known Eclipse workbench extension points, JFace, and a 
+      widget toolkit with SWT API.
+    </html:div>
+    <html:div>
+      Plans for previous releases can be found on these 
+      <html:a href="http://wiki.eclipse.org/RapPlan">wiki pages</html:a>.
+    </html:div>
+  </introduction>
+  <release_deliverables>
+    <html:div>
+      <html:ul>
+        <html:li>
+          <html:strong>Tooling</html:strong>:
+          contains useful tools, templates and documentation for RAP development.
+          Available as p2 repository.
+        </html:li>
+        <html:li>
+          <html:strong>Runtime (Target Components)</html:strong>:
+          contains the RAP runtime to be used as target platform,
+          including sources and a simple demo application.
+          Available as p2 repository.
+        </html:li>
+      </html:ul>
+    </html:div>
+  </release_deliverables>
+  <release_milestones>
+    <preamble>
+      <html:div>
+        Release milestones will be occurring at roughly 6 week intervals,
+        and will be aligned with the
+        <html:a href="http://wiki.eclipse.org/Indigo/Simultaneous_Release_Plan">
+        Indigo Simultaneous Release</html:a> train.
+      </html:div>
+    </preamble>
+    <milestone date="8/20/2010" milestone="M1"><html:div>1.4 M2</html:div></milestone>
+    <milestone date="10/1/2010" milestone="M2"><html:div>1.4 M2</html:div></milestone>
+    <milestone date="11/12/2010" milestone="M3"><html:div>1.4 M3</html:div></milestone>
+    <milestone date="12/17/2010" milestone="M4"><html:div>1.4 M4</html:div></milestone>
+    <milestone date="2/4/2011" milestone="M5"><html:div>1.4 M5</html:div></milestone>
+    <milestone date="3/18/2011" milestone="M6"><html:div>1.4 M6 (API Freeze)</html:div></milestone>
+    <milestone date="5/6/2011" milestone="M7"><html:div>1.4 M7 (Feature Freeze)</html:div></milestone>
+    <milestone date="5/20/2010" milestone="RC1"><html:div>1.4 RC1</html:div></milestone>
+    <milestone date="6/3/2010" milestone="RC2"><html:div>1.4 RC2</html:div></milestone>
+    <milestone date="6/10/2010" milestone="RC3"><html:div>1.4 RC3</html:div></milestone>
+    <milestone date="6/11/2009" milestone="RC4"><html:div>1.4 RC4</html:div></milestone>
+    <postamble>
+      <html:div>
+        A detailed <html:a href="http://wiki.eclipse.org/RAP/Ramp_down_plan">
+        RAP Ramp down plan</html:a> towards the release is available for the
+        Simultaneous Release integration.
+        <html:p>
+          RAP 1.4 will be released on June 22, 2011, together with Eclipse Indigo.
+        </html:p>
+        <html:p>
+          Two service releases are planned for RAP 1.4 that will include
+          critical bug fixes.
+        </html:p>
+      </html:div>
+    </postamble>
+  </release_milestones>
+  <target_environments>
+    <html:div>
+      <html:p>
+      The server-side part of the Rich Ajax Platform 1.4 will be written and 
+      compiled against
+      <html:ul>
+        <html:li>
+          <html:a href="http://www.eclipse.org/equinox/server/">Equinox</html:a> 
+          Version 3.7</html:li>
+        <html:li>Version 1.4.2 of the Java Platform APIs (i.e., Java 2 Platform,
+          Release 1.4.2 SE)</html:li>
+        <html:li>
+          <html:a href="http://java.sun.com/products/servlet/reference/api/index.html">
+          Java Servlet API</html:a> Version 2.3 - 3.0</html:li>
+      </html:ul>
+      </html:p>
+      <html:p>
+      The client-side reference implementation depends upon
+      <html:a href="http://qooxdoo.org">qooxdoo</html:a>.
+      For this release the following web browsers/rendering engines will be
+      supported
+      <html:ul>
+        <html:li>Internet Explorer 6.0 and later, at least 7.0 is recommended</html:li>
+        <html:li>Firefox 2.0 and later</html:li>
+        <html:li>Safari 3.0 and later</html:li>
+        <html:li>Google Chrome 3.0 and later</html:li>
+        <html:li>Opera 9.0 and later</html:li>
+      </html:ul>
+      </html:p>
+    </html:div>
+    <internationalization>
+      <html:div>
+        The Rich Ajax Platform is designed as the basis for internationalized
+        products. The user interface elements provided by the RAP
+        components, including dialogs and error messages, are externalized. The
+        English strings are provided as the default resource bundles.
+      </html:div>
+    </internationalization>
+  </target_environments>
+  <compatibility_with_previous_releases>
+    <html:div>
+      RAP 1.4 will be backward compatible with RAP 1.3.
+    </html:div>
+  </compatibility_with_previous_releases>
+  <themes_and_priorities>
+    <preamble>
+      <html:div></html:div>
+    </preamble>
+
+    <theme name="Widget improvements and additions">
+      <description>
+        <html:div>
+          <html:p>
+            As in every release, we plan to improve the RAP widget set.
+            This includes a new Tree, non-native scrollbars, and including the
+            upload widget into the release.
+            To support custom widgets better, we'd also like to come up with a
+            small documented JavaScript API for custom widgets.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=widgets">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=widgets">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Theming and Design">
+      <description>
+        <html:div>
+          <html:p>
+            We want to further improve the look and feel of RAP applications by
+            adding more theming features like shadows and more animations.
+            Our aging default theme also needs a fresh look.
+            Those widgets that are not very customizeable by theming, should be
+            improved. We also plan to ease the theming of custom widgets.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=theming-design">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=theming-design">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Single Sourcing">
+      <description>
+        <html:div>
+          <html:p>
+            To support single sourcing, we will update the Eclipse UI APIs
+            to 3.7 and add more Eclipse API to RAP - first and foremost key
+            bindings, as there is a great demand.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=single-sourcing">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=single-sourcing">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Support other client technologies">
+      <description>
+        <html:div>
+          <html:p>
+            We notice that mobile devices are gaining popularity and thus we
+            want to improve RAP on those devices.
+            For a start, we plan to fix blocking bugs on iPhone/iPad and make
+            RAP work on Adroid.
+            Moreover, we will work towards a well-defined JSON protocol between
+            client and server that will once allow for exchangeable client
+            implementations.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=other-clients">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=other-clients">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Performance and Reliability">
+      <description>
+        <html:div>
+          <html:p>
+            We want to further improve the performance of RAP by reducing the
+            client footprint.
+            We are involved in a research project that evaluates solutions for
+            transparent failover.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=performance-reliability">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=performance-reliability">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Integration with other Eclipse projects">
+      <description>
+        <html:div>
+          <html:p>
+            We actively support other Eclipse projects to integrate with RAP.
+            We want to keep up the good cooperation with Riena and EMF, started
+            in the previous release cycle, and also look into other Eclipse
+            projects that could leverage RAP.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dcommitted+plan-theme=other-projects">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.3+plan-status%3Dproposed+plan-theme=other-projects">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+  </themes_and_priorities>
+</plan>
