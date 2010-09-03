@@ -234,6 +234,26 @@
       </deferred-->
     </theme>
 
+    <theme name="Tooling">
+      <description>
+        <html:div>
+          <html:p>
+            We're constantly improving the RAP tooling.
+            In this release, we plan to add a IApplication support, a simple WAR
+            export feature, and an editor for CSS theme files.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dcommitted+plan-theme=tooling">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.4+plan-status%3Dproposed+plan-theme=tooling">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
     <theme name="Integration with other Eclipse projects">
       <description>
         <html:div>
