@@ -8,7 +8,9 @@
 
       <p>
         Release Date: June 23, 2010, together with Eclipse Helios<br/>
-        <a href="/rap/noteworthy/1.3/">New &amp; Noteworthy</a>
+        <a href="/rap/noteworthy/1.3/">New &amp; Noteworthy</a>.
+        A service release (1.3.1) is available, another service release (1.3.2)
+        is planned for  Feb 25, 2011.
       </p>
 
       <h3>RAP Tooling</h3>
