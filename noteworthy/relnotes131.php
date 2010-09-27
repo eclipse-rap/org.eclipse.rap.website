@@ -28,7 +28,7 @@ $html = <<<EOHTML
     Bugs fixed in the 1.3.1 release</a>.
   </p>
   <p>
-    The service release will be available on September 24, 2010.
+    The service is available for <a href="/downloads/1.3/">download</a>.
     In the meanwhile the changes can be obtained from
     the <code>v13_Maintenance</code> branch in our
     <a href="/rap/source/">CVS</a>.
