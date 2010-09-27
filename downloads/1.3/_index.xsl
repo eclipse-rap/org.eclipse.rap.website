@@ -100,6 +100,16 @@
         </xsl:if>
       </td>
       <td>
+        <xsl:if test="@relnotes != ''">
+          <a>
+            <xsl:attribute name="href">
+              <xsl:value-of select="concat( 'http://www.eclipse.org/rap/noteworthy/', @relnotes )"/>
+            </xsl:attribute>
+            Release Notes
+          </a>
+        </xsl:if>
+      </td>
+      <td>
         <xsl:if test="@toolingZip != ''">
         <a>
           <xsl:attribute name="href">
