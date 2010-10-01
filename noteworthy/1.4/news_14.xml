@@ -136,8 +136,7 @@
           style="margin-top: 10px; margin-bottom: 10px"/>
 
         Note that pinch-zoom is disabled in fullscreen-mode.<br/> 
-        The most pressing remaining issue is that some widgets (e.g. Tree and 
-        Table) can currently not be scrolled. We will continue to improve 
+        Some issues remain, but we will continue to improve 
         support for iPad and other mobile devices.
       ]]>
     </description>
