@@ -2,14 +2,21 @@
 
   <planned>
 
-    <build name="1.4 M2" type="M"
-        buildDate="2010-10-01"
-        news="1.4/news_M2.php" />
+    <build name="1.4 M3" type="M"
+        buildDate="2010-11-12"
+        news="1.4/news_M3.php" />
       <!--
         toolingZip="1.4/rap-tooling-1.4.0-M1-20101224-1000.zip"
         runtimeZip="1.4/rap-runtime-1.4.0-M1-20101224-1000.zip" /-->
 
   </planned>
+  <completed>
+    <build name="1.4 M2" type="M"
+        buildDate="2010-10-01"
+        news="1.4/news_M2.php" 
+        toolingZip="1.4/rap-tooling-1.4.0-M2-20100928-1710.zip"
+        runtimeZip="1.4/rap-runtime-1.4.0-M2-20100928-1646.zip" /> 
+  </completed>
   <completed>
     <build name="1.4 M1" type="M"
         buildDate="2010-08-11"
