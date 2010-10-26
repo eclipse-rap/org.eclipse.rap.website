@@ -168,5 +168,22 @@
       ]]>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M3">
+    <title>
+      New API added
+    </title>
+    <description>
+      <![CDATA[
+        This will make it easier for the community to reuse existing code or
+        to utilize new features.
+        Here is a list of API methods added in M3:
+        <br />
+        <ul>
+          <li><code>Tree#getGridLineWidth()</code></li>
+        </ul>
+      ]]>
+    </description>
+  </entry>
 
 </noteworthy>
