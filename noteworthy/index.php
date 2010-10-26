@@ -27,10 +27,18 @@ $html = <<<EOHTML
 
     <ul>
       <li>
+        <a href="1.4/news_M3.php">RAP 1.4 M3</a>
+        <p style="margin-top: 5px">
+          Listed are the noteworthy things available in the second milestone
+          build for RAP 1.4 (M3, November, 2010).
+        </p>
+      </li>
+      <li>
         <a href="1.4/news_M2.php">RAP 1.4 M2</a>
         <p style="margin-top: 5px">
           Listed are the noteworthy things available in the second milestone
-          build for RAP 1.4 (M2, October 1, 2010).
+          build for RAP 1.4 (M2, available for
+          <a href="/rap/downloads/">download</a>).
         </p>
       </li>
       <li>
