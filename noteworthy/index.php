@@ -29,7 +29,7 @@ $html = <<<EOHTML
       <li>
         <a href="1.4/news_M3.php">RAP 1.4 M3</a>
         <p style="margin-top: 5px">
-          Listed are the noteworthy things available in the second milestone
+          Listed are the noteworthy things available in the third milestone
           build for RAP 1.4 (M3, November, 2010).
         </p>
       </li>
