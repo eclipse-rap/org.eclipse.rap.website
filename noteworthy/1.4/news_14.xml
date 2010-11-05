@@ -181,6 +181,8 @@
         <br />
         <ul>
           <li><code>Tree#getGridLineWidth()</code></li>
+          <li><code>Text#setTextChars( char[] )</code></li>
+          <li><code>Text#getTextChars()</code></li>
         </ul>
       ]]>
     </description>
