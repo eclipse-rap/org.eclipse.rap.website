@@ -211,13 +211,13 @@
       <br />
       For example:
       <pre>
-	Label-SeparatorLine {
-	  background-image: none;
-	  background-color: transparent;
-	  border: 1px solid #a4a4a4;
-	  border-radius: 0px;
-	  width: 2px;
-	}
+  Label-SeparatorLine {
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid #a4a4a4;
+    border-radius: 0px;
+    width: 2px;
+  }
       </pre>
       </li>
       </ul>
