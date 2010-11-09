@@ -207,7 +207,9 @@
           <li>The Label has a new themeable element called 
           <code>Label-SeparatorLine</code>. It's possible to style the background
           image (gradient), background color, border, border radius and line 
-          width. For example:
+          width.
+          <br />
+          For example:
           <pre>
 	Label-SeparatorLine {
 	  background-image: none;
