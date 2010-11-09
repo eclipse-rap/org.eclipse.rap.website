@@ -194,23 +194,23 @@
     </title>
     <description>
       <![CDATA[
-        The theming was extended in serveral places:
-        <br />
-        <ul>
-          <li>It's now possible to style the separator label like:
-          <pre>
+      The theming was extended in serveral places:
+      <br />
+      <ul>
+      <li>It's now possible to style the separator label like:
+      <pre>
   Label[SEPARATOR] {
     ...
   }
-          </pre>
-          </li>
-          <li>The Label has a new themeable element called 
-          <code>Label-SeparatorLine</code>. It's possible to style the background
-          image (gradient), background color, border, border radius and line 
-          width.
-          <br />
-          For example:
-          <pre>
+      </pre>
+      </li>
+      <li>The Label has a new themeable element called 
+      <code>Label-SeparatorLine</code>. It's possible to style the background
+      image (gradient), background color, border, border radius and line 
+      width.
+      <br />
+      For example:
+      <pre>
 	Label-SeparatorLine {
 	  background-image: none;
 	  background-color: transparent;
@@ -218,9 +218,9 @@
 	  border-radius: 0px;
 	  width: 2px;
 	}
-          </pre>
-          </li>
-        </ul>
+      </pre>
+      </li>
+      </ul>
       ]]>
     </description>
   </entry>
