@@ -208,7 +208,6 @@
           <code>Label-SeparatorLine</code>. It's possible to style the background
           image (gradient), background color, border, border radius and line 
           width. For example:
-          <br/>
           <pre>
 	Label-SeparatorLine {
 	  background-image: none;
