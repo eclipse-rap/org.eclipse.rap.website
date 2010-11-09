@@ -187,5 +187,41 @@
       ]]>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M3">
+    <title>
+      Theme Extensions
+    </title>
+    <description>
+      <![CDATA[
+        The theming was extended in serveral places:
+        <br />
+        <ul>
+          <li>It's now possible to style the separator label like:
+          <pre>
+  Label[SEPARATOR] {
+    ...
+  }
+          </pre>
+          </li>
+          <li>The Label has a new themeable element called 
+          <code>Label-SeparatorLine</code>. It's possible to style the background
+          image (gradient), background color, border, border radius and line 
+          width. For example:
+          <br/>
+          <pre>
+	Label-SeparatorLine {
+	  background-image: none;
+	  background-color: transparent;
+	  border: 1px solid #a4a4a4;
+	  border-radius: 0px;
+	  width: 2px;
+	}
+          </pre>
+          </li>
+        </ul>
+      ]]>
+    </description>
+  </entry>
 
 </noteworthy>
