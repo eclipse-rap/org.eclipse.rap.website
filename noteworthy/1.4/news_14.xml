@@ -225,4 +225,34 @@
     </description>
   </entry>
 
+  
+  <entry category="RWT" milestone="M3">
+    <title>
+      JQuery compatibility
+    </title>
+    <description>
+      <![CDATA[
+        In the past, using <a href="http://jquery.com/">JQuery</a> with RAP 
+        (e.g. for custom-widgets) was very problematic because "$" was used by 
+        both RAP and JQuery as a global variable. RAP is not doing this anymore, 
+        so if you wish to use JQuery, now you can. 
+      ]]>
+    </description>
+  </entry>
+    
+  <entry category="RWT" milestone="M3">
+    <title>
+      Optimized client
+    </title>
+    <description>
+      <![CDATA[
+        RAP is now using a new javascript-compressor (based on the 
+        <a href="http://developer.yahoo.com/yui/compressor/">YUI 
+        Compressor</a>), and we also refactored/removed a lot of existing 
+        javascript code. These two actions reduced the size of the client from 
+        984 kB to 909 kB.      
+      ]]>
+    </description>
+  </entry>
+  
 </noteworthy>
