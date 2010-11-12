@@ -220,6 +220,9 @@
   }
       </pre>
       </li>
+      <li><code>MenuItem</code> has a new themeable property 
+      <code>background-image</code>.
+      </li>
       </ul>
       ]]>
     </description>
