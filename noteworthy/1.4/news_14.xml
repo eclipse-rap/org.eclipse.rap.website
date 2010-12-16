@@ -271,7 +271,10 @@
         <ul>
           <li><code>Browser#evaluate( String )</code></li>
           <li><code>Browser#addProgressListener( ProgressListener )</code></li>
-          <li><code>Browser#removeProgressListener( ProgressListener )</code></li>
+          <li><code>Browser#removeProgressListener( ProgressListener )</code>
+          </li>
+          <li><code>GC#drawText()</code> now supports 
+          <code>SWT.DRAW_MNEMONIC</code> style flag.</li>
         </ul>
       ]]>
     </description>
