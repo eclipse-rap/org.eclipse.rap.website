@@ -274,8 +274,8 @@
       </li>
       <li>The themability of the <code>Sash</code> has been improved. 
       <code>background-image</code> and <code>background-color</code> properties
-      have been added to <code>Sash</code> element. <code>:hover</code> is now
-      supported:<br>
+      have been added to <code>Sash</code> element. <code>:hover</code> state is
+      now supported:<br>
       <img src="images/sashhover.png"
           style="margin-top: 10px; margin-bottom: 10px"/>
       </li>
