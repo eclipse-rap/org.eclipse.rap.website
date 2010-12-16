@@ -260,6 +260,25 @@
   
   <entry category="RWT" milestone="M4">
     <title>
+      New API added
+    </title>
+    <description>
+      <![CDATA[
+        This will make it easier for the community to reuse existing code or
+        to utilize new features.
+        Here is a list of API methods added in M4:
+        <br />
+        <ul>
+          <li><code>Browser#evaluate( String )</code>/li>
+          <li><code>Browser#addProgressListener( ProgressListener )</code>/li>
+          <li><code>Browser#removeProgressListener( ProgressListener )</code>/li>
+        </ul>
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="RWT" milestone="M4">
+    <title>
       Theme Extensions
     </title>
     <description>
