@@ -258,4 +258,21 @@
     </description>
   </entry>
   
+  <entry category="RWT" milestone="M4">
+    <title>
+      Theme Extensions
+    </title>
+    <description>
+      <![CDATA[
+      The theming was extended in serveral places:
+      <br />
+      <ul>
+      <li>Table border is now themable, but <code>border-radius</code> property 
+      is still not supported.
+      </li>
+      </ul>
+      ]]>
+    </description>
+  </entry>
+  
 </noteworthy>
