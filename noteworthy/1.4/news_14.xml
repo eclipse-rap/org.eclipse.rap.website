@@ -270,6 +270,15 @@
       <li>Table border is now themable, but <code>border-radius</code> property 
       is still not supported.
       </li>
+      <li><code>opacity</code> property has been added to buttons.
+      </li>
+      <li>The themability of the <code>Sash</code> has been improved. 
+      <code>background-image</code> and <code>background-color</code> properties
+      have been added to <code>Sash</code> element. <code>:hover</code> is now
+      supported:<br>
+      <img src="images/sashhover.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+      </li>
       </ul>
       ]]>
     </description>
