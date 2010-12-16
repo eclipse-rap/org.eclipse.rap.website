@@ -279,6 +279,11 @@
       <img src="images/sashhover.png"
           style="margin-top: 10px; margin-bottom: 10px"/>
       </li>
+      <li>It's now possible to set a background image or gradient for the list
+      items:<br>
+      <img src="images/listitemgradient.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+      </li>
       </ul>
       ]]>
     </description>
