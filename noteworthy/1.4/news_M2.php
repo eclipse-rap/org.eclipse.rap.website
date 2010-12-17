@@ -15,12 +15,9 @@ $pageAuthor = "The RAP Team";
 
 $header = <<<EOHTML
 <p>
-  Here's a list of the most noteworthy things that will be available in the
-  milestone build 1.4 M2 (October 2010).
-  <!--
-    which is now available
-    for <a href="http://www.eclipse.org/rap/downloads/">download</a>.
-  -->
+  Here's a list of the most noteworthy things in the
+  milestone build 1.4 M2 which is available
+  for <a href="http://www.eclipse.org/rap/downloads/">download</a>.
 </p>
 <p>
   <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=RT&product=RAP&target_milestone=1.4+M2&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&query_format=advanced">
@@ -34,7 +31,7 @@ $footer = <<<EOHTML
   milestone build. Summaries for earlier builds:
 </p>
 <ul>
-  <li><a href="news_M1.php">New for RAP 1.4 M1</a></li>
+  <li><a href="news_M1.php">News for RAP 1.4 M1</a></li>
 </ul>
 EOHTML;
 
