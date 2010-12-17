@@ -17,7 +17,7 @@ $vars = array();
 
 // TO CHANGE WITH EVERY NEW STABLE BUILD
 
-$vars[ "STABLE_NAME" ] = "1.4 M3 Milestone Build";
+$vars[ "STABLE_NAME" ] = "1.4 M4 Milestone Build";
 $vars[ "STABLE_DATE" ] = "December 14, 2010";
 $vars[ "STABLE_NOTEWORTHY_URL" ] = "../noteworthy/1.4/news_M4.php";
 $vars[ "STABLE_RUNTIME_ZIP" ] = "rap-runtime-1.4.0-M4-20101214-0912.zip";
