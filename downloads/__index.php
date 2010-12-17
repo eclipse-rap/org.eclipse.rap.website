@@ -18,19 +18,14 @@ $pageAuthor = "The RAP Team";
 $stableBuilds = simplexml_load_file( "./1.4/builds.xml" );
 $releaseBuilds = simplexml_load_file( "./1.3/builds.xml" );
 
-print_r( $stableBuilds );
-
 $stableBuild = $stableBuilds->completed->build[0];
 $releaseBuild = $releaseBuilds->completed->build[0];
-
-print_r( $stableBuild );
 
 $downloadUrl = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/";
 $newsUrl = "../noteworthy/";
 
 // ---
 
-/*
 function getBuildName( $build ) {
   $result = $build[ "name" ];
   if( $build[ "type" ] == "M" ) {
@@ -58,6 +53,8 @@ $vars[ "STABLE_RUNTIME_DESCRIPTION" ] = $stableBuilds[ "runtimeDesc" ];
 $vars[ "STABLE_TOOLING_DESCRIPTION" ] = $stableBuilds[ "toolingDesc" ];
 $vars[ "RELEASE_RUNTIME_DESCRIPTION" ] = $releaseBuilds[ "runtimeDesc" ];
 $vars[ "RELEASE_TOOLING_DESCRIPTION" ] = $releaseBuilds[ "toolingDesc" ];
+
+/*
 $vars[ "STABLE_NAME" ] = getBuildName( $stableBuild );
 $vars[ "RELEASE_NAME" ] = getBuildName( $releaseBuild );
 $vars[ "STABLE_DATE" ] = getBuildDate( $stableBuild );
@@ -79,7 +76,7 @@ $vars[ "RELEASE_TOOLING_UPDATE_SITE" ] = $releaseBuilds[ "toolingSite" ];
 */
 
 $html = file_get_contents( '_index.html' );
-//$html = replaceVariables( $vars, $html );
+$html = replaceVariables( $vars, $html );
 
 generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
 
