@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
+  <xsl:variable
+      name="downloadPath"
+      select="concat( 'http://www.eclipse.org/downloads/download.php?file=/rt/rap/', '1.3/' )" />
+
   <xsl:template match="/">
     <div id="midcolumn">
 
@@ -37,12 +41,12 @@
         http://download.eclipse.org/rt/rap/1.3/runtime
       </p>
 
-      <xsl:if test="/builds/completed">
+      <xsl:if test="/builds/completed/build">
         <h3>Completed Builds</h3>
         <xsl:apply-templates select="/builds/completed"/>
       </xsl:if>
 
-      <xsl:if test="/builds/planned">
+      <xsl:if test="/builds/planned/build">
         <h3>Planned Builds</h3>
         <xsl:apply-templates select="/builds/planned"/>
       </xsl:if>
@@ -68,7 +72,7 @@
     </xsl:if>
 
     <xsl:if test="build[@type = 'RC']">
-      <h4>Release Candiate Builds</h4>
+      <h4>Release Candidate Builds</h4>
       <table class="builds">
         <xsl:apply-templates select="build[@type = 'RC']"/>
       </table>
@@ -115,7 +119,7 @@
         <xsl:if test="@toolingZip != ''">
         <a>
           <xsl:attribute name="href">
-            <xsl:value-of select="concat( 'http://www.eclipse.org/downloads/download.php?file=/rt/rap/', @toolingZip )"/>
+            <xsl:value-of select="concat( $downloadPath, @toolingZip )"/>
           </xsl:attribute>
           <img src="/rap/images/zip.gif"/>
           Tooling
@@ -126,7 +130,7 @@
         <xsl:if test="@runtimeZip != ''">
         <a>
           <xsl:attribute name="href">
-            <xsl:value-of select="concat( 'http://www.eclipse.org/downloads/download.php?file=/rt/rap/', @runtimeZip )"/>
+            <xsl:value-of select="concat( $downloadPath, @runtimeZip )"/>
           </xsl:attribute>
           <img src="/rap/images/zip.gif"/>
           Runtime
