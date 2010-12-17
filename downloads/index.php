@@ -13,44 +13,67 @@ $pageTitle = "RAP - Downloads";
 $pageKeywords = "Ajax, rap, osgi, equinox, eclipse rap, equinox rap";
 $pageAuthor = "The RAP Team";
 
+// --- TO BE CHANGED WITH EVERY RELEASE ---
+
+$stableBuilds = simplexml_load_file( "./1.4/builds.xml" );
+$releaseBuilds = simplexml_load_file( "./1.3/builds.xml" );
+
+$stableBuild = $stableBuilds->completed->build[0];
+$releaseBuild = $releaseBuilds->completed->build[0];
+
+$downloadUrl = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/";
+$newsUrl = "../noteworthy/";
+
+// ---
+
+function getBuildName( $build ) {
+  $result = $build[ "name" ];
+  if( $build[ "type" ] == "M" ) {
+    $result .= " Milestone Build";
+  } else if( $build[ "type" ] == "RC" ) {
+    $result .= " Release Candidate";
+  } else if( $build[ "type" ] == "R" ) {
+    $result .= " Release";
+  } else if( $build[ "type" ] == "SR" ) {
+    $result .= " Service Release";
+  }
+  return $result;
+}
+
+function getBuildDate( $build ) {
+  $months = array( "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December" );
+  $date = explode( "-", $build[ "buildDate" ] );
+  return $months[ $date[ 1 ] - 1 ] . " " . $date[ 2 ] . ", " . $date[ 0 ];
+}
+
 $vars = array();
 
-// TO CHANGE WITH EVERY NEW STABLE BUILD
-
-$vars[ "STABLE_NAME" ] = "1.4 M4 Milestone Build";
-$vars[ "STABLE_DATE" ] = "December 14, 2010";
-$vars[ "STABLE_NOTEWORTHY_URL" ] = "../noteworthy/1.4/news_M4.php";
-$vars[ "STABLE_RUNTIME_ZIP" ] = "rap-runtime-1.4.0-M4-20101214-0912.zip";
-$vars[ "STABLE_TOOLING_ZIP" ] = "rap-tooling-1.4.0-M4-20101214-0934.zip";
-
-// TO CHANGE WITH EVERY RELEASE / SERVICE RELEASE
-
-$vars[ "RELEASE_NAME" ] = "1.3.1 Service Release";
-$vars[ "RELEASE_DATE" ] = "September 24, 2010";
-$vars[ "RELEASE_NOTEWORTHY_URL" ] = "../noteworthy/1.3/";
-$vars[ "RELEASE_RUNTIME_ZIP" ] = "rap-runtime-1.3.1-R-20100915-2301.zip";
-$vars[ "RELEASE_TOOLING_ZIP" ] = "rap-tooling-1.3.1-R-20100916-0013.zip";
-
-// TO CHANGE WITH EVERY RELEASE
-
-$vars[ "STABLE_TOOLING_DESCRIPTION" ] = "The latest milestone build, for use with Eclipse 3.6 and 3.7.";
-$vars[ "STABLE_RUNTIME_DESCRIPTION" ] = "The latest milestone build, based on Eclipse 3.7.";
-$vars[ "STABLE_RUNTIME_UPDATE_SITE" ] = "http://download.eclipse.org/rt/rap/1.4/runtime";
-$vars[ "STABLE_TOOLING_UPDATE_SITE" ] = "http://download.eclipse.org/rt/rap/1.4/tooling";
-$vars[ "STABLE_RUNTIME_DOWNLOAD_URL" ] = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.4/" . $vars[ "STABLE_RUNTIME_ZIP" ];
-$vars[ "STABLE_TOOLING_DOWNLOAD_URL" ] = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.4/" . $vars[ "STABLE_TOOLING_ZIP" ];
-
-$vars[ "RELEASE_TOOLING_DESCRIPTION" ] = "The latest release, for use with Eclipse 3.5 and 3.6.";
-$vars[ "RELEASE_RUNTIME_DESCRIPTION" ] = "The latest release, based on Eclipse 3.6.";
-$vars[ "RELEASE_RUNTIME_UPDATE_SITE" ] = "http://download.eclipse.org/rt/rap/1.3/runtime";
-$vars[ "RELEASE_TOOLING_UPDATE_SITE" ] = "http://download.eclipse.org/rt/rap/1.3/tooling";
-$vars[ "RELEASE_RUNTIME_DOWNLOAD_URL" ] = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/" . $vars[ "RELEASE_RUNTIME_ZIP" ];
-$vars[ "RELEASE_TOOLING_DOWNLOAD_URL" ] = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/1.3/" . $vars[ "RELEASE_TOOLING_ZIP" ];
+$vars[ "STABLE_RUNTIME_DESCRIPTION" ] = $stableBuilds[ "runtimeDesc" ];
+$vars[ "STABLE_TOOLING_DESCRIPTION" ] = $stableBuilds[ "toolingDesc" ];
+$vars[ "RELEASE_RUNTIME_DESCRIPTION" ] = $releaseBuilds[ "runtimeDesc" ];
+$vars[ "RELEASE_TOOLING_DESCRIPTION" ] = $releaseBuilds[ "toolingDesc" ];
+$vars[ "STABLE_NAME" ] = getBuildName( $stableBuild );
+$vars[ "RELEASE_NAME" ] = getBuildName( $releaseBuild );
+$vars[ "STABLE_DATE" ] = getBuildDate( $stableBuild );
+$vars[ "RELEASE_DATE" ] = getBuildDate( $releaseBuild );
+$vars[ "STABLE_NOTEWORTHY_URL" ] = $newsUrl . $stableBuild[ "news" ];
+$vars[ "RELEASE_NOTEWORTHY_URL" ] = $newsUrl . $releaseBuild[ "news" ];
+$vars[ "STABLE_RUNTIME_ZIP" ] = $stableBuild[ "runtimeZip" ];
+$vars[ "STABLE_TOOLING_ZIP" ] = $stableBuild[ "toolingZip" ];
+$vars[ "RELEASE_RUNTIME_ZIP" ] = $releaseBuild[ "runtimeZip" ];
+$vars[ "RELEASE_TOOLING_ZIP" ] = $releaseBuild[ "toolingZip" ];
+$vars[ "STABLE_RUNTIME_DOWNLOAD_URL" ] = $downloadUrl . $stableBuilds[ "downloadPath" ] . $stableBuild[ "runtimeZip" ];
+$vars[ "STABLE_TOOLING_DOWNLOAD_URL" ] = $downloadUrl . $stableBuilds[ "downloadPath" ] . $stableBuild[ "toolingZip" ];
+$vars[ "RELEASE_RUNTIME_DOWNLOAD_URL" ] = $downloadUrl . $releaseBuilds[ "downloadPath" ] . $releaseBuild[ "runtimeZip" ];
+$vars[ "RELEASE_TOOLING_DOWNLOAD_URL" ] = $downloadUrl . $releaseBuilds[ "downloadPath" ] . $releaseBuild[ "toolingZip" ];
+$vars[ "STABLE_RUNTIME_UPDATE_SITE" ] = $stableBuilds[ "runtimeSite" ];
+$vars[ "STABLE_TOOLING_UPDATE_SITE" ] = $stableBuilds[ "toolingSite" ];
+$vars[ "RELEASE_RUNTIME_UPDATE_SITE" ] = $releaseBuilds[ "runtimeSite" ];
+$vars[ "RELEASE_TOOLING_UPDATE_SITE" ] = $releaseBuilds[ "toolingSite" ];
 
 $html = file_get_contents( '_index.html' );
-foreach( $vars as $key => $value ) {
-  $html = str_replace( "{" . $key . "}", $value, $html );
-}
+$html = replaceVariables( $vars, $html );
 
 generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
 
