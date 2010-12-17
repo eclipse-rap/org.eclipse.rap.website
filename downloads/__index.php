@@ -43,8 +43,8 @@ function getBuildName( $build ) {
 function getBuildDate( $build ) {
   $months = array( "January", "February", "March", "April", "May", "June",
       "July", "August", "September", "October", "November", "December" );
-  $date = date_parse_from_format( "Y-m-d", $build[ "buildDate" ] );
-  return $months[ $date[ "month" ] - 1 ] . " " . $date["day"] . ", " . $date[ "year" ];
+  $date = explode( "-", $build[ "buildDate" ] );
+  return $months[ $date[ 1 ] - 1 ] . " " . $date[ 2 ] . ", " . $date[ 0 ];
 }
 
 $vars = array();
@@ -57,8 +57,6 @@ $vars[ "STABLE_NAME" ] = getBuildName( $stableBuild );
 $vars[ "RELEASE_NAME" ] = getBuildName( $releaseBuild );
 $vars[ "STABLE_DATE" ] = getBuildDate( $stableBuild );
 $vars[ "RELEASE_DATE" ] = getBuildDate( $releaseBuild );
-
-/*
 $vars[ "STABLE_NOTEWORTHY_URL" ] = $newsUrl . $stableBuild[ "news" ];
 $vars[ "RELEASE_NOTEWORTHY_URL" ] = $newsUrl . $releaseBuild[ "news" ];
 $vars[ "STABLE_RUNTIME_ZIP" ] = $stableBuild[ "runtimeZip" ];
@@ -73,7 +71,6 @@ $vars[ "STABLE_RUNTIME_UPDATE_SITE" ] = $stableBuilds[ "runtimeSite" ];
 $vars[ "STABLE_TOOLING_UPDATE_SITE" ] = $stableBuilds[ "toolingSite" ];
 $vars[ "RELEASE_RUNTIME_UPDATE_SITE" ] = $releaseBuilds[ "runtimeSite" ];
 $vars[ "RELEASE_TOOLING_UPDATE_SITE" ] = $releaseBuilds[ "toolingSite" ];
-*/
 
 $html = file_get_contents( '_index.html' );
 $html = replaceVariables( $vars, $html );
