@@ -53,12 +53,12 @@ $vars[ "STABLE_RUNTIME_DESCRIPTION" ] = $stableBuilds[ "runtimeDesc" ];
 $vars[ "STABLE_TOOLING_DESCRIPTION" ] = $stableBuilds[ "toolingDesc" ];
 $vars[ "RELEASE_RUNTIME_DESCRIPTION" ] = $releaseBuilds[ "runtimeDesc" ];
 $vars[ "RELEASE_TOOLING_DESCRIPTION" ] = $releaseBuilds[ "toolingDesc" ];
-
-/*
 $vars[ "STABLE_NAME" ] = getBuildName( $stableBuild );
 $vars[ "RELEASE_NAME" ] = getBuildName( $releaseBuild );
 $vars[ "STABLE_DATE" ] = getBuildDate( $stableBuild );
 $vars[ "RELEASE_DATE" ] = getBuildDate( $releaseBuild );
+
+/*
 $vars[ "STABLE_NOTEWORTHY_URL" ] = $newsUrl . $stableBuild[ "news" ];
 $vars[ "RELEASE_NOTEWORTHY_URL" ] = $newsUrl . $releaseBuild[ "news" ];
 $vars[ "STABLE_RUNTIME_ZIP" ] = $stableBuild[ "runtimeZip" ];
