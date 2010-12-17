@@ -51,9 +51,11 @@
 
     </div>
 
+    <!-- 
     <div id="rightcolumn">
        {SIDEBAR:ARCHIVE}
     </div>
+    -->
 
   </xsl:template>
 
