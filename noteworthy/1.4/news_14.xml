@@ -324,13 +324,13 @@
       <ul>
         <li>It looks and behaves the same on every OS.</li>
         <li>
-          We will able to make it themeable, changing look and size. 
-          (As of this writing it uses the limited theme of slider.)
+          We will be able to make it themeable, changing look and size. 
+          (As of this writing it uses the limited theming of the Slider.)
         </li>
         <li>It enables basic scrolling for Tree and Table on the iPad.</li>
         <li>
-          It slightly improves scrolling for Tree and Table by adapting 
-          the clients performance. 
+          It slightly improves scrolling for Tree and Table by automatically 
+          adapting to the clients performance. 
         </li>
       </ul>
       ]]>
