@@ -66,6 +66,10 @@ $html = <<<EOHTML
   </ul>
 
 </div>
+
+<div id="rightcolumn">
+  {SIDEBAR:ARCHIVE}
+</div>
 EOHTML;
 
 generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );

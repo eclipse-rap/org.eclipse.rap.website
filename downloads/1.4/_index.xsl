@@ -50,6 +50,11 @@
       </xsl:if>
 
     </div>
+
+    <div id="rightcolumn">
+       {SIDEBAR:ARCHIVE}
+    </div>
+
   </xsl:template>
 
   <!-- Template for a category of builds (planned/completed) -->

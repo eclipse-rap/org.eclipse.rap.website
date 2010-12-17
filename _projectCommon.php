@@ -58,10 +58,19 @@ EOHTML;
     return $html;
   }
 
+  function replaceVariables( $variables, $html ) {
+    foreach( $variables as $key => $value ) {
+      $html = str_replace( "{" . $key . "}", $value, $html );
+    }
+    return $html;
+  }
+
   function generateRapPage( $App, $Menu, $Nav, $author, $keywords, $title, $html )
   {
     $theme = "Nova";
-    $pageHtml = createRapNavigation( $Nav ) . $html;
+    $vars = array();
+    $vars[ "SIDEBAR:ARCHIVE" ] = file_get_contents( $_SERVER["DOCUMENT_ROOT"] . '/rap/sidebar/_archive.html' );
+    $pageHtml = createRapNavigation( $Nav ) . replaceVariables( $vars, $html );
     $App->generatePage( $theme, $Menu, $Nav, $author, $keywords, $title, $pageHtml );
   }
 

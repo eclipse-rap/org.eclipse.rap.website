@@ -73,9 +73,7 @@ $vars[ "RELEASE_RUNTIME_UPDATE_SITE" ] = $releaseBuilds[ "runtimeSite" ];
 $vars[ "RELEASE_TOOLING_UPDATE_SITE" ] = $releaseBuilds[ "toolingSite" ];
 
 $html = file_get_contents( '_index.html' );
-foreach( $vars as $key => $value ) {
-  $html = str_replace( "{" . $key . "}", $value, $html );
-}
+$html = replaceVariables( $vars, $html );
 
 generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
 
