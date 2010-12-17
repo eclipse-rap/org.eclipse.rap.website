@@ -311,4 +311,30 @@
     </description>
   </entry>
   
+  <entry category="RWT" milestone="M4">
+    <title>
+      New scrollbars
+    </title>
+    <description>
+      <![CDATA[
+      A new client-side scrollbar implementation replaces the previously used 
+      native scrollbars in almost all widgets. It features a number of 
+      improvements:
+      <br/>
+      <ul>
+        <li>It looks and behaves the same on every OS.</li>
+        <li>
+          We will able to make it themeable, changing look and size. 
+          (As of this writing it uses the limited theme of slider.)
+        </li>
+        <li>It enables basic scrolling for Tree and Table on the iPad.</li>
+        <li>
+          It slightly improves scrolling for Tree and Table by adapting 
+          the clients performance. 
+        </li>
+      </ul>
+      ]]>
+    </description>
+  </entry>
+    
 </noteworthy>
