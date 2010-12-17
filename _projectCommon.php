@@ -68,9 +68,10 @@ EOHTML;
   function generateRapPage( $App, $Menu, $Nav, $author, $keywords, $title, $html )
   {
     $theme = "Nova";
-    $vars = array();
-    $vars[ "SIDEBAR:ARCHIVE" ] = file_get_contents( $_SERVER["DOCUMENT_ROOT"] . '/rap/sidebar/_archive.html' );
-    $pageHtml = createRapNavigation( $Nav ) . replaceVariables( $vars, $html );
+    //$vars = array();
+    //$vars[ "SIDEBAR:ARCHIVE" ] = file_get_contents( $_SERVER["DOCUMENT_ROOT"] . '/rap/sidebar/_archive.html' );
+    //$html = replaceVariables( $vars, $html );
+    $pageHtml = createRapNavigation( $Nav ) . $html;
     $App->generatePage( $theme, $Menu, $Nav, $author, $keywords, $title, $pageHtml );
   }
 
