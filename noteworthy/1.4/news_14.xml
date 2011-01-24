@@ -337,4 +337,18 @@
     </description>
   </entry>
     
+  <entry category="RWT" milestone="M5">
+    <title>
+      ToolTip widget
+    </title>
+    <description>
+      <![CDATA[
+      RWT now has an implementation of the ToolTip widget. It represent popup 
+      windows that are used to inform or warn the user.
+        <br/>
+       <img style="margin-top:10px; margin-bottom:10px" src="images/tooltip.png" />
+       ]]>
+    </description>
+  </entry>
+    
 </noteworthy>
