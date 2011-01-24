@@ -350,5 +350,21 @@
        ]]>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M5">
+    <title>
+      New API added
+    </title>
+    <description>
+      <![CDATA[
+        This will make it easier to reuse existing code or to utilize new 
+        features. Here is a list of API methods added in this milestone:
+        <br />
+        <ul>
+          <li><code>CLabel#setBackground( Color[] colors, int[] percents )</li>
+        </ul>
+      ]]>
+    </description>
+  </entry>
     
 </noteworthy>
