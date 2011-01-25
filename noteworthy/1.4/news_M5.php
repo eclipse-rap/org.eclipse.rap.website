@@ -16,7 +16,7 @@ $pageAuthor = "The RAP Team";
 $header = <<<EOHTML
 <p>
   Here's a list of the most noteworthy things that will be available in the
-  milestone build 1.4 M5 (February 11, 2011).
+  milestone build 1.4 M5 (February 4, 2011).
   <!--
     which is now available
     for <a href="http://www.eclipse.org/rap/downloads/">download</a>.
