@@ -91,10 +91,8 @@
       </html:ul>
       </html:p>
       <html:p>
-      The client-side reference implementation depends upon
-      <html:a href="http://qooxdoo.org">qooxdoo</html:a>.
-      For this release the following web browsers/rendering engines will be
-      supported
+      The client-side reference implementation of RAP 1.4 will support the
+      following web browsers/rendering engines:
       <html:ul>
         <html:li>Internet Explorer 6.0 and later, at least 7.0 is recommended</html:li>
         <html:li>Firefox 2.0 and later</html:li>
