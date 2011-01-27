@@ -343,11 +343,20 @@
     </title>
     <description>
       <![CDATA[
-      RWT now has an implementation of the ToolTip widget. It represent popup 
+      RWT now has an implementation of the ToolTip widget. It represents popup 
       windows that are used to inform or warn the user.
-        <br/>
-       <img style="margin-top:10px; margin-bottom:10px" src="images/tooltip.png" />
-       ]]>
+      <br/>
+      <img style="margin-top:10px; margin-bottom:10px" src="images/tooltip.png" />
+      <br/>
+      By introducing the new widget we had to rename the existing 
+      <code>ToolTip</code> CSS rule. The CSS rule for tooltip texts, as set
+      using <code>Control#setTooltipText()</code> is now called 
+      <code>Widget-ToolTip</code> rule.
+      The new ToolTip widget can be styled with the <code>ToolTip</code> CSS 
+      rule.
+      <br/>
+      Please update your custom themes accordingly.
+      ]]>
     </description>
   </entry>
   
