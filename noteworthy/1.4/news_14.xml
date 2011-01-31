@@ -397,5 +397,26 @@
       ]]>
     </description>
   </entry>
+  
+  <entry category="JFace / Workbench" milestone="M5">
+     <title>
+       Tooltips for TreeViewer
+     </title>
+     <description>
+       <![CDATA[
+            The <code>TreeViewer</code> now supports tooltips for its content
+        too. It can be activated by calling 
+        <code>ColumnViewerToolTipSupport#enableFor()</code>. 
+        Afterwards you need to override 
+        <code>CellLabelProvider#getToolTipText(Object)</code> and have it 
+        return the respective tooltip text. Other tooltip-related methods
+        (<code>getToolTipBackgroundColor</code>, etc.) are not supported.   
+        <br />
+        <img src="images/TreeViewerToolTip.png" 
+             title="TreeViewer showing a tooltip"
+             style="margin-top:10px" />
+        ]]>
+     </description>
+   </entry>
     
 </noteworthy>
