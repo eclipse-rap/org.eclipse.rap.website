@@ -362,6 +362,22 @@
   
   <entry category="RWT" milestone="M5">
     <title>
+      Themeable Scrollbars
+    </title>
+    <description>
+      <![CDATA[
+      <img style="margin-top:10px; margin-bottom:10px;float:left;" src="images/scrollbars.png" />
+      The new scrollbar-implementation is now fully themeable. This is also
+      another small step in our effort to support mobile devices: The scrollbars 
+      can now be made wider, so it becomes much less awkward trying to hit the up/down 
+      buttons on a touch-interface. As a result the Table is now finally usable on 
+      iPad & Co.
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="RWT" milestone="M5">
+    <title>
       New API added
     </title>
     <description>
