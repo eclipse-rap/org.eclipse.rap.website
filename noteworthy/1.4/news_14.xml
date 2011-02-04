@@ -391,6 +391,8 @@
           <li><code>CLabel#setBackground( Color[], int[] )</code></li>
           <li><code>Browser#getWebBrowser()</code></li>
           <li><code>Image( Device, int, int )</code> constructor</li>
+          <li><code>GC#setAdvanced( boolean )</code> and 
+              <code>GC#getAdvanced()</code></li>
         </ul>
       ]]>
     </description>
