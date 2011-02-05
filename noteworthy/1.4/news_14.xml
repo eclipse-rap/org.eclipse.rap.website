@@ -460,14 +460,14 @@
     </title>
     <description>
       <![CDATA[
-        One of the most requested features in RAP is finally available. It's 
-        now possible to use CTRL+S to save your editors. You can define a 
-        new keybinding in a standard way:
+        One of the most requested features in RAP is finally available. It's
+        now possible to use key bindings, for example CTRL+S to save editors.
+        You can define new keybindings using the standard extension point:
         <br />
         <img src="images/keybinding.png"
              title="Define a keybinding"
              style="margin-top:10px" />
-        Emacs key sequences are still not supported and 
+        Emacs key sequences are not supported and the
         <code>emacsAcceleratorConfiguration</code> scheme is missing.
       ]]>
     </description>
