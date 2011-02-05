@@ -15,12 +15,15 @@ $pageAuthor = "The RAP Team";
 
 $header = <<<EOHTML
 <p>
-  Here's a list of the most noteworthy things that are available in the
-  milestone build 1.4 M5 (February 4, 2011) which is now available
-  for <a href="http://www.eclipse.org/rap/downloads/">download</a>.
+  Here's a list of the most noteworthy things that will be available in the
+  milestone build 1.4 M6 (March 18, 2011).
+  <!--
+    which is now available
+    for <a href="http://www.eclipse.org/rap/downloads/">download</a>.
+  -->
 </p>
 <p>
-  <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=RT&product=RAP&target_milestone=1.4+M5&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&query_format=advanced">
+  <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=RT&product=RAP&target_milestone=1.4+M6&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&query_format=advanced">
   This list</a> shows all bugs that were fixed during this milestone.
 </p>
 EOHTML;
@@ -35,6 +38,7 @@ $footer = <<<EOHTML
   <li><a href="news_M2.php">News for RAP 1.4 M2</a></li>
   <li><a href="news_M3.php">News for RAP 1.4 M3</a></li>
   <li><a href="news_M4.php">News for RAP 1.4 M4</a></li>
+  <li><a href="news_M5.php">News for RAP 1.4 M5</a></li>
 </ul>
 EOHTML;
 
