@@ -42,7 +42,7 @@ $footer = <<<EOHTML
 </ul>
 EOHTML;
 
-$news = new Noteworthy( 'news_14.xml', 'M5', $header, $footer );
+$news = new Noteworthy( 'news_14.xml', 'M6', $header, $footer );
 $html = $news->getHtml();
 
 generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
