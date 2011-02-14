@@ -490,7 +490,7 @@
           <li><code>Menu#getOrientation()</code> and 
               <code>Menu#setOrientation( int )</code></li>
           <li><code>Menu#getDefaultItem()</code> and 
-              <code>Menu#setDefaultItem( MeniItem )</code></li>
+              <code>Menu#setDefaultItem( MenuItem )</code></li>
         </ul>
       ]]>
     </description>
