@@ -529,16 +529,14 @@
         client side log level will be set.<br/>
         <img src="images/clientSideLogLevel.png"
              title="client side log level warning"
-             style="margin-top:10px" />
-        <!--
+             style="margin-top:10px" /> <br/>
         A third change to the launcher is the validation of the serlvet name, 
         entry point or application against the selected bundles. The launcher shows an
-        error if the bundle, that provides the selected name, is not contained in the
-        launch configuration.<br/>
+        error if the bundle, that provides the selected name, is not contained in
+        any of the selected bundles.<br/>
         <img src="images/servletValidation.png"
              title="Validation of the Servlet name, Entry point, Application"
              style="margin-top:10px" />   
-        -->  
       ]]>
     </description>
   </entry>
