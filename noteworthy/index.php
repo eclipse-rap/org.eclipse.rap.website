@@ -75,6 +75,13 @@ $html = <<<EOHTML
       </li>
 
       <li>
+        <a href="relnotes132.php">RAP 1.3.2 Service Release</a>
+        <p style="margin-top: 5px">
+          A summary of the fixes in the 1.3.2 service release
+          which is available for <a href="/rap/downloads/1.3/">download</a>.
+        </p>
+      </li>
+      <li>
         <a href="relnotes131.php">RAP 1.3.1 Service Release</a>
         <p style="margin-top: 5px">
           A summary of the fixes in the 1.3.1 service release

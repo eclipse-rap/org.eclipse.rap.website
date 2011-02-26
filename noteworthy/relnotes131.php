@@ -29,9 +29,6 @@ $html = <<<EOHTML
   </p>
   <p>
     The service is available for <a href="/downloads/1.3/">download</a>.
-    In the meanwhile the changes can be obtained from
-    the <code>v13_Maintenance</code> branch in our
-    <a href="/rap/source/">CVS</a>.
   </p>
 </div>
 
