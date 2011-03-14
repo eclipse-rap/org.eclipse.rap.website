@@ -485,12 +485,17 @@
         <ul>
           <li><code>Display#getAppMenuBar()</code></li>
           <li><code>Display#getSystemTaskBar()</code></li>
+          <li><code>Display#getSystemMenu()</code></li>
           <li><code>Control#getOrientation()</code> and 
               <code>Control#setOrientation( int )</code></li>
           <li><code>Menu#getOrientation()</code> and 
               <code>Menu#setOrientation( int )</code></li>
           <li><code>Menu#getDefaultItem()</code> and 
               <code>Menu#setDefaultItem( MenuItem )</code></li>
+          <li><code>Shell#getToolBar()</code></li>
+          <li><code>MenuItem#getId()</code> and
+              <code>MenuItem#setId( int )</code></li>
+          <li><code>SWT.NO_RADIO_GROUP</code> style for Composites and Menus</li>
         </ul>
       ]]>
     </description>
@@ -537,6 +542,25 @@
         <img src="images/servletValidation.png"
              title="Validation of the Servlet name, Entry point, Application"
              style="margin-top:10px" />   
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="RWT" milestone="M6">
+    <title>
+      Theme Extensions
+    </title>
+    <description>
+      <![CDATA[
+        TableItem and TreeItem now support <code>text-decoration</code> CSS property.
+        In combination with custom variants, it's now possible to decorate item text
+        in runtime. For example:
+        <br />
+        <pre>
+  TableItem.notAvailable {
+    text-decoration: line-through;
+  }
+        </pre>
       ]]>
     </description>
   </entry>
