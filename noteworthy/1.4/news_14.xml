@@ -563,18 +563,16 @@
         Several enhancements to the RAP Launcher have been made:
         <ul>
           <li>
-            The RAP launcher now supports browsing of servlet names, entry points and applications 
+            The launcher now supports browsing of servlet names, entry points and applications 
             from the workspace and new in this milestone, the active target platform. 
           </li>
           <li>
-            The launcher now shows a warning if the log level will be set, since the client does 
-            not support it anymore.
+            The launcher shows an error if the selected serlvet name and 
+            entry point/application is not contained in any of the selected bundles.
           </li>
           <li>
-            The third change to the launcher is the validation of the serlvet name, 
-            entry point or application against the selected bundles. The launcher shows an
-            error if the bundle, that provides the selected name, is not contained in
-            any of the selected bundles.
+            Since the client does not support log-level anymore, a warning is shown if 
+            any other level than "off" is selected.   
           </li>
         </ul>        
         <img src="images/servletValidation.png"
