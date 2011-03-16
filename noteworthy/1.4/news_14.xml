@@ -543,6 +543,7 @@
     </title>
     <description>
       <![CDATA[
+        Several enhancements to the RAP Launcher have been made:
         <ul>
           <li>
             The RAP launcher now supports browsing of servlet names, entry points and applications 
@@ -559,10 +560,9 @@
             any of the selected bundles.
           </li>
         </ul>        
-        <br/>
         <img src="images/servletValidation.png"
              title="Validation of the Servlet name, Entry point, Application"
-             style="margin-top:10px" />   
+             style="margin-top:10px; border:1px solid black" />   
       ]]>
     </description>
   </entry>
