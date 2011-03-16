@@ -498,7 +498,7 @@
           <li><code>SWT.NO_RADIO_GROUP</code> style for Composites and Menus</li>
         </ul>
         In this milestone an "emulated" <code>accessibility</code> API that just
-        has empty methods has been provided. It will be replaced with an real useful
+        has empty methods has been provided. It will be replaced with a real useful
         implementation in the future.
       ]]>
     </description>
