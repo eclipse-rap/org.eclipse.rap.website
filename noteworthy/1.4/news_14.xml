@@ -521,31 +521,52 @@
     </description>
   </entry>
   
+  <entry category="RWT" milestone="M6">
+    <title>
+      Client logging simplified
+    </title>
+    <description>
+      <![CDATA[
+        The clients logging system has been drastically simplified to reduce client-size.
+        RWT itself also does no more logging at all, however a rudimentary implementation is still 
+        in place for custom-widget developer. As a result of these changes log-levels are no longer 
+        supported. Instead all log-messages are always shown in the clients debug-variant, and none 
+        in the standard-variant. Browser without a JavaScript-console will not show any messages 
+        at all. (All modern browser have one.) 
+      ]]>
+    </description>
+  </entry>
+  
   <entry category="Tooling" milestone="M6">
     <title>
       RAP Launcher
     </title>
     <description>
       <![CDATA[
-        The RAP launcher now supports browsing of servlet names, entry points and 
-        applications from the workspace and new in this milestone, the active 
-        target platform. Additional the launcher doesn't support the configuration 
-        of the client side log level any more. The launcher shows a warning if the 
-        client side log level will be set.<br/>
-        <img src="images/clientSideLogLevel.png"
-             title="client side log level warning"
-             style="margin-top:10px" /> <br/>
-        A third change to the launcher is the validation of the serlvet name, 
-        entry point or application against the selected bundles. The launcher shows an
-        error if the bundle, that provides the selected name, is not contained in
-        any of the selected bundles.<br/>
+        <ul>
+          <li>
+            The RAP launcher now supports browsing of servlet names, entry points and applications 
+            from the workspace and new in this milestone, the active target platform. 
+          </li>
+          <li>
+            The launcher now shows a warning if the log level will be set, since the client does 
+            not support it anymore.
+          </li>
+          <li>
+            The third change to the launcher is the validation of the serlvet name, 
+            entry point or application against the selected bundles. The launcher shows an
+            error if the bundle, that provides the selected name, is not contained in
+            any of the selected bundles.
+          </li>
+        </ul>        
+        <br/>
         <img src="images/servletValidation.png"
              title="Validation of the Servlet name, Entry point, Application"
              style="margin-top:10px" />   
       ]]>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M6">
     <title>
       Theme Extensions
