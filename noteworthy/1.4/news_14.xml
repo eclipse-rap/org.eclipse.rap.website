@@ -500,7 +500,24 @@
       ]]>
     </description>
   </entry>
-  
+
+  <entry category="RWT" milestone="M6">
+    <title>
+      Widget FileUpload
+    </title>
+    <description>
+      <![CDATA[
+        The widget <code>org.eclipse.rwt.widgets.FileUpload</code> has been added. This is a 
+        very basic, button-like wrapper for the HTML "input"-element that allows the user to select 
+        a file from his local file system. This file can then be programmatically uploaded to any 
+        given URL. The widget is intended to be used together with the FileUploadServiceHandler 
+        currently developed in the incubator. <br> An implementation of the SWT-FileDialog based on 
+        these components will also be made available in the incubator. This dialog is for 
+        convenience and will not become part of RAP itself.  
+      ]]>
+    </description>
+  </entry>
+
   <entry category="Tooling" milestone="M6">
     <title>
       Target installation
