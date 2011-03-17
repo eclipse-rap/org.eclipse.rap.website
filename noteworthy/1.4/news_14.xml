@@ -391,7 +391,7 @@
           <li><code>CLabel#setBackground( Color[], int[] )</code></li>
           <li><code>Browser#getWebBrowser()</code></li>
           <li><code>Image( Device, int, int )</code> constructor</li>
-          <li><code>GC#setAdvanced( boolean )</code> and 
+          <li><code>GC#setAdvanced( boolean )</code> and
               <code>GC#getAdvanced()</code></li>
         </ul>
       ]]>
@@ -453,7 +453,7 @@
       ]]>
     </description>
   </entry>
-  
+
   <entry category="JFace / Workbench" milestone="M5">
     <title>
       KeyBindings
@@ -472,7 +472,7 @@
       ]]>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M6">
     <title>
       New API added
@@ -486,37 +486,47 @@
           <li><code>Display#getAppMenuBar()</code></li>
           <li><code>Display#getSystemTaskBar()</code></li>
           <li><code>Display#getSystemMenu()</code></li>
-          <li><code>Control#getOrientation()</code> and 
+          <li><code>Control#getOrientation()</code> and
               <code>Control#setOrientation( int )</code></li>
-          <li><code>Menu#getOrientation()</code> and 
+          <li><code>Menu#getOrientation()</code> and
               <code>Menu#setOrientation( int )</code></li>
-          <li><code>Menu#getDefaultItem()</code> and 
+          <li><code>Menu#getDefaultItem()</code> and
               <code>Menu#setDefaultItem( MenuItem )</code></li>
           <li><code>Shell#getToolBar()</code></li>
           <li><code>MenuItem#getId()</code> and
               <code>MenuItem#setId( int )</code></li>
           <li><code>SWT.NO_RADIO_GROUP</code> style for Composites and Menus</li>
+          <li><code>Control#getAccessible()</code> and related API<br/>
+          </li>
         </ul>
-        In this milestone an "emulated" <code>accessibility</code> API that just
-        has empty methods has been provided. It will be replaced with a real useful
-        implementation in the future.
+        <strong>Accessibility</strong>
+        In this milestone an <em>emulated<em> implementation if the SWT Accessibility API that been added.
+        Same as on some SWT platforms, it's an empty implementation that does not provide any functionality.
+        I may be replaced with a real implementation in the future.
       ]]>
     </description>
   </entry>
 
   <entry category="RWT" milestone="M6">
     <title>
-      Widget FileUpload
+      FileUpload widget
     </title>
     <description>
       <![CDATA[
-        The widget <code>org.eclipse.rwt.widgets.FileUpload</code> has been added. This is a 
-        very basic, button-like wrapper for the HTML "input"-element that allows the user to select 
-        a file from his local file system. This file can then be programmatically uploaded to any 
-        given URL. The widget is intended to be used together with the FileUploadServiceHandler 
-        currently developed in the incubator. <br> An implementation of the SWT-FileDialog based on 
-        these components will also be made available in the incubator. This dialog is for 
-        convenience and will not become part of RAP itself.  
+        <p>
+        The widget <code>org.eclipse.rwt.widgets.FileUpload</code> has been introduced.
+        This is a very basic, button-like component that lets users select a file from their local
+        file system.
+        This file can then be programmatically uploaded to a given URL.
+        </p>
+        <p>
+        To accept and store those files on the server, a server-side component is also needed.
+        This part is not included in the FileUpload widget itself.
+        A default implementation is currently being developed in the RAP Incubator and will be made
+        available soon.
+        An implementation of the SWT <code>FileDialog</code>, based on the new FileUpload widget, is
+        also under development in the Incubator.
+        </p>
       ]]>
     </description>
   </entry>
@@ -527,12 +537,12 @@
     </title>
     <description>
       <![CDATA[
-        RAP applications need to be compiled against the RAP runtime. To do so, 
-        the runtime needs to be set as the target platform in Eclipse. With this 
-        milestone the RAP tooling is able resolve the runtime from our 
+        The RAP Tooling includes a target installer that sets the RAP Runtime as target platform in
+        Eclipse.
+        With this milestone, the tooling can download the latest runtime from our
         <a href="http://eclipse.org/rap/downloads/">p2 repositories</a>
-        and does no longer include the runtime. 
-        This <a href="/rap/getting-started/">tutorial</a> shows 
+        and does no longer include the runtime.
+        This <a href="/rap/getting-started/">tutorial</a> shows
         how you can use the RAP target installation tooling.<br/>
         <img src="images/targetInstallation.png"
              title="Target installation tooling"
@@ -540,23 +550,25 @@
       ]]>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M6">
     <title>
       Client logging simplified
     </title>
     <description>
       <![CDATA[
-        The clients logging system has been drastically simplified to reduce client-size.
-        RWT itself also does no more logging at all, however a rudimentary implementation is still 
-        in place for custom-widget developer. As a result of these changes log-levels are no longer 
-        supported. Instead all log-messages are always shown in the clients debug-variant, and none 
-        in the standard-variant. Browser without a JavaScript-console will not show any messages 
-        at all. (All modern browser have one.) 
+        The client's logging system has been drastically simplified in order to reduce client-size.
+        RWT itself does not use the logging anymore, but a rudimentary implementation is still
+        in place for custom-widget developers.
+        As a result of these changes, the RWT log-levels are no longer supported.
+        When RAP is started in the Debug variant, all log-messages are shown, while the Standard
+        (production) variant will not output any logging messages.
+        Browsers without a JavaScript-console will not display any messages at all (but all modern
+        browser have one).
       ]]>
     </description>
   </entry>
-  
+
   <entry category="Tooling" milestone="M6">
     <title>
       RAP Launcher
@@ -566,21 +578,22 @@
         Several enhancements to the RAP Launcher have been made:
         <ul>
           <li>
-            The launcher now supports browsing of servlet names, entry points and applications 
-            from the workspace and new in this milestone, the active target platform. 
+            The launcher now supports browsing of servlet names, entry points and applications
+            not only from the workspace but also from the active target platform.
           </li>
           <li>
-            The launcher shows an error if the selected serlvet name and 
-            entry point/application is not contained in any of the selected bundles.
+            The launcher now validates the selected servlet name and the selected entry point or
+            application against the selected bundles.
+            It shows an error if the selection is not contained in any of the selected bundles.
           </li>
           <li>
-            Since the client does not support log-level anymore, a warning is shown if 
-            any other level than "off" is selected.   
+            Since the client does not support log-levels anymore, a warning is shown if
+            any other level than "off" is selected.
           </li>
-        </ul>        
+        </ul>
         <img src="images/servletValidation.png"
              title="Validation of the Servlet name, Entry point, Application"
-             style="margin-top:10px; border:1px solid black" />   
+             style="margin-top:10px; border:1px solid black" />
       ]]>
     </description>
   </entry>
