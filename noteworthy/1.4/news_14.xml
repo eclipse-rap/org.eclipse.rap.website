@@ -486,8 +486,15 @@
           <li><code>Display#getAppMenuBar()</code></li>
           <li><code>Display#getSystemTaskBar()</code></li>
           <li><code>Display#getSystemMenu()</code></li>
+          <li><code>Display#getTouchEnabled()</code></li>
           <li><code>Control#getOrientation()</code> and
               <code>Control#setOrientation( int )</code></li>
+          <li><code>Control#getTouchEnabled()</code> and
+              <code>Control#setTouchEnabled( boolean )</code></li>
+          <li><code>Control#addTouchListener( TouchListener )</code> and
+              <code>Control#removeTouchListener( TouchListener )</code></li>
+          <li><code>Control#addGestureListener( GestureListener )</code> and
+              <code>Control#removeGestureListener( GestureListener )</code></li>
           <li><code>Menu#getOrientation()</code> and
               <code>Menu#setOrientation( int )</code></li>
           <li><code>Menu#getDefaultItem()</code> and
@@ -500,9 +507,11 @@
           </li>
         </ul>
         <strong>Accessibility:</strong>
-        In this milestone an <em>emulated</em> implementation if the SWT Accessibility API has been added.
+        In this milestone an <em>emulated</em> implementation of the SWT Accessibility API has been added.
         Same as on some SWT platforms, it's an empty implementation that does not provide any functionality.
-        I may be replaced with a real implementation in the future.
+        It may be replaced with a real implementation in the future.
+        <strong>Touch and Gesture APIs:</strong>
+        Empty implementation of SWT Touch and Gesture APIs has been provided too.
       ]]>
     </description>
   </entry>
