@@ -500,7 +500,7 @@
           </li>
         </ul>
         <strong>Accessibility:</strong>
-        In this milestone an <em>emulated</em> implementation if the SWT Accessibility API that been added.
+        In this milestone an <em>emulated</em> implementation if the SWT Accessibility API has been added.
         Same as on some SWT platforms, it's an empty implementation that does not provide any functionality.
         I may be replaced with a real implementation in the future.
       ]]>
