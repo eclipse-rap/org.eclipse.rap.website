@@ -27,7 +27,7 @@ $html = <<<EOHTML
 
     <ul>
       <li>
-        <a href="1.4/news_M6.php">RAP 1.4 M7</a>
+        <a href="1.4/news_M7.php">RAP 1.4 M7</a>
         <p style="margin-top: 5px">
           Listed are the noteworthy things available in the seventh milestone
           build for RAP 1.4 (M7, May 6<sup>th</sup>, 2011).
