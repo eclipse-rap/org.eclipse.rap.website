@@ -638,7 +638,7 @@
         <code>IApplicationStore</code>. 
         <br />      
         Note: for applications using the workbench, these changes don't make a difference 
-        as multiple workbench instances cannot be run in parallel in a single virtual machine. 
+        as multiple workbench applications cannot be run in parallel in a single virtual machine. 
       ]]>
     </description>
   </entry>
