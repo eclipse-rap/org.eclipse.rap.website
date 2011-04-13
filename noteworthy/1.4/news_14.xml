@@ -624,4 +624,23 @@
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M7">
+    <title>
+      Application Scope
+    </title>
+    <description>
+      <![CDATA[
+        The internals of RWT have been changed so that it is now possible to run more than one 
+        instances of RWT in the same Java Virtual Machine. 
+        <br />      
+        Applications that whish to also benefit from these changes should no longer use static
+        fields to store instances with application scope. Instead they should make use of the
+        <code>IApplicationStore</code>. 
+        <br />      
+        Note: for applications using the workbench, these changes don't make a difference 
+        as multiple workbench instances cannot be run in parallel in a single virtual machine. 
+      ]]>
+    </description>
+  </entry>
+
 </noteworthy>
