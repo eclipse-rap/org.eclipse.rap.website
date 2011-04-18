@@ -630,15 +630,15 @@
     </title>
     <description>
       <![CDATA[
-        The internals of RWT have been changed so that it is now possible to run more than one 
-        instances of RWT in the same Java Virtual Machine. 
-        <br />      
-        Applications that whish to leverage this should no longer use static fields to store 
-        instances with application scope. Instead they should make use of the
-        <code>IApplicationStore</code>. 
-        <br />      
-        Note: for applications using the workbench, these changes don't make a difference 
-        as multiple workbench applications cannot be run in parallel in a single virtual machine. 
+        The internals of RWT have been changed so that it is now possible to run more than one
+        instances of RWT in the same Java Virtual Machine.
+        <br />
+        Applications that wish to leverage this should no longer use static fields to store
+        instances with application scope. Instead they should make use of the new
+        <code>IApplicationStore</code>.
+        <br />
+        Note: for applications using the workbench, these changes don't make a difference
+        as multiple workbench applications cannot be run in parallel in a single virtual machine.
       ]]>
     </description>
   </entry>
@@ -649,18 +649,18 @@
     </title>
     <description>
       <![CDATA[
-        We decided to entirely remove support for GZIP-compressing response content 
-        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342242">bug 342242</a>). 
-        Initially, RAP always compressed response content. As it turned out that this 
-        interfered with Tomcat and chunked transfer encoding 
-        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259977">bug 259977</a>), 
+        We decided to entirely remove support for GZIP-compressing response content
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342242">bug 342242</a>).
+        Initially, RAP always compressed response content. As it turned out that this
+        interfered with Tomcat and chunked transfer encoding
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259977">bug 259977</a>),
         compression was made configurable to transition from using RAP's compression to using
         the servlet engines compression feature.
         <br />
-        Please make sure that you configure content compression in the servlet container that 
-        you are deploy the RAP application into, if you whish to use this feature. Follow the links
-        for documentation on how to enable content compression for 
-        <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_use_GZip_compression_with_the_Equinox_HttpService.3F">Jetty</a> and 
+        If you wish to use content compression, please make sure that the servlet container
+        that you deploy the RAP application into, is configured accordingly.
+        Learn here how to enable content compression for
+        <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_use_GZip_compression_with_the_Equinox_HttpService.3F">Jetty</a> and
         <a href="http://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Standard_Implementation">Tomcat</a>.
       ]]>
     </description>
