@@ -643,4 +643,27 @@
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M7">
+    <title>
+      Compression
+    </title>
+    <description>
+      <![CDATA[
+        We decided to entirely remove support for GZIP-compressing response content 
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342242">bug 342242</a>). 
+        Initially, RAP always compressed response content. As it turned out that this 
+        interfered with Tomcat and chunked transfer encoding 
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259977">bug 259977</a>), 
+        compression was made configurable to transition from using RAP's compression to using
+        the servlet engines compression feature.
+        <br />
+        Please make sure that you configure content compression in the servlet container that 
+        you are deploying the RAP application in if you whish to use this feature. Follow the link
+        for documentation on how to enable content compression in 
+        <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_use_GZip_compression_with_the_Equinox_HttpService.3F">Jetty</a> and 
+        <a href="http://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Standard_Implementation">Tomcat</a>.
+      ]]>
+    </description>
+  </entry>
+
 </noteworthy>
