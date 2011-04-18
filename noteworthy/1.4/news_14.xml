@@ -658,8 +658,8 @@
         the servlet engines compression feature.
         <br />
         Please make sure that you configure content compression in the servlet container that 
-        you are deploying the RAP application in if you whish to use this feature. Follow the link
-        for documentation on how to enable content compression in 
+        you are deploy the RAP application into, if you whish to use this feature. Follow the links
+        for documentation on how to enable content compression for 
         <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_use_GZip_compression_with_the_Equinox_HttpService.3F">Jetty</a> and 
         <a href="http://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Standard_Implementation">Tomcat</a>.
       ]]>
