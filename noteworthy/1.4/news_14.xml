@@ -702,4 +702,29 @@
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M7">
+    <title>
+      Basic support for drag-behavior on iPad/iPhone
+    </title>
+    <description>
+      <![CDATA[
+        The following widgets now support their native drag-and-drop behavior on iOS:
+        <ul>
+          <li>ScrollBar</li>
+          <li>Shell</li>
+          <li>Sash</li>
+          <li>Scale</li>
+          <li>Slider</li>
+          <li>TableColumn</li>
+          <li>TreeColumn</li>
+        </ul>
+        It is recommanded to increase the size for the draggable elements to make them easier to 
+        hit with a finger. Since this can be done using only theming, its possible to target mobile 
+        and desktop clients with the same application, but different themes.</br></br> 
+        This is <em>not</em> to be confused with SWT Drag and Drop, which is currently not supported 
+        on iOS.
+      ]]>
+    </description>
+  </entry>
+
 </noteworthy>
