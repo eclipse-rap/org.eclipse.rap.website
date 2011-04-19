@@ -681,10 +681,23 @@
           <li>Combo-List</li>
           <li>CCombo-List</li>
         </ul>
-        <img title="Shadows in RAP" style="margin-top:10px" src="images/Shadows.png" />
+        <img title="Shadows in RAP" style="margin-bottom:7px" src="images/Shadows.png" />
         Shadows can have configurable horizontal offset, vertical offset, blur-radius and color.  
         In Internet Explorer the blur-effect might look slightly different than in other browser. 
         Shadow also supports transparency using the rgba notation for color.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M7">
+    <title>
+      CSS3-Support
+    </title>
+    <description>
+      <![CDATA[
+        RAP now uses CSS3 to render rounded borders, gradients and shadows in Google Chrome, Safari
+        (including iPad/iPhone) and Firefox 4. Other browser still use the old implementation. 
+        In Internet Explorer 9 CSS3 might be supported in the future.
       ]]>
     </description>
   </entry>
