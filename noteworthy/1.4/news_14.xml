@@ -666,4 +666,28 @@
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M7">
+    <title>
+      Shadows
+    </title>
+    <description>
+      <![CDATA[
+        RAP-Theming now supports shadows on the following widgets:
+        <img title="Shadows in RAP" style="float:right;" src="images/Shadows.png" />
+        <ul>
+          <li>Shell</li>
+          <li>Menu</li>
+          <li>Widget-ToolTip</li>
+          <li>ToolTip</li>
+          <li>Combo-List</li>
+          <li>CCombo-List</li>
+        </ul>
+        </br>
+        Shadows can have configurable horizontal offset, vertical offset, blur-radius and color.  
+        In Internet Explorer the blur-effect might look slightly different than in other browser. 
+        Shadow also supports transparency using the rgba notation for color.
+      ]]>
+    </description>
+  </entry>
+
 </noteworthy>
