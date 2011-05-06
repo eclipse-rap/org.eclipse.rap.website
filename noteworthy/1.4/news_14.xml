@@ -814,18 +814,18 @@
         Launcher</em> you can run RWT applications with just one shortcut. For those that might not 
         have heard of RWT yet, think of it as SWT/Web. RWT is RAP without the workbench and OSGi,
         it plays the same role in RAP as SWT does for the Eclipse Platform/RCP.
-        <br />
+        <br /> 
+        <img src="images/rwt-launcher.png" style="margin-top: 10px; margin-bottom: 10px"/>
         To run an RWT application, select a class (e.g. in the editor or package explorer) that 
         implements <code>IEntryPoint</code> and hit <code>Alt+Shift+X 3</code> (please feel free to
         <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&rep_platform=All&op_sys=all">file a bug</a>
-        if you find a more suitable shortcut taht is not yet taken by another launch configuration).
+        if you find a more suitable shortcut that is not yet taken by another launch configuration).
         You can also launch an RWT application by selecting a project instead of a class file. You 
         will be prompted to select a class from those classes that define an entry point.
         <br /> 
         Besides launching RWT applications, it can also be used to run arbitrary web applications, 
         provided that there is a deployment descriptor (<code>web.xml</code>).
         <br /> 
-        <img src="images/rwt-launcher.png" style="margin-top: 10px; margin-bottom: 10px"/>
       ]]>
     </description>
   </entry>
