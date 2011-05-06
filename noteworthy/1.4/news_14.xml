@@ -749,4 +749,73 @@
     </description>
   </entry>
 
+  <entry category="Tooling" milestone="M7">
+    <title>
+      Target Check in Templates
+    </title>
+    <description>
+      <![CDATA[
+        When you chose one of the RAP templates in the New Plug-in Project wizard, the tooling will
+        ensure that a RAP target platform is activated. If not, a dialog will appear that offers
+        to install and activate a RAP target.
+        <br/>
+        <img src="images/TargetCheck.png" title="RAP Target Platform check" style="margin:10px 0;"/>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="Tooling" milestone="M7">
+    <title>
+      Improved Launcher
+    </title>
+    <description>
+      <![CDATA[
+        We re-organized the Main tab of the RAP launcher and added some new features:
+
+        <br/>
+        <img src="images/ImprovedLauncherMainTab.png" title="Improved RAP Launcher Main Tab"
+          style="margin:10px 0;" />
+        <br/>
+
+        <p>
+        You can now configure the location of the <em>Instance Area</em> in the launcher's Main tab.
+        The instance area is the OSGi data location, where all bundles of the running application
+        can store their state information.
+        This is includes resources that are used by the RAP server, such as images, but also the
+        setting store.
+        By selecting the option "Clear the instance area before launching", you can ensure that
+        all these resources are cleared when you re-start a RAP application.
+        </p>
+
+        <p>
+        You can now specify a <em>Context Path</em> in the launcher.
+        The context path is an optional additional path segment that enables you to launch your
+        application with a URL similar to your real deployment environment.
+        As an example, when you deploy an application named myapp on tomcat, it will usually be
+        accessible under an URL like <code>http://server:port/myapp/myservletname</code>,
+        where myapp is the webapp, and myservletname is the servlet name you choose in the branding.
+        </p>
+
+        <p>
+        Moreover, the launcher will now display a preview of the URL that your application will be
+        accessible at.
+        </p>
+      ]]>
+    </description>
+  </entry>
+
+  <!-- 
+  <entry category="Other" milestone="M7">
+    <title>
+      RAP Incubator Projects Repository
+    </title>
+    <description>
+      <![CDATA[
+        The RAP project provides a p2-repository (<repository URl>) which includes all available
+        incubator projects for RAP. This p2-repository is an comfortable way for our users to consume incubator projects.
+      ]]>
+    </description>
+  </entry>
+   -->
+
 </noteworthy>
