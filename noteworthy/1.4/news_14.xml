@@ -811,8 +811,9 @@
     <description>
       <![CDATA[
         The RAP tooling has grown by yet another launch configuration. With the <em>RWT Application 
-        Launcher</em> you can run RWT applications with just one shortcut. RWT is RAP without the 
-        workbench and OSGi. Think of it as SWT/Web.
+        Launcher</em> you can run RWT applications with just one shortcut. For those that might not 
+        have heard of RWT yet, think of it as SWT/Web. RWT is RAP without the workbench and OSGi,
+        it plays the same role in RAP as SWT does for the Eclipse Platform/RCP.
         <br />
         To run an RWT application, select a class (e.g. in the editor or package explorer) that 
         implements <code>IEntryPoint</code> and hit <code>Alt+Shift+X 3</code>.
