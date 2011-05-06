@@ -804,6 +804,29 @@
     </description>
   </entry>
 
+  <entry category="Tooling" milestone="M7">
+    <title>
+      RWT Application Launcher
+    </title>
+    <description>
+      <![CDATA[
+        The RAP tooling has grown by yet another launch configuration. With the <em>RWT Application 
+        Launcher</em> you can run RWT applications with just one shortcut. RWT is RAP without the 
+        workbench and OSGi. Think of it as SWT/Web.
+        <br />
+        To run an RWT application, select a class (e.g. in the editor or package explorer) that 
+        implements <code>IEntryPoint</code> and hit <code>Alt+Shift+X 3</code>.
+        You can also launch an RWT application by selecting a project instead of a class file. You 
+        will be prompted to select a class from those classes that define an entry point.
+        <br /> 
+        Besides launching RWT applications, it can also be used to run arbitrary web applications, 
+        provided that there is a deployment descriptor (<code>web.xml</code>).
+        <br /> 
+        <img src="images/rwt-launcher.png" style="margin-top: 10px; margin-bottom: 10px"/>
+      ]]>
+    </description>
+  </entry>
+
   <!-- 
   <entry category="Other" milestone="M7">
     <title>
