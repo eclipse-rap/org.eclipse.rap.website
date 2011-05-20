@@ -104,7 +104,7 @@
         <xsl:if test="@news != ''">
           <a>
             <xsl:attribute name="href">
-              <xsl:value-of select="concat( 'http://www.eclipse.org/rap/noteworthy/', @news )"/>
+              <xsl:value-of select="concat( '/rap/noteworthy/', @news )"/>
             </xsl:attribute>
             New &amp; Noteworthy
           </a>
