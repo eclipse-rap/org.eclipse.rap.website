@@ -830,21 +830,20 @@
     </description>
   </entry>
 
-  <!-- available in RC1
-  <entry category="RWT" milestone="M7">
+  <entry category="RWT" milestone="RC">
     <title>
       AdapterFactory changed scope
     </title>
     <description>
       <![CDATA[
         The <code>org.eclipse.rwt.AdapterFactory</code> changed its scope. Until now, it had
-        socalled <em>session scope</em>. Each session had its own instance of a registered 
+        so called <em>session scope</em>. Each session had its own instance of a registered 
         AdapterFactory. Now, the AdapterFactories live in <em>application scope</em>, meaning
-        that there is exactly one instance of any registered AdapterFactory type.
+        that there is exactly one instance of every registered AdapterFactory type.
         <br />
-        Application is only affected from this change if it registers its own implementations of
-        <code>AdapterFactory</code>. The AdapterFactories used by RWT internally have been adopted 
-        to this change.
+        Only those applications that register their own implementations of
+        <code>AdapterFactory</code> are affected by this change.
+        The AdapterFactories used by RWT internally have been adapted to this change.
         For the reasons that led to this change, please see
         <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342302">bug 342302: Move 
         AdapterFactory into application scope</a>.
@@ -852,8 +851,7 @@
       ]]>
     </description>
   </entry>
-  -->
-  
+
   <!-- 
   <entry category="Other" milestone="M7">
     <title>
