@@ -26,6 +26,13 @@ $header = <<<EOHTML
   <a href="http://www.eclipse.org/rap/downloads/">download</a>.
 </p>
 
+<h2>RC2</h2>
+<p>
+  <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=RT&product=RAP&target_milestone=1.4+RC2&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&query_format=advanced">
+  This list</a> shows all bugs that were fixed in the RC1 build which is now available for
+  <a href="http://www.eclipse.org/rap/downloads/">download</a>.
+</p>
+
 EOHTML;
 
 $footer = <<<EOHTML
