@@ -12,12 +12,14 @@
     <build name="1.4 RC4" type="RC"
         buildDate="2011-06-10"
         news="1.4/news_RC.php" />
-    <build name="1.4 RC3" type="RC"
-        buildDate="2011-06-03"
-        news="1.4/news_RC.php" />
   </planned>
 
   <completed>
+    <build name="1.4 RC3" type="RC"
+        buildDate="2011-06-04"
+        news="1.4/news_RC.php"
+        toolingZip="rap-tooling-1.4.0-RC3-20110601-1302.zip"
+        runtimeZip="rap-runtime-1.4.0-RC3-20110601-1304.zip" />
     <build name="1.4 RC2" type="RC"
         buildDate="2011-05-27"
         news="1.4/news_RC.php"

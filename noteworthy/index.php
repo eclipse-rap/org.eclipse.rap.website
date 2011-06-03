@@ -27,6 +27,13 @@ $html = <<<EOHTML
 
     <ul>
       <li>
+        <a href="1.4/news_RC.php">RAP 1.4 RCs</a>
+        <p style="margin-top: 5px">
+          Listed are the noteworthy things available in the release candidate builds
+          for RAP 1.4.
+        </p>
+      </li>
+      <li>
         <a href="1.4/news_M7.php">RAP 1.4 M7</a>
         <p style="margin-top: 5px">
           Listed are the noteworthy things available in the seventh milestone
