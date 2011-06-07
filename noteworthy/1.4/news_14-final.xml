@@ -437,8 +437,8 @@
         accessible at.
         </p>
         <p>
-        The RAP launcher now supports browsing of servlet names, entry points and 
-        applications from the workspace and, new since M6, the active target platform. 
+        New since M6 is, that servlet names, entry points and applications can be selected not only 
+        from the workspace but also from the active target platform. 
         <p/>
         <p>
         The serlvet name, entry point or application is now validated against the selected bundles.
