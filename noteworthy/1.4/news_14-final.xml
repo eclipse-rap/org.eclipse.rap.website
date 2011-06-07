@@ -120,6 +120,7 @@
         <b>New Default Theme:</b>
         <br />
         <img src="images/defaultTheme.png" style="margin-top: 10px; margin-bottom: 10px"/>
+        <br />
         <b>Classic Theme:</b>
         <br />
         <img src="images/classicTheme.png" style="margin-top: 10px; margin-bottom: 10px"/><br>
@@ -141,32 +142,6 @@
       The theming was extended in serveral places:
       <br />
       <ul>
-      <li>It's now possible to style the separator label like:
-      <pre>
-  Label[SEPARATOR] {
-    ...
-  }
-      </pre>
-      </li>
-      <li>The Label has a new themeable element called
-      <code>Label-SeparatorLine</code>. It's possible to style the background
-      image (gradient), background color, border, border radius and line
-      width.
-      <br />
-      For example:
-      <pre>
-  Label-SeparatorLine {
-    background-image: none;
-    background-color: transparent;
-    border: 1px solid #a4a4a4;
-    border-radius: 0px;
-    width: 2px;
-  }
-      </pre>
-      </li>
-      <li><code>MenuItem</code> has a new themeable property
-      <code>background-image</code>.
-      </li>
       </ul>
       ]]>
     </description>
@@ -210,6 +185,31 @@
       The theming was extended in serveral places:
       <br />
       <ul>
+      <li>It's now possible to style the separator label like:
+        <pre>
+  Label[SEPARATOR] {
+    ...
+  }
+        </pre>
+      </li>
+      <li>The Label has a new themeable element called
+        <code>Label-SeparatorLine</code>. It's possible to style the background
+        image (gradient), background color, border, border radius and line width.
+        <br />
+        For example:
+        <pre>
+  Label-SeparatorLine {
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid #a4a4a4;
+    border-radius: 0px;
+    width: 2px;
+  }
+        </pre>
+      </li>
+      <li><code>MenuItem</code> has a new themeable property
+        <code>background-image</code>.
+      </li>
       <li>Table border is now themable, but <code>border-radius</code> property
       is still not supported.
       </li>
