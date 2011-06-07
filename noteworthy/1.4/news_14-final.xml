@@ -433,11 +433,11 @@
         where myapp is the webapp, and myservletname is the servlet name you choose in the branding.
         </p>
         <p>
-        Moreover, the launcher will now display a preview of the URL that your application will be
-        accessible at.x
+        As you can see from the screenshot, the launcher will now display a preview of the URL that 
+        your application will be accessible at in the <em>Browser</em> group box.
         </p>
         <p>
-        New since M6 is, that servlet names, entry points and applications can be selected not only 
+        Moreover, servlet names, entry points and applications can be selected not only 
         from the workspace but also from the active target platform. 
         <p/>
         <p>
