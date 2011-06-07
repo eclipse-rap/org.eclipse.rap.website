@@ -135,20 +135,6 @@
 
   <entry category="RWT" milestone="M3">
     <title>
-      Theme Extensions
-    </title>
-    <description>
-      <![CDATA[
-      The theming was extended in serveral places:
-      <br />
-      <ul>
-      </ul>
-      ]]>
-    </description>
-  </entry>
-
-  <entry category="RWT" milestone="M3">
-    <title>
       JQuery compatibility
     </title>
     <description>
