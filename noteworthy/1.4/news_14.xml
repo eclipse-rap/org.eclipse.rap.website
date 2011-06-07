@@ -781,10 +781,10 @@
         You can now configure the location of the <em>Instance Area</em> in the launcher's Main tab.
         The instance area is the OSGi data location, where all bundles of the running application
         can store their state information.
-        This is includes resources that are used by the RAP server, such as images, but also the
+        This includes resources that are used by the RAP server, such as images, but also the
         setting store.
-        By selecting the option "Clear the instance area before launching", you can ensure that
-        all these resources are cleared when you re-start a RAP application.
+        By selecting the option <strong>Clear the instance area before launching</strong>, you can 
+        ensure that all these resources are cleared when you re-start a RAP application.
         </p>
 
         <p>
