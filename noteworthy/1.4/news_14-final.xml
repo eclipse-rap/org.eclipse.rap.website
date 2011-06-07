@@ -276,7 +276,7 @@
     </title>
     <description>
       <![CDATA[
-        IApplication support has been change to use fully qualified application
+        IApplication support has been changed to use fully qualified application
         ids.
       ]]>
     </description>
@@ -309,9 +309,8 @@
     </title>
     <description>
       <![CDATA[
-        With M5, the JFace and Workbench implementations shipped
-        with RAP has been upgraded to the Eclipse 3.7 code base. The current
-        version is based on M2 and will be updated again before the release.
+        The JFace and Workbench implementations shipped with RAP have been upgraded to the Eclipse 
+        3.7 code base.
       ]]>
     </description>
   </entry>
@@ -358,18 +357,15 @@
     </title>
     <description>
       <![CDATA[
-        As of milestone M5, RAP will be shipped with three new bundles
-        included in the target components:
+        In order to ease deployment, RAP ships with three new bundles:
         <ul>
           <li>org.eclipse.equinox.servletbridge</li>
           <li>org.eclipse.equinox.servletbridge.extensionbundle</li>
           <li>org.eclipse.equinox.http.servletbridge</li>
         </ul>
-        With these bundles included the step to check them out
-        for creating a WAR archive will be obsolete. Additionally, the
-        <a href="http://wiki.eclipse.org/RAP/Equinox_WAR_products">WAR Product
-        tooling</a> is now able to work out-of-the-box without the need to
-        modify an existing target platform.
+        Together with the <a href="http://wiki.eclipse.org/RAP/Equinox_WAR_products">WAR Product
+        tooling</a> from the <a href="http://www.eclipse.org/libra/">Libra project</a>, RAP 
+        applications can be deployed as WAR archives with a few clicks. 
       ]]>
     </description>
   </entry>
