@@ -118,11 +118,11 @@
         available as a separate bundle called
         <code>org.eclipse.rap.rwt.theme.classic</code>.<br><br>
         <b>New Default Theme:</b>
-        <img src="images/defaultTheme.png"
-          style="margin-top: 10px; margin-bottom: 10px"/>
+        <br />
+        <img src="images/defaultTheme.png" style="margin-top: 10px; margin-bottom: 10px"/>
         <b>Classic Theme:</b>
-        <img src="images/classicTheme.png"
-          style="margin-top: 10px; margin-bottom: 10px"/><br>
+        <br />
+        <img src="images/classicTheme.png" style="margin-top: 10px; margin-bottom: 10px"/><br>
         To activate the classic theme simply add the bundle to an exsiting
         launch configuration and change the servlet name to "classic". An
         alternative way to use the classic theme is to create an own branding
