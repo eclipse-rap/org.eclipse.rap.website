@@ -218,32 +218,6 @@
     </description>
   </entry>
 
-  <entry category="RWT" milestone="M4">
-    <title>
-      New scrollbars
-    </title>
-    <description>
-      <![CDATA[
-      A new client-side scrollbar implementation replaces the previously used
-      native scrollbars in almost all widgets. It features a number of
-      improvements:
-      <br/>
-      <ul>
-        <li>It looks and behaves the same on every OS.</li>
-        <li>
-          We will be able to make it themeable, changing look and size.
-          (As of this writing it uses the limited theming of the Slider.)
-        </li>
-        <li>It enables basic scrolling for Tree and Table on the iPad.</li>
-        <li>
-          It slightly improves scrolling for Tree and Table by automatically
-          adapting to the clients performance.
-        </li>
-      </ul>
-      ]]>
-    </description>
-  </entry>
-
   <entry category="RWT" milestone="M5">
     <title>
       ToolTip widget
@@ -271,16 +245,27 @@
 
   <entry category="RWT" milestone="M5">
     <title>
-      Themeable Scrollbars
+      New Themeable Scrollbars
     </title>
     <description>
       <![CDATA[
+      A new client-side scrollbar implementation replaces the previously used
+      native scrollbars in almost all widgets. It features a number of improvements:
+      <br/>
+      <ul>
+        <li>
+          It looks and behaves the same on every client, regardless what operationg system or 
+          window system there is.</li>
+        <li>
+          The new scrollbar is fully themeable. This is also another step in our effort to support 
+          mobile devices: the scrollbars can be made wider, so that they are easier to use on 
+          touch-interface.</li>
+        <li>
+          It improves scrolling for Tree and Table by automatically adapting to the clients 
+          performance.
+        </li>
+      </ul>
       <img style="margin-top:10px; margin-bottom:10px;float:left;" src="images/scrollbars.png" />
-      <br/>The new scrollbar-implementation is now fully themeable. This is also
-      another small step in our effort to support mobile devices: The scrollbars
-      can now be made wider, so it becomes much less awkward trying to hit the
-      up/down buttons on a touch-interface. As a result the Table is now finally
-      usable on iPad & Co.
       ]]>
     </description>
   </entry>  
