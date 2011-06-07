@@ -410,21 +410,70 @@
     </title>
     <description>
       <![CDATA[
+        We re-organized the Main tab of the RAP launcher and added some new features:
+        <br/>
+        <img src="images/ImprovedLauncherMainTab.png" title="Improved RAP Launcher Main Tab"
+          style="margin:10px 0;" />
+        <br/>
+        <p>
+        You can now configure the location of the <em>Instance Area</em> in the launcher's Main tab.
+        The instance area is the OSGi data location, where all bundles of the running application
+        can store their state information.
+        This includes resources that are used by the RAP server, such as images, but also the
+        setting store.
+        By selecting the option <strong>Clear the instance area before launching</strong>, you can 
+        ensure that all these resources are cleared when you re-start a RAP application.
+        </p>
+        <p>
+        You can now specify a <em>Context Path</em> in the launcher.
+        The context path is an optional additional path segment that enables you to launch your
+        application with a URL similar to your real deployment environment.
+        As an example, when you deploy an application named myapp on tomcat, it will usually be
+        accessible under an URL like <code>http://server:port/myapp/myservletname</code>,
+        where myapp is the webapp, and myservletname is the servlet name you choose in the branding.
+        </p>
+        <p>
+        Moreover, the launcher will now display a preview of the URL that your application will be
+        accessible at.
+        </p>
+        <p>
         The RAP launcher now supports browsing of servlet names, entry points and 
-        applications from the workspace and new in M6, the active 
-        target platform. Additional the launcher doesn't support the configuration 
-        of the client side log level any more. The launcher shows a warning if the 
-        client side log level will be set.<br/>
-        <img src="images/clientSideLogLevel.png"
-             title="client side log level warning"
-             style="margin-top:10px" /> <br/>
-        A third change to the launcher is the validation of the serlvet name, 
-        entry point or application against the selected bundles. The launcher shows an
-        error if the bundle, that provides the selected name, is not contained in
-        any of the selected bundles.<br/>
+        applications from the workspace and, new since M6, the active target platform. 
+        <p/>
+        <p>
+        The serlvet name, entry point or application is now validated against the selected bundles.
+        The launcher shows an error, if the bundle that provides the selected name is not contained 
+        in any of the selected bundles.
+        <p/>
         <img src="images/servletValidation.png"
              title="Validation of the Servlet name, Entry point, Application"
              style="margin-top:10px" />   
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="Tooling" milestone="M7">
+    <title>
+      RWT Application Launcher
+    </title>
+    <description>
+      <![CDATA[
+        The RAP tooling has grown by yet another launch configuration. With the <em>RWT Application 
+        Launcher</em> you can run RWT applications with just one shortcut. For those that might not 
+        have heard of RWT yet, think of it as SWT/Web. RWT is RAP without the workbench and OSGi,
+        it plays the same role in RAP as SWT does for the Eclipse Platform/RCP.
+        <br /> 
+        <img src="images/rwt-launcher.png" style="margin-top: 10px; margin-bottom: 10px"/>
+        To run an RWT application, select a class (e.g. in the editor or package explorer) that 
+        implements <code>IEntryPoint</code> and hit <code>Alt+Shift+X 3</code> (please feel free to
+        <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&rep_platform=All&op_sys=all">file a bug</a>
+        if you find a more suitable shortcut that is not yet taken by another launch configuration).
+        You can also launch an RWT application by selecting a project instead of a class file. You 
+        will be prompted to select a class from those classes that define an entry point.
+        <br /> 
+        Besides launching RWT applications, it can also be used to run arbitrary web applications, 
+        provided that there is a deployment descriptor (<code>web.xml</code>).
+        <br /> 
       ]]>
     </description>
   </entry>
