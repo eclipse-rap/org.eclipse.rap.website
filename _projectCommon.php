@@ -30,6 +30,7 @@
   $Menu->addMenuItem( "Documentation", "/rap/documentation/", "_self" );
   $Menu->addMenuItem( "Support", "/rap/support/", "_self" );
   $Menu->addMenuItem( "Wiki", "http://wiki.eclipse.org/RAP", "_self" );
+  $Menu->addMenuItem( "New &amp; Noteworthy", "/rap/noteworthy/", "_self" );
 
   $App->AddExtraHtmlHeader( '<meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />' );
   $App->AddExtraHtmlHeader( '<link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes.css"/>' );
