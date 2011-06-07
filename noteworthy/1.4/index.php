@@ -28,21 +28,9 @@ $header = <<<EOHTML
 </p>
 EOHTML;
 
-$footer = <<<EOHTML
-<p>
-  The above list aggregates the new features from all milestones.
-  Here are the separate builds:
-</p>
-<ul>
-  <li><a href="news_M1.php">New for RAP 1.4 M1</a></li>
-  <li><a href="news_M2.php">New for RAP 1.4 M2</a></li>
-  <li><a href="news_M3.php">New for RAP 1.4 M3</a></li>
-  <li><a href="news_M4.php">New for RAP 1.4 M4</a></li>
-  <li><a href="news_M5.php">New for RAP 1.4 M5</a></li>
-</ul>
-EOHTML;
+$footer = "";
 
-$news = new Noteworthy( 'news_14.xml', '', $header, $footer );
+$news = new Noteworthy( 'news_14-final.xml', '', $header, $footer );
 $html = $news->getHtml();
 
 generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
