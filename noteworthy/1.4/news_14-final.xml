@@ -86,47 +86,33 @@
   
   <entry category="RWT" milestone="M2">
     <title>
-      Improved iPad support
+      Improved iPad/iPhone support 
     </title>
     <description>
       <![CDATA[
-        While RAP was already running on iPad, a number of bugs and glitches
-        made it barely usable. We fixed many of these problems, mostly issues
-        with the touch-interface and layouting. Also, a RAP-application can
-        now be run in fullscreen-mode. Simply touch the "+", select "Add to Home
-        Screen", and start it from there.
-
-        <img src="images/ipadfull.png"
-          style="margin-top: 10px; margin-bottom: 10px"/>
-
-        Note that pinch-zoom is disabled in fullscreen-mode.<br/>
-        Some issues remain, but we will continue to improve
-        support for iPad and other mobile devices.
-      ]]>
-    </description>
-  </entry>
-
-  <entry category="RWT" milestone="M7">
-    <title>
-      Drag-behavior enabled on iPad/iPhone
-    </title>
-    <description>
-      <![CDATA[
-        The following widgets now support their native drag-and-drop behavior on iOS:
+        While RAP was already running on iOs, but it was barely usable. 
+        For this release the following improvements were made:
         <ul>
-          <li>ScrollBar</li>
-          <li>Shell</li>
-          <li>Sash</li>
-          <li>Scale</li>
-          <li>Slider</li>
-          <li>TableColumn</li>
-          <li>TreeColumn</li>
-        </ul>
-        This is <em>not</em> to be confused with support for the SWT Drag and Drop API, which is 
-        currently not enabled on iOS-devices.<br/>
+          <li> Fixed layouting bugs.</li>
+          <li> Fixed mouseclick emulation. </li>
+          <li> Added fullscreen support </li>
+          <li> Enabled native drag-and-drop behavior for 
+               ScrollBar, Shell, Sash, Scale, Slider, TableColumn anmd TreeColumn.
+          </li>
+        </ul>     
+        <br />
+        There is <em>no</em> support for the SWT Drag and Drop API, 
+        which is currently not enabled on iOS-devices.<br/>
         It is recommended to increase the size for the draggable elements to make them easier to 
         hit with a finger. Since this can be done using only theming, its possible to target mobile 
         and desktop clients with the same application, but different themes.
+        <br />
+        <br />
+        To run a RAP-application can in fullscreen-mode, simply touch the "+", select "Add to Home
+        Screen", and start it from there. Note that pinch-zoom is disabled in fullscreen-mode
+
+        <img src="images/ipadfull.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
       ]]>
     </description>
   </entry>
