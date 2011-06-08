@@ -105,6 +105,46 @@
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M7">
+    <title>
+      Drag-behavior enabled on iPad/iPhone
+    </title>
+    <description>
+      <![CDATA[
+        The following widgets now support their native drag-and-drop behavior on iOS:
+        <ul>
+          <li>ScrollBar</li>
+          <li>Shell</li>
+          <li>Sash</li>
+          <li>Scale</li>
+          <li>Slider</li>
+          <li>TableColumn</li>
+          <li>TreeColumn</li>
+        </ul>
+        This is <em>not</em> to be confused with support for the SWT Drag and Drop API, which is 
+        currently not enabled on iOS-devices.<br/>
+        It is recommended to increase the size for the draggable elements to make them easier to 
+        hit with a finger. Since this can be done using only theming, its possible to target mobile 
+        and desktop clients with the same application, but different themes.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M7">
+    <title>
+      CSS3-Support
+    </title>
+    <description>
+      <![CDATA[
+        RAP now uses CSS3 to render rounded borders, gradients and shadows in Google Chrome, Safari
+        (including iPad/iPhone) and Firefox 4. Other browser still use 
+        <a href="http://eclipse.org/rap/noteworthy/1.3/#RWT">vector graphics</a>. 
+        In Internet Explorer 9 CSS3 might be supported in the 
+        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=270397#c3">future</a>.
+      ]]>
+    </description>
+  </entry>
+
   <entry category="RWT" milestone="M2">
     <title>
       New Default Theme
@@ -133,49 +173,9 @@
     </description>
   </entry>
 
-  <entry category="RWT" milestone="M3">
-    <title>
-      JQuery compatibility
-    </title>
-    <description>
-      <![CDATA[
-        In the past, using <a href="http://jquery.com/">JQuery</a> with RAP
-        (e.g. for custom-widgets) was very problematic because "$" was used by
-        both RAP and JQuery as a global variable. RAP is not doing this anymore,
-        so if you wish to use JQuery, now you can.
-      ]]>
-    </description>
-  </entry>
-
-  <entry category="RWT" milestone="M3">
-    <title>
-      Optimized client
-    </title>
-    <description>
-      <![CDATA[
-        <p>
-        RAP is now using a new Javascript-compressor (based on the
-        <a href="http://developer.yahoo.com/yui/compressor/">YUI
-        Compressor</a>), and we also refactored/removed a lot of existing
-        Javascript code. These two actions reduced the size of the client from
-        984 kB to 909 kB.
-        </p>
-        <p>
-        The client's logging system has been drastically simplified in order to reduce client-size.
-        RWT itself does not use the logging anymore, but a rudimentary implementation is still
-        in place for custom-widget developers.
-        As a result of these changes, the RWT log-levels are no longer supported.
-        When RAP is started in the Debug variant, all log-messages are sent to the Browsers 
-        Javascript-console, while the Standard (production) variant will not output any logging 
-        messages.
-        </p>
-      ]]>
-    </description>
-  </entry>
-
   <entry category="RWT" milestone="M4">
     <title>
-      Theme Extensions
+      General Theme Extensions
     </title>
     <description>
       <![CDATA[
@@ -229,27 +229,26 @@
     </description>
   </entry>
 
-  <entry category="RWT" milestone="M5">
+  <entry category="RWT" milestone="M7">
     <title>
-      ToolTip widget
+      Shadows
     </title>
     <description>
       <![CDATA[
-      RWT now has an implementation of the ToolTip widget. It represents popup
-      windows that are used to inform or warn the user.
-      The new ToolTip widget is fully themeable.
-      <br/>
-      <img style="margin-top:10px; margin-bottom:10px" src="images/tooltip.png" />
-      <br/>
-      Note: By introducing this new widget we had to rename the existing CSS
-      element <code>ToolTip</code> to <code>Widget-ToolTip</code>.
-      This CSS element is used for styling tooltip texts on widgets, as set
-      using <code>Control#setTooltipText()</code>.
-      The new ToolTip widget can now be styled with the CSS element
-      <code>ToolTip</code>.
-      <br/>
-      This change was necessary to remain consistent within our naming scheme.
-      Please update your custom themes accordingly.
+        RAP-Theming now supports shadows on the following widgets:
+        <ul>
+          <li>Shell</li>
+          <li>Menu</li>
+          <li>Widget-ToolTip</li>
+          <li>ToolTip</li>
+          <li>Combo-List</li>
+          <li>CCombo-List</li>
+        </ul>
+        <img title="Shadows in RAP" style="margin-bottom:7px" src="images/Shadows.png" />
+        Shadows can have configurable horizontal offset, vertical offset, blur-radius and color.  
+        In Internet Explorer the blur-effect might look slightly different due to technical 
+        limitations. Shadow also supports transparency using the 
+        <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color.
       ]]>
     </description>
   </entry>
@@ -280,7 +279,7 @@
       ]]>
     </description>
   </entry>  
-  
+
   <entry category="RWT" milestone="M6">
     <title>
       FileUpload widget
@@ -303,8 +302,73 @@
         </p>
       ]]>
     </description>
+  </entry>  
+
+  <entry category="RWT" milestone="M5">
+    <title>
+      ToolTip widget
+    </title>
+    <description>
+      <![CDATA[
+      RWT now has an implementation of the ToolTip widget. It represents popup
+      windows that are used to inform or warn the user.
+      The new ToolTip widget is fully themeable.
+      <br/>
+      <img style="margin-top:10px; margin-bottom:10px" src="images/tooltip.png" />
+      <br/>
+      Note: By introducing this new widget we had to rename the existing CSS
+      element <code>ToolTip</code> to <code>Widget-ToolTip</code>.
+      This CSS element is used for styling tooltip texts on widgets, as set
+      using <code>Control#setTooltipText()</code>.
+      The new ToolTip widget can now be styled with the CSS element
+      <code>ToolTip</code>.
+      <br/>
+      This change was necessary to remain consistent within our naming scheme.
+      Please update your custom themes accordingly.
+      ]]>
+    </description>
   </entry>
 
+  <entry category="RWT" milestone="M3">
+    <title>
+      Optimized client
+    </title>
+    <description>
+      <![CDATA[
+        <p>
+        RAP is now using a new Javascript-compressor (based on the
+        <a href="http://developer.yahoo.com/yui/compressor/">YUI
+        Compressor</a>), and we also refactored/removed a lot of existing
+        Javascript code. These two actions reduced the size of the client from
+        984 kB to 909 kB.
+        </p>
+        <p>
+        The client's logging system has been drastically simplified in order to reduce client-size.
+        RWT itself does not use the logging anymore, but a rudimentary implementation is still
+        in place for custom-widget developers.
+        As a result of these changes, the RWT log-levels are no longer supported.
+        When RAP is started in the Debug variant, all log-messages are sent to the Browsers 
+        Javascript-console, while the Standard (production) variant will not output any logging 
+        messages.
+        </p>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M3">
+    <title>
+      JQuery compatibility
+    </title>
+    <description>
+      <![CDATA[
+        In the past, using <a href="http://jquery.com/">JQuery</a> with RAP
+        (e.g. for custom-widgets) was very problematic because "$" was used by
+        both RAP and JQuery as a global variable. RAP is not doing this anymore,
+        so if you wish to use JQuery, now you can.
+      ]]>
+    </description>
+  </entry>
+  
   <entry category="RWT" milestone="M7">
     <title>
       Application Scope
@@ -343,70 +407,6 @@
         Learn here how to enable content compression for
         <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_use_GZip_compression_with_the_Equinox_HttpService.3F">Jetty</a> and
         <a href="http://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Standard_Implementation">Tomcat</a>.
-      ]]>
-    </description>
-  </entry>
-
-  <entry category="RWT" milestone="M7">
-    <title>
-      Shadows
-    </title>
-    <description>
-      <![CDATA[
-        RAP-Theming now supports shadows on the following widgets:
-        <ul>
-          <li>Shell</li>
-          <li>Menu</li>
-          <li>Widget-ToolTip</li>
-          <li>ToolTip</li>
-          <li>Combo-List</li>
-          <li>CCombo-List</li>
-        </ul>
-        <img title="Shadows in RAP" style="margin-bottom:7px" src="images/Shadows.png" />
-        Shadows can have configurable horizontal offset, vertical offset, blur-radius and color.  
-        In Internet Explorer the blur-effect might look slightly different due to technical 
-        limitations. Shadow also supports transparency using the 
-        <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color.
-      ]]>
-    </description>
-  </entry>
-
-  <entry category="RWT" milestone="M7">
-    <title>
-      CSS3-Support
-    </title>
-    <description>
-      <![CDATA[
-        RAP now uses CSS3 to render rounded borders, gradients and shadows in Google Chrome, Safari
-        (including iPad/iPhone) and Firefox 4. Other browser still use 
-        <a href="http://eclipse.org/rap/noteworthy/1.3/#RWT">vector graphics</a>. 
-        In Internet Explorer 9 CSS3 might be supported in the 
-        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=270397#c3">future</a>.
-      ]]>
-    </description>
-  </entry>
-
-  <entry category="RWT" milestone="M7">
-    <title>
-      Drag-behavior enabled on iPad/iPhone
-    </title>
-    <description>
-      <![CDATA[
-        The following widgets now support their native drag-and-drop behavior on iOS:
-        <ul>
-          <li>ScrollBar</li>
-          <li>Shell</li>
-          <li>Sash</li>
-          <li>Scale</li>
-          <li>Slider</li>
-          <li>TableColumn</li>
-          <li>TreeColumn</li>
-        </ul>
-        This is <em>not</em> to be confused with support for the SWT Drag and Drop API, which is 
-        currently not enabled on iOS-devices.<br/>
-        It is recommended to increase the size for the draggable elements to make them easier to 
-        hit with a finger. Since this can be done using only theming, its possible to target mobile 
-        and desktop clients with the same application, but different themes.
       ]]>
     </description>
   </entry>
@@ -452,6 +452,18 @@
     </description>
   </entry>
     
+  <entry category="JFace / Workbench" milestone="M5">
+    <title>
+      JFace and Workbench upgraded to 3.7
+    </title>
+    <description>
+      <![CDATA[
+        The JFace and Workbench implementations shipped with RAP have been upgraded to the Eclipse 
+        3.7 code base.
+      ]]>
+    </description>
+  </entry>
+
   <entry category="JFace / Workbench" milestone="M1">
     <title>
       IApplication support
@@ -460,6 +472,25 @@
       <![CDATA[
         IApplication support has been changed to use fully qualified application
         ids.
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="JFace / Workbench" milestone="M5">
+    <title>
+      KeyBindings
+    </title>
+    <description>
+      <![CDATA[
+        One of the most requested features in RAP is finally available. It's
+        now possible to use key bindings, for example CTRL+S to save editors.
+        You can define new keybindings using the standard extension point:
+        <br />
+        <img src="images/keybinding.png"
+             title="Define a keybinding"
+             style="margin-top:10px" />
+        Emacs key sequences are not supported and the
+        <code>emacsAcceleratorConfiguration</code> scheme is missing.
       ]]>
     </description>
   </entry>
@@ -485,37 +516,6 @@
     </description>
   </entry>
 
-  <entry category="JFace / Workbench" milestone="M5">
-    <title>
-      JFace and Workbench upgraded to 3.7
-    </title>
-    <description>
-      <![CDATA[
-        The JFace and Workbench implementations shipped with RAP have been upgraded to the Eclipse 
-        3.7 code base.
-      ]]>
-    </description>
-  </entry>
-  
-  <entry category="JFace / Workbench" milestone="M5">
-    <title>
-      KeyBindings
-    </title>
-    <description>
-      <![CDATA[
-        One of the most requested features in RAP is finally available. It's
-        now possible to use key bindings, for example CTRL+S to save editors.
-        You can define new keybindings using the standard extension point:
-        <br />
-        <img src="images/keybinding.png"
-             title="Define a keybinding"
-             style="margin-top:10px" />
-        Emacs key sequences are not supported and the
-        <code>emacsAcceleratorConfiguration</code> scheme is missing.
-      ]]>
-    </description>
-  </entry>
-  
   <entry category="Common" milestone="M1">
     <title>
       Servlet 3.0 Support
@@ -562,26 +562,6 @@
         IApplications.
         <img src="images/applicationTooling.png"
           style="margin-top: 10px; margin-bottom: 10px"/>
-      ]]>
-    </description>
-  </entry>
-  
-  <entry category="Tooling" milestone="M6">
-    <title>
-      Target installation
-    </title>
-    <description>
-      <![CDATA[
-        RAP applications need to be compiled against the RAP runtime. To do so, 
-        the runtime needs to be set as the target platform in Eclipse. With this 
-        milestone the RAP tooling is able resolve the runtime from our 
-        <a href="http://eclipse.org/rap/downloads/">p2 repositories</a>
-        and does no longer include the runtime. 
-        This <a href="/rap/getting-started/">tutorial</a> shows 
-        how you can use the RAP target installation tooling.<br/>
-        <img src="images/targetInstallation.png"
-             title="Target installation tooling"
-             style="margin-top:10px" />
       ]]>
     </description>
   </entry>
@@ -659,5 +639,25 @@
       ]]>
     </description>
   </entry>
+
+  <entry category="Tooling" milestone="M6">
+    <title>
+      Target installation
+    </title>
+    <description>
+      <![CDATA[
+        RAP applications need to be compiled against the RAP runtime. To do so, 
+        the runtime needs to be set as the target platform in Eclipse. With this 
+        milestone the RAP tooling is able resolve the runtime from our 
+        <a href="http://eclipse.org/rap/downloads/">p2 repositories</a>
+        and does no longer include the runtime. 
+        This <a href="/rap/getting-started/">tutorial</a> shows 
+        how you can use the RAP target installation tooling.<br/>
+        <img src="images/targetInstallation.png"
+             title="Target installation tooling"
+             style="margin-top:10px" />
+      ]]>
+    </description>
+  </entry>  
 
 </noteworthy>
