@@ -90,7 +90,7 @@
     </title>
     <description>
       <![CDATA[
-        While RAP was already running on iOs, but it was barely usable. 
+        While RAP was already running on iOS before, it was barely usable. 
         For this release the following improvements were made:
         <ul>
           <li> Fixed layouting bugs.</li>
@@ -234,7 +234,7 @@
           <li>CCombo-List</li>
         </ul>
         <img title="Shadows in RAP" style="margin-bottom:7px" src="images/Shadows.png" />
-        <br />
+        
         Shadows can have configurable horizontal offset, vertical offset, blur-radius and color.  
         In Internet Explorer the blur-effect might look slightly different due to technical 
         limitations. Shadow also supports transparency using the 
