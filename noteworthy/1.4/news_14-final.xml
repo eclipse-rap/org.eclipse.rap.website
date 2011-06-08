@@ -153,11 +153,22 @@
     </title>
     <description>
       <![CDATA[
-        RAP is now using a new javascript-compressor (based on the
+        <p>
+        RAP is now using a new Javascript-compressor (based on the
         <a href="http://developer.yahoo.com/yui/compressor/">YUI
         Compressor</a>), and we also refactored/removed a lot of existing
-        javascript code. These two actions reduced the size of the client from
+        Javascript code. These two actions reduced the size of the client from
         984 kB to 909 kB.
+        </p>
+        <p>
+        The client's logging system has been drastically simplified in order to reduce client-size.
+        RWT itself does not use the logging anymore, but a rudimentary implementation is still
+        in place for custom-widget developers.
+        As a result of these changes, the RWT log-levels are no longer supported.
+        When RAP is started in the Debug variant, all log-messages are sent to the Browsers 
+        Javascript-console, while the Standard (production) variant will not output any logging 
+        messages.
+        </p>
       ]]>
     </description>
   </entry>
@@ -270,6 +281,72 @@
     </description>
   </entry>  
   
+  <entry category="RWT" milestone="M6">
+    <title>
+      FileUpload widget
+    </title>
+    <description>
+      <![CDATA[
+        <p>
+        The widget <code>org.eclipse.rwt.widgets.FileUpload</code> has been introduced.
+        This is a very basic, button-like component that lets users select a file from their local
+        file system.
+        This file can then be programmatically uploaded to a given URL.
+        </p>
+        <p>
+        To accept and store those files on the server, a server-side component is also needed.
+        This part is not included in the FileUpload widget itself.
+        A default implementation is currently being developed in the RAP Incubator and will be made
+        available soon.
+        An implementation of the SWT <code>FileDialog</code>, based on the new FileUpload widget, is
+        also under development in the Incubator.
+        </p>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M7">
+    <title>
+      Application Scope
+    </title>
+    <description>
+      <![CDATA[
+        The internals of RWT have been changed so that it is now possible to run more than one
+        instances of RWT in the same Java Virtual Machine.
+        <br />
+        Applications that wish to leverage this should no longer use static fields to store
+        instances with application scope. Instead they should make use of the new
+        <code>IApplicationStore</code>.
+        <br />
+        Note: for applications using the workbench, these changes don't make a difference
+        as multiple workbench applications cannot be run in parallel in a single virtual machine.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M7">
+    <title>
+      Response Content Compression
+    </title>
+    <description>
+      <![CDATA[
+        We decided to entirely remove support for GZIP-compressing response content
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342242">bug 342242</a>).
+        Initially, RAP always compressed response content. As it turned out that this
+        interfered with Tomcat and chunked transfer encoding
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259977">bug 259977</a>),
+        compression was made configurable to transition from using RAP's compression to using
+        the servlet engines compression feature.
+        <br />
+        If you wish to use content compression, please make sure that the servlet container
+        that you deploy the RAP application into, is configured accordingly.
+        Learn here how to enable content compression for
+        <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_use_GZip_compression_with_the_Equinox_HttpService.3F">Jetty</a> and
+        <a href="http://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Standard_Implementation">Tomcat</a>.
+      ]]>
+    </description>
+  </entry>
+
   <entry category="JFace / Workbench" milestone="M1">
     <title>
       IApplication support
