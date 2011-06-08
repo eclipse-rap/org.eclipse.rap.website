@@ -104,7 +104,8 @@
         There is <em>no</em> support for the SWT Drag and Drop API, 
         which is currently not enabled on iOS-devices.<br/>
         It is recommended to increase the size for the draggable elements to make them easier to 
-        hit with a finger. Since this can be done using only theming, its possible to target mobile 
+        hit with a finger. (See also "New Themeable Scrollbars".) 
+        Since this can be done using only theming, its possible to target mobile 
         and desktop clients with the same application, but different themes.
         <br />
         <br />
@@ -414,7 +415,8 @@
         <br/>
         The resulting key events can then be handled, just like in SWT, by adding a global key event
         listener to the display using <code>Display.addFilter()</code>.
-        For details, please refer to the JavaDoc of <code>RWT.ACTIVE_KEYS</code>.
+        For details, please refer to the JavaDoc of <code>RWT.ACTIVE_KEYS</code>. <br />
+        See also "KeyBindings" in category <a href="#JFace%20/%20Workbench">JFace / Workbench</a>
       ]]>
     </description>
   </entry>
@@ -479,7 +481,8 @@
              title="Define a keybinding"
              style="margin-top:10px" />
         Emacs key sequences are not supported and the
-        <code>emacsAcceleratorConfiguration</code> scheme is missing.
+        <code>emacsAcceleratorConfiguration</code> scheme is missing.<br />
+        See also "Key Bindings" in category <a href="#RWT">RWT</a>
       ]]>
     </description>
   </entry>
