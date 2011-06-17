@@ -1,11 +1,5 @@
 <?php
-require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php" );
-require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php" );
-require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php" );
-$App = new App();
-$Nav = new Nav();
-$Menu = new Menu();
-include( $App->getProjectCommon() );
+include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
 require_once( "../Noteworthy.class.php" );
 
@@ -33,6 +27,8 @@ $footer = "";
 $news = new Noteworthy( 'news_13-final.xml', '', $header, $footer );
 $html = $news->getHtml();
 
-generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
+$navPosition = array( "download", "noteworthy" );
+
+generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
 
 ?>

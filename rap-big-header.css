@@ -9,72 +9,73 @@
   top: 0;
   left: 0;
   width: 978px;
-  height: 193px;
-  background: url( "images/backgroundMain.jpg" ) no-repeat white;
-  border-bottom: 1px solid #c9c9c9;
+  height: 140px;
+  background: url( "/rap/images/header.png" ) no-repeat white;
+  border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
 }
 
 #rap-logo {
   position: absolute;
-  left: 58px;
-  top: 35px;
-  width: 313px;
-  height: 136px;
-  background: url( "images/RAP-Logo.png" ) no-repeat;
+  left: 29px;
+  top: 36px;
+  width: 196px;
+  height: 78px;
+  background: url( "/rap/images/RAP-Logo-white.png" ) no-repeat;
 }
+
+/* TOP LEVEL NAVIGATION */
 
 #rap-big-buttons {
   position: absolute;
-  left: 420px;
-  top: 0px;
-  width: 520px;
-  height: 150px;
+  left: 270px;
+  width: 680px;
+  bottom: 17px;
+  height: auto;
 }
 
-#rap-big-buttons h3 {
-  visibility: hidden;
+#rap-big-buttons ul {
+  text-align: center;
 }
 
-#rap-big-buttons ul li {
-  display: block;
+#rap-big-buttons li {
+  display: inline-block;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 #rap-big-buttons a {
-  position: absolute;
-  width: 250px;
-  height: 77px;
   display: block;
-  padding: 0;
-  margin: 20px;
-}
-
-#rap-big-buttons a h4 {
-  font-size: 16px;
-  line-height: 15px;
+  float: left;
+  padding: 7px 12px;
+  margin: 0 7px;
   font-weight: bold;
-  color: #333; 
-  padding: 0;
-  margin: 12px 10px 4px 70px;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
 }
 
-#rap-big-buttons a p {
-  font-size: 13px;
-  line-height: 14px;
-  font-weight: normal;
-  color: #444;
-  padding: 0;
-  margin: 4px 10px 5px 70px;
+#rap-big-buttons a.active {
+  background-color: #6d6d6d;
 }
 
 #rap-big-buttons a:hover {
   text-decoration: none;
+  background-color: white;
 }
 
-#rap-big-buttons a:hover h4 {
-  text-decoration: underline;
+#rap-big-buttons h3 {
+  color: white;
+  font-size: 14pt;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rap-big-buttons a:hover h3 {
+  color: gray;
 }
 
 #rap-big-buttons div.rap-button-icon {
@@ -85,6 +86,68 @@
   height: 50px;
 }
 
+/* SECOND-LEVEL NAVIGATION */
+
+#nav-bar {
+  background-color: #6d6d6d;
+/*  background-color: #7AB317;
+    background-color: #727F7D; */
+}
+
+#nav-bar ul {
+  display: block;
+  padding: 0;
+  margin: 0 25px;
+  float: right;
+}
+
+#nav-bar li {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#nav-bar a {
+  display: block;
+  padding: 0 10px;
+  margin: 0 7px;
+  color: white;
+  font-weight: bold;
+}
+
+#nav-bar a.active {
+  background-color: #c8c8c8;
+}
+
+#nav-bar a.active h4 {
+  color: #4d4d4d;
+}
+
+#nav-bar a:hover {
+  text-decoration: none;
+  background-color: #416693;
+}
+
+#nav-bar a:hover h4 {
+  color: white;
+}
+
+#nav-bar h4 {
+  font-weight: normal;
+  color: white;
+  margin: 0;
+  padding: 4px 0 5px;
+}
+
+#maincontent {
+  clear: both;
+}
+
+/* DOWNLOAD */
+
+/*
 #rap-button-download {
   left: 260px;
   top: 0px;
@@ -100,8 +163,8 @@
 }
  
 #rap-button-documentation {
-  left: 0px;
-  top: 87px;
+  left: 20px;
+  top: 0;
   background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
 }
 
@@ -115,7 +178,7 @@
 
 #rap-button-support {
   left: 260px;
-  top: 87px;
+  top: 0;
   background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
 }
 
@@ -141,11 +204,26 @@
   background: transparent url( "http://w3.eclipsesource.com/www/img/rap/button-icons.png" ) no-repeat -150px 0;
 }
 
+*/
+
+div.stop {
+  clear: both;
+}
+
+/* * */
+
 #midcolumn {
-  width: 640px;
-  padding: 20px;
+  width: 627px;
+  padding: 37px 20px 20px 27px;
+  margin-right: 11px;
+}
+
+#novaContent {
+  border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
 }
 
 #rightcolumn {
-  padding-top: 20px;
+  padding: 37px 27px 20px 20px;
 }

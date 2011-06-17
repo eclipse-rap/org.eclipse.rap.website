@@ -1,20 +1,15 @@
 <?php
 
-require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php" );
-require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php" );
-require_once( $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php" );
-
-$App = new App();
-$Nav = new Nav();
-$Menu = new Menu();
-include( $App->getProjectCommon() );
+include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
 $pageTitle = "RAP - 1.3 Downloads";
-$pageKeywords = "ajax, rap, eclipse rap, 1.3, downloads";
-$pageAuthor = "Ralf Sternberg";
+$pageKeywords = "ajax, rap, osgi, equinox, eclipse rap, equinox rap";
+$pageAuthor = "The RAP Team";
 
 $html = xslt( 'builds.xml', '_index.xsl' );
 
-generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html );
+$navPosition = array( "download", "achive" );
+
+generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
 
 ?>

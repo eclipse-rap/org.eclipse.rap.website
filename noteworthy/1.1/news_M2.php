@@ -1,4 +1,6 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  								
+include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
+
 $pageTitle 		= "RAP Project - New and Noteworthy";
 $pageKeywords	= "Ajax, rap, w4t, eclipse rap";
 $pageAuthor		= "Ruediger Herrmann";
@@ -128,6 +130,8 @@ $html = <<<EOHTML
 
 EOHTML;
 
-# Generate the web page
-generateRapPage( $App, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+$navPosition = array( "download", "noteworthy" );
+
+generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
+
 ?>
