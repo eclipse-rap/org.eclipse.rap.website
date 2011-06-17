@@ -210,6 +210,27 @@ div.stop {
   clear: both;
 }
 
+/* BOXES */
+
+div.box {
+  margin-top: 20px;
+}
+
+div.box img {
+  float: left;
+  border: 1px solid #666;
+  margin: 0;
+}
+
+div.box h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+div.box div {
+  margin: 0 0 0 270px;
+}
+
 /* * */
 
 #midcolumn {
