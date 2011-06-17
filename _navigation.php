@@ -121,6 +121,11 @@ function createSecondLevelContentForDocumentation() {
       </a>
     </li>
     <li>
+      <a id="rap-nav-getting-started" href="http://wiki.eclipse.org/RAP/FAQ">
+        <h4>FAQ</h4>
+      </a>
+    </li>
+    <li>
       <a id="rap-nav-getting-started" href="http://wiki.eclipse.org/RAP">
         <h4>Wiki</h4>
       </a>
