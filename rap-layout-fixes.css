@@ -83,7 +83,7 @@ q q:after { content: '\2019'; }
 .sideitem h6 {
   background-color: #416693;
   color: #ffffff;
-  border-bottom: 1px solid #FFF;
+  border-bottom: none;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0px;
@@ -232,4 +232,11 @@ a {
 
 #novaContent li {
   list-style-image: url( "/rap/images/bullet.gif" );
+}
+
+h2, h3, h4
+div.sideitem,
+#novaContent div.sideitem > ul > li
+{
+  border-bottom: none;
 }
