@@ -8,7 +8,7 @@
   <xsl:template match="/">
     <div id="midcolumn">
 
-      <h1>RAP 1.4 (planned)</h1>
+      <h1>RAP 1.4</h1>
 
       <p>
         Release Date: June 2011, together with Eclipse Indigo<br/>
