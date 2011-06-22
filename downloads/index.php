@@ -9,7 +9,7 @@ $pageAuthor = "The RAP Team";
 // --- TO BE CHANGED WITH EVERY RELEASE ---
 
 $stableBuilds = simplexml_load_file( "./1.4/builds.xml" );
-$releaseBuilds = simplexml_load_file( "./1.3/builds.xml" );
+$releaseBuilds = simplexml_load_file( "./1.4/builds.xml" );
 
 $stableBuild = $stableBuilds->completed->build[0];
 $releaseBuild = $releaseBuilds->completed->build[0];
@@ -36,7 +36,7 @@ function getBuildName( $build ) {
 function getBuildDate( $build ) {
   $months = array( "January", "February", "March", "April", "May", "June",
       "July", "August", "September", "October", "November", "December" );
-  $date = explode( "-", $build[ "buildDate" ] );
+  $date = explode( "-", $build[ "publishDate" ] );
   return $months[ $date[ 1 ] - 1 ] . " " . $date[ 2 ] . ", " . $date[ 0 ];
 }
 

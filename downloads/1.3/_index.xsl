@@ -99,7 +99,7 @@
         <xsl:value-of select="@name"/>
       </td>
       <td>
-        <xsl:value-of select="@buildDate"/>
+        <xsl:value-of select="@publishDate"/>
       </td>
       <td>
         <xsl:if test="@news != ''">

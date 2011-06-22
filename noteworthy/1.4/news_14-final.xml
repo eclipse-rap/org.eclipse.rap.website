@@ -652,4 +652,29 @@
     </description>
   </entry>  
 
+  <entry category="Incubator" milestone="R">
+    <title>
+      FileDialog
+    </title>
+    <description>
+      <![CDATA[
+          In 1.4, the FileUpload widget has been introduced.
+          But to handle the uploads on the server, you also need a server-side upload component.
+          Such a component is now available in the RAP Incubator.
+        <p>
+          To make file uploads really simple, we also provide an implementation of the SWT FileDialog
+          in the RAP Incubator.
+          This FileDialog allows you to select and upload files and makes the uploaded files available
+          on the server.
+          <img src="images/FileDialog.png"
+               title="FileDialog"
+               style="margin-top:10px;" />
+          You can include the dialog and its dependencies in your target platform by adding the
+          new Incubator Software Site http://download.eclipse.org/rt/rap/1.4/incubator/ to your RAP
+          1.4 target.
+        </p>
+      ]]>
+    </description>
+  </entry>  
+
 </noteworthy>

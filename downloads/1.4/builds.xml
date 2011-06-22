@@ -6,62 +6,61 @@
   toolingDesc="for use with Eclipse 3.6 and 3.7">
 
   <planned>
-    <build name="1.4" type="R"
-        buildDate="2011-06-22"
-        news="1.4/" />
-    <build name="1.4 RC4" type="RC"
-        buildDate="2011-06-10"
-        news="1.4/news_RC.php" />
   </planned>
 
   <completed>
+    <build name="1.4" type="R"
+        publishDate="2011-06-22"
+        news="1.4/"
+        toolingZip="rap-tooling-1.4.0-R-20110614-2335.zip"
+        runtimeZip="rap-runtime-1.4.0-R-20110614-2335.zip" />
     <build name="1.4 RC3" type="RC"
-        buildDate="2011-06-04"
+        publishDate="2011-06-04"
         news="1.4/news_RC.php"
         toolingZip="rap-tooling-1.4.0-RC3-20110601-1302.zip"
         runtimeZip="rap-runtime-1.4.0-RC3-20110601-1304.zip" />
     <build name="1.4 RC2" type="RC"
-        buildDate="2011-05-27"
+        publishDate="2011-05-27"
         news="1.4/news_RC.php"
         toolingZip="rap-tooling-1.4.0-RC2-20110524-0853.zip"
         runtimeZip="rap-runtime-1.4.0-RC2-20110524-0847.zip" />
     <build name="1.4 RC1" type="RC"
-        buildDate="2011-05-20"
+        publishDate="2011-05-20"
         news="1.4/news_RC.php"
         toolingZip="rap-tooling-1.4.0-RC1-20110517-0946.zip"
         runtimeZip="rap-runtime-1.4.0-RC1-20110517-0945.zip" />
     <build name="1.4 M7" type="M"
-        buildDate="2011-05-06"
+        publishDate="2011-05-06"
         news="1.4/news_M7.php"
         toolingZip="rap-tooling-1.4.0-M7-20110503-1213.zip"
         runtimeZip="rap-runtime-1.4.0-M7-20110504-1831.zip" />
     <build name="1.4 M6" type="M"
-        buildDate="2011-03-18"
+        publishDate="2011-03-18"
         news="1.4/news_M6.php"
         toolingZip="rap-tooling-1.4.0-M6-20110315-1210.zip"
         runtimeZip="rap-runtime-1.4.0-M6-20110315-1602.zip" />
     <build name="1.4 M5" type="M"
-        buildDate="2011-02-04"
+        publishDate="2011-02-04"
         news="1.4/news_M5.php"
         toolingZip="rap-tooling-1.4.0-M5-20110201-1550.zip"
         runtimeZip="rap-runtime-1.4.0-M5-20110201-1534.zip" />
     <build name="1.4 M4" type="M"
-        buildDate="2010-12-17"
+        publishDate="2010-12-17"
         news="1.4/news_M4.php"
         toolingZip="rap-tooling-1.4.0-M4-20101214-0934.zip"
         runtimeZip="rap-runtime-1.4.0-M4-20101214-0912.zip" />
     <build name="1.4 M3" type="M"
-        buildDate="2010-11-12"
+        publishDate="2010-11-12"
         news="1.4/news_M3.php"
         toolingZip="rap-tooling-1.4.0-M3-20101109-2155.zip"
         runtimeZip="rap-runtime-1.4.0-M3-20101109-2119.zip" />
     <build name="1.4 M2" type="M"
-        buildDate="2010-10-01"
+        publishDate="2010-10-01"
         news="1.4/news_M2.php"
         toolingZip="rap-tooling-1.4.0-M2-20100928-1710.zip"
         runtimeZip="rap-runtime-1.4.0-M2-20100928-1646.zip" />
     <build name="1.4 M1" type="M"
-        buildDate="2010-08-11"
+        publishDate="2010-08-11"
         news="1.4/news_M1.php"
         toolingZip="rap-tooling-1.4.0-M1-20100811-1627.zip"
         runtimeZip="rap-runtime-1.4.0-M1-20100811-1615.zip" />

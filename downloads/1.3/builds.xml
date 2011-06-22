@@ -8,87 +8,87 @@
   <completed>
 
     <build name="1.3.2" type="SR"
-        buildDate="2011-02-16"
+        publishDate="2011-02-16"
         news="1.3/"
         relnotes="relnotes132.php"
         toolingZip="rap-tooling-1.3.2-R-20110216-1041.zip"
         runtimeZip="rap-runtime-1.3.2-R-20110216-1023.zip" />
 
     <build name="1.3.1" type="SR"
-        buildDate="2010-09-24"
+        publishDate="2010-09-24"
         news="1.3/"
         relnotes="relnotes131.php"
         toolingZip="rap-tooling-1.3.1-R-20100916-0013.zip"
         runtimeZip="rap-runtime-1.3.1-R-20100915-2301.zip" />
 
     <build name="1.3.0" type="R"
-        buildDate="2010-06-15"
+        publishDate="2010-06-15"
         news="1.3/"
         toolingZip="rap-tooling-1.3.0-R-20100615-1734.zip"
         runtimeZip="rap-runtime-1.3.0-R-20100615-1704.zip" />
   
     <build name="1.3 RC4" type="RC"
-        buildDate="2010-06-08"
+        publishDate="2010-06-08"
         news="1.3/news_RC.php"
         toolingZip="rap-tooling-1.3.0-RC4-20100608-1607.zip"
         runtimeZip="rap-runtime-1.3.0-RC4-20100608-1549.zip" />
   
     <build name="1.3 RC3" type="RC"
-        buildDate="2010-06-01"
+        publishDate="2010-06-01"
         news="1.3/news_RC.php"
         toolingZip="rap-tooling-1.3.0-RC3-20100601-1113.zip"
         runtimeZip="rap-runtime-1.3.0-RC3-20100601-1021.zip" />
   
     <build name="1.3 RC2" type="RC"
-        buildDate="2010-05-23"
+        publishDate="2010-05-23"
         news="1.3/news_RC.php"
         toolingZip="rap-tooling-1.3.0-RC2-20100523-2330.zip"
         runtimeZip="rap-runtime-1.3.0-RC2-20100523-2301.zip" />
   
     <build name="1.3 RC1" type="RC"
-        buildDate="2010-05-18"
+        publishDate="2010-05-18"
         news="1.3/news_RC.php"
         toolingZip="rap-tooling-1.3.0-RC1-20100518-1248.zip"
         runtimeZip="rap-runtime-1.3.0-RC1-20100518-1222.zip" />
   
     <build name="1.3 M7" type="M"
-        buildDate="2010-05-04"
+        publishDate="2010-05-04"
         news="1.3/news_M7.php"
         toolingZip="rap-tooling-1.3.0-M7-20100504-1207.zip"
         runtimeZip="rap-runtime-1.3.0-M7-20100504-1139.zip" />
   
     <build name="1.3 M6" type="M"
-        buildDate="2010-03-16"
+        publishDate="2010-03-16"
         news="1.3/news_M6.php"
         toolingZip="rap-tooling-1.3.0-M6-20100316-1924.zip"
         runtimeZip="rap-runtime-1.3.0-M6-20100316-1859.zip" />
   
     <build name="1.3 M5" type="M"
-        buildDate="2010-02-01"
+        publishDate="2010-02-01"
         news="1.3/news_M5.php"
         toolingZip="rap-tooling-1.3.0-M5-20100201-1240.zip"
         runtimeZip="rap-runtime-1.3.0-M5-20100201-1223.zip" />
   
     <build name="1.3 M4" type="M"
-        buildDate="2010-02-01"
+        publishDate="2010-02-01"
         news="1.3/news_M4.php"
         toolingZip="rap-tooling-1.3.0-M4-20091214-1212.zip"
         runtimeZip="rap-runtime-1.3.0-M4-20091214-1156.zip" />
   
     <build name="1.3 M3" type="M"
-        buildDate="2009-11-10"
+        publishDate="2009-11-10"
         news="1.3/news_M3.php"
         toolingZip="rap-tooling-1.3.0-M3-20091110-1744.zip"
         runtimeZip="rap-runtime-1.3.0-M3-20091110-1732.zip" />
   
     <build name="1.3 M2" type="M"
-        buildDate="2009-09-29"
+        publishDate="2009-09-29"
         news="1.3/news_M2.php"
         toolingZip="rap-tooling-1.3.0-M2-20090929-1142.zip"
         runtimeZip="rap-runtime-1.3.0-M2-20090929-1121.zip" />
   
     <build name="1.3 M1" type="M"
-        buildDate="2009-08-17"
+        publishDate="2009-08-17"
         news="1.3/news_M1.php"
         toolingZip="rap-tooling-1.3.0-M1-20090817-1739.zip"
         runtimeZip="rap-runtime-1.3.0-M1-20090817-1725.zip" />
@@ -98,7 +98,7 @@
   <planned>
 
     <build type="SR" name="1.3.2"
-        buildDate="2011-02-25"
+        publishDate="2011-02-25"
         news=""
         toolingZip=""
         runtimeZip="" />
