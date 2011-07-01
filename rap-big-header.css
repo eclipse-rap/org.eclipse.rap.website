@@ -122,23 +122,24 @@
 }
 
 #nav-bar a.active h4 {
-  color: #4d4d4d;
+  color: #393939;
 }
 
 #nav-bar a:hover {
   text-decoration: none;
-  background-color: #416693;
+  background-color: #f8f8f8;
 }
 
 #nav-bar a:hover h4 {
-  color: white;
+  color: #393939;
 }
 
 #nav-bar h4 {
   font-weight: normal;
+  font-size: 17px;
   color: white;
   margin: 0;
-  padding: 4px 0 5px;
+  padding: 9px 0;
 }
 
 #maincontent {
