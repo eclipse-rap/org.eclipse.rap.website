@@ -1,0 +1,18 @@
+<builds version="1.5"
+  downloadPath="1.5/"
+  runtimeSite="http://download.eclipse.org/rt/rap/1.5/runtime"
+  toolingSite="http://download.eclipse.org/rt/rap/1.5/tooling"
+  runtimeDesc="based on Eclipse 3.8"
+  toolingDesc="for use with Eclipse 3.7, 3.8 and 4.2">
+
+  <planned>
+   <build name="1.5 M1" type="M"
+     publishDate="2011-08-20"
+     news="1.5/news_M1.php"
+     upcomingNews="1.5/news_M2.php" />
+  </planned>
+
+  <completed>
+  </completed>
+
+</builds>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+ Copyright (c) 2011 EclipseSource and others.
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ -->
+
+<noteworthy version="1.5">
+  
+  <!--
+  <entry category="RWT" milestone="M1">
+    <title>
+      New API added
+    </title>
+    <description>
+      <![CDATA[
+        This will make it easier for the community to reuse existing code or
+        to utilize new features.
+        Here is a list of API methods added in M1:
+        <br />
+        <ul>
+          <li><code>FontData()</code> constructor</li>
+          <li><code>FontData#setName(),
+                    FontData#setHeight(),
+                    FontData#setStyle(),
+                    FontData#setLocale()
+          </code></li>
+          <li><code>TreeItem#getImage()</code></li>
+        </ul>
+      ]]>
+    </description>
+  </entry>
+  -->
+
+</noteworthy>

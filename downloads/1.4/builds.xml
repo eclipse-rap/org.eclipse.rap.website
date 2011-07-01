@@ -12,6 +12,7 @@
     <build name="1.4" type="R"
         publishDate="2011-06-22"
         news="1.4/"
+        upcomingNews="1.5/news_M1.php"
         toolingZip="rap-tooling-1.4.0-R-20110614-2335.zip"
         runtimeZip="rap-runtime-1.4.0-R-20110614-2335.zip" />
     <build name="1.4 RC3" type="RC"

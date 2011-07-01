@@ -64,6 +64,7 @@ $vars[ "STABLE_RUNTIME_UPDATE_SITE" ] = $stableBuilds[ "runtimeSite" ];
 $vars[ "STABLE_TOOLING_UPDATE_SITE" ] = $stableBuilds[ "toolingSite" ];
 $vars[ "RELEASE_RUNTIME_UPDATE_SITE" ] = $releaseBuilds[ "runtimeSite" ];
 $vars[ "RELEASE_TOOLING_UPDATE_SITE" ] = $releaseBuilds[ "toolingSite" ];
+$vars[ "NIGHTLY_NOTEWORTHY_URL" ] = $newsUrl . $stableBuild[ "upcomingNews" ];
 
 $html = file_get_contents( '_index.html' );
 $html = replaceVariables( $vars, $html );
