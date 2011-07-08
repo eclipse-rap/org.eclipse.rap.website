@@ -8,7 +8,7 @@
  -->
 
 <noteworthy version="1.5">
-  
+
   <!--
   <entry category="RWT" milestone="M1">
     <title>
@@ -33,5 +33,28 @@
     </description>
   </entry>
   -->
+
+  <entry category="RWT" milestone="M1">
+    <title>
+      q07 Fragment removed
+    </title>
+    <description>
+      <![CDATA[
+        The org.eclipse.rap.rwt.q07 fragment has been removed.
+        The contents of this fragment have been moved to the org.eclipse.rap.rwt bundle and the q07
+        fragment is not needed anymore.
+        <p>
+        The q07 fragment had originally been introduced to be able to support different versions of
+        the qx client library. Meanwhile, we decided to maintain and evolve our own copy of this
+        client library
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=320993">bug 320993</a>),
+        so the fragment is not needed anymore.
+        However, with the new protocol
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>),
+        it will become possible to plug-in alternative clients for RAP.
+        </p>
+      ]]>
+    </description>
+  </entry>
 
 </noteworthy>
