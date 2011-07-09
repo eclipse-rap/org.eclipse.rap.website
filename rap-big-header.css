@@ -4,6 +4,19 @@
   position: relative;
 }
 
+#header {
+  height: 50px;
+}
+
+#logo {
+    float: left;
+    z-index:9999; /*Something Insanely High*/
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 #big-header {
   position: relative;
   top: 0;

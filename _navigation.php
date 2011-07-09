@@ -165,14 +165,6 @@ function createJavaScript( $topLevel, $secondLevel ) {
   $html = <<<EOHTML
 
 <script type="text/javascript">
-  // logo
-  var logo = $( '#logo:first-child' );
-  var newLogo = '<div id="logo"><a href="http://www.eclipse.org">' 
-                + logo.html() + '</a></div>';
-  logo.replaceWith( newLogo );
-  $( "#header" ).hide();
-  $( "#otherSites" ).hide();
-  
   $( "#rap-button-$topLevel" ).addClass( "active" ).siblings().removeClass( "active" );
   $( "#rap-nav-$secondLevel" ).addClass( "active" ).siblings().removeClass( "active" );
 </script>
