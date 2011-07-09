@@ -57,6 +57,7 @@ EOHTML;
   }
 
   function printFooter() {
+    $year = date( "Y" );
     printGoogleAnalyticsJs( 'UA-910670-2' );
     printGoogleAnalyticsJs( 'UA-17128428-1' );
     echo <<<EOHTML
@@ -75,7 +76,7 @@ EOHTML;
       <li><a href="http://www.eclipse.org/legal/">Legal</a></li>
       <li><a href="http://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
     </ul>
-    <span id="copyright">Copyright &copy; 2011 The Eclipse Foundation. All Rights Reserved.</span>
+    <span id="copyright">Copyright &copy; $year The Eclipse Foundation. All Rights Reserved.</span>
   </div>
 
 </div>
