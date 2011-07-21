@@ -227,13 +227,20 @@ div.stop {
 /* BOXES */
 
 div.box {
-  margin-top: 20px;
+  margin-top: 35px;
+}
+
+div.box div.images {
+  float: left;
+  margin: 0 25px 0 0;
 }
 
 div.box img {
-  float: left;
-  border: 1px solid #666;
-  margin: 0;
+  border: none;
+  margin: 0 0 25px 0;
+  -moz-box-shadow: 4px 4px 5px #cecece;
+  -webkit-box-shadow: 4px 4px 5px #cecece;
+  box-shadow: 4px 4px 5px #cecece;
 }
 
 div.box h3 {
@@ -242,7 +249,7 @@ div.box h3 {
 }
 
 div.box div {
-  margin: 0 0 0 270px;
+  margin: 0 0 0 280px;
 }
 
 /* * */

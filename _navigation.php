@@ -92,7 +92,11 @@ EOHTML;
 
 function createSecondLevelContentForDemos() {
   $html = <<<EOHTML
-    <li><h4>&nbsp;</h4></li>
+    <li>
+      <a id="rap-nav-rap-users" href="/rap/users/">
+        <h4>Who uses RAP?</h4>
+      </a>
+    </li>
 EOHTML;
   return $html;
 }
