@@ -13,7 +13,6 @@
     printHeader( $title );
     echo createRapNavigation( $navPosition );
     echo $html;
-    echo $pageHtml;
     printFooter();
   }
 
