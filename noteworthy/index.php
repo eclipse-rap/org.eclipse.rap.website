@@ -1,10 +1,13 @@
 <?php
 
-include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
+  include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-$pageTitle = "RAP - New and Noteworthy";
+  $title = "RAP - New and Noteworthy";
+  $navPosition = array( "download", "noteworthy" );
+  printHeader( $title, $navPosition );
 
-$html = <<<EOHTML
+?>
+
 <div id="maincontent">
 
   <div id="midcolumn">
@@ -159,9 +162,9 @@ $html = <<<EOHTML
   </div>
 
 </div>
-EOHTML;
 
-$navPosition = array( "download", "noteworthy" );
+<?php
 
-generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
+  printFooter();
+
 ?>
