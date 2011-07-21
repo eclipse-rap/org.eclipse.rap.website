@@ -10,13 +10,12 @@
   }
 
   function generateRapPage( $author, $keywords, $title, $html, $navPosition ) {
-    printHeader( $title );
-    echo createRapNavigation( $navPosition );
+    printHeader( $title, $navPosition );
     echo $html;
     printFooter();
   }
 
-  function printHeader( $title ) {
+  function printHeader( $title, $navPosition ) {
     echo <<<EOHTML
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -53,6 +52,7 @@
 
   <div id="novaContent">
 EOHTML;
+    echo createRapNavigation( $navPosition );
   }
 
   function printFooter() {
