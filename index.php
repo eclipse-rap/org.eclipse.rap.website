@@ -124,122 +124,13 @@
 
 <div id="rightcolumn">
 
-  <div class="sideitem">
-    <h6>RAP Arrivals</h6>
-    <a style="text-decoration: none;" href="/rap/downloads/">
-      <div class="terminal">
-        <div class="terminal-row">
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text">RAP 1.3.2</span>
-          </span>
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text terminal-arrived">ARRIVED</span>
-          </span>
-        </div>
-        <div class="terminal-row">
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text">RAP 1.4</span>
-          </span>
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text terminal-arrived">ARRIVED</span>
-          </span>
-        </div>
-        <div class="terminal-row">
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text">RAP 1.4.1</span>
-          </span>
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text">SEPT 23</span>
-          </span>
-        </div>
-        <div class="terminal-row">
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text">RAP 1.4.2</span>
-          </span>
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text">FEB 24</span>
-          </span>
-        </div>
-        <div class="terminal-row">
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text">RAP 1.5 M1</span>
-          </span>
-          <span class="terminal-field">
-            <span class="terminal-overlay"></span>
-            <span class="terminal-text">AUG 20</span>
-          </span>
-        </div>
-      </div>
-    </a>
-  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/arrivals.php" );?>
 
-  <div class="sideitem">
-    <h6>Recent RAP Posts
-    <a href="http://eclipsesource.com/blogs/tag/rap/feed/" class="rssIcon"><img src="/rap/images/feed.png" alt="feed"></a>
-    </h6>
-    <div id="rapFeed"></div>
-    <script type="text/javascript">
-      $( document ).ready( function () {
-        $( '#rapFeed' ).rssfeed( 'http://eclipsesource.com/blogs/tag/rap/feed/', {
-          limit: 4,
-          header : false,
-          key : "ABQIAAAADaXzprMke0eXhl5lyjwBJhQirors1Oy_y16QJctfjrSpBJX32hS_wL3O0Tk2wYierOO2_dXAoE0AMQ",
-          titletag : "h5",
-          date : false,
-          content : true
-        } );
-      } );
-    </script>
-  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/rap-feed.php" );?>
 
-  <!--
-  <div class="sideitem">
-    <h6>Upcoming Events</h6>
-    <ul>
-      <li>
-        <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_Indigo_2011/Muenchen"
-            target="_blank">
-          Eclipse DemoCamps Indigo 2011/Munich
-          <br />June 20, 2011</a>
-        <span>
-          <ul>
-            <li>Rich Ajax Platform: What's new in RAP 1.4</li>
-          </ul>
-        </span>
-      </li>
-    </ul>
-  </div>
-  -->
+  <!--?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/events.php" );?-->
 
-  <div class="sideitem">
-    <h6>Active Contributors</h6>
-    <div style="position: relative; height: 250px;">
-      <a href="http://eclipsesource.com" target="_blank"
-          title="EclipseSource"><img src="/rap/images/logos/EclipseSource.png"
-          style="position: absolute; left: 10px; top: 10px;"/></a>
-      <a href="http://www.ars.de" target="_blank"
-          title="ARS"><img src="/rap/images/logos/ARS.png"
-          style="position: absolute; left: 25px; top: 75px;"/></a>
-      <a href="http://www.cas.de/English/Home.asp"
-          target="_blank" title="CAS"><img src="/rap/images/logos/CAS.png"
-          style="position: absolute; left: 145px; top: 75px;"/></a>
-      <a href="http://oneandone.com" target="_blank"
-          title="1&amp;1"><img src="/rap/images/logos/1_1.png"
-          style="position: absolute; left: 25px; top: 141px;"/></a>
-      <a href="http://www.uid.com" target="_blank"
-          title="UID"><img src="/rap/images/logos/UID.png"
-          style="position: absolute; left: 130px; top: 190px;"/></a>
-    </div>
-  </div>
+  <?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/contributors.php" );?>
 
   <div style="position: relative; margin-bottom: 10px;">
     <a href="http://www.eclipse.org/eclipsert/"><img alt="EclipseRT"
