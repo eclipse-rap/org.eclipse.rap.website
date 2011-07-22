@@ -145,6 +145,13 @@
 
 </div>
 
+<div id="rightcolumn">
+
+  <?php includeSidebar( "rap-feed.php" ) ?>
+  <?php includeSidebar( "contributors.php" ) ?>
+
+</div>
+
 <?php
 
   printFooter();

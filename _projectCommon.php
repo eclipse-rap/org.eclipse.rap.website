@@ -111,4 +111,8 @@ EOHTML;
     return $proc->transformToXML( $xmlDoc );
   }
 
+  function includeSidebar( $filename ) {
+    include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/" . $filename );
+  }
+
 ?>

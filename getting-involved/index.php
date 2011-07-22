@@ -71,7 +71,7 @@
 
 <div id="rightcolumn">
 
-  <?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/contributors.php" );?>
+  <?php includeSidebar( "contributors.php" ) ?>
 
 </div>
 

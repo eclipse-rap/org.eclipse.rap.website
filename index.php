@@ -124,13 +124,13 @@
 
 <div id="rightcolumn">
 
-  <?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/arrivals.php" );?>
+  <?php includeSidebar( "arrivals.php" ) ?>
 
-  <?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/rap-feed.php" );?>
+  <?php includeSidebar( "rap-feed.php" ) ?>
 
-  <!--?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/events.php" );?-->
+  <!--?php includeSidebar( "events.php" ) ?-->
 
-  <?php include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/contributors.php" );?>
+  <?php include( "contributors.php" ) ?>
 
   <div style="position: relative; margin-bottom: 10px;">
     <a href="http://www.eclipse.org/eclipsert/"><img alt="EclipseRT"
