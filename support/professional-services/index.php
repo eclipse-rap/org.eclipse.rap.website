@@ -1,15 +1,49 @@
 <?php
 
-include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
+  include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
+  $title = "RAP - Professional Services";
+  $navPosition = array( "support", "professional" );
+  printHeader( $title, $navPosition );
 
-$pageTitle = "RAP - Professional Services";
-$pageKeywords = "ajax, rap, osgi, equinox, eclipse rap, equinox rap";
-$pageAuthor = "The RAP Team";
+?>
 
-$html = file_get_contents( '_index.html' );
+<div id="maincontent">
 
-$navPosition = array( "support", "professional" );
+  <div id="midcolumn">
 
-generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
+    <h1>Professional Services</h1>
+
+    <p>
+      Although Open Source software is freely available to everyone doesn't mean that everyone is an expert in this code.
+
+      Enterprise software built with Open Source components requires experienced developers who
+      know the internal structure of these components and can quickly and
+      efficiently eliminate problems.
+    </p>
+
+    <a href="http://eclipsesource.com/en/services/rap/"><img style="margin-top:15px;"
+       src="/rap/images/logos/EclipseSource-small.png" alt="EclipseSource"/></a>
+
+    <p>
+      EclipseSource has contributed RAP to Eclipse and is still the driving force behind the project.
+      
+      In many customer projects, we developed enterprise applications based on RAP.
+      
+      We've helped customers to extend RAP to meet their requirements and have developed
+      custom components.
+
+      With this experience,
+      <a href="http://eclipsesource.com/en/services/rap/">EclipseSource can offer you efficient support</a>.
+    </p>
+
+    <p style="margin-bottom:200px;">
+    </p>
+
+  </div>
+</div>
+
+<?php
+
+  printFooter();
 
 ?>
