@@ -21,6 +21,13 @@
 
     <ul>
       <li>
+        <a href="1.5/news_M1.php">RAP 1.5 M1</a>
+        <p style="margin-top: 5px">
+          Listed are the noteworthy things available in the first milestone
+          build for RAP 1.5 (M1, August 22<sup>nd</sup>, 2011).
+        </p>
+      </li>
+      <li>
         <a href="1.4/">RAP 1.4 Release</a>
         <p style="margin-top: 5px">
           Listed are the noteworthy things available in the 1.4 release.

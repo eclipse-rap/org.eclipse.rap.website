@@ -63,12 +63,14 @@
     </title>
     <description>
       <![CDATA[
-      Support for transparent session failover was added to RWT. This enables RWT applications to
+      Support for transparent session failover was added to RWT. This enables applications to
       run in a high-availability cluster.
-      RWT had to be extended in two places to achieve this. An alternate life cycle was implemented
-      that does not use a <em>UI Thread</em> and hence isn't compatible with SWT any more. 
-      This life cycle also eases integration with JEE as it eases to access to security or 
-      transaction contexts.
+      <p>
+	      RWT had to be extended in two places to achieve this. An alternate life cycle was 
+	      implemented that does not use a <em>UI Thread</em> and hence isn't compatible with SWT any 
+	      more. This life cycle also eases integration with JEE as it eases to access to security or
+	      transaction contexts.
+      </p>
       <p>
 	      The second area of work was to enable sessions to be replicated between cluster nodes. 
 	      Therefore all classes in RWT whose instances will have session scope were made serializable.
