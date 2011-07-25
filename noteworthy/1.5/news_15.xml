@@ -57,4 +57,35 @@
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M1">
+    <title>
+      Support for failover cluster
+    </title>
+    <description>
+      <![CDATA[
+      Support for transparent session failover was added to RWT. This enables RWT applications to
+      run in a high-availability cluster.
+      RWT had to be extended in two places to achieve this. An alternate life cycle was implemented
+      that does not use a <em>UI Thread</em> and hence isn't compatible with SWT any more. 
+      This life cycle also eases integration with JEE as it eases to access to security or 
+      transaction contexts.
+      <p>
+	      The second area of work was to enable sessions to be replicated between cluster nodes. 
+	      Therefore all classes in RWT whose instances will have session scope were made serializable.
+	      Note that application code must also be prepared in that all objects that live in session 
+	      scope must be serializable.
+      </p>
+      <p>
+        Serializable RWT sessions can also be used to swap inactive sessions onto disk and thereby 
+        releasing the memory consumed by them. This allows for infinite session timeout settings 
+        that result in more user friendly web applications.
+      </p> 
+      <p>
+        For further details, please visit our 
+        <a href="http://wiki.eclipse.org/RAP/RWT_Cluster">wiki page</a>.
+      </p>
+      ]]>
+    </description>
+  </entry>
+
 </noteworthy>
