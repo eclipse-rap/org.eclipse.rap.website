@@ -90,6 +90,32 @@
       ]]>
     </description>
   </entry>
+
+  <entry category="RWT" milestone="M1">
+    <title>
+      UICallback Improvements
+    </title>
+    <description>
+      <![CDATA[
+        The UI callback was redesigned and made more robust. 
+        <p>
+	        When a callback request fails, the client sends a new callback request to re-establish 
+	        the broken callback connection. To avoid unnecessary load on the client, retry requests 
+	        are sent with a suitable delay.
+        </p>
+        <p>
+	        On some servlet engines, an active UI callback prevented the session from expiring. This
+	        has been solved so that applications can activate the UI callback without interfering
+	        with the session timoeut.
+        </p>
+        <p>
+          The <a href="http://wiki.eclipse.org/RAP/UI_Callback">Server Push Wiki Page</a>
+          summarizes how the mechanism works internally.
+        </p>
+      ]]>
+    </description>
+  </entry>
+  
 <!-- 
 <
   <entry category="RWT" milestone="M1">
