@@ -59,7 +59,7 @@
 
   <entry category="RWT" milestone="M1">
     <title>
-      Support for failover cluster
+      Support for Failover Cluster
     </title>
     <description>
       <![CDATA[
@@ -68,19 +68,20 @@
       <p>
 	      RWT had to be extended in two places to achieve this. An alternate life cycle was 
 	      implemented that does not use a <em>UI Thread</em> and hence isn't compatible with SWT any 
-	      more. This life cycle also eases integration with JEE as it eases to access to security or
-	      transaction contexts.
+	      more. As a side effect, this life cycle also eases integration with JEE and other 
+	      technologies that use thread-local variables to access to security or transaction 
+	      contexts.
       </p>
       <p>
 	      The second area of work was to enable sessions to be replicated between cluster nodes. 
 	      Therefore all classes in RWT whose instances will have session scope were made serializable.
-	      Note that application code must also be prepared in that all objects that live in session 
-	      scope must be serializable.
+	      Note that application code must also be prepared in that all objects that live in the 
+	      session scope must be serializable.
       </p>
       <p>
         Serializable RWT sessions can also be used to swap inactive sessions onto disk and thereby 
         releasing the memory consumed by them. This allows for infinite session timeout settings 
-        that result in more user friendly web applications.
+        and saves users from annoying 'the session has timed out' messages.
       </p> 
       <p>
         For further details, please visit our 
@@ -89,5 +90,41 @@
       ]]>
     </description>
   </entry>
-
+<!-- 
+<
+  <entry category="RWT" milestone="M1">
+    <title>
+      Table supports Markup for Rich Cell Content
+    </title>
+    <description>
+      <![CDATA[
+      The table was enhanced to allow markup to be passed to table item text
+      (i.e. in calls to <code>TableItem#setText()</code>).
+      <p>
+        <img src="???" />
+  
+        <code><pre>
+table.setData( Table.ITEM_HEIGHT, new Integer( 90 ) );
+HashMap<String,Image> imageMap = new HashMap<String,Image>();
+imageMap.put( "user", userImage );
+table.setData( Table.IMAGE_MAP, imageMap );
+String text
+  = "<html>" 
+  + "<img src='user'/><font name='sans serif' height='16'>John Doe</font><br/>Managing Director" 
+  + "</html>";
+tableItem.setText( text );
+        </pre></code>
+      </p>
+      <p>
+        Please note that the implementation is in an early stage and in particluar the API is 
+        likely to change. Changes are currently tracked in 
+        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=346768">bug 346768</a>.
+        See the JavaDoc for <code>Table#ENABLE_RICH_TEXT</code> for further information on how 
+        to use this feature.
+      </p>
+      ]]>
+    </description>
+  </entry>
+-->
+ 
 </noteworthy>
