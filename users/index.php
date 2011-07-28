@@ -92,9 +92,31 @@
 
     <div class="box">
       <div class="images">
-        <a href="http://migrate.numiton.com" target="_blank">
-          <img src="images/numiton.png"/>
+        <a href="images/semantic-express-full.png">
+          <img src="images/semantic-express.png"/>
         </a>
+      </div>
+      <div>
+        <h3>Vocabulary management SemanticXpress</h3>
+        <p>
+          SemanticXpress is an ontology-based solution for company-wide vocabulary-management.
+          The existing terminologies from the different departments are linked to the company’s
+          vocabulary using so-called mappings. Users can access and interact with SemanticXpress
+          using a standardized, company-wide Web interface based on RAP.
+          External applications can also access the stored vocabularies (for example, to leverage
+          the Intranet search of a company).
+          Therefore SemanticXpress provides Web services that are suitable for easily connecting
+          external applications.
+        </p>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+
+    <div class="box">
+      <div class="images">
+        <!--a href="http://migrate.numiton.com" target="_blank"-->
+          <img src="images/numiton.png"/>
+        <!--/a-->
       </div>
       <div>
         <h3>Numiton Migration Tools</h3>
@@ -120,9 +142,9 @@
 
     <div class="box">
       <div class="images">
-        <a href="http://codefaces.org/" target="_blank">
+        <!--a href="http://codefaces.org/" target="_blank"-->
           <img src="images/codefaces.png"/>
-        </a>
+        <!--/a-->
       </div>
       <div>
         <h3>CodeFaces</h3>
