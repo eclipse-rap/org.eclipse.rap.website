@@ -26,15 +26,14 @@
   <meta name="keywords" content="ajax, rap, osgi, equinox, eclipse rap, equinox rap" />
   <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
   <link rel="stylesheet" type="text/css" href="/eclipse.org-common/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/yui/2.6.0/build/menu/assets/skins/sam/menu.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/reset.css" media="screen"/>
-  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/layout.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/footer.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/visual.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/print.css" media="print" />
-  <link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes.css"/>
-  <link rel="stylesheet" type="text/css" href="/rap/rap-big-header.css"/>
-  <link rel="stylesheet" type="text/css" href="/rap/rap-posts.css"/>
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/reset.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/layout.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/footer.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/visual.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/rap-layout-fixes.css"/>
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/rap-big-header.css"/>
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/rap-posts.css"/>
   <!--[if IE 6]>  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/ie6_style.css" media="screen"/> <![endif]-->
   <!--[if lte IE 7]>  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/ie_style.css" media="screen"/> <![endif]-->
   <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
