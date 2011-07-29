@@ -130,7 +130,7 @@
 
   <!--?php includeSidebar( "events.php" ) ?-->
 
-  <?php include( "contributors.php" ) ?>
+  <?php includeSidebar( "contributors.php" ) ?>
 
   <div style="position: relative; margin-bottom: 10px;">
     <a href="http://www.eclipse.org/eclipsert/"><img alt="EclipseRT"
