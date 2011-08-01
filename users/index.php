@@ -26,7 +26,7 @@
 
     <div class="box">
       <div class="images">
-        <a href="http://www.cas-pia.de/en/try.html" target="_blank">
+        <a href="http://www.cas-pia.de/en/try.html">
           <img src="images/pia.png"/>
         </a>
       </div>
@@ -36,22 +36,24 @@
           A powerful customer relationship management system based on RAP with a great look&feel.
           Provides contact management, calendar, document management, and many more features.
         </p>
-        <p>
-          Try the
-          <a href="http://www.cas-pia.de/en/try.html" target="_blank">CAS PIA guest account</a>.<br/>
-          Click <i>Guest access</i> to launch the application.
-        </p>
+        <h4>References:</h4>
+        <ul>
+          <li>
+            <a href="http://www.cas-pia.de/en/try.html">CAS PIA guest account</a>
+            (click <em>Guest access</em> to launch the application)
+          </li>
+        </ul>
       </div>
       <div style="clear: both;"></div>
     </div>
 
     <div class="box">
       <div class="images">
-        <a href="http://www.eclipse.org/community/casestudies/emergencySimulation.php" target="_blank">
+        <a href="http://www.eclipse.org/community/casestudies/emergencySimulation.php">
           <img src="images/tcat-preparedness.jpg" alt="Dynamic Preparedness System" title="Dynamic Preparedness System"/>
         </a>
         <br/>
-        <a href="http://www.eclipse.org/community/casestudies/emergencySimulation.php" target="_blank">
+        <a href="http://www.eclipse.org/community/casestudies/emergencySimulation.php">
           <img src="images/tcat-bio-surveillance.jpg" alt="Biosurveillance Common Operating Picture" title="Biosurveillance Common Operating Picture"/>
         </a>
       </div>
@@ -70,22 +72,25 @@
           Other systems built on this framework are the Biosurveillance Common Operating Picture and
           the Coast Guard Display System.
         </p>
-        <p>
-          <a href="http://www.eclipse.org/community/casestudies/emergencySimulation.php">Emergency Simulation Solutions Delivered in Record Time With Eclipse (Case Study at Eclipse.org)</a>
-        </p>
-        <p>
-          <a href="http://www.eclipsecon.org/2010/sessions/?page=sessions&id=1134">Eclipse to the Rescue (Talk at EclipseCon)</a>,
-          <a href="http://wiki.eclipse.org/images/9/90/091117EmergencyInfoDissemination.pdf">Slides (PDF)</a>
-        </p>
-        <p>
-          <a href="http://fazd.tamu.edu/information-analysis-systems/online-dashboard-to-enhance-decision-making-during-disease-outbreaks/">Information Dashboard Framework enhances decision making during disasters or attacks</a>
-        </p>
-        <p>
-          <a href="http://fazd.tamu.edu/information-analysis-systems/online-dashboard-to-enhance-decision-making-during-disease-outbreaks/bio-surveillance-common-operating-picture/">Bio-surveillance Common Operating Picture developed for DHS National Bio-surveillance Integration Center</a>
-        </p>
-        <p>
-          <a href="http://tcat.tamu.edu/index.php?option=com_content&view=article&id=95:online-technology-for-tracking-disease-outbreaks-earns-dhs-2010-science-a-technology-impact-award&catid=39:tcat-news&Itemid=56">Online technology for tracking disease outbreaks earns DHS' 2010 Science & Technology Impact Award</a>
-        </p>
+        <h4>References:</h4>
+        <ul>
+          <li>
+            <a href="http://www.eclipse.org/community/casestudies/emergencySimulation.php">Emergency Simulation Solutions Delivered in Record Time With Eclipse (Case Study at Eclipse.org)</a>
+          </li>
+          <li>
+            <a href="http://www.eclipsecon.org/2010/sessions/?page=sessions&id=1134">Eclipse to the Rescue (Talk at EclipseCon)</a>,
+            <a href="http://wiki.eclipse.org/images/9/90/091117EmergencyInfoDissemination.pdf">Slides (PDF)</a>
+          </li>
+          <li>
+            <a href="http://fazd.tamu.edu/information-analysis-systems/online-dashboard-to-enhance-decision-making-during-disease-outbreaks/">Information Dashboard Framework enhances decision making during disasters or attacks</a>
+          </li>
+          <li>
+            <a href="http://fazd.tamu.edu/information-analysis-systems/online-dashboard-to-enhance-decision-making-during-disease-outbreaks/bio-surveillance-common-operating-picture/">Bio-surveillance Common Operating Picture developed for DHS National Bio-surveillance Integration Center</a>
+          </li>
+          <li>
+            <a href="http://tcat.tamu.edu/index.php?option=com_content&view=article&id=95:online-technology-for-tracking-disease-outbreaks-earns-dhs-2010-science-a-technology-impact-award&catid=39:tcat-news&Itemid=56">Online technology for tracking disease outbreaks earns DHS' 2010 Science & Technology Impact Award</a>
+          </li>
+        </ul>
       </div>
       <div style="clear: both;"></div>
     </div>
@@ -99,7 +104,9 @@
       <div>
         <h3>Vocabulary management SemanticXpress</h3>
         <p>
-          SemanticXpress is an ontology-based solution for company-wide vocabulary-management.
+          <a href="http://www.ontoprise.de/en/solutions/semanticxpress/">SemanticXpress</a>
+          by <a href="http://www.ontoprise.com">Ontoprise</a>
+          is an ontology-based solution for company-wide vocabulary-management.
           The existing terminologies from the different departments are linked to the company’s
           vocabulary using so-called mappings. Users can access and interact with SemanticXpress
           using a standardized, company-wide Web interface based on RAP.
@@ -108,13 +115,39 @@
           Therefore SemanticXpress provides Web services that are suitable for easily connecting
           external applications.
         </p>
+        <h4>References:</h4>
+        <ul>
+          <li>
+            <a href="http://www.ontoprise.de/en/solutions/semanticxpress/">SemanticXpress product page</a>
+          </li>
+        </ul>
       </div>
       <div style="clear: both;"></div>
     </div>
 
+    <!--div class="box">
+      <div class="images">
+        <a href="http://www.enelytics.com/sos-technology.htm">
+          <img src="images/blank.png"/>
+        </a>
+      </div>
+      <div>
+        <h3>Enelytics - SOS System</h3>
+        <p>
+          Enelytics LLC uses RAP as the basis for their <em>Software as Services (SOS)</em>
+          Plug-in Architecture.
+          ...
+        </p>
+        <p>
+          <a href="http://www.enelytics.com/sos-technology.htm">Enelytics SOS Technology</a>
+        </p>
+      </div>
+      <div style="clear: both;"></div>
+    </div-->
+
     <div class="box">
       <div class="images">
-        <!--a href="http://migrate.numiton.com" target="_blank"-->
+        <!--a href="http://migrate.numiton.com"-->
           <img src="images/numiton.png"/>
         <!--/a-->
       </div>
@@ -131,18 +164,20 @@
           to freely migrate PHP code of limited size to Java with servlets or the
           Spring framework. The snippets can also be shared with others.
         </p>
-        <p>
-          <a href="http://migrate.numiton.com/" target="_blank">
-            Browse migration snippets and create your own
-          </a>
-        </p>
+        <h4>References:</h4>
+        <ul>
+          <li>
+            <a href="http://www.numiton.com/products/ntile-ptoj/ptoj-overview.html">nTile migration system</a>
+            <!--a href="http://migrate.numiton.com/">Browse migration snippets and create your own</a-->
+          </li>
+        </ul>
       </div>
       <div style="clear: both;"></div>
     </div>
 
     <div class="box">
       <div class="images">
-        <!--a href="http://codefaces.org/" target="_blank"-->
+        <!--a href="http://codefaces.org/"-->
           <img src="images/codefaces.png"/>
         <!--/a-->
       </div>
@@ -154,11 +189,12 @@
           Allows connecting to multiple source control systems and structurally navigating code
           on a unified web interface.
         </p>
-        <p>
-          <a href="http://codefaces.org/" target="_blank">
-            Web-based source control client
-          </a>
-        </p>
+        <h4>References:</h4>
+        <ul>
+          <li>
+            <a href="http://codefaces.org/">Web-based source control client</a>
+          </li>
+        </ul>
       </div>
       <div style="clear: both;"></div>
     </div>
