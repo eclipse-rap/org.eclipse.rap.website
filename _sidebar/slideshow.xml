@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+ Copyright (c) 2011 EclipseSource and others.
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ -->
+
+<slideshow>
+  <slide title = "New in RAP 1.4" url = "http://eclipse.org/rap/noteworthy/1.4/" >
+    <![CDATA[
+      Lots and lots of <b> awesome </b> stuff.
+    ]]>
+  </slide>
+  <slide title = "New in RAP 1.4" url = "http://eclipse.org/rap/noteworthy/1.4/" >
+    <![CDATA[
+      Lots and lots of awesome stuff.
+     <br />
+     <i> Really! </i>
+    ]]>
+  </slide>
+    <slide title = "New in RAP 1.5M1" url = "http://eclipse.org/rap/noteworthy/1.5/news_M1.php" >
+       <![CDATA[
+         Nothing.
+       ]]>
+    </slide>
+</slideshow>

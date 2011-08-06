@@ -124,6 +124,8 @@
 
 <div id="rightcolumn">
 
+  <!--?php includeSidebar( "slideshow.php" ) ?-->
+
   <?php includeSidebar( "arrivals.php" ) ?>
 
   <?php includeSidebar( "rap-feed.php" ) ?>
