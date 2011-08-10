@@ -12,14 +12,14 @@
 
   <div class="homeitem3col">
 
-    <h1>Who uses RAP?</h1>
+    <h1>Built on RAP</h1>
 
     <p>
       RAP is mainly used for building business applications, many of them are never seen outside of
       corporate walls.
       We'd be happy to learn about your projects with RAP.
 
-      If you'd like your RAP application listed on this page, please drop us a note to
+      If you'd like your project listed on this page, please drop us a note to
       <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev@eclipse.org</a>
       or contact one of the committers.
     </p>
