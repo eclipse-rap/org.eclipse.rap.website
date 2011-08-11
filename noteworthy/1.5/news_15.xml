@@ -146,10 +146,12 @@
           <li>ToolBar</li>
         </ul>
         <img title="Text Shadows in RAP" style="margin-bottom:7px" src="images/Text-Shadows.png" />
-        Text shadows are not available in Internet Explorer due to missing <code>text-shadow</code> 
-        CSS3 support. Text shadow also supports transparency using the 
-        <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color. 
-        Example:<br/>
+        <p>
+          Text shadows are not available in Internet Explorer due to missing <code>text-shadow</code> 
+          CSS3 support. Text shadow also supports transparency using the 
+          <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color. 
+          Example:
+        </p>
 <code><pre>
 Button {
   text-shadow: 0 1px 0 rgba( 0, 0, 0, 0.3 );
