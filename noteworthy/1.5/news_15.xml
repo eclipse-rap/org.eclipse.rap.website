@@ -161,6 +161,18 @@ Button {
     </description>
   </entry>
   
+  <entry category="RWT" milestone="M1">
+    <title>
+      Virtual Tree
+    </title>
+    <description>
+      <![CDATA[
+        The server-side part of the Tree widget was considerably improved and optimized. Now, 
+        virtual Tree can handle huge amount of items without performance degradation. 
+      ]]>
+    </description>
+  </entry>
+  
 <!-- 
 <
   <entry category="RWT" milestone="M1">
