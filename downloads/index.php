@@ -8,7 +8,7 @@
 
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
-  $stableBuilds = simplexml_load_file( "./1.4/builds.xml" );
+  $stableBuilds = simplexml_load_file( "./1.5/builds.xml" );
   $releaseBuilds = simplexml_load_file( "./1.4/builds.xml" );
 
   $stableBuild = $stableBuilds->completed->build[0];
