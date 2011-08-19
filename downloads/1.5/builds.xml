@@ -6,13 +6,42 @@
   toolingDesc="for use with Eclipse 3.7, 3.8 and 4.2">
 
   <planned>
-   <build name="1.5 M1" type="M"
-     publishDate="2011-08-20"
-     news="1.5/news_M1.php"
-     upcomingNews="1.5/news_M2.php" />
+   <build name="1.5 M2" type="M"
+     publishDate="2011-09-30"
+     news="1.5/news_M2.php"
+     upcomingNews="1.5/news_M3.php" />
+   <build name="1.5 M3" type="M"
+     publishDate="2011-11-11"
+     news="1.5/news_M3.php"
+     upcomingNews="1.5/news_M4.php" />
+   <build name="1.5 M3" type="M"
+     publishDate="2011-11-11"
+     news="1.5/news_M3.php"
+     upcomingNews="1.5/news_M4.php" />
+   <build name="1.5 M4" type="M"
+     publishDate="2011-12-16"
+     news="1.5/news_M4.php"
+     upcomingNews="1.5/news_M5.php" />
+   <build name="1.5 M5" type="M"
+     publishDate="2011-01-03"
+     news="1.5/news_M5.php"
+     upcomingNews="1.5/news_M6.php" />
+   <build name="1.5 M6" type="M"
+     publishDate="2011-03-23"
+     news="1.5/news_M6.php"
+     upcomingNews="1.5/news_M7.php" />
+   <build name="1.5 M6" type="M"
+     publishDate="2011-05-11"
+     news="1.5/news_M7.php" />
   </planned>
 
   <completed>
+   <build name="1.5 M1" type="M"
+     publishDate="2011-08-19"
+     news="1.5/news_M1.php"
+     upcomingNews="1.5/news_M2.php"
+     toolingZip="rap-tooling-1.5.0-M1-20110816-0954.zip"
+     runtimeZip="rap-runtime-1.5.0-M1-20110816-0926.zip" />
   </completed>
 
 </builds>
