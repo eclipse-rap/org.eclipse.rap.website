@@ -26,7 +26,7 @@
                     FontData#setHeight(),
                     FontData#setStyle(),
                     FontData#setLocale()
-          </code></li>
+              </code></li>
           <li><code>TreeItem#getImage()</code></li>
         </ul>
       ]]>
@@ -66,25 +66,27 @@
       Support for transparent session failover was added to RWT. This enables applications to
       run in a high-availability cluster.
       <p>
-	      RWT had to be extended in two places to achieve this. An alternate life cycle was 
-	      implemented that does not use a <em>UI Thread</em> and hence isn't compatible with SWT any 
-	      more. As a side effect, this life cycle also eases integration with JEE and other 
-	      technologies that use thread-local variables to access to security or transaction 
-	      contexts.
+        RWT had to be extended in two places to achieve this. An alternatative life cycle was
+        implemented that does not use a <em>UI Thread</em> because threads cannot be migrated.
+        With this <em>simple</em> life cycle implementation, RAP isn't fully compatible with SWT
+        anymore, but the differences are small.
+        As a side effect, this life cycle also eases integration with JEE and other 
+        technologies that use thread-local variables to access to security or transaction 
+        contexts.
       </p>
       <p>
-	      The second area of work was to enable sessions to be replicated between cluster nodes. 
-	      Therefore all classes in RWT whose instances will have session scope were made serializable.
-	      Note that application code must also be prepared in that all objects that live in the 
-	      session scope must be serializable.
+        The second area of work was to enable sessions to be replicated between cluster nodes.
+        Therefore all classes in RWT whose instances will have session scope were made serializable.
+        Note that application code must also be prepared in that all objects that live in the 
+        session scope must be serializable.
       </p>
       <p>
-        Serializable RWT sessions can also be used to swap inactive sessions onto disk and thereby 
-        releasing the memory consumed by them. This allows for infinite session timeout settings 
+        Serializable RWT sessions can also be used to swap inactive sessions onto disk and thereby
+        releasing the memory consumed by them. This allows for infinite session timeout settings
         and saves users from annoying 'the session has timed out' messages.
-      </p> 
+      </p>
       <p>
-        For further details, please visit our 
+        For further details, please visit our
         <a href="http://wiki.eclipse.org/RAP/RWT_Cluster">wiki page</a>.
       </p>
       ]]>
@@ -97,16 +99,16 @@
     </title>
     <description>
       <![CDATA[
-        The UI callback was redesigned and made more robust. 
+        The UI callback was redesigned and made more robust.
         <p>
-	        When a callback request fails, the client sends a new callback request to re-establish 
-	        the broken callback connection. To avoid unnecessary load on the client, retry requests 
-	        are sent with a suitable delay.
+          When a callback request fails, the client sends a new callback request to re-establish
+          the broken callback connection. To avoid unnecessary load on the client, retry requests
+          are sent with a suitable delay.
         </p>
         <p>
-	        On some servlet engines, an active UI callback prevented the session from expiring. This
-	        has been solved so that applications can activate the UI callback without interfering
-	        with the session timoeut.
+          On some servlet engines, an active UI callback prevented the session from expiring. This
+          has been solved so that applications can activate the UI callback without interfering
+          with the session timeout.
         </p>
         <p>
           The <a href="http://wiki.eclipse.org/RAP/UI_Callback">Server Push Wiki Page</a>
@@ -115,41 +117,39 @@
       ]]>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M1">
     <title>
       Text Shadows
     </title>
     <description>
       <![CDATA[
-        RAP-Theming now supports text shadows on the following widgets:
-        <ul>
-          <li>Shell</li>
-          <li>Label</li>
-          <li>CLabel</li>
-          <li>CTabFolder</li>
-          <li>Button</li>
-          <li>DateTime</li>
-          <li>ExpandBar</li>
-          <li>Group</li>
-          <li>Link</li>
-          <li>List</li>
-          <li>Spinner</li>
-          <li>TabFolder</li>
-          <li>Menu</li>
-          <li>ToolTip</li>
-          <li>Combo</li>
-          <li>CCombo</li>
-          <li>Tree</li>
-          <li>Table</li>
-          <li>Text</li>
-          <li>ToolBar</li>
-        </ul>
+        The Theming now supports text shadows for most widgets that display text:
+          Shell,
+          Label,
+          CLabel,
+          CTabFolder,
+          Button,
+          DateTime,
+          ExpandBar,
+          Group,
+          Link,
+          List,
+          Spinner,
+          TabFolder,
+          Menu,
+          ToolTip,
+          Combo,
+          CCombo,
+          Tree,
+          Table,
+          Text, and
+          ToolBar
         <img title="Text Shadows in RAP" style="margin-bottom:7px" src="images/Text-Shadows.png" />
         <p>
-          Text shadows are not available in Internet Explorer due to missing <code>text-shadow</code> 
-          CSS3 support. Text shadow also supports transparency using the 
-          <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color. 
+          Text shadows are not available in Internet Explorer due to this browser's lack of support for this feature.
+          Transparency for text shadows is supported using the
+          <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color.
           Example:
         </p>
 <code><pre>
@@ -160,15 +160,19 @@ Button {
       ]]>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M1">
     <title>
       Virtual Tree
     </title>
     <description>
       <![CDATA[
-        The server-side part of the Tree widget was considerably improved and optimized. Now, 
-        virtual Tree can handle huge amount of items without performance degradation. 
+        The server-side part of the Tree widget was considerably improved and optimized. Now,
+        a Tree with SWT.VIRTUAL style can handle huge item counts without performance degradation.
+        <p>
+          If you'd like to try it out, have a look at the tab called “Complex Data” in our
+          <a href="http://rap.eclipsesource.com/">Examples demo</a>.
+        </p>
       ]]>
     </description>
   </entry>
@@ -177,11 +181,11 @@ Button {
 <
   <entry category="RWT" milestone="M1">
     <title>
-      Table supports Markup for Rich Cell Content
+      Experimental support for markup in Tables
     </title>
     <description>
       <![CDATA[
-      The table was enhanced to allow markup to be passed to table item text
+      The table was enhanced to allow markup in item texts
       (i.e. in calls to <code>TableItem#setText()</code>).
       <p>
         <img src="???" />
