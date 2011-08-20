@@ -48,9 +48,6 @@
    <build name="1.5 RC3" type="RC"
      publishDate="2012-06-08"
      news="1.5/news_RC.php" />
-   <build name="1.5 RC4" type="RC"
-     publishDate="2012-06-15"
-     news="1.5/news_RC.php" />
 
    <build name="1.5" type="R"
      publishDate="2012-07-27"
