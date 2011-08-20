@@ -28,32 +28,39 @@
      news="1.5/news_M4.php"
      upcomingNews="1.5/news_M5.php" />
    <build name="1.5 M5" type="M"
-     publishDate="2011-01-03"
+     publishDate="2012-01-03"
      news="1.5/news_M5.php"
      upcomingNews="1.5/news_M6.php" />
    <build name="1.5 M6" type="M"
-     publishDate="2011-03-23"
+     publishDate="2012-03-23"
      news="1.5/news_M6.php"
      upcomingNews="1.5/news_M7.php" />
    <build name="1.5 M7" type="M"
-     publishDate="2011-05-11"
+     publishDate="2012-05-11"
      news="1.5/news_M7.php" />
 
    <build name="1.5 RC1" type="RC"
-     publishDate="2011-05-25"
+     publishDate="2012-05-25"
      news="1.5/news_RC.php" />
    <build name="1.5 RC2" type="RC"
-     publishDate="2011-06-01"
+     publishDate="2012-06-01"
      news="1.5/news_RC.php" />
    <build name="1.5 RC3" type="RC"
-     publishDate="2011-06-08"
+     publishDate="2012-06-08"
      news="1.5/news_RC.php" />
    <build name="1.5 RC4" type="RC"
-     publishDate="2011-06-15"
+     publishDate="2012-06-15"
      news="1.5/news_RC.php" />
 
    <build name="1.5" type="R"
-     publishDate="2011-07-27"
+     publishDate="2012-07-27"
+     news="1.5/news_RC.php" />
+
+   <build name="1.5.1" type="SR"
+     publishDate="2012-09-24"
+     news="1.5/news_RC.php" />
+   <build name="1.5.2" type="SR"
+     publishDate="2013-02-25"
      news="1.5/news_RC.php" />
   </planned>
 

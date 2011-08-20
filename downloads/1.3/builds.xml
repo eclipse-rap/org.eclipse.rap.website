@@ -97,12 +97,6 @@
 
   <planned>
 
-    <build type="SR" name="1.3.2"
-        publishDate="2011-02-25"
-        news=""
-        toolingZip=""
-        runtimeZip="" />
-
   </planned>
 
 </builds>
