@@ -13,8 +13,7 @@
       <p>
         Release Date: June 23, 2010, together with Eclipse Helios<br/>
         <a href="/rap/noteworthy/1.3/">New &amp; Noteworthy</a>.
-        A service release (1.3.1) is available, another service release (1.3.2)
-        is planned for  Feb 25, 2011.
+        Two service releases (1.3.1 and 1.3.2) are available.
       </p>
 
       <h3>RAP Tooling</h3>
@@ -105,7 +104,7 @@
         <xsl:if test="@news != ''">
           <a>
             <xsl:attribute name="href">
-              <xsl:value-of select="concat( 'http://www.eclipse.org/rap/noteworthy/', @news )"/>
+              <xsl:value-of select="concat( '/rap/noteworthy/', @news )"/>
             </xsl:attribute>
             New &amp; Noteworthy
           </a>

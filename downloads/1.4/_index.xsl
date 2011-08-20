@@ -56,7 +56,6 @@
        {SIDEBAR:ARCHIVE}
     </div>
     -->
-
   </xsl:template>
 
   <!-- Template for a category of builds (planned/completed) -->
@@ -107,6 +106,16 @@
               <xsl:value-of select="concat( '/rap/noteworthy/', @news )"/>
             </xsl:attribute>
             New &amp; Noteworthy
+          </a>
+        </xsl:if>
+      </td>
+      <td>
+        <xsl:if test="@relnotes != ''">
+          <a>
+            <xsl:attribute name="href">
+              <xsl:value-of select="concat( 'http://www.eclipse.org/rap/noteworthy/', @relnotes )"/>
+            </xsl:attribute>
+            Release Notes
           </a>
         </xsl:if>
       </td>
