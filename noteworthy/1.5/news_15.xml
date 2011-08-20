@@ -33,7 +33,7 @@
 
   <entry category="RWT" milestone="M1">
     <title>
-      OSGi integration
+      OSGi Integration
     </title>
     <description>
       <![CDATA[
@@ -68,7 +68,7 @@ public class MyConfigurator implements Configurator {
 
   <entry category="RWT" milestone="M1">
     <title>
-      Runtime feature split
+      Runtime Feature Split
     </title>
     <description>
       <![CDATA[
@@ -87,7 +87,7 @@ public class MyConfigurator implements Configurator {
 
   <entry category="RWT" milestone="M1">
     <title>
-      Support for Failover Cluster
+      Failover and Clustering Support
     </title>
     <description>
       <![CDATA[
