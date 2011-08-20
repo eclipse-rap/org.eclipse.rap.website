@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!--
  Copyright (c) 2011 EclipseSource and others.
  All rights reserved. This program and the accompanying materials
@@ -9,40 +9,14 @@
 
 <noteworthy version="1.5">
 
-  <!--
-  <entry category="RWT" milestone="M1">
-    <title>
-      New API added
-    </title>
-    <description>
-      <![CDATA[
-        This will make it easier for the community to reuse existing code or
-        to utilize new features.
-        Here is a list of API methods added in M1:
-        <br />
-        <ul>
-          <li><code>FontData()</code> constructor</li>
-          <li><code>FontData#setName(),
-                    FontData#setHeight(),
-                    FontData#setStyle(),
-                    FontData#setLocale()
-              </code></li>
-          <li><code>TreeItem#getImage()</code></li>
-        </ul>
-      ]]>
-    </description>
-  </entry>
-  -->
-
   <entry category="RWT" milestone="M1">
     <title>
       q07 Fragment removed
     </title>
     <description>
       <![CDATA[
-        The org.eclipse.rap.rwt.q07 fragment has been removed.
-        The contents of this fragment have been moved to the org.eclipse.rap.rwt bundle and the q07
-        fragment is not needed anymore.
+        The fragment org.eclipse.rap.rwt.q07 is no longer needed and has been removed.
+        The contents are now located in the org.eclipse.rap.rwt bundle.
         <p>
         The q07 fragment had originally been introduced to be able to support different versions of
         the qx client library. Meanwhile, we decided to maintain and evolve our own copy of this
@@ -51,7 +25,61 @@
         so the fragment is not needed anymore.
         However, with the new protocol
         (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>),
-        it will become possible to plug-in alternative clients for RAP.
+        it will become possible to plug in alternative clients for RAP.
+        </p>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M1">
+    <title>
+      OSGi integration
+    </title>
+    <description>
+      <![CDATA[
+        A new bundle org.eclipse.rap.rwt.osgi has been introduced that integrates RAP with OSGi.
+        With this architectural change, it is now possible to use RWT in OSGi applications without
+        having to include org.eclipse.rap.ui and all its dependencies.
+        Instead of registering your RAP application's entrypoint, theme, etc. as extensions
+        (which involves dependencies to the extension registry and more equinox core bundles),
+        you can now implement the service interface org.eclipse.rwt.engine.Configurator
+        and register it as an OSGi service.
+        <code><pre>
+public class MyConfigurator implements Configurator {
+
+  public void configure( Context context ) {
+    context.addEntryPoint( "default", SimpleEntryPoint.class );
+    context.addBranding( new AbstractBranding() {
+      @Override
+      public String getServletName() {
+        return "myapp";
+      }
+    } );
+  }
+}
+        </pre></code>
+        <p>
+          The RAP workbench also uses this new bundle to connect with an OSGi HTTP service, so
+          you'll always have to add this new bundle to your launch configurations.
+        </p>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M1">
+    <title>
+      Runtime feature split
+    </title>
+    <description>
+      <![CDATA[
+        The runtime repository now contains two different features:
+        One contains only the RAP bundles and the other feature provides all bundles that are
+        required for a complete RAP target platform.
+        If you want to create a simple RAP target platform, you'll need both.
+        <p>
+          This split will make it easier to work with mixed targets.
+          If you already have the Equinox Core SDK and Jetty, you'll only need to add RAP itself.
+          This way, you prevent duplicate bundles in your target platform.
         </p>
       ]]>
     </description>
@@ -87,7 +115,7 @@
       </p>
       <p>
         For further details, please visit our
-        <a href="http://wiki.eclipse.org/RAP/RWT_Cluster">wiki page</a>.
+        <a href="http://wiki.eclipse.org/RAP/RWT_Cluster">Cluster wiki page</a>.
       </p>
       ]]>
     </description>
@@ -111,7 +139,7 @@
           with the session timeout.
         </p>
         <p>
-          The <a href="http://wiki.eclipse.org/RAP/UI_Callback">Server Push Wiki Page</a>
+          The <a href="http://wiki.eclipse.org/RAP/UI_Callback">Server Push wiki page</a>
           summarizes how the mechanism works internally.
         </p>
       ]]>
@@ -125,29 +153,12 @@
     <description>
       <![CDATA[
         The Theming now supports text shadows for most widgets that display text:
-          Shell,
-          Label,
-          CLabel,
-          CTabFolder,
-          Button,
-          DateTime,
-          ExpandBar,
-          Group,
-          Link,
-          List,
-          Spinner,
-          TabFolder,
-          Menu,
-          ToolTip,
-          Combo,
-          CCombo,
-          Tree,
-          Table,
-          Text, and
-          ToolBar
+        Shell, Label, CLabel, CTabFolder, Button, DateTime, ExpandBar, Group, Link,
+        List, Spinner, TabFolder, Menu, ToolTip, Combo, CCombo, Tree, Table, Text, and ToolBar
         <img title="Text Shadows in RAP" style="margin-bottom:7px" src="images/Text-Shadows.png" />
         <p>
-          Text shadows are not available in Internet Explorer due to this browser's lack of support for this feature.
+          Text shadows are not available in Internet Explorer due to this browser's lack of support
+          for this feature.
           Transparency for text shadows is supported using the
           <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color.
           Example:
@@ -170,15 +181,16 @@ Button {
         The server-side part of the Tree widget was considerably improved and optimized. Now,
         a Tree with SWT.VIRTUAL style can handle huge item counts without performance degradation.
         <p>
-          If you'd like to try it out, have a look at the tab called “Complex Data” in our
+          For a live demo, check out the tab called <em>Complex Data</em> in our
           <a href="http://rap.eclipsesource.com/">Examples demo</a>.
         </p>
       ]]>
     </description>
   </entry>
   
-<!-- 
-<
+<!--
+  NOTE [rst]: Decided to change API before publishing
+
   <entry category="RWT" milestone="M1">
     <title>
       Experimental support for markup in Tables
