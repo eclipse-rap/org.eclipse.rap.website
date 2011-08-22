@@ -31,6 +31,7 @@
             <li><b>RAP 1.2</b>: http://download.eclipse.org/rt/rap/1.2/runtime-update</li>
             <li><b>RAP 1.3</b>: http://download.eclipse.org/rt/rap/1.3/runtime</li>
             <li><b>RAP 1.4</b>: http://download.eclipse.org/rt/rap/1.4/runtime</li>
+            <li><b>RAP 1.5</b>: http://download.eclipse.org/rt/rap/1.5/runtime</li>
           </ul>
           </li>
         <li>Select the target to install from the list below.</li>
