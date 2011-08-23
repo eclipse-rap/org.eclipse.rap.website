@@ -95,6 +95,41 @@
       <div style="clear: both;"></div>
     </div>
 
+
+    <div class="box">
+      <div class="images">
+        <a href="images/edicat1-full.png">
+          <img src="images/edicat1.png"/>
+        </a>
+        <br/>
+        <a href="images/edicat2-full.png">
+          <img src="images/edicat2.png"/>
+        </a>
+      </div>
+      <div>
+        <h3>EDIFACT Communications and Analytics Toolkit</h3>
+        <p>
+          Germany's gas and electricity markets use EDIFACT messages for B2B data interchange.
+          New regulatory policies put an ever-growing burden on small and medium-sized utilities.
+          For example, new metering processes are to be handled starting October 2011.
+          This means additional complexity in data interchange, which currently installed billing
+          back-ends often cannot handle yet.
+          To add insult to injury, upgrading projects often cannot be concluded in time and budget.
+          So, EDIcat WiM supports implementing these new processes in a light-weight manner.
+          Being a bridge technology, EDIcat WiM provides simple workflows, no-frills integration
+          with SAP standard transactions and, last but not least, EDIFACT viewing functionality
+          – all visually appealing integrated by RAP.
+        </p>
+        <h4>References:</h4>
+        <ul>
+          <li>
+            <a href="http://www.hsag.info/leistungen/loesungen/edicatwim">EDIcat WiM product page (German)</a>
+          </li>
+        </ul>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+
     <div class="box">
       <div class="images">
         <a href="images/semantic-express-full.png">
