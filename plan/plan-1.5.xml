@@ -199,9 +199,11 @@
       <committed
         bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=enterprise">
       </committed>
+      <!-- 
       <proposed
         bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=enterprise">
       </proposed>
+       -->
       <!--deferred>
       </deferred-->
     </theme>
@@ -236,9 +238,11 @@
           </html:p>
         </html:div>
       </description>
+      <!-- 
       <committed
         bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=mobile">
       </committed>
+       -->
       <proposed
         bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=mobile">
       </proposed>
