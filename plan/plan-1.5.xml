@@ -133,7 +133,8 @@
       <description>
         <html:div>
           <html:p>
-            TODO
+            We will implement a well-defined JSON protocol between client and server that will allow
+            for exchangeable client implementations.
           </html:p>
         </html:div>
       </description>
@@ -151,7 +152,8 @@
       <description>
         <html:div>
           <html:p>
-            TODO
+            RAP has been used a lot to bring desktop applications into the browser.
+            But it should also allow for UIs that provide a more Web-like browsing experience.
           </html:p>
         </html:div>
       </description>
@@ -169,7 +171,9 @@
       <description>
         <html:div>
           <html:p>
-            TODO
+            As in every release, we plan to improve and enhance the RAP widget set.
+            In this release, we'll focus on refining the Tree and Table widgets.
+            We'll also try to provide a more flexible TabFolder widget.
           </html:p>
         </html:div>
       </description>
@@ -187,7 +191,8 @@
       <description>
         <html:div>
           <html:p>
-            TODO
+            We're researching ways to improve the scaleablity of RAP and fit the requirements of
+            enterprise applications better.
           </html:p>
         </html:div>
       </description>
@@ -205,13 +210,16 @@
       <description>
         <html:div>
           <html:p>
-            TODO
+            We'd like to ease and accelerate the development of RAP applications by removing some
+            avoidable obstacles.
           </html:p>
         </html:div>
       </description>
+      <!-- 
       <committed
         bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=development">
       </committed>
+       -->
       <proposed
         bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=development">
       </proposed>
@@ -223,7 +231,8 @@
       <description>
         <html:div>
           <html:p>
-            TODO
+            Support for iPad/iPhone has already reached a usable state.
+            Some minor tweaks would help to improve the user experience even more.  
           </html:p>
         </html:div>
       </description>
