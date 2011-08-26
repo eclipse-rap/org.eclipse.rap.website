@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+
+<plan
+    plan-format="1.0" 
+    xmlns="http://www.eclipse.org/project/plan"
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+    name="Rich Ajax Platform (RAP)">
+
+  <release projectid="rt.rap" version="1.5" />
+
+  <introduction>
+    <html:div>
+      The Rich Ajax Platform (RAP) is an Eclipse platform for modular web applications using a rich
+      widget toolkit with SWT API.
+      Optionally, also JFace and Workbench APIs and extension points are available on top of this
+      toolkit.
+      RAP applications run on server-side OSGi, but can also be used in standard web applications.
+      They can be developed using the same set of tools as being used for SWT/RCP development.
+      RAP makes it easy to re-use existing RCP code, write applications for desktop and web from
+      a single code base, and to integrate other Eclipse technologies in web applications.
+    </html:div>
+    <!-- TODO outdated wiki page
+    <html:div>
+      Plans for previous releases can be found on these 
+      <html:a href="http://wiki.eclipse.org/RapPlan">wiki pages</html:a>.
+    </html:div>
+     -->
+  </introduction>
+
+  <release_deliverables>
+    <html:div>
+      <html:ul>
+        <html:li>
+          <html:strong>Tooling</html:strong>:
+          contains useful tools, templates and documentation for RAP development.
+          Available as p2 repository.
+        </html:li>
+        <html:li>
+          <html:strong>Runtime (Target Components)</html:strong>:
+          contains the RAP runtime to be used as target platform, including sources and a simple
+          demo application.
+          Available as p2 repository.
+        </html:li>
+      </html:ul>
+    </html:div>
+  </release_deliverables>
+
+  <release_milestones>
+    <preamble>
+      <html:div>
+        Release milestones will be occurring at roughly 6 week intervals,
+        and will be aligned with the
+        <html:a href="http://wiki.eclipse.org/Juno/Simultaneous_Release_Plan">
+        Juno Simultaneous Release</html:a> train.
+      </html:div>
+    </preamble>
+
+    <milestone date="August 19, 2011" milestone="M1"></milestone>
+    <milestone date="September 30, 2011" milestone="M2"></milestone>
+    <milestone date="November 11, 2011" milestone="M3"></milestone>
+    <milestone date="December 16, 2011" milestone="M4"></milestone>
+    <milestone date="February 3, 2012" milestone="M5"></milestone>
+    <milestone date="March 23, 2012" milestone="M6"><html:div>(API Freeze)</html:div></milestone>
+    <milestone date="May 11, 2012" milestone="M7"><html:div>(Feature Freeze)</html:div></milestone>
+
+    <postamble>
+      <html:div>
+        A detailed
+        <html:a href="http://wiki.eclipse.org/RAP/Ramp_down_plan">ramp down plan</html:a>
+        towards the release is available for the Simultaneous Release integration.
+        <html:p>
+          RAP 1.5 will be released on June 27, 2011, together with Eclipse Juno.
+        </html:p>
+        <html:p>
+          Two service releases are planned for RAP 1.5 that will include critical bug fixes.
+        </html:p>
+      </html:div>
+    </postamble>
+  </release_milestones>
+
+  <target_environments>
+    <html:div>
+      <html:p>
+        The server-side part of the Rich Ajax Platform 1.5 will be written and compiled against
+      </html:p>
+      <html:ul>
+        <html:li>
+          <html:a href="http://www.eclipse.org/equinox/server/">Equinox</html:a> Version 3.8
+        </html:li>
+        <html:li>
+          Version 1.5.0 of the Java Platform APIs (J2SE 5.0)
+        </html:li>
+        <html:li>
+          <html:a href="http://www.oracle.com/technetwork/java/javaee/servlet/index.html">
+          Java Servlet API</html:a> Version 2.3 - 3.0
+        </html:li>
+      </html:ul>
+      <html:p>
+        The client-side reference implementation of RAP 1.4 will support the following web
+        browsers/rendering engines:
+      </html:p>
+      <html:ul>
+        <html:li>Internet Explorer 7.0 and later</html:li>
+        <html:li>Firefox 2.0 and later</html:li>
+        <html:li>Safari 3.0 and later</html:li>
+        <html:li>Google Chrome 3.0 and later</html:li>
+        <html:li>Opera 9.0 and later</html:li>
+      </html:ul>
+    </html:div>
+    <internationalization>
+      <html:div>
+        The Rich Ajax Platform is designed as the basis for internationalized products.
+        The user interface elements provided by the RAP components, including dialogs and error
+        messages, are externalized.
+        The English strings are provided as the default resource bundles.
+      </html:div>
+    </internationalization>
+  </target_environments>
+
+  <compatibility_with_previous_releases>
+    <html:div>
+      RAP 1.5 will be backward compatible with RAP 1.4.
+    </html:div>
+  </compatibility_with_previous_releases>
+
+  <themes_and_priorities>
+    <preamble>
+      <html:div></html:div>
+    </preamble>
+
+    <theme name="Support for alternative RAP clients">
+      <description>
+        <html:div>
+          <html:p>
+            TODO
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=alternative-clients">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=alternative-clients">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Web-like">
+      <description>
+        <html:div>
+          <html:p>
+            TODO
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=web-like">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=web-like">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Widget Toolkit Enhancements">
+      <description>
+        <html:div>
+          <html:p>
+            TODO
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=widgets">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=widgets">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Enterprise readiness">
+      <description>
+        <html:div>
+          <html:p>
+            TODO
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=enterprise">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=enterprise">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Improving the development-deploy-test cycle">
+      <description>
+        <html:div>
+          <html:p>
+            TODO
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=development">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=development">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Mobile Browser support">
+      <description>
+        <html:div>
+          <html:p>
+            TODO
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dcommitted+plan-theme=mobile">
+      </committed>
+      <proposed
+        bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=1.5+plan-status%3Dproposed+plan-theme=mobile">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+  </themes_and_priorities>
+</plan>
