@@ -191,7 +191,7 @@ Button {
 <!--
   NOTE [rst]: Decided to change API before publishing
 
-  <entry category="RWT" milestone="M1">
+  <entry category="RWT" milestone="M2">
     <title>
       Experimental support for markup in Tables
     </title>
