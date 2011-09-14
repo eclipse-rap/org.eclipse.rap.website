@@ -11,7 +11,7 @@ $header = <<<EOHTML
 <p>
   Here's a list of the most noteworthy things in the
   milestone build 1.5 M2 which is available
-  for <a href="http://www.eclipse.org/rap/downloads/">download</a> from October 30, 2011 on.
+  for <a href="http://www.eclipse.org/rap/downloads/">download</a> from September 30, 2011 on.
   Before general availability of this milestone build, all changes described here can be 
   explored with the most recent <a href="http://www.eclipse.org/rap/downloads/">nightly build</a>.
 </p>
