@@ -6,10 +6,6 @@
   toolingDesc="for use with Eclipse 3.6 and 3.7">
 
   <planned>
-    <build name="1.4.1" type="SR"
-        publishDate="2011-09-23"
-        news="1.4/"
-        relnotes="relnotes141.php" />
     <build name="1.4.2" type="SR"
         publishDate="2012-02-24"
         news="1.4/"
@@ -17,6 +13,13 @@
   </planned>
 
   <completed>
+    <build name="1.4.1" type="SR"
+        publishDate="2011-09-23"
+        news="1.4/"
+        relnotes="relnotes141.php"
+        upcomingNews="1.5/news_M2.php"
+        toolingZip="rap-tooling-1.4.1-R-20110914-1945.zip"
+        runtimeZip="rap-runtime-1.4.1-R-20110914-1945.zip" />
     <build name="1.4" type="R"
         publishDate="2011-06-22"
         news="1.4/"

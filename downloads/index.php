@@ -40,6 +40,14 @@
     return $months[ $date[ 1 ] - 1 ] . " " . $date[ 2 ] . ", " . $date[ 0 ];
   }
 
+  function getReleaseNotesLink( $build ) {
+    $result = "";
+    if( $build[ "relnotes" ] != "" ) {
+      $result = " <a href=\"" . $newsUrl . $build[ "relnotes" ] . "\">Release Notes</a>";
+    }
+    return $result;
+  }
+
   $STABLE_RUNTIME_DESCRIPTION = $stableBuilds[ "runtimeDesc" ];
   $STABLE_TOOLING_DESCRIPTION = $stableBuilds[ "toolingDesc" ];
   $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds[ "runtimeDesc" ];
@@ -50,6 +58,7 @@
   $RELEASE_DATE = getBuildDate( $releaseBuild );
   $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild[ "news" ];
   $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild[ "news" ];
+  $RELEASE_NOTES_LINK = getReleaseNotesLink( $releaseBuild );
   $STABLE_RUNTIME_ZIP = $stableBuild[ "runtimeZip" ];
   $STABLE_TOOLING_ZIP = $stableBuild[ "toolingZip" ];
   $RELEASE_RUNTIME_ZIP = $releaseBuild[ "runtimeZip" ];
@@ -148,6 +157,7 @@
           Published: <?php echo $RELEASE_DATE ?>
           <br/>
           <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
+          <?php echo $RELEASE_NOTES_LINK ?>
         </p>
 
         <p class="download-row">
@@ -251,6 +261,7 @@
           Published: <?php echo $RELEASE_DATE ?>
           <br/>
           <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
+          <?php echo $RELEASE_NOTES_LINK ?>
         </p>
 
         <p class="download-row">

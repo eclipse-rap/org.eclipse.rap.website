@@ -20,9 +20,9 @@ $html = <<<EOHTML
     <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&classification=RT&product=RAP&status_whiteboard_type=allwordssubstr&status_whiteboard=sr141&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED">
     Bugs fixed in the 1.4.1 release</a>.
   </p>
-  <!--p>
+  <p>
     The service is available for <a href="/downloads/1.4/">download</a>.
-  </p-->
+  </p>
 </div>
 
 EOHTML;
