@@ -40,7 +40,7 @@
     return $months[ $date[ 1 ] - 1 ] . " " . $date[ 2 ] . ", " . $date[ 0 ];
   }
 
-  function getReleaseNotesLink( $build ) {
+  function getReleaseNotesLink( $build, $newsUrl ) {
     $result = "";
     if( $build[ "relnotes" ] != "" ) {
       $result = " <a href=\"" . $newsUrl . $build[ "relnotes" ] . "\">Release Notes</a>";
@@ -58,7 +58,7 @@
   $RELEASE_DATE = getBuildDate( $releaseBuild );
   $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild[ "news" ];
   $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild[ "news" ];
-  $RELEASE_NOTES_LINK = getReleaseNotesLink( $releaseBuild );
+  $RELEASE_NOTES_LINK = getReleaseNotesLink( $releaseBuild, $newsUrl );
   $STABLE_RUNTIME_ZIP = $stableBuild[ "runtimeZip" ];
   $STABLE_TOOLING_ZIP = $stableBuild[ "toolingZip" ];
   $RELEASE_RUNTIME_ZIP = $releaseBuild[ "runtimeZip" ];
