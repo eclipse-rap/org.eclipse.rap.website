@@ -21,7 +21,7 @@ $html = <<<EOHTML
     Bugs fixed in the 1.4.2 release</a>.
   </p>
   <!--p>
-    The service is available for <a href="/downloads/1.4/">download</a>.
+    The service release is available for <a href="/downloads/1.4/">download</a>.
   </p-->
 </div>
 
