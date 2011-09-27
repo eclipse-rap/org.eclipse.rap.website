@@ -12,7 +12,15 @@
      upcomingNews="1.5/news_M2.php"
      toolingZip="rap-tooling-1.5.0-M1-20110816-0954.zip"
      runtimeZip="rap-runtime-1.5.0-M1-20110816-0926.zip" />
+   <!-- 
+   <build name="1.5 M2" type="M"
+     publishDate="2011-09-30"
+     news="1.5/news_M2.php"
+     upcomingNews="1.5/news_M2.php"
+     toolingZip="rap-tooling-1.5.0-M2-20110926-1705.zip"
+     runtimeZip="rap-runtime-1.5.0-M2-20110926-1702.zip" />
   </completed>
+    -->
 
   <planned>
    <build name="1.5 M2" type="M"
