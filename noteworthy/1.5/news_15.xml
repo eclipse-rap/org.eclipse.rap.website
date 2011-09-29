@@ -188,6 +188,30 @@ Button {
     </description>
   </entry>
   
+  <entry category="RWT" milestone="M2">
+    <title>
+      Protocol migration
+    </title>
+    <description>
+      <![CDATA[
+        In this mileston we focused our efforts in the widgets LCAs rework to utilize the new 
+        protocol message for server-to-client communication 
+        (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>) 
+        instead of old JavaScript code. The following widgets have been switched to the protocol:
+        Button, Combo, Composite, Group, Label, Link, ProgressBar, Sash, Scale, Shell, Slider, 
+        Spinner, Text, CCombo and CLabel. Changes are currently tracked in 
+        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=351945">bug 351945</a>.
+        <p>
+          The text size determination has been switched to the protocol too.
+        </p>
+        <p>
+          Fragment from the server-to-client communication is shown below:
+          <img src="images/Protocol_Message.png" style="margin-top: 10px; margin-bottom: 10px"/>
+        </p>
+      ]]>
+    </description>
+  </entry>
+  
 <!--
   NOTE [rst]: Decided to change API before publishing
 
