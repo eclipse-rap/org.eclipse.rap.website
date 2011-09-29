@@ -194,12 +194,12 @@ Button {
     </title>
     <description>
       <![CDATA[
-        In this mileston we focused our efforts in the widgets LCAs rework to utilize the new 
+        In this milestone we focused our efforts in the widgets LCAs rework to utilize the new 
         protocol message for server-to-client communication 
         (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>) 
-        instead of old JavaScript code. The following widgets have been switched to the protocol:
-        Button, Combo, Composite, Group, Label, Link, ProgressBar, Sash, Scale, Shell, Slider, 
-        Spinner, Text, CCombo and CLabel. Changes are currently tracked in 
+        instead of JavaScript code rendering. The following widgets have been switched to the 
+        protocol: Button, Combo, Composite, Group, Label, Link, ProgressBar, Sash, Scale, Shell, 
+        Slider, Spinner, Text, CCombo and CLabel. Changes are currently tracked in 
         <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=351945">bug 351945</a>.
         <p>
           The text size determination has been switched to the protocol too.
