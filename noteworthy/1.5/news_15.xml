@@ -197,19 +197,23 @@ Button {
         We planned this for a long time, and now it's becoming reality:
         the communication between server and client is being replaced with a new, JSON-based format
         (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>).
-        This new protocol will enable alternative clients for RAP.
+        This new protocol will enable alternative client implementations for RAP.
         <p>
-          In this mileston we focused our efforts on reworking widgets LCAs to utilize this new 
+          In this milestone, we focused our efforts on retrofitting LCAs to utilize this new
           protocol for communication with the client.
           The following widgets are already using the new protocol:
-          Button, Combo, Composite, Group, Label, Link, ProgressBar, Sash, Scale, Shell, Slider, 
-          Spinner, Text, CCombo and CLabel. Changes are currently tracked in 
+          Button, Combo, Composite, Group, Label, Link, ProgressBar, Sash, Scale, Shell, Slider,
+          Spinner, Text, CCombo and CLabel. Changes are currently tracked in
           <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=351945">bug 351945</a>.
           Also the text size determination has been switched to the protocol.
         </p>
         <p>
-          This screenshot shows a snippet of a server response in the Chrome developer tooling:
           <img src="images/RAP-Protocol.png" style="margin-top: 10px; margin-bottom: 10px"/>
+        </p>
+        <p>
+          We're planning to complete this conversion before the end of this year.
+          As the protocol stabilizes, we'll update the specification on the
+          <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
         </p>
       ]]>
     </description>
