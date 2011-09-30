@@ -29,7 +29,7 @@
         This is the official help for RAP. It is included in your Eclipse help if
         you installed the RAP Tooling.
         Help for the latest release can also be accessed
-        <a href="http://help.eclipse.org/helios/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html">
+        <a href="http://help.eclipse.org/indigo/index.jsp?topic=/org.eclipse.rap.help/help/html/intro.html">
         online</a>.
       </p>
       <p>
