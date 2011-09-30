@@ -187,31 +187,34 @@ Button {
       ]]>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M2">
     <title>
-      Protocol migration
+      New Client/Server Protocol
     </title>
     <description>
       <![CDATA[
-        In this milestone we focused our efforts in the widgets LCAs rework to utilize the new 
-        protocol message for server-to-client communication 
-        (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>) 
-        instead of JavaScript code rendering. The following widgets have been switched to the 
-        protocol: Button, Combo, Composite, Group, Label, Link, ProgressBar, Sash, Scale, Shell, 
-        Slider, Spinner, Text, CCombo and CLabel. Changes are currently tracked in 
-        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=351945">bug 351945</a>.
+        We planned this for a long time, and now it's becoming reality:
+        the communication between server and client is being replaced with a new, JSON-based format
+        (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>).
+        This new protocol will enable alternative clients for RAP.
         <p>
-          The text size determination has been switched to the protocol too.
+          In this mileston we focused our efforts on reworking widgets LCAs to utilize this new 
+          protocol for communication with the client.
+          The following widgets are already using the new protocol:
+          Button, Combo, Composite, Group, Label, Link, ProgressBar, Sash, Scale, Shell, Slider, 
+          Spinner, Text, CCombo and CLabel. Changes are currently tracked in 
+          <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=351945">bug 351945</a>.
+          Also the text size determination has been switched to the protocol.
         </p>
         <p>
-          Fragment from the server-to-client communication is shown below:
-          <img src="images/Protocol_Message.png" style="margin-top: 10px; margin-bottom: 10px"/>
+          This screenshot shows a snippet of a server response in the Chrome developer tooling:
+          <img src="images/RAP-Protocol.png" style="margin-top: 10px; margin-bottom: 10px"/>
         </p>
       ]]>
     </description>
   </entry>
-  
+
 <!--
   NOTE [rst]: Decided to change API before publishing
 
