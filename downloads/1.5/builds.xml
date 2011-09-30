@@ -6,18 +6,18 @@
   toolingDesc="for use with Eclipse 3.7, 3.8 and 4.2">
 
   <completed>
-   <build name="1.5 M1" type="M"
-     publishDate="2011-08-19"
-     news="1.5/news_M1.php"
-     upcomingNews="1.5/news_M2.php"
-     toolingZip="rap-tooling-1.5.0-M1-20110816-0954.zip"
-     runtimeZip="rap-runtime-1.5.0-M1-20110816-0926.zip" />
    <build name="1.5 M2" type="M"
      publishDate="2011-09-30"
      news="1.5/news_M2.php"
      upcomingNews="1.5/news_M2.php"
      toolingZip="rap-tooling-1.5.0-M2-20110927-1701.zip"
      runtimeZip="rap-runtime-1.5.0-M2-20110926-1702.zip" />
+   <build name="1.5 M1" type="M"
+     publishDate="2011-08-19"
+     news="1.5/news_M1.php"
+     upcomingNews="1.5/news_M2.php"
+     toolingZip="rap-tooling-1.5.0-M1-20110816-0954.zip"
+     runtimeZip="rap-runtime-1.5.0-M1-20110816-0926.zip" />
   </completed>
 
   <planned>
