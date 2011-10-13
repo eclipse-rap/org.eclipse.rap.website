@@ -191,7 +191,7 @@
         <p class="download-row">
           <img src="/rap/images/zip.gif" />
           Zipped version:
-          <a href="https://hudson.eclipse.org/hudson/job/rap-tooling/lastSuccessfulBuild/artifact/output/">download from Hudson</a>
+          <a href="https://hudson.eclipse.org/hudson/job/rap-tooling/lastSuccessfulBuild/">download from Hudson</a>
         </p>
       </div>
     </div>
@@ -294,7 +294,7 @@
         <p class="download-row">
           <img src="/rap/images/zip.gif" />
           Zipped version:
-          <a href="https://hudson.eclipse.org/hudson/job/rap-runtime/lastSuccessfulBuild/artifact/">download from Hudson</a>
+          <a href="https://hudson.eclipse.org/hudson/job/rap-runtime/lastSuccessfulBuild/">download from Hudson</a>
         </p>
       </div>
     </div>
