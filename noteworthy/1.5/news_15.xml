@@ -229,14 +229,14 @@ Button {
         The web.xml fragment and code snippet shows how starting an RWT application now looks like:
         <p>
         <pre><code>
-<!-- web.xml -->        
-<context-param>
-  <param-name>org.eclipse.rwt.Configurator</param-name>
-  <param-value>com.example.ExampleConfigurator</param-value>
-</context-param>
-<listener>
-  <listener-class>org.eclipse.rwt.internal.engine.RWTServletContextListener</listener-class>
-</listener>        
+&lt;!-- web.xml --&gt;        
+&lt;context-param&gt;
+  &lt;param-name&gt;org.eclipse.rwt.Configurator&lt;/param-name&gt;
+  &lt;param-value>com.example.ExampleConfigurator&lt;/param-value&gt;
+&lt;/context-param&gt;
+&lt;listener&gt;
+  &lt;listener-class&gt;org.eclipse.rwt.internal.engine.RWTServletContextListener&lt;/listener-class&gt;
+&lt;/listener&gt;
         </code></pre>
         <pre><code>
 //         
