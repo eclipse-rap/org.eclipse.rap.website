@@ -224,22 +224,20 @@ Button {
     <description>
       <![CDATA[
         The way to start an RWT application has been changed.
-        The former init-parameters have been replaced with an API that allows you to 
+        The former init parameters have been replaced with an API that allows you to 
         configure all aspects of the application to be started.
         The web.xml fragment and code snippet shows how starting an RWT application now looks like:
         <p>
         <pre><code>
-&lt;!-- web.xml --&gt;        
-&lt;context-param&gt;
-  &lt;param-name&gt;org.eclipse.rwt.Configurator&lt;/param-name&gt;
-  &lt;param-value>com.example.ExampleConfigurator&lt;/param-value&gt;
-&lt;/context-param&gt;
-&lt;listener&gt;
-  &lt;listener-class&gt;org.eclipse.rwt.internal.engine.RWTServletContextListener&lt;/listener-class&gt;
-&lt;/listener&gt;
+<b>&lt;context-param&gt;</b>
+  <b>&lt;param-name&gt;</b>org.eclipse.rwt.Configurator<b>&lt;/param-name&gt;</b>
+  <b>&lt;param-value&gt;</b>com.example.ExampleConfigurator<b>&lt;/param-value&gt;</b>
+<b>&lt;/context-param&gt;</b>
+<b>&lt;listener&gt;</b>
+  <b>&lt;listener-class&gt;</b>org.eclipse.rwt.engine.RWTServletContextListener<b>&lt;/listener-class&gt;</b>
+<b>&lt;/listener&gt;</b>
         </code></pre>
         <pre><code>
-//         
 public class ExampleConfigurator implements ApplicationConfigurator {
   public void configure( ApplicationConfiguration configuration ) {
     configuration.addEntryPoint( "default", ExampleEntryPoint.class );
@@ -254,10 +252,16 @@ public class ExampleConfigurator implements ApplicationConfigurator {
           notified when the servlet context is created.
           The remaining init parameter is used to specify a <em>configurator</em>, an
           implementation of <code>ApplicationConfigurator</code>. This class is created and 
-          called before the application starts. 
+          called its <code>configure</code> method is before the application starts. 
           With the given <code>ApplicationConfiguration</code> object you can control all 
           aspects of the application.
-        </p> 
+        </p>
+        <p>
+          Please read this 
+          <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_develop_an_RWT_standalone_application_with_RAP_.3E.3D_1.5">FAQ</a>
+          entry for more details. We will integrate this
+          information into the developer documentation before the 1.5 release.
+        </p>
       ]]>
     </description>
   </entry>

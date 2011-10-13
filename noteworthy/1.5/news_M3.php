@@ -16,7 +16,7 @@ $header = <<<EOHTML
   explored with the most recent <a href="http://www.eclipse.org/rap/downloads/">nightly build</a>.
 </p>
 <p>
-  <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=RT&product=RAP&target_milestone=1.5+M2&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&query_format=advanced">
+  <a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=RT&product=RAP&target_milestone=1.5+M3&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&query_format=advanced">
   This list</a> shows all bugs that were fixed during this milestone.
 </p>
 EOHTML;
