@@ -21,7 +21,7 @@
 
     <ul>
       <li>
-        <a href="1.5/news_M3.php">RAP 1.5 M2</a>
+        <a href="1.5/news_M3.php">RAP 1.5 M3</a>
         <p style="margin-top: 5px">
           Listed are the noteworthy things available in the 3<sup>rd</sup> milestone
           build for RAP 1.5 (M3, November 11, 2011).

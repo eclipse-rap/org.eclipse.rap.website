@@ -24,7 +24,7 @@ EOHTML;
 $footer = <<<EOHTML
 EOHTML;
 
-$news = new Noteworthy( 'news_15.xml', 'M2', $header, $footer );
+$news = new Noteworthy( 'news_15.xml', 'M3', $header, $footer );
 $html = $news->getHtml();
 
 $navPosition = array( "download", "noteworthy" );
