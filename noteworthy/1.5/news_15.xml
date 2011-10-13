@@ -45,12 +45,10 @@
         you can now implement the service interface org.eclipse.rwt.engine.Configurator
         and register it as an OSGi service.
         <code><pre>
-public class MyConfigurator implements Configurator {
-
-  public void configure( Context context ) {
-    context.addEntryPoint( "default", SimpleEntryPoint.class );
-    context.addBranding( new AbstractBranding() {
-      @Override
+public class MyConfigurator implements ApplicationConfigurator {
+  public void configure( ApplicationConfiguration configuration ) {
+    configuration.addEntryPoint( "default", SimpleEntryPoint.class );
+    configuration.addBranding( new AbstractBranding() {
       public String getServletName() {
         return "myapp";
       }
@@ -215,6 +213,51 @@ Button {
           As the protocol stabilizes, we'll update the specification on the
           <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
         </p>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M3">
+    <title>
+      Simplified RWT Startup
+    </title>
+    <description>
+      <![CDATA[
+        The way to start an RWT application has been changed.
+        The former init-parameters have been replaced with an API that allows you to 
+        configure all aspects of the application to be started.
+        The web.xml fragment and code snippet shows how starting an RWT application now looks like:
+        <p>
+        <pre><code>
+<!-- web.xml -->        
+<context-param>
+  <param-name>org.eclipse.rwt.Configurator</param-name>
+  <param-value>com.example.ExampleConfigurator</param-value>
+</context-param>
+<listener>
+  <listener-class>org.eclipse.rwt.internal.engine.RWTServletContextListener</listener-class>
+</listener>        
+        </code></pre>
+        <pre><code>
+//         
+public class ExampleConfigurator implements ApplicationConfigurator {
+  public void configure( ApplicationConfiguration configuration ) {
+    configuration.addEntryPoint( "default", ExampleEntryPoint.class );
+    configuration.addBranding( new ExampleBranding() );
+    // ...
+  }
+}
+        </code></pre>
+        </p>
+        <p>
+          The <code>RWTServletContextListener</code> needs to be registered so that RWT is 
+          notified when the servlet context is created.
+          The remaining init parameter is used to specify a <em>configurator</em>, an
+          implementation of <code>ApplicationConfigurator</code>. This class is created and 
+          called before the application starts. 
+          With the given <code>ApplicationConfiguration</code> object you can control all 
+          aspects of the application.
+        </p> 
       ]]>
     </description>
   </entry>
