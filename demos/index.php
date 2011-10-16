@@ -53,7 +53,7 @@
 
     <div class="box">
       <div class="images">
-        <a href="http://rap.eclipsesource.com/rapdemo/rms" target="_blank">
+        <a href="http://rap.eclipsesource.com/workbenchdemo/rms" target="_blank">
           <img src="images/webworkbench1.png"/>
         </a>
       </div>
@@ -62,7 +62,7 @@
           RAP Workbench Demo
         </h3>
         <p>
-          <a href="http://rap.eclipsesource.com/rapdemo/rms" target="_blank">
+          <a href="http://rap.eclipsesource.com/workbenchdemo/rms" target="_blank">
             See a workbench demo online
           </a>
         </p>
@@ -72,9 +72,9 @@
           ready it shows a good bunch of the framework's possibilities.</p>
         <p>
           To demonstrate the NLS support, translations for
-          <a href="http://rap.eclipsesource.com/rapdemo/rms?locale=en" target="_blank">English</a>,
-          <a href="http://rap.eclipsesource.com/rapdemo/rms?locale=de" target="_blank">German</a> and
-          <a href="http://rap.eclipsesource.com/rapdemo/rms?locale=zh" target="_blank">Chinese</a>
+          <a href="http://rap.eclipsesource.com/workbenchdemo/rms?locale=en" target="_blank">English</a>,
+          <a href="http://rap.eclipsesource.com/workbenchdemo/rms?locale=de" target="_blank">German</a> and
+          <a href="http://rap.eclipsesource.com/workbenchdemo/rms?locale=zh" target="_blank">Chinese</a>
           are available. The latter requires your browser to support East
           Asian languages.
         </p>
