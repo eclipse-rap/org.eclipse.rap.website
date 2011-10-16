@@ -2,7 +2,7 @@
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-  $pageTitle = "Rich Ajax Platform (RAP)";
+  $title = "Rich Ajax Platform (RAP)";
   $navPosition = array( "home", "index" );
   printHeader( $title, $navPosition );
 
