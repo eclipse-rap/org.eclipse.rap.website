@@ -4,14 +4,38 @@
 
   <ul>
     <li>
-      <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_Indigo_2011/Muenchen" target="_blank">
-        Eclipse DemoCamps Indigo 2011/Munich
+      <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Munich">
+        Eclipse DemoCamp Munich
         <br />
-        June 20, 2011
+        November 15
       </a>
       <span>
         <ul>
-          <li>Rich Ajax Platform: What's new in RAP 1.4</li>
+          <li>Frank Appel: Dynamic Web Applications with RAP and OSGi</li>
+        </ul>
+      </span>
+    </li>
+    <li>
+      <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Hamburg">
+        Eclipse DemoCamp Hamburg
+        <br />
+        November 23
+      </a>
+      <span>
+        <ul>
+          <li>Markus Knauer: Dynamic Web Applications with RAP and OSGi</li>
+        </ul>
+      </span>
+    </li>
+    <li>
+      <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Kaiserslautern">
+        Eclipse DemoCamp Kaiserslautern
+        <br />
+        November 24
+      </a>
+      <span>
+        <ul>
+          <li>Holger Staudacher: Dynamic Web Applications with RAP and OSGi</li>
         </ul>
       </span>
     </li>
