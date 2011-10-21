@@ -128,9 +128,9 @@
 
   <?php includeSidebar( "arrivals.php" ) ?>
 
-  <?php includeSidebar( "rap-feed.php" ) ?>
+  <?php includeSidebar( "events.php" ) ?>
 
-  <!--?php includeSidebar( "events.php" ) ?-->
+  <?php includeSidebar( "rap-feed.php" ) ?>
 
   <?php includeSidebar( "contributors.php" ) ?>
 
