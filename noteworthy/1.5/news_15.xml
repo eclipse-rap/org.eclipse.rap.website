@@ -42,8 +42,9 @@
         having to include org.eclipse.rap.ui and all its dependencies.
         Instead of registering your RAP application's entrypoint, theme, etc. as extensions
         (which involves dependencies to the extension registry and more equinox core bundles),
-        you can now implement the service interface org.eclipse.rwt.engine.Configurator
-        and register it as an OSGi service.
+        you can now implement the service interface 
+        <code>org.eclipse.rwt.engine.ApplicationConfigurator</code> and register it as an OSGi 
+        service.
         <code><pre>
 public class MyConfigurator implements ApplicationConfigurator {
   public void configure( ApplicationConfiguration configuration ) {
