@@ -67,7 +67,7 @@
         </tr>
         <tr>
           <td style="text-align: center">Firefox 2+</td>
-          <td style="text-align: center">IE 6+</td>
+          <td style="text-align: center">IE 7+</td>
           <td style="text-align: center">Safari 3+</td>
           <td style="text-align: center">Chrome 3+</td>
           <td style="text-align: center">Opera 9+</td>
