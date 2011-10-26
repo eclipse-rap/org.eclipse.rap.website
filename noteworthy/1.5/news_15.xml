@@ -263,10 +263,6 @@ public class ExampleConfigurator implements ApplicationConfigurator {
           entry for more details. We will integrate this
           information into the developer documentation before the 1.5 release.
         </p>
-        <p>
-          The changes described here also made changes to the RAP Tooling necessary.  
-          If you whish tooling support, please also update the RAP Tooling to version 1.5 M3.
-        </p>
       ]]>
     </description>
   </entry>
