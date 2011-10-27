@@ -267,6 +267,27 @@ public class ExampleConfigurator implements ApplicationConfigurator {
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M3">
+    <title>
+      Improved Internet Explorer 9 Support
+    </title>
+    <description>
+      <![CDATA[
+        <p>
+        Internet Explorer 9 was a significant improvement over previous versions, finally catching
+        up to other browser regarding performance and compatibility. RAP now triggers 
+        standard rendering in IE9 (as opposed to quirksmode used in previous IE versions), and as a result can 
+        fully utilize all its new features (HTML5, CSS3, SVG). This gives RAP applications a 
+        noticable performance-boost in IE9, especially when using GC for drawing complex graphs.
+        </p>
+        <p>
+        As technology marches on, we also decidded to no longer offically support IE6 in RAP 1.5.
+        RAP 1.4 will continue to support it.
+        </p>
+      ]]>
+    </description>
+  </entry>
+
 <!--
   NOTE [rst]: Decided to change API before publishing
 
