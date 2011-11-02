@@ -15,11 +15,7 @@
     <h1>Demos</h1>
 
     <p>
-      Enjoy the demos below.
-      <strong>Please be aware that the demos are maintained by the RAP team</strong>,
-      they are not running on a professionally supervised high-performance server.
-      Please post a message on the <a href="../support/#newsgroup">newsgroup</a>
-      if you notice problems with the demo apps that are not from third parties.
+      Check out our online demos to see RAP applications in action:
     </p>
 
     <div class="box">
@@ -33,11 +29,6 @@
           RAP Examples
         </h3>
         <p>
-          <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
-            See the examples online
-          </a>
-        </p>
-        <p>
           This application shows samples of the widgets available in RAP.
           Please note that it does not yet represent the complete widget set,
           but only a small selection.
@@ -46,6 +37,11 @@
           For easier consumption, we provide
           <a href="/rap/source/">Team Project Sets</a> that contain pointers to the
           relevant RAP projects from the CVS repository.
+        </p>
+        <p>
+          <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
+            See the examples online
+          </a>
         </p>
       </div>
       <div style="clear: both;"></div>
@@ -62,11 +58,6 @@
           RAP Workbench Demo
         </h3>
         <p>
-          <a href="http://rap.eclipsesource.com/workbenchdemo/rms" target="_blank">
-            See a workbench demo online
-          </a>
-        </p>
-        <p>
           This application shows a simple project management system, that
           is build on top of RAP. Though it is not meant to be production
           ready it shows a good bunch of the framework's possibilities.</p>
@@ -79,7 +70,12 @@
           Asian languages.
         </p>
         <p>
-          Please note, the example data will be reset regularly.
+          <a href="http://rap.eclipsesource.com/workbenchdemo/rms" target="_blank">
+            See a workbench demo online
+          </a>
+        </p>
+        <p>
+          Please note that the example data will be reset regularly.
         </p>
       </div>
       <div style="clear: both;"></div>
