@@ -309,7 +309,7 @@ public class ExampleConfigurator implements ApplicationConfigurator {
     </description>
   </entry>
   
-  <entry category="RWT" milestone="M2">
+  <entry category="RWT" milestone="M3">
     <title>
       New Client/Server Protocol
     </title>
