@@ -224,11 +224,10 @@ Button {
     </title>
     <description>
       <![CDATA[
-        The way to start an RWT application has been changed.
-        The former init parameters have been replaced with an API that allows you to 
+        The way to start standalone RWT applications has been changed.
+        The former init parameters have been replaced by an API that allows you to 
         configure all aspects of the application to be started.
-        The web.xml fragment and code snippet shows how starting an RWT application now looks like:
-        <p>
+        This web.xml fragment and code snippet shows how starting an RWT application now looks like:
         <pre><code>
 <b>&lt;context-param&gt;</b>
   <b>&lt;param-name&gt;</b>org.eclipse.rwt.Configurator<b>&lt;/param-name&gt;</b>
@@ -247,21 +246,20 @@ public class ExampleConfigurator implements ApplicationConfigurator {
   }
 }
         </code></pre>
-        </p>
         <p>
-          The <code>RWTServletContextListener</code> needs to be registered so that RWT is 
+          The <code>RWTServletContextListener</code> needs to be registered so that RWT is
           notified when the servlet context is created.
           The remaining init parameter is used to specify a <em>configurator</em>, an
-          implementation of <code>ApplicationConfigurator</code>. This class is created and 
-          called its <code>configure</code> method is before the application starts. 
-          With the given <code>ApplicationConfiguration</code> object you can control all 
+          implementation of <code>ApplicationConfigurator</code>. This class is created and
+          its <code>configure</code> method is called before the application starts.
+          With the given <code>ApplicationConfiguration</code> object you can control all
           aspects of the application.
         </p>
         <p>
-          Please read this 
+          Please read this
           <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_develop_an_RWT_standalone_application_with_RAP_.3E.3D_1.5">FAQ</a>
-          entry for more details. We will integrate this
-          information into the developer documentation before the 1.5 release.
+          entry for more details.
+          We will integrate this information into the developer documentation before the 1.5 release.
         </p>
       ]]>
     </description>
@@ -273,16 +271,15 @@ public class ExampleConfigurator implements ApplicationConfigurator {
     </title>
     <description>
       <![CDATA[
-        <p>
         Internet Explorer 9 was a significant improvement over previous versions, finally catching
-        up to other browser regarding performance and compatibility. RAP now triggers 
-        standard rendering in IE9 (as opposed to quirksmode used in previous IE versions), and as a result can 
-        fully utilize all its new features (HTML5, CSS3, SVG). This gives RAP applications a 
-        noticable performance-boost in IE9, especially when using GC for drawing complex graphs.
-        </p>
+        up to other browsers regarding performance and compatibility.
+        RAP can now fully utilize all its new features (HTML5, CSS3, SVG) by switching to standard
+        rendering in IE9 (as opposed to quirksmode used for previous IE versions).
+        This gives RAP applications a noticable performance-boost in IE9, especially when using GC
+        for drawing complex graphs.
         <p>
-        As technology marches on, we also decidded to no longer offically support IE6 in RAP 1.5.
-        RAP 1.4 will continue to support it.
+          As technology marches on, we also decidded to no longer offically support IE6 in RAP 1.5.
+          RAP 1.4 will continue to support it.
         </p>
       ]]>
     </description>
@@ -294,11 +291,12 @@ public class ExampleConfigurator implements ApplicationConfigurator {
     </title>
     <description>
       <![CDATA[
-        RAP 1.5 is about to get a new default look and feel.
-        The new theme is already available in M3 though it is not completely finished yet.
-        It aims at bringing a modern, decent look into RAP applications with more white space and subtle usage of roundings, shadows and gradients.
-       	Also, the themability of many RWT widgets has been improved by adding missing CSS properties.
-       	Check out the screenshots below. Any feedback regarding the new theme is highly welcome.
+        RAP 1.5 is about to get a new default look.
+        The new theme aims at bringing a modern, decent look into RAP applications
+        with more white space and subtle usage of roundings, shadows and gradients.
+       	To achieve this, the themability of many RWT widgets has been extended by adding missing CSS properties.
+        The new look is already part of M3, but we will continue to improve and polish the theme during the next months.
+       	Any feedback is highly welcome.
         <p>
           <img class="framed" src="images/NewTheme-Dialog.png" />
         </p>
