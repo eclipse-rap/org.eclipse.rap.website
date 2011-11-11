@@ -217,6 +217,48 @@ Button {
       ]]>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M3">
+    <title>
+      New Default Theme
+    </title>
+    <description>
+      <![CDATA[
+        RAP 1.5 is about to get a new default look.
+        The new theme aims at bringing a modern, decent look into RAP applications
+        with more white space and subtle usage of roundings, shadows and gradients.
+        To achieve this, the themability of many RWT widgets has been extended by adding missing CSS properties.
+        The new look is already part of M3, but we will continue to improve and polish the theme during the next months.
+        Any feedback is highly welcome.
+        <p>
+          <img class="framed" src="images/NewTheme-Dialog.png" />
+        </p>
+        <p>
+          <img class="framed" src="images/NewTheme-Form.png" />
+        </p>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M3">
+    <title>
+      Improved Internet Explorer 9 Support
+    </title>
+    <description>
+      <![CDATA[
+        Internet Explorer 9 was a significant improvement over previous versions, finally catching
+        up to other browsers regarding performance and compatibility.
+        RAP can now fully utilize all its new features (HTML5, CSS3, SVG) by switching to standard
+        rendering in IE9 (as opposed to quirksmode used for previous IE versions).
+        This gives RAP applications a noticable performance-boost in IE9, especially when using GC
+        for drawing complex graphs.
+        <p>
+          As technology marches on, we also decidded to no longer offically support IE6 in RAP 1.5.
+          RAP 1.4 will continue to support it.
+        </p>
+      ]]>
+    </description>
+  </entry>
 
   <entry category="RWT" milestone="M3">
     <title>
@@ -260,48 +302,6 @@ public class ExampleConfigurator implements ApplicationConfigurator {
           <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_develop_an_RWT_standalone_application_with_RAP_.3E.3D_1.5">FAQ</a>
           entry for more details.
           We will integrate this information into the developer documentation before the 1.5 release.
-        </p>
-      ]]>
-    </description>
-  </entry>
-
-  <entry category="RWT" milestone="M3">
-    <title>
-      Improved Internet Explorer 9 Support
-    </title>
-    <description>
-      <![CDATA[
-        Internet Explorer 9 was a significant improvement over previous versions, finally catching
-        up to other browsers regarding performance and compatibility.
-        RAP can now fully utilize all its new features (HTML5, CSS3, SVG) by switching to standard
-        rendering in IE9 (as opposed to quirksmode used for previous IE versions).
-        This gives RAP applications a noticable performance-boost in IE9, especially when using GC
-        for drawing complex graphs.
-        <p>
-          As technology marches on, we also decidded to no longer offically support IE6 in RAP 1.5.
-          RAP 1.4 will continue to support it.
-        </p>
-      ]]>
-    </description>
-  </entry>
-  
-  <entry category="RWT" milestone="M3">
-    <title>
-      New Default Theme
-    </title>
-    <description>
-      <![CDATA[
-        RAP 1.5 is about to get a new default look.
-        The new theme aims at bringing a modern, decent look into RAP applications
-        with more white space and subtle usage of roundings, shadows and gradients.
-       	To achieve this, the themability of many RWT widgets has been extended by adding missing CSS properties.
-        The new look is already part of M3, but we will continue to improve and polish the theme during the next months.
-       	Any feedback is highly welcome.
-        <p>
-          <img class="framed" src="images/NewTheme-Dialog.png" />
-        </p>
-        <p>
-          <img class="framed" src="images/NewTheme-Form.png" />
         </p>
       ]]>
     </description>
