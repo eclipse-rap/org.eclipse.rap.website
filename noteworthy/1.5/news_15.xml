@@ -308,6 +308,23 @@ public class ExampleConfigurator implements ApplicationConfigurator {
       ]]>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M2">
+    <title>
+      New Client/Server Protocol
+    </title>
+    <description>
+      <![CDATA[
+        In this milestone, we switched some more widgets to the new client/server protocol like Tree, 
+        TabFolder, Browser and ToolBar.
+        <p>
+          We're planning to complete this conversion before the end of this year.
+          As the protocol stabilizes, we'll update the specification on the
+          <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
+        </p>
+      ]]>
+    </description>
+  </entry>
 
 <!--
   NOTE [rst]: Decided to change API before publishing
