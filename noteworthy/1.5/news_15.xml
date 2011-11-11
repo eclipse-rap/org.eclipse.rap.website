@@ -287,6 +287,27 @@ public class ExampleConfigurator implements ApplicationConfigurator {
       ]]>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M3">
+    <title>
+      New Default Theme
+    </title>
+    <description>
+      <![CDATA[
+        RAP 1.5 is about to get a new default look and feel.
+        The new theme is already available in M3 though it is not completely finished yet.
+        It aims at bringing a modern, decent look into RAP applications with more white space and subtle usage of roundings, shadows and gradients.
+       	Also, the themability of many RWT widgets has been improved by adding missing CSS properties.
+       	Check out the screenshots below. Any feedback regarding the new theme is highly welcome.
+        <p>
+          <img class="framed" src="images/NewTheme-Dialog.png" />
+        </p>
+        <p>
+          <img class="framed" src="images/NewTheme-Form.png" />
+        </p>
+      ]]>
+    </description>
+  </entry>
 
 <!--
   NOTE [rst]: Decided to change API before publishing
