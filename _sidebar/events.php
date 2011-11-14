@@ -51,6 +51,18 @@
           </ul>
         </span>
       </li>
+      <li>
+        <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Karlsruhe">
+          Eclipse DemoCamp Karlsruhe
+          <br />
+          November 27
+        </a>
+        <span>
+          <ul>
+            <li>Holger Staudacher: Dynamic Web Applications with RAP and OSGi</li>
+          </ul>
+        </span>
+      </li>
     </ul>
   </div>
 </div>
