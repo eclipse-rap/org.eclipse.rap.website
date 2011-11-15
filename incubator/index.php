@@ -8,7 +8,7 @@ $pageAuthor = "The RAP Team";
 
 $html = file_get_contents( '_index.html' );
 
-$navPosition = array( "download", "incubator" );
+$navPosition = array( "contribute", "incubator" );
 
 generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
 
