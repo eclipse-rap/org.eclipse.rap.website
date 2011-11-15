@@ -41,42 +41,46 @@
 /* TOP LEVEL NAVIGATION */
 
 #rap-big-buttons {
+  z-index: 1000;
   position: absolute;
-  left: 270px;
+  left: 282px;
   width: 680px;
   bottom: 17px;
   height: auto;
 }
 
 #rap-big-buttons ul {
-  text-align: center;
+  text-align: right;
 }
 
-#rap-big-buttons li {
+#rap-big-buttons > ul > li {
+  position: relative;
   display: inline-block;
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-#rap-big-buttons a {
+#rap-big-buttons > ul > li > a {
   display: block;
   float: left;
   padding: 7px 12px;
   margin: 0 7px;
   font-weight: bold;
-  border-radius: 7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 
-#rap-big-buttons a.active {
-  background-color: #6d6d6d;
+#rap-big-buttons > ul > li > a.active {
+  background-color: #c8c8c8;
+  box-shadow: 0 0 4px black;
 }
 
-#rap-big-buttons a:hover {
+#rap-big-buttons > ul > li > a:hover {
   text-decoration: none;
   background-color: white;
+  box-shadow: 0 0 4px black;
 }
 
 #rap-big-buttons h3 {
@@ -87,8 +91,13 @@
   margin: 0;
 }
 
-#rap-big-buttons a:hover h3 {
-  color: gray;
+#rap-big-buttons > ul > li > a:hover h3,
+#rap-big-buttons > ul > li > a.active h3 {
+  color: #393939;
+}
+
+#rap-big-buttons > ul li.selected > h3{
+  color: #393939;
 }
 
 #rap-big-buttons div.rap-button-icon {
@@ -101,16 +110,56 @@
 
 /* SECOND-LEVEL NAVIGATION */
 
+.second-level-nav {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 200px;
+  top: 40px;
+  left: 7px;
+  border-radius: 3px;
+  box-shadow: 0 0 4px black;
+  background-color: white;
+}
+
+.second-level-nav > li {
+  display: block;
+  padding: 10px 0 10px 0 !important;
+  margin: 0 !important;
+  border-radius: 2px;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.second-level-nav > li > a {
+  color: #393939;
+  padding: 0 0 0 12px !important;
+  text-decoration: none;
+}
+
+.second-level-nav > li > a:hover,
+.second-level-nav > li:hover > a {
+  color: white;
+}
+
+.second-level-nav li:hover {
+  background-color: #416693;
+}
+
+.second-level-nav li:hover a {
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
 #nav-bar {
-  background-color: #6d6d6d;
-/*  background-color: #7AB317;
-    background-color: #727F7D; */
+  height: 33px;
+  background-color: #c8c8c8;
 }
 
 #nav-bar ul {
   display: block;
   padding: 0;
-  margin: 0 25px;
+  margin: 0 50px 0 0;
   float: right;
 }
 
@@ -150,7 +199,8 @@
 #nav-bar h4 {
   font-weight: normal;
   font-size: 17px;
-  color: white;
+  color: #416693;
+  text-shadow: 0 1px 1px white;
   margin: 0;
   padding: 9px 0;
 }

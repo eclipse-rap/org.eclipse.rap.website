@@ -39,6 +39,7 @@
   <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
   <script type="text/javascript" src="http://w3.eclipsesource.com/www/js/rap/jquery.zrssfeed.min.js"></script>
+  <script type="text/javascript" src="/rap/script.js"></script>
 </head>
 <body>
 <div id="novaWrapper">

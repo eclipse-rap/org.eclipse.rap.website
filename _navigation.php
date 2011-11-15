@@ -17,26 +17,68 @@ function createTopLevelNavigation() {
         <a id="rap-button-demos" href="/rap/demos/">
           <h3>Demos</h3>
         </a>
+        <ul class="second-level-nav">
+        	<li><a href="/rap/demos/">Online Demos</a></li>
+        	<li><a href="/rap/users/">Who uses RAP?</a></li>
+        </ul>
       </li>
       <li>
         <a id="rap-button-download" href="/rap/downloads/">
           <h3>Download</h3>
         </a>
+        <ul class="second-level-nav">
+        	<li><a href="/rap/downloads/">Download RAP</a></li>
+        	<li><a href="/rap/noteworthy/">New & Noteworthy</a></li>
+        </ul>
       </li>
       <li>
-        <a id="rap-button-documentation" href="/rap/documentation/">
-          <h3>Documentation</h3>
+        <a id="rap-button-help" href="/rap/support/">
+          <h3>Get Help</h3>
         </a>
+       <ul class="second-level-nav">
+       		<li>
+          	<a href="/rap/support/">
+            	Support
+          	</a>
+        	</li>
+        	<li>
+          	<a href="/rap/getting-started/">
+            	Getting Started
+          	</a>
+        	</li>
+        	<li>
+        		<a href="/rap/support/professional-services/">
+            	Professional Services
+          	</a>
+        	</li>
+        </ul>
       </li>
       <li>
-        <a id="rap-button-support" href="/rap/support/">
-          <h3>Support</h3>
-        </a>
-      </li>
-      <li>
-        <a id="rap-button-contribute" href="/rap/getting-involved/">
+      	 <a id="rap-button-contribute" href="/rap/getting-involved/">
           <h3>Contribute</h3>
         </a>
+        <ul class="second-level-nav">
+        	<li>
+        		<a href="/rap/getting-involved/">
+        			Getting Involved
+        		</a>
+      		</li>
+        	<li>
+        		<a href="/rap/bugs/">
+        			Bugs
+        		</a>
+      		</li>
+      		<li>
+        		<a href="/rap/incubator/">
+        			Incubator
+        		</a>
+      		</li>
+      		<li>
+        		<a href="/rap/source/">
+        			Source Code
+        		</a>
+      		</li>
+        </ul>
       </li>
     </ul>
     <div class="stop"></div>
@@ -56,75 +98,19 @@ EOHTML;
   <div class="stop"></div>
 </div>
 EOHTML;
-  switch( $topLevel ) {
-    case "demos":
-      $main = createSecondLevelContentForDemos();
-      break;
-    case "download":
-      $main = createSecondLevelContentForDownload();
-      break;
-    case "documentation":
-      $main = createSecondLevelContentForDocumentation();
-      break;
-    case "support":
-      $main = createSecondLevelContentForSupport();
-      break;
-    case "contribute":
-      $main = createSecondLevelContentForContribute();
-      break;
-    default:
-      $main = createSecondLevelContentForMain();
-      break;
+  $links = "";
+  if( $topLevel === "help" ) {
+    $links = createHelpLinks();
   }
-  return $head . $main . $foot;
+  else if( $topLevel === "home" ) {
+    $links = createAboutLink();
+  }
+  return $head . $links . $foot;
 }
 
-function createSecondLevelContentForMain() {
+function createHelpLinks() {
   $html = <<<EOHTML
-    <li>
-      <a id="rap-nav-noteworthy" href="/projects/project_summary.php?projectid=rt.rap">
-        <h4>About this project</h4>
-      </a>
-    </li>
-EOHTML;
-  return $html;
-}
-
-function createSecondLevelContentForDemos() {
-  $html = <<<EOHTML
-    <li>
-      <a id="rap-nav-rap-users" href="/rap/users/">
-        <h4>Who uses RAP?</h4>
-      </a>
-    </li>
-EOHTML;
-  return $html;
-}
-
-function createSecondLevelContentForDownload() {
-  $html = <<<EOHTML
-    <li>
-      <a id="rap-nav-noteworthy" href="/rap/noteworthy/">
-        <h4>New &amp; Noteworthy</h4>
-      </a>
-    </li>
-    <li>
-      <a id="rap-nav-incubator" href="/rap/incubator/">
-        <h4>Incubator</h4>
-      </a>
-    </li>
-EOHTML;
-  return $html;
-}
-
-function createSecondLevelContentForDocumentation() {
-  $html = <<<EOHTML
-    <li>
-      <a id="rap-nav-getting-started" href="/rap/getting-started/">
-        <h4>Get Started</h4>
-      </a>
-    </li>
-    <li>
+  	<li>
       <a id="rap-nav-getting-started" href="http://wiki.eclipse.org/RAP/FAQ">
         <h4>FAQ</h4>
       </a>
@@ -138,43 +124,23 @@ EOHTML;
   return $html;
 }
 
-function createSecondLevelContentForSupport() {
+function createAboutLink() {
   $html = <<<EOHTML
     <li>
-      <a id="rap-nav-professional" href="/rap/support/professional-services/">
-        <h4>Professional Services</h4>
-      </a>
-    </li>
-EOHTML;
-  return $html;
-}
-
-function createSecondLevelContentForContribute() {
-  $html = <<<EOHTML
-    <li>
-      <a id="rap-nav-bugs" href="/rap/bugs/">
-        <h4>Bugs</h4>
-      </a>
-    </li>
-    <li>
-      <a id="rap-nav-source" href="/rap/source/">
-        <h4>Source Code</h4>
-      </a>
-    </li>
+  		<a href="projects/project.php?id=rt.rap">
+      	<h4>About this Project</h4>
+    	</a>
+  	</li>
 EOHTML;
   return $html;
 }
 
 function createJavaScript( $topLevel, $secondLevel ) {
   $html = <<<EOHTML
-
 <script type="text/javascript">
   $( "#rap-button-$topLevel" ).addClass( "active" ).siblings().removeClass( "active" );
-  $( "#rap-nav-$secondLevel" ).addClass( "active" ).siblings().removeClass( "active" );
 </script>
-
 EOHTML;
-    
   return $html;
 }
 
