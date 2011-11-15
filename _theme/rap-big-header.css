@@ -125,15 +125,16 @@
 
 .second-level-nav > li {
   display: block;
-  padding: 10px 0 10px 0 !important;
+  padding: 0 !important;
   margin: 0 !important;
   border-radius: 2px;
   border-bottom: 1px solid #bdbdbd;
 }
 
 .second-level-nav > li > a {
+  display: block;
   color: #393939;
-  padding: 0 0 0 12px !important;
+  padding: 10px 0 10px 12px !important;
   text-decoration: none;
 }
 
