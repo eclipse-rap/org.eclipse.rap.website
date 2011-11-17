@@ -110,7 +110,7 @@ function createBreadcrumbMenu() {
 
 function extractRequestPathElements() {
   $requestURL = $_SERVER[ 'REQUEST_URI' ];
-  $requestURL = preg_filter( "|^/(.*?)/?$|", "\\1", $requestURL );
+  $requestURL = preg_replace( "|^/(.*?)/?$|", "\\1", $requestURL );
   return explode( "/", $requestURL );
 }
 
@@ -125,8 +125,8 @@ function createLinkURLMap( $pathElements ) {
 }
 
 function filterPathElement( $pathElement ) {
-  $result = preg_filter( "!(\.php|\.html*)?$!", "", $pathElement );
-  $result = preg_filter( "!(news_)?!", "", $result );
+  $result = preg_replace( "!(\.php|\.html*)?$!", "", $pathElement );
+  $result = preg_replace( "!(news_)?!", "", $result );
   $result = str_replace( "_", " ", $result);
   return $result;
 }
