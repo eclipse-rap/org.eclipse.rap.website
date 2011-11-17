@@ -153,11 +153,12 @@
 }
 
 #nav-bar {
+  display: block;
   height: 33px;
   background-color: #c8c8c8;
 }
 
-#nav-bar ul {
+#nav-bar > ul#links {
   display: block;
   padding: 0;
   margin: 0 50px 0 0;
@@ -190,7 +191,6 @@
 
 #nav-bar a:hover {
   text-decoration: none;
-  background-color: #f8f8f8;
 }
 
 #nav-bar a:hover h4 {
@@ -204,6 +204,28 @@
   text-shadow: 0 1px 1px white;
   margin: 0;
   padding: 9px 0;
+}
+
+ul#breadcrumb {
+  border-radius: 0 6px 6px 0;
+  display: inline-block;
+  height: 33px;
+  padding-left: 18px;
+}
+
+ul#breadcrumb > li > a {
+  background: right center no-repeat url(/rap/images/breadcrumb_arrow.png);
+  color: #4d4d4d;
+  font-size: 17px;
+  font-weight: normal;
+  height: 24px;
+  margin: 0;
+  padding: 9px 20px 0 10px;
+  text-shadow: 0 1px 0 white;
+}
+
+ul#breadcrumb > li:last-child > a {
+  background: none;
 }
 
 #maincontent {
