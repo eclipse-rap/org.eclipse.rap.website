@@ -110,7 +110,6 @@
               getSyncThread(),
               getCursorControl(),
               SWT.Close</code> and <code>SWT.Dispose</code> events
-            </code>
           </li>
           <li>
             <code>
@@ -119,7 +118,6 @@
               style flags <code>TOOL, SHEET, CURSOR_NO, CURSOR_APPSTARTING,
               SYSTEM_MODAL,</code> and <code>PRIMARY_MODAL,</code>
               events <code>MenuDetect, Arm</code> and its typed counterparts
-            </code>
           </li>
           <li>
             <code>
@@ -148,6 +146,7 @@
             <code>
               <b>Table:</b>
               showColumn(TableColumn)
+            </code>
           </li>
           <li>
             <code>
