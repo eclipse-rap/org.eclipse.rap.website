@@ -3,66 +3,51 @@
   <h6>Upcoming Events</h6>
   <div class="sideitemcontent">
     <ul>
-      <li>
-        <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Munich">
-          Eclipse DemoCamp Munich
-          <br />
-          November 15
-        </a>
-        <span>
-          <ul>
-            <li>Frank Appel: Dynamic Web Applications with RAP and OSGi</li>
-          </ul>
-        </span>
-      </li>
-      <li>
-        <a href="http://germany.osgiusers.org/Main/OSGiUFGTreffen2011">
-          OSGi UFG Community Event 2011, Cologne
-          <br />
-          November 16
-        </a>
-        <span>
-          <ul>
-            <li>Ralf Sternberg, Frank Appel: Dynamic Web Applications with RAP and OSGi</li>
-          </ul>
-        </span>
-      </li>
+
       <li>
         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Hamburg">
           Eclipse DemoCamp Hamburg
-          <br />
-          November 23
         </a>
-        <span>
-          <ul>
-            <li>Markus Knauer: Dynamic Web Applications with RAP and OSGi</li>
-          </ul>
-        </span>
+        <br />
+        November 23
+        <ul>
+          <li>Markus Knauer: Dynamic Web Applications with RAP and OSGi</li>
+        </ul>
       </li>
+
       <li>
         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Kaiserslautern">
           Eclipse DemoCamp Kaiserslautern
-          <br />
-          November 24
         </a>
-        <span>
-          <ul>
-            <li>Holger Staudacher: Dynamic Web Applications with RAP and OSGi</li>
-          </ul>
-        </span>
+        <br />
+        November 24
+        <ul>
+          <li>Holger Staudacher: Dynamic Web Applications with RAP and OSGi</li>
+        </ul>
       </li>
+
       <li>
         <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Karlsruhe">
           Eclipse DemoCamp Karlsruhe
-          <br />
-          November 27
         </a>
-        <span>
-          <ul>
-            <li>Holger Staudacher: Dynamic Web Applications with RAP and OSGi</li>
-          </ul>
-        </span>
+        <br />
+        November 27
+        <ul>
+          <li>Holger Staudacher: Dynamic Web Applications with RAP and OSGi</li>
+        </ul>
       </li>
+
+      <li>
+        <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2011/Vienna">
+          Eclipse DemoCamp Vienna
+        </a>
+        <br />
+        December 2
+        <ul>
+          <li>Ralf Sternberg: Dynamic Web Applications with RAP and OSGi</li>
+        </ul>
+      </li>
+
     </ul>
   </div>
 </div>
