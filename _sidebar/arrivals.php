@@ -42,7 +42,7 @@
       <div class="terminal-row">
         <span class="terminal-field">
           <span class="terminal-overlay"></span>
-          <span class="terminal-text">RAP 1.5 M2</span>
+          <span class="terminal-text">RAP 1.5 M3</span>
         </span>
         <span class="terminal-field">
           <span class="terminal-overlay"></span>
@@ -53,11 +53,11 @@
       <div class="terminal-row">
         <span class="terminal-field">
           <span class="terminal-overlay"></span>
-          <span class="terminal-text">RAP 1.5 M3</span>
+          <span class="terminal-text">RAP 1.5 M4</span>
         </span>
         <span class="terminal-field">
           <span class="terminal-overlay"></span>
-          <span class="terminal-text terminal-arrived">ARRIVED</span>
+          <span class="terminal-text">DEC 16</span>
         </span>
       </div>
     </div>
