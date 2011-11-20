@@ -7,20 +7,20 @@ $(document).ready( function() {
   	topLevelElements.mouseenter( function() {
   		var secondLevelNav = $( this ).children( "ul" );
   		secondLevelNav.stop();
-  		secondLevelNav.css( "opacity","1" );
-  		secondLevelNav.show();
-  	});
+  		secondLevelNav.css( "opacity", "1" );
+  		secondLevelNav.fadeIn( 100 );
+  	} );
   	
   	topLevelElements.mouseleave( function() {
   		var secondLevelNav = $( this ).children( "ul" );
-  		secondLevelNav.fadeOut( 500 );
-  	});
+  		secondLevelNav.fadeOut( 250 );
+  	} );
   	
   	var secondLevelNav = $( "ul.second-level-nav" );
   	secondLevelNav.mouseenter( function() {
   		$( this ).stop();
-  		$( this ).css( "opacity","1" );
-  	});
+  		$( this ).css( "opacity", "1" );
+  	} );
   }
 
   var enableDownloadDropdowns = function() {
@@ -52,4 +52,4 @@ $(document).ready( function() {
   enableNavigation();
   enableDownloadDropdowns();
 
-});
+} );
