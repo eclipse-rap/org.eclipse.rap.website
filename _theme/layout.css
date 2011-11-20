@@ -18,9 +18,27 @@ body {
 }
 
 #novaContent {
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
   min-height: 100%; /* gives layout 100% height */
   border-right: 1px solid #D9D9D9;
   border-left: 1px solid #D9D9D9;
+  background: #FFF;
+}
+
+#novaContent li {
+  list-style-image: url('/eclipse.org-common/themes/Nova/images/bullet.gif');
+  list-style-position: outside;
+  margin-left: 10px;
+  padding: 5px 10px 5px 0;
+}
+
+#novaContent.faux {
+  background: #FFF url('/eclipse.org-common/themes/Nova/images/faux.jpg') repeat-y;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 
 * html #wrapper {
@@ -44,10 +62,10 @@ body {
 #footer * {
   color: #FFF;
   text-decoration: none;
+  font-size: 12px;
 }
 
 #footer ul {
-  font-size: 11px;
   padding-left: 20px;
   float: left;
 }
@@ -76,7 +94,7 @@ a {
   color: #7036be;
   font-weight: bold;
   text-decoration: none;
-  font-size:inherit;
+  font-size: inherit;
 }
 
 a:hover {
@@ -92,8 +110,8 @@ body {
 div, span, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li,
 fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
 {
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 em {
@@ -168,23 +186,6 @@ sub {
 sup {
   vertical-align:super;
   font-size:80%
-}
-
-#novaContent {
-  background: #FFF;
-}
-
-#novaContent li {
-  list-style-image: url('/eclipse.org-common/themes/Nova/images/bullet.gif');
-  list-style-position: outside;
-  margin-left: 10px;
-  padding: 5px 10px 5px 0;
-}
-
-#novaContent.faux {
-  background: #FFF url('/eclipse.org-common/themes/Nova/images/faux.jpg') repeat-y;
-  padding-bottom: 20px;
-  padding-top: 20px;
 }
 
 #content {
@@ -423,10 +424,6 @@ small {
 
 div.noteworthy {
   margin: 20px 0 40px 0;
-}
-
-#novaContent {
-  position: relative;
 }
 
 #header {
@@ -758,12 +755,238 @@ div.box div {
   margin-right: 11px;
 }
 
-#novaContent {
-  border-radius: 20px 20px 0 0;
-  -moz-border-radius: 20px 20px 0 0;
-  -webkit-border-radius: 20px 20px 0 0;
-}
-
 #rightcolumn {
   padding: 37px 27px 20px 20px;
+}
+
+/* Fix horizontal position of the top-left Eclipse logo */
+div#logo {
+  position: relative;
+  height: 91px;
+  top: -1px;
+  left: 793px;
+}
+
+/* More space above sub-headers */
+
+h3 {
+  margin-top: 12px;
+}
+
+/* Customize margin for paragraphs */
+
+p, table {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+/* Enable Quotes */
+
+q:before { content: '\201C'; }
+q:after { content: '\201D'; }
+q q:before { content: '\2018'; }
+q q:after { content: '\2019'; }
+
+/* RAP logo in side navigation */
+
+#rap-small-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 184px;
+  height: 80px;
+}
+
+#rap-small-logo {
+  position: absolute;
+  left: 12px;
+  top: 15px;
+  width: 152px;
+  height: 67px;
+  background: url( "/rap/images/RAP-Logo-small.png" ) no-repeat 0 0;
+}
+
+#leftnav {
+  margin-top: 70px;
+  padding-left: 8px;
+}
+
+/* Make first-level navigation items appear as links */
+
+#leftnav li.separator a {
+  color: #7036BE;
+}
+
+/* * */
+
+.sideitem h6 {
+  background-color: #416693;
+  color: #ffffff;
+  border-bottom: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  -webkit-border-top-left-radius: 7px 7px 0 0;
+  padding: 8px 5px 8px 10px;
+}
+
+/* Small navigation icons */
+
+span.download-icon {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 24px;
+  height: 24px;
+  background: url( /rap/images/button-icons-small.png ) 0 0;
+}
+
+/* Expand areas on download page */
+
+div.expand-head {
+  margin: 0;
+}
+
+div.expand-link,
+div.download-button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #f5f4e9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  padding: 5px;
+}
+
+div.expand-link {
+  padding: 1px 10px 8px 5px;
+  margin-right: 10px;
+}
+
+div.download-button.hover {
+  background-color: #e8e7dd;
+}
+
+div.expand-link.selected {
+  background-color: #e8e7dd;
+  border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  padding-bottom: 11px;
+}
+
+div.expand-body {
+  display: none;
+  border: 2px solid #e8e7dd;
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+}
+
+/* BUILD TERMINAL */
+
+div.terminal {
+  padding: 5px;
+  color: white;
+  background-color: gray;
+  border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -webkit-border-radius: 0 0 3px 3px;
+}
+
+div.terminal-row {
+  margin: 5px 0;
+}
+
+span.terminal-field {
+  position: relative;
+  display: inline-block;
+  background-color: #222;
+  padding: 2px 4px;
+  width: 98px;
+  margin-left: 4px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+span.terminal-text {
+  position: relative;
+  display: inline-block;
+  background-color: #333333;
+  padding: 0 4px;
+  color: white;
+  width: 90px;
+  text-alignment: center;
+  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+span.terminal-arrived {
+  color: #88ff88;
+}
+
+span.terminal-landing {
+  color: #f2fa73;
+}
+
+span.terminal-overlay {
+  position: absolute;
+  display: inline-block;
+  border-top: 1px solid #444;
+  z-index: 1000;
+  opacity: 0.5;
+  width: 98px;
+  height: 2px;
+  left: 4px;
+  top: 10px;
+}
+
+/* Lists in side boxes */
+
+#novaContent .sideitem > ul {
+  margin: 0;
+  padding: 0;
+}
+
+#novaContent .sideitem > ul > li {
+  margin: 0 0 2px;
+  padding: 5px 15px;
+  list-style-type: none;
+  list-style-image: none;
+  border-bottom: 1px solid #e8e7dd;
+}
+
+#novaContent .sideitem > ul > li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: #183860;
+}
+
+#novaContent li {
+  list-style-image: url( "/rap/images/bullet.gif" );
+}
+
+h2, h3, h4
+div.sideitem,
+#novaContent div.sideitem > ul > li
+{
+  border-bottom: none;
+}
+
+.rssRow p {
+  padding: 0;
+  color: #444444;
+}
+
+.rssIcon {
+  position: relative;
+  left: 83px;
+  top: 2px;
 }

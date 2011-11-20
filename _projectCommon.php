@@ -29,8 +29,6 @@
   <link rel="stylesheet" type="text/css" href="/rap/_theme/reset.css" media="screen"/>
   <link rel="stylesheet" type="text/css" href="/rap/_theme/layout.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="/rap/_theme/print.css" media="print" />
-  <link rel="stylesheet" type="text/css" href="/rap/_theme/rap-layout-fixes.css"/>
-  <link rel="stylesheet" type="text/css" href="/rap/_theme/rap-posts.css"/>
   <!--[if IE 6]>  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/ie6_style.css" media="screen"/> <![endif]-->
   <!--[if lte IE 7]>  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/ie_style.css" media="screen"/> <![endif]-->
   <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
