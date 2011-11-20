@@ -17,10 +17,6 @@ div#logo {
   left: 793px;
 }
 
-div#clearHeader {
-  height: 50px;
-}
-
 /* Increase font size */
 div, span, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
 {

@@ -28,11 +28,8 @@
   <link rel="stylesheet" type="text/css" href="/eclipse.org-common/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="/rap/_theme/reset.css" media="screen"/>
   <link rel="stylesheet" type="text/css" href="/rap/_theme/layout.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="/rap/_theme/footer.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="/rap/_theme/visual.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="/rap/_theme/print.css" media="print" />
   <link rel="stylesheet" type="text/css" href="/rap/_theme/rap-layout-fixes.css"/>
-  <link rel="stylesheet" type="text/css" href="/rap/_theme/rap-big-header.css"/>
   <link rel="stylesheet" type="text/css" href="/rap/_theme/rap-posts.css"/>
   <!--[if IE 6]>  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/ie6_style.css" media="screen"/> <![endif]-->
   <!--[if lte IE 7]>  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/ie_style.css" media="screen"/> <![endif]-->
@@ -68,7 +65,7 @@ EOHTML;
   <div id="clearFooter"></div>
     <div id="footer">
     <ul id="footernav">
-      <li><a href="http://www.eclipse.org/">Home</a></li>
+      <li><a href="http://www.eclipse.org/">Eclipse</a></li>
       <li><a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
       <li><a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
       <li><a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
