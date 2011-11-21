@@ -29,16 +29,10 @@ body {
 }
 
 #novaContent li {
-  list-style-image: url('/eclipse.org-common/themes/Nova/images/bullet.gif');
+  list-style-image: url( "/rap/images/bullet.gif" );
   list-style-position: outside;
   margin-left: 10px;
   padding: 5px 10px 5px 0;
-}
-
-#novaContent.faux {
-  background: #FFF url('/eclipse.org-common/themes/Nova/images/faux.jpg') repeat-y;
-  padding-bottom: 20px;
-  padding-top: 5px;
 }
 
 * html #wrapper {
@@ -91,7 +85,7 @@ p {
 }
 
 a {
-  color: #7036be;
+  color: #183860;
   font-weight: bold;
   text-decoration: none;
   font-size: inherit;
@@ -115,12 +109,12 @@ fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
 }
 
 em {
-  font-style:italic;  
+  font-style: italic;
 }
 
 h1 {
   font-size: 20px;
-  line-height:20px;
+  line-height: 20px;
   font-weight: bold;
   padding: 10px 0 10px 0;
 }
@@ -130,31 +124,29 @@ h1 a, h2 a, h3 a {
 }
 
 h2 {
-  border-bottom: 1px solid #d4d4dd;
   font-size: 18px;
-  line-height:18px;
+  line-height: 18px;
   font-weight: bold;
   margin-bottom: 5px;
   padding-top: 10px;
 }
 
 h3 {
-  border-bottom: 1px dotted #d4d4dd;
   color: #222;
   font-size: 18px;
-  line-height:18px;
+  line-height: 18px;
   font-weight: bold;
   margin-bottom: 5px;
   padding-top: 25px;
 }
 
 h4 {
-  font-size:15px;
-  line-height:15px;
-  font-weight:bold;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: bold;
   margin-bottom: 5px;
   padding-top: 5px;
-  color:#222;  
+  color: #222;
 }
 
 html {
@@ -179,13 +171,13 @@ td {
 }
 
 sub {
-  vertical-align:sub;
-  font-size:80%;
+  vertical-align: sub;
+  font-size: 80%;
 }
 
 sup {
-  vertical-align:super;
-  font-size:80%
+  vertical-align: super;
+  font-size: 80%
 }
 
 #content {
@@ -198,12 +190,12 @@ sup {
 }
 
 #fullcolumn #midcolumn {
-  margin-left:20px;
+  margin-left: 20px;
   width: 640px;
 }
 
 #fullcolumn #rightcolumn {
-  width: 280px;  
+  width: 280px;
 }
 
 #leftcol {
@@ -267,15 +259,6 @@ sup {
   padding-bottom: 10px;
 }
 
-.sideitem ul, .sideitem ol {
-  margin-left:10px;  
-}
-
-.sideitemcontent {
-  border: 1px solid #bdbdbd;
-  border-top: none;
-}
-
 #rightcolumn {
   background: transparent;
   float: left;
@@ -311,7 +294,7 @@ sup {
 }
 
 .noImage li {
-  list-style-image:none !important;  
+  list-style-image: none !important;
 }
 
 .more {
@@ -336,7 +319,7 @@ sup {
   pointer: cursor;
   text-align: center;
   width: 100px;
-  line-height:10px;
+  line-height: 10px;
 }
 
 .newsPosts {
@@ -361,7 +344,6 @@ sup {
 }
 
 .newsPosts tr td {
-  border-bottom: 1px dotted #e9e9ee;
   margin-bottom: 10px;
   padding-top: 5px;
 }
@@ -380,17 +362,23 @@ sup {
   font-size: 8px;
 }
 
-.rss {
-  float: right;
-  width: 16px;
-}
+/* SIDE BOXES */
 
 .sideitem {
   margin-bottom: 15px;
   padding-bottom: 0;
   border-radius: 7px 7px 0 0;
-    box-shadow: 0 0 3px #adadad;
-  clear:both;
+  box-shadow: 0 0 3px #adadad;
+  clear: both;
+}
+
+.sideitemcontent {
+  border: 1px solid #bdbdbd;
+  border-top: none;
+}
+
+.sideitem ul, .sideitem ol {
+  margin-left: 10px;
 }
 
 .sideitem .modal {
@@ -404,8 +392,8 @@ sup {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 0px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-topright:3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
   padding: 8px 5px;
 }
 
@@ -413,13 +401,47 @@ sup {
   padding: 0 10px 5px 0;
 }
 
-.sideitem ul, .sideitem ol, .sideitem form, .sideitem p{
-  font-size: 12px;
+.sideitem ul, .sideitem ol, .sideitem form, .sideitem p {
   padding: 5px;
 }
 
+/* Lists in side boxes */
+
+.sideitem h6 {
+  background-color: #416693;
+  color: #ffffff;
+  border-bottom: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  -webkit-border-top-left-radius: 7px 7px 0 0;
+  padding: 8px 5px 8px 10px;
+}
+
+#novaContent .sideitem > ul {
+  margin: 0;
+  padding: 0;
+}
+
+#novaContent .sideitem > ul > li {
+  margin: 0 0 2px;
+  padding: 5px 15px;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+#novaContent .sideitem > ul > li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* --- */
+
 small {
-  font-size:10px;
+  font-size: 10px;
 }
 
 div.noteworthy {
@@ -431,12 +453,12 @@ div.noteworthy {
 }
 
 #logo {
-    float: left;
-    z-index:9999; /*Something Insanely High*/
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    border: 0;
+  float: left;
+  z-index: 9999;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 #big-header {
@@ -518,7 +540,7 @@ div.noteworthy {
   color: #393939;
 }
 
-#rap-big-buttons > ul li.selected > h3{
+#rap-big-buttons > ul li.selected > h3 {
   color: #393939;
 }
 
@@ -670,7 +692,7 @@ ul#breadcrumb > li:last-child > a {
 #rap-button-download div.rap-button-icon {
   background: transparent url( "http://w3.eclipsesource.com/www/img/rap/button-icons.png" ) no-repeat 0 0;
 }
- 
+
 #rap-button-documentation {
   left: 20px;
   top: 0;
@@ -819,19 +841,6 @@ q q:after { content: '\2019'; }
 
 /* * */
 
-.sideitem h6 {
-  background-color: #416693;
-  color: #ffffff;
-  border-bottom: none;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  border-radius: 7px 7px 0 0;
-  -moz-border-radius: 7px 7px 0 0;
-  -webkit-border-top-left-radius: 7px 7px 0 0;
-  padding: 8px 5px 8px 10px;
-}
-
 /* Small navigation icons */
 
 span.download-icon {
@@ -856,7 +865,7 @@ div.download-button {
   background-color: #f5f4e9;
   border-radius: 5px;
   -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;  
+  -webkit-border-radius: 5px;
   padding: 5px;
 }
 
@@ -936,7 +945,7 @@ span.terminal-overlay {
   position: absolute;
   display: inline-block;
   border-top: 1px solid #444;
-  z-index: 1000;
+  z-index: 10;
   opacity: 0.5;
   width: 98px;
   height: 2px;
@@ -944,40 +953,11 @@ span.terminal-overlay {
   top: 10px;
 }
 
-/* Lists in side boxes */
+/* RSS */
 
-#novaContent .sideitem > ul {
-  margin: 0;
-  padding: 0;
-}
-
-#novaContent .sideitem > ul > li {
-  margin: 0 0 2px;
-  padding: 5px 15px;
-  list-style-type: none;
-  list-style-image: none;
-  border-bottom: 1px solid #e8e7dd;
-}
-
-#novaContent .sideitem > ul > li:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-a {
-  color: #183860;
-}
-
-#novaContent li {
-  list-style-image: url( "/rap/images/bullet.gif" );
-}
-
-h2, h3, h4
-div.sideitem,
-#novaContent div.sideitem > ul > li
-{
-  border-bottom: none;
+.rss {
+  float: right;
+  width: 16px;
 }
 
 .rssRow p {
