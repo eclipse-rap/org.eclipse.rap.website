@@ -29,7 +29,7 @@ body {
 }
 
 #novaContent li {
-  list-style-image: url( "/rap/images/bullet.gif" );
+  list-style-image: url( "/rap/images/list-bullet.png" );
   list-style-position: outside;
   margin-left: 10px;
   padding: 5px 10px 5px 0;
@@ -85,7 +85,7 @@ p {
 }
 
 a {
-  color: #183860;
+  color: #416693;
   font-weight: bold;
   text-decoration: none;
   font-size: inherit;
@@ -104,6 +104,7 @@ body {
 div, span, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li,
 fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
 {
+  color: #1e1e1e;
   font-size: 14px;
   line-height: 18px;
 }
@@ -113,10 +114,11 @@ em {
 }
 
 h1 {
-  font-size: 20px;
-  line-height: 20px;
+  color: #416693;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: bold;
-  padding: 10px 0 10px 0;
+  padding: 0 0 10px 0;
 }
 
 h1 a, h2 a, h3 a {
@@ -124,15 +126,16 @@ h1 a, h2 a, h3 a {
 }
 
 h2 {
-  font-size: 18px;
-  line-height: 18px;
+  color: #416693;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: bold;
   margin-bottom: 5px;
   padding-top: 10px;
 }
 
 h3 {
-  color: #222;
+  color: #416693;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -604,9 +607,13 @@ div.noteworthy {
 
 #nav-bar > ul#links {
   display: block;
-  padding: 0;
-  margin: 0 50px 0 0;
+  padding: 0 20px 0 0;
+  margin: 0 0 0 0;
   float: right;
+}
+
+#nav-bar > ul#links li {
+  padding: 0 15px 0 0;
 }
 
 #nav-bar li {
@@ -615,14 +622,6 @@ div.noteworthy {
   padding: 0;
   margin: 0;
   float: left;
-}
-
-#nav-bar a {
-  display: block;
-  padding: 0 10px;
-  margin: 0 7px;
-  color: white;
-  font-weight: bold;
 }
 
 #nav-bar a.active {
@@ -646,7 +645,6 @@ div.noteworthy {
   font-size: 17px;
   color: #416693;
   text-shadow: 0 1px 1px white;
-  margin: 0;
   padding: 9px 0;
 }
 
@@ -654,17 +652,17 @@ ul#breadcrumb {
   border-radius: 0 6px 6px 0;
   display: inline-block;
   height: 33px;
-  padding-left: 18px;
+  padding: 8px 0 0 18px;
 }
 
 ul#breadcrumb > li > a {
-  background: right center no-repeat url(/rap/images/breadcrumb_arrow.png);
+  background: no-repeat url(/rap/images/breadcrumb_arrow.png) right center ;
   color: #4d4d4d;
   font-size: 17px;
   font-weight: normal;
   height: 24px;
   margin: 0;
-  padding: 9px 20px 0 10px;
+  padding: 9px 20px 10px 10px;
   text-shadow: 0 1px 0 white;
 }
 
@@ -962,7 +960,6 @@ span.terminal-overlay {
 
 .rssRow p {
   padding: 0;
-  color: #444444;
 }
 
 .rssIcon {
