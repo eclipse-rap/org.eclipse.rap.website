@@ -172,7 +172,7 @@ function createAboutLink() {
   $html = <<<EOHTML
   <ul id="links">
     <li>
-      <a href="projects/project.php?id=rt.rap">
+      <a href="http://eclipse.org/projects/project.php?id=rt.rap">
         <h4>About this Project</h4>
       </a>
     </li>
