@@ -57,7 +57,18 @@
         </span>
         <span class="terminal-field">
           <span class="terminal-overlay"></span>
-          <span class="terminal-text">DEC 16</span>
+          <span class="terminal-text terminal-arrived">ARRIVED</span>
+        </span>
+      </div>
+
+      <div class="terminal-row">
+        <span class="terminal-field">
+          <span class="terminal-overlay"></span>
+          <span class="terminal-text">RAP 1.5 M5</span>
+        </span>
+        <span class="terminal-field">
+          <span class="terminal-overlay"></span>
+          <span class="terminal-text">FEB 03</span>
         </span>
       </div>
     </div>
