@@ -324,6 +324,61 @@ public class ExampleConfigurator implements ApplicationConfigurator {
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M4">
+    <title>
+      New Client/Server Protocol
+    </title>
+    <description>
+      <![CDATA[
+        With this milestone, all Ajax responses from a RAP server are now in plain JSON format.
+        No JavaScript is included anymore.
+        This makes the responses much more readable and eases debugging.
+        <p>
+          <img class="framed" src="images/Firebug-JSON.png" />
+        </p>
+        <p>
+          With this new protocol, it is now possible to develop alternative clients for RAP.
+          The exact format is described in the
+          <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
+          Some details may still change until the release.
+        </p>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M4">
+    <title>
+      Target Platform Changes
+    </title>
+    <description>
+      <![CDATA[
+        Since RAP 1.5 will be available togehter with Eclipse Juno, the target platform is now based
+        on Eclipse 4.2 instead of 3.8.
+        However, the RAP implementation of the Eclipse Workbench remains to be based on 3.x.
+        But there are a couple of important changes in the target platform.
+        <ul>
+          <li>
+            The servlet 3.0 API packages are now exported as version 2.6.0 to comply with the
+            OSGi versioning rules
+            (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=360245">bug 360245</a>).
+          </li>
+          <li>
+            The target platform includes Jetty 8 instead of Jetty 6.
+            This is not just a change of the version number, also the package names have changed
+            from <code>org.mortbay.jetty</code> to <code>org.eclipse.jetty</code>.
+            Instead of two, Jetty now consists of seven bundles.
+          </li>
+          <li>
+            The platform now includes a new OSGi console based on the Apache Felix Gogo project.
+            Therefore, the basic target platform for RAP applications now contains three bundles
+            (<code>org.apache.felix.gogo.*</code>) support it.
+          </li>
+        </ul>
+        Please adapt your launch configurations to these changes as needed.
+      ]]>
+    </description>
+  </entry>
+
 <!--
   NOTE [rst]: Decided to change API before publishing
 
