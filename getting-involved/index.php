@@ -71,6 +71,7 @@
 
 <div id="rightcolumn">
 
+  <?php includeSidebar( "eclipse.php" ) ?>
   <?php includeSidebar( "contributors.php" ) ?>
 
 </div>

@@ -25,6 +25,7 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="keywords" content="ajax, rap, osgi, equinox, eclipse rap, equinox rap" />
   <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/eclipse.org-common/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="/rap/_theme/reset.css" media="screen"/>
   <link rel="stylesheet" type="text/css" href="/rap/_theme/layout.css" media="screen" />
@@ -37,17 +38,16 @@
   <script type="text/javascript" src="/rap/script.js"></script>
 </head>
 <body>
-<div id="novaWrapper">
-
-  <div id="header">
-    <div id="logo">
-      <a href="http://www.eclipse.org"><img src="/eclipse.org-common/themes/Nova/images/eclipse.png" alt="Eclipse.org"/></a>
-    </div>
-  </div>
-
-  <div id="novaContent">
+	<div id="header-bar">
 EOHTML;
-    echo createRapNavigation( $navPosition );
+
+    echo createHeaderAndNavigation( $navPosition );
+    
+    echo <<<EOHTML
+	</div>
+	<div id="novaWrapper">
+		<div id="novaContent">
+EOHTML;
   }
 
   function printFooter() {
@@ -55,12 +55,7 @@ EOHTML;
     printGoogleAnalyticsJs( 'UA-910670-2' );
     printGoogleAnalyticsJs( 'UA-17128428-1' );
     echo <<<EOHTML
-
-    <br style="clear:both;height:1em;"/>&nbsp;
-
-  </div>
-
-  <div id="clearFooter"></div>
+    <div class="antifloat"></div>
     <div id="footer">
     <ul id="footernav">
       <li><a href="http://www.eclipse.org/">Eclipse</a></li>

@@ -1,6 +1,6 @@
 <?php
 
-function createRapNavigation( $navPosition ) {
+function createHeaderAndNavigation( $navPosition ) {
   $html =   createMainNavigation()
           . createHeaderBar( $navPosition[ 0 ] )
           . createJavaScript( $navPosition[ 0 ], $navPosition[ 1 ] );
@@ -9,79 +9,81 @@ function createRapNavigation( $navPosition ) {
 
 function createMainNavigation() {
   $html = <<<EOHTML
-<div id="big-header">
-  <a href="/rap/"><div id="rap-logo"></div></a>
-  <div id="rap-big-buttons">
-    <ul>
-      <li>
-        <a id="rap-button-demos" href="/rap/demos/">
-          <h3>Demos</h3>
-        </a>
-        <ul class="second-level-nav">
-          <li><a href="/rap/demos/">Online Demos</a></li>
-          <li><a href="/rap/users/">Who uses RAP?</a></li>
-        </ul>
-      </li>
-      <li>
-        <a id="rap-button-download" href="/rap/downloads/">
-          <h3>Download</h3>
-        </a>
-        <ul class="second-level-nav">
-          <li><a href="/rap/downloads/">Download RAP</a></li>
-          <li><a href="/rap/noteworthy/">New & Noteworthy</a></li>
-        </ul>
-      </li>
-      <li>
-        <a id="rap-button-help" href="/rap/support/">
-          <h3>Get Help</h3>
-        </a>
-       <ul class="second-level-nav">
-           <li>
-            <a href="/rap/support/">
-              Support
-            </a>
-          </li>
-          <li>
-            <a href="/rap/getting-started/">
-              Getting Started
-            </a>
-          </li>
-          <li>
-            <a href="/rap/support/professional-services/">
-              Professional Services
-            </a>
-          </li>
-        </ul>
-      </li>
-      <li>
-         <a id="rap-button-contribute" href="/rap/getting-involved/">
-          <h3>Contribute</h3>
-        </a>
-        <ul class="second-level-nav">
-          <li>
-            <a href="/rap/getting-involved/">
-              Getting Involved
-            </a>
-          </li>
-          <li>
-            <a href="/rap/bugs/">
-              Bugs
-            </a>
-          </li>
-          <li>
-            <a href="/rap/incubator/">
-              Incubator
-            </a>
-          </li>
-          <li>
-            <a href="/rap/source/">
-              Source Code
-            </a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <div class="stop"></div>
+<div id="header">
+  <div id="big-header">
+    <a href="/rap/"><div id="rap-logo"></div></a>
+    <div id="rap-big-buttons">
+      <ul>
+        <li>
+          <a id="rap-button-demos" href="/rap/demos/">
+            <h3>Demos</h3>
+          </a>
+          <ul class="second-level-nav">
+            <li><a href="/rap/demos/">Online Demos</a></li>
+            <li><a href="/rap/users/">Who uses RAP?</a></li>
+          </ul>
+        </li>
+        <li>
+          <a id="rap-button-download" href="/rap/downloads/">
+            <h3>Download</h3>
+          </a>
+          <ul class="second-level-nav">
+            <li><a href="/rap/downloads/">Download RAP</a></li>
+            <li><a href="/rap/noteworthy/">New & Noteworthy</a></li>
+          </ul>
+        </li>
+        <li>
+          <a id="rap-button-help" href="/rap/support/">
+            <h3>Get Help</h3>
+          </a>
+         <ul class="second-level-nav">
+             <li>
+              <a href="/rap/support/">
+                Support
+              </a>
+            </li>
+            <li>
+              <a href="/rap/getting-started/">
+                Getting Started
+              </a>
+            </li>
+            <li>
+              <a href="/rap/support/professional-services/">
+                Professional Services
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+           <a id="rap-button-contribute" href="/rap/getting-involved/">
+            <h3>Contribute</h3>
+          </a>
+          <ul class="second-level-nav">
+            <li>
+              <a href="/rap/getting-involved/">
+                Getting Involved
+              </a>
+            </li>
+            <li>
+              <a href="/rap/bugs/">
+                Bugs
+              </a>
+            </li>
+            <li>
+              <a href="/rap/incubator/">
+                Incubator
+              </a>
+            </li>
+            <li>
+              <a href="/rap/source/">
+                Source Code
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="stop"></div>
+    </div>
   </div>
 </div>
 EOHTML;
@@ -90,9 +92,11 @@ EOHTML;
 
 function createHeaderBar( $topLevel ) {
   $headerBar = '<div id="nav-bar">'
+  					 . '<div id="breadcrumb-container">'
              . createBreadcrumbMenu()
              . createAdditionalLinks( $topLevel )
-             . '<div class="stop"></div>'
+             . '<div class="antifloat"></div>'
+             . '</div>'
              . '</div>';
   return $headerBar;
 }
@@ -101,6 +105,7 @@ function createBreadcrumbMenu() {
   $pathElements = extractRequestPathElements();
   $breadcrumbEntries = createLinkURLMap( $pathElements );
   $breadcrumb = '<ul id="breadcrumb">';
+  $breadcrumb .= '<li><a href="http://eclipse.org/">eclipse.org</a></li>';
   foreach( $breadcrumbEntries as $linkName => $linkURL  ) {
     $breadcrumb .= '<li><a href="' . $linkURL . '">' . $linkName . '</a></li>';
   }
@@ -134,7 +139,7 @@ function filterPathElement( $pathElement ) {
 function createLinkURL( $pathElements, $pathLength ) {
   $linkURL = '';
   for( $i = 0; $i <= $pathLength; $i++ ) {
-    $linkURL .= '/'.$pathElements[ $i ];
+    $linkURL .= '/' . $pathElements[ $i ];
   }
   return $linkURL;
 }
@@ -155,12 +160,12 @@ function createHelpLinks() {
   <ul id="links">
     <li>
       <a id="rap-nav-getting-started" href="http://wiki.eclipse.org/RAP/FAQ">
-        <h4>FAQ</h4>
+        FAQ
       </a>
     </li>
     <li>
       <a id="rap-nav-getting-started" href="http://wiki.eclipse.org/RAP">
-        <h4>Wiki</h4>
+        Wiki
       </a>
     </li>
   </ul>
@@ -173,7 +178,7 @@ function createAboutLink() {
   <ul id="links">
     <li>
       <a href="http://eclipse.org/projects/project.php?id=rt.rap">
-        <h4>About this Project</h4>
+        About this Project
       </a>
     </li>
   </ul>

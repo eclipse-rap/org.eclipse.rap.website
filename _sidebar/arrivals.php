@@ -1,6 +1,6 @@
 <div class="sideitem">
 
-  <h6>RAP Arrivals</h6>
+  <h6>Arrivals</h6>
 
   <a style="text-decoration: none;" href="/rap/downloads/">
 

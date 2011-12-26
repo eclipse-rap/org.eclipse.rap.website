@@ -6,26 +6,239 @@ html {
   overflow: inherit; /* triggers 100% height in Opera 9.5 */
 }
 
+/* HEADER */
+
+#header-bar {
+  background-color: #31619c;
+}
+
+#header {
+  width: 980px;
+  margin: 0 auto;
+}
+
+#big-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 140px;
+}
+
+#rap-logo {
+  position: absolute;
+  left: 29px;
+  top: 36px;
+  width: 196px;
+  height: 78px;
+  background: url( "/rap/images/RAP-Logo-white.png" ) no-repeat;
+}
+
+/* TOP LEVEL NAVIGATION */
+
+#rap-big-buttons {
+  z-index: 1000;
+  position: absolute;
+  left: 282px;
+  width: 680px;
+  bottom: 17px;
+  height: auto;
+}
+
+#rap-big-buttons ul {
+  text-align: right;
+}
+
+#rap-big-buttons > ul > li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rap-big-buttons > ul > li > a {
+  display: block;
+  float: left;
+  padding: 7px 12px;
+  margin: 0 7px;
+  font-weight: bold;
+}
+
+/*
+#rap-big-buttons > ul > li > a.active {
+  border: 1px solid white;
+  padding: 6px 11px;
+}
+*/
+
+#rap-big-buttons > ul > li:hover > a {
+  text-decoration: none;
+  border: 1px solid #dedede;
+  padding: 6px 11px;
+}
+
+#rap-big-buttons h3 {
+  color: white;
+  font-size: 14pt;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#rap-big-buttons > ul > li > a:hover h3,
+#rap-big-buttons > ul > li > a.active h3 {
+  color: white;
+}
+
+#rap-big-buttons > ul li.selected > h3 {
+  color: #393939;
+}
+
+#rap-big-buttons div.rap-button-icon {
+  position: absolute;
+  left: 12px;
+  top: 13px;
+  width: 50px;
+  height: 50px;
+}
+
+/* SECOND-LEVEL NAVIGATION */
+
+.second-level-nav {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 200px;
+  top: 40px;
+  left: 7px;
+  border: 1px solid #bdbdbd;
+  border-radius: 0;
+ box-shadow: 3px 3px 7px #222222;
+  background-color: white;
+}
+
+.second-level-nav > li {
+  display: block;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.second-level-nav > li:last-child {
+  border-bottom: none;
+}
+
+.second-level-nav > li > a {
+  display: block;
+  color: #393939;
+  padding: 10px 0 10px 12px !important;
+  text-decoration: none;
+}
+
+.second-level-nav > li > a:hover,
+.second-level-nav > li:hover > a {
+  color: white;
+}
+
+.second-level-nav li:hover {
+  background-color: #31619C;
+}
+
+.second-level-nav li:hover a {
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+#nav-bar {
+  background-color: #34332f;
+}
+
+#breadcrumb-container {
+  width: 980px;
+  margin: 0 auto;
+  display: block;
+  height: 33px;
+}
+
+div#breadcrumb-container ul {
+  display: inline-block;
+  height: 33px;
+  padding-top: 7px;
+}
+
+#breadcrumb-container li {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+#breadcrumb-container a.active {
+  background-color: #c8c8c8;
+}
+
+#breadcrumb-container a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+ul#breadcrumb {
+  padding-left: 18px;
+}
+
+div#breadcrumb-container li > a {
+  color: #BDBDBD;
+  font-size: 17px;
+  font-weight: normal;
+  height: 24px;
+  padding: 9px 20px 10px 10px;
+}
+
+ul#breadcrumb > li > a {
+  background: no-repeat url(/rap/images/breadcrumb_arrow.png) right center ;
+}
+
+ul#breadcrumb > li:last-child > a {
+  background: none;
+}
+
+ul#links {
+  float: right;
+}
+
+ul#links li {
+  padding: 0 15px 0 0;
+}
+
+/* CONTENT */
+
 body {
   height: 100%; /* gives layout 100% height */
+  color: #34332f;
   width: 100%;
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+ul p {
+  padding: 0 0 15px 0;
 }
 
 #novaWrapper {
   min-height: 100%; /* gives layout 100% height */
-  width: 980px; /* centered div must be given a width */
+  width: 978px; /* centered div must be given a width */
   margin: 0 auto; /* centers #wrapper */
 }
 
 #novaContent {
   position: relative;
-  border-radius: 20px 20px 0 0;
-  -moz-border-radius: 20px 20px 0 0;
-  -webkit-border-radius: 20px 20px 0 0;
   min-height: 100%; /* gives layout 100% height */
-  border-right: 1px solid #D9D9D9;
-  border-left: 1px solid #D9D9D9;
-  background: #FFF;
+  padding-top: 25px;
+  background: white;
 }
 
 #novaContent li {
@@ -46,15 +259,15 @@ body {
 }
 
 #footer {
-  height: 47px;
-  width: 980px; /* centered div must be given a width */
-  margin: -40px auto; /* -80px sucks it back in & auto centers it */
-  background: transparent url('/eclipse.org-common/themes/Nova/images/footer.png') no-repeat;
-  padding-top: 15px;
+  color: #34332F;
+  width: 978px; /* centered div must be given a width */
+  border: 1px solid #bdbdbd;
+  background: #e5e5e5;
+  padding: 25px 0 40px 0;
+  margin: 60px 0 0 0;
 }
 
 #footer * {
-  color: #FFF;
   text-decoration: none;
   font-size: 12px;
 }
@@ -85,8 +298,8 @@ p {
 }
 
 a {
-  color: #416693;
-  font-weight: bold;
+  color: #31619c;
+  font-weight: normal;
   text-decoration: none;
   font-size: inherit;
 }
@@ -95,16 +308,10 @@ a:hover {
   text-decoration: underline;
 }
 
-body {
-  background: #EFEFEF url('/eclipse.org-common/themes/Nova/images/bg.png') repeat-x scroll;
-  font-family: Arial,sans-serif;
-  text-align: center;
-}
-
-div, span, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li,
+div, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li,
 fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
 {
-  color: #1e1e1e;
+  color: #34332F;
   font-size: 14px;
   line-height: 18px;
 }
@@ -114,8 +321,7 @@ em {
 }
 
 h1 {
-  color: #416693;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 22px;
   font-weight: bold;
   padding: 0 0 10px 0;
@@ -126,7 +332,7 @@ h1 a, h2 a, h3 a {
 }
 
 h2 {
-  color: #416693;
+  color: #31619c;
   font-size: 20px;
   line-height: 20px;
   font-weight: bold;
@@ -135,7 +341,7 @@ h2 {
 }
 
 h3 {
-  color: #416693;
+  color: #31619c;
   font-size: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -232,7 +438,7 @@ sup {
 }
 
 #leftnav li.about a {
-  color: #333333;
+  color: #31619c;
   font-size: 12px;
 }
 
@@ -246,7 +452,7 @@ sup {
 }
 
 #leftnav li.separator a {
-  color: #333333;
+  color: #31619c;
   font-size: 12px;
 }
 
@@ -265,8 +471,8 @@ sup {
 #rightcolumn {
   background: transparent;
   float: left;
-  padding-right: 15px;
   width: 240px;
+  padding: 28px 27px 20px 26px;
 }
 
 #widecontainer {
@@ -315,7 +521,7 @@ sup {
 }
 
 .moreButton a {
-  color: #595b54;
+  color: #31619c;
   display: block;
   font-size: 10px;
   height: 26px;
@@ -337,7 +543,7 @@ sup {
 }
 
 .newsPosts a.link {
-  color: #753cbc;
+  color: #31619c;
   font-size: 14px;
 }
 
@@ -365,19 +571,192 @@ sup {
   font-size: 8px;
 }
 
-/* SIDE BOXES */
+/* SLIDESHOW */
 
-.sideitem {
-  margin-bottom: 15px;
-  padding-bottom: 0;
-  border-radius: 7px 7px 0 0;
-  box-shadow: 0 0 3px #adadad;
+#slideshow {
+  position: relative;
+  padding: 29px;
+  margin-bottom: 10px;
+}
+
+img#eclipse-icon {
+  height: 60px;
+}
+
+div#heading-eclipse-icon {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+div#heading-eclipse-icon img {
+  height: 76px;
+}
+
+#slideshow > h1 {
+  color: #34332F;
+  font-size: 40px;
+  line-height: normal;
+}
+
+#slideshow > p {
+  color: #34332F;
+  font-size: 23px;
+  line-height: normal;
+}
+
+span.important {
+  color: #e95a35;
+}
+
+/* FEATURES OVERVIEW */
+
+div.antifloat {
   clear: both;
 }
 
+div#features > div.feature > div.feature-description {
+  padding: 0 0 0 70px;
+}
+
+div#features > div.feature {
+  display: block;
+  font-weight: normal;
+  background-color: transparent;
+  list-style: none;
+  float: left;
+  width: 280px;
+  height: 200px;
+  padding: 30px 23px;
+}
+
+div#features > div.feature p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+div#features > div.feature h2 {
+  color: #34332F;
+  font-size: 28px;
+  font-weight: normal;
+  padding: 0 0 20px 0;
+}
+
+div#features > div.feature > div.icon {
+  float: left;
+  width: 52px;
+  height: 63px;
+}
+
+div#features > div.feature > div.icon {
+  background-image: url( /rap/images/rap-features/features-sprite.png );
+}
+
+div#features > div.feature > div#ui-kit {
+  background-position: 0 0;
+}
+
+div#features > div.feature > div#tooling {
+  background-position: -52px 0;
+}
+
+div#features > div.feature > div#integration {
+  background-position: -104px 0;
+}
+
+div#features > div.feature > div#clustering {
+  background-position: -156px 0;
+}
+
+div#features > div.feature > div#cross-browser {
+  background-position: -208px 0;
+}
+
+div#features > div.feature > div#open-source {
+  background-position: -260px 0;
+}
+
+/* BLOGS RSS FEED ON FIRST PAGE */
+
+div#blog-posts-container {
+  border: 1px solid #d9d9d9;
+  margin: 40px 0 0 0;
+  padding: 30px 0 30px 0;
+  background: -moz-radial-gradient(left 45deg, circle farthest-side, white, #e5e5e5);
+  background: -webkit-gradient(radial, center center, 80, center center, 400, from(#fff), to(#e5e5e5));
+  background: -webkit-radial-gradient(center, #fff, #e5e5e5); /* new webkit syntax */
+  background: -o-radial-gradient(center, #fff, #e5e5e5); 
+  background: -ms-radial-gradient(center, #fff, #e5e5e5);
+  background: radial-gradient(center, circle farthest-side, #fff, #e5e5e5); /* W3C Standard */
+}
+
+div#blog-posts-container > a.rssIcon {
+  position: relative;
+  float: left;
+  left: 30px;
+  top: -4px;
+  opacity: 0.6;
+}
+
+div#blog-posts-container > a.rssIcon > img {
+  height: 25px;
+}
+
+div#blog-posts-container > a.rssIcon:hover {
+  opacity: 1;
+}
+
+div#blog-posts-container > h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #34332F;
+  padding: 0 0 30px 93px;
+}
+
+div#blog-posts > .rssBody > ul > li {
+  list-style: none;
+  width: 210px;
+  float: left;
+  padding: 0 22px 0 93px;
+  margin: 0;
+}
+
+div#blog-posts > .rssBody > ul > li > h3 {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+div#blog-posts > .rssBody > ul > li > h3 > a {
+  font-weight: normal;
+}
+
+div#blog-posts > .rssBody > ul > li > p {
+  padding: 0;
+  margin: 0;
+}
+
+/* SIDE BOXES */
+
+.sideitem {
+  margin-bottom: 40px;
+  clear: both;
+}
+
+.sideitem h6 {
+  background-color: #31619C;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 5px 8px 10px;
+}
+
 .sideitemcontent {
-  border: 1px solid #bdbdbd;
   border-top: none;
+  padding-top: 20px;
 }
 
 .sideitem ul, .sideitem ol {
@@ -389,53 +768,24 @@ sup {
   padding: 5px;
 }
 
-.sideitem h6 {
-  background-color: #e8e7dd;
-  border-bottom: 2px solid #FFF;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-topright: 3px;
-  padding: 8px 5px;
-}
-
-.sideitem li {
-  padding: 0 10px 5px 0;
-}
-
 .sideitem ul, .sideitem ol, .sideitem form, .sideitem p {
   padding: 5px;
 }
 
 /* Lists in side boxes */
 
-.sideitem h6 {
-  background-color: #416693;
-  color: #ffffff;
-  border-bottom: none;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 0px;
-  border-radius: 7px 7px 0 0;
-  -moz-border-radius: 7px 7px 0 0;
-  -webkit-border-top-left-radius: 7px 7px 0 0;
-  padding: 8px 5px 8px 10px;
-}
-
-#novaContent .sideitem > ul {
+#novaContent .sideitem  ul {
   margin: 0;
   padding: 0;
 }
 
-#novaContent .sideitem > ul > li {
-  margin: 0 0 2px;
-  padding: 5px 15px;
-  list-style-type: none;
+#novaContent .sideitem  ul li {
   list-style-image: none;
+  margin: 0;
+  padding: 0 0 20px 10px;
 }
 
-#novaContent .sideitem > ul > li:last-child {
+#novaContent .sideitem ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -451,10 +801,6 @@ div.noteworthy {
   margin: 20px 0 40px 0;
 }
 
-#header {
-  height: 50px;
-}
-
 #logo {
   float: left;
   z-index: 9999;
@@ -462,212 +808,6 @@ div.noteworthy {
   margin: 0;
   padding: 0;
   border: 0;
-}
-
-#big-header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 978px;
-  height: 140px;
-  background: url( "/rap/images/header.png" ) no-repeat white;
-  border-radius: 20px 20px 0 0;
-  -moz-border-radius: 20px 20px 0 0;
-  -webkit-border-radius: 20px 20px 0 0;
-}
-
-#rap-logo {
-  position: absolute;
-  left: 29px;
-  top: 36px;
-  width: 196px;
-  height: 78px;
-  background: url( "/rap/images/RAP-Logo-white.png" ) no-repeat;
-}
-
-/* TOP LEVEL NAVIGATION */
-
-#rap-big-buttons {
-  z-index: 1000;
-  position: absolute;
-  left: 282px;
-  width: 680px;
-  bottom: 17px;
-  height: auto;
-}
-
-#rap-big-buttons ul {
-  text-align: right;
-}
-
-#rap-big-buttons > ul > li {
-  position: relative;
-  display: inline-block;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#rap-big-buttons > ul > li > a {
-  display: block;
-  float: left;
-  padding: 7px 12px;
-  margin: 0 7px;
-  font-weight: bold;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-#rap-big-buttons > ul > li > a.active {
-  background-color: #c8c8c8;
-  box-shadow: 0 0 4px black;
-}
-
-#rap-big-buttons > ul > li > a:hover {
-  text-decoration: none;
-  background-color: white;
-  box-shadow: 0 0 4px black;
-}
-
-#rap-big-buttons h3 {
-  color: white;
-  font-size: 14pt;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-#rap-big-buttons > ul > li > a:hover h3,
-#rap-big-buttons > ul > li > a.active h3 {
-  color: #393939;
-}
-
-#rap-big-buttons > ul li.selected > h3 {
-  color: #393939;
-}
-
-#rap-big-buttons div.rap-button-icon {
-  position: absolute;
-  left: 12px;
-  top: 13px;
-  width: 50px;
-  height: 50px;
-}
-
-/* SECOND-LEVEL NAVIGATION */
-
-.second-level-nav {
-  display: none;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  width: 200px;
-  top: 40px;
-  left: 7px;
-  border-radius: 3px;
-  box-shadow: 0 0 4px black;
-  background-color: white;
-}
-
-.second-level-nav > li {
-  display: block;
-  padding: 0 !important;
-  margin: 0 !important;
-  border-radius: 2px;
-  border-bottom: 1px solid #bdbdbd;
-}
-
-.second-level-nav > li > a {
-  display: block;
-  color: #393939;
-  padding: 10px 0 10px 12px !important;
-  text-decoration: none;
-}
-
-.second-level-nav > li > a:hover,
-.second-level-nav > li:hover > a {
-  color: white;
-}
-
-.second-level-nav li:hover {
-  background-color: #416693;
-}
-
-.second-level-nav li:hover a {
-  box-shadow: none !important;
-  cursor: pointer;
-}
-
-#nav-bar {
-  display: block;
-  height: 33px;
-  background-color: #c8c8c8;
-}
-
-#nav-bar > ul#links {
-  display: block;
-  padding: 0 20px 0 0;
-  margin: 0 0 0 0;
-  float: right;
-}
-
-#nav-bar > ul#links li {
-  padding: 0 15px 0 0;
-}
-
-#nav-bar li {
-  display: block;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  float: left;
-}
-
-#nav-bar a.active {
-  background-color: #c8c8c8;
-}
-
-#nav-bar a.active h4 {
-  color: #393939;
-}
-
-#nav-bar a:hover {
-  text-decoration: none;
-}
-
-#nav-bar a:hover h4 {
-  color: #393939;
-}
-
-#nav-bar h4 {
-  font-weight: normal;
-  font-size: 17px;
-  color: #416693;
-  text-shadow: 0 1px 1px white;
-  padding: 9px 0;
-}
-
-ul#breadcrumb {
-  border-radius: 0 6px 6px 0;
-  display: inline-block;
-  height: 33px;
-  padding: 8px 0 0 18px;
-}
-
-ul#breadcrumb > li > a {
-  background: no-repeat url(/rap/images/breadcrumb_arrow.png) right center ;
-  color: #4d4d4d;
-  font-size: 17px;
-  font-weight: normal;
-  height: 24px;
-  margin: 0;
-  padding: 9px 20px 10px 10px;
-  text-shadow: 0 1px 0 white;
-}
-
-ul#breadcrumb > li:last-child > a {
-  background: none;
 }
 
 #maincontent {
@@ -771,12 +911,8 @@ div.box div {
 
 #midcolumn {
   width: 627px;
-  padding: 37px 20px 20px 27px;
+  padding: 28px 20px 20px 27px;
   margin-right: 11px;
-}
-
-#rightcolumn {
-  padding: 37px 27px 20px 20px;
 }
 
 /* Fix horizontal position of the top-left Eclipse logo */
@@ -928,7 +1064,7 @@ span.terminal-text {
   color: white;
   width: 90px;
   text-alignment: center;
-  font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+  font: 14px sans-serif;
 }
 
 span.terminal-arrived {
@@ -951,19 +1087,10 @@ span.terminal-overlay {
   top: 10px;
 }
 
-/* RSS */
+/* RSS icon in side bar item */
 
-.rss {
+div.sideitem .rssIcon {
   float: right;
-  width: 16px;
-}
-
-.rssRow p {
-  padding: 0;
-}
-
-.rssIcon {
-  position: relative;
-  left: 83px;
-  top: 2px;
+  margin-right: 8px;
+  margin-top: 2px;
 }

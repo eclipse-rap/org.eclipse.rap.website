@@ -240,6 +240,7 @@
 
 <div id="rightcolumn">
 
+  <?php includeSidebar( "eclipse.php" ) ?>
   <?php includeSidebar( "rap-feed.php" ) ?>
   <?php includeSidebar( "contributors.php" ) ?>
 
