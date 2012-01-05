@@ -7,6 +7,7 @@
   printHeader( $title, $navPosition );
 
 ?>
+
 <div id="slideshow">
   <h1>
     Enabling modular business apps<br/>
@@ -24,6 +25,7 @@
         alt="Eclipse.org icon"></a>
   </div>
 </div>
+
 <div id="features">
   <div class="feature">
     <div id="ui-kit" class="icon"></div>
@@ -32,18 +34,20 @@
       <p>
         RAP lets you develop modern web UIs with a real widget toolkit with SWT API,
         which includes powerful features like drag & drop, loading data on demand, inline editing,
-        theming and drawing.
+        and drawing.
+      </p><p>
         Using the JFace APIs, it lets you access huge data with incredibly few code.
         <!--<br/><a href="">learn more</a>-->
       </p>
     </div>
   </div>
+
   <div class="feature">
     <div id="cross-browser" class="icon"></div>
     <div class="feature-description">
       <h2>Cross Platform</h2>
       <p>
-        RAP runs in all relevant web browsers, no browser add-ons are required.
+        RAP runs in all relevant web browsers, without any add-ons required.
         Many advanced features like gradients are rendered even in browsers without CSS3 support.
       </p><p>
         With a JSON-based protocol, even non-browser clients can be connected.
@@ -51,6 +55,7 @@
       </p>
     </div>
   </div>
+
   <div class="feature">
     <div id="integration" class="icon"></div>
     <div class="feature-description">
@@ -68,6 +73,7 @@
       </p>
     </div>
   </div>
+
   <div class="feature">
     <div id="tooling" class="icon"></div>
     <div class="feature-description">
@@ -82,6 +88,7 @@
       </p>
     </div>
   </div>
+
   <div class="feature">
     <div id="clustering" class="icon"></div>
     <div class="feature-description">
@@ -96,6 +103,7 @@
       </p>
     </div>
   </div>
+
   <div class="feature">
     <div id="open-source" class="icon"></div>
     <div class="feature-description">
