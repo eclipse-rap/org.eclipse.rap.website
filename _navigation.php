@@ -29,7 +29,7 @@ function createMainNavigation() {
           </a>
           <ul class="second-level-nav">
             <li><a href="/rap/downloads/">Download RAP</a></li>
-            <li><a href="/rap/noteworthy/">New & Noteworthy</a></li>
+            <li><a href="/rap/noteworthy/">New and Noteworthy</a></li>
           </ul>
         </li>
         <li>
@@ -132,6 +132,7 @@ function createLinkURLMap( $pathElements ) {
 function filterPathElement( $pathElement ) {
   $result = preg_replace( "!(\.php|\.html*)?$!", "", $pathElement );
   $result = preg_replace( "!(news_)?!", "", $result );
+  $result = preg_replace( "!(\?build=)?!", "", $result );
   $result = str_replace( "_", " ", $result);
   return $result;
 }

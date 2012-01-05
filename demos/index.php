@@ -53,8 +53,9 @@
       <h3>RAP Workbench Demo</h3>
       <p>
         This application shows a simple project management system, that
-        is build on top of RAP. Though it is not meant to be production
-        ready it shows a good bunch of the framework's possibilities.</p>
+        is built on top of RAP. Though it is not meant to be production
+        ready it shows a good deal of the framework's possibilities.
+      </p>
       <p>
         To demonstrate the NLS support, translations for
         <a href="http://rap.eclipsesource.com/workbenchdemo/rms?locale=en" target="_blank">English</a>,

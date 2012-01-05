@@ -12,8 +12,8 @@
   <h1>Professional Services</h1>
 
   <p>
-    Although Open Source software is freely available to everyone doesn't mean that everyone is an expert in this code.
-
+    Although Open Source software is freely available to everyone it doesn't mean that everyone
+    is an expert in this code.
     Enterprise software built with Open Source components requires experienced developers who
     know the internal structure of these components and can quickly and
     efficiently eliminate problems.
@@ -24,9 +24,7 @@
 
   <p>
     EclipseSource has contributed RAP to Eclipse and is still the driving force behind the project.
-    
     In many customer projects, we developed enterprise applications based on RAP.
-    
     We've helped customers to extend RAP to meet their requirements and have developed
     custom components.
 

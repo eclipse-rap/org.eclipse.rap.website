@@ -36,7 +36,7 @@
         which includes powerful features like drag & drop, loading data on demand, inline editing,
         and drawing.
       </p><p>
-        Using the JFace APIs, it lets you access huge data with incredibly few code.
+        Using the JFace APIs, it makes accessing complex data models incredibly simple.
         <!--<br/><a href="">learn more</a>-->
       </p>
     </div>
@@ -50,7 +50,7 @@
         RAP runs in all relevant web browsers, without any add-ons required.
         Many advanced features like gradients are rendered even in browsers without CSS3 support.
       </p><p>
-        With a JSON-based protocol, even non-browser clients can be connected.
+        With a JSON-based protocol, other clients can be connected.
         <!--<br/><a href="">learn more</a>-->
       </p>
     </div>
@@ -92,13 +92,12 @@
   <div class="feature">
     <div id="clustering" class="icon"></div>
     <div class="feature-description">
-      <h2>Code Re-use</h2>
+      <h2>Single Sourcing</h2>
       <p>
-        With RAP, you can re-use your code for different target platforms,
-        even code that has been written for Eclipse RCP can run in a web browser.
+        With RAP, you can re-use your code for different target platforms.
+        Even code that has been written for Eclipse RCP can run in a web browser.
       </p><p>
-        Existing Eclipse plugins such as EMF, BIRT, or JGit can easily be included in a RAP
-        application.
+        Existing Eclipse plugins such as EMF, BIRT, or JGit can easily be included in RAP apps.
         <!--<br/><a href="">learn more</a>-->
       </p>
     </div>
@@ -109,8 +108,8 @@
     <div class="feature-description">
       <h2>Open Source</h2>
       <p>
-        RAP is published under the Eclipse Public Licence.
-        As an Eclipse project, it has undergone the thorough IP checks at Eclipse.
+        As an Eclipse project, RAP is published under the EPL
+        and benefits from the Eclipse Foundation's high standards of IP management.
       </p><p>
         RAP is part of the annual Eclipse release and always delivers on time.
         <!--<br/><a href="">learn more</a>-->
