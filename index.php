@@ -32,11 +32,13 @@
     <div class="feature-description">
       <h2>Widget Toolkit</h2>
       <p>
-        RAP lets you develop modern web UIs with a real widget toolkit with SWT API,
+        RAP lets you develop modern web UIs with a real widget toolkit with
+        <a href="http://eclipse.org/swt/" title="Standard Widget Toolkit">SWT</a> API,
         which includes powerful features like drag & drop, loading data on demand, inline editing,
         and drawing.
       </p><p>
-        Using the JFace APIs, it makes accessing complex data models incredibly simple.
+        Using the <a href="http://wiki.eclipse.org/JFace">JFace</a> APIs,
+        it makes accessing complex data models incredibly simple.
         <!--<br/><a href="">learn more</a>-->
       </p>
     </div>
