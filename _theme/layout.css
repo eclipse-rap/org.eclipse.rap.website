@@ -320,42 +320,39 @@ em {
   font-style: italic;
 }
 
+h1, h2, h3, h4 {
+  line-height: normal;
+  font-weight: bold;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 28px;
   line-height: 22px;
   font-weight: bold;
-  padding: 0 0 10px 0;
-}
-
-h1 a, h2 a, h3 a {
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 h2 {
-  color: #31619c;
   font-size: 20px;
-  line-height: 20px;
-  font-weight: bold;
+  margin-top: 10px;
   margin-bottom: 5px;
-  padding-top: 10px;
 }
 
 h3 {
-  color: #31619c;
   font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
+  margin-top: 12px;
   margin-bottom: 5px;
-  padding-top: 25px;
 }
 
 h4 {
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  padding-top: 5px;
-  color: #222;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 2px;
 }
 
 html {
@@ -916,12 +913,6 @@ div#logo {
   height: 91px;
   top: -1px;
   left: 793px;
-}
-
-/* More space above sub-headers */
-
-h3 {
-  margin-top: 12px;
 }
 
 /* Customize margin for paragraphs */
