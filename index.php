@@ -108,7 +108,8 @@
     <div class="feature-description">
       <h2>Open Source</h2>
       <p>
-        As an Eclipse project, RAP is published under the EPL
+        As an Eclipse project, RAP is published under the
+        <a href="http://eclipse.org/legal/epl-v10.html" title="Eclipse Public License">EPL</a>
         and benefits from the Eclipse Foundation's high standards of IP management.
       </p><p>
         RAP is part of the annual Eclipse release and always delivers on time.
