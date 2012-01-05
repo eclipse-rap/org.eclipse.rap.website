@@ -13,13 +13,12 @@
   <h1>Built on RAP</h1>
 
   <p>
-    RAP is mainly used for building business applications, many of them are never seen outside of
+    RAP is mainly used for building business applications, many of which are never seen outside of
     corporate walls.
-    We'd be happy to learn about your projects with RAP.
+    We'd be happy to learn about your RAP projects.
 
-    If you'd like your project listed on this page, please drop us a note to
-    <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev@eclipse.org</a>
-    or contact one of the committers.
+    Just drop us a line at the
+    <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev</a> mailing list.
   </p>
 
   <div class="box">
@@ -31,7 +30,7 @@
     <div>
       <h3>CAS PIA</h3>
       <p>
-        A powerful customer relationship management system based on RAP with a great look&feel.
+        A powerful customer relationship management system based on RAP with a great look and feel.
         Provides contact management, calendar, document management, and many more features.
       </p>
       <h4>References:</h4>
