@@ -101,6 +101,28 @@ EOHTML;
     return $proc->transformToXML( $xmlDoc );
   }
 
+  function createBuglistUrl( $targetMilestones ) {
+    $parameters[ 'query_format' ] = 'advanced';
+    $parameters[ 'classification' ] = 'RT';
+    $parameters[ 'product' ] = 'RAP';
+    $parameters[ 'bug_status' ] = array( 'RESOLVED', 'VERIFIED', 'CLOSED' );
+    $parameters[ 'target_milestone' ] = $targetMilestones;
+    foreach( $parameters as $key => $value ) {
+      $values = is_array( $value ) ? $value : array( $value );
+      foreach( $values as $element ) {
+        $parts[] = $key . '=' . rawurlencode( $element );
+      }
+    }
+    return 'https://bugs.eclipse.org/bugs/buglist.cgi?' . join( "&", $parts );
+  }
+
+  function formatDate( $input ) {
+    $months = array( "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December" );
+    $date = explode( "-", $input );
+    return $months[ $date[ 1 ] - 1 ] . " " . $date[ 2 ] . ", " . $date[ 0 ];
+  }
+
   function includeSidebar( $filename ) {
     include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_sidebar/" . $filename );
   }
