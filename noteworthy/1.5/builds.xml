@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ Copyright (c) 2011, 2012 EclipseSource and others.
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ -->
+
+<builds version="1.5"
+    downloadPath="1.5/"
+    runtimeSite="http://download.eclipse.org/rt/rap/1.5/runtime"
+    toolingSite="http://download.eclipse.org/rt/rap/1.5/tooling"
+    runtimeDesc="based on Eclipse 3.8"
+    toolingDesc="for use with Eclipse 3.7, 3.8 and 4.2"
+    simultaneousRelease="Juno">
+
+  <build name="1.5 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2011-08-19"
+      news="1.5/news_M1.php"
+      toolingZip="rap-tooling-1.5.0-M1-20110816-0954.zip"
+      runtimeZip="rap-runtime-1.5.0-M1-20110816-0926.zip" />
+
+  <build name="1.5 M2" type="M"
+      shortname="M2"
+      status="completed"
+      publishDate="2011-09-30"
+      news="1.5/news_M2.php"
+      toolingZip="rap-tooling-1.5.0-M2-20110927-1701.zip"
+      runtimeZip="rap-runtime-1.5.0-M2-20110926-1702.zip" />
+
+  <build name="1.5 M3" type="M"
+      shortname="M3"
+      status="completed"
+      publishDate="2011-11-11"
+      news="1.5/news_M3.php"
+      toolingZip="rap-tooling-1.5.0-M3-20111107-1628.zip"
+      runtimeZip="rap-runtime-1.5.0-M3-20111108-1014.zip" />
+
+  <build name="1.5 M4" type="M"
+      shortname="M4"
+      status="completed"
+      publishDate="2011-12-16"
+      news="1.5/news_M4.php"
+      toolingZip="rap-tooling-1.5.0-M4-20111212-1416.zip"
+      runtimeZip="rap-runtime-1.5.0-M4-20111213-2043.zip" />
+
+  <build name="1.5 M5" type="M"
+      shortname="M5"
+      status="planned"
+      publishDate="2012-02-03"
+      news="1.5/news_M5.php" />
+
+  <build name="1.5 M6" type="M"
+      shortname="M6"
+      status="planned"
+      publishDate="2012-03-23"
+      news="1.5/news_M6.php" />
+
+  <build name="1.5 M7" type="M"
+      shortname="M7"
+      status="planned"
+      publishDate="2012-05-11"
+      news="1.5/news_M7.php" />
+
+  <build name="1.5 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2012-05-25"
+      news="1.5/news_RC.php" />
+
+  <build name="1.5 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2012-06-01"
+      news="1.5/news_RC.php" />
+
+  <build name="1.5 RC3" type="RC"
+      shortname="RC3"
+      status="planned"
+      publishDate="2012-06-08"
+      news="1.5/news_RC.php" />
+
+  <build name="1.5" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2012-06-27"
+      news="1.5/" />
+
+  <build name="1.5.1" type="SR"
+      shortname="SR1"
+      status="planned"
+      publishDate="2012-09-24"
+      news="1.5/" />
+
+  <build name="1.5.2" type="SR"
+      shortname="SR2"
+      status="planned"
+      publishDate="2013-02-25"
+      news="1.5/" />
+
+</builds>

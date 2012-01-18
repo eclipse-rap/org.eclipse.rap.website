@@ -1,4 +1,4 @@
 <?php
-  $buildName = "M2";
+  $buildName = "M6";
   include( "./_news.php" );
 ?>
