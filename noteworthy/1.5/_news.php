@@ -6,7 +6,7 @@
   require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_Builds.php" );
   require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_News.php" );
 
-  $builds = new Builds( "builds.xml" );
+  $builds = new Builds( $_SERVER['DOCUMENT_ROOT'] . "/rap/downloads/1.5/builds.xml" );
   if( $builds->hasError() ) {
     echo '<div class="error">There was a problem loading the build data for this site.</div>';
   }
