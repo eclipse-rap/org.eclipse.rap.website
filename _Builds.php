@@ -32,13 +32,11 @@ class Builds {
     return $result;
   }
 
-  function getLatestCompletedBuild() {
+  function getLastCompletedBuild() {
     $result = NULL;
-    if( $buildName ) {
-      $selectedBuilds = $this->builds->xpath( "/builds/build[@status = 'completed']" );
-      if( count( $selectedBuilds ) === 1 ) {
-        $result = new Build( $this, $selectedBuilds[ 0 ] );
-      }
+    $selectedBuilds = $this->builds->xpath( "/builds/build[@status = 'completed']" );
+    if( count( $selectedBuilds ) > 0 ) {
+      $result = new Build( $this, end( $selectedBuilds ) );
     }
     return $result;
   }
@@ -56,6 +54,10 @@ class Builds {
 
   function getVersion() {
     return (string) $this->builds[ "version" ];
+  }
+
+  function getDownloadPath() {
+    return (string) $this->builds[ "downloadPath" ];
   }
 
   function getSimultaneousRelease() {

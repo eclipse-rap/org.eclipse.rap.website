@@ -1,6 +1,7 @@
 <?php
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
+  require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_Builds.php" );
 
   $title = "RAP - Downloads";
   $navPosition = array( "download", "index" );
@@ -8,10 +9,14 @@
 
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
-  $stableBuilds = simplexml_load_file( "./1.5/builds.xml" );
   $releaseBuilds = simplexml_load_file( "./1.4/builds.xml" );
 
-  $stableBuild = $stableBuilds->completed->build[0];
+  $stableBuilds = new Builds( "./1.5/builds.xml" );
+  if( $stableBuilds->hasError() ) {
+    echo '<div class="error">There was a problem loading the build data for this site.</div>';
+  }
+
+  $stableBuild = $stableBuilds->getLastCompletedBuild();
   $releaseBuild = $releaseBuilds->completed->build[0];
 
   $downloadUrl = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/";
@@ -29,15 +34,14 @@
       $result .= " Release";
     } else if( $build[ "type" ] == "SR" ) {
       $result .= " Service Release";
+    } else {
+      $result .= $build[ "type" ];
     }
     return $result;
   }
 
   function getBuildDate( $build ) {
-    $months = array( "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December" );
-    $date = explode( "-", $build[ "publishDate" ] );
-    return $months[ $date[ 1 ] - 1 ] . " " . $date[ 2 ] . ", " . $date[ 0 ];
+    return formatDate( (string) $build[ "publishDate" ] );
   }
 
   function getReleaseNotesLink( $build, $newsUrl ) {
@@ -48,30 +52,29 @@
     return $result;
   }
 
-  $STABLE_RUNTIME_DESCRIPTION = $stableBuilds[ "runtimeDesc" ];
-  $STABLE_TOOLING_DESCRIPTION = $stableBuilds[ "toolingDesc" ];
+  $STABLE_RUNTIME_DESCRIPTION = $stableBuilds->getDescription( "runtime" );
+  $STABLE_TOOLING_DESCRIPTION = $stableBuilds->getDescription( "tooling" );
   $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds[ "runtimeDesc" ];
   $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds[ "toolingDesc" ];
-  $STABLE_NAME = getBuildName( $stableBuild );
+  $STABLE_NAME = $stableBuild->getName();
   $RELEASE_NAME = getBuildName( $releaseBuild );
-  $STABLE_DATE = getBuildDate( $stableBuild );
+  $STABLE_DATE = $stableBuild->getPublishDate();
   $RELEASE_DATE = getBuildDate( $releaseBuild );
-  $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild[ "news" ];
+  $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild->getNews();
   $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild[ "news" ];
   $RELEASE_NOTES_LINK = getReleaseNotesLink( $releaseBuild, $newsUrl );
-  $STABLE_RUNTIME_ZIP = $stableBuild[ "runtimeZip" ];
-  $STABLE_TOOLING_ZIP = $stableBuild[ "toolingZip" ];
+  $STABLE_RUNTIME_ZIP = $stableBuild->getZipFile( "runtime" );
+  $STABLE_TOOLING_ZIP = $stableBuild->getZipFile( "tooling" );
   $RELEASE_RUNTIME_ZIP = $releaseBuild[ "runtimeZip" ];
   $RELEASE_TOOLING_ZIP = $releaseBuild[ "toolingZip" ];
-  $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds[ "downloadPath" ] . $stableBuild[ "runtimeZip" ];
-  $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds[ "downloadPath" ] . $stableBuild[ "toolingZip" ];
+  $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "runtimeZip" );
+  $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "toolingZip" );
   $RELEASE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $releaseBuilds[ "downloadPath" ] . $releaseBuild[ "runtimeZip" ];
   $RELEASE_TOOLING_DOWNLOAD_URL = $downloadUrl . $releaseBuilds[ "downloadPath" ] . $releaseBuild[ "toolingZip" ];
-  $STABLE_RUNTIME_UPDATE_SITE = $stableBuilds[ "runtimeSite" ];
-  $STABLE_TOOLING_UPDATE_SITE = $stableBuilds[ "toolingSite" ];
+  $STABLE_RUNTIME_UPDATE_SITE = $stableBuilds->getUpdateSite( "runtime" );
+  $STABLE_TOOLING_UPDATE_SITE = $stableBuilds->getUpdateSite( "tooling" );
   $RELEASE_RUNTIME_UPDATE_SITE = $releaseBuilds[ "runtimeSite" ];
   $RELEASE_TOOLING_UPDATE_SITE = $releaseBuilds[ "toolingSite" ];
-  $NIGHTLY_NOTEWORTHY_URL = $newsUrl . $stableBuild[ "upcomingNews" ];
 
 ?>
 
@@ -176,9 +179,7 @@
       <p>
         <?php echo $STABLE_TOOLING_DESCRIPTION ?>
         <br/>
-        Published: today
-        <br/>
-        <a href="<?php echo $NIGHTLY_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
+        Published: daily
       </p>
 
       <p class="download-row">
