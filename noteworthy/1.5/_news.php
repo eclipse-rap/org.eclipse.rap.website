@@ -3,8 +3,8 @@
   /* $buildName */
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
-  require_once( "_Builds.php" );
-  require_once( "_News.php" );
+  require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_Builds.php" );
+  require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_News.php" );
 
   $builds = new Builds( "builds.xml" );
   if( $builds->hasError() ) {

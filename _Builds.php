@@ -32,6 +32,17 @@ class Builds {
     return $result;
   }
 
+  function getLatestCompletedBuild() {
+    $result = NULL;
+    if( $buildName ) {
+      $selectedBuilds = $this->builds->xpath( "/builds/build[@status = 'completed']" );
+      if( count( $selectedBuilds ) === 1 ) {
+        $result = new Build( $this, $selectedBuilds[ 0 ] );
+      }
+    }
+    return $result;
+  }
+
   function getPreviousBuilds( $buildName ) {
     $result = array();
     foreach( $this->builds->build as $build ) {
@@ -44,7 +55,25 @@ class Builds {
   }
 
   function getVersion() {
-    return $this->builds[ "version" ];
+    return (string) $this->builds[ "version" ];
+  }
+
+  function getSimultaneousRelease() {
+    return (string) $this->builds[ "simultaneousRelease" ];
+  }
+
+  function getUpdateSite( $feature ) {
+    if( $feature === "runtime" || $feature === "tooling" ) {
+      return (string) $this->builds[ $feature . "Site" ];
+    }
+    return NULL;
+  }
+
+  function getDescription( $feature ) {
+    if( $feature === "runtime" || $feature === "tooling" ) {
+      return (string) $this->builds[ $feature . "Desc" ];
+    }
+    return NULL;
   }
 
 }
@@ -73,6 +102,21 @@ class Build {
 
   function getPublishDate() {
     return (string) $this->build[ "publishDate" ];
+  }
+
+  function getNews() {
+    return (string) $this->build[ "news" ];
+  }
+
+  function getReleaseNotes() {
+    return (string) $this->build[ "relnotes" ];
+  }
+
+  function getZipfile( $feature ) {
+    if( $feature === "runtime" || $feature === "tooling" ) {
+      return (string) $this->build[ $feature . "Zip" ];
+    }
+    return NULL;
   }
 
   function getType() {
