@@ -34,7 +34,7 @@
 
   <p>
     Here's a list of the most noteworthy things in the RAP
-    <?php echo $build->getName(); ?> <?php echo $build->getType(); ?>
+    <?php echo $build->getName(); ?> <?php echo strtolower( $build->getType() ); ?>
     <?php if( $build->isCompleted() ) { ?>
       which is available for <a href="http://www.eclipse.org/rap/downloads/">download</a>
       since <?php echo formatDate( $build->getPublishDate() ) ?>.
@@ -63,7 +63,7 @@
 
   <p>
     <a href="<?= createBuglistUrl( $build->getTargetMilestones() ) ?>">This list</a>
-    shows all bugs that have been fixed for this <?php echo $build->getType(); ?>.
+    shows all bugs that have been fixed for this <?php echo strtolower( $build->getType() ); ?>.
   </p>
 
   <h2>Previous Builds</h2>
@@ -74,7 +74,7 @@
   </p>
   <ul>
     <? foreach( $builds->getPreviousBuilds( $build->getShortName() ) as $prevBuild ) { ?>
-    <?   if( $prevBuild->getType() === "milestone build" ) { ?>
+    <?   if( $prevBuild->getType() === "Milestone Build" ) { ?>
       <li>
         <a href="./?build=<?php echo $prevBuild->getShortName(); ?>">News for RAP <?php echo $prevBuild->getName(); ?></a>
       </li>

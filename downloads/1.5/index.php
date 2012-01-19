@@ -9,23 +9,17 @@
   }
 
   $title = "RAP - " . $builds->getVersion() . " Downloads";
-  $navPosition = array( "download", "achive" );
+  $navPosition = array( "download", "archive" );
   printHeader( $title, $navPosition );
 
   function getBuildTypeHeader( $type ) {
-    if( $type === "milestone build" ) {
-      return "Milestone Builds";
+    if( $type === "Release" ) {
+      return $type;
     }
-    if( $type === "release candidate" ) {
-      return "Release Candidates";
-    }
-    if( $type === "release" ) {
-      return "Release";
-    }
-    if( $type === "service release" ) {
-      return "Service Releases";
-    }
+    return $type . "s";
   }
+
+  $downloadPath = 'http://www.eclipse.org/downloads/download.php?file=/rt/rap/' . $builds->getDownloadPath();
 
 ?>
 
@@ -39,7 +33,7 @@
       - together with Eclipse <?= $builds->getSimultaneousRelease(); ?>
 <? } ?>
     <br/>
-    <a href="/rap/noteworthy/<?= $releaseBuild[ "news" ] ?>">New &amp; Noteworthy</a>
+    <a href="/rap/noteworthy/<?= $builds->findBuild( "R" )->getNews() ?>">New &amp; Noteworthy</a>
   </p>
 
   <h2>Features</h2>

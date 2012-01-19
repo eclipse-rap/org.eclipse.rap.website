@@ -40,10 +40,6 @@
     return $result;
   }
 
-  function getBuildDate( $build ) {
-    return formatDate( (string) $build[ "publishDate" ] );
-  }
-
   function getReleaseNotesLink( $build, $newsUrl ) {
     $result = "";
     if( $build[ "relnotes" ] != "" ) {
@@ -56,10 +52,10 @@
   $STABLE_TOOLING_DESCRIPTION = $stableBuilds->getDescription( "tooling" );
   $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds[ "runtimeDesc" ];
   $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds[ "toolingDesc" ];
-  $STABLE_NAME = $stableBuild->getName();
+  $STABLE_NAME = $stableBuild->getName() . ' ' . $stableBuild->getType();
   $RELEASE_NAME = getBuildName( $releaseBuild );
-  $STABLE_DATE = $stableBuild->getPublishDate();
-  $RELEASE_DATE = getBuildDate( $releaseBuild );
+  $STABLE_DATE = formatDate( $stableBuild->getPublishDate() );
+  $RELEASE_DATE = formatDate( $releaseBuild[ "publishDate" ] );
   $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild->getNews();
   $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild[ "news" ];
   $RELEASE_NOTES_LINK = getReleaseNotesLink( $releaseBuild, $newsUrl );
@@ -67,8 +63,8 @@
   $STABLE_TOOLING_ZIP = $stableBuild->getZipFile( "tooling" );
   $RELEASE_RUNTIME_ZIP = $releaseBuild[ "runtimeZip" ];
   $RELEASE_TOOLING_ZIP = $releaseBuild[ "toolingZip" ];
-  $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "runtimeZip" );
-  $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "toolingZip" );
+  $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "runtime" );
+  $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "tooling" );
   $RELEASE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $releaseBuilds[ "downloadPath" ] . $releaseBuild[ "runtimeZip" ];
   $RELEASE_TOOLING_DOWNLOAD_URL = $downloadUrl . $releaseBuilds[ "downloadPath" ] . $releaseBuild[ "toolingZip" ];
   $STABLE_RUNTIME_UPDATE_SITE = $stableBuilds->getUpdateSite( "runtime" );
@@ -281,9 +277,8 @@
       <p>
         <?php echo $STABLE_RUNTIME_DESCRIPTION ?>
         <br/>
-        Published: today
+        Published: daily
         <br/>
-        <a href="<?php echo $NIGHTLY_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
       </p>
       <p class="download-row">
         <img src="/rap/images/site.gif" />

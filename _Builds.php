@@ -114,7 +114,7 @@ class Build {
     return (string) $this->build[ "relnotes" ];
   }
 
-  function getZipfile( $feature ) {
+  function getZipFile( $feature ) {
     if( $feature === "runtime" || $feature === "tooling" ) {
       return (string) $this->build[ $feature . "Zip" ];
     }
@@ -124,13 +124,13 @@ class Build {
   function getType() {
     $result = NULL;
     if( $this->build[ "type" ] == "M" ) {
-      $result = "milestone build";
+      $result = "Milestone Build";
     } else if( $this->build[ "type" ] == "RC" ) {
-      $result = "release candidate";
+      $result = "Release Candidate";
     } else if( $this->build[ "type" ] == "R" ) {
-      $result = "release";
+      $result = "Release";
     } else if( $this->build[ "type" ] == "SR" ) {
-      $result = "service release";
+      $result = "Service Release";
     }
     return $result;
   }
