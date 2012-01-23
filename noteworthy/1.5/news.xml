@@ -12,17 +12,19 @@
   <entry category="RWT" milestone="M1">
     <title>q07 Fragment removed</title>
     <description>
-      The fragment org.eclipse.rap.rwt.q07 is no longer needed and has been removed.
-      The contents are now located in the org.eclipse.rap.rwt bundle.
       <p>
-      The q07 fragment had originally been introduced to be able to support different versions of
-      the qx client library. Meanwhile, we decided to maintain and evolve our own copy of this
-      client library
-      (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=320993">bug 320993</a>),
-      so the fragment is not needed anymore.
-      However, with the new protocol
-      (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>),
-      it will become possible to plug in alternative clients for RAP.
+        The fragment org.eclipse.rap.rwt.q07 is no longer needed and has been removed.
+        The contents are now located in the org.eclipse.rap.rwt bundle.
+      </p>
+      <p>
+        The q07 fragment had originally been introduced to be able to support different versions of
+        the qx client library. Meanwhile, we decided to maintain and evolve our own copy of this
+        client library
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=320993">bug 320993</a>),
+        so the fragment is not needed anymore.
+        However, with the new protocol
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>),
+        it will become possible to plug in alternative clients for RAP.
       </p>
     </description>
   </entry>
@@ -30,16 +32,17 @@
   <entry category="RWT" milestone="M1">
     <title>OSGi Integration</title>
     <description>
-      A new bundle org.eclipse.rap.rwt.osgi has been introduced that integrates RAP with OSGi.
-      With this architectural change, it is now possible to use RWT in OSGi applications without
-      having to include org.eclipse.rap.ui and all its dependencies.
-      Instead of registering your RAP application's entrypoint, theme, etc. as extensions
-      (which involves dependencies to the extension registry and more equinox core bundles),
-      you can now implement the service interface 
-      <code>org.eclipse.rwt.engine.ApplicationConfigurator</code> and register it as an OSGi 
-      service.
-      <code><pre>
-public class MyConfigurator implements ApplicationConfigurator {
+      <p>
+        A new bundle org.eclipse.rap.rwt.osgi has been introduced that integrates RAP with OSGi.
+        With this architectural change, it is now possible to use RWT in OSGi applications without
+        having to include org.eclipse.rap.ui and all its dependencies.
+        Instead of registering your RAP application's entrypoint, theme, etc. as extensions
+        (which involves dependencies to the extension registry and more equinox core bundles),
+        you can now implement the service interface 
+        <code>org.eclipse.rwt.engine.ApplicationConfigurator</code> and register it as an OSGi 
+        service.
+      </p>
+      <pre><code>public class MyConfigurator implements ApplicationConfigurator {
   public void configure( ApplicationConfiguration configuration ) {
     configuration.addEntryPoint( "default", SimpleEntryPoint.class );
     configuration.addBranding( new AbstractBranding() {
@@ -48,8 +51,7 @@ public class MyConfigurator implements ApplicationConfigurator {
       }
     } );
   }
-}
-      </pre></code>
+}</code></pre>
       <p>
         The RAP workbench also uses this new bundle to connect with an OSGi HTTP service, so
         you'll always have to add this new bundle to your launch configurations.
@@ -60,10 +62,12 @@ public class MyConfigurator implements ApplicationConfigurator {
   <entry category="RWT" milestone="M1">
     <title>Runtime Feature Split</title>
     <description>
-      The runtime repository now contains two different features:
-      One contains only the RAP bundles and the other feature provides all bundles that are
-      required for a complete RAP target platform.
-      If you want to create a simple RAP target platform, you'll need both.
+      <p>
+        The runtime repository now contains two different features:
+        One contains only the RAP bundles and the other feature provides all bundles that are
+        required for a complete RAP target platform.
+        If you want to create a simple RAP target platform, you'll need both.
+      </p>
       <p>
         This split will make it easier to work with mixed targets.
         If you already have the Equinox Core SDK and Jetty, you'll only need to add RAP itself.
@@ -75,8 +79,10 @@ public class MyConfigurator implements ApplicationConfigurator {
   <entry category="RWT" milestone="M1">
     <title>Failover and Clustering Support</title>
     <description>
-      Support for transparent session failover was added to RWT. This enables applications to
-      run in a high-availability cluster.
+      <p>
+        Support for transparent session failover was added to RWT. This enables applications to
+        run in a high-availability cluster.
+      </p>
       <p>
         RWT had to be extended in two places to achieve this. An alternatative life cycle was
         implemented that does not use a <em>UI Thread</em> because threads cannot be migrated.
@@ -107,7 +113,9 @@ public class MyConfigurator implements ApplicationConfigurator {
   <entry category="RWT" milestone="M1">
     <title>UICallback Improvements</title>
     <description>
-      The UI callback was redesigned and made more robust.
+      <p>
+        The UI callback was redesigned and made more robust.
+      </p>
       <p>
         When a callback request fails, the client sends a new callback request to re-establish
         the broken callback connection. To avoid unnecessary load on the client, retry requests
@@ -128,10 +136,14 @@ public class MyConfigurator implements ApplicationConfigurator {
   <entry category="RWT" milestone="M1">
     <title>Text Shadows</title>
     <description>
-      The Theming now supports text shadows for most widgets that display text:
-      Shell, Label, CLabel, CTabFolder, Button, DateTime, ExpandBar, Group, Link,
-      List, Spinner, TabFolder, Menu, ToolTip, Combo, CCombo, Tree, Table, Text, and ToolBar
-      <img title="Text Shadows in RAP" style="margin-bottom:7px" src="images/Text-Shadows.png" />
+      <p>
+        The Theming now supports text shadows for most widgets that display text:
+        Shell, Label, CLabel, CTabFolder, Button, DateTime, ExpandBar, Group, Link,
+        List, Spinner, TabFolder, Menu, ToolTip, Combo, CCombo, Tree, Table, Text, and ToolBar
+      </p>
+      <p>
+        <img class="framed" title="Text Shadows in RAP" src="images/Text-Shadows.png" />
+      </p>
       <p>
         Text shadows are not available in Internet Explorer due to this browser's lack of support
         for this feature.
@@ -139,19 +151,19 @@ public class MyConfigurator implements ApplicationConfigurator {
         <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color.
         Example:
       </p>
-<code><pre>
-Button {
+      <pre><code>Button {
   text-shadow: 0 1px 0 rgba( 0, 0, 0, 0.3 );
-}
-</pre></code>
+}</code></pre>
     </description>
   </entry>
 
   <entry category="RWT" milestone="M1">
     <title>Virtual Tree</title>
     <description>
-      The server-side part of the Tree widget was considerably improved and optimized. Now,
-      a Tree with SWT.VIRTUAL style can handle huge item counts without performance degradation.
+      <p>
+        The server-side part of the Tree widget was considerably improved and optimized. Now,
+        a Tree with SWT.VIRTUAL style can handle huge item counts without performance degradation.
+      </p>
       <p>
         For a live demo, check out the tab called <em>Complex Data</em> in our
         <a href="http://rap.eclipsesource.com/">Examples demo</a>.
@@ -162,10 +174,12 @@ Button {
   <entry category="RWT" milestone="M2">
     <title>New Client/Server Protocol</title>
     <description>
-        We planned this for a long time, and now it's becoming reality:
-        the communication between server and client is being replaced with a new, JSON-based format
-        (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>).
-        This new protocol will enable alternative client implementations for RAP.
+        <p>
+          We planned this for a long time, and now it's becoming reality:
+          the communication between server and client is being replaced with a new, JSON-based format
+          (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>).
+          This new protocol will enable alternative client implementations for RAP.
+        </p>
         <p>
           In this milestone, we focused our efforts on retrofitting LCAs to utilize this new
           protocol for communication with the client.
@@ -176,30 +190,29 @@ Button {
           Also the text size determination has been switched to the protocol.
         </p>
         <p>
-          <img src="images/RAP-Protocol.png" style="margin-top: 10px; margin-bottom: 10px"/>
+          <img class="framed" src="images/RAP-Protocol.png" />
         </p>
         <p>
           We're planning to complete this conversion before the end of this year.
           As the protocol stabilizes, we'll update the specification on the
           <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
         </p>
-      
     </description>
   </entry>
   
   <entry category="RWT" milestone="M3">
     <title>New Default Theme</title>
     <description>
-      RAP 1.5 is about to get a new default look.
-      The new theme aims at bringing a modern, decent look into RAP applications
-      with more white space and subtle usage of roundings, shadows and gradients.
-      To achieve this, the themability of many RWT widgets has been extended by adding missing CSS properties.
-      The new look is already part of M3, but we will continue to improve and polish the theme during the next months.
-      Any feedback is highly welcome.
       <p>
-        <img class="framed" src="images/NewTheme-Dialog.png" />
+        RAP 1.5 is about to get a new default look.
+        The new theme aims at bringing a modern, decent look into RAP applications
+        with more white space and subtle usage of roundings, shadows and gradients.
+        To achieve this, the themability of many RWT widgets has been extended by adding missing CSS properties.
+        The new look is already part of M3, but we will continue to improve and polish the theme during the next months.
+        Any feedback is highly welcome.
       </p>
       <p>
+        <img class="framed" src="images/NewTheme-Dialog.png" />
         <img class="framed" src="images/NewTheme-Form.png" />
       </p>
     </description>
@@ -208,12 +221,14 @@ Button {
   <entry category="RWT" milestone="M3">
     <title>Improved Internet Explorer 9 Support</title>
     <description>
-      Internet Explorer 9 was a significant improvement over previous versions, finally catching
-      up to other browsers regarding performance and compatibility.
-      RAP can now fully utilize all its new features (HTML5, CSS3, SVG) by switching to standard
-      rendering in IE9 (as opposed to quirksmode used for previous IE versions).
-      This gives RAP applications a noticable performance-boost in IE9, especially when using GC
-      for drawing complex graphs.
+      <p>
+        Internet Explorer 9 was a significant improvement over previous versions, finally catching
+        up to other browsers regarding performance and compatibility.
+        RAP can now fully utilize all its new features (HTML5, CSS3, SVG) by switching to standard
+        rendering in IE9 (as opposed to quirksmode used for previous IE versions).
+        This gives RAP applications a noticable performance-boost in IE9, especially when using GC
+        for drawing complex graphs.
+      </p>
       <p>
         As technology marches on, we also decidded to no longer offically support IE6 in RAP 1.5.
         RAP 1.4 will continue to support it.
@@ -226,28 +241,26 @@ Button {
       Simplified RWT Startup
     </title>
     <description>
-      The way to start standalone RWT applications has been changed.
-      The former init parameters have been replaced by an API that allows you to 
-      configure all aspects of the application to be started.
-      This web.xml fragment and code snippet shows how starting an RWT application now looks like:
-      <pre><code>
-<b>&lt;context-param&gt;</b>
+      <p>
+        The way to start standalone RWT applications has been changed.
+        The former init parameters have been replaced by an API that allows you to 
+        configure all aspects of the application to be started.
+        This web.xml fragment and code snippet shows how starting an RWT application now looks like:
+      </p>
+      <pre><code><b>&lt;context-param&gt;</b>
   <b>&lt;param-name&gt;</b>org.eclipse.rwt.Configurator<b>&lt;/param-name&gt;</b>
   <b>&lt;param-value&gt;</b>com.example.ExampleConfigurator<b>&lt;/param-value&gt;</b>
 <b>&lt;/context-param&gt;</b>
 <b>&lt;listener&gt;</b>
   <b>&lt;listener-class&gt;</b>org.eclipse.rwt.engine.RWTServletContextListener<b>&lt;/listener-class&gt;</b>
-<b>&lt;/listener&gt;</b>
-      </code></pre>
-      <pre><code>
-public class ExampleConfigurator implements ApplicationConfigurator {
+<b>&lt;/listener&gt;</b></code></pre>
+<pre><code>public class ExampleConfigurator implements ApplicationConfigurator {
   public void configure( ApplicationConfiguration configuration ) {
     configuration.addEntryPoint( "default", ExampleEntryPoint.class );
     configuration.addBranding( new ExampleBranding() );
     // ...
   }
-}
-      </code></pre>
+}</code></pre>
       <p>
         The <code>RWTServletContextListener</code> needs to be registered so that RWT is
         notified when the servlet context is created.
@@ -269,8 +282,10 @@ public class ExampleConfigurator implements ApplicationConfigurator {
   <entry category="RWT" milestone="M3">
     <title>New Client/Server Protocol</title>
     <description>
-      In this milestone, we switched some more widgets to the new client/server protocol like Tree, 
-      TabFolder, Browser and ToolBar.
+      <p>
+        In this milestone, we switched some more widgets to the new client/server protocol like Tree, 
+        TabFolder, Browser and ToolBar.
+      </p>
       <p>
         We're planning to complete this conversion before the end of this year.
         As the protocol stabilizes, we'll update the specification on the
@@ -282,9 +297,11 @@ public class ExampleConfigurator implements ApplicationConfigurator {
   <entry category="RWT" milestone="M4">
     <title>New Client/Server Protocol</title>
     <description>
-      With this milestone, all Ajax responses from a RAP server are now in plain JSON format.
-      No JavaScript is included anymore.
-      This makes the responses much more readable and eases debugging.
+      <p>
+        With this milestone, all Ajax responses from a RAP server are now in plain JSON format.
+        No JavaScript is included anymore.
+        This makes the responses much more readable and eases debugging.
+      </p>
       <p>
         <img class="framed" src="images/Firebug-JSON.png" />
       </p>
@@ -300,10 +317,12 @@ public class ExampleConfigurator implements ApplicationConfigurator {
   <entry category="RWT" milestone="M4">
     <title>Target Platform Changes</title>
     <description>
-      Since RAP 1.5 will be available togehter with Eclipse Juno, the target platform is now based
-      on Eclipse 4.2 instead of 3.8.
-      However, the RAP implementation of the Eclipse Workbench remains to be based on 3.x.
-      But there are a couple of important changes in the target platform.
+      <p>
+        Since RAP 1.5 will be available togehter with Eclipse Juno, the target platform is now based
+        on Eclipse 4.2 instead of 3.8.
+        However, the RAP implementation of the Eclipse Workbench remains to be based on 3.x.
+        But there are a couple of important changes in the target platform.
+      </p>
       <ul>
         <li>
           The servlet 3.0 API packages are now exported as version 2.6.0 to comply with the
@@ -322,7 +341,9 @@ public class ExampleConfigurator implements ApplicationConfigurator {
           (<code>org.apache.felix.gogo.*</code>) support it.
         </li>
       </ul>
-      Please adapt your launch configurations to these changes as needed.
+      <p>
+        Please adapt your launch configurations to these changes as needed.
+      </p>
     </description>
   </entry>
 
