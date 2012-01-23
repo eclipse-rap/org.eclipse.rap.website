@@ -22,7 +22,7 @@
   </p>
 
   <div id="devguide" style="clear: both">
-    <h3>Developer Guide (Help Center)</h3>
+    <h2>Developer Guide (Help Center)</h2>
     <p>
       This is the official help for RAP. It is included in your Eclipse help if
       you installed the RAP Tooling.
@@ -38,12 +38,12 @@
   </div>
 
   <div id="resources" style="clear: both">
-    <h3>Resources Related to Underlying Technologies</h3>
+    <h2>Resources Related to Underlying Technologies</h2>
     <p>
       RAP development requires knowledge of a couple of underlying technologies.
       We've collected a couple of resources that we recommend to read:
     </p>
-    <h4>Equinox</h4>
+    <h3>Equinox</h3>
     <ul>
       <li>
         <a href="http://www.eclipse.org/equinox/documents/quickstart.php">
@@ -58,7 +58,7 @@
         Building a Server-based Application with Equinox</a>
       </li>
     </ul>
-    <h4>SWT</h4>
+    <h3>SWT</h3>
     <ul>
       <li>
         <a href="http://www.eclipse.org/swt/snippets/">
@@ -69,7 +69,7 @@
         Understanding Layouts in SWT</a>
       </li>
     </ul>
-    <h4>JFace and Databinding</h4>
+    <h3>JFace and Databinding</h3>
     <ul>
       <li>
         <a href="http://www.eclipse.org/articles/Article-TreeViewer/TreeViewerArticle.htm">
@@ -93,7 +93,7 @@
         </a>
       </li>
     </ul>
-    <h4>Workbench</h4>
+    <h3>Workbench</h3>
     <ul>
       <li>
         <a href="http://www.eclipse.org/articles/Article-UI-Workbench/workbench.html">
@@ -119,7 +119,7 @@
   </div>
 
   <div id="articles" style="clear: both">
-    <h3>Articles and Tutorials</h3>
+    <h2>Articles and Tutorials</h2>
     <p>
       A lot of articles and tutorials have been published about RAP:
     </p>

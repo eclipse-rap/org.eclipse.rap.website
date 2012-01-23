@@ -15,7 +15,7 @@
         <a href="/rap/noteworthy/1.4/">New &amp; Noteworthy</a>
       </p>
 
-      <h3>RAP Tooling</h3>
+      <h2>RAP Tooling</h2>
 
       <p>
         for use with Eclipse 3.6 and 3.7
@@ -27,7 +27,7 @@
         http://download.eclipse.org/rt/rap/1.4/tooling
       </p>
 
-      <h3>RAP Runtime (Target Components)</h3>
+      <h2>RAP Runtime (Target Components)</h2>
 
       <p>
         based on Eclipse 3.7
@@ -40,12 +40,12 @@
       </p>
 
       <xsl:if test="/builds/completed/build">
-        <h3>Completed Builds</h3>
+        <h2>Completed Builds</h2>
         <xsl:apply-templates select="/builds/completed"/>
       </xsl:if>
 
       <xsl:if test="/builds/planned/build">
-        <h3>Planned Builds</h3>
+        <h2>Planned Builds</h2>
         <xsl:apply-templates select="/builds/planned"/>
       </xsl:if>
 
@@ -62,28 +62,28 @@
   <xsl:template match="builds/*">
   
     <xsl:if test="build[@type = 'SR']">
-      <h4>Service Releases</h4>
+      <h3>Service Releases</h3>
       <table class="builds">
         <xsl:apply-templates select="build[@type = 'SR']"/>
       </table>
     </xsl:if>
 
     <xsl:if test="build[@type = 'R']">
-      <h4>Release</h4>
+      <h3>Release</h3>
       <table class="builds">
         <xsl:apply-templates select="build[@type = 'R']"/>
       </table>
     </xsl:if>
 
     <xsl:if test="build[@type = 'RC']">
-      <h4>Release Candidate Builds</h4>
+      <h3>Release Candidate Builds</h3>
       <table class="builds">
         <xsl:apply-templates select="build[@type = 'RC']"/>
       </table>
     </xsl:if>
 
     <xsl:if test="build[@type = 'M']">
-      <h4>Milestone Builds</h4>
+      <h3>Milestone Builds</h3>
       <table class="builds">
         <xsl:apply-templates select="build[@type = 'M']"/>
       </table>

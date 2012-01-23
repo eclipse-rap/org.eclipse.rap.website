@@ -28,12 +28,12 @@
       </a>
     </div>
     <div>
-      <h3>CAS PIA</h3>
+      <h2>CAS PIA</h2>
       <p>
         A powerful customer relationship management system based on RAP with a great look and feel.
         Provides contact management, calendar, document management, and many more features.
       </p>
-      <h4>References:</h4>
+      <h3>References:</h3>
       <ul>
         <li>
           <a href="http://www.cas-pia.de/en/try.html">CAS PIA guest account</a>
@@ -55,7 +55,7 @@
       </a>
     </div>
     <div>
-      <h3>Information Dashboard Framework</h3>
+      <h2>Information Dashboard Framework</h2>
       <p>
         A framework for Emergency Simulation,
         developed by the Texas Center for Applied Technology (TCAT).
@@ -69,7 +69,7 @@
         Other systems built on this framework are the Biosurveillance Common Operating Picture and
         the Coast Guard Display System.
       </p>
-      <h4>References:</h4>
+      <h3>References:</h3>
       <ul>
         <li>
           <a href="http://www.eclipse.org/community/casestudies/emergencySimulation.php">Emergency Simulation Solutions Delivered in Record Time With Eclipse (Case Study at Eclipse.org)</a>
@@ -104,7 +104,7 @@
       </a>
     </div>
     <div>
-      <h3>EDIFACT Communications and Analytics Toolkit</h3>
+      <h2>EDIFACT Communications and Analytics Toolkit</h2>
       <p>
         Germany's gas and electricity markets use EDIFACT messages for B2B data interchange.
         New regulatory policies put an ever-growing burden on small and medium-sized utilities.
@@ -117,7 +117,7 @@
         with SAP standard transactions and, last but not least, EDIFACT viewing functionality
         – all visually appealing integrated by RAP.
       </p>
-      <h4>References:</h4>
+      <h3>References:</h3>
       <ul>
         <li>
           <a href="http://www.hsag.info/leistungen/loesungen/edicatwim">EDIcat WiM product page (German)</a>
@@ -134,7 +134,7 @@
       </a>
     </div>
     <div>
-      <h3>Vocabulary management SemanticXpress</h3>
+      <h2>Vocabulary management SemanticXpress</h2>
       <p>
         <a href="http://www.ontoprise.de/en/solutions/semanticxpress/">SemanticXpress</a>
         by <a href="http://www.ontoprise.com">Ontoprise</a>
@@ -147,7 +147,7 @@
         Therefore SemanticXpress provides Web services that are suitable for easily connecting
         external applications.
       </p>
-      <h4>References:</h4>
+      <h3>References:</h3>
       <ul>
         <li>
           <a href="http://www.ontoprise.de/en/solutions/semanticxpress/">SemanticXpress product page</a>
@@ -164,7 +164,7 @@
       </a>
     </div>
     <div>
-      <h3>Enelytics - SOS System</h3>
+      <h2>Enelytics - SOS System</h2>
       <p>
         Enelytics LLC uses RAP as the basis for their <em>Software as Services (SOS)</em>
         Plug-in Architecture.
@@ -184,7 +184,7 @@
       <!--/a-->
     </div>
     <div>
-      <h3>Numiton Migration Tools</h3>
+      <h2>Numiton Migration Tools</h2>
       <p>
         This online application showcases the features of the
         <a href="http://www.numiton.com/products/ntile-ptoj/ptoj-overview.html">nTile migration system</a>
@@ -196,7 +196,7 @@
         to freely migrate PHP code of limited size to Java with servlets or the
         Spring framework. The snippets can also be shared with others.
       </p>
-      <h4>References:</h4>
+      <h3>References:</h3>
       <ul>
         <li>
           <a href="http://www.numiton.com/products/ntile-ptoj/ptoj-overview.html">nTile migration system</a>
@@ -214,14 +214,14 @@
       <!--/a-->
     </div>
     <div>
-      <h3>CodeFaces</h3>
+      <h2>CodeFaces</h2>
       <p>
         A web-based source control client that targets at easing the pain of navigating code
         from a source control system on a browser.
         Allows connecting to multiple source control systems and structurally navigating code
         on a unified web interface.
       </p>
-      <h4>References:</h4>
+      <h3>References:</h3>
       <ul>
         <li>
           <a href="http://codefaces.org/">Web-based source control client</a>
