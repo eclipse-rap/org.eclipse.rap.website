@@ -1,4 +1,4 @@
-<?php
+<?
 
   /* $buildName */
 
@@ -34,30 +34,32 @@
 
   <p>
     Here's a list of the most noteworthy things in the RAP
-    <?php echo $build->getName(); ?> <?php echo strtolower( $build->getType() ); ?>
-    <?php if( $build->isCompleted() ) { ?>
+    <?= $build->getName() ?> <?= strtolower( $build->getType() ) ?>
+<? if( $build->isCompleted() ) { ?>
       which is available for <a href="http://www.eclipse.org/rap/downloads/">download</a>
       since <?php echo formatDate( $build->getPublishDate() ) ?>.
-    <?php } else { ?>
+<? } else { ?>
       which will be available for <a href="http://www.eclipse.org/rap/downloads/">download</a>
       on <?php echo formatDate( $build->getPublishDate() ) ?>.
       In the meantime, all changes described here are available in the most recent
       <a href="http://www.eclipse.org/rap/downloads/">nightly build</a>.
-    <?php } ?>
+<? } ?>
   </p>
 
-  <? foreach( $news->getCategories( $build->getShortName() ) as $category ) { ?>
+<? foreach( $news->getCategories( $build->getShortName() ) as $category ) { ?>
 
   <h2><?= $category ?></h2>
 
-  <?   foreach( $news->getEntries( $category, $build->getShortName() ) as $entry ) { ?>
+<?   foreach( $news->getEntries( $category, $build->getShortName() ) as $entry ) { ?>
 
   <h3><?= $entry->title ?></h3>
 
-  <div class="noteworthy"><?= $entry->description->asXML() ?></div>
+<?     foreach( $entry->description->children() as $element ) { ?>
+    <?= $element->asXML() ?>
+<?     } ?>
 
-  <?   } ?>
-  <? } ?>
+<?   } ?>
+<? } ?>
 
   <h2>Bugfixes</h2>
 
@@ -73,22 +75,22 @@
     Summaries for earlier builds:
   </p>
   <ul>
-    <? foreach( $builds->getPreviousBuilds( $build->getShortName() ) as $prevBuild ) { ?>
-    <?   if( $prevBuild->getType() === "Milestone Build" ) { ?>
-      <li>
-        <a href="./?build=<?php echo $prevBuild->getShortName(); ?>">News for RAP <?php echo $prevBuild->getName(); ?></a>
-      </li>
-    <?   } ?>
-    <? } ?>
+<? foreach( $builds->getPreviousBuilds( $build->getShortName() ) as $prevBuild ) { ?>
+<?   if( $prevBuild->getType() === "Milestone Build" ) { ?>
+    <li>
+      <a href="./?build=<?php echo $prevBuild->getShortName(); ?>">News for RAP <?php echo $prevBuild->getName(); ?></a>
+    </li>
+<?   } ?>
+<? } ?>
   </ul>
 
 </div>
 
 <div id="rightcolumn">
-  <?php includeSidebar( "eclipse.php" ) ?>
-  <?php includeSidebar( "archives.php" ) ?>
+  <? includeSidebar( "eclipse.php" ) ?>
+  <? includeSidebar( "archives.php" ) ?>
 </div>
 
-<?php
+<?
   printFooter();
 ?>
