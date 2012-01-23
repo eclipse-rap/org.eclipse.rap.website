@@ -291,10 +291,8 @@ ul p {
 img.framed {
   border: 1px solid #bdbdbd;
   box-shadow: 0 0 4px #adadad;
-}
-
-p {
-  padding: 15px 0 0 0;
+  margin-top: 15px;
+  margin-bottom: 15px; 
 }
 
 a {
@@ -333,19 +331,19 @@ h1 {
   font-size: 28px;
   line-height: 22px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 h2 {
   font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 8px;
 }
 
 h3 {
-  font-size: 18px;
-  margin-top: 12px;
-  margin-bottom: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
 
 h4 {
@@ -362,10 +360,6 @@ html {
 ol > li {
   list-style-image: none !important;
   list-style-type: decimal;
-}
-
-p, table {
-  margin-bottom: 20px;
 }
 
 strong {
@@ -789,10 +783,6 @@ small {
   font-size: 10px;
 }
 
-div.noteworthy {
-  margin: 20px 0 40px 0;
-}
-
 #logo {
   float: left;
   z-index: 9999;
@@ -917,9 +907,19 @@ div#logo {
 
 /* Customize margin for paragraphs */
 
-p, table {
+p, ul, ol, table, pre {
   margin-top: 5px;
   margin-bottom: 8px;
+}
+
+/* code blocks */
+
+pre {
+  border: 1px solid #bdbdbd;
+  border-radius: 3px;
+  background-color: #fafafa;
+  padding: 12px 18px;
+  overflow-x: auto;
 }
 
 /* Enable Quotes */
