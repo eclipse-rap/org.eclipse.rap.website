@@ -13,14 +13,11 @@ html {
 }
 
 #header {
-  width: 980px;
-  margin: 0 auto;
-}
-
-#big-header {
   position: relative;
+  margin: 0 auto;
   top: 0;
   left: 0;
+  width: 980px;
   height: 140px;
 }
 
@@ -35,90 +32,65 @@ html {
 
 /* TOP LEVEL NAVIGATION */
 
-#rap-big-buttons {
-  z-index: 1000;
+#navigation {
   position: absolute;
-  left: 282px;
-  width: 680px;
-  bottom: 17px;
+  bottom: 0;
+  right: 37px;
+  width: 660px;
   height: auto;
+  z-index: 1000;
 }
 
-#rap-big-buttons ul {
+#navigation > ul {
   text-align: right;
-}
-
-#rap-big-buttons > ul > li {
-  position: relative;
-  display: inline-block;
-  list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-#rap-big-buttons > ul > li > a {
+#navigation > ul > li {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 38px;
+  padding-bottom: 40px;
+}
+
+#navigation > ul > li > a {
   display: block;
-  float: left;
-  padding: 7px 12px;
-  margin: 0 7px;
   font-weight: bold;
-}
-
-/*
-#rap-big-buttons > ul > li > a.active {
-  border: 1px solid white;
-  padding: 6px 11px;
-}
-*/
-
-#rap-big-buttons > ul > li:hover > a {
-  text-decoration: none;
-  border: 1px solid #dedede;
-  padding: 6px 11px;
-}
-
-#rap-big-buttons h3 {
-  color: white;
   font-size: 14pt;
+  color: white;
   border: none;
   padding: 0;
   margin: 0;
 }
 
-#rap-big-buttons > ul > li > a:hover h3,
-#rap-big-buttons > ul > li > a.active h3 {
-  color: white;
+#navigation > ul > li > a:hover {
+  text-decoration: none;
 }
 
-#rap-big-buttons > ul li.selected > h3 {
-  color: #393939;
+#navigation > ul > li.active {
+  background-image: url( /rap/images/nav-selection.png );
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
-#rap-big-buttons div.rap-button-icon {
-  position: absolute;
-  left: 12px;
-  top: 13px;
-  width: 50px;
-  height: 50px;
-}
+/* SECOND-LEVEL NAVIGATION PULL DOWN MENUS */
 
-/* SECOND-LEVEL NAVIGATION */
-
-.second-level-nav {
+ul.second-level-nav {
   display: none;
-  padding: 0;
+  padding: 2px;
   margin: 0;
   position: absolute;
+  left: -12px;
+  top: 36px;
   width: 200px;
-  top: 40px;
-  left: 7px;
-  border: 1px solid #bdbdbd;
-  border-radius: 0;
- box-shadow: 3px 3px 7px #222222;
+  box-shadow: 3px 3px 7px #222222;
   background-color: white;
+  z-index: 100;
 }
 
-.second-level-nav > li {
+ul.second-level-nav > li {
   display: block;
   padding: 0 !important;
   margin: 0 !important;
@@ -126,30 +98,32 @@ html {
   border-bottom: 1px solid #bdbdbd;
 }
 
-.second-level-nav > li:last-child {
+ul.second-level-nav > li:last-child {
   border-bottom: none;
 }
 
-.second-level-nav > li > a {
+ul.second-level-nav > li > a {
   display: block;
   color: #393939;
   padding: 10px 0 10px 12px !important;
   text-decoration: none;
 }
 
-.second-level-nav > li > a:hover,
-.second-level-nav > li:hover > a {
+ul.second-level-nav > li > a:hover,
+ul.second-level-nav > li:hover > a {
   color: white;
 }
 
-.second-level-nav li:hover {
+ul.second-level-nav li:hover {
   background-color: #31619C;
 }
 
-.second-level-nav li:hover a {
+ul.second-level-nav li:hover a {
   box-shadow: none !important;
   cursor: pointer;
 }
+
+/* NAVIGATION BAR */
 
 #nav-bar {
   background-color: #34332f;
@@ -399,55 +373,6 @@ sup {
   width: 280px;
 }
 
-#leftcol {
-  background: transparent;
-  clear: both;
-  float: left;
-  margin-right: 20px;
-  width: 185px;
-}
-
-#leftnav {
-  margin-left: 10px;
-  margin-right: 20px;
-}
-
-#leftnav li {
-  list-style-image: url('/eclipse.org-common/themes/Nova/images/leftNav.gif');
-  margin-left: 30px;
-  padding: 0px;
-}
-
-#leftnav li a {
-  font-size: 12px;
-  line-height: 12px;
-}
-
-#leftnav li.about {
-  list-style-image: none;
-  margin-left: 0;
-  padding-bottom: 10px;
-}
-
-#leftnav li.about a {
-  color: #31619c;
-  font-size: 12px;
-}
-
-#leftnav li.separator {
-  border-top: 1px dotted #d4d4dd;
-  list-style-image: none;
-  margin-left: 0;
-  margin-top: 5px;
-  padding: 5px 0;
-  padding-top: 5px;
-}
-
-#leftnav li.separator a {
-  color: #31619c;
-  font-size: 12px;
-}
-
 #midcolumn {
   background: transparent;
   float: left;
@@ -465,97 +390,6 @@ sup {
   float: left;
   width: 240px;
   padding: 28px 27px 20px 26px;
-}
-
-#widecontainer {
-  background: #FFF;
-}
-
-.clearer {
-  clear: both;
-  visibility: hidden;
-}
-
-.details {
-  line-height: 13px;
-  margin: 5px 0;
-}
-
-.details ul {
-  margin-left: 15px;
-}
-
-.details ul li {
-  font-size: 11px;
-}
-
-.noImage li {
-  list-style-image: none !important;
-}
-
-.more {
-  height: 20px;
-  margin-top: 3px;
-  width: 100%;
-}
-
-.moreButton {
-  background: #FFF url('/eclipse.org-common/themes/Nova/images/moreButton.png') no-repeat;
-  float: right;
-  font-size: 10px;
-  padding-top: 7px;
-  text-align: right;
-}
-
-.moreButton a {
-  color: #31619c;
-  display: block;
-  font-size: 10px;
-  height: 26px;
-  pointer: cursor;
-  text-align: center;
-  width: 100px;
-  line-height: 10px;
-}
-
-.newsPosts {
-  margin-top: 5px;
-}
-
-.newsPosts .date {
-  color: #666;
-  font-size: 11px;
-  padding-right: 20px;
-  vertical-align: top;
-}
-
-.newsPosts a.link {
-  color: #31619c;
-  font-size: 14px;
-}
-
-.newsPosts div.details {
-  color: #515151;
-  font-size: 11px;
-}
-
-.newsPosts tr td {
-  margin-bottom: 10px;
-  padding-top: 5px;
-}
-
-.noBG {
-  background: none !important;
-}
-
-.none {
-  background: transparent !important;
-  border: 0px !important;
-}
-
-.posted {
-  color: #888;
-  font-size: 8px;
 }
 
 /* SLIDESHOW */
@@ -784,79 +618,9 @@ small {
   font-size: 10px;
 }
 
-#logo {
-  float: left;
-  z-index: 9999;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
 #maincontent {
   clear: both;
 }
-
-/* DOWNLOAD */
-
-/*
-#rap-button-download {
-  left: 260px;
-  top: 0px;
-  background: transparent url( "images/buttons.png" ) no-repeat 0 0;
-}
-
-#rap-button-download:hover {
-  background: transparent url( "images/buttons.png" ) no-repeat -250px 0;
-}
-
-#rap-button-download div.rap-button-icon {
-  background: transparent url( "http://w3.eclipsesource.com/www/img/rap/button-icons.png" ) no-repeat 0 0;
-}
-
-#rap-button-documentation {
-  left: 20px;
-  top: 0;
-  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
-}
-
-#rap-button-documentation:hover {
-  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
-}
-
-#rap-button-documentation div.rap-button-icon {
-  background: transparent url( "http://w3.eclipsesource.com/www/img/rap/button-icons.png" ) no-repeat -50px 0;
-}
-
-#rap-button-support {
-  left: 260px;
-  top: 0;
-  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
-}
-
-#rap-button-support:hover {
-  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
-}
-
-#rap-button-support div.rap-button-icon {
-  background: transparent url( "http://w3.eclipsesource.com/www/img/rap/button-icons.png" ) no-repeat -100px 0;
-}
-
-#rap-button-demos {
-  left: 0px;
-  top: 0px;
-  background: transparent url( "images/buttons.png" ) no-repeat 0 -77px;
-}
-
-#rap-button-demos:hover {
-  background: transparent url( "images/buttons.png" ) no-repeat -250px -77px;
-}
-
-#rap-button-demos div.rap-button-icon {
-  background: transparent url( "http://w3.eclipsesource.com/www/img/rap/button-icons.png" ) no-repeat -150px 0;
-}
-
-*/
 
 div.stop {
   clear: both;
@@ -898,14 +662,6 @@ div.box div {
   margin-right: 11px;
 }
 
-/* Fix horizontal position of the top-left Eclipse logo */
-div#logo {
-  position: relative;
-  height: 91px;
-  top: -1px;
-  left: 793px;
-}
-
 /* Customize margin for paragraphs */
 
 p, ul, ol, table, pre {
@@ -929,38 +685,6 @@ q:before { content: '\201C'; }
 q:after { content: '\201D'; }
 q q:before { content: '\2018'; }
 q q:after { content: '\2019'; }
-
-/* RAP logo in side navigation */
-
-#rap-small-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 184px;
-  height: 80px;
-}
-
-#rap-small-logo {
-  position: absolute;
-  left: 12px;
-  top: 15px;
-  width: 152px;
-  height: 67px;
-  background: url( "/rap/images/RAP-Logo-small.png" ) no-repeat 0 0;
-}
-
-#leftnav {
-  margin-top: 70px;
-  padding-left: 8px;
-}
-
-/* Make first-level navigation items appear as links */
-
-#leftnav li.separator a {
-  color: #7036BE;
-}
-
-/* * */
 
 /* Small navigation icons */
 

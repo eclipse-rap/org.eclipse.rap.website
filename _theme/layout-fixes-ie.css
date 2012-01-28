@@ -19,10 +19,8 @@ span.terminal-overlay {
 
 /* Fixes for unsupported "float" */
 
-#leftcol,
 #midcolumn,
 #rightcolumn,
-.moreButton,
 .rss
 {
   position: relative;

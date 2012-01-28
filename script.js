@@ -2,7 +2,7 @@ $(document).ready( function() {
 
   var enableNavigation = function() {
     
-    var topLevelElements = $( "#rap-big-buttons li" );
+    var topLevelElements = $( "#navigation li" );
   		
   	topLevelElements.mouseenter( function() {
   		var secondLevelNav = $( this ).children( "ul" );

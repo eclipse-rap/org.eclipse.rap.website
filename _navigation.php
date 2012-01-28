@@ -1,89 +1,54 @@
 <?php
 
 function createHeaderAndNavigation( $navPosition ) {
-  $html =   createMainNavigation()
+  $html =   createMainNavigation( $navPosition[ 0 ] )
           . createHeaderBar( $navPosition[ 0 ] )
           . createJavaScript( $navPosition[ 0 ], $navPosition[ 1 ] );
   return $html;
 }
 
-function createMainNavigation() {
+function createMainNavigation( $navPos ) {
+  foreach( array( "demos", "download", "help", "contribute" ) as $entry ) {
+    $classes[ $entry ] = $navPos === $entry ? " class=\"active\"" : "";
+  }
   $html = <<<EOHTML
 <div id="header">
-  <div id="big-header">
-    <a href="/rap/"><div id="rap-logo"></div></a>
-    <div id="rap-big-buttons">
-      <ul>
-        <li>
-          <a id="rap-button-demos" href="/rap/demos/">
-            <h3>Demos</h3>
-          </a>
-          <ul class="second-level-nav">
-            <li><a href="/rap/demos/">Online Demos</a></li>
-            <li><a href="/rap/users/">Who uses RAP?</a></li>
-          </ul>
-        </li>
-        <li>
-          <a id="rap-button-download" href="/rap/downloads/">
-            <h3>Download</h3>
-          </a>
-          <ul class="second-level-nav">
-            <li><a href="/rap/downloads/">Download RAP</a></li>
-            <li><a href="/rap/noteworthy/">New and Noteworthy</a></li>
-          </ul>
-        </li>
-        <li>
-          <a id="rap-button-help" href="/rap/support/">
-            <h3>Get Help</h3>
-          </a>
-         <ul class="second-level-nav">
-             <li>
-              <a href="/rap/support/">
-                Support
-              </a>
-            </li>
-            <li>
-              <a href="/rap/getting-started/">
-                Getting Started
-              </a>
-            </li>
-            <li>
-              <a href="/rap/support/professional-services/">
-                Professional Services
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li>
-           <a id="rap-button-contribute" href="/rap/getting-involved/">
-            <h3>Contribute</h3>
-          </a>
-          <ul class="second-level-nav">
-            <li>
-              <a href="/rap/getting-involved/">
-                Getting Involved
-              </a>
-            </li>
-            <li>
-              <a href="/rap/bugs/">
-                Bugs
-              </a>
-            </li>
-            <li>
-              <a href="/rap/incubator/">
-                Incubator
-              </a>
-            </li>
-            <li>
-              <a href="/rap/source/">
-                Source Code
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <div class="stop"></div>
-    </div>
+  <a href="/rap/"><div id="rap-logo"></div></a>
+  <div id="navigation">
+    <ul>
+      <li${classes["demos"]}>
+        <a href="/rap/demos/">Demos</a>
+        <ul class="second-level-nav">
+          <li><a href="/rap/demos/">Online Demos</a></li>
+          <li><a href="/rap/users/">Who uses RAP?</a></li>
+        </ul>
+      </li>
+      <li${classes["download"]}>
+        <a id="rap-button-download" href="/rap/downloads/">Download</a>
+        <ul class="second-level-nav">
+          <li><a href="/rap/downloads/">Download RAP</a></li>
+          <li><a href="/rap/noteworthy/">New and Noteworthy</a></li>
+        </ul>
+      </li>
+      <li${classes["help"]}>
+        <a id="rap-button-help" href="/rap/support/">Get Help</a>
+        <ul class="second-level-nav">
+          <li> <a href="/rap/support/"> Support </a> </li>
+          <li> <a href="/rap/getting-started/"> Getting Started </a> </li>
+          <li> <a href="/rap/support/professional-services/"> Professional Services </a> </li>
+        </ul>
+      </li>
+      <li${classes["contribute"]}>
+        <a id="rap-button-contribute" href="/rap/getting-involved/">Contribute</a>
+        <ul class="second-level-nav">
+          <li> <a href="/rap/getting-involved/"> Getting Involved </a> </li>
+          <li> <a href="/rap/bugs/"> Bugs </a> </li>
+          <li> <a href="/rap/incubator/"> Incubator </a> </li>
+          <li> <a href="/rap/source/"> Source Code </a> </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="stop"></div>
   </div>
 </div>
 EOHTML;
@@ -92,7 +57,7 @@ EOHTML;
 
 function createHeaderBar( $topLevel ) {
   $headerBar = '<div id="nav-bar">'
-  					 . '<div id="breadcrumb-container">'
+             . '<div id="breadcrumb-container">'
              . createBreadcrumbMenu()
              . createAdditionalLinks( $topLevel )
              . '<div class="antifloat"></div>'
