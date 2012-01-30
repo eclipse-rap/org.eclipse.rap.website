@@ -49,13 +49,8 @@
 </div>
 
 <div id="rightcolumn">
-
-  <?php includeSidebar( "eclipse.php" ) ?>
-
 </div>
 
 <?php
-
   printFooter();
-
 ?>

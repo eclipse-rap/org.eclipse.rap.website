@@ -87,7 +87,6 @@
 </div>
 
 <div id="rightcolumn">
-  <? includeSidebar( "eclipse.php" ) ?>
   <? includeSidebar( "archives.php" ) ?>
 </div>
 
