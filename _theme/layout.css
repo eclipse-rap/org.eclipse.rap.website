@@ -24,7 +24,7 @@ html {
 #rap-logo {
   position: absolute;
   left: 29px;
-  top: 36px;
+  top: 33px;
   width: 196px;
   height: 78px;
   background: url( "/rap/images/RAP-Logo-white.png" ) no-repeat;
@@ -52,7 +52,7 @@ html {
   display: inline-block;
   list-style-type: none;
   margin-left: 38px;
-  padding-bottom: 40px;
+  padding-bottom: 31px;
 }
 
 #navigation > ul > li > a {
@@ -238,7 +238,7 @@ ul p {
   width: 978px; /* centered div must be given a width */
   border: 1px solid #bdbdbd;
   background: #e5e5e5;
-  padding: 25px 0 40px 0;
+  padding: 25px 0 10px 0;
   margin: 60px 0 0 0;
 }
 
@@ -247,7 +247,16 @@ ul p {
   font-size: 12px;
 }
 
+#footer img {
+  position: relative;
+  top: -3px;
+  width: 100px;
+  padding-left: 80px;
+}
+
 #footer ul {
+  position: relative;
+  top: 7px;
   padding-left: 20px;
   float: left;
 }
@@ -258,6 +267,7 @@ ul p {
 }
 
 #copyright {
+  width: 200px;
   padding-right: 20px;
   clear: none;
   float: right;
@@ -447,8 +457,8 @@ div#features > div.feature {
   list-style: none;
   float: left;
   width: 280px;
-  height: 200px;
-  padding: 30px 23px;
+  min-height: 200px;
+  padding: 20px 23px;
 }
 
 div#features > div.feature p {
@@ -533,6 +543,9 @@ div#blog-posts-container > h2 {
   font-weight: normal;
   color: #34332F;
   padding: 0 0 30px 93px;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: inherit;
 }
 
 div#blog-posts > .rssBody > ul > li {
