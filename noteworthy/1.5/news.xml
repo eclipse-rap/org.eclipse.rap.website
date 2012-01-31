@@ -347,6 +347,30 @@
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M5">
+    <title>Fallback for Custom Themes</title>
+    <description>
+      <p>
+        The RAP default theme is now an equitable theme, and it is no longer used as a fallback for
+        custom themes.
+      	Instead of the default theme, all theming properties now have a default value which is used
+        as a fallback in case the theme does not define a value for this property.
+      </p>
+      <p>
+        Unlike the RAP default theme, these fallback values will not change.
+      	They are chosen to be plain values without any effects, i.e. no gradients, rounded borders,
+      	or shadows, just plain black-and-white.
+      	With this change, custom themes will be more stable.
+      	Changes to the RAP default theme will not affect custom themes anymore.
+      </p>
+      <p>
+        The default values are still defined in the respective
+        <code>&lt;Widget&gt;.default.css</code> files, and the RAP default theme is now contained
+        in a file of its own.
+      </p>
+    </description>
+  </entry>
+
 <!--
   NOTE [rst]: Decided to change API before publishing
 
