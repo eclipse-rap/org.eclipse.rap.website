@@ -367,26 +367,55 @@
         The default values are still defined in the respective
         <code>&lt;Widget&gt;.default.css</code> files, and the RAP default theme is now contained
         in a file of its own.
+        For details, see
+        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=363736">bug 363736</a>.
       </p>
     </description>
   </entry>
 
-<!--
-  NOTE [rst]: Decided to change API before publishing
+  <entry category="RWT" milestone="M5">
+    <title>New API</title>
+    <description>
+      <p>
+        We've finally implemented  <code>Display.beep()</code> ;-).
+        The default client does not render the beep so far, but custom clients can implement it.
+      </p>
+    </description>
+  </entry>
+
+  <!-- TODO ACTIVE_KEYS for widgets -->
+
+  <!-- TODO CANCEL_KEYS -->
+
+  <!-- TODO doit flag no longer supported for key and traversal events
+            Bug 367871 - Remove support for doit=false for KeyEvents -->
+
+  <!-- TODO ContentProposalAdapter ? -->
+
+  <!-- TODO [Incubator] Changes in fileupload -->
+
+  <!-- TODO [Incubator] Additions in p2 repos -->
+
+  <!-- TODO (M6) Protocol:
+       * Abandoned executeScript operation type,
+         https://bugs.eclipse.org/bugs/show_bug.cgi?id=368421
+       * operations as arrays
+    -->
+
+  <!-- NOTE [rst]: Decided to change API before publishing
 
   <entry category="RWT" milestone="M2">
     <title>
       Experimental support for markup in Tables
     </title>
     <description>
-      
+      <p>
       The table was enhanced to allow markup in item texts
       (i.e. in calls to <code>TableItem#setText()</code>).
+      </p>
       <p>
         <img src="???" />
-  
-        <code><pre>
-table.setData( Table.ITEM_HEIGHT, new Integer( 90 ) );
+        <pre><code>table.setData( Table.ITEM_HEIGHT, new Integer( 90 ) );
 HashMap<String,Image> imageMap = new HashMap<String,Image>();
 imageMap.put( "user", userImage );
 table.setData( Table.IMAGE_MAP, imageMap );
@@ -394,8 +423,7 @@ String text
   = "<html>" 
   + "<img src='user'/><font name='sans serif' height='16'>John Doe</font><br/>Managing Director" 
   + "</html>";
-tableItem.setText( text );
-        </pre></code>
+tableItem.setText( text );</code></pre>
       </p>
       <p>
         Please note that the implementation is in an early stage and in particluar the API is 
@@ -404,9 +432,8 @@ tableItem.setText( text );
         See the JavaDoc for <code>Table#ENABLE_RICH_TEXT</code> for further information on how 
         to use this feature.
       </p>
-      
     </description>
   </entry>
--->
+    -->
  
 </noteworthy>
