@@ -383,8 +383,6 @@
     </description>
   </entry>
 
-  <!-- TODO ACTIVE_KEYS for widgets -->
-
   <entry category="RWT" milestone="M5">
     <title>ACTIVE_KEYS for widgets</title>
     <description>
@@ -416,7 +414,7 @@
       <p>
         Part of these changes is also the 
         <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367871">
-        removal of support for the doit< flag on key and traversal events
+        removal of support for the doit flag on key and traversal events
         </a>. Instead these events can now be canceled using the <code>RWT.CANCEL_KEYS</code>
          feature described below, which is also single sourcing capable. 
       </p>
