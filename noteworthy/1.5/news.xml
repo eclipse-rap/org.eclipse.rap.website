@@ -374,16 +374,6 @@
   </entry>
 
   <entry category="RWT" milestone="M5">
-    <title>New API</title>
-    <description>
-      <p>
-        We've finally implemented <code>Display.beep()</code> ;-).
-        The default client does not render the beep so far, but custom clients can implement it.
-      </p>
-    </description>
-  </entry>
-
-  <entry category="RWT" milestone="M5">
     <title>ACTIVE_KEYS for widgets</title>
     <description>
       <p>
@@ -439,7 +429,9 @@
 
   <!-- TODO ContentProposalAdapter ? -->
 
-  <!-- TODO [Incubator] Changes in fileupload -->
+  <!-- TODO [Incubator] Changes in fileupload
+            https://bugs.eclipse.org/bugs/show_bug.cgi?id=362924
+    -->
 
   <!-- TODO [Incubator] Additions in p2 repos -->
 
