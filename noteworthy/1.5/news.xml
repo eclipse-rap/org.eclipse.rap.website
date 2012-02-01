@@ -393,10 +393,10 @@
         <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=343248">introduced in 1.4</a> 
         to allow key bindings can now
         <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=346597"> also be 
-        use on a per-widget base.</a> This means that when you attach a key-listener to a widget,
-        you can actually choose beforehand for which keys you want to receive an event. 
-        The advantage of approach is that it can drastically reduce the traffic usually caused by 
-        key-events. For more details the see javadoc on <code>RWT.ACTIVE_KEYS</code>.
+        use on a per-widget base.</a> This means that when a key-listener is attached to a widget,
+        its possible to choose beforehand for which keys events will be issued. 
+        The advantage of this approach is that it can drastically reduce the traffic usually caused 
+        by key-events. For more details the see the javadoc on <code>RWT.ACTIVE_KEYS</code>.
       </p>
     </description>
   </entry>
@@ -416,8 +416,8 @@
       <p>
         Part of these changes is also the 
         <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367871">
-        removal of support for the <code>doit</code> flags on key and traversal events
-        </a>. Instead key events can now be canceled using the now <code>RWT.CANCEL_KEYS</code>
+        removal of support for the doit< flag on key and traversal events
+        </a>. Instead these events can now be canceled using the <code>RWT.CANCEL_KEYS</code>
          feature described below, which is also single sourcing capable. 
       </p>
     </description>
@@ -434,7 +434,7 @@
         any widget and for the browser. (Some browser shortcuts can not be suppressed, like changing 
         the tab with CTRL+TAB). Like <code>RWT.ACTIVE_KEYS</code>, this can be done on globally, or 
         on a <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367869">per-widget base</a>. 
-        For more details the see javadoc on <code>RWT.CANCEL_KEYS</code>.   
+        For more details the see the javadoc on <code>RWT.CANCEL_KEYS</code>.   
       </p>
     </description>
   </entry>
