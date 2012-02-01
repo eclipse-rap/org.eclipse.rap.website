@@ -377,7 +377,7 @@
     <title>New API</title>
     <description>
       <p>
-        We've finally implemented  <code>Display.beep()</code> ;-).
+        We've finally implemented <code>Display.beep()</code> ;-).
         The default client does not render the beep so far, but custom clients can implement it.
       </p>
     </description>
@@ -385,10 +385,59 @@
 
   <!-- TODO ACTIVE_KEYS for widgets -->
 
-  <!-- TODO CANCEL_KEYS -->
+  <entry category="RWT" milestone="M5">
+    <title>ACTIVE_KEYS for widgets</title>
+    <description>
+      <p>
+        The <code>RWT.ACTIVE_KEYS</code> constant 
+        <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=343248">introduced in 1.4</a> 
+        to allow key bindings can now
+        <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=346597"> also be 
+        use on a per-widget base.</a> This means that when you attach a key-listener to a widget,
+        you can actually choose beforehand for which keys you want to receive an event. 
+        The advantage of approach is that it can drastically reduce the traffic usually caused by 
+        key-events. For more details the see javadoc on <code>RWT.ACTIVE_KEYS</code>.
+      </p>
+    </description>
+  </entry>
 
-  <!-- TODO doit flag no longer supported for key and traversal events
-            Bug 367871 - Remove support for doit=false for KeyEvents -->
+  <entry category="RWT" milestone="M5">
+    <title>Improved key event support / doit flag support discontinued </title>
+    <description>
+      <p>
+        Key event handling has been heavily improved. Several issues regarding 
+        missing events or wrong values 
+        <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367091">have</a> 
+        <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=329639">been</a> 
+        <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=366788">fixed</a>.
+        Also, key events are now always send in asynchronous HTTP requests, making the client
+        UI more responsive. 
+      </p>
+      <p>
+        Part of these changes is also the 
+        <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367871">
+        removal of support for the <code>doit</code> flags on key and traversal events
+        </a>. Instead key events can now be canceled using the now <code>RWT.CANCEL_KEYS</code>
+         feature described below, which is also single sourcing capable. 
+      </p>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M5">
+    <title>RWT.CANCEL_KEYS allows to suppress default key event operations</title>
+    <description>
+      <p>
+        Setting the <code>doit</code>-flag on key-events has no longer any effect in RAP. Instead
+        it's possible to <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367079">
+        give a list of keys which should be canceled </a> using the <code>RWT.CANCEL_KEYS</code> 
+        constant. This allows to suppress the default operation associated with the key for 
+        any widget and for the browser. (Some browser shortcuts can not be suppressed, like changing 
+        the tab with CTRL+TAB). Like <code>RWT.ACTIVE_KEYS</code>, this can be done on globally, or 
+        on a <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367869">per-widget base</a>. 
+        For more details the see javadoc on <code>RWT.CANCEL_KEYS</code>.   
+      </p>
+    </description>
+  </entry>
 
   <!-- TODO ContentProposalAdapter ? -->
 
