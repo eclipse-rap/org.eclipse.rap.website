@@ -49,9 +49,11 @@
 
   <build name="1.5 M5" type="M"
       shortname="M5"
-      status="planned"
+      status="completed"
       publishDate="2012-02-03"
-      news="1.5/news_M5.php" />
+      news="1.5/news_M5.php"
+      toolingZip="rap-tooling-1.5.0-M5-20120130-2339.zip"
+      runtimeZip="rap-runtime-1.5.0-M5-20120131-1110.zip" />
 
   <build name="1.5 M6" type="M"
       shortname="M6"
