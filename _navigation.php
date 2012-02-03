@@ -33,6 +33,7 @@ function createMainNavigation( $navPos ) {
       <li${classes["help"]}>
         <a id="rap-button-help" href="/rap/support/">Get Help</a>
         <ul class="second-level-nav">
+          <li> <a href="/rap/documentation/"> Documentation </a> </li>
           <li> <a href="/rap/support/"> Support </a> </li>
           <li> <a href="/rap/getting-started/"> Getting Started </a> </li>
           <li> <a href="/rap/support/professional-services/"> Professional Services </a> </li>
