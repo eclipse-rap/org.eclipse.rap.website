@@ -12,7 +12,7 @@
     runtimeSite="http://download.eclipse.org/rt/rap/1.5/runtime"
     toolingSite="http://download.eclipse.org/rt/rap/1.5/tooling"
     runtimeDesc="based on Eclipse 4.2"
-    toolingDesc="for use with Eclipse 3.7, 3.8 and 4.2"
+    toolingDesc="for use with Eclipse 3.8 and 4.2"
     simultaneousRelease="Juno">
 
   <build name="1.5 M1" type="M"
