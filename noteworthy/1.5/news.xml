@@ -84,7 +84,7 @@
         run in a high-availability cluster.
       </p>
       <p>
-        RWT had to be extended in two places to achieve this. An alternatative life cycle was
+        RWT had to be extended in two places to achieve this. An alternative life cycle was
         implemented that does not use a <em>UI Thread</em> because threads cannot be migrated.
         With this <em>simple</em> life cycle implementation, RAP isn't fully compatible with SWT
         anymore, but the differences are small.
@@ -230,7 +230,7 @@
         for drawing complex graphs.
       </p>
       <p>
-        As technology marches on, we also decidded to no longer offically support IE6 in RAP 1.5.
+        As technology marches on, we also decided to no longer officially support IE6 in RAP 1.5.
         RAP 1.4 will continue to support it.
       </p>
     </description>
@@ -318,7 +318,7 @@
     <title>Target Platform Changes</title>
     <description>
       <p>
-        Since RAP 1.5 will be available togehter with Eclipse Juno, the target platform is now based
+        Since RAP 1.5 will be available together with Eclipse Juno, the target platform is now based
         on Eclipse 4.2 instead of 3.8.
         However, the RAP implementation of the Eclipse Workbench remains to be based on 3.x.
         But there are a couple of important changes in the target platform.
@@ -392,7 +392,7 @@
   </entry>
 
   <entry category="RWT" milestone="M5">
-    <title>Supressing Default Actions for Keys</title>
+    <title>Suppressing Default Actions for Keys</title>
     <!-- RWT.CANCEL_KEYS allows to suppress default key event operations -->
     <description>
       <p>
@@ -504,7 +504,7 @@ String text
 tableItem.setText( text );</code></pre>
       </p>
       <p>
-        Please note that the implementation is in an early stage and in particluar the API is 
+        Please note that the implementation is in an early stage and in particular the API is 
         likely to change. Changes are currently tracked in 
         <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=346768">bug 346768</a>.
         See the JavaDoc for <code>Table#ENABLE_RICH_TEXT</code> for further information on how 
