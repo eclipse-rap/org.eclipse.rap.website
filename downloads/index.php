@@ -9,40 +9,23 @@
 
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
-  $releaseBuilds = simplexml_load_file( "./1.4/builds.xml" );
-
+  $releaseBuilds = new Builds( "./1.4/builds.xml" );
   $stableBuilds = new Builds( "./1.5/builds.xml" );
-  if( $stableBuilds->hasError() ) {
+  if( $releaseBuilds->hasError() || $stableBuilds->hasError() ) {
     echo '<div class="error">There was a problem loading the build data for this site.</div>';
   }
 
   $stableBuild = $stableBuilds->getLastCompletedBuild();
-  $releaseBuild = $releaseBuilds->completed->build[0];
+  $releaseBuild = $releaseBuilds->getLastCompletedReleaseBuild();
 
   $downloadUrl = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/";
   $newsUrl = "../noteworthy/";
 
   // ---
 
-  function getBuildName( $build ) {
-    $result = $build[ "name" ];
-    if( $build[ "type" ] == "M" ) {
-      $result .= " Milestone Build";
-    } else if( $build[ "type" ] == "RC" ) {
-      $result .= " Release Candidate";
-    } else if( $build[ "type" ] == "R" ) {
-      $result .= " Release";
-    } else if( $build[ "type" ] == "SR" ) {
-      $result .= " Service Release";
-    } else {
-      $result .= $build[ "type" ];
-    }
-    return $result;
-  }
-
-  function getReleaseNotesLink( $build, $newsUrl ) {
+  function getReleaseNotesLink( $build ) {
     $result = "";
-    if( $build[ "relnotes" ] != "" ) {
+    if( $relnotes != "" ) {
       $result = " <a href=\"" . $newsUrl . $build[ "relnotes" ] . "\">Release Notes</a>";
     }
     return $result;
@@ -50,27 +33,27 @@
 
   $STABLE_RUNTIME_DESCRIPTION = $stableBuilds->getDescription( "runtime" );
   $STABLE_TOOLING_DESCRIPTION = $stableBuilds->getDescription( "tooling" );
-  $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds[ "runtimeDesc" ];
-  $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds[ "toolingDesc" ];
+  $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds->getDescription( "runtime" );
+  $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds->getDescription( "tooling" );
   $STABLE_NAME = $stableBuild->getName() . ' ' . $stableBuild->getType();
-  $RELEASE_NAME = getBuildName( $releaseBuild );
+  $RELEASE_NAME = $releaseBuild->getName() . ' ' . $releaseBuild->getType();
   $STABLE_DATE = formatDate( $stableBuild->getPublishDate() );
-  $RELEASE_DATE = formatDate( $releaseBuild[ "publishDate" ] );
+  $RELEASE_DATE = formatDate( $releaseBuild->getPublishDate() );
   $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild->getNews();
-  $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild[ "news" ];
-  $RELEASE_NOTES_LINK = getReleaseNotesLink( $releaseBuild, $newsUrl );
+  $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild->getNews();
+  $RELEASE_NOTES_URL = $newsUrl . $releaseBuild->getReleaseNotes();
   $STABLE_RUNTIME_ZIP = $stableBuild->getZipFile( "runtime" );
   $STABLE_TOOLING_ZIP = $stableBuild->getZipFile( "tooling" );
-  $RELEASE_RUNTIME_ZIP = $releaseBuild[ "runtimeZip" ];
-  $RELEASE_TOOLING_ZIP = $releaseBuild[ "toolingZip" ];
+  $RELEASE_RUNTIME_ZIP = $releaseBuild->getZipFile( "runtime" );
+  $RELEASE_TOOLING_ZIP = $releaseBuild->getZipFile( "tooling" );
   $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "runtime" );
   $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "tooling" );
-  $RELEASE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $releaseBuilds[ "downloadPath" ] . $releaseBuild[ "runtimeZip" ];
-  $RELEASE_TOOLING_DOWNLOAD_URL = $downloadUrl . $releaseBuilds[ "downloadPath" ] . $releaseBuild[ "toolingZip" ];
+  $RELEASE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "tooling" );
+  $RELEASE_TOOLING_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "tooling" );
   $STABLE_RUNTIME_UPDATE_SITE = $stableBuilds->getUpdateSite( "runtime" );
   $STABLE_TOOLING_UPDATE_SITE = $stableBuilds->getUpdateSite( "tooling" );
-  $RELEASE_RUNTIME_UPDATE_SITE = $releaseBuilds[ "runtimeSite" ];
-  $RELEASE_TOOLING_UPDATE_SITE = $releaseBuilds[ "toolingSite" ];
+  $RELEASE_RUNTIME_UPDATE_SITE = $releaseBuilds->getUpdateSite( "runtime" );
+  $RELEASE_TOOLING_UPDATE_SITE = $releaseBuilds->getUpdateSite( "tooling" );
 
 ?>
 
@@ -154,7 +137,7 @@
         Published: <?php echo $RELEASE_DATE ?>
         <br/>
         <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
-        <?php echo $RELEASE_NOTES_LINK ?>
+        <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
       </p>
 
       <p class="download-row">
@@ -256,7 +239,7 @@
         Published: <?php echo $RELEASE_DATE ?>
         <br/>
         <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
-        <?php echo $RELEASE_NOTES_LINK ?>
+        <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
       </p>
 
       <p class="download-row">
