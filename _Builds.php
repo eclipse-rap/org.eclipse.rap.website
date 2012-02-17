@@ -41,6 +41,15 @@ class Builds {
     return $result;
   }
 
+  function getLastCompletedReleaseBuild() {
+    $result = NULL;
+    $selectedBuilds = $this->builds->xpath( "/builds/build[@status = 'completed' and ( @type = 'R' or @type = 'SR' ) ]" );
+    if( count( $selectedBuilds ) > 0 ) {
+      $result = new Build( $this, end( $selectedBuilds ) );
+    }
+    return $result;
+  }
+
   function getPreviousBuilds( $buildName ) {
     $result = array();
     foreach( $this->builds->build as $build ) {
