@@ -116,7 +116,7 @@
 
   <build name="1.4.2" type="SR"
       shortname="SR2"
-      status="planned"
+      status="completed"
       publishDate="2012-02-24"
       news="1.4/"
       relnotes="relnotes142.php"
