@@ -48,7 +48,7 @@
   $RELEASE_TOOLING_ZIP = $releaseBuild->getZipFile( "tooling" );
   $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "runtime" );
   $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "tooling" );
-  $RELEASE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "tooling" );
+  $RELEASE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "runtime" );
   $RELEASE_TOOLING_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "tooling" );
   $STABLE_RUNTIME_UPDATE_SITE = $stableBuilds->getUpdateSite( "runtime" );
   $STABLE_TOOLING_UPDATE_SITE = $stableBuilds->getUpdateSite( "tooling" );
