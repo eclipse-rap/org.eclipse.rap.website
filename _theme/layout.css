@@ -188,6 +188,48 @@ ul#links li {
   padding: 0 15px 0 0;
 }
 
+/* INFO BAR */
+
+div#info-box-shadow {
+  z-index: 1001;
+  position: fixed;
+  overflow: hidden;
+  top: 200px;
+  left: 0;
+  width: 59px;
+  height: 204px;
+  background: url( /rap/images/info-box-shadow.png );
+}
+
+div#info-box {
+  z-index: 1000;
+  position: fixed;
+  overflow: hidden;
+  top: 245px;
+  left: 52px;
+  width: 45px;
+  background-color: #e5e5e5;
+  border: 1px solid #bdbdbd;
+  padding: 10px;
+}
+
+div#info-box > div {
+  width: 200px;
+  display: table;
+}
+
+div#info-box  a {
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div#info-box img {
+  padding: 0 20px 10px 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* CONTENT */
 
 body {

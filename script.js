@@ -21,7 +21,7 @@ $(document).ready( function() {
   		$( this ).stop();
   		$( this ).css( "opacity", "1" );
   	} );
-  }
+  };
 
   var enableDownloadDropdowns = function() {
 	
@@ -47,9 +47,30 @@ $(document).ready( function() {
         body.slideDown();
       }
     } );
-  }
+  };
+  
+  var enableInfoBox = function() {
+    
+    var infoBox = $( '#info-box' );
+    
+    infoBox.mouseenter( function() {
+      infoBox.stop();
+      infoBox.animate( {
+        "width" : "200px"
+      } );
+    } );
+    
+    infoBox.mouseleave( function() {
+      infoBox.stop();
+      infoBox.animate( {
+        "width" : "45px"
+      } );
+    });
+    
+  };
 
   enableNavigation();
   enableDownloadDropdowns();
-
+  enableInfoBox();
+  
 } );
