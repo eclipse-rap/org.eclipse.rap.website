@@ -82,23 +82,30 @@
   <target_environments>
     <html:div>
       <html:p>
-        The server-side part of the Rich Ajax Platform 1.5 will be written and compiled against
+        The RAP 1.5 server bundles will be compatible with
       </html:p>
       <html:ul>
         <html:li>
-          <html:a href="http://www.eclipse.org/equinox/server/">Equinox</html:a> Version 3.8
+          <html:strong>Java</html:strong>:
+          Compiler level and minimum execution environment is Java 1.5 (J2SE 5.0).
+          However, when used with javax.servlet 3.0, JavaSE-1.6 is required.
         </html:li>
         <html:li>
-          Version 1.5.0 of the Java Platform APIs (J2SE 5.0)
+          <html:strong>Java Servlet API</html:strong>:
+          RAP can be used with any compliant servlet container.
+          Required
+          <html:a href="http://www.oracle.com/technetwork/java/javaee/servlet/index.html">servlet API</html:a>
+          version is 2.3 .. 3.0.
         </html:li>
         <html:li>
-          <html:a href="http://www.oracle.com/technetwork/java/javaee/servlet/index.html">
-          Java Servlet API</html:a> Version 2.3 - 3.0
+          <html:strong>Equinox/OSGi</html:strong>:
+          <html:a href="http://www.eclipse.org/equinox/server/">Equinox</html:a>
+          version 4.2 is included in the basic target requirements.
+          However, RWT and RWT-OSGi will run on any compliant OSGi container.
         </html:li>
       </html:ul>
       <html:p>
-        The client-side reference implementation of RAP 1.4 will support the following web
-        browsers/rendering engines:
+        The default RAP client will support the following web browsers/rendering engines:
       </html:p>
       <html:ul>
         <html:li>Internet Explorer 7.0 and later</html:li>
