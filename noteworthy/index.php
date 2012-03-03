@@ -21,7 +21,7 @@
 
   <ul>
     <li>
-      <a href="1.5/news_M5.php">RAP 1.5 M5 milestone build</a>, currently under development.
+      <a href="1.5/news_M5.php">RAP 1.5 M5 milestone build</a>, published February 03, 2012.
     </li>
     <li>
       <a href="1.5/news_M4.php">RAP 1.5 M4 milestone build</a>, published December 16, 2011.
