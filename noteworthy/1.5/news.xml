@@ -470,8 +470,10 @@
     </description>
   </entry>
   
-  <!-- TODO RWT.CUSTOM_ITEM_HEIGHT -->
-
+  <!-- TODO (M6) RWT.CUSTOM_ITEM_HEIGHT and RWT.MARKUP_ENABLED -->
+  
+  <!-- TODO (M6) FileUpload theming -->
+  
   <!-- TODO [Incubator] Additions in p2 repos -->
 
   <!-- TODO (M6) Protocol:
