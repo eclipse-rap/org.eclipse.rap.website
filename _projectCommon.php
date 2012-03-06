@@ -11,13 +11,11 @@
 
   function generateRapPage( $author, $keywords, $title, $html, $navPosition ) {
     printHeader( $title, $navPosition );
-    printInfobar();
     echo $html;
     printFooter();
   }
 
   function printHeader( $title, $navPosition ) {
-    printInfoBox();
     echo <<<EOHTML
       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -40,15 +38,14 @@
         <script type="text/javascript" src="/rap/script.js"></script>
       </head>
       <body>
-      	<div id="header-bar">
 EOHTML;
-
+    printInfoBox();
+    echo '<div id="header-bar">';
     echo createHeaderAndNavigation( $navPosition );
-    
     echo <<<EOHTML
-	</div>
-	<div id="novaWrapper">
-		<div id="novaContent">
+    	</div>
+			<div id="novaWrapper">
+				<div id="novaContent">
 EOHTML;
   }
 
@@ -64,7 +61,6 @@ EOHTML;
       		<a href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a>
     		</div>
       </div>
-    	<div id="info-box-shadow"></div>
 EOHTML;
   }
 

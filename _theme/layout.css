@@ -188,25 +188,14 @@ ul#links li {
   padding: 0 15px 0 0;
 }
 
-/* INFO BAR */
-
-div#info-box-shadow {
-  z-index: 1001;
-  position: fixed;
-  overflow: hidden;
-  top: 200px;
-  left: 0;
-  width: 59px;
-  height: 204px;
-  background: url( /rap/images/info-box-shadow.png );
-}
+/* INFO BOX */
 
 div#info-box {
   z-index: 1000;
   position: fixed;
   overflow: hidden;
-  top: 245px;
-  left: 52px;
+  top: 50%;
+  margin-top: -44px;
   width: 45px;
   background-color: #e5e5e5;
   border: 1px solid #bdbdbd;
