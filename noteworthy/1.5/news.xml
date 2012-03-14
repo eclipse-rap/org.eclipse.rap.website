@@ -470,6 +470,21 @@
     </description>
   </entry>
   
+  <entry category="RWT" milestone="M6">
+    <title>Table supports fixed columns</title>
+    <description>
+      <p>
+        It's now possible to fixate a given number of leftmost TableColumns, so that they are 
+        excluded from horizontal scrolling. This is very useful for tables
+        that have a lot of columns, with the first column(s) containing some kind of heading or
+        key value (e.g. a persons name) that should always be visible.
+      </p>
+      <p>
+        For more details, see the JavaDoc on <code>RWT.FIXED_COLUMNS</code>.
+      </p>
+    </description>
+  </entry>
+  
   <!-- TODO (M6) RWT.CUSTOM_ITEM_HEIGHT and RWT.MARKUP_ENABLED -->
   
   <!-- TODO (M6) FileUpload theming -->
@@ -481,6 +496,8 @@
          https://bugs.eclipse.org/bugs/show_bug.cgi?id=368421
        * operations as arrays
     -->
+    
+  <!-- TODO (M7) new animations -->
 
   <!-- NOTE [rst]: Decided to change API before publishing
 
