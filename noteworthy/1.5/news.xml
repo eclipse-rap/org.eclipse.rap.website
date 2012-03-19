@@ -495,9 +495,36 @@
       </p>
     </description>
   </entry>
-
-  <!-- TODO (M6) RWT.CUSTOM_ITEM_HEIGHT and RWT.MARKUP_ENABLED -->
   
+  <entry category="RWT" milestone="M6">
+    <title>
+      Markup support
+    </title>
+    <description>
+      <p>
+      Some widgets were enhanced to allow markup in its texts (i.e. in calls to 
+      <code>TableItem#setText()</code>). Currently, markup is supported for TableItem, TreeItem, 
+      Label and CLabel. Once, the markup in text is enabled it's not possible to disable it. 
+      </p>
+      <p>
+        <img class="framed" src="images/MarkupInTable.png" />
+      </p>
+      <p>
+        You could use <code>RWT#CUSTOM_ITEM_HEIGHT</code> property in <code>Table#setData()</code> 
+        in order to set a custom item height too.
+      </p>
+      <p>
+        See the JavaDoc for <code>RWT#MARKUP_ENABLED</code> for further information on how 
+        to use this feature.
+      </p>
+      <p>
+        You can see those features in action in our updated 
+        <a href="http://rap.eclipsesource.com/rapdemo/examples#table-markup">demo</a> on the 
+        "Markup In Table" page.
+      </p>
+    </description>
+  </entry>
+
   <!-- TODO [Incubator] Additions in p2 repos -->
 
   <!-- TODO (M6) Protocol:
@@ -510,36 +537,7 @@
 
   <!-- NOTE [rst]: Decided to change API before publishing
 
-  <entry category="RWT" milestone="M2">
-    <title>
-      Experimental support for markup in Tables
-    </title>
-    <description>
-      <p>
-      The table was enhanced to allow markup in item texts
-      (i.e. in calls to <code>TableItem#setText()</code>).
-      </p>
-      <p>
-        <img src="???" />
-        <pre><code>table.setData( Table.ITEM_HEIGHT, new Integer( 90 ) );
-HashMap<String,Image> imageMap = new HashMap<String,Image>();
-imageMap.put( "user", userImage );
-table.setData( Table.IMAGE_MAP, imageMap );
-String text
-  = "<html>" 
-  + "<img src='user'/><font name='sans serif' height='16'>John Doe</font><br/>Managing Director" 
-  + "</html>";
-tableItem.setText( text );</code></pre>
-      </p>
-      <p>
-        Please note that the implementation is in an early stage and in particular the API is 
-        likely to change. Changes are currently tracked in 
-        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=346768">bug 346768</a>.
-        See the JavaDoc for <code>Table#ENABLE_RICH_TEXT</code> for further information on how 
-        to use this feature.
-      </p>
-    </description>
-  </entry>
+  
     -->
  
 </noteworthy>
