@@ -59,7 +59,9 @@
       shortname="M6"
       status="planned"
       publishDate="2012-03-23"
-      news="1.5/news_M6.php" />
+      news="1.5/news_M6.php"
+      toolingZip="rap-tooling-1.5.0-M6-20120319-1638.zip"
+      runtimeZip="rap-runtime-1.5.0-M6-20120320-1638.zip" />
 
   <build name="1.5 M7" type="M"
       shortname="M7"
