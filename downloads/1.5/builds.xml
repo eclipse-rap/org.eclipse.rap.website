@@ -57,7 +57,7 @@
 
   <build name="1.5 M6" type="M"
       shortname="M6"
-      status="planned"
+      status="completed"
       publishDate="2012-03-23"
       news="1.5/news_M6.php"
       toolingZip="rap-tooling-1.5.0-M6-20120319-1638.zip"
