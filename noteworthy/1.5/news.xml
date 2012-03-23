@@ -681,11 +681,9 @@ config.addEntryPoint( "/example", entryPointFactory, properties );</code></pre>
     </description>
   </entry>
 
-  <!-- TODO (M7)
+  <!-- TODO
 
    new animations 
-
-   Launcher
 
    -->
 
