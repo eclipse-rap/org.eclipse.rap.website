@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Resources</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Resources</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.rap.ui.resources<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Since: </h6>RAP 1.0
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6>The <code>resources</code> extension point is used to register additional resources which are used in the client application. This can be for example a javascript library, additional images used by the client or other documents which are then available on the client. The resource can be located locally or loaded from an external location.<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.resource">resource</a>+)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.resource">resource</a> (<a href="#e.dependsOn">dependsOn</a>)*&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST resource</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - An optional identifier of the resource instance.</li>
+<li><b>class</b> - An implementation of <code>org.eclipse.rwt.resources.IResource</code> to define location, options and other aspects for this resource.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.dependsOn">dependsOn</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST dependsOn</p>
+<p class="code SchemaDtdAttlist">resourceId&nbsp;IDREF #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>resourceId</b> - The resourceId is used to identify the resource on which this resource depends on.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6><pre class="Example"><span class="code SchemaTag">
+&lt;extension
+    id=</span><span class="code SchemaCstring">&quot;org.eclipse.rap.gmaps.gmap&quot;</span><span class="code SchemaTag">
+    point=</span><span class="code SchemaCstring">&quot;org.eclipse.rap.ui.resources&quot;</span><span class="code SchemaTag">&gt;
+  &lt;resource class=</span><span class="code SchemaCstring">&quot;org.eclipse.rap.gmaps.GMapResource&quot;</span><span class="code SchemaTag">/&gt;
+&lt;/extension&gt;
+</span></pre>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6>Besides registering resources with an extension you can dynamically register new resources with an <code>IResourceManager</code>. Use <code>RWT.getResourceManager</code> to obtain the currently active resource manager implemenation.
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2007 Innoopract Informationssysteme GmbH and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

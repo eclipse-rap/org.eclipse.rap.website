@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Services</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Services</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.ui.services<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Since: </h6>3.4
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6>Define service factories so that services can be contributed declaratively and will be available through <code>IServiceLocator#getService(Class)</code>.  The implementation of <code>AbstractServiceFactory</code> must be able to return a global service and multiple child services (if applicable).
+<p>
+Services must follow a general contract:
+<ul>
+<li>The top level service has no parent.</li>
+<li>The child service may use the supplied parent, which can be cast to the service interface.</li>
+<li>Any other services needed for initialization should be retrieved from the <code>IServiceLocator</code>.</li>
+<li>If the service needs to clean up any state (like listeners) it should implement <code>IDisposable</code>.</li>
+<li>Services should clearly specify when they perform cleanup for clients, such as removing listeners automatically on disposal.</li>
+</ul>
+</p><p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.serviceFactory">serviceFactory</a>? , <a href="#e.sourceProvider">sourceProvider</a>?)+&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Contribute services to the workbench.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.serviceFactory">serviceFactory</a> (<a href="#e.service">service</a>+)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST serviceFactory</p>
+<p class="code SchemaDtdAttlist">factoryClass&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Match a service interface to a factory that can supply a hierachical implementation of that service.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>factoryClass</b> - The factory that extends <code>AbstractServiceFactory</code> and can create the implementation for the serviceClass.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.service">service</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST service</p>
+<p class="code SchemaDtdAttlist">serviceClass&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A service this factory can provide.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>serviceClass</b> - The interface that represents a service contract.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.sourceProvider">sourceProvider</a> (<a href="#e.variable">variable</a>+)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST sourceProvider</p>
+<p class="code SchemaDtdAttlist">provider&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A Source Provider supplies source variables to the IEvaluationService.  It can also notify the IEvaluationService when one or more of the variables change.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>provider</b> - This class must provide variables and call the appropriate fireSourceChanged(*) method when any of the variables change.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.variable">variable</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST variable</p>
+<p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">priorityLevel&nbsp;(workbench|activeContexts|activeShell|activeWorkbenchWindow|activeEditorId|activePartId|activeSite) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A source variable from this provider.  A source provider must declare all variables that it provides.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>name</b> - The name of a contributed source variable.  It is a good practice to prepend the plugin id to the variable name to avoid collisions with other source providers.</li>
+<li><b>priorityLevel</b> - For conflict resolution used by services like the IHandlerService.  The source must select a priority for all contributed variables.  <b>workbench</b> is the global default priority.  See <code>ISources</code> for relative priority information.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6><p>
+Here is a basic definition:
+<pre class="Example"><span class="code SchemaTag">
+   &lt;extension
+         point=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.services&quot;</span><span class="code SchemaTag">&gt;
+      &lt;serviceFactory
+            factoryClass=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.tests.services.LevelServiceFactory&quot;</span><span class="code SchemaTag">&gt;
+         &lt;service
+               serviceClass=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.tests.services.ILevelService&quot;</span><span class="code SchemaTag">&gt;
+         &lt;/service&gt;
+      &lt;/serviceFactory&gt;
+   &lt;/extension&gt;
+</span></pre></p>
+<p>
+The <code>LevelServiceFactory</code> can return an <code>ILevelService</code> when it is requested from the <code>IServiceLocator</code>:
+<pre class="Example"><span class="code SchemaTag">
+   ILevelService s = (ILevelService) getSite().getService(ILevelService.class);
+   System.out.println(s.getLevel());
+</span></pre>
+</p>
+<p>
+In this test example, the factory would instantiate three <code>ILevelService</code> implementations during the first call to <code>getSite().getService(*)</code>.  The global one in the workbench, one for the workbench window, and one for the site.
+</p>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6><p>
+Please see <code>org.eclipse.ui.services.AbstractServiceFactory</code>, <code>org.eclipse.ui.services.IDisposable</code>, and <code>org.eclipse.ui.services.IServiceWithSources</code> for more information.
+</p>
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2007 IBM Corporation and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

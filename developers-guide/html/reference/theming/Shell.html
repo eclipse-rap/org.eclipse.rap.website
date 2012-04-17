@@ -1,0 +1,404 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Shell</title>
+<link rel="stylesheet" type="text/css" href="../../style.css">
+<style type="text/css">
+        h2 {
+          margin: 20px 0 5px;
+          padding: 5px 10px;
+          background-color: #ccccff;
+          border: 1px solid black;
+        }
+        h3 {
+          margin: 15px 0 5px;
+          padding: 5px 10px;
+          background-color: #eeeeff;
+          border: 1px solid black;
+        }
+        ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 8px 0 8px 18px;
+        }
+        li {
+          margin: -1px 0 0;
+          padding: 2px 5px;
+          border: 1px solid black;
+        }
+        h2 + p {
+          margin: 10px 0 5px 12px;
+        }
+        h3 + p {
+          margin: 8px 0 3px 24px;
+        }
+        .deprecated {
+          text-decoration: line-through;
+        }
+        .css-name {
+          font-weight: bold;
+          color: #0000aa;
+        }
+        .css-desc {
+          margin: 1px 0 2px 20px;
+        }
+        </style>
+</head>
+<body>
+<span><a href="index.html">RWT Theming Reference</a> &gt; Shell</span><a name="Shell">  </a>
+<h2>Shell</h2>
+<p>SWT Shells (the window in SWT).</p>
+<h3>Available CSS Properties</h3>
+<p>
+      Properties that can be defined for this element:
+      </p>
+<ul>
+<li>
+<a href="Properties.html#animation" class="css-name">animation</a>
+<p class="css-desc">
+        No support yet.
+      </p>
+</li>
+<li>
+<a href="Properties.html#background-color" class="css-name">background-color</a>
+<p class="css-desc">Background color for shells.</p>
+</li>
+<li>
+<a href="Properties.html#background-image" class="css-name">background-image</a>
+<p class="css-desc">Background image or gradient.</p>
+</li>
+<li>
+<a href="Properties.html#border" class="css-name">border</a>
+<p class="css-desc">Outer window border.</p>
+</li>
+<li>
+<a href="Properties.html#border-radius" class="css-name">border-radius</a>
+<p class="css-desc">
+        Border radius. The border radius has no effect if an enhanced border,
+        like "inset" or "outset" is used.
+      </p>
+</li>
+<li>
+<a href="Properties.html#box-shadow" class="css-name">box-shadow</a>
+<p class="css-desc">The shadow behind the shell.</p>
+</li>
+<li>
+<a href="Properties.html#opacity" class="css-name">opacity</a>
+<p class="css-desc">The opacity of the shell. A value between 0 and 1.</p>
+</li>
+<li>
+<a href="Properties.html#padding" class="css-name">padding</a>
+<p class="css-desc">Padding around the shell's client area.</p>
+</li>
+</ul>
+<h3>Applicable SWT Styles</h3>
+<p>
+      SWT style flags that can be referred to in a selector for this element
+      (as CSS attributes):
+      </p>
+<ul>
+<li>
+<span class="css-name">[APPLICATION_MODAL]</span>
+<p class="css-desc">Indicates that the shell is modal.</p>
+</li>
+<li>
+<span class="css-name">[BORDER]</span>
+<p class="css-desc">Indicates that the shell should have a border.</p>
+</li>
+<li>
+<span class="css-name">[SHEET]</span>
+<p class="css-desc">Indicates that the shell should behave like a sheet window.</p>
+</li>
+<li>
+<span class="css-name">[TITLE]</span>
+<p class="css-desc">Indicates that the shell should show it's title bar.</p>
+</li>
+<li>
+<span class="css-name">[TOOL]</span>
+<p class="css-desc">Indicates that the shell should behave like a tool window.</p>
+</li>
+</ul>
+<h3>Applicable States</h3>
+<p>
+      Widget states that can be referred to in a selector for this element
+      (as CSS pseudo-classes):
+      </p>
+<ul>
+<li>
+<span class="css-name">:inactive</span>
+<p class="css-desc">Applies for all shells except the active shell.</p>
+</li>
+<li>
+<span class="css-name">:maximized</span>
+<p class="css-desc">Applies for shells that are currently maximized.</p>
+</li>
+</ul>
+<a name="Shell-Titlebar">  </a>
+<h2>Shell-Titlebar</h2>
+<p>
+        The window titlebar. Only visible when the TITLE style is set.
+      </p>
+<h3>Available CSS Properties</h3>
+<p>
+      Properties that can be defined for this element:
+      </p>
+<ul>
+<li>
+<a href="Properties.html#background-color" class="css-name">background-color</a>
+<p class="css-desc">
+          Background color for the title bar.
+          Maps to system colors SWT.COLOR_TITLE_BACKGROUND and
+          SWT.COLOR_TITLE_INACTIVE_BACKGROUND, respectively.
+        </p>
+</li>
+<li>
+<a href="Properties.html#background-gradient-color" class="css-name">background-gradient-color</a>
+<p class="css-desc">
+          Second background color for the title bar (currently ignored).
+          Maps to system colors SWT.COLOR_TITLE_BACKGROUND_GRADIENT and
+          SWT.COLOR_TITLE_INACTIVE_BACKGROUND_GRADIENT, respectively.
+        </p>
+</li>
+<li>
+<a href="Properties.html#background-image" class="css-name">background-image</a>
+<p class="css-desc">Background image for the title bar.</p>
+</li>
+<li>
+<a href="Properties.html#border" class="css-name">border</a>
+<p class="css-desc">Shell titlebar border.</p>
+</li>
+<li>
+<a href="Properties.html#border-radius" class="css-name">border-radius</a>
+<p class="css-desc">
+          Border radius. The border radius has no effect if an enhanced border,
+          like "inset" or "outset" is used.
+        </p>
+</li>
+<li>
+<a href="Properties.html#color" class="css-name">color</a>
+<p class="css-desc">Text color for the title bar.</p>
+</li>
+<li>
+<a href="Properties.html#font" class="css-name">font</a>
+<p class="css-desc">Font for the title bar.</p>
+</li>
+<li>
+<a href="Properties.html#height" class="css-name">height</a>
+<p class="css-desc">Height of the title bar.</p>
+</li>
+<li>
+<a href="Properties.html#margin" class="css-name">margin</a>
+<p class="css-desc">Margin for the title bar.</p>
+</li>
+<li>
+<a href="Properties.html#padding" class="css-name">padding</a>
+<p class="css-desc">Padding for the title bar.</p>
+</li>
+<li>
+<a href="Properties.html#text-shadow" class="css-name">text-shadow</a>
+<p class="css-desc">Shadow for title bar text.</p>
+</li>
+</ul>
+<h3>Applicable SWT Styles</h3>
+<p>
+<em>none</em>
+</p>
+<h3>Applicable States</h3>
+<p>
+      Widget states that can be referred to in a selector for this element
+      (as CSS pseudo-classes):
+      </p>
+<ul>
+<li>
+<span class="css-name">:inactive</span>
+<p class="css-desc">Applies for all shells except the active shell.</p>
+</li>
+</ul>
+<a name="Shell-MinButton">  </a>
+<h2>Shell-MinButton</h2>
+<p>
+        The minimize button of a window.
+        Only visible when the MIN style flag is set.
+      </p>
+<h3>Available CSS Properties</h3>
+<p>
+      Properties that can be defined for this element:
+      </p>
+<ul>
+<li>
+<a href="Properties.html#background-image" class="css-name">background-image</a>
+<p class="css-desc">Image for the minimize button.</p>
+</li>
+<li>
+<a href="Properties.html#margin" class="css-name">margin</a>
+<p class="css-desc">Margin for the minimize button.</p>
+</li>
+</ul>
+<h3>Applicable SWT Styles</h3>
+<p>
+<em>none</em>
+</p>
+<h3>Applicable States</h3>
+<p>
+      Widget states that can be referred to in a selector for this element
+      (as CSS pseudo-classes):
+      </p>
+<ul>
+<li>
+<span class="css-name">:hover</span>
+<p class="css-desc">Applies for shell buttons on mouse-over.</p>
+</li>
+<li>
+<span class="css-name">:inactive</span>
+<p class="css-desc">Applies for shell buttons on inactive shells.</p>
+</li>
+<li>
+<span class="css-name">:maximized</span>
+<p class="css-desc">Applies for shell buttons on maximized shells.</p>
+</li>
+</ul>
+<a name="Shell-MaxButton">  </a>
+<h2>Shell-MaxButton</h2>
+<p>
+        The maximize/restore button of a window.
+        Only visible when MAX style flag is set.
+      </p>
+<h3>Available CSS Properties</h3>
+<p>
+      Properties that can be defined for this element:
+      </p>
+<ul>
+<li>
+<a href="Properties.html#background-image" class="css-name">background-image</a>
+<p class="css-desc">Background image for the shell maximize/restore button.</p>
+</li>
+<li>
+<a href="Properties.html#margin" class="css-name">margin</a>
+<p class="css-desc">Margin for the shell maximize/restore button.</p>
+</li>
+</ul>
+<h3>Applicable SWT Styles</h3>
+<p>
+<em>none</em>
+</p>
+<h3>Applicable States</h3>
+<p>
+      Widget states that can be referred to in a selector for this element
+      (as CSS pseudo-classes):
+      </p>
+<ul>
+<li>
+<span class="css-name">:hover</span>
+<p class="css-desc">Applies for shell buttons on mouse-over.</p>
+</li>
+<li>
+<span class="css-name">:inactive</span>
+<p class="css-desc">Applies for shell buttons on inactive shells.</p>
+</li>
+<li>
+<span class="css-name">:maximized</span>
+<p class="css-desc">Applies for shell buttons on maximized shells.</p>
+</li>
+</ul>
+<a name="Shell-CloseButton">  </a>
+<h2>Shell-CloseButton</h2>
+<p>
+        The close button of a window.
+        Only visible when CLOSE style flag is set.
+      </p>
+<h3>Available CSS Properties</h3>
+<p>
+      Properties that can be defined for this element:
+      </p>
+<ul>
+<li>
+<a href="Properties.html#background-image" class="css-name">background-image</a>
+<p class="css-desc">Background image for the shell close button.</p>
+</li>
+<li>
+<a href="Properties.html#margin" class="css-name">margin</a>
+<p class="css-desc">Margin for the shell close button.</p>
+</li>
+</ul>
+<h3>Applicable SWT Styles</h3>
+<p>
+<em>none</em>
+</p>
+<h3>Applicable States</h3>
+<p>
+      Widget states that can be referred to in a selector for this element
+      (as CSS pseudo-classes):
+      </p>
+<ul>
+<li>
+<span class="css-name">:hover</span>
+<p class="css-desc">Applies for shell buttons on mouse-over.</p>
+</li>
+<li>
+<span class="css-name">:inactive</span>
+<p class="css-desc">Applies for shell buttons on inactive shells.</p>
+</li>
+<li>
+<span class="css-name">:maximized</span>
+<p class="css-desc">Applies for shell buttons on maximized shells.</p>
+</li>
+</ul>
+<a name="Shell-DisplayOverlay">  </a>
+<h2>Shell-DisplayOverlay</h2>
+<p>
+        An overlay that stays between (regarding the z-order) the display area 
+        and a modal shell when it is open.
+      </p>
+<h3>Available CSS Properties</h3>
+<p>
+      Properties that can be defined for this element:
+      </p>
+<ul>
+<li>
+<a href="Properties.html#animation" class="css-name">animation</a>
+<p class="css-desc">
+        Supports animations-types "fadeIn" and "fadeOut". Others are ignored.
+      </p>
+</li>
+<li>
+<a href="Properties.html#background-color" class="css-name">background-color</a>
+<p class="css-desc">Background color for the overlay.</p>
+</li>
+<li>
+<a href="Properties.html#background-image" class="css-name">background-image</a>
+<p class="css-desc">Background image for the overlay.</p>
+</li>
+<li>
+<a href="Properties.html#opacity" class="css-name">opacity</a>
+<p class="css-desc">The opacity of the overlay. A value between 0 and 1.</p>
+</li>
+</ul>
+<h3>Applicable SWT Styles</h3>
+<p>
+      SWT style flags that can be referred to in a selector for this element
+      (as CSS attributes):
+      </p>
+<ul>
+<li>
+<span class="css-name">[BORDER]</span>
+<p class="css-desc">Indicates that the modal shell has the BORDER style.</p>
+</li>
+<li>
+<span class="css-name">[SHEET]</span>
+<p class="css-desc">Indicates that the modal shell has the SHEET style.</p>
+</li>
+<li>
+<span class="css-name">[TITLE]</span>
+<p class="css-desc">Indicates that the modal shell has the TITLE style.</p>
+</li>
+<li>
+<span class="css-name">[TOOL]</span>
+<p class="css-desc">Indicates that the modal shell has the TOOL style.</p>
+</li>
+</ul>
+<h3>Applicable States</h3>
+<p>
+<em>none</em>
+</p>
+</body>
+</html>

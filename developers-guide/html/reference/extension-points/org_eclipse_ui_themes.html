@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Themes</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Themes</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.ui.themes<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Since: </h6>3.0
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6>This extension point is used to customize the appearance of the UI.  It allows definition of color and font entities as well as theme entities.  Themes allow applications to selectively override default color and font specifications for particular uses.<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.theme">theme</a>* , <a href="#e.colorDefinition">colorDefinition</a>* , <a href="#e.fontDefinition">fontDefinition</a>* , <a href="#e.themeElementCategory">themeElementCategory</a>* , <a href="#e.data">data</a>* , <a href="#e.categoryPresentationBinding">categoryPresentationBinding</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>point</b> - a fully qualified identifier of the target extension point</li>
+<li><b>id</b> - an optional identifier of the extension instance</li>
+<li><b>name</b> - an optional name of the extension instance</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.theme">theme</a> (<a href="#e.colorOverride">colorOverride</a>* , <a href="#e.fontOverride">fontOverride</a>* , <a href="#e.description">description</a>? , <a href="#e.data">data</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST theme</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A collection of font, color and data overrides.  Such a collection may be used to alter the appearance of the workbench.  Many theme elements may exist with the same id.  This allows component authors to contribute to existing themes.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique name that will be used to identify this theme</li>
+<li><b>name</b> - a translatable name of the theme to be presented to the user.  At least one theme definition with any given id should contain this attribute.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.themeElementCategory">themeElementCategory</a> (<a href="#e.description">description</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST themeElementCategory</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">parentId&nbsp;IDREF #IMPLIED</p><p class="code SchemaDtdAttlist">class&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">label&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A logical grouping of theme element definitions.  This category may include colors and fonts.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - the id for this category</li>
+<li><b>parentId</b> - the id of the parent category, if any.</li>
+<li><b>class</b> - a class that implements <code>org.eclipse.ui.themes.IThemePreview</code></li>
+<li><b>label</b> - a translatable name of the theme element category to be presented to the user</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.colorDefinition">colorDefinition</a> (<a href="#e.colorFactory">colorFactory</a>? , <a href="#e.colorValue">colorValue</a>* , <a href="#e.description">description</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST colorDefinition</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">label&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">defaultsTo&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">categoryId&nbsp;&nbsp;&nbsp;IDREF #IMPLIED</p><p class="code SchemaDtdAttlist">colorFactory&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">isEditable&nbsp;&nbsp;&nbsp;(true | false) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A symbolic color definition.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique id that can be used to identify this color definition.</li>
+<li><b>label</b> - a translatable name of the color to be presented to the user.</li>
+<li><b>defaultsTo</b> - the id of another color definition that is the default setting for the receiver. When there is no preference for this color the color registry will have the value of defaultsTo set for it in the registry.
+
+Only one of <code>defaultsTo</code>, <code>value</code> or <code>colorFactory</code> may be defined.</li>
+<li><b>value</b> - The default value of this color.  The value may be specified in the following ways:
+<ul>
+<li>a String containing comma separated integers in the form red,green,blue 
+<li>a String that maps to an SWT color constant (ie:  COLOR_RED).
+</ul>
+Only one of <code>defaultsTo</code>, <code>value</code> or <code>colorFactory</code> may be defined.  If <code>value</code> is specified, additional value definitions may be specified on a per platform/windowing system basis via the <code>colorValue</code> element.</li>
+<li><b>categoryId</b> - the optional id of the <code>themeElementCategory</code> this color belongs to.</li>
+<li><b>colorFactory</b> - a class that implements <code>org.eclipse.ui.themes.IColorFactory</code>.  This may be used instead of <code>value</code> to specify the default value of the color.  Please be advised that this should be used with caution - usage of this attribute will cause plugin activation on workbench startup.</li>
+<li><b>isEditable</b> - whether the user should be allowed to edit this color in the preference page.  If this is <code>false</code> then the contribution is not shown to the user.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.fontDefinition">fontDefinition</a> (<a href="#e.fontValue">fontValue</a>* , <a href="#e.description">description</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST fontDefinition</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">label&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">categoryId&nbsp;IDREF #IMPLIED</p><p class="code SchemaDtdAttlist">defaultsTo&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">isEditable&nbsp;(true | false) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A symbolic font definition.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique name that can be used to identify this font definition.</li>
+<li><b>label</b> - a translatable name of the font to be presented to the user.</li>
+<li><b>value</b> - <p>the font value.  This is in the form: <code>fontname-style-height</code> where <code>fontname</code> is the name of a font, <code>style</code> is a font style (one of <code>"regular"</code>, <code>"bold"</code>, <code>"italic"</code>, or <code>"bold italic"</code>) and <code>height</code> is an integer representing the font height.</p>
+<p>Example: <code>Times New Roman-bold-36</code>.</p>  
+<p>Only one (or neither) of <code>value</code> or <code>defaultsTo</code> may be used.</p>  If <code>value</code> is specified, additional value definitions may be specified on a per platform/windowing system basis via the <code>fontValue</code> element.</li>
+<li><b>categoryId</b> - the optional id of the <code>themeElementCategory</code> this font belongs to.</li>
+<li><b>defaultsTo</b> - the id of another font definition that is the default setting for the receiver. When there is no preference for this font the font registry will have the value of defaultsTo set for it in the registry.
+<p>
+Only one (or neither) of <code>value</code> or <code>defaultsTo</code> may be used.
+</p></li>
+<li><b>isEditable</b> - whether the user should be allowed to edit this color in the preference page.  If this is <code>false</code> then the contribution is not shown to the user.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.colorOverride">colorOverride</a> (<a href="#e.colorFactory">colorFactory</a>? , <a href="#e.colorValue">colorValue</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST colorOverride</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDREF #REQUIRED</p><p class="code SchemaDtdAttlist">value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">colorFactory&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Allows overriding of colors defined in <code>colorDefinition</code> elements.  These colors will be applied when the theme is in use. The colors that are defined by workbench are:
+
+<ul>
+<li>org.eclipse.jface.preference.JFacePreference.ERROR_COLOR
+<li>org.eclipse.jface.preference.JFacePreference.HYPERLINK_COLOR
+<li>org.eclipse.jface.preference.JFacePreference.ACTIVE_HYPERLINK_COLOR
+</ul></p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique id that can be used to identify this color definition override.  This should match an existing font identifier.  Strictly speaking, you may override colors that do not exist in the base theme although this practice is not recommended.  In effect, such overrides will have behavior similar to <code>colorDefinition</code>s that have <code>isEditable</code> set to <code>false</code>.</li>
+<li><b>value</b> - the overriding value of this color.  The value may be specified in the following ways:
+<ul>
+<li>a String containing comma separated integers in the form red,green,blue 
+<li>a String that maps to an SWT color constant (ie:  COLOR_RED).
+</ul>
+Only one of <code>value</code> or <code>colorFactory</code> may be defined.
+Unlike a <code>colorDefinition</code>, you may not supply a <code>defaultsTo</code> for an override.</li>
+<li><b>colorFactory</b> - a class that implements <code>org.eclipse.ui.themes.IColorFactory</code>.  This may be used instead of <code>value</code> to specify the default value of the color.  Please be advised that this should be used with caution - usage of this attribute will cause plugin activation on workbench startup.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.fontOverride">fontOverride</a> (<a href="#e.fontValue">fontValue</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST fontOverride</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;IDREF #REQUIRED</p><p class="code SchemaDtdAttlist">value&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Allows overriding of fonts defined in <code>fontDefinition</code> elements.  These fonts will be applied when the theme is in use. The fonts that are defined by workbench are:
+
+<ul>
+<li>org.eclipse.jface.resource.JFaceResources.BANNER_FONT
+<li>org.eclipse.jface.resource.JFaceResources.DIALOG_FONT
+<li>org.eclipse.jface.resource.JFaceResources.HEADER_FONT
+<li>org.eclipse.jface.resource.JFaceResources.TEXT_FONT
+</ul></p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique id that can be used to identify this font definition override.  This should match an existing font identifier.  Strictly speaking, you may override fonts that do not exist in the base theme although this practice is not recommended.  In effect, such overrides will have behavior similar to <code>fontDefinition</code>s that have <code>isEditable</code> set to <code>false</code>.</li>
+<li><b>value</b> - <p>the overriding value of this font.  This is in the form: <code>fontname-style-height</code> where <code>fontname</code> is the name of a font, <code>style</code> is a font style (one of <code>"regular"</code>, <code>"bold"</code>, <code>"italic"</code>, or <code>"bold italic"</code>) and <code>height</code> is an integer representing the font height.</p>
+<p>Example: <code>Times New Roman-bold-36</code>.</p>
+<p><code>value</code> must be defined for a font override.
+Unlike a <code>fontDefinition</code>, you may not supply a <code>defaultsTo</code> for a <code>fontOverride</code>.</p>
+
+<p>If this value is not specified the default font will be used</p></li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.description">description</a> (#PCDATA)&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A short description of the elements usage.</p>
+<br><br>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.colorFactory">colorFactory</a> (<a href="#e.parameter">parameter</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST colorFactory</p>
+<p class="code SchemaDtdAttlist">class&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">plugin&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+The element version of the <code>colorFactory</code> attribute.  This is used when the colorFactory implements <code>org.eclipse.core.runtime.IExecutableExtension</code> and there is parameterized data that you wish used in its initialization.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>class</b> - a class that implements <code>org.eclipse.ui.themes.IColorFactory</code>.  It may also implement <code>org.eclipse.core.runtime.IExecutableExtension</code>.</li>
+<li><b>plugin</b> - the identifier of the plugin that contains the class</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.parameter">parameter</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST parameter</p>
+<p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">value&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A parameter element to be used within the colorFactory element.  This will be passed as initialization data to the colorFactory class.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>name</b> - the parameter name</li>
+<li><b>value</b> - the parameter value</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.data">data</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST data</p>
+<p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">value&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>An element that allows arbitrary data to be associated with a theme or the default theme.  This data may be gradient directions or percentages, labels, author information, etc.</p>
+<p>This element has behavior similar to definitions and overrides.  If a key is present in both the default theme and an identified theme, then the identified themes value will be used when that theme is accessed.  If the identified theme does not supply a value then the default is used.</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>name</b> - the data name,</li>
+<li><b>value</b> - the data value</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.colorValue">colorValue</a> (<a href="#e.colorFactory">colorFactory</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST colorValue</p>
+<p class="code SchemaDtdAttlist">os&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">ws&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">colorFactory&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element allows specification of a color value on a per-platform basis.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>os</b> - an optional os string to enable choosing of color based on current OS. eg: win32,linux</li>
+<li><b>ws</b> - an optional os string to enable choosing of color based on current WS. eg: win32,gtk</li>
+<li><b>value</b> - The default value of this color.  The value may be specified in the following ways:
+<ul>
+<li>a String containing comma separated integers in the form red,green,blue 
+<li>a String that maps to an SWT color constant (ie:  COLOR_RED).
+</ul>
+Only one of <code>value</code> or <code>colorFactory</code> may be defined.</li>
+<li><b>colorFactory</b> - a class that implements <code>org.eclipse.ui.themes.IColorFactory</code>.  This may be used instead of <code>value</code> to specify the value of the color.  Please be advised that this should be used with caution - usage of this attribute will cause plugin activation on workbench startup.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.fontValue">fontValue</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST fontValue</p>
+<p class="code SchemaDtdAttlist">os&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">ws&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">value&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element allows specification of a font value on a per-platform basis.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>os</b> - an optional os string to enable choosing of font based on current OS. eg: win32,linux</li>
+<li><b>ws</b> - an optional os string to enable choosing of font based on current WS. eg: win32,gtk</li>
+<li><b>value</b> - <p>the font value.  This is in the form: <code>fontname-style-height</code> where <code>fontname</code> is the name of a font, <code>style</code> is a font style (one of <code>"regular"</code>, <code>"bold"</code>, <code>"italic"</code>, or <code>"bold italic"</code>) and <code>height</code> is an integer representing the font height.</p>
+<p>Example: <code>Times New Roman-bold-36</code>.</p></li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.categoryPresentationBinding">categoryPresentationBinding</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST categoryPresentationBinding</p>
+<p class="code SchemaDtdAttlist">categoryId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDREF #REQUIRED</p><p class="code SchemaDtdAttlist">presentationId&nbsp;IDREF #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element allows a category to be bound to a specific presentation as described by the <code>org.eclipse.ui.presentationFactory</code> extension point.  If a category has any presentation bindings then it (and it's children) is only configurable by the user if it is bound to the active presentation.  This is useful for removing unused items from user consideration.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>categoryId</b> - the id of the category to bind</li>
+<li><b>presentationId</b> - the id of the presentation to bind to</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6>The following is an example of several color and font definitions as well as a theme that overrides them.
+<p>
+<pre class="Example"><span class="code SchemaTag">
+   &lt;extension point=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.themes&quot;</span><span class="code SchemaTag">&gt;
+      &lt;themeElementCategory
+       id=</span><span class="code SchemaCstring">&quot;com.xyz.ThemeCategory&quot;</span><span class="code SchemaTag">
+       class=</span><span class="code SchemaCstring">&quot;com.xyz.XYZPreview&quot;</span><span class="code SchemaTag">
+       label=</span><span class="code SchemaCstring">&quot;XYZ Elements&quot;</span><span class="code SchemaTag">/&gt;
+      &lt;colorDefinition 
+        id=</span><span class="code SchemaCstring">&quot;com.xyz.Forground&quot;</span><span class="code SchemaTag">
+        categoryId=</span><span class="code SchemaCstring">&quot;com.xyz.ThemeCategory&quot;</span><span class="code SchemaTag">
+        label=</span><span class="code SchemaCstring">&quot;XYZ Foreground Color&quot;</span><span class="code SchemaTag">
+        value=</span><span class="code SchemaCstring">&quot;COLOR_BLACK&quot;</span><span class="code SchemaTag">&gt;
+         &lt;!-- white should be used on GTK --&gt;
+         &lt;colorValue
+          value=</span><span class="code SchemaCstring">&quot;COLOR_WHITE&quot;</span><span class="code SchemaTag">
+          os=</span><span class="code SchemaCstring">&quot;linux&quot;</span><span class="code SchemaTag">
+          ws=</span><span class="code SchemaCstring">&quot;gtk&quot;</span><span class="code SchemaTag">/&gt;
+        &lt;description&gt;
+        This color is used for the foreground color of the XYZ plugin editor.
+        &lt;/description&gt;
+      &lt;/colorDefinition&gt;
+      &lt;colorDefinition 
+        id=</span><span class="code SchemaCstring">&quot;com.xyz.Background&quot;</span><span class="code SchemaTag">
+        categoryId=</span><span class="code SchemaCstring">&quot;com.xyz.ThemeCategory&quot;</span><span class="code SchemaTag">        
+        label=</span><span class="code SchemaCstring">&quot;XYZ Background Color&quot;</span><span class="code SchemaTag">&gt;
+        &lt;colorFactory
+         class=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.themes.RGBBlendColorFactory&quot;</span><span class="code SchemaTag">
+         plugin=</span><span class="code SchemaCstring">&quot;org.eclipse.ui&quot;</span><span class="code SchemaTag">&gt;
+         &lt;parameter
+          name=</span><span class="code SchemaCstring">&quot;color1&quot;</span><span class="code SchemaTag">
+          value=</span><span class="code SchemaCstring">&quot;COLOR_WHITE&quot;</span><span class="code SchemaTag">/&gt;
+         &lt;parameter
+          name=</span><span class="code SchemaCstring">&quot;color2&quot;</span><span class="code SchemaTag">
+          value=</span><span class="code SchemaCstring">&quot;COLOR_BLUE&quot;</span><span class="code SchemaTag">/&gt;         
+        &lt;/colorFactory&gt;
+        &lt;!-- black should be used on GTK --&gt;
+        &lt;colorValue
+         value=</span><span class="code SchemaCstring">&quot;COLOR_BLACK&quot;</span><span class="code SchemaTag">
+         os=</span><span class="code SchemaCstring">&quot;linux&quot;</span><span class="code SchemaTag">
+         ws=</span><span class="code SchemaCstring">&quot;gtk&quot;</span><span class="code SchemaTag">/&gt;
+        &lt;description&gt;
+        This color is used for the background color of the XYZ plugin editor.
+        &lt;/description&gt;
+      &lt;/colorDefinition&gt;      
+      &lt;fontDefinition
+        id=</span><span class="code SchemaCstring">&quot;com.xyz.TextFont&quot;</span><span class="code SchemaTag">
+        categoryId=</span><span class="code SchemaCstring">&quot;com.xyz.ThemeCategory&quot;</span><span class="code SchemaTag">        
+        label=</span><span class="code SchemaCstring">&quot;XYZ Editor Font&quot;</span><span class="code SchemaTag">
+        defaultsTo=</span><span class="code SchemaCstring">&quot;org.eclipse.jface.textfont&quot;</span><span class="code SchemaTag">&gt;
+        &lt;description&gt;
+        This font is used by the XYY plugin editor.
+        &lt;/description&gt;
+      &lt;/fontDefinition&gt;
+      &lt;data
+       name=</span><span class="code SchemaCstring">&quot;com.xyz.EditorMarginWidth&quot;</span><span class="code SchemaTag">
+       value=</span><span class="code SchemaCstring">&quot;5&quot;</span><span class="code SchemaTag">/&gt;      
+      &lt;theme
+        id=</span><span class="code SchemaCstring">&quot;com.xyz.HarshTheme&quot;</span><span class="code SchemaTag">
+        label=</span><span class="code SchemaCstring">&quot;Harsh Colors for XYZ&quot;</span><span class="code SchemaTag">&gt;
+        &lt;colorOverride
+         id=</span><span class="code SchemaCstring">&quot;com.xyz.Forground&quot;</span><span class="code SchemaTag">
+         value=</span><span class="code SchemaCstring">&quot;COLOR_CYAN&quot;</span><span class="code SchemaTag">/&gt;
+        &lt;colorOverride
+         id=</span><span class="code SchemaCstring">&quot;com.xyz.Background&quot;</span><span class="code SchemaTag">
+         value=</span><span class="code SchemaCstring">&quot;COLOR_MAGENTA&quot;</span><span class="code SchemaTag">/&gt;
+      &lt;data
+           name=</span><span class="code SchemaCstring">&quot;com.xyz.EditorMarginWidth&quot;</span><span class="code SchemaTag">
+           value=</span><span class="code SchemaCstring">&quot;1&quot;</span><span class="code SchemaTag">/&gt;      
+      &lt;/theme&gt;        
+   &lt;/extension&gt; 
+</span></pre>
+</p>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6>The <code>org.eclipse.ui.IWorkbench.getThemeManager()</code> provides an instance of <code>org.eclipse.ui.themes.IThemeManager</code> that may be used to obtain a named theme (by id, including the default theme which has an id of <code>IThemeManager.DEFAULT_THEME</code>) or the current theme.  From an <code>org.eclipse.ui.themes.ITheme</code> you may obtain a <code>org.eclipse.jface.resources.ColorRegistry</code>, an <code>org.eclipse.jface.resources.FontRegistry</code> and the arbitrary data associated with a theme.
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Supplied Implementation: </h6>The workbench provides the font definitions for the text, dialog, banner, header and part title fonts.  it also supplies color definitions for the hyperlink, active hyperlink, error, active part (background gradient parts and foreground) and the inactive part (background gradient parts and foreground).  The workbench also provides data constants for the title gradient percentages (active and inactive) and the gradient directions (active and inactive).  The workbench does not provide any named themes.
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2003, 2006 IBM Corporation and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

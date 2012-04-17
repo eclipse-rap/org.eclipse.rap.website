@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Drop Actions</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Drop Actions</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.ui.dropActions<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6>This extension point is used to add drop behaviour to 
+views defined by other plugins. 
+<p>
+Due to the UI layering imposed by the plugin 
+mechanism, views are often not aware of the content 
+and nature of other views. This can make drag and 
+drop operations between plugins difficult. 
+For example, one may wish to provide Java 
+refactoring support whereby the user drags a 
+method from the Java editor's content outliner 
+into another java file in the resource navigator. 
+Since the resource navigator doesn't know anything 
+about Java content, it doesn't know how to behave 
+when java methods are dropped onto it.  
+Similarly, an ISV may want to drop some of 
+their content into one of the Java viewers. 
+<p>
+The <samp>org.eclipse.ui.dropActions</samp> extension point is 
+provided by the Platform to address these situations. 
+This mechanism delegates the drop behaviour back to 
+the originator of the drag operation. 
+This behaviour is contained in an action that 
+must implement 
+<samp>org.eclipse.ui.part.IDropActionDelegate</samp>.  
+The viewer that is the source of the drag 
+operation must support 
+<samp>the org.eclipse.ui.part.PluginTransfer</samp>
+transfer type, and place a 
+<samp>PluginTransferData</samp> object in the drag event.
+See org.eclipse.jface.viewers.StructuredViewer#addDragSupport 
+to learn how to add drag support to a viewer.<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.action">action</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>point</b> - a fully qualified identifier of the target extension point</li>
+<li><b>id</b> - an optional identifier of the extension instance</li>
+<li><b>name</b> - an optional name of the extension instance</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.action">action</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST action</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique identifier that can be used to reference this action</li>
+<li><b>class</b> - the name of the fully qualified class that implements 
+<samp>org.eclipse.ui.part.IDropActionDelegate</samp>.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6>The following is an example of a drop action extension: 
+<p>
+<pre class="Example"><span class="code SchemaTag">
+    &lt;extension point=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.dropActions&quot;</span><span class="code SchemaTag">&gt; 
+        &lt;action 
+            id=</span><span class="code SchemaCstring">&quot;my_drop_action&quot;</span><span class="code SchemaTag"> 
+            class=</span><span class="code SchemaCstring">&quot;com.xyz.eclipse.TestDropAction&quot;</span><span class="code SchemaTag">&gt; 
+        &lt;/action&gt; 
+    &lt;/extension&gt;  
+</span></pre>
+</p>
+Here is an example of a drag listener that makes use of the drop
+action defined above.
+<p>
+<pre class="Example"><span class="code SchemaTag"> 
+class MyDragListener extends DragSourceAdapter { 
+    public void dragSetData(DragSourceEvent event) { 
+        if (PluginTransfer.getInstance().isSupportedType(event.dataType)) { 
+            byte[] dataToSend = ...//enter the data to be sent. 
+            event.data = new PluginTransferData( 
+                "my_drop_action", dataToSend); 
+        } 
+    } 
+} 
+</span></pre>
+</p>
+For a more complete example, see the Platform 
+readme example.  In that example, a drop action is 
+defined in ReadmeDropActionDelegate, and it is used 
+by ReadmeContentOutlineDragListener.
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6>The value of the class attribute must be a fully qualified name of a Java class that implements <samp>org.eclipse.ui.part.IDropActionDelegate</samp>. This class is loaded as late as possible to avoid loading the entire plug-in before it is really needed
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Supplied Implementation: </h6>The workbench does not provide an implementation for this extension point. Plug-ins can contribute to this extension point to add drop behavior to views defined by other plugins.
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2002, 2005 IBM Corporation and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>RWT Themeable Widgets</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">RWT Themeable Widgets</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.rap.ui.themeableWidgets<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Since: </h6>RAP 1.0
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6>This extension point is used to register custom RWT widgets which also support theming.
+To support theming, a widget provides a couple of files that are relevant for the theming. These files must conform to a naming convention. Once a custom widget is registered with this extension point, the theme-relevant files are found by their names. Thus, only the custom widget class must be registered.
+<p>
+The custom widget must provide the theme-relevant files in a package with is named after the schema <code>&lt;package&gt;.internal.&lt;widget&gt;kit</code> where <code>&lt;package&gt;</code> is the package name and <code>&lt;widget&gt;</code> is the lower case class name of the custom control. This is the same package that also contains the lifecycle adapter (LCA).
+<p>
+Theming relevant files include:
+<ul>
+  <li>A theme definiton file with the name <code>&lt;Widget&gt;.theme.xml</code>. This file defines new theming keys.</li>
+  <li>A theme adapter class that implements <code>IControlThemeAdapter</code> and is named <code>&lt;Widget&gt;ThemeAdapter</code>. The theme adapter provides the control with the current values of theming-dependent properties.</li>
+  <li>An appearance fragment file with the name <code>&lt;Widget&gt;.appearances.js</code>. This file defines new qooxdoo appearances.</li>
+</ul>
+None of these files are mandatory, files which are found are respected, but files which are missing do not hurt.<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.widget">widget</a>+)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.widget">widget</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST widget</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique name that identifies this themeable widget</li>
+<li><b>name</b> - an optional name for the themable widget</li>
+<li><b>class</b> - the name of a class that implements the custom widget</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6>The following is an example of a themeable widget extension definition: 
+<p>
+<pre class="Example"><span class="code SchemaTag">
+   &lt;extension
+         point=</span><span class="code SchemaCstring">&quot;org.eclipse.rap.ui.themeableWidgets&quot;</span><span class="code SchemaTag">&gt;
+      &lt;widget
+            id=</span><span class="code SchemaCstring">&quot;my.custom.datepicker&quot;</span><span class="code SchemaTag">
+            class=</span><span class="code SchemaCstring">&quot;my.custom.controls.DatePicker&quot;</span><span class="code SchemaTag">&gt;
+      &lt;/widget&gt;
+   &lt;/extension&gt;
+</span></pre>
+</p>
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2007 Innoopract Informationssysteme GmbH.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

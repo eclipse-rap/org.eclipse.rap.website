@@ -1,0 +1,619 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Menus</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Menus</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.ui.menus<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Since: </h6>3.3
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6><p>
+This extension point allows the plug-in developer to add (contribute) a variety of custom additions to the eclipse framework:
+<ul>
+  <li>Main Menu</li>
+  <li>Main Toolbars</li>
+  <li>View Menus/Toolbars:
+  <ul>
+    <li>View Dropdown Menu</li>
+    <li>View Toolbar</li>
+    <li>Context Menu(s)</li>
+  </ul>
+  </li>
+  <li>Trim</li>
+</ul>
+</p>
+<p>
+It provides a common implementation for and acts as a replacement of the following (legacy) eclipse extension points:
+<ul>
+<li>org.eclipse.ui.ActionSets</li>
+<li>org.eclipse.ui.EditorActions</li>
+<li>org.eclipse.ui.popupMenus (including 'objectContributions')</li>
+<li>org.eclipse.ui.viewActions</li>
+</ul>
+</p>
+<p>
+The general strategy for this mechanism is to separate the 'location' where the contributions should be inserted from the visibility and enablement state of the element. Each contribution first defines its insertion location through a Menu 'URI', a string (loosely) formatted according to the jave.net.URI format:
+</p><p>
+<b>"[Scheme]:[ID]?[ArgList]"</b>
+<ul>
+<li><b>Scheme</b> - The 'type' of the UI component into which the contributions will be added. It may be either "menu", "popup" or "toolbar". While 'popup' is indeed a form of menu it is provided to allow a distinction between a view's 'chevron' menu (for which we use the "menu" scheme) and its default context menu which, by convention, should be registered using the "popup" scheme.</li>
+<li><b>ID</b> - This is the id of menu or toolbar into which the contributions should be added. By convention views should use their view id as the id of the root of their chevron and default popup menu. Note that there is no explicit distinction between contributions supporting editors and 'normal' contributions into the Menu Menu or Toolbar; both global contributions and editor contributions would use the "org.eclipse.ui.main.menu" id or "org.eclipse.ui.main.toolbar". A special id used with popup:, "org.eclipse.ui.popup.any", is reserved to handle contributions which are candidates to appear on any (top level) context menu. Note that these contributions are expected to implement a 'visibleWhen' expression sufficient to limit their visibility to appropriate menus</li>
+<li><b>Query</b> - This field allows fine-grained definition of the specific location <i>within</i> a given menu. It has the form "[placement]=[id]" where placement is one of "before", "after", or "endof" and the id is expected to be the id of some IContributionItem in the menu.</li>
+</ul> 
+<p>
+This will define the location at which the contributions will appear in the eclipse UI. Once the insertion point has been defined the rest of the contributions describe the UI elements that will be added at that location. Each element supports a 'visibleWhen' expression that determines at run time whether a particular item should appear in the menu based on the system's current state (selection, active view/editor, context...).  See <code>org.eclipse.ui.ISources</code> for a list of currently
+supported variables.
+</p><p>
+</p>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.group">group</a>* , <a href="#e.widget">widget</a>* , <a href="#e.menuContribution">menuContribution</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>point</b> - org.eclipse.ui.menus</li>
+<li><b>id</b> - An optional identifier of the extension instance.</li>
+<li><b>name</b> - An optional name of the extension instance.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>group</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.group">group</a> (<a href="#e.location">location</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST group</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">separatorsVisible&nbsp;(true | false) "true"</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+A logical group.  It can either be visible (e.g., separators are drawn before and after, as appropriate) or invisible.  By default, logical groups are visible.
+</p>
+<p>
+A group can contain menus, items and other groups.
+</p>
+<p>
+This element is deprecated. Groups are now expressed as id'd 'separator' elements. The menu insertion URI can be used to define an insertion point either 'before' or 'after' <b>any</b> id'd element and placing it after the separator is the same as contributing it to the group. </p>
+<p>
+See the documentation for the 'locationURI' attribute of 'menuAddition' for more details on how to define insertion points and how they relate to the menu structure.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - A unique identifier for this group.  It is recommended that the identifier be prefixed by the plug-in name, to guarantee uniqueness.  For example, a group contributed by <code>org.eclipse.ui</code> might be called <code>org.eclipse.ui.group1</code>.</li>
+<li><b>separatorsVisible</b> - Whether separators should be drawn around the group.  The workbench will take care of deciding whether a separator needs to be drawn at the top or bottom -- accounting for the top and bottom of the menu and duplicate separators.  By default, separators are visible.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>widget</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.widget">widget</a> (<a href="#e.location">location</a>* , <a href="#e.class">class</a>? , <a href="#e.visibleWhen">visibleWhen</a>? , <a href="#e.layout">layout</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST widget</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+A menu or trim element that is given direct access to the widgets.  For example, this can be used to render a combo box.  <b>NOTE:</b> If a widget element becomes visible in the user interface, this will lead to plug-in loading.  <strong>Use this element with caution, as it can cause performance problems.</strong>
+            When used as trim the widget will only cause the plug-in to load when it becomes visible in the UI.
+<p>
+<b>NOTE:</b> This element is deprecated. Clients should contribute a Toolbar to one of the trim areas and place a control contribution inside it. See the Trim Contribution example for details.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - A unique identifier for this widget.  It is recommended that the identifier be prefixed by the plug-in name, to guarantee uniqueness.  For example, a widget contributed by <code>org.eclipse.ui</code> might be called <code>org.eclipse.ui.widget1</code>.
+<p>
+If defined then it can be  used as a reference in the Query part of the location defining whether the additions are to go before or after this element (or at the end of the logical group containing this element using the 'endof' value).
+</p></li>
+<li><b>class</b> - This class is loaded to fill the appropriate spot in the menu or trim when it shows.  While, strictly speaking, this class must implement <code>IWorkbenchWidget</code> you should use the default implementation; <code>AbstractWorkbenchTrimWidget</code> as the base from which to derive your widget implementation. This implementation handles the 'init' method and caches the result for use through its <code>getWorkbenchWindow</code> method.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>layout</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.layout">layout</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST layout</p>
+<p class="code SchemaDtdAttlist">fillMajor&nbsp;(true | false) </p><p class="code SchemaDtdAttlist">fillMinor&nbsp;(true | false) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element can be used to specify various layout options for elements added into  <code>trim</code> locations.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>fillMajor</b> - The widget will stretch to use up any additional space available along its <b>major</b> dimension in the group's area (i.e. it will use the extra horizontal space for horizontally oriented trim areas). Default is <code>false</code>.</li>
+<li><b>fillMinor</b> - The widget will stretch to use up any additional space available along its <b>minor</b> dimension in the group's area (i.e. it will use the extra vertical space for horizontally oriented trim areas). Default is <code>false</code>.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>location</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.location">location</a> (<a href="#e.order">order</a>? , (<a href="#e.bar">bar</a> | <a href="#e.part">part</a> | <a href="#e.popup">popup</a>))&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST location</p>
+<p class="code SchemaDtdAttlist">imageStyle&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+A location in which a <code>menu</code>, <code>group</code>, <code>item</code> or <code>widget</code> can appear.  This element is used to control location-specific information.
+<p>
+This element is deprecated. Users of this extension point should now define the location at which their contributions should appear using the 'locationURI' specification.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><i style="color: red;">Deprecated</i> <b>imageStyle</b> - The image style to associate with this location.  It is possible for commands to have different styles of images associated with them.  For example, a different icon could be selected for the tool bar and for the menu.  This is especially important for developers using drop-down tool items in the tool bar, as they may wish to display an icon more appropriate for the drop-down.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>bar</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.bar">bar</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST bar</p>
+<p class="code SchemaDtdAttlist">type&nbsp;(menu|trim) </p><p class="code SchemaDtdAttlist">path&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A leaf element within a location.  This can be the menu bar or the trim area.  If unqualified, this indicates the top-level menu bar or trim.  If this is qualified with a <code>part</code> element, then this indicates that part's menu or trim.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><i style="color: red;">Deprecated</i> <b>type</b> - <p>
+<b>NOTE:</b> This is not only deprecated but has no value in the current implementation (the only acceptable value is 'trim' which is the default. You may safely remove this from any declarations.
+</p>
+<p>
+What type of bar to contribute to.  This can be <code>menu</code> or <code>trim</code>.  If contributing to the menu, then the item will be parented to some widget structure.  In general, this means using widget elements does not make much sense, and an icon for an item's command is not strictly necessary.  The default value is <code>menu</code>.
+</p>
+<p>
+<p>If contributing to the <code>trim</code>, then the bar will generally not require a command or an icon, it should be filled with a widget that displays the trim information.
+<p>
+Within the trim, the workbench defines five general groups which correspond to various positions around the window:
+<ul>
+<li><b>command1</b> - This represents the (horizontal) trim area that the main toolbars are placed into.</li>
+<li><b>command2</b> - This represents the (horizontal) trim area that the Perspective Switcher is in by default.</li>
+<li><b>vertical1</b> - This represents the (vertical) trim area that is on the left side when the text direction is Left->Right and on the right side for Right->Left text.</li>
+<li><b>vertical2</b> - This represents the (vertical) trim area that is on the opposite side of the workbench from <code>vertical1</code>.</li>
+<li><b>status</b> - This represents the (horizontal) trim area along the bottom edge of the workbench.</li>
+</ul>
+By positioning the trim contribution within or with respect to these groups, the position is inferred by the workbench.
+</p></li>
+<li><i style="color: red;">Deprecated</i> <b>path</b> - This represents the id of a group that the widget is to be placed into.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.class">class</a> (<a href="#e.parameter">parameter</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST class</p>
+<p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A class element supporting the executable extension parsing syntax for both <code>widget</code> and <code>dynamic</code> elements.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>class</b> - The class to load as an <code>IExecutableExtension</code>.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.visibleWhen">visibleWhen</a> (<a href="#e.not">not</a> | <a href="#e.or">or</a> | <a href="#e.and">and</a> | <a href="#e.instanceof">instanceof</a> | <a href="#e.test">test</a> | <a href="#e.systemTest">systemTest</a> | <a href="#e.equals">equals</a> | <a href="#e.count">count</a> | <a href="#e.with">with</a> | <a href="#e.resolve">resolve</a> | <a href="#e.adapt">adapt</a> | <a href="#e.iterate">iterate</a> | <a href="#e.reference">reference</a>)?&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST visibleWhen</p>
+<p class="code SchemaDtdAttlist">checkEnabled&nbsp;(true | false) "false"</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A core Expression that controls the visibility of the given element.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>checkEnabled</b> - If this attribute is set to <code>true</code>, then there should be no sub-elements.  This just checks the enabled state of the command, and makes the corresponding element visible if the command is enabled.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>part</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.part">part</a> (<a href="#e.popup">popup</a> | <a href="#e.bar">bar</a>)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST part</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">class&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+An element within a location.  This qualifies the location to refer to a particular workbench part.  This can be either a view or an editor.  The qualification can use either the class name of the part (including inheritance), or it can refer to the identifier for the view or editor.
+</p>
+<p>
+Only one of <code>id</code> and <code>class</code> can be specified.
+</p>
+<p>
+<b>NOTE:</b> This element is deprecated. It had been used for a previous technique for adding trim elements. Instead, clients should contribute a Toolbar to one of the trim areas and place a control contribution inside it. See the Trim Contribution example for details.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The identifier of the view or editor.</li>
+<li><b>class</b> - The class of the part.  This can be a superclass, interface or superinterface of the part, and it will still match.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.parameter">parameter</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST parameter</p>
+<p class="code SchemaDtdAttlist">name&nbsp;&nbsp;IDREF #REQUIRED</p><p class="code SchemaDtdAttlist">value&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A parameter to either an executable extension or a command -- depending on where it appears in the extension.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>name</b> - The name is either the name of the parameter to pass to the executable extension, or the identifier of the parameter for the command.</li>
+<li><b>value</b> - The value to pass for this parameter.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>order</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.order">order</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST order</p>
+<p class="code SchemaDtdAttlist">position&nbsp;&nbsp;&nbsp;(start|end|before|after) </p><p class="code SchemaDtdAttlist">relativeTo&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<b>NOTE:</b> This element is deprecated in favor of using the 'locationURI' to specify the location at which contributions should be placed.
+<p>
+Controls the position of a  widget within a particular group.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>position</b> - <p>
+This attribute accepts the following values: <code>start</code> (put the element at the beginning of the container); <code>end</code> (put the element at the end of its container); <code>after</code> (put the element after the sibling element whose id matches <code>ref</code>); and, <code>before</code> (put the element before the sibling element whose id matches <code>ref</code>).  Relative ordering can be applied to any type of menu element.
+</p>
+<p>
+In the event of conflicts, Eclipse will chose an arbitrary order.  The only guarantee is that, in the event of a conflict, the order will remain the same as long as the following holds:
+</p>
+<ul>
+<li>The Eclipse version is the same.</li>
+<li>The list of elements is the same (i.e., no dynamic elements, no plug-ins added or removed).</li>
+</ul></li>
+<li><b>relativeTo</b> - The identifier of the element to which this position is relative.  This value is required if the <code>position</code> is <code>before</code> or <code>after</code>.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>popup</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.popup">popup</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST popup</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">path&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+Part of a location.  It indicates that the menu, group, item or widget should appear in the popup menu.
+<p>
+<p>
+<b>NOTE:</b> This element is deprecated. It had been used for a previous technique for adding trim elements. Instead, clients should contribute a Toolbar to one of the trim areas and place a control contribution inside it. See the Trim Contribution example for details.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The identifier of the popup menu.  If none is specified, then it will appear in all popup menus.</li>
+<li><b>path</b> - The path within the popup menu to place the element.  If not specified, then this is added to the "additions" group.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.menuContribution">menuContribution</a> (<a href="#e.menu">menu</a>* , <a href="#e.command">command</a>* , <a href="#e.separator">separator</a>* , <a href="#e.dynamic">dynamic</a>* , <a href="#e.toolbar">toolbar</a>* , <a href="#e.control">control</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST menuContribution</p>
+<p class="code SchemaDtdAttlist">locationURI&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">allPopups&nbsp;&nbsp;&nbsp;(true | false) "false"</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>Defines an ordered set of additions to the command UI structure. The defined elements will be added into the command UI structure at the location specified by the <code>locationURI</code> element.
+</p><p>
+This should be the starting point for <i>all</i> contributions into menus, toolbars or trim, wherever they occur in the UI.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>locationURI</b> - A <code>URI</code> specification that defines the insertion point at which the contained additions will be added.
+
+The format for the URI is comprised of three basic parts:
+
+Scheme: One of "menu", "popup" or "toolbar. Indicates the type of the manager used to handle the contributions
+Id: This is either the id of an existing menu, a view id or the id of the editor 'type'
+Query: The query format is &lt;placement&gt;=&lt;id&gt; where:
+ &lt;placement&gt; is either "before", "after", or "endof" and
+ &lt;id&gt; is the id of an existing menu item.  The placement modifier is executed when this contribution is processed.  Following contributions may change the final shape of the menu when they are processed.</li>
+<li><b>class</b> - If this optional attribute is specified the provided class will be instantiated and used to provide menu contributions at this location.  If provided, all child elements will be ignored.</li>
+<li><b>allPopups</b> - By default popup contributions are not contributed to context menus that do not include an <b>additions</b> marker.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.menu">menu</a> (<a href="#e.visibleWhen">visibleWhen</a>? , (<a href="#e.menu">menu</a>? | <a href="#e.command">command</a>? | <a href="#e.separator">separator</a>? | <a href="#e.dynamic">dynamic</a>?)*)?&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST menu</p>
+<p class="code SchemaDtdAttlist">label&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">icon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">tooltip&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">commandId&nbsp;IDREF #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Defines a new menu contribution at the given insertion point.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>label</b> - The label to be displayed for this element when it is placed in either a menu or a toolbar. This value should be translatable.</li>
+<li><b>id</b> - The 'id' of this menu contribution. If defined then it can be extended through other 'menuAddition' elements or the id can be used as a reference in the Query part of the location defining whether the additions are to go before or after this element.</li>
+<li><b>icon</b> - A plugin relative path to the image to be used as the icon for this menu in either a menu or a toolbar.</li>
+<li><b>tooltip</b> - The tooltip to be displayed for this element when it is placed in a toolbar. This value should be translatable.</li>
+<li><b>commandId</b> - Th commandId is used to update the submenu text with a keyboard shortcut.  The command should have a handler that can launch a quickmenu version of this menu.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.command">command</a> (<a href="#e.visibleWhen">visibleWhen</a>? , <a href="#e.parameter">parameter</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST command</p>
+<p class="code SchemaDtdAttlist">label&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">commandId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDREF #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">icon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">tooltip&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">helpContextId&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(push|radio|toggle|pulldown) "push"</p><p class="code SchemaDtdAttlist">mode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(FORCE_TEXT) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Defines a new Command Contribution at the defined insertion point.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>label</b> - The label to be displayed for this element when it is placed in either a menu. This value should be translatable.</li>
+<li><b>commandId</b> - This is the id of the Command that is to be bound to this element. This is the hook into the Commands/Handlers/Key binding services that actually do the work should this item be selected. In many cases this command will have been defined in a previous extension declaration.</li>
+<li><b>id</b> - The 'id' of this contribution. If defined then it can be  used as a reference in the Query part of the location defining whether the additions are to go before or after this element.</li>
+<li><b>icon</b> - a relative path of an icon used to visually represent the action in its context.
+If omitted and the action appears in the toolbar, the Workbench will use a placeholder icon. The path is relative to the location of the plugin.xml file of the contributing plug-in, or the <code>ISharedImages</code> constant.</li>
+<li><b>tooltip</b> - The tooltip to be displayed for this element when it is placed in a toolbar. This value should be translatable.</li>
+<li><b>helpContextId</b> - a unique identifier indicating the help context for this action. If the action appears as a menu item, then pressing F1 while the menu item is highlighted will display help.  This overrides the help context id provided by the active handler or command.</li>
+<li><b>style</b> - an attribute to define the user interface style type for the action. If omitted, then it is <samp>push</samp> by default. The attribute value will be one of the following:
+    <table border="0" width="80%">
+      <tr>
+ <td valign="top" width="25"></td>
+        <td valign="top" nowrap><b>push</b></td>
+        <td valign="top">- as a regular menu item or tool item.</td>
+      </tr>
+      <tr>
+ <td valign="top" width="25"></td>
+        <td valign="top" nowrap><b>radio</b></td>
+        <td valign="top">- as a radio style menu item or tool item. Actions with the radio style within the same menu or toolbar group behave as a radio set. The initial value is specified by the <samp>state</samp> attribute.</td>
+      </tr>
+      <tr>
+ <td valign="top" width="25"></td>
+        <td valign="top" nowrap><b>toggle</b></td>
+        <td valign="top">- as a checked style menu item or as a toggle tool item. The initial value is specified by the <samp>state</samp> attribute.</td>
+      </tr>
+      <tr>
+ <td valign="top" width="25"></td>
+        <td valign="top" nowrap><b>pulldown</b></td>
+        <td valign="top">- (ToolBar only) Creates a ToolItem with the <code>SWT.DROP_DOWN</code> affordance. The URI of the menu is "menu:" + this item's ID.</td>
+      </tr>
+    </table></li>
+<li><b>mode</b> - For commands appearing in a toolbar, <code>FORCE_TEXT</code> will show text even if there is an icon.  See CommandContributionItem.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.separator">separator</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST separator</p>
+<p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">visible&nbsp;(true | false) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Inserts a separator at the current insertion point.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>name</b> - The 'id' of this contribution. If defined then it can be  used as a reference in the Query part of the location defining whether the additions are to go before or after this element (or at the end of the logical group containing this element using the 'endof' value).
+<p>
+Separator contributions that have an id define the start of a logical group so the result of using the 'endof' value for placement is to search forward in the current menu to locate the next separator and to place the inserted elements before that element. If no trailing separator is found then the items are placed at the end of the menu.
+</p></li>
+<li><b>visible</b> - Indicates whether or not the separator should be visible in the UI. <code>false</code> by default.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.toolbar">toolbar</a> (<a href="#e.visibleWhen">visibleWhen</a>? , (<a href="#e.command">command</a>? | <a href="#e.separator">separator</a>? | <a href="#e.dynamic">dynamic</a>? | <a href="#e.control">control</a>?)*)?&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST toolbar</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">label&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Contributes a new ToolBar at the current insertion point.  This element is only currently valid for CoolBarManagers, which can contain toolbars.  For example, the trim location URIs specified in <code>org.eclipse.ui.menus.MenuUtil</code>.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The 'id' of this toolbar contribution. If defined then it can be extended through other 'menuAddition' elements or the id can be used as a reference in the Query part of the location defining whether the additions are to go before or after this element.</li>
+<li><b>label</b> - The label to be displayed for this element when it is displayed in the customize perspective dialog. This value should be translatable.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.control">control</a> (<a href="#e.visibleWhen">visibleWhen</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST control</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+Used to contribute controls to ToolBars in the workbench. The 'class' attribute must be a derivative of the
+WorkbenchWindowControlContribution base class.
+<p>
+<b>NOTE:</b> Due to platform restrictions control contributions are only supported for toolbars; Attempts to contribute controls into a menu or popup will be treated as a NO-OP.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The 'id' of this menu contribution. If defined then it can be used as a reference in the Query part of the location defining whether the additions are to go before or after this element.</li>
+<li><b>class</b> - The class which will be used to create the control that is to be hosted in a ToolBar. This must be a subclass of
+WorkbenchWindowControlContribution which provides information as to the control's location (i.e. which workbench window it's being hosted in and the side of the window that it is currently being displayed on.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.dynamic">dynamic</a> (<a href="#e.class">class</a>? , <a href="#e.visibleWhen">visibleWhen</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST dynamic</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+The element provides a mechanism that will call back into the defined class to provide an IContributionItem to be shown when the menu or toolbar is built. The defined class must be a derivative of the org.eclipse.jface.action.ContributionItem base class.  It can also use org.eclipse.ui.action.CompoundContributionItem and provide an implementation for the abstract <code>getContributionItems</code> method to provide a dynamic menu item.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - A unique identifier for this contribution.  It is recommended that the identifier be prefixed by the plug-in name, to guarantee uniqueness.  For example, a widget contributed by <code>org.eclipse.ui</code> might be called <code>org.eclipse.ui.widget1</code>.
+<p>
+If defined then it can be  used as a reference in the Query part of the location defining whether the additions are to go before or after this element (or at the end of the logical group containing this element using the 'endof' value).
+</p></li>
+<li><b>class</b> - This class is expected to be a subclass of ContributionItem. The item may implement IWorkbenchContribution to be provided an IServiceLocator.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.enablement">enablement</a> (<a href="#e.not">not</a> , <a href="#e.and">and</a> , <a href="#e.or">or</a> , <a href="#e.instanceof">instanceof</a> , <a href="#e.test">test</a> , <a href="#e.systemTest">systemTest</a> , <a href="#e.equals">equals</a> , <a href="#e.count">count</a> , <a href="#e.with">with</a> , <a href="#e.resolve">resolve</a> , <a href="#e.adapt">adapt</a> , <a href="#e.iterate">iterate</a> , <a href="#e.reference">reference</a>)*&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A generic root element. The element can be used inside an extension point to define its enablement expression.
+            The children of an enablement expression are combined using the and operator.</p>
+<br><br>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.not">not</a> (<a href="#e.not">not</a> | <a href="#e.and">and</a> | <a href="#e.or">or</a> | <a href="#e.instanceof">instanceof</a> | <a href="#e.test">test</a> | <a href="#e.systemTest">systemTest</a> | <a href="#e.equals">equals</a> | <a href="#e.count">count</a> | <a href="#e.with">with</a> | <a href="#e.resolve">resolve</a> | <a href="#e.adapt">adapt</a> | <a href="#e.iterate">iterate</a> | <a href="#e.reference">reference</a>)&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element represent a NOT operation on the result of evaluating it's sub-element expression.</p>
+<br><br>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.and">and</a> (<a href="#e.not">not</a> , <a href="#e.and">and</a> , <a href="#e.or">or</a> , <a href="#e.instanceof">instanceof</a> , <a href="#e.test">test</a> , <a href="#e.systemTest">systemTest</a> , <a href="#e.equals">equals</a> , <a href="#e.count">count</a> , <a href="#e.with">with</a> , <a href="#e.resolve">resolve</a> , <a href="#e.adapt">adapt</a> , <a href="#e.iterate">iterate</a> , <a href="#e.reference">reference</a>)*&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element represent an AND operation on the result of evaluating all it's sub-elements expressions.</p>
+<br><br>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.or">or</a> (<a href="#e.not">not</a> , <a href="#e.and">and</a> , <a href="#e.or">or</a> , <a href="#e.instanceof">instanceof</a> , <a href="#e.test">test</a> , <a href="#e.systemTest">systemTest</a> , <a href="#e.equals">equals</a> , <a href="#e.count">count</a> , <a href="#e.with">with</a> , <a href="#e.resolve">resolve</a> , <a href="#e.adapt">adapt</a> , <a href="#e.iterate">iterate</a> , <a href="#e.reference">reference</a>)*&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element represent an  OR operation on the result of evaluating all it's sub-element expressions.</p>
+<br><br>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.instanceof">instanceof</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST instanceof</p>
+<p class="code SchemaDtdAttlist">value&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to perform an instanceof check of the object in focus. The expression returns
+            EvaluationResult.TRUE if the object's type is a sub type of the type specified by the attribute value.
+            Otherwise EvaluationResult.FALSE is returned.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>value</b> - a fully qualified name of a class or interface.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.test">test</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST test</p>
+<p class="code SchemaDtdAttlist">property&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">args&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">value&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">forcePluginActivation&nbsp;(true | false) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to evaluate the property state of the object in focus. The set of
+            testable properties can be extended using the propery tester extension point. The test
+            expression returns EvaluationResult.NOT_LOADED if the property tester doing the actual
+            testing isn't loaded yet and the attribute forcePluginActivation is set to false. 
+            If forcePluginActivation is set to true and the evaluation context used to evaluate
+            this expression support plug-in activation then evaluating the property will result in 
+            activating the plug-in defining the tester.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>property</b> - the name of an object's property to test.</li>
+<li><b>args</b> - additional arguments passed to the property tester. Multiple arguments are separated
+                  by commas. Each individual argument is converted into a Java base type using the same
+                  rules as defined for the value attribute of the test expression.</li>
+<li><b>value</b> - the expected value of the property. Can be omitted if the property 
+                  is a boolean property. The test expression is supposed to return 
+EvaluationResult.TRUE if the property matches the value and EvaluationResult.FALSE
+otherwise. The value attribute is converted into a Java base type using the following
+rules:
+<ul>
+ <li>the string &quot;true&quot; is converted into Boolean.TRUE</li>
+ <li>the string &quot;false&quot; is converted into Boolean.FALSE</li>
+ <li>if the string contains a dot then the interpreter tries to convert
+ the value into a Float object. If this fails the string is treated as a
+ java.lang.String</li>
+ <li>if the string only consists of numbers then the interpreter
+ converts the value in an Integer object.</li>
+ <li>in all other cases the string is treated as a java.lang.String</li>
+ <li>the conversion of the string into a Boolean, Float, or Integer can
+ be suppressed by surrounding the string with single quotes. For
+ example, the attribute value=&quot;'true'&quot; is converted into the
+ string &quot;true&quot;</li>
+</ul></li>
+<li><b>forcePluginActivation</b> - a flag indicating whether the plug-in contributing the property tester
+                  should be loaded if necessary. As such, this flag should be used judiciously, 
+                  in order to avoid unnecessary plug-in activations. Most clients should avoid
+                  setting this flag to true. This flag is only honored if the evaluation context
+                  used to evaluate this expression allows plug-in activation. Otherwise the flag
+                  is ignored and no plug-in loading takes place.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.systemTest">systemTest</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST systemTest</p>
+<p class="code SchemaDtdAttlist">property&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">value&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+Tests a system property by calling the System.getProperty method and compares the result
+            with the value specified through the value attribute.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>property</b> - the name of an system property to test.</li>
+<li><b>value</b> - the expected value of the property. The value is interpreted as a string value.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.equals">equals</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST equals</p>
+<p class="code SchemaDtdAttlist">value&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to perform an equals check of the object in focus. The expression returns
+            EvaluationResult.TRUE if the object is equal to the value provided by the attribute value. Otherwise
+            EvaluationResult.FALSE is returned.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>value</b> - the expected value. The value provided as a string is converted into
+                  a Java base type using the same rules as for the value attribute of the test expression.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.count">count</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST count</p>
+<p class="code SchemaDtdAttlist">value&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to test the number of elements in a collection.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>value</b> - an expression to specify the number of elements in a list. Following wildcard
+                  characters can be used:
+                  <dl>
+                    <dt>*</dt> <dd>any number of elements</dd>
+                    <dt>?</dt> <dd>no elements or one element</dd>
+                    <dt>+</dt> <dd>one or more elements</dd>
+                    <dt>!</dt> <dd>no elements</dd>
+                    <dt>-<i>N</i>)</dt>
+                    <dd>less than <i>N</i> elements</dd>
+                    <dt>(<i>N</i>-</dt>
+                    <dd>greater than <i>N</i> elements</dd>
+                    <dt>integer value</dt> <dd>the list must contain the exact number of elements</dd>
+                  </dl></li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.with">with</a> (<a href="#e.not">not</a> , <a href="#e.and">and</a> , <a href="#e.or">or</a> , <a href="#e.instanceof">instanceof</a> , <a href="#e.test">test</a> , <a href="#e.systemTest">systemTest</a> , <a href="#e.equals">equals</a> , <a href="#e.count">count</a> , <a href="#e.with">with</a> , <a href="#e.resolve">resolve</a> , <a href="#e.adapt">adapt</a> , <a href="#e.iterate">iterate</a> , <a href="#e.reference">reference</a>)*&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST with</p>
+<p class="code SchemaDtdAttlist">variable&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element changes the object to be inspected for all its child element to the object
+            referenced by the given variable. If the variable can not be resolved then the expression
+            will throw an ExpressionException when evaluating it. The children of a with expression 
+            are combined using the and operator.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>variable</b> - the name of the variable to be used for further inspection. It is up to the evaluator
+                  of an extension point to provide the variable in the variable pool.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.resolve">resolve</a> (<a href="#e.not">not</a> , <a href="#e.and">and</a> , <a href="#e.or">or</a> , <a href="#e.instanceof">instanceof</a> , <a href="#e.test">test</a> , <a href="#e.systemTest">systemTest</a> , <a href="#e.equals">equals</a> , <a href="#e.count">count</a> , <a href="#e.with">with</a> , <a href="#e.resolve">resolve</a> , <a href="#e.adapt">adapt</a> , <a href="#e.iterate">iterate</a> , <a href="#e.reference">reference</a>)*&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST resolve</p>
+<p class="code SchemaDtdAttlist">variable&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">args&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element changes the object to be inspected for all its child element to the object
+            referenced by the given variable. If the variable can not be resolved then the expression
+            will throw an ExpressionException when evaluating it. The children of a resolve expression 
+            are combined using the and operator.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>variable</b> - the name of the variable to be resolved. This variable is then used as the object in focus
+                  for child element evaluation. It is up to the evaluator of an extension point to provide a 
+                  corresponding variable resolver (see IVariableResolver) through the evaluation context passed
+                  to the root expression element when evaluating the expression.</li>
+<li><b>args</b> - additional arguments passed to the variable resolver. Multiple arguments are separated
+                  by commas. Each individual argument is converted into a Java base type using the same
+                  rules as defined for the value attribute of the test expression.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.adapt">adapt</a> (<a href="#e.not">not</a> , <a href="#e.and">and</a> , <a href="#e.or">or</a> , <a href="#e.instanceof">instanceof</a> , <a href="#e.test">test</a> , <a href="#e.systemTest">systemTest</a> , <a href="#e.equals">equals</a> , <a href="#e.count">count</a> , <a href="#e.with">with</a> , <a href="#e.resolve">resolve</a> , <a href="#e.adapt">adapt</a> , <a href="#e.iterate">iterate</a> , <a href="#e.reference">reference</a>)*&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST adapt</p>
+<p class="code SchemaDtdAttlist">type&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to adapt the object in focus to the type specified by the attribute
+            type. The expression returns not loaded if either the adapter or the type referenced isn't
+            loaded yet. It throws an ExpressionException during evaluation if the type name doesn't exist 
+            at all. The children of an adapt expression are combined using the and operator.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>type</b> - the type to which the object in focus is to be adapted.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.iterate">iterate</a> (<a href="#e.not">not</a> , <a href="#e.and">and</a> , <a href="#e.or">or</a> , <a href="#e.instanceof">instanceof</a> , <a href="#e.test">test</a> , <a href="#e.systemTest">systemTest</a> , <a href="#e.equals">equals</a> , <a href="#e.count">count</a> , <a href="#e.with">with</a> , <a href="#e.resolve">resolve</a> , <a href="#e.adapt">adapt</a> , <a href="#e.iterate">iterate</a> , <a href="#e.reference">reference</a>)*&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST iterate</p>
+<p class="code SchemaDtdAttlist">operator&nbsp;(or|and) </p><p class="code SchemaDtdAttlist">ifEmpty&nbsp;&nbsp;(true | false) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to iterate over a variable that is of type java.util.Collection, or a variable that
+            adapts to org.eclipse.core.expressions.IIterable. If the object in focus is not one of the above then a
+            CoreException with an ExpressionStatus will be thrown while evaluating the expression.
+            The child expressions of an iterate expression are combined using the and operator.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>operator</b> - either "and" or "or". The operator defines how the results of all the child expressions
+                  applied to each child of the Collection or IIterable will be combined and what (if any) short circuit
+                  evaluation will be used. If not specified, "and" will be used.</li>
+<li><b>ifEmpty</b> - the value return from the iterate expression if the collection is empty. If
+                 not specified then true is returned when the operator equals "and" 
+                 and false is return if the operator equals "or".</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.reference">reference</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST reference</p>
+<p class="code SchemaDtdAttlist">definitionId&nbsp;IDREF #REQUIRED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to reference an expression from the <b>org.eclipse.core.expressions.definitions</b> extension point.  The expression definition will be evaluated within the current expression element using the current evaluation context.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>definitionId</b> - The unique id of an expression from <b>org.eclipse.core.expressions.definitions</b>.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6><p>
+A basic extension looks like this.
+</p>
+<pre class="Example"><span class="code SchemaTag">
+   &lt;extension
+         id=</span><span class="code SchemaCstring">&quot;add.item&quot;</span><span class="code SchemaTag">
+         point=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.menus&quot;</span><span class="code SchemaTag">&gt;
+      &lt;menuContribution
+         locationURI=</span><span class="code SchemaCstring">&quot;menu:someorg.somemenu.id?after=additions&quot;</span><span class="code SchemaTag">&gt;
+         &lt;command
+               commandId=</span><span class="code SchemaCstring">&quot;someorg.someid.someCommand&quot;</span><span class="code SchemaTag">
+               icon=</span><span class="code SchemaCstring">&quot;icons/anything.gif&quot;</span><span class="code SchemaTag">
+               id=</span><span class="code SchemaCstring">&quot;someorg.someid.BasicCmdItem&quot;</span><span class="code SchemaTag">
+               label=</span><span class="code SchemaCstring">&quot;Simple Item&quot;</span><span class="code SchemaTag">
+               mnemonic=</span><span class="code SchemaCstring">&quot;S&quot;</span><span class="code SchemaTag">&gt;
+         &lt;/command&gt;
+      &lt;/menuContribution&gt;
+   &lt;/extension&gt;
+</span></pre>
+<p>
+This is the simplest example; adding a command contribution after an existing menu's additions group.
+</p>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6><p>
+It is preferred that menu contributions be added in the <code>plugin.xml</code>.  Plugins can
+programmatically add their own menu contributions using <code>org.eclipse.ui.menus.IMenuService</code> and <code>org.eclipse.ui.menus.AbstractContributionFactory</code>, but should be sure to remove them if the plugin is unloaded.  The <code>IMenuService</code> can be retrieved through any of the <code>IServiceLocators</code>, the workbench, the workbench window, or the part site.
+</p>
+<p>
+See <a href="org_eclipse_ui_commands.html">org.eclipse.ui.commands</a> to define a command and <a href="org_eclipse_ui_handlers.html">org.eclipse.ui.handlers</a> to define an implementation for the command.
+</p>
+<p>To register a context menu, use the <code>IWorkbenchPartSite.registerContextMenu</code> methods.</p>
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2005,2007 IBM Corporation and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

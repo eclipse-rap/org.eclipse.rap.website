@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>EntryPoint</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">EntryPoint</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.rap.ui.entrypoint<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Since: </h6>RAP 1.0
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6>For every RAP application, an entry point class must be registered with the framework. The framework will create a separate instance of this entry point for every user session. Entry points must implement the interface <code>IEntryPoint</code>.
+<p>
+An application can register several entrypoints, each at a different URL path. To access an entry point, the path that it is registered at must be appended to the context path of the application.
+</p>
+<p>
+As an alternative to registering an entrypoint, Eclipse applications can also use the interface <code>IApplication</code>.
+</p><p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.entrypoint">entrypoint</a>+)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.entrypoint">entrypoint</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST entrypoint</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">path&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">parameter&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The identifier of this entrypoint. Used in <code>org.eclipse.rap.ui.branding</code> extension point.</li>
+<li><b>class</b> - An implementation of <code>IEntryPoint</code> which starts the application.</li>
+<li><b>path</b> - The URL path to register the entry point at.</li>
+<li><i style="color: red;">Deprecated</i> <b>parameter</b> - A URL parameter name to access the entry point. Deprecated, use the path attribute instead.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6><pre class="Example"><span class="code SchemaTag">
+&lt;extension
+    id=</span><span class="code SchemaCstring">&quot;org.eclipse.rap.demo.demoentrypoint&quot;</span><span class="code SchemaTag">
+    point=</span><span class="code SchemaCstring">&quot;org.eclipse.rap.ui.entrypoint&quot;</span><span class="code SchemaTag">&gt;
+  &lt;entrypoint
+      id=</span><span class="code SchemaCstring">&quot;org.eclipse.rap.demo.entrypoint&quot;</span><span class="code SchemaTag">
+      class=</span><span class="code SchemaCstring">&quot;org.eclipse.rap.demo.MyEntrypoint&quot;</span><span class="code SchemaTag">
+      path=</span><span class="code SchemaCstring">&quot;/myapp&quot;</span><span class="code SchemaTag">/&gt;
+  &lt;/extension&gt;
+</span></pre>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6>Each entrypoint has to implement the <code>IEntryPoint</code> interface.
+In the createUI() method the user interface of the application is created.
+An entrypoint for a simple RAP application could look like this:
+
+<pre class="Example"><span class="code SchemaTag">
+public class MyEntryPoint implements IEntryPoint {
+
+  public int createUI() {
+    Display display = new Display();
+    Shell shell = new Shell( display );
+    shell.setLayout( new GridLayout() );
+
+    Label label = new Label( shell, SWT.NONE );
+    label.setText( "Hello World!" );
+
+    shell.layout();
+    shell.open();
+    return 0;
+  }
+}
+</span></pre>
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2007, 2012 Innoopract Informationssysteme GmbH and others.<br>
+All rights reserved. This program and the accompanying materials
+are made available under the terms of the Eclipse Public License v1.0
+which accompanies this distribution, and is available at
+<a href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

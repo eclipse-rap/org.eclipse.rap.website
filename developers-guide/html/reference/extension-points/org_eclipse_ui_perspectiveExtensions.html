@@ -1,0 +1,164 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Perspective Extensions</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Perspective Extensions</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.ui.perspectiveExtensions<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6>This extension point is used to extend perspectives 
+registered by other plug-ins. A perspective defines 
+the initial contents of the window action bars 
+(menu and toolbar) and the initial set of views 
+and their layout within a workbench page.  
+Other plug-ins may contribute actions or views to 
+the perspective which appear when the perspective 
+is selected.  Optional additions by other plug-ins 
+are appended to the initial definition.<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.perspectiveExtension">perspectiveExtension</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>point</b> - a fully qualified identifier of the target extension point</li>
+<li><b>id</b> - an optional identifier of the extension instance</li>
+<li><b>name</b> - an optional name of the extension instance</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.perspectiveExtension">perspectiveExtension</a> (<a href="#e.actionSet">actionSet</a> | <a href="#e.viewShortcut">viewShortcut</a> | <a href="#e.perspectiveShortcut">perspectiveShortcut</a> | <a href="#e.newWizardShortcut">newWizardShortcut</a> | <a href="#e.view">view</a> | <a href="#e.showInPart">showInPart</a> | <a href="#e.hiddenMenuItem">hiddenMenuItem</a> | <a href="#e.hiddenToolBarItem">hiddenToolBarItem</a>)*&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST perspectiveExtension</p>
+<p class="code SchemaDtdAttlist">targetID&nbsp;IDREF #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>targetID</b> - the unique identifier of the perspective (as specified in the registry) into which the contribution is made. If the value is set to "*" the extension is applied to all perspectives.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.actionSet">actionSet</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST actionSet</p>
+<p class="code SchemaDtdAttlist">id&nbsp;IDREF #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - the unique identifier of the action set which will be added to the perspective.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.viewShortcut">viewShortcut</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST viewShortcut</p>
+<p class="code SchemaDtdAttlist">id&nbsp;IDREF #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - the unique identifier of the view which will be added to the perspective's "Show View" submenu of the "Window" menu.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.perspectiveShortcut">perspectiveShortcut</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST perspectiveShortcut</p>
+<p class="code SchemaDtdAttlist">id&nbsp;IDREF #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - the unique identifier of the perspective which will be added to the perspective's "Open Perspective" submenu of the "Window" menu.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.newWizardShortcut">newWizardShortcut</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST newWizardShortcut</p>
+<p class="code SchemaDtdAttlist">id&nbsp;IDREF #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - the unique identifier of the new wizard which will be added to the perspective's "New" submenu of the "File" menu.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.showInPart">showInPart</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST showInPart</p>
+<p class="code SchemaDtdAttlist">id&nbsp;IDREF #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - the unique identifier of the view which will be added to the perspective's "Show In..." prompter in the Navigate menu.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.view">view</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST view</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDREF #REQUIRED</p><p class="code SchemaDtdAttlist">relative&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDREF #IMPLIED</p><p class="code SchemaDtdAttlist">relationship&nbsp;(stack|left|right|top|bottom|fast) </p><p class="code SchemaDtdAttlist">ratio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">visible&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(true | false) </p><p class="code SchemaDtdAttlist">closeable&nbsp;&nbsp;&nbsp;&nbsp;(true | false) </p><p class="code SchemaDtdAttlist">moveable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(true | false) </p><p class="code SchemaDtdAttlist">standalone&nbsp;&nbsp;&nbsp;(true | false) </p><p class="code SchemaDtdAttlist">showTitle&nbsp;&nbsp;&nbsp;&nbsp;(true | false) </p><p class="code SchemaDtdAttlist">minimized&nbsp;&nbsp;&nbsp;&nbsp;(true | false) "false"</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - the unique identifier of the view which will be added to the perspective layout.</li>
+<li><b>relative</b> - the unique identifier of a view which already exists in the perspective.  This will be used as a reference point for placement of the view.  The relationship between these two views is defined by <samp>relationship</samp>.  Ignored if relationship is "fast".</li>
+<li><b>relationship</b> - specifies the relationship between <samp>id</samp> and
+<samp>relative</samp>. 
+The following values are supported:
+<ul>
+<b>fast</b> - the view extension will be created as a fast view.
+<br><b>stack</b> - the view extension will be stacked with the relative
+view in a folder.
+<br><b>left, right, top, bottom</b> - the view extension will be placed
+beside the relative view. In this case a <samp>ratio</samp> must also
+be defined.</ul></li>
+<li><b>ratio</b> - the percentage of area within the relative view which will be donated to the view extension. If the view extension is a fast view, the ratio is the percentage of the workbench the fast view will cover when active. This must be defined as a floating point value and lie between 0.05 and 0.95.</li>
+<li><b>visible</b> - whether the view is initially visible when the perspective is opened.  This attribute should have a value of "true" or "false" if used.
+If this attribute is not used, the view will be initially visible by default.</li>
+<li><b>closeable</b> - whether the view is closeable in the target perspective. This attribute should have a value of "true" or "false" if used.  If this attribute is not used, the view will be closeable, unless the perspective itself is marked as fixed.</li>
+<li><b>moveable</b> - whether the view is moveable.  A non-moveable view cannot be moved either within the same folder, or moved between folders in the perspective.  This attribute should have a value of "true" or "false" if used.
+If this attribute is not used, the view will be moveable, unless the perspective itself is marked as fixed.</li>
+<li><b>standalone</b> - whether the view is a standalone view.  A standalone view cannot be docked together with others in the same folder.  This attribute should have a value of "true" or "false" if used.  This attribute is ignored if the relationship attribute is "fast" or "stacked".  If this attribute is not used, the view will be a regular view, not a standalone view (default is "false").</li>
+<li><b>showTitle</b> - whether the view's title is shown.  This attribute should have a value of "true" or "false" if used.  This attribute only applies to standalone views.  If this attribute is not used, the view's title will be shown (default is "true").</li>
+<li><b>minimized</b> - If the perspective extension will result in a new view stack being created (i.e. the 'relationship' attribute is one of left, right, top or bottom) this field determines the new stack's initial display state.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.hiddenMenuItem">hiddenMenuItem</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST hiddenMenuItem</p>
+<p class="code SchemaDtdAttlist">id&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The unique identifier of the Command which is to be removed from the menu.
+
+<strong>WARNING:</strong> This is considered to be a 'Product level' extension and should not be used in consumable plugins without great care.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.hiddenToolBarItem">hiddenToolBarItem</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST hiddenToolBarItem</p>
+<p class="code SchemaDtdAttlist">id&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The unique identifier of the Command which is to be removed from thetoolbar.
+
+<strong>WARNING:</strong> This is considered to be a 'Product level' extension and should not be used in consumable plugins without great care.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6>The following is an example of a perspective extension (note the subelements and the way attributes are used):
+<p>
+<pre class="Example"><span class="code SchemaTag">
+    &lt;extension point=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.perspectiveExtensions&quot;</span><span class="code SchemaTag">&gt; 
+        &lt;perspectiveExtension 
+            targetID=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.resourcePerspective&quot;</span><span class="code SchemaTag">&gt; 
+            &lt;actionSet id=</span><span class="code SchemaCstring">&quot;org.eclipse.jdt.ui.JavaActionSet&quot;</span><span class="code SchemaTag">/&gt; 
+            &lt;viewShortcut id=</span><span class="code SchemaCstring">&quot;org.eclipse.jdt.ui.PackageExplorer&quot;</span><span class="code SchemaTag">/&gt; 
+            &lt;newWizardShortcut id=</span><span class="code SchemaCstring">&quot;org.eclipse.jdt.ui.wizards.NewProjectCreationWizard&quot;</span><span class="code SchemaTag">/&gt; 
+            &lt;perspectiveShortcut id=</span><span class="code SchemaCstring">&quot;org.eclipse.jdt.ui.JavaPerspective&quot;</span><span class="code SchemaTag">/&gt; 
+            &lt;view id=</span><span class="code SchemaCstring">&quot;org.eclipse.jdt.ui.PackageExplorer&quot;</span><span class="code SchemaTag"> 
+                relative=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.views.ResourceNavigator&quot;</span><span class="code SchemaTag"> 
+                relationship=</span><span class="code SchemaCstring">&quot;stack&quot;</span><span class="code SchemaTag">/&gt; 
+            &lt;view id=</span><span class="code SchemaCstring">&quot;org.eclipse.jdt.ui.TypeHierarchy&quot;</span><span class="code SchemaTag"> 
+                relative=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.views.ResourceNavigator&quot;</span><span class="code SchemaTag"> 
+                relationship=</span><span class="code SchemaCstring">&quot;left&quot;</span><span class="code SchemaTag"> 
+                ratio=</span><span class="code SchemaCstring">&quot;0.50&quot;</span><span class="code SchemaTag">/&gt; 
+        &lt;/perspectiveExtension&gt; 
+    &lt;/extension&gt; 
+</span></pre>
+</p>
+<p>
+In the example above, an action set, view shortcut, 
+new wizard shortcut, and perspective shortcut are 
+contributed to the initial contents of the 
+Resource Perspective.  In addition, the 
+Package Explorer view is stacked on the 
+Resource Navigator and the Type Hierarchy View is 
+added beside the Resource Navigator. 
+</p>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6>The items defined within the perspective extension are contributed to the initial contents of the target perspective.  Following this, the user may remove any contribution or add others to a perspective from within the workbench user interface.
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2002, 2007 IBM Corporation and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

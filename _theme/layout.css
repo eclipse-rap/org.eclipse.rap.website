@@ -1,6 +1,18 @@
 
 @CHARSET "UTF-8";
 
+div.left {
+  float: left;
+}
+
+div.right {
+  float: right;
+}
+
+div.two-col {
+  padding: 28px 25px 25px;
+}
+
 html {
   height: 100%; /* gives layout 100% height */
   overflow: inherit; /* triggers 100% height in Opera 9.5 */
@@ -200,6 +212,7 @@ div#info-box {
   width: 45px;
   background-color: #e5e5e5;
   border: 1px solid #bdbdbd;
+  border-right: none;
   padding: 10px;
 }
 
@@ -346,7 +359,6 @@ h1 a, h2 a, h3 a, h4 a {
 
 h1 {
   font-size: 28px;
-  line-height: 22px;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -849,4 +861,65 @@ div.sideitem .rssIcon {
   float: right;
   margin-right: 8px;
   margin-top: 2px;
+}
+
+/* DEVELOPER'S GUIDE */
+
+#dev-guide-table-of-contents > ul {
+  margin-left: 0;
+}
+
+#dev-guide-table-of-contents > ul li {
+  margin-left: 0;
+}
+
+#dev-guide-table-of-contents ul li{
+  list-style: none;
+}
+
+#dev-guide-nav {
+  width: 250px;
+  float: left;
+}
+
+#dev-guide-nav a {
+  color: #34332F;
+}
+
+#dev-guide-nav ul li {
+  list-style: none;
+  margin: 0;
+}
+
+#dev-guide-nav li.category-group span {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#dev-guide-nav ul li.category-group,
+#dev-guide-table-of-contents ul li.category-group {
+  padding-top: 25px;
+}
+
+#dev-guide-nav ul li.category-group ul {
+  margin-left: 10px;
+}
+
+#dev-guide-nav a:hover,
+#dev-guide-nav a.active {
+  color: #31619C;
+}
+
+#dev-guide-nav a:hover {
+  text-decoration: none;
+}
+
+#dev-guide-content {
+  width: 627px;
+  padding-right: 47px;
+  float: left;
+}
+
+#dev-guide-content img{
+  max-width: 627px;
 }

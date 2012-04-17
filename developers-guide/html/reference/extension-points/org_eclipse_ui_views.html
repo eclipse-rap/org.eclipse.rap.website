@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Views</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Views</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.ui.views<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6>This extension point is used to define additional views 
+for the workbench.  A view is a visual component 
+within a workbench page.  It is typically used to 
+navigate a hierarchy of information (like the workspace), 
+open an editor,  or display properties for 
+the active editor.  The user can make a view 
+visible from the Window > Show View menu or close it from the 
+view local title bar. 
+<p>
+In order to reduce the visual clutter in the Show View Dialog, views should be grouped using categories.<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.category">category</a> | <a href="#e.view">view</a> | <a href="#e.stickyView">stickyView</a>)*&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>point</b> - a fully qualified identifier of the target extension point</li>
+<li><b>id</b> - an optional identifier of the extension instance</li>
+<li><b>name</b> - an optional name of the extension instance</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.category">category</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST category</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">parentCategory&nbsp;IDREF #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique name that will be used to identify this category</li>
+<li><b>name</b> - a translatable name that will be used in the UI for this category</li>
+<li><b>parentCategory</b> - an optional path composed of category IDs separated by '/'. This
+allows the creation of a hierarchy of categories.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.view">view</a> (<a href="#e.description">description</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST view</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDREF #IMPLIED</p><p class="code SchemaDtdAttlist">class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">icon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">fastViewWidthRatio&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">allowMultiple&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(true | false) </p><p class="code SchemaDtdAttlist">restorable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(true | false) "true"</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - a unique name that will be used to identify this view</li>
+<li><b>name</b> - a translatable name that will be used in the UI for this view</li>
+<li><b>category</b> - an optional attribute that is composed of the category IDs separated
+by '/'. Each referenced category must be declared in a corresponding category element.</li>
+<li><b>class</b> - a fully qualified name of the class that implements 
+<samp>org.eclipse.ui.IViewPart</samp>. A common practice 
+is to subclass <samp>org.eclipse.ui.part.ViewPart</samp> 
+in order to inherit the default functionality.</li>
+<li><b>icon</b> - a relative name of the icon that will 
+be associated with the view.</li>
+<li><b>fastViewWidthRatio</b> - the percentage of the width of the workbench that the view will take up as an active fast view.
+This must be defined as a floating point value and lie between 0.05 and 0.95.
+If no value is supplied, a default ratio will be used.</li>
+<li><b>allowMultiple</b> - flag indicating whether this view allows multiple instances to be created using IWorkbenchPage.showView(String id, String secondaryId).  The default is false.</li>
+<li><b>restorable</b> - flag indicating whether this view allows to be restored upon workbench restart. If set to false, the view will not be open after a workbench restart. The default is true.
+<p>
+Since: 3.4
+</p></li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.description">description</a> (#PCDATA)&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+an optional subelement whose body should contain text providing a short description of the view.</p>
+<br><br>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.stickyView">stickyView</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST stickyView</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDREF #REQUIRED</p><p class="code SchemaDtdAttlist">location&nbsp;&nbsp;(RIGHT|LEFT|TOP|BOTTOM) </p><p class="code SchemaDtdAttlist">closeable&nbsp;(true | false) </p><p class="code SchemaDtdAttlist">moveable&nbsp;&nbsp;(true | false) </p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+A sticky view is a view that will appear by default across all perspectives in a window once it is opened.  Its initial placement is governemed by the location attribute, but nothing prevents it from being moved or closed by the user.  Use of this element will only cause a placeholder for the view to be created, it will not show the view.  Please note that usage of this element should be done with great care and should only be applied to views that truely have a need to live across perspectives.
+
+Since 3.0</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - the id of the view to be made sticky.</li>
+<li><b>location</b> - optional attribute that specifies the location of the sticky view relative to the editor area.  If absent, the view will be docked to the right of the editor area.</li>
+<li><b>closeable</b> - optional attribute that specifies wether the view should be closeable.  If absent it will be closeable.</li>
+<li><b>moveable</b> - optional attribute that specifies wether the view should be moveable.  If absent it will be moveable.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6>The following is an example of the extension point: 
+<p>
+<pre class="Example"><span class="code SchemaTag">
+   &lt;extension point=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.views&quot;</span><span class="code SchemaTag">&gt; 
+      &lt;category 
+         id=</span><span class="code SchemaCstring">&quot;com.xyz.views.XYZviews&quot;</span><span class="code SchemaTag"> 
+         name=</span><span class="code SchemaCstring">&quot;XYZ&quot;</span><span class="code SchemaTag">/&gt; 
+      &lt;view 
+         id=</span><span class="code SchemaCstring">&quot;com.xyz.views.XYZView&quot;</span><span class="code SchemaTag"> 
+         name=</span><span class="code SchemaCstring">&quot;XYZ View&quot;</span><span class="code SchemaTag"> 
+         category=</span><span class="code SchemaCstring">&quot;com.xyz.views.XYZviews&quot;</span><span class="code SchemaTag"> 
+         class=</span><span class="code SchemaCstring">&quot;com.xyz.views.XYZView&quot;</span><span class="code SchemaTag"> 
+         icon=</span><span class="code SchemaCstring">&quot;icons/XYZ.gif&quot;</span><span class="code SchemaTag">/&gt;
+   &lt;/extension&gt; 
+</span></pre>
+</p>
+The following is an example of a sticky view declaration:
+<p>
+<pre class="Example"><span class="code SchemaTag">
+   &lt;extension point=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.views&quot;</span><span class="code SchemaTag">&gt; 
+      &lt;stickyView
+         id=</span><span class="code SchemaCstring">&quot;com.xyz.views.XYZView&quot;</span><span class="code SchemaTag"> /&gt;
+   &lt;/extension&gt; 
+</span></pre>
+</p>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6>The value of the <samp>class</samp> attribute must be a 
+fully qualified name of the class that implements 
+<samp>org.eclipse.ui.IViewPart</samp>.  It is common 
+practice to subclass <samp>org.eclipse.ui.part.ViewPart</samp>
+ when developing a new view.
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Supplied Implementation: </h6>The Eclipse Platform provides a number of standard views including Navigator, Properties, Outline and Tasks. From the user point of view, these views are no different from any other view provided by the plug-ins. All the views can be shown from the "Show View" submenu of the "Window" menu. The position of a view is persistent: it is saved when the view is closed and restored when the view is reopened in a single session.  The position is also persisted between workbench sessions.
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2002, 2005 IBM Corporation and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Command Images</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Command Images</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.ui.commandImages<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Since: </h6>3.2
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6><p>
+The images extension point provides a way of linking different types of images and icons to a particular command.  These images can be used, as appropriate, wherever the command appears in the user interface.  To accommodate some boundary cases (e.g., tool bar drop-down items), it is possible to group the images for a particular commands into "styles".  These styles can then be specifically requested when a command is to be displayed.
+</p>
+<p>
+Commands placed in menus using the <a href="org_eclipse_ui_menus.html">org.eclipse.ui.menus</a> extension point will use the default image if available, and commands placed in a toolbar will use the <code>toolbar</code> style images if available, followed by the default images.
+</p><p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.image">image</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.image">image</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST image</p>
+<p class="code SchemaDtdAttlist">commandId&nbsp;&nbsp;&nbsp;&nbsp;IDREF #REQUIRED</p><p class="code SchemaDtdAttlist">icon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">disabledIcon&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">hoverIcon&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">style&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+The images to associate with a particular command.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>commandId</b> - The identifier of the command with which the images should be associated.</li>
+<li><b>icon</b> - The path to the icon which should be used in the default case, or the <code>ISharedImages</code> constant.  This will appear when the icon is enabled and mouse is not hovering over it.  It will also be used in any situation where such a more specific icon is not available.</li>
+<li><b>disabledIcon</b> - The icon to display when the command is disabled.</li>
+<li><b>hoverIcon</b> - The icon to display when the user is hovering over the command.</li>
+<li><b>style</b> - The particular scenario in which this block of icons apply.  For example, it may be desirable to have different icons when the command is displayed as a toolbar drop-down item. Currently the org.eclipse.ui.menus extension will use the default style (no style) for menu icons and the <code>toolbar</code> style for toolbar contributions.  If no <code>toolbar</code> entry is available for that command, it uses the default style.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6><pre class="Example"><span class="code SchemaTag">
+&lt;extension
+ point=</span><span class="code SchemaCstring">&quot;org.eclipse.ui.commandImages&quot;</span><span class="code SchemaTag">&gt;
+ &lt;image
+  commandId=</span><span class="code SchemaCstring">&quot;org.eclipse.example.ProfileLast&quot;</span><span class="code SchemaTag">
+  hoverIcon=</span><span class="code SchemaCstring">&quot;icons/full/etool16/profile.gif&quot;</span><span class="code SchemaTag">
+  disabledIcon=</span><span class="code SchemaCstring">&quot;icons/full/dtool16/profile.gif&quot;</span><span class="code SchemaTag">
+  icon=</span><span class="code SchemaCstring">&quot;icons/full/etool16/profile.gif&quot;</span><span class="code SchemaTag"> /&gt;
+ &lt;image
+  commandId=</span><span class="code SchemaCstring">&quot;org.eclipse.example.ProfileLast&quot;</span><span class="code SchemaTag">
+  hoverIcon=</span><span class="code SchemaCstring">&quot;icons/full/etool16/history.gif&quot;</span><span class="code SchemaTag">
+  disabledIcon=</span><span class="code SchemaCstring">&quot;icons/full/dtool16/history.gif&quot;</span><span class="code SchemaTag">
+  icon=</span><span class="code SchemaCstring">&quot;icons/full/etool16/history.gif&quot;</span><span class="code SchemaTag">
+  style=</span><span class="code SchemaCstring">&quot;toolbar&quot;</span><span class="code SchemaTag"> /&gt;
+&lt;/extension&gt;
+</span></pre>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6><p>
+Within the workbench, it is possible to get images for commands using the <code>org.eclipse.ui.commands.ICommandImageService</code> interface.  This interface can be retrieved from supporting workbench objects, such as <code>IWorkbench</code> itself, the <code>IWorkbenchWindow</code>, or the <code>IWorkbenchPartSite</code>.  To retrieve the service, you would make a call like <code>workbench.getService(ICommandImageService.class)</code>.
+</p>
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2005,2007 IBM Corporation and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>

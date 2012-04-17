@@ -1,0 +1,246 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Commands</title>
+<style type="text/css">@import url("../../book.css");</style>
+<style type="text/css">@import url("../../schema.css");</style>
+</HEAD>
+<BODY>
+<H1 style="text-align:center">Commands</H1>
+<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Identifier: </h6>org.eclipse.ui.commands<p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Since: </h6>2.1
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">Description: </h6><p>
+The <code>org.eclipse.ui.commands</code> extension point is used to declare commands and command categories, using the <code>command</code> and <code>category</code> elements. A command is an abstract representation of some semantic behaviour, but not it's actual implementation.  This allows different developers to contribute specific behaviour for their individual parts.  For example, there might be a "paste" command with one implementation in an editor and a different implementation in an explorer widget.  These implementations are called handlers.  Commands can also be viewed as declarative function pointers, or signal handlers.
+</p><p></p>
+<h6 class="CaptionFigColumn SchemaHeader">Configuration Markup:</h6>
+<p></p>
+<p class="code SchemaDtd">&lt;!ELEMENT <a name="e.extension">extension</a> (<a href="#e.category">category</a>* , <a href="#e.command">command</a>* , <a href="#e.commandParameterType">commandParameterType</a>* , <a href="#e.context">context</a>* , <a href="#e.scope">scope</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST extension</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">point&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - An optional identifier of the extension instance.</li>
+<li><b>name</b> - An optional name of the extension instance.</li>
+<li><b>point</b> - A fully qualified identifier of the target extension point.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.command">command</a> (<a href="#e.defaultHandler">defaultHandler</a>? , <a href="#e.state">state</a>* , <a href="#e.commandParameter">commandParameter</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST command</p>
+<p class="code SchemaDtdAttlist">category&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">description&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">categoryId&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IDREF #IMPLIED</p><p class="code SchemaDtdAttlist">defaultHandler&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">returnTypeId&nbsp;&nbsp;&nbsp;IDREF #IMPLIED</p><p class="code SchemaDtdAttlist">helpContextId&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+This element is used to define commands. A command represents an request from the user that can be handled by an action, and should be semantically unique among other commands. Do not define a command if there is already one defined with the same meaning. If more than one of these elements exist with the same <code>id</code> attribute, only the last declared element (in order of reading the plugin registry) is considered valid. See the extension points <a href="org_eclipse_ui_actionSets.html">org.eclipse.ui.actionSets</a> and <a href="org_eclipse_ui_editorActions.html">org.eclipse.ui.editorActions</a> to understand how actions are connected to commands.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><i style="color: red;">Deprecated</i> <b>category</b> - Please use <code>categoryId</code> instead.</li>
+<li><b>description</b> - A translatable short description of this command for display in the UI.</li>
+<li><b>id</b> - The unique identifier of this command.</li>
+<li><b>name</b> - The translatable name of this command for display in the UI. Commands are typically named in the form of an imperative verb.</li>
+<li><b>categoryId</b> - <p>
+The unique id of the category for this command. If this command does not specify a category it will be placed in an global "Uncategorized" category.
+</p>
+<p><em>Since: 3.0</em></p></li>
+<li><b>defaultHandler</b> - <p>
+The default handler for this command (see the <a href="org_eclipse_ui_handlers.html">org.eclipse.ui.handlers</a> extension point).  If no other handler is active, this handler will be active.  This handler will conflict with other handler definitions that specify no <code>activeWhen</code> conditions.  If you are creating an <code>IExecutableExtension</code>, you can use the <code>defaultHandler</code> element instead.
+</p>
+<p><em>Since: 3.1</em></p></li>
+<li><b>returnTypeId</b> - <p>
+The id of a <code>commandParameterType</code> indicating the type of value returned by this command.  Specifying a <code>returnTypeId</code> allows clients executing the command to associate the value returned with a Java type and to convert the value to a String form that may be stored and/or passed to another command that accepts parameters of the same type.
+</p>
+<p><em>Since: 3.2</em></p></li>
+<li><b>helpContextId</b> - <p>
+The identifier of the help context that relates to this command in general.  Handlers can override this context identifier to provide help that is more specific to their particular behaviours.
+</p>
+<p><em>Since: 3.2</em></p></li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.category">category</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST category</p>
+<p class="code SchemaDtdAttlist">description&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+In the UI, commands are often organized by category to make them more manageable. This element is used to define these categories. Commands can add themselves to at most one category. If more than one of these elements exist with the same <code>id</code> attribute, only the last declared element (in order of reading the plugin registry) is considered valid.
+</p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>description</b> - A translatable short description of this category for display in the UI.</li>
+<li><b>id</b> - The unique identifier of this category.</li>
+<li><b>name</b> - The translatable name of this category for display in the UI.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.commandParameter">commandParameter</a> (<a href="#e.values">values</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST commandParameter</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">values&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">typeId&nbsp;&nbsp;&nbsp;IDREF #IMPLIED</p><p class="code SchemaDtdAttlist">optional&nbsp;(true | false) "true"</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+Defines a parameter that a command should understand.  A parameter is a way to provide more information to a handler at execution time.  For example, a "show view" command might take a view as a parameter.  Handlers should be able to understand these parameters, so they should be treated like API.
+</p>
+<p><em>Since: 3.1</em></p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The unique identifier for this parameter.</li>
+<li><b>name</b> - The name for the parameter.  This is the name as it will be displayed to an end-user.  As such, it should be translatable.  The name should be short -- preferrably one word.</li>
+<li><b>values</b> - The class providing a list of parameter values for the user to select.  This class should implement <code>org.eclipse.core.commands.IParameterValues</code>.  If this class is not specified, you must specify the more verbose <code>values</code> element.  Please see <code>org.eclipse.core.runtime.IExecutableExtension</code>.</li>
+<li><b>typeId</b> - The id of a commandParameterType for this commandParameter.  Specifying a typeId allows handlers of a command to convert string parameter values to objects in a consistent way and it allows potential callers of a command to look for commands that take objects of various types for their parameters.</li>
+<li><b>optional</b> - Whether this parameter is optional.  If a parameter is optional, the handler should be able to handle the absence of the parameter.  By default, all parameters are optional.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.commandParameterType">commandParameterType</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST commandParameterType</p>
+<p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">converter&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+Defines the object type of a commandParameter and may specify an <code>org.eclipse.core.commands.AbstractParameterValueConverter</code> subclass to convert between string parameter values and objects.
+</p>
+<p><em>Since: 3.2</em></p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>id</b> - The unique identifier for this commandParameterType.</li>
+<li><b>type</b> - The fully qualified name of a Java class or interface to use as the type of this command parameter.  This attribute is optional, however if omitted, <code>java.lang.Object</code> will be used as the parameter type.</li>
+<li><b>converter</b> - The class for converting between objects and string representations of objects for command parameter values.  This class should extend <code>org.eclipse.core.commands.AbstractParameterValueConverter</code>. The converter should produce and consume objects of the type indicated in the <code>type</code> attribute. If this class is not specified, this facility to convert between string and object values for this parameter type will not be available (the <code>getValueConverter()</code> on class <code>ParameterType</code> will return <code>null</code>).</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.values">values</a> (<a href="#e.parameter">parameter</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST values</p>
+<p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+The more verbose version of the <code>values</code> attribute on the <code>commandParameter</code>.
+</p>
+<p><em>Since: 3.1</em></p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>class</b> - The class providing a list of parameter values for the user to select.  This class should implement <code>org.eclipse.core.commands.IParameterValues</code>.  If this class is not specified, you must specify the more verbose <code>values</code> element.  Please see <code>org.eclipse.core.runtime.IExecutableExtension</code>.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.parameter">parameter</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST parameter</p>
+<p class="code SchemaDtdAttlist">name&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">value&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+A possible value for a parameter.
+</p>
+<p><em>Since: 3.1</em></p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>name</b> - The name of the parameter to pass to the <code>IExecutableExtension</code>.</li>
+<li><b>value</b> - The value of the parameter to pass to the <code>IExecutableExtension</code>.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.defaultHandler">defaultHandler</a> (<a href="#e.parameter">parameter</a>)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST defaultHandler</p>
+<p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+The default handler for this command.  If no other handler is active, this handler will be active.  This handler will conflict with other handler definitions that specify no <code>activeWhen</code> conditions.  If you are not creating an <code>IExecutableExtension</code>, you can use the <code>defaultHandler</code> attribute instead.
+</p>
+<p><em>Since: 3.1</em></p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>class</b> - The class which implements <code>org.eclipse.core.commands.IHandler</code>.</li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.state">state</a> (<a href="#e.class">class</a>?)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST state</p>
+<p class="code SchemaDtdAttlist">class&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+State information shared between all handlers, and potentially persisted between sessions.The state is simply a class that is loaded to look after the state.  See the API Information for more details.  This is not used for UI attributes like a menu contribution check box state or label.
+</p>
+<p><em>Since: 3.2</em></p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>class</b> - The class that can be loaded to store the state of this command.  State is shared amongst handlers, and can be persisted between sessions.  This class must subclass <code>org.eclipse.core.commands.State</code>.  Please see API Information.</li>
+<li><b>id</b> - <p>
+A unique identifier for this state.  This is used for persisting the state between sessions (if the state is an instance of <code>org.eclipse.jface.commands.PersistentState</code>).  Certain common identifiers (see <code>org.eclipse.jface.menus.IMenuStateIds</code>) are understood when the command is being rendered in the menus or tool bars.  The identifier only needs to be unique within the command defining the state.
+</p></li>
+</ul>
+<br><p class="code SchemaDtd">&lt;!ELEMENT <a name="e.class">class</a> (<a href="#e.parameter">parameter</a>*)&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST class</p>
+<p class="code SchemaDtdAttlist">class&nbsp;CDATA #REQUIRED</p>&gt;</p>
+<p></p>
+<div class="ConfigMarkupElementDesc">
+<p>
+The class that can be loaded to store the state of this command.  This element is used if you wish to pass multiple parameters to an <code>org.eclipse.core.runtime.IExecutableExtension</code>.
+</p>
+<p><em>Since: 3.2</em></p></div>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><b>class</b> - The class that can be loaded to store the state of this command.  State is shared amongst handlers, and can be persisted between sessions.  This class must implement <code>org.eclipse.core.commands.State</code>.  Please see API Information.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>context</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.context">context</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST context</p>
+<p class="code SchemaDtdAttlist">description&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">parent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">parentId&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to define contexts. If more than one of these elements exist with the same <code>id</code> attribute, only the last declared element (in order of reading the plugin registry) is considered valid.  Please use the <a href="org_eclipse_ui_contexts.html">org.eclipse.ui.contexts</a> extension point instead.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><i style="color: red;">Deprecated</i> <b>description</b> - A translatable short description of this context for display in the UI.</li>
+<li><i style="color: red;">Deprecated</i> <b>id</b> - The unique identifier of this context.</li>
+<li><i style="color: red;">Deprecated</i> <b>name</b> - The translatable name of this context for display in the UI. If this context has a parent, it is not necessary to add "(extends parent)" to the name. This will be automatically added by the UI where necessary.</li>
+<li><i style="color: red;">Deprecated</i> <b>parent</b> - The unique id of the parent context. If this context has a parent, it will borrow all key bindings from its parent, in addition to the key bindings defined in its own context.
+@deprecated Please use "parentId" instead.</li>
+<li><i style="color: red;">Deprecated</i> <b>parentId</b> - The unique id of the parent context. If this context has a parent, it will borrow all key bindings from its parent, in addition to the key bindings defined in its own context.</li>
+</ul>
+<br><div style="color: red; font-style: italic;">The <b>scope</b> element is deprecated</div> <p class="code SchemaDtd">&lt;!ELEMENT <a name="e.scope">scope</a> EMPTY&gt;</p>
+<p class="code SchemaDtd">&lt;!ATTLIST scope</p>
+<p class="code SchemaDtdAttlist">description&nbsp;CDATA #IMPLIED</p><p class="code SchemaDtdAttlist">id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #REQUIRED</p><p class="code SchemaDtdAttlist">parent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CDATA #IMPLIED</p>&gt;</p>
+<p></p>
+<p class="ConfigMarkupElementDesc">
+This element is used to define scopes. If more than one of these elements exist with the same <code>id</code> attribute, only the last declared element (in order of reading the plugin registry) is considered valid.
+@deprecated Please use the "org.eclipse.ui.contexts" extension point instead.</p>
+<br>
+<ul class="ConfigMarkupAttlistDesc">
+<li><i style="color: red;">Deprecated</i> <b>description</b> - A translatable short description of this scope for display in the UI.
+
+@deprecated Please use the "org.eclipse.ui.contexts" extension point instead.</li>
+<li><i style="color: red;">Deprecated</i> <b>id</b> - The unique identifier of this scope.
+
+@deprecated Please use the "org.eclipse.ui.contexts" extension point instead.</li>
+<li><i style="color: red;">Deprecated</i> <b>name</b> - The translatable name of this scope for display in the UI. If this scope has a parent, it is not necessary to add "(extends parent)" to the name. This will be automatically added by the UI where necessary.
+
+@deprecated Please use the "org.eclipse.ui.contexts" extension point instead.</li>
+<li><i style="color: red;">Deprecated</i> <b>parent</b> - The unique id of the parent scope. If this scope has a parent, it will borrow all key bindings from its parent, in addition to the key bindings defined in its own scope.
+
+@deprecated Please use the "org.eclipse.ui.contexts" extension point instead.</li>
+</ul>
+<br><h6 class="CaptionFigColumn SchemaHeader">Examples: </h6><p>
+The <code>plugin.xml</code> file in the <code>org.eclipse.ui</code> plugin makes extensive use of the <code>org.eclipse.ui.commands</code> extension point.
+</p>
+<p></p>
+
+<h6 class="CaptionFigColumn SchemaHeader">API Information: </h6><p>
+Handlers can be registered with commands using the <code>org.eclipse.ui.handlers.IHandlerService</code>.  This can be retrieved from various workbench components (e.g., workbench, workbench window, part site, etc.) by calling <code>getService(IHandlerService.class)</code>.
+</p>
+<p>
+In general, it is preferrably to declare all commands statically (in <code>plugin.xml</code>).  This is so that users can attach key bindings to the commands.  However, it is possible to declare commands at run-time.  To do this, retrieve the <code>org.eclipse.ui.commands.ICommandService</code> from a workbench component, call <code>getCommand(yourCommandID)</code> and then call <code>Command.define(...)</code>.
+Commands defined programmatically must be cleaned up by the plugin if it is unloaded.
+</p>
+<p>
+There are a few default implementations of handler states that may be useful to users of this extension point:
+</p>
+<ul>
+<li>org.eclipse.jface.commands.TextState</li>
+<li>org.eclipse.jface.commands.RadioState</li>
+<li>org.eclipse.jface.commands.ToggleState</li>
+<li>org.eclipse.ui.handlers.RegistryRadioState</li>
+<li>org.eclipse.ui.handlers.RegistryToggleState</li>
+</ul>
+<p></p>
+
+<br>
+<p class="note SchemaCopyright">
+Copyright (c) 2000, 2007 IBM Corporation and others.<br>
+All rights reserved. This program and the accompanying materials are made
+available under the terms of the Eclipse Public License v1.0 which accompanies
+this distribution, and is available at <a 
+href="http://www.eclipse.org/legal/epl-v10.html">http://www.eclipse.org/legal/epl-v10.html</a>
+
+</p>
+</BODY>
+</HTML>
