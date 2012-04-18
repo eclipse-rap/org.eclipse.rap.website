@@ -865,16 +865,29 @@ div.sideitem .rssIcon {
 
 /* DEVELOPER'S GUIDE */
 
-#dev-guide-table-of-contents > ul {
-  margin-left: 0;
-}
-
-#dev-guide-table-of-contents > ul li {
-  margin-left: 0;
-}
-
-#dev-guide-table-of-contents ul li{
+#dev-guide-table-of-contents ul,
+#dev-guide-nav ul,
+#dev-guide-table-of-contents li,
+#dev-guide-nav li {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+#dev-guide-table-of-contents > ul > li,
+#dev-guide-nav > ul > li {
+  padding-bottom: 25px;
+}
+
+#dev-guide-table-of-contents .category-group ul,
+#dev-guide-nav .category-group ul {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+#dev-guide-table-of-contents .category-group > ul > li,
+#dev-guide-nav .category-group > ul > li {
+  padding-bottom: 5px;
 }
 
 #dev-guide-nav {
@@ -886,25 +899,6 @@ div.sideitem .rssIcon {
   color: #34332F;
 }
 
-#dev-guide-nav ul li {
-  list-style: none;
-  margin: 0;
-}
-
-#dev-guide-nav li.category-group span {
-  cursor: pointer;
-  font-weight: bold;
-}
-
-#dev-guide-nav ul li.category-group,
-#dev-guide-table-of-contents ul li.category-group {
-  padding-top: 25px;
-}
-
-#dev-guide-nav ul li.category-group ul {
-  margin-left: 10px;
-}
-
 #dev-guide-nav a:hover,
 #dev-guide-nav a.active {
   color: #31619C;
@@ -912,6 +906,11 @@ div.sideitem .rssIcon {
 
 #dev-guide-nav a:hover {
   text-decoration: none;
+}
+
+#dev-guide-nav li.category-group span {
+  cursor: pointer;
+  font-weight: bold;
 }
 
 #dev-guide-content {
