@@ -24,9 +24,11 @@ class ContentView {
   private static function rewriteLinkUrls( $htmlDocument ) {
     $links = $htmlDocument -> getElementsByTagName( 'a' );
     foreach( $links as $link ) {
-      $url = $link -> getAttribute( 'href' );
-      if( !self::containsString( $url, 'http://' ) && !self::isBookmark( $url ) ) {
-        $link -> setAttribute( 'href', self::rewriteLinkUrl( $url ) );
+      if( $link -> hasAttribute( 'href' ) ) {
+        $url = $link -> getAttribute( 'href' );
+        if( !self::containsString( $url, 'http://' ) && !self::isBookmark( $url ) ) {
+          $link -> setAttribute( 'href', self::rewriteLinkUrl( $url ) );
+        }
       }
     }
   }
