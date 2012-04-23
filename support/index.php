@@ -2,7 +2,7 @@
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
   $title = "RAP - Support";
-  $navPosition = array( "help", "index" );
+  $navPosition = array( "help", "support" );
   printHeader( $title, $navPosition );
 
 ?>
@@ -23,7 +23,7 @@
     <li><a href="#faq">Check the FAQ</a></li>
     <li><a href="#newsgroup-archive">Check the Newsgroup Archive</a></li>
     <li><a href="#existing-bugs">Look for an Existing Bug Report</a></li>
-    <li><a href="#newsgroup">Ask on the Community Newsgroup</a></li>      
+    <li><a href="#newsgroup">Ask on the Community Newsgroup</a></li>
     <li><a href="#new-bugs">File a Bug Report</a></li>
   </ul>
 
@@ -101,7 +101,7 @@
       the issue and may also offer workarounds.
     </p>
     <p>
-      If you'd like to call for a new feature, please check the 
+      If you'd like to call for a new feature, please check the
       <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&product=RAP&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bug_severity=enhancement&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">
       list of open enhancement requests</a> for an existing bug that covers
       your request.
@@ -126,7 +126,7 @@
       this FAQ</a>.
     </p>
     <p>
-      The RAP Newsgroup is intended for user community discussions on 
+      The RAP Newsgroup is intended for user community discussions on
       RAP usage and troubleshooting. Developers contributing to RAP should
       use the <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">
       mailing list</a>.
@@ -153,7 +153,7 @@
   <!--
     TODO
     Provide patches
-    Commercial support 
+    Commercial support
   -->
 
 </div>

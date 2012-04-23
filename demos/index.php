@@ -3,7 +3,7 @@
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
   $title = "RAP - Demos";
-  $navPosition = array( "demos", "index" );
+  $navPosition = array( "demos", "demos" );
   printHeader( $title, $navPosition );
 
 ?>

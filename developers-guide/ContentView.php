@@ -8,9 +8,7 @@ class ContentView {
 
   public static function render( $htmlFilePath ) {
     self::$htmlFileInfo = new SplFileObject( $htmlFilePath );
-    echo '<div id="dev-guide-content" >';
     echo self::processHtmlFileContent();
-    echo '</div>';
   }
 
   private static function processHtmlFileContent() {

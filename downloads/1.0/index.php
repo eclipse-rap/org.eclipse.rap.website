@@ -67,7 +67,7 @@ $html = <<<EOHTML
 -->
 EOHTML;
 
-$navPosition = array( "download", "achive" );
+$navPosition = array( "download", "downloads" );
 
 generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
 

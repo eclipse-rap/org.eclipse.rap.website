@@ -8,7 +8,7 @@ $pageAuthor = "The RAP Team";
 
 $html = xslt( 'builds.xml', '_index.xsl' );
 
-$navPosition = array( "download", "achive" );
+$navPosition = array( "download", "downloads" );
 
 generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
 

@@ -4,7 +4,7 @@
   require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_Builds.php" );
 
   $title = "RAP - Downloads";
-  $navPosition = array( "download", "index" );
+  $navPosition = array( "download", "downloads" );
   printHeader( $title, $navPosition );
 
   // --- TO BE CHANGED WITH EVERY RELEASE ---

@@ -9,7 +9,7 @@
   }
 
   $title = "RAP - " . $builds->getVersion() . " Downloads";
-  $navPosition = array( "download", "archive" );
+  $navPosition = array( "download", "downloads" );
   printHeader( $title, $navPosition );
 
   function getBuildTypeHeader( $type ) {

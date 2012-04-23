@@ -26,51 +26,51 @@ function startsWith( $haystack, $needle ) {
 }
 
 $title = "Developer's Guide";
-$navPosition = array( 'help', 'index' );
+$navPosition = array( 'help', 'developers-guide' );
 printHeader( $title, $navPosition );
 
 ?>
 
-<?php if( $valid ) { ?>
+<?php if( $valid ) : ?>
 
-<div class="two-col">
-  <?php ContentView::render( $_GET[ 'topic' ] ); ?>
-  <div id="dev-guide-nav">
+  <div id="midcolumn" class="dev-guide-content">
+    <?php ContentView::render( $_GET[ 'topic' ] ); ?>
+  </div>
+  <div id="rightcolumn">
+    <h2 style="padding-bottom: 12px;">Contents</h2>
     <?php NavigationView::render( 'toc.xml' ); ?>
   </div>
-  <div class="antifloat"></div>
-</div>
 
-<script>
-  function initDevGuideAccordion() {
-    $( '#dev-guide-nav li.category-group ul' ).each( function() {
+  <script>
+    $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
       if( !$( this ).find( '.active' ).attr( 'class' ) ) {
         $( this ).hide();
         $( this ).addClass( 'hidden' );
+      } else {
+        $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
       }
     } );
-    $( '#dev-guide-nav li.category-group span' ).click( function() {
+    $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
       var navList = $( this ).siblings( 'ul' );
+      var arrow = $( this ).children( 'span' );
       if( navList.hasClass( 'hidden' ) ) {
         navList.slideDown();
         navList.removeClass( 'hidden' );
+        arrow.addClass( 'opened' );
       } else {
         navList.slideUp();
         navList.addClass( 'hidden' );
+        arrow.removeClass( 'opened' );
       }
     } );
-  }
+  </script>
 
-  initDevGuideAccordion();
+<?php else : ?>
 
-</script>
+  <h1>Not found</h1>
 
-<?php } else { ?>
+  <p>This help topic does not exist in the RAP Developer's Guide</p>
 
-<h1>Not found</h1>
-
-<p>This help topic does not exist in the RAP Developer's Guide</p>
-
-<?php } ?>
+<?php endif; ?>
 
 <?php printFooter(); ?>
