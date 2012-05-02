@@ -827,7 +827,7 @@ ul#dev-guide-nav li.category-group span {
 }
 
 ul#dev-guide-nav li.category-group span.arrow {
-  background: url("/rap/images/dev-guide-navgroup") no-repeat scroll 0 0 transparent;
+  background: url("/rap/images/dev-guide-navgroup.png") no-repeat scroll 0 0 transparent;
   position: relative;
   top: -1px;
   background-position: 0 -7px;
