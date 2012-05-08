@@ -680,6 +680,40 @@ config.addEntryPoint( "/example", entryPointFactory, properties );</code></pre>
       </p>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M7">
+    <title>
+      Arrow Button
+    </title>
+    <description>
+      <p>
+        Finally, we properly implemented ARROW style flag for <code>Button</code>. Together with 
+        <code>SWT.TOP</code>, <code>SWT.BOTTOM</code>, <code>SWT.LEFT</code> and 
+        <code>SWT.RIGHT</code> style flags, you could create arrow buttons easily.
+      </p>
+      <p>
+        <img class="framed" title="Arrow Button in RAP" src="images/ArrowButton.png" />
+      </p>
+      <p>
+      Ofcourse, arrow button style is configurable through CSS:
+      <pre><code>Button[ARROW],
+  border: 1px solid #bdbdbd;
+  border-radius: 2px;
+  padding: 10px;
+  background-image: gradient(
+    linear, left top, left bottom,
+    from( #f9f9f9 ),
+    to( #e4e4e4 )
+  );
+  cursor: pointer;
+}
+Button-ArrowIcon[UP] {
+  background-image: url( resource/widget/rap/button/arrow-up.png );
+}
+...</pre></code>
+      </p>
+    </description>
+  </entry>
 
   <!-- TODO
   
