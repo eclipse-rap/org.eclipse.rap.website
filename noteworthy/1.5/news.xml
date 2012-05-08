@@ -749,6 +749,28 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
     </description>
   </entry>
 
+  <entry category="RWT" milestone="M7">
+    <title>
+      New Animations
+    </title>
+    <description>
+      <p>
+        Shell and Composite Theming now supports new animations. 
+      </p>
+      <p><pre>
+Shell:<code>flyInTop, flyInRight, flyInBottom, flyInLeft, flyOutTop, flyOutRight, flyOutBottom, flyOutLeft</code>
+Composite: All flyIn/Out animations, and <code> fadeIn, fadeOut, slideIn, slideOut</code>
+      </pre></p>
+      <p>
+        All animations are played when the widget either appears or disappears. Since the widgets children 
+        are animated together with its parent, its now possible to animate any widget by placing it in a Composite.
+        It should be noted that the animations may not run smoothly on older browser, or if the Shell/Composite 
+        is very bulky. Using fadeIn/Our or slideIn/Out in IE7 or 8 can cause minor rendering
+        glitches during the animation, depending on the contained widgets and their theming.
+      </p>
+    </description>
+  </entry>
+
   <!-- TODO
   
    new animations 
