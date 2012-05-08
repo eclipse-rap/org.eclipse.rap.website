@@ -696,6 +696,7 @@ config.addEntryPoint( "/example", entryPointFactory, properties );</code></pre>
       </p>
       <p>
       Ofcourse, arrow button style is configurable through CSS:
+      </p>
       <pre><code>Button[ARROW],
   border: 1px solid #bdbdbd;
   border-radius: 2px;
@@ -710,8 +711,7 @@ config.addEntryPoint( "/example", entryPointFactory, properties );</code></pre>
 Button-ArrowIcon[UP] {
   background-image: url( resource/widget/rap/button/arrow-up.png );
 }
-...</pre></code>
-      </p>
+...</code></pre>
     </description>
   </entry>
 
