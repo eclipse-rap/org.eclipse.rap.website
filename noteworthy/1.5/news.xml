@@ -714,11 +714,31 @@ Button-ArrowIcon[UP] {
 ...</code></pre>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M7">
+    <title>
+      Evaluate JavaScript in Browser widget in a non-blocking way
+    </title>
+    <description>
+      <p>
+        In this milestone we added a possibility to execute JavaScript in Browser widget in a 
+        non-blocking way. A new utility class <code>BrowserUtil</code> has been introduced for this 
+        purpose. In order to be notified about the result of the JavaScript execution, you have 
+        to prvide an implementation of the <code>BrowserCallback</code> interface as a parameter 
+        to the <code>BrowserUtil#evaluate</code> method.
+      </p>
+      <pre><code>Browser browser = new Browser( parent, SWT.NONE );
+BrowserUtil.evaluate( browser, script, new BrowserCallback() {
+  public void evaluationSucceeded( Object result ) {
+  }
+  public void evaluationFailed( Exception exception ) {
+  }
+} );</code></pre>
+    </description>
+  </entry>
 
   <!-- TODO
   
-   BrowserUtil
-   Button[ARROW]
    new animations 
 
    -->
