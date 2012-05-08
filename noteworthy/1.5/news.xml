@@ -758,7 +758,9 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
         Shell and Composite Theming now supports new animations. 
       </p>
       <p>
-        Shell:<code>flyInTop, flyInRight, flyInBottom, flyInLeft, flyOutTop, flyOutRight, flyOutBottom, flyOutLeft</code></br>
+        Shell:<code>flyInTop, flyInRight, flyInBottom, flyInLeft, flyOutTop, flyOutRight, flyOutBottom, flyOutLeft</code>
+      </p>
+      <p>
         Composite: All flyIn/Out animations, and <code> fadeIn, fadeOut, slideIn, slideOut</code>
       </p>
       <p>
