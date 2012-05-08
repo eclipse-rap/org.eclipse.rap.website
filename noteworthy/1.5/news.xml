@@ -757,11 +757,10 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
       <p>
         Shell and Composite Theming now supports new animations. 
       </p>
-      <p><pre>
-Shell: <code>flyInTop, flyInRight, flyInBottom, flyInLeft, 
-             flyOutTop, flyOutRight, flyOutBottom, flyOutLeft</code>
-Composite: All flyIn/Out animations, and <code> fadeIn, fadeOut, slideIn, slideOut</code>
-      </pre></p>
+      <p>
+        Shell:<code>flyInTop, flyInRight, flyInBottom, flyInLeft, flyOutTop, flyOutRight, flyOutBottom, flyOutLeft</code></br>
+        Composite: All flyIn/Out animations, and <code> fadeIn, fadeOut, slideIn, slideOut</code>
+      </p>
       <p>
         All animations are played when the widget either appears or disappears. Since the widgets children 
         are animated together with its parent, its now possible to animate any widget by placing it in a Composite.
