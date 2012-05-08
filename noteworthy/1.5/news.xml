@@ -697,7 +697,7 @@ config.addEntryPoint( "/example", entryPointFactory, properties );</code></pre>
       <p>
       Ofcourse, arrow button style is configurable through CSS:
       </p>
-      <pre><code>Button[ARROW],
+      <pre><code>Button[ARROW] {
   border: 1px solid #bdbdbd;
   border-radius: 2px;
   padding: 10px;
