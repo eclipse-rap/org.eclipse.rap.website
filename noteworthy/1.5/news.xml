@@ -736,6 +736,18 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
 } );</code></pre>
     </description>
   </entry>
+  
+  <entry category="RWT" milestone="M7">
+    <title>
+      Support HTML markup in List
+    </title>
+    <description>
+      <p>
+        The support for simple HTML markup has been extended to the List widget. You could activate 
+        it in the same way like in Table and Label. Custom item height is supported too.
+      </p>
+    </description>
+  </entry>
 
   <!-- TODO
   
