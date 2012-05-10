@@ -38,8 +38,8 @@
         having to include org.eclipse.rap.ui and all its dependencies.
         Instead of registering your RAP application's entrypoint, theme, etc. as extensions
         (which involves dependencies to the extension registry and more equinox core bundles),
-        you can now implement the service interface 
-        <code>org.eclipse.rwt.engine.ApplicationConfigurator</code> and register it as an OSGi 
+        you can now implement the service interface
+        <code>org.eclipse.rwt.engine.ApplicationConfigurator</code> and register it as an OSGi
         service.
       </p>
       <pre><code>public class MyConfigurator implements ApplicationConfigurator {
@@ -88,14 +88,14 @@
         implemented that does not use a <em>UI Thread</em> because threads cannot be migrated.
         With this <em>simple</em> life cycle implementation, RAP isn't fully compatible with SWT
         anymore, but the differences are small.
-        As a side effect, this life cycle also eases integration with JEE and other 
-        technologies that use thread-local variables to access to security or transaction 
+        As a side effect, this life cycle also eases integration with JEE and other
+        technologies that use thread-local variables to access to security or transaction
         contexts.
       </p>
       <p>
         The second area of work was to enable sessions to be replicated between cluster nodes.
         Therefore all classes in RWT whose instances will have session scope were made serializable.
-        Note that application code must also be prepared in that all objects that live in the 
+        Note that application code must also be prepared in that all objects that live in the
         session scope must be serializable.
       </p>
       <p>
@@ -199,7 +199,7 @@
         </p>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M3">
     <title>New Default Theme</title>
     <description>
@@ -243,7 +243,7 @@
     <description>
       <p>
         The way to start standalone RWT applications has been changed.
-        The former init parameters have been replaced by an API that allows you to 
+        The former init parameters have been replaced by an API that allows you to
         configure all aspects of the application to be started.
         This web.xml fragment and code snippet shows how starting an RWT application now looks like:
       </p>
@@ -278,12 +278,12 @@
       </p>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M3">
     <title>New Client/Server Protocol</title>
     <description>
       <p>
-        In this milestone, we switched some more widgets to the new client/server protocol like Tree, 
+        In this milestone, we switched some more widgets to the new client/server protocol like Tree,
         TabFolder, Browser and ToolBar.
       </p>
       <p>
@@ -436,11 +436,11 @@
         There were multiple issues remaining that we could never overcome,
         such as synchronous HTTP requests not working correctly in some browsers,
         or security-restrictions for certain keys for in others.
-        Over time, we've realized that dynamically preventable key and traverse events are not 
+        Over time, we've realized that dynamically preventable key and traverse events are not
         going to work fully and reliably in all browser.
       </p>
       <p>
-      	We dislike taking functionality away, but in this case we are convinced that the 
+      	We dislike taking functionality away, but in this case we are convinced that the
         improvements are more valuable than the loss.
       	We were able to heavily improve the key event handling and to fix
         <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367091">several issues</a>
@@ -469,7 +469,7 @@
       </p>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M6">
     <title>
       Markup Support
@@ -680,54 +680,54 @@ config.addEntryPoint( "/example", entryPointFactory, properties );</code></pre>
       </p>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M7">
     <title>
-      Arrow Button
+      Arrow Buttons
     </title>
     <description>
       <p>
-        Finally, we properly implemented ARROW style flag for <code>Button</code>. Together with 
-        <code>SWT.TOP</code>, <code>SWT.BOTTOM</code>, <code>SWT.LEFT</code> and 
-        <code>SWT.RIGHT</code> style flags, you could create arrow buttons easily.
+        Finally, we support the <code>SWT.ARROW</code> style flag for <code>Button</code>.
+        This style is used together with one of <code>SWT.TOP</code>, <code>SWT.BOTTOM</code>,
+        <code>SWT.LEFT</code>, or <code>SWT.RIGHT</code> to create buttons with an arrow symbol.
       </p>
       <p>
         <img class="framed" title="Arrow Button in RAP" src="images/ArrowButton.png" />
       </p>
       <p>
-      Ofcourse, arrow button style is configurable through CSS:
+      Of course, the style of arrow buttons can be configured in a theme:
       </p>
       <pre><code>Button[ARROW] {
   border: 1px solid #bdbdbd;
-  border-radius: 2px;
   padding: 10px;
-  background-image: gradient(
-    linear, left top, left bottom,
-    from( #f9f9f9 ),
-    to( #e4e4e4 )
-  );
-  cursor: pointer;
 }
+
 Button-ArrowIcon[UP] {
-  background-image: url( resource/widget/rap/button/arrow-up.png );
+  background-image: url( theme/images/arrow-up.png );
 }
 ...</code></pre>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M7">
     <title>
-      Evaluate JavaScript in Browser widget in a non-blocking way
+      Non-blocking Script Evaluation for Browser
     </title>
     <description>
       <p>
-        In this milestone we added a possibility to execute JavaScript in Browser widget in a 
-        non-blocking way. A new utility class <code>BrowserUtil</code> has been introduced for this 
-        purpose. In order to be notified about the result of the JavaScript execution, you have 
-        to prvide an implementation of the <code>BrowserCallback</code> interface as a parameter 
-        to the <code>BrowserUtil#evaluate</code> method.
+        The <code>Browser</code> widget provides two methods to execute JavaScript,
+        <code>execute()</code> and <code>evaluate()</code>.
+        Both methods are blocking and won't work with the new <code>JEE_COMPATIBILITY</code> mode.
+      </p>
+      <p>
+        Therefore, a new utility class <code>BrowserUtil</code> has been introduced to evaluate
+        JavaScript in a Browser widget in a non-blocking way.
+        Instead of waiting for the script to be executed, you provide a
+        <code>BrowserCallback</code> implementation that will be notified when the evaluation has
+        completed:
       </p>
       <pre><code>Browser browser = new Browser( parent, SWT.NONE );
+...
 BrowserUtil.evaluate( browser, script, new BrowserCallback() {
   public void evaluationSucceeded( Object result ) {
   }
@@ -736,15 +736,17 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
 } );</code></pre>
     </description>
   </entry>
-  
+
   <entry category="RWT" milestone="M7">
     <title>
-      Support HTML markup in List
+      Markup Support for List
     </title>
     <description>
       <p>
-        The support for simple HTML markup has been extended to the List widget. You could activate 
-        it in the same way like in Table and Label. Custom item height is supported too.
+        The support for simple HTML markup has been extended to the List widget.
+        It can be activated in the same way like in Table and Label, using the constant
+        <code>RWT.MARKUP_ENABLED</code>.
+        Custom item height is supported too, using <code>RWT.CUSTOM_ITEM_HEIGHT</code>.
       </p>
     </description>
   </entry>
@@ -755,28 +757,70 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
     </title>
     <description>
       <p>
-        Shell and Composite Theming now supports new animations. 
+        The theming for <code>Shell</code> and <code>Composite</code> now supports these additional
+        animations:
       </p>
       <p>
-        Shell: <code>flyInTop, flyInRight, flyInBottom, flyInLeft, flyOutTop, flyOutRight, flyOutBottom, flyOutLeft</code>
+        <code>flyInTop</code>, <code>flyInRight</code>, <code>flyInBottom</code>, <code>flyInLeft</code>,<br/>
+        <code>flyOutTop</code>, <code>flyOutRight</code>, <code>flyOutBottom</code>, <code>flyOutLeft</code>
       </p>
       <p>
-        Composite: All flyIn/Out animations, and <code> fadeIn, fadeOut, slideIn, slideOut</code>
+        In addition, <code>Composite</code> now also supports
+        <code>fadeIn</code>, <code>fadeOut</code>, <code>slideIn</code>, and <code>slideOut</code>.
       </p>
       <p>
-        All animations are played when the widget either appears or disappears. Since the widgets children 
-        are animated together with its parent, it's now possible to animate any widget by placing it in a Composite.
-        It should be noted that the animations may not run smoothly in older browser, or if the Shell/Composite 
-        is very bulky. Using fadeIn/Our or slideIn/Out in IE7 or 8 can cause minor rendering
-        glitches during the animation, depending on the contained widgets and their theming.
+        The animations are shown when the widget either appears or disappears, respectively.
+        Since the widget's children are animated together with its parent, it's now possible to
+        animate any widget by placing it in a Composite.
+        It should be noted that the animations may not run smoothly in older browsers, or when the
+        Shell/Composite is very bulky.
+        Using fadeIn/Our or slideIn/Out in IE7 or 8 can cause minor rendering glitches during the
+        animation, depending on the contained widgets and their theming.
       </p>
     </description>
   </entry>
 
-  <!-- TODO
-  
-   new animations 
+  <entry category="RWT" milestone="M7">
+    <title>
+      Changes to Application API
+    </title>
+    <description>
+      <p>
+        In RAP M3, we introduced a new API to define and start RAP applications programmatically.
+        We've reviewed this API and changed the names of some interfaces to avoid confusion
+        and make the API easier to understand and to use.
+        <a href="http://eclipsesource.com/blogs/2012/05/09/the-new-application-api-in-rap/">This
+        post</a> explains the new API in more detail.
+      <p>
+      </p>
+        To define an application, you now have to implement the interface
+        <code>ApplicationConfiguration</code>:
+      </p>
+      <pre><code>public class SimpleConfiguration implements ApplicationConfiguration {
 
-   -->
+  public void configure( Application application ) {
+    application.addEntryPoint( "/simple", SimpleEntryPoint.class, null );
+    application.addEntryPoint( "/other", AnotherEntryPoint.class, null );
+  }
+}</code></pre>
+      <p>
+        When registered as an OSGi service, an application instance will be started from this
+        configuration by the <code>org.eclipse.rap.rwt.osgi</code> bundle.
+      </p>
+      <p>
+        Also, the <code>param-name</code> for registering an ApplicationConfiguration in a
+        <code>web.xml</code> has changed. It is kept in the constant
+        <code>ApplicationConfiguration.CONFIGURATION_PARAM</code>.
+        The JavaDoc of this constant contains a code example.
+      </p>
+      <p>
+        Alternatively, an application can also be started programmatically using an
+        <code>ApplicationRunner</code>:
+      </p>
+      <pre><code>ApplicationConfiguration configuration = new SimpleConfiguration();
+ApplicationRunner runner = new ApplicationRunner( configuration, servletContext );
+runner.start();</code></pre>
+    </description>
+  </entry>
 
 </noteworthy>
