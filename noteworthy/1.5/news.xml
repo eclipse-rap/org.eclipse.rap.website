@@ -692,7 +692,7 @@ config.addEntryPoint( "/example", entryPointFactory, properties );</code></pre>
         <code>SWT.LEFT</code>, or <code>SWT.RIGHT</code> to create buttons with an arrow symbol.
       </p>
       <p>
-        <img class="framed" title="Arrow Button in RAP" src="images/ArrowButton.png" />
+        <img class="framed" title="Arrow Buttons in RAP" src="images/arrow-buttons.png" />
       </p>
       <p>
       Of course, the style of arrow buttons can be configured in a theme:
@@ -748,6 +748,9 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
         <code>RWT.MARKUP_ENABLED</code>.
         Custom item height is supported too, using <code>RWT.CUSTOM_ITEM_HEIGHT</code>.
       </p>
+      <p>
+        <img class="framed" title="List widget with HTML markup" src="images/list-markup.png" />
+      </p>
     </description>
   </entry>
 
@@ -787,8 +790,9 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
     <description>
       <p>
         In RAP M3, we introduced a new API to define and start RAP applications programmatically.
-        We've reviewed this API and changed the names of some interfaces to avoid confusion
-        and make the API easier to understand and to use.
+        We've noticed that the interface names involved in this new API lead to confusion,
+        therefore we decided to rename a couple of interfaces to make the API easier to understand
+        and to use.
         <a href="http://eclipsesource.com/blogs/2012/05/09/the-new-application-api-in-rap/">This
         post</a> explains the new API in more detail.
       <p>

@@ -65,9 +65,11 @@
 
   <build name="1.5 M7" type="M"
       shortname="M7"
-      status="planned"
+      status="completed"
       publishDate="2012-05-11"
-      news="1.5/news_M7.php" />
+      news="1.5/news_M7.php"
+      toolingZip="rap-tooling-1.5.0-M7-20120508-1951.zip"
+      runtimeZip="rap-runtime-1.5.0-M7-20120508-2125.zip" />
 
   <build name="1.5 RC1" type="RC"
       shortname="RC1"
