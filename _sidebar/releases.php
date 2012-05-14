@@ -11,10 +11,10 @@
         <a href="/rap/downloads/1.4/">RAP 1.4&emsp;June 2011 (Indigo)</a>
       </li>
       <li>
-        <a href="/rap/downloads/1.3/">RAP 1.3</a>&emsp;June 2010 (Helios)
+        <a href="/rap/downloads/1.3/">RAP 1.3&emsp;June 2010 (Helios)</a>
       </li>
       <li>
-        <a href="/rap/downloads/1.2/">RAP 1.2&emsp;June 2009</a> (Galileo)
+        <a href="/rap/downloads/1.2/">RAP 1.2&emsp;June 2009 (Galileo)</a>
       </li>
       <li>
         <a href="/rap/downloads/1.1/">RAP 1.1&emsp;June 2008 (Ganymede)</a>
