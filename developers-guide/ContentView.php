@@ -16,7 +16,7 @@ class ContentView {
     $htmlDocument -> loadHTMLFile( self::$htmlFileInfo -> getPathname() );
     self::rewriteLinkUrls( $htmlDocument );
     self::rewriteImageUrls( $htmlDocument );
-    return $htmlDocument -> saveXML( $htmlDocument -> getElementsByTagName( 'body') -> item( 0 ) );
+    return $htmlDocument -> saveXML( $htmlDocument -> getElementsByTagName( 'body' ) -> item( 0 ) );
   }
 
   private static function rewriteLinkUrls( $htmlDocument ) {

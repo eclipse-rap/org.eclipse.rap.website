@@ -10,8 +10,8 @@ $navigationStructure = array(
   	    "label" => "Demos",
   	    "url" => "/rap/demos/"
   	  ),
-  	  "rap-users" => array(
-  	    "label" => "Who uses RAP?",
+  	  "built-on-rap" => array(
+  	    "label" => "Built on RAP",
   	    "url" => "/rap/users/"
   	  )
   	)
@@ -34,8 +34,12 @@ $navigationStructure = array(
 
   "help" => array(
     "label" => "Get Help",
-    "url" => "/rap/getting-started/",
+    "url" => "/rap/support/",
     "sub-entries" => array(
+      "support" => array(
+        "label" => "Get Help",
+        "url" => "/rap/support/"
+      ),
       "getting-started" => array(
         "label" => "Getting Started",
         "url" => "/rap/getting-started/"
@@ -44,13 +48,9 @@ $navigationStructure = array(
         "label" => "Developer's Guide",
         "url" => "/rap/developers-guide/"
       ),
-      "developer-resources" => array(
-        "label" => "Developer Resources",
-        "url" => "/rap/developer-resources/"
-      ),
-      "support" => array(
-        "label" => "Support",
-        "url" => "/rap/support/"
+      "articles" => array(
+        "label" => "Articles",
+        "url" => "/rap/articles/"
       ),
       "professional-services" => array(
         "label" => "Professional Services",
@@ -115,10 +115,15 @@ function createHeaderBar( $topLevelId, $secondLevelId ) {
 
 function createHeaderBarNavigation( $topLevelId, $secondLevelId ) {
   $result = '<ul id="nav">';
-  $secondLevelEntries = $GLOBALS[ 'navigationStructure' ][ $topLevelId ][ 'sub-entries' ];
-  foreach( $secondLevelEntries as $navId => $navData ) {
-    $active = $navId === $secondLevelId ? 'class="active"' : '';
-    $result .= "<li><a $active href=\"{$navData[ 'url' ]}\">{$navData[ 'label' ]}</a></li>";
+  if( $topLevelId === 'home' ) {
+    $result .= '<li><a class="blue" href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a></li>';
+    $result .= '<li><a class="blue" href="/rap/incubator">Incubator</a></li>';
+  } else {
+    $secondLevelEntries = $GLOBALS[ 'navigationStructure' ][ $topLevelId ][ 'sub-entries' ];
+    foreach( $secondLevelEntries as $navId => $navData ) {
+      $active = $navId === $secondLevelId ? 'class="active"' : '';
+      $result .= "<li><a $active href=\"{$navData[ 'url' ]}\">{$navData[ 'label' ]}</a></li>";
+    }
   }
   $result .= '</ul>';
   return $result;

@@ -60,7 +60,8 @@
 <div id="midcolumn">
 
   <h1>Downloads</h1>
-
+  <h2>RAP Tools</h2>
+  <h3>Download an Eclipse IDE package with RAP Tools included</h3>
   <p>
     The most convenient way to get RAP is the Eclipse package <em>for
     RCP and RAP Developers</em> from the
@@ -79,9 +80,7 @@
       </a>
     </div>
   </p>
-
-  <h3>RAP Tooling</h3>
-
+  <h3>Download RAP Tools separately</h3>
   <p>
     The RAP Tooling contains useful tools, templates and documentation for RAP
     developers.
@@ -174,11 +173,11 @@
     </div>
   </div>
 
-  <h3>RAP Runtime (Target Components)</h3>
+  <h2>RAP Runtime (Target Components)</h2>
 
   <p>
     This contains the RAP runtime, including sources and a simple demo
-    application. Note that this is already included in the RAP Tooling.
+    application. Note that this is already included in the RAP Tools.
   </p>
   <p>
     To develop RAP applications you need to set the RAP runtime as your
@@ -280,7 +279,7 @@
 
 <div id="rightcolumn">
   <?php includeSidebar( "arrivals.php" ) ?>
-  <?php includeSidebar( "archives.php" ) ?>
+  <?php includeSidebar( "releases.php" ) ?>
 </div>
 
 <?php

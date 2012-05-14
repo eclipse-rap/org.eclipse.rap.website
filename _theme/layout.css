@@ -555,12 +555,9 @@ div#blog-posts > .rssBody > ul > li > p {
 }
 
 .sideitem h6 {
-  background-color: #31619C;
-  color: #ffffff;
-  border: none;
   font-size: 14px;
-  font-weight: bold;
-  padding: 8px 5px 8px 10px;
+  padding: 8px 5px 8px 0;
+  border-bottom: 1px solid #31619C;
 }
 
 .sideitemcontent {
@@ -568,16 +565,8 @@ div#blog-posts > .rssBody > ul > li > p {
   padding-top: 20px;
 }
 
-.sideitem ul, .sideitem ol {
-  margin-left: 10px;
-}
-
 .sideitem .modal {
   background: #FFF url('/eclipse.org-common/themes/Nova/images/thinModalBg.png') repeat-x;
-  padding: 5px;
-}
-
-.sideitem ul, .sideitem ol, .sideitem form, .sideitem p {
   padding: 5px;
 }
 
@@ -591,7 +580,7 @@ div#blog-posts > .rssBody > ul > li > p {
 #novaContent .sideitem  ul li {
   list-style-image: none;
   margin: 0;
-  padding: 0 0 20px 10px;
+  padding: 0 0 20px 0;
 }
 
 #novaContent .sideitem ul li:last-child {
@@ -731,6 +720,7 @@ div.expand-body {
 /* BUILD TERMINAL */
 
 div.terminal {
+  margin-top: 10px;
   padding: 5px;
   color: white;
   background-color: gray;

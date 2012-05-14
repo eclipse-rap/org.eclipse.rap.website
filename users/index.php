@@ -2,8 +2,8 @@
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-  $title = "Who uses RAP?";
-  $navPosition = array( "demos", "rap-users" );
+  $title = "Built on RAP";
+  $navPosition = array( "demos", "built-on-rap" );
   printHeader( $title, $navPosition );
 
 ?>

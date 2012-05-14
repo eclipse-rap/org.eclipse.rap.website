@@ -58,7 +58,7 @@
 </div>
 
 <div id="rightcolumn">
-  <?php includeSidebar( "archives.php" ) ?>
+  <?php includeSidebar( "releases.php" ) ?>
 </div>
 
 <?php

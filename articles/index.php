@@ -1,107 +1,15 @@
 <?php
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
-  $title = "RAP - Documentation";
-  $navPosition = array( "help", "developer-resources" );
+  $title = "Articles";
+  $navPosition = array( "help", "articles" );
   printHeader( $title, $navPosition );
 
 ?>
 
 <div id="midcolumn">
 
-  <h1>Resources</h1>
-
-  <p>
-    There are several sources of information for RAP application developers:
-    <ul>
-      <li><a href="#resources">Resources Related to Underlying Technologies</a></li>
-      <li><a href="#articles">Articles and Tutorials</a></li>
-    </ul>
-  </p>
-
-  <div id="resources" style="clear: both">
-    <h2>Resources Related to Underlying Technologies</h2>
-    <p>
-      RAP development requires knowledge of a couple of underlying technologies.
-      We've collected a couple of resources that we recommend to read:
-    </p>
-    <h3>Equinox</h3>
-    <ul>
-      <li>
-        <a href="http://www.eclipse.org/equinox/documents/quickstart.php">
-        Equinox QuickStart Guide</a>
-      </li>
-      <li>
-        <a href="http://www.eclipse.org/equinox/server/http_quickstart.php">
-        Equinox Server-side Quickstart</a>
-      </li>
-      <li>
-        <a href="http://www.eclipse.org/equinox-portal/tutorials/server-side/">
-        Building a Server-based Application with Equinox</a>
-      </li>
-    </ul>
-    <h3>SWT</h3>
-    <ul>
-      <li>
-        <a href="http://www.eclipse.org/swt/snippets/">
-        SWT Snippets</a>
-      </li>
-      <li>
-        <a href="http://www.eclipse.org/articles/article.php?file=Article-Understanding-Layouts/index.html">
-        Understanding Layouts in SWT</a>
-      </li>
-    </ul>
-    <h3>JFace and Databinding</h3>
-    <ul>
-      <li>
-        <a href="http://www.eclipse.org/articles/Article-TreeViewer/TreeViewerArticle.htm">
-        How to use the JFace Tree Viewer</a>
-      </li>
-      <li>
-        <a href="http://www.eclipse.org/articles/article.php?file=Article-JFaceWizards/index.html">
-        Creating JFace Wizards</a>
-      </li>
-      <li>
-        Databinding
-        <a href="http://wiki.eclipse.org/index.php/JFace_Data_Binding">
-          Overview Page
-        </a>,
-        <a href="http://wiki.eclipse.org/JFace_Data_Binding_FAQ">
-          FAQ
-        </a>
-        and
-        <a href="http://wiki.eclipse.org/JFace_Data_Binding/Snippets">
-          Code Snippets
-        </a>
-      </li>
-    </ul>
-    <h3>Workbench</h3>
-    <ul>
-      <li>
-        <a href="http://www.eclipse.org/articles/Article-UI-Workbench/workbench.html">
-        Inside the Workbench - A guide to the workbench internals</a>
-      </li>
-      <li>
-        <a href="http://www.eclipse.org/articles/using-perspectives/PerspectiveArticle.html">
-        Using Perspectives in the Eclipse UI</a>
-      </li>
-      <li>
-        <a href="http://www.eclipse.org/articles/Article-WorkbenchSelections/article.html">
-        Eclipse Workbench: Using the Selection Service</a>
-      </li>
-      <li>
-        <a href="http://www.eclipse.org/articles/Article-Concurrency/jobs-api.html">
-        On the Job: The Eclipse Jobs API</a>
-      </li>
-      <li>
-        <a href="http://www.eclipse.org/articles/Article-Workbench-DND/drag_drop.html">
-        Drag and Drop in the Eclipse UI</a>
-      </li>
-    </ul>
-  </div>
-
-  <div id="articles" style="clear: both">
-    <h2>Articles and Tutorials</h2>
+  <h1>Articles</h1>
     <p>
       A lot of articles and tutorials have been published about RAP:
     </p>
