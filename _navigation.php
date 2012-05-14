@@ -71,13 +71,13 @@ $navigationStructure = array(
         "label" => "Bugs",
         "url" => "/rap/bugs/"
       ),
-      "incubator" => array(
-        "label" => "Incubator",
-        "url" => "/rap/incubator"
-      ),
       "source" => array(
         "label" => "Source Code",
         "url" => "/rap/source/"
+      ),
+      "incubator" => array(
+        "label" => "Incubator",
+        "url" => "/rap/incubator"
       )
     )
   )

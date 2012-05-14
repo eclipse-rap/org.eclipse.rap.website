@@ -57,14 +57,6 @@
     </p>
   </div>
 
-  <div>
-    <h2>Mailing list</h2>
-    <p>
-    The <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">mailing list</a> targets
-    developers contributing to RAP.
-    </p>
-  </div>
-
   <!--
     TODO
     Provide patches
