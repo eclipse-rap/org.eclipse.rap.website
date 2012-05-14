@@ -61,12 +61,18 @@
 
   <h1>Downloads</h1>
   <h2>RAP Tools</h2>
+  <p>
+    Contains useful tools, templates and documentation for RAP developers.
+    It comes with a target installer for the latest RAP target platform.
+    <a href="/rap/getting-started/">Learn</a> how to install RAP and build
+    your first RAP application.
+  </p>
+
   <h3>Download an Eclipse IDE package with RAP Tools included</h3>
   <p>
-    The most convenient way to get RAP is the Eclipse package <em>for
+    The most convenient way to get the RAP Tools is using the Eclipse package <em>for
     RCP and RAP Developers</em> from the
-    <a href="http://www.eclipse.org/downloads/">Indigo
-    download page</a>.
+    <a href="http://www.eclipse.org/downloads/">Eclipse download page</a>.
     This IDE includes everything you need to develop RCP and RAP
     applications.
   </p>
@@ -80,13 +86,11 @@
       </a>
     </div>
   </p>
-  <h3>Download RAP Tools separately</h3>
+
+  <h3>Install RAP Tools separately</h3>
   <p>
-    The RAP Tooling contains useful tools, templates and documentation for RAP
-    developers.
-    It also installs the RAP target platform which is included.
-    <a href="/rap/getting-started/">Learn</a> how to install RAP and build
-    your first RAP application.
+    Alternatively, you can install the RAP Tools into your IDE from an online or a zipped software
+    repository.
   </p>
 
   <div class="expand-head">
@@ -176,12 +180,9 @@
   <h2>RAP Runtime (Target Components)</h2>
 
   <p>
-    This contains the RAP runtime, including sources and a simple demo
-    application. Note that this is already included in the RAP Tools.
-  </p>
-  <p>
-    To develop RAP applications you need to set the RAP runtime as your
-    target platform.
+    To develop RAP applications you need to set a target platform that contains RAP.
+    We provide a target platform that contains RAP, Equinox, Jetty, and everything you need to
+    run a RAP application.
     <a href="/rap/getting-started/runtime-install/">Learn</a> how to work with the target
     platform.
   </p>
@@ -274,6 +275,13 @@
       </p>
     </div>
   </div>
+
+  <h2>Source Code</h2>
+  <p>
+    Both the tools and the runtime have source bundles included, so you can browse the code in your
+    IDE.
+    If you want to check out the source code from git, see <a href="/rap/source/">this page</a>.
+  </p>
 
 </div>
 

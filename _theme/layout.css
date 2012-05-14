@@ -272,11 +272,14 @@ a:hover {
 }
 
 div, p, blockquote, pre, code, em, sub, sup, dl, dt, dd, ol, ul, li,
-fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td
-{
+fieldset, form, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   color: #34332F;
   font-size: 14px;
   line-height: 18px;
+}
+
+code {
+  word-wrap: break-word;
 }
 
 em {
@@ -296,7 +299,7 @@ h1 {
 
 h2 {
   font-size: 20px;
-  margin-top: 15px;
+  margin-top: 35px;
   margin-bottom: 8px;
 }
 
