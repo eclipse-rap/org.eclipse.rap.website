@@ -70,10 +70,6 @@ $navigationStructure = array(
       "source" => array(
         "label" => "Source Code",
         "url" => "/rap/source/"
-      ),
-      "incubator" => array(
-        "label" => "Incubator",
-        "url" => "/rap/incubator"
       )
     )
   )
@@ -112,8 +108,9 @@ function createHeaderBar( $topLevelId, $secondLevelId ) {
 function createHeaderBarNavigation( $topLevelId, $secondLevelId ) {
   $result = '<ul id="nav">';
   if( $topLevelId === 'home' ) {
-    $result .= '<li><a class="blue" href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a></li>';
-    $result .= '<li><a class="blue" href="/rap/incubator">Incubator</a></li>';
+    $active = $secondLevelId === "incubator" ? 'class="active"' : '';
+    $result .= '<li><a href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a></li>';
+    $result .= "<li><a $active href=\"/rap/incubator\">Incubator</a></li>";
   } else {
     $secondLevelEntries = $GLOBALS[ 'navigationStructure' ][ $topLevelId ][ 'sub-entries' ];
     foreach( $secondLevelEntries as $navId => $navData ) {
