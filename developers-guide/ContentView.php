@@ -12,11 +12,16 @@ class ContentView {
   }
 
   private static function processHtmlFileContent() {
+    $result = '';
     $htmlDocument = new DOMDocument();
     $htmlDocument -> loadHTMLFile( self::$htmlFileInfo -> getPathname() );
     self::rewriteLinkUrls( $htmlDocument );
     self::rewriteImageUrls( $htmlDocument );
-    return $htmlDocument -> saveXML( $htmlDocument -> getElementsByTagName( 'body' ) -> item( 0 ) );
+    $bodyChildNodes = $htmlDocument -> getElementsByTagName( 'body' ) -> item( 0 ) -> childNodes;
+    for( $i = 0; $i < $bodyChildNodes -> length; $i++ ) {
+      $result .= $htmlDocument -> saveHtml( $bodyChildNodes -> item( $i ) );
+    }
+    return $result;
   }
 
   private static function rewriteLinkUrls( $htmlDocument ) {

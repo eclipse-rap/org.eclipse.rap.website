@@ -40,10 +40,6 @@ $navigationStructure = array(
         "label" => "Get Help",
         "url" => "/rap/support/"
       ),
-      "getting-started" => array(
-        "label" => "Getting Started",
-        "url" => "/rap/getting-started/"
-      ),
       "developers-guide" => array(
         "label" => "Developer's Guide",
         "url" => "/rap/developers-guide/"
