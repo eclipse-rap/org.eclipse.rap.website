@@ -30,11 +30,6 @@
         but only a small selection.
       </p>
       <p>
-        For easier consumption, we provide
-        <a href="/rap/source/">Team Project Sets</a> that contain pointers to the
-        relevant RAP projects from the CVS repository.
-      </p>
-      <p>
         <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
           See the examples online
         </a>
