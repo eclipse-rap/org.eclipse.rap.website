@@ -19,7 +19,7 @@ class ContentView {
     self::rewriteImageUrls( $htmlDocument );
     $bodyChildNodes = $htmlDocument -> getElementsByTagName( 'body' ) -> item( 0 ) -> childNodes;
     for( $i = 0; $i < $bodyChildNodes -> length; $i++ ) {
-      $result .= $htmlDocument -> saveHtml( $bodyChildNodes -> item( $i ) );
+      $result .= $htmlDocument -> saveXML( $bodyChildNodes -> item( $i ), LIBXML_NOEMPTYTAG );
     }
     return $result;
   }
