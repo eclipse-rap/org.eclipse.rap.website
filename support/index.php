@@ -53,7 +53,7 @@
     <h2>Bugs</h2>
     <p>
       Bugs and feature requests are tracked in the Eclipse Bugzilla.
-      See the <a href="/rap/bugs/">bugs page</a> how to find existing bugs or file new ones.
+      See the <a href="/rap/bugs/">bugs page</a> for how to find existing bugs or file new ones.
     </p>
   </div>
 
