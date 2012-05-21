@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/NavigationView.p
 require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/ContentView.php';
 
 $valid = true;
-$forwardingUrl = 'devguide.php?topic=html/intro.html';
+$forwardingUrl = '/rap/developers-guide/';
 if( !$_GET[ 'topic' ] ) {
   header( 'Location: ' . $forwardingUrl );
   exit;

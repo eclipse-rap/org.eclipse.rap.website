@@ -44,8 +44,10 @@ class ContentView {
     $result = '';
     if( substr( $url, 0, 5 ) === '/help' ) {
       $result = str_replace( '/help', 'http://help.eclipse.org', $url );
-    } else {
+    } else if( self::containsString( $url, '.html' ) || self::containsString( $url, '.htm' ) ) {
       $result = '?topic=' . self::$htmlFileInfo -> getPath() . '/' . $url;
+    } else {
+      $result = self::$htmlFileInfo -> getPath() . '/' . $url;
     }
     return $result;
   }
@@ -61,11 +63,7 @@ class ContentView {
   }
 
   private static function containsString( $haystack, $needle ) {
-    $result = true;
-    if( strpos( $haystack, $needle ) === false ) {
-      $result = false;
-    }
-    return $result;
+    return strpos( $haystack, $needle ) === false ? false : true;
   }
 
 }
