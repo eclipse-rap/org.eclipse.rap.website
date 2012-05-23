@@ -1,20 +1,23 @@
 <?php
 
+require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/DevGuideUtils.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/_lib/urlnormalizer/URLNormalizer.php';
+
 class ContentView {
 
-  private static $htmlFileInfo;
+  private static $htmlFile;
 
   private function __construct() {}
 
-  public static function render( $htmlFilePath ) {
-    self::$htmlFileInfo = new SplFileObject( $htmlFilePath );
-    echo self::processHtmlFileContent();
+  public static function create( $htmlFilePath ) {
+    self::$htmlFile = new SplFileObject( DevGuideUtils::ROOT_URL . '/help/html/' . $htmlFilePath );
+    return self::processHtmlFileContent();
   }
 
   private static function processHtmlFileContent() {
     $result = '';
     $htmlDocument = new DOMDocument();
-    $htmlDocument -> loadHTMLFile( self::$htmlFileInfo -> getPathname() );
+    $htmlDocument -> loadHTMLFile( self::$htmlFile -> getPathname() );
     self::rewriteLinkUrls( $htmlDocument );
     self::rewriteImageUrls( $htmlDocument );
     $bodyChildNodes = $htmlDocument -> getElementsByTagName( 'body' ) -> item( 0 ) -> childNodes;
@@ -29,7 +32,7 @@ class ContentView {
     foreach( $links as $link ) {
       if( $link -> hasAttribute( 'href' ) ) {
         $url = $link -> getAttribute( 'href' );
-        if( !self::containsString( $url, 'http://' ) && !self::isBookmark( $url ) ) {
+        if( !DevGuideUtils::containsString( $url, 'http://' ) && !self::isBookmark( $url ) ) {
           $link -> setAttribute( 'href', self::rewriteLinkUrl( $url ) );
         }
       }
@@ -44,10 +47,12 @@ class ContentView {
     $result = '';
     if( substr( $url, 0, 5 ) === '/help' ) {
       $result = str_replace( '/help', 'http://help.eclipse.org', $url );
-    } else if( self::containsString( $url, '.html' ) || self::containsString( $url, '.htm' ) ) {
-      $result = '?topic=' . self::$htmlFileInfo -> getPath() . '/' . $url;
+    } else if( DevGuideUtils::containsString( $url, '.html' ) ) {
+      $normalizedUrl = self::normalizeUrl( self::$htmlFile -> getPath() . '/' . $url );
+      $searchString = DevGuideUtils::ROOT_URL . '/help/html/';
+      $result = '?topic=' . str_replace( $searchString, '', $normalizedUrl );
     } else {
-      $result = self::$htmlFileInfo -> getPath() . '/' . $url;
+      $result = $url;
     }
     return $result;
   }
@@ -56,14 +61,15 @@ class ContentView {
     $images = $htmlDocument -> getElementsByTagName( 'img' );
     foreach( $images as $image ) {
       $url = $image -> getAttribute( 'src' );
-      if( !self::containsString( $url, 'http://' ) ) {
-        $image -> setAttribute( 'src', self::$htmlFileInfo -> getPath() . '/' . $url );
+      if( !DevGuideUtils::containsString( $url, 'http://' ) ) {
+        $image -> setAttribute( 'src', self::$htmlFile -> getPath() . '/' . $url );
       }
     }
   }
 
-  private static function containsString( $haystack, $needle ) {
-    return strpos( $haystack, $needle ) === false ? false : true;
+  private static function normalizeUrl( $url ) {
+    $normalizer = new URLNormalizer( $url );
+    return $normalizer -> normalize();
   }
 
 }

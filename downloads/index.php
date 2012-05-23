@@ -64,7 +64,7 @@
   <p>
     Contains useful tools, templates and documentation for RAP developers.
     It comes with a target installer for the latest RAP target platform.
-    <a href="/rap/getting-started/">Learn</a> how to install RAP and build
+    <a href="/rap/developers-guide/devguide.php?topic=getting-started/setup-ide.html">Learn</a> how to install RAP and build
     your first RAP application.
   </p>
 
@@ -183,7 +183,7 @@
     To develop RAP applications you need to set a target platform that contains RAP.
     We provide a target platform that contains RAP, Equinox, Jetty, and everything you need to
     run a RAP application.
-    <a href="/rap/getting-started/runtime-install/">Learn</a> how to work with the target
+    <a href="/rap/developers-guide/devguide.php?topic=getting-started/target-install.html">Learn</a> how to work with the target
     platform.
   </p>
 

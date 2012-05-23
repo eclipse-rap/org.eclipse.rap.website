@@ -549,7 +549,7 @@
         With this milestone, the tooling can download the latest runtime from our
         <a href="http://eclipse.org/rap/downloads/">p2 repositories</a>
         and does no longer include the runtime.
-        This <a href="/rap/getting-started/">tutorial</a> shows
+        This <a href="/rap/developers-guide/devguide.php?topic=getting-started/setup-ide.html">tutorial</a> shows
         how you can use the RAP target installation tooling.<br/>
         <img src="images/targetInstallation.png"
              title="Target installation tooling"
