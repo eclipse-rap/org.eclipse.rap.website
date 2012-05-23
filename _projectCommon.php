@@ -1,6 +1,7 @@
 <?php
 
   require_once( "_navigation.php" );
+  require_once( "_errorHandler.php" );
 
   function replaceVariables( $variables, $html ) {
     foreach( $variables as $key => $value ) {
