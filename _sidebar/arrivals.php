@@ -20,17 +20,6 @@
       <div class="terminal-row">
         <span class="terminal-field">
           <span class="terminal-overlay"></span>
-          <span class="terminal-text">RAP 1.5 M6</span>
-        </span>
-        <span class="terminal-field">
-          <span class="terminal-overlay"></span>
-          <span class="terminal-text terminal-arrived">ARRIVED</span>
-        </span>
-      </div>
-
-      <div class="terminal-row">
-        <span class="terminal-field">
-          <span class="terminal-overlay"></span>
           <span class="terminal-text">RAP 1.5 M7</span>
         </span>
         <span class="terminal-field">
@@ -46,7 +35,7 @@
         </span>
         <span class="terminal-field">
           <span class="terminal-overlay"></span>
-          <span class="terminal-text">MAY 25</span>
+          <span class="terminal-text terminal-arrived">ARRIVED</span>
         </span>
       </div>
 
@@ -58,6 +47,17 @@
         <span class="terminal-field">
           <span class="terminal-overlay"></span>
           <span class="terminal-text">JUNE 1</span>
+        </span>
+      </div>
+
+      <div class="terminal-row">
+        <span class="terminal-field">
+          <span class="terminal-overlay"></span>
+          <span class="terminal-text">RAP 1.5 RC3</span>
+        </span>
+        <span class="terminal-field">
+          <span class="terminal-overlay"></span>
+          <span class="terminal-text">JUNE 8</span>
         </span>
       </div>
 

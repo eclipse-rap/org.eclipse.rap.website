@@ -789,7 +789,7 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
     </title>
     <description>
       <p>
-        In RAP M3, we introduced a new API to define and start RAP applications programmatically.
+        In 1.5 M3, we introduced a new API to define and start RAP applications programmatically.
         We've noticed that the interface names involved in this new API lead to confusion,
         therefore we decided to rename a couple of interfaces to make the API easier to understand
         and to use.
@@ -824,6 +824,21 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
       <pre><code>ApplicationConfiguration configuration = new SimpleConfiguration();
 ApplicationRunner runner = new ApplicationRunner( configuration, servletContext );
 runner.start();</code></pre>
+    </description>
+  </entry>
+
+  <entry milestone="RC1">
+    <title>
+      Source code switched to git
+    </title>
+    <description>
+      <p>
+        Our source code has moved from CVS to Git.
+        The CVS still exists but is now read-only.
+        If you used to with RAP source code from CVS, check the
+        <a href="http://eclipse.org/rap/source">source code</a> page
+        for the new repositories.
+      </p>
     </description>
   </entry>
 
