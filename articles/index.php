@@ -15,6 +15,12 @@
     </p>
     <ul>
       <li>
+        Article (<img src="/rap/images/de.gif" alt="German"/>):
+        <a href="http://it-republik.de/jaxenter/eclipse-magazin-ausgaben/Eclipse-Mobil-000503.html">RCP/RAP in der Praxis</a>,
+        Ein Einblick in eine Entwicklungsabteilung auf dem Gesundheitsmarkt, Eclipse Magazin,
+        June 2012, Moritz Hanke und Paul Petershagen
+      </li>
+      <li>
         Interview (<img src="/rap/images/de.gif" alt="German"/>):
         <a href="http://it-republik.de/jaxenter/artikel/RAP-in-Indigo-Die-neue-Auflage-der-Rich-Ajax-Platform-3909.html">RAP in Indigo: Die neue Auflage der Rich Ajax Platform, jax enter</a>,
         Juli 2011, Ralf Sternberg
