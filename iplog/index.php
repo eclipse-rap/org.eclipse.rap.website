@@ -11,7 +11,7 @@ $html = <<<EOHTML
 <div id="midcolumn">
 
   <h1>RAP Project IP Logs</h1>
-  
+
   <p>
     Eclipse projects are required to maintain intellectual property (IP) logs for each release.
     This page contains all such logs for the <a href="http://eclipse.org/rap">RAP</a> project.
@@ -27,12 +27,13 @@ $html = <<<EOHTML
     Note the auto-generated log has not been reviewed for accuracy or approved by the
     Eclipse Foundation legal team.
   </p>
-  
+
   <h3>IP Logs For Past Releases</h3>
   <p>
     The following are approved IP logs for past RAP project releases.
   </p>
   <ul>
+    <li><a href="rap-1.5.html">Juno (1.5)</a></li>
     <li><a href="rap-1.4.pdf">Indigo (1.4) (pdf)</a></li>
     <li><a href="rap-1.3.pdf">Helios (1.3) (pdf)</a></li>
     <li><a href="rap-1.2.html">Galileo (1.2)</a></li>

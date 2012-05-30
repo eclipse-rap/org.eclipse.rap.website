@@ -1,0 +1,1467 @@
+<html>
+<head>
+<title>IP Log for rt.rap 1.5</title>
+</head>
+<body>
+
+
+<div id="maincontent">
+<div id="midcolumn">
+<h1>IP Log for rt.rap</h1>
+
+<h2>Licenses</h2>
+	<ul>
+			<li>Eclipse Public License v1.0</li>
+		</ul>
+
+<h2>Third-Party Code</h2>
+
+<h3>Pre-Req Dependencies</h3><table border="1" cellpadding="3" cellspacing="0" width="100%"><tr><th bordercolor="#7A79A7" bgcolor="#7A79A7">CQ</th><th bordercolor="#7A79A7" bgcolor="#7A79A7">Third-Party Code</th><th bordercolor="#7A79A7" bgcolor="#7A79A7">License</th><th bordercolor="#7A79A7" bgcolor="#7A79A7">Use</th></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=71">71</a></td><td width="55%">Apache Commons Lang Version: 2.1</td><td width="20%">Apache License, 2.0</td><td width="20%"></td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2370">2370</a></td><td width="55%">Apache Batik Version: 1.6 **See Comments 6&7 re CSS SAC API</td><td width="20%">Apache License, 2.0</td><td width="20%"></td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2375">2375</a></td><td width="55%">Junit Version: 3.8.2 (PB CQ2206)</td><td width="20%">Common Public License 1.0</td><td width="20%">unmodified source&nbsp;&amp;&nbsp;binary</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2876">2876</a></td><td width="55%">qooxdoo Version: 0.7.4 (Subset - see comments)</td><td width="20%">Eclipse Public License + Modified JSON</td><td width="20%">modified source </td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=4051">4051</a></td><td width="55%">Mozilla Rhino Version: 1.6R6 (**excluding proprietary files grabbed during build) (ATO CQ1694) (using Orbit CQ2175)</td><td width="20%">Mozilla Public License 1.1 (MPL)</td><td width="20%"></td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=4052">4052</a></td><td width="55%">json.org java impl of json parser Version: 2008-09-18 (PB Orbit CQ3603)</td><td width="20%">MIT license</td><td width="20%">source </td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=4053">4053</a></td><td width="55%">JSON2.js - json.org javascript impl of json parser Version: 2010-03-20</td><td width="20%">Public Domain</td><td width="20%">unmodified source </td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=4084">4084</a></td><td width="55%">Jetty (Subset)  Version: 6.1.23 (ATO CQ3915) (using Orbit CQ3934)</td><td width="20%">Apache License, 2.0, Eclipse Public License, Permissive Open Source Licenses</td><td width="20%"></td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=4536">4536</a></td><td width="55%">YUI Compressor Version: 2.4.2 (Subset)</td><td width="20%">New BSD license</td><td width="20%">modified source </td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=5286">5286</a></td><td width="55%">Tomcat 7.0.12 Version: Subset (PB CQ5094)</td><td width="20%">binary, checkintocvs, nonepl, unmodified</td><td width="20%">unmodified source&nbsp;&amp;&nbsp;binary</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=6513">6513</a></td><td width="55%">Apache Felix Gogo  Version: 0.8.0 (Command, Shell and Runtime (PB Orbit CQ5101)</td><td width="20%">Apache License, 2.0</td><td width="20%">unmodified binary </td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=6514">6514</a></td><td width="55%">Glassfish servlet-api Version: 3.1-b33 (PB Orbit CQ5018)</td><td width="20%">CDDL, Apache 2.0 </td><td width="20%">unmodified binary </td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=6515">6515</a></td><td width="55%">ICU4J Version: 4.4.2.v20110823 (PB Orbit CQ5529)</td><td width="20%">MIT Style with "no endorsement" clause, Unicode license </td><td width="20%">unmodified source&nbsp;&amp;&nbsp;binary</td></tr></table><h3>Exempt Pre-Req and Works With Dependencies</h3><p><em>No Exempt Pre-Req or Works With dependencies</em></p><h3>Unused Approved Contributions</h3><table border="1" cellpadding="3" cellspacing="0" width="100%"><tr><th bordercolor="#7A79A7" bgcolor="#7A79A7">CQ</th><th bordercolor="#7A79A7" bgcolor="#7A79A7">Third-Party Code</th><th bordercolor="#7A79A7" bgcolor="#7A79A7">License</th><th bordercolor="#7A79A7" bgcolor="#7A79A7">Status</th></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=69">69</a></td><td width="55%">Rhino 1.6R1 Version: 1.6R1 (**excluding proprietary files grabbed during build)</td><td width="20%">Netscape Public License 1.1 (NPL)</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=70">70</a></td><td width="55%">Apache Commons File Upload Version: 1.0</td><td width="20%">Apache Software License 1.1</td><td width="20%">unused: not currently in use, but may be used in a future release</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=1192">1192</a></td><td width="55%">qooxdoo Version: 0.7 (rev 9276) (subset)</td><td width="20%">Eclipse Public License +JSON for Eclipse</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2057">2057</a></td><td width="55%">qooxdoo Version: 0.7.3 (subset)</td><td width="20%">Eclipse Public License +JSON</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2377">2377</a></td><td width="55%">Apache Commons Logging Version: 1.0.4 (PB CQ1945)</td><td width="20%">Apache License, 2.0</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2378">2378</a></td><td width="55%">Jetty Version: 5.1.14 (*Subset) (PB CQ2080)</td><td width="20%">Apache License, 2.0 + Custom Permissive OS Licenses</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2379">2379</a></td><td width="55%">ICU4J and ICU4J replacement Version: 3.8.1 (PB CQ1956)</td><td width="20%">MIT License with "no endorsement" clause</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2380">2380</a></td><td width="55%">Apache Java Servlet API Version: 2.4 (PB CQ2074)</td><td width="20%">Apache License, 2.0</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2916">2916</a></td><td width="55%">jetty Version: 6.1.7 (*Subset) (using Orbit CQ2081)</td><td width="20%">Apache License, 2.0 + Custom Permissive OS Licenses</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=2917">2917</a></td><td width="55%">Java Servlet API Version: 2.5 (using Orbit CQ2075)</td><td width="20%">Apache License, 2.0</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=3344">3344</a></td><td width="55%">ICU4J and ICU4J replacement Version: 4.0.1 (ATO CQ2970) (using Orbit CQ2981)</td><td width="20%">MIT license with no endorsement clause, Unicode license</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=3709">3709</a></td><td width="55%">ICU4J and ICU4J replacement Version: 4.2.1.v20100112 (ATO CQ3699) (using Orbit CQ3700)</td><td width="20%">MIT License with "no endorsement" clause</td><td width="20%">obsolete: was used in the past but is not longer used</td></tr><tr><td align="right" width="5%"><a href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=4050">4050</a></td><td width="55%">jslint Version: Edition 2010-04-06</td><td width="20%">MIT License</td><td width="20%">unused: not currently in use, but may be used in a future release</td></tr></table><h2>Committers</h2>
+
+
+<table border="1" cellpadding="3" cellspacing="0">
+<tr><th colspan="3" bordercolor="#7A79A7" bgcolor="#7A79A7">Past and Present Active</th></tr>
+<tr><th bordercolor="#7A79A7" bgcolor="#7A79A7">Name</th>
+<th bordercolor="#7A79A7" bgcolor="#7A79A7">Organization</th>
+<th bordercolor="#7A79A7" bgcolor="#7A79A7">&nbsp;</th>
+</tr>
+<tr>
+	<td>Frank Appel</td>
+	<td> </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Jordi Boehme Lopez</td>
+	<td>Innoopract GmbH </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Tim Buschtons</td>
+	<td>Innoopract GmbH </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Ivan Furnadjiev</td>
+	<td>Innoopract GmbH </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Rüdiger Herrmann</td>
+	<td> </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Markus Knauer</td>
+	<td>Innoopract GmbH </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Jochen Krause</td>
+	<td>Innoopract GmbH </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Benjamin Muskalla</td>
+	<td>Tasktop </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Joel Oliveira</td>
+	<td> </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Austin Riddle</td>
+	<td> </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Holger Staudacher</td>
+	<td>Innoopract GmbH </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Ralf Sternberg</td>
+	<td>Innoopract GmbH </td>
+		<td></td>
+		</tr>
+	<tr>
+	<td>Elias Volanakis</td>
+	<td>Innoopract GmbH </td>
+		<td></td>
+		</tr>
+	</table>
+<p>
+
+
+<table border="1" cellpadding="3" cellspacing="0">
+<tr><th colspan="3" bordercolor="#7A79A7" bgcolor="#7A79A7">Never Active</th></tr>
+<tr><th bordercolor="#7A79A7" bgcolor="#7A79A7">Name</th>
+<th bordercolor="#7A79A7" bgcolor="#7A79A7">Organization</th>
+<th bordercolor="#7A79A7" bgcolor="#7A79A7">&nbsp;</th>
+</tr>
+<tr>
+		<td>Istvan Ballok</td>
+		<td>CAS Software AG </td>
+				<td></td>
+				</tr>
+		<tr>
+		<td>Cole Markham</td>
+		<td> </td>
+				<td></td>
+				</tr>
+		<tr>
+		<td>Stefan Rock</td>
+		<td> </td>
+				<td></td>
+				</tr>
+			</table>
+	<p>
+	<h2>Contributors and Their Contributions</h2>
+<table border="1" cellpadding="3" cellspacing="0">
+<tr>
+<th bordercolor="#7A79A7" bgcolor="#7A79A7">Ref</th>
+<th bordercolor="#7A79A7" bgcolor="#7A79A7">Size</th>
+<th bordercolor="#7A79A7" bgcolor="#7A79A7">Description</th>
+</tr>
+<tr><td colspan="3" style="background-color: #DDDDDD">Aleksandar&nbsp;Pavlov (bers-soft.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=352722">352722</a></td>
+		<td>1125 bytes</td>
+		<td>[Table] TableItem#setChecked and TableItem#setGrayed don't cache the virtual item<br/>Table Item Patched code</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Andreas&nbsp;Hoegger (bsiag.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=341324">341324</a></td>
+		<td>845 bytes</td>
+		<td>SashForm getControls visible only<br/>patch for SashForm</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Arnaud&nbsp;MERGEY (yahoo.fr)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=346407">346407</a></td>
+		<td>1689 bytes</td>
+		<td>Impossible to configure SettingsStoreFactory implementation through config.ini<br/>Patch allowing to read org.eclipse.rwt.settingStoreFactory in config.ini as well</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=358741">358741</a></td>
+		<td>1342 bytes</td>
+		<td>[GEF] set &quot;Drag-Job&quot; jobs as system in order to hide them<br/>proposed patch</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Artur&nbsp;Kronenberg (web.de)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290515">290515</a></td>
+		<td>2900 bytes</td>
+		<td>[design][business] Theming for Tree<br/>Tree collapsed image</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=291178">291178</a></td>
+		<td>2905 bytes</td>
+		<td>[design][fancy] Theming for Tree<br/>Tree expanded icon for the fancy design</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=320389">320389</a></td>
+		<td>15678 bytes</td>
+		<td>Support system tray API<br/>Patch for <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=320389">Bug 320389</a></td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=321458">321458</a></td>
+		<td>31228 bytes</td>
+		<td>[Tree] Improve Tree-page in examples demo<br/>Update of the TreeViewerExample</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324303">324303</a></td>
+		<td>89511 bytes</td>
+		<td>[design] introduce i18n for org.eclipse.rap.design.example<br/>Internationalization for bundle org.eclipse.rap.design.example</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325060">325060</a></td>
+		<td>5156 bytes</td>
+		<td>RAP fails with Turkish Locale...<br/>Test cases and patch</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Asen&nbsp;Draganov (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193703">193703</a></td>
+		<td>2344 bytes</td>
+		<td>Shells out of a display bounds makes page scrollable<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=223870">223870</a></td>
+		<td>21870 bytes</td>
+		<td>[CoolBar] Moving CoolItems does not work correctly<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=238656">238656</a></td>
+		<td>25210 bytes</td>
+		<td>Combo#getSelection is missing<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=238657">238657</a></td>
+		<td>22385 bytes</td>
+		<td>List#getTopIndex is missing<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=279815">279815</a></td>
+		<td>4215 bytes</td>
+		<td>[Theming][ExpandBar] Add expanded state to ExpandItem-Header<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280839">280839</a></td>
+		<td>9212 bytes</td>
+		<td>Display#update is missing<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280900">280900</a></td>
+		<td>6031 bytes</td>
+		<td>List#showSelection() is missing<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=281868">281868</a></td>
+		<td>4398 bytes</td>
+		<td>[Theming][Button] CSS padding does not work<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282265">282265</a></td>
+		<td>7603 bytes</td>
+		<td>[design] Buttons with CHECK and RADIO are not vertically centered<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282453">282453</a></td>
+		<td>15412 bytes</td>
+		<td>[Theming][DateTime] Up/down buttons should be themeable<br/>Proposed patch incl. buttons width themable</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282454">282454</a></td>
+		<td>22226 bytes</td>
+		<td>[Theming][DateTime] Padding around up/down buttons<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282455">282455</a></td>
+		<td>20891 bytes</td>
+		<td>[Theming][CCombo] Theming of CCombo has no effect<br/>Proposed patch incl. Combo/CCombo button width themable</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282462">282462</a></td>
+		<td>12957 bytes</td>
+		<td>[Theming] Align button width for Spinner, Combo, and DateTime<br/>Proposed patch for spinner</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282687">282687</a></td>
+		<td>5008 bytes</td>
+		<td>[CCombo] getTextHeight is missing<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283466">283466</a></td>
+		<td>11123 bytes</td>
+		<td>[Tree][Table] Should reuse new checkboxes<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284021">284021</a></td>
+		<td>2003 bytes</td>
+		<td>[DateTime] Text cursor visible outside widget bounds<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284409">284409</a></td>
+		<td>4425 bytes</td>
+		<td>[DateTime] Up/down buttons misaligned when widget is larger than preferred size<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284976">284976</a></td>
+		<td>2141 bytes</td>
+		<td>[DateTime] Overflow issue when widget is smaller than preferred size<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286254">286254</a></td>
+		<td>12711 bytes</td>
+		<td>[Text] setTextLimit doesn't cut existing text<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287355">287355</a></td>
+		<td>10804 bytes</td>
+		<td>[Combo] Misses methods that are already implemented in CCombo<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=289327">289327</a></td>
+		<td>1414 bytes</td>
+		<td>[Combo] Combobox list at the bottom of the browser window is not visible<br/>Proposed patch</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Austin&nbsp;Riddle (tamu.edu)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=258961">258961</a></td>
+		<td>1094 bytes</td>
+		<td>Wrong Message Bundle Reference in ActivityMessages<br/>Patch with changed code</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=271277">271277</a></td>
+		<td>3775 bytes</td>
+		<td>[Tree]  labels of following columns misplaced when showing an image in a column<br/>Fix for the image alignment</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=275380">275380</a></td>
+		<td>2503 bytes</td>
+		<td>RAP Cookies Not Secured<br/>Patch that secures cookie and validates contents upon read</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301481">301481</a></td>
+		<td>244 bytes</td>
+		<td>Show View menu is not activity friendly<br/>comment #0</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Balazs&nbsp;Brinkus (cas.de)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301126">301126</a></td>
+		<td>0 bytes</td>
+		<td>[Table] TableColumn remove problem<br/>comment #1</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Benedikt&nbsp;Arnold (gmx.info)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193302">193302</a></td>
+		<td>1091 bytes</td>
+		<td>TableItem.getBounds calculates wrong width if table style is SWT.CHECK<br/>Replacement for the patch above</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Beyhan&nbsp;Veliev (sap.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=254718">254718</a></td>
+		<td>37901 bytes</td>
+		<td>[Tooling][Launcher] Workspace Data section missing<br/>Versoin 3</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282938">282938</a></td>
+		<td>44685 bytes</td>
+		<td>[Tooling] servlet/entrypoint should validate against selected bundles<br/>Validation Entrypoint/Serveltname v2</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=323702">323702</a></td>
+		<td>20471 bytes</td>
+		<td>[Tooling] Browse on entrypoint/servlet should search Target bundles too<br/>Version 1</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334555">334555</a></td>
+		<td>5494 bytes</td>
+		<td>[Tooling] Deprecate log-level combo box in launcher<br/>Version 2</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334913">334913</a></td>
+		<td>105450 bytes</td>
+		<td>[Tooling] Split tooling and runtime<br/>Version 8</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=335285">335285</a></td>
+		<td>13190 bytes</td>
+		<td>Provide tooling support for JavaScript Tests<br/>Version 2</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=336242">336242</a></td>
+		<td>1218 bytes</td>
+		<td>[Tooling] Update documentation about RAP-tooling<br/>Version 2</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=336459">336459</a></td>
+		<td>2334 bytes</td>
+		<td>[Tooling] Compile error in TargetSwitcher_Test.java<br/>Version 2</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=336794">336794</a></td>
+		<td>6119 bytes</td>
+		<td>[Tooling] Refactor UI of install target platform dialog<br/>Version 1</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=337810">337810</a></td>
+		<td>13598 bytes</td>
+		<td>[Tooling] Add target platform validation to the RAP templates wizard<br/>Question dialog instead check box</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=338706">338706</a></td>
+		<td>42860 bytes</td>
+		<td>[Tooling] Update launching RAP application docu with Workspace Data section<br/>Default location changed</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=340435">340435</a></td>
+		<td>149732 bytes</td>
+		<td>[Help] Update WAR Deployment guide to use WAR Products tooling<br/>New Images</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=341083">341083</a></td>
+		<td>36869 bytes</td>
+		<td>[Tooling] Update RAP launcher documentation<br/>main tab screenshot</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342083">342083</a></td>
+		<td>26069 bytes</td>
+		<td>[Tooling] Allow the context path to be specified in the run configuration<br/>reviewed and updated patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342190">342190</a></td>
+		<td>10277 bytes</td>
+		<td>[Tooling] Servlet name validation breaks for feature-based launch<br/>Patch with test  cases updated</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342854">342854</a></td>
+		<td>33991 bytes</td>
+		<td>[Tooling] Main tab of RAP Launcher looks overloaded<br/>Patch updated to CVS head</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=343488">343488</a></td>
+		<td>31847 bytes</td>
+		<td>[Incubator] Create an incubator feature<br/>Updated incubator feature</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=344578">344578</a></td>
+		<td>23371 bytes</td>
+		<td>[Tooling] Rename checkbox to select servlet/entrypoint/application<br/>filter moved to the drop-down menu</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=346525">346525</a></td>
+		<td>1365 bytes</td>
+		<td>[Tooling] Use stable URLs for runtime download<br/>updates the repository URLs to the stable ones</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=346630">346630</a></td>
+		<td>21748 bytes</td>
+		<td>[Tooling] Install latest release runtime can fail in case latest build runtime is already installed<br/>fixes the search for &quot;org.eclipse.rap.runtime.sdk.feature.group&quot;</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=351075">351075</a></td>
+		<td>20558 bytes</td>
+		<td>[Tooling] Remove log-level combo from launcher<br/>remove log-level patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=355359">355359</a></td>
+		<td>58780 bytes</td>
+		<td>[releng] Tooling does not update to latest stable build (1.5M1)<br/>install a remote target definition patch</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Boris&nbsp;Stepanov (rocketsoftware.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=273009">273009</a></td>
+		<td>1026 bytes</td>
+		<td>[Browser] parent.qx.ui is null error when iframe loads its content<br/>IFrame.js fix</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Christian&nbsp;Janz (cas.de)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=195171">195171</a></td>
+		<td>6427 bytes</td>
+		<td>[Text] Implement selection methods for Text with SWT.MULTI<br/>Patch to enable the text-selection in multi-line text widgets</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=231761">231761</a></td>
+		<td>734 bytes</td>
+		<td>[ScrolledComposite] setSelection broken with alwaysShowScroll<br/>ScrollCompositeLCA patch</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Cole&nbsp;Markham (ccmcomputing.net)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=275351">275351</a></td>
+		<td>5247 bytes</td>
+		<td>Cross-Site Scripting Security Vulnerability<br/>patch to address XSS vulnerability</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">DaAzrael&nbsp;Mising&nbsp;name (gmx.de)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251820">251820</a></td>
+		<td>844 bytes</td>
+		<td>[TableItem] setText (String [] strings)  doesn't exist<br/>comment #2</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Darko&nbsp;Varju (googlemail.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=246074">246074</a></td>
+		<td>1593 bytes</td>
+		<td>CTabFolder#getItem(Point) is missing<br/>missing method getItem(Point) added</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Dominik&nbsp;Ebert (ars.de)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294593">294593</a></td>
+		<td>41447 bytes</td>
+		<td>[Resources] Accessors should fail in case of disposed resource<br/>First draft</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294599">294599</a></td>
+		<td>3299 bytes</td>
+		<td>[Text] getText(int,int) is missing<br/>Final draft</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294606">294606</a></td>
+		<td>2827 bytes</td>
+		<td>[Combo] IndexOutOfBounds for wrong arguments<br/>Final draft</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294639">294639</a></td>
+		<td>2312 bytes</td>
+		<td>[ExpandBar] accepts indexOf( null )<br/>Final draft for ExpandBar</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294646">294646</a></td>
+		<td>2689 bytes</td>
+		<td>[Table] removes same indices twice<br/>Final draft</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294654">294654</a></td>
+		<td>4204 bytes</td>
+		<td>[TreeItem] doesn't handle invalid index within parent item<br/>First draft</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Ed&nbsp;Merks (gmail.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=215908">215908</a></td>
+		<td>1179 bytes</td>
+		<td>WizardDialog.run should not use null as the progress monitor<br/>Changes to use in a null progress monitor rather than null.</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Elias&nbsp;Volanakis (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=219028">219028</a></td>
+		<td>397194 bytes</td>
+		<td>Implement activities in RAP<br/>Support for activities in RAP</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=220476">220476</a></td>
+		<td>114772 bytes</td>
+		<td>Provide an RWT-based mechanism for persisting settings<br/>Setting Store Patch v3</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=220477">220477</a></td>
+		<td>18823 bytes</td>
+		<td>Provide AbstractUIPlugin.getPreferenceStore()<br/>Sample Project v2</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Erdal&nbsp;Karaca (googlemail.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280731">280731</a></td>
+		<td>795 bytes</td>
+		<td>[Table] Javascript error in IE 6/8 when column width is zero<br/>works in IE</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Florian&nbsp;Waibel (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=333154">333154</a></td>
+		<td>1026 bytes</td>
+		<td>Widget.isValidThread() should reuse the implementation of Display.isValidThread()<br/>Patch containing the suggested reuse of Display.isValidThread</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342407">342407</a></td>
+		<td>18541 bytes</td>
+		<td>Prepare sessions to be serializable<br/>cluster Testfixure for RAP/RWT</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=359054">359054</a></td>
+		<td>2343 bytes</td>
+		<td>[Link] NullPointerException in LCA after deserialization when running in cluster<br/>Complete patched JUnit test SessionSerialization_Test.java</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Gareth&nbsp;Bowen (orionhealth.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=341849">341849</a></td>
+		<td>2022 bytes</td>
+		<td>Deadlock shutting down UI thread<br/>Patch</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Gunnar&nbsp;Wagenknecht (wagenknecht.org)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=339820">339820</a></td>
+		<td>34800 bytes</td>
+		<td>FilteredItemsSelectionDialog$RefreshCacheJob needs a context<br/>patch which fakes the context</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Hasan&nbsp;Ceylan (batoo.org)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=276596">276596</a></td>
+		<td>1302 bytes</td>
+		<td>[Spinner]  misses to fire events under some circumstances<br/>patch to solve backspace &amp; missed digit key in problems</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Hugh&nbsp;Gibson (cix.co.uk)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=204910">204910</a></td>
+		<td>1379 bytes</td>
+		<td>IE7 leaks memory on each request<br/>Fixes the problem by using a dummy function</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Hugo&nbsp;Ferreira (gmail.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=237134">237134</a></td>
+		<td>1121 bytes</td>
+		<td>[Table] TableItem#setBackground() overrides the selection color<br/>Proposed patch for version 1.1 RC4.</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Ian&nbsp;Bull (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283595">283595</a></td>
+		<td>2139 bytes</td>
+		<td>defaultProgressManager leaking jobs<br/>Patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284202">284202</a></td>
+		<td>1905 bytes</td>
+		<td>Rap UI Locks up when a runnable is running, and a page reload happens<br/>patch</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Igor&nbsp;Pavlenko (inbox.ru)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=273769">273769</a></td>
+		<td>4964 bytes</td>
+		<td>Radio selection events work wrong<br/>Patch for this issue</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=275998">275998</a></td>
+		<td>1330 bytes</td>
+		<td>WorkbenchPreferenceExtensionNode and pluginId<br/>Patch to fix problem</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=281315">281315</a></td>
+		<td>748 bytes</td>
+		<td>Outdated message in ProgressCanvasViewer<br/>Patch to fix this bug</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Ivan&nbsp;Furnadjiev (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=239006">239006</a></td>
+		<td>64147 bytes</td>
+		<td>Scale widget is missing<br/>Patch without the binary data (images).</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=240684">240684</a></td>
+		<td>3738 bytes</td>
+		<td>Disabling a sub menu doesn't work in cascaded menues<br/>Patch that fixed it.</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=278743">278743</a></td>
+		<td>116982 bytes</td>
+		<td>Implement rounded corners<br/>Updated patch with latest version of GfxMixin and CSS support (for both gradients and rounded borders)</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Jordan&nbsp;Yakovchev (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192634">192634</a></td>
+		<td>6160 bytes</td>
+		<td>[Label] Label swallows subsequent whitespaces<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=242223">242223</a></td>
+		<td>1310 bytes</td>
+		<td>[Table] table items ignore leading blanks in text<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=243874">243874</a></td>
+		<td>6264 bytes</td>
+		<td>[Events] add*Listener throws wrong exception<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280171">280171</a></td>
+		<td>820 bytes</td>
+		<td>[Text] SWT.WRAP not respected in webkit-based browsers<br/>Proposed Qooxdoo patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280636">280636</a></td>
+		<td>941 bytes</td>
+		<td>[Table] When in a ScrolledComposite, getColumnOrder() can be wrong after moving a column<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280905">280905</a></td>
+		<td>8409 bytes</td>
+		<td>[table] Wrong column position after movement<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282679">282679</a></td>
+		<td>6515 bytes</td>
+		<td>[DateTime] Key events are propagated to parent<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283416">283416</a></td>
+		<td>1643 bytes</td>
+		<td>[TableViewer] Problem in Cell Editor mode in webkit browsers<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283541">283541</a></td>
+		<td>747 bytes</td>
+		<td>[Combo] Mouse-wheel and key events also affects scrollable parent<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283542">283542</a></td>
+		<td>1173 bytes</td>
+		<td>[Table] Mouse-wheel and key events also affects scrollable parent<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283543">283543</a></td>
+		<td>2963 bytes</td>
+		<td>[Scale] Mouse-wheel and key events also affects scrollable parent<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283544">283544</a></td>
+		<td>1613 bytes</td>
+		<td>[Slider]  Key events also affects scrollable parent<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283545">283545</a></td>
+		<td>1705 bytes</td>
+		<td>[Radio Buttons] Key events also affects scrollable parent<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283546">283546</a></td>
+		<td>849 bytes</td>
+		<td>[Spinner] Mouse-wheel events also affects scrollable parent<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=288344">288344</a></td>
+		<td>1698 bytes</td>
+		<td>[list] Letter keys change the selection while ALT or CTRL is pressed<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=288807">288807</a></td>
+		<td>903 bytes</td>
+		<td>[table] The focus stays on the browser location bar after clicking on a table item text.<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=289089">289089</a></td>
+		<td>698 bytes</td>
+		<td>[Tree] Columns in virtual tree viewer render incorrectly upon scroll<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290410">290410</a></td>
+		<td>1758 bytes</td>
+		<td>[Combo/CCombo] Combo-list width should take the maximal width of all the subitems<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290565">290565</a></td>
+		<td>909 bytes</td>
+		<td>[Table] Selected rows cut off<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290879">290879</a></td>
+		<td>1247 bytes</td>
+		<td>[Table] Incorrect scroll width if table has checkboxes and no columns<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=264219">264219</a></td>
+		<td>0 bytes</td>
+		<td>[Table] Selection is faster than scrolling<br/>comment #2</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Mariot&nbsp;Chauvin (gmail.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=200389">200389</a></td>
+		<td>1063 bytes</td>
+		<td>Link widget allows every html tag<br/>escape html tags</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Nick&nbsp;Mussin (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/commit?id=073b354f1682abcf7a55e4f36c32fcf0579dffe8">073b35</a></td>
+		<td>49 lines</td>
+		<td>Added Target Installation page to Getting Started section Signed-off-by: Ralf Sternberg &lt;rsternberg@eclipsesource.com&gt;</td>
+				</tr>
+	<tr>
+		<td><a href="http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/commit?id=0e9ac5d5739d7fd60a6464bef8b549519a90267a">0e9ac5</a></td>
+		<td>74 lines</td>
+		<td>Added &quot;Set up Eclipse&quot; page to Getting Started section Signed-off-by: Ralf Sternberg &lt;rsternberg@eclipsesource.com&gt;</td>
+				</tr>
+	<tr>
+		<td><a href="http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/commit?id=86810d523db804b55d9a63841249879b38567e6c">86810d</a></td>
+		<td>16 lines</td>
+		<td>Removed references to RAP versions older than 1.4 Signed-off-by: Ralf Sternberg &lt;rsternberg@eclipsesource.com&gt;</td>
+				</tr>
+	<tr>
+		<td><a href="http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/commit?id=d4413a1e014043d9e8723572bfd4896bbcb6cabc">d4413a</a></td>
+		<td>99 lines</td>
+		<td>Added article about underlying technologies Signed-off-by: Ralf Sternberg &lt;rsternberg@eclipsesource.com&gt;</td>
+				</tr>
+	<tr>
+		<td><a href="http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/commit?id=ef20e3900f7353cc569b6f11430c98f74f6f5a93">ef20e3</a></td>
+		<td>54 lines</td>
+		<td>Changed title, heading and navigation label to &quot;Set up Eclipse IDE&quot; - edited content Signed-off-by: Ralf Sternberg &lt;rsternberg@eclipsesource.com&gt;</td>
+				</tr>
+	<tr>
+		<td><a href="http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/commit?id=fff4b74afffa7cde8d38ab97b0476fa1a36c0790">fff4b7</a></td>
+		<td>21 lines</td>
+		<td>Shortened &quot;Preconditions&quot; section Signed-off-by: Ralf Sternberg &lt;rsternberg@eclipsesource.com&gt;</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=347797">347797</a></td>
+		<td>2676 bytes</td>
+		<td>[Theming][Menu] Enhance MenuItem theming<br/>increased MenuItem padding and separator padding</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=351651">351651</a></td>
+		<td>201551 bytes</td>
+		<td>Split AppearancesBase.js into one file per widget<br/>split AppearancesBase.js into separate files</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=365569">365569</a></td>
+		<td>830 bytes</td>
+		<td>[Theming] Readonly Text with BORDER does not render border<br/>fixes read-only texts with BORDER style flag</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=370061">370061</a></td>
+		<td>2233 bytes</td>
+		<td>[Controls Demo] Provide a style contributions for &quot;special-red&quot; and &quot;special-blue&quot; variants<br/>adds theme contribution to default theme with properties for custom variants 'special-red' and 'special-blue'</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Paul&nbsp;Kendall (gmail.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=321924">321924</a></td>
+		<td>1101 bytes</td>
+		<td>[Theming] ExpandItem sub-widgets do not inherit custom style variants<br/>Patch to fix ExpandItem custom variants</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Ralf&nbsp;Zahn (ars.de)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=205499">205499</a></td>
+		<td>27831 bytes</td>
+		<td>[Spinner] setDigits is missing<br/>Draft of Spinner component with digits (locale-dependent formatting)</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280902">280902</a></td>
+		<td>10676 bytes</td>
+		<td>ProgressBar#setState() is missing<br/>Patch: First proposal</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283291">283291</a></td>
+		<td>39598 bytes</td>
+		<td>Provide history support<br/>4th draft</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=293807">293807</a></td>
+		<td>6470 bytes</td>
+		<td>[Display] getCursorControl is missing<br/>Patch including JUnit test</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294609">294609</a></td>
+		<td>7747 bytes</td>
+		<td>[List] isSelected fails with duplicate list items<br/>Patch with ListModel fitting the ListModel_Test requirements</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Roberto&nbsp;Sanchez (autonomind.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=255690">255690</a></td>
+		<td>1158 bytes</td>
+		<td>[DateTime] Widget doesn't get Typed Year value<br/>This patch solves the problem </td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Scott&nbsp;Warner (healthlanguage.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259030">259030</a></td>
+		<td>1829 bytes</td>
+		<td>StackOverflowError in widget id generator<br/>New patch for fix</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Stefan&nbsp;Hansel (tolina.de)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=241843">241843</a></td>
+		<td>18951 bytes</td>
+		<td>SWT#LEFT_TO_RIGHT is missing<br/>Updated to current CVS-HEAD</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Stefan&nbsp;Riesen (riesen-net.ch)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=268654">268654</a></td>
+		<td>796 bytes</td>
+		<td>Typo in Java script file leads to JavaScript Evaluation Error<br/>Patch to resolve the javascript bug</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Stefan&nbsp;Rock (googlemail.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=251184">251184</a></td>
+		<td>1028 bytes</td>
+		<td>[Text] Size determination for text containing only blanks is wrong<br/>Patch proposal</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Stephan&nbsp;Leicht&nbsp;Vogt (bsiag.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324082">324082</a></td>
+		<td>1426 bytes</td>
+		<td>[Theming] ThemeAdapters return wrong values for subclassed widgets<br/>Proposed solution</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=362196">362196</a></td>
+		<td>739 bytes</td>
+		<td>Black instead of transparent backgrounds in IE8 / Opera<br/>Patch witch solves the black-issue in opera</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=364172">364172</a></td>
+		<td>1083 bytes</td>
+		<td>[Scrollbar] Sends &quot;NaN&quot; as &quot;topItemIndex&quot; after _layoutPost<br/>Patch to fix the described problem</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Thomas&nbsp;Schindl (bestsolution.at)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=272674">272674</a></td>
+		<td>1374 bytes</td>
+		<td>[ExpandBar] Calculation of ExpandItem-Control incorrect<br/>Patch</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">tibersept (yahoo.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=336340">336340</a></td>
+		<td>849 bytes</td>
+		<td>[TableColumn] Moving &quot;0 width&quot; columns<br/>Quickfix</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Tim&nbsp;Buschtoens (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=196417">196417</a></td>
+		<td>691 bytes</td>
+		<td>[Shell] controlMoved doesn't work<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=223834">223834</a></td>
+		<td>939 bytes</td>
+		<td>[Browser] Modifying the DOM (execute javascript) does not work<br/>Fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=260255">260255</a></td>
+		<td>1822 bytes</td>
+		<td>[CoolBar] Items overlap each other<br/>Update for CoolItem tests</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=273214">273214</a></td>
+		<td>5542 bytes</td>
+		<td>[Text] Use the &quot;native&quot; context menu if there is no servers-side context menu attached<br/>4th patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=275391">275391</a></td>
+		<td>16103 bytes</td>
+		<td>[Text] setTextLimit for SWT.MULTI doesn't work<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=277671">277671</a></td>
+		<td>17975 bytes</td>
+		<td>Implement background gradients<br/>Enableds gradients for more widgets</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=281068">281068</a></td>
+		<td>4981 bytes</td>
+		<td>[ToolTip] Use one instance of qx.ui.popup.ToolTip only<br/>patch implementing the requested feature</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283394">283394</a></td>
+		<td>1895 bytes</td>
+		<td>[Shell] Enable rounded borders for Shell<br/>Solves &quot;resize&quot;-problem</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284417">284417</a></td>
+		<td>858 bytes</td>
+		<td>Rounded borders with 0px border width broken in Chrome<br/>solves problem</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284717">284717</a></td>
+		<td>80126 bytes</td>
+		<td>[Button] Implement a custom Button based on MultiCellWidget<br/>SWT-like multi-purpose Button</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=285590">285590</a></td>
+		<td>5488 bytes</td>
+		<td>[Theming][Button] Support variable size for CHECK and RADIO indicator images<br/>Fix2</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286012">286012</a></td>
+		<td>764 bytes</td>
+		<td>[Button] Check / Radio have wrong cursor<br/>The ACTUAL solution</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286098">286098</a></td>
+		<td>1043 bytes</td>
+		<td>[Button] Broken appearance with CSS border-radius property set<br/>Solution</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286295">286295</a></td>
+		<td>1147 bytes</td>
+		<td>[design] Button font colors are wrong since 1.3M1<br/>patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286378">286378</a></td>
+		<td>874 bytes</td>
+		<td>[Text] Border disappears if CSS border-radius property set<br/>patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=286926">286926</a></td>
+		<td>789 bytes</td>
+		<td>[Theming] Gradient breaks canvas layout in IE<br/>Real fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287147">287147</a></td>
+		<td>889 bytes</td>
+		<td>Button Text Problem in Wizard<br/>Fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287313">287313</a></td>
+		<td>26677 bytes</td>
+		<td>[Menu] Can open two menus at the same time<br/>Solution</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287547">287547</a></td>
+		<td>7826 bytes</td>
+		<td>Bad updating control tooltip<br/>a better solution</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287681">287681</a></td>
+		<td>4840 bytes</td>
+		<td>[Menu] causes session timeout due to emtpy image<br/>Fix for MultiCellWidget</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287810">287810</a></td>
+		<td>947 bytes</td>
+		<td>Add destructor to MultiCellWidget<br/>destructor</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287823">287823</a></td>
+		<td>740 bytes</td>
+		<td>Radio Button does not work correctly anymore<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=287838">287838</a></td>
+		<td>10052 bytes</td>
+		<td>[Design] Disabled Buttons are unreadable<br/>same patch including test</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=288098">288098</a></td>
+		<td>58013 bytes</td>
+		<td>Fix js-tests for IE<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=288145">288145</a></td>
+		<td>1604 bytes</td>
+		<td>[Menu] Memory Leak<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=288615">288615</a></td>
+		<td>10924 bytes</td>
+		<td>Refactor HtmlUtil.js to remove StringBuilder.js<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=288737">288737</a></td>
+		<td>1042 bytes</td>
+		<td>Scroll bars are broken in Opera 10<br/>Same patch - Qooxdoo-style formatting</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290153">290153</a></td>
+		<td>19135 bytes</td>
+		<td>Remove original qooxdoo-toolbar from RWT<br/>Removes old toolbar</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290242">290242</a></td>
+		<td>69437 bytes</td>
+		<td>[Theming] Provide opacity for widgets<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290293">290293</a></td>
+		<td>12901 bytes</td>
+		<td>[Menu] Menubar does not open same menu twice<br/>Fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290817">290817</a></td>
+		<td>2005 bytes</td>
+		<td>[Menu] Can not click MenuItem in FireFox 2<br/>Suggestred solution</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=291344">291344</a></td>
+		<td>2799 bytes</td>
+		<td>[Coolbar] - Look &amp; Feel of Toggle Button<br/>layout fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=291672">291672</a></td>
+		<td>845 bytes</td>
+		<td>Sash widget breaks and cannot shrink child composite while dragging the sash over any disabled children<br/>Suggested solution</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=292359">292359</a></td>
+		<td>148712 bytes</td>
+		<td>[Theming][ProgressBar] border-radius not supported<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294736">294736</a></td>
+		<td>1244 bytes</td>
+		<td>Focus indicator visible both inside and outside buttons<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=295475">295475</a></td>
+		<td>1915 bytes</td>
+		<td>Mouse-events do not work during drag-gestures in FF<br/>alternative fix-implementation</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=296341">296341</a></td>
+		<td>933 bytes</td>
+		<td>[List] Drag and drop conflicts with multi-selection<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=296447">296447</a></td>
+		<td>113576 bytes</td>
+		<td>[DnD] Implement Feedback for Tree and Table<br/>Version 4</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=296453">296453</a></td>
+		<td>40050 bytes</td>
+		<td>[DnD] Support &quot;OperationChanged&quot;-event<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=296454">296454</a></td>
+		<td>34691 bytes</td>
+		<td>[DnD] Improve Transfer-Support<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=297066">297066</a></td>
+		<td>12733 bytes</td>
+		<td>Refactor newWidget in WidgetManager.js<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=297202">297202</a></td>
+		<td>6887 bytes</td>
+		<td>[DnD] Dragging multiple TableItems does not work<br/>Fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=298177">298177</a></td>
+		<td>1340 bytes</td>
+		<td>[design] View titles aren't shown properly in IE 7<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=298414">298414</a></td>
+		<td>1774 bytes</td>
+		<td>[Theming][ToolBar] ToolItem does not support border-radius<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=298428">298428</a></td>
+		<td>977 bytes</td>
+		<td>[Theming][ToolBar] Make ToolItem align themable for vertical toolbars<br/>additional fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=298836">298836</a></td>
+		<td>857 bytes</td>
+		<td>[DnD] update 1.3M4 and UITests Error<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=299034">299034</a></td>
+		<td>6173 bytes</td>
+		<td>[DnD] Drag and Drop from view to editor is not working<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=299263">299263</a></td>
+		<td>141442 bytes</td>
+		<td>create a client-side vector-graphics abstraction layer<br/>Patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=299350">299350</a></td>
+		<td>729 bytes</td>
+		<td>[Menu] Submenus do not open correctly in certain constellations<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=299620">299620</a></td>
+		<td>1379 bytes</td>
+		<td>[Table] ScrollBar not updated on invisible, VIRTUAL table<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=299629">299629</a></td>
+		<td>6391 bytes</td>
+		<td>IE does not handle composites correctly<br/>fix fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=300509">300509</a></td>
+		<td>929 bytes</td>
+		<td>[Shell] Shell gradient is not clipped in Chrome<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301236">301236</a></td>
+		<td>4203 bytes</td>
+		<td>Background-image with rounded borders kills session in Chrome<br/>fix / workaround</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301427">301427</a></td>
+		<td>2370 bytes</td>
+		<td>[Table] images are not grayed out when disabled<br/>Possible solution</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301434">301434</a></td>
+		<td>5030 bytes</td>
+		<td>[DnD] Missing DragEnter-event<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301544">301544</a></td>
+		<td>3181 bytes</td>
+		<td>[DnD] Wrong event-order when dragging very fast twice<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301709">301709</a></td>
+		<td>5439 bytes</td>
+		<td>IE can clip 2 pixels too much<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301768">301768</a></td>
+		<td>2386 bytes</td>
+		<td>[Wizard] Crashes client-side application in Chrome<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301946">301946</a></td>
+		<td>27507 bytes</td>
+		<td>[Text] setEchoChar is missing<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=302135">302135</a></td>
+		<td>9322 bytes</td>
+		<td>[Theming] fix userForeground for disabled widgets<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=302711">302711</a></td>
+		<td>59359 bytes</td>
+		<td>[Theming] enable opacity for FocusIndiactor<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=302980">302980</a></td>
+		<td>804 bytes</td>
+		<td>Remove checks for qooxdoo variant &quot;qx.aspects&quot; in qx.js<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=303059">303059</a></td>
+		<td>4300 bytes</td>
+		<td>Remove checkDefined from ThemeValues.js<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=303162">303162</a></td>
+		<td>15418 bytes</td>
+		<td>Prevent unnecessary qooxdoo-flushs<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=303197">303197</a></td>
+		<td>3908 bytes</td>
+		<td>Reduce use of &quot;eval&quot; and &quot;new Function&quot; in JS<br/>Proposed patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=304651">304651</a></td>
+		<td>919 bytes</td>
+		<td>[Text] Dragging text from a text widget causes browser to load it as URL<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=305659">305659</a></td>
+		<td>52266 bytes</td>
+		<td>[Text] support background gradients<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=305890">305890</a></td>
+		<td>3242 bytes</td>
+		<td>[design] glitch in combo-box button<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=306030">306030</a></td>
+		<td>893 bytes</td>
+		<td>[Shell] Rounded borders are not updated when maximized<br/>quick fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=306042">306042</a></td>
+		<td>5846 bytes</td>
+		<td>[Shell] Shell not restored correctly after browser resize<br/>new fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=306354">306354</a></td>
+		<td>719 bytes</td>
+		<td>No Cursor after selecting a Text in IE<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=306631">306631</a></td>
+		<td>61876 bytes</td>
+		<td>[Theming][Shell] Make blocker overlay for modal shells themeable<br/>advanced fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=306695">306695</a></td>
+		<td>2555 bytes</td>
+		<td>Setting the background does not work if rounded borders are set<br/>corrected patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=306713">306713</a></td>
+		<td>4116 bytes</td>
+		<td>Device#getDPI missing<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=306791">306791</a></td>
+		<td>3592 bytes</td>
+		<td>[Theming][Table] Allow for vertical-only grid lines<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=306820">306820</a></td>
+		<td>2228 bytes</td>
+		<td>[design] Glitch in CTabItem with rounded borders in IE<br/>fix / workaround</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=307216">307216</a></td>
+		<td>1414 bytes</td>
+		<td>[design] Composite can crash when using background-image: none<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=307400">307400</a></td>
+		<td>2469 bytes</td>
+		<td>[design] GraphicsMixin can not switch from color to image background<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=307415">307415</a></td>
+		<td>1534 bytes</td>
+		<td>[design] JavaScript error in IE, when selecting a tab from a part stack (view, editor)<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=307733">307733</a></td>
+		<td>2629 bytes</td>
+		<td>AsyncKeyEventUtil misses events in FF<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=307734">307734</a></td>
+		<td>6556 bytes</td>
+		<td>Refactor AsyncKeyEventUtil.js, _isUntrustedKey<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=307944">307944</a></td>
+		<td>3456 bytes</td>
+		<td>Display#getDepth is missing<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=308210">308210</a></td>
+		<td>2529 bytes</td>
+		<td>GraphicsMixinTest &quot;testPadding&quot; fails in IE<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=308346">308346</a></td>
+		<td>1837 bytes</td>
+		<td>reduce logging in client-tests<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=308702">308702</a></td>
+		<td>3439 bytes</td>
+		<td>Javascript error when programmatically selecting tab with ScrolledComposite<br/>qooxdoo fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=309130">309130</a></td>
+		<td>11514 bytes</td>
+		<td>create ASyncKeyEventUtil tests<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=309812">309812</a></td>
+		<td>3193 bytes</td>
+		<td>[GC] JS error in Examples Demo<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=309816">309816</a></td>
+		<td>203354 bytes</td>
+		<td>[Theming] enable css3-like animations<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=309934">309934</a></td>
+		<td>2727 bytes</td>
+		<td>Text widget &amp; Context menu - caret and selection missing.<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311000">311000</a></td>
+		<td>6195 bytes</td>
+		<td>JavaScript tests are green when you execute corrupt JavaScript<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311025">311025</a></td>
+		<td>13824 bytes</td>
+		<td>[Examples Demo] provide page for animations<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311358">311358</a></td>
+		<td>6712 bytes</td>
+		<td>Problem with hover state and animations<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311533">311533</a></td>
+		<td>5554 bytes</td>
+		<td>[Animation] Undesired animation on pressed button<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311536">311536</a></td>
+		<td>3283 bytes</td>
+		<td>[Animation] Delay animation when browser is busy<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311543">311543</a></td>
+		<td>2880 bytes</td>
+		<td>Animated Shell overlay cause flicker with stacked modal dialogs<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=312544">312544</a></td>
+		<td>1567 bytes</td>
+		<td>[CCombo] Read-only ComboBoxCellEditor throws javascript error in IE<br/>fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290583">290583</a></td>
+		<td>188 bytes</td>
+		<td>[Table][Tree] hover state not reset after resizing column<br/>comment #1</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=301277">301277</a></td>
+		<td>0 bytes</td>
+		<td>Refactor Graphics-Tests<br/>comment #1</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Tobias&nbsp;Liefke (liefke.biz)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=351404">351404</a></td>
+		<td>858 bytes</td>
+		<td>The propertiesView extension-point is missing the org.eclipse.ui prefix<br/>Patch for the plugin.xml of org.eclipse.rap.ui</td>
+				</tr>
+	<tr><td colspan="3" style="background-color: #DDDDDD">Vasko&nbsp;Tchoumatchenko (eclipsesource.com)</td>
+		</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=220733">220733</a></td>
+		<td>1196 bytes</td>
+		<td>Missing Theme after using browsers back button<br/>Alternative fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=249630">249630</a></td>
+		<td>853 bytes</td>
+		<td>IRunnableWithProgress in WorkbenchAdvisor does not show dialog<br/>Fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=253756">253756</a></td>
+		<td>2056 bytes</td>
+		<td>Request retry causes multiple browser-instances error<br/>An incorrect bug number reference fixed in the comments.</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=260032">260032</a></td>
+		<td>1440 bytes</td>
+		<td>Expression controlled activities are inconsistent when persisted and reloaded<br/>Remove expression controlled activities persistence</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=260399">260399</a></td>
+		<td>13020 bytes</td>
+		<td>Fix for various expression-based activities related issues<br/>Fixes various expression-based activities related issues</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=260662">260662</a></td>
+		<td>14267 bytes</td>
+		<td>ColorDialog for RWT<br/>Updated ColorDialog.java</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=262397">262397</a></td>
+		<td>1170 bytes</td>
+		<td>Error Dialog Throws Exception<br/>Fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=270884">270884</a></td>
+		<td>2160 bytes</td>
+		<td>[Contributions] WorkbenchServiceRegistry fails with ArrayStoreException<br/>RAP adaptation of the 264845 patch</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=273184">273184</a></td>
+		<td>3077 bytes</td>
+		<td>Session Timeout when accessing trailing slash URL<br/>Proposed fix</td>
+				</tr>
+	<tr>
+		<td><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283221">283221</a></td>
+		<td>20697 bytes</td>
+		<td>[Tooling] provide session timeout option<br/>proposed patch (1/2)</td>
+				</tr>
+	</table>
+<h2>Repositories</h2>
+<p>The information contained in this log was generated by using commit information from the following repositories:</p>
+<div style='padding-left: 2em'>/gitroot/rap/org.eclipse.rap.git</div>
+<div style='padding-left: 2em'>/gitroot/rap/org.eclipse.rap.tools.git</div>
+<p>
+</div><!-- midcolumn -->
+</div><!-- maincontent -->
+
+</body>
