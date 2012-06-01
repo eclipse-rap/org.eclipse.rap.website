@@ -21,25 +21,31 @@
 
   <ul>
     <li>
-      <a href="1.5/news_M7.php">RAP 1.5 M7 milestone build</a>, published May 11, 2012.
+      <a href="1.5/?build=RC2">RAP 1.5 RC2 milestone build</a>, published June 1, 2012.
     </li>
     <li>
-      <a href="1.5/news_M6.php">RAP 1.5 M6 milestone build</a>, published March 23, 2012.
+      <a href="1.5/?build=RC1">RAP 1.5 RC1 milestone build</a>, published May 25, 2012.
     </li>
     <li>
-      <a href="1.5/news_M5.php">RAP 1.5 M5 milestone build</a>, published February 03, 2012.
+      <a href="1.5/?build=M7">RAP 1.5 M7 milestone build</a>, published May 11, 2012.
     </li>
     <li>
-      <a href="1.5/news_M4.php">RAP 1.5 M4 milestone build</a>, published December 16, 2011.
+      <a href="1.5/?build=M6">RAP 1.5 M6 milestone build</a>, published March 23, 2012.
     </li>
     <li>
-      <a href="1.5/news_M3.php">RAP 1.5 M3 milestone build</a>, published November 11, 2011.
+      <a href="1.5/?build=M5">RAP 1.5 M5 milestone build</a>, published February 03, 2012.
     </li>
     <li>
-      <a href="1.5/news_M2.php">RAP 1.5 M2 milestone build</a>, published October 30, 2011.
+      <a href="1.5/?build=M4">RAP 1.5 M4 milestone build</a>, published December 16, 2011.
     </li>
     <li>
-      <a href="1.5/news_M1.php">RAP 1.5 M1 milestone build</a>, published August 22, 2011.
+      <a href="1.5/?build=M3">RAP 1.5 M3 milestone build</a>, published November 11, 2011.
+    </li>
+    <li>
+      <a href="1.5/?build=M2">RAP 1.5 M2 milestone build</a>, published October 30, 2011.
+    </li>
+    <li>
+      <a href="1.5/?build=M1">RAP 1.5 M1 milestone build</a>, published August 22, 2011.
     </li>
   </ul>
 

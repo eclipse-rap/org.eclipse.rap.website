@@ -76,11 +76,9 @@
   </p>
   <ul>
 <? foreach( $builds->getPreviousBuilds( $build->getShortName() ) as $prevBuild ) { ?>
-<?   if( $prevBuild->getType() === "Milestone Build" ) { ?>
     <li>
       <a href="./?build=<?php echo $prevBuild->getShortName(); ?>">News for RAP <?php echo $prevBuild->getName(); ?></a>
     </li>
-<?   } ?>
 <? } ?>
   </ul>
 

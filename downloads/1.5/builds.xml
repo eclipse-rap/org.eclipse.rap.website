@@ -20,70 +20,72 @@
       status="completed"
       publishDate="2011-08-19"
       news="1.5/?build=M1"
-      toolingZip="rap-tooling-1.5.0-M1-20110816-0954.zip"
-      runtimeZip="rap-runtime-1.5.0-M1-20110816-0926.zip" />
+      runtimeZip="rap-runtime-1.5.0-M1-20110816-0926.zip"
+      toolingZip="rap-tooling-1.5.0-M1-20110816-0954.zip" />
 
   <build name="1.5 M2" type="M"
       shortname="M2"
       status="completed"
       publishDate="2011-09-30"
       news="1.5/?build=M2"
-      toolingZip="rap-tooling-1.5.0-M2-20110927-1701.zip"
-      runtimeZip="rap-runtime-1.5.0-M2-20110926-1702.zip" />
+      runtimeZip="rap-runtime-1.5.0-M2-20110926-1702.zip" 
+      toolingZip="rap-tooling-1.5.0-M2-20110927-1701.zip" />
 
   <build name="1.5 M3" type="M"
       shortname="M3"
       status="completed"
       publishDate="2011-11-11"
       news="1.5/?build=M3"
-      toolingZip="rap-tooling-1.5.0-M3-20111107-1628.zip"
-      runtimeZip="rap-runtime-1.5.0-M3-20111108-1014.zip" />
+      runtimeZip="rap-runtime-1.5.0-M3-20111108-1014.zip" 
+      toolingZip="rap-tooling-1.5.0-M3-20111107-1628.zip" />
 
   <build name="1.5 M4" type="M"
       shortname="M4"
       status="completed"
       publishDate="2011-12-16"
       news="1.5/?build=M4"
-      toolingZip="rap-tooling-1.5.0-M4-20111212-1416.zip"
-      runtimeZip="rap-runtime-1.5.0-M4-20111213-2043.zip" />
+      runtimeZip="rap-runtime-1.5.0-M4-20111213-2043.zip" 
+      toolingZip="rap-tooling-1.5.0-M4-20111212-1416.zip" />
 
   <build name="1.5 M5" type="M"
       shortname="M5"
       status="completed"
       publishDate="2012-02-03"
       news="1.5/?build=M5"
-      toolingZip="rap-tooling-1.5.0-M5-20120130-2339.zip"
-      runtimeZip="rap-runtime-1.5.0-M5-20120131-1110.zip" />
+      runtimeZip="rap-runtime-1.5.0-M5-20120131-1110.zip" 
+      toolingZip="rap-tooling-1.5.0-M5-20120130-2339.zip" />
 
   <build name="1.5 M6" type="M"
       shortname="M6"
       status="completed"
       publishDate="2012-03-23"
       news="1.5/?build=M6"
-      toolingZip="rap-tooling-1.5.0-M6-20120319-1638.zip"
-      runtimeZip="rap-runtime-1.5.0-M6-20120320-1638.zip" />
+      runtimeZip="rap-runtime-1.5.0-M6-20120320-1638.zip"
+      toolingZip="rap-tooling-1.5.0-M6-20120319-1638.zip" />
 
   <build name="1.5 M7" type="M"
       shortname="M7"
       status="completed"
       publishDate="2012-05-11"
       news="1.5/?build=M7"
-      toolingZip="rap-tooling-1.5.0-M7-20120508-1951.zip"
-      runtimeZip="rap-runtime-1.5.0-M7-20120508-2125.zip" />
+      runtimeZip="rap-runtime-1.5.0-M7-20120508-2125.zip" 
+      toolingZip="rap-tooling-1.5.0-M7-20120508-1951.zip" />
 
   <build name="1.5 RC1" type="RC"
       shortname="RC1"
       status="completed"
       publishDate="2012-05-25"
       news="1.5/?build=RC1"
-      toolingZip="rap-tooling-1.5.0-RC1-20120521-1620.zip"
-      runtimeZip="rap-runtime-1.5.0-RC1-20120521-1618.zip" />
+      runtimeZip="rap-runtime-1.5.0-RC1-20120521-1618.zip"
+      toolingZip="rap-tooling-1.5.0-RC1-20120521-1620.zip" />
 
   <build name="1.5 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2012-06-01"
-      news="1.5/?build=RC" />
+      news="1.5/?build=RC2"
+      runtimeZip="rap-runtime-1.5.0-RC2-20120529-1205.zip"
+      toolingZip="rap-tooling-1.5.0-RC2-20120529-1205.zip" />
 
   <build name="1.5 RC3" type="RC"
       shortname="RC3"
