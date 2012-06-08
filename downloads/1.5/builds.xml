@@ -89,9 +89,11 @@
 
   <build name="1.5 RC3" type="RC"
       shortname="RC3"
-      status="planned"
+      status="completed"
       publishDate="2012-06-08"
-      news="1.5/?build=RC" />
+      news="1.5/?build=RC3"
+      runtimeZip="rap-runtime-1.5.0-RC3-20120605-1606.zip"
+      toolingZip="rap-tooling-1.5.0-RC3-20120605-1546.zip" />
 
   <build name="1.5" type="R"
       shortname="R"
