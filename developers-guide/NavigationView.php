@@ -2,6 +2,8 @@
 
 class NavigationView {
 
+  private static $introductionCount = 0;
+
   private function __construct() {}
 
   public static function create( $filePath ) {
@@ -16,7 +18,7 @@ class NavigationView {
     $result = '';
     foreach( $xmlIterator as $element ) {
       $label = $element[ 'label' ];
-      if( $label != 'Legal' && $label != 'Reference' && $label != 'Introduction' ) {
+      if( !self::navEntryIsExcluded( $label ) ) {
         $hasChildren = $element -> count() > 0 ? true : false;
         if( $hasChildren ) {
           $result .= '<li class="category-group"><span><span class="arrow"></span>' . $label . '</span><ul>';
@@ -31,6 +33,25 @@ class NavigationView {
           $result .= '<li><a ' . $active . ' href="devguide.php?topic=' . $url .'">' . $label . '</a></li>';
         }
       }
+    }
+    return $result;
+  }
+
+  private static function navEntryIsExcluded( $navEntry ) {
+    $result = false;
+    switch( $navEntry ) {
+      case 'Legal':
+        $result = true;
+        break;
+      case 'Reference':
+        $result = true;
+        break;
+      case 'Introduction':
+        if( self::$introductionCount < 1 ) {
+          self::$introductionCount++;
+          $result = true;
+          break;
+        }
     }
     return $result;
   }
