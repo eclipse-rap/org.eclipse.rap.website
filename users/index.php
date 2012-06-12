@@ -61,8 +61,8 @@
         <a href = "http://www.eclipse.org/scout/">Eclipse Scout Project</a>
       </h4>
       <p>
-        Eclipse Scout a mature and easy to learn framework that supports building applications for 
-        both the desktop (Swing or SWT) and the web (RAP Widget Tookit). 
+        Eclipse Scout is a mature and easy to learn framework that supports building applications for 
+        both desktop (Swing or SWT) and web (RAP Widget Tookit). 
         Scout has been developed at BSI since 2001. 
         In 2011, BSI has published Scout under the Eclipse Public License. 
         RAP applications can be created since Scout 3.8 (Juno). 
@@ -100,10 +100,10 @@
       <h4 class="tagline"><a href = "http://www.compeople.de/" >compeople AG</a> / <a href = "http://www.eclipse.org/riena/">Eclipse Riena Project</a></h4>
       <p>
         The Riena platform provides a foundation for building multi-tier 
-        enterprise client/server applications. It features a business process oriented user 
-        interface visualization and navigation metaphor, which can be used as alternative 
-        to the default workbench layout. Since it is based on RCP, an can also use RAP as a 
-        target platform. The Riena and RAP Projects have been cooperating closely to ensure 
+        enterprise client/server applications. It features a business process oriented user
+        interface visualization and navigation metaphor, which can be used as an  alternative
+        to the default workbench layout. Since it is based on RCP, an can also use RAP as a
+        target platform. The Riena and RAP Projects have been cooperating closely to ensure
         both platforms are working together smoothly.
       </p>
       <h3>References:</h3>
