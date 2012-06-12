@@ -21,13 +21,25 @@ html {
   height: 140px;
 }
 
-#rap-logo {
+#rap-logo, #rap-logo-deco {
   position: absolute;
   left: 29px;
   top: 33px;
   width: 196px;
   height: 78px;
   background: url( "/rap/images/RAP-Logo-white.png" ) no-repeat;
+}
+
+#rap-logo-deco {
+  background-image: none;
+  height: 100%;
+  top: 0px;
+}
+
+#rap-logo-deco.active {
+  background-image: url( /rap/images/nav-selection.png );
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 /* TOP LEVEL NAVIGATION */
@@ -114,7 +126,13 @@ ul#nav {
   float: right;
 }
 
-ul#nav li > a {
+ul#nav-home {
+  padding-left: 27px;
+  padding-top: 2px;
+  float: left;
+}
+
+ul#nav li > a, ul#nav-home li > a {
   color: #BDBDBD;
   font-size: 14px;
   font-weight: normal;
@@ -122,7 +140,7 @@ ul#nav li > a {
   padding: 9px 20px 10px 10px;
 }
 
-ul#nav li > a.active {
+ul#nav li > a.active, ul#nav-home li > a.active {
   color: white;
   text-shadow: 0 0 5px white;
 }
@@ -303,6 +321,11 @@ h2 {
   margin-bottom: 8px;
 }
 
+h2.withTagline {
+  margin-bottom: 0px;
+}
+
+
 h3 {
   font-size: 16px;
   margin-top: 20px;
@@ -312,9 +335,18 @@ h3 {
 h4 {
   font-size: 14px;
   font-style: italic;
-  margin-top: 5px;
+  margin-top: 1px;
   margin-bottom: 2px;
 }
+
+h4.tagline {
+  font-style: normal;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: normal;
+  font-size: 13px;
+}
+
 
 html {
   background: transparent;
@@ -393,6 +425,12 @@ img#eclipse-icon {
 }
 
 div#heading-eclipse-icon {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+}
+
+div#slideshowWindow {
   position: absolute;
   right: 20px;
   top: 40px;

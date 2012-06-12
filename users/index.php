@@ -20,24 +20,140 @@
     Just drop us a line at the
     <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev</a> mailing list.
   </p>
-
+<!---
   <div class="box">
     <div class="images">
-      <a href="http://www.cas-pia.de/en/try.html">
-        <img src="images/pia.png"/>
+      <a href="link">
+        <img src="images/something.png"/>
       </a>
     </div>
     <div>
-      <h2>CAS PIA</h2>
+      <h2 class="withTagline">Software</h2>
+      <h4 class="tagline">Developer</h4>
       <p>
-        A powerful customer relationship management system based on RAP with a great look and feel.
-        Provides contact management, calendar, document management, and many more features.
+        Description
       </p>
       <h3>References:</h3>
       <ul>
         <li>
-          <a href="http://www.cas-pia.de/en/try.html">CAS PIA guest account</a>
-          (click <em>Guest access</em> to launch the application)
+          <a href="url">link</a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+--->
+
+  <div class="box">
+    <div class="images">
+      <a href="images/scout1-full.png">
+        <img src="images/scout1.png"/>
+      </a>
+      <br/>
+      <a href="images/scout2-full.png">
+        <img src="images/scout2.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">Eclipse Scout</h2>
+      <h4 class="tagline">
+        <a href = "http://www.bsiag.com/en/home.html">BSI AG</a> /
+        <a href = "http://www.eclipse.org/scout/">Eclipse Scout Project</a>
+      </h4>
+      <p>
+        Eclipse Scout a mature and easy to learn framework that supports building applications for 
+        both the desktop (Swing or SWT) and the web (RAP Widget Tookit). 
+        Scout has been developed at BSI since 2001. 
+        In 2011, BSI has published Scout under the Eclipse Public License. 
+        RAP applications can be created since Scout 3.8 (Juno). 
+      </p>
+      <h3>References:</h3>
+      <ul>
+        <li>
+          <a href="http://www.eclipse.org/scout/">Project Homepage</a>
+        </li>
+        <li>
+          <a href="http://wiki.eclipse.org/Scout">Scout Wiki</a>
+        </li>
+        <li>
+            <a href="http://wiki.eclipse.org/Scout/NewAndNoteworthy/3.8#Scout_Web_UI_support_based_on_RAP">Scout 3.8 - New And Noteworthy</a>
+        </li>
+        <li>
+            <a href="http://wiki.eclipse.org/images/2/2b/20120329_Scout_and_RAP_EclipseCon.pdf">Presentation Slides on Scout and RAP</a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="box">
+    <div class="images">
+      <a href="images/riena1-full.png">
+        <img src="images/riena1.png"/>
+      </a><br/>
+      <a href="images/riena2-full.png">
+        <img src="images/riena2.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">Eclipse Riena</h2>
+      <h4 class="tagline"><a href = "http://www.compeople.de/" >compeople AG</a> / <a href = "http://www.eclipse.org/riena/">Eclipse Riena Project</a></h4>
+      <p>
+        The Riena platform provides a foundation for building multi-tier 
+        enterprise client/server applications. It features a business process oriented user 
+        interface visualization and navigation metaphor, which can be used as alternative 
+        to the default workbench layout. Since it is based on RCP, an can also use RAP as a 
+        target platform. The Riena and RAP Projects have been cooperating closely to ensure 
+        both platforms are working together smoothly.
+      </p>
+      <h3>References:</h3>
+      <ul>
+        <li>
+          <a href="http://www.eclipse.org/riena/">Project Homepage</a>
+        </li>
+        <li>
+          <a href="http://wiki.eclipse.org/Riena">Riena Wiki</a>
+        </li>
+        <li>
+          <a href="https://www.compeople.eu/blog/?p=575">Blogpost: <q>Riena 3.0 == Riena on RCP & RAP"</q></a>
+        </li>
+        <li>
+          <a href="http://www.compeople.de/files/riena_on_rap.pdf">Presentation Slides <q>Riena on RAP</q></a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="box">
+    <div class="images">
+      <a href="images/edicat1-full.png">
+        <img src="images/edicat1.png"/>
+      </a>
+      <br/>
+      <a href="images/edicat2-full.png">
+        <img src="images/edicat2.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">EDIcat - EDIFACT Communications and Analytics Toolkit</h2>
+      <h4 class="tagline"><a href = "http://www.hsag.info/">Heidelberger Services AG</a></h4>
+      <p>
+        Germany's gas and electricity markets use EDIFACT messages for B2B data interchange.
+        New regulatory policies put an ever-growing burden on small and medium-sized utilities.
+        For example, new metering processes are to be handled starting October 2011.
+        This means additional complexity in data interchange, which currently installed billing
+        back-ends often cannot handle yet.
+        To add insult to injury, upgrading projects often cannot be concluded in time and budget.
+        So, EDIcat WiM supports implementing these new processes in a light-weight manner.
+        Being a bridge technology, EDIcat WiM provides simple workflows, no-frills integration
+        with SAP standard transactions and, last but not least, EDIFACT viewing functionality
+        – all visually appealing integrated by RAP.
+      </p>
+      <h3>References:</h3>
+      <ul>
+        <li>
+          <a href="http://www.hsag.info/leistungen/loesungen/edicatwim">EDIcat WiM product page (German)</a>
         </li>
       </ul>
     </div>
@@ -55,7 +171,8 @@
       </a>
     </div>
     <div>
-      <h2>Information Dashboard Framework</h2>
+      <h2 class="withTagline">Information Dashboard Framework</h2>
+      <h4 class="tagline"><a href = "http://tcat.tamu.edu/">Texas Center for Applied Technology</a></h4>
       <p>
         A framework for Emergency Simulation,
         developed by the Texas Center for Applied Technology (TCAT).
@@ -92,40 +209,30 @@
     <div style="clear: both;"></div>
   </div>
 
-
   <div class="box">
     <div class="images">
-      <a href="images/edicat1-full.png">
-        <img src="images/edicat1.png"/>
-      </a>
-      <br/>
-      <a href="images/edicat2-full.png">
-        <img src="images/edicat2.png"/>
+      <a href="http://www.cas-pia.de/en/try.html">
+        <img src="images/pia.png"/>
       </a>
     </div>
     <div>
-      <h2>EDIFACT Communications and Analytics Toolkit</h2>
+      <h2 class="withTagline">CAS PIA</h2>
+      <h4 class="tagline"><a href = "http://www.cas.de/">CAS Software AG</a></h4>
       <p>
-        Germany's gas and electricity markets use EDIFACT messages for B2B data interchange.
-        New regulatory policies put an ever-growing burden on small and medium-sized utilities.
-        For example, new metering processes are to be handled starting October 2011.
-        This means additional complexity in data interchange, which currently installed billing
-        back-ends often cannot handle yet.
-        To add insult to injury, upgrading projects often cannot be concluded in time and budget.
-        So, EDIcat WiM supports implementing these new processes in a light-weight manner.
-        Being a bridge technology, EDIcat WiM provides simple workflows, no-frills integration
-        with SAP standard transactions and, last but not least, EDIFACT viewing functionality
-        – all visually appealing integrated by RAP.
+        A powerful customer relationship management system based on RAP with a great look and feel.
+        Provides contact management, calendar, document management, and many more features.
       </p>
       <h3>References:</h3>
       <ul>
         <li>
-          <a href="http://www.hsag.info/leistungen/loesungen/edicatwim">EDIcat WiM product page (German)</a>
+          <a href="http://www.cas-pia.de/en/try.html">CAS PIA guest account</a>
+          (click <em>Guest access</em> to launch the application)
         </li>
       </ul>
     </div>
     <div style="clear: both;"></div>
   </div>
+
 
   <div class="box">
     <div class="images">
@@ -134,7 +241,8 @@
       </a>
     </div>
     <div>
-      <h2>Vocabulary management SemanticXpress</h2>
+      <h2 class="withTagline">Vocabulary management SemanticXpress</h2>
+      <h4 class="tagline"><a href="http://www.ontoprise.de/en/">ontoprise GmbH</a></h4>
       <p>
         <a href="http://www.ontoprise.de/en/solutions/semanticxpress/">SemanticXpress</a>
         by <a href="http://www.ontoprise.com">Ontoprise</a>
@@ -157,34 +265,40 @@
     <div style="clear: both;"></div>
   </div>
 
-  <!--div class="box">
+  <div class="box">
     <div class="images">
-      <a href="http://www.enelytics.com/sos-technology.htm">
-        <img src="images/blank.png"/>
+      <a href="images/eis-full.png">
+        <img src="images/eis.png"/>
       </a>
     </div>
     <div>
-      <h2>Enelytics - SOS System</h2>
+      <h2 class="withTagline">Energy Information System</h2>
+      <h4 class="tagline"><a href="http://www.enelytics.com/">Enelytics LLC</a></h4>
       <p>
-        Enelytics LLC uses RAP as the basis for their <em>Software as Services (SOS)</em>
-        Plug-in Architecture.
-        ...
-      </p>
-      <p>
-        <a href="http://www.enelytics.com/sos-technology.htm">Enelytics SOS Technology</a>
-      </p>
+       Enelytics provides web application services for energy invoice processing and 
+       energy information management. The Energy Information System (EIS) is formed around a core 
+       feature set focused on processing, verifying, and analyzing energy invoices. 
+       Beyond this, EIS can be extended with many plug-in modules to meet different needs. 
+       Enelytics has adopted Eclipse runtime technologies as the basis for EIS, 
+       the Rich Ajax Platform in particular.
+       </p>
+      <h3>References:</h3>
+      <ul>
+        <li>
+          <a href="http://enelytics.net/sos-technology.htm">EIS Technology & Extensibility</a>
+        </li>
+      </ul>
     </div>
     <div style="clear: both;"></div>
-  </div-->
+  </div>
 
   <div class="box">
     <div class="images">
-      <!--a href="http://migrate.numiton.com"-->
-        <img src="images/numiton.png"/>
-      <!--/a-->
+      <img src="images/numiton.png"/>
     </div>
     <div>
-      <h2>Numiton Migration Tools</h2>
+      <h2 class="withTagline">Numiton Migration Tools</h2>
+      <h4 class="tagline"><a href="http://www.numiton.com/">Numiton Limited</a></h4> 
       <p>
         This online application showcases the features of the
         <a href="http://www.numiton.com/products/ntile-ptoj/ptoj-overview.html">nTile migration system</a>
@@ -201,6 +315,32 @@
         <li>
           <a href="http://www.numiton.com/products/ntile-ptoj/ptoj-overview.html">nTile migration system</a>
           <!--a href="http://migrate.numiton.com/">Browse migration snippets and create your own</a-->
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="box">
+    <div class="images">
+      <a href = "images/gyrex-full.png">
+        <img src="images/gyrex.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">Gyrex</h2>
+      <h4 class="tagline"><a href="http://www.eclipse.org/gyrex/">Eclipse Gyrex Project</a></h4>
+      <p>
+        Gyrex is an Eclipse Open Source project that provides a platform on top of the 
+        Equinox OSGi framework, enabling seamless and pain-free operation of Equinox server 
+        clusters. It also provides frameworks and concepts for developing, deploying and scaling 
+        applications on top of Gyrex based clouds, which 
+        can be administrated using an extensible, RAP based web interface.
+      </p>
+      <h3>References:</h3>
+      <ul>
+        <li>
+          <a href="http://www.eclipse.org/gyrex/">Project Homegepage</a>
         </li>
       </ul>
     </div>

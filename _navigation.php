@@ -77,10 +77,18 @@ $navigationStructure = array(
 );
 
 function createHeaderAndNavigation( $navPosition ) {
-  $result = '<div id="header"><a href="/rap/"><div id="rap-logo"></div></a>'
+  $result = '<div id="header">'
+          . createLogo( $navPosition[ 0 ], $navPosition[ 1 ] )
           . createMainNavigation( $navPosition[ 0 ], $navPosition[ 1 ] )
           . '</div>'
           . createHeaderBar( $navPosition[ 0 ], $navPosition[ 1 ] );
+  return $result;
+}
+
+function createLogo( $topLevelId, $secondLevelId ) {
+  $active = $topLevelId === 'home'? 'class="active"' : '';
+  $result = '<a href="/rap/"><div id="rap-logo"></div></a>';
+  $result .= "<div $active id=\"rap-logo-deco\"></div>";
   return $result;
 }
 
@@ -106,12 +114,14 @@ function createHeaderBar( $topLevelId, $secondLevelId ) {
 }
 
 function createHeaderBarNavigation( $topLevelId, $secondLevelId ) {
-  $result = '<ul id="nav">';
   if( $topLevelId === 'home' ) {
+    $result = '<ul id="nav">';
     $active = $secondLevelId === "incubator" ? 'class="active"' : '';
     $result .= '<li><a href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a></li>';
     $result .= "<li><a $active href=\"/rap/incubator\">Incubator</a></li>";
   } else {
+    $result = "<ul id=\"nav-home\"><li><a href=\"\\rap\">< Home</a></li></ul>";
+    $result .= '<ul id="nav">';
     $secondLevelEntries = $GLOBALS[ 'navigationStructure' ][ $topLevelId ][ 'sub-entries' ];
     foreach( $secondLevelEntries as $navId => $navData ) {
       $active = $navId === $secondLevelId ? 'class="active"' : '';
