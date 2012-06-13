@@ -120,7 +120,7 @@ function createHeaderBarNavigation( $topLevelId, $secondLevelId ) {
     $result .= '<li><a href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a></li>';
     $result .= "<li><a $active href=\"/rap/incubator\">Incubator</a></li>";
   } else {
-    $result = "<ul id=\"nav-home\"><li><a href=\"\\rap\">< Home</a></li></ul>";
+    $result = "<ul id=\"nav-home\"><li><a href=\"/rap/\">&lt; Home</a></li></ul>";
     $result .= '<ul id="nav">';
     $secondLevelEntries = $GLOBALS[ 'navigationStructure' ][ $topLevelId ][ 'sub-entries' ];
     foreach( $secondLevelEntries as $navId => $navData ) {
