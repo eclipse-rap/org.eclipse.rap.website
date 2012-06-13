@@ -87,8 +87,8 @@ function createHeaderAndNavigation( $navPosition ) {
 
 function createLogo( $topLevelId, $secondLevelId ) {
   $active = $topLevelId === 'home'? 'class="active"' : '';
-  $result = '<a href="/rap/"><div id="rap-logo"></div></a>';
-  $result .= "<div $active id=\"rap-logo-deco\"></div>";
+  $result = "<div $active id=\"rap-logo-deco\"></div>";
+  $result .= '<a href="/rap/"><div id="rap-logo"></div></a>';
   return $result;
 }
 
