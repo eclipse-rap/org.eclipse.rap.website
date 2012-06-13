@@ -54,7 +54,7 @@
       </a>-->
     </div>
     <div>
-      <h2 class="withTagline">Eclipse Scout</h2>
+      <h2 id="scout" class="withTagline">Eclipse Scout</h2>
       <h4 class="tagline">
         <a href = "http://www.bsiag.com/en/home.html">BSI AG</a> /
         <a href = "http://www.eclipse.org/scout/">Eclipse Scout Project</a>
@@ -95,7 +95,7 @@
       </a>--->
     </div>
     <div>
-      <h2 class="withTagline">Eclipse Riena</h2>
+      <h2 id="riena" class="withTagline">Eclipse Riena</h2>
       <h4 class="tagline"><a href = "http://www.compeople.de/" >compeople AG</a> / <a href = "http://www.eclipse.org/riena/">Eclipse Riena Project</a></h4>
       <p>
         The Riena platform provides a foundation for building multi-tier 
@@ -131,7 +131,7 @@
       </a>
     </div>
     <div>
-      <h2 class="withTagline">Gyrex</h2>
+      <h2 id="gyrex" class="withTagline">Eclipse Gyrex</h2>
       <h4 class="tagline"><a href="http://www.eclipse.org/gyrex/">Eclipse Gyrex Project</a></h4>
       <p>
         Gyrex is an Eclipse Open Source project that provides a platform on top of the 
