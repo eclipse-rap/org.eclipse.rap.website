@@ -321,10 +321,17 @@ h2 {
   margin-bottom: 8px;
 }
 
-h2.withTagline {
-  margin-bottom: 0px;
+h2.section {
+  font-size: 24px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 5px;
 }
 
+h2.withTagline {
+  font-size: 21px;
+  margin-bottom: 0px;
+}
 
 h3 {
   font-size: 16px;
@@ -347,6 +354,10 @@ h4.tagline {
   font-size: 13px;
 }
 
+.refs {
+  font-size: 14px;
+  font-weight: bold;
+}
 
 html {
   background: transparent;
