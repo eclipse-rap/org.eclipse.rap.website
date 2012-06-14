@@ -143,7 +143,7 @@
       <p class="refs">References:</p>
       <ul>
         <li>
-          <a href="http://www.eclipse.org/gyrex/">Project Homegepage</a>
+          <a href="http://www.eclipse.org/gyrex/">Project Homepage</a>
         </li>
       </ul>
     </div>
@@ -167,11 +167,10 @@
       <h4 class="tagline"><a href = "http://www.hsag.info/">Heidelberger Services AG</a></h4>
       <p>
         Germany's gas and electricity markets use EDIFACT messages for B2B data interchange.
-        New regulatory policies put an ever-growing burden on small and medium-sized utilities.
-        EDIcat WiM is supports implementing these new processes in a light-weight manner.
-        Being a bridge technology, EDIcat WiM provides simple workflows, no-frills integration
+        EDIcat WiM supports implementing new regulatory policies and processes in a light-weight manner.
+        It provides simple workflows, no-frills integration
         with SAP standard transactions and, last but not least, EDIFACT viewing functionality
-        – all visually appealing integrated by RAP.
+        – all visually appealing integrated with RAP.
       </p>
       <p class="refs">References:</p>
       <ul>
