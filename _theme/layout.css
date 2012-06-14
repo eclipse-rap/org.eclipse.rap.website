@@ -359,6 +359,10 @@ h4.tagline {
   font-weight: bold;
 }
 
+.popup {
+  display: none;
+}
+
 html {
   background: transparent;
 }
