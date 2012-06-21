@@ -27,8 +27,8 @@
 </div>
 
 <div id="features">
-  <div class="feature">
-    <div id="ui-kit" class="icon"></div>
+  <div class="feature" id="ui-kit">
+    <div class="icon"></div>
     <div class="feature-description">
       <h2>Widget Toolkit</h2>
       <p>
@@ -39,13 +39,13 @@
       </p><p>
         Using the <a href="http://wiki.eclipse.org/JFace">JFace</a> APIs,
         it makes accessing complex data models incredibly simple.
-        <!--<br/><a href="">learn more</a>-->
+        <br/><a class="popup-activate" href="">learn more...</a>
       </p>
     </div>
   </div>
 
-  <div class="feature">
-    <div id="cross-browser" class="icon"></div>
+  <div class="feature" id="cross-browser">
+    <div class="icon"></div>
     <div class="feature-description">
       <h2>Cross Platform</h2>
       <p>
@@ -53,13 +53,13 @@
         Many advanced features like gradients are rendered even in browsers without CSS3 support.
       </p><p>
         It's built on an open protocol, so other clients can be connected.
-        <!--<br/><a href="">learn more</a>-->
+        <br/><a class="popup-activate" href="">learn more...</a>
       </p>
     </div>
   </div>
 
-  <div class="feature">
-    <div id="integration" class="icon"></div>
+  <div class="feature" id="integration">
+    <div class="icon"></div>
     <div class="feature-description">
       <h2>Integration</h2>
       <p>
@@ -71,15 +71,15 @@
         -->
         For high-availability applications, load balancing and transparent session failover is
         supported.
-        <!--<br/><a href="">learn more</a>-->
+        <br/><a class="popup-activate" href="">learn more...</a>
       </p>
     </div>
   </div>
 
   <div class="antifloat" ></div>
 
-  <div class="feature">
-    <div id="tooling" class="icon"></div>
+  <div class="feature" id="tooling">
+    <div class="icon"></div>
     <div class="feature-description">
       <h2>Tool Support</h2>
       <p>
@@ -88,13 +88,13 @@
       </p><p>
         This includes a first-class UI designer and an acceptance testing tool suite available
         together with RAP 1.5.
-        <!--<br/><a href="">learn more</a>-->
+        <br/><a class="popup-activate" href="">learn more...</a>
       </p>
     </div>
   </div>
 
-  <div class="feature">
-    <div id="clustering" class="icon"></div>
+  <div class="feature" id="clustering">
+    <div class="icon"></div>
     <div class="feature-description">
       <h2>Single Sourcing</h2>
       <p>
@@ -102,13 +102,13 @@
         Even code that has been written for Eclipse RCP can run in a web browser.
       </p><p>
         Existing Eclipse plugins such as EMF, BIRT, or JGit can easily be included in RAP apps.
-        <!--<br/><a href="">learn more</a>-->
+        <br/><a class="popup-activate" href="">learn more...</a>
       </p>
     </div>
   </div>
 
-  <div class="feature">
-    <div id="open-source" class="icon"></div>
+  <div class="feature" id="open-source">
+    <div class="icon"></div>
     <div class="feature-description">
       <h2>Open Source</h2>
       <p>
@@ -117,14 +117,14 @@
         and benefits from the Eclipse Foundation's high standards of IP management.
       </p><p>
         RAP is part of the annual Eclipse release and always delivers on time.
-        <!--<br/><a href="">learn more</a>-->
+        <br/><a class="popup-activate" href="">learn more...</a>
       </p>
     </div>
   </div>
   <div class="antifloat"></div>
 </div>
 
-<div class="popup">
+<div class="popup-content" data-for="ui-kit">
   <h2>Widget Toolkit</h2>
   <p>
     With RAP, you don't create UIs with HTML and browser technologies, but with the Java API of SWT,
@@ -157,19 +157,19 @@
         RWT and SWT</a>
       </li>
       <li>
-       Need more widgets? A list of known Add-Ons targeted specifically at RAP can be found in the 
+       Need more widgets? A list of known Add-Ons targeted specifically at RAP can be found in the
        <a href="http://wiki.eclipse.org/RAP/Add-Ons">RAP Wiki</a> <!-- Nebula? --->
       </li>
       <li>
        Widget behavior can be enhanced using client-side event handlers:
        <a href="http://wiki.eclipse.org/RAP/Incubator/ClientScripting">RAP ClientScripting</a>
-      </li> 
+      </li>
     </ul>
     <p>
   </p>
 </div>
 
-<div class="popup">
+<div class="popup-content" data-for="cross-browser">
   <h2>Cross Platform</h2>
   <p>
     The default RAP Web client supports these browsers:
@@ -197,7 +197,7 @@
   </p>
 </div>
 
-<div class="popup">
+<div class="popup-content" data-for="integration">
   <h2>Integration</h2>
   <p>
     Making it possible to integrate RAP with other Java technologies is one of our main objectives.
@@ -230,7 +230,7 @@
   </ul>
 </div>
 
-<div class="popup">
+<div class="popup-content" data-for="tooling">
   <h2>Tool Support</h2>
   <p>
     Many of the Eclipse tools designed for Java or SWT development can be used with RAP.
@@ -263,7 +263,7 @@
   </ul>
 </div>
 
-<div class="popup">
+<div class="popup-content" data-for="clustering">
   <h2>Single Sourcing</h2>
   <p>
     RAP allows you to address different platforms with a shared code base.
@@ -300,18 +300,18 @@
           to create charts in RAP.
         </li>
         <li>
-          <a href="/rap/users/#riena">Eclipse Riena</a> 
+          <a href="/rap/users/#riena">Eclipse Riena</a>
           is an application framework which can be used on top of RAP.
         </li>
         <li>
-          <a href="/rap/users/#scout">Eclipse Scout</a> 
+          <a href="/rap/users/#scout">Eclipse Scout</a>
           can generate RCP and RAP applications
         </li>
       </ul>
    </ul>
 </div>
 
-<div class="popup">
+<div class="popup-content" data-for="open-source">
   <h2>Open Source</h2>
   <p>
     All code can be freely used in open source projects and in
@@ -326,7 +326,7 @@
     there is an active community maintaining a
     <a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=34">Newsgroup</a>,
     a <a href="http://wiki.eclipse.org/RAP">Wiki</a> and the <a href="/rap/incubator/">Incubator project</a>.
-    Bugs can be reported in the <a href="/rap/bugs/">RAP Bugzilla</a> and will be  processed 
+    Bugs can be reported in the <a href="/rap/bugs/">RAP Bugzilla</a> and will be  processed
     transparently.
     Professional services are also <a href ="/rap/support/professional-services/">available</a>.
   </p>

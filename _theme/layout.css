@@ -214,7 +214,7 @@ ul p {
   background: white;
 }
 
-#novaContent li {
+li {
   list-style-image: url( "/rap/images/list-bullet.png" );
   list-style-position: outside;
   margin-left: 10px;
@@ -359,8 +359,45 @@ h4.tagline {
   font-weight: bold;
 }
 
-.popup {
+#popup {
   display: none;
+  width: 650px;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  margin-left: -325px;
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 0 8px #333;
+  background: white;
+  opacity: 0.93;
+  z-index: 1000000
+}
+
+#popup-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.popup-content {
+  display: none;
+}
+
+.overlay {
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity = 0);
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #666;
+  background-image: -webkit-radial-gradient(center 300px, circle, #E5E5E5, #111);
+  background-image: -moz-radial-gradient(center 300px, circle, #E5E5E5, #111);
+  background-image: radial-gradient(center 300px, circle, #E5E5E5, #111);
 }
 
 html {
@@ -498,11 +535,16 @@ div#features > div.feature p {
   margin-bottom: 5px;
 }
 
-div#features > div.feature h2 {
+div#features > div.feature h2,
+div#popup h2 {
   color: #34332F;
   font-size: 28px;
   font-weight: normal;
   padding: 0 0 20px 0;
+}
+
+div#popup h2 {
+  margin-top: 0;
 }
 
 div#features > div.feature > div.icon {
@@ -515,27 +557,27 @@ div#features > div.feature > div.icon {
   background-image: url( /rap/images/rap-features/features-sprite.png );
 }
 
-div#features > div.feature > div#ui-kit {
+div#features > div.feature#ui-kit > div.icon {
   background-position: 0 0;
 }
 
-div#features > div.feature > div#tooling {
+div#features > div.feature#tooling > div.icon {
   background-position: -52px 0;
 }
 
-div#features > div.feature > div#integration {
+div#features > div.feature#integration > div.icon {
   background-position: -104px 0;
 }
 
-div#features > div.feature > div#clustering {
+div#features > div.feature#clustering > div.icon {
   background-position: -156px 0;
 }
 
-div#features > div.feature > div#cross-browser {
+div#features > div.feature#cross-browser > div.icon {
   background-position: -208px 0;
 }
 
-div#features > div.feature > div#open-source {
+div#features > div.feature#open-source > div.icon {
   background-position: -260px 0;
 }
 
