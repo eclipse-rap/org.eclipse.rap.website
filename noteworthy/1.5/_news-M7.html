@@ -1,0 +1,126 @@
+<div>
+
+  <h3>Arrow Buttons</h3>
+
+  <p>
+    Finally, we support the <code>SWT.ARROW</code> style flag for <code>Button</code>.
+    This style is used together with one of <code>SWT.TOP</code>, <code>SWT.BOTTOM</code>,
+    <code>SWT.LEFT</code>, or <code>SWT.RIGHT</code> to create buttons with an arrow symbol.
+  </p>
+  <p>
+    <img class="framed" title="Arrow Buttons in RAP" src="images/arrow-buttons.png" />
+  </p>
+  <p>
+  Of course, the style of arrow buttons can be configured in a theme:
+  </p>
+  <pre><code>Button[ARROW] {
+  border: 1px solid #bdbdbd;
+  padding: 10px;
+}
+
+Button-ArrowIcon[UP] {
+  background-image: url( theme/images/arrow-up.png );
+}
+...</code></pre>
+
+  <h3>Non-blocking Script Evaluation for Browser</h3>
+
+  <p>
+    The <code>Browser</code> widget provides two methods to execute JavaScript,
+    <code>execute()</code> and <code>evaluate()</code>.
+    Both methods are blocking and won't work with the new <code>JEE_COMPATIBILITY</code> mode.
+  </p>
+  <p>
+    Therefore, a new utility class <code>BrowserUtil</code> has been introduced to evaluate
+    JavaScript in a Browser widget in a non-blocking way.
+    Instead of waiting for the script to be executed, you provide a
+    <code>BrowserCallback</code> implementation that will be notified when the evaluation has
+    completed:
+  </p>
+  <pre><code>Browser browser = new Browser( parent, SWT.NONE );
+...
+BrowserUtil.evaluate( browser, script, new BrowserCallback() {
+  public void evaluationSucceeded( Object result ) {
+  }
+  public void evaluationFailed( Exception exception ) {
+  }
+} );</code></pre>
+
+  <h3>Markup Support for List</h3>
+
+  <p>
+    The support for simple HTML markup has been extended to the List widget.
+    It can be activated in the same way like in Table and Label, using the constant
+    <code>RWT.MARKUP_ENABLED</code>.
+    Custom item height is supported too, using <code>RWT.CUSTOM_ITEM_HEIGHT</code>.
+  </p>
+  <p>
+    <img class="framed" title="List widget with HTML markup" src="images/list-markup.png" />
+  </p>
+
+  <h3>New Animations</h3>
+
+  <p>
+    The theming for <code>Shell</code> and <code>Composite</code> now supports these additional
+    animations:
+  </p>
+  <p>
+    <code>flyInTop</code>, <code>flyInRight</code>, <code>flyInBottom</code>, <code>flyInLeft</code>,<br/>
+    <code>flyOutTop</code>, <code>flyOutRight</code>, <code>flyOutBottom</code>, <code>flyOutLeft</code>
+  </p>
+  <p>
+    In addition, <code>Composite</code> now also supports
+    <code>fadeIn</code>, <code>fadeOut</code>, <code>slideIn</code>, and <code>slideOut</code>.
+  </p>
+  <p>
+    The animations are shown when the widget either appears or disappears, respectively.
+    Since the widget's children are animated together with its parent, it's now possible to
+    animate any widget by placing it in a Composite.
+    It should be noted that the animations may not run smoothly in older browsers, or when the
+    Shell/Composite is very bulky.
+    Using fadeIn/Our or slideIn/Out in IE7 or 8 can cause minor rendering glitches during the
+    animation, depending on the contained widgets and their theming.
+  </p>
+
+  <h3>Changes to Application API</h3>
+
+  <p>
+    In 1.5 M3, we introduced a new API to define and start RAP applications programmatically.
+    We've noticed that the interface names involved in this new API lead to confusion,
+    therefore we decided to rename a couple of interfaces to make the API easier to understand
+    and to use.
+    <a href="http://eclipsesource.com/blogs/2012/05/09/the-new-application-api-in-rap/">This
+    post</a> explains the new API in more detail.
+  <p>
+  </p>
+    To define an application, you now have to implement the interface
+    <code>ApplicationConfiguration</code>:
+  </p>
+  <pre><code>public class SimpleConfiguration implements ApplicationConfiguration {
+
+  public void configure( Application application ) {
+    application.addEntryPoint( "/simple", SimpleEntryPoint.class, null );
+    application.addEntryPoint( "/other", AnotherEntryPoint.class, null );
+  }
+}
+</code></pre>
+  <p>
+    When registered as an OSGi service, an application instance will be started from this
+    configuration by the <code>org.eclipse.rap.rwt.osgi</code> bundle.
+  </p>
+  <p>
+    Also, the <code>param-name</code> for registering an ApplicationConfiguration in a
+    <code>web.xml</code> has changed. It is kept in the constant
+    <code>ApplicationConfiguration.CONFIGURATION_PARAM</code>.
+    The JavaDoc of this constant contains a code example.
+  </p>
+  <p>
+    Alternatively, an application can also be started programmatically using an
+    <code>ApplicationRunner</code>:
+  </p>
+  <pre><code>ApplicationConfiguration configuration = new SimpleConfiguration();
+ApplicationRunner runner = new ApplicationRunner( configuration, servletContext );
+runner.start();
+</code></pre>
+
+</div>

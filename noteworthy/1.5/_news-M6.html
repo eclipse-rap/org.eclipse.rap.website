@@ -1,0 +1,180 @@
+<div>
+
+  <h3>Markup Support</h3>
+
+  <p>
+    For a selection of widgets, simple HTML markup is now accepted in the <code>setText()</code>
+    method. Currently supported widgets are <code>TableItem</code>, <code>TreeItem</code>,
+    <code>Label</code> and <code>CLabel</code>.
+  </p>
+  <p>
+    <img class="framed" src="images/MarkupInTable.png" />
+  </p>
+  <p>
+    To enable markup support for a widget, use the new constant
+    <code>RWT.MARKUP_ENABLED</code> in the <code>setData()</code> method.
+    This must be done directly after creating the widget and cannot be changed later.
+    Here's a code example:
+  </p>
+  <pre><code>Table table = new Table( parent, SWT.BORDER );
+table.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+TableItem item = new TableItem( table, SWT.NONE );
+item.setText( "Some &lt;em&gt;text&lt;/em&gt; with &lt;strong&gt;markup&lt;strong&gt;" );
+</code></pre>
+  <p>
+    The markup will be validated on the server. Currently, the following HTML elements
+    area allowed:
+  </p>
+  <ul>
+    <li>
+      most <strong>inline elements</strong> like
+      <code>&lt;em&gt;</code>,
+      <code>&lt;strong&gt;</code>,
+      <code>&lt;big&gt;</code>,
+      <code>&lt;small&gt;</code>,
+      <code>&lt;sup&gt;</code>,
+      <code>&lt;sub&gt;</code>,
+      <code>&lt;del&gt;</code>,
+      <code>&lt;ins&gt;</code>, etc.
+    </li>
+    <li>
+      <strong>linebreaks</strong>
+      using <code>&lt;br/&gt;</code>
+    </li>
+    <li>
+      <strong>images</strong>:
+      <code>&lt;img src="images/example.png" width="16" height="16" /&gt;</code>, width and
+      height are obligatory
+    </li>
+    <li>
+      <strong>links</strong> like
+      <code>&lt;a href="http://eclipse.org"&gt;Eclipse&lt;/a&gt;</code>.
+      To open the linked page in a new tab, you can use the <code>target</code>
+      attribute.
+    </li>
+  </ul>
+  <p>
+    See the JavaDoc for <code>RWT.MARKUP_ENABLED</code> for further information.
+    You can try it out in our updated demo on the
+    <a href="http://rap.eclipsesource.com/rapdemo/examples#rich-label">Rich Labels</a> page.
+    Check out the
+    <a href="http://rap.eclipsesource.com/rapdemo/examples#table-markup">Table with markup</a>
+    page as well.
+  </p>
+
+  <h3>Custom Item Height</h3>
+
+  <p>
+    When you use markup in a Table or a Tree, you may want to set a fixed item height manually.
+    To do so, you can use the new <code>setData()</code> constant
+    <code>RWT.CUSTOM_ITEM_HEIGHT</code>:
+  </p>
+  <pre><code>table.setData( RWT.CUSTOM_ITEM_HEIGHT, Integer.valueOf( 62 ) )</code></pre>
+  <p>
+    A custom item height must be set directly after creating the widget and cannot be changed
+    later.
+  </p>
+
+  <h3>Multiline Headers for Tree and Table</h3>
+
+  <p>
+    <img class="framed" src="images/MultilineHeaders.png" />
+  </p>
+  <p>
+    <code>TableColum</code> and <code>TreeColumn</code> now respect line breaks.
+    No special setting is required. When the text of a header contains a linebreak character
+    (<code>\n</code>), the line break will be rendered and the column height will be adjusted
+    automatically.
+  </p>
+
+  <h3>Fixed Table Columns</h3>
+
+  <p>
+    It's now possible to exclude a given number of leftmost table columns from horizontal
+    scrolling.
+    This is very useful for tables that have a lot of columns, with the first column(s)
+    containing some kind of heading or key value (e.g. a person's name) that should always be
+    visible.
+  </p>
+  <p>
+    <img class="framed" src="images/FixedColumns.png" />
+  </p>
+  <p>
+    For more details, see the JavaDoc on <code>RWT.FIXED_COLUMNS</code>.
+  </p>
+
+  <h3>FileUpload Theming</h3>
+
+  <p>
+    The FileUpload widget is no longer bound to the theming of the <code>Button</code> theming
+    but can be styled separately.
+    All CSS properties that are supported for <code>Button</code> are now also supported for the
+    new <code>FileUpload</code> CSS element.
+  </p>
+
+  <h3>EntryPoints by Path</h3>
+
+  <p>
+    Instead of adding entrypoints by name, and selecting them with the <code>startup</code>
+    parameter in the URL, they can (and should) now be registered directly with URL path.
+    The <code>org.eclipse.rap.ui.entrypoint</code> extension point supports a new attribute
+    <code>path</code>. This attribute should now be used instead of the old
+    <code>parameter</code> attribute. With the entrypoint below, the application will be
+    available at the URL <code>http://HOSTNAME/CONTEXT/example</code>
+  </p>
+  <pre><code>&lt;extension
+    point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint
+      id="org.example.exampleEntryPoint"
+      class="org.example.ExampleEntrypoint"
+      path="/example" /&gt;
+&lt;/extension&gt;
+</code></pre>
+  <p>
+    The <code>brandings</code> extension point is still supported, but will be replaced with a
+    simpler concept in the future (see below).
+  </p>
+  <p>
+    Also when using the new <code>ApplicationConfigurator</code> API to create RAP applications
+    programmatically, entrypoints are now registered by path.
+  </p>
+  <pre><code>config.addEntryPoint( "/example", ExampleEntryPoint.class, properties );
+</code></pre>
+
+  <h3>EntryPoint Parameters</h3>
+
+  <p>
+    Brandings in RAP are limited to adjustments needed for the web client.
+    With the possiblity to support multiple clients for RAP, this concept is not
+    flexible enough anymore.
+    As a replacement, we now support simple properties maps for entry points.
+    Every client implementation can provide their properties.
+    The new class <code>WebClient</code> contains the properties for the default web client.
+    Here's an example how to use it:
+  </p>
+  <pre><code>Map&lt;String, String&gt; properties = new HashMap&lt;String, String&gt;();
+properties.put( WebClient.THEME_ID, "com.example.mytheme" );
+properties.put( WebClient.FAVICON, "images/favicon.png" );
+config.addEntryPoint( "/example", entryPointFactory, properties );
+</code></pre>
+
+  <h3>Protocol changes</h3>
+  <p>
+    The new protocol has been optimized for size and readablity by representing operations
+    as JSON arrays instead of objects. So for example, instead of this message snippet:
+  </p>
+  <pre><code>{ "action": "destroy", "target": "w23" },
+{ "action": "set", "target": "w24", "properties": { "visibility": false } }
+</code></pre>
+  <p>
+    the server now only answers:
+  </p>
+  <pre><code>[ "destroy", "w23" ],
+[ "set", "w24", { "visibility": false } ]
+</code></pre>
+  <p>
+    This cuts the size of the responses by around 20% – 25% and we think it also makes the messages
+    more concise and clear.
+  </p>
+
+</div>
