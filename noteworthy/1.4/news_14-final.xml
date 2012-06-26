@@ -1,3 +1,680 @@
-<?php
-  header( "Location: ../../developers-guide/devguide.php?topic=getting-started/target-install.html" );
-?>
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!--
+ Copyright (c) 2010, 2011 EclipseSource and others.
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v1.0
+ which accompanies this distribution, and is available at
+ http://www.eclipse.org/legal/epl-v10.html
+ -->
+
+<noteworthy version="1.4">
+
+  <entry category="RWT" milestone="M1">
+    <title>
+      New API added
+    </title>
+    <description>
+      <![CDATA[
+        This will make it easier for the community to reuse existing code or
+        to utilize new features.
+        Here is a list of API methods added in 1.4:
+        <br />
+        <ul>
+          <li><code>FontData()</code> constructor</li>
+          <li><code>FontData#setName(),
+                    FontData#setHeight(),
+                    FontData#setStyle(),
+                    FontData#setLocale()
+          </code></li>
+          <li><code>Display#getSystemTray()</code></li>
+          <li><code>Tree#getTopItem()</code></li>
+          <li><code>Tree#setTopItem( TreeItem )</code></li>
+          <li><code>TreeItem#getImage()</code></li>
+          <li><code>Tree#getGridLineWidth()</code></li>
+          <li><code>Text#setTextChars( char[] )</code></li>
+          <li><code>Text#getTextChars()</code></li>
+          <li><code>Browser#evaluate( String )</code></li>
+          <li><code>Browser#addProgressListener( ProgressListener )</code></li>
+          <li><code>Browser#removeProgressListener( ProgressListener )</code>
+          </li>
+          <li><code>GC#drawText()</code> now supports
+          <code>SWT.DRAW_MNEMONIC</code> style flag.</li>   
+          <li><code>CLabel#setBackground( Color[], int[] )</code></li>
+          <li><code>Browser#getWebBrowser()</code></li>
+          <li><code>Image( Device, int, int )</code> constructor</li>
+          <li><code>GC#setAdvanced( boolean )</code> and 
+              <code>GC#getAdvanced()</code></li>    
+          <li><code>Display#getAppMenuBar()</code></li>
+          <li><code>Display#getSystemTaskBar()</code></li>
+          <li><code>Control#getOrientation()</code> and 
+              <code>Control#setOrientation( int )</code></li>
+          <li><code>Menu#getOrientation()</code> and 
+              <code>Menu#setOrientation( int )</code></li>
+          <li><code>Menu#getDefaultItem()</code> and 
+              <code>Menu#setDefaultItem( MenuItem )</code></li>                           
+          <li><code>Button</code> now supports <code>SWT.WRAP</code> style flag.</li>   
+        </ul>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M1">
+    <title>
+      New Tree implementation
+    </title>
+    <description>
+      <![CDATA[
+        We have a new implementation of the SWT Tree widget which is faster,
+        more flexible, and provides many new features:
+        <ul>
+          <li>Item and cell colors/fonts</li>
+          <li>Item height does adapt to font / image size now</li>
+          <li>SWT.FULL_SELECTION support</li>
+          <li>Gridlines</li>
+          <li>Themeable indentation symbols (treelines, expand/collapse icons)</li>
+          <li>Improved SWT.VIRTUAL support makes big trees load much faster</li>
+        </ul>
+        <img src="images/tree-modern.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+        <img src="images/tree-columns.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+        <img src="images/tree-gay.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="RWT" milestone="M2">
+    <title>
+      Improved iPad/iPhone support 
+    </title>
+    <description>
+      <![CDATA[
+        While RAP was already running on iOS before, it was barely usable. 
+        For this release the following improvements were made:
+        <ul>
+          <li> Fixed layouting bugs.</li>
+          <li> Fixed mouseclick emulation. </li>
+          <li> Added fullscreen support </li>
+          <li> Enabled native drag-and-drop behavior for 
+               ScrollBar, Shell, Sash, Scale, Slider, TableColumn anmd TreeColumn.
+          </li>
+        </ul>     
+        There is <em>no</em> support for the <em>SWT</em> Drag and Drop API on iOS-devices.<br/><br/>
+        It is recommended to increase the size for the draggable elements to make them easier to 
+        hit with a finger. (See also "New Themeable Scrollbars".) 
+        Since this can be done using only theming, its possible to target mobile 
+        and desktop clients with the same application, but different themes.
+        <br />
+        <br />
+        To run a RAP-application can in fullscreen-mode, simply touch the "+", select "Add to Home
+        Screen", and start it from there. Note that pinch-zoom is disabled in fullscreen-mode
+
+        <img src="images/ipadfull.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M7">
+    <title>
+      CSS3-Support
+    </title>
+    <description>
+      <![CDATA[
+        RAP now uses CSS3 to render rounded borders, gradients and shadows in Safari 
+        (including iPad/iPhone) Google Chrome (including Android), and Firefox 4.
+        Other browser still use 
+        <a href="http://eclipse.org/rap/noteworthy/1.3/#RWT">vector graphics</a>. 
+        In Internet Explorer 9 CSS3 might be supported in the 
+        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=270397#c3">future</a>.
+        <br /><br />
+        <em> This also enables basic support for Anroid 2.x devices. </em>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M2">
+    <title>
+      New Default Theme
+    </title>
+    <description>
+      <![CDATA[
+        After introducing the Business and Fancy Design with
+        <a href="/rap/noteworthy/1.3/">RAP 1.3</a>, RWT gets a
+        new default theme with M2. The new default theme is a
+        migration of the existing Business theme. The old theme is still
+        available as a separate bundle called
+        <code>org.eclipse.rap.rwt.theme.classic</code>.<br><br>
+        <b>New Default Theme:</b>
+        <br />
+        <img src="images/defaultTheme.png" style="margin-top: 10px; margin-bottom: 10px"/>
+        <br />
+        <b>Classic Theme:</b>
+        <br />
+        <img src="images/classicTheme.png" style="margin-top: 10px; margin-bottom: 10px"/><br>
+        To activate the classic theme simply add the bundle to an exsiting
+        launch configuration and change the servlet name to "classic". An
+        alternative way to use the classic theme is to create an own branding
+        and set the <code>themeId</code> to
+        <code>org.eclipse.rap.rwt.theme.classic</code>.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M4">
+    <title>
+      General Theme Extensions
+    </title>
+    <description>
+      <![CDATA[
+      The theming was extended in serveral places:
+      <br />
+      <ul>
+      <li>It's now possible to style the separator label like:
+        <pre>
+  Label[SEPARATOR] {
+    ...
+  }
+        </pre>
+      </li>
+      <li>The Label has a new themeable element called
+        <code>Label-SeparatorLine</code>. It's possible to style the background
+        image (gradient), background color, border, border radius and line width.
+        <br />
+        For example:
+        <pre>
+  Label-SeparatorLine {
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid #a4a4a4;
+    border-radius: 0px;
+    width: 2px;
+  }
+        </pre>
+      </li>
+      <li><code>MenuItem</code> has a new themeable property
+        <code>background-image</code>.
+      </li>
+      <li>Table border is now themable, but <code>border-radius</code> property
+      is still not supported.
+      </li>
+      <li><code>opacity</code> property has been added to buttons.
+      </li>
+      <li>The themability of the <code>Sash</code> has been improved.
+      <code>background-image</code> and <code>background-color</code> properties
+      have been added to <code>Sash</code> element. <code>:hover</code> state is
+      now supported:<br>
+      <img src="images/sashhover.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+      </li>
+      <li>It's now possible to set a background image or gradient for the list
+      items:<br>
+      <img src="images/listitemgradient.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+      </li>
+      </ul>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M7">
+    <title>
+      Shadows
+    </title>
+    <description>
+      <![CDATA[
+        RAP-Theming now supports shadows on the following widgets:
+        <ul>
+          <li>Shell</li>
+          <li>Menu</li>
+          <li>Widget-ToolTip</li>
+          <li>ToolTip</li>
+          <li>Combo-List</li>
+          <li>CCombo-List</li>
+        </ul>
+        <img title="Shadows in RAP" style="margin-bottom:7px" src="images/Shadows.png" />
+        
+        Shadows can have configurable horizontal offset, vertical offset, blur-radius and color.  
+        In Internet Explorer the blur-effect might look slightly different due to technical 
+        limitations. Shadow also supports transparency using the 
+        <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M5">
+    <title>
+      New Themeable Scrollbars
+    </title>
+    <description>
+      <![CDATA[
+      A new client-side scrollbar implementation replaces the previously used
+      native scrollbars in almost all widgets. It features a number of improvements:
+      <br/>
+      <ul>
+        <li>
+          It looks and behaves the same on every client, regardless what operationg system or 
+          window system there is.</li>
+        <li>
+          The new scrollbar is fully themeable. This is also another step in our effort to support 
+          mobile devices: the scrollbars can be made wider, so that they are easier to use on 
+          touch-interface.</li>
+        <li>
+          It improves scrolling for Tree and Table by automatically adapting to the clients 
+          performance.
+        </li>
+      </ul>
+      <img style="margin-top:10px; margin-bottom:10px;float:left;" src="images/scrollbars.png" />
+      ]]>
+    </description>
+  </entry>  
+
+  <entry category="RWT" milestone="M6">
+    <title>
+      FileUpload widget
+    </title>
+    <description>
+      <![CDATA[
+        <p>
+        The widget <code>org.eclipse.rwt.widgets.FileUpload</code> has been introduced.
+        This is a very basic, button-like component that lets users select a file from their local
+        file system.
+        This file can then be programmatically uploaded to a given URL.
+        </p>
+        <p>
+        To accept and store those files on the server, a server-side component is also needed.
+        This part is not included in the FileUpload widget itself.
+        A default implementation is currently being developed in the RAP Incubator and will be made
+        available soon.
+        An implementation of the SWT <code>FileDialog</code>, based on the new FileUpload widget, is
+        also under development in the Incubator.
+        </p>
+      ]]>
+    </description>
+  </entry>  
+
+  <entry category="RWT" milestone="M5">
+    <title>
+      ToolTip widget
+    </title>
+    <description>
+      <![CDATA[
+      RWT now has an implementation of the ToolTip widget. It represents popup
+      windows that are used to inform or warn the user.
+      The new ToolTip widget is fully themeable.
+      <br/>
+      <img style="margin-top:10px; margin-bottom:10px" src="images/tooltip.png" />
+      <br/>
+      Note: By introducing this new widget we had to rename the existing CSS
+      element <code>ToolTip</code> to <code>Widget-ToolTip</code>.
+      This CSS element is used for styling tooltip texts on widgets, as set
+      using <code>Control#setTooltipText()</code>.
+      The new ToolTip widget can now be styled with the CSS element
+      <code>ToolTip</code>.
+      <br/>
+      This change was necessary to remain consistent within our naming scheme.
+      Please update your custom themes accordingly.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M3">
+    <title>
+      Optimized client
+    </title>
+    <description>
+      <![CDATA[
+        <p>
+        RAP is now using a new Javascript-compressor (based on the
+        <a href="http://developer.yahoo.com/yui/compressor/">YUI
+        Compressor</a>), and we also refactored/removed a lot of existing
+        Javascript code. These two actions reduced the size of the client from
+        984 kB to 909 kB.
+        </p>
+        <p>
+        The client's logging system has been drastically simplified in order to reduce client-size.
+        RWT itself does not use the logging anymore, but a rudimentary implementation is still
+        in place for custom-widget developers.
+        As a result of these changes, the RWT log-levels are no longer supported.
+        When RAP is started in the Debug variant, all log-messages are sent to the Browsers 
+        Javascript-console, while the Standard (production) variant will not output any logging 
+        messages.
+        </p>
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M3">
+    <title>
+      JQuery compatibility
+    </title>
+    <description>
+      <![CDATA[
+        In the past, using <a href="http://jquery.com/">JQuery</a> with RAP
+        (e.g. for custom-widgets) was very problematic because "$" was used by
+        both RAP and JQuery as a global variable. RAP is not doing this anymore,
+        so if you wish to use JQuery, now you can.
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="RWT" milestone="M7">
+    <title>
+      Application Scope
+    </title>
+    <description>
+      <![CDATA[
+        The internals of RWT have been changed so that it is now possible to run more than one
+        instances of RWT in the same Java Virtual Machine.
+        <br />
+        Applications that wish to leverage this should no longer use static fields to store
+        instances with application scope. Instead they should make use of the new
+        <code>IApplicationStore</code>.
+        <br />
+        Note: for applications using the workbench, these changes don't make a difference
+        as multiple workbench applications cannot be run in parallel in a single virtual machine.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M7">
+    <title>
+      Response Content Compression
+    </title>
+    <description>
+      <![CDATA[
+        We decided to entirely remove support for GZIP-compressing response content
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342242">bug 342242</a>).
+        Initially, RAP always compressed response content. As it turned out that this
+        interfered with Tomcat and chunked transfer encoding
+        (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=259977">bug 259977</a>),
+        compression was made configurable to transition from using RAP's compression to using
+        the servlet engines compression feature.
+        <br />
+        If you wish to use content compression, please make sure that the servlet container
+        that you deploy the RAP application into, is configured accordingly.
+        Learn here how to enable content compression for
+        <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_use_GZip_compression_with_the_Equinox_HttpService.3F">Jetty</a> and
+        <a href="http://tomcat.apache.org/tomcat-7.0-doc/config/http.html#Standard_Implementation">Tomcat</a>.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="RWT" milestone="M7">
+    <title>
+      Key Bindings
+    </title>
+    <description>
+      <![CDATA[
+        We introduced a simple and single-sourcing capable way of adding key bindings to plain RWT
+        applications.
+        In order to instruct the client to issue key events for certain key sequences, a list of
+        <em>active</em> key sequences must be attached to the display using
+        <code>Display#setData()</code> with the new constant <code>RWT.ACTIVE_KEYS</code>.
+        <br/>
+        The resulting key events can then be handled, just like in SWT, by adding a global key event
+        listener to the display using <code>Display.addFilter()</code>.
+        For details, please refer to the JavaDoc of <code>RWT.ACTIVE_KEYS</code>. <br />
+        See also "KeyBindings" in category <a href="#JFace%20/%20Workbench">JFace / Workbench</a>
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="RWT" milestone="RC">
+    <title>
+      AdapterFactory changed scope
+    </title>
+    <description>
+      <![CDATA[
+        The <code>org.eclipse.rwt.AdapterFactory</code> changed its scope. Until now, it had
+        so called <em>session scope</em>. Each session had its own instance of a registered 
+        AdapterFactory. Now, the AdapterFactories live in <em>application scope</em>, meaning
+        that there is exactly one instance of every registered AdapterFactory type.
+        <br />
+        Only those applications that register their own implementations of
+        <code>AdapterFactory</code> are affected by this change.
+        The AdapterFactories used by RWT internally have been adapted to this change.
+        For the reasons that led to this change, please see
+        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=342302">bug 342302: Move 
+        AdapterFactory into application scope</a>.
+        We apologize for any inconveniences this may cause.
+      ]]>
+    </description>
+  </entry>
+    
+  <entry category="JFace / Workbench" milestone="M5">
+    <title>
+      JFace and Workbench upgraded to 3.7
+    </title>
+    <description>
+      <![CDATA[
+        The JFace and Workbench implementations shipped with RAP have been upgraded to the Eclipse 
+        3.7 code base.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="JFace / Workbench" milestone="M1">
+    <title>
+      IApplication support
+    </title>
+    <description>
+      <![CDATA[
+        IApplication support has been changed to use fully qualified application
+        ids.
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="JFace / Workbench" milestone="M5">
+    <title>
+      KeyBindings
+    </title>
+    <description>
+      <![CDATA[
+        One of the most requested features in RAP is finally available. It's
+        now possible to use key bindings, for example CTRL+S to save editors.
+        You can define new keybindings using the standard extension point:
+        <br />
+        <img src="images/keybinding.png"
+             title="Define a keybinding"
+             style="margin-top:10px" />
+        Emacs key sequences are not supported and the
+        <code>emacsAcceleratorConfiguration</code> scheme is missing.<br />
+        See also "Key Bindings" in category <a href="#RWT">RWT</a>
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="JFace / Workbench" milestone="M5">
+    <title>
+       Tooltips for TreeViewer
+    </title>
+    <description>
+      <![CDATA[
+        The <code>TreeViewer</code> now supports tooltips for its content too.
+        It can be activated by calling
+        <code>ColumnViewerToolTipSupport#enableFor()</code>.
+        Afterwards you need to override
+        <code>CellLabelProvider#getToolTipText(Object)</code> and have it
+        return the respective tooltip text. Other tooltip-related methods
+        (<code>getToolTipBackgroundColor</code>, etc.) are not supported.
+        <br />
+        <img src="images/TreeViewerToolTip.png"
+             title="TreeViewer showing a tooltip"
+             style="margin-top:10px" />
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="Common" milestone="M1">
+    <title>
+      Servlet 3.0 Support
+    </title>
+    <description>
+      <![CDATA[
+        In order to support new application servers that already ship
+        with <a href="http://java.sun.com/products/servlet/index.jsp">Servlet API</a>
+        (<code>javax.servlet.*</code>) 3.0, RAP is now able to leverage the new
+        Servlet specification. Deploying RAP on application servers like
+        <a href="http://tomcat.apache.org/">Tomcat 7</a> or
+        <a href="https://glassfish.dev.java.net/">Glassfish 3</a>.
+        is now possible.
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="Common" milestone="M5">
+    <title>
+      New Bundles included
+    </title>
+    <description>
+      <![CDATA[
+        In order to ease deployment, RAP ships with three new bundles:
+        <ul>
+          <li>org.eclipse.equinox.servletbridge</li>
+          <li>org.eclipse.equinox.servletbridge.extensionbundle</li>
+          <li>org.eclipse.equinox.http.servletbridge</li>
+        </ul>
+        Together with the <a href="http://wiki.eclipse.org/RAP/Equinox_WAR_products">WAR Product
+        tooling</a> from the <a href="http://www.eclipse.org/libra/">Libra project</a>, RAP 
+        applications can be deployed as WAR archives with a few clicks. 
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="Tooling" milestone="M1">
+    <title>
+      IApplication support
+    </title>
+    <description>
+      <![CDATA[
+        With milestone M1 the RAP launcher supports choosing and launching
+        IApplications.
+        <img src="images/applicationTooling.png"
+          style="margin-top: 10px; margin-bottom: 10px"/>
+      ]]>
+    </description>
+  </entry>
+  
+  <entry category="Tooling" milestone="M6">
+    <title>
+      RAP Launcher
+    </title>
+    <description>
+      <![CDATA[
+        We re-organized the Main tab of the RAP launcher and added some new features:
+        <br/>
+        <img src="images/ImprovedLauncherMainTab.png" title="Improved RAP Launcher Main Tab"
+          style="margin:10px 0;" />
+        <br/>
+        <p>
+        You can now configure the location of the <em>Instance Area</em> in the launcher's Main tab.
+        The instance area is the OSGi data location, where all bundles of the running application
+        can store their state information.
+        This includes resources that are used by the RAP server, such as images, but also the
+        setting store.
+        By selecting the option <strong>Clear the instance area before launching</strong>, you can 
+        ensure that all these resources are cleared when you re-start a RAP application.
+        </p>
+        <p>
+        You can now specify a <em>Context Path</em> in the launcher.
+        The context path is an optional additional path segment that enables you to launch your
+        application with a URL similar to your real deployment environment.
+        As an example, when you deploy an application named myapp on tomcat, it will usually be
+        accessible under an URL like <code>http://server:port/myapp/myservletname</code>,
+        where myapp is the webapp, and myservletname is the servlet name you choose in the branding.
+        </p>
+        <p>
+        As you can see from the screenshot, the launcher will now display a preview of the URL that 
+        your application will be accessible at in the <em>Browser</em> group box.
+        </p>
+        <p>
+        Moreover, servlet names, entry points and applications can be selected not only 
+        from the workspace but also from the active target platform. 
+        <p/>
+        <p>
+        The serlvet name, entry point or application is now validated against the selected bundles.
+        The launcher shows an error, if the bundle that provides the selected name is not contained 
+        in any of the selected bundles.
+        <p/>
+        <img src="images/servletValidation.png"
+             title="Validation of the Servlet name, Entry point, Application"
+             style="margin-top:10px" />   
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="Tooling" milestone="M7">
+    <title>
+      RWT Application Launcher
+    </title>
+    <description>
+      <![CDATA[
+        The RAP tooling has grown by yet another launch configuration. With the <em>RWT Application 
+        Launcher</em> you can run RWT applications with just one shortcut. For those that might not 
+        have heard of RWT yet, think of it as SWT/Web. RWT is RAP without the workbench and OSGi,
+        it plays the same role in RAP as SWT does for the Eclipse Platform/RCP.
+        <br /> 
+        <img src="images/rwt-launcher.png" style="margin-top: 10px; margin-bottom: 10px"/>
+        To run an RWT application, select a class (e.g. in the editor or package explorer) that 
+        implements <code>IEntryPoint</code> and hit <code>Alt+Shift+X 3</code> (please feel free to
+        <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&rep_platform=All&op_sys=all">file a bug</a>
+        if you find a more suitable shortcut that is not yet taken by another launch configuration).
+        You can also launch an RWT application by selecting a project instead of a class file. You 
+        will be prompted to select a class from those classes that define an entry point.
+        <br /> 
+        Besides launching RWT applications, it can also be used to run arbitrary web applications, 
+        provided that there is a deployment descriptor (<code>web.xml</code>).
+        <br /> 
+      ]]>
+    </description>
+  </entry>
+
+  <entry category="Tooling" milestone="M6">
+    <title>
+      Target installation
+    </title>
+    <description>
+      <![CDATA[
+        RAP applications need to be compiled against the RAP runtime. To do so, 
+        the runtime needs to be set as the target platform in Eclipse. With this 
+        milestone the RAP tooling is able resolve the runtime from our 
+        <a href="http://eclipse.org/rap/downloads/">p2 repositories</a>
+        and does no longer include the runtime. 
+        This <a href="/rap/getting-started/">tutorial</a> shows 
+        how you can use the RAP target installation tooling.<br/>
+        <img src="images/targetInstallation.png"
+             title="Target installation tooling"
+             style="margin-top:10px" />
+      ]]>
+    </description>
+  </entry>  
+
+  <entry category="Incubator" milestone="R">
+    <title>
+      FileDialog
+    </title>
+    <description>
+      <![CDATA[
+          In 1.4, the FileUpload widget has been introduced.
+          But to handle the uploads on the server, you also need a server-side upload component.
+          Such a component is now available in the RAP Incubator.
+        <p>
+          To make file uploads really simple, we also provide an implementation of the SWT FileDialog
+          in the RAP Incubator.
+          This FileDialog allows you to select and upload files and makes the uploaded files available
+          on the server.
+          <img src="images/FileDialog.png"
+               title="FileDialog"
+               style="margin-top:10px;" />
+          You can include the dialog and its dependencies in your target platform by adding the
+          new Incubator Software Site http://download.eclipse.org/rt/rap/1.4/incubator/ to your RAP
+          1.4 target.
+        </p>
+      ]]>
+    </description>
+  </entry>  
+
+</noteworthy>
