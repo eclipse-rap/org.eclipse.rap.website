@@ -1,3 +1,7 @@
+<?
+    printGoogleAnalyticsJs( 'UA-910670-2' );
+    printGoogleAnalyticsJs( 'UA-17128428-1' );
+?>
     <div class="stop"></div>
     <div id="footer">
     <ul id="footernav">

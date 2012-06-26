@@ -2,9 +2,10 @@
 
 include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-$pageTitle = "RAP - 1.3 Downloads";
-$pageKeywords = "ajax, rap, osgi, equinox, eclipse rap, equinox rap";
-$pageAuthor = "The RAP Team";
+$PAGE_TITLE = "RAP - 1.3 Downloads";
+$PAGE_NAV_POSITION = array( "download", "downloads" );
+
+printHeader();
 
 function xslt( $xmlFile, $xslFile ) {
   $xslDoc = new DOMDocument();
@@ -16,10 +17,8 @@ function xslt( $xmlFile, $xslFile ) {
   return $proc->transformToXML( $xmlDoc );
 }
 
-$html = xslt( 'builds.xml', '_index.xsl' );
+echo xslt( 'builds.xml', '_index.xsl' );
 
-$navPosition = array( "download", "downloads" );
-
-generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
+printFooter();
 
 ?>

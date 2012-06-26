@@ -1,12 +1,13 @@
-<?php  																														
+<?php
 
 include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-$pageTitle = "RAP - IP Logs";
-$pageKeywords = "ajax, rap, osgi, equinox, eclipse rap, equinox rap";
-$pageAuthor = "The RAP Team";
+$PAGE_TITLE = "RAP - IP Logs";
+$PAGE_NAV_POSITION = array( "documentation", "iplog" );
 
-$html = <<<EOHTML
+printHeader();
+
+?>
 
 <div id="midcolumn">
 
@@ -45,10 +46,8 @@ $html = <<<EOHTML
 
 </div>
 
-EOHTML;
+<?
 
-$navPosition = array( "documentation", "iplog" );
-
-generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
+printFooter();
 
 ?>

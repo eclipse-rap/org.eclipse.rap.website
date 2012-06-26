@@ -2,11 +2,12 @@
 
 include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-$pageTitle = "RAP - 1.1 Downloads";
-$pageKeywords = "ajax, rap, osgi, equinox, eclipse rap, equinox rap";
-$pageAuthor = "The RAP Team";
+$PAGE_TITLE = "RAP - 1.1 Downloads";
+$PAGE_NAV_POSITION = array( "download", "downloads" );
 
-$html = <<<EOHTML
+printHeader();
+
+?>
 
 <div id="midcolumn">
   <h1>RAP 1.1</h1>
@@ -56,15 +57,8 @@ $html = <<<EOHTML
 
 </div>
 
-<!--
-<div id="rightcolumn">
-  {SIDEBAR:ARCHIVE}
-</div>
--->
-EOHTML;
+<?
 
-$navPosition = array( "download", "downloads" );
-
-generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
+printFooter();
 
 ?>

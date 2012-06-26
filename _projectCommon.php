@@ -2,6 +2,8 @@
 
   require_once( "_errorHandler.php" );
 
+  $CURRENT_YEAR = date( "Y" );
+
   function replaceVariables( $variables, $html ) {
     foreach( $variables as $key => $value ) {
       $html = str_replace( "{" . $key . "}", $value, $html );
@@ -16,16 +18,20 @@
   }
 
   function printHeader( $title, $navPosition ) {
-    $PAGE_TITLE = $title;
-    $PAGE_NAV_POSITION = $navPosition;
+    global $PAGE_TITLE;
+    global $PAGE_NAV_POSITION;
     global $PAGE_ADD_CSS;
+    if( isset( $title ) ) {
+      $PAGE_TITLE = $title;
+    }
+    if( isset( $navPosition ) ) {
+      $PAGE_NAV_POSITION = $navPosition;
+    }
     include( $_SERVER['DOCUMENT_ROOT'] . '/rap/_header.php' );
   }
 
   function printFooter() {
-    printGoogleAnalyticsJs( 'UA-910670-2' );
-    printGoogleAnalyticsJs( 'UA-17128428-1' );
-    $CURRENT_YEAR = date( "Y" );
+    global $CURRENT_YEAR;
     include( $_SERVER['DOCUMENT_ROOT'] . '/rap/_footer.php' );
   }
 
