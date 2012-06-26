@@ -24,15 +24,12 @@
       <head>
         <title>$title</title>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-        <meta name="keywords" content="ajax, rap, osgi, equinox, eclipse rap, equinox rap" />
+        <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
         <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="/eclipse.org-common/yui/2.6.0/build/reset-fonts-grids/reset-fonts-grids.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="/rap/_theme/reset.css" media="screen"/>
         <link rel="stylesheet" type="text/css" href="/rap/_theme/layout.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="/rap/_theme/print.css" media="print" />
-        <!--[if IE 6]>  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/ie6_style.css" media="screen"/> <![endif]-->
-        <!--[if lte IE 7]>  <link rel="stylesheet" type="text/css" href="/eclipse.org-common/themes/Nova/css/ie_style.css" media="screen"/> <![endif]-->
         <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
         <script type="text/javascript" src="http://w3.eclipsesource.com/www/js/rap/jquery.zrssfeed.min.js"></script>
@@ -107,16 +104,6 @@ EOHTML;
     })();
   </script>
 EOHTML;
-  }
-
-  function xslt( $xmlFile, $xslFile ) {
-    $xslDoc = new DOMDocument();
-    $xslDoc->load( $xslFile );
-    $xmlDoc = new DOMDocument();
-    $xmlDoc->load( $xmlFile );
-    $proc = new XSLTProcessor();
-    $proc->importStylesheet( $xslDoc );
-    return $proc->transformToXML( $xmlDoc );
   }
 
   function createBuglistUrl( $targetMilestones ) {
