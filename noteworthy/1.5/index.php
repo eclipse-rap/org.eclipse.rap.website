@@ -2,7 +2,6 @@
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
   require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_Builds.php" );
-  require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_News.php" );
 
   $buildName = isset( $_GET[ 'build' ] ) ? $_GET[ 'build' ] : "R";
 
@@ -69,7 +68,7 @@
 </div>
 
 <div id="rightcolumn">
-  <? includeSidebar( "archives.php" ) ?>
+  <? includeSidebar( "releases.php" ) ?>
 </div>
 
 <?
