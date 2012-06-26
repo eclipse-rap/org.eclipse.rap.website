@@ -44,23 +44,23 @@ EOHTML;
     echo '<div id="header-bar">';
     echo createHeaderAndNavigation( $navPosition );
     echo <<<EOHTML
-    	</div>
-			<div id="novaWrapper">
-				<div id="novaContent">
+      </div>
+      <div id="novaWrapper">
+        <div id="novaContent">
 EOHTML;
   }
 
   function printInfoBox() {
     echo <<<EOHTML
-    	<div id="info-box">
-    		<div>
-      		<img src="/rap/images/twitter.png" alt="Twitter Logo" />
-      		<a href="http://twitter.com/#!/EclipseRAP/">Follow us on Twitter</a>
-    		</div>
-    		<div>
-      		<img src="/rap/images/project-stats.png" alt="Project Information" />
-      		<a href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a>
-    		</div>
+      <div id="info-box">
+        <div>
+          <img src="/rap/images/twitter.png" alt="Twitter Logo" />
+          <a href="http://twitter.com/#!/EclipseRAP/">Follow us on Twitter</a>
+        </div>
+        <div>
+          <img src="/rap/images/project-stats.png" alt="Project Information" />
+          <a href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a>
+        </div>
       </div>
 EOHTML;
   }
@@ -81,8 +81,8 @@ EOHTML;
       <li><a href="http://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
     </ul>
     <a href="http://www.eclipse.org/">
-    	<img src="/rap/images/logos/eclipse.png" alt="Eclipse logo" />
-  	</a>
+      <img src="/rap/images/logos/eclipse.png" alt="Eclipse logo" />
+    </a>
     <span id="copyright">Copyright &copy; $year The Eclipse Foundation. All Rights Reserved.</span>
   </div>
 
