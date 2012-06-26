@@ -50,6 +50,7 @@
     shows all bugs that have been fixed for this <?php echo strtolower( $build->getType() ); ?>.
   </p>
 
+<? if( $buildName !== "R" && substr( $buildName, 0, 2 ) !== "SR" ) { ?>
   <h2>Previous Builds</h2>
 
   <p>
@@ -63,6 +64,7 @@
     </li>
 <? } ?>
   </ul>
+<? } ?>
 
 </div>
 
