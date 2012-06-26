@@ -13,15 +13,15 @@
   <h1>New and Noteworthy</h1>
 
   <p>
-    For each milestone build we provide a summary of new features, changes and bugfixes in our
-    New and Noteworthy summary.
+    For each milestone build we provide a summary of new features, notable changes and a list of
+    bugfixes on a <em>New and Noteworthy</em> page.
   </p>
 
   <h3>Current development stream</h3>
 
   <ul>
     <li>
-      <a href="1.5/?build=RC2">RAP 1.5 RC2 milestone build</a>, published June 1, 2012.
+      <a href="1.5/">RAP 1.5 release</a>, will be published June 27, 2012.
     </li>
     <li>
       <a href="1.5/?build=RC1">RAP 1.5 RC1 milestone build</a>, published May 25, 2012.
