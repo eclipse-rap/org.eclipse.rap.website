@@ -1,14 +1,15 @@
-<?php  																														
+<?php
+
 include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-$pageTitle 		= "RAP Project - New and Noteworthy";
-$pageKeywords	= "Ajax, rap, w4t, eclipse rap";
-$pageAuthor		= "Jochen Krause";
+$PAGE_TITLE = "RAP 1.0 - New and Noteworthy";
+$PAGE_NAV_POSITION = array( "download", "noteworthy" );
 
-# Paste your HTML content between the EOHTML markers!
-$html = <<<EOHTML
-<div id="maincontent">
-	<div id="midcolumn">
+printHeader();
+?>
+
+  <div id="midcolumn">
+
 <h1>RAP 1.0 - New and Noteworthy</h1>
 <p>Here are some of the more noteworthy things available in the first release 
 build (October 10, 2007) which is now available for 
@@ -704,13 +705,11 @@ drillDownAdapter.addNavigationActions(manager);
       <p><img src="images/RAPFormsDemo.jpeg" alt="RAPFormsDemo.jpeg" width="326" height="287" longdesc="RAPFormsDemo.jpeg" /> </p>
   </tr>
 </table>
+
 </div>
-</div>
 
-EOHTML;
+<?
 
-$navPosition = array( "download", "noteworthy" );
-
-generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
+printFooter();
 
 ?>
