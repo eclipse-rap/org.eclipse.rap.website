@@ -1,114 +1,224 @@
 <div>
 
-  <h2>Application Framework</h2>
+  <h2>Applications / Framework</h2>
+
+  <h3>ApplicationConfiguration API</h3>
+
+  <p>
+    We introduced a new API to configure and start RAP applications programmatically.
+    This is an alternative to registering application entrypoints, themes, etc. as extensions.
+    With this new API it is now possible to write very write lightweight applications that do not
+    depend on the Eclipse UI stack (<code>org.<wbr/>eclipse.<wbr/>rap.<wbr/>ui*</code>) or the
+     the Equinox extension registry.
+  </p>
+  <p>
+    To configure an application, implement the new interface
+    <code>org.<wbr/>eclipse.<wbr/>rwt.<wbr/>engine.<wbr/>ApplicationConfiguration</code>:
+  </p>
+  <pre>
+public class SimpleConfiguration implements ApplicationConfiguration {
+
+  public void configure( Application application ) {
+    application.addEntryPoint( &quot;/simple&quot;, SimpleEntryPoint.class, null );
+    application.addEntryPoint( &quot;/other&quot;, AnotherEntryPoint.class, null );
+    application.addServiceHandler( &quot;custom.id&quot;, new MyServiceHandler() );
+    ...
+  }
+}
+</pre>
+  <p>
+    An application can be started programmatically using an <code>ApplicationRunner</code>:
+  </p>
+  <pre>
+ApplicationConfiguration configuration = new SimpleConfiguration();
+ApplicationRunner runner = new ApplicationRunner( configuration, servletContext );
+runner.start();
+</pre>
+  <p>
+    ... or registered as an OSGi service (see below).
+  </p>
 
   <h3>OSGi Integration</h3>
 
   <p>
-    A new bundle org.eclipse.rap.rwt.osgi has been introduced that integrates RAP with OSGi.
-    With this architectural change, it is now possible to use RWT in OSGi applications without
-    having to include org.eclipse.rap.ui and all its dependencies.
-    Instead of registering your RAP application's entrypoint, theme, etc. as extensions
-    (which involves dependencies to the extension registry and more equinox core bundles),
-    you can now implement the service interface
-    <code>org.eclipse.rwt.engine.ApplicationConfiguration</code> and register it as an OSGi
-    service.
+    A new bundle <code>org.<wbr/>eclipse.<wbr/>rap.<wbr/>rwt.<wbr/>osgi</code> has been introduced
+    that integrates RAP with OSGi.
+    This bundle is now required for every RAP application in an OSGi environment, including
+    applications that use the Eclipse workbench.
   </p>
-  <pre><code>public class SimpleConfiguration implements ApplicationConfiguration {
+  <p>
+    When an <code>ApplicationConfiguration</code> is registered as an OSGi service, the rwt.osgi
+    bundle will auto-start an application with this configuration.
+    By default, the application is started in the root context path.
+    Using a service property, a custom context path can be selected.
+    The name of this service property is kept in the constant
+    <code>org.<wbr/>eclipse.<wbr/>rap.<wbr/>rwt.<wbr/>osgi.<wbr/>ApplicationLauncher.<wbr/>PROPERTY_CONTEXT_NAME</code>.
+  </p>
+  <p>
+    Here's an example of an application configuration registered as a declarative service using the
+    context path <em>example</em>:
+  </p>
+  <pre>
+&lt;scr:component xmlns:scr=&quot;http://www.osgi.org/xmlns/scr/v1.1.0&quot;&gt;
+  &lt;implementation class=&quot;com.example.SimpleConfiguration&quot;/&gt;
+  &lt;service&gt;
+     &lt;provide interface=&quot;org.eclipse.rwt.application.ApplicationConfiguration&quot;/&gt;
+  &lt;/service&gt;
+  &lt;property name=&quot;contextName&quot; type=&quot;String&quot; value=&quot;example&quot;/&gt;
+&lt;/scr:component&gt;
+</pre>
+  <p>
+    Alternatively, applications can also be started programmatically using the
+    <code>ApplicationLauncher</code>, which is made available as a service by the rwt.osgi bundle.
+  </p>
+  <pre>
+ApplicationLauncher launcher = <em>... (acquire from service)</em>
+HttpService httpService = <em>... (acquire from service)</em>
+launcher.launch( configuration, httpService, httpContext, contextName, contextDirectory );
+</pre>
 
-  public void configure( Application application ) {
-    application.addEntryPoint( "/simple", SimpleEntryPoint.class, null );
-    application.addEntryPoint( "/other", AnotherEntryPoint.class, null );
-  }
-}</code></pre>
+  <h3>Simplified RWT Startup</h3>
+
   <p>
-    When registered as an OSGi service, an application instance will be started from this
-    configuration by the <code>org.eclipse.rap.rwt.osgi</code> bundle.
+    RWT applications are now also configured using the new ApplicationConfiguration API.
+    The former init parameters have been replaced by one parameter that accepts the fully qualified
+    class name of an <code>ApplicationConfiguration</code> implementation.
+    The name of this init parameter is kept in the constant
+    <code>ApplicationConfiguration.<wbr/>CONFIGURATION_PARAM</code>.
+    Here's an exemplary web.xml snippet:
   </p>
+  <pre>
+&lt;context-param&gt;
+  &lt;param-name&gt;org.eclipse.rap.applicationConfiguration&lt;/param-name&gt;
+  &lt;param-value&gt;com.example.ExampleConfiguration&lt;/param-value&gt;
+&lt;/context-param&gt;
+&lt;listener&gt;
+  &lt;listener-class&gt;org.eclipse.rwt.engine.RWTServletContextListener&lt;/listener-class&gt;
+&lt;/listener&gt;
+</pre>
   <p>
-    Also, the <code>param-name</code> for registering an ApplicationConfiguration in a
-    <code>web.xml</code> has changed. It is kept in the constant
-    <code>ApplicationConfiguration.CONFIGURATION_PARAM</code>.
-    The JavaDoc of this constant contains a code example.
-  </p>
-  <p>
-    Alternatively, an application can also be started programmatically using an
-    <code>ApplicationRunner</code>:
-  </p>
-  <pre><code>ApplicationConfiguration configuration = new SimpleConfiguration();
-ApplicationRunner runner = new ApplicationRunner( configuration, servletContext );
-runner.start();</code></pre>
-  <p>
-    The RAP workbench also uses this new bundle to connect with an OSGi HTTP service, so
-    you'll always have to add this new bundle to your launch configurations.
+    The <code>RWTServletContextListener</code> needs to be registered so that RWT is notified when
+    the servlet context is created.
+    For more information, check the
+    <a href="http://eclipse.org/rap/developers-guide/">developer's guide</a>.
   </p>
 
   <h3>EntryPoint Parameters</h3>
 
   <p>
-    Brandings in RAP are limited to adjustments needed for the web client.
-    With the possiblity to support multiple clients for RAP, this concept is not
-    flexible enough anymore.
-    As a replacement, we now support simple properties maps for entry points.
-    Every client implementation can provide their properties.
-    The new class <code>WebClient</code> contains the properties for the default web client.
+    Some properties of the application, such as the theme, the page title, or the favicon, can
+    already be customized in a branding extension.
+    The new ApplicationConfiguration API provides a more general concept for those customizations,
+    accepting a simple property map for entry points.
+    The property names for the default web client are defined by the new class
+    <code>org.<wbr/>eclipse.<wbr/>rwt.<wbr/>client.<wbr/>WebClient</code>.
+    Other client implementations can provide their own properties.
     Here's an example how to use it:
   </p>
-  <pre><code>Map&lt;String, String&gt; properties = new HashMap&lt;String, String&gt;();
-properties.put( WebClient.THEME_ID, "com.example.mytheme" );
-properties.put( WebClient.FAVICON, "images/favicon.png" );
-application.addEntryPoint( "/example", entryPointFactory, properties );
-</code></pre>
+  <pre>
+Map&lt;String, String&gt; properties = new HashMap&lt;String, String&gt;();
+properties.put( WebClient.THEME_ID, &quot;com.example.mytheme&quot; );
+properties.put( WebClient.FAVICON, &quot;images/favicon.png&quot; );
+application.addEntryPoint( &quot;/example&quot;, entryPointFactory, properties );
+</pre>
 
   <h3>EntryPoints by Path</h3>
 
   <p>
-    Instead of adding entrypoints by name, and selecting them with the <code>startup</code>
-    parameter in the URL, they can (and should) now be registered directly with URL path.
-    The <code>org.eclipse.rap.ui.entrypoint</code> extension point supports a new attribute
-    <code>path</code>. This attribute should now be used instead of the old
-    <code>parameter</code> attribute. With the entrypoint below, the application will be
-    available at the URL <code>http://HOSTNAME/CONTEXT/example</code>
+    So far, entrypoints have been registered with a <em>name</em> and have been available at a URL
+    like this:
   </p>
-  <pre><code>&lt;extension
-    point="org.eclipse.rap.ui.entrypoint"&gt;
+<pre>
+http://hostname/context/rap?startup=<em>&lt;entryPointName&gt;</em>
+</pre>
+  <p>
+    Both, the servlet name “rap” and the parameter name “startup” were hard-coded in RWT.
+    A branding had to be used to map the entrypoint to a custom URL.
+    Now, the extension point <code>org.<wbr/>eclipse.<wbr/>rap.<wbr/>ui.<wbr/>entrypoint</code>
+    supports a new attribute <code>path</code> that allows to register an entrypoint for a given
+    path:
+  </p>
+  <pre>
+&lt;extension
+    point=&quot;org.eclipse.rap.ui.entrypoint&quot;&gt;
   &lt;entrypoint
-      id="org.example.exampleEntryPoint"
-      class="org.example.ExampleEntrypoint"
-      path="/example" /&gt;
+      id=&quot;org.example.exampleEntryPoint&quot;
+      class=&quot;org.example.ExampleEntryPoint&quot;
+      path=&quot;/example&quot; /&gt;
 &lt;/extension&gt;
-</code></pre>
+</pre>
   <p>
-    The <code>brandings</code> extension point is still supported, but will be replaced with a
-    simpler concept in the future (see below).
+    This example shows how an entrypoint is registered for the path <em>/example</em>.
+    The application will be available at:
+  </p>
+<pre>
+http://hostname/context/example
+</pre>
+  <p>
+    This method is encouraged and meant to replace the registration using a parameter.
+    Also with the new <code>ApplicationConfiguration</code> API, entrypoints are registered by path.
+  </p>
+
+  <h3>New Operation Mode for JEE Compatibility</h3>
+
+  <p>
+    In order to provide full compatibility to SWT, the SWT threading model has to be emulated very
+    closely.
+    To make this possible, RWT starts a separate UI thread for every user session and executes all
+    application code in this thread by default.
+    This carries the consequence that application code cannot directly access JEE transaction or
+    security contexts, which are only available on the original request thread.
+  </p>
+
+  <p>
+    However, this exact compatibility to SWT is only required by code that uses SWT's few blocking
+    APIs.
+    The most obvious case are blocking dialogs (i.e. calling dialog.open() will suspend code
+    execution until the dialog is closed by the user, and then return a value).
+    The Eclipse workbench needs full SWT compatibility, but most other applications benefit from
+    a simple, lightweight operation mode that does not start these separate threads.
+    Instead of using the blocking APIs, those applications can use a callback pattern.
+  </p>
+
+  <p>
+    To support those lightweight applications, RWT now has two exchangeable <em>operation modes</em>
+    called <em>SWT compatibility</em> and <em>JEE compatibility</em>.
+    The JEE compatibility mode is encouraged for new applications that do not use the workbench,
+    because it is simpler, consumes less server resources and complies with the requirements of JEE.
+    It is also the default for applications using the new ApplicationConfiguration API.
+    The operation mode can be configured in the ApplicationConfiguration:
+  </p>
+<pre>
+public void configure( Application application ) {
+  application.setOperationMode( OperationMode.SWT_COMPATIBILITY );
+  ...
+}
+</pre>
+  <p>
+    An important consequence of the new JEE compatibility mode is that the method
+    <code>Display.sleep()</code> is not supported.
+    Applications must omit the SWT main loop in the entrypoints.
   </p>
   <p>
-    Also when using the new <code>ApplicationConfiguration</code> API to create RAP applications
-    programmatically, entrypoints are now registered by path.
+    Applications that are started using extension points always run in the SWT compatibility
+    mode.
   </p>
-  <pre><code>application.addEntryPoint( "/example", ExampleEntryPoint.class, properties );
-</code></pre>
+  <p>
+    For more detailed information, please check the
+    <a href="http://eclipse.org/rap/developers-guide/">developer's guide</a>.
+  </p>
 
   <h3>Failover and Clustering Support</h3>
 
   <p>
-    Support for transparent session failover was added to RWT. This enables applications to
-    run in a high-availability cluster.
+    With the new JEE compatible mode, RWT also supports transparent session failover.
+    This enables RWT standalone applications to run in a high-availability cluster.
   </p>
   <p>
-    RWT had to be extended in two places to achieve this. An alternative life cycle was
-    implemented that does not use a <em>UI Thread</em> because threads cannot be migrated.
-    With this <em>simple</em> life cycle implementation, RAP isn't fully compatible with SWT
-    anymore, but the differences are small.
-    As a side effect, this life cycle also eases integration with JEE and other
-    technologies that use thread-local variables to access to security or transaction
-    contexts.
-  </p>
-  <p>
-    The second area of work was to enable sessions to be replicated between cluster nodes.
-    Therefore all classes in RWT whose instances will have session scope were made serializable.
-    Note that application code must also be prepared in that all objects that live in the
-    session scope must be serializable.
+    In order to replicate sessions between cluster nodes, all classes in RWT whose instances will
+    have session scope are now serializable.
+    Note that application code must also be prepared for clustering by making all objects that live
+    in the session scope serializable.
   </p>
   <p>
     Serializable RWT sessions can also be used to swap inactive sessions onto disk and thereby
@@ -116,48 +226,28 @@ application.addEntryPoint( "/example", entryPointFactory, properties );
     and saves users from annoying 'the session has timed out' messages.
   </p>
   <p>
-    For further details, please visit our
+    Clustering of OSGi applications is not yet supported.
+    For further details, please check the
     <a href="http://wiki.eclipse.org/RAP/RWT_Cluster">Cluster wiki page</a>.
   </p>
 
-  <h3>Simplified RWT Startup</h3>
-
-  <p>
-    The way to start standalone RWT applications has been changed.
-    The former init parameters have been replaced by an API that allows you to
-    configure all aspects of the application to be started.
-    This web.xml fragment and code snippet shows how starting an RWT application now looks like:
-  </p>
-  <pre><code><b>&lt;context-param&gt;</b>
-  <b>&lt;param-name&gt;</b>org.eclipse.rap.applicationConfiguration<b>&lt;/param-name&gt;</b>
-  <b>&lt;param-value&gt;</b>com.example.ExampleConfiguration<b>&lt;/param-value&gt;</b>
-<b>&lt;/context-param&gt;</b>
-<b>&lt;listener&gt;</b>
-  <b>&lt;listener-class&gt;</b>org.eclipse.rwt.engine.RWTServletContextListener<b>&lt;/listener-class&gt;</b>
-<b>&lt;/listener&gt;</b></code></pre>
-  <pre><code>public class ExampleConfiguration implements ApplicationConfiguration {
-  public void configure( Application application ) {
-    application.addEntryPoint( "default", ExampleEntryPoint.class );
-    // ...
-  }
-}</code></pre>
-  <p>
-    The <code>RWTServletContextListener</code> needs to be registered so that RWT is
-    notified when the servlet context is created.
-    The remaining init parameter is used to specify a <em>configuration</em>, an
-    implementation of <code>ApplicationConfiguration</code>. This class is created and
-    its <code>configure</code> method is called before the application starts.
-    With the given <code>Application</code> object you can control all
-    aspects of the application.
-  </p>
-  <p>
-    Please read this
-    <a href="http://wiki.eclipse.org/RAP/FAQ#How_do_I_develop_an_RWT_standalone_application_with_RAP_.3E.3D_1.5">FAQ</a>
-    entry for more details.
-    We will integrate this information into the developer documentation before the 1.5 release.
-  </p>
-
   <h2>Network / Communication</h2>
+
+  <h3>New Client/Server Protocol</h3>
+
+  <p>
+    The communication between server and client has been replaced with a new, JSON-based format.
+    With this new protocol, RAP now provides for exchangeable client implementations.
+    RAP clients can be developed in any language and for any platform.
+    The new protocol also makes the responses much more readable and eases debugging.
+  </p>
+  <p>
+    <img class="framed" src="images/Firebug-JSON2.png" />
+  </p>
+  <p>
+    The exact format is described in the
+    <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
+  </p>
 
   <h3>UICallback Improvements</h3>
 
@@ -179,31 +269,15 @@ application.addEntryPoint( "/example", entryPointFactory, properties );
     summarizes how the mechanism works internally.
   </p>
 
-  <h3>New Client/Server Protocol</h3>
-
-  <p>
-    We planned this for a long time, and now it's becoming reality:
-    the communication between server and client is being replaced with a new, JSON-based format
-    (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>).
-    No JavaScript is included anymore. This makes the responses much more readable and eases 
-    debugging.
-  </p>
-  <p>
-    <img class="framed" src="images/Firebug-JSON2.png" />
-  </p>
-  <p>
-    With this new protocol, it is now possible to develop alternative clients for RAP.
-    The exact format is described in the
-    <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
-  </p>
-
-  <h2>Target Platform</h2>
+  <h2>Target Platform Changes</h2>
 
   <h3>q07 Fragment removed</h3>
 
   <p>
-    The fragment org.eclipse.rap.rwt.q07 is no longer needed and has been removed.
-    The contents are now located in the org.eclipse.rap.rwt bundle.
+    The fragment <code>org.<wbr/>eclipse.<wbr/>rap.<wbr/>rwt.<wbr/>q07</code> is no longer needed
+    and has been removed.
+    The contents have been merged into the <code>org.<wbr/>eclipse.<wbr/>rap.<wbr/>rwt</code>
+    bundle.
   </p>
   <p>
     The q07 fragment had originally been introduced to be able to support different versions of
@@ -211,35 +285,48 @@ application.addEntryPoint( "/example", entryPointFactory, properties );
     client library
     (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=320993">bug 320993</a>),
     so the fragment is not needed anymore.
-    However, with the new protocol
-    (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=311355">bug 311355</a>),
-    it will become possible to plug in alternative clients for RAP.
+    Moreover, the new protocol provides a more flexible way to support alternative clients.
   </p>
 
-  <h3>Target Platform Changes</h3>
+  <h3>New rwt.osgi Bundle</h3>
 
   <p>
-    Since RAP 1.5 will be available together with Eclipse Juno, the target platform is now based
-    on Eclipse 4.2 instead of 3.8.
-    However, the RAP implementation of the Eclipse Workbench remains to be based on 3.x.
-    But there are a couple of important changes in the target platform.
+    The RWT OSGi integration bundle <code>org.<wbr/>eclipse.<wbr/>rap.<wbr/>rwt.<wbr/>osgi</code>
+    has been added to the RAP runtime.
+    Please remember to include this bundle in your configuration for all OSGi-based applications.
   </p>
+
+  <h3>Eclipse 4.2</h3>
+
+  <p>
+    The RAP 1.5 target platform is based on Eclipse 4.2 (Juno).
+    However, RAP does not yet provide an integration with the 4.2 workbench.
+    The RAP implementation of the Eclipse workbench is still based on 3.x.
+  </p>
+  <p>
+    There are a couple of important changes to the target platform.
+  </p>
+
   <ul>
     <li>
-      The servlet 3.0 API packages are now exported as version 2.6.0 to comply with the
-      OSGi versioning rules
+      The target now contains the <strong>Servlet 3.0</strong> API.
+      Although the <code>javax.<wbr/>servlet</code> bundle has a 3.0 version, it exports packages
+      as version 2.6.0 to comply with the OSGi versioning rules
       (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=360245">bug 360245</a>).
     </li>
     <li>
-      The target platform includes Jetty 8 instead of Jetty 6.
+      The target platform includes <strong>Jetty 8</strong> instead of Jetty 6.
       This is not just a change of the version number, also the package names have changed
       from <code>org.mortbay.jetty</code> to <code>org.eclipse.jetty</code>.
-      Instead of two, Jetty now consists of seven bundles.
+      Since the Jetty project decided to split their code into smaller modules
+      there are now seven Jetty bundles required instead of two.
     </li>
     <li>
-      The platform now includes a new OSGi console based on the Apache Felix Gogo project.
-      Therefore, the basic target platform for RAP applications now contains three bundles
-      (<code>org.apache.felix.gogo.*</code>) support it.
+      The platform now includes a new OSGi console based on the Apache <strong>Felix Gogo</strong>
+      project.
+      Therefore, the basic target platform for RAP applications now contains three more bundles
+      from Apache Gogo
+      (<code>org.<wbr/>apache.<wbr/>felix.<wbr/>gogo.*</code>) to support it.
     </li>
   </ul>
   <p>
@@ -250,7 +337,8 @@ application.addEntryPoint( "/example", entryPointFactory, properties );
 
   <p>
     The runtime repository now contains two different features:
-    One contains only the RAP bundles and the other feature provides all bundles that are
+    The first one contains all bundles provided by the RAP project.
+    The other feature provides a selection of bundles from the Juno platform that are
     required for a complete RAP target platform.
     If you want to create a simple RAP target platform, you'll need both.
   </p>
@@ -278,11 +366,12 @@ application.addEntryPoint( "/example", entryPointFactory, properties );
     This must be done directly after creating the widget and cannot be changed later.
     Here's a code example:
   </p>
-  <pre><code>Table table = new Table( parent, SWT.BORDER );
+  <pre>
+Table table = new Table( parent, SWT.BORDER );
 table.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
 TableItem item = new TableItem( table, SWT.NONE );
-item.setText( "Some &lt;em&gt;text&lt;/em&gt; with &lt;strong&gt;markup&lt;strong&gt;" );
-</code></pre>
+item.setText( &quot;Some &lt;em&gt;text&lt;/em&gt; with &lt;strong&gt;markup&lt;strong&gt;&quot; );
+</pre>
   <p>
     The markup will be validated on the server. Currently, the following HTML elements
     area allowed:
@@ -305,12 +394,12 @@ item.setText( "Some &lt;em&gt;text&lt;/em&gt; with &lt;strong&gt;markup&lt;stron
     </li>
     <li>
       <strong>images</strong>:
-      <code>&lt;img src="images/example.png" width="16" height="16" /&gt;</code>, width and
-      height are obligatory
+      <code>&lt;img src=&quot;images/example.png&quot; width=&quot;16&quot; height=&quot;16&quot; /&gt;</code>,
+      width and height are obligatory
     </li>
     <li>
       <strong>links</strong> like
-      <code>&lt;a href="http://eclipse.org"&gt;Eclipse&lt;/a&gt;</code>.
+      <code>&lt;a href=&quot;http://eclipse.org&quot;&gt;Eclipse&lt;/a&gt;</code>.
       To open the linked page in a new tab, you can use the <code>target</code>
       attribute.
     </li>
@@ -331,7 +420,9 @@ item.setText( "Some &lt;em&gt;text&lt;/em&gt; with &lt;strong&gt;markup&lt;stron
     To do so, you can use the new <code>setData()</code> constant
     <code>RWT.CUSTOM_ITEM_HEIGHT</code>:
   </p>
-  <pre><code>table.setData( RWT.CUSTOM_ITEM_HEIGHT, Integer.valueOf( 62 ) )</code></pre>
+  <pre>
+table.setData( RWT.CUSTOM_ITEM_HEIGHT, Integer.valueOf( 62 ) )
+</pre>
   <p>
     A custom item height must be set directly after creating the widget and cannot be changed
     later.
@@ -390,14 +481,16 @@ item.setText( "Some &lt;em&gt;text&lt;/em&gt; with &lt;strong&gt;markup&lt;stron
     <code>BrowserCallback</code> implementation that will be notified when the evaluation has
     completed:
   </p>
-  <pre><code>Browser browser = new Browser( parent, SWT.NONE );
+  <pre>
+Browser browser = new Browser( parent, SWT.NONE );
 ...
 BrowserUtil.evaluate( browser, script, new BrowserCallback() {
   public void evaluationSucceeded( Object result ) {
   }
   public void evaluationFailed( Exception exception ) {
   }
-} );</code></pre>
+} );
+</pre>
 
   <h3>Arrow Buttons</h3>
 
@@ -412,7 +505,8 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
   <p>
     Of course, the style of arrow buttons can be configured in a theme:
   </p>
-  <pre><code>Button[ARROW] {
+  <pre>
+Button[ARROW] {
   border: 1px solid #bdbdbd;
   padding: 10px;
 }
@@ -420,7 +514,7 @@ BrowserUtil.evaluate( browser, script, new BrowserCallback() {
 Button-ArrowIcon[UP] {
   background-image: url( theme/images/arrow-up.png );
 }
-</code></pre>
+</pre>
 
   <h2>Event System</h2>
 
@@ -428,10 +522,10 @@ Button-ArrowIcon[UP] {
 
   <p>
     The <code>RWT.ACTIVE_KEYS</code> constant has been
-    <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=343248">introduced in RAP 1.4</a>
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=343248">introduced in RAP 1.4</a>
     to allow for key bindings.
     Now this constant can also be used to limit the keys that will trigger a key event on a
-    <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=346597">single widget</a>.
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=346597">single widget</a>.
     This means that when a key-listener is attached to a widget,
     it's now possible to choose beforehand which keys will trigger events.
     This can drastically reduce the traffic caused by key-events.
@@ -444,7 +538,7 @@ Button-ArrowIcon[UP] {
 
   <p>
     The new constant <code>RWT.CANCEL_KEYS</code> can be used to specify a
-    <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367079">list of keys to be cancelled</a>.
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=367079">list of keys to be cancelled</a>.
     Instead of dynamically cancelling events by setting the <code>doit</code>-flag to
     <code>false</code> in a <code>KeyListener</code>, this allows to do the same thing in a
     static way.
@@ -456,7 +550,7 @@ Button-ArrowIcon[UP] {
   <p>
     Like <code>RWT.ACTIVE_KEYS</code>, this can be done either globally, using
     <code>Display.setData()</code>, or on a
-    <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367869">per-widget base</a>
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=367869">per-widget base</a>
     using <code>Widget.setData()</code>.
     For more details, see the JavaDoc on <code>RWT.CANCEL_KEYS</code>.
   </p>
@@ -468,7 +562,7 @@ Button-ArrowIcon[UP] {
     in favor of the static approach described above.
     With this change, setting the <code>doit</code>-flag on <code>KeyEvent</code>s and
     <code>TraverseEvent</code>s has
-    <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367871">no longer any effect</a>
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=367871">no longer any effect</a>
     in RAP.
     As a replacement, the <code>RWT.CANCEL_KEYS</code> constant should be used.
     JFace cell editors have already been adapted to this change.
@@ -487,10 +581,10 @@ Button-ArrowIcon[UP] {
     We dislike taking functionality away, but in this case we are convinced that the
     improvements are more valuable than the loss.
     We were able to heavily improve the key event handling and to fix
-    <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=367091">several issues</a>
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=367091">several issues</a>
     regarding
-    <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=329639">missing events</a> or
-    <a href = "https://bugs.eclipse.org/bugs/show_bug.cgi?id=366788">wrong values</a>.
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=329639">missing events</a> or
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=366788">wrong values</a>.
     The change also allowed us to send key events in asynchronous HTTP requests
     <em>in all browsers</em>, making the client UI more responsive.
   </p>
@@ -550,9 +644,10 @@ Button-ArrowIcon[UP] {
     <a href="http://www.w3.org/TR/css3-color/#rgba-color">rgba</a> notation for color.
     Example:
   </p>
-  <pre><code>Button {
+  <pre>
+Button {
   text-shadow: 0 1px 0 rgba( 0, 0, 0, 0.3 );
-}</code></pre>
+}</pre>
 
   <h3>New Animations</h3>
 
@@ -596,7 +691,7 @@ Button-ArrowIcon[UP] {
     up to other browsers regarding performance and compatibility.
     RAP can now fully utilize all its new features (HTML5, CSS3, SVG) by switching to standard
     rendering in IE9 (as opposed to quirksmode used for previous IE versions).
-    This gives RAP applications a noticable performance-boost in IE9, especially when using GC
+    This gives RAP applications a noticeable performance-boost in IE9, especially when using GC
     for drawing complex graphs.
   </p>
 
