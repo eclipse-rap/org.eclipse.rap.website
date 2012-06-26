@@ -136,6 +136,6 @@ $NAV_ENTRIES = array(
 ?>
 
     </ul>
-    <div class="antifloat"></div>
+    <div class="stop"></div>
   </div>
 </div>

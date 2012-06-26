@@ -76,7 +76,7 @@
     </div>
   </div>
 
-  <div class="antifloat" ></div>
+  <div class="stop" ></div>
 
   <div class="feature" id="tooling">
     <div class="icon"></div>
@@ -121,7 +121,7 @@
       </p>
     </div>
   </div>
-  <div class="antifloat"></div>
+  <div class="stop"></div>
 </div>
 
 <div class="popup-content" data-for="ui-kit">

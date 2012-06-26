@@ -10,7 +10,7 @@
   </a>
   <h2>Recent blog posts</h2>
   <div id="blog-posts"></div>
-  <div class="antifloat"></div>
+  <div class="stop"></div>
 </div>
 
 <script type="text/javascript">

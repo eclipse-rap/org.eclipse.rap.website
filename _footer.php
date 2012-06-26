@@ -1,4 +1,4 @@
-    <div class="antifloat"></div>
+    <div class="stop"></div>
     <div id="footer">
     <ul id="footernav">
       <li><a href="http://www.eclipse.org/">Eclipse</a></li>
