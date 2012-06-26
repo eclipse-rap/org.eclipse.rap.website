@@ -1,0 +1,40 @@
+
+@CHARSET "UTF-8";
+
+table {
+  border: 1px solid #aaa;
+}
+
+td, th {
+  padding: 2px;
+  border-color: #aaa;
+  border-style: solid;
+}
+
+td {
+  font-size: 12px;
+}
+
+/* first row, first cell */
+
+th, td {
+  border-width: 0px;
+}
+
+/* first row, not first cell */
+
+th+th, th+td, td+td {
+  border-width: 0px 0px 0px 1px;
+}
+
+/* not first row, first cell */
+
+tr+tr th, tr+tr td {
+  border-width: 1px 0px 0px 0px;
+}
+
+/* not first row, not first cell */
+
+tr+tr th+th, tr+tr th+td, tr+tr td+td  {
+  border-width: 1px 0px 0px 1px;
+}

@@ -6,10 +6,6 @@ class DevGuideUtils {
 
   private function __construct() {}
 
-  public static function containsString( $haystack, $needle ) {
-    return strpos( $haystack, $needle ) === false ? false : true;
-  }
-
 }
 
 ?>

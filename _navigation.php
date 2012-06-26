@@ -1,20 +1,34 @@
 <?php
 
-$navigationStructure = array(
+$NAV_ENTRIES = array(
+
+  "home" => array(
+    "sub-entries" => array(
+
+      "about-project" => array(
+        "label" => "About this project",
+        "url" => "http://eclipse.org/projects/project.php?id=rt.rap"
+      ),
+      "incubator" => array(
+        "label" => "Incubator",
+        "url" => "/rap/incubator/"
+      )
+    )
+  ),
 
   "demos" => array(
     "label" => "Demos",
-  	"url" => "/rap/demos/",
-  	"sub-entries" => array(
-  	  "demos" => array(
-  	    "label" => "Demos",
-  	    "url" => "/rap/demos/"
-  	  ),
-  	  "built-on-rap" => array(
-  	    "label" => "Built on RAP",
-  	    "url" => "/rap/users/"
-  	  )
-  	)
+    "url" => "/rap/demos/",
+    "sub-entries" => array(
+      "demos" => array(
+        "label" => "Demos",
+        "url" => "/rap/demos/"
+      ),
+      "built-on-rap" => array(
+        "label" => "Built on RAP",
+        "url" => "/rap/users/"
+      )
+    )
   ),
 
   "download" => array(
@@ -76,60 +90,52 @@ $navigationStructure = array(
 
 );
 
-function createHeaderAndNavigation( $navPosition ) {
-  $result = '<div id="header">'
-          . createLogo( $navPosition[ 0 ], $navPosition[ 1 ] )
-          . createMainNavigation( $navPosition[ 0 ], $navPosition[ 1 ] )
-          . '</div>'
-          . createHeaderBar( $navPosition[ 0 ], $navPosition[ 1 ] );
-  return $result;
-}
+  $nav_logo_deco_class = $PAGE_NAV_POSITION[ 0 ] === 'home' ? 'class="active"' : '';
+  $nav_home_link_style = $PAGE_NAV_POSITION[ 0 ] === 'home' ? 'style="display:none;"' : '';
+?>
 
-function createLogo( $topLevelId, $secondLevelId ) {
-  $active = $topLevelId === 'home'? 'class="active"' : '';
-  $result = "<div $active id=\"rap-logo-deco\"></div>";
-  $result .= '<a href="/rap/"><div id="rap-logo"></div></a>';
-  return $result;
-}
+<div id="header">
 
-function createMainNavigation( $topLevelPos ) {
-  $result = '<div id="navigation"><ul>';
-  $navEntries = $GLOBALS[ 'navigationStructure' ];
-  foreach( $navEntries as $navId => $navData ) {
-    $active = $navId === $topLevelPos ? 'class="active"' : '';
-    $result .= "<li $active><a href=\"{$navData[ 'url' ]}\">{$navData[ 'label' ]}</a></li>";
-  }
-  $result .= '</ul><div class="stop"></div></div>';
-  return $result;
-}
+  <div <?= $nav_logo_deco_class ?> id="rap-logo-deco"></div>
+  <a href="/rap/"><div id="rap-logo"></div></a>
 
-function createHeaderBar( $topLevelId, $secondLevelId ) {
-  $headerBar = '<div id="nav-bar">'
-             . '<div id="nav-container">'
-             . createHeaderBarNavigation( $topLevelId, $secondLevelId )
-             . '<div class="antifloat"></div>'
-             . '</div>'
-             . '</div>';
-  return $headerBar;
-}
+  <div id="navigation">
+    <ul>
 
-function createHeaderBarNavigation( $topLevelId, $secondLevelId ) {
-  if( $topLevelId === 'home' ) {
-    $result = '<ul id="nav">';
-    $active = $secondLevelId === "incubator" ? 'class="active"' : '';
-    $result .= '<li><a href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a></li>';
-    $result .= "<li><a $active href=\"/rap/incubator\">Incubator</a></li>";
-  } else {
-    $result = "<ul id=\"nav-home\"><li><a href=\"/rap/\">&lt; Home</a></li></ul>";
-    $result .= '<ul id="nav">';
-    $secondLevelEntries = $GLOBALS[ 'navigationStructure' ][ $topLevelId ][ 'sub-entries' ];
-    foreach( $secondLevelEntries as $navId => $navData ) {
-      $active = $navId === $secondLevelId ? 'class="active"' : '';
-      $result .= "<li><a $active href=\"{$navData[ 'url' ]}\">{$navData[ 'label' ]}</a></li>";
+<?
+  // top level
+  foreach( $NAV_ENTRIES as $navId => $navData ) {
+    if( $navData[ 'label' ] ) {
+      $active = $navId === $PAGE_NAV_POSITION[ 0 ] ? 'class="active"' : '';
+      echo "<li $active><a href=\"{$navData[ 'url' ]}\">{$navData[ 'label' ]}</a></li>";
     }
   }
-  $result .= '</ul>';
-  return $result;
-}
-
 ?>
+
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul <?= $nav_home_link_style ?> id="nav-home">
+      <li>
+        <a href="/rap/">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<?
+  // second level
+  $nav_secondLevelEntries = $NAV_ENTRIES[ $PAGE_NAV_POSITION[ 0 ] ][ 'sub-entries' ];
+  foreach( $nav_secondLevelEntries as $navId => $navData ) {
+    $active = $navId === $PAGE_NAV_POSITION[ 1 ] ? ' class="active"' : '';
+    echo "<li><a {$active} href=\"{$navData[ 'url' ]}\">{$navData[ 'label' ]}</a></li>";
+  }
+?>
+
+    </ul>
+    <div class="antifloat"></div>
+  </div>
+</div>

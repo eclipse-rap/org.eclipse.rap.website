@@ -32,7 +32,7 @@ class ContentView {
     foreach( $links as $link ) {
       if( $link -> hasAttribute( 'href' ) ) {
         $url = $link -> getAttribute( 'href' );
-        if( !DevGuideUtils::containsString( $url, 'http://' ) && !self::isBookmark( $url ) ) {
+        if( !containsString( $url, 'http://' ) && !self::isBookmark( $url ) ) {
           $link -> setAttribute( 'href', self::rewriteLinkUrl( $url ) );
         }
       }
@@ -47,7 +47,7 @@ class ContentView {
     $result = '';
     if( substr( $url, 0, 5 ) === '/help' ) {
       $result = str_replace( '/help', 'http://help.eclipse.org', $url );
-    } else if( DevGuideUtils::containsString( $url, '.html' ) ) {
+    } else if( containsString( $url, '.html' ) ) {
       $normalizedUrl = self::normalizeUrl( self::$htmlFile -> getPath() . '/' . $url );
       $searchString = DevGuideUtils::ROOT_URL . '/help/html/';
       $result = '?topic=' . str_replace( $searchString, '', $normalizedUrl );
@@ -61,7 +61,7 @@ class ContentView {
     $images = $htmlDocument -> getElementsByTagName( 'img' );
     foreach( $images as $image ) {
       $url = $image -> getAttribute( 'src' );
-      if( !DevGuideUtils::containsString( $url, 'http://' ) ) {
+      if( !containsString( $url, 'http://' ) ) {
         $image -> setAttribute( 'src', self::$htmlFile -> getPath() . '/' . $url );
       }
     }
