@@ -350,6 +350,15 @@ public void configure( Application application ) {
 
   <h2>Widget Set</h2>
 
+  <h3>Shared JavaScript Implementation of Tree and Table</h3>
+
+  <p>
+    Tree and Table are now using the same JavaScript implementation on the client. This allowed us
+    to fix a lot of <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=332524#c0">bugs</a> and 
+    gave the Table a small performance boost. It also makes it very easy for us to always enable new 
+    features for both widges on the same time, like fixed columns and markup.
+  </p>
+
   <h3>Markup Support</h3>
 
   <p>
