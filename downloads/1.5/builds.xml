@@ -97,9 +97,11 @@
 
   <build name="1.5" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2012-06-27"
-      news="1.5/" />
+      news="1.5/"
+      runtimeZip="rap-runtime-1.5.0-R-20120612-1458.zip"
+      toolingZip="rap-tooling-1.5.0-R-20120613-1425.zip" />
 
   <build name="1.5.1" type="SR"
       shortname="SR1"

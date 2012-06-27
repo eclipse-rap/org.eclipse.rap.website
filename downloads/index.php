@@ -9,8 +9,11 @@
 
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
-  $releaseBuilds = new Builds( "./1.4/builds.xml" );
+  $releaseBuilds = new Builds( "./1.5/builds.xml" );
   $stableBuilds = new Builds( "./1.5/builds.xml" );
+
+  // ---
+
   if( $releaseBuilds->hasError() || $stableBuilds->hasError() ) {
     echo '<div class="error">There was a problem loading the build data for this site.</div>';
   }
@@ -20,16 +23,6 @@
 
   $downloadUrl = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/";
   $newsUrl = "../noteworthy/";
-
-  // ---
-
-  function getReleaseNotesLink( $build ) {
-    $result = "";
-    if( $relnotes != "" ) {
-      $result = " <a href=\"" . $newsUrl . $build[ "relnotes" ] . "\">Release Notes</a>";
-    }
-    return $result;
-  }
 
   $STABLE_RUNTIME_DESCRIPTION = $stableBuilds->getDescription( "runtime" );
   $STABLE_TOOLING_DESCRIPTION = $stableBuilds->getDescription( "tooling" );
@@ -41,7 +34,7 @@
   $RELEASE_DATE = formatDate( $releaseBuild->getPublishDate() );
   $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild->getNews();
   $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild->getNews();
-  $RELEASE_NOTES_URL = $newsUrl . $releaseBuild->getReleaseNotes();
+  $RELEASE_NOTES_URL = $releaseBuild->getReleaseNotes() ? $newsUrl . $releaseBuild->getReleaseNotes() : "";
   $STABLE_RUNTIME_ZIP = $stableBuild->getZipFile( "runtime" );
   $STABLE_TOOLING_ZIP = $stableBuild->getZipFile( "tooling" );
   $RELEASE_RUNTIME_ZIP = $releaseBuild->getZipFile( "runtime" );
@@ -138,7 +131,9 @@
         Published: <?php echo $RELEASE_DATE ?>
         <br/>
         <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
-        <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
+        <? if( $RELEASE_NOTES_URL ) { ?>
+          <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
+        <? } ?>
       </p>
 
       <p class="download-row">
@@ -237,7 +232,9 @@
         Published: <?php echo $RELEASE_DATE ?>
         <br/>
         <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
-        <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
+        <? if( $RELEASE_NOTES_URL ) { ?>
+          <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
+        <? } ?>
       </p>
 
       <p class="download-row">
