@@ -118,12 +118,12 @@
         <a href="<?php echo $STABLE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
       </p>
       <p class="download-row">
-        <img src="/rap/images/site.gif" />
+        <img src="/rap/images/site.gif" alt="site" />
         Software site:
         <strong><?php echo $STABLE_TOOLING_UPDATE_SITE ?></strong>
       </p>
       <p class="download-row">
-        <img src="/rap/images/zip.gif" />
+        <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
         <a href="<?php echo $STABLE_TOOLING_DOWNLOAD_URL ?>"><?php echo $STABLE_TOOLING_ZIP ?></a>
       </p>
@@ -142,12 +142,12 @@
       </p>
 
       <p class="download-row">
-        <img src="/rap/images/site.gif" />
+        <img src="/rap/images/site.gif" alt="site" />
         Software site:
         <strong><?php echo $RELEASE_TOOLING_UPDATE_SITE ?></strong>
       </p>
       <p class="download-row">
-        <img src="/rap/images/zip.gif" />
+        <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
         <a href="<?php echo $RELEASE_TOOLING_DOWNLOAD_URL ?>"><?php echo $RELEASE_TOOLING_ZIP ?></a>
       </p>
@@ -163,12 +163,12 @@
       </p>
 
       <p class="download-row">
-        <img src="/rap/images/site.gif" />
+        <img src="/rap/images/site.gif" alt="site" />
         Software site:
         <strong>http://download.eclipse.org/rt/rap/nightly/tooling/</strong>
       </p>
       <p class="download-row">
-        <img src="/rap/images/zip.gif" />
+        <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
         <a href="https://hudson.eclipse.org/hudson/job/rap-2.0-tools/lastStableBuild/">download from Hudson</a>
       </p>
@@ -241,12 +241,12 @@
       </p>
 
       <p class="download-row">
-        <img src="/rap/images/site.gif" />
+        <img src="/rap/images/site.gif" alt="site" />
         Software site:
         <strong><?php echo $RELEASE_RUNTIME_UPDATE_SITE ?></strong>
       </p>
       <p class="download-row">
-        <img src="/rap/images/zip.gif" />
+        <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
         <a href="<?php echo $RELEASE_RUNTIME_DOWNLOAD_URL ?>"><?php echo $RELEASE_RUNTIME_ZIP ?></a>
       </p>
@@ -262,12 +262,12 @@
         <br/>
       </p>
       <p class="download-row">
-        <img src="/rap/images/site.gif" />
+        <img src="/rap/images/site.gif" alt="site" />
         Software site:
         <strong>http://download.eclipse.org/rt/rap/nightly/runtime/</strong>
       </p>
       <p class="download-row">
-        <img src="/rap/images/zip.gif" />
+        <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
         <a href="https://hudson.eclipse.org/hudson/job/rap-2.0-runtime/lastStableBuild/">download from Hudson</a>
       </p>

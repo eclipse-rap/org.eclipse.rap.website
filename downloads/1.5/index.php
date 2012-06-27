@@ -46,7 +46,7 @@
 
   <p>
     Software Site:
-    <img src="/rap/images/site.gif"/>
+    <img src="/rap/images/site.gif" alt="site" />
     <?= $builds->getUpdateSite( "tooling" ) ?>
   </p>
 
@@ -58,7 +58,7 @@
 
   <p>
     Software Site:
-    <img src="/rap/images/site.gif"/>
+    <img src="/rap/images/site.gif" alt="site" />
     <?= $builds->getUpdateSite( "runtime" ) ?>
   </p>
 
@@ -90,12 +90,12 @@
       </td>
       <td>
         <a href="<?= $downloadPath . $build->getZipFile( "tooling" ) ?>">
-          <img src="/rap/images/zip.gif"/> Tooling
+          <img src="/rap/images/zip.gif" alt="zip" /> Tooling
         </a>
       </td>
       <td>
         <a href="<?= $downloadPath . $build->getZipFile( "runtime" ) ?>">
-          <img src="/rap/images/zip.gif"/> Runtime
+          <img src="/rap/images/zip.gif" alt="zip" /> Runtime
         </a>
       </td>
 
