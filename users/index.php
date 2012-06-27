@@ -16,10 +16,10 @@
      to this page, just drop us a line at the
     <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev</a> mailing list.
   </p>
-  
+
   <h2 class="section">Open Source Projects</h2>
 
-<!--- Template
+<!-- Template
   <div class="box">
     <div class="images">
       <a href="link">
@@ -41,7 +41,7 @@
     </div>
     <div style="clear: both;"></div>
   </div>
---->
+-->
 
   <div class="box">
     <div class="images">
@@ -89,10 +89,10 @@
     <div class="images">
       <a href="images/riena1-full.png">
         <img src="images/riena1.png"/>
-      </a><!---<br/>
+      </a><!--<br/>
       <a href="images/riena2-full.png">
         <img src="images/riena2.png"/>
-      </a>--->
+      </a>-->
     </div>
     <div>
       <h2 id="riena" class="withTagline">Eclipse Riena</h2>
@@ -114,7 +114,7 @@
           <a href="http://wiki.eclipse.org/Riena">Riena Wiki</a>
         </li>
         <li>
-          <a href="https://www.compeople.eu/blog/?p=575">Blogpost: <q>Riena 3.0 == Riena on RCP & RAP"</q></a>
+          <a href="https://www.compeople.eu/blog/?p=575">Blogpost: <q>Riena 3.0 == Riena on RCP &amp; RAP"</q></a>
         </li>
         <li>
           <a href="http://www.compeople.de/files/riena_on_rap.pdf">Presentation Slides <q>Riena on RAP</q></a>
@@ -278,7 +278,7 @@
           <a href="http://fazd.tamu.edu/information-analysis-systems/online-dashboard-to-enhance-decision-making-during-disease-outbreaks/">Product Page</a>
         </li>
         <li>
-          <a href="http://tcat.tamu.edu/index.php?option=com_content&view=article&id=95:online-technology-for-tracking-disease-outbreaks-earns-dhs-2010-science-a-technology-impact-award&catid=39:tcat-news&Itemid=56">Department of Homeland Security Award</a>
+          <a href="http://tcat.tamu.edu/index.php?option=com_content&amp;view=article&amp;id=95:online-technology-for-tracking-disease-outbreaks-earns-dhs-2010-science-a-technology-impact-award&amp;catid=39:tcat-news&amp;Itemid=56">Department of Homeland Security Award</a>
         </li>
       </ul>
     </div>
@@ -381,7 +381,7 @@
       <p class="refs">References:</p>
       <ul>
         <li>
-          <a href="http://enelytics.net/sos-technology.htm">EIS Technology & Extensibility</a>
+          <a href="http://enelytics.net/sos-technology.htm">EIS Technology &amp; Extensibility</a>
         </li>
       </ul>
     </div>

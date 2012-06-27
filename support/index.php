@@ -36,7 +36,7 @@
     <h2>Forum</h2>
     <p>
       If you couldn't find the answers you were looking for in the
-      <a href="http://wiki.eclipse.org/RAP/FAQ">FAQ<a></a> or you are stuck on a particular problem,
+      <a href="http://wiki.eclipse.org/RAP/FAQ">FAQ</a> or you are stuck on a particular problem,
       <a href="http://www.eclipse.org/forums/eclipse.technology.rap">the RAP forum</a> is a good
       place to go.
     </p>

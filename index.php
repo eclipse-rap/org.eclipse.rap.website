@@ -22,7 +22,7 @@
   <div id="heading-eclipse-icon">
     <a href="http://eclipse.org/"><img
         src="/rap/images/logos/eclipse.png"
-        alt="Eclipse.org icon"></a>
+        alt="Eclipse.org icon" /></a>
   </div>
 </div>
 
@@ -34,7 +34,7 @@
       <p>
         RAP lets you develop modern web UIs with a real widget toolkit with
         <a href="http://eclipse.org/swt/" title="Standard Widget Toolkit">SWT</a> API,
-        which includes powerful features like drag & drop, loading data on demand, inline editing,
+        which includes powerful features like drag &amp; drop, loading data on demand, inline editing,
         and drawing.
       </p><p>
         Using the <a href="http://wiki.eclipse.org/JFace">JFace</a> APIs,
@@ -158,7 +158,7 @@
       </li>
       <li>
        Need more widgets? A list of known Add-Ons targeted specifically at RAP can be found in the
-       <a href="http://wiki.eclipse.org/RAP/Add-Ons">RAP Wiki</a> <!-- Nebula? --->
+       <a href="http://wiki.eclipse.org/RAP/Add-Ons">RAP Wiki</a> <!-- Nebula? -->
       </li>
       <li>
        Widget behavior can be enhanced using client-side event handlers:
@@ -308,7 +308,8 @@
           can generate RCP and RAP applications
         </li>
       </ul>
-   </ul>
+    </li>
+  </ul>
 </div>
 
 <div class="popup-content" data-for="open-source">
@@ -324,7 +325,7 @@
   <p>
     If you require help beyond the <a href="/rap/developers-guide/">RAP Developer's Guide</a>,
     there is an active community maintaining a
-    <a href="http://www.eclipse.org/forums/index.php?t=thread&frm_id=34">Newsgroup</a>,
+    <a href="http://www.eclipse.org/forums/index.php?t=thread&amp;frm_id=34">Newsgroup</a>,
     a <a href="http://wiki.eclipse.org/RAP">Wiki</a> and the <a href="/rap/incubator/">Incubator project</a>.
     Bugs can be reported in the <a href="/rap/bugs/">RAP Bugzilla</a> and will be  processed
     transparently.

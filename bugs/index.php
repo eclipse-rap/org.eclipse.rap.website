@@ -19,15 +19,15 @@
 
   <ul>
     <li>
-      <a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_file_loc_type=allwordssubstr&bug_severity=blocker&bug_severity=critical&bug_severity=major&bug_severity=normal&bug_severity=minor&bug_severity=trivial&bug_severity=enhancement&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bugidtype=include&columnlist=bug_status%2Cshort_desc&product=RAP&query_format=advanced&order=bug_id">
+      <a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_file_loc_type=allwordssubstr&amp;bug_severity=blocker&amp;bug_severity=critical&amp;bug_severity=major&amp;bug_severity=normal&amp;bug_severity=minor&amp;bug_severity=trivial&amp;bug_severity=enhancement&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bugidtype=include&amp;columnlist=bug_status%2Cshort_desc&amp;product=RAP&amp;query_format=advanced&amp;order=bug_id">
       All open bug reports and enhancement requests</a>
     </li>
     <li>
-      <a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_file_loc_type=allwordssubstr&bug_severity=enhancement&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&bugidtype=include&columnlist=bug_status%2Cshort_desc&product=RAP&query_format=advanced&order=bug_id">
+      <a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_file_loc_type=allwordssubstr&amp;bug_severity=enhancement&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;bugidtype=include&amp;columnlist=bug_status%2Cshort_desc&amp;product=RAP&amp;query_format=advanced&amp;order=bug_id">
       All open enhancement requests</a>
     </li>
     <li>
-      <a href="https://bugs.eclipse.org/bugs/query.cgi?query_format=advanced&classification=RT&product=RAP">
+      <a href="https://bugs.eclipse.org/bugs/query.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP">
       Bugzilla search form</a>
     </li>
   </ul>
@@ -40,7 +40,7 @@
 
   <ul>
     <li>
-      <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&rep_platform=All&op_sys=all">
+      <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&amp;rep_platform=All&amp;op_sys=all">
       Bugzilla bug report form</a>
     </li>
   </ul>

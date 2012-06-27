@@ -66,7 +66,7 @@ function send404() {
   <?= NavigationView::create( DevGuideUtils::ROOT_URL . '/help/toc.xml' ); ?>
 </div>
 
-<script>
+<script type="text/javascript">
   $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
     if( !$( this ).find( '.active' ).attr( 'class' ) ) {
       $( this ).hide();

@@ -97,7 +97,7 @@ $NAV_ENTRIES = array(
 <div id="header">
 
   <div <?= $nav_logo_deco_class ?> id="rap-logo-deco"></div>
-  <a href="/rap/"><div id="rap-logo"></div></a>
+  <a href="/rap/"><span id="rap-logo"></span></a>
 
   <div id="navigation">
     <ul>

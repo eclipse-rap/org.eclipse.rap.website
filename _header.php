@@ -6,8 +6,8 @@
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
   <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="/rap/_theme/reset.css" media="screen"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/reset.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="/rap/_theme/layout.css" media="screen" />
 <? if( isset( $PAGE_ADD_CSS ) ) { ?>
   <link rel="stylesheet" type="text/css" href="<?= $PAGE_ADD_CSS ?>" media="screen" />

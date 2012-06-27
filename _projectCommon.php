@@ -64,7 +64,7 @@ EOHTML;
         $parts[] = $key . '=' . rawurlencode( $element );
       }
     }
-    return 'https://bugs.eclipse.org/bugs/buglist.cgi?' . join( "&", $parts );
+    return 'https://bugs.eclipse.org/bugs/buglist.cgi?' . join( "&amp;", $parts );
   }
 
   function formatDate( $input ) {

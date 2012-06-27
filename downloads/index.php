@@ -76,16 +76,14 @@
     This IDE includes everything you need to develop RCP and RAP
     applications.
   </p>
-  <p>
-    <div class="download-button">
-      <a style="text-decoration: none;" href="http://www.eclipse.org/downloads/">
-        <div style="margin: 0pt 5px;">
-          <span class="download-icon" style="position: relative; top: -30px;"></span>
-          <img src="../images/epp-download.png" alt="Eclipse for RCP and RAP Developers"/>
-        </div>
-      </a>
-    </div>
-  </p>
+  <div class="download-button">
+    <a style="text-decoration: none;" href="http://www.eclipse.org/downloads/">
+      <span style="margin: 0pt 5px; display: block;">
+        <span class="download-icon" style="position: relative; top: -30px;"></span>
+        <img src="../images/epp-download.png" alt="Eclipse for RCP and RAP Developers"/>
+      </span>
+    </a>
+  </div>
 
   <h3>Install RAP Tools separately</h3>
   <p>
@@ -100,11 +98,11 @@
     </div>
     <div class="expand-link download-button">
       <span class="download-icon"></span>
-      <span>latest release</span></span>
+      <span>latest release</span>
     </div>
     <div class="expand-link download-button">
       <span class="download-icon"></span>
-      <span>nightly build</span></span>
+      <span>nightly build</span>
     </div>
   </div>
 
@@ -197,12 +195,12 @@
       <span>latest stable build</span>
     </div>
     <div class="expand-link download-button">
-      <span><span class="download-icon"></span>
-      <span>latest release</span></span>
+      <span class="download-icon"></span>
+      <span>latest release</span>
     </div>
     <div class="expand-link download-button">
-      <span><span class="download-icon"></span>
-      <span>nightly build</span></span>
+      <span class="download-icon"></span>
+      <span>nightly build</span>
     </div>
   </div>
 
@@ -219,12 +217,12 @@
         <a href="<?php echo $STABLE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
       </p>
       <p class="download-row">
-        <img src="/rap/images/site.gif" />
+        <img src="/rap/images/site.gif" alt="site" />
         Software site:
         <strong><?php echo $STABLE_RUNTIME_UPDATE_SITE ?></strong>
       </p>
       <p class="download-row">
-        <img src="/rap/images/zip.gif" />
+        <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
         <a href="<?php echo $STABLE_RUNTIME_DOWNLOAD_URL ?>"><?php echo $STABLE_RUNTIME_ZIP ?></a>
       </p>
