@@ -38,6 +38,7 @@
 </div>
 
 <div id="rightcolumn">
+  <?php includeSidebar( "rap-feed.php" ) ?>
 </div>
 
 <?php
