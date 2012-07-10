@@ -91,6 +91,25 @@
       <img src="/rap/images/incubator.png" alt="Incubator component"/>
     </div>
     <div>
+      <h3>PDE Runtime</h3>
+      <p>
+        Ports of the plugin-spy and error log views from
+        <a href="http://www.eclipse.org/pde/pde-ui/">PDE UI</a>
+        for RAP.
+      </p>
+      <p>
+        Source:
+        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.pde.git/">org.eclipse.rap.incubator.pde</a>
+      </p>
+    </div>
+    <div style="clear: both"></div>
+  </div>
+
+  <div class="box">
+    <div class="images">
+      <img src="/rap/images/incubator.png" alt="Incubator component"/>
+    </div>
+    <div>
       <h3>File Upload</h3>
       <p>
         Provides a server-side component that receives file uploads and, on top of that, 
