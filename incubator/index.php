@@ -139,6 +139,25 @@
     <div style="clear: both"></div>
   </div>
 
+  <div class="box">
+    <div class="images">
+      <img src="../images/sandbox/grid.png" alt="Nebula Grid"/>
+    </div>
+    <div>
+      <h3>Nebula Grid</h3>
+      <p>
+        Port of the
+        <a href="http://www.eclipse.org/nebula/widgets/grid/grid.php">Nebula Grid widget</a>
+        for RAP.
+      </p>
+      <p>
+        Source:
+        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.nebula-grid.git/">org.eclipse.rap.incubator.nebula-grid</a>
+      </p>
+    </div>
+    <div style="clear: both"></div>
+  </div>
+
 </div>
 
 <div id="rightcolumn">
