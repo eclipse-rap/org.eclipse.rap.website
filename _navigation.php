@@ -105,7 +105,7 @@ $NAV_ENTRIES = array(
 <?
   // top level
   foreach( $NAV_ENTRIES as $navId => $navData ) {
-    if( $navData[ 'label' ] ) {
+    if( array_key_exists( 'label', $navData ) ) {
       $active = $navId === $PAGE_NAV_POSITION[ 0 ] ? 'class="active"' : '';
       echo "<li $active><a href=\"{$navData[ 'url' ]}\">{$navData[ 'label' ]}</a></li>";
     }
