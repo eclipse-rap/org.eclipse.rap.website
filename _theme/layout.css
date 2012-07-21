@@ -221,6 +221,16 @@ li {
   padding: 5px 10px 5px 0;
 }
 
+dt {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 20px;
+  padding: 5px 10px 5px 0;
+}
+
 * html #wrapper {
   height: 100%; /* IE6 treats height as min-height */
 }
@@ -735,7 +745,7 @@ div.box div {
 
 /* Customize margin for paragraphs */
 
-p, ul, ol, table, pre {
+p, ul, ol, dl, table, pre {
   margin-top: 5px;
   margin-bottom: 8px;
 }
