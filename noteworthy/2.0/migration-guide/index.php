@@ -50,6 +50,13 @@
     If you're using declarative services, please also adjust your component definition files.
   </p>
 
+  <h2>RWT Constants</h2>
+
+  <dl>
+    <dt>WidgetUtil.CUSTOM_VARIANT</dt>
+    <dd>this constant has moved to the class RWT.</dd>
+  </dl>
+
   <!--
   <h2>Removed classes</h2>
 
