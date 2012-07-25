@@ -61,13 +61,13 @@
         <h3><?= $COMPONENT_NAME ?></h3>
         <?= $COMPONENT_DESCRIPTION ?>
         <p>
-          <strong>Maintainer: <?= $COMPONENT_MAINTAINER ?></strong>
+          <strong>Maintainer:</strong> <?= $COMPONENT_MAINTAINER ?>
         </p>
         <p>
-          Git repository: <a href="<?= $COMPONENT_WEBURL ?>"><?= $COMPONENT_WEBURL ?></a>
+          <strong>Git repository:</strong> <a href="<?= $COMPONENT_WEBURL ?>"><?= $COMPONENT_WEBURL ?></a>
         </p>
         <p>
-          Nightly builds p2 repository: <a href="<?= $COMPONENT_REPO ?>"><?= $COMPONENT_REPO ?></a>
+          <strong>Nightly builds p2 repository:</strong> <a href="<?= $COMPONENT_REPO ?>"><?= $COMPONENT_REPO ?></a>
         </p>
       </div>
       <div style="clear:both"></div>
