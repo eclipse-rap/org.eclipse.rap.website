@@ -2,9 +2,19 @@
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-  $title = "RAP - Incubator";
-  $navPosition = array( "home", "incubator" );
-  printHeader( $title, $navPosition );
+  $PAGE_TITLE = "RAP - Incubator";
+  $PAGE_NAV_POSITION = array( "home", "incubator" );
+
+  $WEB_ROOT = "http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator";
+  $REPO_ROOT = "http://download.eclipse.org/rt/rap/incubator/nightly/";
+
+  printHeader();
+
+  $components = new SimpleXMLElement( 'components.xml', null, true );
+  if( $components == null ) {
+    echo '<div class="error">There was a problem loading the data for this page.</div>';
+  }
+
 ?>
 
 <div id="midcolumn">
@@ -32,150 +42,38 @@
   </p>
 
   <h2>Available components</h2>
+  <? foreach( $components->component as $component ) : ?>
+  <?
+    $COMPONENT_ID = $component[ "id" ];
+    $COMPONENT_NAME = $component->name;
+    $COMPONENT_MAINTAINER = $component->maintainer;
+    $COMPONENT_DESCRIPTION = $component->description->asXML();
+    $COMPONENT_WEBURL = $WEB_ROOT . '.' . $COMPONENT_ID . '.git';
+    $COMPONENT_REPO = $REPO_ROOT . $COMPONENT_ID . "/";
+   ?>
+    <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(/rap/images/incubator.png)"
+             src="<?= $COMPONENT_WEBURL . '/plain/component.png' ?>" alt=""/>
+      </div>
 
-  <div class="box">
-    <div class="images">
-      <img src="/rap/images/incubator.png" alt="Incubator component"/>
+      <div>
+        <h3><?= $COMPONENT_NAME ?></h3>
+        <?= $COMPONENT_DESCRIPTION ?>
+        <p>
+          <strong>Maintainer: <?= $COMPONENT_MAINTAINER ?></strong>
+        </p>
+        <p>
+          Git repository: <a href="<?= $COMPONENT_WEBURL ?>"><?= $COMPONENT_WEBURL ?></a>
+        </p>
+        <p>
+          Nightly builds p2 repository: <a href="<?= $COMPONENT_REPO ?>"><?= $COMPONENT_REPO ?></a>
+        </p>
+      </div>
+      <div style="clear:both"></div>
     </div>
-    <div>
-      <h3>Common Navigator Framework (CNF)</h3>
-      <p>
-        Port of the <a href="http://wiki.eclipse.org/CNF">Common Navigator Framework</a> for RAP.
-      </p>
-      <p>
-        Source:
-        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.cnf.git/">org.eclipse.rap.incubator.cnf</a>
-      </p>
-    </div>
-    <div style="clear: both"></div>
-  </div>
 
-  <div class="box">
-    <div class="images">
-      <img src="/rap/images/incubator.png" alt="Incubator component"/>
-    </div>
-    <div>
-      <h3>Graphical Editing Framework (GEF)</h3>
-      <p>
-        Experimental port of <a href="http://eclipse.org/gef/">Draw2D, GEF and Zest</a> for RAP.
-      </p>
-      <p>
-        Source:
-        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.gef.git/">org.eclipse.rap.incubator.gef</a>
-      </p>
-    </div>
-    <div style="clear: both"></div>
-  </div>
-
-  <div class="box">
-    <div class="images">
-      <img src="/rap/images/incubator.png" alt="Incubator component"/>
-    </div>
-    <div>
-      <h3>Tabbed properties view</h3>
-      <p>
-        Port of the
-        <a href="http://www.eclipse.org/articles/Article-Tabbed-Properties/tabbed_properties_view.html">tabbed properties view</a>
-        for RAP.
-      </p>
-      <p>
-        Source:
-        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.tabbed-properties.git/">org.eclipse.rap.incubator.tabbed-properties</a>
-      </p>
-    </div>
-    <div style="clear: both"></div>
-  </div>
-
-  <div class="box">
-    <div class="images">
-      <img src="/rap/images/incubator.png" alt="Incubator component"/>
-    </div>
-    <div>
-      <h3>PDE Runtime</h3>
-      <p>
-        Ports of the plugin-spy and error log views from
-        <a href="http://www.eclipse.org/pde/pde-ui/">PDE UI</a>
-        for RAP.
-      </p>
-      <p>
-        Source:
-        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.pde.git/">org.eclipse.rap.incubator.pde</a>
-      </p>
-    </div>
-    <div style="clear: both"></div>
-  </div>
-
-  <div class="box">
-    <div class="images">
-      <img src="/rap/images/incubator.png" alt="Incubator component"/>
-    </div>
-    <div>
-      <h3>File Upload</h3>
-      <p>
-        Provides a server-side component that receives file uploads and, on top of that, 
-        an implementation of the SWT FileDialog that uploads files and makes them available on the
-        server.
-        <a href="http://eclipsesource.com/blogs/2011/06/23/uploading-files-with-rap-14/">This blog post</a>
-        explains the details.
-      </p>
-      <p>
-        Source:
-        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.fileupload.git/">org.eclipse.rap.incubator.fileupload</a>
-      </p>
-    </div>
-    <div style="clear: both"></div>
-  </div>
-
-  <div class="box">
-    <div class="images">
-      <img src="../images/sandbox/google-visualization.png" alt="Google Visualization"/>
-    </div>
-    <div>
-      <h3>Google Visualization</h3>
-      <p>
-        This component provides a simple integration of all of the Google Visualization widgets
-        as RAP custom widgets:
-      </p>
-      <ul>
-        <li>Motion Chart</li>
-        <li>Annotated Timeline</li>
-        <li>Area Chart</li>
-        <li>Bar Chart</li>
-        <li>Column Chart</li>
-        <li>Gauge</li>
-        <li>Geomap</li>
-        <li>Intensity Map</li>
-        <li>Line Chart</li>
-        <li>Pie Chart</li>
-        <li>Scatter Chart</li>
-        <li>Table</li>
-      </ul>
-      <p>
-        Source:
-        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.visualization.git/">org.eclipse.rap.incubator.visualization</a>
-      </p>
-    </div>
-    <div style="clear: both"></div>
-  </div>
-
-  <div class="box">
-    <div class="images">
-      <img src="../images/sandbox/grid.png" alt="Nebula Grid"/>
-    </div>
-    <div>
-      <h3>Nebula Grid</h3>
-      <p>
-        Port of the
-        <a href="http://www.eclipse.org/nebula/widgets/grid/grid.php">Nebula Grid widget</a>
-        for RAP.
-      </p>
-      <p>
-        Source:
-        <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.nebula-grid.git/">org.eclipse.rap.incubator.nebula-grid</a>
-      </p>
-    </div>
-    <div style="clear: both"></div>
-  </div>
+  <? endforeach; ?>
 
 </div>
 
