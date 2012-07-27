@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+
+<plan
+    plan-format="1.0" 
+    xmlns="http://www.eclipse.org/project/plan"
+    xmlns:html="http://www.w3.org/1999/xhtml" 
+    name="Rich Ajax Platform (RAP)">
+
+  <release projectid="rt.rap" version="2.0" />
+
+  <introduction>
+    <html:div>
+      The Rich Ajax Platform (RAP) is an Eclipse platform for modular web applications using a rich
+      widget toolkit with SWT API.
+      Optionally, also JFace and Workbench APIs and extension points are available on top of this
+      toolkit.
+      RAP applications run on server-side OSGi, but can also be used in standard web applications.
+      They can be developed using the same set of tools as being used for SWT/RCP development.
+      RAP makes it easy to re-use existing RCP code, write applications for desktop and web from
+      a single code base, and to integrate other Eclipse technologies in web applications.
+      A well defined protocol allows to connect alternative clients.
+    </html:div>
+  </introduction>
+
+  <release_deliverables>
+    <html:div>
+      <html:ul>
+        <html:li>
+          <html:strong>Tools</html:strong>:
+          useful tools for developing RAP applications, templates and documentation for RAP development.
+          Available as p2 repository.
+        </html:li>
+        <html:li>
+          <html:strong>Runtime (Target Components)</html:strong>:
+          contains the RAP runtime to be used as target platform, including sources and a simple
+          demo application.
+          Available as p2 repository.
+        </html:li>
+      </html:ul>
+    </html:div>
+  </release_deliverables>
+
+  <release_milestones>
+    <preamble>
+      <html:div>
+        Release milestones will be occurring at roughly 6 week intervals,
+        and will be aligned with the
+        <html:a href="http://wiki.eclipse.org/Kepler/Simultaneous_Release_Plan">
+        Kepler Simultaneous Release</html:a> train.
+      </html:div>
+    </preamble>
+
+    <milestone date="August 24, 2012" milestone="M1"></milestone>
+    <milestone date="October 05, 2012" milestone="M2"></milestone>
+    <milestone date="November 16, 2012" milestone="M3"></milestone>
+    <milestone date="December 21, 2012" milestone="M4"></milestone>
+
+    <postamble>
+      <html:div>
+        A detailed
+        <html:a href="http://wiki.eclipse.org/RAP/Ramp_down_plan">ramp down plan</html:a>
+        towards the release is available for the Simultaneous Release integration.
+        <html:p>
+          RAP 2.0 will be released on February 08, 2013, together with Eclipse Juno.
+        </html:p>
+        <html:p>
+          We currently do not plan any service releases for RAP 2.0, instead a subsequent version
+          will follow quickly.
+        </html:p>
+      </html:div>
+    </postamble>
+  </release_milestones>
+
+  <target_environments>
+    <html:div>
+      <html:p>
+        The RAP 2.0 server bundles will be compatible with
+      </html:p>
+      <html:ul>
+        <html:li>
+          <html:strong>Java</html:strong>:
+          Compiler level and minimum execution environment is Java 1.5 (J2SE 5.0).
+          However, when used with javax.servlet 3.0, JavaSE-1.6 is required.
+        </html:li>
+        <html:li>
+          <html:strong>Java Servlet API</html:strong>:
+          RAP can be used with any compliant servlet container.
+          Required
+          <html:a href="http://www.oracle.com/technetwork/java/javaee/servlet/index.html">servlet API</html:a>
+          version is 2.3 .. 3.0.
+        </html:li>
+        <html:li>
+          <html:strong>Equinox/OSGi</html:strong>:
+          <html:a href="http://www.eclipse.org/equinox/server/">Equinox</html:a>
+          version 4.2 is included in the basic target requirements.
+          However, RWT and RWT-OSGi will run on any compliant OSGi container.
+        </html:li>
+      </html:ul>
+      <html:p>
+        The default RAP client will support the following web browsers/rendering engines:
+      </html:p>
+      <html:ul>
+        <html:li>Internet Explorer 7.0 and later</html:li>
+        <html:li>Firefox 2.0 and later</html:li>
+        <html:li>Safari 3.0 and later</html:li>
+        <html:li>Google Chrome 3.0 and later</html:li>
+        <html:li>Opera 9.0 and later</html:li>
+      </html:ul>
+    </html:div>
+    <internationalization>
+      <html:div>
+        The Rich Ajax Platform is designed as the basis for internationalized products.
+        The user interface elements provided by the RAP components, including dialogs and error
+        messages, are externalized.
+        The English strings are provided as the default resource bundles.
+      </html:div>
+    </internationalization>
+  </target_environments>
+
+  <compatibility_with_previous_releases>
+    <html:div>
+      RAP 2.0 will be not be backward compatible with RAP 1.5.
+      A <a href="http://eclipse.org/rap/noteworthy/2.0/migration-guide/">migration guide</a> is available.
+    </html:div>
+  </compatibility_with_previous_releases>
+
+  <themes_and_priorities>
+    <preamble>
+      <html:div></html:div>
+    </preamble>
+
+    <theme name="Support for alternative RAP clients">
+      <description>
+        <html:div>
+          <html:p>
+            In RAP 1.5, we introduced a well-defined communication protocol based on JSON.
+            This protocol is used for the responses from the server.
+            We will extend the usage of this protocol to requests and so complete the protocol
+            conversion.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+          bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=2.0+plan-status%3Dcommitted+plan-theme=alternative-clients">
+      </committed>
+      <proposed
+          bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=2.0+plan-status%3Dproposed+plan-theme=alternative-clients">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="API Cleanup">
+      <description>
+        <html:div>
+          <html:p>
+            With the update of the major version, we will clean up our APIs.
+            We will provide new API for components based on the new protocol and remove obsolete
+            methods and classes.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+          bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=2.0+plan-status%3Dcommitted+plan-theme=api">
+      </committed>
+      <proposed
+          bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=2.0+plan-status%3Dproposed+plan-theme=api">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+    <theme name="Widget Toolkit Enhancements">
+      <description>
+        <html:div>
+          <html:p>
+            As in every release, we plan to improve and enhance the RAP widget set.
+            In this release, we'll focus on a rework of the event system implementation of RWT.
+          </html:p>
+        </html:div>
+      </description>
+      <committed
+          bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=2.0+plan-status%3Dcommitted+plan-theme=widgets">
+      </committed>
+      <proposed
+          bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=plan-version=2.0+plan-status%3Dproposed+plan-theme=widgets">
+      </proposed>
+      <!--deferred>
+      </deferred-->
+    </theme>
+
+  </themes_and_priorities>
+</plan>
