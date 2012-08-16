@@ -29,6 +29,17 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
+        <span class="terminal-text">RAP 2.0 M1</span>
+      </span>
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">AUG 24</span>
+      </span>
+    </div>
+
+    <div class="terminal-row">
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
         <span class="terminal-text">RAP 1.5.1</span>
       </span>
       <span class="terminal-field">
@@ -40,22 +51,11 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 2.0</span>
+        <span class="terminal-text">RAP 2.0 M2</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">PLANNED</span>
-      </span>
-    </div>
-
-    <div class="terminal-row">
-      <span class="terminal-field">
-        <span class="terminal-overlay"></span>
-        <span class="terminal-text">&nbsp;</span>
-      </span>
-      <span class="terminal-field">
-        <span class="terminal-overlay"></span>
-        <span class="terminal-text">&nbsp;</span>
+        <span class="terminal-text">OCT 05</span>
       </span>
     </div>
   </div>
