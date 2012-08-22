@@ -68,6 +68,45 @@
   </dl>
   -->
 
+  <h2>p2 Repository</h2>
+
+  <dl>
+    <dt>http://download.eclipse.org/rt/rap/2.0/</dt>
+    <dd>
+      is the p2 repository with the RAP Target Components and should be used in target definitions only.
+      To prevent the installation of certain bundles from this repository into an Eclipse IDE, some of 
+      the bundles are using negative p2 requirements to their SWT counterparts.
+    </dd>
+    <dt>http://download.eclipse.org/rt/rap/tools/2.0/</dt>
+    <dd>
+      is the p2 repository with the RAP Tools that can be installed into the Eclipse IDE.
+    </dd>
+  </dl>
+
+  <h2>Features and their IDs</h2>
+
+  <p>
+    The IDs of the features have been changed in order to follow the naming conventions
+    that we use throughout all RAP components.
+  </p>
+  
+  <dl>
+    <dt><code>org.eclipse.rap.feature</code></dt>
+    <dd>
+      contains all bundles from the RAP project. Its old ID was <code>org.eclipse.rap.runtime</code>.
+    </dd>
+    <dt><code>org.eclipse.rap.equinox.target.feature</code></dt>
+    <dd>
+      contains a set of Eclipse and Equinox bundles that are required to run the RAP bundles in an OSGi 
+      environment. Its old ID was <code>org.eclipse.rap.runtime.requirements</code>.
+    </dd>
+    <dt><code>org.eclipse.rap.tools.feature</code></dt>
+    <dd>
+      contains the RAP Tools for installation in an Eclipse IDE. Its old ID was 
+      <code>org.eclipse.rap.tools</code>.
+    </dd>
+  </dl>
+
 </div>
 
 <div id="rightcolumn">
