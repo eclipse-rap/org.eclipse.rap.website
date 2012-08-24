@@ -26,8 +26,8 @@
   <h3>Deprecated public classes and methods removed</h3>
 
   <p>
-    With the new JSON-based protocol in place the old deprecated classes and methods for rendering 
-    JavaScript are now obsolete. JSWrite, JSVar, JSListenerType and JSListenerInfo classes have been 
+    With the new JSON-based protocol in place the old deprecated classes and methods for rendering
+    JavaScript are now obsolete. JSWrite, JSVar, JSListenerType and JSListenerInfo classes have been
     removed together with the corresponding methods in WidgetLCAUtil and ControlLCAUtil.
   </p>
 
@@ -36,15 +36,15 @@
   <h3>Touch-Scrolling for Tree and Table</h3>
 
   <p>
-    Tree and Table widgets can now be scrolled on mobile devices (iOS and Android) by dragging a row 
-    with one finger. However, Tree and Table can only scroll item-by-item, not smooth as like the 
+    Tree and Table widgets can now be scrolled on mobile devices (iOS and Android) by dragging a row
+    with one finger. However, Tree and Table can only scroll item-by-item, not smooth as like the
     List.
   </p>
 
   <h3>SWT.ICON_SEARCH and SWT.ICON_CANCEL support for Text widget</h3>
 
   <p>
-  	Text widget now have full support for SWT.ICON_SEARCH and SWT.ICON_CANCEL style flags.
+    Text widget now have full support for SWT.ICON_SEARCH and SWT.ICON_CANCEL style flags.
   </p>
   <p>
     <img class="framed" title="Text with search icons" src="images/Text-Search-Icons.png" />
@@ -71,5 +71,18 @@
       <code>disabled</code> state for Combo-Button-Icon
     </li>
   </ul>
+
+  <h2>Tools</h2>
+
+  <h3>RAP Launcher always terminates previous launch</h3>
+  <p>
+    The RAP launcher has an option to terminate an already running application before starting a
+    new one. This turned out to be a valuable feature, particularly when working with fixed ports.
+    We couldn't find a good reason to ever disable this functionality, so we decided to remove the
+    option from the launcher while keeping the default behavior.
+  </p>
+  <p>
+    <img class="framed" title="Text with search icons" src="images/Tools-remove-previous-launch.png" />
+  </p>
 
 </div>

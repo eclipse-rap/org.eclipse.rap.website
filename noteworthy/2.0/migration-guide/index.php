@@ -68,28 +68,27 @@
   </dl>
   -->
 
-  <h2>p2 Repository</h2>
+  <h2>p2 Repositories</h2>
 
   <dl>
     <dt>http://download.eclipse.org/rt/rap/2.0/</dt>
     <dd>
-      is the p2 repository with the RAP Target Components and should be used in target definitions only.
-      To prevent the installation of certain bundles from this repository into an Eclipse IDE, some of 
-      the bundles are using negative p2 requirements to their SWT counterparts.
+      is the p2 repository for RAP 2.0, to be used in target platforms only.
+      Some bundles declare negative p2 requirements to prevent installing them into the IDE.
     </dd>
     <dt>http://download.eclipse.org/rt/rap/tools/2.0/</dt>
     <dd>
-      is the p2 repository with the RAP Tools that can be installed into the Eclipse IDE.
+      is the p2 repository for the RAP Tools 2.0, to be installed into the Eclipse IDE.
     </dd>
   </dl>
 
-  <h2>Features and their IDs</h2>
+  <h2>Feature IDs</h2>
 
   <p>
     The IDs of the features have been changed in order to follow the naming conventions
     that we use throughout all RAP components.
   </p>
-  
+
   <dl>
     <dt><code>org.eclipse.rap.feature</code></dt>
     <dd>
