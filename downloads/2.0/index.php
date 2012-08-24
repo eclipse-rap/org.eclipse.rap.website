@@ -19,7 +19,9 @@
     return $type . "s";
   }
 
-  $downloadPath = 'http://www.eclipse.org/downloads/download.php?file=/rt/rap/' . $builds->getDownloadPath();
+  $downloadPrefix = 'http://www.eclipse.org/downloads/download.php?file=';
+  $downloadPath = $downloadPrefix . $builds->getDownloadPath( "runtime" );
+  $toolsDownloadPath = $downloadPrefix . $builds->getDownloadPath( "tools" );
 
 ?>
 
@@ -38,19 +40,7 @@
 
   <h2>Features</h2>
 
-  <h3>RAP Tooling</h3>
-
-  <p>
-    <?= $builds->getDescription( "tooling" ) ?>
-  </p>
-
-  <p>
-    Software Site:
-    <img src="/rap/images/site.gif" alt="site" />
-    <?= $builds->getUpdateSite( "tooling" ) ?>
-  </p>
-
-  <h3>RAP Runtime</h3>
+  <h3>RAP (Runtime)</h3>
 
   <p>
     <?= $builds->getDescription( "runtime" ) ?>
@@ -60,6 +50,18 @@
     Software Site:
     <img src="/rap/images/site.gif" alt="site" />
     <?= $builds->getUpdateSite( "runtime" ) ?>
+  </p>
+
+  <h3>RAP Tools</h3>
+
+  <p>
+    <?= $builds->getDescription( "tooling" ) ?>
+  </p>
+
+  <p>
+    Software Site:
+    <img src="/rap/images/site.gif" alt="site" />
+    <?= $builds->getUpdateSite( "tooling" ) ?>
   </p>
 
   <h2>Builds</h2>
@@ -89,13 +91,13 @@
         <a href="/rap/noteworthy/<?= $build->getNews() ?>">New &amp; Noteworthy</a>
       </td>
       <td>
-        <a href="<?= $downloadPath . $build->getZipFile( "tooling" ) ?>">
-          <img src="/rap/images/zip.gif" alt="zip" /> Tooling
+        <a href="<?= $downloadPath . $build->getZipFile( "runtime" ) ?>">
+          <img src="/rap/images/zip.gif" alt="zip" /> RAP
         </a>
       </td>
       <td>
-        <a href="<?= $downloadPath . $build->getZipFile( "runtime" ) ?>">
-          <img src="/rap/images/zip.gif" alt="zip" /> Runtime
+        <a href="<?= $toolsDownloadPath . $build->getZipFile( "tools" ) ?>">
+          <img src="/rap/images/zip.gif" alt="zip" /> RAP Tools
         </a>
       </td>
 

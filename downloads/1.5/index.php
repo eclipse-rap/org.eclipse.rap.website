@@ -19,7 +19,7 @@
     return $type . "s";
   }
 
-  $downloadPath = 'http://www.eclipse.org/downloads/download.php?file=/rt/rap/' . $builds->getDownloadPath();
+  $downloadPath = 'http://www.eclipse.org/downloads/download.php?file=' . $builds->getDownloadPath();
 
 ?>
 

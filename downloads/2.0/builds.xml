@@ -7,25 +7,22 @@
  http://www.eclipse.org/legal/epl-v10.html
  -->
 
-<!--
-  http://download.eclipse.org/rt/rap/2.0/runtime
-  http://download.eclipse.org/rt/rap/2.0/tooling
-  -->
 <builds version="2.0"
-    downloadPath="2.0/"
-    runtimeSite="[TBD]"
-    toolingSite="[TBD]"
+    runtimeDownloadPath="/rt/rap/2.0/"
+    toolsDownloadPath="/rt/rap/tools/2.0/"
+    runtimeSite="http://download.eclipse.org/rt/rap/2.0"
+    toolsSite="http://download.eclipse.org/rt/rap/tools/2.0"
     runtimeDesc="based on Eclipse 4.2"
-    toolingDesc="for use with Eclipse 3.8 and 4.2"
+    toolsDesc="for use with Eclipse 3.8 and 4.2"
     simultaneousRelease="">
 
   <build name="2.0 M1" type="M"
       shortname="M1"
-      status="planned"
+      status="completed"
       publishDate="2012-08-24"
       news="2.0/?build=M1"
-      runtimeZip=""
-      toolingZip="" />
+      runtimeZip="rap-2.0.0-M1-20120821-1934.zip"
+      toolsZip="rap-tools-2.0.0-M1-20120821-1859.zip" />
 
   <build name="2.0 M2" type="M"
       shortname="M2"
@@ -33,7 +30,7 @@
       publishDate="2012-10-05"
       news="2.0/?build=M2"
       runtimeZip=""
-      toolingZip="" />
+      toolsZip="" />
 
   <build name="2.0 M3" type="M"
       shortname="M3"
@@ -41,7 +38,7 @@
       publishDate="2012-11-16"
       news="2.0/?build=M3"
       runtimeZip=""
-      toolingZip="" />
+      toolsZip="" />
 
   <build name="2.0 M4" type="M"
       shortname="M4"
@@ -49,30 +46,30 @@
       publishDate="2012-12-21"
       news="2.0/?build=M4"
       runtimeZip=""
-      toolingZip="" />
+      toolsZip="" />
 
   <build name="2.0 RC1" type="RC"
       shortname="RC1"
       status="planned"
       publishDate="2013-01-18"
       news="2.0/?build=RC1"
-      runtimeZip="rap-runtime-2.0.0-RC1-20120521-1618.zip"
-      toolingZip="rap-tooling-2.0.0-RC1-20120521-1620.zip" />
+      runtimeZip=""
+      toolsZip="" />
 
   <build name="2.0 RC2" type="RC"
       shortname="RC2"
       status="planned"
       publishDate="2013-02-01"
       news="2.0/?build=RC2"
-      runtimeZip="rap-runtime-2.0.0-RC2-20120529-1205.zip"
-      toolingZip="rap-tooling-2.0.0-RC2-20120529-1205.zip" />
+      runtimeZip=""
+      toolsZip="" />
 
   <build name="2.0" type="R"
       shortname="R"
       status="planned"
       publishDate="2013-02-08"
       news="2.0/"
-      runtimeZip="rap-runtime-2.0.0-R-20120612-1458.zip"
-      toolingZip="rap-tooling-2.0.0-R-20120613-1425.zip" />
+      runtimeZip=""
+      toolsZip="" />
 
 </builds>

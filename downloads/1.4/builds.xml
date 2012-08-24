@@ -8,7 +8,7 @@
  -->
 
 <builds version="1.4"
-    downloadPath="1.4/"
+    downloadPath="/rt/rap/1.4/"
     runtimeSite="http://download.eclipse.org/rt/rap/1.4/runtime"
     toolingSite="http://download.eclipse.org/rt/rap/1.4/tooling"
     runtimeDesc="based on Eclipse 3.7"

@@ -8,7 +8,7 @@
  -->
 
 <builds version="1.5"
-    downloadPath="1.5/"
+    downloadPath="/rt/rap/1.5/"
     runtimeSite="http://download.eclipse.org/rt/rap/1.5/runtime"
     toolingSite="http://download.eclipse.org/rt/rap/1.5/tooling"
     runtimeDesc="based on Eclipse 4.2"

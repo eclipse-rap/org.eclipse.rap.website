@@ -65,8 +65,11 @@ class Builds {
     return (string) $this->builds[ "version" ];
   }
 
-  function getDownloadPath() {
-    return (string) $this->builds[ "downloadPath" ];
+  function getDownloadPath( $feature ) {
+    if( empty( $feature ) ) {
+      return (string) $this->builds[ "downloadPath" ];
+    }
+    return (string) $this->builds[ $feature . "DownloadPath" ];
   }
 
   function getSimultaneousRelease() {
@@ -74,14 +77,14 @@ class Builds {
   }
 
   function getUpdateSite( $feature ) {
-    if( $feature === "runtime" || $feature === "tooling" ) {
+    if( $feature === "runtime" || $feature === "tooling" || $feature === "tools" ) {
       return (string) $this->builds[ $feature . "Site" ];
     }
     return NULL;
   }
 
   function getDescription( $feature ) {
-    if( $feature === "runtime" || $feature === "tooling" ) {
+    if( $feature === "runtime" || $feature === "tooling" || $feature === "tools" ) {
       return (string) $this->builds[ $feature . "Desc" ];
     }
     return NULL;
@@ -124,7 +127,7 @@ class Build {
   }
 
   function getZipFile( $feature ) {
-    if( $feature === "runtime" || $feature === "tooling" ) {
+    if( $feature === "runtime" || $feature === "tooling" || $feature === "tools" ) {
       return (string) $this->build[ $feature . "Zip" ];
     }
     return NULL;

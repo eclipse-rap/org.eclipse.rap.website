@@ -10,7 +10,7 @@
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
   $releaseBuilds = new Builds( "./1.5/builds.xml" );
-  $stableBuilds = new Builds( "./1.5/builds.xml" );
+  $stableBuilds = new Builds( "./2.0/builds.xml" );
 
   // ---
 
@@ -21,11 +21,11 @@
   $stableBuild = $stableBuilds->getLastCompletedBuild();
   $releaseBuild = $releaseBuilds->getLastCompletedReleaseBuild();
 
-  $downloadUrl = "http://www.eclipse.org/downloads/download.php?file=/rt/rap/";
+  $downloadUrl = "http://www.eclipse.org/downloads/download.php?file=";
   $newsUrl = "../noteworthy/";
 
   $STABLE_RUNTIME_DESCRIPTION = $stableBuilds->getDescription( "runtime" );
-  $STABLE_TOOLING_DESCRIPTION = $stableBuilds->getDescription( "tooling" );
+  $STABLE_TOOLING_DESCRIPTION = $stableBuilds->getDescription( "tools" );
   $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds->getDescription( "runtime" );
   $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds->getDescription( "tooling" );
   $STABLE_NAME = $stableBuild->getName() . ' ' . $stableBuild->getType();
@@ -36,15 +36,15 @@
   $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild->getNews();
   $RELEASE_NOTES_URL = $releaseBuild->getReleaseNotes() ? $newsUrl . $releaseBuild->getReleaseNotes() : "";
   $STABLE_RUNTIME_ZIP = $stableBuild->getZipFile( "runtime" );
-  $STABLE_TOOLING_ZIP = $stableBuild->getZipFile( "tooling" );
+  $STABLE_TOOLING_ZIP = $stableBuild->getZipFile( "tools" );
   $RELEASE_RUNTIME_ZIP = $releaseBuild->getZipFile( "runtime" );
   $RELEASE_TOOLING_ZIP = $releaseBuild->getZipFile( "tooling" );
-  $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "runtime" );
-  $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath() . $stableBuild->getZipFile( "tooling" );
+  $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath( "runtime" ) . $stableBuild->getZipFile( "runtime" );
+  $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath( "tools" ) . $stableBuild->getZipFile( "tools" );
   $RELEASE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "runtime" );
   $RELEASE_TOOLING_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "tooling" );
   $STABLE_RUNTIME_UPDATE_SITE = $stableBuilds->getUpdateSite( "runtime" );
-  $STABLE_TOOLING_UPDATE_SITE = $stableBuilds->getUpdateSite( "tooling" );
+  $STABLE_TOOLING_UPDATE_SITE = $stableBuilds->getUpdateSite( "tools" );
   $RELEASE_RUNTIME_UPDATE_SITE = $releaseBuilds->getUpdateSite( "runtime" );
   $RELEASE_TOOLING_UPDATE_SITE = $releaseBuilds->getUpdateSite( "tooling" );
 
@@ -53,124 +53,9 @@
 <div id="midcolumn">
 
   <h1>Downloads</h1>
-  <h2>RAP Tools</h2>
-  <p>
-    Contains useful tools, templates and documentation for RAP developers.
-    It comes with a target installer for the latest RAP target platform.
-    <a href="/rap/developers-guide/devguide.php?topic=getting-started/setup-ide.html">Learn</a> how to install RAP and build
-    your first RAP application.
-  </p>
 
-  <h3>Download an Eclipse IDE package with RAP Tools included</h3>
-  <p>
-    The most convenient way to get the RAP Tools is using the Eclipse package <em>for
-    RCP and RAP Developers</em> from the
-    <a href="http://www.eclipse.org/downloads/">Eclipse download page</a>.
-    This IDE includes everything you need to develop RCP and RAP
-    applications.
-  </p>
-  <div class="download-button">
-    <a style="text-decoration: none;" href="http://www.eclipse.org/downloads/">
-      <span style="margin: 0pt 5px; display: block;">
-        <span class="download-icon" style="position: relative; top: -30px;"></span>
-        <img src="../images/epp-download.png" alt="Eclipse for RCP and RAP Developers"/>
-      </span>
-    </a>
-  </div>
 
-  <h3>Install RAP Tools separately</h3>
-  <p>
-    Alternatively, you can install the RAP Tools into your IDE from an online or a zipped software
-    repository.
-  </p>
-
-  <div class="expand-head">
-    <div class="expand-link download-button">
-      <span class="download-icon"></span>
-      <span>latest stable build</span>
-    </div>
-    <div class="expand-link download-button">
-      <span class="download-icon"></span>
-      <span>latest release</span>
-    </div>
-    <div class="expand-link download-button">
-      <span class="download-icon"></span>
-      <span>nightly build</span>
-    </div>
-  </div>
-
-  <div class="expand-body">
-    <!-- Tooling Latest Stable Build -->
-    <div class="expand-item">
-      <strong><?php echo $STABLE_NAME ?></strong>
-      <p>
-        <?php echo $STABLE_TOOLING_DESCRIPTION ?>
-        <br/>
-        Published: <?php echo $STABLE_DATE ?>
-        <br/>
-        <a href="<?php echo $STABLE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
-      </p>
-      <p class="download-row">
-        <img src="/rap/images/site.gif" alt="site" />
-        Software site:
-        <strong><?php echo $STABLE_TOOLING_UPDATE_SITE ?></strong>
-      </p>
-      <p class="download-row">
-        <img src="/rap/images/zip.gif" alt="zip" />
-        Zipped version:
-        <a href="<?php echo $STABLE_TOOLING_DOWNLOAD_URL ?>"><?php echo $STABLE_TOOLING_ZIP ?></a>
-      </p>
-    </div>
-
-    <!-- Tooling Latest Release -->
-    <div class="expand-item">
-      <strong><?php echo $RELEASE_NAME ?></strong>
-      <p>
-        <?php echo $RELEASE_TOOLING_DESCRIPTION ?>
-        <br/>
-        Published: <?php echo $RELEASE_DATE ?>
-        <br/>
-        <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
-        <? if( $RELEASE_NOTES_URL ) { ?>
-          <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
-        <? } ?>
-      </p>
-
-      <p class="download-row">
-        <img src="/rap/images/site.gif" alt="site" />
-        Software site:
-        <strong><?php echo $RELEASE_TOOLING_UPDATE_SITE ?></strong>
-      </p>
-      <p class="download-row">
-        <img src="/rap/images/zip.gif" alt="zip" />
-        Zipped version:
-        <a href="<?php echo $RELEASE_TOOLING_DOWNLOAD_URL ?>"><?php echo $RELEASE_TOOLING_ZIP ?></a>
-      </p>
-    </div>
-
-    <!-- Tooling Nightly -->
-    <div class="expand-item">
-      <strong>Nightly Build</strong>
-      <p>
-        <?php echo $STABLE_TOOLING_DESCRIPTION ?>
-        <br/>
-        Published: daily
-      </p>
-
-      <p class="download-row">
-        <img src="/rap/images/site.gif" alt="site" />
-        Software site:
-        <strong>http://download.eclipse.org/rt/rap/nightly/tooling/</strong>
-      </p>
-      <p class="download-row">
-        <img src="/rap/images/zip.gif" alt="zip" />
-        Zipped version:
-        <a href="https://hudson.eclipse.org/hudson/job/rap-2.0-tools/lastStableBuild/">download from Hudson</a>
-      </p>
-    </div>
-  </div>
-
-  <h2>RAP Runtime (Target Components)</h2>
+  <h2>RAP (Target Components)</h2>
 
   <p>
     To develop RAP applications you need to set a target platform that contains RAP.
@@ -267,6 +152,123 @@
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
         <a href="https://hudson.eclipse.org/hudson/job/rap-2.0-runtime/lastStableBuild/">download from Hudson</a>
+      </p>
+    </div>
+  </div>
+
+  <h2>RAP Tools</h2>
+  <p>
+    Contains useful tools, templates and documentation for RAP developers.
+    It comes with a target installer for the latest RAP target platform.
+    <a href="/rap/developers-guide/devguide.php?topic=getting-started/setup-ide.html">Learn</a> how to install RAP and build
+    your first RAP application.
+  </p>
+
+  <h3>Download an Eclipse IDE package with RAP Tools included</h3>
+  <p>
+    The most convenient way to get the RAP Tools is using the Eclipse package <em>for
+    RCP and RAP Developers</em> from the
+    <a href="http://www.eclipse.org/downloads/">Eclipse download page</a>.
+    This IDE includes everything you need to develop RCP and RAP
+    applications.
+  </p>
+  <div class="download-button">
+    <a style="text-decoration: none;" href="http://www.eclipse.org/downloads/">
+      <span style="margin: 0pt 5px; display: block;">
+        <span class="download-icon" style="position: relative; top: -30px;"></span>
+        <img src="../images/epp-download.png" alt="Eclipse for RCP and RAP Developers"/>
+      </span>
+    </a>
+  </div>
+
+  <h3>Install RAP Tools separately</h3>
+  <p>
+    Alternatively, you can install the RAP Tools into your IDE from an online or a zipped software
+    repository.
+  </p>
+
+  <div class="expand-head">
+    <div class="expand-link download-button">
+      <span class="download-icon"></span>
+      <span>latest stable build</span>
+    </div>
+    <div class="expand-link download-button">
+      <span class="download-icon"></span>
+      <span>latest release</span>
+    </div>
+    <div class="expand-link download-button">
+      <span class="download-icon"></span>
+      <span>nightly build</span>
+    </div>
+  </div>
+
+  <div class="expand-body">
+    <!-- Tools Latest Stable Build -->
+    <div class="expand-item">
+      <strong><?php echo $STABLE_NAME ?></strong>
+      <p>
+        <?php echo $STABLE_TOOLING_DESCRIPTION ?>
+        <br/>
+        Published: <?php echo $STABLE_DATE ?>
+        <br/>
+        <a href="<?php echo $STABLE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/site.gif" alt="site" />
+        Software site:
+        <strong><?php echo $STABLE_TOOLING_UPDATE_SITE ?></strong>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/zip.gif" alt="zip" />
+        Zipped version:
+        <a href="<?php echo $STABLE_TOOLING_DOWNLOAD_URL ?>"><?php echo $STABLE_TOOLING_ZIP ?></a>
+      </p>
+    </div>
+
+    <!-- Tools Latest Release -->
+    <div class="expand-item">
+      <strong><?php echo $RELEASE_NAME ?></strong>
+      <p>
+        <?php echo $RELEASE_TOOLING_DESCRIPTION ?>
+        <br/>
+        Published: <?php echo $RELEASE_DATE ?>
+        <br/>
+        <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
+        <? if( $RELEASE_NOTES_URL ) { ?>
+          <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
+        <? } ?>
+      </p>
+
+      <p class="download-row">
+        <img src="/rap/images/site.gif" alt="site" />
+        Software site:
+        <strong><?php echo $RELEASE_TOOLING_UPDATE_SITE ?></strong>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/zip.gif" alt="zip" />
+        Zipped version:
+        <a href="<?php echo $RELEASE_TOOLING_DOWNLOAD_URL ?>"><?php echo $RELEASE_TOOLING_ZIP ?></a>
+      </p>
+    </div>
+
+    <!-- Tools Nightly -->
+    <div class="expand-item">
+      <strong>Nightly Build</strong>
+      <p>
+        <?php echo $STABLE_TOOLING_DESCRIPTION ?>
+        <br/>
+        Published: daily
+      </p>
+
+      <p class="download-row">
+        <img src="/rap/images/site.gif" alt="site" />
+        Software site:
+        <strong>http://download.eclipse.org/rt/rap/nightly/tooling/</strong>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/zip.gif" alt="zip" />
+        Zipped version:
+        <a href="https://hudson.eclipse.org/hudson/job/rap-2.0-tools/lastStableBuild/">download from Hudson</a>
       </p>
     </div>
   </div>
