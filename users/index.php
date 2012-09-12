@@ -161,8 +161,9 @@
       <h2 class="withTagline">Tadpole for DB Tools</h2>
       <h4 class="tagline"><a href="https://github.com/hangum/TadpoleForDBTools">GitHub project</a></h4>
       <p>
-        Tadpole for DB Tools is a tool to manage various types of databases in a web browser.
-        It supports CUBRID, MySQL, Oracle, MSSQL, SQLite, PostgreSQL, and MongoDB.
+        Tadpole for DB Tools is a unified infrastructure tool for managing various types of
+        databases in a web browser.
+        It supports CUBRID, MySQL, MSSQL, Oracle, PostgreSQL, SQLite, and MongoDB.
         The code is published under EPL.
       </p>
       <p class="refs">References:</p>
