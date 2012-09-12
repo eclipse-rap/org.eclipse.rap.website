@@ -29,18 +29,6 @@
     When a component has matured and is broadly used, it can graduate and move to the RAP project.
   </p>
 
-  <h2>Downloads</h2>
-  <p>
-    The Incubator content is not distributed with RAP itself,
-    but builds will be made available on a dedicated software site (TBD).
-  </p>
-
-  <h2>Source Code</h2>
-  <p>
-    Every RAP Incubator component has its own git repository.
-    See the <a href="/rap/source/">source page</a> for how to work with the repositories.
-  </p>
-
   <h2>Available components</h2>
   <? foreach( $components->component as $component ) : ?>
   <?
