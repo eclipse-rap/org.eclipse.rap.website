@@ -106,13 +106,13 @@
   <build name="1.5.1" type="SR"
       shortname="SR1"
       status="planned"
-      publishDate="2012-09-24"
+      publishDate="2012-09-28"
       news="1.5/" />
 
   <build name="1.5.2" type="SR"
       shortname="SR2"
       status="planned"
-      publishDate="2013-02-25"
+      publishDate="2013-02-22"
       news="1.5/" />
 
 </builds>
