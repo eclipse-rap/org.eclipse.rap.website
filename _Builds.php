@@ -155,6 +155,8 @@ class Build {
         $result[] = $build->getName();
       }
       $result[] = $this->build[ "name" ];
+    } else if( $this->build[ "type" ] == "SR" ) {
+      $result = "sr" . str_replace( ".", "", $this->build[ "name" ] );
     } else {
       $result = $this->build[ "name" ];
     }

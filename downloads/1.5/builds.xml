@@ -107,7 +107,7 @@
       shortname="SR1"
       status="completed"
       publishDate="2012-09-28"
-      news="1.5/"
+      news="1.5/?build=SR1"
       runtimeZip="rap-runtime-1.5.1-R-20120917-1116.zip"
       toolingZip="rap-tooling-1.5.1-R-20120917-1138.zip" />
 

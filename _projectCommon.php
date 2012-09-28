@@ -57,7 +57,11 @@ EOHTML;
     $parameters[ 'classification' ] = 'RT';
     $parameters[ 'product' ] = 'RAP';
     $parameters[ 'bug_status' ] = array( 'RESOLVED', 'VERIFIED', 'CLOSED' );
-    $parameters[ 'target_milestone' ] = $targetMilestones;
+    if(  is_string( $targetMilestones ) && substr ( $targetMilestones, 0, 2 ) == "sr" ) {
+      $parameters[ 'status_whiteboard' ] = $targetMilestones;
+    } else {
+      $parameters[ 'target_milestone' ] = $targetMilestones;
+    }
     foreach( $parameters as $key => $value ) {
       $values = is_array( $value ) ? $value : array( $value );
       foreach( $values as $element ) {
