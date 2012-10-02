@@ -84,5 +84,22 @@
   <p>
     <img class="framed" title="Text with search icons" src="images/Tools-remove-previous-launch.png" />
   </p>
+  
+  <h2>Network / Communication</h2>
+
+  <h3>Client-to-server JSON-based protocol</h3>
+
+  <p>
+    In 1.5 we replaced the communication between server and client with a new, JSON-based format.
+    Now, the client also sends it's changes in the same way - no request properties involved 
+    anymore. All widgets LCAs have been refactored to handle the new JSON-based message.
+  </p>
+  <p>
+    <img class="framed" src="images/Client-to-server-JSON.png" />
+  </p>
+  <p>
+    The exact format is described in the
+    <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
+  </p>
 
 </div>
