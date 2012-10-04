@@ -65,19 +65,19 @@
     <li>
       Webinar: Single-Sourcing Techniques for RAP and RCP, Oct 23, 2008, Frank Appel
       <br />
-      <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.pdf">
+      <a href="http://download.eclipsesource.com/rap/webinar/Single_Sourcing_RAP_RCP_en.pdf">
         PDF Slides
       </a>
       &nbsp;&nbsp;
-      <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_examples.zip">
+      <a href="http://download.eclipsesource.com/rap/webinar/Single_Sourcing_RAP_RCP_examples.zip">
         Code examples
       </a>
       &nbsp;&nbsp;
-      <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.mp4">
+      <a href="http://download.eclipsesource.com/rap/webinar/Single_Sourcing_RAP_RCP_en.mp4">
         MP4 Recording
       </a>
       &nbsp;&nbsp;
-      <a href="http://download.innoopract.com/rap/webinar/Single_Sourcing_RAP_RCP_en.wmv">
+      <a href="http://download.eclipsesource.com/rap/webinar/Single_Sourcing_RAP_RCP_en.wmv">
         WMV Recording
       </a>
       &nbsp;&nbsp;(~ 60 Minutes)
