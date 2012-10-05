@@ -57,16 +57,20 @@
     <dd>this constant has moved to the class RWT.</dd>
   </dl>
 
-  <!--
   <h2>Removed classes</h2>
 
   <dl>
-    <dt>RWTDelegate</dt>
-    <dd>replaced by RWTServlet in org.eclipse.rap.rwt.engine</dd>
-    <dt>RWTServletContextListener</dt>
-    <dd>moved to org.eclipse.rap.rwt.engine</dd>
+    <dt>JSWriter, JSVar, JSListenerType, JSListenerInfo</dt>
+    <dd>
+      removed together with the corresponding methods in WidgetLCAUtil and ControlLCAUtil.
+      These classes were used for rendering JavaScript are now obsolete.
+    </dd>
+    <dt>AdapterFactory</dt>
+    <dd>removed together with the extension point,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=344541">bug 344541</a></dd>
+    <dt>ResourceManagerFactory</dt>
+    <dd>see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=348476">bug 348476</a></dd>
   </dl>
-  -->
 
   <h2>p2 Repositories</h2>
 

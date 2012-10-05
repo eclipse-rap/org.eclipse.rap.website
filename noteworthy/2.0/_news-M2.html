@@ -6,8 +6,10 @@
 
   <p>
     In 1.5 we replaced the communication between server and client with a new, JSON-based format.
-    Now, the client also sends it's changes in the same way - no request parameters involved 
-    anymore. All widgets LCAs have been refactored to handle the new JSON-based message.
+    Now, the client uses the same format to report changes to the server.
+    With this change, the entire communication uses the JSON protocol.
+    No HTTP request parameters are involved anymore.
+    All widgets LCAs have been reworked to handle the new JSON-based message.
   </p>
   <p>
     <img class="framed" src="images/Client-to-server-JSON.png" />
@@ -15,6 +17,68 @@
   <p>
     The exact format is described in the
     <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
+  </p>
+
+  <h2>API Changes</h2>
+
+  <h3>Removed deprecated classes</h3>
+
+  <p>
+    During the API clean-up, the following deprecated classes have been removed.
+  </p>
+  <dl>
+    <dt>AdapterFactory</dt>
+    <dd>removed without a replacement together with the extension point,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=344541">bug 344541</a></dd>
+    <dt>ResourceManagerFactory</dt>
+    <dd>remove withot a replacement,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=348476">bug 348476</a></dd>
+  </dl>
+
+  <h3>Changes in LCA Utils</h3>
+
+  <p>
+    To read the properties from a JSON request, we made some changes to the classes
+    <em>WidgetLCAUtil</em> and <em>ControlLCAUtils</em>.
+    If you've developed custom widgets that use them, please refer to the JavaDoc of these classes
+    for details.
+  </p>
+
+  <h2>New Client API</h2>
+
+  <p>
+    Now that alternative clients can be connected to a RAP server, applications will need to
+    distinguish between different clients, e.g. to render parts differently on certain clients.
+    Clients with additional capabilities like gps, camera, etc. should also be able to expose
+    those client-specific features to applications.
+  </p>
+
+  <p>
+    To support those cases, we added a service provider interface <em>Client</em> that can be
+    acquired using the new method <em>RWT.getClient()</em>.
+    Client implementations can provide services, such as a geo-location service, a script execution
+    service, etc. Here's an example:
+  </p>
+
+<pre lang="java">
+Client client = RWT.getClient();
+LocationService service = client.getService( LocationService.class );
+if( service != null ) {
+  service.getAddress();
+  ...
+}
+</pre>
+
+  <p>
+    Unless you have a custom client implementation installed, <em>RWT.getClient()</em> will always
+    return an instance of <em>WebClient</em>.
+    The web client does not provide any services yet. But we plan to implement at least a script
+    execution service in the next milestone.
+  </p>
+
+  <p>
+    Please consider this new API as <strong>provisional</strong>.
+    It may become necessary to change it before the release.
   </p>
 
 </div>

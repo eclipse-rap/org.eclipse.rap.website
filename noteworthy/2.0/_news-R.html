@@ -1,5 +1,22 @@
 <div>
 
+  <h2>Network / Communication</h2>
+
+  <p>
+    In 1.5 we replaced the communication between server and client with a new, JSON-based format.
+    Now, the client uses the same format to report changes to the server.
+    With this change, the entire communication uses the JSON protocol.
+    No HTTP request parameters are involved anymore.
+    All widgets LCAs have been reworked to handle the new JSON-based message.
+  </p>
+  <p>
+    <img class="framed" src="images/Client-to-server-JSON.png" />
+  </p>
+  <p>
+    The exact format is described in the
+    <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
+  </p>
+
   <h2>API Changes</h2>
 
   <p>
@@ -25,10 +42,53 @@
 
   <h3>Deprecated public classes and methods removed</h3>
 
+
+  <dl>
+    <dt>JSWriter, JSVar, JSListenerType, JSListenerInfo</dt>
+    <dd>
+      removed together with the corresponding methods in WidgetLCAUtil and ControlLCAUtil.
+      These classes were used for rendering JavaScript are now obsolete.
+    </dd>
+    <dt>AdapterFactory</dt>
+    <dd>
+      removed without a replacement together with the extension point,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=344541">bug 344541</a>
+    </dd>
+    <dt>ResourceManagerFactory</dt>
+    <dd>
+      remove withot a replacement,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=348476">bug 348476</a>
+    </dd>
+  </dl>
+
+  <h2>New Client API</h2>
+
   <p>
-    With the new JSON-based protocol in place the old deprecated classes and methods for rendering
-    JavaScript are now obsolete. JSWrite, JSVar, JSListenerType and JSListenerInfo classes have been
-    removed together with the corresponding methods in WidgetLCAUtil and ControlLCAUtil.
+    Now that alternative clients can be connected to a RAP server, applications will need to
+    distinguish between different clients, e.g. to render parts differently on certain clients.
+    Clients with additional capabilities like gps, camera, etc. should also be able to expose
+    those client-specific features to applications.
+  </p>
+
+  <p>
+    To support those cases, we added a service provider interface <em>Client</em> that can be
+    acquired using the new method <em>RWT.getClient()</em>.
+    Client implementations can provide services, such as a geo-location service, a script execution
+    service, etc. Here's an example:
+  </p>
+
+<pre lang="java">
+Client client = RWT.getClient();
+LocationService service = client.getService( LocationService.class );
+if( service != null ) {
+  service.getAddress();
+  ...
+}
+</pre>
+
+  <p>
+    Unless you have a custom client implementation installed, <em>RWT.getClient()</em> will always
+    return an instance of <em>WebClient</em>.
   </p>
 
   <h2>Widget Set</h2>
@@ -83,23 +143,6 @@
   </p>
   <p>
     <img class="framed" title="Text with search icons" src="images/Tools-remove-previous-launch.png" />
-  </p>
-  
-  <h2>Network / Communication</h2>
-
-  <h3>Client-to-server JSON-based protocol</h3>
-
-  <p>
-    In 1.5 we replaced the communication between server and client with a new, JSON-based format.
-    Now, the client also sends it's changes in the same way - no request parameters involved 
-    anymore. All widgets LCAs have been refactored to handle the new JSON-based message.
-  </p>
-  <p>
-    <img class="framed" src="images/Client-to-server-JSON.png" />
-  </p>
-  <p>
-    The exact format is described in the
-    <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
   </p>
 
 </div>
