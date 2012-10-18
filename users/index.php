@@ -417,6 +417,34 @@
     <div style="clear: both;"></div>
   </div>
 
+  <div class="box">
+    <div class="images">
+      <a href="images/eiswind-full.png">
+        <img src="images/eiswind.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">Book Publishing Software</h2>
+      <h4 class="tagline"><a href="http://www.eiswind.de">Eiswind</a></h4>
+      <p>
+        Eiswind Book Publishing Software is an online service for book publishers to manage book
+        projects and processes.
+        It allows to synchronize title data with third party information systems using ONIX,
+        the international standard format for book data exchange.
+      </p>
+      <p>
+        Small publishers can sign up for a single user account for free.
+        A guest account is also available.
+      </p>
+      <p class="refs">References:</p>
+      <ul>
+        <li>
+          <a href="http://www.book-publishing-software.com/">http://www.book-publishing-software.com/</a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
 
 </div>
 
