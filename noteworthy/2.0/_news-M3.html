@@ -1,7 +1,32 @@
 <div>
 
   <h2>New Web Client Services</h2>
-  
+
   <h3>JavaScriptExecutor service</h3>
+  <p>
+    Based on the new Client API that has been introduced in M2, we implemented a first service
+    that can be used to execute a piece of JavaScript code on the client.
+    This service replaces the internal class <em>JSExecutor</em>.
+  </p>
+<pre>
+TBD: Code example
+</pre>
+
+  <h2>New Event System</h2>
+  <p>
+    The event system in RWT has been completely re-written.
+    For historical reasons, the implementation was based on typed events like SelectionEvent with untyped
+    events built on top.
+    This inverted design caused several problems that are now fixed.
+  </p>
+  <p>
+    With the new implementation, the design follows the structure of SWT.
+    Typed and untyped events work exactly like in the original.
+    This also allowed us to provide some missing API:
+    All typed events have a <code>time</code> field that reflects the time an event has occurred.
+    MouseEvent has a field <code>count</code> that allows to distinguish single and double clicks.
+    Custom widgets can now use the protected method
+    <code>Widget #removeListener( int, SWTEventListener )</code>.
+  </p>
 
 </div>
