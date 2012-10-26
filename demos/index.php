@@ -53,8 +53,15 @@
         including views, menus, and the selection service.
       </p>
       <p>
+        To demonstrate how this application looks with different themes and layouts, a 
+        <a href="http://rap.eclipsesource.com/workbenchdemo/workbench" target="_blank">standard theme</a>,
+        <a href="http://rap.eclipsesource.com/workbenchdemo/business" target="_blank">business theme</a> and a
+        <a href="http://rap.eclipsesource.com/workbenchdemo/fancy" target="_blank">fancy theme</a>
+        are available.
+      </p>
+      <p>
         <a href="http://rap.eclipsesource.com/workbenchdemo/workbench" target="_blank">
-          See a workbench demo online
+          See the workbench demo online
         </a>
       </p>
     </div>
@@ -75,7 +82,7 @@
       </p>
       <p>
         <a href="http://rap.eclipsesource.com/controlsdemo/controls" target="_blank">
-          See a workbench demo online
+          See the controls demo online
         </a>
       </p>
     </div>
