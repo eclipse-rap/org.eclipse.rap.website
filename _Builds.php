@@ -10,16 +10,14 @@
 class Builds {
 
   private $builds;
-  private $error;
 
   function Builds( $version ) {
     $buildsDirectory = $_SERVER['DOCUMENT_ROOT'] . "/rap/_builds/";
-    $this->builds = simplexml_load_file( $buildsDirectory . "builds-" . $version . ".xml" );
-    $this->error = $this->builds ? NULL : "Error reading file $xmlFile";
-  }
-
-  function hasError() {
-    return $this->error ? TRUE : FALSE;
+    $buildsFile = $buildsDirectory . "builds-" . $version . ".xml";
+    $this->builds = simplexml_load_file( $buildsFile );
+    if( ! $this->builds ) {
+      trigger_error( "Could not initialize Builds object", E_USER_ERROR );
+    }
   }
 
   function findBuild( $buildName ) {

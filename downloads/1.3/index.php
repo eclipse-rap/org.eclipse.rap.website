@@ -4,9 +4,6 @@
   require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_Builds.php" );
 
   $builds = new Builds( "1.3" );
-  if( $builds->hasError() ) {
-    echo '<div class="error">There was a problem loading the build data for this site.</div>';
-  }
 
   $title = "RAP - " . $builds->getVersion() . " Downloads";
   $navPosition = array( "download", "downloads" );

@@ -6,9 +6,6 @@
   $buildName = isset( $_GET[ 'build' ] ) ? $_GET[ 'build' ] : "R";
 
   $builds = new Builds( "2.0" );
-  if( $builds->hasError() ) {
-    echo '<div class="error">There was a problem loading the build data for this site.</div>';
-  }
 
   $build = $builds->findBuild( $buildName );
   if( !$build ) {

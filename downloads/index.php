@@ -14,10 +14,6 @@
 
   // ---
 
-  if( $releaseBuilds->hasError() || $stableBuilds->hasError() ) {
-    echo '<div class="error">There was a problem loading the build data for this site.</div>';
-  }
-
   $stableBuild = $stableBuilds->getLastCompletedBuild();
   $releaseBuild = $releaseBuilds->getLastCompletedReleaseBuild();
 
