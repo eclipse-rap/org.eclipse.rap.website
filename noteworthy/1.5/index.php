@@ -5,7 +5,7 @@
 
   $buildName = isset( $_GET[ 'build' ] ) ? $_GET[ 'build' ] : "R";
 
-  $builds = new Builds( $_SERVER['DOCUMENT_ROOT'] . "/rap/downloads/1.5/builds.xml" );
+  $builds = new Builds( "1.5" );
   if( $builds->hasError() ) {
     echo '<div class="error">There was a problem loading the build data for this site.</div>';
   }

@@ -9,8 +9,8 @@
 
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
-  $releaseBuilds = new Builds( "./1.5/builds.xml" );
-  $stableBuilds = new Builds( "./2.0/builds.xml" );
+  $releaseBuilds = new Builds( "1.5" );
+  $stableBuilds = new Builds( "2.0" );
 
   // ---
 

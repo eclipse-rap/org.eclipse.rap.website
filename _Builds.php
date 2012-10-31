@@ -12,8 +12,9 @@ class Builds {
   private $builds;
   private $error;
 
-  function Builds( $xmlFile ) {
-    $this->builds = simplexml_load_file( $xmlFile );
+  function Builds( $version ) {
+    $buildsDirectory = $_SERVER['DOCUMENT_ROOT'] . "/rap/_builds/";
+    $this->builds = simplexml_load_file( $buildsDirectory . "builds-" . $version . ".xml" );
     $this->error = $this->builds ? NULL : "Error reading file $xmlFile";
   }
 
