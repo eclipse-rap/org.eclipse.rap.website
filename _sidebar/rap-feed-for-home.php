@@ -7,7 +7,7 @@
 ?>
 
 <div id="blog-posts-container">
-  <a href="<?=urlencode( $feedUrl )?>" class="rssIcon"><img src="/rap/images/feed_dark.png" alt="feed" /></a>
+  <a href="<?= htmlspecialchars( $feedUrl, ENT_QUOTES ) ?>" class="rssIcon"><img src="/rap/images/feed_dark.png" alt="feed" /></a>
   <h2>Recent blog posts</h2>
   <div id="blog-posts"></div>
   <div class="stop"></div>

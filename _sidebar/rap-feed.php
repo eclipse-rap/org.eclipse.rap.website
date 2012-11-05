@@ -7,7 +7,8 @@
 
 <div class="sideitem">
 
-  <h6>Recent RAP Posts <a href="<?=urlencode( $feedUrl )?>" class="rssIcon"><img src="/rap/images/feed.png" alt="feed" /></a></h6>
+  <h6>Recent RAP Posts
+    <a href="<?= htmlspecialchars( $feedUrl, ENT_QUOTES ) ?>" class="rssIcon"><img src="/rap/images/feed-black.png" alt="feed" /></a></h6>
   <div class="sideitemcontent">
     <div id="rapFeed"></div>
     <script type="text/javascript">
