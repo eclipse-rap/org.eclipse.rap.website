@@ -6,11 +6,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/_lib/urlnormalizer/URLNormalizer.
 class ContentView {
 
   private static $htmlFile;
+  private static $path;
 
   private function __construct() {}
 
   public static function create( $htmlFilePath ) {
-    self::$htmlFile = new SplFileObject( DevGuideUtils::ROOT_URL . '/help/html/' . $htmlFilePath );
+    self::$path = strstr( $htmlFilePath, "/", true );
+    self::$htmlFile = new SplFileObject( DevGuideUtils::ROOT_URL . '/help/html/' . $htmlFilePath  . DevGuideUtils::URL_POSTFIX );
     return self::processHtmlFileContent();
   }
 
@@ -48,9 +50,8 @@ class ContentView {
     if( substr( $url, 0, 5 ) === '/help' ) {
       $result = str_replace( '/help', 'http://help.eclipse.org', $url );
     } else if( containsString( $url, '.html' ) ) {
-      $normalizedUrl = self::normalizeUrl( self::$htmlFile -> getPath() . '/' . $url );
-      $searchString = DevGuideUtils::ROOT_URL . '/help/html/';
-      $result = '?topic=' . str_replace( $searchString, '', $normalizedUrl );
+      $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $url );
+      $result = '?topic=' . trim( $normalizedUrl, "/" );
     } else {
       $result = $url;
     }
@@ -62,7 +63,7 @@ class ContentView {
     foreach( $images as $image ) {
       $url = $image -> getAttribute( 'src' );
       if( !containsString( $url, 'http://' ) ) {
-        $image -> setAttribute( 'src', self::$htmlFile -> getPath() . '/' . $url );
+        $image -> setAttribute( 'src', DevGuideUtils::ROOT_URL . '/help/html/' . self::$path . '/' . $url );
       }
     }
   }

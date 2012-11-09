@@ -63,7 +63,7 @@ function send404() {
 
 <div id="rightcolumn">
   <h2 style="padding-bottom: 12px;">Contents</h2>
-  <?= NavigationView::create( DevGuideUtils::ROOT_URL . '/help/toc.xml' ); ?>
+  <?= NavigationView::create( DevGuideUtils::ROOT_URL . '/help/toc.xml' . DevGuideUtils::URL_POSTFIX ); ?>
 </div>
 
 <script type="text/javascript">

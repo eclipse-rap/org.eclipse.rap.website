@@ -11,10 +11,10 @@ printHeader( $title, $navPosition );
 ?>
 
 <div id="midcolumn">
-  <h1>Developer's Guide</h1>
+  <h1>Developer's Guide for RAP <?=DevGuideUtils::VERSION ?></h1>
   <h2>Table of contents</h2>
   <div id="table-of-contents">
-    <?= NavigationView::create( DevGuideUtils::ROOT_URL . '/help/toc.xml' ) ?>
+    <?= NavigationView::create( DevGuideUtils::ROOT_URL . '/help/toc.xml' . DevGuideUtils::URL_POSTFIX ) ?>
   </div>
 </div>
 
