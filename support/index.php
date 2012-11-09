@@ -33,6 +33,15 @@
   </div>
 
   <div>
+    <h2>Wiki</h2>
+    <p>
+      The <a href="http://wiki.eclipse.org/RAP">RAP Wiki</a> provides more in-depth technical and
+      organizational information. It contains the FAQ, a list of known add-ons, guides for
+      integrating RAP with other projects, articles on RAP internals, and resources for committers.
+    </p>
+  </div>
+
+  <div>
     <h2>Forum</h2>
     <p>
       If you couldn't find the answers you were looking for in the
