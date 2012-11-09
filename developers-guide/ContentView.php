@@ -49,6 +49,8 @@ class ContentView {
     $result = '';
     if( substr( $url, 0, 5 ) === '/help' ) {
       $result = str_replace( '/help', 'http://help.eclipse.org', $url );
+    } else if( substr( $url, 0, 12 ) === '../reference' ) {
+      $result = DevGuideUtils::API_URL . trim( $url, "." );
     } else if( containsString( $url, '.html' ) ) {
       $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $url );
       $result = '?topic=' . trim( $normalizedUrl, "/" );
