@@ -1,15 +1,39 @@
 <div>
 
   <h2>New Web Client Services</h2>
+  <p>
+    Based on the new Client API that has been introduced in M2, some existing API has been
+    transformed into client services.
+  </p>
 
   <h3>JavaScriptExecutor service</h3>
   <p>
-    Based on the new Client API that has been introduced in M2, we implemented a first service
-    that can be used to execute a piece of JavaScript code on the client.
-    This service replaces the internal class <em>JSExecutor</em>.
+    This service can be used to execute a piece of JavaScript code on the client.
+    It replaces the internal class <em>JSExecutor</em>. Example:
   </p>
 <pre>
-TBD: Code example
+  JavaScriptExecutor executer = RWT.getClient().getService( JavaScriptExecutor.class );
+  executer.execute( "alert( \"Hello World!\" );" );
+</pre>
+
+  <h3>BrowserHistory service</h3>
+  <p>
+    Allows to use the browser's history for navigating within the application.
+    The previous <em>IBrowserHistory</em> interface has been deprecated. Example:
+  </p>
+<pre>
+  BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
+  history.createEntry( "main", "Main View" );
+</pre>
+
+  <h3>ExitConfirmation service</h3>
+  <p>
+    Configure the confirmation dialog that can be shown before the user leaves the application.
+    It is no longer possible to do this via the branding API. Example:
+  </p>
+<pre>
+  ExitConfirmation exitConfirmation = RWT.getClient().getService( ExitConfirmation.class );
+  exitConfirmation.setMessage( "Where do you think you're going?!" );
 </pre>
 
   <h2>New Event System</h2>
