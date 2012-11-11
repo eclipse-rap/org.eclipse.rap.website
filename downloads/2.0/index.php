@@ -16,10 +16,6 @@
     return $type . "s";
   }
 
-  $downloadPrefix = 'http://www.eclipse.org/downloads/download.php?file=';
-  $downloadPath = $downloadPrefix . $builds->getDownloadPath( "runtime" );
-  $toolsDownloadPath = $downloadPrefix . $builds->getDownloadPath( "tools" );
-
 ?>
 
 <div id="midcolumn">
@@ -52,13 +48,13 @@
   <h3>RAP Tools</h3>
 
   <p>
-    <?= $builds->getDescription( "tooling" ) ?>
+    <?= $builds->getDescription( "tools" ) ?>
   </p>
 
   <p>
     Software Site:
     <img src="/rap/images/site.gif" alt="site" />
-    <?= $builds->getUpdateSite( "tooling" ) ?>
+    <?= $builds->getUpdateSite( "tools" ) ?>
   </p>
 
   <h2>Builds</h2>
@@ -88,12 +84,12 @@
         <a href="/rap/noteworthy/<?= $build->getNews() ?>">New &amp; Noteworthy</a>
       </td>
       <td>
-        <a href="<?= $downloadPath . $build->getZipFile( "runtime" ) ?>">
+        <a href="<?= $build->getZipFileUrl( "runtime" ) ?>">
           <img src="/rap/images/zip.gif" alt="zip" /> RAP
         </a>
       </td>
       <td>
-        <a href="<?= $toolsDownloadPath . $build->getZipFile( "tools" ) ?>">
+        <a href="<?= $build->getZipFileUrl( "tools" ) ?>">
           <img src="/rap/images/zip.gif" alt="zip" /> RAP Tools
         </a>
       </td>

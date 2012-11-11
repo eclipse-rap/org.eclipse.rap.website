@@ -16,8 +16,6 @@
     return $type . "s";
   }
 
-  $downloadPath = 'http://www.eclipse.org/downloads/download.php?file=' . $builds->getDownloadPath();
-
 ?>
 
 <div id="midcolumn">
@@ -35,18 +33,6 @@
 
   <h2>Features</h2>
 
-  <h3>RAP Tooling</h3>
-
-  <p>
-    <?= $builds->getDescription( "tooling" ) ?>
-  </p>
-
-  <p>
-    Software Site:
-    <img src="/rap/images/site.gif" alt="site" />
-    <?= $builds->getUpdateSite( "tooling" ) ?>
-  </p>
-
   <h3>RAP Runtime</h3>
 
   <p>
@@ -57,6 +43,18 @@
     Software Site:
     <img src="/rap/images/site.gif" alt="site" />
     <?= $builds->getUpdateSite( "runtime" ) ?>
+  </p>
+
+  <h3>RAP Tooling</h3>
+
+  <p>
+    <?= $builds->getDescription( "tooling" ) ?>
+  </p>
+
+  <p>
+    Software Site:
+    <img src="/rap/images/site.gif" alt="site" />
+    <?= $builds->getUpdateSite( "tooling" ) ?>
   </p>
 
   <h2>Builds</h2>
@@ -86,12 +84,12 @@
         <a href="/rap/noteworthy/<?= $build->getNews() ?>">New &amp; Noteworthy</a>
       </td>
       <td>
-        <a href="<?= $downloadPath . $build->getZipFile( "tooling" ) ?>">
+        <a href="<?= $build->getZipFileUrl( "tooling" ) ?>">
           <img src="/rap/images/zip.gif" alt="zip" /> Tooling
         </a>
       </td>
       <td>
-        <a href="<?= $downloadPath . $build->getZipFile( "runtime" ) ?>">
+        <a href="<?= $build->getZipFileUrl( "runtime" ) ?>">
           <img src="/rap/images/zip.gif" alt="zip" /> Runtime
         </a>
       </td>

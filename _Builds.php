@@ -64,29 +64,23 @@ class Builds {
     return (string) $this->builds[ "version" ];
   }
 
-  function getDownloadPath( $feature ) {
-    if( empty( $feature ) ) {
-      return (string) $this->builds[ "downloadPath" ];
-    }
-    return (string) $this->builds[ $feature . "DownloadPath" ];
-  }
-
   function getSimultaneousRelease() {
     return (string) $this->builds[ "simultaneousRelease" ];
   }
 
-  function getUpdateSite( $feature ) {
-    if( $feature === "runtime" || $feature === "tooling" || $feature === "tools" ) {
-      return (string) $this->builds[ $feature . "Site" ];
-    }
-    return NULL;
+  function getUpdateSite( $featureId ) {
+    $feature = $this->_getFeature( $featureId );
+    return $feature ? (string) $feature->site : NULL;
   }
 
-  function getDescription( $feature ) {
-    if( $feature === "runtime" || $feature === "tooling" || $feature === "tools" ) {
-      return (string) $this->builds[ $feature . "Desc" ];
-    }
-    return NULL;
+  function getDescription( $featureId ) {
+    $feature = $this->_getFeature( $featureId );
+    return $feature ? (string) $feature->description : NULL;
+  }
+
+  function _getFeature( $id ) {
+    $features = $this->builds->xpath( "/builds/feature[@id = '" . $id . "']" );
+    return count( $features ) === 1 ? $features[ 0 ] : NULL;
   }
 
 }
@@ -125,9 +119,23 @@ class Build {
     return (string) $this->build[ "relnotes" ];
   }
 
-  function getZipFile( $feature ) {
-    if( $feature === "runtime" || $feature === "tooling" || $feature === "tools" ) {
-      return (string) $this->build[ $feature . "Zip" ];
+  function getZipFile( $featureId ) {
+    $feature = $this->parent->_getFeature( $featureId );
+    if( $feature ) {
+      return (string) $this->build[ $featureId . "Zip" ];
+    }
+    return NULL;
+  }
+
+  function getZipFileUrl( $featureId ) {
+    $filename = $this->getZipFile( $featureId );
+    if( $filename ) {
+      $feature = $this->parent->_getFeature( $featureId );
+      if( $feature ) {
+        $featurePath = (string) $feature->downloadPath;
+        $downloadPrefix = "http://www.eclipse.org/downloads/download.php?file=";
+        return $downloadPrefix . $featurePath . $filename;
+      }
     }
     return NULL;
   }

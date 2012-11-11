@@ -8,12 +8,21 @@
  -->
 
 <builds version="1.4"
-    downloadPath="/rt/rap/1.4/"
-    runtimeSite="http://download.eclipse.org/rt/rap/1.4/runtime"
-    toolingSite="http://download.eclipse.org/rt/rap/1.4/tooling"
-    runtimeDesc="based on Eclipse 3.7"
-    toolingDesc="for use with Eclipse 3.6 and 3.7"
     simultaneousRelease="Indigo">
+
+  <feature id="runtime">
+    <name>RAP Runtime</name>
+    <description>based on Eclipse 3.7</description>
+    <site>http://download.eclipse.org/rt/rap/1.4/runtime</site>
+    <downloadPath>/rt/rap/1.4/</downloadPath>
+  </feature>
+
+  <feature id="tooling">
+    <name>RAP Tooling</name>
+    <description>for use with Eclipse 3.6 and 3.7</description>
+    <site>http://download.eclipse.org/rt/rap/1.4/tooling</site>
+    <downloadPath>/rt/rap/1.4/</downloadPath>
+  </feature>
 
   <build name="1.4 M1" type="M"
       shortname="M1"

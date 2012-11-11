@@ -8,13 +8,21 @@
  -->
 
 <builds version="2.0"
-    runtimeDownloadPath="/rt/rap/2.0/"
-    toolsDownloadPath="/rt/rap/tools/2.0/"
-    runtimeSite="http://download.eclipse.org/rt/rap/2.0"
-    toolsSite="http://download.eclipse.org/rt/rap/tools/2.0"
-    runtimeDesc="based on Eclipse 4.2"
-    toolsDesc="for use with Eclipse 3.8 and 4.2"
     simultaneousRelease="">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.2</description>
+    <site>http://download.eclipse.org/rt/rap/2.0</site>
+    <downloadPath>/rt/rap/2.0/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 3.8 and 4.2</description>
+    <site>http://download.eclipse.org/rt/rap/tools/2.0</site>
+    <downloadPath>/rt/rap/tools/2.0/</downloadPath>
+  </feature>
 
   <build name="2.0 M1" type="M"
       shortname="M1"

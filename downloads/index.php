@@ -17,30 +17,30 @@
   $stableBuild = $stableBuilds->getLastCompletedBuild();
   $releaseBuild = $releaseBuilds->getLastCompletedReleaseBuild();
 
-  $downloadUrl = "http://www.eclipse.org/downloads/download.php?file=";
   $newsUrl = "../noteworthy/";
 
   $STABLE_RUNTIME_DESCRIPTION = $stableBuilds->getDescription( "runtime" );
   $STABLE_TOOLING_DESCRIPTION = $stableBuilds->getDescription( "tools" );
-  $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds->getDescription( "runtime" );
-  $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds->getDescription( "tooling" );
   $STABLE_NAME = $stableBuild->getName() . ' ' . $stableBuild->getType();
-  $RELEASE_NAME = $releaseBuild->getName() . ' ' . $releaseBuild->getType();
   $STABLE_DATE = formatDate( $stableBuild->getPublishDate() );
-  $RELEASE_DATE = formatDate( $releaseBuild->getPublishDate() );
   $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild->getNews();
-  $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild->getNews();
-  $RELEASE_NOTES_URL = $releaseBuild->getReleaseNotes() ? $newsUrl . $releaseBuild->getReleaseNotes() : "";
   $STABLE_RUNTIME_ZIP = $stableBuild->getZipFile( "runtime" );
   $STABLE_TOOLING_ZIP = $stableBuild->getZipFile( "tools" );
-  $RELEASE_RUNTIME_ZIP = $releaseBuild->getZipFile( "runtime" );
-  $RELEASE_TOOLING_ZIP = $releaseBuild->getZipFile( "tooling" );
-  $STABLE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath( "runtime" ) . $stableBuild->getZipFile( "runtime" );
-  $STABLE_TOOLING_DOWNLOAD_URL = $downloadUrl . $stableBuilds->getDownloadPath( "tools" ) . $stableBuild->getZipFile( "tools" );
-  $RELEASE_RUNTIME_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "runtime" );
-  $RELEASE_TOOLING_DOWNLOAD_URL = $downloadUrl . $releaseBuilds->getDownloadPath() . $releaseBuild->getZipFile( "tooling" );
+  $STABLE_RUNTIME_ZIP_URL = $stableBuild->getZipFileUrl( "runtime" );
+  $STABLE_TOOLING_ZIP_URL = $stableBuild->getZipFileUrl( "tools" );
   $STABLE_RUNTIME_UPDATE_SITE = $stableBuilds->getUpdateSite( "runtime" );
   $STABLE_TOOLING_UPDATE_SITE = $stableBuilds->getUpdateSite( "tools" );
+
+  $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds->getDescription( "runtime" );
+  $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds->getDescription( "tooling" );
+  $RELEASE_NAME = $releaseBuild->getName() . ' ' . $releaseBuild->getType();
+  $RELEASE_DATE = formatDate( $releaseBuild->getPublishDate() );
+  $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild->getNews();
+  $RELEASE_NOTES_URL = $releaseBuild->getReleaseNotes() ? $newsUrl . $releaseBuild->getReleaseNotes() : "";
+  $RELEASE_RUNTIME_ZIP = $releaseBuild->getZipFile( "runtime" );
+  $RELEASE_TOOLING_ZIP = $releaseBuild->getZipFile( "tooling" );
+  $RELEASE_RUNTIME_ZIP_URL = $releaseBuild->getZipFileUrl( "runtime" );
+  $RELEASE_TOOLING_ZIP_URL = $releaseBuild->getZipFileUrl( "tooling" );
   $RELEASE_RUNTIME_UPDATE_SITE = $releaseBuilds->getUpdateSite( "runtime" );
   $RELEASE_TOOLING_UPDATE_SITE = $releaseBuilds->getUpdateSite( "tooling" );
 
@@ -100,7 +100,7 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="<?php echo $STABLE_RUNTIME_DOWNLOAD_URL ?>"><?php echo $STABLE_RUNTIME_ZIP ?></a>
+        <a href="<?php echo $STABLE_RUNTIME_ZIP_URL ?>"><?php echo $STABLE_RUNTIME_ZIP ?></a>
       </p>
     </div>
 
@@ -126,7 +126,7 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="<?php echo $RELEASE_RUNTIME_DOWNLOAD_URL ?>"><?php echo $RELEASE_RUNTIME_ZIP ?></a>
+        <a href="<?php echo $RELEASE_RUNTIME_ZIP_URL ?>"><?php echo $RELEASE_RUNTIME_ZIP ?></a>
       </p>
     </div>
 
@@ -217,7 +217,7 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="<?php echo $STABLE_TOOLING_DOWNLOAD_URL ?>"><?php echo $STABLE_TOOLING_ZIP ?></a>
+        <a href="<?php echo $STABLE_TOOLING_ZIP_URL ?>"><?php echo $STABLE_TOOLING_ZIP ?></a>
       </p>
     </div>
 
@@ -243,7 +243,7 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="<?php echo $RELEASE_TOOLING_DOWNLOAD_URL ?>"><?php echo $RELEASE_TOOLING_ZIP ?></a>
+        <a href="<?php echo $RELEASE_TOOLING_ZIP_URL ?>"><?php echo $RELEASE_TOOLING_ZIP ?></a>
       </p>
     </div>
 
