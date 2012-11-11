@@ -5,14 +5,14 @@
     plan-format="1.0" 
     xmlns="http://www.eclipse.org/project/plan"
     xmlns:html="http://www.w3.org/1999/xhtml" 
-    name="Rich Ajax Platform (RAP)">
+    name="Remote Application Platform (RAP)">
 
   <release projectid="rt.rap" version="2.0" />
 
   <introduction>
     <html:div>
-      The Rich Ajax Platform (RAP) is an Eclipse platform for modular web applications using a rich
-      widget toolkit with SWT API.
+      The Remote Application Platform (RAP) is an Eclipse platform for modular applications using a
+      rich widget toolkit with SWT API.
       Optionally, also JFace and Workbench APIs and extension points are available on top of this
       toolkit.
       RAP applications run on server-side OSGi, but can also be used in standard web applications.
@@ -110,7 +110,7 @@
     </html:div>
     <internationalization>
       <html:div>
-        The Rich Ajax Platform is designed as the basis for internationalized products.
+        The Remote Application Platform is designed as the basis for internationalized products.
         The user interface elements provided by the RAP components, including dialogs and error
         messages, are externalized.
         The English strings are provided as the default resource bundles.
