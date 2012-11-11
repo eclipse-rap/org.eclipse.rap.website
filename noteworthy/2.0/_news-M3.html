@@ -12,8 +12,8 @@
     It replaces the internal class <em>JSExecutor</em>. Example:
   </p>
 <pre>
-  JavaScriptExecutor executer = RWT.getClient().getService( JavaScriptExecutor.class );
-  executer.execute( "alert( \"Hello World!\" );" );
+JavaScriptExecutor executer = RWT.getClient().getService( JavaScriptExecutor.class );
+executer.execute( "alert( \"Hello World!\" );" );
 </pre>
 
   <h3>BrowserHistory service</h3>
@@ -22,8 +22,8 @@
     The previous <em>IBrowserHistory</em> interface has been deprecated. Example:
   </p>
 <pre>
-  BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
-  history.createEntry( "main", "Main View" );
+BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
+history.createEntry( "main", "Main View" );
 </pre>
 
   <h3>ExitConfirmation service</h3>
@@ -32,8 +32,8 @@
     It is no longer possible to do this via the branding API. Example:
   </p>
 <pre>
-  ExitConfirmation exitConfirmation = RWT.getClient().getService( ExitConfirmation.class );
-  exitConfirmation.setMessage( "Where do you think you're going?!" );
+ExitConfirmation exitConfirmation = RWT.getClient().getService( ExitConfirmation.class );
+exitConfirmation.setMessage( "Where do you think you're going?!" );
 </pre>
 
   <h2>New Event System</h2>
@@ -51,6 +51,53 @@
     MouseEvent has a field <code>count</code> that allows to distinguish single and double clicks.
     Custom widgets can now use the protected method
     <code>Widget #removeListener( int, SWTEventListener )</code>.
+  </p>
+
+  <h2>UICallBack improvements</h2>
+  <p>
+    The <em>UICallBack</em> is RAP's mechanism to enable “push” UI updates to the client.
+    The implementation of this mechanism has been simplified and made more robust
+    (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=382613">bug 382613</a>).
+    As an effect of this change, the client will now be notified of a session timeout when
+    the UICallBack is enabled
+    (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=388280">bug 388280</a>).
+  </p>
+
+  <h2>ResourceManager changes</h2>
+  <p>
+    The <em>ResourceManager</em> is used to register static resources like images or JavaScript
+    files in a RAP.
+    But it has also been equipped with additional services like JavaScript compression, encoding
+    conversion, and adding hash codes to file names to avoid caching problems.
+    We simplified the ResourceManager to fulfill only a single purpose, which is registering
+    resources.
+  </p>
+  <p>
+    The ResourceManager does not minify (“compress”) JavaScript anymore.
+    We removed the YUI Compressor from RWT because it turned out that it consumes a considerable
+    amount of memory and also delays the server startup.
+    All resources used by RWT are already minified at build time and we recommend that custom
+    component developers also minify their JavaScript files with a tool of their choice.
+    There are a lot of free JavaScript compressor tools out there, such as
+    <a href="http://developer.yahoo.com/yui/compressor/">YUI Compressor</a>,
+    the <a href="https://developers.google.com/closure/compiler/">Google Closure Compiler</a>,
+    or <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a>.
+  </p>
+  <p>
+    The ResourceManager does not take the encoding of a resource into account anymore.
+    It now registers the bytes from a given input stream as is.
+    If you used to register resources with a charset other than UTF-8, you should make sure that
+    your client code reads the resources with the correct charset.
+  </p>
+  <p>
+    The ResourceManager does not add version hashes to file names anymore.
+    We think that caching issues are not that common than they were in IE6 times.
+    If there is a need to add version hashes to URLs, applications can simply add a url parameter
+    like "?nocache=4711" when requesting the resource.
+  </p>
+  <p>
+    To reflect these changes in the <em>IResource</em> interface, the related API methods 
+    <em>getCharset()</em> and <em>getOptions()</em> have been removed.
   </p>
 
 </div>
