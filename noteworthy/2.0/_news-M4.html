@@ -1,3 +1,21 @@
 <div>
 
+  <h2>API Changes</h2>
+
+  <h3>Class Graphics deprecated</h3>
+  <p>
+    The class <em>Graphics</em> had been used to create <em>shared</em> instances of resources like
+    <em>Color</em> and <em>Font</em> before resource constructors were introduced in 1.3.
+    This practice is problematic because instances created using these methods throw an exception
+    when trying to dispose them. Moreover, they cannot be garbage collected.
+    In RAP 2.0, resources should only be created using the constructors
+    of <em>Color</em>, <em>Font</em>, <em>Cursor</em>, and <em>Image</em>.
+  </p>
+  <p>
+    Graphics also provided methods for test size measurement. We expect that these methods are
+    hardly used by application code and can be replaced by SWT's <em>GC</em> API.
+    To measure a string in a given font, create a GC, set the font, and call the GC methods
+    <em>stringExtent</em> or <em>textExtent</em>. Don't forget to dispose of the GC afterwards.
+  </p>
+
 </div>
