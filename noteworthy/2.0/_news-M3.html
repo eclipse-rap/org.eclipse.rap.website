@@ -12,14 +12,15 @@
     It replaces the internal class <em>JSExecutor</em>. Example:
   </p>
 <pre>
-JavaScriptExecutor executer = RWT.getClient().getService( JavaScriptExecutor.class );
-executer.execute( "alert( \"Hello World!\" );" );
+JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
+executor.execute( "alert( \"Hello World!\" );" );
 </pre>
 
   <h3>BrowserHistory service</h3>
   <p>
     Allows to use the browser's history for navigating within the application.
-    The previous <em>IBrowserHistory</em> interface has been deprecated. Example:
+    This replaces the <em>IBrowserHistory</em> interface and <em>RWT.getBrowserHistory()</em>.
+    Example:
   </p>
 <pre>
 BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
@@ -28,12 +29,13 @@ history.createEntry( "main", "Main View" );
 
   <h3>ExitConfirmation service</h3>
   <p>
-    Configure the confirmation dialog that can be shown before the user leaves the application.
-    It is no longer possible to do this via the branding API. Example:
+    Used to configure the confirmation dialog that can be shown before the user leaves the
+    application.
+    It is no longer possible to do this in a branding. Example:
   </p>
 <pre>
-ExitConfirmation exitConfirmation = RWT.getClient().getService( ExitConfirmation.class );
-exitConfirmation.setMessage( "Where do you think you're going?!" );
+ExitConfirmation confirmation = RWT.getClient().getService( ExitConfirmation.class );
+confirmation.setMessage( "Where do you think you're going?!" );
 </pre>
 
   <h2>New Event System</h2>
@@ -41,7 +43,7 @@ exitConfirmation.setMessage( "Where do you think you're going?!" );
     The event system in RWT has been completely re-written.
     For historical reasons, the implementation was based on typed events like SelectionEvent with untyped
     events built on top.
-    This inverted design caused several problems that are now fixed.
+    This “inverted” design caused several problems that are now fixed (see <?=bug(334028)?>).
   </p>
   <p>
     With the new implementation, the design follows the structure of SWT.
@@ -53,51 +55,128 @@ exitConfirmation.setMessage( "Where do you think you're going?!" );
     <code>Widget #removeListener( int, SWTEventListener )</code>.
   </p>
 
-  <h2>UICallBack improvements</h2>
+  <h2>Server Push (aka UICallBack) Improvements</h2>
   <p>
     The <em>UICallBack</em> is RAP's mechanism to enable “push” UI updates to the client.
     The implementation of this mechanism has been simplified and made more robust
-    (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=382613">bug 382613</a>).
+    (see <?=bug(382613)?>).
     As an effect of this change, the client will now be notified of a session timeout when
-    the UICallBack is enabled
-    (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=388280">bug 388280</a>).
+    the UICallBack is enabled (<?=bug(388280)?>).
   </p>
 
-  <h2>ResourceManager changes</h2>
+  <h2>Resource Manager Rework</h2>
   <p>
-    The <em>ResourceManager</em> is used to register static resources like images or JavaScript
-    files in a RAP.
-    But it has also been equipped with additional services like JavaScript compression, encoding
-    conversion, and adding hash codes to file names to avoid caching problems.
-    We simplified the ResourceManager to fulfill only a single purpose, which is registering
-    resources.
+    The resource manager (<em>IResourceManager</em>) is used to register static resources like
+    images or JavaScript files in RAP applications.
+    But it had also been equipped with additional functionality like JavaScript compression,
+    encoding conversion, etc.
+    These additional concerns made the resource manager complicated to use and to maintain.
+    We reduced the interface to the purpose of registering resources and simplified the
+    implementation.
+    In particular, the resource manager
   </p>
-  <p>
-    The ResourceManager does not minify (“compress”) JavaScript anymore.
-    We removed the YUI Compressor from RWT because it turned out that it consumes a considerable
-    amount of memory and also delays the server startup.
-    All resources used by RWT are already minified at build time and we recommend that custom
+  <ul>
+  <li>
+    does not minify JavaScript anymore.
+    We removed the YUI Compressor from RWT because it turned out to be too resource-intensive.
+    All JavaScript resources used by RWT are minified at build time and we'd recommend that custom
     component developers also minify their JavaScript files with a tool of their choice.
-    There are a lot of free JavaScript compressor tools out there, such as
+    There are many free tools out there, such as
     <a href="http://developer.yahoo.com/yui/compressor/">YUI Compressor</a>,
-    the <a href="https://developers.google.com/closure/compiler/">Google Closure Compiler</a>,
+    <a href="https://developers.google.com/closure/compiler/">Google Closure Compiler</a>,
     or <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a>.
-  </p>
-  <p>
-    The ResourceManager does not take the encoding of a resource into account anymore.
+  </li>
+  <li>
+    does not take the encoding of a resource into account anymore.
     It now registers the bytes from a given input stream as is.
-    If you used to register resources with a charset other than UTF-8, you should make sure that
+    If you used to register text files with a charset other than UTF-8, you should make sure that
     your client code reads the resources with the correct charset.
-  </p>
-  <p>
-    The ResourceManager does not add version hashes to file names anymore.
-    We think that caching issues are not that common than they were in IE6 times.
-    If there is a need to add version hashes to URLs, applications can simply add a url parameter
+  </li>
+  <li>
+    does not add version hashes to file names anymore.
+    This has been done to avoid caching problems.
+    We think that these issues are not that common anymore than they were in IE6 times.
+    If there is a need to add version hashes to URLs, applications can simply add a URL parameter
     like "?nocache=4711" when requesting the resource.
+  </li>
+  </ul>
+  <p>
+    Moreover, the resource manager does not close input streams anymore after registering a resource,
+    as this should be done by the code that opened the stream (<?=bug(347615)?>).
+    Please double check that you're closing streams correctly.
+  </p>
+
+  <h3>Affected API</h3>
+  <p>
+    The ResourceManager API has been reduced to the necessary minimum.
+    If you've used a method that has been removed, the advice above should help you to adapt your
+    code to use one of the remaining methods instead.
+  <p>
+  </p>
+    The <em>IResource</em> interface is now only used in the extension point
+    <em>org.eclipse.rap.ui.resources</em> and has therefore been moved to the bundle
+    <em>org.eclipse.rap.ui.workbench</em>.
+    The methods <em>getCharset()</em> and <em>getOptions()</em> have been removed because of the
+    changes described above.
   </p>
   <p>
-    To reflect these changes in the <em>IResource</em> interface, the related API methods 
-    <em>getCharset()</em> and <em>getOptions()</em> have been removed.
+    For resources that are registered in an <em>ApplicationConfiguration</em>, the method
+    <em>Application.addResource(…)</em> now accepts a <em>ResourceLoader</em> instead of
+    <em>IResource</em>.
+  </p>
+
+  <h2>Dropped Support for entrypoints by name</h2>
+  <p>
+    Until now, entrypoints could be registered with a name in an entrypoint extension.
+    Those entrypoints had been available at a URL with the default servlet name “rap” and a URL
+    parameter “startup” pointing to this name, such as:
+  <p>
+<pre>
+http://hostname/webapp/rap?startup=foo &nbsp; (OBSOLETE)
+</pre>
+  </p>
+    Since RAP 1.5, entrypoints can be registered by path.
+    For example, an entrypoint that is registered with the path <code>/foo</code> will be available
+    at:
+  </p>
+<pre>
+http://hostname/webapp/foo
+</pre>
+  </p>
+    The old approach had a number of drawbacks. It lead to odd URLs, that follow a convention
+    you had to know. A typo in the entrypoint name resulted in an HTTP 500 instead of a 404.
+    Even if you mapped a custom path to the entrypoint in a branding, the “rap?startup=” URL
+    would still work.
+  </p>
+  <p>
+    Thus we decided to remove the support for entrypoints by name completely in RAP 2.0.
+    From now on, entrypoints can only be registered by path.
+    The <em>name</em> attribute has been removed from the extension point
+    <em>org.eclipse.rap.ui.entrypoints</em>.
+    The default servlet name “rap” and the parameter “startup” are not supported anymore.
+  </p>
+
+  <h2>Branding Changes</h2>
+  <p>
+    Since entrypoints are now always registered by path, there is no need for an entrypoint-to-path
+    mapping in a branding anymore.
+    Therefore, we removed the attributes <em>servletName</em>, <em>defaultEntrypointId</em>, and the
+    element <em>associatedEntrypoints</em> from the <em>branding</em> extension point.
+    A branding can now be bound to an entrypoint by setting the new attribute <em>brandingId</em>.
+    To bind a branding to an <em>IApplication</em>, add a parameter <em>brandingId</em> to the
+    application extension point.
+  <p>
+  </p>
+    For exit confirmations, the new client service <em>ExitConfirmation</em> should be used as
+    explained above.
+    The attribute <em>exitConfirmationClass</em> is no longer supported by the branding extension
+    point.
+  </p>
+  </p>
+    With these changes, we also removed the branding API from RWT, namely the classes
+    <em>AbstractBranding</em> and <em>Header</em>.
+    In plain RWT applications, entrypoint properties can be used for branding.
+    So we don't expect that anyone was using these classes anyway.
   </p>
 
 </div>

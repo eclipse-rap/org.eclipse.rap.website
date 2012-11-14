@@ -71,6 +71,10 @@ EOHTML;
     return 'https://bugs.eclipse.org/bugs/buglist.cgi?' . join( "&amp;", $parts );
   }
 
+  function bug( $id ) {
+    return '<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=' . $id . '">bug ' . $id . '</a>';
+  }
+
   function formatDate( $input ) {
     $months = array( "January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December" );
