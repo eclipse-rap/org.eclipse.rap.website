@@ -102,8 +102,8 @@ confirmation.setMessage( "Where do you think you're going?!" );
   </ul>
   <p>
     Moreover, the resource manager does not close input streams anymore after registering a resource,
-    as this should be done by the code that opened the stream (<?=bug(347615)?>).
-    Please double check that you're closing streams correctly.
+    as it did in 1.5 (<?=bug(347615)?>).
+    Please double check that you're closing your input streams correctly.
   </p>
 
   <h3>Affected API</h3>
@@ -151,32 +151,88 @@ http://hostname/webapp/foo
   <p>
     Thus we decided to remove the support for entrypoints by name completely in RAP 2.0.
     From now on, entrypoints can only be registered by path.
-    The <em>name</em> attribute has been removed from the extension point
-    <em>org.eclipse.rap.ui.entrypoints</em>.
     The default servlet name “rap” and the parameter “startup” are not supported anymore.
   </p>
 
-  <h2>Branding Changes</h2>
+  <h3>IEntryPoint</h3>
+  <p>
+    In your entrypoint extensions, use the attibute <em>path</em> to specify the URL path for the
+    entrypoint. The old attribute <em>parameter</em> is not supported anymore.
+    Here's an example <em>plugin.xml</em> snippet:
+  </p>
+<pre>
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.entrypoint"
+      class="example.MyEntryPoint"
+      <strong>path="/example"</strong> /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+
+  <h3>IApplication</h3>
+  <p>
+    This change also affects applications that use <em>IApplication</em> as entrypoint.
+    To make an application available at a certain path, add a parameter named <em>path</em>
+    to your extension:
+  </p>
+<pre>
+&lt;extension id="example.app" point="org.eclipse.core.runtime.applications"&gt;
+  &lt;application thread="main" cardinality="singleton-global" visible="true"&gt;
+    &lt;run class="example.Application"&gt;
+      <strong>&lt;parameter name="path" value="/example" /&gt;</strong>
+    &lt;/run&gt;
+  &lt;/application&gt;
+&lt;/extension&gt;
+</pre>
+
+  <h2>Branding</h2>
+
+  <h3>Entrypoint mapping</h3>
   <p>
     Since entrypoints are now always registered by path, there is no need for an entrypoint-to-path
     mapping in a branding anymore.
     Therefore, we removed the attributes <em>servletName</em>, <em>defaultEntrypointId</em>, and the
     element <em>associatedEntrypoints</em> from the <em>branding</em> extension point.
     A branding can now be bound to an entrypoint by setting the new attribute <em>brandingId</em>.
+  </p>
+<pre>
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.entrypoint"
+      class="example.MyEntryPoint"
+      path="/example"
+      <strong>brandingId="example.branding"</strong> /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+  <p>
     To bind a branding to an <em>IApplication</em>, add a parameter <em>brandingId</em> to the
     application extension point.
-  <p>
   </p>
+<pre>
+&lt;extension id="example.app" point="org.eclipse.core.runtime.applications"&gt;
+  &lt;application thread="main" cardinality="singleton-global" visible="true"&gt;
+    &lt;run class="example.Application"&gt;
+      &lt;parameter name="path" value="/mail" /&gt;
+      <strong>&lt;parameter name="brandingId" value="removeme.branding /"&gt;</strong>
+    &lt;/run&gt;
+  &lt;/application&gt;
+&lt;/extension&gt;
+</pre>
+
+  <h3>Exit confirmation</h3>
+  <p>
     For exit confirmations, the new client service <em>ExitConfirmation</em> should be used as
     explained above.
     The attribute <em>exitConfirmationClass</em> is no longer supported by the branding extension
     point.
   </p>
-  </p>
+
+  <h3>Branding API removed from RWT</h3>
+  <p>
     With these changes, we also removed the branding API from RWT, namely the classes
     <em>AbstractBranding</em> and <em>Header</em>.
+    We don't expect that anyone was using these classes.
     In plain RWT applications, entrypoint properties can be used for branding.
-    So we don't expect that anyone was using these classes anyway.
   </p>
 
 </div>
