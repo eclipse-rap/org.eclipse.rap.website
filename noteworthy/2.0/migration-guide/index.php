@@ -3,7 +3,7 @@
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
   $PAGE_TITLE = "RAP 2.0 Migration Guide";
-  $PAGE_NAV_POSITION = array( "download", "downloads" );
+  $PAGE_NAV_POSITION = array( "download", "noteworthy" );
   printHeader();
 
 ?>
