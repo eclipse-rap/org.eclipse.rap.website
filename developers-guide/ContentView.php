@@ -7,12 +7,15 @@ class ContentView {
 
   private static $htmlFile;
   private static $path;
+  private static $version;
 
   private function __construct() {}
 
-  public static function create( $htmlFilePath ) {
+  public static function create( $htmlFilePath, $version ) {
     self::$path = strstr( $htmlFilePath, "/", true );
-    self::$htmlFile = new SplFileObject( DevGuideUtils::ROOT_URL . '/help/html/' . $htmlFilePath  . DevGuideUtils::URL_POSTFIX );
+    self::$version = $version;
+    self::$htmlFile = new SplFileObject(
+      DevGuideUtils::ROOT_URL . '/help/html/' . $htmlFilePath  . DevGuideUtils::$versions[ self::$version ][ 'postfix' ] );
     return self::processHtmlFileContent();
   }
 
@@ -50,7 +53,7 @@ class ContentView {
     if( substr( $url, 0, 5 ) === '/help' ) {
       $result = str_replace( '/help', 'http://help.eclipse.org', $url );
     } else if( substr( $url, 0, 12 ) === '../reference' ) {
-      $result = DevGuideUtils::API_URL . trim( $url, "." );
+      $result = DevGuideUtils::$versions[ self::$version ][ 'api' ] . trim( $url, "." );
     } else if( containsString( $url, '.html' ) ) {
       $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $url );
       $result = '?topic=' . trim( $normalizedUrl, "/" );

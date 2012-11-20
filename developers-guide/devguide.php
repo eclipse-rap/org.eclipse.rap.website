@@ -10,6 +10,7 @@ $PAGE_ADD_CSS = '/rap/_theme/devguide.css';
 $title = "Developer's Guide";
 $navPosition = array( 'help', 'developers-guide' );
 $forwardingUrl = '/rap/developers-guide/';
+$version = '1.5';
 
 if( !isset( $_GET[ 'topic' ] ) ) {
   header( 'Location: ' . $forwardingUrl );
@@ -26,7 +27,7 @@ if( empty( $topic )
   send404();
 } else {
   try {
-    $devguideContent = ContentView::create( $topic );
+    $devguideContent = ContentView::create( $topic, $version );
   } catch( RuntimeException $exception ) {
     send404();
   }
@@ -63,7 +64,8 @@ function send404() {
 
 <div id="rightcolumn">
   <h2 style="padding-bottom: 12px;">Contents</h2>
-  <?= NavigationView::create( DevGuideUtils::ROOT_URL . '/help/toc.xml' . DevGuideUtils::URL_POSTFIX ); ?>
+
+  <?= NavigationView::create( DevGuideUtils::ROOT_URL . '/help/toc.xml' . DevGuideUtils::$versions[ $version ][ 'postfix' ] ); ?>
 </div>
 
 <script type="text/javascript">

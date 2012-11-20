@@ -7,6 +7,13 @@ class DevGuideUtils {
   const VERSION = '1.5';
   const API_URL = 'http://help.eclipse.org/juno/topic/org.eclipse.rap.help/help/html';
 
+  public static $versions = array(
+    '1.5' => array(
+      'postfix' => '?h=streams/1.5-maintenance',
+      'api' =>'http://help.eclipse.org/juno/topic/org.eclipse.rap.help/help/html'
+    )
+  );
+
   private function __construct() {}
 
 }
