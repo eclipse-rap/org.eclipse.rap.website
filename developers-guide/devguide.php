@@ -67,7 +67,9 @@ function send404() {
 </div>
 
 <div id="rightcolumn">
-  <h2 style="padding-bottom: 12px;">Contents</h2>
+  <a style = "color:inherit;text-decoration:none;"
+    href="<?=$forwardingUrl . '?version=' . $version; ?>">
+  <h2 style="padding-bottom:12px;">Contents / RAP <?=$version?></h2></a>
 
   <?= NavigationView::create( $version ); ?>
 </div>
