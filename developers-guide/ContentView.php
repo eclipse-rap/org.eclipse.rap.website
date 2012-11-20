@@ -56,7 +56,7 @@ class ContentView {
       $result = DevGuideUtils::$versions[ self::$version ][ 'api' ] . trim( $url, "." );
     } else if( containsString( $url, '.html' ) ) {
       $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $url );
-      $result = '?topic=' . trim( $normalizedUrl, "/" );
+      $result = '?topic=' . trim( $normalizedUrl, "/" ) . '&version=' . self::$version;
     } else {
       $result = $url;
     }

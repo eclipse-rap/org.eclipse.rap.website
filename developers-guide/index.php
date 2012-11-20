@@ -6,16 +6,40 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/DevGuideUtils.ph
 
 $title = "RAP - Developer's Guide";
 $navPosition = array( 'help', 'developers-guide' );
-$version = '1.5';
+$version = DevGuideUtils::CURRENT_VERSION;
+
+if( isset( $_GET[ 'version' ] ) ) {
+  $version = $_GET[ 'version' ];
+}
+
+if( !array_key_exists( $version, DevGuideUtils::$versions ) ) {
+  header( 'Location: /rap/developers-guide/' );
+  exit;
+}
+
+$versionNav = array();
+
+foreach( DevGuideUtils::$versions as $key => $value ) {
+  $piece;
+  if( $key == $version ) {
+    $piece = '<b>' . $key . '</b>';
+  } else {
+    $url = '/rap/developers-guide/index.php?version=' . $key;
+    $piece = '<a href = "' . $url .'">' . $key . '</a>';
+  }
+  $versionNav[] = $piece;
+}
+
 printHeader( $title, $navPosition );
 
 ?>
 
 <div id="midcolumn">
-  <h1>Developer's Guide for RAP <?=DevGuideUtils::VERSION ?></h1>
+  <h1 style = "margin-bottom: 3px" >Developer's Guide for RAP <?=$version ?></h1>
+  <?=implode( ' | ', $versionNav );?>
   <h2>Table of contents</h2>
   <div id="table-of-contents">
-    <?= NavigationView::create( DevGuideUtils::ROOT_URL . '/help/toc.xml' . DevGuideUtils::$versions[ $version ][ 'postfix' ] ) ?>
+    <?= NavigationView::create( $version ) ?>
   </div>
 </div>
 
