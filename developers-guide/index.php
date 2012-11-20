@@ -37,9 +37,19 @@ printHeader( $title, $navPosition );
 <div id="midcolumn">
   <h1 style = "margin-bottom: 3px" >Developer's Guide for RAP <?=$version ?></h1>
   <?=implode( ' | ', $versionNav );?>
+  <?php
+if( $version == DevGuideUtils::MASTER_VERSION ) {
+  print   '<h3>Note:</h3><em>This version of RAP is currently under development! '
+        . 'The Developers Guide may not yet reflect all changes. '
+        . 'The  New & Noteworthy entries of this versions <a href = "/rap/downloads/2.0/">'
+        . 'milestones</a> provide more up to date information.</em>';
+}
+  ?>
   <h2>Table of contents</h2>
   <div id="table-of-contents">
     <?= NavigationView::create( $version ) ?>
+    <?php
+    ?>
   </div>
 </div>
 
