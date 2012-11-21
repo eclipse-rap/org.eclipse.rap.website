@@ -4,7 +4,7 @@
 
   <p>
     In 1.5 we replaced the communication between server and client with a new, JSON-based format.
-    Now, the client uses the same format to report changes to the server.
+    In 2.0, the client uses the same format to report changes to the server.
     With this change, the entire communication uses the JSON protocol.
     No HTTP request parameters are involved anymore.
     All widgets LCAs have been reworked to handle the new JSON-based message.
@@ -42,7 +42,6 @@
 
   <h3>Deprecated public classes and methods removed</h3>
 
-
   <dl>
     <dt>JSWriter, JSVar, JSListenerType, JSListenerInfo</dt>
     <dd>
@@ -61,34 +60,179 @@
     </dd>
   </dl>
 
+  <h3>Resource Manager Rework</h3>
+  <p>
+    The resource manager (<em>IResourceManager</em>) is used to register static resources like
+    images or JavaScript files in RAP applications. We reduced its interface to this purpose
+    and simplified the implementation.
+  </p>
+
+  <ul>
+    <li>
+      For resources that are registered in an <em>ApplicationConfiguration</em>, the method
+      <em>Application.addResource(…)</em> now accepts a <em>ResourceLoader</em> instead of
+      <em>IResource</em>.
+    </li>
+    <li>
+      The <em>IResource</em> interface is now only used in the extension point
+      <em>org.eclipse.rap.ui.resources</em> and has therefore been moved to the bundle
+      <em>org.eclipse.rap.ui.workbench</em>.
+    </li>
+    <li>
+      The encoding of a resource is not taken into account anymore, <em>getCharset()</em> has
+      been removed from the <em>IResouce</em> interface.
+      If you used to register text files with a charset other than UTF-8, you should make sure that
+      your client code reads the resources with the correct charset.
+    </li>
+    <li>
+      The Method <em>getOptions()</em> has been removed from the <em>IResouce</em> interface.
+      This means:
+      <ul>
+        <li>
+          The resource manager can not minify JavaScript anymore.
+          It is recommend that custom component developers minify their JavaScript files with a tool
+          such as <a href="http://developer.yahoo.com/yui/compressor/">YUI Compressor</a>,
+          <a href="https://developers.google.com/closure/compiler/">Google Closure Compiler</a>,
+          or <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a>.
+        </li>
+        <li>
+          The resource manager can not add version hashes to file names anymore.
+          If there is a need to add version hashes to URLs, applications can simply add a URL parameter
+          like <em>"?nocache=4711"</em> when requesting the resource.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>
+    Moreover, the resource manager does not close input streams anymore after registering a resource,
+    as it did in 1.5 (<?=bug(347615)?>). Double check that you're closing your input streams correctly.
+  </p>
+
+  <h3>Dropped Support for entrypoints by name</h3>
+  <p>
+    Until now, entrypoints could be registered with a name in an entrypoint extension.
+    Those entrypoints had been available at a URL with the default servlet name “rap” and a URL
+    parameter “startup” pointing to this name. This approach had a number of drawbacks, thus we
+    decided to remove the support for it completely in RAP 2.0. Now
+    entrypoints can only be registered by path, which was introduced in RAP 1.5.
+    For example, an entrypoint that is registered with the path <code>/foo</code> will be available
+    at:
+  </p>
+<pre>
+http://hostname/webapp/foo
+</pre>
+  </p>
+  <p>
+    In your entrypoint and application extensions, use the attibute <em>path</em> to specify the
+    URL path for the entrypoint. The old attribute <em>parameter</em> is not supported anymore.
+  </p>
+
   <h2>New Client API</h2>
 
   <p>
     Now that alternative clients can be connected to a RAP server, applications will need to
     distinguish between different clients, e.g. to render parts differently on certain clients.
-    Clients with additional capabilities like gps, camera, etc. should also be able to expose
-    those client-specific features to applications.
   </p>
 
   <p>
     To support those cases, we added a service provider interface <em>Client</em> that can be
-    acquired using the new method <em>RWT.getClient()</em>.
-    Client implementations can provide services, such as a geo-location service, a script execution
-    service, etc. Here's an example:
+    acquired using the new method <em>RWT.getClient()</em>. Unless you have a custom client
+    implementation installed, <em>RWT.getClient()</em> will always return an instance of
+    <em>WebClient</em>.
   </p>
 
-<pre lang="java">
-Client client = RWT.getClient();
-LocationService service = client.getService( LocationService.class );
-if( service != null ) {
-  service.getAddress();
-  ...
-}
+  <p>
+    Client implementations can provide client-specific services, which can be obtained using the
+    method <em>getService( Class<T> type )</em>. Some existing API has been transformed into
+    services of the <em>WebClient</em>:
+  </p>
+
+  <h3>JavaScriptExecutor service</h3>
+  <p>
+    This service can be used to execute a piece of JavaScript code on the client.
+    It replaces the internal class <em>JSExecutor</em>. Example:
+  </p>
+<pre>
+JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
+executor.execute( "alert( \"Hello World!\" );" );
+</pre>
+
+  <h3>BrowserHistory service</h3>
+  <p>
+    Allows to use the browser's history for navigating within the application.
+    This replaces the <em>IBrowserHistory</em> interface and <em>RWT.getBrowserHistory()</em>.
+    Example:
+  </p>
+<pre>
+BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
+history.createEntry( "main", "Main View" );
+</pre>
+
+  <h3>ExitConfirmation service</h3>
+  <p>
+    Used to configure the confirmation dialog that can be shown before the user leaves the
+    application.
+    It is no longer possible to do this in a branding. Example:
+  </p>
+<pre>
+ExitConfirmation confirmation = RWT.getClient().getService( ExitConfirmation.class );
+confirmation.setMessage( "Where do you think you're going?!" );
 </pre>
 
   <p>
-    Unless you have a custom client implementation installed, <em>RWT.getClient()</em> will always
-    return an instance of <em>WebClient</em>.
+    Please consider this new API as <strong>provisional</strong>.
+    It may become necessary to change it before the release.
+  </p>
+
+  <h2>Branding</h2>
+
+  <h3>Entrypoint mapping</h3>
+  <p>
+    Since entrypoints are now always registered by path, there is no need for an entrypoint-to-path
+    mapping in a branding anymore.
+    Therefore, we removed the attributes <em>servletName</em>, <em>defaultEntrypointId</em>, and the
+    element <em>associatedEntrypoints</em> from the <em>branding</em> extension point.
+    A branding can now be bound to an entrypoint by setting the new attribute <em>brandingId</em>.
+  </p>
+<pre>
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.entrypoint"
+      class="example.MyEntryPoint"
+      path="/example"
+      <strong>brandingId="example.branding"</strong> /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+  <p>
+    To bind a branding to an <em>IApplication</em>, add a parameter <em>brandingId</em> to the
+    application extension point.
+  </p>
+<pre>
+&lt;extension id="example.app" point="org.eclipse.core.runtime.applications"&gt;
+  &lt;application thread="main" cardinality="singleton-global" visible="true"&gt;
+    &lt;run class="example.Application"&gt;
+      &lt;parameter name="path" value="/mail" /&gt;
+      <strong>&lt;parameter name="brandingId" value="removeme.branding /"&gt;</strong>
+    &lt;/run&gt;
+  &lt;/application&gt;
+&lt;/extension&gt;
+</pre>
+
+  <h3>Exit confirmation</h3>
+  <p>
+    For exit confirmations, the new client service <em>ExitConfirmation</em> should be used as
+    explained above.
+    The attribute <em>exitConfirmationClass</em> is no longer supported by the branding extension
+    point.
+  </p>
+
+  <h3>Branding API removed from RWT</h3>
+  <p>
+    With these changes, we also removed the branding API from RWT, namely the classes
+    <em>AbstractBranding</em> and <em>Header</em>.
+    We don't expect that anyone was using these classes.
+    In plain RWT applications, entrypoint properties can be used for branding.
   </p>
 
   <h2>Widget Set</h2>
@@ -97,7 +241,7 @@ if( service != null ) {
 
   <p>
     Tree and Table widgets can now be scrolled on mobile devices (iOS and Android) by dragging a row
-    with one finger. However, Tree and Table can only scroll item-by-item, not smooth as like the
+    with one finger. However, Tree and Table can only scroll item-by-item, not smooth like the
     List.
   </p>
 
@@ -113,7 +257,7 @@ if( service != null ) {
   <h3>Themeing enhancements</h3>
 
   <p>
-    The themeablity of some widgets has been improved. The following properties and states have been 
+    The themeablity of some widgets has been improved. The following properties and states have been
     added:
   </p>
 
@@ -132,6 +276,20 @@ if( service != null ) {
     </li>
   </ul>
 
+  <h3>New Event System</h3>
+  <p>
+    The event system in RWT has been completely re-written.
+    For historical reasons, the implementation was based on typed events like SelectionEvent
+    with untyped events built on top. This caused several problems that are now fixed (see <?=bug(334028)?>).
+  </p>
+  <p>
+    This also allowed us to provide some missing API:
+    All typed events have a <code>time</code> field that reflects the time an event has occurred.
+    MouseEvent has a field <code>count</code> that allows to distinguish single and double clicks.
+    Custom widgets can now use the protected method
+    <code>Widget #removeListener( int, SWTEventListener )</code>.
+  </p>
+
   <h2>Tools</h2>
 
   <h3>RAP Launcher always terminates previous launch</h3>
@@ -144,5 +302,6 @@ if( service != null ) {
   <p>
     <img class="framed" title="Text with search icons" src="images/Tools-remove-previous-launch.png" />
   </p>
+
 
 </div>
