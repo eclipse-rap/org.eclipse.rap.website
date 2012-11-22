@@ -560,7 +560,7 @@ div#features > div.feature > div.icon {
 }
 
 div#features > div.feature > div.icon {
-  background-image: url( /rap/images/rap-features/features-sprite.png );
+  background-image: url( /rap/images/features-sprite.png );
 }
 
 div#features > div.feature#ui-kit > div.icon {
