@@ -23,7 +23,9 @@
 
   <p>
     The package <em>org.eclipse.rwt</em> has been renamed to <em>org.eclipse.<ins>rap</ins>.rwt</em>.
-    You need to update your bundle manifest files and your Java code to this change:
+    You need to update your bundle manifest files and your Java code to this change.
+    A brute-force search for “org.eclipse.rwt” may be helpful to discover all occurrences in your
+    workspace.
   </p>
 
   <h3>Bundle manifests</h3>
@@ -55,6 +57,8 @@
   <dl>
     <dt>WidgetUtil.CUSTOM_VARIANT</dt>
     <dd>this constant has moved to the class RWT.</dd>
+    <dt>FileSettingStore.FILE_SETTING_STORE_DIR</dt>
+    <dd>this constant has changed its value to adjust to the new namespace.</dd>
   </dl>
 
   <h2>Removed classes</h2>
@@ -240,6 +244,15 @@ http://hostname/webapp/example
     This deviates from the naming pattern used in SWT and other libraries, and also from the Java
     class library.
     Since it is not even used consistently in RAP, we plan to remove the prefix from all interfaces.
+  </p>
+
+  <h2>Settings</h2>
+
+  <h3>Development Mode</h3>
+  <p>
+    To start a RAP application in development mode, please replace the VM parameter
+    <code>-Dorg.eclipse.rwt.clientLibraryVersion=DEBUG</code> with
+    <code>-Dorg.eclipse.rap.rwt.developmentMode=true</code>.
   </p>
 
   <h2>Features</h2>

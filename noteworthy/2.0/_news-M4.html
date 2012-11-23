@@ -18,4 +18,24 @@
     <em>stringExtent</em> or <em>textExtent</em>. Don't forget to dispose of the GC afterwards.
   </p>
 
+  <h2>Settings</h2>
+
+  <h3>Development Mode</h3>
+  <p>
+    During development, it's recommended to start RAP in </en>development mode</en>.
+    In this mode, the JavaScript for the web client is not compressed and potential client-side
+    errors will not be caught.
+    This new setting replaces the old <em>clientLibraryVersion</em>, which has been used for this
+    purpose before.
+    In the RAP Launcher, you'll find a new option to enable the development mode:
+  </p>
+  <p>
+    <img class="framed" title="Development mode" src="images/RAPLauncher-dev-mode.png" />
+  </p>
+  <p>
+    In OSGi launch configurations, please replace the VM parameter
+    <code>-Dorg.eclipse.rwt.clientLibraryVersion=DEBUG</code> with
+    <code>-Dorg.eclipse.rap.rwt.developmentMode=true</code>.
+  </p>
+
 </div>
