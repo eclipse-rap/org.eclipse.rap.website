@@ -18,6 +18,28 @@
     <em>stringExtent</em> or <em>textExtent</em>. Don't forget to dispose of the GC afterwards.
   </p>
 
+  <h3>I-prefixed Interfaces</h3>
+  <p>
+    The prefix “I” in interface names like <em>IEntryPoint</em> is a heritage from the Eclipse
+    platform.
+    This deviates from the naming pattern used in SWT and other libraries, and also from the Java
+    class library.
+    Since it is not even used consistently in RAP, we're removing the prefix from all interfaces.
+  </p>
+
+  <h3>Service handlers</h3>
+  <p>
+    The interface <em>ServiceHandler</em> has been changed.
+    The <em>service</em> method now provides two parameters <em>request</em> and <em>response</em>
+    to the implementation.
+    Developers don't have to obtain the request and reponse objects from static methods anymore.
+  </p>
+  <p>
+    The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
+    Developers should use this new method to obtain the URL to access a service handler instead
+    of assembling the URL manually.
+  </p>
+
   <h2>Settings</h2>
 
   <h3>Development Mode</h3>

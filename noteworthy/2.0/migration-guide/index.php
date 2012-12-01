@@ -146,6 +146,19 @@
     <em>IResource</em>.
   </p>
 
+  <h2>Service Handlers</h2>
+  <p>
+    The interface <em>ServiceHandler</em> has been changed.
+    The <em>service</em> method now provides two parameters <em>request</em> and <em>response</em>
+    to the implementation.
+    Developers don't have to obtain the request and reponse objects from static methods anymore.
+  </p>
+  <p>
+    The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
+    Developers should use this new method to obtain the URL to access a service handler instead
+    of assembling the URL manually.
+  </p>
+
   <h2>Register EntryPoint and IApplication</h2>
   <p>
     RAP applications can not be accessed by startup parameter anymore:
