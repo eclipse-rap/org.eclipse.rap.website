@@ -15,7 +15,7 @@ class ContentView {
     self::$path = strstr( $htmlFilePath, "/", true );
     self::$version = $version;
     self::$htmlFile = new SplFileObject(
-      DevGuideUtils::ROOT_URL . '/help/html/' . $htmlFilePath  . DevGuideUtils::$versions[ self::$version ][ 'postfix' ] );
+      DevGuideUtils::$versions[ self::$version ][ 'rootUrl' ] . '/help/html/' . $htmlFilePath  . DevGuideUtils::$versions[ self::$version ][ 'postfix' ] );
     return self::processHtmlFileContent();
   }
 
@@ -68,7 +68,7 @@ class ContentView {
     foreach( $images as $image ) {
       $url = $image -> getAttribute( 'src' );
       if( !containsString( $url, 'http://' ) ) {
-        $image -> setAttribute( 'src', DevGuideUtils::ROOT_URL . '/help/html/' . self::$path . '/' . $url );
+        $image -> setAttribute( 'src', DevGuideUtils::$versions[ self::$version ][ 'rootUrl' ] . '/help/html/' . self::$path . '/' . $url );
       }
     }
   }

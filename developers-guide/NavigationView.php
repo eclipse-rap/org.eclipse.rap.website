@@ -7,7 +7,7 @@ class NavigationView {
   private function __construct() {}
 
   public static function create( $version ) {
-    $filePath = DevGuideUtils::ROOT_URL . '/help/toc.xml' . DevGuideUtils::$versions[ $version ][ 'postfix' ];
+    $filePath = DevGuideUtils::$versions[ $version ][ 'rootUrl' ] . '/help/toc.xml' . DevGuideUtils::$versions[ $version ][ 'postfix' ];
     $result = '<ul id="dev-guide-nav">';
     $xmlIterator = new SimpleXMLIterator( $filePath, null, true );
     $result .= self::createNavigationFromXml( $xmlIterator, $version );
