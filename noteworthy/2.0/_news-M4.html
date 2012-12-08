@@ -27,17 +27,52 @@
     Since it is not even used consistently in RAP, we're removing the prefix from all interfaces.
   </p>
 
+  <h3>Removed Interface ILifeCycleAdapter</h3>
+  <p>
+    The interface <em>ILifeCycleAdapter</em> has been removed.
+    This interface was never meant to be used or implemented by clients, so you shouldn't be
+    affected.
+  </p>
+
   <h3>Service handlers</h3>
   <p>
     The interface <em>ServiceHandler</em> has been changed.
     The <em>service</em> method now provides two parameters <em>request</em> and <em>response</em>
     to the implementation.
-    Developers don't have to obtain the request and reponse objects from static methods anymore.
+    Developers don't have to obtain the request and response objects from static methods anymore.
   </p>
   <p>
     The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
     Developers should use this new method to obtain the URL to access a service handler instead
     of assembling the URL manually.
+  </p>
+
+  <h2>IApplication again</h2>
+  <p>
+    In M3, we reversed the relationship between entrypoints and branding extensions, which also
+    requires a change for applications that use the <em>IApplication</em> interface for single-sourcing.
+    Our solution was to support the parameters <em>path</em> and <em>brandingId</em>
+    added to application extensions.
+    It turned out that this approach lead to problems (<?=bug(394805)?>) so we had to change it again.
+  </p>
+  <p>
+    Application extensions can now be referenced by an <em>entrypoint</em> extension using the new
+    parameter <em>applicationId</em>.
+    To make an existing application extension available in RAP, you have to create a new entrypoint
+    extension and specify the id of the application extension instead of an EntryPoint class:
+  </p>
+<pre>
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.application.entrypoint"
+      path="/example"
+      brandingId="example.branding"
+      <strong>applicationId="example.application"</strong> /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+  <p>
+    This allows to use existing application extensions without modification.
+    Path and branding can be specified in the same way as for all other entrypoints.
   </p>
 
   <h2>Settings</h2>

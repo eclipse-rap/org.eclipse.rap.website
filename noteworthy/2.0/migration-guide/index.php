@@ -186,16 +186,17 @@ http://hostname/webapp/example
 &lt;/extension&gt;
 </pre>
   <p>
-    To make an IApplication available at a certain path, add a parameter named <em>path</em>
-    to your extension:
+    To make an IApplication available at a certain path, you have to create a separate entrypoint
+    extension and specify the id of the application extension in the new parameter
+    <em>applicationId</em>.
   </p>
 <pre>
-&lt;extension id="example.app" point="org.eclipse.core.runtime.applications"&gt;
-  &lt;application thread="main" cardinality="singleton-global" visible="true"&gt;
-    &lt;run class="example.Application"&gt;
-      <strong>&lt;parameter name="path" value="/example" /&gt;</strong>
-    &lt;/run&gt;
-  &lt;/application&gt;
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.application.entrypoint"
+      path="/example"
+      brandingId="example.branding"
+      <strong>applicationId="example.application"</strong> /&gt;
+  &lt;/entrypoint&gt;
 &lt;/extension&gt;
 </pre>
 
@@ -215,20 +216,6 @@ http://hostname/webapp/example
       path="/example"
       <strong>brandingId="example.branding"</strong> /&gt;
   &lt;/entrypoint&gt;
-&lt;/extension&gt;
-</pre>
-  <p>
-    To bind a branding to an <em>IApplication</em>, add a parameter named <em>brandingId</em> to the
-    applications extension:
-  </p>
-<pre>
-&lt;extension id="example.app" point="org.eclipse.core.runtime.applications"&gt;
-  &lt;application thread="main" cardinality="singleton-global" visible="true"&gt;
-    &lt;run class="example.Application"&gt;
-      &lt;parameter name="path" value="/mail" /&gt;
-      <strong>&lt;parameter name="brandingId" value="removeme.branding /"&gt;</strong>
-    &lt;/run&gt;
-  &lt;/application&gt;
 &lt;/extension&gt;
 </pre>
 
