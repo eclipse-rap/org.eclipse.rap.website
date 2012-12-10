@@ -159,6 +159,20 @@
     of assembling the URL manually.
   </p>
 
+  <h2>Session Store replaced by UI Session</h2>
+  <p>
+    When working with RAP, you have to deal with two different types of sessions: the servlet
+    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
+    Both sessions have a different scope and a different purpose.
+    In recent projects we've noticed that the relationship between the HTTP session and RAP's
+    “session store” led to confusion. By renaming the session store to UI session we hope to make it
+    more clear that both are sessions with a different scope and meaning.
+  </p>
+  <p>
+    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>. The types
+    <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed accordingly.
+  </p>
+
   <h2>Register EntryPoint and IApplication</h2>
   <p>
     RAP applications can not be accessed by startup parameter anymore:

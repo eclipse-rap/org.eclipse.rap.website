@@ -60,6 +60,31 @@
     </dd>
   </dl>
 
+  <h3>Session store replaced by UI session</h3>
+  <p>
+    When working with RAP, you have to deal with two different types of sessions: the servlet
+    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
+    Both sessions have a different scope and a different purpose.
+    In recent projects we've noticed that the relationship between the HTTP session and RAP's
+    “session store” led to confusion. By renaming the session store to UI session we hope to make it
+    more clear that both are sessions with a different scope and meaning.
+  </p>
+  <p>
+    In case you wonder here's some background:
+    The HTTP session is managed by the servlet container which recognizes the user with the help of
+    a Cookie or URL rewriting. It has a configurable timeout, after which a user has to sign in
+    again. The HTTP session is the place to store user-specific information.
+    The UI session is built on top of the HTTP session, but has a shorter lifetime.
+    A new UI session is started every time a user accesses an entrypoint and it lives as long this
+    UI is being used. When the user starts another entrypoint, this is a new UISession, but it may
+    be the same HttpSession. The UI session is the place to store information that is related to the
+    current <em>instance</em> of an application's UI.
+  </p>
+  <p>
+    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>. The types
+    <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed accordingly.
+  </p>
+
   <h3>Resource Manager Rework</h3>
   <p>
     The resource manager (<em>IResourceManager</em>) is used to register static resources like
