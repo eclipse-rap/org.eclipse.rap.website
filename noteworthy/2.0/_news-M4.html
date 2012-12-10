@@ -95,4 +95,30 @@
     <code>-Dorg.eclipse.rap.rwt.developmentMode=true</code>.
   </p>
 
+  <h2>New Web Client Services</h2>
+  <p>
+    Based on the Client API that has been introduced in M2, some new client services have
+    been introduced:
+  </p>
+
+  <h3>JavaScriptLoader service</h3>
+  <p>
+    If a custom component requires additional JavaScript code on the client, the JavaScriptLoader
+    can be used to load a JavaScript file just before the component uses it.
+  </p>
+<pre>
+  JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
+  loader.require( "rwt-resources\myComponent\MyFile.js" );
+</pre>
+
+  <h3>ClientInfo service</h3>
+  <p>
+    The ClientInfo service provides additional information about the currently connected client.
+  </p>
+<pre>
+  ClientInfo info = RWT.getClient().getService( ClientInfo.class );
+  System.out.println( info.getTimezoneOffset() );
+  System.out.println( info.getLocale() );
+</pre>
+
 </div>

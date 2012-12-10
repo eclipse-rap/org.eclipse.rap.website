@@ -80,7 +80,7 @@
     </li>
     <li>
       The encoding of a resource is not taken into account anymore, <em>getCharset()</em> has
-      been removed from the <em>IResouce</em> interface.
+      been removed from the <em>IResource</em> interface.
       If you used to register text files with a charset other than UTF-8, you should make sure that
       your client code reads the resources with the correct charset.
     </li>
@@ -145,7 +145,7 @@ http://hostname/webapp/foo
   <p>
     Client implementations can provide client-specific services, which can be obtained using the
     method <em>getService( Class<T> type )</em>. Some existing API has been transformed into
-    services of the <em>WebClient</em>:
+    services of the <em>WebClient</em>.
   </p>
 
   <h3>JavaScriptExecutor service</h3>
@@ -154,8 +154,8 @@ http://hostname/webapp/foo
     It replaces the internal class <em>JSExecutor</em>. Example:
   </p>
 <pre>
-JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
-executor.execute( "alert( \"Hello World!\" );" );
+ JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
+  executor.execute( "alert( \"Hello World!\" );" );
 </pre>
 
   <h3>BrowserHistory service</h3>
@@ -165,8 +165,8 @@ executor.execute( "alert( \"Hello World!\" );" );
     Example:
   </p>
 <pre>
-BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
-history.createEntry( "main", "Main View" );
+  BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
+  history.createEntry( "main", "Main View" );
 </pre>
 
   <h3>ExitConfirmation service</h3>
@@ -184,6 +184,26 @@ confirmation.setMessage( "Where do you think you're going?!" );
     Please consider this new API as <strong>provisional</strong>.
     It may become necessary to change it before the release.
   </p>
+
+  <h3>JavaScriptLoader service</h3>
+  <p>
+    If a custom component requires additional JavaScript code on the client, the JavaScriptLoader
+    can be used to load a JavaScript file just before the component uses it.
+  </p>
+<pre>
+  JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
+  loader.require( "rwt-resources\myComponent\MyFile.js" );
+</pre>
+
+  <h3>ClientInfo service</h3>
+  <p>
+    The ClientInfo service provides additional information about the currently connected client.
+  </p>
+<pre>
+  ClientInfo info = RWT.getClient().getService( ClientInfo.class );
+  System.out.println( info.getTimezoneOffset() );
+  System.out.println( info.getLocale() );
+</pre>
 
   <h2>Branding</h2>
 
