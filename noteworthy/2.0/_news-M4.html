@@ -1,5 +1,36 @@
 <div>
 
+  <h2>New Web Client Services</h2>
+  <p>
+    Based on the Client API that has been introduced in M2, some new client services have
+    been introduced:
+  </p>
+
+  <h3>JavaScriptLoader service</h3>
+  <p>
+    If a custom component requires additional JavaScript code on the client, the JavaScriptLoader
+    can be used to load a JavaScript file just before the component uses it.
+    The JavaScriptLoader will ensure that the file is loaded only once, even if <em>require()</em>
+    is called subsequently.
+  </p>
+<pre>
+JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
+loader.require( "rwt-resources/myComponent/MyFile.js" );
+</pre>
+
+  <h3>ClientInfo service</h3>
+  <p>
+    The ClientInfo service provides additional information about the client that is connected to the
+    current UI session.
+    In this version, the service provides the client's locale and its timezone offset in minutes.
+    Unfortunately, it's not possible to obtain the actual timezone in JavaScript.
+  </p>
+<pre>
+ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
+int timezoneOffset = clientInfo.getTimezoneOffset();
+Locale clientLocale = clientInfo.getLocale();
+</pre>
+
   <h2>API Changes</h2>
 
   <h3>Class Graphics deprecated</h3>
@@ -47,7 +78,7 @@
     of assembling the URL manually.
   </p>
 
-  <h2>IApplication again</h2>
+  <h2>IApplication, again</h2>
   <p>
     In M3, we reversed the relationship between entrypoints and branding extensions, which also
     requires a change for applications that use the <em>IApplication</em> interface for single-sourcing.
@@ -94,31 +125,5 @@
     <code>-Dorg.eclipse.rwt.clientLibraryVersion=DEBUG</code> with
     <code>-Dorg.eclipse.rap.rwt.developmentMode=true</code>.
   </p>
-
-  <h2>New Web Client Services</h2>
-  <p>
-    Based on the Client API that has been introduced in M2, some new client services have
-    been introduced:
-  </p>
-
-  <h3>JavaScriptLoader service</h3>
-  <p>
-    If a custom component requires additional JavaScript code on the client, the JavaScriptLoader
-    can be used to load a JavaScript file just before the component uses it.
-  </p>
-<pre>
-  JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
-  loader.require( "rwt-resources\myComponent\MyFile.js" );
-</pre>
-
-  <h3>ClientInfo service</h3>
-  <p>
-    The ClientInfo service provides additional information about the currently connected client.
-  </p>
-<pre>
-  ClientInfo info = RWT.getClient().getService( ClientInfo.class );
-  System.out.println( info.getTimezoneOffset() );
-  System.out.println( info.getLocale() );
-</pre>
 
 </div>

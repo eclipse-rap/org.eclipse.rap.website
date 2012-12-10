@@ -154,8 +154,33 @@ http://hostname/webapp/foo
     It replaces the internal class <em>JSExecutor</em>. Example:
   </p>
 <pre>
- JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
-  executor.execute( "alert( \"Hello World!\" );" );
+JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
+executor.execute( "alert( \"Hello World!\" );" );
+</pre>
+
+  <h3>JavaScriptLoader service</h3>
+  <p>
+    If a custom component requires additional JavaScript code on the client, the JavaScriptLoader
+    can be used to load a JavaScript file just before the component uses it.
+    The JavaScriptLoader will ensure that the file is loaded only once, even if <em>require()</em>
+    is called subsequently.
+  </p>
+<pre>
+JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
+loader.require( "rwt-resources/myComponent/MyFile.js" );
+</pre>
+
+  <h3>ClientInfo service</h3>
+  <p>
+    The ClientInfo service provides additional information about the client that is connected to the
+    current UI session.
+    In this version, the service provides the client's locale and its timezone offset in minutes.
+    Unfortunately, it's not possible to obtain the actual timezone in JavaScript.
+  </p>
+<pre>
+ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
+int timezoneOffset = clientInfo.getTimezoneOffset();
+Locale clientLocale = clientInfo.getLocale();
 </pre>
 
   <h3>BrowserHistory service</h3>
@@ -165,8 +190,8 @@ http://hostname/webapp/foo
     Example:
   </p>
 <pre>
-  BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
-  history.createEntry( "main", "Main View" );
+BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
+history.createEntry( "main", "Main View" );
 </pre>
 
   <h3>ExitConfirmation service</h3>
@@ -178,31 +203,6 @@ http://hostname/webapp/foo
 <pre>
 ExitConfirmation confirmation = RWT.getClient().getService( ExitConfirmation.class );
 confirmation.setMessage( "Where do you think you're going?!" );
-</pre>
-
-  <p>
-    Please consider this new API as <strong>provisional</strong>.
-    It may become necessary to change it before the release.
-  </p>
-
-  <h3>JavaScriptLoader service</h3>
-  <p>
-    If a custom component requires additional JavaScript code on the client, the JavaScriptLoader
-    can be used to load a JavaScript file just before the component uses it.
-  </p>
-<pre>
-  JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
-  loader.require( "rwt-resources\myComponent\MyFile.js" );
-</pre>
-
-  <h3>ClientInfo service</h3>
-  <p>
-    The ClientInfo service provides additional information about the currently connected client.
-  </p>
-<pre>
-  ClientInfo info = RWT.getClient().getService( ClientInfo.class );
-  System.out.println( info.getTimezoneOffset() );
-  System.out.println( info.getLocale() );
 </pre>
 
   <h2>Branding</h2>
@@ -274,7 +274,7 @@ confirmation.setMessage( "Where do you think you're going?!" );
     <img class="framed" title="Text with search icons" src="images/Text-Search-Icons.png" />
   </p>
 
-  <h3>Themeing enhancements</h3>
+  <h3>Theming enhancements</h3>
 
   <p>
     The themeablity of some widgets has been improved. The following properties and states have been
