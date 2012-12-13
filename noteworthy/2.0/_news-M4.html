@@ -31,6 +31,18 @@ int timezoneOffset = clientInfo.getTimezoneOffset();
 Locale clientLocale = clientInfo.getLocale();
 </pre>
 
+  <h3>UrlLauncher service</h3>
+  <p>
+    The UrlLauncher service allows to open any URL (websites, files, "mailto", etc.) without
+    influencing or leaving the application. Popup blocker may ask the user for permission before
+    a new window is opened.
+  </p>
+<pre>
+UrlLauncher launcher = RWT.getClient().getService( UrlLauncher.class );
+launcher.openURL( "http://www.eclipse.org/" );
+launcher.openURL( "mailto:someone@nowhere.org" );
+</pre>
+
   <h2>API Changes</h2>
 
   <h3>Class Graphics deprecated</h3>
@@ -47,6 +59,11 @@ Locale clientLocale = clientInfo.getLocale();
     hardly used by application code and can be replaced by SWT's <em>GC</em> API.
     To measure a string in a given font, create a GC, set the font, and call the GC methods
     <em>stringExtent</em> or <em>textExtent</em>. Don't forget to dispose of the GC afterwards.
+  </p>
+
+  <h3>ExternalBrowser deprecated</h3>
+  <p>
+    The ExternalBroser API has been deprecated. The UrlLauncher service should be used instead.
   </p>
 
   <h3>I-prefixed Interfaces</h3>

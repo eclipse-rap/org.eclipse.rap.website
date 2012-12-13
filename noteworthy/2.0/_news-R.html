@@ -55,7 +55,7 @@
     </dd>
     <dt>ResourceManagerFactory</dt>
     <dd>
-      remove withot a replacement,
+      remove without a replacement,
       see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=348476">bug 348476</a>
     </dd>
   </dl>
@@ -206,6 +206,18 @@ loader.require( "rwt-resources/myComponent/MyFile.js" );
 ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
 int timezoneOffset = clientInfo.getTimezoneOffset();
 Locale clientLocale = clientInfo.getLocale();
+</pre>
+
+  <h3>UrlLauncher service</h3>
+  <p>
+    The UrlLauncher service allows to open any URL (websites, files, "mailto", etc.) without
+    influencing or leaving the application. Popup blocker may ask the user for permission before
+    a new window is opened.
+  </p>
+<pre>
+UrlLauncher launcher = RWT.getClient().getService( UrlLauncher.class );
+launcher.openURL( "http://www.eclipse.org/" );
+launcher.openURL( "mailto:someone@nowhere.org" );
 </pre>
 
   <h3>BrowserHistory service</h3>
