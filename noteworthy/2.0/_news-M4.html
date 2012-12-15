@@ -28,7 +28,7 @@ loader.require( "rwt-resources/myComponent/MyFile.js" );
 <pre>
 ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
 int timezoneOffset = clientInfo.getTimezoneOffset();
-Locale clientLocale = clientInfo.getLocale();
+Locale[] locales = clientInfo.getLocales();
 </pre>
 
   <h3>UrlLauncher service</h3>
@@ -42,10 +42,22 @@ UrlLauncher launcher = RWT.getClient().getService( UrlLauncher.class );
 launcher.openURL( "http://www.eclipse.org/" );
 launcher.openURL( "mailto:someone@nowhere.org" );
 </pre>
+  <p>
+    Please use this new client service instead of the class <em>ExternalBrowser</em>.
+  </p>
 
   <h2>API Changes</h2>
 
-  <h3>Class Graphics deprecated</h3>
+  <h3>Prefix “I” removed from interfaces</h3>
+  <p>
+    The prefix “I” in interface names like <em>IEntryPoint</em> is a heritage from the Eclipse
+    platform.
+    This deviates from the naming pattern used in SWT and other libraries, and also from the Java
+    class library.
+    Since it is not even used consistently in RAP, we're removing the prefix from all interfaces.
+  </p>
+
+  <h3>Graphics deprecated</h3>
   <p>
     The class <em>Graphics</em> had been used to create <em>shared</em> instances of resources like
     <em>Color</em> and <em>Font</em> before resource constructors were introduced in 1.3.
@@ -61,25 +73,74 @@ launcher.openURL( "mailto:someone@nowhere.org" );
     <em>stringExtent</em> or <em>textExtent</em>. Don't forget to dispose of the GC afterwards.
   </p>
 
-  <h3>ExternalBrowser deprecated</h3>
+  <h3>Service store deprecated</h3>
   <p>
-    The ExternalBroser API has been deprecated. The UrlLauncher service should be used instead.
+    The service store is used internally by the framework to store data in the scope of a request.
+    Application developers shouldn't really need this store anymore.
+    If an application needs to store any information in the request scope, it should use the
+    request object directly, i.e. <code>RWT.getRequest().setAttribute(...)</code>.
   </p>
 
-  <h3>I-prefixed Interfaces</h3>
+  <h3>Session store replaced by UI session</h3>
   <p>
-    The prefix “I” in interface names like <em>IEntryPoint</em> is a heritage from the Eclipse
-    platform.
-    This deviates from the naming pattern used in SWT and other libraries, and also from the Java
-    class library.
-    Since it is not even used consistently in RAP, we're removing the prefix from all interfaces.
+    When working with RAP, you have to deal with two different types of sessions: the servlet
+    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
+    Both sessions have a different scope and a different purpose.
+    In recent projects we've noticed that the relationship between the HTTP session and RAP's
+    “session store” led to confusion. By renaming the session store to UI session we hope to make it
+    more clear that both are sessions with a different scope and meaning.
+    Here's some background:
+  </p>
+  <p>
+    <strong>The HTTP session</strong> is managed by the servlet container which recognizes the user
+    with the help of a Cookie or URL rewriting.
+    It has a configurable timeout, after which a user has to sign in again.
+    The HTTP session is the place to store user-specific information.
+  </p>
+  <p>
+    <strong>The UI session</strong> is built on top of the HTTP session, but has a shorter lifetime.
+    A new UI session is started every time a user accesses an entrypoint and it lives as long this
+    UI is being used. When the user accesses another entrypoint, this results in a new UISession,
+    but the HttpSession will be the same.
+    The UI session is the place to store information that is related to the current
+    <em>instance</em> of an application's UI.
+    It can now also be used to access UI-session-scoped instances such as the <em>Client</em>
+    and the locale.
+  </p>
+  <p>
+    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>. The types
+    <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed accordingly.
+  </p>
+  <p>
+    In addition to the <em>get/setAttribute</em> methods, <em>UISession</em> also provides access
+    to the <code>Client</code> instance and the <code>Locale</code>.
+    Actually, <code>RWT.getClient()</code> is now a shortcut for
+    <code>RWT.getUISession().getClient()</code>.
+    The same is true for <code>RWT.getLocale()</code> and <code>RWT.setLocale( locale )</code>.
   </p>
 
-  <h3>Removed Interface ILifeCycleAdapter</h3>
+  <h3>Application store replaced by Application context</h3>
   <p>
-    The interface <em>ILifeCycleAdapter</em> has been removed.
-    This interface was never meant to be used or implemented by clients, so you shouldn't be
-    affected.
+    The new <em>ApplicationContext</em> represents the running instance of a RAP application, it is
+    shared by all UI sessions. This interface replaces IApplicationStore, it can be used to store
+    shared data, and also to obtain application-scoped services such as the resource manager.
+  </p>
+  <p>
+    Just like the UISession is built on the servlet container's HttpSession, the ApplicationContext
+    is built on the <em>ServletContext</em>, and its life cycle is also bound to lifetime of the
+    servlet context.
+    We chose the name Application<em>Context</em> to highlight this analogy.
+  </p>
+  <p>
+    The interface <em>IApplicationStore</em> has been renamed to <em>ApplicationContext</em>.
+    An instance can be acquired from <code>RWT.getApplicationContext()</code> which replaces
+    the old method <code>RWT.getApplicationStore()</code>.
+  </p>
+  <p>
+    In addition to the <em>get/setAttribute</em> methods, <em>ApplicationContext</em> has accessor
+    methods for the resource manager and the service manager.
+    Actually, <code>RWT.getResourceManager()</code> is now simply a shortcut for
+    <code>RWT.getApplicationContext().getResourceManager()</code>.
   </p>
 
   <h3>Service handlers</h3>
@@ -93,31 +154,6 @@ launcher.openURL( "mailto:someone@nowhere.org" );
     The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
     Developers should use this new method to obtain the URL to access a service handler instead
     of assembling the URL manually.
-  </p>
-
-  <h3>Session store replaced by UI session</h3>
-  <p>
-    When working with RAP, you have to deal with two different types of sessions: the servlet
-    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
-    Both sessions have a different scope and a different purpose.
-    In recent projects we've noticed that the relationship between the HTTP session and RAP's
-    “session store” led to confusion. By renaming the session store to UI session we hope to make it
-    more clear that both are sessions with a different scope and meaning.
-  </p>
-  <p>
-    In case you wonder here's some background:
-    The HTTP session is managed by the servlet container which recognizes the user with the help of
-    a Cookie or URL rewriting. It has a configurable timeout, after which a user has to sign in
-    again. The HTTP session is the place to store user-specific information.
-    The UI session is built on top of the HTTP session, but has a shorter lifetime.
-    A new UI session is started every time a user accesses an entrypoint and it lives as long this
-    UI is being used. When the user starts another entrypoint, this is a new UISession, but it may
-    be the same HttpSession. The UI session is the place to store information that is related to the
-    current <em>instance</em> of an application's UI.
-  </p>
-  <p>
-    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>. The types
-    <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed accordingly.
   </p>
 
   <h2>IApplication, again</h2>

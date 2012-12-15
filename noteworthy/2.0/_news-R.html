@@ -17,142 +17,6 @@
     <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
   </p>
 
-  <h2>API Changes</h2>
-
-  <p>
-    With the move to RAP 2.0, we are cleaning up our APIs.
-    This will lead to breaking changes.
-    Existing RAP 1.x applications will therefore need minor adjustments to work with RAP 2.0.
-    See the <a href="migration-guide/">RAP 2.0 Migration Guide</a> for instructions on updating
-    your code to RAP 2.0.
-  </p>
-
-  <h3>Package org.eclipse.rwt renamed</h3>
-
-  <p>
-    We renamed this package to org.eclipse.rap.rwt in order to comply with Eclipse naming
-    convention that packages should be prefixed with the project that creates it.
-  </p>
-
-  <h3>Constant WidgetUtil.CUSTOM_VARIANT moved</h3>
-
-  <p>
-    This constant has been moved to the class RWT.
-  </p>
-
-  <h3>Deprecated public classes and methods removed</h3>
-
-  <dl>
-    <dt>JSWriter, JSVar, JSListenerType, JSListenerInfo</dt>
-    <dd>
-      removed together with the corresponding methods in WidgetLCAUtil and ControlLCAUtil.
-      These classes were used for rendering JavaScript are now obsolete.
-    </dd>
-    <dt>AdapterFactory</dt>
-    <dd>
-      removed without a replacement together with the extension point,
-      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=344541">bug 344541</a>
-    </dd>
-    <dt>ResourceManagerFactory</dt>
-    <dd>
-      remove without a replacement,
-      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=348476">bug 348476</a>
-    </dd>
-  </dl>
-
-  <h3>Session store replaced by UI session</h3>
-  <p>
-    When working with RAP, you have to deal with two different types of sessions: the servlet
-    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
-    Both sessions have a different scope and a different purpose.
-    In recent projects we've noticed that the relationship between the HTTP session and RAP's
-    “session store” led to confusion. By renaming the session store to UI session we hope to make it
-    more clear that both are sessions with a different scope and meaning.
-  </p>
-  <p>
-    In case you wonder here's some background:
-    The HTTP session is managed by the servlet container which recognizes the user with the help of
-    a Cookie or URL rewriting. It has a configurable timeout, after which a user has to sign in
-    again. The HTTP session is the place to store user-specific information.
-    The UI session is built on top of the HTTP session, but has a shorter lifetime.
-    A new UI session is started every time a user accesses an entrypoint and it lives as long this
-    UI is being used. When the user starts another entrypoint, this is a new UISession, but it may
-    be the same HttpSession. The UI session is the place to store information that is related to the
-    current <em>instance</em> of an application's UI.
-  </p>
-  <p>
-    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>. The types
-    <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed accordingly.
-  </p>
-
-  <h3>Resource Manager Rework</h3>
-  <p>
-    The resource manager (<em>IResourceManager</em>) is used to register static resources like
-    images or JavaScript files in RAP applications. We reduced its interface to this purpose
-    and simplified the implementation.
-  </p>
-
-  <ul>
-    <li>
-      For resources that are registered in an <em>ApplicationConfiguration</em>, the method
-      <em>Application.addResource(…)</em> now accepts a <em>ResourceLoader</em> instead of
-      <em>IResource</em>.
-    </li>
-    <li>
-      The <em>IResource</em> interface is now only used in the extension point
-      <em>org.eclipse.rap.ui.resources</em> and has therefore been moved to the bundle
-      <em>org.eclipse.rap.ui.workbench</em>.
-    </li>
-    <li>
-      The encoding of a resource is not taken into account anymore, <em>getCharset()</em> has
-      been removed from the <em>IResource</em> interface.
-      If you used to register text files with a charset other than UTF-8, you should make sure that
-      your client code reads the resources with the correct charset.
-    </li>
-    <li>
-      The Method <em>getOptions()</em> has been removed from the <em>IResouce</em> interface.
-      This means:
-      <ul>
-        <li>
-          The resource manager can not minify JavaScript anymore.
-          It is recommend that custom component developers minify their JavaScript files with a tool
-          such as <a href="http://developer.yahoo.com/yui/compressor/">YUI Compressor</a>,
-          <a href="https://developers.google.com/closure/compiler/">Google Closure Compiler</a>,
-          or <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a>.
-        </li>
-        <li>
-          The resource manager can not add version hashes to file names anymore.
-          If there is a need to add version hashes to URLs, applications can simply add a URL parameter
-          like <em>"?nocache=4711"</em> when requesting the resource.
-        </li>
-      </ul>
-    </li>
-  </ul>
-
-  <p>
-    Moreover, the resource manager does not close input streams anymore after registering a resource,
-    as it did in 1.5 (<?=bug(347615)?>). Double check that you're closing your input streams correctly.
-  </p>
-
-  <h3>Dropped Support for entrypoints by name</h3>
-  <p>
-    Until now, entrypoints could be registered with a name in an entrypoint extension.
-    Those entrypoints had been available at a URL with the default servlet name “rap” and a URL
-    parameter “startup” pointing to this name. This approach had a number of drawbacks, thus we
-    decided to remove the support for it completely in RAP 2.0. Now
-    entrypoints can only be registered by path, which was introduced in RAP 1.5.
-    For example, an entrypoint that is registered with the path <code>/foo</code> will be available
-    at:
-  </p>
-<pre>
-http://hostname/webapp/foo
-</pre>
-  </p>
-  <p>
-    In your entrypoint and application extensions, use the attibute <em>path</em> to specify the
-    URL path for the entrypoint. The old attribute <em>parameter</em> is not supported anymore.
-  </p>
-
   <h2>New Client API</h2>
 
   <p>
@@ -219,6 +83,9 @@ UrlLauncher launcher = RWT.getClient().getService( UrlLauncher.class );
 launcher.openURL( "http://www.eclipse.org/" );
 launcher.openURL( "mailto:someone@nowhere.org" );
 </pre>
+  <p>
+    Please use this new client service instead of the class <em>ExternalBrowser</em>.
+  </p>
 
   <h3>BrowserHistory service</h3>
   <p>
@@ -241,56 +108,6 @@ history.createEntry( "main", "Main View" );
 ExitConfirmation confirmation = RWT.getClient().getService( ExitConfirmation.class );
 confirmation.setMessage( "Where do you think you're going?!" );
 </pre>
-
-  <h2>Branding</h2>
-
-  <h3>Entrypoint mapping</h3>
-  <p>
-    Since entrypoints are now always registered by path, there is no need for an entrypoint-to-path
-    mapping in a branding anymore.
-    Therefore, we removed the attributes <em>servletName</em>, <em>defaultEntrypointId</em>, and the
-    element <em>associatedEntrypoints</em> from the <em>branding</em> extension point.
-    A branding can now be bound to an entrypoint by setting the new attribute <em>brandingId</em>.
-  </p>
-<pre>
-&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
-  &lt;entrypoint id="example.entrypoint"
-      class="example.MyEntryPoint"
-      path="/example"
-      <strong>brandingId="example.branding"</strong> /&gt;
-  &lt;/entrypoint&gt;
-&lt;/extension&gt;
-</pre>
-  <p>
-    To bind a branding to an <em>IApplication</em>, add a parameter <em>brandingId</em> to the
-    application extension point.
-  </p>
-<pre>
-&lt;extension id="example.app" point="org.eclipse.core.runtime.applications"&gt;
-  &lt;application thread="main" cardinality="singleton-global" visible="true"&gt;
-    &lt;run class="example.Application"&gt;
-      &lt;parameter name="path" value="/mail" /&gt;
-      <strong>&lt;parameter name="brandingId" value="removeme.branding /"&gt;</strong>
-    &lt;/run&gt;
-  &lt;/application&gt;
-&lt;/extension&gt;
-</pre>
-
-  <h3>Exit confirmation</h3>
-  <p>
-    For exit confirmations, the new client service <em>ExitConfirmation</em> should be used as
-    explained above.
-    The attribute <em>exitConfirmationClass</em> is no longer supported by the branding extension
-    point.
-  </p>
-
-  <h3>Branding API removed from RWT</h3>
-  <p>
-    With these changes, we also removed the branding API from RWT, namely the classes
-    <em>AbstractBranding</em> and <em>Header</em>.
-    We don't expect that anyone was using these classes.
-    In plain RWT applications, entrypoint properties can be used for branding.
-  </p>
 
   <h2>Widget Set</h2>
 
@@ -347,6 +164,295 @@ confirmation.setMessage( "Where do you think you're going?!" );
     <code>Widget #removeListener( int, SWTEventListener )</code>.
   </p>
 
+  <h2>API Changes</h2>
+
+  <p>
+    With the move to RAP 2.0, we are cleaning up our APIs.
+    This will lead to breaking changes.
+    Existing RAP 1.x applications will therefore need minor adjustments to work with RAP 2.0.
+    See the <a href="migration-guide/">RAP 2.0 Migration Guide</a> for instructions on updating
+    your code to RAP 2.0.
+  </p>
+
+  <h3>Package org.eclipse.rwt renamed</h3>
+
+  <p>
+    We renamed this package to org.eclipse.rap.rwt in order to comply with Eclipse naming
+    convention that packages should be prefixed with the project that creates it.
+  </p>
+
+  <h3>Constant WidgetUtil.CUSTOM_VARIANT moved</h3>
+
+  <p>
+    This constant has been moved to the class RWT.
+  </p>
+
+  <h3>Prefix “I” removed from interfaces</h3>
+  <p>
+    The prefix “I” in interface names like <em>IEntryPoint</em> is a heritage from the Eclipse
+    platform.
+    This deviates from the naming pattern used in SWT and other libraries, and also from the Java
+    class library.
+    Since it is not even used consistently in RAP, we're removing the prefix from all interfaces.
+  </p>
+
+  <h3>Deprecated public classes and methods removed</h3>
+
+  <dl>
+    <dt>JSWriter, JSVar, JSListenerType, JSListenerInfo</dt>
+    <dd>
+      removed together with the corresponding methods in WidgetLCAUtil and ControlLCAUtil.
+      These classes were used for rendering JavaScript are now obsolete.
+    </dd>
+    <dt>AdapterFactory</dt>
+    <dd>
+      removed without a replacement together with the extension point,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=344541">bug 344541</a>
+    </dd>
+    <dt>ResourceManagerFactory</dt>
+    <dd>
+      remove without a replacement,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=348476">bug 348476</a>
+    </dd>
+  </dl>
+
+  <h3>Graphics deprecated</h3>
+  <p>
+    The class <em>Graphics</em> had been used to create <em>shared</em> instances of resources like
+    <em>Color</em> and <em>Font</em> before resource constructors were introduced in 1.3.
+    This practice is problematic because instances created using these methods throw an exception
+    when trying to dispose them. Moreover, they cannot be garbage collected.
+    In RAP 2.0, resources should only be created using the constructors
+    of <em>Color</em>, <em>Font</em>, <em>Cursor</em>, and <em>Image</em>.
+  </p>
+  <p>
+    Graphics also provided methods for test size measurement. We expect that these methods are
+    hardly used by application code and can be replaced by SWT's <em>GC</em> API.
+    To measure a string in a given font, create a GC, set the font, and call the GC methods
+    <em>stringExtent</em> or <em>textExtent</em>. Don't forget to dispose of the GC afterwards.
+  </p>
+
+  <h3>Service store deprecated</h3>
+  <p>
+    The service store is used internally by the framework to store data in the scope of a request.
+    Application developers shouldn't really need this store anymore.
+    If an application needs to store any information in the request scope, it should use the
+    request object directly, i.e. <code>RWT.getRequest().setAttribute(...)</code>.
+  </p>
+
+  <h3>Session store replaced by UI session</h3>
+  <p>
+    When working with RAP, you have to deal with two different types of sessions: the servlet
+    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
+    Both sessions have a different scope and a different purpose.
+    In recent projects we've noticed that the relationship between the HTTP session and RAP's
+    “session store” led to confusion. By renaming the session store to UI session we hope to make it
+    more clear that both are sessions with a different scope and meaning.
+    Here's some background:
+  </p>
+  <p>
+    <strong>The HTTP session</strong> is managed by the servlet container which recognizes the user
+    with the help of a Cookie or URL rewriting.
+    It has a configurable timeout, after which a user has to sign in again.
+    The HTTP session is the place to store user-specific information.
+  </p>
+  <p>
+    <strong>The UI session</strong> is built on top of the HTTP session, but has a shorter lifetime.
+    A new UI session is started every time a user accesses an entrypoint and it lives as long this
+    UI is being used. When the user accesses another entrypoint, this results in a new UISession,
+    but the HttpSession will be the same.
+    The UI session is the place to store information that is related to the current
+    <em>instance</em> of an application's UI.
+    It can now also be used to access UI-session-scoped instances such as the <em>Client</em>
+    and the locale.
+  </p>
+  <p>
+    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>. The types
+    <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed accordingly.
+  </p>
+  <p>
+    In addition to the <em>get/setAttribute</em> methods, <em>UISession</em> also provides access
+    to the <code>Client</code> instance and the <code>Locale</code>.
+    Actually, <code>RWT.getClient()</code> is now a shortcut for
+    <code>RWT.getUISession().getClient()</code>.
+    The same is true for <code>RWT.getLocale()</code> and <code>RWT.setLocale( locale )</code>.
+  </p>
+
+  <h3>Application store replaced by Application context</h3>
+  <p>
+    The new <em>ApplicationContext</em> represents the running instance of a RAP application, it is
+    shared by all UI sessions. This interface replaces IApplicationStore, it can be used to store
+    shared data, and also to obtain application-scoped services such as the resource manager.
+  </p>
+  <p>
+    Just like the UISession is built on the servlet container's HttpSession, the ApplicationContext
+    is built on the <em>ServletContext</em>, and its life cycle is also bound to lifetime of the
+    servlet context.
+    We chose the name Application<em>Context</em> to highlight this analogy.
+  </p>
+  <p>
+    The interface <em>IApplicationStore</em> has been renamed to <em>ApplicationContext</em>.
+    An instance can be acquired from <code>RWT.getApplicationContext()</code> which replaces
+    the old method <code>RWT.getApplicationStore()</code>.
+  </p>
+  <p>
+    In addition to the <em>get/setAttribute</em> methods, <em>ApplicationContext</em> has accessor
+    methods for the resource manager and the service manager.
+    Actually, <code>RWT.getResourceManager()</code> is now simply a shortcut for
+    <code>RWT.getApplicationContext().getResourceManager()</code>.
+  </p>
+
+  <h3>Service handlers</h3>
+  <p>
+    The interface <em>ServiceHandler</em> has been changed.
+    The <em>service</em> method now provides two parameters <em>request</em> and <em>response</em>
+    to the implementation.
+    Developers don't have to obtain the request and response objects from static methods anymore.
+  </p>
+  <p>
+    The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
+    Developers should use this new method to obtain the URL to access a service handler instead
+    of assembling the URL manually.
+  </p>
+
+  <h3>Resource Manager Rework</h3>
+  <p>
+    The resource manager (<em>IResourceManager</em>) is used to register static resources like
+    images or JavaScript files in RAP applications. We reduced its interface to this purpose
+    and simplified the implementation.
+  </p>
+
+  <ul>
+    <li>
+      For resources that are registered in an <em>ApplicationConfiguration</em>, the method
+      <em>Application.addResource(…)</em> now accepts a <em>ResourceLoader</em> instead of
+      <em>IResource</em>.
+    </li>
+    <li>
+      The <em>IResource</em> interface is now only used in the extension point
+      <em>org.eclipse.rap.ui.resources</em> and has therefore been moved to the bundle
+      <em>org.eclipse.rap.ui.workbench</em>.
+    </li>
+    <li>
+      The encoding of a resource is not taken into account anymore, <em>getCharset()</em> has
+      been removed from the <em>IResource</em> interface.
+      If you used to register text files with a charset other than UTF-8, you should make sure that
+      your client code reads the resources with the correct charset.
+    </li>
+    <li>
+      The Method <em>getOptions()</em> has been removed from the <em>IResouce</em> interface.
+      This means:
+      <ul>
+        <li>
+          The resource manager can not minify JavaScript anymore.
+          It is recommend that custom component developers minify their JavaScript files with a tool
+          such as <a href="http://developer.yahoo.com/yui/compressor/">YUI Compressor</a>,
+          <a href="https://developers.google.com/closure/compiler/">Google Closure Compiler</a>,
+          or <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a>.
+        </li>
+        <li>
+          The resource manager can not add version hashes to file names anymore.
+          If there is a need to add version hashes to URLs, applications can simply add a URL parameter
+          like <em>"?nocache=4711"</em> when requesting the resource.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>
+    Moreover, the resource manager does not close input streams anymore after registering a resource,
+    as it did in 1.5 (<?=bug(347615)?>). Double check that you're closing your input streams correctly.
+  </p>
+
+  <h3>Dropped Support for entrypoints by name</h3>
+  <p>
+    Until now, entrypoints could be registered with a name in an entrypoint extension.
+    Those entrypoints had been available at a URL with the default servlet name “rap” and a URL
+    parameter “startup” pointing to this name. This approach had a number of drawbacks, thus we
+    decided to remove the support for it completely in RAP 2.0. Now
+    entrypoints can only be registered by path, which was introduced in RAP 1.5.
+    For example, an entrypoint that is registered with the path <code>/foo</code> will be available
+    at:
+  </p>
+<pre>
+http://hostname/webapp/foo
+</pre>
+  </p>
+
+  <h2>Branding</h2>
+
+  <h3>Entrypoint mapping</h3>
+  <p>
+    Since entrypoints are now always registered by path, there is no need for an entrypoint-to-path
+    mapping in a branding anymore.
+    Therefore, we removed the attributes <em>servletName</em>, <em>defaultEntrypointId</em>, and the
+    element <em>associatedEntrypoints</em> from the <em>branding</em> extension point.
+    A branding can now be bound to an entrypoint by setting the new attribute <em>brandingId</em>.
+  </p>
+<pre>
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.entrypoint"
+      class="example.MyEntryPoint"
+      path="/example"
+      <strong>brandingId="example.branding"</strong> /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+
+  <h3>Exit confirmation</h3>
+  <p>
+    For exit confirmations, the new client service <em>ExitConfirmation</em> should be used as
+    explained above.
+    The attribute <em>exitConfirmationClass</em> is no longer supported by the branding extension
+    point.
+  </p>
+
+  <h3>Branding API removed from RWT</h3>
+  <p>
+    With these changes, we also removed the branding API from RWT, namely the classes
+    <em>AbstractBranding</em> and <em>Header</em>.
+    We don't expect that anyone was using these classes.
+    In plain RWT applications, entrypoint properties can be used for branding.
+  </p>
+
+  <h2>IApplication</h2>
+  <p>
+    If you use the interface <em>IApplication</em> as entrypoint to your application,
+    you now have to add an entrypoint extension to your <em>plugin.xml</em>
+    in order to bind the application to a path.
+    To do so, create a new entrypoint extension and, instead of providing an EntryPoint class,
+    specify the id of the application extension in the new parameter <em>applicationId</em>:
+  </p>
+<pre>
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.application.entrypoint"
+      path="/example"
+      brandingId="example.branding"
+      <strong>applicationId="example.application"</strong> /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+
+  <h2>Settings</h2>
+
+  <h3>Development Mode</h3>
+  <p>
+    During development, it's recommended to start RAP in </en>development mode</en>.
+    In this mode, the JavaScript for the web client is not compressed and potential client-side
+    errors will not be caught.
+    This new setting replaces the old <em>clientLibraryVersion</em>, which has been used for this
+    purpose before.
+    In the RAP Launcher, you'll find a new option to enable the development mode:
+  </p>
+  <p>
+    <img class="framed" title="Development mode" src="images/RAPLauncher-dev-mode.png" />
+  </p>
+  <p>
+    In OSGi launch configurations, please replace the VM parameter
+    <code>-Dorg.eclipse.rwt.clientLibraryVersion=DEBUG</code> with
+    <code>-Dorg.eclipse.rap.rwt.developmentMode=true</code>.
+  </p>
+
   <h2>Tools</h2>
 
   <h3>RAP Launcher always terminates previous launch</h3>
@@ -359,6 +465,5 @@ confirmation.setMessage( "Where do you think you're going?!" );
   <p>
     <img class="framed" title="Text with search icons" src="images/Tools-remove-previous-launch.png" />
   </p>
-
 
 </div>

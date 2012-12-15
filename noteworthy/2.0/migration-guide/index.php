@@ -19,13 +19,19 @@
     This guide explains the steps to be taken to update existing applications.
   </p>
 
-  <h2>Package org.eclipse.rwt renamed</h2>
+  <h2>Java Packages</h2>
 
+  <h3>Package org.eclipse.rwt renamed</h3>
   <p>
     The package <em>org.eclipse.rwt</em> has been renamed to <em>org.eclipse.<ins>rap</ins>.rwt</em>.
     You need to update your bundle manifest files and your Java code to this change.
     A brute-force search for “org.eclipse.rwt” may be helpful to discover all occurrences in your
     workspace.
+  </p>
+
+  <h3>Classes moved</h3>
+  <p>
+    The interface <em>EntryPoint</em> moved to the package <em>org.eclipse.rap.rwt.application</em>.
   </p>
 
   <h3>Bundle manifests</h3>
@@ -61,7 +67,17 @@
     <dd>this constant has changed its value to adjust to the new namespace.</dd>
   </dl>
 
-  <h2>Removed classes</h2>
+  <h2>I-prefixed Interfaces</h2>
+
+  <p>
+    The prefix “I” in interface names like <em>IEntryPoint</em> is a heritage from the Eclipse
+    platform.
+    This deviates from the naming pattern used in SWT and other libraries, and also from the Java
+    class library.
+    Since it is not even used consistently in RAP, we plan to remove the prefix from all interfaces.
+  </p>
+
+  <h2>Removed classes and interfaces</h2>
 
   <dl>
     <dt>JSWriter, JSVar, JSListenerType, JSListenerInfo</dt>
@@ -69,19 +85,64 @@
       removed together with the corresponding methods in WidgetLCAUtil and ControlLCAUtil.
       These classes were used for rendering JavaScript are now obsolete.
     </dd>
+
     <dt>AdapterFactory</dt>
     <dd>removed together with the extension point, see <?=bug(344541)?></dd>
+
     <dt>ResourceManagerFactory</dt>
     <dd>see <?=bug(348476)?></dd>
+
     <dt>AbstractBranding, Header</dt>
     <dd>
       Use entrypoint properties for branding in RWT applications. See class <em>WebClient</em>.
     </dd>
+
+    <dt>ILifeCycleAdapter</dt>
+    <dd>
+      This interface was never meant to be used or implemented by clients, and you're probably not
+      affected.
+    </dd>
+
     <dt>JSExecutor</dt>
     <dd>
       an internal class, but frequently used in application code.
       Replaced by the new client service <em>JavaScriptExecutor</em>, see <em>Client.getService()</em>,
       <?=bug(342995)?>
+    </dd>
+
+  </dl>
+
+  <h2>Deprecated classes and interfaces</h2>
+  <p>
+    Where public interfaces have been renamed, we left the old name in place where possible to
+    ease the migration and to leave a clue when adapting your application to RAP 2.0.
+  </p>
+  <dl>
+    <dt>Graphics</dt>
+    <dd>
+      This class had been used to create <em>shared</em> instances of resources like
+      <em>Color</em> and <em>Font</em> before resource constructors were introduced in 1.3.
+      This practice is problematic because instances created by Graphics cannot be disposed and
+      are not garbage-collected.
+      In RAP 2.0, resources should only be created using the constructors
+      of <em>Color</em>, <em>Font</em>, <em>Cursor</em>, and <em>Image</em>.
+      Graphics also provided methods for test size measurement. We expect that these methods are
+      hardly used by application code and can be replaced by SWT's <em>GC</em> API.
+      To measure a string in a given font, create a GC, set the font, and call the GC methods
+      <em>stringExtent</em> or <em>textExtent</em>. Don't forget to dispose of the GC afterwards.
+    </dd>
+
+    <dt>IServiceStore</dt>
+    <dd>
+      The service store is used internally by the framework to store data in the scope of a request.
+      Application developers shouldn't really need this store anymore.
+      If an application needs to store any information in the request scope, it should use the
+      request object directly, i.e. <code>RWT.getRequest().setAttribute(...)</code>.
+    </dd>
+
+    <dt>ExternalBrowser</dt>
+    <dd>
+      Please use the new client service <em>UrlLauncher</em> instead.
     </dd>
 
   </dl>
@@ -146,6 +207,43 @@
     <em>IResource</em>.
   </p>
 
+  <h2>Session Store replaced by UI Session</h2>
+  <p>
+    When working with RAP, you have to deal with two different types of sessions: the servlet
+    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
+    Both sessions have a different scope and a different purpose.
+    In recent projects we've noticed that the relationship between the HTTP session and RAP's
+    “session store” led to confusion. By renaming the session store to UI session we hope to make it
+    more clear that both are sessions with a different scope and meaning.
+  </p>
+  <p>
+    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>.
+    An instance can be acquired from <code>RWT.getUISession()</code> which replaces
+    <code>RWT.getSessionStore()</code>.
+    The types <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed
+    accordingly.
+  </p>
+
+  <h2>Application Store replaced by Application Context</h2>
+  <p>
+    The new <em>ApplicationContext</em> represents the running instance of a RAP application, it is
+    shared by all UI sessions. This interface replaces IApplicationStore, it can be used to store
+    shared data, and also to obtain application-scoped services such as the resource manager.
+    Just like the UISession is built on the servlet container's HttpSession, the ApplicationContext
+    is built on the <em>ServletContext</em>, and its life cycle is also bound to lifetime of the
+    servlet context.
+    We chose the name Application<em>Context</em> to highlight this analogy.
+  </p>
+  <p>
+    The interface <em>IApplicationStore</em> has been renamed to <em>ApplicationContext</em>.
+    An instance can be acquired from <code>RWT.getApplicationContext()</code> which replaces
+    the old method <code>RWT.getApplicationStore()</code>.
+  </p>
+  <p>
+    The ApplicationContext can also be used to get a reference of the resource manager and the
+    service manager, e.g. <code>applicationContext.getResourceManager()</code>.
+  </p>
+
   <h2>Service Handlers</h2>
   <p>
     The interface <em>ServiceHandler</em> has been changed.
@@ -157,20 +255,6 @@
     The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
     Developers should use this new method to obtain the URL to access a service handler instead
     of assembling the URL manually.
-  </p>
-
-  <h2>Session Store replaced by UI Session</h2>
-  <p>
-    When working with RAP, you have to deal with two different types of sessions: the servlet
-    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
-    Both sessions have a different scope and a different purpose.
-    In recent projects we've noticed that the relationship between the HTTP session and RAP's
-    “session store” led to confusion. By renaming the session store to UI session we hope to make it
-    more clear that both are sessions with a different scope and meaning.
-  </p>
-  <p>
-    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>. The types
-    <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed accordingly.
   </p>
 
   <h2>Register EntryPoint and IApplication</h2>
@@ -248,16 +332,6 @@ http://hostname/webapp/example
     <em>JSWriter</em>, will not work anymore.
     For the migration of those components, we'd recommend to wait until M4.
     We're looking forward to provide more assistance for component developers.
-  </p>
-
-  <h2>I-prefixed Interfaces</h2>
-
-  <p>
-    The prefix “I” in interface names like <em>IEntryPoint</em> is a heritage from the Eclipse
-    platform.
-    This deviates from the naming pattern used in SWT and other libraries, and also from the Java
-    class library.
-    Since it is not even used consistently in RAP, we plan to remove the prefix from all interfaces.
   </p>
 
   <h2>Settings</h2>
