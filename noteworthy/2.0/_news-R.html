@@ -64,7 +64,7 @@ loader.require( "rwt-resources/myComponent/MyFile.js" );
     The ClientInfo service provides additional information about the client that is connected to the
     current UI session.
     In this version, the service provides the client's locale and its timezone offset in minutes.
-    Unfortunately, it's not possible to obtain the actual timezone in JavaScript.
+    Unfortunately, it's not possible to obtain the actual timezone region from the browser.
   </p>
 <pre>
 ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
@@ -87,15 +87,14 @@ launcher.openURL( "mailto:someone@nowhere.org" );
     Please use this new client service instead of the class <em>ExternalBrowser</em>.
   </p>
 
-  <h3>BrowserHistory service</h3>
+  <h3>BrowserNavigation service</h3>
   <p>
-    Allows to use the browser's history for navigating within the application.
-    This replaces the <em>IBrowserHistory</em> interface and <em>RWT.getBrowserHistory()</em>.
-    Example:
+    The BrowserNavigation service allows support for the browsers back/forward button and
+    deep linking. It's a complete replacement for the removed BrowserHistory class.
   </p>
 <pre>
-BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
-history.createEntry( "main", "Main View" );
+BrowserNavigation navigation = RWT.getClient().getService( BrowserNavigation.class );
+navigation.pushState( "main", "Main View" );
 </pre>
 
   <h3>ExitConfirmation service</h3>
@@ -276,6 +275,13 @@ confirmation.setMessage( "Where do you think you're going?!" );
     Actually, <code>RWT.getClient()</code> is now a shortcut for
     <code>RWT.getUISession().getClient()</code>.
     The same is true for <code>RWT.getLocale()</code> and <code>RWT.setLocale( locale )</code>.
+  </p>
+
+  <h3>BrowserHistory replaced by BrowserNavigation</h3>
+  <p>
+    <code>BrowserHistory</code> and related classes do not exist anymore.
+    It was reworked into the BrowserNavigation client service, but retains all features of
+    BrowerHistory.
   </p>
 
   <h3>Application store replaced by Application context</h3>

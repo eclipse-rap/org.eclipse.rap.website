@@ -257,6 +257,37 @@
     of assembling the URL manually.
   </p>
 
+  <h2>BrowserHistory replaced by BrowserNavigation</h2>
+  <p>
+    The class <code>BrowserHistory</code> no longer exists.
+    Instead there is now a client service <code>BrowserNavigation</code> that provides the same
+    features with slightly different API. Example:
+  </p>
+  <pre>
+// OBSOLETE
+BrowserHistory history = RWT.getBrowserHistory();
+history.addBrowserHistoryListener( new BrowserHistoryListener() {
+  public void navigated( BrowserHistoryEvent event ) {
+    String state = event.entryId;
+    // do something with state
+  }
+} );
+history.createEntry( "main", "Main View" );
+  </pre>
+
+  <pre>
+// NEW CODE
+BrowserNavigation history
+  = RWT.getClient().getService( BrowserNavigation.class );
+history.addBrowserNavigationListener( new BrowserNavigationListener() {
+  public void navigated( BrowserNavigationEvent event ) {
+    String state = event.getState();
+    // do something with state
+  }
+} );
+history.pushState( "main", "Main View" );
+  </pre>
+
   <h2>Register EntryPoint and IApplication</h2>
   <p>
     RAP applications can not be accessed by startup parameter anymore:
@@ -357,7 +388,7 @@ http://hostname/webapp/example
     </dd>
     <dt><code>org.eclipse.rap.equinox.target.feature</code></dt>
     <dd>
-      contains a set of Eclipse and Equinox bundles that are required to run the RAP bundles in an OSGi 
+      contains a set of Eclipse and Equinox bundles that are required to run the RAP bundles in an OSGi
       environment. Its old ID was <code>org.eclipse.rap.runtime.requirements</code>.
     </dd>
     <dt><code>org.eclipse.rap.examples.feature</code></dt>
@@ -368,7 +399,7 @@ http://hostname/webapp/example
     </dd>
     <dt><code>org.eclipse.rap.tools.feature</code></dt>
     <dd>
-      contains the RAP Tools for installation in an Eclipse IDE. Its old ID was 
+      contains the RAP Tools for installation in an Eclipse IDE. Its old ID was
       <code>org.eclipse.rap.tools</code>.
     </dd>
   </dl>

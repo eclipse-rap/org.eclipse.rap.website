@@ -23,7 +23,7 @@ loader.require( "rwt-resources/myComponent/MyFile.js" );
     The ClientInfo service provides additional information about the client that is connected to the
     current UI session.
     In this version, the service provides the client's locale and its timezone offset in minutes.
-    Unfortunately, it's not possible to obtain the actual timezone in JavaScript.
+    Unfortunately, it's not possible to obtain the actual timezone region from the browser.
   </p>
 <pre>
 ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
@@ -45,6 +45,16 @@ launcher.openURL( "mailto:someone@nowhere.org" );
   <p>
     Please use this new client service instead of the class <em>ExternalBrowser</em>.
   </p>
+
+  <h3>BrowserNavigation service</h3>
+  <p>
+    The BrowserNavigation service allows support for the browsers back/forward button and
+    deep linking. It's a complete replacement for the removed BrowserHistory class.
+  </p>
+<pre>
+BrowserNavigation navigation = RWT.getClient().getService( BrowserNavigation.class );
+navigation.pushState( "cars", "Car selection" );
+</pre>
 
   <h2>API Changes</h2>
 
@@ -154,6 +164,28 @@ launcher.openURL( "mailto:someone@nowhere.org" );
     The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
     Developers should use this new method to obtain the URL to access a service handler instead
     of assembling the URL manually.
+  </p>
+
+  <h3>BrowserHistory replaced by BrowserNavigation service</h3>
+  <p>
+    As mentioned above, the <code>BrowserHistory</code> and related classes do not exist anymore.
+    It was reworked into the BrowserNavigation client service.
+    There are two reasons for the new name:
+  </p>
+    <ol>
+      <li>
+        The <code>BrowserNavigationListener</code> (formerly <code>BrowserHistoryListener</code>)
+        is now informed of all changes in the URL's fragment identifier (the text after the "#"),
+        even if it is not a result  of using the history back/forward button. This allows for
+        better deep link support, i.e. using the URL to open the UI in a specific state.
+      </li>
+      <li>
+        It will allows us to add more features to the service that are not directly related to
+        history support.
+      </li>
+    </ol>
+  <p>
+    All features of BrowerHistory are retained, view the <a href="migration-guide/">RAP 2.0 Migration Guide</a> for more details.
   </p>
 
   <h2>IApplication, again</h2>
