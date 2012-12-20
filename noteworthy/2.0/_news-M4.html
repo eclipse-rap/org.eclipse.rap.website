@@ -43,13 +43,13 @@ launcher.openURL( "http://www.eclipse.org/" );
 launcher.openURL( "mailto:someone@nowhere.org" );
 </pre>
   <p>
-    Please use this new client service instead of the class <em>ExternalBrowser</em>.
+    Please use this new client service instead of the deprecated <em>ExternalBrowser</em>.
   </p>
 
   <h3>BrowserNavigation service</h3>
   <p>
-    The BrowserNavigation service allows support for the browsers back/forward button and
-    deep linking. It's a complete replacement for the removed BrowserHistory class.
+    The BrowserNavigation service provides support for the browser's back/forward buttons and
+    deep linking. It's a complete replacement for the removed class BrowserHistory.
   </p>
 <pre>
 BrowserNavigation navigation = RWT.getClient().getService( BrowserNavigation.class );
@@ -168,24 +168,23 @@ navigation.pushState( "cars", "Car selection" );
 
   <h3>BrowserHistory replaced by BrowserNavigation service</h3>
   <p>
-    As mentioned above, the <code>BrowserHistory</code> and related classes do not exist anymore.
-    It was reworked into the BrowserNavigation client service.
-    There are two reasons for the new name:
+    As mentioned above, the <em>BrowserHistory</em> and related classes have been replaced by
+    the more general <em>BrowserNavigation</em> client service.
+    All features of BrowerHistory are retained, view the
+    <a href="migration-guide/">migration guide</a> for a code example.
   </p>
-    <ol>
-      <li>
-        The <code>BrowserNavigationListener</code> (formerly <code>BrowserHistoryListener</code>)
-        is now informed of all changes in the URL's fragment identifier (the text after the "#"),
-        even if it is not a result  of using the history back/forward button. This allows for
-        better deep link support, i.e. using the URL to open the UI in a specific state.
-      </li>
-      <li>
-        It will allows us to add more features to the service that are not directly related to
-        history support.
-      </li>
-    </ol>
   <p>
-    All features of BrowerHistory are retained, view the <a href="migration-guide/">RAP 2.0 Migration Guide</a> for more details.
+    Besides the new name, there is one important change:
+    The <em>BrowserNavigationListener</em> (formerly <em>BrowserHistoryListener</em>) is now
+    informed of all changes in the URL's fragment identifier (the characters following the “#”),
+    even if the change was not triggered by the history back/forward buttons (<?=bug(394401)?>).
+  </p>
+  <p>
+    You use the BrowserNavigation to navigate between <em>states</em> in your application.
+    With <em>pushState()</em>, you push a new state to the (history) stack, and navigation events
+    provide their state in <em>getState()</em>.
+    This new terminology will allows us to add more navigation features to this service
+    that are not directly related to history.
   </p>
 
   <h2>IApplication, again</h2>

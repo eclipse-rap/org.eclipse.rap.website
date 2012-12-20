@@ -84,13 +84,13 @@ launcher.openURL( "http://www.eclipse.org/" );
 launcher.openURL( "mailto:someone@nowhere.org" );
 </pre>
   <p>
-    Please use this new client service instead of the class <em>ExternalBrowser</em>.
+    Please use this new client service instead of the deprecated <em>ExternalBrowser</em>.
   </p>
 
   <h3>BrowserNavigation service</h3>
   <p>
-    The BrowserNavigation service allows support for the browsers back/forward button and
-    deep linking. It's a complete replacement for the removed BrowserHistory class.
+    The BrowserNavigation service provides support for the browser's back/forward buttons and
+    deep linking. It's a complete replacement for the removed class BrowserHistory.
   </p>
 <pre>
 BrowserNavigation navigation = RWT.getClient().getService( BrowserNavigation.class );
@@ -277,11 +277,14 @@ confirmation.setMessage( "Where do you think you're going?!" );
     The same is true for <code>RWT.getLocale()</code> and <code>RWT.setLocale( locale )</code>.
   </p>
 
-  <h3>BrowserHistory replaced by BrowserNavigation</h3>
+  <h3>BrowserHistory replaced by BrowserNavigation service</h3>
   <p>
-    <code>BrowserHistory</code> and related classes do not exist anymore.
-    It was reworked into the BrowserNavigation client service, but retains all features of
-    BrowerHistory.
+    The <em>BrowserHistory</em> and related classes have been replaced by
+    the more general <em>BrowserNavigation</em> client service.
+    The new name will allow us to add more
+    navigation features to this service that are not directly related to history.
+    All features of BrowerHistory are retained,
+    see the <a href="migration-guide/">migration guide</a> for a code example.
   </p>
 
   <h3>Application store replaced by Application context</h3>

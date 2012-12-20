@@ -259,34 +259,34 @@
 
   <h2>BrowserHistory replaced by BrowserNavigation</h2>
   <p>
-    The class <code>BrowserHistory</code> no longer exists.
-    Instead there is now a client service <code>BrowserNavigation</code> that provides the same
-    features with slightly different API. Example:
+    The class <code>BrowserHistory</code> has been replaced by a more general client service
+    <em>BrowserNavigation</em> that provides the same features with slightly different API.
+    Here's an example how to change your code:
   </p>
-  <pre>
+<pre>
 // OBSOLETE
 BrowserHistory history = RWT.getBrowserHistory();
 history.addBrowserHistoryListener( new BrowserHistoryListener() {
   public void navigated( BrowserHistoryEvent event ) {
     String state = event.entryId;
-    // do something with state
+    // restore the application state
   }
 } );
 history.createEntry( "main", "Main View" );
-  </pre>
+</pre>
 
-  <pre>
+<pre>
 // NEW CODE
 BrowserNavigation history
   = RWT.getClient().getService( BrowserNavigation.class );
 history.addBrowserNavigationListener( new BrowserNavigationListener() {
   public void navigated( BrowserNavigationEvent event ) {
     String state = event.getState();
-    // do something with state
+    // restore the application state
   }
 } );
 history.pushState( "main", "Main View" );
-  </pre>
+</pre>
 
   <h2>Register EntryPoint and IApplication</h2>
   <p>
