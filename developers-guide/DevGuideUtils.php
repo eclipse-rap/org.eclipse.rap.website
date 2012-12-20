@@ -7,19 +7,19 @@ class DevGuideUtils {
 
   public static $versions = array(
     '1.4' => array(
-      'rootUrl' => 'http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/plain/bundles/org.eclipse.rap.help',
-      'postfix' => '?h=streams/1.4-maintenance',
-      'api' =>'http://help.eclipse.org/indigo/topic/org.eclipse.rap.help/help/html'
+      'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/1.4/',
+      'tocPath' => 'help/toc.xml',
+      'topicPath' => 'help/html/'
     ),
     '1.5' => array(
-      'rootUrl' => 'http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/plain/bundles/org.eclipse.rap.help',
-      'postfix' => '?h=streams/1.5-maintenance',
-      'api' =>'http://help.eclipse.org/juno/topic/org.eclipse.rap.help/help/html'
+      'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/1.5/',
+      'tocPath' => 'help/toc.xml',
+      'topicPath' => 'help/html/'
     ),
     '2.0' => array(
-      'rootUrl' => 'http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/plain/bundles/org.eclipse.rap.doc',
-      'postfix' => '',
-      'api' =>'http://help.eclipse.org/juno/topic/org.eclipse.rap.help/help/html' // TODO [tb] : update to Kepler when possible
+      'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/2.0/',
+      'tocPath' => 'guide/toc.xml',
+      'topicPath' => 'guide/'
     )
   );
 

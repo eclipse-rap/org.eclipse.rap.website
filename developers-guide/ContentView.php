@@ -7,6 +7,7 @@ class ContentView {
 
   private static $htmlFile;
   private static $path;
+  private static $paths;
   private static $version;
 
   private function __construct() {}
@@ -14,8 +15,8 @@ class ContentView {
   public static function create( $htmlFilePath, $version ) {
     self::$path = strstr( $htmlFilePath, "/", true );
     self::$version = $version;
-    self::$htmlFile = new SplFileObject(
-      DevGuideUtils::$versions[ self::$version ][ 'rootUrl' ] . '/help/html/' . $htmlFilePath  . DevGuideUtils::$versions[ self::$version ][ 'postfix' ] );
+    self::$paths = DevGuideUtils::$versions[ self::$version ];
+    self::$htmlFile = new SplFileObject( self::$paths[ 'rootUrl' ] . self::$paths[ 'topicPath' ] . $htmlFilePath );
     return self::processHtmlFileContent();
   }
 
@@ -50,10 +51,10 @@ class ContentView {
 
   private static function rewriteLinkUrl( $url ) {
     $result = '';
-    if( substr( $url, 0, 5 ) === '/help' ) {
+    if( self::startsWith( $url, '/help' ) ) {
       $result = str_replace( '/help', 'http://help.eclipse.org', $url );
-    } else if( substr( $url, 0, 12 ) === '../reference' ) {
-      $result = DevGuideUtils::$versions[ self::$version ][ 'api' ] . trim( $url, "." );
+    } else if( self::startsWith( $url, '../reference' ) ) {
+      $result = self::$paths[ 'rootUrl' ] . self::$paths[ 'topicPath' ] . trim( $url, "./" );
     } else if( containsString( $url, '.html' ) ) {
       $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $url );
       $result = '?topic=' . trim( $normalizedUrl, "/" ) . '&version=' . self::$version;
@@ -68,7 +69,7 @@ class ContentView {
     foreach( $images as $image ) {
       $url = $image -> getAttribute( 'src' );
       if( !containsString( $url, 'http://' ) ) {
-        $image -> setAttribute( 'src', DevGuideUtils::$versions[ self::$version ][ 'rootUrl' ] . '/help/html/' . self::$path . '/' . $url );
+        $image -> setAttribute( 'src', self::$paths[ 'rootUrl' ] . self::$paths[ 'topicPath' ] . self::$path . '/' . $url );
       }
     }
   }
@@ -76,6 +77,10 @@ class ContentView {
   private static function normalizeUrl( $url ) {
     $normalizer = new URLNormalizer( $url );
     return $normalizer -> normalize();
+  }
+
+  private static function startsWith( $haystack, $needle ) {
+    return !strncmp( $haystack, $needle, strlen( $needle ) );
   }
 
 }

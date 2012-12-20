@@ -7,7 +7,8 @@ class NavigationView {
   private function __construct() {}
 
   public static function create( $version ) {
-    $filePath = DevGuideUtils::$versions[ $version ][ 'rootUrl' ] . '/help/toc.xml' . DevGuideUtils::$versions[ $version ][ 'postfix' ];
+    $paths = DevGuideUtils::$versions[ $version ];
+    $filePath = $paths[ 'rootUrl' ] . $paths[ 'tocPath' ];
     $result = '<ul id="dev-guide-nav">';
     $xmlIterator = new SimpleXMLIterator( $filePath, null, true );
     $result .= self::createNavigationFromXml( $xmlIterator, $version );
@@ -17,6 +18,7 @@ class NavigationView {
 
   private static function createNavigationFromXml( $xmlIterator, $version ) {
     $result = '';
+    $topicPath = DevGuideUtils::$versions[ $version ][ 'topicPath' ];
     foreach( $xmlIterator as $element ) {
       $label = $element[ 'label' ];
       if( !self::navEntryIsExcluded( $label ) ) {
@@ -26,7 +28,7 @@ class NavigationView {
           $result .= self::createNavigationFromXml( $element, $version );
           $result .= '</ul></li>';
         } else if( isset( $element[ 'href' ] ) ) {
-          $url = str_replace( 'help/html/', '', $element[ 'href' ] );
+          $url = str_replace( $topicPath, '', $element[ 'href' ] );
           $active = '';
           if( isset( $_GET[ 'topic' ] ) ) {
             $active = $url === $_GET[ 'topic' ] ? 'class="active"' : '';
