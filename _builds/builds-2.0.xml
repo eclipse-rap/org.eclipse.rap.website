@@ -50,11 +50,11 @@
 
   <build name="2.0 M4" type="M"
       shortname="M4"
-      status="planned"
+      status="completed"
       publishDate="2012-12-21"
       news="2.0/?build=M4"
-      runtimeZip=""
-      toolsZip="" />
+      runtimeZip="rap-2.0.0-M4-20121218-1016.zip"
+      toolsZip="rap-tools-2.0.0-M4-20121218-1511.zip" />
 
   <build name="2.0 RC1" type="RC"
       shortname="RC1"
