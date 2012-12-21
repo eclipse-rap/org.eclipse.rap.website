@@ -13,7 +13,7 @@ class ContentView {
   private function __construct() {}
 
   public static function create( $htmlFilePath, $version ) {
-    self::$path = strstr( $htmlFilePath, "/", true );
+    self::$path = substr( $htmlFilePath, 0, strpos( $htmlFilePath, "/" ) );
     self::$version = $version;
     self::$paths = DevGuideUtils::$versions[ self::$version ];
     self::$htmlFile = new SplFileObject( self::$paths[ 'rootUrl' ] . self::$paths[ 'topicPath' ] . $htmlFilePath );
