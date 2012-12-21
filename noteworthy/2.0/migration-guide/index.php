@@ -251,10 +251,70 @@
     to the implementation.
     Developers don't have to obtain the request and reponse objects from static methods anymore.
   </p>
+<pre>
+public class MyServiceHandler implements ServiceHandler {
+
+  public void service( <ins>HttpServletRequest request, HttpServletResponse response</ins> ) {
+    <del>HttpServletRequest request = RWT.getRequest();</del>
+    <del>HttpServletResponse response = RWT.getResponse();</del>
+    response.setContentType( "text/plain" );
+    response.getWriter().write( "Hello!" );
+  }
+
+}
+</pre>
   <p>
     The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
     Developers should use this new method to obtain the URL to access a service handler instead
     of assembling the URL manually.
+  </p>
+<pre>
+ServiceManager manager = RWT.getServiceManager();
+manager.registerServiceHandler( "download", new DownloadServiceHandler() );
+<ins>String url = manager.getServiceHandlerUrl( "download" );</ins>
+</pre>
+
+  <h2>UICallBack</h2>
+  <p>
+    The class <em>UICallBack</em> is going to be replaced by a new API for server push.
+    Instead of calling <code>UICallBack.activate( id )</code> to activate the server push,
+    you now have to create a new <em>ServerPushSession</em> and <code>start()</code> it.
+    To deactivate the server push, you call <code>stop()</code> on the same ServerPushSession
+    instance.
+    In contrast to the UICallBack, this can be done directly from the background thread without
+    a UISession context.
+  </p>
+<pre>
+<ins>final ServerPushSession pushSession = new ServerPushSession();</ins>
+Runnable runnable = new Runnable() {
+  public void run() {
+    // do some background work ...
+    // schedule the UI update
+    display.asyncExec( new Runnable() {
+      public void run() {
+        if( !widget.isDisposed() ) {
+          label.setText( "updated" );
+        }
+      }
+    } );
+    // close push session when finished
+    <del>UICallBack.runNonUIThreadWithFakeContext( display, new Runnable() {</del>
+      <del>public void run() {</del>
+        <del>UICallBack.deactivate( "someUniqueID" );</del>
+      <del>}</del>
+    <del>} );</del>
+    <ins>pushSession.stop();</ins>
+  } );
+};
+<del>UICallBack.activate( "someUniqueID" );</del>
+<ins>pushSession.start();</ins>
+new Thread( runnable ).start();
+</pre>
+  <p>
+    To run code in the context of a UISession, e.g. in order to access a session singleton from a
+    background thread, you can use the new method
+    <em>exec(Runnable)</em> on the UISession instead of the infamous
+    <em>UICallBack.runNonUIThreadWithFakeContext(Display, Runnable)</em>.
   </p>
 
   <h2>BrowserHistory replaced by BrowserNavigation</h2>
@@ -265,27 +325,27 @@
   </p>
 <pre>
 // OBSOLETE
-BrowserHistory history = RWT.getBrowserHistory();
+BrowserHistory history = <del>RWT.getBrowserHistory();</del>
 history.addBrowserHistoryListener( new BrowserHistoryListener() {
   public void navigated( BrowserHistoryEvent event ) {
-    String state = event.entryId;
+    String state = <del>event.entryId;</del>
     // restore the application state
   }
 } );
-history.createEntry( "main", "Main View" );
+history.<del>createEntry</del>( "main", "Main View" );
 </pre>
 
 <pre>
 // NEW CODE
-BrowserNavigation history
-  = RWT.getClient().getService( BrowserNavigation.class );
-history.addBrowserNavigationListener( new BrowserNavigationListener() {
+BrowserNavigation navigation
+  = <ins>RWT.getClient().getService( BrowserNavigation.class );</ins>
+navigation.addBrowserNavigationListener( new BrowserNavigationListener() {
   public void navigated( BrowserNavigationEvent event ) {
-    String state = event.getState();
+    String state = <ins>event.getState();</ins>
     // restore the application state
   }
 } );
-history.pushState( "main", "Main View" );
+navigation.<ins>pushState</ins>( "main", "Main View" );
 </pre>
 
   <h2>Register EntryPoint and IApplication</h2>
@@ -293,13 +353,13 @@ history.pushState( "main", "Main View" );
     RAP applications can not be accessed by startup parameter anymore:
   </p>
 <pre>
-http://hostname/webapp/rap?startup=example &nbsp; (OBSOLETE)
+<del>http://hostname/webapp/rap?startup=example</del> &nbsp; (OBSOLETE)
 </pre>
   <p>
     Instead of this, every entrypoint must have a dedicated path (servlet name):
   </p>
 <pre>
-http://hostname/webapp/example
+<ins>http://hostname/webapp/example</ins>
 </pre>
   <p>
     If you used to register entrypoints by parameter in your extensions, you have to use the
@@ -310,7 +370,7 @@ http://hostname/webapp/example
   &lt;entrypoint id="example.entrypoint"
       class="example.MyEntryPoint"
       <del>parameter="example"</del>
-      <strong>path="/example"</strong> /&gt;
+      <ins>path="/example"</ins> /&gt;
   &lt;/entrypoint&gt;
 &lt;/extension&gt;
 </pre>
@@ -322,9 +382,8 @@ http://hostname/webapp/example
 <pre>
 &lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
   &lt;entrypoint id="example.application.entrypoint"
-      path="/example"
-      brandingId="example.branding"
-      <strong>applicationId="example.application"</strong> /&gt;
+      <ins>applicationId="example.application"</ins>
+      path="/example" /&gt;
   &lt;/entrypoint&gt;
 &lt;/extension&gt;
 </pre>
@@ -343,7 +402,7 @@ http://hostname/webapp/example
   &lt;entrypoint id="example.entrypoint"
       class="example.MyEntryPoint"
       path="/example"
-      <strong>brandingId="example.branding"</strong> /&gt;
+      <ins>brandingId="example.branding"</ins> /&gt;
   &lt;/entrypoint&gt;
 &lt;/extension&gt;
 </pre>

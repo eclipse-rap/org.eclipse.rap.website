@@ -310,6 +310,16 @@ code {
   word-wrap: break-word;
 }
 
+del {
+  color: #880000;
+  text-decoration: line-through;
+}
+
+ins {
+  color: #005500;
+  font-weight: bold;
+}
+
 em {
   font-style: italic;
 }

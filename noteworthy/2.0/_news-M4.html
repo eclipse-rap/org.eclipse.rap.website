@@ -166,6 +166,25 @@ navigation.pushState( "cars", "Car selection" );
     of assembling the URL manually.
   </p>
 
+  <h3>New Server Push API to replace UICallBack</h3>
+  <p>
+    The class <em>UICallBack</em> represents RAP's mechanism to “push” UI updates to the client
+    when these updates occur outside of a request.
+    It can be activated and deactivated using an ID, in order to allow different parties to activate
+    the the push independently.
+    We noticed that users had trouble to understand the idea behind these IDs,
+    so we tried to come up with a new API.
+  </p>
+  <p>
+    We chose to call the system <em>server push</em>, which is the common name for technologies that
+    simulate a push update from an HTTP server to a client.
+    To activate the server push, you can create a new <em>ServerPushSession</em> and start it.
+    The push session can be stopped when it is no longer needed
+    (in contrast to UICallBack, this can now be done from any thread).
+    As long as there are any push sessions running, the framework will keep the server push system
+    active.
+  </p>
+
   <h3>BrowserHistory replaced by BrowserNavigation service</h3>
   <p>
     As mentioned above, the <em>BrowserHistory</em> and related classes have been replaced by
