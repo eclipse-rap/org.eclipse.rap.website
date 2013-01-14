@@ -14,6 +14,9 @@ class ContentView {
 
   public static function create( $htmlFilePath, $version ) {
     self::$path = substr( $htmlFilePath, 0, strpos( $htmlFilePath, "/" ) );
+    if( self::$path == '' ) {
+      self::$path = '.';
+    }
     self::$version = $version;
     self::$paths = DevGuideUtils::$versions[ self::$version ];
     self::$htmlFile = new SplFileObject( self::$paths[ 'rootUrl' ] . self::$paths[ 'topicPath' ] . $htmlFilePath );
@@ -51,15 +54,20 @@ class ContentView {
 
   private static function rewriteLinkUrl( $url ) {
     $result = '';
-    if( self::startsWith( $url, '/help' ) ) {
-      $result = str_replace( '/help', 'http://help.eclipse.org', $url );
-    } else if( self::startsWith( $url, '../reference' ) ) {
-      $result = self::$paths[ 'rootUrl' ] . self::$paths[ 'topicPath' ] . trim( $url, "./" );
-    } else if( containsString( $url, '.html' ) ) {
-      $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $url );
+    $split = explode( "#", $url );
+    $path = $split[ 0 ];
+    if( self::startsWith( $path, '/help' ) ) {
+      $result = str_replace( '/help', 'http://help.eclipse.org', $path );
+    } else if( self::startsWith( $path, '../reference' ) ) {
+      $result = self::$paths[ 'rootUrl' ] . self::$paths[ 'topicPath' ] . trim( $path, "./" );
+    } else if( containsString( $path, '.html' ) ) {
+      $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $path );
       $result = '?topic=' . trim( $normalizedUrl, "/" ) . '&version=' . self::$version;
     } else {
-      $result = $url;
+      $result = $path;
+    }
+    if( count( $split ) > 1 ) {
+      $result .= '#' . $split[ 1 ];
     }
     return $result;
   }
