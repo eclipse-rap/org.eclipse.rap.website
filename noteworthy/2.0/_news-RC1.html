@@ -1,3 +1,101 @@
 <div>
 
+  <h2>New Java API for Custom Widgets</h2>
+  <p>
+    With RAP 2.0, it's becoming a lot easier to write custom widgets or other add-ons for RAP.
+    We have published a new Java API to synchronize server-side objects with their related objects
+    on the client.
+    This API is built on the new RAP protocol and it lets you send updates directly to the client
+    (and receive updates from the client in turn) without diving too deep into RAP's internals.
+    In particular, you don't have to write any so-called LifeCycleAdapters (LCAs) anymore.
+  </p>
+
+  <h3>RemoteObject</h3>
+  <p>
+    The central interface, called <em>RemoteObject</em>, is used to communicate with the client-side
+    counterpart of an object, the <em>remote</em> object.
+    First you need to create this object, then you can start sending updates to it
+    by simply calling the remote object's <em>set</em>, <em>call</em>, etc. methods.
+  </p>
+  <p>
+    The following snippet shows how to create a remote object of the type
+    <em>example.CoffeeMachine</em> and set the property <em>sugar</em> to the value <em>false</em>.
+    That's all there is to do to create the object on the client and set a property on it.
+    The framework will render a <em>create</em> operation to the client.
+  </p>
+<pre>
+Connection connection = RWT.getUISession().getConnection();
+RemoteObject remoteObject = connection.createRemoteObject( "example.CoffeeMachine" );
+remoteObject.set( "sugar", false );
+</pre>
+
+  <h3>OperationHandler</h3>
+  <p>
+    To receive updates from the client, you have to add an operation handler to the remote object.
+    This operation handler has <em>handleXxx</em> methods for all relevant protocol operations.
+  </p>
+<pre>
+remoteObject.setHandler( new AbstractOperationHandler() {
+
+  @Override
+  public void handleNotify( String event, Map<String, Object> properties ) {
+    // react on the event, notify listeners ...
+  }
+} );
+</pre>
+
+  <p>
+    The new API lives in the package <em>org.eclipse.rap.rwt.remote</em>.
+    It's still considered provisional, but already used by a couple of widgets and services in RAP
+    itself.
+    It's expected to evolve over the next release, but we don't expect big changes.
+  </p>
+
+  <h2>Simplified EntryPoints</h2>
+  <p>
+    To reduce the code required to implement an <em>EntryPoint</em>, we provide an abstract base
+    class called <em>AbstractEntryPoint</em> with a skeletal implementation of the interface.
+    It creates a display and a main shell and starts the SWT event loop when in SWT mode,
+    you don't have to care for these things anymore.
+  </p>
+  <p>
+    We recommend to use this base class for all entrypoints rather than implementing the interface
+    itself.
+    The following code snippet shows a minimal but complete entry point:
+  </p>
+<pre lang="java">
+public class HelloEntryPoint extends AbstractEntryPoint {
+
+  @Override
+  protected void createContents( Composite parent ) {
+    parent.setLayout( new GridLayout() );
+    Button button = new Button( parent, SWT.PUSH );
+    button.setText( "Hello World!" );
+  }
+}
+</pre>
+  <p>
+    The main shell is full-screen by default, but this can be changed by overriding another method,
+    <em>createShell()</em>.
+  </p>
+  <p>
+    <img class="framed" title="Simplest EntryPoint" src="images/SimplestEntryPoint.png" />
+  </p>
+
+  <h2>RAP Tools</h2>
+
+  <h3>RWT Launcher</h3>
+  <p>
+    The RWT Launcher has got new options to configure the session timeout and the context path,
+    just like the RAP Launcher.
+  </p>
+
+  <h3>New Basic Template</h3>
+  <p>
+    To help getting started with a minimal Hello World application, we added a new very basic
+    template to the RAP Tools.
+    This template uses an ApplicationConfiguration, registered using declarative services,
+    instead of workbench extension points.
+  </p>
+
 </div>
