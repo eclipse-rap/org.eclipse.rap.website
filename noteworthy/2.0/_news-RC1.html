@@ -5,7 +5,8 @@
     With RAP 2.0, it's becoming a lot easier to write custom widgets or other add-ons for RAP.
     We have published a new Java API to synchronize server-side objects with their related objects
     on the client.
-    This API is built on the new RAP protocol and it lets you send updates directly to the client
+    This API is built on the new <a href="http://wiki.eclipse.org/RAP/Protocol">RAP protocol</a>
+    and it lets you send updates directly to the client
     (and receive updates from the client in turn) without diving too deep into RAP's internals.
     In particular, you don't have to write any so-called LifeCycleAdapters (LCAs) anymore.
   </p>
@@ -32,7 +33,7 @@ remoteObject.set( "sugar", false );
   <h3>OperationHandler</h3>
   <p>
     To receive updates from the client, you have to add an operation handler to the remote object.
-    This operation handler has <em>handleXxx</em> methods for all relevant protocol operations.
+    This operation handler has <em>handle…</em> methods for all relevant protocol operations.
   </p>
 <pre>
 remoteObject.setHandler( new AbstractOperationHandler() {
@@ -95,7 +96,7 @@ remoteObject.setHandler( new AbstractOperationHandler() {
   <h3>Remote Object (client)</h3>
   <p>
     Just like the server, the client provides a <em>RemoteObject</em> that represents the
-    server-side counterpart of an client object. It also features a very similar API,
+    server-side counterpart of a client object. It also features a very similar API,
     with <em>set</em>, <em>call</em> and <em>notify</em> methods. If, for example, the custom
     widget wishes to inform the server that the value of "text" changed, it could look like this:
   </p>
@@ -107,8 +108,8 @@ remoteObject.notify( "Modify" );</code></pre>
   <p>
     To reduce the code required to implement an <em>EntryPoint</em>, we provide an abstract base
     class called <em>AbstractEntryPoint</em> with a skeletal implementation of the interface.
-    It creates a display and a main shell and starts the SWT event loop when in SWT mode,
-    you don't have to care for these things anymore.
+    It creates a display and a main shell and starts the SWT event loop when in SWT mode–you
+    don't have to care for these things anymore.
   </p>
   <p>
     We recommend to use this base class for all entrypoints rather than implementing the interface
@@ -141,13 +142,25 @@ public class HelloEntryPoint extends AbstractEntryPoint {
     The RWT Launcher has got new options to configure the session timeout and the context path,
     just like the RAP Launcher.
   </p>
+  <p>
+    <img class="framed" title="RWT Launcher" src="images/RWTLauncher-ServerOptions.png" />
+  </p>
 
   <h3>New Basic Template</h3>
   <p>
-    To help getting started with a minimal Hello World application, we added a new very basic
-    template to the RAP Tools.
-    This template uses an ApplicationConfiguration, registered using declarative services,
-    instead of workbench extension points.
+    For lightweight RAP applications, we recommend to implement an EntryPoint and an
+    ApplicationConfiguration instead of using the Workbench and its extension points.
+    To get you started quickly with a minimal application, we added a new very basic
+    <em>Hello World</em> template to the RAP Tools.
+    This template uses declarative services to register an ApplicationConfiguration.
+    It replaces two old Eclipse Workbench-based templates.
+  </p>
+  <p>
+    The popular <em>Mail</em> template remains as an example for an application that uses the
+    Workbench stack, IApplication, advisors, views and a perspective, etc.
+  </p>
+  <p>
+    <img class="framed" title="RWT Launcher" src="images/HelloWorld-Template.png" />
   </p>
 
 </div>
