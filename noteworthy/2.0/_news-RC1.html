@@ -51,6 +51,58 @@ remoteObject.setHandler( new AbstractOperationHandler() {
     It's expected to evolve over the next release, but we don't expect big changes.
   </p>
 
+  <h2>New JavaScript API for Custom Widgets</h2>
+  <p>
+    For the first time RAP features official, public JavaScript API.
+    There are now two objects in the global namespace of the JavaScript client: "rap" and "rwt".
+    Everything that is in "rap" and
+    <a href="http://download.eclipse.org/rt/rap/doc/2.0/guide/reference/jsdoc/index.html">
+    documented in the RAP API reference</a> is considered public.
+    The "rwt" namespace contains all internals, and should not be used in any way. (It may
+    not be accessable in future RAP versions.)
+  </p>
+  <p>
+    The "rap" object can be used when you add JavaScript to the client using the JavaScriptLoader,
+    the JavaScriptExecuter, or the ClientScripting add-on. It's most important methods are
+    "registerTypeHandler" and "getRemoteObject".
+  </p>
+  <h3>Registering type handler</h3>
+  <p>
+    A type handler on the client defines how a protocol message for a target of a specific <em>type</em>
+    should be handled. At minimum it defines a factory that is called for create operations
+    (i.e. when a <code>RemoteObject</code> is created on the server). It can also define
+    the name of a destructor function, and a list of supported properties, events and methods.
+    A typical type handler might look like this:
+  </p>
+  <pre><code>rap.registerTypeHandler( "example.CoffeeMachine", {
+
+  factory : function( properties ) {
+    return new CoffeeMachine( properties );
+  },
+
+  destructor : "dispose",
+
+  properties : [ "sugar", "power" ],
+
+  events : [ "Selection" ]
+
+} );</code></pre>
+  <p>
+    The object that is returned in the factory is stored by the framwork. This "client object"
+    has to implement setter that match the properties defined in the handler, which will then
+    be called when the server sends a "set" operation for a given property.
+  </p>
+  <h3>Remote Object (client)</h3>
+  <p>
+    Just like the server, the client provides a <em>RemoteObject</em> that represents the
+    server-side counterpart of an client object. It also features a very similar API,
+    with <em>set</em>, <em>call</em> and <em>notify</em> methods. If, for example, the custom
+    widget wishes to inform the server that the value of "text" changed, it could look like this:
+  </p>
+  <pre><code>var remoteObject = rap.getRemoteObject( this );
+remoteObject.set( "text", this.getText() );
+remoteObject.notify( "Modify" );</code></pre>
+
   <h2>Simplified EntryPoints</h2>
   <p>
     To reduce the code required to implement an <em>EntryPoint</em>, we provide an abstract base
