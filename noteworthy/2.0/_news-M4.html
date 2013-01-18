@@ -13,7 +13,7 @@
     The JavaScriptLoader will ensure that the file is loaded only once, even if <em>require()</em>
     is called subsequently.
   </p>
-<pre>
+<pre class="lang-java">
 JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
 loader.require( "rwt-resources/myComponent/MyFile.js" );
 </pre>
@@ -25,7 +25,7 @@ loader.require( "rwt-resources/myComponent/MyFile.js" );
     In this version, the service provides the client's locale and its timezone offset in minutes.
     Unfortunately, it's not possible to obtain the actual timezone region from the browser.
   </p>
-<pre>
+<pre class="lang-java">
 ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
 int timezoneOffset = clientInfo.getTimezoneOffset();
 Locale[] locales = clientInfo.getLocales();
@@ -37,7 +37,7 @@ Locale[] locales = clientInfo.getLocales();
     influencing or leaving the application. Popup blocker may ask the user for permission before
     a new window is opened.
   </p>
-<pre>
+<pre class="lang-java">
 UrlLauncher launcher = RWT.getClient().getService( UrlLauncher.class );
 launcher.openURL( "http://www.eclipse.org/" );
 launcher.openURL( "mailto:someone@nowhere.org" );
@@ -51,7 +51,7 @@ launcher.openURL( "mailto:someone@nowhere.org" );
     The BrowserNavigation service provides support for the browser's back/forward buttons and
     deep linking. It's a complete replacement for the removed class BrowserHistory.
   </p>
-<pre>
+<pre class="lang-java">
 BrowserNavigation navigation = RWT.getClient().getService( BrowserNavigation.class );
 navigation.pushState( "cars", "Car selection" );
 </pre>
@@ -220,7 +220,7 @@ navigation.pushState( "cars", "Car selection" );
     To make an existing application extension available in RAP, you have to create a new entrypoint
     extension and specify the id of the application extension instead of an EntryPoint class:
   </p>
-<pre>
+<pre class="lang-xml">
 &lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
   &lt;entrypoint id="example.application.entrypoint"
       path="/example"

@@ -1,5 +1,13 @@
 <div>
 
+<pre class="lang-css">
+Text {
+  color: #fafafa;
+  background: rgb( 2, 3, 45 );
+  width: 23;
+}
+</pre>
+
   <h2>Network / Communication</h2>
 
   <p>
@@ -42,7 +50,7 @@
     This service can be used to execute a piece of JavaScript code on the client.
     It replaces the internal class <em>JSExecutor</em>. Example:
   </p>
-<pre>
+<pre class="lang-java">
 JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
 executor.execute( "alert( \"Hello World!\" );" );
 </pre>
@@ -54,7 +62,7 @@ executor.execute( "alert( \"Hello World!\" );" );
     The JavaScriptLoader will ensure that the file is loaded only once, even if <em>require()</em>
     is called subsequently.
   </p>
-<pre>
+<pre class="lang-java">
 JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
 loader.require( "rwt-resources/myComponent/MyFile.js" );
 </pre>
@@ -66,7 +74,7 @@ loader.require( "rwt-resources/myComponent/MyFile.js" );
     In this version, the service provides the client's locale and its timezone offset in minutes.
     Unfortunately, it's not possible to obtain the actual timezone region from the browser.
   </p>
-<pre>
+<pre class="lang-java">
 ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
 int timezoneOffset = clientInfo.getTimezoneOffset();
 Locale clientLocale = clientInfo.getLocale();
@@ -78,7 +86,7 @@ Locale clientLocale = clientInfo.getLocale();
     influencing or leaving the application. Popup blocker may ask the user for permission before
     a new window is opened.
   </p>
-<pre>
+<pre class="lang-java">
 UrlLauncher launcher = RWT.getClient().getService( UrlLauncher.class );
 launcher.openURL( "http://www.eclipse.org/" );
 launcher.openURL( "mailto:someone@nowhere.org" );
@@ -92,7 +100,7 @@ launcher.openURL( "mailto:someone@nowhere.org" );
     The BrowserNavigation service provides support for the browser's back/forward buttons and
     deep linking. It's a complete replacement for the removed class BrowserHistory.
   </p>
-<pre>
+<pre class="lang-java">
 BrowserNavigation navigation = RWT.getClient().getService( BrowserNavigation.class );
 navigation.pushState( "main", "Main View" );
 </pre>
@@ -103,7 +111,7 @@ navigation.pushState( "main", "Main View" );
     application.
     It is no longer possible to do this in a branding. Example:
   </p>
-<pre>
+<pre class="lang-java">
 ExitConfirmation confirmation = RWT.getClient().getService( ExitConfirmation.class );
 confirmation.setMessage( "Where do you think you're going?!" );
 </pre>
@@ -417,7 +425,7 @@ http://hostname/webapp/foo
     element <em>associatedEntrypoints</em> from the <em>branding</em> extension point.
     A branding can now be bound to an entrypoint by setting the new attribute <em>brandingId</em>.
   </p>
-<pre>
+<pre class="lang-xml">
 &lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
   &lt;entrypoint id="example.entrypoint"
       class="example.MyEntryPoint"
@@ -451,7 +459,7 @@ http://hostname/webapp/foo
     To do so, create a new entrypoint extension and, instead of providing an EntryPoint class,
     specify the id of the application extension in the new parameter <em>applicationId</em>:
   </p>
-<pre>
+<pre class="lang-xml">
 &lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
   &lt;entrypoint id="example.application.entrypoint"
       path="/example"

@@ -24,7 +24,7 @@
     That's all there is to do to create the object on the client and set a property on it.
     The framework will render a <em>create</em> operation to the client.
   </p>
-<pre>
+<pre class="lang-java">
 Connection connection = RWT.getUISession().getConnection();
 RemoteObject remoteObject = connection.createRemoteObject( "example.CoffeeMachine" );
 remoteObject.set( "sugar", false );
@@ -35,7 +35,7 @@ remoteObject.set( "sugar", false );
     To receive updates from the client, you have to add an operation handler to the remote object.
     This operation handler has <em>handle…</em> methods for all relevant protocol operations.
   </p>
-<pre>
+<pre class="lang-java">
 remoteObject.setHandler( new AbstractOperationHandler() {
 
   @Override
@@ -75,7 +75,8 @@ remoteObject.setHandler( new AbstractOperationHandler() {
     the name of a destructor function, and a list of supported properties, events and methods.
     A typical type handler might look like this:
   </p>
-  <pre><code>rap.registerTypeHandler( "example.CoffeeMachine", {
+<pre class="lang-js">
+rap.registerTypeHandler( "example.CoffeeMachine", {
 
   factory : function( properties ) {
     return new CoffeeMachine( properties );
@@ -85,13 +86,14 @@ remoteObject.setHandler( new AbstractOperationHandler() {
 
   properties : [ "sugar", "power" ],
 
-  events : [ "Selection" ]
+  events : [ "Ready" ]
 
-} );</code></pre>
+} );
+</pre>
   <p>
     The object that is returned in the factory is stored by the framwork. This "client object"
-    has to implement setter that match the properties defined in the handler, which will then
-    be called when the server sends a "set" operation for a given property.
+    has to implement setter methods that match the properties defined in the handler, which will
+    then be called when the server sends a "set" operation for a given property.
   </p>
   <h3>Remote Object (client)</h3>
   <p>
@@ -100,9 +102,11 @@ remoteObject.setHandler( new AbstractOperationHandler() {
     with <em>set</em>, <em>call</em> and <em>notify</em> methods. If, for example, the custom
     widget wishes to inform the server that the value of "text" changed, it could look like this:
   </p>
-  <pre><code>var remoteObject = rap.getRemoteObject( this );
+<pre class="lang-js">
+var remoteObject = rap.getRemoteObject( this );
 remoteObject.set( "text", this.getText() );
-remoteObject.notify( "Modify" );</code></pre>
+remoteObject.notify( "Modify" );
+</pre>
 
   <h2>Simplified EntryPoints</h2>
   <p>
@@ -116,7 +120,7 @@ remoteObject.notify( "Modify" );</code></pre>
     itself.
     The following code snippet shows a minimal but complete entry point:
   </p>
-<pre lang="java">
+<pre class="lang-java">
 public class HelloEntryPoint extends AbstractEntryPoint {
 
   @Override

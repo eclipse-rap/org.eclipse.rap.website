@@ -11,7 +11,7 @@
     This service can be used to execute a piece of JavaScript code on the client.
     It replaces the internal class <em>JSExecutor</em>. Example:
   </p>
-<pre>
+<pre class="lang-java">
 JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
 executor.execute( "alert( \"Hello World!\" );" );
 </pre>
@@ -22,7 +22,7 @@ executor.execute( "alert( \"Hello World!\" );" );
     This replaces the <em>IBrowserHistory</em> interface and <em>RWT.getBrowserHistory()</em>.
     Example:
   </p>
-<pre>
+<pre class="lang-java">
 BrowserHistory history = RWT.getClient().getService( BrowserHistory.class );
 history.createEntry( "main", "Main View" );
 </pre>
@@ -33,7 +33,7 @@ history.createEntry( "main", "Main View" );
     application.
     It is no longer possible to do this in a branding. Example:
   </p>
-<pre>
+<pre class="lang-java">
 ExitConfirmation confirmation = RWT.getClient().getService( ExitConfirmation.class );
 confirmation.setMessage( "Where do you think you're going?!" );
 </pre>
@@ -160,7 +160,7 @@ http://hostname/webapp/foo
     entrypoint. The old attribute <em>parameter</em> is not supported anymore.
     Here's an example <em>plugin.xml</em> snippet:
   </p>
-<pre>
+<pre class="lang-xml">
 &lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
   &lt;entrypoint id="example.entrypoint"
       class="example.MyEntryPoint"
@@ -175,7 +175,7 @@ http://hostname/webapp/foo
     To make an application available at a certain path, add a parameter named <em>path</em>
     to your extension:
   </p>
-<pre>
+<pre class="lang-xml">
 &lt;extension id="example.app" point="org.eclipse.core.runtime.applications"&gt;
   &lt;application thread="main" cardinality="singleton-global" visible="true"&gt;
     &lt;run class="example.Application"&gt;
@@ -195,7 +195,7 @@ http://hostname/webapp/foo
     element <em>associatedEntrypoints</em> from the <em>branding</em> extension point.
     A branding can now be bound to an entrypoint by setting the new attribute <em>brandingId</em>.
   </p>
-<pre>
+<pre class="lang-xml">
 &lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
   &lt;entrypoint id="example.entrypoint"
       class="example.MyEntryPoint"
@@ -208,12 +208,12 @@ http://hostname/webapp/foo
     To bind a branding to an <em>IApplication</em>, add a parameter <em>brandingId</em> to the
     application extension point.
   </p>
-<pre>
+<pre class="lang-xml">
 &lt;extension id="example.app" point="org.eclipse.core.runtime.applications"&gt;
   &lt;application thread="main" cardinality="singleton-global" visible="true"&gt;
     &lt;run class="example.Application"&gt;
       &lt;parameter name="path" value="/mail" /&gt;
-      <strong>&lt;parameter name="brandingId" value="removeme.branding /"&gt;</strong>
+      <strong>&lt;parameter name="brandingId" value="example.branding /"&gt;</strong>
     &lt;/run&gt;
   &lt;/application&gt;
 &lt;/extension&gt;
