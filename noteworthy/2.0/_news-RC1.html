@@ -3,7 +3,7 @@
   <h2>New Java API for Custom Widgets</h2>
   <p>
     With RAP 2.0, it's becoming a lot easier to write custom widgets or other add-ons for RAP.
-    We have published a new Java API to synchronize server-side objects with their related objects
+    We've published a new Java API to synchronize server-side objects with their related objects
     on the client.
     This API is built on the new <a href="http://wiki.eclipse.org/RAP/Protocol">RAP protocol</a>
     and it lets you send updates directly to the client
@@ -21,8 +21,8 @@
   <p>
     The following snippet shows how to create a remote object of the type
     <em>example.CoffeeMachine</em> and set the property <em>sugar</em> to the value <em>false</em>.
-    That's all there is to do to create the object on the client and set a property on it.
-    The framework will render a <em>create</em> operation to the client.
+    That's all there is to do to send a <em>create</em> operation to the client with the initial
+    property included.
   </p>
 <pre class="lang-java">
 Connection connection = RWT.getUISession().getConnection();
@@ -54,25 +54,25 @@ remoteObject.setHandler( new AbstractOperationHandler() {
 
   <h2>New JavaScript API for Custom Widgets</h2>
   <p>
-    For the first time RAP features official, public JavaScript API.
-    There are now two objects in the global namespace of the JavaScript client: "rap" and "rwt".
-    Everything that is in "rap" and
-    <a href="http://download.eclipse.org/rt/rap/doc/2.0/guide/reference/jsdoc/index.html">
-    documented in the RAP API reference</a> is considered public.
-    The "rwt" namespace contains all internals, and should not be used in any way. (It may
-    not be accessable in future RAP versions.)
+    For the first time ever, RAP provides public JavaScript API.
+    There's now an object named <em>rap</em> in the global namespace of the JavaScript client.
+    All methods contained in this object are documented in the
+    <a href="http://download.eclipse.org/rt/rap/doc/2.0/guide/reference/jsdoc/index.html">RAP API reference</a>
+    together with their return types.
+    The most important methods are <em>registerTypeHandler</em> and <em>getRemoteObject</em>.
   </p>
   <p>
-    The "rap" object can be used when you add JavaScript to the client using the JavaScriptLoader,
-    the JavaScriptExecuter, or the ClientScripting add-on. It's most important methods are
-    "registerTypeHandler" and "getRemoteObject".
+    This API can also be used in JavaScript code added by the JavaScriptLoader, the
+    JavaScriptExecutor, or the ClientScripting add-on.
   </p>
+
   <h3>Registering type handler</h3>
   <p>
-    A type handler on the client defines how a protocol message for a target of a specific <em>type</em>
-    should be handled. At minimum it defines a factory that is called for create operations
-    (i.e. when a <code>RemoteObject</code> is created on the server). It can also define
-    the name of a destructor function, and a list of supported properties, events and methods.
+    A type handler defines how protocol messages for a specific <em>type</em> should be handled.
+    At minimum it defines a <em>factory</em> function that is used to create an object of this type
+    when the server sends a <em>create</em> operation.
+    It can also define the name of a <em>destructor</em> function, and a list of supported
+    <em>properties</em>, <em>events</em> and <em>methods</em>.
     A typical type handler might look like this:
   </p>
 <pre class="lang-js">
@@ -91,16 +91,17 @@ rap.registerTypeHandler( "example.CoffeeMachine", {
 } );
 </pre>
   <p>
-    The object that is returned in the factory is stored by the framwork. This "client object"
-    has to implement setter methods that match the properties defined in the handler, which will
-    then be called when the server sends a "set" operation for a given property.
+    The created object is stored by the framework under its object id.
+    This object has to implement setter methods that match the properties defined in the handler,
+    which will then be called when the server sends a <em>set</em> operation for a given property.
   </p>
   <h3>Remote Object (client)</h3>
   <p>
     Just like the server, the client provides a <em>RemoteObject</em> that represents the
-    server-side counterpart of a client object. It also features a very similar API,
-    with <em>set</em>, <em>call</em> and <em>notify</em> methods. If, for example, the custom
-    widget wishes to inform the server that the value of "text" changed, it could look like this:
+    server-side counterpart of a client object. It has a very similar API, with <em>set</em>,
+    <em>call</em> and <em>notify</em> methods.
+    If, for example, the custom widget wishes to inform the server that the value of the property
+    <em>text</em> changed, it could look like this:
   </p>
 <pre class="lang-js">
 var remoteObject = rap.getRemoteObject( this );
