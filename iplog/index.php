@@ -34,14 +34,15 @@ printHeader();
     The following are approved IP logs for past RAP project releases.
   </p>
   <ul>
-    <li><a href="rap-1.5.html">Juno (1.5)</a></li>
-    <li><a href="rap-1.4.pdf">Indigo (1.4) (pdf)</a></li>
-    <li><a href="rap-1.3.pdf">Helios (1.3) (pdf)</a></li>
-    <li><a href="rap-1.2.html">Galileo (1.2)</a></li>
+    <li><a href="rt.rap-2.0-iplog.html">RAP 2.0</a></li>
+    <li><a href="rap-1.5.html">RAP 1.5 (Juno)</a></li>
+    <li><a href="rap-1.4.pdf">RAP 1.4 (Indigo) (pdf)</a></li>
+    <li><a href="rap-1.3.pdf">RAP 1.3 (Helios) (pdf)</a></li>
+    <li><a href="rap-1.2.html">RAP 1.2 (Galileo)</a></li>
     <!--
-      <li><a href="../rap-ip.log">Ganymede (1.1)</a></li>
+      <li><a href="rap-ip.log">RAP 1.1 (Ganymede)</a></li>
+      <li><a href="rap-ip.log">RAP 1.0</a></li>
     -->
-    <li><a href="../rap-ip.log">Version 1.0</a></li>
   </ul>
 
 </div>
