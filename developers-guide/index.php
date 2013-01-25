@@ -35,8 +35,8 @@ printHeader( $title, $navPosition );
 ?>
 
 <div id="midcolumn">
-  <h1 style = "margin-bottom: 3px" >Developer's Guide for RAP <?=$version ?></h1>
   <?=implode( ' | ', $versionNav );?>
+  <h1 style = "margin-bottom: 3px" >Developer's Guide for RAP <?=$version ?></h1>
   <?php
 if( $version == DevGuideUtils::MASTER_VERSION ) {
   print   '<h3>Note:</h3><em>This version of RAP is currently under development and '
