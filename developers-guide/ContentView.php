@@ -59,7 +59,7 @@ class ContentView {
     if( self::startsWith( $path, '/help' ) ) {
       $result = str_replace( '/help', 'http://help.eclipse.org', $path );
     } else if( self::startsWith( $path, '../reference' ) ) {
-      $result = self::$paths[ 'rootUrl' ] . self::$paths[ 'topicPath' ] . trim( $path, "./" );
+      $result = self::$paths[ 'apiUrl' ] .  substr ( $path, 13 );
     } else if( containsString( $path, '.html' ) ) {
       $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $path );
       $result = '?topic=' . trim( $normalizedUrl, "/" ) . '&version=' . self::$version;
