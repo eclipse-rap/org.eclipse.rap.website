@@ -2,16 +2,10 @@
 
 class DevGuideUtils {
 
-  const CURRENT_VERSION = '1.5';
-  const MASTER_VERSION = '2.0';
+  const CURRENT_VERSION = '2.0';
+  const MASTER_VERSION = '2.1';
 
   public static $versions = array(
-    '1.4' => array(
-      'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/1.4/',
-      'apiUrl' => 'http://download.eclipse.org/rt/rap/doc/1.4/help/html/reference/',
-      'tocPath' => 'help/toc.xml',
-      'topicPath' => 'help/html/'
-    ),
     '1.5' => array(
       'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/1.5/',
       'apiUrl' => 'http://download.eclipse.org/rt/rap/doc/1.5/help/html/reference/',
