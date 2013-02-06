@@ -64,7 +64,7 @@ class NavigationView {
     $active = '';
     $style = self::createLinkStyle( $url );
     if( isset( $_GET[ 'topic' ] ) ) {
-      $active = $url === $_GET[ 'topic' ] ? ' class="active"' : '';
+      $active = strrpos( $url, $_GET[ 'topic' ] ) != false ? ' class="active"' : '';
     }
     $result =   '<li><a'
                . $active
