@@ -6,7 +6,7 @@
   $PAGE_NAV_POSITION = array( "home", "incubator" );
 
   $WEB_ROOT = "http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator";
-  $REPO_ROOT = "http://download.eclipse.org/rt/rap/incubator/nightly/";
+  $REPO_ROOT = "http://download.eclipse.org/rt/rap/incubator/";
 
   printHeader();
 
@@ -37,7 +37,9 @@
     $COMPONENT_MAINTAINER = $component->maintainer;
     $COMPONENT_DESCRIPTION = $component->description->asXML();
     $COMPONENT_WEBURL = $WEB_ROOT . '.' . $COMPONENT_ID . '.git';
-    $COMPONENT_REPO = $REPO_ROOT . $COMPONENT_ID . "/";
+    $COMPONENT_REPO = $REPO_ROOT . "nightly/" . $COMPONENT_ID . "/";
+    $COMPONENT_REPO_20 = $REPO_ROOT . "2.0/" . $COMPONENT_ID . "/";
+    $RAP20_ENABLED = array( "clientscripting", "nebula-grid", "pde", "fileupload" );
    ?>
     <div class="box">
       <div class="images">
@@ -57,6 +59,11 @@
         <p>
           <strong>Nightly builds p2 repository:</strong> <a href="<?= $COMPONENT_REPO ?>"><?= $COMPONENT_REPO ?></a>
         </p>
+        <? if( in_array( $COMPONENT_ID, $RAP20_ENABLED ) ) : ?>
+        <p>
+          <strong>RAP 2.0 compatible p2 repository:</strong> <a href="<?= $COMPONENT_REPO_20 ?>"><?= $COMPONENT_REPO_20 ?></a>
+        </p>
+        <? endif ?>
       </div>
       <div style="clear:both"></div>
     </div>
