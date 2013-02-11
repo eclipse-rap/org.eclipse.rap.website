@@ -9,7 +9,7 @@
 
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
-  $releaseBuilds = new Builds( "1.5" );
+  $releaseBuilds = new Builds( "2.0" );
   $stableBuilds = new Builds( "2.0" );
 
   // ---
@@ -32,17 +32,17 @@
   $STABLE_TOOLING_UPDATE_SITE = $stableBuilds->getUpdateSite( "tools" );
 
   $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds->getDescription( "runtime" );
-  $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds->getDescription( "tooling" );
+  $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds->getDescription( "tools" );
   $RELEASE_NAME = $releaseBuild->getName() . ' ' . $releaseBuild->getType();
   $RELEASE_DATE = formatDate( $releaseBuild->getPublishDate() );
   $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild->getNews();
   $RELEASE_NOTES_URL = $releaseBuild->getReleaseNotes() ? $newsUrl . $releaseBuild->getReleaseNotes() : "";
   $RELEASE_RUNTIME_ZIP = $releaseBuild->getZipFile( "runtime" );
-  $RELEASE_TOOLING_ZIP = $releaseBuild->getZipFile( "tooling" );
+  $RELEASE_TOOLING_ZIP = $releaseBuild->getZipFile( "tools" );
   $RELEASE_RUNTIME_ZIP_URL = $releaseBuild->getZipFileUrl( "runtime" );
-  $RELEASE_TOOLING_ZIP_URL = $releaseBuild->getZipFileUrl( "tooling" );
+  $RELEASE_TOOLING_ZIP_URL = $releaseBuild->getZipFileUrl( "tools" );
   $RELEASE_RUNTIME_UPDATE_SITE = $releaseBuilds->getUpdateSite( "runtime" );
-  $RELEASE_TOOLING_UPDATE_SITE = $releaseBuilds->getUpdateSite( "tooling" );
+  $RELEASE_TOOLING_UPDATE_SITE = $releaseBuilds->getUpdateSite( "tools" );
 
 ?>
 

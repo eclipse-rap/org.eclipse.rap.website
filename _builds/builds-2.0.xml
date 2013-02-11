@@ -74,10 +74,10 @@
 
   <build name="2.0" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2013-02-11"
       news="2.0/"
-      runtimeZip=""
-      toolsZip="" />
+      runtimeZip="rap-2.0.0-R-20130205-1849.zip"
+      toolsZip="rap-tools-2.0.0-R-20130206-1113.zip" />
 
 </builds>
