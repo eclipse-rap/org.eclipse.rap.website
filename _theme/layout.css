@@ -285,7 +285,7 @@ img.framed {
   border: 1px solid #bdbdbd;
   box-shadow: 0 0 4px #adadad;
   margin-top: 15px;
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 a {
@@ -606,7 +606,7 @@ div#blog-posts-container {
   background: -moz-radial-gradient(left 45deg, circle farthest-side, white, #e5e5e5);
   background: -webkit-gradient(radial, center center, 80, center center, 400, from(#fff), to(#e5e5e5));
   background: -webkit-radial-gradient(center, #fff, #e5e5e5); /* new webkit syntax */
-  background: -o-radial-gradient(center, #fff, #e5e5e5); 
+  background: -o-radial-gradient(center, #fff, #e5e5e5);
   background: -ms-radial-gradient(center, #fff, #e5e5e5);
   background: radial-gradient(center, circle farthest-side, #fff, #e5e5e5); /* W3C Standard */
 }
@@ -896,4 +896,36 @@ div.sideitem .rssIcon {
   float: right;
   margin-right: 8px;
   margin-top: 2px;
+}
+
+/* Animations */
+
+.attention {
+  animation: fadeInOutIn 2s;
+  -moz-animation: fadeInOutIn 2s;
+  -webkit-animation: fadeInOutIn 2s;
+}
+
+@keyframes fadeInOutIn {
+  from { opacity: 0.1;}
+  10% { ppacity: 0; }
+  40% { opacity: 0.9;}
+  60% { opacity: 0.2;}
+  to {opacity: 1;}
+}
+
+@-moz-keyframes fadeInOutIn {
+  from { opacity: 0.1;}
+  10% { ppacity: 0; }
+  40% { opacity: 0.9;}
+  60% { opacity: 0.2;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeInOutIn {
+  from { opacity: 0.1;}
+  10% { ppacity: 0; }
+  40% { opacity: 0.9;}
+  60% { opacity: 0.2;}
+  to {opacity: 1;}
 }

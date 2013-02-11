@@ -1,4 +1,4 @@
-<div class="sideitem">
+<div class="sideitem attention">
 
   <h6>RAP 2.0 Migration Guide</h6>
 

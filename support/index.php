@@ -24,6 +24,14 @@
   </div>
 
   <div>
+    <h2>Migration Guide</h2>
+    <p>
+      The <a href="/rap/noteworthy/2.0/migration-guide/">RAP 2.0 Migration Guide</a>
+      documents all breaking changes between RAP 1.x and RAP 2.0
+    </p>
+  </div>
+
+  <div>
     <h2>FAQ</h2>
     <p>
       Go to
