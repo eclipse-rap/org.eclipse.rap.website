@@ -1,0 +1,26 @@
+<div>
+
+  <h2>Widget Set</h2>
+
+  <h3>Enhanced markup hyperlinks</h3>
+
+  <p>
+    Markup support for Tree and Table has been added in RAP 1.5. By using <code>&lt;a&gt;</code> 
+    tag you could add hyperlinks to your item text. Instead of "real" hyperlinks, that open a page 
+    in the browser, now it's possible to add hyperlinks that trigger selection event on the server. 
+    Such a links must have a <code>target</code> attribute set to <code>_rwt</code>.
+<pre>Table table = new Table( parent, SWT.BORDER );
+table.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+table.addSelectionListener( new SelectionAdapter() {
+  public void widgetSelected( SelectionEvent event ) {
+    if( event.detail == RWT.HYPERLINK ) {
+      // event.text contains the value of hyperlink href attribute
+    }
+  }
+} );
+TableItem item = new TableItem( table, SWT.NONE );
+item.setText( "&lt;a href=\"http://www.eclipse.org\" target=\"_rwt\"&gt;Eclipse.org"&lt;/a&gt;" );
+</pre>
+  </p>
+
+</div>
