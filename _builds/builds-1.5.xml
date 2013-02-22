@@ -122,8 +122,10 @@
 
   <build name="1.5.2" type="SR"
       shortname="SR2"
-      status="planned"
+      status="completed"
       publishDate="2013-02-22"
-      news="1.5/" />
+      news="1.5/?build=SR2"
+      runtimeZip="rap-runtime-1.5.2-R-20130205-2012.zip"
+      toolingZip="rap-tooling-1.5.2-R-20130205-2030.zip" />
 
 </builds>
