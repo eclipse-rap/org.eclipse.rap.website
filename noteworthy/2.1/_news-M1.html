@@ -2,32 +2,61 @@
 
   <h2>Widget Set</h2>
 
-  <h3>Enhanced hyperlinks in markup</h3>
+  <h3>Listener Support on Markup Hyperlinks</h3>
 
   <p>
     Markup support for Tree and Table has been added in RAP 1.5. By using <code>&lt;a&gt;</code>
-    tag you could add hyperlinks to your item text. Instead of "real" hyperlinks, that open a page
-    in the browser, now it's possible to add hyperlinks that trigger selection event on the server.
-    Such a links must have a <code>target</code> attribute set to <code>_rwt</code>.
-<pre>Table table = new Table( parent, SWT.BORDER );
+    tags you can add hyperlinks to your item text. In addition to “real” hyperlinks, that open a
+    page in the browser, it is now also possible to let those hyperlinks trigger a selection event.
+  </p>
+  <p>
+    To do so, you have to set the <em>target</em> attribute to <q>_rwt</q>.
+    Clicking on the link will trigger an <em>SWT.Selection</em> event with the <em>details</em>
+    field set to the constant <em>RWT.HYPERLINK</em>.
+  </p>
+
+<pre class="lang-java">
+Table table = new Table( parent, SWT.BORDER );
 table.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
 table.addSelectionListener( new SelectionAdapter() {
   public void widgetSelected( SelectionEvent event ) {
-    if( event.detail == RWT.HYPERLINK ) {
+    if( event.detail == <strong>RWT.HYPERLINK</strong> ) {
       // event.text contains the value of hyperlink href attribute
     }
   }
 } );
 TableItem item = new TableItem( table, SWT.NONE );
-item.setText( "&lt;a href=\"http://www.eclipse.org\" target=\"_rwt\"&gt;Eclipse.org"&lt;/a&gt;" );
+item.setText( "&lt;a href=\"edit-item\" <strong>target=\"_rwt\"</strong>&gt;edit\"&lt;/a&gt;" );
 </pre>
-  </p>
 
   <h3>Accelerator support for MenuItem</h3>
 
   <p>
-    The missing API for dealing with <code>MenuItem</code> accelerator has been added. It behaves
-    exactly the same as in SWT.
+    The SWT method <code>MenuItem.setAccelerator( int )</code> has been implemented.
+    This method can be used to bind key shortcuts to menu items easily.
   </p>
+
+  <h3>Custom Exception Handlers</h3>
+
+  <p>
+    When registering an application using an ApplicationConfiguration, you can now add a custom
+    exception hander to catch and process exceptions that happen in your event handling code.
+  </p>
+  <p>
+    This handler can be used to display a custom error page instead of the default HTTP 500
+    containing the stacktrace.
+    If you find that the exception is not critical, you can also decide to write the exception
+    to an error log and let the application continue.
+  </p>
+
+<pre class="lang-java">
+application.setExceptionHandler( new ExceptionHandler() {
+  @Override
+  public void handleException( Throwable exception ) {
+    // display error dialog, redirect to error page,
+    // write exception to log, ...
+  }
+});
+</pre>
 
 </div>
