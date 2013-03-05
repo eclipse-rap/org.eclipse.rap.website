@@ -61,8 +61,17 @@ application.setExceptionHandler( new ExceptionHandler() {
 });
 </pre>
 
-  <h2>Network / Communication</h2>
-  
-  <h3>Destroy UI session on browser close</h3>
+  <h3>Terminate UISession when Leaving Browser Page</h3>
+
+  <p>
+    An improvement that has often been requested (<?=bug(284273)?>) is to terminate a UISession
+    as soon as the user navigates away from the browser page.
+  </p>
+  <p>
+    Now the WebClient sends a notification to the server just before the page is left.
+    The server will then terminate the UISession.
+    For applications with a long session timeout, this feature will significantly reduce the memory
+    consumed by active UISessions.
+  </p>
 
 </div>
