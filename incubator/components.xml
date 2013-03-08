@@ -18,6 +18,22 @@
     </p>
   </description>
 </component>
+<component id="osgi-packaging">
+  <name>
+    OSGi-Packaging
+  </name>
+  <maintainer>
+    Markus Knauer
+  </maintainer>
+  <description>
+    <p>
+      OSGi-Packaging re-packages RAP bundles plus important bundles from the Eclipse
+      ecosystem to be used in OSGi containers other than Equinox. As a start it provides
+      the necessary Karaf features and Karaf archive in order to run RAP applications
+      in Apache Karaf.
+    </p>
+  </description>
+</component>
 <component id="fileupload">
   <name>
     FileUpload
@@ -88,6 +104,9 @@
     <p>
       Ports of the plugin-spy and error log views from
       <a href="http://www.eclipse.org/pde/pde-ui/">PDE UI</a>.
+    </p>
+    <p>
+      <a href="http://wiki.eclipse.org/RAP/Incubator/PDERuntime">wiki page</a>
     </p>
   </description>
 </component>

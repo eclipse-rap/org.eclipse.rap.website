@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPONENTS="clientscripting fileupload nebula-grid cnf gef pde tabbed-properties visualization"
+COMPONENTS="clientscripting osgi-packaging fileupload nebula-grid cnf gef pde tabbed-properties visualization"
 REPO_ROOT="$HOME/git"
 
 echo '<?xml version="1.0" encoding="UTF-8"?>'

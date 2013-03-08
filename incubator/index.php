@@ -39,6 +39,7 @@
     $COMPONENT_WEBURL = $WEB_ROOT . '.' . $COMPONENT_ID . '.git';
     $COMPONENT_REPO = $REPO_ROOT . "nightly/" . $COMPONENT_ID . "/";
     $COMPONENT_REPO_20 = $REPO_ROOT . "2.0/" . $COMPONENT_ID . "/";
+    $NIGHTLY_ENABLED = array( "clientscripting", "cnf", "fileupload", "gef", "nebula-grid", "pde", "tabbed-properties", "visualization" );
     $RAP20_ENABLED = array( "clientscripting", "nebula-grid", "pde", "fileupload" );
    ?>
     <div class="box">
@@ -56,9 +57,11 @@
         <p>
           <strong>Git repository:</strong> <a href="<?= $COMPONENT_WEBURL ?>"><?= $COMPONENT_WEBURL ?></a>
         </p>
+        <? if( in_array( $COMPONENT_ID, $NIGHTLY_ENABLED ) ) : ?>
         <p>
           <strong>Nightly builds p2 repository:</strong> <a href="<?= $COMPONENT_REPO ?>"><?= $COMPONENT_REPO ?></a>
         </p>
+        <? endif ?>
         <? if( in_array( $COMPONENT_ID, $RAP20_ENABLED ) ) : ?>
         <p>
           <strong>RAP 2.0 compatible p2 repository:</strong> <a href="<?= $COMPONENT_REPO_20 ?>"><?= $COMPONENT_REPO_20 ?></a>
