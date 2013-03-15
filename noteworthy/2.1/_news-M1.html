@@ -36,6 +36,34 @@ item.setText( "&lt;a href=\"edit-item\" <strong>target=\"_rwt\"</strong>&gt;edit
     This method can be used to bind key shortcuts to menu items easily.
   </p>
 
+  <h3>Mnemonic support</h3>
+  <p>
+    The following widgets now support Mnemonics:
+  </p>
+  <ul>
+    <li>Button</li>
+    <li>ToolItem</li>
+    <li>TabItem</li>
+    <li>CTabItem</li>
+    <li>Label</li>
+    <li>CLabel</li>
+    <li>Group</li>
+  </ul>
+
+  <p>
+    Mnemonics must be enabled once per session by setting the modifier key or key-combination
+    that makes the Mnemonics visible:
+  </p>
+<pre class="lang-java">
+display.setData( RWT.MNEMONIC_ACTIVATOR, "CTRL+ALT" );
+</pre>
+  <p>
+    Any combination of CTRL, SHIFT and ALT is valid. You should not use ALT by itself, because the
+    OS may already be using that. Unlike in Windows, the Mnemonics disappear again when the modifier
+    is released. Any character can be made a Mnemonic by inserting an &amp; before it. However,
+    only a-z, A-Z and 0-9 will be recognized when the matching key is pressed. Mnemonics have
+    a higher priority than KeyBindings, Accelerators or Key Events.
+  </p>
   <h2>Applications</h2>
 
   <h3>Custom Exception Handlers</h3>
