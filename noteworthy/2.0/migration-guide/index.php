@@ -417,11 +417,20 @@ navigation.<ins>pushState</ins>( "main", "Main View" );
   <h2>Changes for Custom Components</h2>
 
   <p>
-    Custom widgets and other components must now read and write JSON protocol messages.
+    Custom widgets and other components must now read and write JSON protocol messages using the
+    new RemoteObject APIs on client and server.
     Components that read parameters from the request write JavaScript directly, e.g. using
     <em>JSWriter</em>, will not work anymore.
-    For the migration of those components, we'd recommend to wait until M4.
-    We're looking forward to provide more assistance for component developers.
+  </p>
+  <p>
+    Please check the 
+    <a href="/rap/developers-guide/devguide.php?topic=custom-widget.html&version=2.0">RAP Developer's Guide</a>
+    and the
+    <a href="/rap/noteworthy/2.0/">RAP 2.0 New and Noteworthy</a>
+    for more information about these new APIs.
+    The
+    <a href="https://github.com/eclipsesource/rap-ckeditor">CkEditor for RAP</a>
+    is a good example for a custom widget that uses these new APIs.
   </p>
 
   <h2>Settings</h2>
