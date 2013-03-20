@@ -1,0 +1,18 @@
+<div>
+
+  <h2>Widget Set</h2>
+
+  <h3>Improved Accelerator support for MenuItem</h3>
+
+  <p>
+    On the MenuItems, all text after a tab character will now be aligned to the right of the item,
+    which is typically used to display the keyboard shortcut of the accelerator. Example:
+  </p>
+  <pre class="lang-java">
+MenuItem item = new MenuItem( parent, SWT.PUSH );
+item.setText( "Push One\tCtrl+Shift+1" );
+item.setAccelerator( SWT.CTRL | SWT.SHIFT | '1' );
+  </pre>
+
+
+</div>
