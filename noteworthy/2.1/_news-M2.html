@@ -28,7 +28,7 @@ item.setAccelerator( SWT.CTRL | SWT.SHIFT | '1' );</pre>
   <h3>Support for display resize listener</h3>
 
   <p>
-    It's now possible to attach an untyped <code>SWT.Resize</code> event listener to 
+    It's now possible to attach an untyped <code>SWT.Resize</code> event listener to
     <code>Display</code>. This listener will be notified when the browser changes its size.
     <pre class="lang-java">
 display.addListener( SWT.Resize, new Listener() {
@@ -36,6 +36,23 @@ display.addListener( SWT.Resize, new Listener() {
     System.out.println( "Browser resized: [ " + event.width + " , " + event.height + " ]" );
   }
 } );</pre>
+  </p>
+
+  <h2>Theming</h2>
+
+  <h3>Background position and repeat</h3>
+
+  <p>
+    Support for <code>background-position</code> and <code>background-repeat</code> CSS
+    properties has been added to <code>Button</code>, <code>FileUpload</code>,
+    <code>Composite</code>, <code>Label</code>, <code>CLabel</code> and <code>Link</code>. See this
+    <?=bug(361799)?> for more details.
+    <pre class="lang-css">Composite {
+  ...
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  ...
+}</pre>
   </p>
 
 </div>
