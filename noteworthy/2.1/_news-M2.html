@@ -25,4 +25,17 @@ item.setAccelerator( SWT.CTRL | SWT.SHIFT | '1' );</pre>
     With this update there are considerably less DOM elements created than before.
   </p>
 
+  <h3>Support for display resize listener</h3>
+
+  <p>
+    It's now possible to attach an untyped SWT.Resize event listener to <code>Display</code>. This
+    listener will be notified when the browser changes its size.
+    <pre class="lang-java">
+display.addListener( SWT.Resize, new Listener() {
+  public void handleEvent( Event event ) {
+    System.out.println( "Browser resized: [ " + event.width + " , " + event.height + " ]" );
+  }
+} );</pre>
+  </p>
+
 </div>
