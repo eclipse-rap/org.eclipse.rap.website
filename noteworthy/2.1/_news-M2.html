@@ -17,6 +17,38 @@ item.setAccelerator( SWT.CTRL | SWT.SHIFT | '1' );</pre>
     <img class="framed" title="Accelerator text on MenuItems" src="images/accelerator-text.png" />
   </p>
 
+  <h3>Support for display resize listener</h3>
+
+  <p>
+    It's now possible to attach an untyped <code>SWT.Resize</code> event listener to
+    <code>Display</code>. This listener will be notified when the browser changes its size.
+  </p>
+<pre class="lang-java">
+display.addListener( SWT.Resize, new Listener() {
+  public void handleEvent( Event event ) {
+    System.out.println( "Browser resized: [ " + event.width + " , " + event.height + " ]" );
+  }
+} );
+</pre>
+
+  <h2>Theming</h2>
+
+  <h3>Background position and repeat</h3>
+
+  <p>
+    Support for the CSS properties <code>background-position</code> and <code>background-repeat</code>
+    has been added to the following widgets: <code>Button</code>, <code>FileUpload</code>,
+    <code>Composite</code>, <code>Label</code>, <code>CLabel</code> and <code>Link</code>.
+    See <?=bug(361799)?> for more details.
+  </p>
+<pre class="lang-css">
+Composite {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  ...
+}
+</pre>
+
   <h3>Improved Internet Explorer 10 Support</h3>
 
   <p>
@@ -25,34 +57,28 @@ item.setAccelerator( SWT.CTRL | SWT.SHIFT | '1' );</pre>
     With this update there are considerably less DOM elements created than before.
   </p>
 
-  <h3>Support for display resize listener</h3>
+  <h2>Applications</h2>
+
+  <h3>Access ApplicationContext from a UISession</h3>
 
   <p>
-    It's now possible to attach an untyped <code>SWT.Resize</code> event listener to
-    <code>Display</code>. This listener will be notified when the browser changes its size.
-    <pre class="lang-java">
-display.addListener( SWT.Resize, new Listener() {
-  public void handleEvent( Event event ) {
-    System.out.println( "Browser resized: [ " + event.width + " , " + event.height + " ]" );
+    A UISession now provides a reference to the ApplicationContext it belongs to.
+    This allows to refer to application-scoped instances such as the resource manager
+    from a non-UI thread without having to wrap the code in a UISession runnable.
+    For example, the following code:
+  </p>
+<pre class="lang-java">
+uiSession.exec( new Runnable() {
+  public void run() {
+    RWT.getResourceManager().register( ... );
   }
-} );</pre>
-  </p>
-
-  <h2>Theming</h2>
-
-  <h3>Background position and repeat</h3>
-
+} );
+</pre>
   <p>
-    Support for <code>background-position</code> and <code>background-repeat</code> CSS
-    properties has been added to <code>Button</code>, <code>FileUpload</code>,
-    <code>Composite</code>, <code>Label</code>, <code>CLabel</code> and <code>Link</code>. See this
-    <?=bug(361799)?> for more details.
-    <pre class="lang-css">Composite {
-  ...
-  background-repeat: no-repeat;
-  background-position: right bottom;
-  ...
-}</pre>
+    can now be replaced with this one-liner:
   </p>
+<pre class="lang-java">
+uiSession.getApplicationContext().getResourceManager().register( ... );
+</pre>
 
 </div>
