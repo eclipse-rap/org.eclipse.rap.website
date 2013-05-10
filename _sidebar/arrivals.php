@@ -44,7 +44,7 @@
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">MAY 10</span>
+        <span class="terminal-text terminal-arrived">ARRIVED</span>
       </span>
     </div>
 
