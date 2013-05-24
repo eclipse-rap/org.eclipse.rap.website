@@ -35,11 +35,11 @@
 
   <build name="2.1 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2013-05-24"
       news="2.1/?build=RC1"
-      runtimeZip=""
-      toolsZip="" />
+      runtimeZip="rap-2.1.0-RC1-20130520-1326.zip"
+      toolsZip="rap-tools-2.1.0-RC1-20130517-1308.zip" />
 
   <build name="2.1 RC2" type="RC"
       shortname="RC2"
