@@ -34,6 +34,7 @@ printHeader();
     The following are approved IP logs for past RAP project releases.
   </p>
   <ul>
+    <li><a href="rt.rap-2.1-iplog.html">RAP 2.1 (Kepler)</a></li>
     <li><a href="rt.rap-2.0-iplog.html">RAP 2.0</a></li>
     <li><a href="rap-1.5.html">RAP 1.5 (Juno)</a></li>
     <li><a href="rap-1.4.pdf">RAP 1.4 (Indigo) (pdf)</a></li>
