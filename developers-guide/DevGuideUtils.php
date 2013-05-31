@@ -17,6 +17,12 @@ class DevGuideUtils {
       'apiUrl' => 'http://download.eclipse.org/rt/rap/doc/2.0/guide/reference/',
       'tocPath' => 'guide/toc.xml',
       'topicPath' => 'guide/articles/'
+    ),
+    '2.1' => array(
+      'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/2.1/',
+      'apiUrl' => 'http://download.eclipse.org/rt/rap/doc/2.1/guide/reference/',
+      'tocPath' => 'guide/toc.xml',
+      'topicPath' => 'guide/articles/'
     )
   );
 
