@@ -56,7 +56,7 @@ remoteObject.set( "sugar", false );
 remoteObject.setHandler( new AbstractOperationHandler() {
 
   @Override
-  public void handleNotify( String event, Map<String, Object> properties ) {
+  public void handleNotify( String event, Map&lt;String, Object&gt; properties ) {
     // react on the event, notify listeners ...
   }
 } );
@@ -142,7 +142,7 @@ remoteObject.notify( "Modify" );
 
   <p>
     Client implementations can provide client-specific services, which can be obtained using the
-    method <em>getService( Class<T> type )</em>. Some existing API has been transformed into
+    method <em>getService( Class&lt;T&gt; type )</em>. Some existing API has been transformed into
     services of the <em>WebClient</em>.
   </p>
 
@@ -514,7 +514,6 @@ confirmation.setMessage( "Where do you think you're going?!" );
 <pre>
 http://hostname/webapp/foo
 </pre>
-  </p>
 
   <h2>Branding</h2>
 
@@ -574,7 +573,7 @@ http://hostname/webapp/foo
 
   <h3>Development Mode</h3>
   <p>
-    During development, it's recommended to start RAP in </en>development mode</en>.
+    During development, it's recommended to start RAP in <em>development mode</em>.
     In this mode, the JavaScript for the web client is not compressed and potential client-side
     errors will not be caught.
     This new setting replaces the old <em>clientLibraryVersion</em>, which has been used for this

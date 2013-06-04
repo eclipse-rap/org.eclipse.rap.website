@@ -194,7 +194,7 @@
   </p>
 
   <h3>IResource moved</h3>
-  </p>
+  <p>
     The <em>IResource</em> interface is now only used in the extension point
     <em>org.eclipse.rap.ui.resources</em> and has therefore been moved to the bundle
     <em>org.eclipse.rap.ui.workbench</em>.
@@ -424,7 +424,7 @@ navigation.<ins>pushState</ins>( "main", "Main View" );
   </p>
   <p>
     Please check the 
-    <a href="/rap/developers-guide/devguide.php?topic=custom-widget.html&version=2.0">RAP Developer's Guide</a>
+    <a href="/rap/developers-guide/devguide.php?topic=custom-widget.html&amp;version=2.0">RAP Developer's Guide</a>
     and the
     <a href="/rap/noteworthy/2.0/">RAP 2.0 New and Noteworthy</a>
     for more information about these new APIs.

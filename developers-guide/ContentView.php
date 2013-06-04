@@ -62,7 +62,7 @@ class ContentView {
       $result = self::$paths[ 'apiUrl' ] .  substr ( $path, 13 );
     } else if( containsString( $path, '.html' ) ) {
       $normalizedUrl = self::normalizeUrl( '/' . self::$path . '/' . $path );
-      $result = '?topic=' . trim( $normalizedUrl, "/" ) . '&version=' . self::$version;
+      $result = '?topic=' . trim( $normalizedUrl, "/" ) . '&amp;version=' . self::$version;
     } else {
       $result = $path;
     }

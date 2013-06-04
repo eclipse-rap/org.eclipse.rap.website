@@ -41,7 +41,7 @@ printHeader( $title, $navPosition );
 if( $version == DevGuideUtils::MASTER_VERSION ) {
   print   '<h3>Note:</h3><em>This version of RAP is currently under development and '
         . 'the Developers Guide may not yet reflect all changes. '
-        . 'The  New & Noteworthy entries of the <a href = "/rap/downloads/'
+        . 'The  New &amp; Noteworthy entries of the <a href = "/rap/downloads/'
         . $version
         . '/">milestone releases</a> provide more up to date information.</em>';
 }

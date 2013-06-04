@@ -55,7 +55,7 @@ class NavigationView {
     } else if( self::startsWith( $topicUrl, 'guide/reference/' ) ) {
       $url = $apiUrl . substr( $topicUrl, 16 );
     } else {
-      $url = 'devguide.php?topic=' . $topicUrl . '&version=' . $version;
+      $url = 'devguide.php?topic=' . $topicUrl . '&amp;version=' . $version;
     }
     return $url;
   }
