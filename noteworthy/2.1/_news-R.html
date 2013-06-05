@@ -286,4 +286,19 @@ remoteObject.setHandler( new AbstractOperationHandler() {
 } );
 </pre>
 
+  <h2>Tools</h2>
+
+  <h3>Simplified Target Installer</h3>
+  <p>
+    The target installer is meant to get beginners started quickly, so it should be as simple as
+    possible.
+    We've removed the choice between “latest stable version” and “latest release version”
+    and let the installer always get the latest target that <em>matches the tools version</em>.
+    This change will prevent incompatibilities between target and tools, which unfortunately
+    lead to some trouble in the past.
+  </p>
+  <p>
+    <img class="framed" title="Target installer" src="images/target-installer.png" />
+  </p>
+
 </div>
