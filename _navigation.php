@@ -4,14 +4,13 @@ $NAV_ENTRIES = array(
 
   "home" => array(
     "sub-entries" => array(
-
-      "about-project" => array(
-        "label" => "About this project",
-        "url" => "http://eclipse.org/projects/project.php?id=rt.rap"
-      ),
       "incubator" => array(
         "label" => "Incubator",
         "url" => "/rap/incubator/"
+      ),
+      "about-project" => array(
+        "label" => "<span class='nav-redirect'>About this project</span>",
+        "url" => "http://eclipse.org/projects/project.php?id=rt.rap"
       )
     )
   ),
@@ -42,6 +41,10 @@ $NAV_ENTRIES = array(
       "noteworthy" => array(
         "label" => "New and Noteworthy",
         "url" => "/rap/noteworthy/"
+      ),
+      "incubator" => array(
+        "label" => "<span class='nav-redirect'>Add-Ons</span>",
+        "url" => "/rap/incubator/"
       )
     )
   ),

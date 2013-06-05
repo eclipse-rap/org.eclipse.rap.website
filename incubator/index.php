@@ -8,7 +8,7 @@
   $WEB_ROOT = "http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator";
   $REPO_ROOT = "http://download.eclipse.org/rt/rap/incubator/";
 
-  printHeader();
+  printHeader( $PAGE_TITLE, $PAGE_NAV_POSITION );
 
   $components = new SimpleXMLElement( 'components.xml', null, true );
   if( $components == null ) {
@@ -19,14 +19,18 @@
 
 <div id="midcolumn">
 
-  <h1>RAP Incubator</h1>
+  <h1>RAP Incubator Add-Ons</h1>
   <p>
-    The RAP Incubator is a sub-project to make new and promising developments visible and
-    available for the community.
-    It is partitioned into components, each maintained by its own Incubator committer(s).
+    The RAP Incubator is a sub-project to make new and promising RAP add-on developments visible and
+    available for the community. It is partitioned into components, each maintained by its own
+    Incubator committer(s).
+    When a component has matured and is broadly used, it may graduate and move to the RAP project.
   </p>
   <p>
-    When a component has matured and is broadly used, it can graduate and move to the RAP project.
+    A completely
+    <a href="http://wiki.eclipse.org/RAP/Add-Ons"><b>unfiltered list</b></a> of software
+    that was developed to be used together with RAP (including this incubator components)
+    can be found in the RAP wiki.
   </p>
 
   <h2>Available components</h2>

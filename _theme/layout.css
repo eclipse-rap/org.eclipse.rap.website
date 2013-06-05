@@ -929,3 +929,19 @@ div.sideitem .rssIcon {
   60% { opacity: 0.2;}
   to {opacity: 1;}
 }
+
+.nav-redirect {
+    padding-right: 14px;
+    background: url(../images/nav-redirect.png) center right no-repeat;
+}
+
+*:hover > .nav-redirect {
+    background: url(../images/nav-redirect-hover.png) center right no-repeat;
+}
+
+/* pre-loading */
+
+body:after {
+  content: url(../images/nav-redirect.png) url(../images/nav-redirect-hover.png);
+  display: none;
+}
