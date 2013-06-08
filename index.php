@@ -140,33 +140,31 @@
     With the JFace viewer framework, applications can easily provide access to millions of data
     entries through the use of virtual rendering and lazy loading.
     RWT can be freely styled using a CSS-based
-    <a href="/rap/developers-guide/devguide.php?topic=rwt/theming.html">Theming API</a>.
+    <a href="/rap/developers-guide/devguide.php?topic=theming.html">Theming API</a>.
   </p>
-    <ul>
-      <li>
-        See the widgets in action:
-        <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples Demo</a>
-      </li>
-      <li>
-        SWT is easy to learn and nearly identical to RWT:
-        <a href="http://www.eclipse.org/swt/docs.php">SWT Documentation</a>
-      </li>
-      <li>
-        If you are already familiar with SWT, read about
-        <a href="/rap/developers-guide/devguide.php?topic=rwt/differences.html">Differences between
-        RWT and SWT</a>
-      </li>
-      <li>
-       Need more widgets? A list of known Add-Ons targeted specifically at RAP can be found in the
-       <a href="http://wiki.eclipse.org/RAP/Add-Ons">RAP Wiki</a> <!-- Nebula? -->
-      </li>
-      <li>
-       Widget behavior can be enhanced using client-side event handlers:
-       <a href="http://wiki.eclipse.org/RAP/Incubator/ClientScripting">RAP ClientScripting</a>
-      </li>
-    </ul>
-    <p>
-  </p>
+  <ul>
+    <li>
+      See the widgets in action:
+      <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples Demo</a>
+    </li>
+    <li>
+      SWT is easy to learn and nearly identical to RWT:
+      <a href="http://www.eclipse.org/swt/docs.php">SWT Documentation</a>
+    </li>
+    <li>
+      If you are already familiar with SWT, read about
+      <a href="/rap/developers-guide/devguide.php?topic=rwt.html">Differences between
+      RWT and SWT</a>
+    </li>
+    <li>
+     Need more widgets? A list of known Add-Ons targeted specifically at RAP can be found in the
+     <a href="http://wiki.eclipse.org/RAP/Add-Ons">RAP Wiki</a> <!-- Nebula? -->
+    </li>
+    <li>
+     Widget behavior can be enhanced using client-side event handlers:
+     <a href="http://wiki.eclipse.org/RAP/Incubator/ClientScripting">RAP ClientScripting</a>
+    </li>
+  </ul>
 </div>
 
 <div class="popup-content" data-for="cross-browser">
@@ -214,12 +212,12 @@
     </li>
     <li>
       If you prefer, it can also be
-      <a href="/rap/developers-guide/devguide.php?topic=advanced/deployment.html">deployed</a>
+      <a href="/rap/developers-guide/devguide.php?topic=deployment.html">deployed</a>
       as <code>.war</code> file in a traditional servlet container like Tomcat.
     </li>
     <li>
       The
-      <a href="/rap/developers-guide/devguide.php?topic=advanced/application-setup.html#compat">JEE compatibility mode</a>
+      <a href="/rap/developers-guide/devguide.php?topic=application-setup.html#compat">JEE compatibility mode</a>
       in RAP makes it possible to use
       <a href="http://wiki.eclipse.org/RAP/RWT_Cluster">clustering</a>.
     </li>
@@ -238,7 +236,7 @@
   <ul>
     <li>
       You can use the full power of the
-      <a href="http://www.eclipse.org/jdt">Java Development Tools</a> (JDT)
+      <a href="http://www.eclipse.org/jdt/">Java Development Tools</a> (JDT)
       including automated refactorings,
       <a href="http://www.vogella.com/articles/EclipseDebugging/article.html">debugger</a>,
       <a href="http://www.vogella.com/articles/JUnit/article.html">test runner</a>
@@ -295,7 +293,7 @@
           <a href="http://wiki.eclipse.org/RAP/EMF_Integration">create RAP UIs</a>.
         </li>
         <li>
-          Use <a href="http://eclipse.org/birt">Eclipse BIRT</a> (with
+          Use <a href="http://eclipse.org/birt/">Eclipse BIRT</a> (with
           <a href="http://wiki.eclipse.org/RAP/BIRT_Integration">some adjustments</a>)
           to create charts in RAP.
         </li>

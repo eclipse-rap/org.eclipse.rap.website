@@ -46,7 +46,7 @@
 
   <h2>Incubator</h2>
   <p>
-    See the <a href="/rap/incubator">Incubator page</a> for the git repositories
+    See the <a href="/rap/incubator/">Incubator page</a> for the git repositories
     of all RAP Incubator components.
   </p>
   <h2>Learn about git at Eclipse</h2>

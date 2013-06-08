@@ -26,11 +26,11 @@
   <div id="info-box">
     <div>
       <img src="/rap/images/twitter.png" alt="Twitter Logo" />
-      <a href="http://twitter.com/#!/EclipseRAP/">Follow us on Twitter</a>
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
     </div>
     <div>
       <img src="/rap/images/project-stats.png" alt="Project Information" />
-      <a href="http://eclipse.org/projects/project.php?id=rt.rap">About this project</a>
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
     </div>
   </div>
 

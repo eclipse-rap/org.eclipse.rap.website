@@ -10,7 +10,7 @@ $NAV_ENTRIES = array(
       ),
       "about-project" => array(
         "label" => "<span class='nav-redirect'>About this project</span>",
-        "url" => "http://eclipse.org/projects/project.php?id=rt.rap"
+        "url" => "http://projects.eclipse.org/projects/rt.rap"
       )
     )
   ),

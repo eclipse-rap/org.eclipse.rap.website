@@ -37,7 +37,7 @@
       it could be hosted in the
       <a href="/rap/incubator/">Incubator</a>.
       Please contact us on the
-      <a href="http://dev.eclipse.org/mhonarc/lists/rap-dev">developer mailing list</a>
+      <a href="http://dev.eclipse.org/mhonarc/lists/rap-dev/">developer mailing list</a>
       if you'd like to share your code.
     </li>
   </ul>
