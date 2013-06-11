@@ -14,7 +14,7 @@
   }
 
   $title = "RAP " . $build->getName() . " - New and Noteworthy";
-  $navPosition = array( "download", "noteworthy" );
+  $navPosition = array( "documentation", "noteworthy" );
   printHeader( $title, $navPosition );
 
 ?>

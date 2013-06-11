@@ -5,7 +5,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/NavigationView.p
 require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/DevGuideUtils.php';
 
 $title = "RAP - Developer's Guide";
-$navPosition = array( 'help', 'developers-guide' );
+$navPosition = array( 'documentation', 'developers-guide' );
 $version = DevGuideUtils::CURRENT_VERSION;
 
 if( isset( $_GET[ 'version' ] ) ) {

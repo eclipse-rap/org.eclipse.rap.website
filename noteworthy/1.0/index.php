@@ -3,7 +3,7 @@
 include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
 $PAGE_TITLE = "RAP 1.0 - New and Noteworthy";
-$PAGE_NAV_POSITION = array( "download", "noteworthy" );
+$PAGE_NAV_POSITION = array( "documentation", "noteworthy" );
 
 printHeader();
 ?>

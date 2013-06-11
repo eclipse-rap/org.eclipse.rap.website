@@ -1,8 +1,8 @@
 <?php
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
-  $title = "Articles";
-  $navPosition = array( "help", "articles" );
+  $title = "RAP - Articles";
+  $navPosition = array( "documentation", "articles" );
   printHeader( $title, $navPosition );
 
 ?>

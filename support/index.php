@@ -2,83 +2,57 @@
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
   $title = "RAP - Support";
-  $navPosition = array( "help", "support" );
+  $navPosition = array( "documentation", "support" );
   printHeader( $title, $navPosition );
 
 ?>
 
 <div id="midcolumn">
 
-  <h1>Get Help</h1>
+  <h1>Support</h1>
+
+  <h2>RAP Forum</h2>
 
   <p>
-    The following list gives you an overview of the available help resources.
+    RAP has an active community that discusses issues in the open
+    <a href="http://www.eclipse.org/forums/eclipse.technology.rap">RAP forum</a>.
+    If you couldn't find the answers you were looking for in the
+    <a href="/rap/developers-guide/</a> or in the
+    <a href="http://wiki.eclipse.org/RAP/FAQ">FAQ</a>, or if you are stuck on a particular problem,
+    the forum is the place where you can ask your questions.
+  </p>
+  <p>
+    It's also possible to read and post to the forum using a news reader.
+    Just subscribe to the newsgroup <code>eclipse.technology.rap</code> on
+    <code>news.eclipse.org</code>
+    with your favorite news reader.
+    See the
+    <a href="http://wiki.eclipse.org/index.php/Webmaster_FAQ#How_do_I_access_the_Eclipse_newsgroups.3F">Webmaster FAQ</a>
+    for details on how to subscribe.
   </p>
 
-  <div>
-    <h2>Developer's Guide</h2>
-    <p>
-      The <a href="/rap/developers-guide/">RAP Developer's Guide</a> is the official RAP help that
-      is also included in the Eclipse Help system once you installed the RAP Tooling.
-    </p>
-  </div>
+  <h2>Professional Services</h2>
 
-  <div>
-    <h2>Migration Guide</h2>
-    <p>
-      The <a href="/rap/noteworthy/2.0/migration-guide/">RAP 2.0 Migration Guide</a>
-      documents all breaking changes between RAP 1.x and RAP 2.0
-    </p>
-  </div>
+  <p>
+    Although Open Source software is freely available to everyone it doesn't mean that everyone
+    is an expert in this code.
+    Enterprise software built with Open Source components requires experienced developers who
+    know the internal structure of these components and can quickly and
+    efficiently eliminate problems.
+  </p>
 
-  <div>
-    <h2>FAQ</h2>
-    <p>
-      Go to
-      <a href="http://wiki.eclipse.org/RAP/FAQ">Frequently Asked Questions (FAQ)</a>
-      to see if your question has already been answered.
-    </p>
-  </div>
+  <a href="http://eclipsesource.com/en/services/rap/"><img style="margin-top:15px;"
+     src="/rap/images/logos/EclipseSource-small.png" alt="EclipseSource"/></a>
 
-  <div>
-    <h2>Wiki</h2>
-    <p>
-      The <a href="http://wiki.eclipse.org/RAP">RAP Wiki</a> provides more in-depth technical and
-      organizational information. It contains the FAQ, a list of known add-ons, guides for
-      integrating RAP with other projects, articles on RAP internals, and resources for committers.
-    </p>
-  </div>
+  <p>
+    EclipseSource has contributed RAP to Eclipse and is still the driving force behind the project.
+    In many customer projects, we developed enterprise applications based on RAP.
+    We've helped customers to extend RAP to meet their requirements and have developed
+    custom components.
 
-  <div>
-    <h2>Forum</h2>
-    <p>
-      If you couldn't find the answers you were looking for in the
-      <a href="http://wiki.eclipse.org/RAP/FAQ">FAQ</a> or you are stuck on a particular problem,
-      <a href="http://www.eclipse.org/forums/eclipse.technology.rap">the RAP forum</a> is a good
-      place to go.
-    </p>
-    <p>
-      It's also possible to subscribe to the forum/newsgroup by adding
-      <code>http://www.eclipse.org/forums/eclipse.technology.rap</code> to your favorite news
-      reader app. See
-      <a href="http://wiki.eclipse.org/index.php/Webmaster_FAQ#How_do_I_access_the_Eclipse_newsgroups.3F">
-      this FAQ</a> for information on how to subscribe.
-    </p>
-  </div>
-
-  <div>
-    <h2>Bugs</h2>
-    <p>
-      Bugs and feature requests are tracked in the Eclipse Bugzilla.
-      See the <a href="/rap/bugs/">bugs page</a> for how to find existing bugs or file new ones.
-    </p>
-  </div>
-
-  <!--
-    TODO
-    Provide patches
-    Commercial support
-  -->
+    With this experience,
+    <a href="http://eclipsesource.com/en/services/rap/">EclipseSource can offer you efficient support</a>.
+  </p>
 
 </div>
 

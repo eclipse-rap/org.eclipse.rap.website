@@ -49,13 +49,13 @@ $NAV_ENTRIES = array(
     )
   ),
 
-  "help" => array(
-    "label" => "Get Help",
-    "url" => "/rap/support/",
+  "documentation" => array(
+    "label" => "Documentation",
+    "url" => "/rap/documentation/",
     "sub-entries" => array(
-      "support" => array(
-        "label" => "Get Help",
-        "url" => "/rap/support/"
+      "overview" => array(
+        "label" => "Overview",
+        "url" => "/rap/documentation/"
       ),
       "developers-guide" => array(
         "label" => "Developer's Guide",
@@ -65,9 +65,9 @@ $NAV_ENTRIES = array(
         "label" => "Articles",
         "url" => "/rap/articles/"
       ),
-      "professional-services" => array(
-        "label" => "Professional Services",
-        "url" => "/rap/support/professional-services/"
+      "support" => array(
+        "label" => "Support",
+        "url" => "/rap/support/"
       )
     )
   ),
