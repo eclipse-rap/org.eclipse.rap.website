@@ -38,7 +38,7 @@ $news = new Noteworthy( 'news_13.xml', 'M6', $header, $footer );
 $html = $news->getHtml();
 
 # Generate the web page
-$navPosition = array( "download", "noteworthy" );
+$navPosition = array( "documentation", "noteworthy" );
 
 generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
 ?>

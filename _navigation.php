@@ -38,10 +38,6 @@ $NAV_ENTRIES = array(
         "label" => "Download RAP",
         "url" => "/rap/downloads/"
       ),
-      "noteworthy" => array(
-        "label" => "New and Noteworthy",
-        "url" => "/rap/noteworthy/"
-      ),
       "incubator" => array(
         "label" => "<span class='nav-redirect'>Add-Ons</span>",
         "url" => "/rap/incubator/"
@@ -60,6 +56,10 @@ $NAV_ENTRIES = array(
       "developers-guide" => array(
         "label" => "Developer's Guide",
         "url" => "/rap/developers-guide/"
+      ),
+      "noteworthy" => array(
+        "label" => "New and Noteworthy",
+        "url" => "/rap/noteworthy/"
       ),
       "articles" => array(
         "label" => "Articles",

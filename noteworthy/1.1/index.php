@@ -1,13 +1,13 @@
-<?php                                                                                                                         
+<?php
+
 include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
-$pageTitle         = "RAP Project - New and Noteworthy";
-$pageKeywords    = "Ajax, rap, w4t, eclipse rap";
-$pageAuthor        = "Ruediger Herrmann";
+$PAGE_TITLE = "RAP 1.1 - New and Noteworthy";
+$PAGE_NAV_POSITION = array( "documentation", "noteworthy" );
 
-# Paste your HTML content between the EOHTML markers!
-$html = <<<EOHTML
-<div id="maincontent">
+printHeader();
+?>
+
 <div id="midcolumn">
   <h1>RAP 1.1 New and Noteworthy</h1>
     <p>Here are some of the more noteworthy things available in 
@@ -562,12 +562,9 @@ public class RapJUnitTest extends RAPTestCase {
     </table>
 
 </div>
-</div>
 
-EOHTML;
+<?
 
-$navPosition = array( "download", "noteworthy" );
-
-generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
+printFooter();
 
 ?>

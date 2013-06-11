@@ -3,7 +3,7 @@
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
 
   $PAGE_TITLE = "RAP 2.0 Migration Guide";
-  $PAGE_NAV_POSITION = array( "download", "noteworthy" );
+  $PAGE_NAV_POSITION = array( "documentation", "noteworthy" );
   printHeader();
 
 ?>
@@ -13,11 +13,16 @@
   <h1>RAP 2.0 Migration Guide</h1>
 
   <p>
-    With the move to RAP 2.0, we are cleaning up our APIs.
-    This will lead to breaking changes.
-    Existing RAP 1.x applications will therefore need minor adjustments to work with RAP 2.0.
+    With the move to RAP 2.0, we've cleaned up our APIs and had to introduce some breaking changes.
+    Existing RAP 1.x applications will therefore need some adjustments to work with RAP 2.x.
     This guide explains the steps to be taken to update existing applications.
   </p>
+  <!-- TODO 2.1
+  <p>
+    Meanwhile, RAP 2.1 has been released. Except for changes to the Remote API (which did not exist
+    prior to RAP 2.0) there are no breaking changes between 2.0 and 2.1.
+  </p>
+  -->
 
   <h2>Java Packages</h2>
 
@@ -419,7 +424,7 @@ navigation.<ins>pushState</ins>( "main", "Main View" );
   <p>
     Custom widgets and other components must now read and write JSON protocol messages using the
     new RemoteObject APIs on client and server.
-    Components that read parameters from the request write JavaScript directly, e.g. using
+    Components that read parameters from the request or write JavaScript directly, e.g. using
     <em>JSWriter</em>, will not work anymore.
   </p>
   <p>
@@ -431,6 +436,10 @@ navigation.<ins>pushState</ins>( "main", "Main View" );
     The
     <a href="https://github.com/eclipsesource/rap-ckeditor">CkEditor for RAP</a>
     is a good example for a custom widget that uses these new APIs.
+  </p>
+  <p>
+    Please note that the Remote API has changed again in
+    <a href="/rap/noteworthy/2.1/">RAP 2.1</a>.
   </p>
 
   <h2>Settings</h2>

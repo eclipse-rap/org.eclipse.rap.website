@@ -5,10 +5,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/DevGuideUtils.ph
 require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/NavigationView.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/ContentView.php';
 
+$PAGE_TITLE = "RAP - Developer's Guide";
+$PAGE_NAV_POSITION = array( "documentation", "developers-guide" );
 $PAGE_ADD_CSS = '/rap/_theme/devguide.css';
 
-$title = "Developer's Guide";
-$navPosition = array( 'help', 'developers-guide' );
 $forwardingUrl = '/rap/developers-guide/';
 $version = DevGuideUtils::CURRENT_VERSION;
 
@@ -41,9 +41,9 @@ function send404() {
   header( "HTTP/1.1 404 Not Found" );
 }
 
-?>
+printHeader();
 
-<?php printHeader( $title, $navPosition ) ?>
+?>
 
 <div id="midcolumn" class="dev-guide-content">
 
@@ -98,4 +98,8 @@ function send404() {
   } );
 </script>
 
-<?php printFooter(); ?>
+<?
+
+printFooter();
+
+?>

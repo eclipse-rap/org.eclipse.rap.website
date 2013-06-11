@@ -4,8 +4,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/_projectCommon.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/NavigationView.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/rap/developers-guide/DevGuideUtils.php';
 
-$title = "RAP - Developer's Guide";
-$navPosition = array( 'documentation', 'developers-guide' );
+$PAGE_TITLE = "RAP - Developer's Guide";
+$PAGE_NAV_POSITION = array( "documentation", "developers-guide" );
+
 $version = DevGuideUtils::CURRENT_VERSION;
 
 if( isset( $_GET[ 'version' ] ) ) {
@@ -30,7 +31,7 @@ foreach( DevGuideUtils::$versions as $key => $value ) {
   $versionNav[] = $piece;
 }
 
-printHeader( $title, $navPosition );
+printHeader();
 
 ?>
 
@@ -52,4 +53,8 @@ if( $version == DevGuideUtils::MASTER_VERSION ) {
   </div>
 </div>
 
-<?php printFooter(); ?>
+<?
+
+printFooter();
+
+?>

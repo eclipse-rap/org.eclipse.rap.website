@@ -25,7 +25,7 @@ EOHTML;
 $news = new Noteworthy( 'news_14.xml', 'M1', $header, $footer );
 $html = $news->getHtml();
 
-$navPosition = array( "download", "noteworthy" );
+$navPosition = array( "documentation", "noteworthy" );
 
 generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
 

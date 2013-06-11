@@ -178,7 +178,7 @@ $html = <<<EOHTML
 EOHTML;
 
 # Generate the web page
-$navPosition = array( "download", "noteworthy" );
+$navPosition = array( "documentation", "noteworthy" );
 
 generateRapPage( $pageAuthor, $pageKeywords, $pageTitle, $html, $navPosition );
 ?>

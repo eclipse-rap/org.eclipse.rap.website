@@ -13,9 +13,10 @@
     exit( "Unknown build id" );
   }
 
-  $title = "RAP " . $build->getName() . " - New and Noteworthy";
-  $navPosition = array( "download", "noteworthy" );
-  printHeader( $title, $navPosition );
+  $PAGE_TITLE = "RAP " . $build->getName() . " - New and Noteworthy";
+  $PAGE_NAV_POSITION = array( "documentation", "noteworthy" );
+
+  printHeader();
 
 ?>
 
