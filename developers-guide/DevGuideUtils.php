@@ -2,8 +2,8 @@
 
 class DevGuideUtils {
 
-  const CURRENT_VERSION = '2.0';
-  const MASTER_VERSION = '2.1';
+  const CURRENT_VERSION = '2.1';
+  const MASTER_VERSION = '2.2';
 
   public static $versions = array(
     '1.5' => array(
