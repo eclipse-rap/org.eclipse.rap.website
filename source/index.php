@@ -2,7 +2,7 @@
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
   $title = "RAP - Source Code";
-  $navPosition = array( "contribute", "source" );
+  $navPosition = array( "download", "source" );
   printHeader( $title, $navPosition );
 
 ?>

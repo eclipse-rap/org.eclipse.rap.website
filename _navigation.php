@@ -38,6 +38,10 @@ $NAV_ENTRIES = array(
         "label" => "Download RAP",
         "url" => "/rap/downloads/"
       ),
+      "source" => array(
+        "label" => "Source Code",
+        "url" => "/rap/source/"
+      ),
       "incubator" => array(
         "label" => "<span class='nav-redirect'>Add-Ons</span>",
         "url" => "/rap/incubator/"
@@ -64,16 +68,12 @@ $NAV_ENTRIES = array(
       "articles" => array(
         "label" => "Articles",
         "url" => "/rap/articles/"
-      ),
-      "support" => array(
-        "label" => "Support",
-        "url" => "/rap/support/"
       )
     )
   ),
 
-  "contribute" => array(
-    "label" => "Contribute",
+  "community" => array(
+    "label" => "Community",
     "url" => "/rap/getting-involved/",
     "sub-entries" => array(
       "getting-involved" => array(
@@ -84,9 +84,9 @@ $NAV_ENTRIES = array(
         "label" => "Bugs",
         "url" => "/rap/bugs/"
       ),
-      "source" => array(
-        "label" => "Source Code",
-        "url" => "/rap/source/"
+      "support" => array(
+        "label" => "Support",
+        "url" => "/rap/support/"
       )
     )
   )

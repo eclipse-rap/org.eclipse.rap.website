@@ -8,7 +8,7 @@
   $WEB_ROOT = "http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator";
   $REPO_ROOT = "http://download.eclipse.org/rt/rap/incubator/";
 
-  printHeader( $PAGE_TITLE, $PAGE_NAV_POSITION );
+  printHeader();
 
   $components = new SimpleXMLElement( 'components.xml', null, true );
   if( $components == null ) {

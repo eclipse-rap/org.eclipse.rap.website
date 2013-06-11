@@ -2,7 +2,7 @@
 
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
   $title = "RAP - Support";
-  $navPosition = array( "documentation", "support" );
+  $navPosition = array( "community", "support" );
   printHeader( $title, $navPosition );
 
 ?>

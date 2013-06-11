@@ -22,7 +22,7 @@
 
 <div id="midcolumn">
 
-  <h1><?php echo $title ?></h1>
+  <h1><?= $PAGE_TITLE ?></h1>
 
   <p>
     Here's a list of the most noteworthy things in the RAP
