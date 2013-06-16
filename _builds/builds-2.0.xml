@@ -80,4 +80,11 @@
       runtimeZip="rap-2.0.0-R-20130205-1849.zip"
       toolsZip="rap-tools-2.0.0-R-20130206-1113.zip" />
 
+  <build name="2.0.1" type="SR"
+      shortname="SR1"
+      status="completed"
+      publishDate="2013-06-17"
+      news="2.0/?build=SR1"
+      runtimeZip="rap-2.0.1-SR1-20130614-1831.zip" />
+
 </builds>

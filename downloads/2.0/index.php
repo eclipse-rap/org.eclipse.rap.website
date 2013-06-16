@@ -84,14 +84,18 @@
         <a href="/rap/noteworthy/<?= $build->getNews() ?>">New &amp; Noteworthy</a>
       </td>
       <td>
+<?     if( $build->getZipFileUrl( "runtime" ) ) { ?>
         <a href="<?= $build->getZipFileUrl( "runtime" ) ?>">
           <img src="/rap/images/zip.gif" alt="zip" /> RAP
         </a>
+<?     } ?>
       </td>
       <td>
+<?     if( $build->getZipFileUrl( "tools" ) ) { ?>
         <a href="<?= $build->getZipFileUrl( "tools" ) ?>">
           <img src="/rap/images/zip.gif" alt="zip" /> RAP Tools
         </a>
+<?     } ?>
       </td>
 
 <?   } else { ?>
