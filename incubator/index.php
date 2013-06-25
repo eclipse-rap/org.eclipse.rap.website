@@ -49,7 +49,7 @@
     <div class="box">
       <div class="images">
         <img style="display:inline-block; width:250px; height:190px; background-image:url(/rap/images/incubator.png)"
-             src="<?= $COMPONENT_WEBURL . '/plain/component.png' ?>" alt=""/>
+             src="<?= 'images/' . $COMPONENT_ID . '.png' ?>" alt=""/>
       </div>
 
       <div>

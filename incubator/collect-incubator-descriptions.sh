@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPONENTS="clientscripting osgi-packaging fileupload nebula-grid cnf gef pde tabbed-properties visualization"
+COMPONENTS="clientscripting dropdown fileupload osgi-packaging nebula-grid cnf gef pde tabbed-properties visualization"
 REPO_ROOT="$HOME/git"
 
 echo '<?xml version="1.0" encoding="UTF-8"?>'
@@ -10,3 +10,4 @@ for component in $COMPONENTS; do
   cat "$file" | sed -e '/<\?xml/d' | sed -e "s/<component/<component id=\"$component\"/"
 done
 echo '</components>'
+
