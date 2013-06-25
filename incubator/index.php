@@ -43,8 +43,10 @@
     $COMPONENT_WEBURL = $WEB_ROOT . '.' . $COMPONENT_ID . '.git';
     $COMPONENT_REPO = $REPO_ROOT . "nightly/" . $COMPONENT_ID . "/";
     $COMPONENT_REPO_20 = $REPO_ROOT . "2.0/" . $COMPONENT_ID . "/";
-    $NIGHTLY_ENABLED = array( "clientscripting", "cnf", "fileupload", "gef", "nebula-grid", "pde", "tabbed-properties", "visualization" );
+    $COMPONENT_REPO_21 = $REPO_ROOT . "2.1/" . $COMPONENT_ID . "/";
+    $NIGHTLY_ENABLED = array( "clientscripting", "dropdown", "cnf", "fileupload", "gef", "nebula-grid", "pde", "tabbed-properties", "visualization" );
     $RAP20_ENABLED = array( "clientscripting", "nebula-grid", "pde", "fileupload" );
+    $RAP21_ENABLED = array( "clientscripting", "dropdown", "nebula-grid", "pde", "fileupload" );
    ?>
     <div class="box">
       <div class="images">
@@ -59,17 +61,24 @@
           <strong>Maintainer:</strong> <?= $COMPONENT_MAINTAINER ?>
         </p>
         <p>
-          <strong>Git repository:</strong> <a href="<?= $COMPONENT_WEBURL ?>"><?= $COMPONENT_WEBURL ?></a>
+          <strong>Source code:</strong>
+          <a href="<?= $COMPONENT_WEBURL ?>">git repository</a>
         </p>
         <? if( in_array( $COMPONENT_ID, $NIGHTLY_ENABLED ) ) : ?>
         <p>
-          <strong>Nightly builds p2 repository:</strong> <a href="<?= $COMPONENT_REPO ?>"><?= $COMPONENT_REPO ?></a>
+          <strong>Builds (p2 repositories):</strong>
         </p>
+        <ul>
+        <? if( in_array( $COMPONENT_ID, $NIGHTLY_ENABLED ) ) : ?>
+          <li><a href="<?= $COMPONENT_REPO ?>">nightly builds</a></li>
         <? endif ?>
         <? if( in_array( $COMPONENT_ID, $RAP20_ENABLED ) ) : ?>
-        <p>
-          <strong>RAP 2.0 compatible p2 repository:</strong> <a href="<?= $COMPONENT_REPO_20 ?>"><?= $COMPONENT_REPO_20 ?></a>
-        </p>
+          <li><a href="<?= $COMPONENT_REPO_20 ?>">RAP 2.0 compatible version</a></li>
+        <? endif ?>
+        <? if( in_array( $COMPONENT_ID, $RAP21_ENABLED ) ) : ?>
+          <li><a href="<?= $COMPONENT_REPO_21 ?>">RAP 2.1 compatible version</a></li>
+        <? endif ?>
+        </ul>
         <? endif ?>
       </div>
       <div style="clear:both"></div>
