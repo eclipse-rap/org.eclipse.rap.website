@@ -17,12 +17,10 @@
     Existing RAP 1.x applications will therefore need some adjustments to work with RAP 2.x.
     This guide explains the steps to be taken to update existing applications.
   </p>
-  <!-- TODO 2.1
   <p>
     Meanwhile, RAP 2.1 has been released. Except for changes to the Remote API (which did not exist
     prior to RAP 2.0) there are no breaking changes between 2.0 and 2.1.
   </p>
-  -->
 
   <h2>Java Packages</h2>
 

@@ -59,11 +59,11 @@
 
   <build name="2.1" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2013-06-26"
       news="2.1/"
-      runtimeZip=""
-      toolsZip="" />
+      runtimeZip="rap-2.1.0-R-20130611-2139.zip"
+      toolsZip="rap-tools-2.1.0-R-20130610-1332.zip" />
 
   <build name="2.1.1" type="SR"
       shortname="SR1"
