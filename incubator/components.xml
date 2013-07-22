@@ -26,10 +26,13 @@
     Tim Buschtöns
   </maintainer>
   <description>
-    The dropdown widget can display a list below a Text field in order to
-    display dynamic proposals while typing. A JFace viewer allows to connect
-    a content provider and a label provider to extract the proposals from a
-    data model.
+    <p>
+      The dropdown widget can display a list below a Text field in order to
+      display dynamic proposals while typing.
+    </p>
+    <p>
+      <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown">DropDown wiki page</a>
+    </p>
   </description>
 </component>
 <component id="fileupload">
@@ -120,7 +123,7 @@
       <a href="http://www.eclipse.org/pde/pde-ui/">PDE UI</a>.
     </p>
     <p>
-    	<a href="http://wiki.eclipse.org/RAP/Incubator/PDERuntime">wiki page</a> 
+      <a href="http://wiki.eclipse.org/RAP/Incubator/PDERuntime">wiki page</a>
     </p>
   </description>
 </component>
