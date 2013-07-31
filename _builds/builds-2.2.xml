@@ -96,7 +96,7 @@
       news="2.2/"
       />
 
-  <build name="2.2.2" type="SR"
+  <build name="2.2.1" type="SR"
       shortname="SR1"
       status="planned"
       publishDate="2014-09-27"
