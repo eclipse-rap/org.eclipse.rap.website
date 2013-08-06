@@ -13,8 +13,9 @@
   <h1>Built on RAP</h1>
   <p>
      We'd be happy to learn about <em>your</em> RAP project. <br/>If you have something to add
-     to this page, just drop us a line at the
-    <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev</a> mailing list.
+     to this page, just open an enhancement request in the 
+    <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&component=Website">Website</a> 
+    component of the RAP project in bugzilla.
   </p>
 
   <h2 class="section">Open Source Projects</h2>
@@ -440,6 +441,37 @@
       <ul>
         <li>
           <a href="http://www.book-publishing-software.com/">http://www.book-publishing-software.com/</a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="box">
+    <div class="images">
+      <a href="images/otis-full.png">
+        <img src="images/otis.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">OTIS - Oil Trading and Information System</h2>
+      <h4 class="tagline"><a href="http://www.meko-s.de">MEKO-S GmbH</a></h4>
+      <p>
+        The software OTIS does allow petrol station owners to manage their petrol stations, 
+        do the invoicing and contact customers via the built-in CRM module. 
+      </p>
+      <p>
+        While this happens in a RCP desktop application, the fuel card users that buy petrol 
+        at these stations use the provided RAP based <em>customer portal</em> to be able to 
+        manage their cards and view all their transaction and invoice history. 
+      </p>
+      <p class="refs">References:</p>
+      <ul>
+        <li>
+          <a href="http://www.meko-s.de/otis">OTIS Product Page</a>  (German)
+        </li>
+        <li>
+          <a href="http://www.youtube.com/watch?v=nbRKE1b8KyU">EclipseCon Europe 2012 Recording</a>
         </li>
       </ul>
     </div>
