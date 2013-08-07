@@ -25,4 +25,37 @@
     notification before the application context is destroyed.
   </p>
 
+  <h2>ClientScripting</h2>
+
+  <p>
+    The ClientScripting has been graduated and now it's included in the RAP core. ClientScripting
+    allows developers to handle some of the events directly on the client, without creating any
+    http-requests. This is ideal to customize or enhance the behavior of specific widgets, making it
+    much less often necessary to develop RAP custom-widgets.
+  </p>
+  <p>
+    More information about ClientScripting can be found
+    <a href="http://wiki.eclipse.org/RAP/Incubator/ClientScripting">here</a>.
+  </p>
+  <p>
+    The ClientScripting incubator projects are no longer compatible with RAP 2.2M1+ and must be used
+    <strong>only</strong> with older RAP versions.
+  </p>
+
+  <h2>Widget Set</h2>
+
+  <h3>Synchronize user data with the client</h3>
+
+  <p>
+    It's now possible to transfer the data attached to the SWT widget to the client. To do so, the
+    key for that data has to be registered with
+    <code>WidgetUtil.registerDataKeys( String... )</code>.
+    Example:
+  </p>
+
+<pre class="lang-java">
+WidgetUtil.registerDataKeys( "foo" );
+widget.setData( "foo", "bar" );
+</pre>
+
 </div>
