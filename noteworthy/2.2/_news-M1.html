@@ -81,7 +81,8 @@
   <p>
     It's now possible to transfer the data attached to the SWT widget to the client. To do so, the
     key for that data has to be registered with
-    <code>WidgetUtil.registerDataKeys( String... )</code>.
+    <code>WidgetUtil.registerDataKeys( String... )</code>. Now the appear under the URL
+    that was given to the JavaScriptLoader.
     Example:
   </p>
 
@@ -94,11 +95,11 @@ widget.setData( "foo", "bar" );
     The transferred data can then be used in RWT Scripting:
   </p>
 
-  <pre class="lang-javascript">
-    function handleEvent( event ) {
-      var data = event.widget.getData( "foo" );
-    }
-  </pre>
+<pre class="lang-javascript">
+function handleEvent( event ) {
+  var data = event.widget.getData( "foo" );
+}
+</pre>
 
   <h2>Client Services</h2>
 
