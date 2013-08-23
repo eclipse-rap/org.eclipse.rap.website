@@ -19,11 +19,11 @@
 
   <build name="2.2 M1" type="M"
       shortname="M1"
-      status="planned"
+      status="completed"
       publishDate="2013-08-23"
       news="2.2/?build=M1"
-      runtimeZip=""
-      toolsZip=""
+      runtimeZip="rap-2.2.0-M1-20130821-1618.zip"
+      toolsZip="rap-tools-2.2.0-M1-20130819-1153.zip"
       />
 
   <build name="2.2 M2" type="M"

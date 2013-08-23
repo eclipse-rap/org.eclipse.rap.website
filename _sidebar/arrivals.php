@@ -33,7 +33,7 @@
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">AUG 23</span>
+        <span class="terminal-text">ARRIVED</span>
       </span>
     </div>
 
@@ -45,6 +45,17 @@
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
         <span class="terminal-text">SEP 27</span>
+      </span>
+    </div>
+
+    <div class="terminal-row">
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">RAP 2.2 M2</span>
+      </span>
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">OCT 3</span>
       </span>
     </div>
 
