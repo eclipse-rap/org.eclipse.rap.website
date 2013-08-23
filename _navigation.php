@@ -45,6 +45,10 @@ $NAV_ENTRIES = array(
       "incubator" => array(
         "label" => "<span class='nav-redirect'>Add-Ons</span>",
         "url" => "/rap/incubator/"
+      ),
+      "noteworthy" => array(
+        "label" => "<span class='nav-redirect'>New and Noteworthy</span>",
+        "url" => "/rap/noteworthy/"
       )
     )
   ),
