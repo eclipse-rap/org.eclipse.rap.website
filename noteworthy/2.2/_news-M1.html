@@ -5,7 +5,7 @@
   <h3>Theme Extensions</h3>
 
   <p>
-    The theming was extended in serveral places:<br/>
+    The theming was extended in several places:<br/>
     <ul>
       <li>
         <code>ProgressBar</code> has a new themeable property <code>width</code>.
@@ -25,24 +25,56 @@
     notification before the application context is destroyed.
   </p>
 
-  <h2>ClientScripting</h2>
+  <h2>RWT Scripting</h2>
+
+  <h3>Migrated ClientScripting to RAP Core</h3>
 
   <p>
-    The ClientScripting has been graduated and now it's included in the RAP core. ClientScripting
-    allows developers to handle some of the events directly on the client, without creating any
-    http-requests. This is ideal to customize or enhance the behavior of specific widgets, making it
-    much less often necessary to develop RAP custom-widgets.
+    The ClientScripting project has been graduated from the incubator and is now included in the RAP core
+    as <q>RWT Scripting</q>. Using the new <code>ClientListener</code> class, it is possible to handle some
+    events directly on the client without the usual latency caused by HTTP requests.
   </p>
   <p>
-    More information about ClientScripting can be found
-    <a href="http://wiki.eclipse.org/RAP/Incubator/ClientScripting">here</a>.
+    The number of supported widgets and what properties can be changed on the client is
+    expected to be expanded until the RAP 2.2 release. For now the following widgets
+    support ClientListener:
+  </p>
+  <ul>
+    <li><code>Text</code></li>
+    <li><code>Button</code></li>
+    <li><code>Canvas</code></li>
+    <li><code>Composite</code></li>
+    <li><code>Label</code></li>
+  </ul>
+  <p>
+    Supportes events are:
+  </p>
+  <ul>
+    <li><code>SWT.KeyDown</code></li>
+    <li><code>SWT.KeyUp</code></li>
+    <li><code>SWT.MouseDown</code></li>
+    <li><code>SWT.MouseUp</code></li>
+    <li><code>SWT.MouseMove</code></li>
+    <li><code>SWT.MouseEnter</code></li>
+    <li><code>SWT.MouseExit</code></li>
+    <li><code>SWT.MouseDoubleClick</code></li>
+    <li><code>SWT.FocusIn</code></li>
+    <li><code>SWT.FocusOut</code></li>
+    <li><code>SWT.Paint</code></li>
+    <li><code>SWT.Modify</code></li>
+    <li><code>SWT.Verify</code></li>
+  </ul>
+  <p>
+    Consult the new Developers Guide article on this topic for more information on ClientListener,
+    and the WebClient API reference to find out what widget methods are available in RWT Scripting.
   </p>
   <p>
-    The ClientScripting incubator projects are no longer compatible with RAP 2.2M1+ and must be used
-    <strong>only</strong> with older RAP versions.
+    <b>Note:</b> The ClientScripting incubator project is no longer compatible with RAP 2.2M1+
+    and must be used <strong>only</strong> with older RAP versions. If you port code based on
+    the incubator ClientScripting to RAP 2.2 RWT Scripting, please note that the namespace
+    for <code>ClientListener</code> has been changed to <code>org.eclipse.rap.rwt.scripting</code>, and
+    that the number of supported widgets has been reduced.
   </p>
-
-  <h2>Widget Set</h2>
 
   <h3>Synchronize user data with the client</h3>
 
@@ -57,5 +89,38 @@
 WidgetUtil.registerDataKeys( "foo" );
 widget.setData( "foo", "bar" );
 </pre>
+
+  <p>
+    The transferred data can then be used in RWT Scripting:
+  </p>
+
+  <pre class="lang-javascript">
+    function handleEvent( event ) {
+      var data = event.widget.getData( "foo" );
+    }
+  </pre>
+
+  <h2>Client Services</h2>
+
+  <h3>Improved JavaScriptLoader</h3>
+
+  <p>
+    The JavaScriptLoader implementation has been improved in the following aspects:
+  </p>
+  <ul>
+    <li><b>Files can be loaded form any URL:</b>
+      Previously the JavaScriptLoader could only load scripts served by the RAP application,
+      e.g. by registering them with the resource manager. Now any URL that is reachable by the
+      client can be used.
+    </li>
+    <li><b>Browser no longer blocked during loading:</b>
+      The JavaScriptLoader now uses asynchronous HTTP request to load the JavaScript file,
+      which means the browser no longer becomes unresponsive while waiting for the request to finish.
+    </li>
+    <li><b>Scripts appear in Browser Developer Tools:</b>
+      Previously the loaded scripts did not appear in the "sources" or "scripts" tabs of
+      the browsers debugger (e.g. Firebug).
+    </li>
+  </ul>
 
 </div>
