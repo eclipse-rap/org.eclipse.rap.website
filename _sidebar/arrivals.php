@@ -18,7 +18,7 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 2.1.1</span>
+        <span class="terminal-text">RAP 2.1</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
@@ -40,22 +40,22 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 2.2 M2</span>
+        <span class="terminal-text">RAP 2.1.1</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">OCT 3</span>
+        <span class="terminal-text">SEP 27</span>
       </span>
     </div>
 
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 2.1.2</span>
+        <span class="terminal-text">RAP 2.2 M2</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">FEB 28</span>
+        <span class="terminal-text">OCT 3</span>
       </span>
     </div>
 

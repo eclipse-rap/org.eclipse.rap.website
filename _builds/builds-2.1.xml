@@ -70,8 +70,8 @@
       status="planned"
       publishDate="2013-09-27"
       news="2.1/?build=SR1"
-      runtimeZip="rap-2.1.1-SR1-20130902-1345.zip"
-      toolsZip="rap-tools-2.1.1-SR1-20130902-1312.zip" />
+      runtimeZip=""
+      toolsZip="" />
 
   <build name="2.1.2" type="SR"
       shortname="SR2"
