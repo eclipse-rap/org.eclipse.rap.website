@@ -3,7 +3,7 @@
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
   require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_Builds.php" );
 
-  $builds = new Builds( "2.1" );
+  $builds = new Builds( "2.1.1" );
 
   $title = "RAP - " . $builds->getVersion() . " Downloads";
   $navPosition = array( "download", "downloads" );
