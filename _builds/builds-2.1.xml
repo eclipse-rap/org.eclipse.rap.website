@@ -67,11 +67,11 @@
 
   <build name="2.1.1" type="SR"
       shortname="SR1"
-      status="planned"
+      status="completed"
       publishDate="2013-09-27"
       news="2.1/?build=SR1"
-      runtimeZip=""
-      toolsZip="" />
+      runtimeZip="rap-2.1.0-R-20130611-2139.zip"
+      toolsZip="rap-tools-2.1.1-SR1-20130902-1312.zip" />
 
   <build name="2.1.2" type="SR"
       shortname="SR2"
