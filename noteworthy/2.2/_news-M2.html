@@ -1,14 +1,13 @@
 <div>
 
-
   <h2>Widget Set</h2>
 
   <h3>FileUpload supports Multiple File Selection</h3>
 
     <p>
-      The <code>FileUpload</code> widget now allows selecting and uploading multiple files at once
-      in HTML5 enabled browser. To enable this feature, create the widget with the <code>SWT.MULTI</code>
-      style flag like this:
+      The <code>FileUpload</code> widget from the <a href="http://eclipse.org/rap/incubator/">RAP Incubator</a> 
+      project now allows selecting and uploading multiple files at once in HTML5 enabled browsers. To enable 
+      this feature, create the widget with the <code>SWT.MULTI</code> style flag like this:
     </p>
     <pre class="lang-java">
   FileUpload fileUpload = new FileUpload( parent, SWT.MULTI );
@@ -19,7 +18,7 @@
       selected file.
     </p>
     <p>
-      Browser (such as Internet Explorer 8) that do not support this feature will simply ignore
+      Browsers (such as Internet Explorer 8) that do not support this feature will simply ignore
       the <code>MULTI</code> flag.
     </p>
 
@@ -30,9 +29,9 @@
     The exact time until the ToolTip appears depends on the widget (they appear faster on Button-like widgets).</li>
     <li>ToolTips will no longer disappear automatically after a timeout. The exact coditions
     for them to disappear depend on the widget, but they will always disappear when the mouse
-    is moved away from the widget or a key is pressed.</li>
-    <li>Appear and disapper  animations may be skipped in some situations.</li>
-    <li>ToolTips for buttons, items and fields will be placed above/below (in same cases besides) the widget, not over it.</li>
+    is moved away from the widget or when a key is pressed.</li>
+    <li>Appear and disappear animations may be skipped in some situations.</li>
+    <li>ToolTips for buttons, items and fields will be placed above/below (in some cases besides) the widget, not over it.</li>
   </ul>
 
   <h2>Theming</h2>
