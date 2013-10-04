@@ -28,7 +28,7 @@
 
   <build name="2.2 M2" type="M"
       shortname="M2"
-      status="planned"
+      status="completed"
       publishDate="2013-10-04"
       news="2.2/?build=M2"
       runtimeZip="rap-2.2.0-M2-20130930-1404.zip"
