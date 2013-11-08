@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COMPONENTS="clientscripting dropdown fileupload osgi-packaging nebula-grid cnf gef pde tabbed-properties visualization"
+COMPONENTS="clientscripting dropdown fileupload richtext osgi-packaging nebula-grid cnf gef pde tabbed-properties visualization"
 REPO_ROOT="$HOME/git"
 
 echo '<?xml version="1.0" encoding="UTF-8"?>'
