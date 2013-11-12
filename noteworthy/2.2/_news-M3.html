@@ -2,6 +2,64 @@
 
   <h2>Widget Set</h2>
 
+  <h3>Row Templates</h3>
+
+  <p>
+    We introduced row templates, a new feature that allows you replace the column layout model of
+    a table with a custom presentation.
+    Templates consist of cells that can be freely arranged.
+    A cell can display a text or an image from the table item, but also static content.
+  </p>
+  <p>
+    <img class="framed" alt="A table with row template" src="./images/row-template.png"/>
+  </p>
+    To position a cell, you have to set exactly two horizontal and two vertical dimensions
+    (two out of <em>left</em>, <em>right</em>, and <em>width</em> and two out of <em>top</em>,
+     <em>bottom</em>, and <em>width</em>).
+    Here's a code example that creates a template with two cells:
+  <p>
+  </p>
+<pre class="lang-java">
+Template template = new Template();
+
+ImageCell imageCell = new ImageCell( template );
+imageCell.setBindingIndex( 0 ); // bind to image from column 0
+imageCell.setTop( 4 ).setLeft( 4 ).setWidth( 48 ).setHeight( 48 );
+
+TextCell nameCell = new TextCell( template );
+nameCell.setBindingindex( 1 ); // display text from column 1
+nameCell.setLeft( 60 ).setWidth( 180 ).setTop( 30 ).setBottom( 8 );
+nameCell.setHorizontalAlignment( SWT.LEFT ); // left-align the text in this cell
+nameCell.setFont( font );
+...
+</pre>
+  <p>
+    Cells can also be selectable.
+    When a selectable cell is clicked on, this click does not select the item, but triggers a
+    selection event with the <code>event.detail</code> field set to <code>RWT.CELL</code>.
+    If multiple cells in a template are selectable, cells can be given a name that is reflected
+    in the <code>event.text</code> field in order to identify the selected cell.
+  </p>
+  <p>
+    To apply a row template on a Table or a Tree, use the <code>setData()</code> method with the
+    new constant <code>RWT.ROW_TEMPLATE</code> as key:
+  </p>
+<pre class="lang-java">
+Table table = new Table( parent, SWT.FULL_SELECTION );
+// Add as many columns as needed to add multiple texts/images to items
+new TableColumn();
+...
+table.setData( RWT.ROW_TEMPLATE, template );
+</pre>
+  <p>
+    The call to <code>setData()</code> must be placed directly after the control's creation. Once a
+    template is applied to a control, the control will not be affected by changes to the template.
+  </p>
+  <p>
+    Row templates are currently supported by Tree and Table.
+    We expect that this approach will be useful also in other contexts in the future.
+  </p>
+
   <h3>Markup Support for ToolTips</h3>
 
   <p>
@@ -36,8 +94,5 @@ widget.setToolTipText( "This is a tooltip&lt;br/&gt;&lt;i&gt;with&lt;/i&gt; &lt;
     has a newline in it, e.g.:
   </p>
   <pre class="lang-java">widget.setToolTipText( "This has a \n new line" ); </pre>
-
-
-
 
 </div>
