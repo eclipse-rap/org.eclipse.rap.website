@@ -2,8 +2,42 @@
 
   <h2>Widget Set</h2>
 
+  <h3>Markup Support for ToolTips</h3>
+
+  <p>
+    The <em>ToolTipText</em> property and the <em>ToolTip</em> widget now support
+    markup. To enable tooltip markup for on any widget with a <em>setToolTipText</em> method,
+    use the <em>RWT.TOOLTIP_MARKUP_ENABLED</em> constant like this:
+  </p>
+  <pre class="lang-java">widget.setData( RWT.TOOLTIP_MARKUP_ENABLED, Boolean.TRUE );
+widget.setToolTipText( "This is a tooltip&lt;br/&gt;&lt;i&gt;with&lt;/i&gt; &lt;b&gt;some&lt;/b&gt; &lt;big&gt;markup&lt;/big&gt;" );
+  </pre>
+  <img src="./images/tooltip-markup.png"/>
+  <p>
+    For the <em>ToolTip</em> widget, the API is the same as it is for other
+    widget: <code class="lang-java">toolTip.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );</code>
+  </p>
+
+
   <!--h3>Ability to specify number of preloaded items for virtual Tree/Table</h3-->
 
   <!--h3>Markup support for ToolTip widget</h3-->
+
+  <h2>Theming</h2>
+
+  <h3>Horizontal Alignment for ToolTips</h3>
+
+  <p>It is now possible to set the horizontal alignment for texts in tooltips.</p>
+  <pre class="lang-css">Widget-ToolTip {
+  text-align: left;
+}</pre>
+  <p>
+    Since tooltips are only as wide as their content, this only has a visible effect if the tooltip
+    has a newline in it, e.g.:
+  </p>
+  <pre class="lang-java">widget.setToolTipText( "This has a \n new line" ); </pre>
+
+
+
 
 </div>
