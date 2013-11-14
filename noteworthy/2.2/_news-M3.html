@@ -76,10 +76,21 @@ widget.setToolTipText( "This is a tooltip&lt;br/&gt;&lt;i&gt;with&lt;/i&gt; &lt;
     widget: <code class="lang-java">toolTip.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );</code>
   </p>
 
+  <h3>Ability to specify number of pre-loaded items in virtual Tree/Table</h3>
 
-  <!--h3>Ability to specify number of preloaded items for virtual Tree/Table</h3-->
-
-  <!--h3>Markup support for ToolTip widget</h3-->
+  <p>
+    To improve user experience when using virtual Tree or Table we introduced a possibility to
+    specify number of pre-loaded items outside Tree/Table client area. Thus, scrolling the table
+    with small steps will show the new items immediately. Example:
+  </p>
+  <pre class="lang-java">
+Table table = new Table( parent, SWT.VIRTUAL );
+table.setData( RWT.PRELOADED_ITEMS, new Integer( 10 ) );
+  </pre>
+  <p>
+    With the snippet above, in addition to visible items in Tree/Table client area another 10 (above
+    and below them) will be resolved.
+  </p>
 
   <h2>Theming</h2>
 
