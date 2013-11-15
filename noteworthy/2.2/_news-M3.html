@@ -15,7 +15,7 @@
   </p>
     To position a cell, you have to set exactly two horizontal and two vertical dimensions
     (two out of <em>left</em>, <em>right</em>, and <em>width</em> and two out of <em>top</em>,
-     <em>bottom</em>, and <em>width</em>).
+     <em>bottom</em>, and <em>height</em>).
     Here's a code example that creates a template with two cells:
   <p>
   </p>
@@ -79,9 +79,10 @@ widget.setToolTipText( "This is a tooltip&lt;br/&gt;&lt;i&gt;with&lt;/i&gt; &lt;
   <h3>Ability to specify number of pre-loaded items in virtual Tree/Table</h3>
 
   <p>
-    To improve user experience when using virtual Tree or Table we introduced a possibility to
-    specify number of pre-loaded items outside Tree/Table client area. Thus, scrolling the table
-    with small steps will show the new items immediately. Example:
+    To improve the responsiveness of a virtual Tree or Table, we introduced a possibility to
+    specify a number of items to be pre-loaded by the client.
+    When scrolling the table in small steps, the preloaded new items will appear immediately.
+    Example:
   </p>
   <pre class="lang-java">
 Table table = new Table( parent, SWT.VIRTUAL );
