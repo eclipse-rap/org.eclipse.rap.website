@@ -37,7 +37,7 @@
 
   <build name="2.2 M3" type="M"
       shortname="M3"
-      status="planned"
+      status="completed"
       publishDate="2013-11-15"
       news="2.2/?build=M3"
       runtimeZip="rap-2.2.0-M3-20131111-1653.zip"
