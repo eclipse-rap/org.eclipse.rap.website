@@ -1,0 +1,34 @@
+<div>
+
+  <h3>Row Templates improved</h3>
+  <p>
+    Several open issues with the new Row Templates have been resolved.
+    All scale modes for image cells are now also supported in IE7/8.
+    One new scale mode has been added (<em>ScaleMode.STRETCH</em>).
+    Text cells can now also contain markup.
+    The theming for Table and Tree has a new state <em>rowtemplate</em> to allow to make
+    adjustments specific to row templates.
+    The default theme uses this state to hide vertical grid lines when row templates are used.
+  </p>
+
+  <h3>Deployment issues resolved</h3>
+  <p>
+    There has long been <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=407371">an issue</a>
+    with RAP applications deployed as <em>.war</em> files that could not be properly stopped or
+    undeployed and even prevented the servlet container from shutting down.
+    These problems have been fixed.
+    Stopping and un-deploying RAP applications works like a charm now.
+  </p>
+
+  <h3>Adjusted to IE11</h3>
+  <p>
+    The new Internet Explorer version 11 has just been released,
+    and for the first time this browser does not identify itself as “MSIE” anymore,
+    but as “Trident” (the name of the rendering engine).
+    This totally confused our web client wihch did not recognize this browser correctly and even
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=421529">failed</a> in the
+    Eclipse embedded browser.
+    We've adjusted it to support this new generation of IE browsers properly.
+  </p>
+
+</div>
