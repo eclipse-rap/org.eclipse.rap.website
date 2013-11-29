@@ -46,7 +46,7 @@
 
   <build name="2.2 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2013-11-29"
       news="2.2/?build=RC1"
       runtimeZip="rap-2.2.0-RC1-20131127-1035.zip"
