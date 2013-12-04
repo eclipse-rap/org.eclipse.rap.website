@@ -50,6 +50,10 @@
 
   <h1>Downloads</h1>
 
+  <p>
+    If you are new to RAP, please take a look at the <q>Getting Started</q>
+    section of the <a href="/rap/developers-guide/">Developers Guide</a> before downloading.
+  </p>
 
   <h2>RAP (Target Components)</h2>
 
