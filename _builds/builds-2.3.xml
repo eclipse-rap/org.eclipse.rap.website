@@ -1,85 +1,85 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<builds version="2.2"
+<builds version="2.3"
     simultaneousRelease="">
 
   <feature id="runtime">
     <name>RAP (Runtime)</name>
     <description>based on Eclipse 4.4</description>
-    <site>http://download.eclipse.org/rt/rap/2.2</site>
-    <downloadPath>/rt/rap/2.2/</downloadPath>
+    <site>http://download.eclipse.org/rt/rap/2.3</site>
+    <downloadPath>/rt/rap/2.3/</downloadPath>
   </feature>
 
   <feature id="tools">
     <name>RAP Tools</name>
     <description>for use with Eclipse 3.8 to 4.4</description>
-    <site>http://download.eclipse.org/rt/rap/tools/2.2</site>
-    <downloadPath>/rt/rap/tools/2.2/</downloadPath>
+    <site>http://download.eclipse.org/rt/rap/tools/2.3</site>
+    <downloadPath>/rt/rap/tools/2.3/</downloadPath>
   </feature>
 
-  <build name="2.2 M1" type="M"
+  <build name="2.3 M1" type="M"
       shortname="M1"
       status="planned"
-      publishDate="2014-02-07"
-      news="2.2/?build=M1"
+      publishDate="2014-01-31"
+      news="2.3/?build=M1"
       runtimeZip=""
       toolsZip=""
       />
 
-  <build name="2.2 M2" type="M"
+  <build name="2.3 M2" type="M"
       shortname="M2"
       status="planned"
-      publishDate="2014-03-21"
-      news="2.2/?build=M2"
+      publishDate="2014-03-14"
+      news="2.3/?build=M2"
       />
 
-  <build name="2.2 M3" type="M"
+  <build name="2.3 M3" type="M"
       shortname="M3"
       status="planned"
       publishDate="2014-05-09"
-      news="2.2/?build=M3"
+      news="2.3/?build=M3"
       />
 
-  <build name="2.2 RC1" type="RC"
+  <build name="2.3 RC1" type="RC"
       shortname="RC1"
       status="planned"
       publishDate="2014-05-23"
-      news="2.2/?build=RC1"
+      news="2.3/?build=RC1"
       />
 
-  <build name="2.2 RC2" type="RC"
+  <build name="2.3 RC2" type="RC"
       shortname="RC2"
       status="planned"
       publishDate="2014-05-30"
-      news="2.2/?build=RC2"
+      news="2.3/?build=RC2"
       />
 
-  <build name="2.2 RC3" type="RC"
+  <build name="2.3 RC3" type="RC"
       shortname="RC3"
       status="planned"
       publishDate="2014-06-06"
-      news="2.2/?build=RC3"
+      news="2.3/?build=RC3"
       />
 
-  <build name="2.2" type="R"
+  <build name="2.3" type="R"
       shortname="R"
       status="planned"
       publishDate="2014-06-25"
-      news="2.2/"
+      news="2.3/"
       />
 
-  <build name="2.2.1" type="SR"
+  <build name="2.3.1" type="SR"
       shortname="SR1"
       status="planned"
       publishDate="2014-09-27"
-      news="2.2/?build=SR1"
+      news="2.3/?build=SR1"
       />
 
-  <build name="2.2.2" type="SR"
+  <build name="2.3.2" type="SR"
       shortname="SR2"
       status="planned"
       publishDate="2015-02-28"
-      news="2.2/?build=SR2"
+      news="2.3/?build=SR2"
       />
 
 </builds>
