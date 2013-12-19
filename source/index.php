@@ -11,38 +11,48 @@
 
   <h1>Source Code</h1>
 
-  <h2>Browse git repositories</h2>
   <p>
-    You can browse the sources on the web:
+    All our source code is hosted in git repositories at Eclipse.
+  </p>
+
+  <h2>RAP</h2>
+
+  <p>
+    This repository contains the entire source code of the RAP platform (a.k.a. the runtime).
   </p>
   <ul>
     <li>
-      <a href="http://git.eclipse.org/c/rap/org.eclipse.rap.git/tree">RAP</a>
-      - contains the RAP Runtime itself.
+      <strong>browse</strong> the repository:
+      <a href="http://git.eclipse.org/c/rap/org.eclipse.rap.git/tree">git.eclipse.org/c/rap/org.eclipse.rap.git/tree</a>
     </li>
     <li>
-      <a href="http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/tree">RAP Tools</a>:
-      - contains the tools, templates and documentation for the Eclipse IDE.
+      <strong>clone</strong> the repository:
+      git://git.eclipse.org/gitroot/rap/org.eclipse.rap.git
+    </li>
+    <li>
+      <strong>push changes</strong> to <a href="http://wiki.eclipse.org/Gerrit">Gerrit</a>:
+      ssh://username@git.eclipse.org:29418/rap/org.eclipse.rap.git
     </li>
   </ul>
 
-  <h2>Clone git repositories</h2>
-  <ul>
-    <li>RAP: <code>git://git.eclipse.org/gitroot/rap/org.eclipse.rap.git</code></li>
-    <li>RAP Tools: <code>git://git.eclipse.org/gitroot/rap/org.eclipse.rap.tools.git</code></li>
-  </ul>
-  <p>
-    If you are using Eclipse EGit you can add the repository by right-clicking into the
-    <strong>Git&nbsp;Repositories&nbsp;View</strong> and then choosing <em>Paste Repository Path or URI</em>.
-  </p>
-  <p>
-    Alternatively you can run <code>git clone [repository-path]</code> with your command line tool.
-  </p>
+  <h2>RAP Tools</h2>
 
-  <h2>Github mirrors</h2>
   <p>
-    Our git repositories are mirrored on <a href="https://github.com/eclipse/">github</a>, fork us ;-).
+    This repository contains the code of the Eclipse tools for RAP.
   </p>
+  <ul>
+    <li>
+      <strong>browse</strong> the repository:
+      <a href="http://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/tree">git.eclipse.org/c/rap/org.eclipse.rap.tools.git/tree</a>
+    </li>
+    <li>
+      <strong>clone</strong> the repository: git://git.eclipse.org/gitroot/rap/org.eclipse.rap.tools.git
+    </li>
+    <li>
+      <strong>push changes</strong> to <a href="http://wiki.eclipse.org/Gerrit">Gerrit</a>:
+      ssh://username@git.eclipse.org:29418/rap/org.eclipse.rap.tools.git
+    </li>
+  </ul>
 
   <h2>Incubator</h2>
   <p>
@@ -51,6 +61,11 @@
   </p>
   <h2>Learn about git at Eclipse</h2>
   <p>For more information on git at Eclipse read <a href="http://wiki.eclipse.org/Git">this introduction</a>.</p>
+
+  <h2>Github mirrors</h2>
+  <p>
+    Our git repositories are mirrored on <a href="https://github.com/eclipse/">github</a>, fork us ;-).
+  </p>
 
 </div>
 

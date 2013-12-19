@@ -12,30 +12,29 @@
   <h1>Getting involved with RAP development</h1>
 
   <p>
-    Everyone is invited to getting involved with the RAP project.
-    Contributing may include
+    You are invited to contribute to RAP. This includes:
   </p>
   <ul>
     <!-- share findings in the newsgroup -->
     <li>
-      Writing a valuable bug report, i.e. report a defect that is not already known,
-      provide a short and concise explanation of the problem, a snippet to reproduce the issue,
-      ideally a JUnit test case that outlines the expected behavior.
-      See the
-      <a href="http://wiki.eclipse.org/RAP_Bug_Reporting_Howto">Bug Reporting Howto</a>
-      for details.
+      <strong>Write a valuable bug report.</strong>
+      If you've found a defect in RAP, please don't keep it to yourself.
+      Every environment is a bit different, and you may be the first one to notice the problem.
+      So please, <a href="../bugs/">file a new bug</a> to let us know!
     </li>
     <li>
-      Providing a patch to an <a href="/rap/bugs/">existing bug report</a>.
-      A patch must not break existing functionality, particularly it should not break any tests.
-      If necessary, it should contain changes or additions to our tests.
-      If changes are needed, you should explain why you think the test needs to be changed.
+      <strong>Provide a fix.</strong>
+      If you're familiar with the <a href="../source/">souce code</a> and know how to fix a problem,
+      please consider to contribute your fix.
+      We use the <a href="http://wiki.eclipse.org/Gerrit">Gerrit</a> code review system
+      so you can easily push your commit for review.
     </li>
     <li>
-      Contribute a custom component.
-      If you wrote a custom component for RAP that might be useful to others,
-      it could be hosted in the
-      <a href="/rap/incubator/">Incubator</a>.
+      <strong>Contribute a custom component.</strong>
+      If you wrote a custom component for RAP that might be useful to others, please consider to
+      contribute it back.
+      The
+      <a href="/rap/incubator/">Incubator</a> might be a suitable place to host it.
       Please contact us on the
       <a href="http://dev.eclipse.org/mhonarc/lists/rap-dev/">developer mailing list</a>
       if you'd like to share your code.
@@ -46,16 +45,16 @@
 
   <ul>
     <li>
-      Contributors should, of course, work with the latest source code.
-      The <a href="/rap/source/">source page</a> explains how to obtain it.
+      As a contributor, you should work with the latest
+      <a href="/rap/source/">source code</a>.
     </li>
     <!-- Tests -->
     <li>
-      Contributors must adhere to our
+      Please take a minute to read over our
       <a href="http://wiki.eclipse.org/RAP/CodingStandards">Coding Standards</a>.
     </li>
     <li>
-      Development-related questions should be discussed on the
+      Development-related questions are discussed on the
       <a href="https://dev.eclipse.org/mailman/listinfo/rap-dev">rap-dev</a>
       mailing list.
     </li>
