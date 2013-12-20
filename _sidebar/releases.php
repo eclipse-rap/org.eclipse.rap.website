@@ -8,7 +8,7 @@
         <em><a href="/rap/downloads/2.3/">RAP 2.3&emsp;June 2014 (planned)</a></em>
       </li>
       <li>
-        <em><a href="/rap/downloads/2.2/">RAP 2.2&emsp;December 2013 (planned)</a></em>
+        <a href="/rap/downloads/2.2/">RAP 2.2&emsp;December 2013</a>
       </li>
       <li>
         <a href="/rap/downloads/2.1/">RAP 2.1&emsp;June 2013 (Kepler)</a>
