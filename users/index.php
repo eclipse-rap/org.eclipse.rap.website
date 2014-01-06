@@ -13,8 +13,8 @@
   <h1>Built on RAP</h1>
   <p>
      We'd be happy to learn about <em>your</em> RAP project. <br/>If you have something to add
-     to this page, just open an enhancement request in the 
-    <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&component=Website">Website</a> 
+     to this page, just open an enhancement request in the
+    <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&component=Website">Website</a>
     component of the RAP project in bugzilla.
   </p>
 
@@ -61,11 +61,11 @@
         <a href = "http://www.eclipse.org/scout/">Eclipse Scout Project</a>
       </h4>
       <p>
-        Eclipse Scout is a mature and easy to learn framework that supports building applications for 
-        both desktop (Swing or SWT) and web (RAP Widget Tookit). 
-        Scout has been developed at BSI since 2001. 
-        In 2011, BSI has published Scout under the Eclipse Public License. 
-        RAP applications can be created since Scout 3.8 (Juno). 
+        Eclipse Scout is a mature and easy to learn framework that supports building applications for
+        both desktop (Swing or SWT) and web (RAP Widget Tookit).
+        Scout has been developed at BSI since 2001.
+        In 2011, BSI has published Scout under the Eclipse Public License.
+        RAP applications can be created since Scout 3.8 (Juno).
       </p>
       <p class="refs">References:</p>
       <ul>
@@ -99,7 +99,7 @@
       <h2 id="riena" class="withTagline">Eclipse Riena</h2>
       <h4 class="tagline"><a href = "http://www.compeople.de/" >compeople AG</a> / <a href = "http://www.eclipse.org/riena/">Eclipse Riena Project</a></h4>
       <p>
-        The Riena platform provides a foundation for building multi-tier 
+        The Riena platform provides a foundation for building multi-tier
         enterprise client/server applications. It features a business process oriented user
         interface visualization and navigation metaphor, which can be used as an  alternative
         to the default workbench layout. Since it is based on RCP, an can also use RAP as a
@@ -135,10 +135,10 @@
       <h2 id="gyrex" class="withTagline">Eclipse Gyrex</h2>
       <h4 class="tagline"><a href="http://www.eclipse.org/gyrex/">Eclipse Gyrex Project</a></h4>
       <p>
-        Gyrex is an Eclipse Open Source project that provides a platform on top of the 
-        Equinox OSGi framework, enabling seamless and pain-free operation of Equinox server 
-        clusters. It also provides frameworks and concepts for developing, deploying and scaling 
-        applications on top of Gyrex based clouds, which 
+        Gyrex is an Eclipse Open Source project that provides a platform on top of the
+        Equinox OSGi framework, enabling seamless and pain-free operation of Equinox server
+        clusters. It also provides frameworks and concepts for developing, deploying and scaling
+        applications on top of Gyrex based clouds, which
         can be administrated using an extensible, RAP based web interface.
       </p>
       <p class="refs">References:</p>
@@ -223,10 +223,10 @@
       <h4 class="tagline"><a href="http://www.vitaphone.de/en/company/">Vitaphone GmbH</a></h4>
       <p>
         The Integrated Service Platform ISP is the IT infrastructure core of the telemedical services of the Vitaphone GmbH.
-        With the ISP, remote patient monitoring is managed, electronic case files are administered 
+        With the ISP, remote patient monitoring is managed, electronic case files are administered
         and the processes of the Telemedical Service Center (TSC) are controlled.
-        The ISP has a modular structure, meaning that different project-specific services can be optionally added. 
-        Vitaphone considers it 
+        The ISP has a modular structure, meaning that different project-specific services can be optionally added.
+        Vitaphone considers it
           <a href="http://www.slideshare.net/rsternberg/eclipse-in-telemedicine-and-health-care">
             <em>
               <q>
@@ -343,7 +343,7 @@
     </div>
     <div>
       <h2 class="withTagline">Numiton Migration Tools</h2>
-      <h4 class="tagline"><a href="http://www.numiton.com/">Numiton Limited</a></h4> 
+      <h4 class="tagline"><a href="http://www.numiton.com/">Numiton Limited</a></h4>
       <p>
         This online application showcases the features of the
         <a href="http://www.numiton.com/products/ntile-ptoj/ptoj-overview.html">nTile migration system</a>
@@ -373,7 +373,7 @@
     </div>
     <div>
       <h2 class="withTagline">CodeFaces</h2>
-      <h4 class="tagline"><a href="http://codefaces.org/">CodeFaces.org</a></h4> 
+      <h4 class="tagline"><a href="http://codefaces.org/">CodeFaces.org</a></h4>
       <p>
         A web-based source control client that targets at easing the pain of navigating code
         from a source control system on a browser.
@@ -401,11 +401,11 @@
       <h2 class="withTagline">Energy Information System</h2>
       <h4 class="tagline"><a href="http://www.enelytics.com/">Enelytics LLC</a></h4>
       <p>
-       Enelytics provides web application services for energy invoice processing and 
-       energy information management. The Energy Information System (EIS) is formed around a core 
-       feature set focused on processing, verifying, and analyzing energy invoices. 
-       Beyond this, EIS can be extended with many plug-in modules to meet different needs. 
-       Enelytics has adopted Eclipse runtime technologies as the basis for EIS, 
+       Enelytics provides web application services for energy invoice processing and
+       energy information management. The Energy Information System (EIS) is formed around a core
+       feature set focused on processing, verifying, and analyzing energy invoices.
+       Beyond this, EIS can be extended with many plug-in modules to meet different needs.
+       Enelytics has adopted Eclipse runtime technologies as the basis for EIS,
        the Rich Ajax Platform in particular.
        </p>
       <p class="refs">References:</p>
@@ -440,7 +440,7 @@
       <p class="refs">References:</p>
       <ul>
         <li>
-          <a href="http://www.book-publishing-software.com/">http://www.book-publishing-software.com/</a>
+          <a href="http://www.xino.org/">http://www.xino.org/</a>
         </li>
       </ul>
     </div>
@@ -457,13 +457,13 @@
       <h2 class="withTagline">OTIS - Oil Trading and Information System</h2>
       <h4 class="tagline"><a href="http://www.meko-s.de">MEKO-S GmbH</a></h4>
       <p>
-        The software OTIS does allow petrol station owners to manage their petrol stations, 
-        do the invoicing and contact customers via the built-in CRM module. 
+        The software OTIS does allow petrol station owners to manage their petrol stations,
+        do the invoicing and contact customers via the built-in CRM module.
       </p>
       <p>
-        While this happens in a RCP desktop application, the fuel card users that buy petrol 
-        at these stations use the provided RAP based <em>customer portal</em> to be able to 
-        manage their cards and view all their transaction and invoice history. 
+        While this happens in a RCP desktop application, the fuel card users that buy petrol
+        at these stations use the provided RAP based <em>customer portal</em> to be able to
+        manage their cards and view all their transaction and invoice history.
       </p>
       <p class="refs">References:</p>
       <ul>
