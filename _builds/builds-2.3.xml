@@ -71,14 +71,14 @@
   <build name="2.3.1" type="SR"
       shortname="SR1"
       status="planned"
-      publishDate="2014-09-27"
+      publishDate="2014-09-26"
       news="2.3/?build=SR1"
       />
 
   <build name="2.3.2" type="SR"
       shortname="SR2"
       status="planned"
-      publishDate="2015-02-28"
+      publishDate="2015-02-27"
       news="2.3/?build=SR2"
       />
 
