@@ -1,0 +1,66 @@
+<div>
+
+  <h2>Applications</h2>
+
+  <h3>Support for entrypoints at the root path</h3>
+
+  <p>
+    Entrypoints in RAP are registered with a servlet path (e.g. “/example”).
+    When deployed in a servlet container, every web application also has a context path.
+    For example, a WAR file named “myapp.war” will lead to the context path “/myapp”
+    This results in a URL like the following:
+  </p>
+<pre>
+  http://example.com/myapp/example
+</pre>
+    It may be desirable to make the default entrypoint of an application directly available at the
+    application's base URL:
+<pre>
+  http://example.com/myapp/
+</pre>
+  <p>
+    To enable this pattern, entry points can now also be registered at the root path (“/”):
+  </p>
+<pre lang="java">
+public class ExampleApplication implements ApplicationConfiguration {
+
+  public void configure( Application application ) {
+    application.addEntryPoint( "/", ExampleEntryPoint.class, null );
+  }
+
+}
+</pre>
+  <p>
+    Please note that for RWT standalone, you should map the RWT servlet to the empty string
+    (the path “/” is a special case in the servlet spec, it identifies the so-called
+    <em>global</em> servlet).
+  </p>
+<pre lang="xml">
+&lt;servlet-mapping&gt;
+  &lt;servlet-name&gt;rwtServlet&lt;/servlet-name&gt;
+  &lt;url-pattern&gt;&lt;/url-pattern>
+&lt;/servlet-mapping&gt;
+</pre>
+
+  <h3>Support for starting with HTTP POST</h3>
+
+  <p>
+    Since RAP 1.5, the RAP server required that the initial request to an application was made
+    using the HTTP GET method. This request will be answered with the initial HTML page that loads
+    the application.
+    POST requests were reserved for Ajax calls that update the client's UI.
+    Some users have reported that in certain restricted environments, it can be helpful to be able
+    to start a RAP application with a POST request.
+  </p>
+  <p>
+    Therefore we changed our policy and allow for RAP applications being accessed with a POST
+    request again.
+    However, please note that POST parameters sent with the initial request are not yet available
+    to application code.
+  </p>
+
+  <!-- TODO
+  <h3>Virgo Nano RAP</h3>
+  -->
+
+</div>
