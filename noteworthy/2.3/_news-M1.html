@@ -59,8 +59,45 @@ public class ExampleApplication implements ApplicationConfiguration {
     to application code.
   </p>
 
-  <!-- TODO
-  <h3>Virgo Nano RAP</h3>
-  -->
+  <h2>Deployment</h2>
+
+  <h3>New Virgo RAP Server</h3>
+
+  <p>
+    It seems that WAR files are still the most popular deployment option for RAP applications.
+    In order to provide an easier way of deploying RAP applications, we've started a collaboration
+    with the <a href="http://eclipse.org/virgo">Virgo</a> project to provide a lightweight RAP
+    server runtime based on Virgo nano.
+    This OSGi container is equipped with all RAP bundles required to run your application.
+  </p>
+  <p>
+    This container will soon be available on the Virgo download pages.
+    If you're interested, you can already try out the latest build that is based on RAP 2.3 M1.
+    To run your application on it, follow these steps:
+  </p>
+  <ul>
+    <li>Download virgo-nano-rap from the
+      <a href="https://hudson.eclipse.org/virgo/job/virgo.packaging.snapshot/lastSuccessfulBuild/artifact/build-packaging/target/artifacts/">latest snapshot build</a>
+    </li>
+    <li>
+      Extract the zip file to a folder of your choice
+    </li>
+    <li>
+      Copy your application bundles into the <em>pickup/</em> directory
+    </li>
+    <li>
+      Start the server using the startup script in <em>bin/</em>
+    </li>
+    <li>
+      Access your application at <em>http://localhost:8080/yourapp</em>
+    </li>
+  </ul>
+
+<pre>
+$ unzip virgo-nano-rap-3.7.0.CI-2014-01-30_19-33-17.zip
+$ cd virgo-nano-rap-3.7.0.CI-2014-01-30_19-33-17
+$ cp ~/org.eclipse.rap.demo.controls_2.3.0.20131210-1030.jar pickup
+$ bin/startup.sh
+</pre>
 
 </div>
