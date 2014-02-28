@@ -1,0 +1,53 @@
+<div>
+
+  <h3>New API for Singletons</h3>
+
+  <p>
+    We already provide the class <em>SingletonUtil</em> to facilitate the conversion of classic
+    singletons to UISession-scoped singletons for use in RAP's multi-user environment.
+    This class has a new method named <em>getUniqueInstance</em> that accepts a UISession instance
+    as a parameter. You can obtain a unique instance of a given class for the current UISession like so:
+  </p>
+
+<pre lang="java">
+public static MySingleton getInstance() {
+  UISession uiSession = RWT.getUISession();
+  return SingletonUtil.getUniqueInstance( MySingleton.class, uiSession );
+}
+</pre>
+
+  <p>
+    In this case, the method is equivalent to the existing method <code>getSessionInstance()</code>.
+    However, with the additional parameter, it allows you to obtain the singleton instance
+    for a given UISession <em>even from another thread</em> without having to wrap your code
+    in a runnable and pass it to <code>uiSession.exec()</code>.
+    To prepare your singleton for access from background threads, you may consider adding a
+    parameter to the getInstance method as shown below.
+    This pattern also allows for better unit tests.
+  </p>
+
+<pre lang="java">
+private static MySingleton getInstance( UISession uiSession ) {
+  return SingletonUtil.getUniqueInstance( MySingleton.class, uiSession );
+}
+</pre>
+
+  <p>
+    The old method <code>getSessionInstance()</code> still exists and delegates to the new one,
+    so you should be able to adjust your code using an “Inline Method” refactoring.
+  </p>
+
+  <h3>Support for Application Singletons</h3>
+
+  <p>
+    Similar to UISession singletons, you can now also create singletons with application scope.
+    Whenever you run multiple RAP applications in a single VM, there may be classes in a shared
+    bundle that should have exactly one instance per application.
+  </p>
+
+<pre lang="java">
+ApplicationContext context = RWT.getApplicationContext();
+SingletonUtil.getUniqueInstance( MySingleton.class, applicationContext );
+</pre>
+
+</div>
