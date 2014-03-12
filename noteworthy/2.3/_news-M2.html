@@ -1,5 +1,47 @@
 <div>
 
+  <h3>Drag&amp;Drop Support for Client Files</h3>
+
+  <p>
+    You can now allow users to upload files from their desktop by dropping them onto a widget.
+    To do so, you use the SWT Drag&amp;Drop API with the transfer type
+    <code>ClientFileTransfer</code>.
+    The following example shows how to enable a Label to accept files:
+  </p>
+
+<pre lang="java">
+Label dropLabel = new Label( parent, SWT.BORDER );
+dropLabel.setText( "Drop files here" );
+DropTarget dropTarget = new DropTarget( dropLabel, DND.DROP_MOVE );
+dropTarget.setTransfer( new Transfer[]{ ClientFileTransfer.getInstance() } );
+dropTarget.addDropListener( new DropTargetAdapter() {
+  @Override
+  public void drop( DropTargetEvent event ) {
+    filesDropped( (ClientFile[])event.data );
+  }
+} );
+</pre>
+
+  <p>
+    The <code>event.data</code> field will contain an array of <code>ClientFile</code>s, that
+    provide information on the dropped files.
+    It's an array because the user can also select and drag multiple files.
+    To actually upload the dropped files, the new client service <code>ClientFileUploader</code>
+    can be used:
+  </p>
+
+<pre>
+ClientFileUploader uploader = RWT.getClient().getService( ClientFileUploader.class );
+uploader.submit( uploadUrl, clientFiles );
+</pre>
+
+  <p>
+    Finally, you have to accept and store the files on the server.
+    The fileupload component in the <a href="http://eclipse.org/rap/incubator/">RAP Incubator</a>
+    can be used to handle uploads in RAP easily.
+    The <code>FileDialog</code>, also in the RAP Incubator, now also accepts dropped files.
+  </p>
+
   <h3>New API for Singletons</h3>
 
   <p>
