@@ -84,6 +84,10 @@ $NAV_ENTRIES = array(
         "label" => "Getting Involved",
         "url" => "/rap/getting-involved/"
       ),
+      "forum" => array(
+        "label" => "<span class='nav-redirect'>Forum</span>",
+        "url" => "http://www.eclipse.org/forums/eclipse.technology.rap"
+      ),
       "bugs" => array(
         "label" => "Bugs",
         "url" => "/rap/bugs/"
