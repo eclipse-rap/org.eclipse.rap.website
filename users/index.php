@@ -180,6 +180,37 @@
     <div style="clear: both;"></div>
   </div>
 
+  <div class="box">
+    <div class="images">
+      <a href="images/dirigible_workbench-full.png">
+        <img src="images/dirigible_workbench.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">Dirigible</h2>
+      <h4 class="tagline"><a href="http://www.dirigible.io">Dirigible Project</a></h4>
+      <p>
+        Dirigible is an open source project that provides Integrated Development Environment as a
+        Service (IDEaaS) as well as runtime engines integration for the running applications. The
+        major benefit of this toolkit is the shortest ever turnaround time, provided by leveraging
+        In-System Development Model and Cloud Environment.
+      </p>
+      <p class="refs">References:</p>
+      <ul>
+        <li>
+          <a href="http://github.com/SAP/cloud-dirigible">Source code</a>
+        </li>
+        <li>
+          <a href="http://forum.dirigible.io">Forum</a>
+        </li>
+        <li>
+          <a href="http://samples.dirigible.io">Samples</a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
   <h2 class="section" >Commercial Projects</h2>
 
   <div class="box">
@@ -472,37 +503,6 @@
         </li>
         <li>
           <a href="http://www.youtube.com/watch?v=nbRKE1b8KyU">EclipseCon Europe 2012 Recording</a>
-        </li>
-      </ul>
-    </div>
-    <div style="clear: both;"></div>
-  </div>
-
-  <div class="box">
-    <div class="images">
-      <a href="images/dirigible_workbench-full.png">
-        <img src="images/dirigible_workbench.png"/>
-      </a>
-    </div>
-    <div>
-      <h2 class="withTagline">Dirigible</h2>
-      <h4 class="tagline"><a href="http://www.dirigible.io">Dirigible Project</a></h4>
-      <p>
-        Dirigible is an open source project that provides Integrated Development Environment as a
-        Service (IDEaaS) as well as runtime engines integration for the running applications. The
-        major benefit of this toolkit is the shortest ever turnaround time, provided by leveraging
-        In-System Development Model and Cloud Environment.
-      </p>
-      <p class="refs">References:</p>
-      <ul>
-        <li>
-          <a href="http://github.com/SAP/cloud-dirigible">Source code</a>
-        </li>
-        <li>
-          <a href="http://forum.dirigible.io">Forum</a>
-        </li>
-        <li>
-          <a href="http://samples.dirigible.io">Samples</a>
         </li>
       </ul>
     </div>
