@@ -54,4 +54,21 @@
     <i>text-shadow</i> and <i>padding</i>.
   </p>
 
+  <h3>JavaScript API for Widget HTML manipulation</h3>
+
+  <p>
+    JavaScript widget objects obtained via <code>rap.getObject( id )</code> now have an
+    field <a href="http://download.eclipse.org/rt/rap/doc/2.3/guide/reference/jsdoc/symbols/Widget.html#$el">"$el"</a> that allows manipulating their HTML element. Currently it can only be used to set
+    HTML attributes, but this already makes it possible to assign test-id's for easier
+    <a href="http://eclipsesource.com/blogs/2014/04/29/how-to-write-ui-tests-for-rap-with-selenium-2-0/">UI-Testing</a>.
+    It could also be used to add <a href="http://www.w3.org/TR/wai-aria/">ARIA</a> attributes that can be evaluated by screen reader software.
+  </p>
+
+  <h3>New Incubator Project: e4 on RAP</h3>
+
+  <p>
+    Tom Schindl is working on <a href="http://eclipsesource.com/blogs/2014/04/10/getting-started-with-eclipse4-applications-on-rap/">e4 support for RAP</a>,
+    and the necessary additional components will (for now) live in <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.e4.git/">this</a> RAP Incubator repository.
+  </p>
+
 </div>
