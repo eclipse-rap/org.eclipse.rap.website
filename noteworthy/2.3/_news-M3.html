@@ -1,0 +1,31 @@
+<div>
+
+  <h3>Breaking changes in Firefox 29+</h3>
+
+  <p>
+    Some browser specific API, used for detection of Firefox, have been removed from Firefox 29. As
+    a result, RAP application may not start (RAP <= 2.1) or may work with visual glitches (RAP 2.2)
+    <?=bug(433179)?>. This issue is fixed in M3. For older versions of RAP, please visit the
+    <a href="https://wiki.eclipse.org/RAP/FAQ#Blank_page_or_client_crash_in_Firefox_29.2B">FAQ</a>
+    for workarounds that you can apply yourself.
+  </p>
+
+  <h3>Migrated DropDown widget to RAP Core</h3>
+
+  <p>
+    The DropDown widget has been graduated from the incubator and is now included in the RAP core.
+  </p>
+
+  <h3>Client-side (C)Combo rework</h3>
+
+  <p>
+    The JavaScript part of the <code>Combo</code> widget implementation has been completely
+    rewritten. It now uses client-side <code>DropDown</code> implementation for it's list, allowing
+    as to handle huge amonth of items without performance degradation.
+    Now it's also possible the theme <code>Combo</code> list items independently.
+    <code>Combo-List-Item</code> CSS element supports <code>color</code>,
+    <code>background-color</code>, <code>background-image</code>, <code>text-decoration</code>,
+    <code>text-shadow</code> and <code>padding</code> properties.
+  </p>
+
+</div>
