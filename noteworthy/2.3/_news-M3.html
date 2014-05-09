@@ -71,4 +71,20 @@
     and the necessary additional components will (for now) live in <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.e4.git/">this</a> RAP Incubator repository.
   </p>
 
+  <h3>Heads up: Deprecation in lifecycle package</h3>
+
+  <p>
+    In an effort to remove the internals of the request processing (lifecycle and phases) from our
+    public API, we are currently marking all API in the package <em>org.eclipse.rap.rwt.lifecycle</em>
+    as deprecated.
+    This includes lifecycle adapters (LCAs), phase listeners, and the class <code>WidgetUtil</code>.
+    Most of this API is only relevant for custom widgets, and is replaced by the new API in the
+    <em>org.eclipse.rap.rwt.remote</em> package
+    (<code>RemoteObject</code>, <code>OperationHandler</code> etc.).
+  </p>
+  <p>
+    All deprecated API is still supported in 2.3 and will be removed in 3.0.
+    We'll provide a migration guide that explains alternatives.
+  </p>
+
 </div>
