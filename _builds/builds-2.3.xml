@@ -55,9 +55,11 @@
 
   <build name="2.3 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2014-05-30"
       news="2.3/?build=RC2"
+      runtimeZip="rap-2.3.0-RC2-20140527-1230.zip"
+      toolsZip="rap-tools-2.3.0-RC2-20140524-1132.zip"
       />
 
   <build name="2.3 RC3" type="RC"
