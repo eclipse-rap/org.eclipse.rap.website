@@ -228,6 +228,15 @@ uploader.submit( uploadUrl, clientFiles );
     the application.
   </p>
 
+  <h3>Row Template supports percentage values</h3>
+
+  <p>
+    In the class <em>Cell</em> the methods <em>setLeft</em>, <em>setTop</em>, <em>setBottom</em>
+    and <em>setRight</em> now all have an optional parameter &quot;percentage&quot; that accepts
+    a float value between 0 and 100. The value is relative to the width/height of the row and is
+    added to the given absolute pixel offset.
+  </p>
+
   <h3>Client-side (C)Combo rework</h3>
 
   <p>
