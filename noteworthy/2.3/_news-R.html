@@ -7,6 +7,107 @@
     <a href="../2.0/migration-guide/">RAP 2.0 migration guide</a>.
   </p>
 
+<h2>Widget Set</h2>
+
+  <h3>Drag&amp;Drop Support for Client Files</h3>
+
+  <img src="images/upload1.png" style="max-width: 100%;border: 1px solid #bdbdbd;border-radius: 3px;" />
+
+  <p>
+    You can now allow users to upload files from their desktop by dropping them onto a widget.
+    To do so, you use the SWT Drag&amp;Drop API with the transfer type
+    <code>ClientFileTransfer</code>.
+    The following example shows how to enable a Label to accept files:
+  </p>
+
+<pre lang="java">
+Label dropLabel = new Label( parent, SWT.BORDER );
+dropLabel.setText( "Drop files here" );
+DropTarget dropTarget = new DropTarget( dropLabel, DND.DROP_MOVE );
+dropTarget.setTransfer( new Transfer[]{ ClientFileTransfer.getInstance() } );
+dropTarget.addDropListener( new DropTargetAdapter() {
+  @Override
+  public void drop( DropTargetEvent event ) {
+    filesDropped( (ClientFile[])event.data );
+  }
+} );
+</pre>
+
+  <p>
+    The <code>event.data</code> field will contain an array of <code>ClientFile</code>s, that
+    provide information on the dropped files.
+    It's an array because the user can also select and drag multiple files.
+    To actually upload the dropped files, the new client service <code>ClientFileUploader</code>
+    can be used:
+  </p>
+
+<pre>
+ClientFileUploader uploader = RWT.getClient().getService( ClientFileUploader.class );
+uploader.submit( uploadUrl, clientFiles );
+</pre>
+
+  <p>
+    Finally, you have to accept and store the files on the server.
+    The fileupload component in the <a href="http://eclipse.org/rap/incubator/">RAP Incubator</a>
+    can be used to handle uploads in RAP easily.
+    The <code>FileDialog</code>, also in the RAP Incubator, now also accepts dropped files.
+  </p>
+
+  <h3>Migrated DropDown widget to RAP Core</h3>
+
+  <img src="images/dropdown.png" style="max-width: 100%;border: 1px solid #bdbdbd;border-radius: 3px;" />
+
+  <p>
+    The <i>DropDown</i> widget has been graduated from the RAP Incubator and is now included in the RAP
+    core. It is basically a popup-list that can be attached to a Text widget. It simplifies
+    implementing components similar to the JFace <i>FieldAssist</i>, but is significantly better
+    suited for the RAP framework than <i>FieldAssist</i>.
+  </p>
+  <p>
+    Note that the <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown"><i>AutoSuggest</i></a>
+    component that builds on the <i>DropDown</i> widget is still in the same Incubator repository,
+    but has been adjusted in the master branch/nightly builds to work with RAP 2.3. Take care not
+    to include the old Incubator version of <i>DropDown</i> in your RAP 2.3 target, it may break
+    the application.
+  </p>
+
+  <h3>Row Template supports percentage values</h3>
+
+  <p>
+    In the class <em>Cell</em> the methods <em>setLeft</em>, <em>setTop</em>, <em>setBottom</em>
+    and <em>setRight</em> now all have an optional parameter &quot;percentage&quot; that accepts
+    a float value between 0 and 100. The value is relative to the width/height of the row and is
+    added to the given absolute pixel offset.
+  </p>
+
+  <h3>Client-side (C)Combo rework</h3>
+
+  <p>
+    The JavaScript part of the <i>Combo</i> widget implementation has been completely
+    rewritten. It now uses client-side <i>DropDown</i> implementation for it's list, allowing
+    it to handle a much larger amount of items without performance degradation.
+  </p>
+
+  <p>
+    As a result it's now also possible to theme <i>Combo</i> list items independently.
+    The <i>Combo-List-Item</i> CSS element supports <i>color</i>,
+    <i>background-color</i>, <i>background-image</i>, <i>text-decoration</i>,
+    <i>text-shadow</i> and <i>padding</i>.
+  </p>
+
+  <h3>JavaScript API for Widget HTML manipulation</h3>
+
+  <p>
+    JavaScript widget objects obtained via <code>rap.getObject( id )</code> now have an field
+    <a href="http://download.eclipse.org/rt/rap/doc/2.3/guide/reference/jsdoc/symbols/Widget.html#$el">"$el"</a>
+    that allows manipulating their HTML element. Currently it can only be used to set
+    HTML attributes, but this already makes it possible to assign test-id's for easier
+    <a href="http://eclipsesource.com/blogs/2014/04/29/how-to-write-ui-tests-for-rap-with-selenium-2-0/">UI-Testing</a>.
+    It could also be used to add
+    <a href="http://eclipsesource.com/blogs/2014/05/28/rap-and-accessibility-screen-reader/">ARIA</a>
+    attributes that can be evaluated by screen reader software.
+  </p>
+
   <h2>Browser Support</h2>
 
   <h3>Firefox 29+ Detection</h3>
@@ -41,57 +142,7 @@
     features not possible with older browser.
   </p>
 
-  <h2>Applications</h2>
-
-  <h3>Support for entrypoints at the root path</h3>
-
-  <p>
-    Entrypoints in RAP are registered with a servlet path (e.g. &quot;/example&quot;).
-    When deployed in a servlet container, every web application also has a context path.
-    For example, a WAR file named &quot;myapp.war&quot; will lead to the context path
-    &quot;/myapp&quot; This results in a URL like the following:
-  </p>
-<pre>
-  http://example.com/myapp/example
-</pre>
-    It may be desirable to make the default entrypoint of an application directly available at the
-    application's base URL:
-<pre>
-  http://example.com/myapp/
-</pre>
-  <p>
-    To enable this pattern, entry points can now also be registered at the root path (&quot;/&quot;):
-  </p>
-<pre lang="java">
-public class ExampleApplication implements ApplicationConfiguration {
-
-  public void configure( Application application ) {
-    application.addEntryPoint( &quot;/&quot;, ExampleEntryPoint.class, null );
-  }
-
-}
-</pre>
-  <p>
-    Please note that for RWT standalone, you should map the RWT servlet to the empty string
-    (the path &quot;/&quot; is a special case in the servlet spec, it identifies the so-called
-    <em>global</em> servlet).
-  </p>
-<pre lang="xml">
-&lt;servlet-mapping&gt;
-  &lt;servlet-name&gt;rwtServlet&lt;/servlet-name&gt;
-  &lt;url-pattern&gt;&lt;/url-pattern>
-&lt;/servlet-mapping&gt;
-</pre>
-
-  <h3>Support for starting with HTTP POST</h3>
-
-  <p>
-    Since RAP 1.5, the RAP server required that the initial request to an application was made
-    using the HTTP GET method. Some users have reported that in certain restricted environments,
-    it can be helpful to be able to start a RAP application with a POST request.
-    Therefore we changed our policy and allow for RAP applications being accessed with a POST
-    request again.
-  </p>
+  <h2>Application Development</h2>
 
   <h3>New Incubator Project: e4 on RAP</h3>
 
@@ -168,98 +219,54 @@ ApplicationContext context = RWT.getApplicationContext();
 SingletonUtil.getUniqueInstance( MySingleton.class, applicationContext );
 </pre>
 
-  <h2>Widget Set</h2>
-
-  <h3>Drag&amp;Drop Support for Client Files</h3>
+  <h3>Support for entrypoints at the root path</h3>
 
   <p>
-    You can now allow users to upload files from their desktop by dropping them onto a widget.
-    To do so, you use the SWT Drag&amp;Drop API with the transfer type
-    <code>ClientFileTransfer</code>.
-    The following example shows how to enable a Label to accept files:
+    Entrypoints in RAP are registered with a servlet path (e.g. &quot;/example&quot;).
+    When deployed in a servlet container, every web application also has a context path.
+    For example, a WAR file named &quot;myapp.war&quot; will lead to the context path
+    &quot;/myapp&quot; This results in a URL like the following:
   </p>
-
-<pre lang="java">
-Label dropLabel = new Label( parent, SWT.BORDER );
-dropLabel.setText( "Drop files here" );
-DropTarget dropTarget = new DropTarget( dropLabel, DND.DROP_MOVE );
-dropTarget.setTransfer( new Transfer[]{ ClientFileTransfer.getInstance() } );
-dropTarget.addDropListener( new DropTargetAdapter() {
-  @Override
-  public void drop( DropTargetEvent event ) {
-    filesDropped( (ClientFile[])event.data );
-  }
-} );
-</pre>
-
-  <p>
-    The <code>event.data</code> field will contain an array of <code>ClientFile</code>s, that
-    provide information on the dropped files.
-    It's an array because the user can also select and drag multiple files.
-    To actually upload the dropped files, the new client service <code>ClientFileUploader</code>
-    can be used:
-  </p>
-
 <pre>
-ClientFileUploader uploader = RWT.getClient().getService( ClientFileUploader.class );
-uploader.submit( uploadUrl, clientFiles );
+  http://example.com/myapp/example
+</pre>
+    It may be desirable to make the default entrypoint of an application directly available at the
+    application's base URL:
+<pre>
+  http://example.com/myapp/
+</pre>
+  <p>
+    To enable this pattern, entry points can now also be registered at the root path (&quot;/&quot;):
+  </p>
+<pre lang="java">
+public class ExampleApplication implements ApplicationConfiguration {
+
+  public void configure( Application application ) {
+    application.addEntryPoint( &quot;/&quot;, ExampleEntryPoint.class, null );
+  }
+
+}
+</pre>
+  <p>
+    Please note that for RWT standalone, you should map the RWT servlet to the empty string
+    (the path &quot;/&quot; is a special case in the servlet spec, it identifies the so-called
+    <em>global</em> servlet).
+  </p>
+<pre lang="xml">
+&lt;servlet-mapping&gt;
+  &lt;servlet-name&gt;rwtServlet&lt;/servlet-name&gt;
+  &lt;url-pattern&gt;&lt;/url-pattern>
+&lt;/servlet-mapping&gt;
 </pre>
 
-  <p>
-    Finally, you have to accept and store the files on the server.
-    The fileupload component in the <a href="http://eclipse.org/rap/incubator/">RAP Incubator</a>
-    can be used to handle uploads in RAP easily.
-    The <code>FileDialog</code>, also in the RAP Incubator, now also accepts dropped files.
-  </p>
-
-  <h3>Migrated DropDown widget to RAP Core</h3>
+  <h3>Support for starting with HTTP POST</h3>
 
   <p>
-    The <i>DropDown</i> widget has been graduated from the RAP Incubator and is now included in the RAP
-    core. It is basically a popup-list that can be attached to a Text widget. It simplifies
-    implementing components similar to the JFace <i>FieldAssist</i>, but is significantly better
-    suited for the RAP framework than <i>FieldAssist</i>.
-  </p>
-  <p>
-    Note that the <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown"><i>AutoSuggest</i></a>
-    component that builds on the <i>DropDown</i> widget is still in the same Incubator repository,
-    but has been adjusted in the master branch/nightly builds to work with RAP 2.3. Take care not
-    to include the old Incubator version of <i>DropDown</i> in your RAP 2.3 target, it may break
-    the application.
-  </p>
-
-  <h3>Row Template supports percentage values</h3>
-
-  <p>
-    In the class <em>Cell</em> the methods <em>setLeft</em>, <em>setTop</em>, <em>setBottom</em>
-    and <em>setRight</em> now all have an optional parameter &quot;percentage&quot; that accepts
-    a float value between 0 and 100. The value is relative to the width/height of the row and is
-    added to the given absolute pixel offset.
-  </p>
-
-  <h3>Client-side (C)Combo rework</h3>
-
-  <p>
-    The JavaScript part of the <i>Combo</i> widget implementation has been completely
-    rewritten. It now uses client-side <i>DropDown</i> implementation for it's list, allowing
-    it to handle a much larger amount of items without performance degradation.
-  </p>
-
-  <p>
-    As a result it's now also possible to theme <i>Combo</i> list items independently.
-    The <i>Combo-List-Item</i> CSS element supports <i>color</i>,
-    <i>background-color</i>, <i>background-image</i>, <i>text-decoration</i>,
-    <i>text-shadow</i> and <i>padding</i>.
-  </p>
-
-  <h3>JavaScript API for Widget HTML manipulation</h3>
-
-  <p>
-    JavaScript widget objects obtained via <code>rap.getObject( id )</code> now have an
-    field <a href="http://download.eclipse.org/rt/rap/doc/2.3/guide/reference/jsdoc/symbols/Widget.html#$el">"$el"</a> that allows manipulating their HTML element. Currently it can only be used to set
-    HTML attributes, but this already makes it possible to assign test-id's for easier
-    <a href="http://eclipsesource.com/blogs/2014/04/29/how-to-write-ui-tests-for-rap-with-selenium-2-0/">UI-Testing</a>.
-    It could also be used to add <a href="http://eclipsesource.com/blogs/2014/05/28/rap-and-accessibility-screen-reader/">ARIA</a> attributes that can be evaluated by screen reader software.
+    Since RAP 1.5, the RAP server required that the initial request to an application was made
+    using the HTTP GET method. Some users have reported that in certain restricted environments,
+    it can be helpful to be able to start a RAP application with a POST request.
+    Therefore we changed our policy and allow for RAP applications being accessed with a POST
+    request again.
   </p>
 
 </div>
