@@ -13,17 +13,37 @@
     </p>
   </description>
 </component>
+<component id="nebula-grid">
+  <name>
+    Nebula Grid widget for RAP
+  </name>
+  <maintainer>
+    Ivan Furnadjiev
+  </maintainer>
+  <description>
+    <p>
+      RAP port of the <a href="http://www.eclipse.org/nebula/widgets/grid/grid.php">Grid widget</a>
+      from the <a href="http://www.eclipse.org/nebula">Nebula project</a>.
+    </p>
+    <p>
+      The Grid widget is a spreadsheet/table component that offers features not currently
+      available in the base SWT Tree/Table like column grouping, checkboxes on multiple
+      columns, variable item height and more.
+    </p>
+  </description>
+</component>
 <component id="dropdown">
   <name>
-    Dropdown Widget
+    Dropdown Widget / Autosuggest
   </name>
   <maintainer>
     Tim Buschtöns
   </maintainer>
   <description>
     <p>
-      The dropdown widget can display a list below a Text field in order to
-      display dynamic proposals while typing.
+      The DropDown widget can display a list below a Text field in order to
+      display dynamic proposals while typing. <b>Note:</b> The widget has been migrated to RWT
+      in RAP 2.3, but the Autosuggest component still lives in this repository.
     </p>
     <p>
       <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown">DropDown wiki page</a>
@@ -47,25 +67,6 @@
     </p>
   </description>
 </component>
-<component id="nebula-grid">
-  <name>
-    Nebula Grid widget for RAP
-  </name>
-  <maintainer>
-    Ivan Furnadjiev
-  </maintainer>
-  <description>
-    <p>
-      RAP port of the <a href="http://www.eclipse.org/nebula/widgets/grid/grid.php">Grid widget</a>
-      from the <a href="http://www.eclipse.org/nebula">Nebula project</a>.
-    </p>
-    <p>
-      The Grid widget is a spreadsheet/table component that offers features not currently
-      available in the base SWT Tree/Table like column grouping, checkboxes on multiple
-      columns, variable item height and more.
-    </p>
-  </description>
-</component>
 <component id="clientscripting">
   <name>
     ClientScripting
@@ -77,7 +78,8 @@
     <p>
       ClientScripting allows developers to handle certain events that occur in RAP applications
       directly on the client without creating any http-requests. Client scripts are written in
-      JavaScript using an SWT-like API.
+      JavaScript using an SWT-like API. <b>Note:</b> This component has been migrated to RWT
+      in RAP 2.2.
     </p>
     <p>
       <a href="http://wiki.eclipse.org/RAP/ClientScripting">ClientScripting wiki page</a>
