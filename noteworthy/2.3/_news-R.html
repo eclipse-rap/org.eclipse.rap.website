@@ -58,16 +58,16 @@ uploader.submit( uploadUrl, clientFiles );
   <img class="framed" src="images/dropdown.png" />
 
   <p>
-    The <i>DropDown</i> widget has been graduated from the RAP Incubator and is now included in the RAP
+    The <em>DropDown</em> widget has been graduated from the RAP Incubator and is now included in the RAP
     core. It is basically a popup-list that can be attached to a Text widget. It simplifies
-    implementing components similar to the JFace <i>FieldAssist</i>, but is significantly better
-    suited for the RAP framework than <i>FieldAssist</i>.
+    implementing components similar to the JFace <em>FieldAssist</em>, but is significantly better
+    suited for the RAP framework than <em>FieldAssist</em>.
   </p>
   <p>
-    Note that the <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown"><i>AutoSuggest</i></a>
-    component that builds on the <i>DropDown</i> widget is still in the same Incubator repository,
+    Note that the <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown"><em>AutoSuggest</em></a>
+    component that builds on the <em>DropDown</em> widget is still in the same Incubator repository,
     but has been adjusted in the master branch/nightly builds to work with RAP 2.3. Take care not
-    to include the old Incubator version of <i>DropDown</i> in your RAP 2.3 target, it may break
+    to include the old Incubator version of <em>DropDown</em> in your RAP 2.3 target, it may break
     the application.
   </p>
 
@@ -83,16 +83,16 @@ uploader.submit( uploadUrl, clientFiles );
   <h3>Client-side (C)Combo rework</h3>
 
   <p>
-    The JavaScript part of the <i>Combo</i> widget implementation has been completely
-    rewritten. It now uses client-side <i>DropDown</i> implementation for it's list, allowing
+    The JavaScript part of the <em>Combo</em> widget implementation has been completely
+    rewritten. It now uses client-side <em>DropDown</em> implementation for it's list, allowing
     it to handle a much larger amount of items without performance degradation.
   </p>
 
   <p>
-    As a result it's now also possible to theme <i>Combo</i> list items independently.
-    The <i>Combo-List-Item</i> CSS element supports <i>color</i>,
-    <i>background-color</i>, <i>background-image</i>, <i>text-decoration</i>,
-    <i>text-shadow</i> and <i>padding</i>.
+    As a result it's now also possible to theme <em>Combo</em> list items independently.
+    The <em>Combo-List-Item</em> CSS element supports <em>color</em>,
+    <em>background-color</em>, <em>background-image</em>, <em>text-decoration</em>,
+    <em>text-shadow</em> and <em>padding</em>.
   </p>
 
   <h3>JavaScript API for Widget HTML manipulation</h3>
@@ -113,7 +113,7 @@ uploader.submit( uploadUrl, clientFiles );
   <h3>Firefox 29+ Detection</h3>
 
   <p>
-    Due to changes in the <b>Firefox</b> API, RAP 2.2 and earlier was no longer able to correctly
+    Due to changes in the <strong>Firefox</strong> API, RAP 2.2 and earlier was no longer able to correctly
     identify Firefox 29. As a result, existing RAP application may crash or not start at all.
     This issue is fixed in 2.3. For older versions of RAP, please visit the
     <a href="https://wiki.eclipse.org/RAP/FAQ#Blank_page_or_client_crash_in_Firefox_29.2B">FAQ</a>
@@ -124,8 +124,8 @@ uploader.submit( uploadUrl, clientFiles );
 
   <p>
     Recently, a <a href="https://bugs.webkit.org/show_bug.cgi?id=125070">bug</a> has been introduced
-    in the WebKit engine, which is the basis for <b>Chrome, Safari and Opera</b>. This bug led to
-    RAP UIs becoming partly invisible when a <i>Canvas</i> widget or certain custom widgets are
+    in the WebKit engine, which is the basis for <strong>Chrome, Safari and Opera</strong>. This bug led to
+    RAP UIs becoming partly invisible when a <em>Canvas</em> widget or certain custom widgets are
     on screen. RAP now works around this issue by using a different way to apply widget backgrounds.
     For older versions of RAP, please visit the
     <a href="https://wiki.eclipse.org/RAP/FAQ#Widgets_disappearing_in_Google_Chrome.2C_Safari_or_Opera">FAQ</a>
