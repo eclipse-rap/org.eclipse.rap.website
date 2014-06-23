@@ -22,7 +22,7 @@
 
 <pre lang="java">
 Label dropLabel = new Label( parent, SWT.BORDER );
-dropLabel.setText( "Drop files here" );
+dropLabel.setText( &quot;Drop files here&quot; );
 DropTarget dropTarget = new DropTarget( dropLabel, DND.DROP_MOVE );
 dropTarget.setTransfer( new Transfer[]{ ClientFileTransfer.getInstance() } );
 dropTarget.addDropListener( new DropTargetAdapter() {
@@ -75,7 +75,7 @@ uploader.submit( uploadUrl, clientFiles );
 
   <p>
     In the class <em>Cell</em> the methods <em>setLeft</em>, <em>setTop</em>, <em>setBottom</em>
-    and <em>setRight</em> now all have an optional parameter &quot;percentage&quot; that accepts
+    and <em>setRight</em> now all have an optional parameter “percentage” that accepts
     a float value between 0 and 100. The value is relative to the width/height of the row and is
     added to the given absolute pixel offset.
   </p>
@@ -203,7 +203,7 @@ private static MySingleton getInstance( UISession uiSession ) {
 
   <p>
     The old method <code>getSessionInstance()</code> still exists and delegates to the new one,
-    so you should be able to adjust your code using an <q>Inline Method</q> refactoring.
+    so you should be able to adjust your code using an “Inline Method” refactoring.
   </p>
 
   <h3>Support for Application Singletons</h3>
@@ -222,10 +222,10 @@ SingletonUtil.getUniqueInstance( MySingleton.class, applicationContext );
   <h3>Support for entrypoints at the root path</h3>
 
   <p>
-    Entrypoints in RAP are registered with a servlet path (e.g. &quot;/example&quot;).
+    Entrypoints in RAP are registered with a servlet path (e.g. “/example”).
     When deployed in a servlet container, every web application also has a context path.
-    For example, a WAR file named &quot;myapp.war&quot; will lead to the context path
-    &quot;/myapp&quot; This results in a URL like the following:
+    For example, a WAR file named “myapp.war” will lead to the context path
+    “/myapp” This results in a URL like the following:
   </p>
 <pre>
   http://example.com/myapp/example
@@ -236,7 +236,7 @@ SingletonUtil.getUniqueInstance( MySingleton.class, applicationContext );
   http://example.com/myapp/
 </pre>
   <p>
-    To enable this pattern, entry points can now also be registered at the root path (&quot;/&quot;):
+    To enable this pattern, entry points can now also be registered at the root path (“/”):
   </p>
 <pre lang="java">
 public class ExampleApplication implements ApplicationConfiguration {
@@ -249,7 +249,7 @@ public class ExampleApplication implements ApplicationConfiguration {
 </pre>
   <p>
     Please note that for RWT standalone, you should map the RWT servlet to the empty string
-    (the path &quot;/&quot; is a special case in the servlet spec, it identifies the so-called
+    (the path “/” is a special case in the servlet spec, it identifies the so-called
     <em>global</em> servlet).
   </p>
 <pre lang="xml">

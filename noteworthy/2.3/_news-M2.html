@@ -23,7 +23,7 @@
 
 <pre lang="java">
 Label dropLabel = new Label( parent, SWT.BORDER );
-dropLabel.setText( "Drop files here" );
+dropLabel.setText( &quot;Drop files here&quot; );
 DropTarget dropTarget = new DropTarget( dropLabel, DND.DROP_MOVE );
 dropTarget.setTransfer( new Transfer[]{ ClientFileTransfer.getInstance() } );
 dropTarget.addDropListener( new DropTargetAdapter() {
