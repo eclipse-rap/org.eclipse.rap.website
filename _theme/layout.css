@@ -286,6 +286,7 @@ img.framed {
   box-shadow: 0 0 4px #adadad;
   margin-top: 15px;
   margin-bottom: 15px;
+  max-width: 100%;
 }
 
 a {
