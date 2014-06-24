@@ -45,10 +45,12 @@
     $COMPONENT_REPO_20 = $REPO_ROOT . "2.0/" . $COMPONENT_ID . "/";
     $COMPONENT_REPO_21 = $REPO_ROOT . "2.1/" . $COMPONENT_ID . "/";
     $COMPONENT_REPO_22 = $REPO_ROOT . "2.2/" . $COMPONENT_ID . "/";
-    $NIGHTLY_ENABLED = array( "clientscripting", "dropdown", "richtext", "cnf", "fileupload", "gef", "nebula-grid", "pde", "tabbed-properties", "visualization" );
+    $COMPONENT_REPO_23 = $REPO_ROOT . "2.3/" . $COMPONENT_ID . "/";
+    $NIGHTLY_ENABLED = array( "clientscripting", "dropdown", "richtext", "cnf", "fileupload", "gef", "nebula-grid", "pde", "tabbed-properties", "visualization", "e4" );
     $RAP20_ENABLED = array( "clientscripting", "nebula-grid", "pde", "fileupload" );
     $RAP21_ENABLED = array( "clientscripting", "dropdown", "nebula-grid", "pde", "fileupload" );
-    $RAP22_ENABLED = array( "dropdown", "richtext", "fileupload" );
+    $RAP22_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid" );
+    $RAP23_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid", "e4" );
    ?>
     <div class="box">
       <div class="images">
@@ -82,6 +84,9 @@
         <? endif ?>
         <? if( in_array( $COMPONENT_ID, $RAP22_ENABLED ) ) : ?>
           <li><a href="<?= $COMPONENT_REPO_22 ?>">RAP 2.2 compatible version</a></li>
+        <? endif ?>
+        <? if( in_array( $COMPONENT_ID, $RAP23_ENABLED ) ) : ?>
+          <li><a href="<?= $COMPONENT_REPO_23 ?>">RAP 2.3 compatible version</a></li>
         <? endif ?>
         </ul>
         <? endif ?>

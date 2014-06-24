@@ -67,6 +67,23 @@
     </p>
   </description>
 </component>
+<component id="e4">
+  <name>
+    E4 on RAP
+  </name>
+  <maintainer>
+    Tom Schindl
+  </maintainer>
+  <description>
+    <p>
+      This component provides a target platform to run Eclipse 4 applications on RAP.
+      The E4 application model and the DI-Container are fully supported,
+      including the event bus (IEventBroker), ExtendedObjectSuppliers (@UIEventTopic, @Preference)
+      and runtime language change support.
+      For details, see <a href="http://eclipsesource.com/blogs/2014/04/10/getting-started-with-eclipse4-applications-on-rap/">this blog post</a>.
+    </p>
+  </description>
+</component>
 <component id="clientscripting">
   <name>
     ClientScripting
