@@ -5,7 +5,10 @@
   <div class="sideitemcontent">
     <ul>
       <li>
-        <em><a href="/rap/downloads/2.3/">RAP 2.3&emsp;June 2014 (planned)</a></em>
+        <em>RAP 3.0&emsp;December 2014 (planned)</em>
+      </li>
+      <li>
+        <a href="/rap/downloads/2.3/">RAP 2.3&emsp;June 2014</a>
       </li>
       <li>
         <a href="/rap/downloads/2.2/">RAP 2.2&emsp;December 2013</a>
