@@ -34,16 +34,17 @@
 </component>
 <component id="dropdown">
   <name>
-    Dropdown Widget / Autosuggest
+    AutoSuggest (DropDown)
   </name>
   <maintainer>
     Tim Buschtöns
   </maintainer>
   <description>
     <p>
-      The DropDown widget can display a list below a Text field in order to
-      display dynamic proposals while typing. <b>Note:</b> The widget has been migrated to RWT
-      in RAP 2.3, but the Autosuggest component still lives in this repository.
+      AutoSuggest is a widget that attaches type-ahead suggestions to a Text field.
+      This component is built upon the DropDown widget that displays a list of selectable items
+      below a text field. As of RAP 2.3, the DropDown widget has become part of RWT, while the
+      AutoSuggest remains in this repository.
     </p>
     <p>
       <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown">DropDown wiki page</a>
