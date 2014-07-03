@@ -18,7 +18,7 @@
 
   <div class="box">
     <div class="images">
-      <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
+      <a href="http://rap.eclipsesource.com/demo/release/rapdemo/" target="_blank">
         <img src="images/examples.png"/>
       </a>
     </div>
@@ -30,7 +30,7 @@
         but only a small selection.
       </p>
       <p>
-        <a href="http://rap.eclipsesource.com/rapdemo/examples" target="_blank">
+        <a href="http://rap.eclipsesource.com/demo/release/rapdemo/" target="_blank">
           See the examples online
         </a>
       </p>
@@ -40,7 +40,7 @@
 
   <div class="box">
     <div class="images">
-      <a href="http://rap.eclipsesource.com/workbenchdemo/workbench" target="_blank">
+      <a href="http://rap.eclipsesource.com/demo/release/workbench/" target="_blank">
         <img src="images/workbenchdemo.png"/>
       </a>
     </div>
@@ -54,13 +54,14 @@
       </p>
       <p>
         To demonstrate how this application looks with different themes and layouts, a 
-        <a href="http://rap.eclipsesource.com/workbenchdemo/workbench" target="_blank">standard theme</a>,
-        <a href="http://rap.eclipsesource.com/workbenchdemo/business" target="_blank">business theme</a> and a
-        <a href="http://rap.eclipsesource.com/workbenchdemo/fancy" target="_blank">fancy theme</a>
+        <a href="http://rap.eclipsesource.com/demo/release/workbench/" target="_blank">standard theme</a>,
+        <a href="http://rap.eclipsesource.com/demo/release/workbench/business" target="_blank">business theme</a>
+        and a
+        <a href="http://rap.eclipsesource.com/demo/release/workbench/fancy" target="_blank">fancy theme</a>
         are available.
       </p>
       <p>
-        <a href="http://rap.eclipsesource.com/workbenchdemo/workbench" target="_blank">
+        <a href="http://rap.eclipsesource.com/demo/release/workbench/" target="_blank">
           See the workbench demo online
         </a>
       </p>
@@ -70,7 +71,7 @@
 
   <div class="box">
     <div class="images">
-      <a href="http://rap.eclipsesource.com/controlsdemo/controls" target="_blank">
+      <a href="http://rap.eclipsesource.com/demo/release/controls/" target="_blank">
         <img src="images/controlsdemo.png"/>
       </a>
     </div>
@@ -81,7 +82,7 @@
         available in RAP.
       </p>
       <p>
-        <a href="http://rap.eclipsesource.com/controlsdemo/controls" target="_blank">
+        <a href="http://rap.eclipsesource.com/demo/release/controls/" target="_blank">
           See the controls demo online
         </a>
       </p>
