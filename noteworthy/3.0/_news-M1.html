@@ -1,0 +1,41 @@
+<div>
+
+  <h1>Theming</h1>
+
+  <h2>New property <q>text-overflow</q></h2>
+
+  <img class="framed" alt="Table items with ellipsis" src="./images/ellipsis.png"/>
+
+  <p>
+    <em>Table</em> and <em>Tree</em> items (and columns) now support the <q>text-overflow</q> property.
+    It can can be set to <q>ellipsis</q>, which causes text that would be cut off to end with
+    <q>...</q> instead. The default RAP theme already uses this property, if you use any other
+    theme the default value is <q>clip</q>.
+  </p>
+
+  <h2>Changes in ProgressBar</h2>
+
+  <p>
+    The ProgressBar has been partially rewritten to use CSS3 properties instead of vector graphics.
+    As a result the indicator is now more precisely layouted when the bar is nearly empty or nearly
+    full, but as a side-effect the <q>ProgressBar-Indicator</q> theming no longer supports the
+    <q>border</q> propery. It was not used by any of the themes included in RAP, so it won't change
+    how the bar looks by default.
+  </p>
+
+  <h1>Browser Support</h1>
+
+  <h2>Minimum Internet Explorer Version raised</h2>
+
+  <p>
+    RAP 3.0 will require Internet Explorer 9 or above. Dropping support for Internet Explorer 8
+    allowed us to remove thousends of lines of JavaScript code and will also enable more HTML5/CSS3
+    feature in the future. For Windows Vista, IE9 can be manually installed.
+    For Windows 7, IE10 is installed with Service Pack 1 and IE11 can be installed manually.
+    Windows 8 has IE10 as it's default browser, which is upgraded to IE11 with Windows 8.1.
+    If you still target Windows XP, you have to use either Firefox or Google Chrome.
+  </p>
+
+
+
+</div>

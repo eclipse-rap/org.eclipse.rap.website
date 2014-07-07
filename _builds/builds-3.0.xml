@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.0"
+    simultaneousRelease="">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.4</description>
+    <site>http://download.eclipse.org/rt/rap/3.0</site>
+    <downloadPath>/rt/rap/3.0/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 3.8 to 4.4</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.0</site>
+    <downloadPath>/rt/rap/tools/3.0/</downloadPath>
+  </feature>
+
+  <build name="3.0 M1" type="M"
+      shortname="M1"
+      status="planned"
+      publishDate="2014-09-??"
+      news="3.0/?build=M1"
+      runtimeZip=""
+      toolsZip=""
+      />
+
+</builds>
