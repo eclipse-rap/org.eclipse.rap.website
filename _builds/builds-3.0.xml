@@ -26,4 +26,14 @@
       toolsZip=""
       />
 
+
+  <build name="3.0" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2014-12-??"
+      news="3.0/"
+      runtimeZip=""
+      toolsZip=""
+      />
+
 </builds>
