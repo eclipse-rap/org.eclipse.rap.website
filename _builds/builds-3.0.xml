@@ -20,17 +20,52 @@
   <build name="3.0 M1" type="M"
       shortname="M1"
       status="planned"
-      publishDate="2014-09-??"
+      publishDate="2014-08-22"
       news="3.0/?build=M1"
       runtimeZip=""
       toolsZip=""
       />
 
+  <build name="3.0 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2014-10-03"
+      news="3.0/?build=M2"
+      runtimeZip=""
+      toolsZip=""
+      />
+
+  <build name="3.0 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2014-11-14"
+      news="3.0/?build=M3"
+      runtimeZip=""
+      toolsZip=""
+      />
+
+  <build name="3.0 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2014-11-28"
+      news="3.0/?build=RC1"
+      runtimeZip=""
+      toolsZip=""
+      />
+
+  <build name="3.0 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2014-12-05"
+      news="3.0/?build=RC2"
+      runtimeZip=""
+      toolsZip=""
+      />
 
   <build name="3.0" type="R"
       shortname="R"
       status="planned"
-      publishDate="2014-12-??"
+      publishDate="2014-12-19"
       news="3.0/"
       runtimeZip=""
       toolsZip=""
