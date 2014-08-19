@@ -1,6 +1,45 @@
 <div>
 
+  <h1>Widget Set</h1>
+
+  <h2>Badge support for TabItem</h2>
+
+
+  <p>
+    The TabItem widget now supports badges:
+  </p>
+
+  <img class="framed" alt="Badges on TabItems" src="./images/badges.png"/>
+
+  <p>It's simple to use:</p>
+
+
+  <pre lang="java">tabItem.setData( RWT.BADGE, "23" );</pre>
+
+  <p>
+    The given string is displayed at the top-right of the item, overlaying it's border and part of
+    the padding/margin areas. If the top padding + border + margin do not provide enough space to
+    display the badge, it will be cut off. The theming of <em>Widget-Badge</em> and
+    <em>TabItem</em> need to take this into account if badges are used. (This is already the case for
+    the RAP default and business themes.)
+  </p>
+
   <h1>Theming</h1>
+
+  <h2>New Element <q>Widget-Badge</q></h2>
+
+  <p>
+    To adjust the look of badges (see <q>Widget Set</q> section), the <em>Widget-Badge</em> element
+    can be used. It currently supports the properties <em>font</em>,<em>color</em>,
+    <em>background-color</em>, <em>border</em> and <em>border-radius</em>.
+  </p>
+
+  <h2>New property for <q>TabItem</q></h2>
+
+  <p>
+    The <em>TabItem</em> element now supports the <em>margin</em> property. It's default values
+    differ slightly from the previous hard-coded values to accommodate the new badges.
+  </p>
 
   <h2>New property <q>text-overflow</q></h2>
 
@@ -19,7 +58,7 @@
     The ProgressBar has been partially rewritten to use CSS3 properties instead of vector graphics.
     As a result the indicator is now more precisely layouted when the bar is nearly empty or nearly
     full, but as a side-effect the <q>ProgressBar-Indicator</q> theming no longer supports the
-    <q>border</q> propery. It was not used by any of the themes included in RAP, so it won't change
+    <q>border</q> property. It was not used by any of the themes included in RAP, so it won't change
     how the bar looks by default.
   </p>
 
