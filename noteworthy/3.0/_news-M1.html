@@ -4,7 +4,6 @@
 
   <h2>Badge support for TabItem</h2>
 
-
   <p>
     The TabItem widget now supports badges:
   </p>
@@ -13,28 +12,27 @@
 
   <p>It's simple to use:</p>
 
-
   <pre lang="java">tabItem.setData( RWT.BADGE, "23" );</pre>
 
   <p>
     The given string is displayed at the top-right of the item, overlaying it's border and part of
     the padding/margin areas. If the top padding + border + margin do not provide enough space to
     display the badge, it will be cut off. The theming of <em>Widget-Badge</em> and
-    <em>TabItem</em> need to take this into account if badges are used. (This is already the case for
+    <em>TabItem</em> need to take badges into account if they are used. (This is already the case for
     the RAP default and business themes.)
   </p>
 
   <h1>Theming</h1>
 
-  <h2>New Element <q>Widget-Badge</q></h2>
+  <h2>New Element “Widget-Badge”</h2>
 
   <p>
-    To adjust the look of badges (see <q>Widget Set</q> section), the <em>Widget-Badge</em> element
-    can be used. It currently supports the properties <em>font</em>,<em>color</em>,
+    To adjust the look of badges (see above), the <em>Widget-Badge</em> element
+    can be used. It currently supports the properties <em>font</em>, <em>color</em>,
     <em>background-color</em>, <em>border</em> and <em>border-radius</em>.
   </p>
 
-  <h2>New property for <q>TabItem</q></h2>
+  <h2>New property for “TabItem”</h2>
 
   <p>
     The <em>TabItem</em> element now supports the <em>margin</em> property. It's default values
@@ -46,29 +44,30 @@
   <img class="framed" alt="Table items with ellipsis" src="./images/ellipsis.png"/>
 
   <p>
-    <em>Table</em> and <em>Tree</em> items (and columns) now support the <q>text-overflow</q> property.
-    It can can be set to <q>ellipsis</q>, which causes text that would be cut off to end with
-    <q>...</q> instead. The default RAP theme already uses this property, if you use any other
-    theme the default value is <q>clip</q>.
+    <em>Table</em> and <em>Tree</em> items (and columns as well) now support the property
+    <em>text-overflow</em>. When set to <em>ellipsis</em>, texts that don't fit into their cell will
+    end with “…” instead of being cut off.
+    The default RAP theme already has this setting.
+    For custom themes, the default value is <em>clip</em>.
   </p>
 
   <h2>Changes in ProgressBar</h2>
 
   <p>
     The ProgressBar has been partially rewritten to use CSS3 properties instead of vector graphics.
-    As a result the indicator is now more precisely layouted when the bar is nearly empty or nearly
-    full, but as a side-effect the <q>ProgressBar-Indicator</q> theming no longer supports the
-    <q>border</q> property. It was not used by any of the themes included in RAP, so it won't change
+    As a result, the indicator is now layouted more precisely when the bar is nearly empty or nearly
+    full, but as a side-effect the <em>ProgressBar-Indicator</em> theming no longer supports the
+    <em>border</em> property. It was not used by any of the themes included in RAP, so it won't change
     how the bar looks by default.
   </p>
 
   <h1>Browser Support</h1>
 
-  <h2>Minimum Internet Explorer Version raised</h2>
+  <h2>Minimum Internet Explorer version raised</h2>
 
   <p>
     RAP 3.0 will require Internet Explorer 9 or above. Dropping support for Internet Explorer 8
-    allowed us to remove thousends of lines of JavaScript code and will also enable more HTML5/CSS3
+    allowed us to remove thousands of lines of JavaScript code and will also enable more HTML5/CSS3
     feature in the future. For Windows Vista, IE9 can be manually installed.
     For Windows 7, IE10 is installed with Service Pack 1 and IE11 can be installed manually.
     Windows 8 has IE10 as it's default browser, which is upgraded to IE11 with Windows 8.1.
