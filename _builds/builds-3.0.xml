@@ -28,11 +28,11 @@
 
   <build name="3.0 M2" type="M"
       shortname="M2"
-      status="planned"
+      status="completed"
       publishDate="2014-10-03"
       news="3.0/?build=M2"
-      runtimeZip=""
-      toolsZip=""
+      runtimeZip="rap-3.0.0-M2-20140930-0953.zip"
+      toolsZip="rap-tools-3.0.0-M2-20140927-1523.zip"
       />
 
   <build name="3.0 M3" type="M"
