@@ -37,35 +37,17 @@
 
   <build name="3.0 M3" type="M"
       shortname="M3"
-      status="planned"
+      status="completed"
       publishDate="2014-11-14"
       news="3.0/?build=M3"
-      runtimeZip=""
-      toolsZip=""
-      />
-
-  <build name="3.0 RC1" type="RC"
-      shortname="RC1"
-      status="planned"
-      publishDate="2014-11-28"
-      news="3.0/?build=RC1"
-      runtimeZip=""
-      toolsZip=""
-      />
-
-  <build name="3.0 RC2" type="RC"
-      shortname="RC2"
-      status="planned"
-      publishDate="2014-12-05"
-      news="3.0/?build=RC2"
-      runtimeZip=""
-      toolsZip=""
+      runtimeZip="rap-3.0.0-M3-20141110-1349.zip"
+      toolsZip="rap-tools-3.0.0-M3-20141105-1439.zip"
       />
 
   <build name="3.0" type="R"
       shortname="R"
       status="planned"
-      publishDate="2014-12-19"
+      publishDate=""
       news="3.0/"
       runtimeZip=""
       toolsZip=""
