@@ -1,0 +1,25 @@
+<div>
+
+  <h1>Widget Set</h1>
+
+  <h2>Enhanced Scale theming</h2>
+  <p>
+    The Scale widget theming has been enhanced with the following CSS properties and states:
+  </p>
+
+  <ul>
+    <li><code>background-image</code> property for Scale and Scale-Thumb</li>
+    <li><code>HORIZONTAL</code>/<code>VERTICAL</code> selectors for Scale and Scale-Thumb</li>
+    <li><code>hover</code> state for Scale-Thumb</li>
+  </ul>
+
+  <h2>SWT.IMAGE_DISABLE and SWT.IMAGE_GRAY support for Images</h2>
+  <p>
+    It's now possible to create disabled/grayed images at runtime, similar to SWT.
+  </p>
+  <pre lang="java">
+Image disabled = new Image( display, srcImage, SWT.IMAGE_DISABLE );
+Image grayed = new Image( display, srcImage, SWT.IMAGE_GRAY );
+</pre>
+
+</div>
