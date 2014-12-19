@@ -22,29 +22,34 @@
 
   <p>
     All API that had already been deprecated back in RAP 2.0 has been removed.
-    For alternatives, see the <a href="../../2.0/migration-guide/">RAP 2.0 Migration Guide</a>.
+    For a detailed explanation, see the
+    <a href="../../2.0/migration-guide/">RAP 2.0 Migration Guide</a>.
   </p>
 
   <ul>
-    <li>ISessionStore replaced by UISession</li>
+    <li>Graphics removed without substitution</li>
     <li>IApplicationStore replaced by ApplicationContext</li>
+    <li>IControlThemeAdapter replaced by ControlThemeAdapter</li>
     <li>IEntryPoint / IEntryPointFactory replaced by EntryPoint / EntryPointFactory</li>
-    <li>ISettingStore / ISettingStoreFactory replaced by SettingStore / SettingStoreFactory</li>
-    <li>IServiceStore removed without substitution, should not be needed in the context of an application</li>
     <li>IResourceManager replaced by ResourceManager</li>
     <li>IServiceHandler replaced by ServiceHandler</li>
     <li>IServiceManager replaced by ServiceManager</li>
+    <li>IServiceStore removed without substitution</li>
+    <li>ISessionStore replaced by UISession</li>
+    <li>ISettingStore / ISettingStoreFactory replaced by SettingStore / SettingStoreFactory</li>
     <li>SessionSingletonBase replaced by SingletonUtil</li>
-    <li>UICallBack</li>
-    <li>IControlThemeAdapter</li>
-    <li>Graphics</li>
-    <li></li>
+    <li>UICallBack replaced by ServerPushSession</li>
   </ul>
 
   <h2>Removed lifecycle package</h2>
 
   <p>
     The package <em>org.eclipse.rap.rwt.lifecycle</em></p> has been removed.
+    This package contained API related to lifecycle phases and lifecycle adapters (LCAs).
+  </p>
+
+  <p>
+    These classes and methods are affected:
   </p>
 
   <ul>
@@ -52,11 +57,15 @@
     <li>ControlLCAUtil</li>
     <li>ILifeCycle</li>
     <li>IWidgetAdapter</li>
+    <li>PhaseEvent</li>
+    <li>PhaseId</li>
+    <li>PhaseListener</li>
     <li>ProcessActionRunner</li>
     <li>WidgetAdapter</li>
     <li>WidgetLCAUtil</li>
     <li>WidgetLifeCycleAdapter</li>
     <li>WidgetUtil</li>
+    <li>Application.addPhaseListener(PhaseListener)</li>
     <li>RWT.getLifeCycle()</li>
   </ul>
 
@@ -72,7 +81,9 @@
 
   <p>
     With the support for themeable border edges, we had to replace the method
-    <code>getBorder(Control)</code> in ControlThemeAdapter with <code>getBorderWidth(Control)</code>.
+    <code>getBorder(Control)</code> in
+    <em>org.eclipse.rap.rwt.theme</em><code>ControlThemeAdapter</code>
+    with <code>getBorderWidth(Control)</code>.
     This class is only relevant for custom widget developers.
   </p>
 
