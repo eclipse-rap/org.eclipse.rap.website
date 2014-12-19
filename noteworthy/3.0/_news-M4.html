@@ -15,11 +15,39 @@
 
   <h2>SWT.IMAGE_DISABLE and SWT.IMAGE_GRAY support for Images</h2>
   <p>
-    It's now possible to create disabled/grayed images at runtime, similar to SWT.
+    It's now possible to create disabled and grayed images at runtime, using the SWT constants <code>IMAGE_DISABLE</code> and <code>IMAGE_GRAY</code>.
   </p>
-  <pre lang="java">
+
+<pre lang="java">
 Image disabled = new Image( display, srcImage, SWT.IMAGE_DISABLE );
 Image grayed = new Image( display, srcImage, SWT.IMAGE_GRAY );
 </pre>
+
+  <h2>Test API</h2>
+
+  <p>
+    When you test your UI components, you have to simulate the environment that RAP UI code
+    normally runs in (including the UI thread, a UISession, ApplicationContext etc.)
+    To do so, we provide the bundle <em>org.eclipse.rap.rwt.testfixture</em>.
+    However, we always claimed that the classes therein were not part the public RAP API.
+  </p>
+
+  <p>
+    From now on, we provide public API for unit tests in the form of a JUnit Rule.
+    Instead of calling <code>Fixture.setUp()</code> and <code>Fixture.tearDown()</code>,
+    you now only need to include the following line in your test cases.
+    This will simulate a new test context for every test method.
+    There's also no need to fake the <em>PROCESS_ACTION</em> phase anymore.
+  </p>
+
+<pre lang="java">
+&#064;Rule
+public TestContext context = new TestContext();
+</pre>
+
+  <p>
+    The class <code>Fixture</code> and all its companions have been moved to the internal package
+    <em>org.eclipse.rap.rwt.testfixture.internal</em>.
+  </p>
 
 </div>
