@@ -49,6 +49,8 @@
     concepts which we consider internals of the framework.
     These internals are subject to change and should not be accessed by application code.
     Custom widgets should use the new Remote API instead (see <code>RemoteObject</code>).
+    Some useful methods for custom widget developers are still available in
+    <em>org.eclipse.rap.rwt.widgets.</em><code>WidgetUtil</code>.
   </p>
 
   <p>
@@ -84,9 +86,9 @@
 
   <p>
     With the support for themeable border edges, we had to replace the method
-    <code>getBorder(Control)</code> in
-    <em>org.eclipse.rap.rwt.theme</em><code>ControlThemeAdapter</code>
-    with <code>getBorderWidth(Control)</code>.
+    <code>getBorderWidth(Control)</code> in
+    <em>org.eclipse.rap.rwt.theme.</em><code>ControlThemeAdapter</code>
+    with <code>getBorder(Control)</code>.
     This class is only relevant for custom widget developers.
   </p>
 
