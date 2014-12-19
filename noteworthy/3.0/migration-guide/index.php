@@ -44,7 +44,7 @@
   <h2>Removed lifecycle package</h2>
 
   <p>
-    The package <em>org.eclipse.rap.rwt.lifecycle</em></p> has been removed.
+    The package <em>org.eclipse.rap.rwt.lifecycle</em> has been removed.
     This package contained API related to lifecycle phases and lifecycle adapters (LCAs),
     concepts which we consider internals of the framework.
     These internals are subject to change and should not be accessed by application code.
