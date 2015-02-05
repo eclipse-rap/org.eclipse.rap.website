@@ -1,0 +1,23 @@
+<div>
+
+  <h1>Widget Set</h1>
+
+  <h2>Support for GC clipping</h2>
+
+  <p>
+    Several clipping methods have been implemeted:
+  </p>
+  <ul>
+    <li><code>GC.setClipping( Path )</li>
+    <li><code>GC.setClipping( Rectangle )</li>
+    <li><code>GC.setClipping( int, int, int, int )</li>
+  </ul>
+  <p>
+    The implementation utilizes the native HTML canvas clipping capabilities. Once a region is
+    clipped, all future drawing operations will be limited to the clipped region.
+  </p>
+  <p>
+    <img class="framed" title="Clipping" src="images/gc-clipping.png" />
+  </p>
+
+</div>
