@@ -55,11 +55,11 @@
 
   <build name="3.0 M5" type="M"
       shortname="M5"
-      status="planned"
+      status="completed"
       publishDate="2015-02-06"
       news="3.0/?build=M5"
-      runtimeZip=""
-      toolsZip=""
+      runtimeZip="rap-3.0.0-M5-20150203-1258.zip"
+      toolsZip="rap-tools-3.0.0-M5-20150201-1207.zip"
       />
 
   <build name="3.0 M6" type="M"
