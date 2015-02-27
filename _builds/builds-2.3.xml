@@ -91,9 +91,11 @@
 
   <build name="2.3.2" type="SR"
       shortname="SR2"
-      status="planned"
+      status="completed"
       publishDate="2015-02-27"
       news="2.3/?build=SR2"
+      runtimeZip="rap-2.3.2-SR2-20150128-1013.zip"
+      toolsZip="rap-tools-2.3.2-SR2-20150210-1743.zip"
       />
 
 </builds>
