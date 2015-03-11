@@ -173,13 +173,13 @@
     The default RAP Web client supports these browsers:
   </p>
   <ul>
-    <li>Internet Explorer 7+</li>
-    <li>Google Chrome 7+</li>
-    <li>Firefox 3.5+</li>
-    <li>Safari 4+</li>
-    <li>Opera 10+</li>
-    <li>iOs 5+</li>
-    <li>Android 3 (Limited)</li>
+    <li>Internet Explorer 9+</li>
+    <li>Google Chrome 29+</li>
+    <li>Firefox 23+</li>
+    <li>Safari 6+</li>
+    <li>Opera 15+</li>
+    <li>iOs 6+</li>
+    <li>Android 4 (Limited)</li>
   </ul>
   <p>
     No browser plug-ins are required by the default client, only JavaScript needs to be enabled.
