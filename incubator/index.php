@@ -46,7 +46,7 @@
     $COMPONENT_REPO_21 = $REPO_ROOT . "2.1/" . $COMPONENT_ID . "/";
     $COMPONENT_REPO_22 = $REPO_ROOT . "2.2/" . $COMPONENT_ID . "/";
     $COMPONENT_REPO_23 = $REPO_ROOT . "2.3/" . $COMPONENT_ID . "/";
-    $NIGHTLY_ENABLED = array( "clientscripting", "dropdown", "richtext", "cnf", "fileupload", "gef", "nebula-grid", "pde", "tabbed-properties", "visualization", "e4" );
+    $NIGHTLY_ENABLED = array( "dropdown", "richtext", "cnf", "gef", "pde", "tabbed-properties", "visualization", "e4" );
     $RAP20_ENABLED = array( "clientscripting", "nebula-grid", "pde", "fileupload" );
     $RAP21_ENABLED = array( "clientscripting", "dropdown", "nebula-grid", "pde", "fileupload" );
     $RAP22_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid" );

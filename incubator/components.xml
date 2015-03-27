@@ -30,6 +30,9 @@
       available in the base SWT Tree/Table like column grouping, checkboxes on multiple
       columns, variable item height and more.
     </p>
+    <p>
+      This component has been graduated into the RAP core as of 3.0.
+    </p>
   </description>
 </component>
 <component id="dropdown">
@@ -96,11 +99,13 @@
     <p>
       ClientScripting allows developers to handle certain events that occur in RAP applications
       directly on the client without creating any http-requests. Client scripts are written in
-      JavaScript using an SWT-like API. <b>Note:</b> This component has been migrated to RWT
-      in RAP 2.2.
+      JavaScript using an SWT-like API.
     </p>
     <p>
       <a href="http://wiki.eclipse.org/RAP/ClientScripting">ClientScripting wiki page</a>
+    </p>
+    <p>
+      This component has been graduated into the RAP core as of 2.2.
     </p>
   </description>
 </component>
