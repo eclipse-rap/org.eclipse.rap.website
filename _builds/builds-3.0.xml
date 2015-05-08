@@ -73,7 +73,7 @@
 
   <build name="3.0 M7" type="M"
       shortname="M7"
-      status="planned"
+      status="completed"
       publishDate="2015-05-08"
       news="3.0/?build=M7"
       runtimeZip="rap-3.0.0-M7-20150505-1714.zip"
