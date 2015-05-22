@@ -1,10 +1,24 @@
 <div>
 
+  <h2>SWT.RIGHT support for ToolBar</h2>
+
+  <p>
+    In SWT, the text of a ToolItem is placed below the icon by default. If the parent ToolBar is 
+    created with the <code>SWT.RIGHT</code> flag, the text is to the right of the icon.
+  </p>
+  <p>
+    Until now RAP behaved as though <code>SWT.RIGHT</code> was always set on the ToolBar, so it was 
+    not possible to have the text below the icon. Now RAP behaves as SWT does. If your 
+    application has a ToolBar without <code>SWT.RIGHT</code>, text and icon will no longer be 
+    side by side, but on top of each other.
+  </p>
+
   <h2>Enhanced ToolBar theming</h2>
 
   <p>
     <code>:first</code> and <code>:last</code> states have been added for ToolItem CSS element. This
-    allows first and last visible ToolItem to have different styling like border for example.
+    allows first and last visible ToolItem to have distinct stylings, like different borders. The 
+    ToolBar itself now also supports the <code>[VERTICAL]</code> and <code>[FLAT]</code> selectors.
   </p>
 
 </div>
