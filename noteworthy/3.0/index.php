@@ -3,7 +3,7 @@
   include( $_SERVER['DOCUMENT_ROOT'] . "/rap/_projectCommon.php" );
   require_once( $_SERVER['DOCUMENT_ROOT'] . "/rap/_Builds.php" );
 
-  $buildName = isset( $_GET[ 'build' ] ) ? $_GET[ 'build' ] : "M1";
+  $buildName = isset( $_GET[ 'build' ] ) ? $_GET[ 'build' ] : "RC2";
 
   $builds = new Builds( "3.0" );
 
