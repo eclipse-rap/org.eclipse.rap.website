@@ -902,33 +902,27 @@ div.sideitem .rssIcon {
 /* Animations */
 
 .attention {
-  animation: fadeInOutIn 2s;
-  -moz-animation: fadeInOutIn 2s;
-  -webkit-animation: fadeInOutIn 2s;
+  animation: yellowfade 2s;
+  -moz-animation: yellowfade 2s;
+  -webkit-animation: yellowfade 2s;
 }
 
-@keyframes fadeInOutIn {
-  from { opacity: 0.1;}
-  10% { ppacity: 0; }
-  40% { opacity: 0.9;}
-  60% { opacity: 0.2;}
-  to {opacity: 1;}
+@keyframes yellowfade {
+  from { background-color: transparent;}
+  10% { background-color: #ff5; }
+  to {background-color: transparent;}
 }
 
-@-moz-keyframes fadeInOutIn {
-  from { opacity: 0.1;}
-  10% { ppacity: 0; }
-  40% { opacity: 0.9;}
-  60% { opacity: 0.2;}
-  to {opacity: 1;}
+@-moz-keyframes yellowfade {
+  from { background-color: transparent;}
+  10% { background-color: #ff5; }
+  to {background-color: transparent;}
 }
 
-@-webkit-keyframes fadeInOutIn {
-  from { opacity: 0.1;}
-  10% { ppacity: 0; }
-  40% { opacity: 0.9;}
-  60% { opacity: 0.2;}
-  to {opacity: 1;}
+@-webkit-keyframes yellowfade {
+  from { background-color: transparent;}
+  10% { background-color: #ff5; }
+  to {background-color: transparent;}
 }
 
 .nav-redirect {

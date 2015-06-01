@@ -66,6 +66,7 @@
 </div>
 
 <div id="rightcolumn">
+  <? includeSidebar( "migrationguide.php" ) ?>
   <? includeSidebar( "releases.php" ) ?>
 </div>
 
