@@ -1,8 +1,8 @@
 <div>
 
-  <h1>New Minimum Requirements</h1>
+  <h2>New Minimum Requirements</h2>
 
-  <h2>Minimum Browser versions</h2>
+  <h3>Minimum Browser versions</h3>
 
   <p>
     In RAP 3.0, the web client will support the following web browsers:
@@ -36,7 +36,7 @@
     If you still target Windows XP, you have to use either Firefox or Google Chrome.
   </p>
 
-  <h2>Move to Java 7</h2>
+  <h3>Move to Java 7</h3>
 
   <p>
     As many other Eclipse projects, we decided to raise the minimal execution environment to Java 7.
@@ -51,19 +51,22 @@
     The Bundle-RequiredExecutionEnvironment (BREE) of all bundles has been updated to <em>JavaSE-1.7</em>.
   </p>
 
-  <h1>Application Development</h1>
+  <h2>Application Development</h2>
 
-  <h2>Removed API</h2>
+  <h3>Removed API</h3>
 
   <p>
-    Most of the deprecated API have been removed. We provide <a href="./migration-guide">migration guide</a>
-    (similar to 2.0) to help you find the proper replacements.
+    Deprecated API has been removed. We provide <a href="./migration-guide">migration guide</a>
+    to help you find the proper replacements.
   </p>
 
-  <h2>New client service StartupParameters</h2>
+  <h3>New Client Service StartupParameters</h3>
 
   <p>
-    In RAP 2.x, you could access URL parameters by calling <code>RWT.getRequest().getParameter(name)</code>.
+    In RAP 2.x, you could access URL parameters by calling
+  </p>
+  <pre lang="java">RWT.getRequest().getParameter(name); // OLD</pre>
+  <p>
     The problem with this approach was that it only worked in the first request.
     Moreover, <code>RWT.getRequest()</code> returns the actual XHR request, not the request that
     returned the HTML page. That's why using this method in application code is not recommended.
@@ -75,17 +78,16 @@
     and <code>getParameterValues()</code> directly in your entrypoint:
   </p>
 
-  <pre lang="java">
+<pre lang="java">
 public class MyEntryPoint extends AbstractEntryPoint {
 
   @Override
   protected void createContents(Composite parent) {
     String foo = getParameter("foo");
     ...
-  </pre>
+</pre>
 
-
-  <h2>Test API</h2>
+  <h3>Test API</h3>
 
   <p>
     When you test your UI components, you have to simulate the environment that RAP UI code
@@ -112,9 +114,9 @@ public TestContext context = new TestContext();
     <em>org.eclipse.rap.rwt.testfixture.internal</em>.
   </p>
 
-  <h1>Incubator Projects migrated to RAP Core</h1>
+  <h2>Incubator Projects migrated to RAP Core</h2>
 
-  <h2>Nebula Grid</h2>
+  <h3>Nebula Grid</h3>
 
   <p>
     The RAP port of the <a href="http://eclipse.org/nebula/widgets/grid/grid.php">Nebula Grid</a>
@@ -141,7 +143,7 @@ public TestContext context = new TestContext();
     </li>
   </ul>
 
-  <h2>FileDialog</h2>
+  <h3>FileDialog</h3>
 
   <p>
     The file dialog and file upload components have been moved from the
@@ -155,9 +157,9 @@ public TestContext context = new TestContext();
     Older versions of the dialog and upload components for RAP 2.x versions will remain in the Incubator.
   </p>
 
-  <h1>Widget Set</h1>
+  <h2>Widget Set</h2>
 
-  <h2>Re-Parenting Support</h2>
+  <h3>Re-Parenting Support</h3>
 
   <p>
     The method <code>Control.setParent()</code> is now fully implemented and will move a control
@@ -171,7 +173,7 @@ public TestContext context = new TestContext();
     Those cases are neither supported by SWT nor by RAP.
   </p>
 
-  <h2>Badge support</h2>
+  <h3>Badge support</h3>
 
   <p>
     TabItem, <em>PUSH</em> Button and <em>PUSH</em> ToolItem now support badges.
@@ -191,7 +193,7 @@ public TestContext context = new TestContext();
 
   <img class="framed" alt="Badges on Button" src="./images/badges_push.png"/>
 
-  <h2>Support for GC clipping</h2>
+  <h3>Support for GC clipping</h3>
 
   <p>
     Several clipping methods have been implemented:
@@ -209,7 +211,7 @@ public TestContext context = new TestContext();
     <img class="framed" title="Clipping" src="images/gc-clipping.png" />
   </p>
 
-  <h2>Markup support for Button and Tree/Table ToolTips</h2>
+  <h3>Markup support for Button and Tree/Table ToolTips</h3>
 
   <p>
     The <em>Button</em> widget now supports <em>RWT.MARKUP_ENABLED</em>, allowing you to
@@ -218,7 +220,7 @@ public TestContext context = new TestContext();
     the tooltip text was provided by a <em>ColumnViewer</em>.
   </p>
 
-  <h2>SWT.RIGHT support for ToolBar</h2>
+  <h3>SWT.RIGHT support for ToolBar</h3>
 
   <p>
     In SWT, the text of a ToolItem is placed below the icon by default. If the parent ToolBar is
@@ -231,7 +233,7 @@ public TestContext context = new TestContext();
     side by side, but on top of each other.
   </p>
 
-  <h2>SWT.IMAGE_DISABLE and SWT.IMAGE_GRAY support for Images</h2>
+  <h3>SWT.IMAGE_DISABLE and SWT.IMAGE_GRAY support for Images</h3>
   <p>
     It's now possible to create disabled and grayed images at runtime, using the SWT constants <code>IMAGE_DISABLE</code> and <code>IMAGE_GRAY</code>.
   </p>
@@ -241,9 +243,9 @@ Image disabled = new Image( display, srcImage, SWT.IMAGE_DISABLE );
 Image grayed = new Image( display, srcImage, SWT.IMAGE_GRAY );
 </pre>
 
-  <h1>Theming</h1>
+  <h2>Theming</h2>
 
-  <h2>Different borders for different edges</h2>
+  <h3>Different borders for different edges</h3>
 
   <p>
     Until now every edge of a widget in RAP had to have the same border width, style and color.
@@ -262,7 +264,9 @@ Image grayed = new Image( display, srcImage, SWT.IMAGE_GRAY );
     <a href="http://eclipse.org/rap/developers-guide/devguide.php?topic=theming.html#variants">
       custom variants</a>:
   </p>
-  <pre lang="css">Button[PUSH].left {
+
+<pre lang="css">
+Button[PUSH].left {
   border-radius: 2px 0px 0px 2px;
   border-right: none;
 }
@@ -276,14 +280,15 @@ Button[PUSH].middle {
 Button[PUSH].right {
   border-radius: 0px 2px 2px 0px;
   border-left: none;
-}</pre>
+}
+</pre>
 
   <p>
     The <em>Control.getBorderWidth()</em> method will from now on return the biggest width of the
     widgets four edges.
   </p>
 
-  <h2>Hidden Focus Frame</h2>
+  <h3>Hidden Focus Frame</h3>
 
   <p>
     The focus frame (represented in the theming by <em>Button-FocusIndicator</em>,
@@ -292,7 +297,7 @@ Button[PUSH].right {
     focused using the keyboard.
   </p>
 
-  <h2>Modernized Scroll Bars</h2>
+  <h3>Modernized Scroll Bars</h3>
 
   <p>
     In the default theme the Scroll Bars now have a more modern look and feel.
@@ -319,7 +324,7 @@ Button[PUSH].right {
     a solid color.
   </p>
 
-  <h2>TabItem theming enhancements</h2>
+  <h3>TabItem theming enhancements</h3>
 
   <p>
     The TabItem has several new theming properties:
@@ -352,7 +357,7 @@ Button[PUSH].right {
     <li><em>bottom</em></li>
   </ul>
 
-  <h2>ToolBar theming enhancements</h2>
+  <h3>ToolBar theming enhancements</h3>
 
   <p>
     <code>:first</code> and <code>:last</code> states have been added for ToolItem CSS element. This
@@ -370,7 +375,7 @@ Button[PUSH].right {
     is also not affected by this change.
   </p>
 
-  <h2>Scale theming enhancements</h2>
+  <h3>Scale theming enhancements</h3>
 
   <p>
     The Scale widget theming has been enhanced with the following CSS properties and states:
@@ -382,7 +387,7 @@ Button[PUSH].right {
     <li><code>hover</code> state for Scale-Thumb</li>
   </ul>
 
-  <h2>New Element “Widget-Badge”</h2>
+  <h3>New Element “Widget-Badge”</h3>
 
   <p>
     To adjust the look of badges (see above), the <em>Widget-Badge</em> element
@@ -390,7 +395,7 @@ Button[PUSH].right {
     <em>background-color</em>, <em>border</em> and <em>border-radius</em>.
   </p>
 
-  <h2>New property <q>text-overflow</q></h2>
+  <h3>New property <q>text-overflow</q></h3>
 
   <img class="framed" alt="Table items with ellipsis" src="./images/ellipsis.png"/>
 
@@ -402,14 +407,14 @@ Button[PUSH].right {
     For custom themes, the default value is <em>clip</em>.
   </p>
 
-  <h2>New "even" state on Combo Items</h2>
+  <h3>New "even" state on Combo Items</h3>
 
   <p>
     The <em>Combo-List</em> now has an <em>even</em> state, allowing the <em>Combo</em> drop-down
     to have alternating background colors.
   </p>
 
-  <h2>Changes in ProgressBar</h2>
+  <h3>Changes in ProgressBar</h3>
 
   <p>
     The ProgressBar has been partially rewritten to use CSS3 properties instead of vector graphics.
@@ -419,9 +424,9 @@ Button[PUSH].right {
     how the bar looks by default.
   </p>
 
-  <h1>RAP Tools</h1>
+  <h2>RAP Tools</h2>
 
-  <h2>Launch RWT application from ApplicationConfiguration class</h2>
+  <h3>Launch RWT application from ApplicationConfiguration class</h3>
 
   <p>
     RWT Launcher now allows you to run RWT application from its <em>ApplicationConfiguration</em>
