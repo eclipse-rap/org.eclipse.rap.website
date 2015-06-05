@@ -100,11 +100,11 @@
 
   <build name="3.0 RC3" type="RC"
       shortname="RC3"
-      status="planned"
+      status="completed"
       publishDate="2015-06-05"
       news="3.0/?build=RC3"
-      runtimeZip=""
-      toolsZip=""
+      runtimeZip="rap-3.0.0-RC3-20150602-0950.zip"
+      toolsZip="rap-tools-3.0.0-RC3-20150602-1438.zip"
       />
 
   <build name="3.0" type="R"
