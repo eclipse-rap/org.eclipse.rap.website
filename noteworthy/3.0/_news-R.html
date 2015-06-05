@@ -2,10 +2,10 @@
 
   <h2>New Minimum Requirements</h2>
 
-  <h3>Minimum Browser versions</h3>
+  <h3>Browser Versions</h3>
 
   <p>
-    In RAP 3.0, the web client will support the following web browsers:
+    The RAP 3.0 web client will support the following browsers:
   </p>
 
   <ul>
@@ -21,8 +21,8 @@
   </ul>
 
   <p>
-    Dropping support for older browser allowed us to remove thousands of lines of
-    JavaScript code and better take advantage of modern HTML5/CSS3 features.
+    Dropping support for older browsers allowed us to remove thousands of lines of
+    JavaScript code and to take more advantage of modern HTML5/CSS3 features.
     RAP also used to enable the so-called quirksmode in HTML in order to avoid glitches in old
     IE versions. With the end of support for antique browsers, RAP now uses the HTML5
     <code>&lt;!DOCTYPE html&gt;</code> declaration that enables standard mode in all browsers.
@@ -53,14 +53,14 @@
 
   <h2>Application Development</h2>
 
-  <h3>Removed API</h3>
+  <h3>Removed Deprecated API</h3>
 
   <p>
-    Deprecated API has been removed. We provide <a href="./migration-guide">migration guide</a>
-    to help you find the proper replacements.
+    Deprecated API has been removed in RAP 3.0. We provide
+    <a href="./migration-guide">migration guide</a> to help you find the proper replacements.
   </p>
 
-  <h3>New Client Service StartupParameters</h3>
+  <h3>New Client Service to Access Startup Parameters</h3>
 
   <p>
     In RAP 2.x, you could access URL parameters by calling
@@ -87,7 +87,7 @@ public class MyEntryPoint extends AbstractEntryPoint {
     ...
 </pre>
 
-  <h3>Test API</h3>
+  <h3>New API for Unit Test</h3>
 
   <p>
     When you test your UI components, you have to simulate the environment that RAP UI code
@@ -114,7 +114,7 @@ public TestContext context = new TestContext();
     <em>org.eclipse.rap.rwt.testfixture.internal</em>.
   </p>
 
-  <h2>Incubator Projects migrated to RAP Core</h2>
+  <h2>Incubator Projects Migrated to RAP Core</h2>
 
   <h3>Nebula Grid</h3>
 
@@ -181,7 +181,9 @@ public TestContext context = new TestContext();
 
   <img class="framed" alt="Badges on TabItems" src="./images/badges.png"/>
 
-  <p>They are simple to use:</p>
+  <p>
+    Those badges can be set using a data key:
+  </p>
 
   <pre lang="java">tabItem.setData( RWT.BADGE, "23" );</pre>
 
@@ -426,12 +428,13 @@ Button[PUSH].right {
 
   <h2>RAP Tools</h2>
 
-  <h3>Launch RWT application from ApplicationConfiguration class</h3>
+  <h3>Launch RWT application from an ApplicationConfiguration</h3>
 
   <p>
-    RWT Launcher now allows you to run RWT application from its <em>ApplicationConfiguration</em>
-    class. You can do this by specifying the <em>ApplicationConfiguration</em> class in the launcher
-    main tab, from the file/project context menu or directly from the editor.
+    The RWT Launcher now allows you to run an RWT application from its
+    <em>ApplicationConfiguration</em>. You can do this by specifying the
+    <em>ApplicationConfiguration</em> class in the launcher main tab, from the file/project context
+    menu or directly from the editor.
   </p>
 
   <img class="framed" alt="RWT Launcher" src="./images/rwt_launcher_app_config.png"/>

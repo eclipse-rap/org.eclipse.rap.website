@@ -1,7 +1,5 @@
 <div>
 
-  <h1>Widget Set</h1>
-
   <h2>Badge support for TabItem</h2>
 
   <p>
@@ -10,7 +8,9 @@
 
   <img class="framed" alt="Badges on TabItems" src="./images/badges.png"/>
 
-  <p>It's simple to use:</p>
+  <p>
+    Those badges can be set using a data key:
+  </p>
 
   <pre lang="java">tabItem.setData( RWT.BADGE, "23" );</pre>
 
@@ -22,9 +22,9 @@
     the RAP default and business themes.)
   </p>
 
-  <h1>Theming</h1>
+  <h2>Theming</h2>
 
-  <h2>New Element “Widget-Badge”</h2>
+  <h3>New Element “Widget-Badge”</h3>
 
   <p>
     To adjust the look of badges (see above), the <em>Widget-Badge</em> element
@@ -32,14 +32,14 @@
     <em>background-color</em>, <em>border</em> and <em>border-radius</em>.
   </p>
 
-  <h2>New property for “TabItem”</h2>
+  <h3>New property for “TabItem”</h3>
 
   <p>
     The <em>TabItem</em> element now supports the <em>margin</em> property. It's default values
     differ slightly from the previous hard-coded values to accommodate the new badges.
   </p>
 
-  <h2>New property <q>text-overflow</q></h2>
+  <h3>New property <q>text-overflow</q></h3>
 
   <img class="framed" alt="Table items with ellipsis" src="./images/ellipsis.png"/>
 
@@ -51,7 +51,7 @@
     For custom themes, the default value is <em>clip</em>.
   </p>
 
-  <h2>Changes in ProgressBar</h2>
+  <h3>Changes in ProgressBar</h3>
 
   <p>
     The ProgressBar has been partially rewritten to use CSS3 properties instead of vector graphics.
@@ -61,9 +61,7 @@
     how the bar looks by default.
   </p>
 
-  <h1>Browser Support</h1>
-
-  <h2>Minimum Internet Explorer version raised</h2>
+  <h2>Remove Support for Internet Explorer 8</h2>
 
   <p>
     RAP 3.0 will require Internet Explorer 9 or above. Dropping support for Internet Explorer 8
@@ -74,9 +72,9 @@
     If you still target Windows XP, you have to use either Firefox or Google Chrome.
   </p>
 
-  <h1>RAP Tools</h1>
+  <h2>RAP Tools</h2>
 
-  <h2>Launch RWT application from ApplicationConfiguration class</h2>
+  <h3>Launch RWT application from ApplicationConfiguration class</h3>
 
   <p>
     RWT Launcher now allows you to run RWT application from its <em>ApplicationConfiguration</em>
@@ -85,8 +83,6 @@
   </p>
 
   <img class="framed" alt="RWT Launcher" src="./images/rwt_launcher_app_config.png"/>
-
-  <h1>RAP API</h1>
 
   <h2>Remove deprecated API</h2>
 
