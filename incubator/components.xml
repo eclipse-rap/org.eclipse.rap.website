@@ -11,6 +11,9 @@
     <p>
       RAP File Upload Support
     </p>
+    <p>
+      <em>This component has been graduated into the RAP core as of 3.0.</em>
+    </p>
   </description>
 </component>
 <component id="nebula-grid">
@@ -31,7 +34,7 @@
       columns, variable item height and more.
     </p>
     <p>
-      This component has been graduated into the RAP core as of 3.0.
+      <em>This component has been graduated into the RAP core as of 3.0.</em>
     </p>
   </description>
 </component>
@@ -46,8 +49,11 @@
     <p>
       AutoSuggest is a widget that attaches type-ahead suggestions to a Text field.
       This component is built upon the DropDown widget that displays a list of selectable items
-      below a text field. As of RAP 2.3, the DropDown widget has become part of RWT, while the
-      AutoSuggest remains in this repository.
+      below a text field.
+    </p>
+    <p>
+      <em>As of RAP 2.3, the DropDown widget has become part of RWT, while the AutoSuggest remains
+      in this repository.</em>
     </p>
     <p>
       <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown">DropDown wiki page</a>
@@ -105,7 +111,7 @@
       <a href="http://wiki.eclipse.org/RAP/ClientScripting">ClientScripting wiki page</a>
     </p>
     <p>
-      This component has been graduated into the RAP core as of 2.2.
+      <em>This component has been graduated into the RAP core as of 2.2.</em>
     </p>
   </description>
 </component>
