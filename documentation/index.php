@@ -22,12 +22,12 @@
     the RAP Tools.
   </p>
 
-  <h2>RAP 2.0 Migration Guide</h2>
+  <h2>RAP 3.0 Migration Guide</h2>
 
   <p>
-    If you are migrating a RAP 1.x application to RAP 2.x, take a look at the
-    <a href="/rap/noteworthy/2.0/migration-guide/">RAP 2.0 Migration Guide</a>.
-    This document lists all breaking changes in RAP 2.0 and explains the necessary steps.
+    If you are migrating a RAP 2.x (or 1.x) application to RAP 3.x, take a look at the
+    <a href="/rap/noteworthy/3.0/migration-guide/">RAP 3.0 Migration Guide</a>.
+    This document lists all breaking changes in RAP 3.0 and explains the necessary steps.
   </p>
 
   <h2>New and Noteworthy</h2>
