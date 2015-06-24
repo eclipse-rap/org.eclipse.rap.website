@@ -109,11 +109,11 @@
 
   <build name="3.0" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2015-06-24"
       news="3.0/"
-      runtimeZip=""
-      toolsZip=""
+      runtimeZip="rap-3.0.0-R-20150602-0950.zip"
+      toolsZip="rap-tools-3.0.0-R-20150609-1348.zip"
       />
 
 </builds>
