@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.1"
+    simultaneousRelease="">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse Neon</description>
+    <site>http://download.eclipse.org/rt/rap/3.1</site>
+    <downloadPath>/rt/rap/3.1/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse Neon</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.1</site>
+    <downloadPath>/rt/rap/tools/3.1/</downloadPath>
+  </feature>
+
+  <build name="3.1 M1" type="M"
+      shortname="M1"
+      status="planned"
+      publishDate="2015-08-21"
+      news="3.1/?build=M1"
+      runtimeZip=""
+      toolsZip=""
+      />
+
+  <build name="3.1 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2015-10-02"
+      news="3.1/?build=M2"
+      />
+
+  <build name="3.1 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2015-11-13"
+      news="3.1/?build=M3"
+      />
+
+  <build name="3.1 M4" type="M"
+      shortname="M4"
+      status="planned"
+      publishDate="2015-12-18"
+      news="3.1/?build=M4"
+      />
+
+  <build name="3.1" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2016-06-22"
+      news="3.1/"
+      />
+
+</builds>
