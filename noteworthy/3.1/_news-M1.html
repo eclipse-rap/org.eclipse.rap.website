@@ -26,6 +26,21 @@
     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=471172">this feature</a>.
   </p>
 
+  <h2>Support for alpha in Color</h2>
+
+  <p>
+    Support for alpha in Color has been added to SWT in Mars. As RAP client supports RGBA natively,
+    in this milestone we added the missing API:
+    <ul>
+      <li><code>RGBA</code> class</li>
+      <li>constructor <code>Color(Device, RGBA)</code></li>
+      <li>constructor <code>Color(Device, RGB, int)</code></li>
+      <li>constructor <code>Color(Device, int, int, int, int)</code></li>
+      <li><code>getAlpha()</code></li>
+      <li><code>getRGBA()</code></li>
+    </ul>
+  </p>
+
   <!--
   <h2>Support for Microsoft Edge Browser</h2>
   -->
