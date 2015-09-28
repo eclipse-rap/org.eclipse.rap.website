@@ -33,7 +33,7 @@
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">SEP 25</span>
+        <span class="terminal-text terminal-landing">OCT 2</span>
       </span>
     </div>
 
