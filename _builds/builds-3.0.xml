@@ -5,14 +5,14 @@
 
   <feature id="runtime">
     <name>RAP (Runtime)</name>
-    <description>based on Eclipse 4.4</description>
+    <description>based on Eclipse 4.5 (Mars)</description>
     <site>http://download.eclipse.org/rt/rap/3.0</site>
     <downloadPath>/rt/rap/3.0/</downloadPath>
   </feature>
 
   <feature id="tools">
     <name>RAP Tools</name>
-    <description>for use with Eclipse 3.8 to 4.4</description>
+    <description>for use with Eclipse 4.5 (Mars)</description>
     <site>http://download.eclipse.org/rt/rap/tools/3.0</site>
     <downloadPath>/rt/rap/tools/3.0/</downloadPath>
   </feature>
