@@ -1,8 +1,7 @@
 <?
-  // See http://pipes.yahoo.com/pipes/pipe.info?_id=c85e08c37c50468c079de010e5fea95f
   // Alternative feed: http://eclipsesource.com/blogs/tag/rap/feed/
 
-  $feedUrl = "http://pipes.yahoo.com/pipes/pipe.run?_id=c85e08c37c50468c079de010e5fea95f&_render=rss";
+  $feedUrl = "http://eclipsesource.com/blogs/tag/rap/feed/";
 ?>
 
 <div class="sideitem">
