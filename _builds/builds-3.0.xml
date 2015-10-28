@@ -129,8 +129,9 @@
       shortname="SR1a"
       status="completed"
       publishDate="2015-10-28"
-      news="3.0/?build=SR1"
+      news="3.0/?build=SR1a"
       runtimeZip="rap-3.0.1-SR1a-20150908-1130.zip"
+      toolsZip="rap-tools-3.0.1-SR1-20150908-1020.zip"
       />
 
   <build name="3.0.2" type="SR"
