@@ -46,11 +46,13 @@
     $COMPONENT_REPO_21 = $REPO_ROOT . "2.1/" . $COMPONENT_ID . "/";
     $COMPONENT_REPO_22 = $REPO_ROOT . "2.2/" . $COMPONENT_ID . "/";
     $COMPONENT_REPO_23 = $REPO_ROOT . "2.3/" . $COMPONENT_ID . "/";
+    $COMPONENT_REPO_30 = $REPO_ROOT . "3.0/" . $COMPONENT_ID . "/";
     $NIGHTLY_ENABLED = array( "dropdown", "richtext", "cnf", "gef", "pde", "tabbed-properties", "visualization", "e4" );
     $RAP20_ENABLED = array( "clientscripting", "nebula-grid", "pde", "fileupload" );
     $RAP21_ENABLED = array( "clientscripting", "dropdown", "nebula-grid", "pde", "fileupload" );
     $RAP22_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid" );
     $RAP23_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid", "e4" );
+    $RAP30_ENABLED = array( "e4" );
    ?>
     <div class="box">
       <div class="images">
@@ -87,6 +89,9 @@
         <? endif ?>
         <? if( in_array( $COMPONENT_ID, $RAP23_ENABLED ) ) : ?>
           <li><a href="<?= $COMPONENT_REPO_23 ?>">RAP 2.3 compatible version</a></li>
+        <? endif ?>
+        <? if( in_array( $COMPONENT_ID, $RAP30_ENABLED ) ) : ?>
+          <li><a href="<?= $COMPONENT_REPO_30 ?>">RAP 3.0 compatible version</a></li>
         <? endif ?>
         </ul>
         <? endif ?>
