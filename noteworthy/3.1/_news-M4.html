@@ -1,3 +1,25 @@
 <div>
 
+  <h2>Transformation Support for Canvas</h2>
+  <p>
+    <i>GC</i> now implements the <i>setTransform</i> method.
+  </p>
+  
+  <h2>Column Span Support for Nebula Grid</h2>
+  <p>
+    <i>GridItem</i> now implements the <i>setColumnSpan</i> method. The Grid itself has been given
+    a more spreadsheet-like default look to better work with this new feature. It is now also
+    separately themeable (previously shared the a theme with Tree).   
+  </p>
+  
+  <h2>Selection Theming update for all Table/List-based Widgets</h2>
+  <p>
+    <i>Tree</i>, <i>Table</i>, <i>Grid</i>, <i>List</i>, <i>Combo</i>, <i>CCombo</i> and 
+    <i>DropDown</i> have a new default theming for selected items. Instead of a dark-blue gradient 
+    a solid, semi-transparent light blue is used. This preserves the color of the text elements 
+    (they are now longer set to white) and allows elements like cell backgrounds that are normally 
+    hidden beneath the selection effect to shine through. It also works better with 
+    the new Nebula Grid look. The business theme remains unchanged.
+  </p>
+
 </div>
