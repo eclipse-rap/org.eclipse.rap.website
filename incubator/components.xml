@@ -12,7 +12,7 @@
       RAP File Upload Support
     </p>
     <p>
-      <em>This component has been graduated into the RAP core as of 3.0.</em>
+      <em>This component has been graduated and moved to the RAP core as of 3.0.</em>
     </p>
   </description>
 </component>
@@ -34,7 +34,7 @@
       columns, variable item height and more.
     </p>
     <p>
-      <em>This component has been graduated into the RAP core as of 3.0.</em>
+      <em>This component has been graduated and moved to the RAP core as of 3.0.</em>
     </p>
   </description>
 </component>
@@ -75,6 +75,9 @@
     <p>
       For more information, view the readme.txt in the <code>org.eclipse.rap.addons.ckeditor</code> bundle.
     </p>
+    <p>
+      <em>This component has been graduated and moved to the RAP core as of 3.1.</em>
+    </p>
   </description>
 </component>
 <component id="e4">
@@ -111,7 +114,7 @@
       <a href="http://wiki.eclipse.org/RAP/ClientScripting">ClientScripting wiki page</a>
     </p>
     <p>
-      <em>This component has been graduated into the RAP core as of 2.2.</em>
+      <em>This component has been graduated and moved to the RAP core as of 2.2.</em>
     </p>
   </description>
 </component>
