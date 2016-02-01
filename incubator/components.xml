@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <components>
+<component id="chart">
+  <name>
+    Chart
+  </name>
+  <maintainer>
+    Ralf Sternberg
+  </maintainer>
+  <description>
+    <p>
+      Chart widgets for RAP, based on <a href="http://d3js.org/">d3.js</a> and
+      <a href="http://nvd3.org/">nvd3.js</a>
+    </p>
+  </description>
+</component>
 <component id="fileupload">
   <name>
     FileUpload
