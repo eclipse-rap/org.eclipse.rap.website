@@ -52,7 +52,7 @@
     $RAP21_ENABLED = array( "clientscripting", "dropdown", "nebula-grid", "pde", "fileupload" );
     $RAP22_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid" );
     $RAP23_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid", "e4" );
-    $RAP30_ENABLED = array( "e4" );
+    $RAP30_ENABLED = array( "e4", "chart" );
    ?>
     <div class="box">
       <div class="images">
