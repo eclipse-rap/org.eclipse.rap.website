@@ -13,6 +13,10 @@
       <a href="http://nvd3.org/">nvd3.js</a>
     </p>
   </description>
+  <builds>
+    <build>3.0</build>
+    <build>nightly</build>
+  </builds>
 </component>
 <component id="fileupload">
   <name>
@@ -29,6 +33,12 @@
       <em>This component has been graduated and moved to the RAP core as of 3.0.</em>
     </p>
   </description>
+  <builds>
+    <build>2.0</build>
+    <build>2.1</build>
+    <build>2.2</build>
+    <build>2.3</build>
+  </builds>
 </component>
 <component id="nebula-grid">
   <name>
@@ -51,6 +61,12 @@
       <em>This component has been graduated and moved to the RAP core as of 3.0.</em>
     </p>
   </description>
+  <builds>
+    <build>2.0</build>
+    <build>2.1</build>
+    <build>2.2</build>
+    <build>2.3</build>
+  </builds>
 </component>
 <component id="dropdown">
   <name>
@@ -73,6 +89,13 @@
       <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown">DropDown wiki page</a>
     </p>
   </description>
+  <builds>
+    <build>2.0</build>
+    <build>2.1</build>
+    <build>2.2</build>
+    <build>2.3</build>
+    <build>nightly</build>
+  </builds>
 </component>
 <component id="richtext">
   <name>
@@ -93,6 +116,11 @@
       <em>This component has been graduated and moved to the RAP core as of 3.1.</em>
     </p>
   </description>
+  <builds>
+    <build>2.2</build>
+    <build>2.3</build>
+    <build>nightly</build>
+  </builds>
 </component>
 <component id="e4">
   <name>
@@ -110,6 +138,11 @@
       For details, see <a href="http://eclipsesource.com/blogs/2014/04/10/getting-started-with-eclipse4-applications-on-rap/">this blog post</a>.
     </p>
   </description>
+  <builds>
+    <build>2.3</build>
+    <build>3.0</build>
+    <build>nightly</build>
+  </builds>
 </component>
 <component id="clientscripting">
   <name>
@@ -131,6 +164,10 @@
       <em>This component has been graduated and moved to the RAP core as of 2.2.</em>
     </p>
   </description>
+  <builds>
+    <build>2.0</build>
+    <build>2.1</build>
+  </builds>
 </component>
 <component id="osgi-packaging">
   <name>

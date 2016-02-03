@@ -41,18 +41,6 @@
     $COMPONENT_MAINTAINER = $component->maintainer;
     $COMPONENT_DESCRIPTION = $component->description->asXML();
     $COMPONENT_WEBURL = $WEB_ROOT . '.' . $COMPONENT_ID . '.git';
-    $COMPONENT_REPO = $REPO_ROOT . "nightly/" . $COMPONENT_ID . "/";
-    $COMPONENT_REPO_20 = $REPO_ROOT . "2.0/" . $COMPONENT_ID . "/";
-    $COMPONENT_REPO_21 = $REPO_ROOT . "2.1/" . $COMPONENT_ID . "/";
-    $COMPONENT_REPO_22 = $REPO_ROOT . "2.2/" . $COMPONENT_ID . "/";
-    $COMPONENT_REPO_23 = $REPO_ROOT . "2.3/" . $COMPONENT_ID . "/";
-    $COMPONENT_REPO_30 = $REPO_ROOT . "3.0/" . $COMPONENT_ID . "/";
-    $NIGHTLY_ENABLED = array( "dropdown", "richtext", "cnf", "gef", "pde", "tabbed-properties", "visualization", "e4" );
-    $RAP20_ENABLED = array( "clientscripting", "nebula-grid", "pde", "fileupload" );
-    $RAP21_ENABLED = array( "clientscripting", "dropdown", "nebula-grid", "pde", "fileupload" );
-    $RAP22_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid" );
-    $RAP23_ENABLED = array( "dropdown", "richtext", "fileupload", "nebula-grid", "e4" );
-    $RAP30_ENABLED = array( "e4", "chart" );
    ?>
     <div class="box">
       <div class="images">
@@ -70,29 +58,22 @@
           <strong>Source code:</strong>
           <a href="<?= $COMPONENT_WEBURL ?>">git repository</a>
         </p>
-        <? if( in_array( $COMPONENT_ID, $NIGHTLY_ENABLED ) ) : ?>
+        <? if( $component->builds ) : ?>
         <p>
           <strong>Builds (p2 repositories):</strong>
         </p>
         <ul>
-        <? if( in_array( $COMPONENT_ID, $NIGHTLY_ENABLED ) ) : ?>
-          <li><a href="<?= $COMPONENT_REPO ?>">nightly builds</a></li>
-        <? endif ?>
-        <? if( in_array( $COMPONENT_ID, $RAP20_ENABLED ) ) : ?>
-          <li><a href="<?= $COMPONENT_REPO_20 ?>">RAP 2.0 compatible version</a></li>
-        <? endif ?>
-        <? if( in_array( $COMPONENT_ID, $RAP21_ENABLED ) ) : ?>
-          <li><a href="<?= $COMPONENT_REPO_21 ?>">RAP 2.1 compatible version</a></li>
-        <? endif ?>
-        <? if( in_array( $COMPONENT_ID, $RAP22_ENABLED ) ) : ?>
-          <li><a href="<?= $COMPONENT_REPO_22 ?>">RAP 2.2 compatible version</a></li>
-        <? endif ?>
-        <? if( in_array( $COMPONENT_ID, $RAP23_ENABLED ) ) : ?>
-          <li><a href="<?= $COMPONENT_REPO_23 ?>">RAP 2.3 compatible version</a></li>
-        <? endif ?>
-        <? if( in_array( $COMPONENT_ID, $RAP30_ENABLED ) ) : ?>
-          <li><a href="<?= $COMPONENT_REPO_30 ?>">RAP 3.0 compatible version</a></li>
-        <? endif ?>
+        <? foreach( $component->builds->build as $build ) : ?>
+        <?
+          $BUILD_URL = $REPO_ROOT . $build . "/" . $COMPONENT_ID;
+          if( $build == "nightly" ) {
+            $BUILD_LABEL = "nightly builds";
+          } else {
+            $BUILD_LABEL = "RAP " . $build . " compatible version";
+          }
+        ?>
+        <li><a href="<?= $BUILD_URL ?>"><?= $BUILD_LABEL ?></a></li>
+        <? endforeach; ?>
         </ul>
         <? endif ?>
       </div>
