@@ -14,7 +14,6 @@
     </p>
   </description>
   <builds>
-    <build>3.0</build>
     <build>nightly</build>
   </builds>
 </component>
@@ -90,10 +89,10 @@
     </p>
   </description>
   <builds>
-    <build>2.0</build>
     <build>2.1</build>
     <build>2.2</build>
     <build>2.3</build>
+    <build>3.0</build>
     <build>nightly</build>
   </builds>
 </component>
@@ -119,6 +118,7 @@
   <builds>
     <build>2.2</build>
     <build>2.3</build>
+    <build>3.0</build>
     <build>nightly</build>
   </builds>
 </component>
