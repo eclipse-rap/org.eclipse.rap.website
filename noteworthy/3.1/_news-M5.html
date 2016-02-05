@@ -24,4 +24,32 @@ loader.requireCss( CSS_URL );
     deprecated.
   </p>
 
+  <h2>Badge support for CTabItem</h2>
+
+  <p>
+    The CTabItem widget now supports badges:
+  </p>
+
+  <img class="framed" alt="Badges on CTabItems" src="./images/ctabitem-badges.png"/>
+
+  <p>
+    Those badges can be set using a data key:
+  </p>
+
+  <pre lang="java">ctabItem.setData( RWT.BADGE, "7" );</pre>
+
+  <p>
+    The given string is displayed at the top-right of the item. To adjust the look of badges, the
+    <em>Widget-Badge</em> element can be used. It currently supports the properties <em>font</em>,
+    <em>color</em>, <em>background-color</em>, <em>border</em> and <em>border-radius</em>.
+  </p>
+
+  <h2>Partial redraw</h2>
+
+  <p>
+    The implementation of method <code>Control#redraw(int, int, int, int, boolean)</code> has been
+    improved. Now, only the provided rectangle is redrawn on the client without clearing rest of the
+    drawing area.
+  </p>
+
 </div>
