@@ -1,6 +1,6 @@
 <div>
 
-  <h2>New Service Interface ClientFileLoader</h2>
+  <h2>New service interface ClientFileLoader</h2>
 
   </p>
     Custom widgets often require their own CSS file to be loaded on the client.
@@ -89,6 +89,23 @@ dialog.open( returnCode -> {
     The non-blocking methods are now available on <code>Dialog</code> and <code>Browser</code>,
     respectively.
     <code>DialogUtil</code> and <code>BrowserUtil</code> have been deprecated.
+  </p>
+
+  <h2>New Chart component in Incubator</h2>
+
+  <img class="framed" alt="Charts" src="./images/chart.png"/>
+
+  <p>
+    A new component for creating charts has been added to the RAP Incubator.
+    It provides an extensible class <code>Chart</code> that is based on the famous
+    <a href="http://d3js.org/">D3.js</a> library.
+    Moreover, it contains some basic chart widgets that use
+    <a href="http://nvd3.org/">NVD3</a>, a chart library that builds on top of d3.
+    Currently, there is a PieChart, a BarChart, and a LineChart widget with a basic set of properties,
+    that is going to be extended.
+  </p>
+  <p>
+    See <a href="http://eclipsesource.com/blogs/2016/02/04/new-in-the-rap-incubator-charts-with-d3-and-nvd3/">the blog post</a> for details.
   </p>
 
 </div>
