@@ -18,7 +18,7 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.1 M4</span>
+        <span class="terminal-text">RAP 3.1 M5</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
@@ -29,11 +29,11 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.1 M5</span>
+        <span class="terminal-text">RAP 3.0.2</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">FEB 05</span>
+        <span class="terminal-text">FEB 26</span>
       </span>
     </div>
 
@@ -45,6 +45,17 @@
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
         <span class="terminal-text">MAR 25</span>
+      </span>
+    </div>
+
+    <div class="terminal-row">
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">RAP 3.1 M7</span>
+      </span>
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">MAY 6</span>
       </span>
     </div>
 

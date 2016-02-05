@@ -1,0 +1,27 @@
+<div>
+
+  <h2>New Service Interface ClientFileLoader</h2>
+  </p>
+    Custom widgets often require their own CSS file to be loaded on the client.
+    We already supported loading Javascript files using the <code>JavaScriptLoader</code> service,
+    but we had no service to load CSS files.
+  </p>
+  <p>
+    So we've introduced a new service interface named <code>ClientFileLoader</code> that can load
+    both, JS and CSS files.
+    The service provides two methods, <code>requireJs</code> and <code>requireCss</code>, that both
+    accept a URL to load.
+    The ClientFileLoader ensures that every file is loaded only once per session, so you can safely
+    use it in the constructor of a custom widget.
+  </p>
+<pre lang="java">
+ClientFileLoader loader = RWT.getClient().getService( ClientFileLoader.class );
+loader.requireJs( JS_URL );
+loader.requireCss( CSS_URL );
+</pre>
+  <p>
+    This new service replaces the existing <code>JavaScriptLoader</code> service, which has been
+    deprecated.
+  </p>
+
+</div>
