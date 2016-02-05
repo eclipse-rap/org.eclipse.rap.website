@@ -1,6 +1,7 @@
 <div>
 
   <h2>New Service Interface ClientFileLoader</h2>
+
   </p>
     Custom widgets often require their own CSS file to be loaded on the client.
     We already supported loading Javascript files using the <code>JavaScriptLoader</code> service,
@@ -50,6 +51,44 @@ loader.requireCss( CSS_URL );
     The implementation of method <code>Control#redraw(int, int, int, int, boolean)</code> has been
     improved. Now, only the provided rectangle is redrawn on the client without clearing rest of the
     drawing area.
+  </p>
+
+  <h2>Use API extensions to replace RWT utility classes</h2>
+
+  <p>
+    In those rare cases where RAP requires a slightly different API than SWT, we've used to
+    provide additional methods in utility classes like <code>BrowserUtil</code> and <code>DialogUtil</code>.
+    These utilities contain non-blocking version of the SWT methods <code>Browser.evaluate()</code>
+    and <code>Dialog.open()</code>, that are needed for the JEE compatible mode.
+    We avoided making extensions to classes and interfaces from SWT.
+  </p>
+  <p>
+    Reconsidering this approach, we think that it makes the developer's life harder, as these
+    methods cannot be found directly, and the separation does not bring a real advantage.
+    So we decided to take the freedom to add those few extensions directly to the SWT classes.
+    For example, instead of:
+  </p>
+<pre lang="java">
+DialogUtil.open( dialog, returnCode -> {
+  if( returnCode == SWT.OK ) {
+    // do something
+  }
+});
+</pre>
+  <p>
+    you can now write:
+  </p>
+<pre lang="java">
+dialog.open( returnCode -> {
+  if( returnCode == SWT.OK ) {
+    // do something
+  }
+});
+</pre>
+  <p>
+    The non-blocking methods are now available on <code>Dialog</code> and <code>Browser</code>,
+    respectively.
+    <code>DialogUtil</code> and <code>BrowserUtil</code> have been deprecated.
   </p>
 
 </div>
