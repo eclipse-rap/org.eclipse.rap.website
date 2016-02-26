@@ -136,9 +136,11 @@
 
   <build name="3.0.2" type="SR"
       shortname="SR2"
-      status="planned"
+      status="completed"
       publishDate="2016-02-26"
       news="3.0/?build=SR2"
+      runtimeZip="rap-3.0.2-SR2-20160201-1220.zip"
+      toolsZip="rap-tools-3.0.2-SR2-20160209-0600.zip"
       />
 
 </builds>
