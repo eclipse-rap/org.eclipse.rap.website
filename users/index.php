@@ -471,7 +471,7 @@
       <p class="refs">References:</p>
       <ul>
         <li>
-          <a href="http://www.xino.org/">http://www.xino.org/</a>
+          <a href="http://www.book-publishing-software.de/">http://www.book-publishing-software.de/</a>
         </li>
       </ul>
     </div>
