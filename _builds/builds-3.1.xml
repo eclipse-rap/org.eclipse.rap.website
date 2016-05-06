@@ -73,9 +73,11 @@
 
   <build name="3.1 M7" type="M"
       shortname="M7"
-      status="planned"
+      status="completed"
       publishDate="2016-05-06"
       news="3.1/?build=M7"
+      runtimeZip="rap-3.1.0-M7-20160503-1956.zip"
+      toolsZip="rap-tools-3.1.0-M7-20160503-1631.zip"
       />
 
   <build name="3.1 RC1" type="RC"
