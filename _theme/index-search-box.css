@@ -1,9 +1,9 @@
-@CHARSET "UTF-8";
+sbx-custom@CHARSET "UTF-8";
 .sbx-custom {
     display: inline-block;
     position: relative;
     width: 300px;
-    height: 45px;
+    height: 40px;
     white-space: nowrap;
     box-sizing: border-box;
     font-size: 16px;
@@ -24,7 +24,7 @@
     padding-right: 66px;
     padding-left: 12px;
     width: 300px;
-    height: 45px;
+    height: 40px;
     vertical-align: middle;
     white-space: normal;
     font-size: inherit;
@@ -196,12 +196,12 @@
 
 @media (min-width: 768px) {
     /* Bottom border of each suggestion */
-    
+
     .algolia-docsearch-suggestion {
         border-bottom-color: #0F8AB3;
     }
     /* Left column, with secondary category header */
-    
+
     .algolia-docsearch-suggestion--subcategory-column {
         border-right-color: #DAE3E9;
         background-color: #F2F5F9;
