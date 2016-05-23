@@ -9,6 +9,8 @@
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" type="text/css" href="/rap/_theme/reset.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="/rap/_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="/rap/_theme/index-search-box.css" media="screen" />
 <? if( isset( $PAGE_ADD_CSS ) ) { ?>
   <link rel="stylesheet" type="text/css" href="<?= $PAGE_ADD_CSS ?>" media="screen" />
 <? } ?>

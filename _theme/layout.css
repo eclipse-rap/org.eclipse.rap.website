@@ -42,6 +42,15 @@ html {
   background-repeat: no-repeat;
 }
 
+#rap-search-box {
+  position: absolute;
+  bottom: 70px;
+  right: 37px; 
+  width: 300px;
+  height: 45px;
+  z-index: 1000;
+}
+
 /* TOP LEVEL NAVIGATION */
 
 #navigation {

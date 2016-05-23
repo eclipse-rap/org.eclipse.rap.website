@@ -18,7 +18,19 @@
 
     </div>
   </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
   <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    document.querySelector('.searchbox [type="reset"]').addEventListener('click', function() {
+      this.parentNode.querySelector('input').focus();
+    });
     $( function() {
       // prettify rewrites <pre> and <code> elements with class="prettyprint"
       // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
