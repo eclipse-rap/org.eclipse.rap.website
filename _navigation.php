@@ -112,23 +112,23 @@ $NAV_ENTRIES = array(
 
   <div id="rap-search-box">
     <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-13" viewBox="0 0 40 40">
-        <path d="M26.804 29.01c-2.832 2.34-6.465 3.746-10.426 3.746C7.333 32.756 0 25.424 0 16.378 0 7.333 7.333 0 16.378 0c9.046 0 16.378 7.333 16.378 16.378 0 3.96-1.406 7.594-3.746 10.426l10.534 10.534c.607.607.61 1.59-.004 2.202-.61.61-1.597.61-2.202.004L26.804 29.01zm-10.426.627c7.323 0 13.26-5.936 13.26-13.26 0-7.32-5.937-13.257-13.26-13.257C9.056 3.12 3.12 9.056 3.12 16.378c0 7.323 5.936 13.26 13.258 13.26z"
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
         fill-rule="evenodd" />
       </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
         <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
       </symbol>
     </svg>
-    <form  action="#" novalidate="novalidate" class="searchbox sbx-custom">
+    <form id="sbx-form" action="#" novalidate="novalidate" class="searchbox sbx-custom">
       <div role="search" class="sbx-custom__wrapper">
         <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
         <button type="submit" title="Submit your search query." class="sbx-custom__submit">
           <svg role="img" aria-label="Search">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-13"></use>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
           </svg>
         </button>
-        <button type="reset" title="Clear the search query." class="sbx-custom__reset">
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
           <svg role="img" aria-label="Reset">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
           </svg>
