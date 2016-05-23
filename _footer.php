@@ -28,19 +28,6 @@
         hitsPerPage: 9,
       }
     });
-    var sbxRemove = document.getElementById( 'sbx-remove' );
-    var searchQueryInput = document.getElementById( 'search-query' );
-    searchQueryInput.addEventListener( 'input', function() {
-      if( searchQueryInput.value.length > 0 ) {
-        sbxRemove.style.display = "inline";
-      } else {
-        sbxRemove.style.display = "none";
-      }
-    });
-    sbxRemove.addEventListener( 'click', function() {
-      sbxRemove.style.display = "none";
-      searchQueryInput.value = "";
-    } );
     $( function() {
       // prettify rewrites <pre> and <code> elements with class="prettyprint"
       // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java

@@ -22,6 +22,11 @@
   <script type="text/javascript" src="/rap/script.js"></script>
   <script type="text/javascript" src="/rap/_theme/prettify/prettify.js"></script>
   <script type="text/javascript" src="/rap/_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
