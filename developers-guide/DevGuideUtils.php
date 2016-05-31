@@ -29,7 +29,7 @@ class DevGuideUtils {
       'apiUrl' => 'http://download.eclipse.org/rt/rap/doc/3.0/guide/reference/',
       'tocPath' => 'guide/toc.xml',
       'topicPath' => 'guide/articles/'
-    )
+    ),
     '3.1' => array(
       'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/3.1/',
       'apiUrl' => 'http://download.eclipse.org/rt/rap/doc/3.1/guide/reference/',
