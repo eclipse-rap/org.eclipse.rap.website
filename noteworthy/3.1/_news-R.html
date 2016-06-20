@@ -16,7 +16,7 @@
 
   </p>
     Custom widgets often require their own CSS file to be loaded on the client.
-    We already supported loading Javascript files using the <code>JavaScriptLoader</code> service,
+    We already supported loading JavaScript files using the <code>JavaScriptLoader</code> service,
     but we had no service to load CSS files.
   </p>
   <p>
@@ -40,9 +40,9 @@ loader.requireCss( CSS_URL );
   <h3>Use API extensions to replace RWT utility classes</h3>
 
   <p>
-    In those rare cases where RAP requires a slightly different API than SWT, we've used to
+    In those rare cases where RAP requires a slightly different API than SWT, we used to
     provide additional methods in utility classes like <code>BrowserUtil</code> and <code>DialogUtil</code>.
-    These utilities contain non-blocking version of the SWT methods <code>Browser.evaluate()</code>
+    These utilities contain non-blocking versions of the SWT methods <code>Browser.evaluate()</code>
     and <code>Dialog.open()</code>, that are needed for the JEE compatible mode.
     We avoided making extensions to classes and interfaces from SWT.
   </p>
@@ -155,7 +155,7 @@ gc.fillRectangle( 0, 0, 100, 50 );
   <p>
     <i>GridItem</i> now implements the <i>setColumnSpan</i> method. The Grid itself has been given
     a more spreadsheet-like default look to better work with this new feature. It is now also
-    separately themeable (previously shared the a theme with Tree).
+    separately themeable (previously shared a theme with Tree).
   </p>
   <p>
     <img class="framed" alt="Grid column spanning" src="./images/columnspan.png"/><br/>
@@ -166,7 +166,7 @@ gc.fillRectangle( 0, 0, 100, 50 );
     <i>Tree</i>, <i>Table</i>, <i>Grid</i>, <i>List</i>, <i>Combo</i>, <i>CCombo</i> and
     <i>DropDown</i> have a new default theming for selected items. Instead of a dark-blue gradient
     a solid, semi-transparent light blue is used. This preserves the color of the text elements
-    (they are now longer set to white) and allows elements like cell backgrounds that are normally
+    (they are no longer set to white) and allows elements like cell backgrounds that are normally
     hidden beneath the selection effect to shine through. It also works better with
     the new Nebula Grid look. The business theme remains unchanged.
   </p>
@@ -202,7 +202,7 @@ gc.fillRectangle( 0, 0, 100, 50 );
   <h3>Support for native HTML document overflow behaviour</h3>
 
   </p>
-    For better support of RAP applications that look like normal web sites, we added a posibility to
+    For better support of RAP applications that look like normal web sites, we added a possibility to
     enable native HTML document overflow behaviour. To enable it, a new property
     <code>WebClient.PAGE_OVERFLOW</code> with one of the values "scroll", "scrollX" or "scrollY"
     must be set to your application.
