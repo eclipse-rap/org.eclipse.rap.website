@@ -511,8 +511,8 @@
 
   <div class="box">
     <div class="images">
-      <a href="images/tsmexplorer1-full.png">
-        <img src="images/tsmexplorer1.png"/>
+      <a href="images/tsmexplorer3-full.png">
+        <img src="images/tsmexplorer3.png"/>
       </a><!--
       <br/>
       <a href="images/tsmexplorer2-full.png">
@@ -530,7 +530,7 @@
       <p class="refs">References:</p>
       <ul>
         <li>
-          <a href="http://www.s-iberia.com">Siberia  Software SL</a>
+          <a href="https://www.youtube.com/watch?v=TnGguKNK6k4">TSMExplorer Server</a>
         </li>
       </ul>
     </div>
