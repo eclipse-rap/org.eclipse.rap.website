@@ -18,7 +18,7 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.1 RC2</span>
+        <span class="terminal-text">RAP 3.1</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
@@ -29,22 +29,22 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.1 RC3</span>
+        <span class="terminal-text">RAP 3.2 M1</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text terminal-arrived">ARRIVED</span>
+        <span class="terminal-text">AUG 21</span>
       </span>
     </div>
 
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.1 RC4</span>
+        <span class="terminal-text">RAP 3.2 M2</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">JUN 10</span>
+        <span class="terminal-text">OCT 02</span>
       </span>
     </div>
 
