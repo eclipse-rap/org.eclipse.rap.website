@@ -518,7 +518,8 @@ div#slideshowWindow {
 }
 
 div#heading-eclipse-icon img {
-  height: 76px;
+  height: 43px;
+  width: 180px;
 }
 
 #slideshow > h1 {
