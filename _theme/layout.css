@@ -265,9 +265,9 @@ dd {
 
 #footer img {
   position: relative;
-  top: -3px;
-  width: 100px;
-  padding-left: 80px;
+  top: 5px;
+  width: 120px;
+  padding-left: 60px;
 }
 
 #footer ul {
