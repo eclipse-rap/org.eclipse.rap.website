@@ -116,4 +116,27 @@
       toolsZip="rap-tools-3.1.0-R-20160608-0734.zip"
       />
 
+  <build name="3.1.1" type="SR"
+      shortname="SR1"
+      status="completed"
+      publishDate="2016-09-28"
+      news="3.1/?build=SR1"
+      runtimeZip="rap-3.1.1-SR1-20160913-0447.zip"
+      toolsZip="rap-tools-3.1.1-SR1-20160913-0451.zip"
+      />
+
+  <build name="3.1.2" type="SR"
+      shortname="SR2"
+      status="planned"
+      publishDate="2016-12-21"
+      news="3.1/?build=SR2"
+      />
+
+  <build name="3.1.3" type="SR"
+      shortname="SR3"
+      status="planned"
+      publishDate="2017-03-23"
+      news="3.1/?build=SR3"
+      />
+
 </builds>
