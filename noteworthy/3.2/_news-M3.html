@@ -1,2 +1,42 @@
 <div>
+
+  <h2>Markup Support for ExpandBar</h2>
+
+  <p>
+    The support for simple HTML markup has been extended to the <code>ExpandBar</code> widget.  It
+    can be activated in the same way like in <code>Table</code> and <code>Label</code>, using the
+    constant <code>RWT.MARKUP_ENABLED</code>. It affects the text in the <code>ExpandItem</code>
+    header.
+  </p>
+  <p>
+    <img class="framed" title="ExpandBar widget with HTML markup" src="images/Markup-ExpandBar.png" />
+  </p>
+
+  <h2>Markup Support for MessageBox</h2>
+
+  <p>
+    We also added markup support to <code>MessageBox</code> message. Use the new public method
+    <code>setMarkupEnabled</code> to enable it.
+  </p>
+  <p>
+    <img class="framed" title="MessageBox widget with HTML markup" src="images/Markup-MessageBox.png" />
+  </p>
+
+  <h2>Support for filter extensions in FileUpload widget and FileDialog</h2>
+
+  <p>
+    This is one of the most requested features, which is finaly implemented. Most recent,
+    supported by RAP browsers (except IE9) can filter the files shown in the browse dialog by their
+    extensions. To set them, use <code>setFilterExtensions( String[] )</code> on
+    <code>FileUpload</code>/<code>FileDialog</code>.
+  </p>
+
+  <h2>Make RichTextEditor language configurable</h2>
+
+  <p>
+    It's now possible to specify the <code>RichTextEditor</code> language using the new generic
+    <code>RichTextEditorConfiguration</code> class.<br/>
+    Big thanks to Wojtek Polcwiartek for its contribution.
+  </p>
+
 </div>
