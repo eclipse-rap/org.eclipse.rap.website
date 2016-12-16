@@ -46,9 +46,11 @@
 
   <build name="3.2 M4" type="M"
       shortname="M4"
-      status="planned"
+      status="completed"
       publishDate="2016-12-16"
       news="3.2/?build=M4"
+      runtimeZip="rap-3.2.0-M4-20161213-1904.zip"
+      toolsZip="rap-tools-3.2.0-M4-20161213-1914.zip"
       />
 
   <build name="3.2 M5" type="M"
