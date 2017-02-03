@@ -1,2 +1,22 @@
 <div>
+
+  <h2>Target Platform Changes</h2>
+
+  <p>
+    The target platform includes Jetty 9.4.0 instead of Jetty 9.3.x.
+    This is not just a change of the version number, but the session handling was complete
+    rewritten by Jetty team. Please test your applications carefully and report if you find any
+    problems.
+  </p>
+
+  <h2>Minimum Requirements</h2>
+
+  <h2><em>org.eclipse.rap.jface</em> indirectly requires Java 8</h2>
+
+  <p>
+    The underlying platform bundle <em>org.eclipse.equinox.common</em> now requires Java 8. The
+    Bundle-RequiredExecutionEnvironment (BREE) of "org.eclipse.rap.jface" bundle will be updated to
+    <em>JavaSE-1.8</em> in the next milestone too.
+  </p>
+
 </div>
