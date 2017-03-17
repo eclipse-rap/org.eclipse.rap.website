@@ -64,9 +64,11 @@
 
   <build name="3.2 M6" type="M"
       shortname="M6"
-      status="planned"
+      status="completed"
       publishDate="2017-03-17"
       news="3.2/?build=M6"
+      runtimeZip="rap-3.2.0-M6-20170314-1733.zip"
+      toolsZip="rap-tools-3.2.0-M6-20170314-1711.zip"
       />
 
   <build name="3.2 M7" type="M"
