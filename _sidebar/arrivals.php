@@ -29,7 +29,7 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.1.3</span>
+        <span class="terminal-text">RAP 3.1.2a</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
