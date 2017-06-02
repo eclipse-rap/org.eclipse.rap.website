@@ -91,9 +91,11 @@
 
   <build name="3.2 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2017-06-02"
       news="3.2/?build=RC2"
+      runtimeZip="rap-3.2.0-RC2-20170531-1231.zip"
+      toolsZip="rap-tools-3.2.0-RC2-20170531-1857-unsigned.zip"
       />
 
   <build name="3.2 RC3" type="RC"
