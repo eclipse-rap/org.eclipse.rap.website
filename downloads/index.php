@@ -20,28 +20,36 @@
   $newsUrl = "../noteworthy/";
 
   $STABLE_RUNTIME_DESCRIPTION = $stableBuilds->getDescription( "runtime" );
+  $STABLE_RUNTIME4_DESCRIPTION = $stableBuilds->getDescription( "runtime4" );
   $STABLE_TOOLING_DESCRIPTION = $stableBuilds->getDescription( "tools" );
   $STABLE_NAME = $stableBuild->getName() . ' ' . $stableBuild->getType();
   $STABLE_DATE = formatDate( $stableBuild->getPublishDate() );
   $STABLE_NOTEWORTHY_URL = $newsUrl . $stableBuild->getNews();
   $STABLE_RUNTIME_ZIP = $stableBuild->getZipFile( "runtime" );
+  $STABLE_RUNTIME4_ZIP = $stableBuild->getZipFile( "runtime4" );
   $STABLE_TOOLING_ZIP = $stableBuild->getZipFile( "tools" );
   $STABLE_RUNTIME_ZIP_URL = $stableBuild->getZipFileUrl( "runtime" );
+  $STABLE_RUNTIME4_ZIP_URL = $stableBuild->getZipFileUrl( "runtime4" );
   $STABLE_TOOLING_ZIP_URL = $stableBuild->getZipFileUrl( "tools" );
   $STABLE_RUNTIME_UPDATE_SITE = $stableBuilds->getUpdateSite( "runtime" );
+  $STABLE_RUNTIME4_UPDATE_SITE = $stableBuilds->getUpdateSite( "runtime4" );
   $STABLE_TOOLING_UPDATE_SITE = $stableBuilds->getUpdateSite( "tools" );
 
   $RELEASE_RUNTIME_DESCRIPTION = $releaseBuilds->getDescription( "runtime" );
+  $RELEASE_RUNTIME4_DESCRIPTION = $releaseBuilds->getDescription( "runtime4" );
   $RELEASE_TOOLING_DESCRIPTION = $releaseBuilds->getDescription( "tools" );
   $RELEASE_NAME = $releaseBuild->getName() . ' ' . $releaseBuild->getType();
   $RELEASE_DATE = formatDate( $releaseBuild->getPublishDate() );
   $RELEASE_NOTEWORTHY_URL = $newsUrl . $releaseBuild->getNews();
   $RELEASE_NOTES_URL = $releaseBuild->getReleaseNotes() ? $newsUrl . $releaseBuild->getReleaseNotes() : "";
   $RELEASE_RUNTIME_ZIP = $releaseBuild->getZipFile( "runtime" );
+  $RELEASE_RUNTIME4_ZIP = $releaseBuild->getZipFile( "runtime4" );
   $RELEASE_TOOLING_ZIP = $releaseBuild->getZipFile( "tools" );
   $RELEASE_RUNTIME_ZIP_URL = $releaseBuild->getZipFileUrl( "runtime" );
+  $RELEASE_RUNTIME4_ZIP_URL = $releaseBuild->getZipFileUrl( "runtime4" );
   $RELEASE_TOOLING_ZIP_URL = $releaseBuild->getZipFileUrl( "tools" );
   $RELEASE_RUNTIME_UPDATE_SITE = $releaseBuilds->getUpdateSite( "runtime" );
+  $RELEASE_RUNTIME4_UPDATE_SITE = $releaseBuilds->getUpdateSite( "runtime4" );
   $RELEASE_TOOLING_UPDATE_SITE = $releaseBuilds->getUpdateSite( "tools" );
 
 ?>
@@ -65,6 +73,10 @@
     platform.
   </p>
 
+  <h3>RAP e3 (Target Components)</h3>
+  <p>
+    The familiar RAP Runtime components including the Workbench 3.x components by RAP.
+  </p>
   <p style="border-left: 3px solid #dd0000; padding: 2px 5px; color: #dd0000; font-weight: bold;">
     This is a target platform, do not try to install it into the Eclipse IDE!
   </p>
@@ -151,10 +163,106 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="https://hudson.eclipse.org/rap/job/rap-head-runtime/lastStableBuild/">download from Hudson</a>
+        <a href="https://hudson.eclipse.org/rap/job/rap-head-runtime-signed/lastStableBuild/artifact/org.eclipse.rap/releng/org.eclipse.rap.build/repository/target/">download from Hudson</a>
       </p>
     </div>
   </div>
+
+  <h3>RAP e4 (Target Components)</h3>
+  <p>
+    The RAP Runtime including the integrated RAP E4 bundles.
+  </p>
+  <p style="border-left: 3px solid #dd0000; padding: 2px 5px; color: #dd0000; font-weight: bold;">
+    This is a target platform, do not try to install it into the Eclipse IDE!
+  </p>
+
+  <div class="expand-head">
+    <div class="expand-link download-button">
+      <span class="download-icon"></span>
+      <span>latest stable build</span>
+    </div>
+    <div class="expand-link download-button">
+      <span class="download-icon"></span>
+      <span>latest release</span>
+    </div>
+    <div class="expand-link download-button">
+      <span class="download-icon"></span>
+      <span>nightly build</span>
+    </div>
+  </div>
+
+  <div class="expand-body">
+
+    <!-- Runtime Latest Stable Build -->
+    <div class="expand-item">
+      <strong><?php echo $STABLE_NAME ?></strong>
+      <p>
+        <?php echo $STABLE_RUNTIME4_DESCRIPTION ?>
+        <br/>
+        Published: <?php echo $STABLE_DATE ?>
+        <br/>
+        <a href="<?php echo $STABLE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/site.gif" alt="site" />
+        Software site:
+        <strong><?php echo $STABLE_RUNTIME4_UPDATE_SITE ?></strong>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/zip.gif" alt="zip" />
+        Zipped version:
+        <a href="<?php echo $STABLE_RUNTIME4_ZIP_URL ?>"><?php echo $STABLE_RUNTIME4_ZIP ?></a>
+      </p>
+    </div>
+
+    <!-- Runtime Latest Release -->
+    <div class="expand-item">
+      <strong><?php echo $RELEASE_NAME ?></strong>
+      <p>
+        <?php echo $RELEASE_RUNTIME4_DESCRIPTION ?>
+        <br/>
+        Published: <?php echo $RELEASE_DATE ?>
+        <br/>
+        <a href="<?php echo $RELEASE4_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
+        <? if( $RELEASE_NOTES_URL ) { ?>
+          <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
+        <? } ?>
+      </p>
+
+      <p class="download-row">
+        <img src="/rap/images/site.gif" alt="site" />
+        Software site:
+        <strong><?php echo $RELEASE_RUNTIME4_UPDATE_SITE ?></strong>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/zip.gif" alt="zip" />
+        Zipped version:
+        <a href="<?php echo $RELEASE_RUNTIME4_ZIP_URL ?>"><?php echo $RELEASE4_RUNTIME_ZIP ?></a>
+      </p>
+    </div>
+
+    <!-- Runtime Nightly Build -->
+    <div class="expand-item">
+      <strong>Nightly Build</strong>
+      <p>
+        <?php echo $STABLE_RUNTIME4_DESCRIPTION ?>
+        <br/>
+        Published: daily
+        <br/>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/site.gif" alt="site" />
+        Software site:
+        <strong>http://download.eclipse.org/rt/rap/nightly/runtime.e4/</strong>
+      </p>
+      <p class="download-row">
+        <img src="/rap/images/zip.gif" alt="zip" />
+        Zipped version:
+        <a href="https://hudson.eclipse.org/rap/job/rap-head-runtime-signed/lastStableBuild/artifact/org.eclipse.rap/releng/org.eclipse.rap.build/repository.e4/target/">download from Hudson</a>
+      </p>
+    </div>
+  </div>
+
 
   <h2>RAP Tools</h2>
   <p>

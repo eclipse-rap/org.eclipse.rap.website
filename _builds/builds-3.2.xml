@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <builds version="3.2"
-    simultaneousRelease="">
+    simultaneousRelease="Oxygen">
 
   <feature id="runtime">
     <name>RAP (Runtime)</name>
     <description>based on Eclipse 4.7 (Oxygen)</description>
     <site>http://download.eclipse.org/rt/rap/3.2</site>
     <downloadPath>/rt/rap/3.2/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.7 (Oxygen)</description>
+    <site>http://download.eclipse.org/rt/rap/3.2/e4</site>
+    <downloadPath>/rt/rap/3.2/e4/</downloadPath>
   </feature>
 
   <feature id="tools">
@@ -86,6 +93,7 @@
       publishDate="2017-05-26"
       news="3.2/?build=RC1"
       runtimeZip="rap-3.2.0-RC1-20170524-1406.zip"
+      runtime4Zip="rap-e4-3.2.0-RC1-20170524-1406.zip"
       toolsZip="rap-tools-3.2.0-RC1-20170524-1537.zip"
       />
 
@@ -95,6 +103,7 @@
       publishDate="2017-06-02"
       news="3.2/?build=RC2"
       runtimeZip="rap-3.2.0-RC2-20170531-1231.zip"
+      runtime4Zip="rap-e4-3.2.0-RC2-20170531-1231.zip"
       toolsZip="rap-tools-3.2.0-RC2-20170531-1857-unsigned.zip"
       />
 
@@ -104,6 +113,7 @@
       publishDate="2017-06-09"
       news="3.2/?build=RC3"
       runtimeZip="rap-3.2.0-RC3-20170607-0910.zip"
+      runtime4Zip="rap-e4-3.2.0-RC3a-20170609-2348.zip"
       toolsZip="rap-tools-3.2.0-RC3-20170606-2343.zip"
       />
 
