@@ -1,0 +1,104 @@
+<div>
+
+  <h2>Migrate RAP E4 Incubator runtime compontents to RAP Runtime project</h2>
+
+  <p>
+    Move the following projects from the
+    <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.e4.git">RAP E4 Incubator</a>
+    to the main RAP Runtime project and create a separate p2 repository that can be used for building
+    Eclipse 4 applications based on RAP.
+    <ul>
+        <li>bundles/org.eclipse.e4.core.commands</li>
+        <li>bundles/org.eclipse.e4.ui.bindings</li>
+        <li>bundles/org.eclipse.e4.ui.workbench</li>
+        <li>bundles/org.eclipse.e4.ui.workbench.addons.swt</li>
+        <li>bundles/org.eclipse.e4.ui.workbench.renderers.swt</li>
+        <li>bundles/org.eclipse.e4.ui.workbench.swt</li>
+        <li>bundles/org.eclipse.rap.e4</li>
+        <li>examples/org.eclipse.rap.e4.demo</li>
+        <li>features/org.eclipse.rap.e4.base.feature</li>
+        <li>features/org.eclipse.rap.e4.target.feature</li>
+    </ul>
+  </p>
+
+  <p>
+    For e4 beginners we added a "New Project Wizard" template for creating a simple RAP e4
+    application.
+  </p>
+  <p>
+    <img class="framed" title="New RAP e4 app template" src="images/e4-template.png" />
+  </p>
+
+  <h2>Replace Equinox DS with Apache Felix SCR (DS)</h2>
+
+  <p>
+    The Equinox project added the Apache Felix SCR bundle as a replacement for their old
+    Equinox DS implementation. The RAP Equinox Target Feature has been updated to reflect this
+    change. <em>org.eclipse.equinox.ds</em> has been replaced by <em>org.apache.felix.scr</em>,
+    which required a change in the dependency chain from <em>org.eclipse.equinox.util</em> to
+    <em>org.eclipse.osgi.util</em>.
+  </p>
+
+  <h2><em>org.eclipse.rap.jface</em> indirectly requires Java 8</h2>
+
+  <p>
+    The underlying platform bundle <em>org.eclipse.equinox.common</em> now requires Java 8. The
+    Bundle-RequiredExecutionEnvironment (BREE) of <em>org.eclipse.rap.jface</em> bundle has been
+    updated to <em>JavaSE-1.8</em> too.
+  </p>
+
+  <h2>Theming enhancements</h2>
+
+  <p>
+    The themeablity of some widgets has been improved. The following properties have been added:
+  </p>
+
+  <ul>
+    <li>
+      <code>padding</code> property for Label
+    </li>
+    <li>
+      <code>padding</code> property for Link
+    </li>
+  </ul>
+
+  <h2>Markup Support for ExpandBar</h2>
+
+  <p>
+    The support for simple HTML markup has been extended to the <code>ExpandBar</code> widget.  It
+    can be activated in the same way like in <code>Table</code> and <code>Label</code>, using the
+    constant <code>RWT.MARKUP_ENABLED</code>. It affects the text in the <code>ExpandItem</code>
+    header.
+  </p>
+  <p>
+    <img class="framed" title="ExpandBar widget with HTML markup" src="images/Markup-ExpandBar.png" />
+  </p>
+
+  <h2>Markup Support for MessageBox</h2>
+
+  <p>
+    We also added markup support to <code>MessageBox</code> message. Use the new public method
+    <code>setMarkupEnabled</code> to enable it.
+  </p>
+  <p>
+    <img class="framed" title="MessageBox widget with HTML markup" src="images/Markup-MessageBox.png" />
+  </p>
+
+  <h2>Support for filter extensions in FileUpload widget and FileDialog</h2>
+
+  <p>
+    This is one of the most requested features, which is finally implemented. Most recent browser
+    versions supported by RAP (except IE9) can filter the files shown in the browse dialog by their
+    extensions. To set them, use <code>setFilterExtensions( String[] )</code> on
+    <code>FileUpload</code>/<code>FileDialog</code>.
+  </p>
+
+  <h2>Make RichTextEditor language configurable</h2>
+
+  <p>
+    It's now possible to specify the <code>RichTextEditor</code> language using the new generic
+    <code>RichTextEditorConfiguration</code> class.<br/>
+    Big thanks to Wojtek Polcwiartek for its contribution.
+  </p>
+
+</div>
