@@ -45,6 +45,18 @@
     <?= $builds->getUpdateSite( "runtime" ) ?>
   </p>
 
+  <h3>RAP E4 (Runtime)</h3>
+
+  <p>
+    <?= $builds->getDescription( "runtime4" ) ?>
+  </p>
+
+  <p>
+    Software Site:
+    <img src="/rap/images/site.gif" alt="site" />
+    <?= $builds->getUpdateSite( "runtime4" ) ?>
+  </p>
+
   <h3>RAP Tools</h3>
 
   <p>
@@ -86,6 +98,11 @@
       <td>
         <a href="<?= $build->getZipFileUrl( "runtime" ) ?>">
           <img src="/rap/images/zip.gif" alt="zip" /> RAP
+        </a>
+      </td>
+      <td>
+        <a href="<?= $build->getZipFileUrl( "runtime4" ) ?>">
+          <img src="/rap/images/zip.gif" alt="zip" /> RAP E4
         </a>
       </td>
       <td>

@@ -237,7 +237,7 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="<?php echo $RELEASE_RUNTIME4_ZIP_URL ?>"><?php echo $RELEASE4_RUNTIME_ZIP ?></a>
+        <a href="<?php echo $RELEASE_RUNTIME4_ZIP_URL ?>"><?php echo $RELEASE_RUNTIME4_ZIP ?></a>
       </p>
     </div>
 

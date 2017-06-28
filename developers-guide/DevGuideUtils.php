@@ -3,7 +3,7 @@
 class DevGuideUtils {
 
   const CURRENT_VERSION = '3.2';
-  const MASTER_VERSION = '3.2';
+  const MASTER_VERSION = '3.3';
 
   public static $versions = array(
     '2.0' => array(
