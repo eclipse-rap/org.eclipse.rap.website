@@ -223,7 +223,7 @@
         <br/>
         Published: <?php echo $RELEASE_DATE ?>
         <br/>
-        <a href="<?php echo $RELEASE4_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
+        <a href="<?php echo $RELEASE_NOTEWORTHY_URL ?>">New &amp; Noteworthy</a>
         <? if( $RELEASE_NOTES_URL ) { ?>
           <a href="<?php echo $RELEASE_NOTES_URL ?>">Release Notes</a>
         <? } ?>
