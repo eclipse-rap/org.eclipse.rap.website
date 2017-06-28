@@ -6,7 +6,8 @@
     Move the following projects from the
     <a href="http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.e4.git">RAP E4 Incubator</a>
     to the main RAP Runtime project and create a separate p2 repository that can be used for building
-    Eclipse 4 applications based on RAP.
+    Eclipse 4 applications based on RAP. These artifacts are kept separate from their Eclipse Platform
+    counterparts, and are <em>not</em> contributed to the aggregated Simultaneous Release p2 repository.
     <ul>
         <li>bundles/org.eclipse.e4.core.commands</li>
         <li>bundles/org.eclipse.e4.ui.bindings</li>
@@ -18,6 +19,16 @@
         <li>examples/org.eclipse.rap.e4.demo</li>
         <li>features/org.eclipse.rap.e4.base.feature</li>
         <li>features/org.eclipse.rap.e4.target.feature</li>
+    </ul>
+  </p>
+
+  <p>
+    The feature structure in the new RAP E4 p2 repository follows the traditional RAP structure.
+    <ul>
+      <li>org.eclipse.rap.e4 with the RAP E4 bundles</li>
+      <li>org.eclipse.rap.e4.sdk includes the above with source code</li>
+      <li>org.eclipse.rap.e4.equinox.target for developing and starting a RAP E4 app from the workspace</li>
+      <li>org.eclipse.rap.e4.examples includes exemplary and demo projects</li>
     </ul>
   </p>
 
