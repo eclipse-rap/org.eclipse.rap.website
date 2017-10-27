@@ -5,14 +5,14 @@
 
   <feature id="runtime">
     <name>RAP (Runtime)</name>
-    <description>based on Eclipse 4.7.1 (Oxygen.1)</description>
+    <description>based on Eclipse 4.7.1a (Oxygen.1a)</description>
     <site>http://download.eclipse.org/rt/rap/3.3</site>
     <downloadPath>/rt/rap/3.3/</downloadPath>
   </feature>
 
   <feature id="runtime4">
     <name>RAP E4 (Runtime)</name>
-    <description>based on Eclipse 4.7.1 (Oxygen.1)</description>
+    <description>based on Eclipse 4.7.1a (Oxygen.1a)</description>
     <site>http://download.eclipse.org/rt/rap/3.3/e4</site>
     <downloadPath>/rt/rap/3.3/e4/</downloadPath>
   </feature>
@@ -31,6 +31,16 @@
       news="3.3/"
       runtimeZip="rap-3.3.0-R-20170913-2100.zip"
       runtime4Zip="rap-e4-3.3.0-R-20170913-2100.zip"
+      toolsZip="rap-tools-3.3.0-R-20170913-2030.zip"
+      />
+
+  <build name="3.3a" type="SR"
+      shortname="SR1"
+      status="completed"
+      publishDate="2017-10-26"
+      news="3.3/"
+      runtimeZip="rap-3.3.0-SR1-20171025-1219.zip"
+      runtime4Zip="rap-e4-3.3.0-SR1-20171025-1219.zip"
       toolsZip="rap-tools-3.3.0-R-20170913-2030.zip"
       />
 
