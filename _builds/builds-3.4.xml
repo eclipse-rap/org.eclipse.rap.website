@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.4"
+    simultaneousRelease="Oxygen.2">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.7.2 (Oxygen.2)</description>
+    <site>http://download.eclipse.org/rt/rap/3.4</site>
+    <downloadPath>/rt/rap/3.4/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.7.2 (Oxygen.2)</description>
+    <site>http://download.eclipse.org/rt/rap/3.4/e4</site>
+    <downloadPath>/rt/rap/3.4/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.7.2 (Oxygen.2)</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.4</site>
+    <downloadPath>/rt/rap/tools/3.4/</downloadPath>
+  </feature>
+
+  <build name="3.4 RC1" type="RC"
+      shortname="RC1"
+      status="completed"
+      publishDate="2017-11-17"
+      news="3.4/?build=RC1"
+      runtimeZip="rap-3.4.0-RC1-oxygen-20171115-1527.zip"
+      runtime4Zip="rap-e4-3.4.0-RC1-oxygen-20171115-1527.zip"
+      toolsZip="rap-tools-3.4.0-RC1-oxygen-20171115-1407.zip"
+      />
+
+  <build name="3.4 RC2" type="RC"
+      shortname="RC2"
+      status="completed"
+      publishDate="2017-11-24"
+      news="3.4/?build=RC2"
+      runtimeZip="rap-3.4.0-RC2-oxygen-20171122-2033.zip"
+      runtime4Zip="rap-e4-3.4.0-RC2-oxygen-20171122-2033.zip"
+      toolsZip="rap-tools-3.4.0-RC2-oxygen-20171122-1958.zip"
+      />
+
+  <build name="3.4 RC3" type="RC"
+      shortname="RC3"
+      status="completed"
+      publishDate="2017-12-01"
+      news="3.4/?build=RC3"
+      runtimeZip="rap-3.4.0-RC3-oxygen-20171128-1303.zip"
+      runtime4Zip="rap-e4-3.4.0-RC3-oxygen-20171128-1303.zip"
+      toolsZip="rap-tools-3.4.0-RC3-oxygen-20171128-1255.zip"
+      />
+
+  <build name="3.4 RC4" type="RC"
+      shortname="RC4"
+      status="planned"
+      publishDate="2017-12-08"
+      news="3.4/?build=RC4"
+      runtimeZip="rap-3.4.0-RC4-oxygen-20171204-1637.zip"
+      runtime4Zip="rap-e4-3.4.0-RC4-oxygen-20171204-1637.zip"
+      toolsZip="rap-tools-3.4.0-RC4-oxygen-20171204-1620.zip"
+      />
+
+  <build name="3.4" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2017-12-20"
+      news="3.4/"
+      runtimeZip="rap-3.4.0-R-20171204-1637.zip"
+      runtime4Zip="rap-e4-3.4.0-R-20171204-1637.zip"
+      toolsZip="rap-tools-3.4.0-R-20171204-1620.zip"
+      />
+
+</builds>
