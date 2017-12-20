@@ -9,7 +9,7 @@
 
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
-  $releaseBuilds = new Builds( "3.3" );
+  $releaseBuilds = new Builds( "3.4" );
   $stableBuilds = new Builds( "3.4" );
 
   // ---
