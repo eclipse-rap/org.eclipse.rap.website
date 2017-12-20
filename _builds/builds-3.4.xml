@@ -56,7 +56,7 @@
 
   <build name="3.4 RC4" type="RC"
       shortname="RC4"
-      status="planned"
+      status="completed"
       publishDate="2017-12-08"
       news="3.4/?build=RC4"
       runtimeZip="rap-3.4.0-RC4-oxygen-20171204-1637.zip"
@@ -66,7 +66,7 @@
 
   <build name="3.4" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2017-12-20"
       news="3.4/"
       runtimeZip="rap-3.4.0-R-20171204-1637.zip"
