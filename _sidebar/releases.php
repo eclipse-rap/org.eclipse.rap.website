@@ -5,6 +5,9 @@
   <div class="sideitemcontent">
     <ul>
       <li>
+        <a href="/rap/downloads/3.5/">RAP 3.5&emsp;June 2018 (Photon)</a>
+      </li>
+      <li>
         <a href="/rap/downloads/3.4/">RAP 3.4&emsp;December 2017 (Oxygen.2)</a>
       </li>
       <li>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.5" simultaneousRelease="Photon">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.8 (Photon)</description>
+    <site>http://download.eclipse.org/rt/rap/3.5</site>
+    <downloadPath>/rt/rap/3.5/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.8 (Photon)</description>
+    <site>http://download.eclipse.org/rt/rap/3.5/e4</site>
+    <downloadPath>/rt/rap/3.5/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.8 (Photon)</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.5</site>
+    <downloadPath>/rt/rap/tools/3.5/</downloadPath>
+  </feature>
+
+  <build name="3.5 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2018-02-02"
+      news="3.5/?build=M1"
+      runtimeZip="rap-3.5.0-M1-20180201-0952.zip"
+      runtime4Zip="rap-e4-3.5.0-M1-20180201-0952.zip"
+      toolsZip="rap-tools-3.5.0-M1-20180131-1757.zip"
+      />
+
+  <build name="3.5 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2018-03-16"
+      news="3.5/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.5 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2018-05-18"
+      news="3.5/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.5 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2018-05-25"
+      news="3.5/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.5 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2018-06-01"
+      news="3.5/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.5 RC3" type="RC"
+      shortname="RC3"
+      status="planned"
+      publishDate="2018-06-08"
+      news="3.5/?build=RC3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.5" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2018-06-27"
+      news="3.5/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
