@@ -74,4 +74,24 @@
       toolsZip="rap-tools-3.4.0-R-20171204-1620.zip"
       />
 
+  <build name="3.4 SR1" type="SR"
+      shortname="SR1"
+      status="completed"
+      publishDate="2018-03-21"
+      news="3.4/"
+      runtimeZip="rap-3.4.1-SR1-20180306-0817.zip"
+      runtime4Zip="rap-e4-3.4.1-SR1-20180306-0817.zip"
+      toolsZip="rap-tools-3.4.1-SR1-20180306-1010.zip"
+      />
+
+  <build name="3.4 SR1a" type="SR"
+      shortname="SR1a"
+      status="planned"
+      publishDate="2018-04-11"
+      news="3.4/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
 </builds>
