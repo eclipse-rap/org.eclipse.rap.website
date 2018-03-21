@@ -5,21 +5,21 @@
 
   <feature id="runtime">
     <name>RAP (Runtime)</name>
-    <description>based on Eclipse 4.7.2 (Oxygen.2)</description>
+    <description>based on Eclipse 4.7.3 (Oxygen.3)</description>
     <site>http://download.eclipse.org/rt/rap/3.4</site>
     <downloadPath>/rt/rap/3.4/</downloadPath>
   </feature>
 
   <feature id="runtime4">
     <name>RAP E4 (Runtime)</name>
-    <description>based on Eclipse 4.7.2 (Oxygen.2)</description>
+    <description>based on Eclipse 4.7.3 (Oxygen.3)</description>
     <site>http://download.eclipse.org/rt/rap/3.4/e4</site>
     <downloadPath>/rt/rap/3.4/e4/</downloadPath>
   </feature>
 
   <feature id="tools">
     <name>RAP Tools</name>
-    <description>for use with Eclipse 4.7.2 (Oxygen.2)</description>
+    <description>for use with Eclipse 4.7.3 (Oxygen.3)</description>
     <site>http://download.eclipse.org/rt/rap/tools/3.4</site>
     <downloadPath>/rt/rap/tools/3.4/</downloadPath>
   </feature>
