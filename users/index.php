@@ -537,6 +537,34 @@
     <div style="clear: both;"></div>
   </div>
 
+  <div class="box">
+    <div class="images">
+      <a href="images/quandec-full.png">
+        <img src="images/quandec.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">Quandec – Quantify your decisions</h2>
+      <h4 class="tagline"><a href="https://www.cassotis.com">CASSOTIS consulting</a></h4>
+      <p>
+        Quandec is a generic scenario-based graphical interface for optimization models written in
+        AMPL. It offers an intuitive and user-friendly web application designed to help decision
+        makers analyze results, compare scenarios, make reports, share work with colleagues,
+        calibrate equations with regressions, and much more.
+      </p>
+      <p class="refs">References:</p>
+      <ul>
+        <li>
+          <a href="https://www.cassotis.com/quandec">Quandec page at CASSOTIS website</a>
+        </li>
+        <li>
+          <a href="https://ampl.com/products/quandec/">AMPL's product page</a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
 </div>
 
 <div id="rightcolumn">
