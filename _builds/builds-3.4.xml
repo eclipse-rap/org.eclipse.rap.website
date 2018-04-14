@@ -5,21 +5,21 @@
 
   <feature id="runtime">
     <name>RAP (Runtime)</name>
-    <description>based on Eclipse 4.7.3 (Oxygen.3)</description>
+    <description>based on Eclipse 4.7.3a (Oxygen.3a)</description>
     <site>http://download.eclipse.org/rt/rap/3.4</site>
     <downloadPath>/rt/rap/3.4/</downloadPath>
   </feature>
 
   <feature id="runtime4">
     <name>RAP E4 (Runtime)</name>
-    <description>based on Eclipse 4.7.3 (Oxygen.3)</description>
+    <description>based on Eclipse 4.7.3a (Oxygen.3a)</description>
     <site>http://download.eclipse.org/rt/rap/3.4/e4</site>
     <downloadPath>/rt/rap/3.4/e4/</downloadPath>
   </feature>
 
   <feature id="tools">
     <name>RAP Tools</name>
-    <description>for use with Eclipse 4.7.3 (Oxygen.3)</description>
+    <description>for use with Eclipse 4.7.3a (Oxygen.3a)</description>
     <site>http://download.eclipse.org/rt/rap/tools/3.4</site>
     <downloadPath>/rt/rap/tools/3.4/</downloadPath>
   </feature>
@@ -84,14 +84,14 @@
       toolsZip="rap-tools-3.4.1-SR1-20180306-1010.zip"
       />
 
-  <build name="3.4 SR1a" type="SR"
-      shortname="SR1a"
-      status="planned"
+  <build name="3.4 SR2" type="SR"
+      shortname="SR2"
+      status="completed"
       publishDate="2018-04-11"
       news="3.4/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.4.2-SR2-20180404-2010.zip"
+      runtime4Zip="rap-e4-3.4.2-SR2-20180404-2010.zip"
+      toolsZip="rap-tools-3.4.2-SR2-20180404-1914.zip"
       />
 
 </builds>
