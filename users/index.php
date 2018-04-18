@@ -521,7 +521,7 @@
     </div>
     <div>
       <h2 class="withTagline">TSMExplorer</h2>
-      <h4 class="tagline"><a href = "http://www.s-iberia.com">Siberia  Software SL</a></h4>
+      <h4 class="tagline"><a href = "http://www.tsmexplorer.com">Siberia  Software SL</a></h4>
       <p>
         TSMExplorer Server  is easy and comfortable product for managing and monitoring IBM Tivoli
         Storage Manager (Spectrum Protect). The product allows to manage many TSM servers from
@@ -530,7 +530,7 @@
       <p class="refs">References:</p>
       <ul>
         <li>
-          <a href="https://www.youtube.com/watch?v=9T1WVMmmc2c">TSMExplorer Server</a>
+          <a href="http://www.tsmexplorer.com/?page_id=135">TSMExplorer Server</a>
         </li>
       </ul>
     </div>
