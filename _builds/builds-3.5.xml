@@ -75,12 +75,12 @@
 
   <build name="3.5 RC3" type="RC"
       shortname="RC3"
-      status="planned"
+      status="completed"
       publishDate="2018-06-08"
       news="3.5/?build=RC3"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.5.0-RC3-20180605-1348.zip"
+      runtime4Zip="rap-e4-3.5.0-RC3-20180605-1348.zip"
+      toolsZip="rap-tools-3.5.0-RC3-20180605-1337.zip"
       />
 
   <build name="3.5" type="R"
