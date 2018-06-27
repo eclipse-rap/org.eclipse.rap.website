@@ -85,12 +85,12 @@
 
   <build name="3.5" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2018-06-27"
       news="3.5/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.5.0-R-20180613-1725.zip"
+      runtime4Zip="rap-e4-3.5.0-R-20180613-1725.zip"
+      toolsZip="rap-tools-3.5.0-R-20180613-1714.zip"
       />
 
 </builds>
