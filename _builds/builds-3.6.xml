@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.6" simultaneousRelease="2018-09">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.9 (2018-09)</description>
+    <site>http://download.eclipse.org/rt/rap/3.6</site>
+    <downloadPath>/rt/rap/3.6/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.9 (2018-09)</description>
+    <site>http://download.eclipse.org/rt/rap/3.6/e4</site>
+    <downloadPath>/rt/rap/3.6/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.9 (2018-09)</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.6</site>
+    <downloadPath>/rt/rap/tools/3.6/</downloadPath>
+  </feature>
+
+  <build name="3.6 M2" type="M"
+      shortname="M2"
+      status="completed"
+      publishDate="2018-08-10"
+      news="3.6/?build=M2"
+      runtimeZip="rap-3.6.0-M2-20180809-0535.zip"
+      runtime4Zip="rap-e4-3.6.0-M2-20180809-0535.zip"
+      toolsZip="rap-tools-3.6.0-M2-20180809-0523.zip"
+      />
+
+  <build name="3.6 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2018-08-31"
+      news="3.6/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.6 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2018-09-07"
+      news="3.6/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.6 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2018-09-14"
+      news="3.6/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.6" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2018-09-19"
+      news="3.6/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>

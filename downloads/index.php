@@ -10,7 +10,7 @@
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
   $releaseBuilds = new Builds( "3.5" );
-  $stableBuilds = new Builds( "3.5" );
+  $stableBuilds = new Builds( "3.6" );
 
   // ---
 
@@ -163,7 +163,7 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="https://hudson.eclipse.org/rap/job/rap-head-runtime-signed/lastStableBuild/artifact/org.eclipse.rap/releng/org.eclipse.rap.build/repository/target/">download from Hudson</a>
+        <a href="https://ci.eclipse.org/rap/job/rap-head-runtime-signed/lastStableBuild/artifact/org.eclipse.rap/releng/org.eclipse.rap.build/repository/target/">download from Jenkins</a>
       </p>
     </div>
   </div>
@@ -258,7 +258,7 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="https://hudson.eclipse.org/rap/job/rap-head-runtime-signed/lastStableBuild/artifact/org.eclipse.rap/releng/org.eclipse.rap.build/repository.e4/target/">download from Hudson</a>
+        <a href="https://ci.eclipse.org/rap/job/rap-head-runtime-signed/lastStableBuild/artifact/org.eclipse.rap/releng/org.eclipse.rap.build/repository.e4/target/">download from Jenkins</a>
       </p>
     </div>
   </div>
@@ -376,7 +376,7 @@
       <p class="download-row">
         <img src="/rap/images/zip.gif" alt="zip" />
         Zipped version:
-        <a href="https://hudson.eclipse.org/rap/job/rap-head-tools/lastStableBuild/">download from Hudson</a>
+        <a href="https://ci.eclipse.org/rap/job/rap-head-tools/lastStableBuild/artifact/org.eclipse.rap.tools/releng/org.eclipse.rap.tools.build/repository/target/">download from Jenkins</a>
       </p>
     </div>
   </div>
