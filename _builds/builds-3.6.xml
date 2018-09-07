@@ -45,12 +45,12 @@
 
   <build name="3.6 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2018-09-07"
       news="3.6/?build=RC1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.6.0-RC1-20180905-1729.zip"
+      runtime4Zip="rap-e4-3.6.0-RC1-20180905-1729.zip"
+      toolsZip="rap-tools-3.6.0-RC1-20180905-1718.zip"
       />
 
   <build name="3.6 RC2" type="RC"
