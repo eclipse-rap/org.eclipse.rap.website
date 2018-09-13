@@ -565,6 +565,25 @@
     <div style="clear: both;"></div>
   </div>
 
+  <div class="box">
+    <div class="images">
+      <a href="images/beehave-home-full.png">
+        <img src="images/beehave-home.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">Beehave Software</h2>
+      <h4 class="tagline"><a href = "http://www.beehavesoft.com">Beehave Software</a></h4>
+      <p>
+        Beehave collaboration platform helps you digitalize any of your processes as simply as
+        creating a presentation or a spreadsheet. Your company data is not lost in a multitude of
+        unrelated files or tools, it is all in one place. With great social and business
+        intelligence features to leverage its full value.
+      </p>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
 </div>
 
 <div id="rightcolumn">
