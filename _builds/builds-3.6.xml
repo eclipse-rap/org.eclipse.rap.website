@@ -55,22 +55,22 @@
 
   <build name="3.6 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2018-09-14"
       news="3.6/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.6.0-RC2-20180912-1017.zip"
+      runtime4Zip="rap-e4-3.6.0-RC2-20180912-1017.zip"
+      toolsZip="rap-tools-3.6.0-RC2-20180912-1003.zip"
       />
 
   <build name="3.6" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2018-09-19"
       news="3.6/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.6.0-R-20180912-1017.zip"
+      runtime4Zip="rap-e4-3.6.0-R-20180912-1017.zip"
+      toolsZip="rap-tools-3.6.0-R-20180912-1003.zip"
       />
 
 </builds>
