@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.7" simultaneousRelease="2018-12">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.10 (2018-12)</description>
+    <site>http://download.eclipse.org/rt/rap/3.7</site>
+    <downloadPath>/rt/rap/3.7/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.10 (2018-12)</description>
+    <site>http://download.eclipse.org/rt/rap/3.7/e4</site>
+    <downloadPath>/rt/rap/3.7/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.10 (2018-12)</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.7</site>
+    <downloadPath>/rt/rap/tools/3.7/</downloadPath>
+  </feature>
+
+  <build name="3.7 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2018-10-19"
+      news="3.7/?build=M1"
+      runtimeZip="rap-3.7.0-M1-20181019-0657.zip"
+      runtime4Zip="rap-e4-3.7.0-M1-20181019-0657.zip"
+      toolsZip="rap-tools-3.7.0-M1-20181018-2335.zip"
+      />
+
+  <build name="3.7 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2018-11-02"
+      news="3.7/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.7 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate=""
+      news="3.7/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.7 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate=""
+      news="3.7/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.7 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate=""
+      news="3.7/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.7" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2018-12-19"
+      news="3.7/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
