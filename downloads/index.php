@@ -56,6 +56,12 @@
 
 <div id="midcolumn">
 
+  <p style="border-left: 3px solid #dd0000; padding: 2px 5px; color: #dd0000; font-weight: bold;">
+    With the upcoming Firefox 64 release affecting all web applications, there will be a ready
+    solution for previous Eclipse RAP versions. Learn more
+    <a href="https://eclipsesource.com/blogs/2018/10/21/firefox-64-change-breaks-key-navigation-in-web-frameworks-including-eclipse-rap">here</a>.
+  </p>
+
   <h1>Downloads</h1>
 
   <p>
