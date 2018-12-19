@@ -29,7 +29,7 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.7 RC1</span>
+        <span class="terminal-text">RAP 3.7</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
@@ -40,11 +40,11 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.7</span>
+        <span class="terminal-text">RAP 3.8</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">2018-12-19</span>
+        <span class="terminal-text">2019-03-20</span>
       </span>
     </div>
 
