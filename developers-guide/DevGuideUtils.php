@@ -2,8 +2,8 @@
 
 class DevGuideUtils {
 
-  const CURRENT_VERSION = '3.6';
-  const MASTER_VERSION = '3.7';
+  const CURRENT_VERSION = '3.7';
+  const MASTER_VERSION = '3.8';
 
   public static $versions = array(
     '2.0' => array(
@@ -69,6 +69,12 @@ class DevGuideUtils {
     '3.7' => array(
       'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/3.7/',
       'apiUrl' => 'http://download.eclipse.org/rt/rap/doc/3.7/guide/reference/',
+      'tocPath' => 'guide/toc.xml',
+      'topicPath' => 'guide/articles/'
+    ),
+    '3.8' => array(
+      'rootUrl' => 'http://download.eclipse.org/rt/rap/doc/3.8/',
+      'apiUrl' => 'http://download.eclipse.org/rt/rap/doc/3.8/guide/reference/',
       'tocPath' => 'guide/toc.xml',
       'topicPath' => 'guide/articles/'
     )

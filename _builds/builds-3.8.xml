@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.8" simultaneousRelease="2019-03">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.11 (2019-03)</description>
+    <site>http://download.eclipse.org/rt/rap/3.8</site>
+    <downloadPath>/rt/rap/3.8/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.11 (2019-03)</description>
+    <site>http://download.eclipse.org/rt/rap/3.8/e4</site>
+    <downloadPath>/rt/rap/3.8/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.11 (2019-03)</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.8</site>
+    <downloadPath>/rt/rap/tools/3.8/</downloadPath>
+  </feature>
+
+  <build name="3.8 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2019-01-18"
+      news="3.8/?build=M1"
+      runtimeZip="rap-3.8.0-M1-20190117-0722.zip"
+      runtime4Zip="rap-e4-3.8.0-M1-20190117-0722.zip"
+      toolsZip="rap-tools-3.8.0-M1-20190117-0710.zip"
+      />
+
+  <build name="3.8 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2019-02-08"
+      news="3.8/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.8 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2019-03-01"
+      news="3.8/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.8 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2019-03-08"
+      news="3.8/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.8 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2019-03-15"
+      news="3.8/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.8" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2019-03-20"
+      news="3.8/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
