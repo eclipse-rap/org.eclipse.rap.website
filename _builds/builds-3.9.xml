@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.9" simultaneousRelease="2019-06">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.12 (2019-06)</description>
+    <site>http://download.eclipse.org/rt/rap/3.9</site>
+    <downloadPath>/rt/rap/3.9/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.12 (2019-06)</description>
+    <site>http://download.eclipse.org/rt/rap/3.9/e4</site>
+    <downloadPath>/rt/rap/3.9/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.12 (2019-06)</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.9</site>
+    <downloadPath>/rt/rap/tools/3.9/</downloadPath>
+  </feature>
+
+  <build name="3.9 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2019-04-19"
+      news="3.9/?build=M1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.9 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2019-05-10"
+      news="3.9/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.9 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2019-05-31"
+      news="3.9/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.9 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2019-06-07"
+      news="3.9/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.9 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2019-06-14"
+      news="3.9/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.9" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2019-06-19"
+      news="3.9/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
