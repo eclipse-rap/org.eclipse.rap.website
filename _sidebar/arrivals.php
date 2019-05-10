@@ -51,7 +51,7 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.9 M1</span>
+        <span class="terminal-text">RAP 3.9 M2</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
@@ -62,11 +62,11 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.9 M2</span>
+        <span class="terminal-text">RAP 3.9 M3</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">2019-05-10</span>
+        <span class="terminal-text">2019-05-31</span>
       </span>
     </div>
 
