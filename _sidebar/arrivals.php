@@ -7,17 +7,6 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.6</span>
-      </span>
-      <span class="terminal-field">
-        <span class="terminal-overlay"></span>
-        <span class="terminal-text terminal-arrived">ARRIVED</span>
-      </span>
-    </div>
-
-    <div class="terminal-row">
-      <span class="terminal-field">
-        <span class="terminal-overlay"></span>
         <span class="terminal-text">RAP 3.7</span>
       </span>
       <span class="terminal-field">
@@ -51,7 +40,7 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.9 RC2</span>
+        <span class="terminal-text">RAP 3.9</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
@@ -62,11 +51,11 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.9</span>
+        <span class="terminal-text">RAP 3.10</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">2019-06-19</span>
+        <span class="terminal-text">2019-09</span>
       </span>
     </div>
 

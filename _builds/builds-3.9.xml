@@ -75,7 +75,7 @@
 
   <build name="3.9" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2019-06-19"
       news="3.9/"
       runtimeZip="rap-3.9.0-R-20190612-1720.zip"
