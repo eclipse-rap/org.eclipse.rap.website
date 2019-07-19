@@ -5,6 +5,9 @@
   <div class="sideitemcontent">
     <ul>
       <li>
+        <a href="/rap/downloads/3.10/">RAP 3.10&emsp;September 2019 (2019-09)</a>
+      </li>
+      <li>
         <a href="/rap/downloads/3.9/">RAP 3.9&emsp;June 2019 (2019-06)</a>
       </li>
       <li>
