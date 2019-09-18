@@ -53,34 +53,24 @@
       toolsZip="rap-tools-3.10.0-M3-20190827-0511.zip"
       />
 
-  <build name="3.10 RC1" type="RC"
-      shortname="RC1"
-      status="planned"
-      publishDate="2019-09-06"
-      news="3.10/?build=RC1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
-      />
-
   <build name="3.10 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2019-09-13"
       news="3.10/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.10.0-RC2-20190911-1524.zip"
+      runtime4Zip="rap-e4-3.10.0-RC2-20190911-1524.zip"
+      toolsZip="rap-tools-3.10.0-RC2-20190911-1514.zip"
       />
 
   <build name="3.10" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2019-09-18"
       news="3.10/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.10.0-R-20190911-1524.zip"
+      runtime4Zip="rap-e4-3.10.0-R-20190911-1524.zip"
+      toolsZip="rap-tools-3.10.0-R-20190911-1514.zip"
       />
 
 </builds>
