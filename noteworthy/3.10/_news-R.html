@@ -1,2 +1,22 @@
 <div>
+
+  <h3>Change minimal execution environment to Java 8</h3>
+
+  <p>
+    As many other Eclipse projects, we decided to raise the minimal execution environment to Java 8.
+    We already had several projects that depend on platform bundles moved to Java 8. Using Java 8
+    everywhere will make our life easier. We think that we won't exclude anyone by this move.
+  </p>
+
+  <h3>New API</h3>
+
+  <p>
+    By using <code>ClientFileUploader</code> client service it was not possible to cancel an upload.
+    That's especially a problem with slow network or very big uploads.
+    <code>ClientFileUploader</code> service now has <code>abort(String)</code> method to cancel
+    particular upload by it's id. The upload id is now returned by <code>submit</code> method.
+    The new API is already utilized in <code>FileDialog</code> when the DND is used to upload
+    files.
+  </p>
+
 </div>
