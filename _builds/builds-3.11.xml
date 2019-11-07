@@ -35,12 +35,12 @@
 
   <build name="3.11 M2" type="M"
       shortname="M2"
-      status="planned"
+      status="completed"
       publishDate="2019-11-08"
       news="3.11/?build=M2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.11.0-M2-20191106-1434.zip"
+      runtime4Zip="rap-e4-3.11.0-M2-20191106-1434.zip"
+      toolsZip="rap-tools-3.11.0-M2-20191106-1556.zip"
       />
 
   <build name="3.11 M3" type="M"

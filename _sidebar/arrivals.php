@@ -40,11 +40,11 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.11 M2</span>
+        <span class="terminal-text">RAP 3.11 M3</span>
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">2019-11-08</span>
+        <span class="terminal-text">2019-11-29</span>
       </span>
     </div>
 
