@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.13" simultaneousRelease="2020-06">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.16 (2020-06)</description>
+    <site>http://download.eclipse.org/rt/rap/3.13</site>
+    <downloadPath>/rt/rap/3.13/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.16 (2020-06)</description>
+    <site>http://download.eclipse.org/rt/rap/3.13/e4</site>
+    <downloadPath>/rt/rap/3.13/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.16 (2020-06)</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.13</site>
+    <downloadPath>/rt/rap/tools/3.13/</downloadPath>
+  </feature>
+
+  <build name="3.13 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2020-04-17"
+      news="3.13/?build=M1"
+      runtimeZip="rap-3.13.0-M1-20200415-1742.zip"
+      runtime4Zip="rap-e4-3.13.0-M1-20200415-1742.zip"
+      toolsZip="rap-tools-3.13.0-M1-20200415-1741.zip"
+      />
+
+  <build name="3.13 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2020-05-08"
+      news="3.13/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.13 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2020-05-29"
+      news="3.13/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.13 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2020-06-05"
+      news="3.13/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.13 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2020-06-12"
+      news="3.13/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.13" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2020-06-17"
+      news="3.13/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>

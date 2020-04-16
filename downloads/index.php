@@ -10,7 +10,7 @@
   // --- TO BE CHANGED WITH EVERY RELEASE ---
 
   $releaseBuilds = new Builds( "3.12" );
-  $stableBuilds = new Builds( "3.12" );
+  $stableBuilds = new Builds( "3.13" );
 
   // ---
 
@@ -55,11 +55,6 @@
 ?>
 
 <div id="midcolumn">
-
-  <h3 style="border-left: 3px solid #dd0000; padding: 2px 5px; color: #dd0000; background-color: #dedede; font-weight: bold;">
-    With the Firefox 65 release affecting all web applications, there is a ready solution for previous Eclipse RAP versions. Learn more
-    <a href="https://eclipsesource.com/blogs/2018/10/21/firefox-64-change-breaks-key-navigation-in-web-frameworks-including-eclipse-rap">here</a>.
-  </h3>
 
   <h1>Downloads</h1>
 
