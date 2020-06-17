@@ -1,7 +1,7 @@
 <div>
 
     <h2>Support for Nebula Grid cell selection</h2>
-  
+
     <p>
       In this release we added the posibility to select one or more cells in Nebula Grid.
     </p>
@@ -36,6 +36,22 @@
         <li><code>getCell(Point)</code></li>
       </ul>
     </p>
-  
+
+    <h2>Support for Nebula Grid fixed columns</h2>
+
+    <p>
+      Fixed columns are the left most columns, excluded from horizontal scrolling. You can activate
+      this feature in a similar way as in the Tree/Table widgets:</br>
+<pre><code>
+Grid grid = new Grid( parent, SWT.NONE );
+gtid.setData( RWT.FIXED_COLUMNS, Integer.valueOf( 2 ) );
+</code></pre>
+    </p>
+
+    <h2>Add possiblity to set the "tree" column</h2>
+
+    <p>
+      The following <code>GridColumn</code> method has been implemented: <code>seTree(boolean)</code>
+    </p>
+
   </div>
-  
