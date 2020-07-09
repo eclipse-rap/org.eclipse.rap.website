@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.14" simultaneousRelease="2020-09">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.16 (2020-09)</description>
+    <site>http://download.eclipse.org/rt/rap/3.14</site>
+    <downloadPath>/rt/rap/3.14/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.16 (2020-09)</description>
+    <site>http://download.eclipse.org/rt/rap/3.14/e4</site>
+    <downloadPath>/rt/rap/3.14/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.16 (2020-09)</description>
+    <site>http://download.eclipse.org/rt/rap/tools/3.14</site>
+    <downloadPath>/rt/rap/tools/3.14/</downloadPath>
+  </feature>
+
+  <build name="3.14 M0" type="M"
+      shortname="M0"
+      status="completed"
+      publishDate="2020-07-09"
+      news="3.14/?build=M0"
+      runtimeZip="rap-3.14.0-M0a-20200709-0838.zip"
+      runtime4Zip="rap-e4-3.14.0-M0a-20200709-0838.zip"
+      toolsZip="rap-tools-3.14.0-M0a-20200709-0832.zip"
+      />
+
+  <build name="3.14 M1" type="M"
+      shortname="M1"
+      status="planned"
+      publishDate="2020-07-17"
+      news="3.14/?build=M1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.14 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2020-08-07"
+      news="3.14/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.14 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2020-08-28"
+      news="3.14/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.14 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2020-09-04"
+      news="3.14/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.14 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2020-09-11"
+      news="3.14/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.14" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2020-09-16"
+      news="3.14/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
