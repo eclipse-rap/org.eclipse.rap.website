@@ -4,21 +4,21 @@
 
   <feature id="runtime">
     <name>RAP (Runtime)</name>
-    <description>based on Eclipse 4.16 (2020-09)</description>
+    <description>based on Eclipse 4.17 (2020-09)</description>
     <site>http://download.eclipse.org/rt/rap/3.14</site>
     <downloadPath>/rt/rap/3.14/</downloadPath>
   </feature>
 
   <feature id="runtime4">
     <name>RAP E4 (Runtime)</name>
-    <description>based on Eclipse 4.16 (2020-09)</description>
+    <description>based on Eclipse 4.17 (2020-09)</description>
     <site>http://download.eclipse.org/rt/rap/3.14/e4</site>
     <downloadPath>/rt/rap/3.14/e4/</downloadPath>
   </feature>
 
   <feature id="tools">
     <name>RAP Tools</name>
-    <description>for use with Eclipse 4.16 (2020-09)</description>
+    <description>for use with Eclipse 4.17 (2020-09)</description>
     <site>http://download.eclipse.org/rt/rap/tools/3.14</site>
     <downloadPath>/rt/rap/tools/3.14/</downloadPath>
   </feature>
@@ -35,12 +35,12 @@
 
   <build name="3.14 M1" type="M"
       shortname="M1"
-      status="planned"
+      status="completed"
       publishDate="2020-07-17"
       news="3.14/?build=M1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.14.0-M1-20200716-0817.zip"
+      runtime4Zip="rap-e4-3.14.0-M1-20200716-0817.zip"
+      toolsZip="rap-tools-3.14.0-M1-20200716-0808.zip"
       />
 
   <build name="3.14 M2" type="M"
