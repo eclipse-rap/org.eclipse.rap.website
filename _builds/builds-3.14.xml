@@ -55,12 +55,12 @@
 
   <build name="3.14 M3" type="M"
       shortname="M3"
-      status="planned"
+      status="completed"
       publishDate="2020-08-28"
       news="3.14/?build=M3"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.14.0-M3-20200825-2339.zip"
+      runtime4Zip="rap-e4-3.14.0-M3-20200825-2339.zip"
+      toolsZip="rap-tools-3.14.0-M3-20200825-2335.zip"
       />
 
   <build name="3.14 RC1" type="RC"
