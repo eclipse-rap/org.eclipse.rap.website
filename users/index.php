@@ -215,6 +215,30 @@
 
   <div class="box">
     <div class="images">
+      <a href="images/stars1-full.png">
+        <img src="images/stars1.png"/>
+      </a>
+      <br/>
+      <a href="images/stars2-full.png">
+        <img src="images/stars2.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">STARS</h2>
+      <h4 class="tagline">Synergy</h4>
+      <p>
+         STARS is Synergy's Wholesale Electricity and Fuel Trading and Contract Management System.
+         While initially developed for RCP it has been successfully ported to RAP to allow cloud
+         instead of desktop deployment. In addition to supporting day-to-day electricity and gas
+         trading, it also manages gas pipeline flows and imbalances, and coal deliveries and
+         stockpiles as well as supporting back office with monthly reconciliations and invoicing.
+      </p>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="box">
+    <div class="images">
       <a href="images/edicat1-full.png">
         <img src="images/edicat1.png"/>
       </a><!--
