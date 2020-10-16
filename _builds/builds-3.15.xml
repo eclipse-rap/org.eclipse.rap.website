@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.15" simultaneousRelease="2020-12">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.18 (2020-12)</description>
+    <site>https://download.eclipse.org/rt/rap/3.15</site>
+    <downloadPath>/rt/rap/3.15/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.18 (2020-12)</description>
+    <site>https://download.eclipse.org/rt/rap/3.15/e4</site>
+    <downloadPath>/rt/rap/3.15/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.18 (2020-12)</description>
+    <site>https://download.eclipse.org/rt/rap/tools/3.15</site>
+    <downloadPath>/rt/rap/tools/3.15/</downloadPath>
+  </feature>
+
+  <build name="3.15 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2020-10-16"
+      news="3.15/?build=M1"
+      runtimeZip="rap-3.15.0-M1-20201013-1554.zip"
+      runtime4Zip="rap-e4-3.15.0-M1-20201013-1554.zip"
+      toolsZip="rap-tools-3.15.0-M1-20201012-2335.zip"
+      />
+
+  <build name="3.15 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2020-11-06"
+      news="3.15/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.15 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2020-11-27"
+      news="3.15/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.15 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2020-12-04"
+      news="3.15/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.15 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2020-12-11"
+      news="3.15/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.15" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2020-12-16"
+      news="3.15/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
