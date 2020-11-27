@@ -45,12 +45,12 @@
 
   <build name="3.15 M3" type="M"
       shortname="M3"
-      status="planned"
+      status="completed"
       publishDate="2020-11-27"
       news="3.15/?build=M3"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.15.0-M3-20201125-0036.zip"
+      runtime4Zip="rap-e4-3.15.0-M3-20201125-0036.zip"
+      toolsZip="rap-tools-3.15.0-M3-20201125-0044.zip"
       />
 
   <build name="3.15 RC1" type="RC"
