@@ -65,22 +65,22 @@
 
   <build name="3.15 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2020-12-11"
       news="3.15/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.15.0-RC2-20201209-1320.zip"
+      runtime4Zip="rap-e4-3.15.0-RC2-20201209-1320.zip"
+      toolsZip="rap-tools-3.15.0-RC2-20201209-1355.zip"
       />
 
   <build name="3.15" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2020-12-16"
       news="3.15/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.15.0-R-20201209-1320.zip"
+      runtime4Zip="rap-e4-3.15.0-R-20201209-1320.zip"
+      toolsZip="rap-tools-3.15.0-R-20201209-1355.zip"
       />
 
 </builds>
