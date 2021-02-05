@@ -5,85 +5,85 @@
   <div class="sideitemcontent">
     <ul>
       <li>
-        <a href="/rap/downloads/3.16/">RAP 3.16&emsp;March 2021 (2021-03)</a>
+        <a href="/rap/downloads/3.16/">RAP 3.16&emsp;2021-03</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.15/">RAP 3.15&emsp;December 2020 (2020-12)</a>
+        <a href="/rap/downloads/3.15/">RAP 3.15&emsp;2020-12</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.14/">RAP 3.14&emsp;September 2020 (2020-09)</a>
+        <a href="/rap/downloads/3.14/">RAP 3.14&emsp;2020-09</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.13/">RAP 3.13&emsp;June 2020 (2020-06)</a>
+        <a href="/rap/downloads/3.13/">RAP 3.13&emsp;2020-06</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.12/">RAP 3.12&emsp;March 2020 (2020-03)</a>
+        <a href="/rap/downloads/3.12/">RAP 3.12&emsp;2020-03</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.11/">RAP 3.11&emsp;December 2019 (2019-12)</a>
+        <a href="/rap/downloads/3.11/">RAP 3.11&emsp;2019-12</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.10/">RAP 3.10&emsp;September 2019 (2019-09)</a>
+        <a href="/rap/downloads/3.10/">RAP 3.10&emsp;2019-09</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.9/">RAP 3.9&emsp;June 2019 (2019-06)</a>
+        <a href="/rap/downloads/3.9/">RAP 3.9&emsp;2019-06</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.8/">RAP 3.8&emsp;March 2019 (2019-03)</a>
+        <a href="/rap/downloads/3.8/">RAP 3.8&emsp;2019-03</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.7/">RAP 3.7&emsp;December 2018 (2018-12)</a>
+        <a href="/rap/downloads/3.7/">RAP 3.7&emsp;2018-12</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.6/">RAP 3.6&emsp;September 2018 (2018-09)</a>
+        <a href="/rap/downloads/3.6/">RAP 3.6&emsp;2018-09</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.5/">RAP 3.5&emsp;June 2018 (Photon)</a>
+        <a href="/rap/downloads/3.5/">RAP 3.5&emsp;2018-06 (Photon)</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.4/">RAP 3.4&emsp;December 2017 (Oxygen.2)</a>
+        <a href="/rap/downloads/3.4/">RAP 3.4&emsp;2017-12 (Oxygen.2)</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.3/">RAP 3.3&emsp;September 2017 (Oxygen.1)</a>
+        <a href="/rap/downloads/3.3/">RAP 3.3&emsp;2017-09 (Oxygen.1)</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.2/">RAP 3.2&emsp;June 2017 (Oxygen)</a>
+        <a href="/rap/downloads/3.2/">RAP 3.2&emsp;2017-06 (Oxygen)</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.1/">RAP 3.1&emsp;June 2016 (Neon)</a>
+        <a href="/rap/downloads/3.1/">RAP 3.1&emsp;2016-06 (Neon)</a>
       </li>
       <li>
-        <a href="/rap/downloads/3.0/">RAP 3.0&emsp;June 2015 (Mars)</a>
+        <a href="/rap/downloads/3.0/">RAP 3.0&emsp;2015-06 (Mars)</a>
       </li>
       <li>
-        <a href="/rap/downloads/2.3/">RAP 2.3&emsp;June 2014 (Luna)</a>
+        <a href="/rap/downloads/2.3/">RAP 2.3&emsp;2014-06 (Luna)</a>
       </li>
       <li>
-        <a href="/rap/downloads/2.2/">RAP 2.2&emsp;December 2013</a>
+        <a href="/rap/downloads/2.2/">RAP 2.2&emsp;2013-12 (Kepler SR2)</a>
       </li>
       <li>
-        <a href="/rap/downloads/2.1/">RAP 2.1&emsp;June 2013 (Kepler)</a>
+        <a href="/rap/downloads/2.1/">RAP 2.1&emsp;2013-06 (Kepler)</a>
       </li>
       <li>
-        <a href="/rap/downloads/2.0/">RAP 2.0&emsp;February 2013</a>
+        <a href="/rap/downloads/2.0/">RAP 2.0&emsp;2013-02 (Juno SR3)</a>
       </li>
       <li>
-        <a href="/rap/downloads/1.5/">RAP 1.5&emsp;June 2012 (Juno)</a>
+        <a href="/rap/downloads/1.5/">RAP 1.5&emsp;2012-06 (Juno)</a>
       </li>
       <li>
-        <a href="/rap/downloads/1.4/">RAP 1.4&emsp;June 2011 (Indigo)</a>
+        <a href="/rap/downloads/1.4/">RAP 1.4&emsp;2011-06 (Indigo)</a>
       </li>
       <li>
-        <a href="/rap/downloads/1.3/">RAP 1.3&emsp;June 2010 (Helios)</a>
+        <a href="/rap/downloads/1.3/">RAP 1.3&emsp;2010-06 (Helios)</a>
       </li>
       <li>
-        <a href="/rap/downloads/1.2/">RAP 1.2&emsp;June 2009 (Galileo)</a>
+        <a href="/rap/downloads/1.2/">RAP 1.2&emsp;2009-06 (Galileo)</a>
       </li>
       <li>
-        <a href="/rap/downloads/1.1/">RAP 1.1&emsp;June 2008 (Ganymede)</a>
+        <a href="/rap/downloads/1.1/">RAP 1.1&emsp;2008-06 (Ganymede)</a>
       </li>
       <li>
-        <a href="/rap/downloads/1.0/">RAP 1.0&emsp;Oct 2007</a>
+        <a href="/rap/downloads/1.0/">RAP 1.0&emsp;2007-10</a>
       </li>
     </ul>
   </div>
