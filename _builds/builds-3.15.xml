@@ -83,4 +83,14 @@
       toolsZip="rap-tools-3.15.0-R-20201209-1355.zip"
       />
 
+  <build name="3.15.1" type="SR"
+      shortname="SR1"
+      status="completed"
+      publishDate="2021-02-24"
+      news="3.15/"
+      runtimeZip="rap-3.15.1-SR1-20210224-1038.zip"
+      runtime4Zip="rap-e4-3.15.1-SR1-20210224-1038.zip"
+      toolsZip="rap-tools-3.15.0-R-20201209-1355.zip"
+      />
+
 </builds>
