@@ -45,42 +45,42 @@
 
   <build name="3.16 M3" type="M"
       shortname="M3"
-      status="planned"
+      status="completed"
       publishDate="2021-02-26"
       news="3.16/?build=M3"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.16.0-M3-20210224-1019.zip"
+      runtime4Zip="rap-e4-3.16.0-M3-20210224-1019.zip"
+      toolsZip="rap-tools-3.16.0-M3-20210224-0035.zip"
       />
 
   <build name="3.16 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2021-03-05"
       news="3.16/?build=RC1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.16.0-RC1-20210303-1524.zip"
+      runtime4Zip="rap-e4-3.16.0-RC1-20210303-1524.zip"
+      toolsZip="rap-tools-3.16.0-RC1-20210303-1513.zip"
       />
 
   <build name="3.16 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2021-03-12"
       news="3.16/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.16.0-RC2-20210310-0041.zip"
+      runtime4Zip="rap-e4-3.16.0-RC2-20210310-0041.zip"
+      toolsZip="rap-tools-3.16.0-RC2-20210310-0036.zip"
       />
 
   <build name="3.16" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2021-03-17"
       news="3.16/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.16.0-R-20210310-0041.zip"
+      runtime4Zip="rap-e4-3.16.0-R-20210310-0041.zip"
+      toolsZip="rap-tools-3.16.0-R-20210310-0036.zip"
       />
 
 </builds>
