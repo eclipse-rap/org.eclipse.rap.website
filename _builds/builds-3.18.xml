@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.18" simultaneousRelease="2021-09">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.21 (2021-09)</description>
+    <site>https://download.eclipse.org/rt/rap/3.18</site>
+    <downloadPath>/rt/rap/3.18/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.21 (2021-09)</description>
+    <site>https://download.eclipse.org/rt/rap/3.18/e4</site>
+    <downloadPath>/rt/rap/3.18/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.21 (2021-09)</description>
+    <site>https://download.eclipse.org/rt/rap/tools/3.18</site>
+    <downloadPath>/rt/rap/tools/3.18/</downloadPath>
+  </feature>
+
+  <build name="3.18 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2021-07-16"
+      news="3.18/?build=M1"
+      runtimeZip="rap-3.18.0-M1-20210712-0740.zip"
+      runtime4Zip="rap-e4-3.18.0-M1-20210712-0740.zip"
+      toolsZip="rap-tools-3.18.0-M1-20210712-0740.zip"
+      />
+
+  <build name="3.18 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2021-08-06"
+      news="3.18/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.18 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2021-08-27"
+      news="3.18/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.18 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2021-09-03"
+      news="3.18/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.18 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2021-09-10"
+      news="3.18/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.18" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2021-09-15"
+      news="3.18/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
