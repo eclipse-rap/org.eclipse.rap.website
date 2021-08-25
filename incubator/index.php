@@ -5,7 +5,7 @@
   $PAGE_TITLE = "RAP - Incubator";
   $PAGE_NAV_POSITION = array( "home", "incubator" );
 
-  $WEB_ROOT = "http://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator";
+  $WEB_ROOT = "https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator";
   $REPO_ROOT = "http://download.eclipse.org/rt/rap/incubator/";
 
   printHeader();
