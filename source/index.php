@@ -62,11 +62,6 @@
   <h2>Learn about git at Eclipse</h2>
   <p>For more information on git at Eclipse read <a href="http://wiki.eclipse.org/Git">this introduction</a>.</p>
 
-  <h2>Github mirrors</h2>
-  <p>
-    Our git repositories are mirrored on <a href="https://github.com/eclipse/">github</a>, fork us ;-).
-  </p>
-
 </div>
 
 <div id="rightcolumn">
