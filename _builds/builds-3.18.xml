@@ -55,12 +55,12 @@
 
   <build name="3.18 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2021-09-03"
       news="3.18/?build=RC1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.18.0-RC1-20210901-0913.zip"
+      runtime4Zip="rap-e4-3.18.0-RC1-20210901-0913.zip"
+      toolsZip="rap-tools-3.18.0-RC1-20210901-0912.zip"
       />
 
   <build name="3.18 RC2" type="RC"
