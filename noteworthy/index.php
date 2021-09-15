@@ -1,5 +1,5 @@
 <?php
 
-  header( "Location: /rap/noteworthy/3.17/" );
+  header( "Location: /rap/noteworthy/3.18/" );
 
 ?>
