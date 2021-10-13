@@ -44,7 +44,7 @@
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">2021-10-15</span>
+        <span class="terminal-text">2021-10-08</span>
       </span>
     </div>
 
@@ -55,7 +55,7 @@
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">2021-12-15</span>
+        <span class="terminal-text">2021-12-08</span>
       </span>
     </div>
 
