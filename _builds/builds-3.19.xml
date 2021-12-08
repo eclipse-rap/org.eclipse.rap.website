@@ -55,32 +55,32 @@
 
   <build name="3.19 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2021-11-26"
       news="3.19/?build=RC1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.19.0-RC1-20211123-1034.zip"
+      runtime4Zip="rap-e4-3.19.0-RC1-20211123-1034.zip"
+      toolsZip="rap-tools-3.19.0-RC1-20211123-1034.zip"
       />
 
   <build name="3.19 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2021-12-03"
       news="3.19/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.19.0-RC2-20211130-1934.zip"
+      runtime4Zip="rap-e4-3.19.0-RC2-20211130-1934.zip"
+      toolsZip="rap-tools-3.19.0-RC2-20211130-1934.zip"
       />
 
   <build name="3.19" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2021-12-08"
       news="3.19/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.19.0-R-20211130-1934.zip"
+      runtime4Zip="rap-e4-3.19.0-R-20211130-1934.zip"
+      toolsZip="rap-tools-3.19.0-R-20211130-1934.zip"
       />
 
 </builds>
