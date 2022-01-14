@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.20" simultaneousRelease="2022-03">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.23 (2022-03)</description>
+    <site>https://download.eclipse.org/rt/rap/3.20</site>
+    <downloadPath>/rt/rap/3.20/</downloadPath>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.23 (2022-03)</description>
+    <site>https://download.eclipse.org/rt/rap/3.20/e4</site>
+    <downloadPath>/rt/rap/3.20/e4/</downloadPath>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.23 (2022-03)</description>
+    <site>https://download.eclipse.org/rt/rap/tools/3.20</site>
+    <downloadPath>/rt/rap/tools/3.20/</downloadPath>
+  </feature>
+
+  <build name="3.20 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2022-01-14"
+      news="3.20/?build=M1"
+      runtimeZip="rap-3.20.0-M1-20220112-0916.zip"
+      runtime4Zip="rap-e4-3.20.0-M1-20220112-0916.zip"
+      toolsZip="rap-tools-3.20.0-M1-20220112-0915.zip"
+      />
+
+  <build name="3.20 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2022-02-04"
+      news="3.20/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.20 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2022-02-25"
+      news="3.20/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.20 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2022-03-04"
+      news="3.20/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.20 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2022-03-11"
+      news="3.20/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.20" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2022-03-16"
+      news="3.20/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
