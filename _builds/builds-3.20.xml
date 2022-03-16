@@ -75,12 +75,12 @@
 
   <build name="3.20" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2022-03-16"
       news="3.20/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.20.0-R-20220309-1623.zip"
+      runtime4Zip="rap-e4-3.20.0-R-20220309-1623.zip"
+      toolsZip="rap-tools-3.20.0-R-20220309-1623.zip"
       />
 
 </builds>
