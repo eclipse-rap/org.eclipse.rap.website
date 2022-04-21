@@ -317,15 +317,15 @@
     <a href="/rap/users/">commercial applications</a>.
     On the <a href="/rap/downloads/">downloads page</a>, you always get the latest versions.
     We also offer public nightly builds to make all changes available immediately.
-    You can check out the source code directly from the <a href="/rap/source/">git repository</a>
-    or even fork us on <a href="https://github.com/eclipse/rap">github</a>.
+    You can check out the source code directly from the <a href="/rap/source/">Git repository</a>
+    or even fork us on <a href="https://github.com/eclipse-rap">GitHub</a>.
   </p>
   <p>
     If you require help beyond the <a href="/rap/developers-guide/">RAP Developer's Guide</a>,
     there is an active community maintaining a
     <a href="http://www.eclipse.org/forums/index.php?t=thread&amp;frm_id=34">Newsgroup</a>,
     a <a href="http://wiki.eclipse.org/RAP">Wiki</a> and the <a href="/rap/incubator/">Incubator project</a>.
-    Bugs can be reported in the <a href="/rap/bugs/">RAP Bugzilla</a> and will be  processed
+    Bugs can be reported as <a href="/rap/bugs/">RAP GitHub issues</a> and will be  processed
     transparently.
     Professional services are also <a href ="/rap/support/professional-services/">available</a>.
   </p>

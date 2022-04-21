@@ -23,15 +23,15 @@
   <ul>
     <li>
       <strong>browse</strong> the repository:
-      <a href="https://git.eclipse.org/c/rap/org.eclipse.rap.git/tree">git.eclipse.org/c/rap/org.eclipse.rap.git/tree</a>
+      <a href="https://github.com/eclipse-rap/org.eclipse.rap">github.com/eclipse-rap/org.eclipse.rap</a>
     </li>
     <li>
       <strong>clone</strong> the repository:
-      https://git.eclipse.org/r/rap/org.eclipse.rap.git
+      https://github.com/eclipse-rap/org.eclipse.rap.git
     </li>
     <li>
-      <strong>push changes</strong> to <a href="http://wiki.eclipse.org/Gerrit">Gerrit</a>:
-      ssh://user_id@git.eclipse.org:29418/rap/org.eclipse.rap
+      <strong>push changes</strong> to <a href="https://github.com/eclipse-rap/org.eclipse.rap">GitHub</a> by creating pull requests:
+      git@github.com:eclipse-rap/org.eclipse.rap.git
     </li>
   </ul>
 
@@ -43,14 +43,14 @@
   <ul>
     <li>
       <strong>browse</strong> the repository:
-      <a href="https://git.eclipse.org/c/rap/org.eclipse.rap.tools.git/tree">git.eclipse.org/c/rap/org.eclipse.rap.tools.git/tree</a>
+      <a href="https://github.com/eclipse-rap/org.eclipse.rap.tools">github.com/eclipse-rap/org.eclipse.rap.tools</a>
     </li>
     <li>
-      <strong>clone</strong> the repository: https://git.eclipse.org/r/rap/org.eclipse.rap.tools.git
+      <strong>clone</strong> the repository: https://github.com/eclipse-rap/org.eclipse.rap.tools.git
     </li>
     <li>
-      <strong>push changes</strong> to <a href="http://wiki.eclipse.org/Gerrit">Gerrit</a>:
-      ssh://user_id@git.eclipse.org:29418/rap/org.eclipse.rap.tools
+      <strong>push changes</strong> to <a href="https://github.com/eclipse-rap/org.eclipse.rap.tools">GitHub</a> by creating pull requests:
+      git@github.com:eclipse-rap/org.eclipse.rap.tools.git
     </li>
   </ul>
 

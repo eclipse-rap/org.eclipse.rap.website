@@ -12,10 +12,10 @@
 
   <h1>Built on RAP</h1>
   <p>
-     We'd be happy to learn about <em>your</em> RAP project. <br/>If you have something to add
-     to this page, just open an enhancement request in the
-    <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&component=Website">Website</a>
-    component of the RAP project in bugzilla.
+     We'd be happy to learn about <em>your</em> RAP project.<br/>
+     If you have something to add to this page, just create a
+    <a href="https://github.com/eclipse-rap/org.eclipse.rap/issues/new">new GitHub issue</a>
+    for the RAP project and add the <em>enhancement</em> label to it.
   </p>
 
   <h2 class="section" >Commercial Projects</h2>

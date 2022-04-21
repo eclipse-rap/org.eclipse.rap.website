@@ -12,10 +12,25 @@
   <h1>Bugs</h1>
 
   <p>
-    Bugs and feature requests for RAP are tracked in the the Eclipse Bugzilla.
+    New bugs and feature requests for RAP are tracked as GitHub issues.
   </p>
 
   <h2>Find existing bug reports</h2>
+
+  <h3>GitHub Issues</h3>
+
+  <ul>
+    <li>
+      <a href="https://github.com/eclipse-rap/org.eclipse.rap/issues?q=is%3Aopen+is%3Aissue+label%3Abug%2Cenhancement">
+      All open bug reports and enhancement requests for RAP Runtime</a>
+    </li>
+    <li>
+      <a href="https://github.com/eclipse-rap/org.eclipse.rap.tools/issues?q=is%3Aopen+is%3Aissue+label%3Abug%2Cenhancement">
+      All open bug reports and enhancement requests for RAP Tools</a>
+    </li>
+  </ul>
+
+  <h3>Bugzilla (old system, until 2022-04)</h3>
 
   <ul>
     <li>
@@ -40,8 +55,12 @@
 
   <ul>
     <li>
-      <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=RAP&amp;rep_platform=All&amp;op_sys=all">
-      Bugzilla bug report form</a>
+      <a href="https://github.com/eclipse-rap/org.eclipse.rap/issues/new/choose">
+      Bugzilla bug report form for RAP Runtime</a>
+    </li>
+    <li>
+      <a href="https://github.com/eclipse-rap/org.eclipse.rap.tools/issues/new/choose">
+      Bugzilla bug report form for RAP Tools</a>
     </li>
   </ul>
 

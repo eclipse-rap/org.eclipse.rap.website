@@ -26,8 +26,8 @@
       <strong>Provide a fix.</strong>
       If you're familiar with the <a href="../source/">souce code</a> and know how to fix a problem,
       please consider to contribute your fix.
-      We use the <a href="http://wiki.eclipse.org/Gerrit">Gerrit</a> code review system
-      so you can easily push your commit for review.
+      We use the <a href="https://docs.github.com/en/pull-requests">GitHub pull requests</a> for all
+      incoming code changes so you can easily push your commit for review.
     </li>
     <li>
       <strong>Contribute a custom component.</strong>
