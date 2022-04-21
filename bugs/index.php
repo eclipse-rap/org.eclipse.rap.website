@@ -56,11 +56,11 @@
   <ul>
     <li>
       <a href="https://github.com/eclipse-rap/org.eclipse.rap/issues/new/choose">
-      Bugzilla bug report form for RAP Runtime</a>
+      GitHub issue report for RAP Runtime</a>
     </li>
     <li>
       <a href="https://github.com/eclipse-rap/org.eclipse.rap.tools/issues/new/choose">
-      Bugzilla bug report form for RAP Tools</a>
+      GitHub issue report for RAP Tools</a>
     </li>
   </ul>
 
