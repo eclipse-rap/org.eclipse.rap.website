@@ -78,6 +78,11 @@ class Builds {
     return $feature ? (string) $feature->description : NULL;
   }
 
+  function getGithubIssuesUrl( $featureId ) {
+    $feature = $this->_getFeature( $featureId );
+    return $feature ? (string) $feature->githubIssuesUrl : NULL;
+  }
+
   function _getFeature( $id ) {
     $features = $this->builds->xpath( "/builds/feature[@id = '" . $id . "']" );
     return count( $features ) === 1 ? $features[ 0 ] : NULL;

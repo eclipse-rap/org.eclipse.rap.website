@@ -7,6 +7,7 @@
     <description>based on Eclipse 4.24 (2022-06)</description>
     <site>https://download.eclipse.org/rt/rap/3.21</site>
     <downloadPath>/rt/rap/3.21/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/1?closed=1</githubIssuesUrl>
   </feature>
 
   <feature id="runtime4">
@@ -14,6 +15,7 @@
     <description>based on Eclipse 4.24 (2022-06)</description>
     <site>https://download.eclipse.org/rt/rap/3.21/e4</site>
     <downloadPath>/rt/rap/3.21/e4/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/1?closed=1</githubIssuesUrl>
   </feature>
 
   <feature id="tools">
@@ -21,6 +23,7 @@
     <description>for use with Eclipse 4.24 (2022-06)</description>
     <site>https://download.eclipse.org/rt/rap/tools/3.21</site>
     <downloadPath>/rt/rap/tools/3.21/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap.tools/milestone/1?closed=1</githubIssuesUrl>
   </feature>
 
   <build name="3.21 M1" type="M"

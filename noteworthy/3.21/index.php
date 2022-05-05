@@ -40,28 +40,18 @@
 
 <? include( "_news-${buildName}.html" ); ?>
 
-  <h2>Bugfixes</h2>
+  <h2>Issues fixed</h2>
 
-  <p>
-    <a href="<?= createBuglistUrl( $build->getTargetMilestones() ) ?>">This list</a>
-    shows all bugs that have been fixed for this <?php echo strtolower( $build->getType() ); ?>.
-  </p>
-
-<? if( $buildName !== "R" && substr( $buildName, 0, 2 ) !== "SR" ) { ?>
-  <h2>Previous Builds</h2>
-
-  <p>
-    The above features are just the ones that are new since the last milestone build.
-    Summaries for earlier builds:
-  </p>
   <ul>
-<? foreach( $builds->getPreviousBuilds( $build->getShortName() ) as $prevBuild ) { ?>
     <li>
-      <a href="./?build=<?php echo $prevBuild->getShortName(); ?>">News for RAP <?php echo $prevBuild->getName(); ?></a>
+      List of all <a href="<?= $builds->getGithubIssuesUrl( "runtime" ) ?>">issues fixed in
+      RAP Runtime <?= $builds->getVersion() ?></a>.
     </li>
-<? } ?>
+    <li>
+      List of all <a href="<?= $builds->getGithubIssuesUrl( "tools" ) ?>">issues fixed in
+      RAP Tools <?= $builds->getVersion() ?></a>.
+    </li>
   </ul>
-<? } ?>
 
 </div>
 
