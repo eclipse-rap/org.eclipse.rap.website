@@ -58,12 +58,12 @@
 
   <build name="3.21 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2022-06-03"
       news="3.21/?build=RC1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.21.0-RC1-20220531-2334.zip"
+      runtime4Zip="rap-e4-3.21.0-RC1-20220531-2334.zip"
+      toolsZip="rap-tools-3.21.0-RC1-20220531-2335.zip"
       />
 
   <build name="3.21 RC2" type="RC"
@@ -71,9 +71,9 @@
       status="planned"
       publishDate="2022-06-10"
       news="3.21/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.21.0-RC2-20220608-1222.zip"
+      runtime4Zip="rap-e4-3.21.0-RC2-20220608-1222.zip"
+      toolsZip="rap-tools-3.21.0-RC2-20220608-1222.zip"
       />
 
   <build name="3.21" type="R"
