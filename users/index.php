@@ -336,13 +336,44 @@
       <p class="refs">References:</p>
       <ul>
         <li>
-          <a href="https://github.com/SAP/cloud-dirigible">Source code</a>
+          <a href="https://github.com/eclipse/dirigible">Source code</a>
         </li>
         <li>
           <a href="http://forum.dirigible.io">Forum</a>
         </li>
         <li>
           <a href="http://trial.dirigible.io/">Dirigible Trial</a>
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="box">
+    <div class="images">
+      <a href="images/netxms-full.png">
+        <img src="images/netxms.png"/>
+      </a>
+    </div>
+    <div>
+      <h2 class="withTagline">NetXMS</h2>
+      <h4 class="tagline">
+        <a href="https://netxms.org/">NetXMS Project</a>
+      </h4>
+      <p>
+        NetXMS is a powerful open source monitoring solution for telecommunication networks and
+        IT infrastructure. It provides many common instruments for network administrators: automated
+        topology discovery, topology-based event correlation, flexible data collection, scripts for
+        automation and many more. NetXMS can be scaled from monitoring a few devices to monitoring
+        tens of thousands, with millions of metrics.
+      </p>
+      <p>
+        User interface for NetXMS initially was developed for RCP and later successfully ported to RAP.
+      </p>
+      <p class="refs">References:</p>
+      <ul>
+        <li>
+          <a href="https://github.com/netxms/netxms">Source code</a>
         </li>
       </ul>
     </div>
