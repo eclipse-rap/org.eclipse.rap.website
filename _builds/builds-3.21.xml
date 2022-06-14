@@ -78,7 +78,7 @@
 
   <build name="3.21" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2022-06-15"
       news="3.21/"
       runtimeZip="rap-3.21.0-R-20220608-1222.zip"
