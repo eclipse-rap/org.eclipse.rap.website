@@ -1,0 +1,37 @@
+<div>
+
+  <h2>Add Possibility to Disable Shutdown Request</h2>
+
+  <p>
+    In certain circumstances it is required to prevent the execution of sendShutdown/sendBeacon, e.g.
+    when HTTP 302/303 redirects are intercepted and handled manually.<br/><br/>
+    This can be configured within the <code>ApplicationConfiguration</code> by setting an additional
+    string property:<br/>
+    <code><pre>
+Map<String, String> properties = new HashMap<String, String>();
+properties.put( WebClient.DISABLE_SHUTDOWN_REQUEST, "true" );
+application.addEntryPoint( "/", Demo.class, properties );
+    </pre></code>
+  </p>
+
+  <h2>Support for MenuItem Tooltip Text</h2>
+
+  <p>
+    New API has been added to support adding tooltip text to <code>MenuItem</code>. If tooltip with
+    HTML markup is used, <code>RWT.TOOLTIP_MARKUP_ENABLED</code> must be set as data on the item as
+    usual.
+    <ul>
+      <li>org.eclipse.swt.widgets.MenuItem.setToolTipText(String)</li>
+      <li>org.eclipse.swt.widgets.MenuItem.getToolTipText()</li>
+    </ul>
+  </p>
+
+  <h2>Mouse Wheel Scroll Direction</h2>
+
+  <p>
+    With the new <code>count</code> property it is now possible to determine the mouse wheel scroll
+    direction by its sign. It is set for <code>MouseDown</code>, <code>MouseUp</code>,
+    <code>MouseDoubleClick</code>, and <code>MouseWheel</code> client scripting events.
+  </p>
+
+</div>
