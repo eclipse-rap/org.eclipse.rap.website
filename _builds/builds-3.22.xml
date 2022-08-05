@@ -38,12 +38,12 @@
 
   <build name="3.22 M2" type="M"
       shortname="M2"
-      status="planned"
+      status="completed"
       publishDate="2022-08-05"
       news="3.22/?build=M2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.22.0-M2-20220803-1131.zip"
+      runtime4Zip="rap-e4-3.22.0-M2-20220803-1131.zip"
+      toolsZip="rap-tools-3.22.0-M2-20220803-1131.zip"
       />
 
   <build name="3.22 M3" type="M"
