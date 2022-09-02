@@ -1,2 +1,16 @@
 <div>
+    <h2>Enable Easier Load Testing</h2>
+
+    <p>
+      One problem with RAP-based applications and load testing is caused by the text size determination.
+      In oder to compute an exact layout, the RAP server asks the web client with probe strings to
+      measure their local size in pixels. These requests are triggered by the server, which can be quite
+      confusing for any load testing tool which cannot provide that size information by themselves.
+      <br/><br/>
+      Because the exact size and the perfect layout is not what you are interested in when running load
+      tests, we added a new system property <code>org.eclipse.rap.rwt.enableLoadTests</code>. By setting
+      this to <code>true</code> the RAP server does not send any texts nor probes for measurement to the
+      client, and fills <code>TextSizeStorage</code> and <code>ProbeResultStore</code> with estimates
+      instead.
+    </p>
 </div>
