@@ -1,2 +1,83 @@
 <div>
+    <h2>Support for MenuItem Tooltip Text</h2>
+    <p>
+        New API has been added to support adding tooltip text to <code>MenuItem</code>. If tooltip with
+        HTML markup is used, <code>RWT.TOOLTIP_MARKUP_ENABLED</code> must be set as data on the item as
+        usual.
+        <ul>
+            <li><code>org.eclipse.swt.widgets.MenuItem.setToolTipText(String)</code></li>
+            <li><code>org.eclipse.swt.widgets.MenuItem.getToolTipText()</code></li>
+        </ul>
+    </p>
+
+    <h2>Mouse Wheel Scroll Direction</h2>
+    <p>
+        With the new <code>count</code> property it is now possible to determine the mouse wheel scroll
+        direction by its sign. It is set for <code>MouseDown</code>, <code>MouseUp</code>,
+        <code>MouseDoubleClick</code>, and <code>MouseWheel</code> client scripting events.
+    </p>
+
+    <h2>Support for <code>MImperativeExpression</code> in RAP e4</h2>
+    <p>
+        With the synchronisation of the code in <code>MenuManagerRenderer.updateVisibility</code> and
+        in <code>ContributionsAnalyzer.isVisible</code> with the upstream code from the Eclipse Platform
+        <code>MImperativeExpression</code> are now supported in RAP e4.
+    </p>
+
+    <h2>Add Possibility to Disable Shutdown Request</h2>
+    <p>
+        In certain circumstances it is required to prevent the execution of sendShutdown/sendBeacon, e.g.
+        when HTTP 302/303 redirects are intercepted and handled manually.<br/><br/>
+        This can be configured within the <code>ApplicationConfiguration</code> by setting an additional
+        string property:<br/>
+        <code><pre>
+  Map<String, String> properties = new HashMap<String, String>();
+  properties.put( WebClient.DISABLE_SHUTDOWN_REQUEST, "true" );
+  application.addEntryPoint( "/", Demo.class, properties );
+        </pre></code>
+    </p>
+
+    <h2>Enable Easier Load Testing</h2>
+    <p>
+        One problem with RAP-based applications and load testing is caused by the text size determination.
+        In oder to compute an exact layout, the RAP server asks the web client with probe strings to
+        measure their local size in pixels. These requests are triggered by the server, which can be quite
+        confusing for any load testing tool which cannot provide that size information by themselves.
+        <br/><br/>
+        Because the exact size and the perfect layout is not what you are interested in when running load
+        tests, we added a new system property <code>org.eclipse.rap.rwt.enableLoadTests</code>. By setting
+        this to <code>true</code> the RAP server does not send any texts nor probes for measurement to the
+        client, and fills <code>TextSizeStorage</code> and <code>ProbeResultStore</code> with estimates
+        instead.
+    </p>
+
+    <h2>Upgrade Apache <code>commons-fileupload</code> to version 1.4.0, <code>commons-io</code> to version 2.11.0</h2>
+    <p>
+        There were some security reports for earlier version of Apache <code>commons-fileupload</code>.
+        Although RAP did not use any of the methods in question, and was therefore not directly affected
+        by any of the reported vulnerabilities, it was time to upgrade these external libraries to their
+        latest stable version.
+        <br/><br/>
+        Please note that the new versions are taken from Maven Central and therefore follow a slightly
+        different naming scheme with a different bundle symbolic name:
+        <ul>
+            <li>
+                <code>org.apache.commons.fileupload</code> renamed to
+                <code>org.apache.commons.commons-fileupload</code>
+            </li>
+            <li>
+                <code>org.apache.commons.io</code> renamed to
+                <code>org.apache.commons.commons-io</code>
+            </li>
+        </ul>
+    </p>
+
+    <h2>Upgrade to Eclipse Tycho 2.7.5</h2>
+    <p>
+        In order to mirror the PGP signatures of external dependencies during the build into the RAP
+        p2 repositories, an upgrade of Eclipse Tycho to version 2.7.5 was required in RAP Runtime and
+        Tools. With this change, the RAP p2 repositories are kept in compliance with the Eclipse
+        Simultaneous Release guidelines.
+    </p>
+
 </div>
