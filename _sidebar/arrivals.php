@@ -33,7 +33,18 @@
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">2022-10-07</span>
+        <span class="terminal-text terminal-arrived">ARRIVED</span>
+      </span>
+    </div>
+
+    <div class="terminal-row">
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">RAP 3.23 M2</span>
+      </span>
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">2022-10-28</span>
       </span>
     </div>
 
