@@ -7,17 +7,6 @@
     <div class="terminal-row">
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">RAP 3.21</span>
-      </span>
-      <span class="terminal-field">
-        <span class="terminal-overlay"></span>
-        <span class="terminal-text terminal-arrived">ARRIVED</span>
-      </span>
-    </div>
-
-    <div class="terminal-row">
-      <span class="terminal-field">
-        <span class="terminal-overlay"></span>
         <span class="terminal-text">RAP 3.22</span>
       </span>
       <span class="terminal-field">
@@ -44,7 +33,18 @@
       </span>
       <span class="terminal-field">
         <span class="terminal-overlay"></span>
-        <span class="terminal-text">2023-01-13</span>
+        <span class="terminal-text terminal-arrived">ARRIVED</span>
+      </span>
+    </div>
+
+    <div class="terminal-row">
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">RAP 3.24 M2</span>
+      </span>
+      <span class="terminal-field">
+        <span class="terminal-overlay"></span>
+        <span class="terminal-text">2023-02-02</span>
       </span>
     </div>
 
