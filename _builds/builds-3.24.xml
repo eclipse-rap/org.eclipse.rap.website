@@ -48,12 +48,12 @@
 
   <build name="3.24 M3" type="M"
       shortname="M3"
-      status="planned"
+      status="completed"
       publishDate="2023-02-24"
       news="3.24/?build=M3"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.24.0-M3-20230222-0823.zip"
+      runtime4Zip="rap-e4-3.24.0-M3-20230222-0823.zip"
+      toolsZip="rap-tools-3.24.0-M3-20230222-0823.zip"
       />
 
   <build name="3.24 RC1" type="RC"
