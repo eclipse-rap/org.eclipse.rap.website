@@ -68,12 +68,12 @@
 
   <build name="3.24 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2023-03-10"
       news="3.24/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.24.0-RC2-20230308-0917.zip"
+      runtime4Zip="rap-e4-3.24.0-RC2-20230308-0917.zip"
+      toolsZip="rap-tools-3.24.0-RC2-20230308-0917.zip"
       />
 
   <build name="3.24" type="R"
