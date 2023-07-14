@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="3.26" simultaneousRelease="2023-09">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.29 (2023-09)</description>
+    <site>https://download.eclipse.org/rt/rap/3.26</site>
+    <downloadPath>/rt/rap/3.26/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/5?closed=1</githubIssuesUrl>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.29 (2023-09)</description>
+    <site>https://download.eclipse.org/rt/rap/3.26/e4</site>
+    <downloadPath>/rt/rap/3.26/e4/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/5?closed=1</githubIssuesUrl>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.29 (2023-09)</description>
+    <site>https://download.eclipse.org/rt/rap/tools/3.26</site>
+    <downloadPath>/rt/rap/tools/3.26/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap.tools/milestone/5?closed=1</githubIssuesUrl>
+  </feature>
+
+  <build name="3.26 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2023-04-14"
+      news="3.26/?build=M1"
+      runtimeZip="rap-3.26.0-M1-20230711-2336.zip"
+      runtime4Zip="rap-e4-3.26.0-M1-20230711-2336.zip"
+      toolsZip="rap-tools-3.26.0-M1-20230711-2336.zip"
+      />
+
+  <build name="3.26 M2" type="M"
+      shortname="M2"
+      status="planned"
+      publishDate="2023-05-05"
+      news="3.26/?build=M2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.26 M3" type="M"
+      shortname="M3"
+      status="planned"
+      publishDate="2023-05-26"
+      news="3.26/?build=M3"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.26 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2023-09-02"
+      news="3.26/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.26 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2023-09-09"
+      news="3.26/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="3.26" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2023-09-14"
+      news="3.26/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
