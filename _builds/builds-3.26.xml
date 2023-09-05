@@ -78,12 +78,12 @@
 
   <build name="3.26" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2023-09-13"
       news="3.26/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.26.0-R-20230906-1232.zip"
+      runtime4Zip="rap-e4-3.26.0-R-20230906-1232.zip"
+      toolsZip="rap-tools-3.26.0-R-20230906-1232.zip"
       />
 
 </builds>
