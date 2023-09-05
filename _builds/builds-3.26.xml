@@ -7,7 +7,7 @@
     <description>based on Eclipse 4.29 (2023-09)</description>
     <site>https://download.eclipse.org/rt/rap/3.26</site>
     <downloadPath>/rt/rap/3.26/</downloadPath>
-    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/5?closed=1</githubIssuesUrl>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/6?closed=1</githubIssuesUrl>
   </feature>
 
   <feature id="runtime4">
@@ -15,7 +15,7 @@
     <description>based on Eclipse 4.29 (2023-09)</description>
     <site>https://download.eclipse.org/rt/rap/3.26/e4</site>
     <downloadPath>/rt/rap/3.26/e4/</downloadPath>
-    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/5?closed=1</githubIssuesUrl>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/6?closed=1</githubIssuesUrl>
   </feature>
 
   <feature id="tools">
@@ -23,7 +23,7 @@
     <description>for use with Eclipse 4.29 (2023-09)</description>
     <site>https://download.eclipse.org/rt/rap/tools/3.26</site>
     <downloadPath>/rt/rap/tools/3.26/</downloadPath>
-    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap.tools/milestone/5?closed=1</githubIssuesUrl>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap.tools/milestone/6?closed=1</githubIssuesUrl>
   </feature>
 
   <build name="3.26 M1" type="M"
