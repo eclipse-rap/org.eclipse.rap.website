@@ -71,9 +71,9 @@
       status="planned"
       publishDate="2023-12-01"
       news="3.27/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.27.0-RC2-20231129-0035.zip"
+      runtime4Zip="rap-e4-3.27.0-RC2a-20231205-1650.zip"
+      toolsZip="rap-tools-3.27.0-RC2-20231129-0036.zip"
       />
 
   <build name="3.27" type="R"
@@ -81,9 +81,19 @@
       status="planned"
       publishDate="2023-12-06"
       news="3.27/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.27.0-R-20231129-0035.zip"
+      runtime4Zip="rap-e4-3.27.0-R-20231205-1650.zip"
+      toolsZip="rap-tools-3.27.0-R-20231129-0036.zip"
+      />
+
+  <build name="3.27 SR1" type="SR"
+      shortname="SR1"
+      status="completed"
+      publishDate="2023-12-06"
+      news="3.27/"
+      runtimeZip="rap-3.27.0-R-20231129-0035.zip"
+      runtime4Zip="rap-e4-3.27.0-R-20231205-1650.zip"
+      toolsZip="rap-tools-3.27.1-SR1-20231206-0951.zip"
       />
 
 </builds>
