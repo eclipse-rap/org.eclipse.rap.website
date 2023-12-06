@@ -68,7 +68,7 @@
 
   <build name="3.27 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2023-12-01"
       news="3.27/?build=RC2"
       runtimeZip="rap-3.27.0-RC2-20231129-0035.zip"
@@ -78,7 +78,7 @@
 
   <build name="3.27" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2023-12-06"
       news="3.27/"
       runtimeZip="rap-3.27.0-R-20231129-0035.zip"
