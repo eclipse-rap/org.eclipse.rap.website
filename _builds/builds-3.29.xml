@@ -38,12 +38,12 @@
 
   <build name="3.29 M2" type="M"
       shortname="M2"
-      status="planned"
+      status="completed"
       publishDate="2024-05-03"
       news="3.29/?build=M2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.29.0-M2-20240430-1618.zip"
+      runtime4Zip="rap-e4-3.29.0-M2-20240430-1618.zip"
+      toolsZip="rap-tools-3.29.0-M2-20240430-1618.zip"
       />
 
   <build name="3.29 M3" type="M"
