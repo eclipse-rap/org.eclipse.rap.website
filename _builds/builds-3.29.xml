@@ -48,42 +48,42 @@
 
   <build name="3.29 M3" type="M"
       shortname="M3"
-      status="planned"
+      status="completed"
       publishDate="2024-05-24"
       news="3.29/?build=M3"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.29.0-M3-20240522-0942.zip"
+      runtime4Zip="rap-e4-3.29.0-M3-20240522-0942.zip"
+      toolsZip="rap-tools-3.29.0-M3-20240522-0942.zip"
       />
 
   <build name="3.29 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2024-05-31"
       news="3.29/?build=RC1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.29.0-RC1-20240529-1507.zip"
+      runtime4Zip="rap-e4-3.29.0-RC1-20240529-1507.zip"
+      toolsZip="rap-tools-3.29.0-RC1-20240529-1507.zip"
       />
 
   <build name="3.29 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2024-06-07"
       news="3.29/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.29.0-RC2-20240605-1615.zip"
+      runtime4Zip="rap-e4-3.29.0-RC2-20240605-1615.zip"
+      toolsZip="rap-tools-3.29.0-RC2-20240605-1615.zip"
       />
 
   <build name="3.29" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2024-06-12"
       news="3.29/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-3.29.0-R-20240605-1615.zip"
+      runtime4Zip="rap-e4-3.29.0-R-20240605-1615.zip"
+      toolsZip="rap-tools-3.29.0-R-20240605-1615.zip"
       />
 
 </builds>
