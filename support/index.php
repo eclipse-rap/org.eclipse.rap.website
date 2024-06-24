@@ -51,7 +51,7 @@
     custom components.
 
     With this experience,
-    <a href="http://eclipsesource.com/en/services/rap/">EclipseSource can offer you efficient support</a>.
+    <a href="https://eclipsesource.com/services/developer-support/">EclipseSource can offer you efficient support</a>.
   </p>
 
 </div>
