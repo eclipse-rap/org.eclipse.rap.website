@@ -5,7 +5,7 @@
 
   $buildName = isset( $_GET[ 'build' ] ) ? $_GET[ 'build' ] : "R";
 
-  $builds = new Builds( "3.29" );
+  $builds = new Builds( "4.0" );
 
   $build = $builds->findBuild( $buildName );
   if( !$build ) {
