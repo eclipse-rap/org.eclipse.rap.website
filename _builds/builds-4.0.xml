@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<builds version="4.0" simultaneousRelease="2024-09">
+
+  <feature id="runtime">
+    <name>RAP (Runtime)</name>
+    <description>based on Eclipse 4.33 (2024-09)</description>
+    <site>https://download.eclipse.org/rt/rap/4.0</site>
+    <downloadPath>/rt/rap/4.0/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/10?closed=1</githubIssuesUrl>
+  </feature>
+
+  <feature id="runtime4">
+    <name>RAP E4 (Runtime)</name>
+    <description>based on Eclipse 4.33 (2024-09)</description>
+    <site>https://download.eclipse.org/rt/rap/4.0/e4</site>
+    <downloadPath>/rt/rap/4.0/e4/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap/milestone/10?closed=1</githubIssuesUrl>
+  </feature>
+
+  <feature id="tools">
+    <name>RAP Tools</name>
+    <description>for use with Eclipse 4.33 (2024-09)</description>
+    <site>https://download.eclipse.org/rt/rap/tools/4.0</site>
+    <downloadPath>/rt/rap/tools/4.0/</downloadPath>
+    <githubIssuesUrl>https://github.com/eclipse-rap/org.eclipse.rap.tools/milestone/10?closed=1</githubIssuesUrl>
+  </feature>
+
+  <build name="4.0 M1" type="M"
+      shortname="M1"
+      status="completed"
+      publishDate="2024-07-12"
+      news="4.0/?build=M1"
+      runtimeZip="rap-4.0.0-M1-20240710-1534.zip"
+      runtime4Zip="rap-e4-4.0.0-M1-20240710-1534.zip"
+      toolsZip="rap-tools-4.0.0-M1-20240710-1541.zip"
+      />
+
+  <build name="4.0 M2" type="M"
+      shortname="M2"
+      status="completed"
+      publishDate="2024-08-02"
+      news="4.0/?build=M2"
+      runtimeZip="rap-4.0.0-M2-20240731-2002.zip"
+      runtime4Zip="rap-e4-4.0.0-M2-20240731-2002.zip"
+      toolsZip="rap-tools-4.0.0-M2-20240731-2002.zip"
+      />
+
+  <build name="4.0 M3" type="M"
+      shortname="M3"
+      status="completed"
+      publishDate="2024-08-23"
+      news="4.0/?build=M3"
+      runtimeZip="rap-4.0.0-M3-20240821-1916.zip"
+      runtime4Zip="rap-e4-4.0.0-M3-20240821-1916.zip"
+      toolsZip="rap-tools-4.0.0-M3-20240821-1916.zip"
+      />
+
+  <build name="4.0 RC1" type="RC"
+      shortname="RC1"
+      status="planned"
+      publishDate="2024-08-30"
+      news="4.0/?build=RC1"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="4.0 RC2" type="RC"
+      shortname="RC2"
+      status="planned"
+      publishDate="2024-09-06"
+      news="4.0/?build=RC2"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+  <build name="4.0" type="R"
+      shortname="R"
+      status="planned"
+      publishDate="2024-09-11"
+      news="4.0/"
+      runtimeZip=""
+      runtime4Zip=""
+      toolsZip=""
+      />
+
+</builds>
