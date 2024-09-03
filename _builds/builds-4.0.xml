@@ -58,12 +58,12 @@
 
   <build name="4.0 RC1" type="RC"
       shortname="RC1"
-      status="planned"
+      status="completed"
       publishDate="2024-08-30"
       news="4.0/?build=RC1"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-4.0.0-RC1-20240828-1126.zip"
+      runtime4Zip="rap-e4-4.0.0-RC1-20240828-1126.zip"
+      toolsZip="rap-tools-4.0.0-RC1-20240828-1126.zip"
       />
 
   <build name="4.0 RC2" type="RC"
