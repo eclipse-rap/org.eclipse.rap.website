@@ -68,22 +68,22 @@
 
   <build name="4.0 RC2" type="RC"
       shortname="RC2"
-      status="planned"
+      status="completed"
       publishDate="2024-09-06"
       news="4.0/?build=RC2"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-4.0.0-RC2-20240904-0717.zip"
+      runtime4Zip="rap-e4-4.0.0-RC2-20240904-0717.zip"
+      toolsZip="rap-tools-4.0.0-RC2-20240904-0717.zip"
       />
 
   <build name="4.0" type="R"
       shortname="R"
-      status="planned"
+      status="completed"
       publishDate="2024-09-11"
       news="4.0/"
-      runtimeZip=""
-      runtime4Zip=""
-      toolsZip=""
+      runtimeZip="rap-4.0.0-R-20240904-0717.zip"
+      runtime4Zip="rap-e4-4.0.0-R-20240904-0717.zip"
+      toolsZip="rap-tools-4.0.0-R-20240904-0717.zip"
       />
 
 </builds>
