@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="launcher.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>Launching RAP Applications from the IDE</h1>
+
+  <p>
+    The RAP Tools provide two dedicated launchers to start RAP applications directly from
+    the IDE:
+    the <em>RWT Launcher</em>, used for snippets and
+    <a href="rwt-standalone.html">stand-alone applications</a>,
+    and the
+    <em>RAP Launcher</em>, used for
+    <a href="application-setup.html#osgi">applications based on OSGi</a>.
+    The latter you can also be started without the RAP Tools, using the plain <em>OSGi Launcher</em>.
+  </p>
+
+  <p>
+    <b>Contents:</b>
+  </p>
+  <ul><li><a href="launcher.html#rwt-launcher">Using the RWT Launcher</a></li>
+    <li><a href="launcher.html#rap-launcher">Using the RAP Launcher</a></li>
+    <li><a href="launcher.html#osgi-launcher">Using the OSGi Launcher</a></li>
+    <li><a href="launcher.html#troubleshooting">TroubleShooting</a></li>
+  </ul><h2><a name="rwt-launcher" id="rwt-launcher"></a>Using the RWT Launcher</h2>
+
+  <p>
+    The RWT Launcher is the simplest way to start a RAP application.
+    It requires no
+    <a href="application-setup.html#osgi">OSGi</a>,
+    <a href="application-configuration.html">application configuration</a> or
+    <a href="branding.html">Branding</a>, only an
+    <a href="hello-world.html#entrypoint">entry point</a>. Consequentially, this method
+    does not allow multiple entry points or any customization of the application
+    (e.g. using  a custom theme).
+  </p>
+  <ol><li>
+      Select the Java class that contains the entry point you want to launch (e.g. in the
+      <em class="UILabel">Package Explorer</em>).
+    </li>
+    <li>
+      Select <em class="UILabel">Run &gt; Run As &gt; RWT Application</em> in the menu bar,
+      or <em class="UILabel">Run As &gt; RWT Application</em> in the context menu of the file.
+    </li>
+    <li>
+      The application will be launched and opened in a browser view.
+    </li>
+  </ol><p>
+    Before the RWT launcher starts the application, it terminates any possibly running
+    instance of the same application.
+    After a successful start, you should see a message like this one in the Console view:
+    <br /><code style="color:red">INFO: Started SocketListener on 0.0.0.0:&lt;port&gt;</code>.
+  </p>
+
+  <h3>Further launch configuration options</h3>
+
+  <p>
+    Whenever you start an application as described above, a <em>launch configuration</em> is
+    created and added to the <em class="UILabel">Run &gt; Run History</em> menu.
+    The created launch configuration is based on your Java project and your IDE preferences.
+    It can later be edited and refined with custom or additional parameters.
+  </p>
+
+  <p>
+    To create a new launch configuration or to alter an existing one, select
+    <em class="UILabel">Run &gt; Run Configurations…</em> or
+    <em class="UILabel">Run &gt; Debug Configurations…</em>.
+    This opens a dialog that lets you create, modify, and delete launch configurations of different
+    types.
+    To create a new RWT Application launch configuration, select
+    <em class="UILabel">RWT Application</em> from the list of launch configuration types on the
+    left, and press the <em class="UILabel">New</em> button in the toolbar.
+    The tabs on the right allow you control specific aspects of the launch.
+  </p>
+
+  <p>
+    On the <em class="UILabel">Main</em> tab you can control the following aspects of the launch:
+  </p>
+  <ul><li>
+      The <em class="UILabel">Project</em> field denotes the project that contains the entry point
+      to launch. You do not have to specify a project, but doing so allows a default classpath,
+      source lookup path, and JRE to be chosen.
+    </li>
+    <li>
+      The <em class="UILabel">Application entry point</em> lets you specify what should be launched.
+      For simple use cases, choose <em class="UILabel">Run entry point class</em> and specify the
+      class that implements the <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/EntryPoint.html">EntryPoint</a></em>
+      interface in the class name field.
+      <br />
+      If you need more control or even would like to run an arbitrary web application,
+      select <em class="UILabel">Run from web.xml</em> and enter the path to the web.xml in the
+      location field.
+    </li>
+    <li>
+      The <em class="UILabel">Open in Browser</em> group lets you control whether the application should be
+      opened in a browser after a successful start.
+      The application can be opened either in an internal browser, i.e. embedded in the Eclipse IDE,
+      or in an external browser.
+      The external browser application can be configured in the <em>Web Browser</em> preferences
+      of your IDE. The link <em class="UILabel">Configure browsers…</em> lets you jump right there.
+      The <em class="UILabel">Servlet Path</em> is used to construct the URL
+      which will be opened in the browser.
+      If you're launching an <em>entry point</em>, you are free to choose an arbitrary path.
+      When launching an application from a <em>web.xml</em>, it must point to one of the servlets
+      defined in the web.xml.
+    </li>
+    <li>
+      In the <em class="UILabel">Server Settings</em>, you can select a fixed network port
+      to start your application at, a session timeout and a context path.
+      <p>
+        <em class="UILabel">Use a fixed port</em> configuration lets you select a fixed network port
+        to start your application at.
+        If you don't configure a port, the launcher will choose a free port, which may be
+        different on every launch.
+      </p>
+      <p>
+        <em class="UILabel">Session Timeout</em> specifies the servlet session timeout in minutes.
+        If the checkbox is unselected, the session will never expire.
+      </p>
+      <p>
+        <em class="UILabel">Context Path</em> selects an optional context path for the web application.
+        The context path is part of a web application's URL, e.g.
+        <code style="white-space:nowrap">http://&lt;server&gt;:&lt;port&gt;/contextPath/servletPath</code>.
+        In a servlet container, every web app is available at its own context path.
+        This setting lets you simulate the same context path that your application will be accessible
+        at in the production environment.
+      </p>
+    </li>
+    <li>
+      <p>
+        The option <em class="UILabel">Start in development mode</em> selects the variant of the
+        RWT JavaScript library that will be delivered to the client.
+        If development mode is on, the client maintains the JavaScript code in its original,
+        human-readable form. If it is off, the client is optimized for speed and size by compressing the
+        JavaScript code. It will also print non-critical JavaScript errors to the browsers
+        console instead of crashing the entire client.
+      </p>
+    </li>
+  </ul><p>
+    For an explanation of the other tabs see the topic
+    <a href="http://help.eclipse.org/topic/org.eclipse.jdt.doc.user/tasks/tasks-java-local-configuration.htm">Creating
+      a Java application launch configuration</a>
+  </p>
+
+  <h2><a name="rap-launcher" id="rap-launcher"></a>Using the RAP Launcher</h2>
+
+  <p>
+    The RAP Launcher is based on the
+    <a href="http://help.eclipse.org/topic/org.eclipse.pde.doc.user/guide/tools/launchers/equinox_launcher.htm">OSGi Launcher</a>
+    and adds a <em class="UILabel">Main</em> tab page to it.
+    Please note that the RAP Launcher only works when the Equinox OSGi Framework is selected,
+    which is the default setting on page <em class="UILabel">Bundles</em>.
+  </p>
+
+  <h3>Open in Browser</h3>
+  <p>
+    This setting lets you control whether the application should be opened in a browser after a
+    successful start.
+    The application can be opened either in an internal browser, i.e. embedded in the Eclipse IDE,
+    or in an external browser.
+    The external browser application can be configured in the <em>Web Browser</em> preference
+    of your IDE, the link <em class="UILabel">Configure browsers…</em> lets you jump right there.
+  </p>
+  <p>
+    The <em class="UILabel">Servlet Path</em> field lets you configure the URL that will be
+    opened in the browser. Which path is mapped to which entry point is configured in the
+    <a href="application-configuration.html">application configuration</a>.
+  </p>
+
+  <h3>Server Settings</h3>
+  <p>
+    <em class="UILabel">Use a fixed port</em> configuration lets you select a fixed network port
+    to start your application at.
+    If you don't configure a port, the launcher will choose a free port, which may be
+    different on every launch.
+  </p>
+  <p>
+    <em class="UILabel">Session Timeout</em> specifies the servlet session timeout in seconds.
+    If the checkbox is unselected, the session will never expire.
+  </p>
+  <p>
+    <em class="UILabel">Context Path</em> selects an optional context path for the web application.
+    The context path is part of a web application's URL, e.g.
+    <code>http://&lt;server&gt;:&lt;port&gt;/contextPath/servletPath</code>.
+    In a servlet container, every webapp is available at its own context path.
+    This setting lets you simulate the same context path that your application will be accessible
+    at in the production environment.
+  </p>
+  <p>
+    The option <em class="UILabel">Start in development mode</em> selects the variant of the
+    RWT JavaScript library that will be delivered to the client.
+    If development mode is on, the client maintains the JavaScript code in its original,
+    human-readable form. If it is off, the client is optimized for speed and size by compressing the
+    JavaScript code. It will also print non-critical JavaScript errors to the browsers
+    console instead of crashing the entire client.
+  </p>
+
+  <h3>Instance Area</h3>
+  <p>
+    The instance area location sets the Program Arguments to define the
+    <em><a href="http://help.eclipse.org/topic/org.eclipse.platform.doc.isv/reference/misc/runtime-options.html">
+    osgi.instance.area</a></em>. Bundles use this location to store their state location
+    data.</p>
+
+  <h3>Required plug-ins</h3>
+  <p>
+    In the Bundles tab, the following bundles need to be activated:
+  </p>
+
+  <p>
+    <b>Basic RAP bundles</b>
+  </p>
+  <ul><li><em>org.eclipse.rap.rwt</em></li>
+    <li>
+      <em>org.eclipse.rap.rwt.osgi</em></li>
+  </ul><p>
+    <b>Basic Equinox OSGi platform</b>
+  </p>
+  <ul><li><em>org.eclipse.osgi</em></li>
+    <li><em>org.eclipse.osgi.services</em></li>
+    <li><em>org.eclipse.equinox.console</em> (the OSGi console)
+      <ul><li><em>org.apache.felix.gogo.command</em> (required by equinox.console)</li>
+        <li><em>org.apache.felix.gogo.shell</em> (required by equinox.console)</li>
+        <li><em>org.apache.felix.gogo.runtime</em> (required by equinox.console)</li>
+      </ul></li>
+    <li><em>org.eclipse.equinox.http.jetty</em></li>
+    <li><em>org.eclipse.equinox.http.servlet</em></li>
+    <li><em>org.apache.felix.scr</em> (to enable OSGi Declarative Services)</li>
+  </ul><p>
+    <b>The Jetty servlet container</b>
+  </p>
+  <ul><li><em>org.eclipse.jetty.http</em></li>
+    <li><em>org.eclipse.jetty.io</em></li>
+    <li><em>org.eclipse.jetty.security</em></li>
+    <li><em>org.eclipse.jetty.server</em></li>
+    <li><em>org.eclipse.jetty.servlet</em></li>
+    <li><em>org.eclipse.jetty.util</em></li>
+    <li><em>org.eclipse.jetty.util.ajax</em></li>
+  </ul><p>
+    <b>Servlet API</b>
+    (remove when deploying to a servlet container)
+  </p>
+  <ul><li><em>javax.servlet</em></li>
+  </ul><p>
+    <b>Optional RAP bundles</b> (require additional platform bundles - see below)
+  </p>
+  <ul><li><em>org.eclipse.rap.jface</em></li>
+    <li><em>org.eclipse.rap.jface.databinding</em></li>
+    <li><em>org.eclipse.rap.ui</em></li>
+    <li><em>org.eclipse.rap.ui.forms</em></li>
+    <li><em>org.eclipse.rap.ui.views</em></li>
+    <li><em>org.eclipse.rap.ui.workbench</em></li>
+  </ul><p>
+    <b>Eclipse platform bundles</b>
+    required by applications using JFace or the Workbench (only a subset
+    may be required, please check for the actual dependencies)
+  </p>
+  <ul><li><em>com.ibm.icu</em></li>
+    <li><em>org.eclipse.core.commands</em></li>
+    <li><em>org.eclipse.core.contenttype</em></li>
+    <li><em>org.eclipse.core.databinding</em></li>
+    <li><em>org.eclipse.core.databinding.beans</em></li>
+    <li><em>org.eclipse.core.databinding.observable</em></li>
+    <li><em>org.eclipse.core.databinding.property</em></li>
+    <li><em>org.eclipse.core.expressions</em></li>
+    <li><em>org.eclipse.core.jobs</em></li>
+    <li><em>org.eclipse.core.runtime</em></li>
+    <li><em>org.eclipse.equinox.app</em></li>
+    <li><em>org.eclipse.equinox.common</em></li>
+    <li><em>org.eclipse.equinox.registry</em></li>
+    <li><em>org.eclipse.equinox.preferences</em></li>
+    <li><em>org.eclipse.equinox.http.registry</em></li>
+  </ul><p>
+    To launch an existing launch configuration you may use the launch shortcut keys
+    <em class="UILabel">Alt+Shift+X, R</em> (run) and <em class="UILabel">Alt+Shift+D, R</em> (debug).
+  </p>
+
+  <h2><a name="osgi-launcher" id="osgi-launcher"></a>Using the OSGi Launcher</h2>
+
+  <p>
+    Alternatively, you can also use the plain OSGi Launcher to start RAP applications.
+    In this case, you have to set the necessary system properties and program arguments on your own.
+    At minimum, you have to specify the HTTP port for the server with this VM argument:
+  </p>
+  <pre>-Dorg.osgi.service.http.port=&lt;PORT&gt;</pre>
+  <p>
+    To run RAP in development mode, add this system property, too:
+  </p>
+  <pre>-Dorg.eclipse.rap.rwt.developmentMode=true</pre>
+
+  <h3>Context path</h3>
+  <p>
+    To simulate the production environment, you can start your application with a context path,
+    e.g. <em>http://localhost:8080/contextPath/servletName</em>.
+  </p>
+  <pre>-Dorg.eclipse.equinox.http.jetty.context.path=&lt;context path&gt;</pre>
+  <p>
+    Valid context paths start with a slash and do not end with a slash. In the example above, the
+    context path would be <code>/contextPath</code>. The default is the root context, i.e. the URL
+    does not contain a contextPath segment.
+  </p>
+
+  <h3>Servlet engine log</h3>
+  <p>
+    By default the servlet engine (namely Jetty) is configured to suppress most logging
+    information. This can be changed by adding this VM argument to the launch configuration:
+  </p>
+  <pre>-Dorg.eclipse.equinox.http.jetty.log.stderr.threshold=&lt;log level&gt;</pre>
+  <p>
+    Valid log levels are <em>debug</em>,
+    <em>info</em>, <em>warn</em>, <em>error</em>, and <em>off</em>.
+    The default value is <em>warn</em>.
+  </p>
+
+  <h2><a name="troubleshooting" id="troubleshooting"></a>TroubleShooting</h2>
+
+  <ul><li>
+      <p>
+        <b>Unsupported JRE version</b>
+      </p>
+      <p>
+        <code style="color:red">java.lang.UnsupportedClassVersionError: Bad version number in .class file</code>
+      </p>
+      <p>
+        The launcher requires JavaSE 1.6 or higher.
+        If your project is configured with a JRE &lt; 1.6, the launcher will try to start with a
+        matching JRE. If you have a 1.5 JRE configured in your IDE, it will fail with an exception
+        like the one shown above.
+        In this case, edit the launch configuration and set the JRE to a Java 6 or higher.
+      </p>
+    </li>
+    <li id="trouble_jee">
+      <p>
+        <b>Unsupported Operation mode</b>
+      </p>
+      <p>
+        <code style="color:red">java.lang.UnsupportedOperationException: The SimpleLifeCycle does not support Display#sleep()</code>
+      </p>
+      <p>
+        The RWT launcher starts applications in the
+        <a href="application-setup.html#compat">JEE compatibility mode</a>.
+        This mode does not support <code>Display.sleep()</code>, specifically, it does not support
+        the SWT main loop. When starting an SWT snippet, this code may not be used:
+      </p>
+      <pre class="lang-java">
+while( !shell.isDisposed() ) {
+  if( !display.readAndDispatch() )
+    display.sleep();
+}
+display.dispose();</pre>
+      <p>
+        It is recommended to extend <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/AbstractEntryPoint.html">AbstractEntryPoint</a> instead of
+        implementing the <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/EntryPoint.html">EntryPoint</a>
+        interface directly. With AbstractEntryPoint no main loop is required, no matter which operation
+        mode is used.
+      </p>
+    </li>
+    <li id="trouble_swt">
+      <p>
+        <b>UI does not react to user input</b>
+      </p>
+      <p>
+        This happens if the application starts in
+        <a href="application-setup.html#compat">SWT compatibility mode</a> and no SWT main loop
+        is present. Basically the reverse of the <a href="launcher.html#trouble_jee">above issue</a>.
+        Either add a <a href="launcher.html#trouble_jee">main loop</a>, or extend
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/AbstractEntryPoint.html">AbstractEntryPoint</a> instead of
+        implementing the <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/EntryPoint.html">EntryPoint</a>
+        interface.
+      </p>
+    </li>
+    <li>
+      <p>
+        <b>404 Error Page</b>
+      </p>
+      <p>
+        There are two reasons a 404 page may be displayed in the browser. Either the URL is
+        incorrect (check the servlet path), or the browser opened faster than the application
+        could start. In that case, simply hit F5 (refresh).
+      </p>
+    </li>
+
+  </ul>
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a class="active" href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

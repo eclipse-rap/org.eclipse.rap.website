@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP 3.1 M7 - New and Noteworthy</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../../script.js"></script>
+  <script type="text/javascript" src="../../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="index.html%3Fbuild=M7.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../../demos/index.html">Demos</a></li><li ><a href="../../downloads/index.html">Download</a></li><li class="active"><a href="../../documentation/index.html">Documentation</a></li><li ><a href="../../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../../documentation/index.html">Overview</a></li><li><a  href="../../developers-guide/index.html">Developer's Guide</a></li><li><a  class="active" href="../index.html">New and Noteworthy</a></li><li><a  href="../../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn">
+
+  <h1>RAP 3.1 M7 - New and Noteworthy</h1>
+
+  <p>
+    Here's a list of the most noteworthy things in the RAP
+    3.1 M7 milestone build      which is available for <a href="https://www.eclipse.org/rap/downloads/">download</a>
+      since May 06, 2016.
+  </p>
+
+<div>
+
+  <h2>Support for native HTML document overflow behaviour</h2>
+
+  </p>
+    For better support of RAP applications that look like normal web sites, we added a posibility to
+    enable native HTML document overflow behaviour. To enable it, a new property
+    <code>WebClient.PAGE_OVERFLOW</code> with one of the values "scroll", "scrollX" or "scrollY"
+    must be set to your application.
+  </p>
+<pre lang="java">
+public class MyApplication implements ApplicationConfiguration {
+
+  @Override
+  public void configure( Application application ) {
+    Map<String, String> properties = new HashMap<String, String>();
+    ...
+    properties.put( WebClient.PAGE_OVERFLOW, "scrollY" );
+    application.addEntryPoint( "/", MyEntryPoint.class, properties );
+  }
+
+}
+</pre>
+
+</div>
+
+  <h2>Bugfixes</h2>
+
+  <p>
+    <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;target_milestone=3.1%20M7">This list</a>
+    shows all bugs that have been fixed for this milestone build.
+  </p>
+
+  <h2>Previous Builds</h2>
+
+  <p>
+    The above features are just the ones that are new since the last milestone build.
+    Summaries for earlier builds:
+  </p>
+  <ul>
+    <li>
+      <a href="index.html%3Fbuild=M1.html">News for RAP 3.1 M1</a>
+    </li>
+    <li>
+      <a href="index.html%3Fbuild=M2.html">News for RAP 3.1 M2</a>
+    </li>
+    <li>
+      <a href="index.html%3Fbuild=M3.html">News for RAP 3.1 M3</a>
+    </li>
+    <li>
+      <a href="index.html%3Fbuild=M4.html">News for RAP 3.1 M4</a>
+    </li>
+    <li>
+      <a href="index.html%3Fbuild=M5.html">News for RAP 3.1 M5</a>
+    </li>
+    <li>
+      <a href="index.html%3Fbuild=M6.html">News for RAP 3.1 M6</a>
+    </li>
+  </ul>
+
+</div>
+
+<div id="rightcolumn">
+  <div class="sideitem attention">
+
+  <h6>RAP 3.0 Migration Guide</h6>
+
+  <div class="sideitemcontent">
+    <p>
+      To assist you with the migration from RAP 2.x (or 1.x) to 3.0, we provide a
+      <a href="../3.0/migration-guide.html">migration guide</a>.
+    </p>
+  </div>
+
+</div>
+  <div class="sideitem">
+
+  <h6>RAP Releases</h6>
+
+  <div class="sideitemcontent">
+    <ul>
+      <li>
+        <a href="../../downloads/4.1/index.html">RAP 4.1&emsp;2024-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/4.0/index.html">RAP 4.0&emsp;2024-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.29/index.html">RAP 3.29&emsp;2024-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.28/index.html">RAP 3.28&emsp;2024-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.27/index.html">RAP 3.27&emsp;2023-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.26/index.html">RAP 3.26&emsp;2023-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.25/index.html">RAP 3.25&emsp;2023-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.24/index.html">RAP 3.24&emsp;2023-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.23/index.html">RAP 3.23&emsp;2022-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.22/index.html">RAP 3.22&emsp;2022-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.21/index.html">RAP 3.21&emsp;2022-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.20/index.html">RAP 3.20&emsp;2022-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.19/index.html">RAP 3.19&emsp;2021-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.18/index.html">RAP 3.18&emsp;2021-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.17/index.html">RAP 3.17&emsp;2021-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.16/index.html">RAP 3.16&emsp;2021-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.15/index.html">RAP 3.15&emsp;2020-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.14/index.html">RAP 3.14&emsp;2020-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.13/index.html">RAP 3.13&emsp;2020-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.12/index.html">RAP 3.12&emsp;2020-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.11/index.html">RAP 3.11&emsp;2019-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.10/index.html">RAP 3.10&emsp;2019-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.9/index.html">RAP 3.9&emsp;2019-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.8/index.html">RAP 3.8&emsp;2019-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.7/index.html">RAP 3.7&emsp;2018-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.6/index.html">RAP 3.6&emsp;2018-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.5/index.html">RAP 3.5&emsp;2018-06 (Photon)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.4/index.html">RAP 3.4&emsp;2017-12 (Oxygen.2)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.3/index.html">RAP 3.3&emsp;2017-09 (Oxygen.1)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.2/index.html">RAP 3.2&emsp;2017-06 (Oxygen)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.1/index.html">RAP 3.1&emsp;2016-06 (Neon)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.0/index.html">RAP 3.0&emsp;2015-06 (Mars)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.3/index.html">RAP 2.3&emsp;2014-06 (Luna)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.2/index.html">RAP 2.2&emsp;2013-12 (Kepler SR2)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.1/index.html">RAP 2.1&emsp;2013-06 (Kepler)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.0/index.html">RAP 2.0&emsp;2013-02 (Juno SR3)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.5/index.html">RAP 1.5&emsp;2012-06 (Juno)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.4/index.html">RAP 1.4&emsp;2011-06 (Indigo)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.3/index.html">RAP 1.3&emsp;2010-06 (Helios)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.2/index.html">RAP 1.2&emsp;2009-06 (Galileo)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.1/index.html">RAP 1.1&emsp;2008-06 (Ganymede)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.0/index.html">RAP 1.0&emsp;2007-10</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

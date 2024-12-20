@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="key-and-mouse-events.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+  <h1>Key and Mouse Event Handling in RAP</h1>
+  <p>
+    Most SWT widgets provide distinctive events that are well suited for typical use cases of
+    that widget, like selection events and modify events. These events should, if possible, always
+    be favored over key and mouse events, which are available on all controls. Not only are the more
+    specific events fired at the appropriate times and provide all relevant informations, but they
+    can also be more optimized by the RAP framework regarding performance, network-traffic and
+    compatibility. Still, key and mouse events are sometimes necessary to use, especially when
+    adding or modifying widget-behavior, or for global event handling.
+  </p>
+  <p>
+    Due to their diverse nature, differing implementation, and the high frequency in which they
+    may be fired, key and mouse events are a major challenge in a web-environment, especially
+    with a client-server architecture like RAP. While RWT provides a SWT-like API for key
+    and mouse events, some specifics should be noted.
+  </p>
+  <h2 id="mouse">Mouse Events</h2>
+   <p>
+    All mouse event types using in the
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/MouseListener.html">MouseListener</a></em>
+    interface are almost fully supported. (They can only detect the first three mouse buttons.)
+    They are:
+   </p>
+    <ul><li><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#MouseDown">MouseDown</a></em></li>
+      <li><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#MouseUp">MouseUp</a></em></li>
+      <li><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#MouseDoubleClick">MouseDoubleClick</a></em></li>
+    </ul><p>
+    However, all other event mouse event types, used in
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/MouseTrackListener.html">MouseTrackListener</a></em>
+    and <em>MouseWheelListener</em>, are unsupported by the Java event API. Namely:
+    </p>
+    <ul><li><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#MouseMove">MouseMove</a></em></li>
+      <li><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#MouseEnter">MouseEnter</a></em></li>
+      <li><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#MouseExit">MouseExit</a></em></li>
+      <li><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#MouseWheel">MouseWheel</a></em></li>
+    </ul><p>
+    These can not be reasonably implemented as server-side events because the network latency would make them
+    barely usable. They are supported by <a href="scripting.html">ClientListener</a> though.
+    </p>
+    <p id="mouse_filter">
+      Mouse events are only sent to the server (and only cause traffic) if they are fired on
+      widgets that have a <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/MouseListener.html">MouseListener</a></em>
+      or
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Listener.html">untyped listener</a>
+      for a mouse event attached.
+      As a side-effect, using a
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Display.html#addFilter-int, org.eclipse.swt.widgets.Listener-">display filter</a>
+      does not work like in SWT.
+      Example:
+    </p>
+    <pre class="lang-java">display.addFilter( SWT.MouseDown, new Listener() { ... } );</pre>
+    <p>
+       This would catch all mouse events in SWT, but in RWT it will only receive those which
+       targets already have a mouse listener.
+    </p>
+  <h2 id="traverse">Traverse Events</h2>
+  <p>
+    Before we discuss key events, it is important to note that there are also
+    <q><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/TraverseEvent.html">traverse events</a></q>,
+    which are related. Traverse events are fired <em>before</em> a key event, and only for keys
+    that can change the focus. (For example Escape, Tab, Arrows.) The idea is that you can
+    prevent or manipulate the focus change, but that is <strong>not supported</strong> in RWT. (See
+    <a href="key-and-mouse-events.html#prevent">"Prevent Default Operation"</a> for a workaround.)
+  </p>
+  <h2 id="key">Key Events</h2>
+  <h3>Event Order and Latency</h3>
+  <p>
+    There are two type of key events,
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#KeyDown">KeyDown</a></em>
+    and
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#KeyUp">KeyUp</a></em>.
+    In SWT, <em>KeyDown</em> is fired after pressing the key, then after a short delay
+    fired repeatedly until the key is released. Then <em>KeyUp</em> is fired. <br />
+    In RWT, <em>KeyUp</em> is fired immediately after <em>KeyDown</em>, even if the key
+    is not released. After the short delay, both events are fired repeatedly until the key is
+    released. An Example for pressing and holding a key in SWT and RWT (read left to right):
+  </p>
+    <table border="1" cellpadding="5" cellspacing="0"><tr><th align="left">SWT</th>
+        <td style="padding:4px"><em>KeyDown</em></td>
+        <td>delay</td>
+        <td style="padding:4px"><em>KeyDown</em></td>
+        <td style="padding:4px"><em>KeyDown</em></td>
+        <td style="padding:4px"><em>KeyUp</em></td>
+      </tr><tr><th align="left">RWT</th>
+        <td style="padding:4px"><em>KeyDown</em><br /><em>KeyUp</em></td>
+        <td>delay</td>
+        <td style="padding:4px"><em>KeyDown</em><br /><em>KeyUp</em></td>
+        <td style="padding:4px"><em>KeyDown</em><br /><em>KeyUp</em></td>
+        <td style="padding:4px">-</td>
+      </tr></table><p>
+    A key event is sent to the server immediately when the key is pressed (not on release).
+    This requests triggers both the <em>KeyDown</em> and <em>KeyUp</em> event.
+    If a key is held down, or when typing very fast, the new key events may be put into a queue
+    on the client until the current key event is finished being processed. This also increases the
+    latency a bit.<br /> If no latency is not acceptable at all, the key events would have
+    to be <a href="scripting.html">processed on the client</a> directly,
+    or a <a href="custom-widget.html">custom widget</a> has to be used.
+  </p>
+  <h3 id="prevent">Prevent Default Operation (CANCEL_KEYS)</h3>
+  <p>
+    The <em>KeyEvent</em> object has a
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/KeyEvent.html#doit">doit</a></em>
+    field (as do
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Event.html#doit">untyped events</a>),
+    which is true by default.
+    In SWT, this field can be set to false to prevent the default operation associated with
+    pressing or releasing this key, like inserting a character in a
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Text.html">Text</a></em>
+    widget.
+    RAP supported this in a limited capacity until 1.4, but support was discontinued in 1.5. The
+    reason for this was that it worked unreliably and prevented a number of bugs from being fixed.
+  </p>
+  <p>
+    As an alternative, the <q>Cancel Keys</q> feature was introduced. It is slightly less flexible,
+    but very powerful and still single-sourcing capable. Instead of reacting to a key event,
+    it allows to attach a list of keys or key-combinations to a widget using the
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#CANCEL_KEYS">
+    RWT.CANCEL_KEYS</a></em> constant:
+   </p>
+   <pre class="lang-java">
+widget.setData( RWT.CANCEL_KEYS, new String[] { "CTRL+1", "CTRL+2" } ); </pre>
+   <p>
+    When the given key-combination is pressed while
+    the widget is focused, the operation is canceled. It also cancels operations that could only
+    be prevented on traverse events in SWT. Event more importantly, it is possible to
+    suppress most (not all) browser shortcuts that way, which would otherwise be triggered at
+    the same moment that your key listener is executed. For example <q><code>CTRL+F</code></q> usually opens
+    and focuses a search-dialog in the browser, but the RAP application might want to use it
+    to focus its own search-field.
+  </p>
+  <p>
+    <em>Additional Notes:</em>
+  </p>
+    <ul><li>Valid patterns to identify key combinations are documented on the
+        <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#ACTIVE_KEYS">RWT.ACTIVE_KEYS</a></em> constant.
+      </li>
+      <li>Browser-shortcuts of the pattern <q><code>ALT+[letter]</code></q> can often not be suppressed.</li>
+      <li>The Cancel Keys do not influence the key event handling. That means it works whether a
+    listener is attached or not, and canceled keys are still fired as an SWT key event.</li>
+      <li>This approach is single-sourcing capable. Since the <em>doit</em> field still
+      exists in RWT, and the list is attached using only
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Widget.html#setData-java.lang.String-java.lang.Object-">setData</a></em>, both mechanisms
+      can be used in parallel.</li>
+      <li>An alternative to Cancel Keys is using a <a href="scripting.html">ClientListener</a>,
+      which fully supports the <code><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/Event.html#doit">doit</a></code> flag
+      for key events. This is useful if you wish to cancel keys depending on more complex
+      patterns that just a static list.</li>
+    </ul><h3 id="active">Reduce Traffic (ACTIVE_KEYS)</h3>
+  <p>
+    As explained above, each keystroke creates at least one HTTP-request. Obviously this can
+    create a lot of traffic. If this is a concern, the <q>Active Keys</q> feature can help you.
+    Exactly like with <a href="key-and-mouse-events.html#prevent">cancel keys</a>, active keys lets you attach a list of keys or key-combinations to a
+    widget (using <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#ACTIVE_KEYS">RWT.ACTIVE_KEYS</a></em>).
+    As result, only key events that match
+    a combination on this list will be issued, drastically reducing traffic.
+  </p>
+  <p>
+    <em>Additional Notes:</em>
+  </p>
+    <ul><li>Valid patterns to identify key combinations are documented on the
+        <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#ACTIVE_KEYS">RWT.ACTIVE_KEYS</a></em> constant.
+      </li>
+      <li>Unlike Cancel Keys, Active Keys are only relevant if a key listener is attached.</li>
+      <li>Despite the naming, Active Keys and Cancel Keys can be freely combined. They do not influence each other.</li>
+      <li>This approach is also single-sourcing capable, as long as the key listener does
+      not rely on the preselection of the Active Keys feature.</li>
+    </ul><h3 id="global">Global Key Event Handling (Keybindings)</h3>
+  <p>
+    Both <q>Active Keys</q> and <q>Cancel Keys</q> can also be used on an instance of
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Display.html">Display</a></em>,
+    which is useful to allow keybindings ("shortcuts"). Active Keys work slightly different in
+    that case. Like with mouse events (see <a href="key-and-mouse-events.html#mouse_filter">above</a>), a
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Display.html#addFilter-int, org.eclipse.swt.widgets.Listener-">display filter</a>
+    usually catches
+    only key events when their target has a listener attached.
+    However, attaching a list of Active Keys to display
+    will result in <i>all</i> key events that match a list entry to be fired, regardless
+    of the focused widget. Likewise, a list of Cancel Keys attached to the display is always
+    in effect.
+  </p>
+  <p>
+    To implement global shortcuts, one would first attach a list of all shortcuts as Active Keys
+    to display. The same list can then be used again for Cancel Keys to prevent any undesired
+    operations to be triggered by any of the keys. Then a filter for
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#KeyDown">SWT.KeyDown</a></em>
+    has to be <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Display.html#addFilter-int, org.eclipse.swt.widgets.Listener-">added</a>,
+    where the pressed key combination has to be determined and handled.
+   </p>
+   <p>
+     The combinations for global shortcuts should be carefully chosen, so they
+      do not to interfere any of the core functionality of a widget or the browser. For example,
+      <q><code>SHIFT+[arrow key]</code></q> is not a good choice, since this is used by many widgets for selection.
+      Similarly, many users might be accustomed to use F5 to reload the page. The combinations
+      <q><code>CTRL+TAB</code></q>
+      and <q><code>ALT+TAB</code></q> <strong>can not be used</strong>.
+      They will never be fired and can not be canceled.
+  </p>
+  <h3>Summary:</h3>
+   <p>
+     A key event will be issued if any if this is true:
+   </p>
+     <ul><li>The key combination is in the displays Active Keys list.</li>
+       <li>The focused widget has a key listener attached and no Active Keys list.</li>
+       <li>The focused widget has a key listener attached and the key combination is its Active Keys list.</li>
+     </ul><p>
+     A key event will cancelled if the browser supports it, and any if this is true:
+    </p>
+     <ul><li>The key combination is in the displays Cancel Keys list.</li>
+       <li>The focused widget has a Cancel Keys list and the key combination is in it.</li>
+       <li>A ClientListener sets the <code>doit</code> flag to false.</li>
+     </ul><h3>Mnemonics and Accelerators</h3>
+   <p>
+     Mnemonics and accelerators provide simpler alternatives to implementing shortcuts
+     via <a href="key-and-mouse-events.html#global">global key event handling</a>, but will also influence
+     conventional key events.
+   </p>
+   <p>
+     Accelerators are shortcuts that can be associated with <em>MenuItem</em> widgets
+     using the method
+     <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/MenuItem.html#setAccelerator-int-">MenuItem#setAccelerator</a></em>.
+     Entering the shortcut will fire a <em>Selection</em> event on the associated
+     <em>MenuItem</em>. The shortcuts will also be added to the displays <a href="key-and-mouse-events.html#global">current
+     ACTIVE_KEYS list</a>. <strong>Take care not to overwrite them.</strong>
+   </p>
+   <p>
+     Mnemonics are a simple method to select widgets using the keyboard.
+     Any character in a widgets text can be made a mnemonic by inserting an ampersand character
+     (<code>&amp;</code>) before it. A list of supported widgets can be found
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#MNEMONIC_ACTIVATOR">here</a>.
+   </p>
+   <p>
+     Mnemonics must be enabled for the UISession by setting the modifier key or key-combination that
+     makes the mnemonics visible:
+   </p>
+<pre class="lang-java">
+display.setData( RWT.MNEMONIC_ACTIVATOR, "CTRL+ALT" );
+</pre>
+  <p>
+    Any combination of <em>CTRL</em>, <em>SHIFT</em> and <em>ALT</em> is valid,
+    but <em>ALT</em> should not be used by itself since the browser may reserve this key for itself.
+    Holding the mnemonic activator will underline all onscreen mnemonic characters,
+    and pressing the matching key will then select or focus the associated widget.
+  </p>
+  <p>
+    Mnemonics have a higher priority than key bindings, accelerators or key events. This also means
+    that <strong>no key events will be fired for a key combination that triggers
+    a mnemnoic</strong>.
+  </p>
+
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a class="active" href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

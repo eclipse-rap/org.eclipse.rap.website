@@ -1,0 +1,602 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="look-and-feel.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>RAP look and feel</h1>
+  <p>
+  <i><strong>Note:</strong> This is about the interaction design API for the workbench, not the <a href="theming.html">theming</a> API
+  that controls the look of specific widgets.</i>
+  </p>
+  <p>
+    RAP provides an additional API to change the look and feel of workbench applications.
+    This article is a step-by-step guide to using the so-called “interaction
+    design API” to control the look of the WorkbenchWindow. All look and feel artifacts
+    can be bundled into a separate plug-in and contributed to an existing application
+    without touching the application itself.
+  </p>
+
+  <p>
+    Let's have a look at a RAP application with a customized look and feel:
+  </p>
+  <p>
+    <img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/interactiondesign/newLook.png" alt="RAP Application with Business theming" /></p>
+
+  <h2>Getting started</h2>
+  <p>
+    These are the elements that we will be working with.
+  </p>
+  <ul><li>
+      WorkbenchWindow components such as the ToolBar, MenuBar and the ViewToolbar.
+    </li>
+    <li>
+      Presentations for Stacks or, in other words, the look and feel of views and
+      editors. You'll see later how the interaction design API allows you to make
+      stack independent changes on-the-fly.
+    </li>
+    <li>
+      The graphical layout. When you change the look and feel of an application, you
+      generally also need to change elements in the graphical layout, such as moving
+      a menubar or the perspective switcher, or selecting a different font.
+    </li>
+    <li>
+      Association with entry point by using <em>org.eclipse.rap.ui.branding</em> extension point.
+    </li>
+    <li>
+      Reusable web components. Elements such as the header for an application are
+      very likely to be reused in their web versions. Layout information can also be
+      reused for web components. So a developer has not to develop many different
+      web components, he can use the technique described bellow to create a component
+      which can be reused in many applications.
+    </li>
+  </ul><p>
+    Finally, one additional but important requirement for a good look and feel is
+    to change interaction concepts to match the new UI. To assist in this, the API
+    provides an automatic service called personalization. For instance it hides all
+    ViewActions by default and makes it's visibility customizable.
+  </p>
+
+  <h2>WorkbenchWindow components</h2>
+  <p>
+    The best place to start is to create a PresentationFactory. You will need to
+    create an extension for the <em>org.eclipse.ui.presentationFactories</em>
+    extension point.
+  </p>
+  <p>
+    <img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/interactiondesign/presentationFactoryExt.png" alt="PresentationFactory Extensions" /></p>
+  <p>
+    Here is the same as it appears in the plugin.xml.
+  </p>
+  <pre class="lang-xml">
+&lt;extension point="org.eclipse.ui.presentationFactories"&gt;
+  &lt;factory
+    class="org.eclipse.rap.presentation.example.PresentationFactoryImpl"
+    id="org.eclipse.rap.presentation"
+    name="RAP Presentation"&gt;
+  &lt;/factory&gt;
+&lt;/extension&gt;</pre>
+
+  <p>
+    The presentationFactory contains the following attributes:
+  </p>
+  <ul><li>
+      <b>class</b><br />
+      The class refers to an implementation of
+      <em>org.eclipse.rap.ui.interactiondesign.PresentationFactory</em>. It is
+      very important not to extend from the original
+      <em>org.eclipse.ui.presentation.AbstractPresentationFactory</em> as this
+      class does not support the concepts described here.
+    </li>
+    <li>
+    <b>name</b><br />
+      A human readable name for the PresentationFacotry implementation.
+    </li>
+  </ul><p>
+    The <em>org.eclipse.rap.ui.interactiondesign.PresentationFactory</em> is
+    abstract, so you will need to implement its abstract methods. Most are create
+    methods for different Managers, for example, the MenuBar MenuManager or the
+    Manager for the ToolBar. A ToolBar or MenuBar manager is a contribution manager
+    which  realizes itself and its items in a control. In these implementations you can
+    change the look of the components such as styling a toolbar with icons and text
+    or making it transparent.
+  </p>
+
+  <h2>Presentations for Stacks</h2>
+  <p>
+    If you are not familiar with the original AbstractPresentationFactory you might
+    consider reading up on StackPresentations. You'll find a basic overview of the
+    partstack in the
+    <a href="https://www.eclipse.org/articles/Article-UI-Workbench/workbench.html">
+    Inside the Workbench</a> article.
+    <br />
+    The look and feel of a partstack can be changed using StackPresentations. In the
+    previous PresentationFactory the presentation had to be implemented
+    programmatically. The interaction design API allows you to declare
+    StackPresentations as an extension for the extension point
+    <em>org.eclipse.rap.ui.stackPresentations</em>.<br /><img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/interactiondesign/stackPresentationExt.png" alt="StackPresentation Extension" /></p>
+  <p>
+    Here is the same as it appears in the plugin.xml.
+  </p>
+  <pre class="lang-xml">
+&lt;extension point="org.eclipse.rap.ui.stackPresentations"&gt;
+  &lt;stackPresentation
+    id="org.eclipse.rap.presentation.macBarStackPresentation"
+    class="org.eclipse.rap.presentation.example.stacks.MacBarStackPresentation"
+    name="MacBar"
+    type="view"
+    actionClass="org.eclipse.rap.presentation.example.configaction.ExampleConfigAction"
+    actionIcon="icons/configAction.png"
+    menuIcon="icons/menuIcon.gif"&gt;
+  &lt;/stackPresentation&gt;
+&lt;/extension&gt;</pre>
+  <p>
+    <b>stackPresentation</b> contain the following attributes:
+  </p>
+  <ul><li>
+      <b>class</b><br />
+      To be backward compatible with Eclipse 3.4 or earlier, you can
+      implement <em>org.eclipse.ui.presentation.StackPresentation</em>. But to use
+      all the features of the interaction design API the
+      <em>org.eclipse.rap.ui.interactiondesign.ConfigurableStack</em>. should be
+      implemented. The ConfigurableStack is an abstract class and provides additional
+      methods i.e. to get the part's ToolbarManager. <br />
+      The parts ToolbarManager contains all the actions of the parts toolbar and adds
+      the personalization features. To create a clean UI all actions are invisible,
+      but this visibility can be changed by the user during runtime. <br />
+      Another benefit of the ConfigurableStack is the ability to change the
+      look of the stack during runtime without reloading the whole
+      application. Therefore it provides a method called
+      <em>setCurrentStackPresentation( String id )</em>. The id should be the id
+      of the presentation defined in the extension. When you call this method, you
+      will change the presentation of a whole stack to the presentation defined with
+      the given id. The reloading happens automatically.
+    </li>
+    <li>
+      <b>type</b><br />
+      There are three types of stacks. Editor-, view- and standaloneViewStacks. You
+      can define a presentation for a specific type using the following arguments:
+      view, standaloneView, editor.
+    </li>
+    <li>
+      <b>actionClass</b><br />
+      This should be an implementation of
+      <em>org.eclipse.rap.ui.interactiondesign.ConfigurationAction</em>. This is
+      an abstract class providing methods for personalization. For example, you can
+      use this to implement a popup dialog which allows the user to configure
+      viewaction visibility or the stack's presentation. To apply configuration
+      changes in your ConfigurableStack you will need to implement the Interface
+      <em>org.eclipse.rap.ui.interactiondesign.IConfigurationChangedListener</em>
+      and register it in the ConfigurationAction.
+    </li>
+    <li>
+      <b>actionIcon</b><br />
+      A ConfigurationAction can contain an icon which can be used i.e. as a button's
+      icon. The icon is associated with the <em>ConfigurationAction</em>.
+    </li>
+    <li>
+      <b>menuIcon</b><br />
+      This is the icon for the view's menu and can be used to replace the standard
+      triangle. To access this image use the <em>getMenuIcon()</em> Method inside
+      the ConfigurableStack.
+    </li>
+  </ul><h2>The graphical layout</h2>
+  <p>
+    RAP provides the ability to define graphical layouts where you have control over
+    the elements  such as the position of the workbench components like the toolbar,
+    menubar or the perspective switcher. The WorkbenchWindowAdvisors
+    <em>createWindowContents( Shell )</em> method is one method, but the
+    result of this technique is a fixed coupling between the look and feel and your
+    application code. <br />
+    You can now separate the application code and the look and feel by using the
+    <em>org.eclipse.rap.ui.interactiondesign.IWindowComposer</em> Interface. An
+    implementation of
+    <em>org.eclipse.rap.ui.interactiondesign.PresentationFactory</em> defines
+    the method <em>createWindowComposer()</em> which is called within the
+    WorkbenchWindow.  This is a simple replacement for the advisor's method that
+    results in a loose coupling between application elements. <br />
+    In order to organize graphical layout information such as images, colors, fonts
+    and position data, the following registry was created.
+    <em>org.eclipse.rap.ui.interactiondesign.layout.LayoutRegistry</em><br />
+    The LayoutRegistry is a singleton object which contains all existing layouts
+    represented by <em>org.eclipse.rap.ui.interactiondesign.model.Layout</em>
+    and <em>org.eclipse.rap.ui.interactiondesign.model.LayoutSet</em>.
+    A Layout can be declared by creating an extension for the extension point
+    <em>org.eclipse.rap.ui.layouts</em>.<br /><img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/interactiondesign/layoutExt.png" alt="Layout extension" /></p>
+  <p>
+    And here is the same as it appears in the plugin.xml.
+  </p>
+<pre class="lang-xml">
+&lt;extension point="org.eclipse.rap.ui.layouts"&gt;
+  &lt;layout
+    id="org.eclipse.presentation.example.layout"
+    name="Example Layout"&gt;
+      &lt;layoutSet
+        class="org.eclipse.rap.presentation.example.layoutset.HeaderLayoutSet2"
+        id="header.layoutset"
+        name="Header2"&gt;
+      &lt;/layoutSet&gt;
+  &lt;/layout&gt;
+&lt;/extension&gt;</pre>
+  <p>
+    Layout contains the following attributes:
+  </p>
+  <ul><li>
+      <b>id</b><br />
+      This id can be used to get a Layout object from the LayoutRegistry.
+    </li>
+    <li>
+      <b>name</b><br />
+      A human readable name for this layout.
+    </li>
+  </ul><p>
+    Every Layout can have multiple layoutSets:<br /><b>Element layoutSet</b><br />
+    A layoutSet is a representation of the following class:
+    <em>org.eclipse.rap.ui.interactiondesign.layout.model.LayoutSet</em>. The
+    object contains the information described above. Every layoutSet has a
+    maximum of one Layout as a parent and has the following attributes:
+  </p>
+  <ul><li>
+      <b>id</b><br />
+      This id can be used to get a LayoutSet object from a Layout using the
+      <em>getLayoutSet( String id )</em> method.
+    </li>
+    <li>
+      <b>class</b><br />
+      This should be an implementation of the following interface: <br /><em>org.eclipse.rap.ui.interactiondesign.layout.ILayoutSetInitializer</em>.
+      This interface contains one method which is used to declared layout information
+      for a LayoutSet object. All IlayoutSetInitializers will be called during the
+      LayoutRegistry initialization.
+    </li>
+    <li>
+      <b>overridesId</b><br />
+      This optional attribute should be an existing LayoutSet id. It's value will be
+      used to override a LayoutSet. This is useful i.e. if a bundle defines a LayoutSet
+      which contributes a Logo. Than another bundle can override this LayoutSet and
+      contribute it's own logo.
+    </li>
+  </ul><p>
+    The following is an example use case for a declarative layout. <br />
+    A button should display its text in a specific font. Instead of defining the
+    font directly in the source code, you can define a layout and a layoutSet over
+    the extension described above. Let start by creating two id's. <br />
+    For the Layout = <em>org.eclipse.layout</em><br />
+    For the layoutSet = <em>org.eclipse.layoutSet</em><br />
+    To define the font you can call the
+    <em>LayoutSet.addFont( String key, Font font )</em> method in your
+    IlayoutSetInitializer implementation. We use "fontKey" as the key value. Here
+    is the source code for this font definition:
+  </p>
+  <pre class="lang-java">
+Button button = new Button( composite, SWT.NONE );
+LayoutRegistry registry = LayoutRegistry.getInstance();
+registry.setActiveLayout( "org.eclipse.layout" );
+Layout layout = registry.getActiveLayout();
+LayoutSet set = layout.getLayoutSet( "org.eclipse.layoutSet" );
+button.setFont( set.getFont( "fontKey" );</pre>
+  <p>
+    An alternative to accomplish this is theming, but the declarative layout give
+    you more options such as defining images or position data. Another big advantage
+    of using the declarative layout is that you can change a layout during runtime.
+    And, to do this is just a two step process.
+  </p>
+  <ol><li>
+    Define two layouts with layoutSets. The layoutSets must have the same ids as in
+    their equivalent and the key values for the information need to be identical.
+    </li>
+    <li>
+    Call the <em>setActiveLayout( String id )</em> method within the
+    LayoutRegistry. This sets the active layout to the one with the given id.
+    The PresentationFactory will be called automatically and prompt a rebuild of the
+    styled components.
+    </li>
+  </ol><h2>Association with entry point</h2>
+  <p>
+    To associate a PresentationFactory and a Layout with existing entry point, you can use the
+    <a href="branding.html"><em>org.eclipse.rap.ui.branding</em> extension point</a>.
+  </p>
+  <p>
+    <img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/interactiondesign/brandingExt.png" alt="Branding extension" /></p>
+  <p>
+    And here is the same as it appears in the plugin.xml.
+  </p>
+  <pre class="lang-xml">
+&lt;extension point="org.eclipse.rap.ui.branding"&gt;
+  &lt;branding
+    favicon="icons/perspective.gif"
+    id="org.eclipse.rap.presentation.macBarBranding"
+    themeId="org.eclipse.rap.presentation.macBarTheme"
+    title="Interactiondesign API"&gt;
+    &lt;presentationFactory
+      defaultLayoutId="org.eclipse.rap.presentation.defaultlayout"
+      id="org.eclipse.rap.presentation"
+      name="ConfigurablePF"
+      viewActionsVisible="true"&gt;
+      &lt;defaultStackPresentation
+        id="org.eclipse.rap.presentation.navigationPaneStackPresentation"
+        name="Default"&gt;
+      &lt;/defaultStackPresentation&gt;
+      &lt;stackPresentation
+        id="org.eclipse.rap.presentation.macBarStackPresentation"
+        name="topLeftMapping"
+        partId="topLeft"&gt;
+      &lt;/stackPresentation&gt;
+    &lt;/presentationFactory&gt;
+  &lt;/branding&gt;
+&lt;/extension&gt;</pre>
+  <p>
+    As you can see, the presentationFactory is an element of the branding extension and has the
+    following attributes:
+  </p>
+  <ul><li>
+      <b>id</b><br />
+      This is the id of the PresentationFactory used by associated entry point.
+    </li>
+    <li>
+      <b>defaultLayoutId</b><br />
+      This optional argument represents the id of the Layout. If no id is defined, the standard
+      workbench layout should be loaded.
+    </li>
+    <li>
+      <b>viewActionsVisible</b><br />
+      This boolean value is responsible for making all view contribution items
+      visible by default (true) or to let the user decide which items are
+      visible (false).
+    </li>
+  </ul><p>
+    The presentationFactory element can have two different sub elements.
+  </p>
+  <ol><li>
+      <b>defaultStackPresentation</b><br />
+      This represents the StackPresentation which is loaded for all parts if nothing
+      else is defined. You need to specify the id of the StackPresentation if a
+      different presentation should be loaded.
+    </li>
+    <li>
+      <b>stackPresentation</b><br />
+      This element couples a stackPresentation to a specific part. The id attribute
+      should be the id of the stackPresentation to load. The partId represents the id
+      of a part which has been defined in a perspective.
+    </li>
+  </ol><h2>Reusable web components</h2>
+  <p>
+    To style the look and feel of a RAP application many web components are also
+    required. For example, you may want to place the menubar on a header with
+    rounded corners or place the statusline in a nicely styled footer. You can
+    accomplish this with SWT Widgets but if you want to reuse these components,
+    you'll need to use also
+    <em>org.eclipse.rap.ui.interactiondesign.layout.ElementBuilder</em>. An
+    ElementBuilder is an abstract class which works hand in hand with the
+    declarative layout. You can extend it to build your own web components.<br />
+    This is a two step process.
+  </p>
+  <ol><li>
+      Extend <em>org.eclipse.rap.ui.interactiondesign.ElementBuilder</em> and
+      implement its abstract methods. The most important method is
+      <em>build()</em>. You should build your component with SWT widgets when
+      <em>build()</em> is called. Every ElementBuilder is associated to a LayoutSet
+      id which will get from the LayoutRegsitry during the instantiation of the
+      ElementBuilder. During the instantiation the builder register itself in the
+      LayoutRegistry. If a new Layout is activated the <em>dispose()</em> methods
+      from all registered ElementBuilders will be called. This means that you need to
+      be sure you dispose your component correctly in this method. If not, switching the
+      Layout on-the-fly may not work correctly.
+    </li>
+    <li>
+      The second step is to instantiate an ElementBuilder.  As an example, YourBuilder
+      is instantiated by the following snippet:
+      <pre class="lang-java">
+Composite parent = new Composite( aShell, SWT.NONE );
+ElementBuilder builder = new YourBuilder( parent, "org.eclipse.layoutSet" );</pre>
+      Be sure that your ElementBuilder implementation is initialized with a layoutSet
+      you've associated with it.
+    </li>
+  </ol><p>
+    You may recognize the idea behind the ElementBuilder - it is based on the
+    builder design pattern. This separates the component from your application
+    code allowing you to reuse the component in different places.
+  </p>
+  <p>
+    This completes our tour of the interaction design API. For questions please
+    feel free to ask in the <a href="https://www.eclipse.org/forums/eclipse.technology.rap">
+    RAP forum</a>. We'd also be glad to hear about your experiences with this
+    API and to have a look at the great new look and feels you're building for
+    your apps.
+  </p>
+
+
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a class="active" href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

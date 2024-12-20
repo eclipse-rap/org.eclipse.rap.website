@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP 3.0 Migration Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../../../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../../../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../../../script.js"></script>
+  <script type="text/javascript" src="../../../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../../../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../../../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../../../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../../../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="../migration-guide.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../../../demos/index.html">Demos</a></li><li ><a href="../../../downloads/index.html">Download</a></li><li class="active"><a href="../../../documentation/index.html">Documentation</a></li><li ><a href="../../../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../../../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../../../documentation/index.html">Overview</a></li><li><a  href="../../../developers-guide/index.html">Developer's Guide</a></li><li><a  class="active" href="../../index.html">New and Noteworthy</a></li><li><a  href="../../../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn">
+
+  <h1>RAP 3.0 Migration Guide</h1>
+
+  <p>
+    With the move to RAP 3.0, we clean up deprecated APIs and introduce replacements for API
+    that is no longer supported.
+  </p>
+
+  <h2>Cleaned up deprecated RAP 2.0 API</h2>
+
+  <p>
+    All API that had already been deprecated back in RAP 2.0 has now been removed.
+    The replacements listed below existed in RAP 2.0 already.
+    For a detailed explanation of these changes, see the
+    <a href="../../2.0/migration-guide/index.html">RAP 2.0 Migration Guide</a>.
+  </p>
+
+  <ul>
+    <li><code>Graphics</code> removed without substitution</li>
+    <li><code>IApplicationStore</code> replaced by <code>ApplicationContext</code></li>
+    <li><code>IControlThemeAdapter</code> replaced by <code>ControlThemeAdapter</code></li>
+    <li><code>IEntryPoint</code> / <code>IEntryPointFactory</code> replaced by <code>EntryPoint</code> / <code>EntryPointFactory</code></li>
+    <li><code>IResourceManager</code> replaced by <code>ResourceManager</code></li>
+    <li><code>IServiceHandler</code> replaced by <code>ServiceHandler</code></li>
+    <li><code>IServiceManager</code> replaced by <code>ServiceManager</code></li>
+    <li><code>IServiceStore</code> removed without substitution</li>
+    <li><code>ISessionStore</code> replaced by <code>UISession</code></li>
+    <li><code>ISettingStore</code> / <code>ISettingStoreFactory</code> replaced by <code>SettingStore</code> / <code>SettingStoreFactory</code></li>
+    <li><code>SessionSingletonBase</code> replaced by <code>SingletonUtil</code></li>
+    <li><code>UICallBack</code> replaced by <code>ServerPushSession</code></li>
+  </ul>
+
+  <h2>Removed lifecycle </code>package</h2>
+
+  <p>
+    The package <em>org.eclipse.rap.rwt.lifecycle</em> has been removed.
+    This package contained API related to lifecycle phases and lifecycle adapters (LCAs),
+    concepts which we consider internals of the framework.
+    These internals are subject to change and should not be accessed by application code.
+    Mostly custom widgets that predate RAP 2.0 and custom PhaseListeners will be affected.
+  </p>
+
+  <h3>Lifecycle adapters (LCAs)</h3>
+
+  <p>
+    Custom widgets used lifecycle adapters (LCAs) to communicate with their remote counterparts.
+    In RAP 2.0, the Remote API has been introduced as a replacement for LCAs
+    (see the package <em>org.eclipse.rap.rwt.remote</em>, especially <code>RemoteObject</code>).
+    Custom widgets should use this new API now.
+    The following classes have been removed without a replacement:
+  </p>
+
+  <ul>
+    <li><code>WidgetLifeCycleAdapter</code></li>
+    <li><code>AbstractWidgetLCA</code></li>
+    <li><code>WidgetLCAUtil</code> and <code>ControlLCAUtil</code></li>
+    <li><code>IWidgetAdapter</code> and <code>WidgetAdapter</code></li>
+  </ul>
+
+  <h3>WidgetUtil</h3>
+
+  <p>
+    Most of the methods in this helper class were related to LCAs. Two methods that are still
+    relevant have been moved to a new, trimmed down version of <code>WidgetUtil</code> in the
+    package <code>org.eclipse.rap.rwt.widgets</code>:
+  </p>
+
+  <ul>
+    <li><code>WidgetUtil.getId( Widget )</code></li>
+    <li><code>WidgetUtil.registerDataKeys( String... keys )</code></li>
+  </ul>
+
+  <h3>Phases and Phase Listeners</h3>
+
+  <p>
+    The request processing of the RAP server is split into different <em>Phases</em>.
+    As an application developer, you don't have to care about those phases anymore.
+    The phase model is going to change in future versions of RAP.
+  </p>
+
+  <p>
+    If you've used <code>Fixture.fakePhase( PhaseId.PROCESS_ACTION );</code> in your unit tests,
+    you can use the new public JUnit rule instead (see below).
+  </p>
+
+  <p>
+    Phase listeners are a means of executing custom code during the processing of a request.
+    Since this interface exposes internals of the framework (such asPhaseId so called lifecycle phases),
+    it has been removed in this release.
+    We did not provide a replacement so far, as we couldn't find a reasonable use case anymore.
+    If you still need this hook, you can continue to use the PhaseListener from the internal
+    package in RAP 3.0. However, please let us know so we can discuss alternatives before
+    phase listeners are removed completely.
+  </p>
+
+  <ul>
+    <li><code>PhaseEvent</code></li>
+    <li><code>PhaseId</code></li>
+    <li><code>PhaseListener</code></li>
+    <li><code>ProcessActionRunner</code></li>
+    <li><code>ILifeCycle</code></li>
+    <li><code>RWT.getLifeCycle()</code></li>
+    <li><code>Application.addPhaseListener( PhaseListener )</code></li>
+  </ul>
+
+  <h2>Replaced method in ControlThemeAdapter</h2>
+
+  <p>
+    With the support for themeable border edges, we had to replace the method
+    <code>getBorderWidth(Control)</code> in <code>ControlThemeAdapter</code>
+    with <code>getBorder(Control)</code>.
+    This class is only relevant for custom widget developers.
+  </p>
+
+  <h2>Renamed misspelled method in Application</h2>
+
+  <p>
+    In the interface <code>org.eclipse.rap.rwt.application.Application</code>,
+    we've fixed a typo in the method name <code>addThemableWidget()</code>.
+    This method has been renamed to <code>addThemeableWidget()</code>.
+  </p>
+
+  <h2>New public API for unit tests</h2>
+
+  <p>
+    If you used the internal rap test fixture in your unit tests, there's now a public replacement
+    in the bundle <em>org.eclipse.rap.rwt.testfixture</em>.
+    Instead of calling <code>Fixture.setUp()</code> and <code>Fixture.tearDown()</code>,
+    you now only need to include the following line in your test cases.
+    This will simulate a new test context for every test method.
+    There's also no need to fake the <em>PROCESS_ACTION</em> phase anymore.
+  </p>
+
+<pre lang="java">
+&#064;Rule
+public TestContext context = new TestContext();
+</pre>
+
+  <p>
+    The class <code>Fixture</code> and all its companions have been moved to the internal package
+    <em>org.eclipse.rap.rwt.testfixture.internal</em>.
+  </p>
+
+  <h2>Removed rap.junit bundles</h2>
+
+  <p>
+    The bundles had once been created to execute PDE tests with RAP.
+    As we haven't seem much interest in this approach, these projects are not actively maintained
+    anymore. They still depend on JUnit 3.
+    That's why we don't include them in RAP 3.0 anymore.
+  </p>
+
+</div>
+
+<div id="rightcolumn">
+</div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../../../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

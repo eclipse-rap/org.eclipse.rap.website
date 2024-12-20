@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="tree-table.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+  <h1>Tree, Table and the Nebula Grid</h1>
+  <h3 id="virtual">SWT Tree/Table</h3>
+  <p>
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Tree.html">Tree</a></em>
+    and
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Table.html">Table</a></em>
+    are among the most powerful widgets in SWT and RAP.
+    Thanks to <a href="tree-table.html#jface">JFace</a> and virtual
+    rendering they can easily display vast amounts of data. Any tree/table will only render HTML for the
+    items that are currently visible on screen, keeping client memory consumption low and initial
+    rendering time short regardless of item count. Also, if the widget (or viewer) is created with a
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#VIRTUAL">VIRTUAL</a></em>
+    flag, items can be created lazily. As a result, data that is not (yet) visible will also
+    not be transferred to the client. However, you will also experience a small rendering delay
+    when scrolling to previously unseen data. You can reduce this effect by
+    <a href="tree-table.html#caching">pre-caching</a> some items.
+  </p>
+  <h3 id="nebula">Nebula Grid</h3>
+  <p>
+    In addition to the <em>Tree</em> and <em>Table</em> widgets, RAP also includes a port of the
+    <a href="https://www.eclipse.org/nebula/widgets/grid/grid.php">Nebula</a>
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/nebula/widgets/grid/Grid.html"><em>Grid</em></a> and
+    it's <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/nebula/jface/gridviewer/package-summary.html">JFace
+    Viewers</a>.
+    (As of RAP 3.0. RAP 2.x compatible ports of the Grid are available in the
+    <a href="http://eclipse.org/rap/incubator/">RAP Incubator</a>.)
+    The <em>Grid</em> API is very similar to <em>Tree</em> and <em>Table</em>,
+    but includes a number of additional features like column grouping,
+    checkboxes on multiple columns, variable/automatic item height, and a column footer.
+    (Note that for technical reasons the RAP port can only support a subset of the features of the
+    original Nebula Grid.)
+  </p>
+  <p>
+    The <em>Grid</em> and it's viewers are placed in separate bundles. To use them you need
+    to add a dependency from your project to the <em>org.eclipse.rap.nebula.widgets.grid</em>
+    and <em>org.eclipse.rap.nebula.jface.gridviewer</em> Plug-Ins, or to the
+    <em>org.eclipse.nebula.widgets.grid</em> and <em>org.eclipse.nebula.jface.gridviewer</em>
+    packages.
+  </p>
+
+  <h3 id="enhancements">RAP Enhancements</h3>
+  <p>
+    RAP adds some some significant functionality to <em>Tree</em>, <em>Table</em> and <em>Grid</em>
+    not found in their SWT/Nebula counterparts. Like most RAP enhancements, these features are
+    <a href="rwt.html#setdata">activated using the <em>setData</em> method</a>. Even when
+    using a viewer this can still be done in one line:
+  </p>
+  <pre class="lang-java">viewer.getTable().setData( RWT.MARKUP_ENABLED, Boolean.TRUE );</pre>
+  <p>
+    The following is a list of RAP exclusive features supported by
+    <em>Tree</em>, <em>Table</em> and/or <em>Grid</em>:
+  </p>
+
+    <h3 id="fixedcolumns">Fixed Columns (Tree and Table)</h3>
+    <p>
+      When a table or tree displays many columns, the user often has to scroll horizontally to see
+      specific data.
+      Doing so means losing sight of the first columns, which may contain vital information that
+      should be visible at all times.
+      Using
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#FIXED_COLUMNS">RWT.FIXED_COLUMNS</a></em>,
+      it is possible to exclude any number of leftmost
+      columns from scrolling, so that they always stick on the left side of the tree or table.</p>
+    <p>
+      Example:
+    </p>
+    <pre class="lang-java">tree.setData( RWT.FIXED_COLUMNS, new Integer( 1 ) );</pre>
+
+    <h3 id="templats">Templates (Tree, Table and Grid)</h3>
+    <p>
+      Row templates allow developers to customize the way a Table/Tree/Grid present
+      items on screen, completely replacing the default column layout.
+      A template consists of text and image cells that can be freely arranged.
+      These cells can display either data from an item, or static content.
+    </p>
+    <p>
+      <img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/rowtemplate.png" /></p>
+    <p>
+      To create a new template, construct an instance of the
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/template/Template.html">Template</a></em> class,
+      and then add any number of
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/template/ImageCell.html">ImageCell</a></em> and
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/template/TextCell.html">TextCell</a></em> instances.
+      To apply it,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#ROW_TEMPLATE">RWT.ROW_TEMPLATE</a></em> is used:
+    </p>
+    <pre class="lang-java">Template template = new Template();
+ImageCell imageCell = new ImageCell( template );
+TextCell nameCell = new TextCell( template );
+//... configure cells
+table.setData( RWT.ROW_TEMPLATE, template );</pre>
+    <p>
+      The call to <em>setData</em> should be placed directly after the controls creation.
+      Once a template is applied to a control it will no longer be affected by changes to the template.
+      The same template instance can also be applied to multiple controls.
+    </p>
+    <p>
+      To position a cell, you have to set exactly two horizontal and two vertical dimensions
+      (two out of left, right and width, and two out of top, bottom and height). The cells are
+      positioned relative to the area that is available to display
+      the current item - which is usually the inner width of the Tree/Table/Grid widget and the height
+      given using <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#CUSTOM_ITEM_HEIGHT">RWT.CUSTOM_ITEM_HEIGHT</a></em> or the <em>Grid.setItemHeight</em> method.
+      The values for left, top, right and bottom may be absolute (in pixel), relative
+      (in percentage), or the sum of both. The values for width and height may only be absolute.
+    </p>
+    <pre class="lang-java">imageCell.setLeft( 40, 0 ).setWidth( 48 ).setTop( 4 ).setBottom( 33.33f, 4 );</pre>
+    <p>
+      All cells can by further styled with colors, fonts, alignments, etc.
+      Since all setter return the cell instance, chaining the commands as shown
+      above is always possible. Note that as of RAP 2.2, the vertical alignment property
+      is not supported for text cells, only for image cells.
+    </p>
+    <p>
+      Each cell can either display static content (using
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/template/TextCell.html#setText-java.lang.String-">setText</a></em> or
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/template/ImageCell.html#setImage-org.eclipse.swt.graphics.Image-">setImage</a></em>
+      on the cell itself), or content form the current Tree/Table/Grid item. For this the cell
+      needs to be bound to a specific column using the
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/template/Cell.html#setBindingIndex-int-">bindingIndex</a></em>. For example, this
+      shows only the text from the first column:
+    </p>
+    <pre class="lang-java">Table table = new Table( parent, SWT.FULL_SELECTION );
+new TableColumn( table, SWT.NONE ); // important
+Template template = new Template();
+TextCell textCell = new TextCell( template );
+textCell.setLeft( 0 ).setRight( 0 ).setTop( 0 ).setBottom( 0 );
+textCell.setBindingIndex( 0 );
+table.setData( RWT.ROW_TEMPLATE, template );
+TableItem item = new TableItem( table, SWT.NONE );
+item.setText( 0, "Data in the first column" );</pre>
+    <p>
+      Please note that while it is not useful to set the <em>headerVisible</em> property to true if
+      row templates are used, it is still necessary to create column objects. They don't need
+      a text or width though.
+    </p>
+    <p>
+      Cells can also be
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/template/Cell.html#setSelectable-boolean-">selectable</a>.
+      When a selectable cell is clicked on,
+      it does not select the item, but triggers a selection event with the
+      event.detail field set to <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#CELL">RWT.CELL</a></em>.
+      Items can still be selected by clicking elsewhere, though <strong>the selection is only visible if the
+      SWT.FULL_SELECTION style flag is set</strong>.
+      If multiple cells in a template are selectable, cells
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/template/Cell.html#setName-java.lang.String-">can be given a name</a>
+      that is reflected in the <em>event.text</em> field in order to identify the selected cell.
+    </p>
+    <h3 id="markup">Markup Support (Tree, Table and Grid)</h3>
+    <p>
+      You can use the <a href="markup.html#markup">markup feature</a> to format the text
+      within a cell or embed links and additional images.
+      See also <q><a href="markup.html#grid">Markup on List, Tree, Table and Grid</a></q>.
+    </p>
+
+    <h3 id="break">Line breaks in Columns (Tree, Table and Grid)</h3>
+    <p>
+      Unlike SWT, RAP supports line breaks (<q>\n</q>) in a columns text property.
+    </p>
+
+    <h3 id="caching">Item Pre-Caching (Tree and Table)</h3>
+    <p>
+      By default, a <em>VIRTUAL Tree/Table</em> will resolve only items currently on screen. If an unresolved
+      item becomes visible, a placeholder (<q>...</q>) will be displayed while data is transferred to the client.
+      This can often be avoided by also resolving a number of items above and below the visible area.
+      You can set the amount of items to be pre cached using
+      <code><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#PRELOADED_ITEMS">RWT.PRELOADED_ITEMS</a></code>.
+    </p>
+
+    <h3 id="rendering">Selection/Hover rendering order (Tree, Table and Grid)</h3>
+    <p>
+      <b>Note:</b><em>Grid</em> uses the theming of <em>Tree</em>, so everything in this section that applies to the Tree also applies to the Grid.
+    </p>
+    <p>
+      Any item and every cell of an item may have a custom background to highlight a specific unit
+      of data. In SWT (and RAP, by default), hovering or selecting such an item will completely
+      overlay these backgrounds, essentially removing onscreen information. This behavior
+      can be configured in RAP using the CSS Theming API. Note that any item that has a background
+      set on all cells (or the item itself), will only be identifiable as selected by the text color,
+      or not at all (if there is <i>also</i> a custom foreground set).
+    </p>
+    <p>
+     In addition to the
+     <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Table.html#TableItem">TableItem</a></em> /
+     <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Tree.html#TreeItem">TreeItem</a></em>
+     theming elements, there are also
+     <em style="white-space:nowrap;"><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Table.html#Table-RowOverlay">Table-RowOverlay</a></em> /
+     <em style="white-space:nowrap;"><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Tree.html#Tree-RowOverlay">Tree-RowOverlay</a></em>
+     elements. In the default theme,
+     these overlay elements are used to define the hover and selection behavior. If you wish
+     for the item backgrounds to paint over the selection/hover effects, you will have to use
+     these overlay element to create the effects. (You can also mix, so that hover or selection
+     paints over the backgrounds, but not the other.)
+    </p>
+    <p>
+      Assuming you implement a
+      <a href="theming.html#custom">complete custom theme</a>,
+      this is easy. Simply use <i>only</i> the item element
+      to define the effect and define the overlay element as below:
+    </p>
+    <pre class="lang-css">
+Table-RowOverlay {
+  background-color: transparent;
+  color: inherit;
+  background-image: none;
+}</pre>
+    <p>
+      If you wish to only make a
+      <a href="theming.html#contribution">theme contribution</a>,
+      you also need to overwrite every possible
+      combination for the overlay element that may be defined in the main/default theme:
+    </p>
+    <pre class="lang-css">Table-RowOverlay,
+Table-RowOverlay:hover,
+Table-RowOverlay:selected,
+Table-RowOverlay:selected:unfocused,
+Table-RowOverlay:linesvisible:even:hover,
+Table-RowOverlay:linesvisible:even:selected,
+Table-RowOverlay:linesvisible:even:selected:unfocused {
+  background-color: transparent;
+  color: inherit;
+  background-image: none;
+}</pre>
+    <p>
+      To create the new hover/selection effect you then have to define some or all of these combinations for the
+      item element, for example:
+    </p>
+    <pre class="lang-css">TableItem:hover {
+  color: #4a4a4a;
+  background-color: #b5b5b5;
+  background-image: gradient(
+    linear, left top, left bottom,
+    from( #ebebeb ),
+    to( #d5d5d5 )
+  );
+}
+
+TableItem:selected,
+TableItem:linesvisible:even:selected {
+  color: #ffffff;
+  background-color: #5882b5;
+  background-image: gradient(
+    linear, left top, left bottom,
+    from( #5882b5 ),
+    to( #416693 )
+  );
+}</pre>
+    <p>
+      Alternatively, it's also possible to define semi-transparent background colors for the
+      overlay element using the
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Properties.html#format/rgba-color">rgba notation</a>.
+      This would then create a hover/selection effect
+      with the items background color(s) shining through.
+    </p>
+
+
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a class="active" href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

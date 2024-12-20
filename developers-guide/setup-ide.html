@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="setup-ide.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>Setting up the Eclipse IDE</h1>
+  <p>
+    To get started with RAP, it's recommended to set up an Eclipse IDE with the
+    <strong>RAP Tools</strong> installed.
+    The RAP Tools provide useful IDE extensions for RAP application development such as a
+    target installer
+    and launchers for RAP applications.
+    The RAP developer's guide (which you are currently reading) is also included.
+  </p>
+
+  <h2>Option One: Get a complete IDE package</h2>
+  <p>
+    The most convenient way to get the RAP Tools is using the Eclipse package
+    <em>for RCP and RAP Developers</em> from the
+    <a href="https://www.eclipse.org/downloads/">Eclipse download page</a>.
+    This IDE includes everything you need to develop RCP and RAP applications, and
+    you can skip to <a href="target-install.html">installing the target platform</a>.
+  </p>
+
+  <h2>Option Two: Install the RAP Tools into an existing Eclipse IDE</h2>
+  <p>
+    If you rather want to use an existing Eclipse IDE, you can also get the RAP Tools
+    separately and install them as an add-on:
+  </p>
+  <ul><li>
+      With Eclipse up and running, select <em class="UILabel">Help &gt; Install New Software…</em>
+      from the main menu.
+    </li>
+    <li>
+      Enter the RAP Update Site URL
+      <em>http://download.eclipse.org/rt/rap/tools/3.1</em>
+      into the <em class="UILabel">Work with</em> field and press Enter.
+      <br /><strong>Note:</strong> The RAP 3.1 Tools can only be installed into an Eclipse IDE version 4.5 (Mars) or newer.
+    </li>
+    <li>
+      After a short while, an entry labeled <em>Remote Application Platform (RAP)</em> appears
+      in the list below. Depending on your Eclipse IDE version, select the corresponding check box
+      and click <em class="UILabel">Next</em>.
+    </li>
+    <li>
+      On the next page you may review the installation details.
+    </li>
+    <li>
+      Accept the terms in the license agreement and click the
+      <em class="UILabel">Finish</em> button.
+    </li>
+    <li>
+      The features and plug-ins will now be downloaded from the repository and
+      installed locally.
+    </li>
+    <li>
+      Confirm the following prompt to restart Eclipse.
+    </li>
+  </ul><p>
+    You can also get a zipped version of the RAP Tools repository from the RAP
+    <a href="https://www.eclipse.org/rap/downloads/">Download page</a>.
+  </p>
+
+
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a class="active" href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

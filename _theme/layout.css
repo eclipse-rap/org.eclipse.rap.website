@@ -27,7 +27,7 @@ html {
   top: 33px;
   width: 196px;
   height: 83px;
-  background: url( "/rap/images/RAP-logo.png" ) no-repeat;
+  background: url( "../images/RAP-logo.png" ) no-repeat;
 }
 
 #rap-logo-deco {
@@ -37,7 +37,7 @@ html {
 }
 
 #rap-logo-deco.active {
-  background-image: url( /rap/images/nav-selection.png );
+  background-image: url( ../images/nav-selection.png );
   background-position: center bottom;
   background-repeat: no-repeat;
 }
@@ -90,7 +90,7 @@ html {
 }
 
 #navigation > ul > li.active {
-  background-image: url( /rap/images/nav-selection.png );
+  background-image: url( ../images/nav-selection.png );
   background-position: center bottom;
   background-repeat: no-repeat;
 }
@@ -223,7 +223,7 @@ ul p {
 }
 
 li {
-  list-style-image: url( "/rap/images/list-bullet.png" );
+  list-style-image: url( "../images/list-bullet.png" );
   list-style-position: outside;
   margin-left: 10px;
   padding: 5px 10px 5px 0;
@@ -580,7 +580,7 @@ div#features > div.feature > div.icon {
 }
 
 div#features > div.feature > div.icon {
-  background-image: url( /rap/images/features-sprite.png );
+  background-image: url( ../images/features-sprite.png );
 }
 
 div#features > div.feature#ui-kit > div.icon {
@@ -690,7 +690,7 @@ div#blog-posts > .rssBody > ul > li > p {
 }
 
 .sideitem .modal {
-  background: #FFF url('/eclipse.org-common/themes/Nova/images/thinModalBg.png') repeat-x;
+  background: #FFF url('https://eclipse.dev/eclipse.org-common/themes/Nova/images/thinModalBg.png') repeat-x;
   padding: 5px;
 }
 
@@ -795,7 +795,7 @@ span.download-icon {
   top: 6px;
   width: 24px;
   height: 24px;
-  background: url( /rap/images/button-icons-small.png ) 0 0;
+  background: url( ../images/button-icons-small.png ) 0 0;
 }
 
 /* Expand areas on download page */

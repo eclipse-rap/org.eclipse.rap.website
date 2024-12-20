@@ -1,0 +1,356 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="application-setup.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>Choosing an Application Setup</h1>
+  <p>
+    RAP can be combined with various other technologies and deployed in different setups.
+    Your choice of an application setup depends on the technologies you want to use and the
+    server you need to deploy the application on.
+  </p>
+
+  <h2 id="osgi">OSGi or stand-alone?</h2>
+  <p>
+    OSGi is a module platform for Java that allows you to organize your application in loosely
+    coupled modules, called bundles, that communicate over a service infrastructure.
+    Eclipse is based on OSGi and provides a lot of bundles that you can re-use in your application.
+    RAP is designed to work with any standard-compliant OSGi implementation.
+    It is often used on Equinox, the OSGi reference implementation by Eclipse, but can also
+    run on other OSGi containers like Apache Felix.
+  </p>
+  <p>
+    If you don't need or don't like to use OSGi in your web application, you can still use RWT as a
+    normal Java library. This setup is usually referred to as
+    <em><a href="rwt-standalone.html">RWT standalone</a></em>.
+  </p>
+
+  <h2>Direct or WAR-Deployment?</h2>
+  <p>
+    OSGi-based applications can be deployed in basically two different ways.
+  </p>
+  <ul><li>
+      The application bundles can be deployed directly in an OSGi container such as Equinox or Felix.
+      In this case, a servlet engine bundle must be running in the same OSGi instance.
+      The Jetty servlet engine is available as OSGi bundles and is a good choice for this setup.
+    </li>
+    <li>
+      It is also possible to deploy an OSGi-based application to a servlet container.
+      To do so, an Equinox OSGi instance including the application bundles is wrapped
+      in a web archive (.war file) using the Equinox servlet bridge.
+      This approach is explained in the <a href="deployment.html">WAR deployment guide</a>.
+    </li>
+  </ul><p>
+    When using RWT stand-alone, the RWT servlet is
+    <a href="rwt-standalone.html#deploy">configured directly</a> in the application's web.xml file.
+  </p>
+
+  <h2 id="compat">JEE or SWT compatibility?</h2>
+  <p>
+    RWT has two different modes of operation, which can be configured in the
+    <a href="application-configuration.html">application configuration</a>.
+    The default one is <strong>fully compatible with JEE</strong>, lightweight, and supports transparent
+    session failover in
+    <a href="http://wiki.eclipse.org/RAP/RWT_Cluster">clustering environments</a>
+    (clustering currently requires an RWT standalone setup).
+    This is the recommended operation mode in most cases.
+  </p>
+  <p>
+    As an alternative, the <strong>SWT compatibility mode</strong> exactly emulates the SWT threading model.
+    To make this possible, a separate UI thread has to be started for every user session.
+    As a consequence, the code running in the UI thread cannot directly access JEE transaction
+    or security contexts.
+  </p>
+  <p>
+    The SWT compatibility mode is only required for code that uses SWT's few blocking APIs.
+    The most obvious case are blocking dialogs (i.e. calling <code>dialog.open()</code> will suspend code
+    execution until the dialog is closed by the user, and then return a value).
+    In JEE mode, code execution will continue after opening the dialog, but any operations reacting
+    to closing the dialog must be done in a callback.
+    RAP provides an
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Dialog.html#open-org.eclipse.rap.rwt.widgets.DialogCallback-">additional API</a>
+    that can be used for those dialog callbacks.
+    This mechanism does not exist in SWT.
+  </p>
+  <p>
+    Another blocking API in SWT are the <em>Browser</em>-widget's execute and evaluate
+    methods. Their return value can also be obtained
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/browser/Browser.html#evaluate-java.lang.String-org.eclipse.rap.rwt.widgets.BrowserCallback-">using callback API</a>,
+    but this may be problematic when developing
+    <a href="custom-widget.html#browser">browser-based custom widgets</a>.
+  </p>
+
+  <h2 id="workbench">Eclipse Workbench (RCP)</h2>
+  <p>
+    If you're building an application based on the Eclipse workbench, you need a platform that
+    includes the Equinox OSGi implementation and the extension registry.
+    Moreover, these applications require the SWT compatibility mode.
+  </p>
+
+  <h3>Eclipse 3.x</h3>
+  <p>
+    The application and all contributions, such as views or themes, must be
+    <a href="branding.html">registered as extensions</a>.
+  </p>
+
+  <h3>Eclipse 4.x</h3>
+  <p>
+    Eclipse 4.x applications can run on RAP using the E4 support in the
+    <a href="https://www.eclipse.org/rap/incubator/">RAP Incubator</a>.
+    For details, see the
+    <a href="http://wiki.eclipse.org/RAP/Eclipse4">RAP E4 wiki page</a>.
+  </p>
+
+  <h2 id="summary">Summary</h2>
+  <p>
+    Here is a comparison of 3 typical RAP-setups:
+  </p>
+  <table width="100%" border="1" cellpadding="3" cellspacing="0"><tr><th align="left" width="10%"></th>
+      <th align="left" width="30%">RAP with OSGi</th>
+      <th align="left" width="30%">RAP with Workbench</th>
+      <th align="left" width="30%">RWT Standalone</th>
+    </tr><tr><th align="left">Summary</th>
+      <td>Lightweight and flexible, recommended for new applications that do not use Eclipse extensions</td>
+      <td>For applications using the Eclipse Workbench (RCP applications)</td>
+      <td>No OSGi, RWT used as a library in a traditional web app</td>
+    </tr><tr><th align="left">OSGi</th>
+      <td>Compatible with any OSGi implementation including Equinox</td>
+      <td>Eclipse Equinox required</td>
+      <td>No OSGi</td>
+    </tr><tr><th align="left">Deployment</th>
+      <td>
+        As WAR file in servlet container or directly in OSGi container with embedded server.
+        Direct access to JEE contexts possible with JEE compatibility mode.
+      </td>
+      <td>
+        As WAR file in servlet container or directly in OSGi container with embedded server.
+      </td>
+      <td>
+        As WAR file in servlet container.
+        Direct access to JEE contexts possible with JEE compatibility mode.
+        Clustering supported.
+      </td>
+    </tr><tr><th align="left">Configuration</th>
+      <td>
+        Using the <a href="application-configuration.html">Application Configuration</a> API
+      </td>
+      <td>
+        Using extension points <a href="branding.html">Branding</a>
+      </td>
+      <td>
+        Using the <a href="application-configuration.html">Application Configuration</a> API
+        <a href="rwt-standalone.html#deploy">RWT servlet and application configured in web.xml.</a>
+      </td>
+    </tr><tr><th align="left">Entry-point</th>
+      <td><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/EntryPoint.html">EntryPoint</a></em></td>
+      <td><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/EntryPoint.html">EntryPoint</a></em> or <em><a href="http://help.eclipse.org/topic/org.eclipse.platform.doc.isv/reference/api/org/eclipse/equinox/app/IApplication.html">IApplication</a></em></td>
+      <td><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/EntryPoint.html">EntryPoint</a></em></td>
+    </tr><tr><th align="left">Operation Modes</th>
+      <td>SWT or JEE compatibility mode</td>
+      <td>SWT compatibility mode enforced</td>
+      <td>SWT or JEE compatibility mode</td>
+    </tr><tr><th align="left">RCP Compatibility</th>
+      <td>SWT, JFace</td>
+      <td>SWT, JFace, Workbench</td>
+      <td>SWT, JFace</td>
+    </tr><tr><th align="left">Launch from IDE</th>
+      <td><a href="launcher.html#rap-launcher">RAP Launcher</a></td>
+      <td><a href="launcher.html#rap-launcher">RAP Launcher</a></td>
+      <td><a href="launcher.html#rwt-launcher">RWT Launcher</a></td>
+    </tr></table>
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a class="active" href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

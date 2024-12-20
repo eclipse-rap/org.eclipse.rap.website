@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Articles</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="index.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  href="../developers-guide/index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  class="active" href="index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn">
+
+  <h1>Articles</h1>
+
+  <p>
+    A lot of articles and tutorials have been published about RAP:
+  </p>
+  <ul>
+    <li>
+      Article (<img src="../images/de.gif" alt="German"/>):
+      <a href="http://it-republik.de/jaxenter/eclipse-magazin-ausgaben/Eclipse-Mobil-000503.html">RCP/RAP in der Praxis</a>,
+      Ein Einblick in eine Entwicklungsabteilung auf dem Gesundheitsmarkt, Eclipse Magazin,
+      June 2012, Moritz Hanke und Paul Petershagen
+    </li>
+    <li>
+      Interview (<img src="../images/de.gif" alt="German"/>):
+      <a href="http://it-republik.de/jaxenter/artikel/RAP-in-Indigo-Die-neue-Auflage-der-Rich-Ajax-Platform-3909.html">RAP in Indigo: Die neue Auflage der Rich Ajax Platform, jax enter</a>,
+      Juli 2011, Ralf Sternberg
+    </li>
+    <li>
+      Article (<img src="../images/de.gif" alt="German"/>):
+      <a href="http://www.heise.de/developer/artikel/Einfuehrung-in-die-Rich-Ajax-Platform-RAP-1168361.html">
+      Einführung in die Rich Ajax Platform (RAP), heise online</a>,
+      Jan 2011, Rüdiger Herrmann, Ralf Sternberg
+    </li>
+    <li>
+      Interview
+      (<img src="../images/de.gif" alt="German"/>):
+      <a href="http://it-republik.de/jaxenter/artikel/Eclipse-RAP-Helios-3210.html">Eclipse RAP in Helios, jax enter</a>,
+      Juli 2010, Rüdiger Herrmann
+    </li>
+    <li>
+      Whitepaper: <a href="../resources/readAndDispatch.pdf">
+      Apartment threading in RAP</a>,
+      August 2009, Benjamin Muskalla
+    </li>
+    <li>
+      Tutorial: <a href="http://wiki.eclipse.org/RAP/BIRT_Integration">
+      How to integrate BIRT into RAP applications</a>,
+      July 2009, Benjamin Muskalla
+    </li>
+    <li>
+      Tutorial: <a href="http://www.vogella.de/articles/EclipseRAP/article.html">
+      Eclipse Rich Ajax Platform (RAP) - Tutorial with Eclipse 3.5 (Galileo)</a>,
+      June 2009, Lars Vogel
+    </li>
+    <li>
+      Book: <a href="http://www.rap-book.com" target="_blank">
+      Eclipse Rich Ajax Platform - Bringing Rich Clients to the Web</a>
+      Fabian Lange, Nov 2008
+    </li>
+    <li>
+      <a href="http://eclipse.dzone.com/articles/chat-rap">
+      Chat on the RAP</a>, Nov 24th, 2008, Glenn Galang
+    </li>
+    <li>
+      Webinar: Single-Sourcing Techniques for RAP and RCP, Oct 23, 2008, Frank Appel
+      <br />
+      <a href="http://download.eclipsesource.com/rap/webinar/Single_Sourcing_RAP_RCP_en.pdf">
+        PDF Slides
+      </a>
+      &nbsp;&nbsp;
+      <a href="http://download.eclipsesource.com/rap/webinar/Single_Sourcing_RAP_RCP_examples.zip">
+        Code examples
+      </a>
+      &nbsp;&nbsp;
+      <a href="http://download.eclipsesource.com/rap/webinar/Single_Sourcing_RAP_RCP_en.mp4">
+        MP4 Recording
+      </a>
+      &nbsp;&nbsp;
+      <a href="http://download.eclipsesource.com/rap/webinar/Single_Sourcing_RAP_RCP_en.wmv">
+        WMV Recording
+      </a>
+      &nbsp;&nbsp;(~ 60 Minutes)
+    </li>
+    <li>
+      Article:
+      <a href="http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-ganymede-pt2.html" target="_blank">
+      Using Eclipse Ganymede to develop for the desktop, Web and mobile devices,
+      Part 2: Developing for the Rich Client Platform, the Ganymede way</a>
+      IBM developerWorks, Sep 9, 2008, Suresh Krishna &amp; Trebor Fenstermaker
+    </li>
+    <li>
+      Article (<img src="../images/de.gif" alt="German"/>):
+      <a target="_blank" href="http://www.oio.de/public/opensource/eclipse-rap/tutorial-eclipse-rich-application-plattform-portierung.htm">
+      Einsatzm&ouml;glichkeiten der Eclipse RAP</a> April 2008, Steffen Sch&auml;fer
+    </li>
+    <li>
+      Webinar:
+      <a target="_blank" href="http://live.eclipse.org/node/450">
+      Rich AJAX Platform (RAP) Project</a> Feb 13, 2008, Jochen Krause
+    </li>
+    <li>
+      Article:
+      <a target="_blank" href="http://www.ibm.com/developerworks/library/os-eclipse-richajax1/index.html">
+      Web 2.0, the Eclipse way, Part I</a>,
+      <a target="_blank" href="http://www.ibm.com/developerworks/library/os-eclipse-richajax2/index.html">
+      Part II</a>: An article at IBM developerWorks, Dec 11, 2007,
+      by Chris Aniszczyk &amp; Benjamin Muskalla
+    </li>
+    <li>
+      Article:
+      <a target="_blank" href="http://www.devx.com/webdev/Article/36101/0/page/1">
+      The Rich get Richer: RAP builds on RCP</a> DevX, Nov 27, 2007, Riccardo Govoni (Google)
+    </li>
+    <li>
+      Article:
+      <a href="http://www.innoopract.com/fileadmin/user_upload/Dokumente/Web-enabled_RCP_Applications_with_the_Rich_Ajax_Platform_pdf.pdf" target="_blank">
+      RCP goes Web 2.0</a> September 28, 2007
+    </li>
+    <li>
+    Blog / Video:
+    <a href="http://eclipsenuggets.blogspot.com/2007/09/see-how-you-can-make-rcp-application.html" target="_blank">
+      See how you can make an RCP Application run in your browser</a> Sept 11, 2007, Elias Volanakis
+    </li>
+  </ul>
+
+</div>
+
+<div id="rightcolumn">
+
+  
+<div class="sideitem">
+
+  <h6>Recent RAP Posts
+    <a href="http://eclipsesource.com/blogs/tag/rap/feed/" class="rssIcon"><img src="../images/feed-black.png" alt="feed" /></a></h6>
+  <div class="sideitemcontent">
+    <div id="rapFeed"></div>
+    <script type="text/javascript">
+      $( document ).ready( function () {
+        $( '#rapFeed' ).rssfeed( 'http%3A%2F%2Feclipsesource.com%2Fblogs%2Ftag%2Frap%2Ffeed%2F', {
+          limit: 4,
+          header : false,
+          key : "ABQIAAAADaXzprMke0eXhl5lyjwBJhQirors1Oy_y16QJctfjrSpBJX32hS_wL3O0Tk2wYierOO2_dXAoE0AMQ",
+          titletag : "h5",
+          date : false,
+          content : true
+        } );
+      } );
+    </script>
+  </div>
+</div>
+
+</div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

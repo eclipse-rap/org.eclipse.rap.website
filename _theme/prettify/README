@@ -1,7 +1,0 @@
-http://code.google.com/p/google-code-prettify/
-
-Removed the following line from prettify.css:
-
-  pre.prettyprint{padding:2px;border:1px solid #888}
-
-Included in files /_header.php and activated in /_footer.php

@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP 2.2 - New and Noteworthy</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../../script.js"></script>
+  <script type="text/javascript" src="../../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="index.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../../demos/index.html">Demos</a></li><li ><a href="../../downloads/index.html">Download</a></li><li class="active"><a href="../../documentation/index.html">Documentation</a></li><li ><a href="../../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../../documentation/index.html">Overview</a></li><li><a  href="../../developers-guide/index.html">Developer's Guide</a></li><li><a  class="active" href="../index.html">New and Noteworthy</a></li><li><a  href="../../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn">
+
+  <h1>RAP 2.2 - New and Noteworthy</h1>
+
+  <p>
+    Here's a list of the most noteworthy things in the RAP
+    2.2 release      which is available for <a href="https://www.eclipse.org/rap/downloads/">download</a>
+      since December 20, 2013.
+  </p>
+
+<div>
+
+  <h3>Updating from RAP 1.5 (Eclipse Juno)?</h3>
+  <p>
+    You may also check the
+    <a href="../2.0/index.html">New and Noteworthy for RAP 2.0</a> and the
+    <a href="../2.0/migration-guide/index.html">RAP 2.0 migration guide</a>.
+  </p>
+
+  <h2>Widget Set</h2>
+
+  <h3>Row Templates</h3>
+
+  <p>
+    We introduced row templates, a new feature that allows you replace the column layout model of
+    a table ore tree with a custom presentation.
+    Templates consist of cells that can be freely arranged.
+    A cell can display a text or an image from the table item, but also static content.
+  </p>
+  <p>
+    <img class="framed" alt="A table with row template" src="images/row-template.png"/>
+  <p>
+    To apply a row template on a Table or a Tree, use the <em>setData()</em> method with the
+    new constant <em>RWT.ROW_TEMPLATE</em> as key:
+  </p>
+<pre class="lang-java">
+Table table = new Table( parent, SWT.FULL_SELECTION );
+// Add as many columns as a single table item will have texts/images:
+new TableColumn();
+Template template = new Template();
+// ... create template cells here, the set the template:
+table.setData( RWT.ROW_TEMPLATE, template );
+</pre>
+  <p>
+    To position a cell, you have to set exactly two horizontal and two vertical dimensions
+    (two out of <em>left</em>, <em>right</em>, and <em>width</em> and two out of <em>top</em>,
+     <em>bottom</em>, and <em>height</em>). Cells can also be selectable.
+    When a selectable cell is clicked it does not mark the the item itself as selected.
+    Item selection is still possible (clicking anywhere but on a selectable cell),
+    but only visualized if the <em>SWT.FULL_SELECTION</em>
+    flag is set.
+  </p>
+  <p>
+    Row templates are currently supported by <em>Tree</em> and <em>Table</em>, but we plan to
+    apply this concept on other widgets in the future.
+    All details are covered in
+    the Developer's Guide article on
+    <a href="../../developers-guide/tree-table.html#templates">Tree and Table Enhancements</a>.
+  </p>
+
+  <h3>FileUpload supports Multiple File Selection</h3>
+
+    <p>
+      The <em>FileUpload</em> widget
+      now allows selecting and uploading multiple files at once in HTML5 enabled browsers. To enable
+      this feature, create the widget with the <em>SWT.MULTI</em> style flag like this:
+    </p>
+<pre class="lang-java">
+  FileUpload fileUpload = new FileUpload( parent, SWT.MULTI );
+</pre>
+    <p>
+      To obtain the filenames from the widget, the method <em>getFileNames</em> has been introduced.
+      The method <em>getFileName</em> still exists and will return the first selected file.
+    </p>
+    <p>
+      In browsers that do not support this feature (such as Internet Explorer 8) the <em>MULTI</em>
+      flag will simply be ignored.
+    </p>
+    <p>
+      The <a href="http://eclipse.org/rap/incubator/">RAP Incubator</a> file upload component
+      and the <em>FileDialog</em> implementation have been updated to make use of this new feature.
+    </p>
+
+  <h3>Modernized ToolTips</h3>
+
+  <p>
+    The look and feel of tooltips has been improved and fine-tuned:
+  </p>
+  <ul>
+    <li>
+      ToolTips for buttons, items and fields will now be placed above/below (in some cases besides)
+      the widget and they have a little pointer pointing to the widget.
+      See also “<a href="index.html#tooltiptheming">Revised and Extended ToolTip Theming</a>”.
+    </li>
+    <li>
+      ToolTips generated by the <em>setToolTipText</em> method appear faster than before.
+      The exact delay is adjusted to the widget type.
+    </li>
+    <li>
+      ToolTips will no longer disappear automatically after a short timeout. The exact conditions
+      for them to disappear depend on the widget, but they will always disappear when the mouse
+      is moved away from the widget or when a key is pressed.
+    </li>
+    <li>
+      Appear and disappear animations are skipped when they are not needed.
+    </li>
+  </ul>
+
+  <p>
+    <img src="images/tooltips.png"/>
+  </p>
+
+  <h3>Markup Support for ToolTips</h3>
+
+  <p>
+    The <em>ToolTipText</em> property and the <em>ToolTip</em> widget now support
+    markup, including hyperlinks. To enable tooltip markup for on any widget with a <em>setToolTipText</em> method,
+    use the <em>RWT.TOOLTIP_MARKUP_ENABLED</em> constant like this:
+  </p>
+<pre class="lang-java">
+widget.setData( RWT.TOOLTIP_MARKUP_ENABLED, Boolean.TRUE );
+widget.setToolTipText( "This is a tooltip&lt;br/&gt;&lt;i&gt;with&lt;/i&gt; &lt;b&gt;some&lt;/b&gt; &lt;big&gt;markup&lt;/big&gt;" );
+</pre>
+  <img src="images/tooltip-markup.png"/>
+  <p>
+    For the <em>ToolTip</em> widget, the API is the same as it is for other
+    widget:
+  </p>
+<pre class="lang-java">
+toolTip.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+</pre>
+
+  <h3>Pre-load items in virtual Tree and Table</h3>
+
+  <p>
+    To improve the responsiveness of a virtual Tree or Table, we added the possibility to
+    specify a number of items to be pre-loaded by the client.
+    When scrolling the table in small steps, pre-loaded items will appear immediately. Example:
+  </p>
+<pre class="lang-java">
+Table table = new Table( parent, SWT.VIRTUAL );
+table.setData( RWT.PRELOADED_ITEMS, new Integer( 10 ) );
+</pre>
+  <p>
+    With this snippet, in addition to visible items in the Tree/Table client area, another 10
+    items (above and below) will be resolved and sent to the client.
+  </p>
+
+  <h2>RWT Scripting</h2>
+
+  <h3>Migrated ClientScripting to RAP Core</h3>
+
+  <p>
+    The ClientScripting project has been graduated from the incubator and is now included in the RAP core
+    as “RWT Scripting”. Using the new <em>ClientListener</em> class, it is possible to handle some
+    events directly on the client without the usual latency caused by HTTP requests.
+  </p>
+  <p>
+    The following widgets support ClientListener:
+  </p>
+  <table style="border:none">
+    <tr>
+      <td style="border:none" valign="top">
+        <ul>
+          <li><code>Button</code></li>
+          <li><code>Canvas</code></li>
+          <li><code>Combo</code></li>
+          <li><code>Composite</code></li>
+          <li><code>Label</code></li>
+        </ul>
+      </td>
+      <td style="border:none" valign="top">
+        <ul>
+          <li><code>ProgressBar</code></li>
+          <li><code>Scale</code></li>
+          <li><code>Spinner</code></li>
+          <li><code>Text</code></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    Supported events are:
+  </p>
+  <table style="border:none">
+    <tr>
+      <td style="border:none" valign="top">
+        <ul>
+          <li><code>SWT.Verify</code></li>
+          <li><code>SWT.Modify</code></li>
+          <li><code>SWT.KeyDown</code></li>
+          <li><code>SWT.KeyUp</code></li>
+          <li><code>SWT.FocusIn</code></li>
+          <li><code>SWT.FocusOut</code></li>
+          <li><code>SWT.Hide</code></li>
+          <li><code>SWT.Show</code></li>
+        </ul>
+      </td>
+      <td style="border:none" valign="top">
+        <ul>
+          <li><code>SWT.MouseDown</code></li>
+          <li><code>SWT.MouseUp</code></li>
+          <li><code>SWT.MouseMove</code></li>
+          <li><code>SWT.MouseEnter</code></li>
+          <li><code>SWT.MouseExit</code></li>
+          <li><code>SWT.MouseWheel</code></li>
+          <li><code>SWT.MouseDoubleClick</code></li>
+          <li><code>SWT.Paint</code></li>
+         </ul>
+      </td>
+    </tr>
+  </table>
+  <p>
+    Consult the new Developers Guide
+    <a href="../../developers-guide/scripting.html">Scripting article</a>
+    for information on ClientListener, and the WebClient
+    <a href="http://download.eclipse.org/rt/rap/doc/2.2/guide/reference/jsdoc/index.html">API reference</a>
+    to find out what widget methods are available in RWT Scripting.
+  </p>
+  <p>
+    <b>Note:</b> The ClientScripting incubator project is no longer compatible with RAP 2.2
+    and must be used <strong>only</strong> with older RAP versions. If you port code based on
+    the incubator ClientScripting to RAP 2.2 Scripting, please note that the namespace
+    for <em>ClientListener</em> has been changed to <em>org.eclipse.rap.rwt.scripting</em>. Also,
+    the number of supported widgets and methods has been reduced, but in return the properties
+    are now always synchronized back to the server.
+  </p>
+
+  <h3>Synchronize user data with the client</h3>
+
+  <p>
+    Data attached to an SWT widget can now be transferred to the client to access
+    it in scripting. To do so, the key for that data has to be registered with
+    <em>WidgetUtil.registerDataKeys</em>. Example:
+  </p>
+
+<pre class="lang-java">
+WidgetUtil.registerDataKeys( "foo" );
+widget.setData( "foo", "bar" );
+</pre>
+
+  <p>
+    A <em>ClientListener</em> can use the data like this:
+  </p>
+
+<pre class="lang-javascript">
+function handleEvent( event ) {
+  var data = event.widget.getData( "foo" );
+}
+</pre>
+  <p>
+    This feature can also be used to
+    <a href="../../developers-guide/scripting.html#crosswidget">access other scriptable widgets</a>
+    within a <em>ClientListener</em>.
+  </p>
+
+  <h2>Application Context</h2>
+
+  <h3>Application Context Listener</h3>
+
+  <p>
+    Instances of <em>ApplicationContextListener</em> can be attached to an application
+    context to receive a notification before the application context is destroyed.
+  </p>
+
+  <h2>Client Services</h2>
+
+  <h3>Improved JavaScriptLoader</h3>
+
+  <p>
+    The <em>JavaScriptLoader</em> implementation has been improved in the following aspects:
+  </p>
+  <ul>
+    <li><b>Files can be loaded from any URL:</b>
+      Previously the <em>JavaScriptLoader</em> could only load scripts served by the RAP application,
+      e.g. by registering them with the resource manager. Now any URL that is accessible by the
+      client can be used.
+    </li>
+    <li><b>Browser no longer blocked during loading:</b>
+      The JavaScriptLoader now uses asynchronous HTTP request to load the JavaScript file,
+      which means the browser no longer becomes unresponsive while waiting for the request to finish.
+    </li>
+    <li><b>Scripts appear in Browser Developer Tools:</b>
+      Previously the loaded scripts did not appear in the "sources" or "scripts" tabs of
+      the browser debugger (e.g. Firebug).
+    </li>
+  </ul>
+
+  <h2>Theming</h2>
+
+  <h3 id="tooltiptheming">Revised and Extended ToolTip Theming</h3>
+
+   <p>
+     We've polished the look and feel of tooltips in the default theme (see above).
+     To do so, a new theming element has been introduced: <em>Widget-ToolTip-Pointer</em>.
+     This element has a single property <em>background-image</em> and four states, <em>up</em>,
+     <em>down</em>, <em>left</em>, and <em>right</em>.
+     This property allows to attach a pointer image to one edge of the ToolTip.
+     The state indicates the direction that the ToolTip points to.
+     The image should match the background and/or border color of the ToolTip theming.
+     A full set of four images would be defined like this:
+   </p>
+<pre class="lang-css">
+Widget-ToolTip-Pointer {
+  background-image: none;
+}
+
+Widget-ToolTip-Pointer:up {
+  background-image : url( tooltip-up.png );
+}
+
+Widget-ToolTip-Pointer:down {
+  background-image : url( tooltip-down.png );
+}
+
+Widget-ToolTip-Pointer:left {
+  background-image : url( tooltip-left.png );
+}
+
+Widget-ToolTip-Pointer:right {
+  background-image : url( tooltip-right.png );
+}
+</pre>
+
+  <p>
+    It is now also possible to set the horizontal alignment for texts in tooltips.
+  </p>
+
+<pre class="lang-css">
+Widget-ToolTip {
+  text-align: left;
+}
+</pre>
+
+  <p>
+    Since tooltips are only as wide as their content, this only has a visible effect if the tooltip
+    has a newline in it, e.g.:
+  </p>
+
+<pre class="lang-java">
+widget.setToolTipText( "This has a \n new line" );
+</pre>
+
+  <p>
+    The default value is <em>center</em>.
+  </p>
+
+  <h3>Other Theme Extensions</h3>
+
+  <p>
+    The theming was extended in several other places:
+  </p>
+  <ul>
+    <li>
+      <em>ProgressBar</em> has a new themeable property <em>width</em>.
+    </li>
+    <li>
+      <em>box-shadow</em> property has been added to <em>Button</em>.
+    </li>
+    <li>
+      The theming for Table and Tree has a new state <em>rowtemplate</em> to allow to
+      make adjustments specific to row templates. The default theme uses this state to set
+      vertical instead of horizontal grid lines when row templates are used.
+    </li>
+  </ul>
+
+  <h2>Deployment</h2>
+
+  <h3>WAR Undeployment issues resolved</h3>
+  <p>
+    There has long been <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=407371">an issue</a>
+    with RAP applications deployed as <em>.war</em> files that could not be properly stopped or
+    undeployed and even prevented the servlet container from shutting down.
+    These problems have been fixed.
+    Stopping and undeploying RAP applications works as expected now.
+  </p>
+
+  <h3>Protocol</h3>
+  
+  <p>
+    An overview of what changed in the <a href="https://wiki.eclipse.org/RAP/Protocol">RAP protocol</a> can be <a href="https://wiki.eclipse.org/RAP/Protocol_Changes#Changes_in_RAP_2.2">found in the RAP Wiki</a>.
+  </p>
+
+</div>
+
+  <h2>Bugfixes</h2>
+
+  <p>
+    <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;target_milestone=2.2%20M1&amp;target_milestone=2.2%20M2&amp;target_milestone=2.2%20M3&amp;target_milestone=2.2%20RC1&amp;target_milestone=2.2%20RC2&amp;target_milestone=2.2">This list</a>
+    shows all bugs that have been fixed for this release.
+  </p>
+
+
+</div>
+
+<div id="rightcolumn">
+  <div class="sideitem attention">
+
+  <h6>RAP 3.0 Migration Guide</h6>
+
+  <div class="sideitemcontent">
+    <p>
+      To assist you with the migration from RAP 2.x (or 1.x) to 3.0, we provide a
+      <a href="../3.0/migration-guide.html">migration guide</a>.
+    </p>
+  </div>
+
+</div>
+  <div class="sideitem">
+
+  <h6>RAP Releases</h6>
+
+  <div class="sideitemcontent">
+    <ul>
+      <li>
+        <a href="../../downloads/4.1/index.html">RAP 4.1&emsp;2024-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/4.0/index.html">RAP 4.0&emsp;2024-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.29/index.html">RAP 3.29&emsp;2024-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.28/index.html">RAP 3.28&emsp;2024-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.27/index.html">RAP 3.27&emsp;2023-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.26/index.html">RAP 3.26&emsp;2023-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.25/index.html">RAP 3.25&emsp;2023-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.24/index.html">RAP 3.24&emsp;2023-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.23/index.html">RAP 3.23&emsp;2022-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.22/index.html">RAP 3.22&emsp;2022-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.21/index.html">RAP 3.21&emsp;2022-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.20/index.html">RAP 3.20&emsp;2022-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.19/index.html">RAP 3.19&emsp;2021-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.18/index.html">RAP 3.18&emsp;2021-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.17/index.html">RAP 3.17&emsp;2021-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.16/index.html">RAP 3.16&emsp;2021-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.15/index.html">RAP 3.15&emsp;2020-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.14/index.html">RAP 3.14&emsp;2020-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.13/index.html">RAP 3.13&emsp;2020-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.12/index.html">RAP 3.12&emsp;2020-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.11/index.html">RAP 3.11&emsp;2019-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.10/index.html">RAP 3.10&emsp;2019-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.9/index.html">RAP 3.9&emsp;2019-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.8/index.html">RAP 3.8&emsp;2019-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.7/index.html">RAP 3.7&emsp;2018-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.6/index.html">RAP 3.6&emsp;2018-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.5/index.html">RAP 3.5&emsp;2018-06 (Photon)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.4/index.html">RAP 3.4&emsp;2017-12 (Oxygen.2)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.3/index.html">RAP 3.3&emsp;2017-09 (Oxygen.1)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.2/index.html">RAP 3.2&emsp;2017-06 (Oxygen)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.1/index.html">RAP 3.1&emsp;2016-06 (Neon)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.0/index.html">RAP 3.0&emsp;2015-06 (Mars)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.3/index.html">RAP 2.3&emsp;2014-06 (Luna)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.2/index.html">RAP 2.2&emsp;2013-12 (Kepler SR2)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.1/index.html">RAP 2.1&emsp;2013-06 (Kepler)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.0/index.html">RAP 2.0&emsp;2013-02 (Juno SR3)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.5/index.html">RAP 1.5&emsp;2012-06 (Juno)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.4/index.html">RAP 1.4&emsp;2011-06 (Indigo)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.3/index.html">RAP 1.3&emsp;2010-06 (Helios)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.2/index.html">RAP 1.2&emsp;2009-06 (Galileo)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.1/index.html">RAP 1.1&emsp;2008-06 (Ganymede)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.0/index.html">RAP 1.0&emsp;2007-10</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

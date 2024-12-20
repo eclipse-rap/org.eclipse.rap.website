@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="markup.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>Fonts and Markup in RAP</h1>
+    <h2>Fonts</h2>
+    <p>
+      Using SWT API it is possible to apply any
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/graphics/Font.html">Font</a></em>
+      (including bold and italic styles)
+      to almost any widget, as long as it is installed on the client device:
+    </p>
+    <pre class="lang-java">
+Label boldLabel = new Label( parent, SWT.NONE );
+boldLabel.setFont( new Font( parent.getDisplay(), "Arial", 16, SWT.BOLD ) );</pre>
+    <p>
+      Note that the font height is measured in pixels in RAP (for historical reasons),
+      while SWT uses points. Usually, you can convert the values using this equation:
+    </p>
+    <pre>1px = 0.75pt</pre>
+    <p>therefore</p>
+    <pre>12pt / 0.75 = 16px</pre>
+    <h3>With CSS Theming</h3>
+    <p>
+      While the SWT API can only modify one widget at a time, the RAP
+      <a href="theming.html">CSS theming API</a> is
+      designed to change the appearance for <i>all</i> widget of a given class. However,
+      specific instances can still be targeted using
+      <a href="theming.html#variants">custom variants</a>.
+      The theming API also features some additional properties like
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Properties.html#text-shadow">text-shadow</a></em>
+      and
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Properties.html#text-decoration">text-decoration</a></em>.
+    </p>
+    <p><b>CSS:</b></p>
+    <pre class="lang-css">
+Label.customLabel {
+  font: bold 16px Arial;
+  text-shadow: 2px 2px #bbbbbb;
+  text-decoration: underline;
+}</pre>
+     <p><b>Java:</b></p>
+     <pre class="lang-java">
+Label customLabel = new Label( parent, SWT.NONE );
+customLabel.setData( RWT.CUSTOM_VARIANT, "customLabel" );
+customLabel.setText( "This is funny!" );</pre>
+     <p><b>Result:</b></p>
+     <p>
+       <img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/css-label.png" /></p>
+     <p>
+       The properties
+       <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Properties.html#font">font</a></em>,
+       <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Properties.html#text-shadow">text-shadow</a></em>
+       and
+       <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Properties.html#text-decoration">text-decoration</a></em>
+       are available on nearly all themeable widgets. Note that <em>text-shadow</em> is not
+       supported in Internet Explorer 8.0 and below.
+     </p>
+    <h2 id="markup">Markup</h2>
+    <p>
+      While SWT and theming API are able to change the font of any widget, they can usually only change the
+      font for the <i>entire</i> widget. (Tree and table items can change single cells.)
+      Using the RAP-exclusive (not supported in SWT)
+      <i>markup</i> feature, it is possible to change only parts of the text.
+      This is currently supported on
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Label.html">Label</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/custom/CLabel.html">CLabel</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/ToolTip.html">ToolTip</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/List.html">List</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Tree.html">Tree</a></em>
+      and
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Table.html">Table</a></em>.
+      Before you can use markup in your widget,
+      you must first enable it explicitly using the
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#MARKUP_ENABLED">RWT.MARKUP_ENABLED</a></em>
+      constant
+      as shown below, directly after calling the constructor. (It may not be possible to enable
+      this feature later on, and it can not be disabled again.) Afterwards, a
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#MARKUP_ENABLED">subset of HTML tags</a>
+      can be freely used in the widgets text property:
+    </p>
+    <pre class="lang-java">
+Label markupLabel = new Label( parent, SWT.NONE );
+markupLabel.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+markupLabel.setText( "&lt;i&gt;This&lt;/i&gt; &lt;ins&gt;is&lt;/ins&gt; &lt;b&gt;markup!&lt;/b&gt;" );</pre>
+  <p><b>Result:</b></p>
+  <p><img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/markup-label.png" /></p>
+  <p>
+    To achieve similar effects in SWT, the application would have to draw on the widget using a
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/PaintEvent.html">PaintEvent</a></em>,
+    which is not supported in RAP except on
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Canvas.html">Canvas</a></em>.
+    The markup is validated when the text is set on the widget, and incorrect or unsupported markup
+    will cause an <em>IllegalArgumentException</em>. Using markup without enabling the feature
+    first will not cause an exception, just display the text as is.
+  </p>
+  <p>
+    The <em>ToolTipText</em>
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Control.html#setToolTipText-java.lang.String-">property</a>
+    also supports markup if enabled with <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#TOOLTIP_MARKUP_ENABLED">
+    TOOLTIP_MARKUP_ENABLED</a>:
+  </p>
+    <pre class="lang-java">
+someWidget.setData( RWT.TOOLTIP_MARKUP_ENABLED, Boolean.TRUE );
+someWidget.setToolTipText( "&lt;i&gt;Markup&lt;/i&gt; inside &lt;b&gt;a tooltip&lt;/b&gt;" );</pre>
+   <p>Putting a "&lt;a&gt;" tag in the <em>toolTipText</em> slightly alters the behavior of the
+   tooltip: Normally a tooltip immediately disappears if the mouse cursor hovers it (assuming
+   the user may be aiming for the underlying widget). But since anchor elements are interactive, the
+   tooltip stays until the link is clicked or the mouse cursor is moves away from the tooltip.
+   </p>
+  <h3>Advanced uses of Markup</h3>
+  <p>
+    If the physical and logical tags allowed in the markup are not sufficient for your needs,
+    you may also use a <em>style</em> attribute to specify <i>any</i> CSS code supported by the
+    browser.
+  </p>
+  <pre class="lang-java">
+Label cssLabel = new Label( parent, SWT.NONE );
+cssLabel.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+cssLabel.setText( "&lt;span style='font:bold 16px Arial;'&gt;This is also BOLD&lt;/span&gt;" );</pre>
+  <p>
+    Unlike the HTML tags, the style properties are <i>not</i> validated on the server. Invalid
+    syntax within the <em>style</em> attribute will likely be ignored by the browser, as will
+    unsupported properties. Using CSS3 properties is therefore not recommended when targeting
+    older browser.
+  </p>
+  <p>
+    The markup feature may not only be used to change the font of the text, but can also insert
+    elements that are not pure text.
+  </p>
+  <p>
+    Using the <em>&lt;br/&gt;</em> tag, it is possible to add line breaks.
+    While this is also possible without markup on <em>Label</em>, this is a new feature for
+    <em>List</em>, <em>Tree</em> and <em>Table</em>.
+  </p>
+  <p id="img">
+    The <em>&lt;img/&gt;</em>
+    tag can insert images anywhere into your text. You can use any URL as
+    the source, and any static images should preferably be provided by another servlet or server.
+    However, if you need the RAP application to provide the image, it has to be registered
+    <a href="resources.html">as a resource</a>
+    first.
+    (You can also de-register the resource when it is no longer needed.)
+  </p>
+  <pre class="lang-java">
+Label label = new Label( parent, SWT.NONE );
+label.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+String src = RWT.getResourceManager().getLocation( "icon.png" );
+label.setText( "This is the world &lt;img width='24' height='24' src='" + src + "'/&gt; !" );</pre>
+  <p><b>Result:</b></p>
+  <p><img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/image-label.png" /></p>
+  <p><br />
+    The widget and height attributes are mandatory and do not have to match those
+    of the actual image.
+  </p>
+  <p id="link">
+    Finally, you can use markup to insert real hyperlinks (<q><em>&lt;a&gt;</em></q>)into your application.
+    If you do not want to close the UI when the user clicks it, make sure to also set the target
+    property. Alternatively, you can integrate the link with the
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/client/service/BrowserNavigation.html">BrowserNavigation</a></em>
+    by
+    <a href="navigation.html#deeplinks">pointing to a fragment id</a>. Examples:
+  </p>
+  <pre class="lang-java">
+Label linkLabel = new Label( parent, SWT.NONE );
+linkLabel.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+linkLabel.setText(
+  "Visit &lt;a href='https://www.eclipse.org/rap' target='_blank'&gt;RAP&lt;/a&gt;!"
+);
+
+Label navLabel = new Label( parent, SWT.NONE );
+navLabel.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+navLabel.setText( "Go to &lt;a href='#navPoint'&gt;navPoint&lt;/a&gt;!" );</pre>
+  <h3 id="grid">Markup on List, Tree, Table, and Grid</h3>
+  <p>
+    After setting the <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#MARKUP_ENABLED">RWT.MARKUP_ENABLED</a></em>
+    property of a <em>Tree</em>/<em>Table</em>/<em>Grid</em>/<em>List</em> widget to <em>Boolean.TRUE</em>,
+    markup is enabled for all its items, except columns.
+    There is, however, one more property that might need to be set.
+    Since RAP can not predict how high items with markup are going to be, it will
+    not include it in the layout calculations for the height of the rows. This may result in cut off
+    content, especially if <em>&lt;br/&gt;</em>, <em>&lt;span&gt;</em>
+    or <em>&lt;img/&gt;</em> tags are used. To fix this, you can set the height the rows should
+    have manually using the
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#CUSTOM_ITEM_HEIGHT">RWT.CUSTOM_ITEM_HEIGHT</a></em>
+    constant:
+  </p>
+  <pre class="lang-java">
+List markupList = new List( parent, SWT.BORDER );
+markupList.setData( RWT.MARKUP_ENABLED, Boolean.TRUE );
+markupList.setData( RWT.CUSTOM_ITEM_HEIGHT, new Integer( 40 ) );
+markupList.setItems( new String[]{
+  "&lt;big&gt;big&lt;/big&gt;",
+  "&lt;small&gt;small&lt;/small&gt;",
+  "with&lt;br/&gt;break"
+} );</pre>
+  <p>
+    <em>RWT.CUSTOM_ITEM_HEIGHT</em> applies only to <em>Tree</em>, <em>Table</em> and <em>List</em>.
+    For <em>Grid</em>, use its <em>setItemHeight</em> method.
+  </p>
+  <p>
+    When calculating the value for the item height, account for the cell/item
+    padding defined in the
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/List.html#List-Item">List</a>/<a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Tree.html#Tree-Cell">Tree</a>/<a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Table.html#Table-Cell">Table</a>
+    <a href="theming.html">theming</a>.
+    If the HTML content is smaller than the inner cell/item height (i.e. with subtracted padding),
+    it will be top-aligned and leaving empty space at the bottom.
+    If it is higher, the content will be top-aligned (still respecting padding) and cut off at the bottom.
+  </p>
+  <p>
+    <strong>Note:</strong> To achieve more complex layouts within an item, consider
+    using <a href="tree-table.html#templates">templates</a> instead.
+  </p>
+  <p>
+    All widgets that support markup and selection also support a special kind of hyperlink
+    that can be intercepted with a selection event. Read more about it
+    <a href="navigation.html#selection-link">in the article on browser navigation</a>.
+  </p>
+  <h3>Editing</h3>
+  <p>
+    While RAP does not include a markup-enabled text field, there is a port of the Nebula
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/nebula/widgets/grid/RichTextEditor.html"><em>RichTextEditor</em></a> based on the
+    the <a href="http://www.ckeditor.com/">CKEditor</a> included in RAP.
+  </p>
+
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a class="active" href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

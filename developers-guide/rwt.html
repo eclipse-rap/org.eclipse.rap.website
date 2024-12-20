@@ -1,0 +1,454 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="rwt.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>Differences between RWT and SWT</h1>
+  <h2>Introduction to the RAP Widget Toolkit</h2>
+  <p>
+    At the core of RAP operates the RAP Widget Toolkit (RWT), which largely implements the same
+    API as the Standard Widget Toolkit (SWT). That is why many projects that build upon SWT
+    (like <a href="http://wiki.eclipse.org/index.php/JFace">JFace</a>)
+    can run on RWT with little or no modifications. It can
+    also be used <a href="application-setup.html#workbench">with or without the Eclipse 3.x
+    workbench layer</a>.
+   </p>
+  <p>
+    Note that <q>RWT</q> refers only to this widget toolkit, while <q>RAP</q> refers to the
+    project in its entirety, including its ports of JFace, Workbench and Forms, OSGI
+    integration, add-ons, Branding and Interaction Design API, tooling, demos and custom themes.
+  </p>
+  <p>
+    RWT implements most (40+) <a href="https://www.eclipse.org/swt/widgets/">
+    SWT Widgets</a>, including their events and layout manager. It also supports SWT-like
+    key and mouse event handling, drag and drop and painting (on <em>Canvas</em>).
+    If you are not already familiar with SWT, we recommend to first learn the SWT basics
+    (almost all valid for RWT) by reading the official documentation
+    and <a href="https://www.eclipse.org/swt/snippets/">snippets</a> provided by the
+    <a href="https://www.eclipse.org/swt/">SWT project homepage</a>.
+    A full reference specific to RWT can be found
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">here</a>.
+  </p>
+
+  <h2>Compatibility to SWT</h2>
+  <p>
+    RAP generally follows the rule <q>If it compiles, it works</q>. That means that all SWT API
+    implemented in RWT is working <i>within the requirements set by SWT</i>.
+    If an SWT feature is not implemented, the corresponding API is also missing.
+    If this is the case, it is likely because it's hard or impossible to implement in RWT.
+    In some cases, SWT classes and methods are implemented as empty stubs to enable single-sourcing,
+    but only where this is a valid according of the SWT documentation of the API.
+    Examples are the accessibility API and some SWT constants that are marked as <em>HINT</em>.
+  </p>
+  <p id="setdata">
+    SWT was developed for desktop applications, but RWT is used to build web applications.
+    For this reason, there are some features that SWT supports that RWT does not,
+    while RWT adds some features that are tailored to the specific requirements of web
+    application development.
+    However, RWT does not add any new API to the classes adopted from SWT.
+    All RWT-specific features are accessible by API in the namespace
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/index.html">org.eclipse.rap.rwt</a></em>.
+    Many are activated using a
+    widget's
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Widget.html#setData-java.lang.String-java.lang.Object-">setData</a></em>
+    method with a constant from the
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html">RWT</a></em>
+    class as the
+    key. Example:
+  </p>
+    <pre class="lang-java">table.setData( RWT.MARKUP_ENABLED, Boolean.TRUE )</pre>
+  <p>
+    Other additional features may be accessed via <a href="client.html#service">client services</a>.
+  </p>
+
+  <h2>Notable Additional Features</h2>
+  <ul><li id="client" style="margin-bottom:10px">
+      <b>Client Class and  Client Services</b>
+      <br />
+      All features specific to the <a href="client.html">RAP client</a> (which is exchangeable)
+      are handled by the client class and the client services.
+      This includes support for browser history, JavaScript execution and retrieving the clients
+      time zone offset.
+      The <code>Client</code> interface and client services are documented in more detail
+      <a href="client.html">here</a>.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>HTTP File Upload</b>
+      <br />
+      Unlike SWT, RWT can not simply access the user's file system and read data from it.
+      Therefore RAP provides several ways to upload files within the RAP application. Read more
+      about it <a href="file-upload.html">here</a>.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Markup in Widgets</b>
+      <br />
+      Several widgets in RWT support a subset of HTML in their text property.
+      Detailed information can be found <a href="markup.html">here</a>.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Tree and Table Enhancements</b>
+      <br />
+      The RWT Tree and Table widgets provide a number of features not found in SWT.
+      This includes the possibility to exclude some columns from scrolling,
+      pre-caching of items, as well as support for templates, markup and advanced theming.
+      Find out more about it <a href="tree-table.html">here</a>.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>DropDown Widget</b>
+      <br />
+      The
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/widgets/DropDown.html">DropDown</a></em>
+      widget enables simple and efficient input assist for text fields.
+      It is basically a pop-up list that can be attached to any <em>Text</em> widget.
+      It behaves very similar to <em>Combo</em>, but does not automatically change the content of
+      the widget it is attached to.
+      Instead it fires selection events that may be used to modify the value of the Text widget
+      programatically. <br /><i>A ready-to-use, enhanced auto-complete solution for text fields can be found in the
+      <a href="https://eclipse.org/rap/incubator/">RAP Incubator</a>.
+      The component is called
+      <em><a href="http://wiki.eclipse.org/RAP/Incubator/DropDown#AutoSuggest">AutoSuggest</a></em>
+      and uses the DropDown widget internally.</i>
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Theming</b>
+      <br />
+      In SWT, the default visual representation of an widget is determined by the operating
+      system. In RAP this is done by the
+      <a href="theming.html">theming</a>
+      which can be adjusted by the developer using CSS.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Multi-User Environment</b><br />
+      RAP operates in a multi-user environment and provides some additional API that helps
+      dealing with the consequences.
+      An detailed introduction can be found <a href="scopes.html">here</a>.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Scripting</b><br />
+      Since the RAP WebClient is JavaScript based you can also write event listeners in JavaScript
+      instead of Java. This may be used to implement features that require instantaneous user
+      feedback or rely heavily on key events. Read more about it in the
+      <a href="scripting.html">Scripting</a> section.
+    </li>
+
+  </ul><h2>Notable Limitations</h2>
+  <ul><li style="margin-bottom:10px">
+      <b>Unimplemented Features</b>
+      <br />
+      While the API for touch event handling and accessibility configuration is present in RWT,
+      it does not natively support either. This is a valid implementation according to the SWT
+      documentation. Accessibility in RAP may be achieved by
+      <a href="scripting.html#html">adding ARIA attributes</a> though.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Unimplemented Widgets:</b>
+      <em>StyledText</em>, <em>Tracker</em>, <em>TaskBar</em>, <em>Tray</em>
+      <br />
+      These widgets are currently not available in RWT. If you require a rich text editor in RAP,
+      take a look in the RAP Incubator and Wiki.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Painting Limitations</b><br />
+      SWT can paint on any widget or image using a
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/graphics/GC.html">GC</a></em>,
+      while RAP only allows painting on the
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Canvas.html">Canvas</a></em>
+      widget.
+      In some cases the
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/graphics/GC.html#drawText-java.lang.String-int-int-">drawText</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/graphics/GC.html#drawString-java.lang.String-int-int-">drawString</a></em>
+      and
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/graphics/GC.html#drawImage-org.eclipse.swt.graphics.Image-int-int-">drawImage</a></em>
+      methods may disregard the drawing order and overlap elements that are drawn later.
+      Some methods are unimplemented, including <em>copyArea</em>,
+      <em>setClipping</em>, <em>setTransform</em>, <em>setInterpolation</em>,
+      <em>setLineDash</em> and <em>setXORMode</em>.
+      Performance and results of a drawing operations can differ depending on the browser.
+      It is possible to use the native HTML5 Canvas directly instead of the SWT GC using RWT
+      Scripting.
+      See also <q><a href="custom-widget.html#selfdrawing">Self-Drawing custom widgets</a></q>.
+    </li>
+
+    <li id="dialog" style="margin-bottom:10px">
+      <b>Limitations in Dialogs:</b>
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Dialog.html">Dialog</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/ColorDialog.html">ColorDialog</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/FontDialog.html">FontDialog</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/MessageBox.html">MessageBox</a></em>
+      <br />
+      When using the
+      <a href="application-setup.html#compat">JEE compatibility mode</a>,
+      opening a dialog does not block program execution.
+      To obtain their return value, a callback must be registered using the RWT-only
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Dialog.html#open-org.eclipse.rap.rwt.widgets.DialogCallback-"><em>open(DialogCallback)</em></a> method.
+    </li>
+
+    <li id="browser" style="margin-bottom:10px">
+      <b>Limitations of the Browser widget</b>
+      <br />
+      Since the
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/browser/Browser.html">Browser</a></em>
+      widget is based on the HTML <em>iframe</em> element, there are some restrictions.
+      Detailed information can be found <a href="web-embedding.html">here</a>.
+      Also, when using the
+      <a href="application-setup.html#compat">JEE compatibility mode</a>,
+      evaluating a script does not block program execution.
+      To obtain its return value, a callback must be registered using the RWT-only
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/browser/Browser.html#evaluate-java.lang.String-org.eclipse.rap.rwt.widgets.BrowserCallback-"><em>evaluate(String, BrowserCallback)</em></a> method.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Limitations in Mouse and Key Events</b>
+      <br />
+      See <q><a href="key-and-mouse-events.html">Mouse and Key Event Handling in RAP</a></q>.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b id="verify">Limitations in Verify and Modify Events:</b>
+      <br /><em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#Modify">Modify</a></em>
+      and
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#Verify">Verify</a></em>
+      events are not fired instantaneously, but with a small delay, possibly
+      combining a number of changes into one event. Also, the values of the
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/VerifyEvent.html">VerifyEvent</a></em>
+      fields
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/VerifyEvent.html#text">text</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/VerifyEvent.html#start">start</a></em>
+      and
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/events/VerifyEvent.html#end">end</a></em>
+      currently always report the entire text to have changed.
+      However, when using a <a href="scripting.html">ClientListener</a> (written in JavaScript),
+      these limitations do not exist.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Limitations in Drag and Drop</b>
+      <br />
+      In
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/dnd/DragSourceEvent.html">DragSourceEvent</a></em>,
+      the fields
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/dnd/DragSourceEvent.html#image">image</a></em>,
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/dnd/DragSourceEvent.html#offsetX">offsetX</a></em>
+      and
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/dnd/DragSourceEvent.html#offsetY">offsetY</a></em>
+      have no effect.
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/dnd/DropTargetEvent.html">DropTargetEvent</a></em>s
+      may be omitted while the mouse cursor is still in motion. When dragging files from the
+      clients OS (to drop on a drop target with <em>ClientFileTransfer</em>), feedback effects
+      are not renderd, operation types (move/copy/link) are ignored, and no <em>DragEnter</em> /
+      <em>DragOver</em> / <em>DragLeave</em> events are fired.
+    </li>
+
+    <li style="margin-bottom:10px">
+      <b>Limitations when using background threads</b>
+      <br />
+      See articles <a href="threads.html">Session access from a background thread</a>
+      and <a href="server-push.html">Server Push</a>.
+    </li>
+
+  </ul>
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a class="active" href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

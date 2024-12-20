@@ -1,0 +1,964 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP 2.0 - New and Noteworthy</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../../script.js"></script>
+  <script type="text/javascript" src="../../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="index.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../../demos/index.html">Demos</a></li><li ><a href="../../downloads/index.html">Download</a></li><li class="active"><a href="../../documentation/index.html">Documentation</a></li><li ><a href="../../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../../documentation/index.html">Overview</a></li><li><a  href="../../developers-guide/index.html">Developer's Guide</a></li><li><a  class="active" href="../index.html">New and Noteworthy</a></li><li><a  href="../../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn">
+
+  <h1>RAP 2.0 - New and Noteworthy</h1>
+
+  <p>
+    Here's a list of the most noteworthy things in the RAP
+    2.0 release      which is available for <a href="https://www.eclipse.org/rap/downloads/">download</a>
+      since February 11, 2013.
+  </p>
+
+<div>
+
+  <h2>Network / Communication</h2>
+
+  <p>
+    In 1.5 we replaced the communication between server and client with a new, JSON-based format.
+    In 2.0, the client uses the same format to report changes to the server.
+    With this change, the entire communication uses the JSON protocol.
+    No HTTP request parameters are involved anymore.
+    All widgets LCAs have been reworked to handle the new JSON-based message.
+  </p>
+  <p>
+    <img class="framed" src="images/Client-to-server-JSON.png" />
+  </p>
+  <p>
+    The exact format is described in the
+    <a href="http://wiki.eclipse.org/RAP/Protocol">RAP Protocol wiki page</a>.
+  </p>
+
+  <h2>New Java API for Custom Widgets</h2>
+  <p>
+    With RAP 2.0, it's becoming a lot easier to write custom widgets or other add-ons for RAP.
+    We've published a new Java API to synchronize server-side objects with their related objects
+    on the client.
+    This API is built on the new <a href="http://wiki.eclipse.org/RAP/Protocol">RAP protocol</a>
+    and it lets you send updates directly to the client
+    (and receive updates from the client in turn) without diving too deep into RAP's internals.
+    In particular, you don't have to write any so-called LifeCycleAdapters (LCAs) anymore.
+  </p>
+
+  <h3>RemoteObject</h3>
+  <p>
+    The central interface, called <em>RemoteObject</em>, is used to communicate with the client-side
+    counterpart of an object, the <em>remote</em> object.
+    First you need to create this object, then you can start sending updates to it
+    by simply calling the remote object's <em>set</em>, <em>call</em>, etc. methods.
+  </p>
+  <p>
+    The following snippet shows how to create a remote object of the type
+    <em>example.CoffeeMachine</em> and set the property <em>sugar</em> to the value <em>false</em>.
+    That's all there is to do to send a <em>create</em> operation to the client with the initial
+    property included.
+  </p>
+<pre class="lang-java">
+Connection connection = RWT.getUISession().getConnection();
+RemoteObject remoteObject = connection.createRemoteObject( "example.CoffeeMachine" );
+remoteObject.set( "sugar", false );
+</pre>
+
+  <h3>OperationHandler</h3>
+  <p>
+    To receive updates from the client, you have to add an operation handler to the remote object.
+    This operation handler has <em>handle…</em> methods for all relevant protocol operations.
+  </p>
+<pre class="lang-java">
+remoteObject.setHandler( new AbstractOperationHandler() {
+
+  @Override
+  public void handleNotify( String event, Map&lt;String, Object&gt; properties ) {
+    // react on the event, notify listeners ...
+  }
+} );
+</pre>
+
+  <p>
+    The new API lives in the package <em>org.eclipse.rap.rwt.remote</em>.
+    It's still considered provisional, but already used by a couple of widgets and services in RAP
+    itself.
+    It's expected to evolve over the next release, but we don't expect big changes.
+  </p>
+
+  <h2>New JavaScript API for Custom Widgets</h2>
+  <p>
+    For the first time ever, RAP provides public JavaScript API.
+    There's now an object named <em>rap</em> in the global namespace of the JavaScript client.
+    All methods contained in this object are documented in the
+    <a href="http://download.eclipse.org/rt/rap/doc/2.0/guide/reference/jsdoc/index.html">RAP API reference</a>
+    together with their return types.
+    The most important methods are <em>registerTypeHandler</em> and <em>getRemoteObject</em>.
+  </p>
+  <p>
+    This API can also be used in JavaScript code added by the JavaScriptLoader, the
+    JavaScriptExecutor, or the ClientScripting add-on.
+  </p>
+
+  <h3>Registering type handler</h3>
+  <p>
+    A type handler defines how protocol messages for a specific <em>type</em> should be handled.
+    At minimum it defines a <em>factory</em> function that is used to create an object of this type
+    when the server sends a <em>create</em> operation.
+    It can also define the name of a <em>destructor</em> function, and a list of supported
+    <em>properties</em>, <em>events</em> and <em>methods</em>.
+    A typical type handler might look like this:
+  </p>
+<pre class="lang-js">
+rap.registerTypeHandler( "example.CoffeeMachine", {
+
+  factory : function( properties ) {
+    return new CoffeeMachine( properties );
+  },
+
+  destructor : "dispose",
+
+  properties : [ "sugar", "power" ],
+
+  events : [ "Ready" ]
+
+} );
+</pre>
+  <p>
+    The created object is stored by the framework under its object id.
+    This object has to implement setter methods that match the properties defined in the handler,
+    which will then be called when the server sends a <em>set</em> operation for a given property.
+  </p>
+  <h3>Remote Object (client)</h3>
+  <p>
+    Just like the server, the client provides a <em>RemoteObject</em> that represents the
+    server-side counterpart of a client object. It has a very similar API, with <em>set</em>,
+    <em>call</em> and <em>notify</em> methods.
+    If, for example, the custom widget wishes to inform the server that the value of the property
+    <em>text</em> changed, it could look like this:
+  </p>
+<pre class="lang-js">
+var remoteObject = rap.getRemoteObject( this );
+remoteObject.set( "text", this.getText() );
+remoteObject.notify( "Modify" );
+</pre>
+
+  <h2>New Client API</h2>
+
+  <p>
+    Now that alternative clients can be connected to a RAP server, applications will need to
+    distinguish between different clients, e.g. to render parts differently on certain clients.
+  </p>
+
+  <p>
+    To support those cases, we added a service provider interface <em>Client</em> that can be
+    acquired using the new method <em>RWT.getClient()</em>. Unless you have a custom client
+    implementation installed, <em>RWT.getClient()</em> will always return an instance of
+    <em>WebClient</em>.
+  </p>
+
+  <p>
+    Client implementations can provide client-specific services, which can be obtained using the
+    method <em>getService( Class&lt;T&gt; type )</em>. Some existing API has been transformed into
+    services of the <em>WebClient</em>.
+  </p>
+
+  <h3>JavaScriptExecutor service</h3>
+  <p>
+    This service can be used to execute a piece of JavaScript code on the client.
+    It replaces the internal class <em>JSExecutor</em>. Example:
+  </p>
+<pre class="lang-java">
+JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
+executor.execute( "alert( \"Hello World!\" );" );
+</pre>
+
+  <h3>JavaScriptLoader service</h3>
+  <p>
+    If a custom component requires additional JavaScript code on the client, the JavaScriptLoader
+    can be used to load a JavaScript file just before the component uses it.
+    The JavaScriptLoader will ensure that the file is loaded only once, even if <em>require()</em>
+    is called subsequently.
+  </p>
+<pre class="lang-java">
+JavaScriptLoader loader = RWT.getClient().getService( JavaScriptLoader.class );
+loader.require( "rwt-resources/myComponent/MyFile.js" );
+</pre>
+
+  <h3>ClientInfo service</h3>
+  <p>
+    The ClientInfo service provides additional information about the client that is connected to the
+    current UI session.
+    In this version, the service provides the client's locale and its timezone offset in minutes.
+    Unfortunately, it's not possible to obtain the actual timezone region from the browser.
+  </p>
+<pre class="lang-java">
+ClientInfo clientInfo = RWT.getClient().getService( ClientInfo.class );
+int timezoneOffset = clientInfo.getTimezoneOffset();
+Locale clientLocale = clientInfo.getLocale();
+</pre>
+
+  <h3>UrlLauncher service</h3>
+  <p>
+    The UrlLauncher service allows to open any URL (websites, files, "mailto", etc.) without
+    influencing or leaving the application. Popup blocker may ask the user for permission before
+    a new window is opened.
+  </p>
+<pre class="lang-java">
+UrlLauncher launcher = RWT.getClient().getService( UrlLauncher.class );
+launcher.openURL( "https://www.eclipse.org/" );
+launcher.openURL( "mailto:someone@nowhere.org" );
+</pre>
+  <p>
+    Please use this new client service instead of the deprecated <em>ExternalBrowser</em>.
+  </p>
+
+  <h3>BrowserNavigation service</h3>
+  <p>
+    The BrowserNavigation service provides support for the browser's back/forward buttons and
+    deep linking. It's a complete replacement for the removed class BrowserHistory.
+  </p>
+<pre class="lang-java">
+BrowserNavigation navigation = RWT.getClient().getService( BrowserNavigation.class );
+navigation.pushState( "main", "Main View" );
+</pre>
+
+  <h3>ExitConfirmation service</h3>
+  <p>
+    Used to configure the confirmation dialog that can be shown before the user leaves the
+    application.
+    It is no longer possible to do this in a branding. Example:
+  </p>
+<pre class="lang-java">
+ExitConfirmation confirmation = RWT.getClient().getService( ExitConfirmation.class );
+confirmation.setMessage( "Where do you think you're going?!" );
+</pre>
+
+  <h2>Widget Set</h2>
+
+  <h3>Touch-Scrolling for Tree and Table</h3>
+
+  <p>
+    Tree and Table widgets can now be scrolled on mobile devices (iOS and Android) by dragging a row
+    with one finger. However, Tree and Table can only scroll item-by-item, not smooth like the
+    List.
+  </p>
+
+  <h3>SWT.ICON_SEARCH and SWT.ICON_CANCEL support for Text widget</h3>
+
+  <p>
+    Text widget now have full support for SWT.ICON_SEARCH and SWT.ICON_CANCEL style flags.
+  </p>
+  <p>
+    <img class="framed" title="Text with search icons" src="images/Text-Search-Icons.png" />
+  </p>
+
+  <h3>Theming enhancements</h3>
+
+  <p>
+    The themeablity of some widgets has been improved. The following properties and states have been
+    added:
+  </p>
+
+  <ul>
+    <li>
+      <code>box-shadow</code> property for DateTime
+    </li>
+    <li>
+      <code>hover</code> state and <code>text-decoration</code> property for List-Hyperlink
+    </li>
+    <li>
+      <code>text-decoration</code> property for Button
+    </li>
+    <li>
+      <code>disabled</code> state for Combo-Button-Icon
+    </li>
+  </ul>
+
+  <h3>New Event System</h3>
+  <p>
+    The event system in RWT has been completely re-written.
+    For historical reasons, the implementation was based on typed events like SelectionEvent
+    with untyped events built on top. This caused several problems that are now fixed (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=334028">bug 334028</a>).
+  </p>
+  <p>
+    This also allowed us to provide some missing API:
+    All typed events have a <code>time</code> field that reflects the time an event has occurred.
+    MouseEvent has a field <code>count</code> that allows to distinguish single and double clicks.
+    Custom widgets can now use the protected method
+    <code>Widget #removeListener( int, SWTEventListener )</code>.
+  </p>
+
+  <h2>API Changes</h2>
+
+  <p>
+    With the move to RAP 2.0, we are cleaning up our APIs.
+    This will lead to breaking changes.
+    Existing RAP 1.x applications will therefore need minor adjustments to work with RAP 2.0.
+    See the <a href="migration-guide/index.html">RAP 2.0 Migration Guide</a> for instructions on updating
+    your code to RAP 2.0.
+  </p>
+
+  <h3>Package org.eclipse.rwt renamed</h3>
+
+  <p>
+    We renamed this package to org.eclipse.rap.rwt in order to comply with Eclipse naming
+    convention that packages should be prefixed with the project that creates it.
+  </p>
+
+  <h3>Constant WidgetUtil.CUSTOM_VARIANT moved</h3>
+
+  <p>
+    This constant has been moved to the class RWT.
+  </p>
+
+  <h3>Prefix “I” removed from interfaces</h3>
+  <p>
+    The prefix “I” in interface names like <em>IEntryPoint</em> is a heritage from the Eclipse
+    platform.
+    This deviates from the naming pattern used in SWT and other libraries, and also from the Java
+    class library.
+    Since it is not even used consistently in RAP, we're removing the prefix from all interfaces.
+  </p>
+
+  <h3>Deprecated public classes and methods removed</h3>
+
+  <dl>
+    <dt>JSWriter, JSVar, JSListenerType, JSListenerInfo</dt>
+    <dd>
+      removed together with the corresponding methods in WidgetLCAUtil and ControlLCAUtil.
+      These classes were used for rendering JavaScript are now obsolete.
+    </dd>
+    <dt>AdapterFactory</dt>
+    <dd>
+      removed without a replacement together with the extension point,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=344541">bug 344541</a>
+    </dd>
+    <dt>ResourceManagerFactory</dt>
+    <dd>
+      remove without a replacement,
+      see <a href="https://bugs.eclipse.org/bugs/buglist.cgi?quicksearch=348476">bug 348476</a>
+    </dd>
+  </dl>
+
+  <h3>Graphics deprecated</h3>
+  <p>
+    The class <em>Graphics</em> had been used to create <em>shared</em> instances of resources like
+    <em>Color</em> and <em>Font</em> before resource constructors were introduced in 1.3.
+    This practice is problematic because instances created using these methods throw an exception
+    when trying to dispose them. Moreover, they cannot be garbage collected.
+    In RAP 2.0, resources should only be created using the constructors
+    of <em>Color</em>, <em>Font</em>, <em>Cursor</em>, and <em>Image</em>.
+  </p>
+  <p>
+    Graphics also provided methods for test size measurement. We expect that these methods are
+    hardly used by application code and can be replaced by SWT's <em>GC</em> API.
+    To measure a string in a given font, create a GC, set the font, and call the GC methods
+    <em>stringExtent</em> or <em>textExtent</em>. Don't forget to dispose of the GC afterwards.
+  </p>
+
+  <h3>Service store deprecated</h3>
+  <p>
+    The service store is used internally by the framework to store data in the scope of a request.
+    Application developers shouldn't really need this store anymore.
+    If an application needs to store any information in the request scope, it should use the
+    request object directly, i.e. <code>RWT.getRequest().setAttribute(...)</code>.
+  </p>
+
+  <h3>Session store replaced by UI session</h3>
+  <p>
+    When working with RAP, you have to deal with two different types of sessions: the servlet
+    container's <em>HttpSession</em> and RAP's <em>UISession</em> (formerly known as session store).
+    Both sessions have a different scope and a different purpose.
+    In recent projects we've noticed that the relationship between the HTTP session and RAP's
+    “session store” led to confusion. By renaming the session store to UI session we hope to make it
+    more clear that both are sessions with a different scope and meaning.
+    Here's some background:
+  </p>
+  <p>
+    <strong>The HTTP session</strong> is managed by the servlet container which recognizes the user
+    with the help of a Cookie or URL rewriting.
+    It has a configurable timeout, after which a user has to sign in again.
+    The HTTP session is the place to store user-specific information.
+  </p>
+  <p>
+    <strong>The UI session</strong> is built on top of the HTTP session, but has a shorter lifetime.
+    A new UI session is started every time a user accesses an entrypoint and it lives as long this
+    UI is being used. When the user accesses another entrypoint, this results in a new UISession,
+    but the HttpSession will be the same.
+    The UI session is the place to store information that is related to the current
+    <em>instance</em> of an application's UI.
+    It can now also be used to access UI-session-scoped instances such as the <em>Client</em>
+    and the locale.
+  </p>
+  <p>
+    The interface <em>ISessionStore</em> has been renamed to <em>UISession</em>. The types
+    <em>SessionStoreListener</em> and <em>SessionStoreEvent</em> have been renamed accordingly.
+  </p>
+  <p>
+    In addition to the <em>get/setAttribute</em> methods, <em>UISession</em> also provides access
+    to the <code>Client</code> instance and the <code>Locale</code>.
+    Actually, <code>RWT.getClient()</code> is now a shortcut for
+    <code>RWT.getUISession().getClient()</code>.
+    The same is true for <code>RWT.getLocale()</code> and <code>RWT.setLocale( locale )</code>.
+  </p>
+
+  <h3>New Server Push API to replace UICallBack</h3>
+  <p>
+    The class <em>UICallBack</em> represents RAP's mechanism to “push” UI updates to the client
+    when these updates occur outside of a request.
+    It can be activated and deactivated using an ID, in order to allow different parties to activate
+    the the push independently.
+    We noticed that users had trouble to understand the idea behind these IDs,
+    so we tried to come up with a new API.
+  </p>
+  <p>
+    We chose to call the system <em>server push</em>, which is the common name for technologies that
+    simulate a push update from an HTTP server to a client.
+    To activate the server push, you can create a new <em>ServerPushSession</em> and start it.
+    The push session can be stopped when it is no longer needed
+    (in contrast to UICallBack, this can now be done from any thread).
+    As long as there are any push sessions running, the framework will keep the server push system
+    active.
+  </p>
+
+  <h3>BrowserHistory replaced by BrowserNavigation service</h3>
+  <p>
+    The <em>BrowserHistory</em> and related classes have been replaced by
+    the more general <em>BrowserNavigation</em> client service.
+    The new name will allow us to add more
+    navigation features to this service that are not directly related to history.
+    All features of BrowerHistory are retained,
+    see the <a href="migration-guide/index.html">migration guide</a> for a code example.
+  </p>
+
+  <h3>Application store replaced by Application context</h3>
+  <p>
+    The new <em>ApplicationContext</em> represents the running instance of a RAP application, it is
+    shared by all UI sessions. This interface replaces IApplicationStore, it can be used to store
+    shared data, and also to obtain application-scoped services such as the resource manager.
+  </p>
+  <p>
+    Just like the UISession is built on the servlet container's HttpSession, the ApplicationContext
+    is built on the <em>ServletContext</em>, and its life cycle is also bound to lifetime of the
+    servlet context.
+    We chose the name Application<em>Context</em> to highlight this analogy.
+  </p>
+  <p>
+    The interface <em>IApplicationStore</em> has been renamed to <em>ApplicationContext</em>.
+    An instance can be acquired from <code>RWT.getApplicationContext()</code> which replaces
+    the old method <code>RWT.getApplicationStore()</code>.
+  </p>
+  <p>
+    In addition to the <em>get/setAttribute</em> methods, <em>ApplicationContext</em> has accessor
+    methods for the resource manager and the service manager.
+    Actually, <code>RWT.getResourceManager()</code> is now simply a shortcut for
+    <code>RWT.getApplicationContext().getResourceManager()</code>.
+  </p>
+
+  <h3>Service handlers</h3>
+  <p>
+    The interface <em>ServiceHandler</em> has been changed.
+    The <em>service</em> method now provides two parameters <em>request</em> and <em>response</em>
+    to the implementation.
+    Developers don't have to obtain the request and response objects from static methods anymore.
+  </p>
+  <p>
+    The <em>ServiceManager</em> has got a new method <em>getServiceHandlerUrl( String )</em>.
+    Developers should use this new method to obtain the URL to access a service handler instead
+    of assembling the URL manually.
+  </p>
+
+  <h3>Resource Manager Rework</h3>
+  <p>
+    The resource manager (<em>IResourceManager</em>) is used to register static resources like
+    images or JavaScript files in RAP applications. We reduced its interface to this purpose
+    and simplified the implementation.
+  </p>
+
+  <ul>
+    <li>
+      For resources that are registered in an <em>ApplicationConfiguration</em>, the method
+      <em>Application.addResource(…)</em> now accepts a <em>ResourceLoader</em> instead of
+      <em>IResource</em>.
+    </li>
+    <li>
+      The <em>IResource</em> interface is now only used in the extension point
+      <em>org.eclipse.rap.ui.resources</em> and has therefore been moved to the bundle
+      <em>org.eclipse.rap.ui.workbench</em>.
+    </li>
+    <li>
+      The encoding of a resource is not taken into account anymore, <em>getCharset()</em> has
+      been removed from the <em>IResource</em> interface.
+      If you used to register text files with a charset other than UTF-8, you should make sure that
+      your client code reads the resources with the correct charset.
+    </li>
+    <li>
+      The Method <em>getOptions()</em> has been removed from the <em>IResouce</em> interface.
+      This means:
+      <ul>
+        <li>
+          The resource manager can not minify JavaScript anymore.
+          It is recommend that custom component developers minify their JavaScript files with a tool
+          such as <a href="http://developer.yahoo.com/yui/compressor/">YUI Compressor</a>,
+          <a href="https://developers.google.com/closure/compiler/">Google Closure Compiler</a>,
+          or <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a>.
+        </li>
+        <li>
+          The resource manager can not add version hashes to file names anymore.
+          If there is a need to add version hashes to URLs, applications can simply add a URL parameter
+          like <em>"?nocache=4711"</em> when requesting the resource.
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>
+    Moreover, the resource manager does not close input streams anymore after registering a resource,
+    as it did in 1.5 (<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=347615">bug 347615</a>). Double check that you're closing your input streams correctly.
+  </p>
+
+  <h3>Dropped Support for entrypoints by name</h3>
+  <p>
+    Until now, entrypoints could be registered with a name in an entrypoint extension.
+    Those entrypoints had been available at a URL with the default servlet name “rap” and a URL
+    parameter “startup” pointing to this name. This approach had a number of drawbacks, thus we
+    decided to remove the support for it completely in RAP 2.0. Now
+    entrypoints can only be registered by path, which was introduced in RAP 1.5.
+    For example, an entrypoint that is registered with the path <code>/foo</code> will be available
+    at:
+  </p>
+<pre>
+http://hostname/webapp/foo
+</pre>
+
+  <h2>Branding</h2>
+
+  <h3>Entrypoint mapping</h3>
+  <p>
+    Since entrypoints are now always registered by path, there is no need for an entrypoint-to-path
+    mapping in a branding anymore.
+    Therefore, we removed the attributes <em>servletName</em>, <em>defaultEntrypointId</em>, and the
+    element <em>associatedEntrypoints</em> from the <em>branding</em> extension point.
+    A branding can now be bound to an entrypoint by setting the new attribute <em>brandingId</em>.
+  </p>
+<pre class="lang-xml">
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.entrypoint"
+      class="example.MyEntryPoint"
+      path="/example"
+      <strong>brandingId="example.branding"</strong> /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+
+  <h3>Exit confirmation</h3>
+  <p>
+    For exit confirmations, the new client service <em>ExitConfirmation</em> should be used as
+    explained above.
+    The attribute <em>exitConfirmationClass</em> is no longer supported by the branding extension
+    point.
+  </p>
+
+  <h3>Branding API removed from RWT</h3>
+  <p>
+    With these changes, we also removed the branding API from RWT, namely the classes
+    <em>AbstractBranding</em> and <em>Header</em>.
+    We don't expect that anyone was using these classes.
+    In plain RWT applications, entrypoint properties can be used for branding.
+  </p>
+
+  <h2>IApplication</h2>
+  <p>
+    If you use the interface <em>IApplication</em> as entrypoint to your application,
+    you now have to add an entrypoint extension to your <em>plugin.xml</em>
+    in order to bind the application to a path.
+    To do so, create a new entrypoint extension and, instead of providing an EntryPoint class,
+    specify the id of the application extension in the new parameter <em>applicationId</em>:
+  </p>
+<pre class="lang-xml">
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.application.entrypoint"
+      path="/example"
+      brandingId="example.branding"
+      <strong>applicationId="example.application"</strong> /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+
+  <h2>Settings</h2>
+
+  <h3>Development Mode</h3>
+  <p>
+    During development, it's recommended to start RAP in <em>development mode</em>.
+    In this mode, the JavaScript for the web client is not compressed and potential client-side
+    errors will not be caught.
+    This new setting replaces the old <em>clientLibraryVersion</em>, which has been used for this
+    purpose before.
+    In the RAP Launcher, you'll find a new option to enable the development mode:
+  </p>
+  <p>
+    <img class="framed" title="Development mode" src="images/RAPLauncher-dev-mode.png" />
+  </p>
+  <p>
+    In OSGi launch configurations, please replace the VM parameter
+    <code>-Dorg.eclipse.rwt.clientLibraryVersion=DEBUG</code> with
+    <code>-Dorg.eclipse.rap.rwt.developmentMode=true</code>.
+  </p>
+
+  <h2>Tools</h2>
+
+  <h3>RAP Launcher always terminates previous launch</h3>
+  <p>
+    The RAP launcher has an option to terminate an already running application before starting a
+    new one. This turned out to be a valuable feature, particularly when working with fixed ports.
+    We couldn't find a good reason to ever disable this functionality, so we decided to remove the
+    option from the launcher while keeping the default behavior.
+  </p>
+  <p>
+    <img class="framed" title="Text with search icons" src="images/Tools-remove-previous-launch.png" />
+  </p>
+
+  <h3>RWT Launcher</h3>
+  <p>
+    The RWT Launcher has got new options to configure the session timeout and the context path,
+    just like the RAP Launcher.
+  </p>
+  <p>
+    <img class="framed" title="RWT Launcher" src="images/RWTLauncher-ServerOptions.png" />
+  </p>
+
+  <h3>New Basic Template</h3>
+  <p>
+    For lightweight RAP applications, we recommend to implement an EntryPoint and an
+    ApplicationConfiguration instead of using the Workbench and its extension points.
+    To get you started quickly with a minimal application, we added a new very basic
+    <em>Hello World</em> template to the RAP Tools.
+    This template uses declarative services to register an ApplicationConfiguration.
+    It replaces two old Eclipse Workbench-based templates.
+  </p>
+  <p>
+    The popular <em>Mail</em> template remains as an example for an application that uses the
+    Workbench stack, IApplication, advisors, views and a perspective, etc.
+  </p>
+  <p>
+    <img class="framed" title="RWT Launcher" src="images/HelloWorld-Template.png" />
+  </p>
+
+</div>
+
+  <h2>Bugfixes</h2>
+
+  <p>
+    <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;classification=RT&amp;product=RAP&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED&amp;target_milestone=2.0%20M1&amp;target_milestone=2.0%20M2&amp;target_milestone=2.0%20M3&amp;target_milestone=2.0%20M4&amp;target_milestone=2.0%20RC1&amp;target_milestone=2.0%20RC2&amp;target_milestone=2.0">This list</a>
+    shows all bugs that have been fixed for this release.
+  </p>
+
+
+</div>
+
+<div id="rightcolumn">
+  <div class="sideitem attention">
+
+  <h6>RAP 3.0 Migration Guide</h6>
+
+  <div class="sideitemcontent">
+    <p>
+      To assist you with the migration from RAP 2.x (or 1.x) to 3.0, we provide a
+      <a href="../3.0/migration-guide.html">migration guide</a>.
+    </p>
+  </div>
+
+</div>
+  <div class="sideitem">
+
+  <h6>RAP Releases</h6>
+
+  <div class="sideitemcontent">
+    <ul>
+      <li>
+        <a href="../../downloads/4.1/index.html">RAP 4.1&emsp;2024-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/4.0/index.html">RAP 4.0&emsp;2024-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.29/index.html">RAP 3.29&emsp;2024-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.28/index.html">RAP 3.28&emsp;2024-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.27/index.html">RAP 3.27&emsp;2023-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.26/index.html">RAP 3.26&emsp;2023-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.25/index.html">RAP 3.25&emsp;2023-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.24/index.html">RAP 3.24&emsp;2023-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.23/index.html">RAP 3.23&emsp;2022-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.22/index.html">RAP 3.22&emsp;2022-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.21/index.html">RAP 3.21&emsp;2022-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.20/index.html">RAP 3.20&emsp;2022-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.19/index.html">RAP 3.19&emsp;2021-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.18/index.html">RAP 3.18&emsp;2021-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.17/index.html">RAP 3.17&emsp;2021-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.16/index.html">RAP 3.16&emsp;2021-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.15/index.html">RAP 3.15&emsp;2020-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.14/index.html">RAP 3.14&emsp;2020-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.13/index.html">RAP 3.13&emsp;2020-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.12/index.html">RAP 3.12&emsp;2020-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.11/index.html">RAP 3.11&emsp;2019-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.10/index.html">RAP 3.10&emsp;2019-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.9/index.html">RAP 3.9&emsp;2019-06</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.8/index.html">RAP 3.8&emsp;2019-03</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.7/index.html">RAP 3.7&emsp;2018-12</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.6/index.html">RAP 3.6&emsp;2018-09</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.5/index.html">RAP 3.5&emsp;2018-06 (Photon)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.4/index.html">RAP 3.4&emsp;2017-12 (Oxygen.2)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.3/index.html">RAP 3.3&emsp;2017-09 (Oxygen.1)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.2/index.html">RAP 3.2&emsp;2017-06 (Oxygen)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.1/index.html">RAP 3.1&emsp;2016-06 (Neon)</a>
+      </li>
+      <li>
+        <a href="../../downloads/3.0/index.html">RAP 3.0&emsp;2015-06 (Mars)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.3/index.html">RAP 2.3&emsp;2014-06 (Luna)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.2/index.html">RAP 2.2&emsp;2013-12 (Kepler SR2)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.1/index.html">RAP 2.1&emsp;2013-06 (Kepler)</a>
+      </li>
+      <li>
+        <a href="../../downloads/2.0/index.html">RAP 2.0&emsp;2013-02 (Juno SR3)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.5/index.html">RAP 1.5&emsp;2012-06 (Juno)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.4/index.html">RAP 1.4&emsp;2011-06 (Indigo)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.3/index.html">RAP 1.3&emsp;2010-06 (Helios)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.2/index.html">RAP 1.2&emsp;2009-06 (Galileo)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.1/index.html">RAP 1.1&emsp;2008-06 (Ganymede)</a>
+      </li>
+      <li>
+        <a href="../../downloads/1.0/index.html">RAP 1.0&emsp;2007-10</a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

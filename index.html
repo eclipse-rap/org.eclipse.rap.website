@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Remote Application Platform (RAP)</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div class="active" id="rap-logo-deco"></div>
+  <a href="index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="index.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="demos/index.html">Demos</a></li><li ><a href="downloads/index.html">Download</a></li><li ><a href="documentation/index.html">Documentation</a></li><li ><a href="getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul style="display:none;" id="nav-home">
+      <li>
+        <a href="index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="incubator/index.html">Incubator</a></li><li><a  href="http://projects.eclipse.org/projects/rt.rap"><span class='nav-redirect'>About this project</span></a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="slideshow">
+  <h1>
+    Enabling modular business apps<br/>
+    for desktop, browser and mobile
+  </h1>
+  <p>
+    RAP provides a powerful widget toolkit and integrates well with proven technologies
+    such as OSGi and JEE.
+    You can write your application entirely in Java, re-use code and benefit from first-class IDE
+    tools.
+  </p>
+  <div id="heading-eclipse-icon">
+    <a href="http://eclipse.org/"><img
+        src="images/logos/eclipse.png"
+        alt="Eclipse.org icon" /></a>
+  </div>
+</div>
+
+<div id="features">
+  <div class="feature" id="ui-kit">
+    <div class="icon"></div>
+    <div class="feature-description">
+      <h2>Widget Toolkit</h2>
+      <p>
+        RAP lets you develop modern web UIs with a real widget toolkit with
+        <a href="http://eclipse.org/swt/" title="Standard Widget Toolkit">SWT</a> API,
+        which includes powerful features like drag &amp; drop, loading data on demand, inline editing,
+        and drawing.
+      </p><p>
+        Using the <a href="http://wiki.eclipse.org/JFace">JFace</a> APIs,
+        it makes accessing complex data models incredibly simple.
+        <br/><a class="popup-activate" href="index.html">learn more...</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="feature" id="cross-browser">
+    <div class="icon"></div>
+    <div class="feature-description">
+      <h2>Cross Platform</h2>
+      <p>
+        RAP runs in all relevant web browsers, without any add-ons required.
+        Many advanced features like gradients are rendered even in browsers without CSS3 support.
+      </p><p>
+        It's built on an open protocol, so other clients can be connected.
+        <br/><a class="popup-activate" href="index.html">learn more...</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="feature" id="integration">
+    <div class="icon"></div>
+    <div class="feature-description">
+      <h2>Integration</h2>
+      <p>
+        RAP uses standard servlet technology and runs on any JEE servlet container.
+        It integrates well with OSGi, but can also be used stand-alone.
+      </p><p>
+        <!--
+        Various Eclipse technologies build on RAP: Riena, Scout, Jubula.
+        -->
+        For high-availability applications, load balancing and transparent session failover is
+        supported.
+        <br/><a class="popup-activate" href="index.html">learn more...</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="stop" ></div>
+
+  <div class="feature" id="tooling">
+    <div class="icon"></div>
+    <div class="feature-description">
+      <h2>Tool Support</h2>
+      <p>
+        RAP applications are written in Java, and you have the full power of Eclipse's development
+        tools at hand.
+      </p><p>
+        This includes a first-class UI designer and an acceptance testing tool suite available
+        together with RAP 1.5.
+        <br/><a class="popup-activate" href="index.html">learn more...</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="feature" id="clustering">
+    <div class="icon"></div>
+    <div class="feature-description">
+      <h2>Single Sourcing</h2>
+      <p>
+        With RAP, you can re-use your code for different target platforms.
+        Even code that has been written for Eclipse RCP can run in a web browser.
+      </p><p>
+        Existing Eclipse plugins such as EMF, BIRT, or JGit can easily be included in RAP apps.
+        <br/><a class="popup-activate" href="index.html">learn more...</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="feature" id="open-source">
+    <div class="icon"></div>
+    <div class="feature-description">
+      <h2>Open Source</h2>
+      <p>
+        As an Eclipse project, RAP is published under the
+        <a href="http://eclipse.org/legal/epl-v10.html" title="Eclipse Public License">EPL</a>
+        and benefits from the Eclipse Foundation's high standards of IP management.
+      </p><p>
+        RAP is part of the annual Eclipse release and always delivers on time.
+        <br/><a class="popup-activate" href="index.html">learn more...</a>
+      </p>
+    </div>
+  </div>
+  <div class="stop"></div>
+</div>
+
+<div class="popup-content" data-for="ui-kit">
+  <h2>Widget Toolkit</h2>
+  <p>
+    With RAP, you don't create UIs with HTML and browser technologies, but with the Java API of SWT,
+    the widget toolkit used in Eclipse.
+    The RAP Widget Toolkit (RWT) provides a comprehensive set of powerful SWT widgets, also including
+    <a href="https://www.eclipse.org/articles/printable.php?file=Article-Understanding-Layouts/index.html">layout managers</a>
+    and event listeners.
+    It supports advanced features such as
+    <a href="http://rap.eclipsesource.com/rapdemo/examples#drag-and-drop">Drag and Drop</a> and
+    <a href="http://rap.eclipsesource.com/rapdemo/examples#canvas">drawing</a>,
+    and adds several web-specific features not found in SWT, like
+    <a href="http://rap.eclipsesource.com/rapdemo/examples#rich-label">Markup Support</a>.
+    With the JFace viewer framework, applications can easily provide access to millions of data
+    entries through the use of virtual rendering and lazy loading.
+    RWT can be freely styled using a CSS-based
+    <a href="developers-guide/theming.html">Theming API</a>.
+  </p>
+  <ul>
+    <li>
+      See the widgets in action:
+      <a href="http://rap.eclipsesource.com/rapdemo/examples">RAP Examples Demo</a>
+    </li>
+    <li>
+      SWT is easy to learn and nearly identical to RWT:
+      <a href="https://www.eclipse.org/swt/docs.php">SWT Documentation</a>
+    </li>
+    <li>
+      If you are already familiar with SWT, read about
+      <a href="developers-guide/rwt.html">Differences between
+      RWT and SWT</a>
+    </li>
+    <li>
+     Need more widgets? A list of known Add-Ons targeted specifically at RAP can be found in the
+     <a href="http://wiki.eclipse.org/RAP/Add-Ons">RAP Wiki</a> <!-- Nebula? -->
+    </li>
+    <li>
+     Widget behavior can be enhanced using client-side event handlers:
+     <a href="http://wiki.eclipse.org/RAP/Incubator/ClientScripting">RAP ClientScripting</a>
+    </li>
+  </ul>
+</div>
+
+<div class="popup-content" data-for="cross-browser">
+  <h2>Cross Platform</h2>
+  <p>
+    The default RAP Web client supports these browsers:
+  </p>
+  <ul>
+    <li>Internet Explorer 9+</li>
+    <li>Google Chrome 29+</li>
+    <li>Firefox 23+</li>
+    <li>Safari 6+</li>
+    <li>Opera 15+</li>
+    <li>iOs 6+</li>
+    <li>Android 4 (Limited)</li>
+  </ul>
+  <p>
+    No browser plug-ins are required by the default client, only JavaScript needs to be enabled.
+    However, custom widgets are free to build on any third-party API.
+    Other browser may work if based on a Trident, Gecko or Webkit engine.
+    Support on mobile browsers has
+    <a href ="http://wiki.eclipse.org/RAP/Mobile_Browser">some limitations</a>.
+  </p>
+  <p>
+    Other platforms can be supported by alternative RAP clients connecting to RAP's
+    <a href="http://wiki.eclipse.org/RAP/Protocol">open protocol</a>.
+    As an example, native clients for mobile platforms are available as a commercial add-on.
+  </p>
+</div>
+
+<div class="popup-content" data-for="integration">
+  <h2>Integration</h2>
+  <p>
+    Making it possible to integrate RAP with other Java technologies is one of our main objectives.
+    We're doing so by making RAP compatible with JEE and OSGi and by limiting
+    dependencies to the necessary minimum.
+    A partial list of compatible technologies:
+  </p>
+  <ul>
+    <li>
+      RAP applications can be deployed directly as OSGi bundles on
+      <a href="http://wiki.eclipse.org/RAP/Running_RAP_on_virgo">Virgo</a>,
+      <a href="http://wiki.eclipse.org/RAP/Running_RAP_on_WebSphere">WebSphere</a>
+      and many other application servers.
+    </li>
+    <li>
+      If you prefer, it can also be
+      <a href="developers-guide/deployment.html">deployed</a>
+      as <code>.war</code> file in a traditional servlet container like Tomcat.
+    </li>
+    <li>
+      The
+      <a href="developers-guide/application-setup.html#compat">JEE compatibility mode</a>
+      in RAP makes it possible to use
+      <a href="http://wiki.eclipse.org/RAP/RWT_Cluster">clustering</a>.
+    </li>
+    <li>
+      <a href="http://wiki.eclipse.org/RAP/Equinox_Security_Integration">Equinox Security Integration</a>
+      ensures your data is safe at all times.
+    </li>
+  </ul>
+</div>
+
+<div class="popup-content" data-for="tooling">
+  <h2>Tool Support</h2>
+  <p>
+    Many of the Eclipse tools designed for Java or SWT development can be used with RAP.
+  </p>
+  <ul>
+    <li>
+      You can use the full power of the
+      <a href="https://www.eclipse.org/jdt/">Java Development Tools</a> (JDT)
+      including automated refactorings,
+      <a href="http://www.vogella.com/articles/EclipseDebugging/article.html">debugger</a>,
+      <a href="http://www.vogella.com/articles/JUnit/article.html">test runner</a>
+      etc.
+    </li>
+    <li>
+      The Plug-in Development Environment (PDE) assists with the creation of OSGi bundles,
+      dependency management, maintaining a target platform, etc.
+    </li>
+    <li>
+      The <a href="https://www.eclipse.org/windowbuilder/">Eclipse WindowBuilder</a> provides an
+      excellent UI designer for SWT.
+    </li>
+    <li>
+      WAR files can be created using the WAR product tools from the Libra project.
+    </li>
+    <li>
+      Many more great add-ons are available for Java development in Eclipse such as the
+      <a href="http://www.eclemma.org/">EclEmma code coverage integration</a> or
+      <a href="http://findbugs.sourceforge.net/downloads.html">Findbugs for static code analysis</a>....
+    </li>
+  </ul>
+</div>
+
+<div class="popup-content" data-for="clustering">
+  <h2>Single Sourcing</h2>
+  <p>
+    RAP allows you to address different platforms with a shared code base.
+    Applications can be developed for the desktop, the web browser, and even mobile clients without
+    duplicating code.
+    Due to RAP's high compatibility with the Eclipse UI technologies, a lot of existing code
+    targeted at the desktop can be re-used for your web application with minimal changes.
+    And besides the code, you can also re-use your developer tools and skills.
+  </p>
+  <p>
+    Typical scenarios are:
+  </p>
+  <ul>
+    <li>
+      Porting an existing SWT/RCP application to the web.
+    </li>
+    <li>
+      Developing a new application that can run on the desktop and in the browser.
+    </li>
+    <li>
+      Re-using existing libraries developed for previous applications.
+    </li>
+    <li>
+      Utilize RCP-compatible open source libraries and frameworks. Examples:
+      <ul>
+        <li>
+          The <a href="http://eclipse.org/modeling/emf/">Eclipse Modeling Framework</a>
+          can
+          <a href="http://wiki.eclipse.org/RAP/EMF_Integration">create RAP UIs</a>.
+        </li>
+        <li>
+          Use <a href="http://eclipse.org/birt/">Eclipse BIRT</a> (with
+          <a href="http://wiki.eclipse.org/RAP/BIRT_Integration">some adjustments</a>)
+          to create charts in RAP.
+        </li>
+        <li>
+          <a href="users/index.html#riena">Eclipse Riena</a>
+          is an application framework which can be used on top of RAP.
+        </li>
+        <li>
+          <a href="users/index.html#scout">Eclipse Scout</a>
+          can generate RCP and RAP applications
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="popup-content" data-for="open-source">
+  <h2>Open Source</h2>
+  <p>
+    All code can be freely used in open source projects and in
+    <a href="users/index.html">commercial applications</a>.
+    On the <a href="downloads/index.html">downloads page</a>, you always get the latest versions.
+    We also offer public nightly builds to make all changes available immediately.
+    You can check out the source code directly from the <a href="source/index.html">Git repository</a>
+    or even fork us on <a href="https://github.com/eclipse-rap">GitHub</a>.
+  </p>
+  <p>
+    If you require help beyond the <a href="developers-guide/index.html">RAP Developer's Guide</a>,
+    there is an active community maintaining a
+    <a href="https://www.eclipse.org/forums/index.php?t=thread&amp;frm_id=34">Newsgroup</a>,
+    a <a href="http://wiki.eclipse.org/RAP">Wiki</a> and the <a href="incubator/index.html">Incubator project</a>.
+    Bugs can be reported as <a href="bugs/index.html">RAP GitHub issues</a> and will be  processed
+    transparently.
+    Professional services are also <a href ="support/professional-services/index.html">available</a>.
+  </p>
+</div>
+
+<div id="blog-posts-container">
+  <a href="http://eclipsesource.com/blogs/tag/rap/feed/" class="rssIcon"><img src="images/feed_dark.png" alt="feed" /></a>
+  <h2>Recent blog posts</h2>
+  <div id="blog-posts"></div>
+  <div class="stop"></div>
+</div>
+
+<script type="text/javascript">
+
+  $( '#blog-posts' ).rssfeed( 'http%3A%2F%2Feclipsesource.com%2Fblogs%2Ftag%2Frap%2Ffeed%2F', {
+    limit: 3,
+    header : false,
+    key : "ABQIAAAADaXzprMke0eXhl5lyjwBJhQirors1Oy_y16QJctfjrSpBJX32hS_wL3O0Tk2wYierOO2_dXAoE0AMQ",
+    titletag : "h3",
+    date : false,
+    content : true
+  } );
+
+</script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

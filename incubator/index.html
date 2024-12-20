@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Incubator</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div class="active" id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="index.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li ><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul style="display:none;" id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  class="active" href="index.html">Incubator</a></li><li><a  href="http://projects.eclipse.org/projects/rt.rap"><span class='nav-redirect'>About this project</span></a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn">
+
+  <h1>RAP Incubator Add-Ons</h1>
+  <p>
+    The RAP Incubator is a sub-project to make new and promising RAP add-on developments visible and
+    available for the community. It is partitioned into components, each maintained by its own
+    Incubator committer(s).
+    When a component has matured and is broadly used, it may graduate and move to the RAP project.
+  </p>
+  <p>
+    A completely
+    <a href="http://wiki.eclipse.org/RAP/Add-Ons"><b>unfiltered list</b></a> of software
+    that was developed to be used together with RAP (including this incubator components)
+    can be found in the RAP wiki.
+  </p>
+
+  <h2>Available components</h2>
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="images/chart.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    Chart
+  </h3>
+        <description>
+    <p>
+      Chart widgets for RAP, based on <a href="http://d3js.org/">d3.js</a> and
+      <a href="http://nvd3.org/">nvd3.js</a>
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Ralf Sternberg
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.chart.git">git repository</a>
+        </p>
+                <p>
+          <strong>Builds (p2 repositories):</strong>
+        </p>
+        <ul>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/nightly/chart">nightly builds</a></li>
+                </ul>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="images/fileupload.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    FileUpload
+  </h3>
+        <description>
+    <p>
+      RAP File Upload Support
+    </p>
+    <p>
+      <em>This component has been graduated and moved to the RAP core as of 3.0.</em>
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Ivan Furnadjiev
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.fileupload.git">git repository</a>
+        </p>
+                <p>
+          <strong>Builds (p2 repositories):</strong>
+        </p>
+        <ul>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.0/fileupload">RAP 2.0 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.1/fileupload">RAP 2.1 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.2/fileupload">RAP 2.2 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.3/fileupload">RAP 2.3 compatible version</a></li>
+                </ul>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="images/nebula-grid.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    Nebula Grid widget for RAP
+  </h3>
+        <description>
+    <p>
+      RAP port of the <a href="https://www.eclipse.org/nebula/widgets/grid/grid.php">Grid widget</a>
+      from the <a href="https://www.eclipse.org/nebula">Nebula project</a>.
+    </p>
+    <p>
+      The Grid widget is a spreadsheet/table component that offers features not currently
+      available in the base SWT Tree/Table like column grouping, checkboxes on multiple
+      columns, variable item height and more.
+    </p>
+    <p>
+      <em>This component has been graduated and moved to the RAP core as of 3.0.</em>
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Ivan Furnadjiev
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.nebula-grid.git">git repository</a>
+        </p>
+                <p>
+          <strong>Builds (p2 repositories):</strong>
+        </p>
+        <ul>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.0/nebula-grid">RAP 2.0 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.1/nebula-grid">RAP 2.1 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.2/nebula-grid">RAP 2.2 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.3/nebula-grid">RAP 2.3 compatible version</a></li>
+                </ul>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="images/dropdown.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    AutoSuggest (DropDown)
+  </h3>
+        <description>
+    <p>
+      AutoSuggest is a widget that attaches type-ahead suggestions to a Text field.
+      This component is built upon the DropDown widget that displays a list of selectable items
+      below a text field.
+    </p>
+    <p>
+      <em>As of RAP 2.3, the DropDown widget has become part of RWT, while the AutoSuggest remains
+      in this repository.</em>
+    </p>
+    <p>
+      <a href="http://wiki.eclipse.org/RAP/Incubator/DropDown">DropDown wiki page</a>
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Tim Buschtöns
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.dropdown.git">git repository</a>
+        </p>
+                <p>
+          <strong>Builds (p2 repositories):</strong>
+        </p>
+        <ul>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.1/dropdown">RAP 2.1 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.2/dropdown">RAP 2.2 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.3/dropdown">RAP 2.3 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/3.0/dropdown">RAP 3.0 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/nightly/dropdown">nightly builds</a></li>
+                </ul>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="images/richtext.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    RichText Widget
+  </h3>
+        <description>
+    <p>
+      This is a custom widget for RAP that wraps the CKEditor, a web-based WYSIWYG/Rich-Text editor.
+      This version is compatible with RAP 2.1 and above, and is based on CKEditor version 3.6.6.1.
+    </p>
+    <p>
+      For more information, view the readme.txt in the <code>org.eclipse.rap.addons.ckeditor</code> bundle.
+    </p>
+    <p>
+      <em>This component has been graduated and moved to the RAP core as of 3.1.</em>
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Tim Buschtöns
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.richtext.git">git repository</a>
+        </p>
+                <p>
+          <strong>Builds (p2 repositories):</strong>
+        </p>
+        <ul>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.2/richtext">RAP 2.2 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.3/richtext">RAP 2.3 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/3.0/richtext">RAP 3.0 compatible version</a></li>
+                </ul>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="https://eclipse.dev/rap/incubator/images/e4.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    E4 on RAP
+  </h3>
+        <description>
+    <p>
+      This component provides a target platform to run Eclipse 4 applications on RAP.
+      The E4 application model and the DI-Container are fully supported,
+      including the event bus (IEventBroker), ExtendedObjectSuppliers (@UIEventTopic, @Preference)
+      and runtime language change support.
+      For details, see <a href="http://eclipsesource.com/blogs/2014/04/10/getting-started-with-eclipse4-applications-on-rap/">this blog post</a>.
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Tom Schindl
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.e4.git">git repository</a>
+        </p>
+                <p>
+          <strong>Builds (p2 repositories):</strong>
+        </p>
+        <ul>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.3/e4">RAP 2.3 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/3.0/e4">RAP 3.0 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/nightly/e4">nightly builds</a></li>
+                </ul>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="https://eclipse.dev/rap/incubator/images/clientscripting.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    ClientScripting
+  </h3>
+        <description>
+    <p>
+      ClientScripting allows developers to handle certain events that occur in RAP applications
+      directly on the client without creating any http-requests. Client scripts are written in
+      JavaScript using an SWT-like API.
+    </p>
+    <p>
+      <a href="http://wiki.eclipse.org/RAP/ClientScripting">ClientScripting wiki page</a>
+    </p>
+    <p>
+      <em>This component has been graduated and moved to the RAP core as of 2.2.</em>
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Tim Buschtöns
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.clientscripting.git">git repository</a>
+        </p>
+                <p>
+          <strong>Builds (p2 repositories):</strong>
+        </p>
+        <ul>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.0/clientscripting">RAP 2.0 compatible version</a></li>
+                        <li><a href="http://download.eclipse.org/rt/rap/incubator/2.1/clientscripting">RAP 2.1 compatible version</a></li>
+                </ul>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="https://eclipse.dev/rap/incubator/images/osgi-packaging.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    OSGi-Packaging
+  </h3>
+        <description>
+    <p>
+      OSGi-Packaging re-packages RAP bundles plus important bundles from the Eclipse
+      ecosystem to be used in OSGi containers other than Equinox. As a start it provides
+      the necessary Karaf features and Karaf archive in order to run RAP applications
+      in Apache Karaf.
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Markus Knauer
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.osgi-packaging.git">git repository</a>
+        </p>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="https://eclipse.dev/rap/incubator/images/cnf.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    Common Navigator Framework (CNF)
+  </h3>
+        <description>
+    <p>
+      Port of the <a href="http://wiki.eclipse.org/CNF">Common Navigator Framework</a>
+      for RAP.
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Bartosz Michalik
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.cnf.git">git repository</a>
+        </p>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="https://eclipse.dev/rap/incubator/images/gef.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    Graphical Editing Framework (GEF)
+  </h3>
+        <description>
+    <p>
+      Initial port of <a href="http://eclipse.org/gef/">Draw2D, GEF and Zest</a> for RAP, still under development.
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Austin Riddle
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.gef.git">git repository</a>
+        </p>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="images/pde.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    PDE Runtime
+  </h3>
+        <description>
+    <p>
+      Ports of the plugin-spy and error log views from
+      <a href="https://www.eclipse.org/pde/pde-ui/">PDE UI</a>.
+    </p>
+    <p>
+      <a href="http://wiki.eclipse.org/RAP/Incubator/PDERuntime">wiki page</a>
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Arnaud Mergey
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.pde.git">git repository</a>
+        </p>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="https://eclipse.dev/rap/incubator/images/tabbed-properties.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    Tabbed Properties View
+  </h3>
+        <description>
+    <p>
+      RAP port of the
+      <a href="https://www.eclipse.org/articles/Article-Tabbed-Properties/tabbed_properties_view.html">Tabbed Properties View</a>.
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Gunnar Wagenknecht
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.tabbed-properties.git">git repository</a>
+        </p>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+        <div class="box">
+      <div class="images">
+        <img style="display:inline-block; width:250px; height:190px; background-image:url(../images/incubator.png)"
+             src="images/visualization.png" alt=""/>
+      </div>
+
+      <div>
+        <h3>
+    Google Visualization
+  </h3>
+        <description>
+    <p>
+      This component provides a simple integration of all of the
+      Google Visualization widgets as RAP custom widgets:
+      Motion Chart, Annotated Timeline, Area Chart, Bar Chart,
+      Column Chart, Gauge, Geomap, Intensity Map, Line Chart,
+      Pie Chart, Scatter Chart, and Table.
+    </p>
+  </description>        <p>
+          <strong>Maintainer:</strong> 
+    Austin Riddle
+          </p>
+        <p>
+          <strong>Source code:</strong>
+          <a href="https://git.eclipse.org/c/rap/incubator/org.eclipse.rap.incubator.visualization.git">git repository</a>
+        </p>
+              </div>
+      <div style="clear:both"></div>
+    </div>
+
+  
+</div>
+
+<div id="rightcolumn">
+  <div class="sideitem">
+     <h6>Incubation</h6>
+     <div style="text-align: center;">
+       <a href="https://eclipse.dev/projects/what-is-incubation.php"><img
+           align="center" src="https://eclipse.dev/images/egg-incubation.png"
+           border="0" alt="Incubation" /></a>
+     </div>
+   </div>
+</div>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

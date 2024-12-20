@@ -1,0 +1,708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="scripting.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>Scripting</h1>
+
+  <h2>Contents</h2>
+
+  <ul><li><a href="scripting.html#overview">Overview</a></li>
+    <li><a href="scripting.html#api">API</a><ul><li><a href="scripting.html#ClientListener">ClientListener</a></li>
+      <li><a href="scripting.html#widgets">Widgets</a></li>
+      <li><a href="scripting.html#events">Event Types</a></li>
+      <li><a href="scripting.html#data">Data Transfer</a></li>
+      <li><a href="scripting.html#crosswidget">Cross-Widget Scripting</a></li>
+      <li><a href="scripting.html#html">Widget HTML</a></li>
+    </ul></li>
+    <li><a href="scripting.html#limitations">Limitations</a></li>
+    <li><a href="scripting.html#jshints">JavaScript for Java Developer</a></li>
+
+  </ul><h2 id="overview">Overview</h2>
+  <p>
+    RAP applications are running almost entirely on a Server. All application-relevant events
+    that occur on the client have to be forwarded to the Server before being
+    processed. Scenarios where minor delays in the event handling are unacceptable
+    (e.g. fast typing or mouse movements) would therefore be undesirable.
+  </p>
+  <p>
+    This is where RWT Scripting can help. With scripting developers can handle some of
+    the events directly on the client, without creating any HTTP-requests. This is ideal to
+    customize or enhance the behavior of specific widgets, most notably
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Text.html">Text</a></em>.
+  </p>
+  <p>
+    The scripts themselves have to be written in JavaScript on an SWT-like API. This allows application
+    developers with SWT-experience to get started right away, and makes porting between SWT and
+    RWT Scripting fairly easy. Even without much JavaScript-experience, this article should
+    provide you with all the basics you need for RWT Scripting.
+  </p>
+
+  <h2 id="api">Java and JavaScript API</h2>
+  <p>
+    Client event processing works like
+    <a href="http://help.eclipse.org/indigo/topic/org.eclipse.platform.doc.isv/guide/swt_widgets_events.htm">untyped event handling</a>
+    in SWT/RWT, with the main difference that
+    the handler itself has to be written in JavaScript. It also can not not provide out-of-the-box
+    access to all of the resources and functionality that would be available on the server.
+  </p>
+  <h3 id="ClientListener">Creating a ClientListener</h3>
+  <p>
+    To attach a
+    client side listener to a widget, instances of
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/scripting/ClientListener.html">ClientListener</a></em>
+    are used. Example:
+  </p>
+  <pre class="lang-java">
+widget.addListener( SWT.Verify, new ClientListener( scriptCode ) );
+  </pre>
+  <p>
+    The JavaScript source code can define any number of named function, either with<br />
+    "<code>var myFunction = function(){};</code>" or <br />"<code>function myFunction(){}</code>".
+    A function named "<em>handleEvent</em>" is obligatory and will be called in case
+    an event is fired. It takes one argument, which is the <code>event</code> object.
+  </p>
+  <p>Example:</p>
+  <pre class="lang-javajascript">var handleEvent = function( event ){
+  event.widget.setText( "Hello World!" );
+};</pre>
+  <p id="other">Other functions within the script
+    can be called from <em>handleEvent</em> to be used as helper. The order in which the functions
+    are defined is not relevant.
+    <a href="https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Functions_and_function_scope/Strict_mode">
+    Strict mode</a> is supported and can be activated for the entire script by writing
+    <code>"use strict";</code> in the first line.
+  </p>
+  <p>
+    If your script is longer than a few lines, we recommend to read it from an external file.
+    You may want to create a helper class to do so. It could look like this:
+  </p>
+  <pre class="lang-java" style="height:150px;overflow:scroll">public class ResourceLoaderUtil {
+
+  private static final ClassLoader CLASSLOADER = ResourceLoaderUtil.class.getClassLoader();
+
+  public static String readTextContent( String resource ) {
+    try {
+      return readTextContentChecked( resource );
+    } catch( IOException e ) {
+      throw new IllegalArgumentException( "Failed to read: " + resource );
+    }
+  }
+
+  private static String readTextContentChecked( String resource ) throws IOException {
+    InputStream stream = CLASSLOADER.getResourceAsStream( resource );
+    if( stream == null ) {
+      throw new IllegalArgumentException( "Not found: " + resource );
+    }
+    try {
+      BufferedReader reader = new BufferedReader( new InputStreamReader( stream, "UTF-8" ) );
+      return readLines( reader );
+    } finally {
+      stream.close();
+    }
+  }
+
+  private static String readLines( BufferedReader reader ) throws IOException {
+    StringBuilder builder = new StringBuilder();
+    String line = reader.readLine();
+    while( line != null ) {
+      builder.append( line );
+      builder.append( '\n' );
+      line = reader.readLine();
+    }
+    return builder.toString();
+  }
+
+}</pre>
+  <p>
+    <strong>Note that a ClientListener instance is permanently bound to the UISession.</strong> It is therefore
+    undesirable to create multiple <em>ClientListener</em> with the same script.
+    Instead it should be created once and shared within the session, for example
+    by using the SessionStore or creating a SessionSingleton.
+  </p>
+  <p><strong>Bad:</strong></p>
+  <pre class="lang-java">public static void addCustomBehavior( Control control ) {
+  String scriptCode
+    = ResourceLoaderUtil.readTextContent( "MyScript.js" );
+  ClientListener listener = new ClientListener( scriptCode );
+  control.addListener( SWT.MouseDown, listener );
+}</pre>
+  <p><strong>Good:</strong></p>
+  <pre class="lang-java">public static void addCustomBehavior( Control control ) {
+  ClientListener listener = MyClientListener.getInstance();
+  control.addListener( SWT.MouseDown, listener );
+}</pre>
+  <pre class="lang-java">public class MyClientListener extends ClientListener {
+
+  public static MyClientListener getInstance() {
+    return SingletonUtil.getSessionInstance( MyClientListener.class );
+  }
+
+  private MyClientListener() {
+    super( getText() );
+  }
+
+  private static String getText() {
+    return ResourceLoaderUtil.readTextContent( "MyScript.js" );
+  }
+
+}</pre>
+  <h3 id="widgets">Client Widget Objects</h3>
+  <p>
+    The widget objects in RWT Scripting are abstract representations of SWT widget instances. They
+    have a JavaScript-conform <b>subset</b> of the API of the actual SWT widgets they represent.
+    Client widget objects can be obtained from the
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/Event.html#widget"><code>event</code></a>
+    objects given in <em><a href="scripting.html#ClientListener">handleEvent</a></em>, or
+    from <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/rap.html#.getObject"><em>rap.getObject</em></a>.
+    (See also <q><a href="scripting.html#crosswidget">Cross-Widget Scripting</a></q> below.)
+    The JavaScript API for all scriptable widgets
+    is <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">documented the WebClient API Reference</a>.
+    Not all widgets support scripting. Adding a ClientListener to a widget that does not
+    support Scripting has no effect.
+  </p>
+
+  <h3 id="events">Supported Event Types</h3>
+  <p> The following Event types are supported:</p>
+  <table border="1" cellpadding="3" cellspacing="0"><tr><th align="left">Event Type</th>
+      <th align="left">Notes</th>
+    </tr><tr><td>
+        <code>SWT.KeyDown</code>
+      </td>
+      <td>
+        Fired once when pressing a key, then repeatedly while holding it down. The <code>doit</code>
+        flag can be used to prevent the character from beeing inserted.
+      </td>
+    </tr><tr><td>
+        <code>SWT.KeyUp</code>
+      </td>
+      <td>
+        Fired when releasing a key.
+      </td>
+    </tr><tr><td>
+        <code>SWT.MouseDown</code>
+      </td>
+      <td>
+        Fired when pressing a mouse button.
+      </td>
+    </tr><tr><td>
+        <code>SWT.MouseUp</code>
+      </td>
+      <td>
+        Fired when releasing a mouse button.
+      </td>
+    </tr><tr><td>
+        <code>SWT.MouseMove</code>
+      </td>
+      <td>
+        Fired when moving the mouse within the widget.
+        This type is not supported by server-side
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Listener.html">Listener</a>,
+        only by
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/scripting/ClientListener.html">ClientListener</a>.
+      </td>
+    </tr><tr><td>
+        <code>SWT.MouseWheel</code>
+      </td>
+      <td>
+        Fired when moving the mouse wheel.
+        This type is not supported by server-side
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Listener.html">Listener</a>,
+        only by
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/scripting/ClientListener.html">ClientListener</a>.
+
+      </td>
+    </tr><tr><td>
+        <code>SWT.MouseEnter</code>
+      </td>
+      <td>
+        Fired when moving the mouse over the widget.
+        This type is not supported by server-side
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Listener.html">Listener</a>,
+        only by
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/scripting/ClientListener.html">ClientListener</a>.
+      </td>
+    </tr><tr><td>
+        <code>SWT.MouseExit</code>
+      </td>
+      <td>
+        Fired when moving the mouse out of the widget.
+        This type is not supported by server-side
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Listener.html">Listener</a>,
+        only by
+        <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/scripting/ClientListener.html">ClientListener</a>.
+      </td>
+     </tr><tr><td>
+        <code>SWT.MouseDoubleClick</code>
+      </td>
+      <td>
+        Fired when clicking twice.
+      </td>
+    </tr><tr><td>
+        <code>SWT.FocusIn</code>
+      </td>
+      <td>
+        Fired when widget is focused.
+      </td>
+    </tr><tr><td>
+        <code>SWT.FocusOut</code>
+      </td>
+      <td>
+        Fired when widget is blured.
+      </td>
+    </tr><tr><td>
+        <code>SWT.Paint</code>
+      </td>
+      <td>
+        Fired when widget appears, is changing size, or when "redraw" is called on the widget either
+        in java, or in RWT Scripting. Only supported on <code>Canvas</code>.
+      </td>
+    </tr><tr><td>
+        <code>SWT.Selection</code>
+      </td>
+      <td>
+        Fired on <code>Button</code> and <code>Scale</code> widgets when selection changes.
+      </td>
+    </tr><tr><td>
+        <code>SWT.Modify</code>
+      </td>
+      <td>
+        Fired then the value of the "text" property of a <code>Text</code>, <code>Combo</code>
+        or <code>Spinner</code>widget changes.
+      </td>
+    </tr><tr><td>
+        <code>SWT.Verify</code>
+      </td>
+      <td>
+        Fired then the value of the "text" property of a <code>Text</code>
+        or <code>Combo</code>widget is changed by the
+        user. Not supported on other widgets. The <code>doit</code> flag can be used to prevent the
+        change. The "text" field of the event may be changed to replace the inserted text.
+      </td>
+    </tr></table><h3 id="data">Transferring Widget Data</h3>
+
+    <p>
+      As in SWT the client widget objects provides
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/Control.html#setData"><code>setData</code></a>
+      and
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/Control.html#getData"><code>getData</code></a>
+      methods. These
+      allow to attach data to a widget instance without affecting the widget itself.
+      Unlike SWT any value can be stored with <code>setData</code>, not just objects.
+    </p>
+    <p>
+      Data attached to the Java widget instance can be transferred to the client widget object.
+      To do so,
+      the key for that data has to be registered with the method
+      <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/widgets/WidgetUtil.html#registerDataKeys-java.lang.String...-">WidgetUtil.registerDataKeys</a></em>,
+      like this:
+    </p>
+    <pre class="lang-java">WidgetUtil.registerDataKeys( "foo" );
+widget.setData( "foo", "myData" );</pre>
+    <p>
+      The key has only to be added once per session, but adding it multiple times has no side
+      effects. The following types are supported:
+    </p>
+    <table style="border:none"><tr><td style="border:none" valign="top">
+          <ul><li>null</li>
+            <li>String</li>
+            <li>Byte</li>
+            <li>Short</li>
+            <li>Integer</li>
+            <li>Long</li>
+            <li>Double</li>
+            <li>Float</li>
+          </ul></td>
+        <td style="border:none" valign="top">
+          <ul><li>Boolean</li>
+            <li>int[]</li>
+            <li>boolean[]</li>
+            <li>String[]</li>
+            <li>Object[]</li>
+            <li>Map</li>
+            <li>JsonValue</li>
+          </ul></td>
+      </tr></table><p>
+      Changing the value on the client does not change it on the server.
+    </p>
+    <h3 id="crosswidget">Cross-Widget Scripting</h3>
+    <p>
+      Each <em>ClientListener</em> script has it's own scope and no direct access
+      any widget other than the one given by the <em>event</em> object.
+      Widget references can also <i>not</i> be transferred to the client using
+      <a href="scripting.html#data">the setData method</a>, but a widgets protocol id can:
+    </p>
+    <p>Java:</p>
+    <pre class="lang-java">widget.setData( "otherWidget", WidgetUtil.getId( otherWidget ) );</pre>
+    <p>
+      The id can then be used to obtain the matching widget object on the client.
+    </p>
+    <p>JavaScript:</p>
+    <pre class="lang-javascript">var otherWidget = rap.getObject( widget.getData( "otherWidget" ) );</pre>
+
+    <h3 id="html">HTML Attributes</h3>
+    <p>
+      JavaScript widget objects obtained via <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/rap.html#.getObject"><code>rap.getObject( id )</code></a> have a field
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/Widget.html#$el"><em>$el</em></a> that allows manipulating their HTML element. Currently it can only be used to set
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/%24.html#attr">HTML attributes</a> or
+      <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/%24.html#css">CSS properties</a>
+      of the element containing the entire widget HTML, and
+      (in case of <em>Text</em>) the <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/symbols/Text.html#$input"><code>&lt;input&gt;</code> element</a>.
+    </p><p>
+      This feature can be useful to assign test-id's for easier UI-testing. It can also be used to
+      add <a href="http://www.w3.org/TR/wai-aria/">ARIA</a> attributes that can be evaluated by screen reader software, thereby providing an
+      alternative to the unsupported SWT accessibility API. (Please take a look at the RAP FAQ
+      for more information on <a href="https://wiki.eclipse.org/RAP/FAQ#How_to_create_UI_Tests_for_RAP">UI-testing</a> and <a href="https://wiki.eclipse.org/RAP/FAQ#How_to_make_RAP_applications_Accessible">accessibility</a> in RAP.)
+    </p>
+    <p>
+      To access the <em>$el</em> field from Java code use the JavaScriptExecutor service. If, for
+      example, you want a method to set test-id's on any given widget, your code may look like this:
+    </p>
+  <pre class="lang-java">static void setTestId( Widget widget, String value ) {
+  if( uiTestsEnabled &amp;&amp; !widget.isDisposed() ) {
+    String $el = widget instanceof Text ? "$input" : "$el";
+    String id = WidgetUtil.getId( widget );
+    exec( "rap.getObject( '", id, "' ).", $el, ".attr( 'test-id', '", value + "' );" );
+  }
+}
+
+private static void exec( String... strings ) {
+  StringBuilder builder = new StringBuilder();
+  builder.append( "try{" );
+  for( String str : strings ) {
+    builder.append( str );
+  }
+  builder.append( "}catch(e){}" );
+  JavaScriptExecutor executor = RWT.getClient().getService( JavaScriptExecutor.class );
+  executor.execute( builder.toString() );
+}</pre>
+    <h2 id="limitations">Notable Limitations and discouraged Usage</h2>
+    <ul><li>
+        It is not (and will likely never be) possible to prevent
+        <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Text.html">Text</a></em> selection/carret
+        changes in mouse events (using doit flag). Its also not supported to set the <em>Text</em>
+        selection property in a
+        MouseDown event. These are also not working (correctly) in SWT. Changing selection on
+        <em>Text</em> in a <em>MouseUp</em> event works.
+      </li>
+      <li>Verify event:
+        <ul><li>Currently only supported on Text.</li>
+          <li>
+            Setting the text or selection property <i>of the target</i> within the Verify event is
+            not supported, but it doesn't produce useful results in SWT either. The modiy event is
+            better suited for this.
+          </li>
+          <li>
+            Changing the events "text" field has no effect if its empty to begin with. (I.e.
+            deleting can not be used to insert text).
+          </li>
+        </ul></li>
+      <li>
+        In SWT, some key constants can be compared with both the keyCode field and the
+        character field (<em>SWT.DEL, SWT.ESC, SWT.BS, SWT.BS, SWT.CR, SWT.TAB</em>). In
+        RWT Scripting they can only be compared with the keyCode field. The character field will
+        either not be set for these keys, or contain a (JavaScript) string, while these constants
+        are numbers.
+      </li>
+      <li>
+        Accessing the window/document Objects is discouraged for cross-browser/cross-client
+        compaibility concerns. You can do so at your own risk.
+      </li>
+      <li>
+        Creating global variables from within a ClientListener is heavily discouraged
+        and can easily happen by accident if a
+        variable is created without the "var" keyword. Use <a href="scripting.html#other">strict mode</a>
+        and <a href="http://github.eclipsesource.com/jshint-eclipse/">jshint</a>
+        to
+        prevent this.
+      </li>
+      <li>
+        <b>For security reasons</b> you should be aware that, unlike RAP source code written in
+        Java, all RWT Scripting functions (JavaScript source code) are currently transferred to
+        the client completely unaltered, <i>including comments</i>,
+        and can be read by any user with enough technical expertice.
+      </li>
+    </ul><h2 id="jshints">JavaScript Hints for Java Developer</h2>
+    <p>
+      Developers experienced with Java programming and less familiar with (or completely new to)
+      JavaScript might find the following hints useful in regard to RWT Scripting:
+    </p>
+
+    <h3>Debugging</h3>
+    <p>
+      Most modern browser have built-in developer tools, including a debugger. However,
+      since the script of a <em>ClientListener</em> is created using an <q>eval</q> statement,
+      the scripts do not simply appear in the "Scripts" or "Resources" tab of the developer tools,
+      and so it is not possible to set a break point. There are two ways to solve this, though browser support may vary:
+    </p>
+    <p>
+      1. To make the Script appear in the developer tools, add the line<br />
+      "<code>//@ sourceURL=NameOfYourScript.js</code>" to your script. Newer browser
+      may also recognize
+      <br />"<code>//# sourceURL=NameOfYourScript.js</code>".
+    </p>
+    <p>
+      2. To set a break point programmatically, write <code>debugger;</code> in your script
+      where you wish to start debugging.
+    </p>
+
+    <h3>Noteable differences between Java and JavaScript</h3>
+    <ul><li><b>JavaScript variables are dynamically typed and have function scope</b><br />
+      All local variables in JavaScript are delcared with "var" and can contain any type (undefined,
+      null, number, boolean, string, object). It is not relevant at all where in the function it is
+      declared, its scope is always the entire function.
+    </li></ul><ul><li><b>Strings are not objects</b></li></ul><p>
+      Strings are primitives in JavaScript, and are compared with "<code>==</code>" (or
+      "<code>===</code>"), not "<code>.equals</code>". However, string primitives can be coerced
+      into a string object, on which several useful methods are
+      <a href="http://www.w3schools.com/jsref/jsref_obj_string.asp">available</a>.
+    </p>
+    <ul><li><b>A number is not always a number</b></li></ul><p>
+      When calculating a numeric value in JavaScript, the result might not always be a number, even
+      if it is of the <i>type</i> number. The two cases are <code>infinity</code> (e.g. "<code>10/0
+      == infinity</code>") and <code>NaN</code> (not a number, e.g. "<code>Math.sqrt( -1 )</code>").
+      <code>NaN</code> can be detected only by using <code>isNaN</code> (e.g. "
+      <code>isNaN( Math.sqrt( -1 ) ) == true</code>"). If a number is neither <code>NaN</code> nor
+      <code>infinity</code>, it can do most things Javas <code>int</code> or <code>double</code>
+      can, including bitwise operations.
+    </p>
+    <ul><li><b>Arrays have dynamic length</b></li></ul><p>
+      Even though their syntax is very similar, JavaScript Arrays behave more like Java Lists than
+      Java Arrays. They can store different types in different slots, and can change their length as
+      needed. They also have differently named, but similarly working
+      <a href="http://www.w3schools.com/jsref/jsref_obj_array.asp">methods</a>.
+    </p>
+
+    <h3>Noteable similarities between Java and JavaScript</h3>
+    <ul><li><b>Objects and Maps</b></li></ul><p>
+      JavaScript Objects (created with a literal "<code>{}</code>") can be used like Java Maps. A
+      "<code>map.put( "key", value )</code>" would be "<code>map[ key ] = value</code>", and a
+      "<code> map.get( "key" )</code>" would be "<code>map[ "key" ] </code>". In JavaScript,
+      <code>value</code> could be of any type.
+    </p>
+    <ul><li><b>System.out.println and console.log</b></li></ul><p>
+      All modern desktop browser have some form of javascript console. They all have at least one
+      function in common that can be used like <code>System.out.println</code>, which is
+      <code>console.log</code>. Some browser also have <code>console.trace</code>. Browser not
+      supporting <code>console.log</code> (or in case of InternetExplorer, not having it activated),
+      will crash when calling that method, so remember removing all occurrences of console from your
+      JavaScript code after debugging.
+    </p>
+    <ul><li><b>Math and Math</b></li></ul><p>
+      The Java <code>Math</code> class and the JavaScript <code>Math</code> object have almost
+      identical <a href="http://www.w3schools.com/jsref/jsref_obj_math.asp">API</a>.
+    </p>
+    <ul><li><b>Date and Date</b></li></ul><p>
+      The JavaScript constructor
+      <code><a href="http://www.w3schools.com/jsref/jsref_obj_date.asp">Date</a></code>
+      creates objects almost identical in API to instances of Javas <code>Date</code> class.
+    </p>
+    <ul><li><b>Regular Expressions and RegExp</b></li></ul><p>
+      JavaScript also supports
+      <a href="http://www.w3schools.com/jsref/jsref_obj_regexp.asp">regular expressions</a>.
+    </p>
+    <ul><li><b>char and string</b></li></ul><p>
+      JavaScript has no <code>char</code> type. For RWT Scripting, a string with a length of one
+      character is used instead. This allows for comparison like
+      "<code>event.character == "A"</code>", but not "<code>event.character &gt;= 65</code>".
+      To do that use <code>charCodeAt</code>.
+      Example: "<code>event.character.charCodeAt( 0 ) &gt;= 65</code>".
+    </p>
+
+
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a class="active" href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

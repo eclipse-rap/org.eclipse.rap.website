@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="theming.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>RWT Theming</h1>
+
+  <p>Index:</p>
+
+  <ul><li><a href="theming.html#intro">Introduction</a></li>
+    <li><a href="theming.html#primer">Writing Themes</a></li>
+    <li><a href="theming.html#rwt">Setting Themes in an Application Configuration</a></li>
+    <li><a href="theming.html#workbench">Setting Themes for Workbench Applications</a></li>
+  </ul><p>
+    If you want to go directly to the theming reference, click
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">here</a>.
+  </p>
+
+  <h2 id="intro">Introduction</h2>
+
+  <p>
+    This article describes the CSS theming of RWT, the RAP Widget Toolkit.
+    Like the theming preferences commonly provided by desktop
+    systems, it allows developers to set the widgets default colors, fonts, borders, and more.
+  </p>
+
+  <p>
+    As an example, the following screenshots show the same dialog with the
+    default theme and with a custom theme.
+    As you can see, a custom theme does not only alter some colors, it also
+    affects the widgets, size, fonts, shadows, and more.
+    Even effects like hover and appear animations are different.
+    <br /><img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/theming-dialog-new.png" style="margin-top:10px" /><img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/theming-dialog.png" style="margin-top:10px" /></p>
+
+  <p id="custom">
+    A <q>custom theme</q> is a complete set of rules for all properties of all RAP widgets
+    found in the theming reference, just like the <q>default</q> theme. (Such a complete theme
+    is also called a <q>main theme</q>).
+    A custom theme can replace the default theme of RAP, which is used if no custom theme is set.
+    Custom themes are usually created by copying an existing main theme
+    (like the default or example themes) and modifying it. <a name="contribution" id="contribution"></a>A
+    <q>theme contribution</q> only adds some rules to an existing main theme.
+    This is often useful when only a few properties are to be changed, or when working with
+    <a href="theming.html#variants">custom variants</a>.
+  </p>
+  <p><small><b>Note:</b>
+   The default theme file can be found in the bundle "org.eclipse.rap.rwt",
+   file "resources/resource/theme/default.css". The example themes can be found
+   in the bundle "org.eclipse.rap.design.example", folder "theme". Both are part
+   of the RAP target platform.
+  </small></p>
+  <h3>What this is not</h3>
+  <p>
+    The RWT theming is not related to any Eclipse workbench concepts like the workbench theming
+    or custom stack presentations. Also, the CSS files are not directly passed to the client's
+    browser, but parsed and processed by RAP on the server side, as they are required for
+    layout calculations.
+    Therefore you can not add any arbitrary rules and expect them to be available in the
+    client document. If you want to do that (e.g. for
+    <a href="custom-widget.html">custom widgets</a>), use the
+    <a href="application-configuration.html">application configuration</a> /
+    <a href="branding.html">branding</a> API to add your CSS to the documents <em>head</em>,
+    or load CSS files dynamically using
+    <em><a href="client.html#jsexec">JavaScriptExecuter</a></em>
+    or
+    <em><a href="client.html#jsloader">JavaScriptLoader</a></em>.
+  </p>
+
+  <h2 id="primer">Writing and Extending Themes</h2>
+
+  <h3>Creating a Theme File (CSS)</h3>
+
+  <p>
+    This section explains the basic rules for writing CSS theme files.
+    Themes are written in CSS using widget types as element names.
+    The syntax must be valid
+    <a href="http://www.w3.org/TR/CSS21/">CSS 2.1</a>,
+    although RAP does not support the complete CSS syntax.
+    Some advanced concepts like "@"-rules and certain selector types are
+    not supported.
+  </p>
+
+  <p>
+    Create a new <em>.css</em> file and place it anywhere in your project.
+    Since the theme file can refer to images kept in the same project,
+    so an extra theme folder is recommended.
+    If the file contains non-ASCII characters, it has to be UTF-8 encoded.
+    Don't forget to include everything in the project's
+    <em>build.properties</em> file to make them available in a deployment.
+  </p>
+
+  <h3>Structure</h3>
+
+  <p>
+    A CSS file is simply a sequence of style rules.
+    A style rule is a selector or a comma separated selector list, followed by
+    a block of declarations enclosed in braces.
+    Declarations start with a property name, followed by a colon, followed by a
+    value and end with a semicolon.
+    There is no inherent difference between the structure of a custom theme and
+    a theme contribution. A custom theme simply needs to cover all widgets, while a theme
+    contribution may consist of a single rule.
+    The following is an example of a simple theme file, consisting of two style
+    rules:
+  </p>
+
+  <pre class="lang-css">  Button[PUSH], Button[TOGGLE] {
+    border: 2px solid blue;
+    color: rgb( 17, 23, 103 );
+    background-color: #f9f9f9;
+  }
+
+  Button[PUSH]:hover, Button[TOGGLE]:hover {
+    background-color: white;
+  }
+  </pre>
+
+  <h3>Selectors</h3>
+
+  <p>
+    A selector defines to which widgets or components of a widget a rule applies.
+    Selectors can refer to SWT style flags and also to certain widget states.
+    The element names to be used are either simple widget type names,
+    such as
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Button.html">Button</a></em>
+    and
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Table.html">Table</a></em>,
+    or names of sub-components of a widget like
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/ProgressBar.html#ProgressBar-Indicator">ProgressBar-Indicator</a></em>.
+    A complete list of themeable widgets and their element names can be found in
+    the <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">theming reference</a>.
+  </p>
+
+  <h4>Styles and States</h4>
+
+  <p>
+    Certain SWT style flags can be referred to in CSS selectors to allow to define
+    a styling depending on the widget type.
+    For style flags, the attribute syntax from CSS must be used:
+  </p>
+
+  <pre class="lang-css">
+Button[BORDER] {
+  ...
+} </pre>
+
+  <p>
+    In addition to style flags, which do not change during a widget's lifetime,
+    there are also dynamic widget states a theme can refer to.
+    To do so, use the CSS attribute syntax:
+  </p>
+
+  <pre class="lang-css">
+Button:hover {
+  ...
+} </pre>
+  <p>
+  Attributes and states can be mixed freely. For example, the following selector
+  applies only to buttons that have the style flags
+  <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#PUSH">SWT.PUSH</a></em>
+  <i>and</i>
+  <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/SWT.html#BORDER">SWT.BORDER</a></em>
+  <i>and</i> are currently in state
+  <em>hover</em>:
+  </p>
+  <pre class="lang-css">
+Button[PUSH][BORDER]:hover {
+  ...
+}</pre>
+
+  <p>
+    The styles and states that a theme can refer to depend on the widget and are
+    also listed in the <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">theming reference</a>.
+  </p>
+
+  <h4 id="variants">Custom Variants</h4>
+
+  <p>
+    Normally, a theme setting affects all widgets of a given type equally.
+    By defining custom variants it is possible to apply an individual presentation
+    to particular widgets without affecting all widgets of that type.
+    As an example, imagine an application that uses buttons in a special banner bar.
+    These buttons should have a different font and text color than normal buttons.
+    By making these buttons part of a variant (e.g. "mybutton"), you can define
+    separate CSS rules for these widgets.
+  </p>
+
+  <p>
+    To implement this, the buttons in the banner bar are marked as belonging to a
+    custom variant (e.g. "mybutton") in the Java code using
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/swt/widgets/Widget.html#setData-java.lang.String-java.lang.Object-">SWT widget data</a>
+    with the constant <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#CUSTOM_VARIANT">RWT.CUSTOM_VARIANT</a></em>:
+  </p>
+
+  <pre class="lang-java">
+button.setData( RWT.CUSTOM_VARIANT, "mybutton" );</pre>
+
+  <p>
+    In the theme CSS file, these widget variants can be referred to using the
+    <q>class</q> notation known from CSS used for HTML:
+  </p>
+
+  <pre class="lang-css">
+Button.mybutton {
+  ...
+}</pre>
+
+  <h3>Properties</h3>
+
+  <p>
+    The themeable properties are also widget specific.
+    Not all RWT widgets are equally customizable, some provide a large
+    set of themeable properties, others less.
+    An overview of all available elements and their themeable CSS properties can
+    be found in the
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">theming reference</a>.
+    As well as the properties itself, also the syntax for the property values is
+    a subset from CSS.
+    It is also documented in the reference.
+  </p>
+
+  <h3>Precedence in CSS</h3>
+
+  <p>
+    If more than one rule applies to a given element, property values defined in
+    one rule can overwrite those in another rule.
+    The precedence of rules and properties is defined in the CSS specification.
+    In short, it is defined by the specificity of a rule and its position in the
+    CSS file.
+    Please refer to the
+    <a href="http://www.w3.org/TR/CSS2/cascade.html#specificity">CSS specification</a>
+    for a detailed description.
+  </p>
+
+  <p>
+    When making theme contributions, they are simply concatenated to the
+    main theme file, thereby overwriting the rules from the theme they contribute to.
+    However, many contributions can be added to the same theme, and the order in which
+    they are appended is undefined.
+    Therefore, you should only add rules to the extension CSS file that will not
+    be overridden by other contributions.
+    As an example, rules for custom variants (see <a href="theming.html#variants">above</a>)
+    that are defined in the same theme will be safe as long as other theme contributions do not
+    reference the same variants.
+  </p>
+
+  <h3>Setting SWT Defaults</h3>
+
+  <p>
+    The SWT classes Display and Device contain methods that return default system
+    colors, a system font, and system images.
+    In RAP, these defaults are also controlled by the theme.
+    For details, see the theme reference of the
+    <a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/Widget.html">Display element</a>.
+  </p>
+
+
+  <h2 id="rwt">Setting Themes in an Application Configuration</h2>
+
+  <p><b>Note:</b> For workbench applications, please read
+  <q><a href="theming.html#workbench">Setting Themes for Workbench Applications</a></q> instead.
+  </p>
+
+  <h3>Register a Custom Theme</h3>
+
+  <p>
+    In order to make your theme available for a RAP application, you have to register it
+    in the application configuration first. This is done using the method
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/Application.html#addStyleSheet-java.lang.String-java.lang.String-">Application#addStyleSheet</a></em>.
+    Example:
+  </p>
+
+  <pre class="lang-java">
+application.addStyleSheet( "my.application.aquablue", "theme/aquablue.css" );</pre>
+
+  <p>
+    Now your theme is registered with the id "my.application.aquablue",
+    but it still needs to be activated.
+  </p>
+
+  <h3>Activate a Custom Theme</h3>
+  <p>
+    To make your application use the custom theme, you need to configure your entry point
+    accordingly using the same theme id. Example:
+  </p>
+
+  <pre class="lang-java">
+Map&lt;String, String&gt; properties = new HashMap&lt;String, String&gt;();
+properties.put( WebClient.THEME_ID, "my.application.aquablue" );
+application.addEntryPoint( "/example", Example.class, properties );</pre>
+
+  <p>
+    Different entry points can of course use different themes.
+  </p>
+
+  <h3>Register a Theme Contribution</h3>
+
+  <p>
+    Registering contribution file is done the same way a main theme file is registered,
+    only the order defines which is which.
+  </p>
+
+  <pre class="lang-java">
+application.addStyleSheet( "my.application.aquablue", "theme/aquablue.css" );
+application.addStyleSheet( "my.application.aquablue", "aqua-extensions.css" );</pre>
+
+  <p>
+    The theme contribution <em>aqua-extensions.css</em> will now be added to the
+    existing theme <em>my.application.aquablue</em>.
+    To contribute to the default theme, use the constant
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/RWT.html#DEFAULT_THEME_ID">RWT.DEFAULT_THEME_ID</a></em>:
+  </p>
+
+  <pre class="lang-java">
+application.addStyleSheet( RWT.DEFAULT_THEME_ID, "default-theme-extension.css" );</pre>
+
+  <p>
+    In that case it is not necessary to register or activate a main theme, as the default
+    theme is both already.
+  </p>
+
+  <h2 id="workbench">Setting Themes for Workbench Applications</h2>
+
+  <h3>Register a Custom Theme</h3>
+
+  <p>
+    In order to make your theme available for workbench applications, you have to register it with
+    the extension point
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/org_eclipse_rap_ui_themes.html">org.eclipse.rap.ui.themes</a></em>.
+    In the <em>plugin.xml</em> of your application project, add an extension
+    like this:
+  </p>
+
+  <pre class="lang-xml">
+&lt;extension
+   point="org.eclipse.rap.ui.themes"&gt;
+ &lt;theme
+     id="my.application.aquablue"
+     name="Aqua Blue Test Theme"
+     file="theme/aquablue.css" /&gt;
+&lt;/extension&gt;</pre>
+
+  <p>
+    Now your theme is registered with the id <em>my.application.aquablue</em>,
+    but it still needs to be activated.
+  </p>
+
+  <h3>Activate a Custom Theme</h3>
+  <p>
+    To make your application use the custom theme you have to register a branding.
+    In short, a branding defines several settings, that
+    may then be bound to a registered entry point. To assign a theme, simply
+    put the id used in the theme registration in the extensions <em>themeId</em> property.
+    For more details, refer to the article on
+    <a href="branding.html">RAP Branding</a>.
+  </p>
+
+  <h3>Register a Theme Contribution</h3>
+
+  <p>
+    Register the contribution file with the extension point
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/org_eclipse_rap_ui_themes.html">org.eclipse.rap.ui.themes</a></em>,
+    using a
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/org_eclipse_rap_ui_themes.html#e.themeContribution">themeContribution</a></em>
+    element.
+    In the <em>plugin.xml</em> of your application project, the extension
+    will look like this:
+  </p>
+
+  <pre class="lang-xml">
+&lt;extension
+    point="org.eclipse.rap.ui.themes"&gt;
+  &lt;themeContribution
+      themeId="my.application.aquablue"
+      file="aqua-extensions.css" /&gt;
+&lt;/extension&gt;</pre>
+
+  <p>
+    Now your theme contribution is registered and will automatically added to the
+    existing theme. To contribute to the default theme, use
+    <q><em>org.eclipse.rap.rwt.theme.Default</em></q> in the <em>themeId</em> property;
+    In that case it is not necessary to register or activate a main theme, as the default
+    theme is both already.
+  </p>
+
+
+
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a class="active" href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>

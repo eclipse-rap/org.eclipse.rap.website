@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>RAP - Developer's Guide</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="keywords" content="rap, rwt, osgi, eclipse, equinox, eclipse rap, ajax" />
+  <meta name="google-site-verification" content="kMX1SI1MRFpyzEPh4yv_TXRUpKLmBVvENEfQtjdZuwI" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" type="text/css" href="../_theme/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/layout.css" media="screen" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/index-search-box.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/devguide.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../_theme/print.css" media="print" />
+  <link rel="stylesheet" type="text/css" href="../_theme/prettify/prettify.css" />
+  <!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/rap/rap-layout-fixes-ie.css"/><![endif]-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/prettify.js"></script>
+  <script type="text/javascript" src="../_theme/prettify/lang-css.js"></script>
+  <style type="text/css">
+    input::-ms-clear, input::-ms-reveal {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="info-box">
+    <div>
+      <img src="../images/twitter.png" alt="Twitter Logo" />
+      <a href="https://twitter.com/EclipseRAP/">Follow us on Twitter</a>
+    </div>
+    <div>
+      <img src="../images/project-stats.png" alt="Project Information" />
+      <a href="http://projects.eclipse.org/projects/rt.rap">About this project</a>
+    </div>
+  </div>
+
+  <div id="header-bar">
+
+<div id="header">
+
+  <div  id="rap-logo-deco"></div>
+  <a href="../index.html"><span id="rap-logo"></span></a>
+
+  <div id="rap-search-box">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-search-1" viewBox="0 0 40 40">
+        <path d="M27.6 29.15c-1.99 1.643-4.543 2.63-7.326 2.63-6.355 0-11.507-5.15-11.507-11.506 0-6.355 5.152-11.507 11.507-11.507 6.355 0 11.507 5.152 11.507 11.507 0 2.783-.987 5.335-2.63 7.325l7.392 7.392c.43.43.436 1.124.005 1.555-.428.428-1.122.428-1.555-.005L27.6 29.15zm-7.326.44c5.145 0 9.315-4.17 9.315-9.316 0-5.145-4.17-9.315-9.316-9.315-5.145 0-9.315 4.17-9.315 9.314 0 5.145 4.17 9.315 9.314 9.315zm16.813.81C38.982 27.292 40 23.72 40 20 40 8.954 31.046 0 20 0S0 8.954 0 20s8.954 20 20 20c3.76 0 7.37-1.04 10.5-2.974.514-.32.674-.994.355-1.51-.318-.514-.993-.673-1.508-.355C26.56 36.884 23.35 37.81 20 37.81c-9.835 0-17.808-7.973-17.808-17.808S10.165 2.192 20 2.192 37.808 10.165 37.808 20c0 3.314-.905 6.492-2.593 9.26-.315.515-.15 1.19.365 1.505.517.315 1.19.152 1.507-.365z"
+        fill-rule="evenodd" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="sbx-icon-clear-3" viewBox="0 0 20 20">
+        <path d="M8.114 10L.944 2.83 0 1.885 1.886 0l.943.943L10 8.113l7.17-7.17.944-.943L20 1.886l-.943.943-7.17 7.17 7.17 7.17.943.944L18.114 20l-.943-.943-7.17-7.17-7.17 7.17-.944.943L0 18.114l.943-.943L8.113 10z" fill-rule="evenodd" />
+      </symbol>
+    </svg>
+    <form id="sbx-form" action="branding.html#" novalidate="novalidate" class="searchbox sbx-custom">
+      <div role="search" class="sbx-custom__wrapper">
+        <input id="search-query" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="sbx-custom__input">
+        <button type="submit" title="Submit your search query." class="sbx-custom__submit">
+          <svg role="img" aria-label="Search">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-search-1"></use>
+          </svg>
+        </button>
+        <button type="button" id="sbx-remove" title="Clear the search query." class="sbx-custom__reset">
+          <svg role="img" aria-label="Reset">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#sbx-icon-clear-3"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div id="navigation">
+    <ul>
+
+<li ><a href="../demos/index.html">Demos</a></li><li ><a href="../downloads/index.html">Download</a></li><li class="active"><a href="../documentation/index.html">Documentation</a></li><li ><a href="../getting-involved/index.html">Community</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+
+<div id="nav-bar">
+  <div id="nav-container">
+    <ul  id="nav-home">
+      <li>
+        <a href="../index.html">&lt; Home</a>
+      </li>
+    </ul>
+    <ul id="nav">
+
+<li><a  href="../documentation/index.html">Overview</a></li><li><a  class="active" href="index.html">Developer's Guide</a></li><li><a  href="../noteworthy/index.html">New and Noteworthy</a></li><li><a  href="../articles/index.html">Articles</a></li>
+    </ul>
+    <div class="stop"></div>
+  </div>
+</div>
+  </div>
+  <div id="novaWrapper">
+    <div id="novaContent">
+
+<div id="midcolumn" class="dev-guide-content">
+
+
+  
+
+  <h1>Branding</h1>
+  <em>
+    Note: Branding is only available when your RAP Application is used in a
+    <a href="application-setup.html#summary">setup</a> with workbench.
+    When using a <q>RAP with OSGi</q> or<q>RWT Standalone</q>
+    setup, see <q><a href="application-configuration.html">Application Configuration</a></q>.
+  </em>
+  <h3>Introduction</h3>
+  <p>
+    With the help of RAP's branding features you're able to define several (visual) aspects of your
+    RAP application. This includes for example the page title which is shown in the
+    browser or the theme to be used for the application.
+  </p>
+
+  <h3 id="entrypoint">Creating an Entry Point</h3>
+  <p>
+    If you haven't done so already, define an
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/org_eclipse_rap_ui_entrypoint.html">org.eclipse.rap.ui.entrypoint</a></em>
+    extension. Use the attribute <em>path</em> to specify the URL path for the
+    entry point.
+  </p>
+<pre class="lang-xml">
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.entrypoint"
+      class="example.MyEntryPoint"
+      path="/example" /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;
+</pre>
+  <p>
+    Unless you want to use the
+    <em><a href="http://help.eclipse.org/topic/org.eclipse.platform.doc.isv/reference/api/org/eclipse/equinox/app/IApplication.html">IApplication</a></em>
+    interface (see below), let the <em>class</em> attribute point to your implementation of the
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/EntryPoint.html">EntryPoint</a></em>
+    interface. (If the workbench is not used for the UI, <a href="hello-world.html#entrypoint">it is recommended</a> to extend
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/org/eclipse/rap/rwt/application/AbstractEntryPoint.html">AbstractEntryPoint</a></em>.)
+  </p>
+
+  <h3 id="iapplication">Using IApplication</h3>
+  <p>
+    If you want to use the <em><a href="http://help.eclipse.org/topic/org.eclipse.platform.doc.isv/reference/api/org/eclipse/equinox/app/IApplication.html">IApplication</a></em>
+    interface, leave the <em>class</em> attribute of your entry point extension empty and create an
+    <em><a href="http://help.eclipse.org/topic/org.eclipse.platform.doc.isv/reference/extension-points/org_eclipse_core_runtime_applications.html">org.eclipse.core.runtime.applications</a></em>
+    extension (in <i>addition</i> to the <em>entrypoint</em> extension).
+    Set your
+    <em><a href="http://help.eclipse.org/topic/org.eclipse.platform.doc.isv/reference/api/org/eclipse/equinox/app/IApplication.html">IApplication</a></em> implementation
+    in the <em>class</em> attribute, then specify the <em>id</em> of the application extension in your entry point extensions <em>applicationId</em>:
+  </p>
+  <pre class="lang-xml">
+&lt;extension point="org.eclipse.rap.ui.entrypoint"&gt;
+  &lt;entrypoint id="example.application.entrypoint"
+      path="/example"
+      applicationId="example.application" /&gt;
+  &lt;/entrypoint&gt;
+&lt;/extension&gt;</pre>
+
+  <h3 id="branding">Create the Branding</h3>
+  <p>
+    Now you can define a new branding by creating an extension for the
+    <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/org_eclipse_rap_ui_branding.html">
+    org.eclipse.rap.ui.branding</a></em>
+    extension point. Give the branding an id, then set the same id
+    in your entry point extension's <em>brandingId</em> attribute.
+    The branding is now associated with your <em>EntryPoint</em> or
+    <em>IApplication</em> implementation.
+    A typical branding may look like this in the extension point editor:
+  </p>
+  <img src="http://download.eclipse.org/rt/rap/doc/4.1/guide/articles/./../images/extension.png" alt="Extension point editor" /><p>
+    And here the same as it appears in the <em>plugin.xml</em>:
+  </p>
+  <pre class="lang-xml">
+&lt;extension
+    point="org.eclipse.rap.ui.branding"&gt;
+  &lt;branding
+      id="my.project.branding1"
+      title="My Custom Title"
+      favicon="icons/favicon.png"
+      body="body.html"
+      themeId="org.eclipse.rap.design.example.business.theme"&gt;
+  &lt;/branding&gt;
+&lt;/extension&gt;</pre>
+
+  <h4>id</h4>
+  <p>
+    The id is used to reference the branding in a <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/org_eclipse_rap_ui_entrypoint.html">org.eclipse.rap.ui.entrypoint</a></em> extension.
+  </p>
+
+  <h4>themeId</h4>
+  <p>
+    The id of the theme to be used for this branding.
+    The theme must be defined by an extension of <em><a href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/org_eclipse_rap_ui_themes.html">org.eclipse.rap.ui.themes</a></em>.
+    Without this parameter, the RAP default theme will be used.
+    See also <a href="theming.html">RWT Theming</a>.
+  </p>
+
+  <h4>title</h4>
+  <p>
+    To define the title which will be shown in the browser title or the the title of
+    the browser tab, you can use the <code>title</code> attribute.
+  </p>
+
+  <h4>favicon</h4>
+  <p>
+    The <a href="http://en.wikipedia.org/wiki/Favicon">favicon</a> is a 16x16 pixel
+    square icon shown in the browser's address bar or tab.
+    To be compatible with legacy browsers, use a file in the
+    <a href="http://en.wikipedia.org/wiki/ICO_%28icon_image_file_format%29">ICO format</a>.
+  </p>
+
+  <h4>body</h4>
+  <p>
+    An optional file containing an HTML snippet to be included in the RAP index page.
+    This snippet will be included in the <em>body</em> element of the generated index page.
+    That way a simple splash screen can be implemented.
+    Please note that the preferred way of styling the application background is to add a theming
+    for the Display background property.
+  </p>
+
+  <h4>Element additionalHeaders</h4>
+  <p>
+    An optional sub-element of a branding extension, that allows to add
+    <em>&lt;meta&gt;</em> or <em>&lt;link&gt;</em> tags
+    to the <em>&lt;head&gt;</em> of the generated index page.
+    Here's an example:
+  </p>
+  <pre class="lang-xml">
+&lt;additionalHeaders&gt;
+  &lt;meta name="author" content="Arthur Dent"&gt;
+  &lt;/meta&gt;
+&lt;/additionalHeaders&gt;</pre>
+  <p>
+    Available tags are <em>&lt;meta&gt;</em> and <em>&lt;link&gt;</em>.
+    You can add more additional attributes to each tag with the <em>attribute</em> element.
+  </p>
+
+
+
+</div>
+
+<div id="rightcolumn">
+  <a style = "color:inherit;text-decoration:none;"
+    href="index.html">
+  <h2 style="padding-bottom:12px;">Contents / RAP 4.1</h2></a>
+
+  <ul id="dev-guide-nav"><li class="category-group"><span><span class="arrow"></span>Getting Started</span><ul><li><a href="setup-ide.html">Setting up the Eclipse IDE</a></li><li><a href="target-install.html">Installing a RAP Target</a></li><li><a href="hello-world.html">Creating a Hello World with RAP</a></li><li><a href="launcher.html">Launching RAP Applications from the IDE</a></li><li><a href="examples.html">RAP Examples</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>RAP Widget Toolkit</span><ul><li><a href="rwt.html">Differences between RWT and SWT</a></li><li><a href="client.html">The RAP Client</a></li><li><a href="key-and-mouse-events.html">Key and Mouse Event Handling</a></li><li><a href="tree-table.html">Tree, Table and the Nebula Grid</a></li><li><a href="markup.html">Fonts and Markup in RAP</a></li><li><a href="web-embedding.html">Embedding Web Components</a></li><li><a href="navigation.html">Browser Navigation and History</a></li><li><a href="file-upload.html">File Upload</a></li><li><a href="theming.html">RWT Theming</a></li><li><a href="custom-widget.html">Custom Widgets</a></li><li><a href="scripting.html">Scripting</a></li><li><a href="resources.html">Static Resources and Downloads</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Scopes and Threads in RAP</span><ul><li><a href="scopes.html">Scopes in RAP</a></li><li><a href="singletons.html">Singletons and Static Fields</a></li><li><a href="data-stores.html">Storing Data</a></li><li><a href="threads.html">Threads in RAP</a></li><li><a href="server-push.html">Server Push</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Building Applications</span><ul><li><a href="application-setup.html">Choosing an Application Setup</a></li><li><a href="application-configuration.html">Application Configuration</a></li><li><a class="active" href="branding.html">Branding</a></li><li><a href="rwt-standalone.html">RWT Standalone</a></li><li><a href="deployment.html">WAR Deployment</a></li><li><a href="look-and-feel.html">Look and Feel</a></li><li><a href="internationalization.html">Internationalization</a></li><li><a href="related-technologies.html">Related Technologies</a></li></ul></li><li class="category-group"><span><span class="arrow"></span>Reference</span><ul><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/api/overview-summary.html">API Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/extension-points/index.html">RAP Extension Points Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/theming/index.html">RAP Theming Reference</a></li><li><a style="padding-right:13px;background:url(../images/external.png) center right no-repeat" href="http://download.eclipse.org/rt/rap/doc/4.1/guide/reference/jsdoc/index.html">RAP WebClient API Reference</a></li></ul></li></ul></div>
+
+<script type="text/javascript">
+  $( 'ul#dev-guide-nav li.category-group ul' ).each( function() {
+    if( !$( this ).find( '.active' ).attr( 'class' ) ) {
+      $( this ).hide();
+      $( this ).addClass( 'hidden' );
+    } else {
+      $( this ).siblings( 'span' ).children( 'span' ).addClass( 'opened' );
+    }
+  } );
+  $( 'ul#dev-guide-nav li.category-group span' ).click( function() {
+    var navList = $( this ).siblings( 'ul' );
+    var arrow = $( this ).children( 'span' );
+    if( navList.hasClass( 'hidden' ) ) {
+      navList.slideDown();
+      navList.removeClass( 'hidden' );
+      arrow.addClass( 'opened' );
+    } else {
+      navList.slideUp();
+      navList.addClass( 'hidden' );
+      arrow.removeClass( 'opened' );
+    }
+  } );
+</script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-910670-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17128428-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>      <div class="stop"></div>
+      <div id="footer">
+        <ul id="footernav">
+          <li><a href="https://www.eclipse.org/">Eclipse</a></li>
+          <li><a href="https://www.eclipse.org/legal/privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.eclipse.org/legal/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.eclipse.org/legal/copyright/">Copyright Agent</a></li>
+          <li><a href="https://www.eclipse.org/legal/">Legal</a></li>
+          <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
+        </ul>
+        <a href="https://www.eclipse.org/"><img src="../images/logos/eclipse.png" alt="Eclipse logo" /></a>
+        <span id="copyright">Copyright &copy; 2024 The Eclipse Foundation. All Rights Reserved.</span>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+  <script type="text/javascript">
+    docsearch({
+      apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
+      indexName: 'eclipse_rap',
+      inputSelector: '#search-query',
+      algoliaOptions: {
+        hitsPerPage: 9,
+      }
+    });
+    $( function() {
+      // prettify rewrites <pre> and <code> elements with class="prettyprint"
+      // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
+      $( 'pre[class|="lang"],code[class|="lang"]' ).addClass( "prettyprint" );
+      $( "pre[lang],code[lang]" ).addClass( function() {
+        var lang = $( this ).attr( "lang" );
+        return "prettyprint" + ( lang ? " lang-" + lang : "" );
+      } );
+      prettyPrint();
+    } );
+  </script>
+</body>
+</html>
