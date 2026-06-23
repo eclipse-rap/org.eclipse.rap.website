@@ -109,6 +109,10 @@
     You can write your application entirely in Java, re-use code and benefit from first-class IDE
     tools.
   </p>
+  <p>
+    &#127881; <strong>Eclipse RAP turns 20!</strong>
+    <a href="https://eclipsesource.com/blogs/2026/06/21/eclipse-rap-20th-anniversary/">Read the anniversary blog post.</a>
+  </p>
   <div id="heading-eclipse-icon">
     <a href="http://eclipse.org/"><img
         src="images/logos/eclipse.png"
@@ -422,24 +426,16 @@
 </div>
 
 <div id="blog-posts-container">
-  <a href="http://eclipsesource.com/blogs/tag/rap/feed/" class="rssIcon"><img src="images/feed_dark.png" alt="feed" /></a>
   <h2>Recent blog posts</h2>
-  <div id="blog-posts"></div>
+  <div id="blog-posts">
+    <h3><a href="https://eclipsesource.com/blogs/2026/06/21/eclipse-rap-20th-anniversary/">Celebrating Two Decades of Eclipse RAP: A Journey of Java, Innovation, and Community</a></h3>
+    <h3><a href="https://eclipsesource.com/blogs/2025/04/01/eclipse-rap-4.x-support-for-jakarta-ee-10/">Eclipse RAP 4.x: Support for Jakarta EE 10 – A Major Leap Forward</a></h3>
+    <h3><a href="https://eclipsesource.com/blogs/2022/06/20/rap-3-21-is-here-with-improved-security-and-a-new-source-code-home/">RAP 3.21 is here with improved security and a new source code home</a></h3>
+  </div>
   <div class="stop"></div>
 </div>
 
-<script type="text/javascript">
 
-  $( '#blog-posts' ).rssfeed( 'http%3A%2F%2Feclipsesource.com%2Fblogs%2Ftag%2Frap%2Ffeed%2F', {
-    limit: 3,
-    header : false,
-    key : "ABQIAAAADaXzprMke0eXhl5lyjwBJhQirors1Oy_y16QJctfjrSpBJX32hS_wL3O0Tk2wYierOO2_dXAoE0AMQ",
-    titletag : "h3",
-    date : false,
-    content : true
-  } );
-
-</script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-910670-2']);
@@ -473,21 +469,21 @@
           <li><a href="https://www.eclipse.org/org/foundation/contact.php">Contact Us</a></li>
         </ul>
         <a href="https://www.eclipse.org/"><img src="images/logos/eclipse.png" alt="Eclipse logo" /></a>
-        <span id="copyright">Copyright &copy; 2025 The Eclipse Foundation. All Rights Reserved.</span>
+        <span id="copyright">Copyright &copy; 2026 The Eclipse Foundation. All Rights Reserved.</span>
       </div>
 
     </div>
   </div>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
   <script type="text/javascript">
-    docsearch({
+    if (typeof docsearch === 'function') { docsearch({
       apiKey: '3e9946bc18fa7d26dc03c883df41b9de',
       indexName: 'eclipse_rap',
       inputSelector: '#search-query',
       algoliaOptions: {
         hitsPerPage: 9,
       }
-    });
+    }); }
     $( function() {
       // prettify rewrites <pre> and <code> elements with class="prettyprint"
       // optionally, the language can be selected using a "lang-" prefixed class, e.g. lang-java
@@ -496,7 +492,7 @@
         var lang = $( this ).attr( "lang" );
         return "prettyprint" + ( lang ? " lang-" + lang : "" );
       } );
-      prettyPrint();
+      if (typeof prettyPrint === 'function') { prettyPrint(); }
     } );
   </script>
 </body>
